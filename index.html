@@ -1,12 +1,8 @@
 ---
-layout: default
-title: My Blog
+layout: index
+title: place_your_blog_title_here
 ---
 
-<h2>{{page.title}}</h2>
-<p>new Pages</p>
-<ul>
-    {% for post in site.posts%}
-        <li>{{ post.date | date_to_string }} <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
-    {% endfor %}    
-</ul>
+<article id="post__content">
+  <h1 id="post__title">Welcome</h1>
+</article> <!-- end #post__content -->
