@@ -6,9 +6,37 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Sun, 08 Feb 2015 21:39:47 +0800</pubDate>
-    <lastBuildDate>Sun, 08 Feb 2015 21:39:47 +0800</lastBuildDate>
+    <pubDate>Sun, 08 Feb 2015 21:48:28 +0800</pubDate>
+    <lastBuildDate>Sun, 08 Feb 2015 21:48:28 +0800</lastBuildDate>
 
+
+    <item>
+      <title>吐槽haha</title>
+      <link>place_your_blog_url_here/music/2015/02/08/%E5%90%90%E6%A7%BDhaha.html</link>
+      <pubDate>08 Feb 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/music/2015/02/08/吐槽haha</guid>
+      <description>&lt;h1 id=&quot;section&quot;&gt;华语情歌&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;你不爱我，我明白的，可是我的心情，好低落～～～～&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;欧美流行&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;你不爱我，你特么彪吗？你爱那个碧池，你特么瞎吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;朋克摇滚&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;都尼玛不爱我！都尼玛不要我！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;印度音乐&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;不爱就不爱吧～大家一起跳起来～&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
 
     <item>
       <title>Jquery</title>
