@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>404 Not Found Error</title>
+    <title>Jquery</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -47,9 +47,106 @@
 
     <div id="post">
       <div id="pjax">
-        <article id="post__content">
-  <h1 id="post__title">404 Not Found Error</h1>
-</article> <!-- end #post__content -->
+        <h1 id="jqueryfninit">jQuery.fn.init()</h1>
+<blockquote>
+  <p>接收三个参数，selector,context,rootjQuery</p>
+</blockquote>
+
+<p>默认的$()传的值实际上考虑了很多种情况，下面是返回值</p>
+
+<ol>
+  <li>
+    <p>false,undefined,null</p>
+
+    <pre><code> return this;
+</code></pre>
+  </li>
+  <li>
+    <p>node节点</p>
+
+    <pre><code> this.context = this[0] = selector;
+ this.length = 1;
+ return this;
+</code></pre>
+  </li>
+  <li>
+    <p>“body”</p>
+
+    <pre><code> this.context = document;
+ this[0] = document.body;
+ this.selector = selector;
+ this.length = 1;
+ return this;
+</code></pre>
+  </li>
+  <li>
+    <p>字符串，单独标签&lt;tag&gt;&lt;/tag&gt;</p>
+
+    <pre><code> document.createElement;
+ return jQuery.merge(this,selector)
+</code></pre>
+  </li>
+  <li>
+    <p>字符串，复杂的HTML代码&lt;span class=”a” &gt;</p>
+
+    <pre><code> jQuery.buildFragment;
+ return jQuery.merge(this,selector)
+</code></pre>
+  </li>
+  <li>
+    <p>字符串，#id</p>
+
+    <pre><code> document.getElementById;
+ this.context = document;
+ this.selector = selector;
+ return this;
+</code></pre>
+  </li>
+  <li>
+    <p>字符串，选择器</p>
+
+    <pre><code> return jQuery.find(selector);
+</code></pre>
+  </li>
+  <li>
+    <p>字符串，选择器，context传值为$(…)</p>
+
+    <pre><code> return context.find(selector);
+</code></pre>
+  </li>
+  <li>
+    <p>字符串，选择器，context传值为非jquery对象</p>
+
+    <pre><code> return this.constructor(context).find(selector);
+</code></pre>
+
+    <blockquote>
+      <p>7、8、9可以写成
+     return (context || rootjQuery).find(selector);</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>函数</p>
+
+    <pre><code>return rootjQuery.ready(selector);
+</code></pre>
+  </li>
+  <li>
+    <p>jquery对象//深拷贝</p>
+
+    <pre><code>this.selector = selector.selector;
+this.context = selector.context;
+</code></pre>
+  </li>
+  <li>
+    <p>其它</p>
+
+    <pre><code>return jQuery.makeArray(selector,this);
+</code></pre>
+  </li>
+</ol>
+
+
       </div> <!-- end #pjax -->
 
       <div id="post__toc-trigger">

@@ -6,17 +6,115 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Sat, 07 Feb 2015 15:09:07 +0800</pubDate>
-    <lastBuildDate>Sat, 07 Feb 2015 15:09:07 +0800</lastBuildDate>
+    <pubDate>Sun, 08 Feb 2015 21:39:47 +0800</pubDate>
+    <lastBuildDate>Sun, 08 Feb 2015 21:39:47 +0800</lastBuildDate>
 
 
     <item>
-      <title>Welcome</title>
-      <link>place_your_blog_url_here/css/2015/02/07/welcome.html</link>
-      <pubDate>07 Feb 2015</pubDate>
+      <title>Jquery</title>
+      <link>place_your_blog_url_here/fe/2015/02/08/jQuery.html</link>
+      <pubDate>08 Feb 2015</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/css/2015/02/07/welcome</guid>
-      <description>&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+      <guid>place_your_blog_url_here/fe/2015/02/08/jQuery</guid>
+      <description>&lt;h1 id=&quot;jqueryfninit&quot;&gt;jQuery.fn.init()&lt;/h1&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;接收三个参数，selector,context,rootjQuery&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;默认的$()传的值实际上考虑了很多种情况，下面是返回值&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;false,undefined,null&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; return this;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;node节点&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; this.context = this[0] = selector;
+ this.length = 1;
+ return this;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“body”&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; this.context = document;
+ this[0] = document.body;
+ this.selector = selector;
+ this.length = 1;
+ return this;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串，单独标签&amp;lt;tag&amp;gt;&amp;lt;/tag&amp;gt;&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; document.createElement;
+ return jQuery.merge(this,selector)
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串，复杂的HTML代码&amp;lt;span class=”a” &amp;gt;&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; jQuery.buildFragment;
+ return jQuery.merge(this,selector)
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串，#id&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; document.getElementById;
+ this.context = document;
+ this.selector = selector;
+ return this;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串，选择器&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; return jQuery.find(selector);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串，选择器，context传值为$(…)&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; return context.find(selector);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串，选择器，context传值为非jquery对象&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; return this.constructor(context).find(selector);
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;7、8、9可以写成
+     return (context || rootjQuery).find(selector);&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;函数&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;return rootjQuery.ready(selector);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;jquery对象//深拷贝&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;this.selector = selector.selector;
+this.context = selector.context;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;其它&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;return jQuery.makeArray(selector,this);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
 </description>
     </item>
 
