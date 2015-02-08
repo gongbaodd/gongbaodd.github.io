@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>{{ page.title }}</title>
+    <title>404 Not Found Error</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
@@ -17,11 +17,11 @@
 
         <ul id="tags__ul">
           <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
-          <li id="js-label2" class="tags__li tags-btn">前端</li>
-          <li id="js-label3" class="tags__li tags-btn">健身</li>
-          <li id="js-label4" class="tags__li tags-btn">音乐</li>
-          <li id="js-label5" class="tags__li tags-btn">技术</li>
-          <li id="js-label6" class="tags__li tags-btn">生活</li>
+          <li id="js-label2" class="tags__li tags-btn">CSS</li>
+          <li id="js-label3" class="tags__li tags-btn">JS</li>
+          <li id="js-label4" class="tags__li tags-btn">Other FE</li>
+          <li id="js-label5" class="tags__li tags-btn">training</li>
+          <li id="js-label6" class="tags__li tags-btn">life</li>
         </ul>
 
         <div id="tags__bottom">
@@ -38,16 +38,18 @@
         </form>
 
         <nav id="pl__container">
-        {% for post in site.posts %}
-          <a class="{{ post.categories }} pl__all" href="{{ post.url }}"><span class="pl__circle"></span><span class="pl__title">{{ post.title }}</span><span class="pl__date">{{ post.date | date: "%b %Y" }}</span></a>
-        {% endfor %}
+
+          <a class="css pl__all" href="/css/2015/02/07/welcome.html"><span class="pl__circle"></span><span class="pl__title">Welcome</span><span class="pl__date">Feb 2015</span></a>
+
         </nav>
       </div> <!-- end #posts-list -->
     </aside> <!-- end #sidebar -->
 
     <div id="post">
       <div id="pjax">
-        {{ content }}
+        <article id="post__content">
+  <h1 id="post__title">404 Not Found Error</h1>
+</article> <!-- end #post__content -->
       </div> <!-- end #pjax -->
 
       <div id="post__toc-trigger">

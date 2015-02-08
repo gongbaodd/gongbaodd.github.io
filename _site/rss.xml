@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>place_your_blog_title_here</title>
+    <link>place_your_blog_url_here</link>
+    <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
+    <description>place_your_blog_description_here</description>
+    <language>place_your_blog_language_here</language>
+    <pubDate>Sat, 07 Feb 2015 15:09:07 +0800</pubDate>
+    <lastBuildDate>Sat, 07 Feb 2015 15:09:07 +0800</lastBuildDate>
+
+
+    <item>
+      <title>Welcome</title>
+      <link>place_your_blog_url_here/css/2015/02/07/welcome.html</link>
+      <pubDate>07 Feb 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/css/2015/02/07/welcome</guid>
+      <description>&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+</description>
+    </item>
+
+  </channel>
+</rss>
