@@ -11,6 +11,7 @@ category: fe
 ### 1. 简单实现(basic.html)
 
 * 必须要有的
+
         var scene = new THREE.Scene();
         var camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.1,1000);
         var renderer = new THREE.WebGLRenderer();
@@ -22,6 +23,7 @@ category: fe
         scenne.add(axes);
         
 * initStates
+
         ()=>
             var stats = new Stats();
 
@@ -36,10 +38,12 @@ category: fe
                 return stats;
                 
 * onResize()
+
         window.addEventListener('resize',onResize,false);
         
 * controller
-                    var controls = new function () {
+
+            var controls = new function () {
                 this.rotationSpeed = 0.02;
                 this.bouncingSpeed = 0.03;
             };
@@ -55,6 +59,9 @@ category: fe
             scene.overrideMaterial = new THREE.MeshLambertMaterial({color:0xffffff});
             
 ### 3. 内置几何图形 
+
 ### 4. 拼装几何图形
+
 ### 5. 网格操作
+
 ### 6. 摄像头操作
