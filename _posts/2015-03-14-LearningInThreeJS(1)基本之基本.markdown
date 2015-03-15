@@ -10,6 +10,8 @@ category: fe
 
 ### 1. 简单实现(basic.html)
 
+https://github.com/gongbaodd/myExperinments/blob/learning-threejs/01-basic.html
+
 * 必须要有的
 
         var scene = new THREE.Scene();
@@ -53,15 +55,20 @@ category: fe
             gui.add(controls,'bouncingSpeed',0,0.5);
 
 ### 2. 场景Scene
-
+https://github.com/gongbaodd/myExperinments/blob/learning-threejs/02-scene.html
+    
         var scene = new THREE.Scene();
             scene.fog = new THREE.Fog(0xffffff,0.015,100);
             scene.overrideMaterial = new THREE.MeshLambertMaterial({color:0xffffff});
             
 ### 3. 内置几何图形 
+https://github.com/gongbaodd/myExperinments/blob/learning-threejs/03-geometery.html
 
 ### 4. 拼装几何图形
+https://github.com/gongbaodd/myExperinments/blob/learning-threejs/04-basic-geometry.html
 
 ### 5. 网格操作
+https://github.com/gongbaodd/myExperinments/blob/learning-threejs/05-mesh.html
 
 ### 6. 摄像头操作
+https://github.com/gongbaodd/myExperinments/blob/learning-threejs/06-camera.html
