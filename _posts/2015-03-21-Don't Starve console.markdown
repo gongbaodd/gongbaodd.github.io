@@ -22,5 +22,11 @@ category: tech
         minimap = TheSim:FindFirstEntityWithTag("minimap")--------------|
         minimap.MiniMap:ShowArea(0,0,0, 10000)----------- 开全地图，要输入2个指令才行
         
+        for var x=1,1,10 do DebugSpawn("pigman") end -------------------出现十个猪人
+        
+        
+        
+        
+        
         
 
