@@ -149,4 +149,4 @@ function afterPjax() {
 //    }
 //  }check();
 //  container.scroll(check);
-//}afterPjax();
+}afterPjax();
