@@ -15,7 +15,25 @@ layout: index
 
 <div id="disqus_thread">
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
+  <div class="dsq-brlink" target="_blank">
+      <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="{{ page.date | date: "%Y%m%d" }}" data-title="{{ page.title }}" data-url="{{ page.url }}"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"gongbaodd"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+  </div>
 </div> <!-- end #disqus_thread -->
 
 <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
