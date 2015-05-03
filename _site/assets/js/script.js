@@ -129,21 +129,19 @@ function afterPjax() {
     });
   });
 
-  // Lazy Loading Disqus
-  // http://jsfiddle.net/dragoncrew/SHGwe/1/
-  var ds_loaded = false,
-      top = $('#disqus_thread').offset().top;
-      identifier = $('#post__title').data('identifier');
-  window.disqus_shortname = '';
-  window.disqus_identifier = identifier;
-
+  var top = $('#disqus_thread').offset().top;
+  var ds_loaded = false;
+  window.duoshuoQuery = {short_name:"gongbaodd"};
+  var http = document.location.protocol == 'https:' ? 'https:' : 'http:';
   function check() {
-    if ( !ds_loaded && container.scrollTop() + container.height() > top ) {
+    if (!ds_loaded&&container.scrollTop() + container.height() > top ) {
+//        console.log(1)
       $.ajax({
         type: 'GET',
-        url: 'http://' + disqus_shortname + '.disqus.com/embed.js',
+        url: http + '//static.duoshuo.com/embed.js',
         dataType: 'script',
-        cache: true
+        cache: true,
+//        success:function(){console.log('call')}
       });
       ds_loaded = true;
     }

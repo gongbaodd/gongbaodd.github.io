@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
+
+    <title>Don't starve console</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  </head>
+  <body>
+    <aside id="sidebar">
+      <nav id="tags">
+        <a href="/index.html" id="avatar"></a>
+
+        <ul id="tags__ul">
+          <li id="js-label1" class="tags__li tags-btn active">All Posts</li>
+          <li id="js-label2" class="tags__li tags-btn">前端<!--fe--></li>
+          <li id="js-label3" class="tags__li tags-btn">健身<!--training--></li>
+          <li id="js-label4" class="tags__li tags-btn">音乐<!--music--></li>
+          <li id="js-label5" class="tags__li tags-btn">技术<!--tech--></li>
+          <li id="js-label6" class="tags__li tags-btn">生活<!--life--></li>
+        </ul>
+
+        <div id="tags__bottom">
+          <a href="mailto:gongbaodd@gmail.com" id="icon-email" class="tags-btn fontello"></a>
+          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+        </div>
+      </nav> <!-- end #tags -->
+
+      <div id="posts-list">
+        <form action="" id="search-form">
+          <a href="/index.html" id="mobile-avatar"></a>
+          <!-- NOTE: input field is disabled by default -->
+          <input id="search-input" type="text" placeholder="Search..." disabled >
+        </form>
+
+        <nav id="pl__container">
+        
+          <a class="life pl__all" href="/life/2015/04/12/%E7%8E%AF%E6%B8%A4%E6%B5%B7%E4%B9%8B%E8%A1%8C%E5%90%8E%E6%84%9F.html"><span class="pl__circle"></span><span class="pl__title">环渤海之行后感</span><span class="pl__date">Apr 2015</span></a>
+        
+          <a class="life pl__all" href="/life/2015/03/28/%E7%8E%AF%E6%B8%A4%E6%B5%B7%E4%B9%8B%E8%A1%8C.html"><span class="pl__circle"></span><span class="pl__title">环渤海之行</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="tech pl__all" href="/tech/2015/03/21/Don't%20Starve%20console.html"><span class="pl__circle"></span><span class="pl__title">Don't starve console</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="fe pl__all" href="/fe/2015/03/15/THREE.JS%E5%8F%82%E6%95%B0%E7%AC%94%E8%AE%B0.html"><span class="pl__circle"></span><span class="pl__title">Three.js参数笔记</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="fe pl__all" href="/fe/2015/03/14/LearningInThreeJS(1)%E5%9F%BA%E6%9C%AC%E4%B9%8B%E5%9F%BA%E6%9C%AC.html"><span class="pl__circle"></span><span class="pl__title">Learninginthreejs(1)基本之基本</span><span class="pl__date">Mar 2015</span></a>
+        
+          <a class="tech pl__all" href="/tech/2015/02/17/pacman%E6%94%B9%E4%B8%8B%E8%BD%BD%E5%99%A8.html"><span class="pl__circle"></span><span class="pl__title">Pacman改下载器</span><span class="pl__date">Feb 2015</span></a>
+        
+          <a class="tech pl__all" href="/tech/2015/02/17/ArchLinux%E5%8D%87%E7%BA%A7%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E5%90%8Ebug%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html"><span class="pl__circle"></span><span class="pl__title">Archlinux升级搜狗输入法后bug的解决方案</span><span class="pl__date">Feb 2015</span></a>
+        
+          <a class="music pl__all" href="/music/2015/02/08/%E5%90%90%E6%A7%BDhaha.html"><span class="pl__circle"></span><span class="pl__title">吐槽haha</span><span class="pl__date">Feb 2015</span></a>
+        
+          <a class="fe pl__all" href="/fe/2015/02/08/jQuery.html"><span class="pl__circle"></span><span class="pl__title">Jquery</span><span class="pl__date">Feb 2015</span></a>
+        
+        </nav>
+      </div> <!-- end #posts-list -->
+    </aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <article id="post__content">
+  <h1 id="post__title" data-identifier="20150321">Don't starve console</h1>
+  <h1 id="lua">《饥荒》作弊,顺便学习lua</h1>
+
+<ol>
+  <li>
+    <p>打开Console</p>
+
+    <p>在～下面找DoNotStarve/settings.ini修改。</p>
+
+    <pre><code> ENABLECONSOLE = false
+</code></pre>
+  </li>
+  <li>
+    <p>游戏中点～键打开console。</p>
+
+    <pre><code> GetPlayer().components.builder:GiveAllRecipes() ---------- 全物品直接制造
+ GetPlayer().components.hungerause(true) ---------- 饥饿值不降低
+ GetPlayer().components.sanity:SetMax(500) ---------- 精神值不降低(慎用不可取消 )
+ GetPlayer().components.health:SetMaxHealth(300) ---------- 最大血格
+ GetPlayer().components.health:SetInvincible(true) ---------- 上帝模式
+
+ minimap = TheSim:FindFirstEntityWithTag("minimap")--------------|
+ minimap.MiniMap:ShowArea(0,0,0, 10000)----------- 开全地图，要输入2个指令才行
+    
+ for var x=1,1,10 do DebugSpawn("pigman") end -------------------出现十个猪人
+</code></pre>
+  </li>
+</ol>
+
+
+</article> <!-- end #post__content -->
+
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://gongbaodd.github.io/tech/2015/03/21/Don't%20Starve%20console.html&text=Don't starve console" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://gongbaodd.github.io/tech/2015/03/21/Don't%20Starve%20console.html&title=Don't starve console" target="_blank"></a>
+</div> <!-- end #post__share -->
+
+<div id="disqus_thread">
+     <div>
+      <!-- 多说评论框 start -->
+	<div class="ds-thread" id="ds-thread" data-thread-key="20150321" data-title="Don't starve console" data-url="http://gongbaodd.github.io//tech/2015/03/21/Don't%20Starve%20console.html"></div>
+<!-- 多说评论框 end -->
+
+  </div>
+</div> <!-- end #disqus_thread -->
+
+<p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
+
+      </div> <!-- end #pjax -->
+
+
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/jquery.pjax.js"></script>
+    <script src="/assets/js/nprogress.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

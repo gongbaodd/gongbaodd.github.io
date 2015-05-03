@@ -129,32 +129,22 @@ function afterPjax() {
     });
   });
 
-  // 多说
-//    var duoshuoQuery = {short_name:"gongbaodd"};
-//    function check() {
-//		var ds = document.createElement('script');
-//		ds.type = 'text/javascript';ds.async = true;
-//		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-//		ds.charset = 'UTF-8';
-//		(document.getElementsByTagName('head')[0]
-//		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-//	}check();
-//  var ds_loaded = false,
-//      top = $('#disqus_thread').offset().top;
-//      identifier = $('#post__title').data('identifier');
-//  window.disqus_shortname = '';
-//  window.disqus_identifier = identifier;
-//
-//  function check() {
-//    if ( !ds_loaded && container.scrollTop() + container.height() > top ) {
-//      $.ajax({
-//        type: 'GET',
-//        url: 'http://' + disqus_shortname + '.disqus.com/embed.js',
-//        dataType: 'script',
-//        cache: true
-//      });
-//      ds_loaded = true;
-//    }
-//  }check();
-//  container.scroll(check);
+  var top = $('#disqus_thread').offset().top;
+  var ds_loaded = false;
+  window.duoshuoQuery = {short_name:"gongbaodd"};
+  var http = document.location.protocol == 'https:' ? 'https:' : 'http:';
+  function check() {
+    if (!ds_loaded&&container.scrollTop() + container.height() > top ) {
+//        console.log(1)
+      $.ajax({
+        type: 'GET',
+        url: http + '//static.duoshuo.com/embed.js',
+        dataType: 'script',
+        cache: true,
+//        success:function(){console.log('call')}
+      });
+      ds_loaded = true;
+    }
+  }check();
+  container.scroll(check);
 }afterPjax();
