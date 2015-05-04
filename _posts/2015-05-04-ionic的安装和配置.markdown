@@ -8,7 +8,7 @@ category: fe
 不必要一直追求native，（虽然我还是试验了nativescript），在安卓上面还是可以尝试写写hybrid应用。
 
 ---
-1. 安装ionic
+1. 安装ionic，安装android-sdk-r22（可以用hx.gy:1080代理）
 
         npm install -g cordova ionic
         
