@@ -14,7 +14,7 @@ category: fe
 6. cli需要<font color=red>翻墙！！！</font>
 
 ***
-1. 安装nativescript
+1. 安装nativescript,安卓需要r17
 
         npm install -g nativescript
         
