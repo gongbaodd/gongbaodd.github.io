@@ -6,9 +6,345 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Sun, 08 Feb 2015 21:48:28 +0800</pubDate>
-    <lastBuildDate>Sun, 08 Feb 2015 21:48:28 +0800</lastBuildDate>
+    <pubDate>Sun, 03 May 2015 20:38:40 +0800</pubDate>
+    <lastBuildDate>Sun, 03 May 2015 20:38:40 +0800</lastBuildDate>
 
+
+    <item>
+      <title>环渤海之行后感</title>
+      <link>place_your_blog_url_here/life/2015/04/12/%E7%8E%AF%E6%B8%A4%E6%B5%B7%E4%B9%8B%E8%A1%8C%E5%90%8E%E6%84%9F.html</link>
+      <pubDate>12 Apr 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/life/2015/04/12/环渤海之行后感</guid>
+      <description>&lt;h1 id=&quot;section&quot;&gt;环渤海故事之行&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;恕我没有坚持写这些博客，今天是。。。额。。。5月3日。。。好吧，把时间退回去，回忆一下这一周的旅行。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;第一天&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3月30日&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;起的一个大早前往大连东港，目的就是赶上早上九点的棒棰岛号游轮，话说，作为一个大连人，这还是头一次坐游轮，虽然海路已经不是最方便的现代交通方式了，窃以为一生还是有一次航海的经历也是极好哒～&lt;/p&gt;
+
+&lt;p&gt;大连东港是个好多大连人都陌生的地方，没错，这个曾经让世界以为要成为国际港口的大连港因为各种新兴交通方式已经冷落太久了，三月份的海风还是令人瑟瑟发抖，再加上这些俄式建筑更是给这个地方添加了不少冷清。&lt;/p&gt;
+
+</description>
+    </item>
+
+    <item>
+      <title>环渤海之行</title>
+      <link>place_your_blog_url_here/life/2015/03/28/%E7%8E%AF%E6%B8%A4%E6%B5%B7%E4%B9%8B%E8%A1%8C.html</link>
+      <pubDate>28 Mar 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/life/2015/03/28/环渤海之行</guid>
+      <description>&lt;h1 id=&quot;section&quot;&gt;环渤海之行&lt;/h1&gt;
+
+&lt;p&gt;棒棰岛 9:00～15:30 烟台                     ===================3.30 15:30 180元
+31路 职工街  50min
+烟台到蓬莱的长途汽车 烟台北马路汽车站蓬莱05:30-18:20  18元 1:30 ==3.30 18:00 18元
+蓬莱小石岛青年公寓                          =========================     40元
+蓬莱阁                                     =====================3.31 7:00 70元
+八仙过海，三仙山                            ==========================     60元
+蓬莱到青岛 5:20~16:00                       =========================      82元
+青岛798国际青年旅社海景店X2                    ===================3.31 20:00
+八大关、栈桥                                  ====================4.1 7:00
+休息一晚                                    ======================
+青岛-泰安 可以坐高铁       200元 =================================4.2 12:00
+泰山 k37路                      ==================================4.2 14:00
+红门国际青年旅舍&lt;br /&gt;
+泰山                          ====================================4.2 15:00 60元
+泰安-曲阜               ===========================================4.3 10:11～11:34
+三孔                   ============================================13:00
+曲阜-济南 可以坐高铁         29元 =================================4.3 21：57～22:35
+济南站101                 &lt;br /&gt;
+7天连锁酒店(济南趵突泉店)x2    93元 ==================================4.3
+芙蓉街 4.3
+趵突泉、黑虎泉 4.4
+大明湖 4.5                  =========================================4.5 12:00
+济南-天津 149 ======================================================= 11:45
+天津，有时间查查http://dwz.cn/F14LW&lt;/p&gt;
+
+</description>
+    </item>
+
+    <item>
+      <title>Don't starve console</title>
+      <link>place_your_blog_url_here/tech/2015/03/21/Don't%20Starve%20console.html</link>
+      <pubDate>21 Mar 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/tech/2015/03/21/Don't Starve console</guid>
+      <description>&lt;h1 id=&quot;lua&quot;&gt;《饥荒》作弊,顺便学习lua&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;打开Console&lt;/p&gt;
+
+    &lt;p&gt;在～下面找DoNotStarve/settings.ini修改。&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; ENABLECONSOLE = false
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;游戏中点～键打开console。&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; GetPlayer().components.builder:GiveAllRecipes() ---------- 全物品直接制造
+ GetPlayer().components.hungerause(true) ---------- 饥饿值不降低
+ GetPlayer().components.sanity:SetMax(500) ---------- 精神值不降低(慎用不可取消 )
+ GetPlayer().components.health:SetMaxHealth(300) ---------- 最大血格
+ GetPlayer().components.health:SetInvincible(true) ---------- 上帝模式
+
+ minimap = TheSim:FindFirstEntityWithTag(&quot;minimap&quot;)--------------|
+ minimap.MiniMap:ShowArea(0,0,0, 10000)----------- 开全地图，要输入2个指令才行
+
+ for var x=1,1,10 do DebugSpawn(&quot;pigman&quot;) end -------------------出现十个猪人
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+    </item>
+
+    <item>
+      <title>Three.js参数笔记</title>
+      <link>place_your_blog_url_here/fe/2015/03/15/THREE.JS%E5%8F%82%E6%95%B0%E7%AC%94%E8%AE%B0.html</link>
+      <pubDate>15 Mar 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/fe/2015/03/15/THREE.JS参数笔记</guid>
+      <description>&lt;h1 id=&quot;threejs&quot;&gt;THREE.JS参数记录&lt;/h1&gt;
+&lt;p&gt;## Renderer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var renderer = new THREE.WebGLRenderer({
+    canvas:document.getElementById(&#39;WebGL-output&#39;)
+});
+
+//or
+
+document.getElementById(&#39;WebGL-output&#39;).appendChild(renderer.domElement);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;setclearcolor&quot;&gt;setClearColor&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;renderer.setClearColor(new THREE.Color(0x000000,1.0));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;others&quot;&gt;Others&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;renderer.shadowMapEnabled = true;
+renderer.setSize(w,h);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;scene&quot;&gt;Scene&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;scene.add(mesh);
+
+scene.fog = new THREE.Fog(0xffffff,near,far);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;camera&quot;&gt;Camera&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;THREE.OrthgraphicCamera(left,right,top,bottom,near,far);
+
+THREE.PerspectiveCamera(fov,//45
+                        width/height,
+                        near,
+                        far);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;geometry&quot;&gt;Geometry&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cube&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  THREE.CubeGeometry(width, height, depth, widthSegments, heightSegments, depthSegments)
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Plane&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  THREE.PlaneGeometry(width, height, widthSegments, heightSegments)
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sphere&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  THREE.SphereGeometry(radius, segmentsWidth, segmentsHeight, phiStart, phiLength, thetaStart, thetaLength)
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+    </item>
+
+    <item>
+      <title>Learninginthreejs(1)基本之基本</title>
+      <link>place_your_blog_url_here/fe/2015/03/14/LearningInThreeJS(1)%E5%9F%BA%E6%9C%AC%E4%B9%8B%E5%9F%BA%E6%9C%AC.html</link>
+      <pubDate>14 Mar 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/fe/2015/03/14/LearningInThreeJS(1)基本之基本</guid>
+      <description>&lt;h1 id=&quot;learninginthreejs&quot;&gt;LearningInThreeJS&lt;/h1&gt;
+&lt;p&gt;## （一）基本之基本&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这些是嚼the Packt book “Learning Threejs”出来的一些干货，捡了些觉得可学的代码放到我的myExpirements下面的learning-in-threejs分支里面了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;basichtml&quot;&gt;1. 简单实现(basic.html)&lt;/h3&gt;
+
+&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/01-basic.html&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;必须要有的&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.1,1000);
+  var renderer = new THREE.WebGLRenderer();
+  document.getElementById(&quot;WebGL-output&quot;).appendChild(renderer.domElement);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;坐标帮助&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  var axes = new THREE.AxisHelper(20);
+  scenne.add(axes);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;initStates&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  ()=&amp;gt;
+      var stats = new Stats();
+
+          stats.setMode(0);
+
+          stats.domElement.style.position = &#39;absolute&#39;;
+          stats.domElement.style.left = &#39;0px&#39;;
+          stats.domElement.style.top = &#39;0px&#39;;
+
+          document.getElementById(&quot;Stats-output&quot;).appendChild(stats.domElement);
+
+          return stats;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;onResize()&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  window.addEventListener(&#39;resize&#39;,onResize,false);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;controller&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;      var controls = new function () {
+          this.rotationSpeed = 0.02;
+          this.bouncingSpeed = 0.03;
+      };
+
+      var gui = new dat.GUI();
+      gui.add(controls,&#39;rotationSpeed&#39;,0,0.5);
+      gui.add(controls,&#39;bouncingSpeed&#39;,0,0.5);
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;scene&quot;&gt;2. 场景Scene&lt;/h3&gt;
+&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/02-scene.html&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    var scene = new THREE.Scene();
+        scene.fog = new THREE.Fog(0xffffff,0.015,100);
+        scene.overrideMaterial = new THREE.MeshLambertMaterial({color:0xffffff});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;3. 内置几何图形&lt;/h3&gt;
+&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/03-geometery.html&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;4. 拼装几何图形&lt;/h3&gt;
+&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/04-basic-geometry.html&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;5. 网格操作&lt;/h3&gt;
+&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/05-mesh.html&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;6. 摄像头操作&lt;/h3&gt;
+&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/06-camera.html&lt;/p&gt;
+</description>
+    </item>
+
+    <item>
+      <title>Pacman改下载器</title>
+      <link>place_your_blog_url_here/tech/2015/02/17/pacman%E6%94%B9%E4%B8%8B%E8%BD%BD%E5%99%A8.html</link>
+      <pubDate>17 Feb 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/tech/2015/02/17/pacman改下载器</guid>
+      <description>&lt;h1 id=&quot;pacman&quot;&gt;pacman改下载器&lt;/h1&gt;
+
+&lt;p&gt;pacman默认使用wget下载，没说wget不好，在家里面总是断，所以改成aria2了&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;移除未安装的包&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;# pacman -Sc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;aria2--wget&quot;&gt;使用aria2 代替 wget&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;# pacman -S aria2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;etcpacmanconf&quot;&gt;修改/etc/pacman.conf&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;XferCommand = /usr/bin/aria2c --allow-overwrite=true -c --file-allocation=none --log-level=error -m2 --max-connection-per-server=6 --max-file-not-found=5 --min-split-size=5M --no-conf --remote-time=true --log=- --summary-interval=60 -t5 -d / -o %o %u
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+
+    <item>
+      <title>Archlinux升级搜狗输入法后bug的解决方案</title>
+      <link>place_your_blog_url_here/tech/2015/02/17/ArchLinux%E5%8D%87%E7%BA%A7%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E5%90%8Ebug%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</link>
+      <pubDate>17 Feb 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/tech/2015/02/17/ArchLinux升级搜狗输入法后bug的解决方案</guid>
+      <description>&lt;h1 id=&quot;archlinuxbug&quot;&gt;ArchLinux升级搜狗输入法有bug的解决方案&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;不久前升级了搜狗输入法，因为据说这次升级性能提高了不少，更新了之后，确实啊！但是没意识到的是，出来了一堆bug。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;升级AtomEditor到0.177竟然不能使用中文了T.T还以为是个bug&lt;a href=&quot;https://github.com/atom/atom/issues/5447#issuecomment-74660587&quot;&gt;#5447&lt;/a&gt;，因为当时觉着chrome也没问题啊（其实有问题，地址栏输入太快的时候会发生错乱&amp;gt;.&amp;lt;，比如输baidu.com会变成badiu.cmo，奇葩啊）。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;出问题的特征：&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;AtomEditor不能输入中文&lt;/li&gt;
+  &lt;li&gt;SublimeText（打了补丁之后）不能输入中文&lt;/li&gt;
+  &lt;li&gt;Chrome/Chromium地址栏输入有时会发生错乱&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;解决方案：&lt;/h2&gt;
+&lt;p&gt;实际上也是自己粗心，运行下面，马上就知道问题在哪了。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ fcitx-diagnose
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;升级sogou的时候，输入法环境变量被改成Xim了，不知道在别的系统上面咋样，但这些变量在Arch上得是fctix，所以修改一下~/.xprofile。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;没问题啦～&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;后记&lt;/h2&gt;
+&lt;p&gt;编辑器不好使的那段时候，我改用了Brackets，很棒的编辑器，做整个项目的时候很好使，而且速度比atom、sublime都快。&lt;/p&gt;
+
+</description>
+    </item>
 
     <item>
       <title>吐槽haha</title>
