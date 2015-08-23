@@ -103,3 +103,15 @@ wind.show();
 
 
 <img src="https://developer.getpebble.com/assets/images/getting-started/pebble-js-tutorial/2-menu.png">
+
+# 编译
+
+```
+pebble build
+```
+
+#安装
+
+```
+pebble install --phone 192.168.1.107//你的手机ip，记得打开pebble的调试模式
+```
