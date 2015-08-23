@@ -6,9 +6,122 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Sun, 23 Aug 2015 15:30:56 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Aug 2015 15:30:56 +0800</lastBuildDate>
+    <pubDate>Sun, 23 Aug 2015 17:18:00 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Aug 2015 17:18:00 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>利用pebblejs写pebble手表应用</title>
+      <link>place_your_blog_url_here/tech/2015/08/23/%E5%88%A9%E7%94%A8PebbleJS%E5%86%99pebble%E6%89%8B%E8%A1%A8%E5%BA%94%E7%94%A8.html</link>
+      <pubDate>23 Aug 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/tech/2015/08/23/利用PebbleJS写pebble手表应用</guid>
+      <description>&lt;blockquote&gt;
+  &lt;p&gt;这个月初，任性买了刚发布的pebble time，一直还没写个应用，这个周末抽出时间看看。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;开头&lt;/h1&gt;
+
+&lt;p&gt;pebble的应用可以用C和Node开发，开发工具也可以使用&lt;a href=&quot;https://cloudpebble.net/&quot;&gt;cloudpebble&lt;/a&gt;（墙内用户伤不起）或者下载sdk离线开发。&lt;/p&gt;
+
+&lt;h1 id=&quot;sdk&quot;&gt;安装SDK&lt;/h1&gt;
+
+&lt;p&gt;mac安装pebble sdk太简单了&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+brew install pebble/pebble-sdk/pebble-sdk
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;网路顺畅的话，安装就完成了。&lt;/p&gt;
+
+&lt;h1 id=&quot;pebblejs&quot;&gt;建立PebbleJS工程&lt;/h1&gt;
+
+&lt;p&gt;离线建C项目只要运行&lt;code&gt;pebble new-project xxx&lt;/code&gt;就好，但是js项目需要把github上的项目https://github.com/pebble/pebblejs.git clone下来&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+git clone https://github.com/pebble/pebblejs.git
+&lt;/code&gt;
+# 文件目录&lt;/p&gt;
+
+&lt;p&gt;pebble应用的配置文件在appinfo.json里面，逻辑代码都写在src下的js/app.js里&lt;/p&gt;
+
+&lt;h1 id=&quot;ui-module&quot;&gt;UI module&lt;/h1&gt;
+
+&lt;p&gt;引入ui模块&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+var ui = require(&#39;ui&#39;);
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;window&quot;&gt;Window&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;
+var wind = new UI.Window({
+  fullscreen: true,
+});
+wind.show();
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;效果如图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://developer.getpebble.com/assets/images/getting-started/watchface-tutorial/1-blank.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;card&quot;&gt;Card&lt;/h2&gt;
+
+&lt;p&gt;创建一个卡片&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Create a Card with title and subtitle
+var card = new UI.Card({
+    title:&#39;Weather&#39;,
+    subtitle:&#39;Fetching...&#39;
+    });
+
+// Display the Card
+card.show();
+
+card.on(&#39;click&#39;, &#39;up&#39;, function(e) {
+    /*上键事件*/
+    })
+card.on(&#39;click&#39;, &#39;select&#39;, function(e) {
+    /* 中键事件*/
+    })
+card.on(&#39;click&#39;, &#39;down&#39;, function(e) {
+    /*下键事件*/
+    })
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://developer.getpebble.com/assets/images/getting-started/pebble-js-tutorial/1-fetching.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Card还有body和icon属性&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;menu&quot;&gt;Menu&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;var resultsMenu = new UI.Menu({
+    sections: [{
+        title: &#39;Current Forecast&#39;,
+        items: [{
+            title: &#39;Clear&#39;,
+            subtitle: &#39;11-05 21:00&#39;
+            }]
+        }]
+    });
+
+    resultsMenu.on(&#39;select&#39;, function(e)    {
+        console.log(&#39;Selected item #&#39; + e.itemIndex + &#39; of section #&#39; + e.sectionIndex);
+        console.log(&#39;The item is titled &quot;&#39; + e.item.title + &#39;&quot;&#39;);
+    });
+
+    // Show the Menu
+    resultsMenu.show();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://developer.getpebble.com/assets/images/getting-started/pebble-js-tutorial/2-menu.png&quot; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>琼b之行</title>
@@ -679,100 +792,6 @@ THREE.PerspectiveCamera(fov,//45
   &lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>Learninginthreejs(1)基本之基本</title>
-      <link>place_your_blog_url_here/fe/2015/03/14/LearningInThreeJS(1)%E5%9F%BA%E6%9C%AC%E4%B9%8B%E5%9F%BA%E6%9C%AC.html</link>
-      <pubDate>14 Mar 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/fe/2015/03/14/LearningInThreeJS(1)基本之基本</guid>
-      <description>&lt;h1 id=&quot;learninginthreejs&quot;&gt;LearningInThreeJS&lt;/h1&gt;
-&lt;p&gt;## （一）基本之基本&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;这些是嚼the Packt book “Learning Threejs”出来的一些干货，捡了些觉得可学的代码放到我的myExpirements下面的learning-in-threejs分支里面了。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;basichtml&quot;&gt;1. 简单实现(basic.html)&lt;/h3&gt;
-
-&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/01-basic.html&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;必须要有的&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  var scene = new THREE.Scene();
-  var camera = new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.1,1000);
-  var renderer = new THREE.WebGLRenderer();
-  document.getElementById(&quot;WebGL-output&quot;).appendChild(renderer.domElement);
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;坐标帮助&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  var axes = new THREE.AxisHelper(20);
-  scenne.add(axes);
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;initStates&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  ()=&amp;gt;
-      var stats = new Stats();
-
-          stats.setMode(0);
-
-          stats.domElement.style.position = &#39;absolute&#39;;
-          stats.domElement.style.left = &#39;0px&#39;;
-          stats.domElement.style.top = &#39;0px&#39;;
-
-          document.getElementById(&quot;Stats-output&quot;).appendChild(stats.domElement);
-
-          return stats;
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;onResize()&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;  window.addEventListener(&#39;resize&#39;,onResize,false);
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;controller&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;      var controls = new function () {
-          this.rotationSpeed = 0.02;
-          this.bouncingSpeed = 0.03;
-      };
-
-      var gui = new dat.GUI();
-      gui.add(controls,&#39;rotationSpeed&#39;,0,0.5);
-      gui.add(controls,&#39;bouncingSpeed&#39;,0,0.5);
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;scene&quot;&gt;2. 场景Scene&lt;/h3&gt;
-&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/02-scene.html&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    var scene = new THREE.Scene();
-        scene.fog = new THREE.Fog(0xffffff,0.015,100);
-        scene.overrideMaterial = new THREE.MeshLambertMaterial({color:0xffffff});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;3. 内置几何图形&lt;/h3&gt;
-&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/03-geometery.html&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;4. 拼装几何图形&lt;/h3&gt;
-&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/04-basic-geometry.html&lt;/p&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;5. 网格操作&lt;/h3&gt;
-&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/05-mesh.html&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;6. 摄像头操作&lt;/h3&gt;
-&lt;p&gt;https://github.com/gongbaodd/myExperinments/blob/learning-threejs/06-camera.html&lt;/p&gt;
 </description>
     </item>
     
