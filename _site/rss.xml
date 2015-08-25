@@ -6,16 +6,16 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 25 Aug 2015 17:30:55 +0800</pubDate>
-    <lastBuildDate>Tue, 25 Aug 2015 17:30:55 +0800</lastBuildDate>
+    <pubDate>Tue, 25 Aug 2015 17:34:58 +0800</pubDate>
+    <lastBuildDate>Tue, 25 Aug 2015 17:34:58 +0800</lastBuildDate>
 
     
     <item>
       <title>写写fekit extension</title>
-      <link>place_your_blog_url_here/tech%20fe/20150825/08/25/%E5%86%99%E5%86%99fekit%20extension.html</link>
-      <pubDate>25 Aug 20150825</pubDate>
+      <link>place_your_blog_url_here/tech%20fe/2015/08/25/%E5%86%99%E5%86%99fekit%20extension.html</link>
+      <pubDate>25 Aug 2015</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/tech%20fe/20150825/08/25/写写fekit extension</guid>
+      <guid>place_your_blog_url_here/tech%20fe/2015/08/25/写写fekit extension</guid>
       <description>&lt;blockquote&gt;
   &lt;p&gt;这几天公司里面的QA资源紧张，手上压了4个分支还没有发布，
 干脆腾出时间研究研究fekit的extension，最好能贡献点代码。&lt;/p&gt;
