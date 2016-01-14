@@ -1,0 +1,358 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.3.5
+    site: https://github.com/ksky521/nodePPT
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Riot类似React的微型UI库 - By jian.gong</title>
+    <link rel="stylesheet" media="all" href="/css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="/css/phone.css">
+    
+    <link rel="stylesheet" href="/js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    
+<link rel="stylesheet" href="/css/theme.light.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide hasnote"><aside class="note">
+<section>
+<p>首先说一下，riot有三个版本，服务器版、自编译版和预编译版，
+服务器版和自编译版API相同，语法比预编译简单，但是都是编译成预编译版
+自编译版得在浏览器里面加编译器，性能很低
+所以这次只介绍预编译版</p>
+
+</section>
+</aside><section class="slide-wrapper"><article class="flexbox vcenter">
+<hr>
+<h2><img src="/asset/image/riot.png" alt="Riot"></h2>
+<p>
+    <span>自定义标签</span>·
+    <span>虚拟DOM</span>·
+    <span>小体积</span>·
+    <span>全栈</span>·
+    <span>简单的语法</span>
+</p>
+
+<h1>类似React的微型UI库</h1>
+<h2>演讲者：jian.gong</h2>
+<hr>
+
+</article></section></slide>
+<slide class="slide hasnote"><aside class="note">
+<section>
+<p>很早的时候，我们用frameset做网页布局，这有一个很大的优势，就是组件和组件间的作用空间互相隔绝，开发迭代起来也很方便，比方说做好了menu根本不用担心其他部分的代码会对menu造成影响，但是frameset存在很多局限性，所以最终这个方案被css+div取代了。
+后来js、html、css哥仨突然就分开了，html里面除了div就剩下一些表单元素了，css除了加上个圆角基本上没变化，js基本上就撇开css、html单飞了。但是随着html5的推广，sass、less这一类的预处理器的出现，当然，最主要的还要归功于node的出现。</p>
+
+</section>
+</aside><section class="slide-wrapper"><hgroup>
+<h1>自定义标签</h1>
+<h2>关于组件化设计的思考</h2>
+<p><img src="/asset/image/1_1.jpg" alt="用frameset来做web页面"></p>
+<table>
+<thead>
+<tr>
+<th>javascript</th>
+<th>stylesheet</th>
+<th>HTML</th>
+<th>Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jQuery</td>
+<td>Bootstrap</td>
+<td>WTF?</td>
+<td>AIR</td>
+</tr>
+<tr>
+<td>Ext</td>
+<td>Foundation</td>
+<td></td>
+<td>Flex</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td>..</td>
+</tr>
+</tbody>
+</table>
+
+</hgroup><article>
+
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>自定义标签</h1>
+<h2>理想的组件</h2>
+<ul>
+<li>它是一个集合，包括HTML结构、样式还有行为三点</li>
+<li>它不会轻易受到外界影响（它有一个属于自己的作用域）</li>
+<li>它可以移植到其它系统中</li>
+<li>它存在对外交互接口</li>
+</ul>
+
+</hgroup><article>
+
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>自定义标签</h1>
+<h2>riot里面对于自定义标签的API</h2>
+<pre><code class="javascript">riot.tag(
+    &#39;yo-header&#39;,//标签名（必须）
+    &#39;&lt;span&gt;{name}&lt;/span&gt;&#39;,//模板(必须)
+    &#39;yo-header{display:block;}yo-header &gt; span{position:absolute;}&#39;,//标签样式
+    &#39;class=&quot;yo-header&quot; id=&quot;yoHeader&quot;&#39;,//标签属性
+    function(opt) {
+        //初始化函数（必须）
+        this.name = &quot;哟，海德&quot;
+    });
+</code></pre>
+<pre><code class="HTML">&lt;style&gt;
+    yo-header{display:block;} yo-header &gt; span{position:absolute;}
+&lt;/style&gt;
+&lt;yo-header class=&quot;yo-header&quot; id=&quot;yoHeader&quot;&gt;
+    &lt;span&gt;哟，海德&lt;/span&gt;
+&lt;/yo-header&gt;
+</code></pre>
+
+</hgroup><article>
+
+
+</article></section></slide>
+<slide class="slide hasnote"><aside class="note">
+<section>
+<p>虚拟DOM是react提出的，但并不是首创，最早angular的双向绑定就用了类似的实现，
+就是在内存中生成一个用对象建造的DOM树（可能不符合W3C）标准，每次发生DOM变化的时候先看这个树有没有变化再对现实中的DOM树做处理。</p>
+
+</section>
+</aside><section class="slide-wrapper"><hgroup>
+<h1>虚拟DOM</h1>
+<p><img src="/asset/image/2_0.png" alt="虚拟DOM"></p>
+<p><a href="http://www.tuicool.com/articles/Bjuiaav" target="_blank">http://www.tuicool.com/articles/Bjuiaav</a></p>
+
+</hgroup><article>
+
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>虚拟DOM</h1>
+<h2>Riot中的虚拟DOM</h2>
+<p><img src="/asset/image/2_1.png" alt="Riot的虚拟DOM"></p>
+
+</hgroup><article>
+
+
+</article></section></slide>
+<slide class="slide hasnote"><aside class="note">
+<section>
+<p>说一下，riot同时兼容浏览器和服务器端，浏览器端还分为预编译版和自编译版，这次分享只说预编译版。
+riot代码行数为2364相比于很多库确实小了好多,才115个函数
+这里面的tocca.js不是riot的一个组件，riot没有重写浏览器默认事件，引入tocca是为了加入ontap，onswipe，onondbtap事件，代码也不多，只有100多行。</p>
+
+</section>
+</aside><section class="slide-wrapper"><hgroup>
+<h1>小体积</h1>
+<h2>Riot项目结构</h2>
+<pre><code>Riot/
+    global-variables.js
+    index.js
+    tag/
+        each.js
+        mkdom.js
+        parse.js
+        tag.js
+        update.js
+        util.js
+
+Riot-observable/
+    index.js
+
+Riot-router/
+    index.js
+
+tocca/
+    tocca.js
+</code></pre>
+</hgroup><article>
+
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>为全栈使用</h1>
+<h2>模板的使用</h2>
+<pre><code class="HTML">&lt;ul if=&quot;{list}&quot;&gt;
+    &lt;li each=&quot;{item,index in list}&quot; &gt;
+        {index+1},{item}
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;button onclick=&quot;{clickMe}&quot; __disabled=&quot;{true}&quot;&gt;&lt;img riot-src=&quot;{imgsrc}&quot;&gt;&lt;/button&gt;
+&lt;yield/&gt;
+</code></pre>
+<pre><code class="javascript">Tag(yo-frag) :{
+    list: [&#39;hehe&#39;,&#39;haha&#39;],
+    clickMe: function() {
+        return true;//false == 默认 == preventDefault
+    },
+    imgsrc: &quot;http://.....&quot;
+}
+</code></pre>
+<pre><code>&lt;yo-frag&gt;你总能看到我~&lt;/yo-frag&gt;
+</code></pre>
+</hgroup><article>
+
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>简单的语法</h1>
+<h2>demo</h2>
+<h2><iframe src="../asset/demo/index.html"></iframe></h2>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<pre><code class="javascript">riot.tag(
+    &#39;timer&#39;,
+    &#39;&lt;h1&gt;{opts.count}&lt;/h1&gt;&lt;button onclick=&quot;{reset}&quot;&gt;重置&lt;/button&gt;&lt;yield/&gt;&#39;,
+    &#39;timer{color:red;}timer&gt;button{color:blue;}&#39;,
+    &#39;class=&quot;timer&quot; data-store=&quot;123&quot;&#39;,
+  function() {
+      var self = this;
+      this.on(&#39;mount&#39;,function() {
+          setTimeout(function() {
+              self.trigger(&#39;go&#39;);
+          },1000);
+      });
+
+      this.on(&#39;go&#39;,function() {
+          this.opts.count++;
+          setTimeout(function() {
+              self.update();
+              self.trigger(&#39;go&#39;);
+          },1000);
+      });
+
+      this.reset = function() {
+          this.opts.count = 0;
+      };
+  }
+);
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<pre><code class="HTML">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Riot Timer&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;timer&gt;
+        &lt;h2&gt;这是一个计时器&lt;/h2&gt;
+    &lt;/timer&gt;
+    &lt;button class=&quot;outter&quot;&gt;作用域外面重置&lt;/button&gt;
+    这是作用域外的文字
+    &lt;script src=&quot;./riot.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;./timer.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        var timer = riot.mount(&#39;timer&#39;,{count: 0})[0];
+        document.querySelector(&#39;.outter&#39;).onclick = function () {
+            timer.update({ opts: { count:0}});
+            // timer.opts.count = 0;
+        };
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>请容许我照着网页讲讲API</h1>
+<p><a href="http://riotjs.com/zh/api/" target="_blank">http://riotjs.com/zh/api/</a></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>轮子君</h1>
+<h2>riot</h2>
+<p><a href="https://github.com/riot" target="_blank">https://github.com/riot</a></p>
+<h2>react-lite</h2>
+<p><a href="https://github.com/Lucifier129/react-lite" target="_blank">https://github.com/Lucifier129/react-lite</a></p>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.3.5</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="/js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="/js/mixjs/lib/event/broadcast.js"></script>
+<script src="/js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'kontext',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+<script src="/js/demo.js"></script>
+<link rel="stylesheet" href="/css/demo.css">
+
+<!--placeholder-->
+</body>
+</html>

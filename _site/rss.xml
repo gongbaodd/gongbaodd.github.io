@@ -6,9 +6,81 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 25 Aug 2015 17:34:58 +0800</pubDate>
-    <lastBuildDate>Tue, 25 Aug 2015 17:34:58 +0800</lastBuildDate>
+    <pubDate>Mon, 28 Sep 2015 10:44:25 +0800</pubDate>
+    <lastBuildDate>Mon, 28 Sep 2015 10:44:25 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>一路向西</title>
+      <link>place_your_blog_url_here/life/2015/09/28/%E4%B8%80%E8%B7%AF%E5%90%91%E8%A5%BF.html</link>
+      <pubDate>28 Sep 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/life/2015/09/28/一路向西</guid>
+      <description>&lt;h1 id=&quot;section&quot;&gt;9.29&lt;/h1&gt;
+
+&lt;p&gt;北京 – 大同 2602 101.5元 00:18~6:36&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;【山西·大同】云冈石窟&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;交通&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    4路 大同--公交四公司
+    3路 公交四公司--云冈石窟 （大概 7:30到）
+
+    云冈石窟 120元 8:30开馆
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;大同 – 平遥 2462 114.5元 22:57~6:06&lt;/p&gt;
+
+&lt;h1 id=&quot;section-3&quot;&gt;9.30&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;【山西·平遥】&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;住宿&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    住宿好贵，青旅都100+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;平遥 – 临汾 动车一小时 普快两小时&lt;/p&gt;
+
+&lt;h1 id=&quot;section-6&quot;&gt;10.1&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;【山西·临汾】壶口瀑布&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;住宿&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    临汾浪迹青年旅舍
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;方案&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    一日游
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;临汾 – 华山 1485 35.5元 18:55~23:16&lt;/p&gt;
+
+&lt;h1 id=&quot;section-10&quot;&gt;10.2~10.3&lt;/h1&gt;
+
+&lt;p&gt;临汾 – 华山 2671 89.5元 02:54~06:35&lt;/p&gt;
+
+&lt;h2 id=&quot;section-11&quot;&gt;【陕西】华山&lt;/h2&gt;
+
+&lt;p&gt;华山 – 西安 7~20点都有火车，很便宜，最慢一个小时也到了&lt;/p&gt;
+
+&lt;h1 id=&quot;section-12&quot;&gt;10.4~10.5 【陕西】西安&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;三门峡  8-21
+   函谷关
+   三门峡大坝
+   豫西大峡谷
+洛阳
+   龙门石窟
+   丽景门
+郑州 火车
+   登封2h 嵩山
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>写写fekit extension</title>
@@ -289,6 +361,7 @@ PM也是，明明知道我要出去，还给我留了个需求。&lt;/p&gt;
 雷神雷照片一张
 &lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcf19fnq0j21kw1644hk.jpg&quot; /&gt;
 &lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjywfz7ej216o1kwdvc.jpg&quot; /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evfz20ngz0j20xm0luq7a.jpg&quot; /&gt;
 肉照一张，搭讪求速，男女不限
 &lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1jw1ev9dnjxy3lj20m80bewfi.jpg&quot; /&gt;&lt;/p&gt;
 
@@ -812,43 +885,6 @@ env(html,function(err,window){
 大明湖 4.5                  =========================================4.5 12:00
 济南-天津 149 ======================================================= 11:45
 天津，有时间查查http://dwz.cn/F14LW&lt;/p&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Don't starve console</title>
-      <link>place_your_blog_url_here/tech/2015/03/21/Don't%20Starve%20console.html</link>
-      <pubDate>21 Mar 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/tech/2015/03/21/Don't Starve console</guid>
-      <description>&lt;h1 id=&quot;lua&quot;&gt;《饥荒》作弊,顺便学习lua&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;打开Console&lt;/p&gt;
-
-    &lt;p&gt;在～下面找DoNotStarve/settings.ini修改。&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; ENABLECONSOLE = false
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;游戏中点～键打开console。&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; GetPlayer().components.builder:GiveAllRecipes() ---------- 全物品直接制造
- GetPlayer().components.hungerause(true) ---------- 饥饿值不降低
- GetPlayer().components.sanity:SetMax(500) ---------- 精神值不降低(慎用不可取消 )
- GetPlayer().components.health:SetMaxHealth(300) ---------- 最大血格
- GetPlayer().components.health:SetInvincible(true) ---------- 上帝模式
-
- minimap = TheSim:FindFirstEntityWithTag(&quot;minimap&quot;)--------------|
- minimap.MiniMap:ShowArea(0,0,0, 10000)----------- 开全地图，要输入2个指令才行
-    
- for var x=1,1,10 do DebugSpawn(&quot;pigman&quot;) end -------------------出现十个猪人
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
 
 </description>
     </item>
