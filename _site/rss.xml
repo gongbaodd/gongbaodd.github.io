@@ -6,17 +6,228 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 26 Jan 2016 15:14:11 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Jan 2016 15:14:11 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Jan 2016 16:53:55 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2016 16:53:55 +0800</lastBuildDate>
 
     
     <item>
       <title>使用karma做单元测试</title>
-      <link>place_your_blog_url_here/2016/01/26/%E4%BD%BF%E7%94%A8karma%E5%81%9A%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.html</link>
+      <link>place_your_blog_url_here/fe/2016/01/26/%E4%BD%BF%E7%94%A8karma%E5%81%9A%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.html</link>
       <pubDate>26 Jan 2016</pubDate>
       <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/2016/01/26/使用karma做单元测试</guid>
-      <description>
+      <guid>place_your_blog_url_here/fe/2016/01/26/使用karma做单元测试</guid>
+      <description>&lt;h1 id=&quot;karma&quot;&gt;使用karma来做单元测试&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;最近一直在搞riot，想弄一个单测，正好官网提供了karma组件，搞起来吧&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;安装&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;cnpm install --save-dev karma-riot
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# 配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// karma.conf.js
+module.exports = function(config) {
+  config.set({
+    frameworks: [&#39;mocha&#39;, &#39;riot&#39;],
+    plugins: [
+      &#39;karma-mocha&#39;,
+      &#39;karma-mocha-reporter&#39;,
+      &#39;karma-phantomjs-launcher&#39;,
+      &#39;karma-riot&#39;
+    ],
+    files: [
+      &#39;**/*.tag&#39;,
+      &#39;test/**/*.js&#39;
+    ],
+    preprocessors: {
+      &#39;**/*.tag&#39;: [&#39;riot&#39;]
+    },
+    browsers: [&#39;PhantomJS&#39;],
+    reporters: [&#39;mocha&#39;]
+  })
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;运行&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;karma run
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Chrome插件开发笔记</title>
+      <link>place_your_blog_url_here/fe/2016/01/25/chrome%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0.html</link>
+      <pubDate>25 Jan 2016</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/fe/2016/01/25/chrome插件开发笔记</guid>
+      <description>&lt;h1 id=&quot;chrome&quot;&gt;chrome插件开发笔记&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://open.chrome.360.cn/extension_dev/overview.html&quot;&gt;360真是一个良心企业，这样不用翻墙就能看API了&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;manifestjson&quot;&gt;manifest.json&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;{
+    &quot;name&quot;: &quot;qunar schema qrcode&quot;,
+    &quot;manifest_version&quot;: 2,
+    &quot;version&quot;: &quot;0.0.1&quot;,
+    &quot;description&quot;: &quot;generates qrcode&quot;,
+    &quot;background&quot;: {
+        &quot;scripts&quot;: [
+            &quot;background.js&quot;
+        ]
+    },
+    &quot;page_action&quot;: {
+        &quot;default_icon&quot;: &quot;icon.png&quot;,
+        &quot;default_title&quot;: &quot;QunarQRCode&quot;,
+        &quot;default_popup&quot;: &quot;index.html&quot;
+    },
+    &quot;permissions&quot;: [
+        &quot;http://*/&quot;,
+        &quot;https://*/&quot;,
+        &quot;tabs&quot;
+    ],
+    &quot;content_security_policy&quot;: &quot;script-src &#39;self&#39; &#39;unsafe-eval&#39;; object-src &#39;self&#39;&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;backgroundjsurlpage-action&quot;&gt;background.js判断url并添加page action&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function getDomainFromUrl(url) {
+    var a = document.createElement(&#39;a&#39;);
+    a.href = url;
+    var o = a.origin;
+    setTimeout(function() {
+        a.remove();
+    },100);
+    return o.replace(a.protocol+&#39;//&#39;,&#39;&#39;);
+};
+
+function checkForValidUrl(tabId, changeInfo, tab) {
+    if (getDomainFromUrl(tab.url).toLowerCase().indexOf(&#39;qunar&#39;) &amp;gt; -1) {
+        chrome.pageAction.show(tabId);
+    }
+};
+
+chrome.tabs.onUpdated.addListener(checkForValidUrl);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;popupurl&quot;&gt;popup里面获取本页url&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;chrome.tabs.getSelected(null,(tab)=&amp;gt;{
+    callback(tab.url);
+});
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jshint配置笔记</title>
+      <link>place_your_blog_url_here/fe/2016/01/22/jshint%E9%85%8D%E7%BD%AE%E7%AC%94%E8%AE%B0.html</link>
+      <pubDate>22 Jan 2016</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/fe/2016/01/22/jshint配置笔记</guid>
+      <description>&lt;h1 id=&quot;jshint&quot;&gt;jshint配置笔记&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;{
+  &quot;undef&quot;: true,
+  &quot;unused&quot;: true,
+  &quot;curly&quot;: true,
+  &quot;freeze&quot;: true,
+  &quot;funcscope&quot;: true,
+  &quot;nocomma&quot;: true,
+  &quot;notypeof&quot;: true,
+  &quot;shadow&quot;: true,
+  &quot;debug&quot;: true,
+  &quot;indent&quot;: true,
+  &quot;predef&quot;: [
+      &quot;require&quot;,
+      &quot;document&quot;,
+      &quot;window&quot;,
+      &quot;QApp&quot;,
+      &quot;module&quot;,
+      &quot;setTimeout&quot;,
+      &quot;setInterval&quot;,
+      &quot;encodeURI&quot;,
+      &quot;encodeURIComponent&quot;
+   ]
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Webpack里面使用riot Loader</title>
+      <link>place_your_blog_url_here/fe/2016/01/20/webpack%E9%87%8C%E9%9D%A2%E4%BD%BF%E7%94%A8riot-loader.html</link>
+      <pubDate>20 Jan 2016</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/fe/2016/01/20/webpack里面使用riot-loader</guid>
+      <description>&lt;h1 id=&quot;webpackriot-loader&quot;&gt;webpack里面使用riot-loader&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;var webpack = require(&#39;webpack&#39;);
+var HtmlWebpackPlugin = require(&#39;html-webpack-plugin&#39;);
+var plugins = [
+    new webpack.ProvidePlugin({
+        riot: &#39;riot&#39;
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin()
+];
+
+module.exports = {
+    entry: &#39;./src/app&#39;,
+    output: {
+        path: __dirname + &#39;/prd&#39;,
+        filename: &#39;app.js&#39;
+    },
+    plugins: plugins,
+    module: {
+        preLoaders: [
+            {
+                test: /\.tag$/,
+                loader: &#39;riotjs-loader&#39;,
+                exclude: /node_modules/,
+                query: { type: &#39;none&#39; }
+            }
+        ],
+        loaders: [
+            {
+                test: /\.js|\.tag|\.es6$/,
+                loader: &#39;babel-loader&#39;,
+                exclude: /node_modules/,
+                query: {
+                    presets: [&#39;es2015&#39;]
+                }
+            },{
+                test: /\.scss$/,
+                loaders: [&quot;style&quot;, &quot;css?sourceMap&quot;, &quot;sass?sourceMap&quot;]
+            }
+        ]
+    },
+    resolve: {
+        alias: {
+            yo: __dirname + &#39;/bower_components/Yo&#39;,
+            zepto: __dirname + &#39;/bower_components/zepto/zepto.js&#39;,
+            qrcode: __dirname + &#39;/bower_components/qrcode/dist/arale-qrcode/3.0.5/index.js&#39;,
+        }
+    },
+    devtool: &quot;source-map&quot;,
+    devServer: {
+        contentBase: &#39;./prd&#39;,
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        progress: true
+    }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -99,28 +310,28 @@
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/tech%20fe/2015/08/25/写写fekit extension</guid>
       <description>&lt;blockquote&gt;
-  &lt;p&gt;这几天公司里面的QA资源紧张，手上压了4个分支还没有发布，
+  &lt;p&gt;这几天公司里面的QA资源紧张，手上压了4个分支还没有发布，&lt;br /&gt;
 干脆腾出时间研究研究fekit的extension，最好能贡献点代码。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Fekit是去哪儿网的前端部署及开发工具，相比于gulp、grunt等工具
+  &lt;p&gt;Fekit是去哪儿网的前端部署及开发工具，相比于gulp、grunt等工具&lt;br /&gt;
 ，Fekit需要用户的学习成本较低，上手比较快。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://github.com/rinh/fekit&quot;&gt;Fekit的github地址&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://github.com/rinh/fekit-extension-template&quot;&gt;FekitExtension的模板地址&lt;/a&gt;&lt;br /&gt;
+  &lt;p&gt;&lt;a href=&quot;https://github.com/rinh/fekit&quot;&gt;Fekit的github地址&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/rinh/fekit-extension-template&quot;&gt;FekitExtension的模板地址&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
 &lt;a href=&quot;https://github.com/rinh/fekit-extension-hf&quot;&gt;FekitExtension的一个示例&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;谈谈需求&lt;/h1&gt;
-&lt;p&gt;我想写一个工具，在运行fekit server之前把项目中的每个js加入一个DOM的插入供作，
+&lt;p&gt;我想写一个工具，在运行fekit server之前把项目中的每个js加入一个DOM的插入供作，&lt;br /&gt;
 插入一个显示编译ip地址的div，在server结束之后将这句js删掉。&lt;/p&gt;
 
 &lt;h1 id=&quot;section-1&quot;&gt;怎么写？&lt;/h1&gt;
-&lt;p&gt;单独按照Extension模板里面写，没办法调试啊！！！怎么办？我干脆在
-&lt;code&gt;/usr/local/lib/node_modules/fekit/lib/commands/&lt;/code&gt;
+&lt;p&gt;单独按照Extension模板里面写，没办法调试啊！！！怎么办？我干脆在&lt;br /&gt;
+&lt;code&gt;/usr/local/lib/node_modules/fekit/lib/commands/&lt;/code&gt;&lt;br /&gt;
 下面开刀，在里面新建一个msg.js,它大概是这个样子的&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;(function(){
@@ -211,7 +422,7 @@
 
 &lt;h1 id=&quot;section-3&quot;&gt;开始大干一场吧&lt;/h1&gt;
 
-&lt;p&gt;通过判断options里面是否有p和u来判断是否打包，读option得cwd判断项目根目录，这样就能读取
+&lt;p&gt;通过判断options里面是否有p和u来判断是否打包，读option得cwd判断项目根目录，这样就能读取&lt;br /&gt;
 fekit.config了，将fekit.config里面的每个js插一段脚本，在u里面将这段脚本删除，大功告成。&lt;/p&gt;
 </description>
     </item>
@@ -234,9 +445,8 @@ fekit.config了，将fekit.config里面的每个js插一段脚本，在u里面�
 
 &lt;p&gt;mac安装pebble sdk太简单了&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-brew install pebble/pebble-sdk/pebble-sdk
-&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install pebble/pebble-sdk/pebble-sdk
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;网路顺畅的话，安装就完成了。&lt;/p&gt;
 
@@ -244,10 +454,9 @@ brew install pebble/pebble-sdk/pebble-sdk
 
 &lt;p&gt;离线建C项目只要运行&lt;code&gt;pebble new-project xxx&lt;/code&gt;就好，但是js项目需要把github上的项目https://github.com/pebble/pebblejs.git clone下来&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-git clone https://github.com/pebble/pebblejs.git
-&lt;/code&gt;
-# 文件目录&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/pebble/pebblejs.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;# 文件目录&lt;/p&gt;
 
 &lt;p&gt;pebble应用的配置文件在appinfo.json里面，逻辑代码都写在src下的js/app.js里&lt;/p&gt;
 
@@ -255,18 +464,16 @@ git clone https://github.com/pebble/pebblejs.git
 
 &lt;p&gt;引入ui模块&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-var ui = require(&#39;ui&#39;);
-&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var ui = require(&#39;ui&#39;);
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;window&quot;&gt;Window&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;
-var wind = new UI.Window({
+&lt;pre&gt;&lt;code&gt;var wind = new UI.Window({
   fullscreen: true,
 });
 wind.show();
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;效果如图：&lt;/p&gt;
 
@@ -329,15 +536,13 @@ card.on(&#39;click&#39;, &#39;down&#39;, function(e) {
 
 &lt;h1 id=&quot;section-1&quot;&gt;编译&lt;/h1&gt;
 
-&lt;p&gt;&lt;code&gt;
-pebble build
-&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pebble build
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&quot;section-2&quot;&gt;安装&lt;/h1&gt;
+&lt;p&gt;#安装&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-pebble install --phone 192.168.1.107//你的手机ip，记得打开pebble的调试模式
-&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pebble install --phone 192.168.1.107//你的手机ip，记得打开pebble的调试模式
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -352,135 +557,135 @@ pebble install --phone 192.168.1.107//你的手机ip，记得打开pebble的调�
 &lt;/blockquote&gt;
 
 &lt;h1 id=&quot;section&quot;&gt;出发&lt;/h1&gt;
-&lt;p&gt;在自己公司定了张自由行的票（毕竟能报销嘛），还挺实惠的两千多，四级海景房，来回机票。
+&lt;p&gt;在自己公司定了张自由行的票（毕竟能报销嘛），还挺实惠的两千多，四级海景房，来回机票。&lt;br /&gt;
 遗憾的是得在洛阳经停。&lt;/p&gt;
 
 &lt;h1 id=&quot;section-1&quot;&gt;8月13日，跨天&lt;/h1&gt;
-&lt;p&gt;住在慈寿寺的缺点就是离机场太远，所以13号和小伙伴在公司里蹭睡了。
-还好，公司里有浴室，所以出行也不太狼狈，临走前，把代码匆匆理好了。
+&lt;p&gt;住在慈寿寺的缺点就是离机场太远，所以13号和小伙伴在公司里蹭睡了。&lt;br /&gt;
+还好，公司里有浴室，所以出行也不太狼狈，临走前，把代码匆匆理好了。&lt;br /&gt;
 PM也是，明明知道我要出去，还给我留了个需求。&lt;/p&gt;
 
 &lt;h1 id=&quot;section-2&quot;&gt;8月14日，大东海&lt;/h1&gt;
-&lt;p&gt;四点半，在休息室把红旗和波波叫醒，出发去机场，能蹭一顿
+&lt;p&gt;四点半，在休息室把红旗和波波叫醒，出发去机场，能蹭一顿&lt;br /&gt;
 早餐和午餐，所以这次飞行是这样：&lt;/p&gt;
 &lt;center&gt;上飞机-&amp;gt;起飞-&amp;gt;吃-&amp;gt;降落经停-&amp;gt;上飞机-&amp;gt;起飞-&amp;gt;吃-&amp;gt;降落到达&lt;/center&gt;
-&lt;p&gt;大概下午两点我们到了天空比北京蓝上N倍的三亚（不要问我为什么带偏光镜，穷，买不起墨镜）
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcern5sufj21kw16rnkw.jpg&quot; /&gt;
-坐当地人的接送车到了三亚玉华苑酒店，看看表已经是16点了。好在我们就在大东海边上，直接去了。
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcf18um67j21kw16r1kx.jpg&quot; /&gt;
-雷神雷照片一张
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcf19fnq0j21kw1644hk.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjywfz7ej216o1kwdvc.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evfz20ngz0j20xm0luq7a.jpg&quot; /&gt;
-肉照一张，搭讪求速，男女不限
+&lt;p&gt;大概下午两点我们到了天空比北京蓝上N倍的三亚（不要问我为什么带偏光镜，穷，买不起墨镜）&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcern5sufj21kw16rnkw.jpg&quot; /&gt;&lt;br /&gt;
+坐当地人的接送车到了三亚玉华苑酒店，看看表已经是16点了。好在我们就在大东海边上，直接去了。&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcf18um67j21kw16r1kx.jpg&quot; /&gt;&lt;br /&gt;
+雷神雷照片一张&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcf19fnq0j21kw1644hk.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjywfz7ej216o1kwdvc.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evfz20ngz0j20xm0luq7a.jpg&quot; /&gt;&lt;br /&gt;
+肉照一张，搭讪求速，男女不限&lt;br /&gt;
 &lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1jw1ev9dnjxy3lj20m80bewfi.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;section-3&quot;&gt;8月15日 槟榔谷+呀诺达&lt;/h1&gt;
-&lt;p&gt;早上6点，从酒店出来晨跑，中国偏西就是好，日出都那么晚。大东海偏东南，看不到海上日出。但有一处是可以看到太阳从海对面山上出来，还算是壮观吧。早晨看到一些人在海上冲浪，嘻嘻。
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcfapzum6j21kw164wrq.jpg&quot; /&gt;
-呀诺达班车不给力，预约电话打不通，我们提前一天预约的酒店的车
-还很划算，300块可以随便挑地方，还免费导游合计合计还比班车便宜。
-### 槟榔谷
-早上8点出发，到了槟榔谷看祭火仪式
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfiea3ezj21kw16o1kx.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcfqx8p2oj21kw164npd.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqtrasej21kw164hdt.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqrrk73j21kw164khz.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcfqqnc9xj21kw1647wh.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqopqepj21kw1644oe.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqnff26j21kw164e81.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcfqsr7n3j21kw164tuy.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfquzh6nj21kw164e81.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcfqphqwaj21kw16rx4m.jpg&quot; /&gt;
+&lt;p&gt;早上6点，从酒店出来晨跑，中国偏西就是好，日出都那么晚。大东海偏东南，看不到海上日出。但有一处是可以看到太阳从海对面山上出来，还算是壮观吧。早晨看到一些人在海上冲浪，嘻嘻。&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcfapzum6j21kw164wrq.jpg&quot; /&gt;&lt;br /&gt;
+呀诺达班车不给力，预约电话打不通，我们提前一天预约的酒店的车&lt;br /&gt;
+还很划算，300块可以随便挑地方，还免费导游合计合计还比班车便宜。&lt;br /&gt;
+### 槟榔谷&lt;br /&gt;
+早上8点出发，到了槟榔谷看祭火仪式&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfiea3ezj21kw16o1kx.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcfqx8p2oj21kw164npd.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqtrasej21kw164hdt.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqrrk73j21kw164khz.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcfqqnc9xj21kw1647wh.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqopqepj21kw1644oe.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfqnff26j21kw164e81.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcfqsr7n3j21kw164tuy.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcfquzh6nj21kw164e81.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcfqphqwaj21kw16rx4m.jpg&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcfqw2me9j21kw16r1kx.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;section-4&quot;&gt;呀诺达&lt;/h3&gt;
-&lt;p&gt;呀诺达海南话是123的意思，呀诺达风景区是一片热带雨林，有三个谷区
-我们去的时候一个谷区关闭，雨林谷风景美，梦幻谷需要另外交钱，但是有游玩项目，
+&lt;p&gt;呀诺达海南话是123的意思，呀诺达风景区是一片热带雨林，有三个谷区&lt;br /&gt;
+我们去的时候一个谷区关闭，雨林谷风景美，梦幻谷需要另外交钱，但是有游玩项目，&lt;br /&gt;
 就是简单的素质拓展训练什么的，因为我去了梦幻谷，怕把手机掉了，就没拍多少照片。&lt;/p&gt;
 
-&lt;p&gt;雨林谷因为同行梦幻谷的同事累了没去成，传几张别人的照片吧~
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcg1t9ed4j21kw16owy2.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcg5gubr2j21kw16oe2a.jpg&quot; /&gt;
-下面是梦幻谷了
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evciasyo66j21kw16r1kx.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evciau3umtj21kw164b29.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evciaux9ipj21kw16rquv.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evciaw32guj21kw164e81.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evciax2m9yj21kw16r1kx.jpg&quot; /&gt;
-# 8月16日 蜈支洲岛、免税店
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcihwz7mtj21kw164b29.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcihxyv8yj21kw1644qp.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcihyutj2j21kw164qjk.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjp0vicbj216o1kw4mh.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcihzv7dyj21kw1641kj.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcii0onc7j21kw1641ki.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcii1so1jj21kw1641kx.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcii2opawj21kw164e5t.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcii3rkmqj21kw1644qp.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcii4rmgej21kw164e81.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcii5zyk0j21kw164nnb.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcii6wjstj21kw1644qp.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcii7wp8tj21kw1647w7.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcii8q7hpj21kw16r1gw.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcii9mvnpj21kw16r7v8.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcj4khbq2j21kw16odyz.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjp1tgs2j21kw16o7wh.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcjp3gtqvj21kw16o4qp.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcj4lci55j21kw16rnop.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcj4m8ehij21kw1641if.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4n42sij21kw164hd3.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcj4o4h30j21kw16rnks.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcj4oyx9aj21kw16rnoy.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4pzqlej21kw1641jj.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4r8fftj21kw164e81.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4s60vaj21hs1zkkjl.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcj4t3nmfj21kw1644lw.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4vkj88j21kw24thdu.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4wt0y1j21kw1641kx.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4xo4dej21kw1644mr.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4yg9yyj21kw1641gv.jpg&quot; /&gt;
-# 8月17日 南山寺+西岛
-早晨沿着另一个方向晨跑到了半山半岛，拍了几张照
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcjh38uadj21kw1647k3.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjh41ozcj21kw164nk0.jpg&quot; /&gt;
-前往南山寺看108m南海观音
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjkhx5rdj21kw16r1kx.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjkitjocj21kw16r1kx.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjkjq6s2j21kw16r7t0.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjkkmz16j21kw164wvc.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjscrohwj216o1kwwtq.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjsdw6w5j21kw16oke4.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjklrl7uj21hs1zkhdt.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjkncdbcj21kw164e81.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjko3ocmj21kw164tot.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjkp0mnfj21kw1644qp.jpg&quot; /&gt;
-雷神表情
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjv1o6cpj21kw16oayg.jpg&quot; /&gt;
-西岛
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjys2g91j21kw164ayl.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjyt2ctmj21kw16odxd.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjyr7ej7j21kw16ondg.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjyq48zoj21kw16odxw.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjyu60stj21kw16o1kx.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjyvjtx5j21kw16ob29.jpg&quot; /&gt;
-吃饭的地方很文艺，在“大菠萝”里面
+&lt;p&gt;雨林谷因为同行梦幻谷的同事累了没去成，传几张别人的照片吧~&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcg1t9ed4j21kw16owy2.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcg5gubr2j21kw16oe2a.jpg&quot; /&gt;&lt;br /&gt;
+下面是梦幻谷了&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evciasyo66j21kw16r1kx.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evciau3umtj21kw164b29.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evciaux9ipj21kw16rquv.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evciaw32guj21kw164e81.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evciax2m9yj21kw16r1kx.jpg&quot; /&gt;&lt;br /&gt;
+# 8月16日 蜈支洲岛、免税店&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcihwz7mtj21kw164b29.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcihxyv8yj21kw1644qp.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcihyutj2j21kw164qjk.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjp0vicbj216o1kw4mh.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcihzv7dyj21kw1641kj.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcii0onc7j21kw1641ki.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcii1so1jj21kw1641kx.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcii2opawj21kw164e5t.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcii3rkmqj21kw1644qp.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcii4rmgej21kw164e81.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcii5zyk0j21kw164nnb.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcii6wjstj21kw1644qp.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcii7wp8tj21kw1647w7.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcii8q7hpj21kw16r1gw.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcii9mvnpj21kw16r7v8.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcj4khbq2j21kw16odyz.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjp1tgs2j21kw16o7wh.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcjp3gtqvj21kw16o4qp.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcj4lci55j21kw16rnop.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcj4m8ehij21kw1641if.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4n42sij21kw164hd3.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcj4o4h30j21kw16rnks.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcj4oyx9aj21kw16rnoy.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4pzqlej21kw1641jj.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4r8fftj21kw164e81.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4s60vaj21hs1zkkjl.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcj4t3nmfj21kw1644lw.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4vkj88j21kw24thdu.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4wt0y1j21kw1641kx.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4xo4dej21kw1644mr.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcj4yg9yyj21kw1641gv.jpg&quot; /&gt;&lt;br /&gt;
+# 8月17日 南山寺+西岛&lt;br /&gt;
+早晨沿着另一个方向晨跑到了半山半岛，拍了几张照&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcjh38uadj21kw1647k3.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjh41ozcj21kw164nk0.jpg&quot; /&gt;&lt;br /&gt;
+前往南山寺看108m南海观音&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjkhx5rdj21kw16r1kx.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjkitjocj21kw16r1kx.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjkjq6s2j21kw16r7t0.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjkkmz16j21kw164wvc.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjscrohwj216o1kwwtq.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjsdw6w5j21kw16oke4.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjklrl7uj21hs1zkhdt.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjkncdbcj21kw164e81.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjko3ocmj21kw164tot.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjkp0mnfj21kw1644qp.jpg&quot; /&gt;&lt;br /&gt;
+雷神表情&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjv1o6cpj21kw16oayg.jpg&quot; /&gt;&lt;br /&gt;
+西岛&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjys2g91j21kw164ayl.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcjyt2ctmj21kw16odxd.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjyr7ej7j21kw16ondg.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcjyq48zoj21kw16odxw.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjyu60stj21kw16o1kx.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcjyvjtx5j21kw16ob29.jpg&quot; /&gt;&lt;br /&gt;
+吃饭的地方很文艺，在“大菠萝”里面&lt;br /&gt;
 &lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evckuql1trj20qb0zkq4q.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;section-5&quot;&gt;8月18日 鹿回头+回家&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evckuq2z05j20zk0qb78c.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evckupdrb5j20zk0qbjvn.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evckuow553j20zk0qbmyn.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcku41j12j20zk0qbadt.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcku3im4pj20zk0qpacm.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcku2rrm0j20zk0qbjtu.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcku20kz1j20zk0ptgq4.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcku1clb2j20zk0qbteu.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcku0qo9vj20zk0qbjx8.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcku04nz7j20zk0qbjuv.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcktzc7dgj20zk0a2tc8.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcktyvt3wj20zk0qbmzm.jpg&quot; /&gt;
-&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcktx63crj20qn0hsq4r.jpg&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evckuq2z05j20zk0qb78c.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evckupdrb5j20zk0qbjvn.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evckuow553j20zk0qbmyn.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcku41j12j20zk0qbadt.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcku3im4pj20zk0qpacm.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcku2rrm0j20zk0qbjtu.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcku20kz1j20zk0ptgq4.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/89d0a2e1gw1evcku1clb2j20zk0qbteu.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcku0qo9vj20zk0qbjx8.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcku04nz7j20zk0qbjuv.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/89d0a2e1gw1evcktzc7dgj20zk0a2tc8.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcktyvt3wj20zk0qbmzm.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcktx63crj20qn0hsq4r.jpg&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcktwkzutj20qn0hs761.jpg&quot; /&gt;&lt;/p&gt;
 </description>
     </item>
@@ -491,10 +696,8 @@ PM也是，明明知道我要出去，还给我留了个需求。&lt;/p&gt;
       <pubDate>30 May 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/tech/2015/05/30/爬蓝调口琴网</guid>
-      <description>&lt;h1 id=&quot;section&quot;&gt;爬蓝调口琴网&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;论文写好了就没事干了，本来想去旅游，完蛋流量没了，所以静下心来学学口琴，网上有个蓝调口琴网挺好哒，想写个应用装手机里，先讲讲怎么爬吧。&lt;/p&gt;
-&lt;/blockquote&gt;
+      <description>&lt;p&gt;#爬蓝调口琴网&lt;br /&gt;
+&amp;gt;论文写好了就没事干了，本来想去旅游，完蛋流量没了，所以静下心来学学口琴，网上有个蓝调口琴网挺好哒，想写个应用装手机里，先讲讲怎么爬吧。&lt;/p&gt;
 
 &lt;p&gt;主要还是用了request模块，然而由于网站用的是GBK编码，还需要iconv-lite、bufferhelper。&lt;/p&gt;
 
@@ -539,52 +742,50 @@ env(html,function(err,window){
       <pubDate>09 May 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/fe/2015/05/09/ionic官方Todo guide</guid>
-      <description>&lt;h1 id=&quot;ionictodo-guide&quot;&gt;ionic官方Todo Guide&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;代码在&lt;br /&gt;https://github.com/gongbaodd/myExperinments/tree/ionic_todo
+      <description>&lt;p&gt;#ionic官方Todo Guide&lt;br /&gt;
+&amp;gt;代码在&lt;br /&gt;https://github.com/gongbaodd/myExperinments/tree/ionic_todo&lt;br /&gt;
 一直想写一个app，但是懒得设计，看到ionic官方有个guide而且没有中文版，所以写一个。&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;hr /&gt;
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;在head中添加对应的css和js
-     &lt;meta charset=&quot;utf-8&quot; /&gt;
-     &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width&quot; /&gt;
-     &lt;title&gt;&lt;/title&gt;
-     &lt;link href=&quot;lib/ionic/css/ionic.css&quot; rel=&quot;stylesheet&quot; /&gt;
-     &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot; /&gt;
-     &lt;script src=&quot;lib/ionic/js/ionic.bundle.js&quot;&gt;&lt;/script&gt;
-     &lt;script src=&quot;cordova.js&quot;&gt;&lt;/script&gt;
+    &lt;p&gt;在head中添加对应的css和js&lt;br /&gt;
+     &lt;meta charset=&quot;utf-8&quot; /&gt;&lt;br /&gt;
+     &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width&quot; /&gt;&lt;br /&gt;
+     &lt;title&gt;&lt;/title&gt;&lt;br /&gt;
+     &lt;link href=&quot;lib/ionic/css/ionic.css&quot; rel=&quot;stylesheet&quot; /&gt;&lt;br /&gt;
+     &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot; /&gt;&lt;br /&gt;
+     &lt;script src=&quot;lib/ionic/js/ionic.bundle.js&quot;&gt;&lt;/script&gt;&lt;br /&gt;
+     &lt;script src=&quot;cordova.js&quot;&gt;&lt;/script&gt;&lt;br /&gt;
      &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;body添加controller
+    &lt;p&gt;body添加controller&lt;br /&gt;
      &amp;lt;body ng-app=&quot;todo&quot; ng-controller=&quot;TodoCtrl&quot;&amp;gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Todo的界面，分别是左边栏（负责分配todo的类型——projects）和主界面（负责分配每一个todo项——tasks）
+    &lt;p&gt;Todo的界面，分别是左边栏（负责分配todo的类型——projects）和主界面（负责分配每一个todo项——tasks）&lt;br /&gt;
      &lt;ion-side-menus&gt;
          &lt;ion-side-menu-content&gt;...&lt;/ion-side-menu-content&gt;
          &lt;ion-side-menu side=&quot;left&quot;&gt;...&lt;/ion-side-menu&gt;
      &lt;/ion-side-menus&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Todo的行为
-     angular.module(‘todo’,[‘ionic’])
-     .factory(‘Projects’,function() {
-         …
-     }）
-     .controller(‘TodoCtrl’,function($scope,$timeout,$ionicModal,Projects,$ionicSideMenuDelegate) {
-         …
+    &lt;p&gt;Todo的行为&lt;br /&gt;
+     angular.module(‘todo’,[‘ionic’])&lt;br /&gt;
+     .factory(‘Projects’,function() {&lt;br /&gt;
+         …&lt;br /&gt;
+     }）&lt;br /&gt;
+     .controller(‘TodoCtrl’,function($scope,$timeout,$ionicModal,Projects,$ionicSideMenuDelegate) {&lt;br /&gt;
+         …&lt;br /&gt;
      })&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;左边栏结构
+    &lt;p&gt;左边栏结构&lt;br /&gt;
      &lt;ion-header-bar class=&quot;bar-dark&quot;&gt;
          &amp;lt;h1 class=&quot;title&quot;&amp;gt;Projects&amp;lt;/h1&amp;gt;
          &lt;button class=&quot;button button-icon ion-plus&quot; ng-click=&quot;newProject()&quot;&gt;&lt;/button&gt;
-     &lt;/ion-header-bar&gt;
+     &lt;/ion-header-bar&gt;&lt;br /&gt;
      &lt;ion-content scroll=&quot;false&quot;&gt;
          &lt;ion-list&gt;
              &lt;ion-item ng-repeat=&quot;project in projects&quot; ng-click=&quot;selectProject(project,$index)&quot; ng-class=&quot;{active:activeProject == project}&quot;&gt;&lt;/ion-item&gt;&lt;/ion-list&gt;&lt;/ion-content&gt;&lt;/p&gt;
@@ -595,43 +796,43 @@ env(html,function(err,window){
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;左边栏行为
-     .factory(‘Projects’,function() {
-     return {
-         all:function(){
-             var projectString = window.localStorage[‘projects’];
-             if(projectString){
-                 return angular.fromJson(projectString);
-             }
-             return [];
-         },
-         save:function(projects){
-             window.localStorage[‘projects’] = angular.toJson(projects);
-         },
-         newProject:function(projectTitle){
-             return {
-                 title:projectTitle,
-                 tasks:[]
-             };
-         },
-         getLastActiveIndex:function(){
-             return parseInt(window.localStorage[‘lastActiveProject’])||0;
-         },
-         setLastActiveIndex:function(index){
-             window.localStorage[‘lastActiveProject’] = index;
-         }
-     }
+    &lt;p&gt;左边栏行为&lt;br /&gt;
+     .factory(‘Projects’,function() {&lt;br /&gt;
+     return {&lt;br /&gt;
+         all:function(){&lt;br /&gt;
+             var projectString = window.localStorage[‘projects’];&lt;br /&gt;
+             if(projectString){&lt;br /&gt;
+                 return angular.fromJson(projectString);&lt;br /&gt;
+             }&lt;br /&gt;
+             return [];&lt;br /&gt;
+         },&lt;br /&gt;
+         save:function(projects){&lt;br /&gt;
+             window.localStorage[‘projects’] = angular.toJson(projects);&lt;br /&gt;
+         },&lt;br /&gt;
+         newProject:function(projectTitle){&lt;br /&gt;
+             return {&lt;br /&gt;
+                 title:projectTitle,&lt;br /&gt;
+                 tasks:[]&lt;br /&gt;
+             };&lt;br /&gt;
+         },&lt;br /&gt;
+         getLastActiveIndex:function(){&lt;br /&gt;
+             return parseInt(window.localStorage[‘lastActiveProject’])||0;&lt;br /&gt;
+         },&lt;br /&gt;
+         setLastActiveIndex:function(index){&lt;br /&gt;
+             window.localStorage[‘lastActiveProject’] = index;&lt;br /&gt;
+         }&lt;br /&gt;
+     }&lt;br /&gt;
      })&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;主界面结构
+    &lt;p&gt;主界面结构&lt;br /&gt;
      &lt;ion-header-bar class=&quot;bar-dark&quot;&gt;
          &amp;lt;h1 class=&quot;title&quot;&amp;gt;Todo&amp;lt;/h1&amp;gt;
          &lt;!--                New Task button--&gt;
          &lt;button class=&quot;button button-icon&quot; ng-click=&quot;newTask()&quot;&gt;
              &lt;i class=&quot;icon ion-compose&quot;&gt;&lt;/i&gt;
          &lt;/button&gt;
-     &lt;/ion-header-bar&gt;
+     &lt;/ion-header-bar&gt;&lt;br /&gt;
      &lt;ion-content scroll=&quot;false&quot;&gt;
      &lt;!--                our list and list items--&gt;
          &lt;ion-list&gt;
@@ -643,7 +844,7 @@ env(html,function(err,window){
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;主界面行为
+    &lt;p&gt;主界面行为&lt;br /&gt;
      .controller(‘TodoCtrl’,function($scope,$timeout,$ionicModal,Projects,$ionicSideMenuDelegate) {&lt;/p&gt;
 
     &lt;pre&gt;&lt;code&gt; var createProject = function(projectTitle){
@@ -717,7 +918,7 @@ env(html,function(err,window){
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;新建项目的模态对话框
+    &lt;p&gt;新建项目的模态对话框&lt;br /&gt;
      &lt;script id=&quot;new-task&quot; class=&quot;html&quot; type=&quot;text/ng-template&quot;&gt;
          &amp;lt;div class=&quot;modal&quot;&amp;gt;
          &lt;!--        Modal header bar--&gt;
@@ -742,124 +943,6 @@ env(html,function(err,window){
      &lt;/script&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Nativescript试探报告</title>
-      <link>place_your_blog_url_here/fe/2015/05/04/nativescript%E8%AF%95%E6%8E%A2%E6%8A%A5%E5%91%8A.html</link>
-      <pubDate>04 May 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/fe/2015/05/04/nativescript试探报告</guid>
-      <description>&lt;h1 id=&quot;nativescript&quot;&gt;nativescript试探报告&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;上一周得流感，再加上react-native只支持iOS，头脑一热，除了研究了ionic，还看了nativescript。感觉吧，nativescript比起QML之类的语言，最大的优点就是不必再去学习一门新的语言，因为它不是js的超集，而是完全的js，并且支持双向绑定，完全迎合现在的web开发。&lt;br /&gt;
-用完nativescript有这么几个感受：&lt;br /&gt;
-1. 用telerik platform ide感觉还是不错的，在安卓安装app可以同步更新软件，可惜这个ide只能使用30day。
-2. 官方给的文档经过证实已经部分过期。。。我只能拿现成的project当例子。
-3. css使能够用的，但是和react-native一样，都是真正的css的子集。
-4. 安卓上的性能不比hybrid好，等更新吧～
-5. 不用像QML一样，的确是mvvm，顶多需要学学安卓里面的xml就好了。
-6. cli需要&amp;lt;font color=red&amp;gt;翻墙！！！&amp;lt;/font&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;安装nativescript,安卓需要r17&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; npm install -g nativescript
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;创建工程&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; tns create app
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;添加安卓支持&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; tns platform add android
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;编译及调试&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; tns build android
- tns run android
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ionic的安装和配置</title>
-      <link>place_your_blog_url_here/fe/2015/05/04/ionic%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE.html</link>
-      <pubDate>04 May 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/fe/2015/05/04/ionic的安装和配置</guid>
-      <description>&lt;h1 id=&quot;ionic&quot;&gt;ionic的安装配置的坑&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;前一阵子react-native很火，甚是嫉妒啊，目前只支持iOS。。。T_T&lt;br /&gt;
-不必要一直追求native，（虽然我还是试验了nativescript），在安卓上面还是可以尝试写写hybrid应用。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;安装ionic，安装android-sdk-r22（可以用hx.gy:1080代理）&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; npm install -g cordova ionic
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;创建一个空/标签/侧边栏工程&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; ionic start myApp blank/tabs/sidemenu
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;运行&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; cd myApp
- chmod 777 * -R
- ionic platform add android
- ionic build android
- ionic run android
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;用浏览器测试&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; ionic serve
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>环渤海之行后感</title>
-      <link>place_your_blog_url_here/life/2015/04/12/%E7%8E%AF%E6%B8%A4%E6%B5%B7%E4%B9%8B%E8%A1%8C%E5%90%8E%E6%84%9F.html</link>
-      <pubDate>12 Apr 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/life/2015/04/12/环渤海之行后感</guid>
-      <description>&lt;h1 id=&quot;section&quot;&gt;环渤海故事之行&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;恕我没有坚持写这些博客，今天是。。。额。。。5月3日。。。好吧，把时间退回去，回忆一下这一周的旅行。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;第一天&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;3月30日&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;起的一个大早前往大连东港，目的就是赶上早上九点的棒棰岛号游轮，话说，作为一个大连人，这还是头一次坐游轮，虽然海路已经不是最方便的现代交通方式了，窃以为一生还是有一次航海的经历也是极好哒～&lt;/p&gt;
-
-&lt;p&gt;大连东港是个好多大连人都陌生的地方，没错，这个曾经让世界以为要成为国际港口的大连港因为各种新兴交通方式已经冷落太久了，三月份的海风还是令人瑟瑟发抖，再加上这些俄式建筑更是给这个地方添加了不少冷清。&lt;/p&gt;
-
 </description>
     </item>
     
