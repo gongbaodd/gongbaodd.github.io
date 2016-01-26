@@ -6,8 +6,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 26 Jan 2016 17:07:43 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Jan 2016 17:07:43 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Jan 2016 18:09:44 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2016 18:09:44 +0800</lastBuildDate>
 
     
     <item>
@@ -127,6 +127,42 @@ chrome.tabs.onUpdated.addListener(checkForValidUrl);
     </item>
     
     <item>
+      <title>Fekit支持es6和riot的tag</title>
+      <link>place_your_blog_url_here/fe/2016/01/25/Fekit%E6%94%AF%E6%8C%81es6%E5%92%8Criot%E7%9A%84tag.html</link>
+      <pubDate>25 Jan 2016</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/fe/2016/01/25/Fekit支持es6和riot的tag</guid>
+      <description>&lt;h1 id=&quot;fekites6riottag&quot;&gt;Fekit支持es6和riot的tag&lt;/h1&gt;
+
+&lt;p&gt;在如下目录里面添加tag.js和es6.js&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;/usr/local/lib/node_modules/fekit/lib/compiler/plugins
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// tag.js
+(function() {
+    var compiler = require(&quot;riot-compiler&quot;);
+
+    exports.contentType = &quot;javascript&quot;;
+
+    exports.process = function(txt, path, module, cb) {
+      try {
+        var prefix = &#39;var riot = require(&quot;riot&quot;);\n&#39;;
+        return cb(null, prefix + compiler.compile(txt));
+      } catch (err) {
+        return cb(err);
+      }
+    };
+})();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// es6.js
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Jshint配置笔记</title>
       <link>place_your_blog_url_here/fe/2016/01/22/jshint%E9%85%8D%E7%BD%AE%E7%AC%94%E8%AE%B0.html</link>
       <pubDate>22 Jan 2016</pubDate>
@@ -239,7 +275,193 @@ module.exports = {
       <guid>place_your_blog_url_here/fe/2015/12/25/esprima静态分析js代码</guid>
       <description>&lt;h1 id=&quot;esprimajs&quot;&gt;esprima分析js代码&lt;/h1&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;var fs = require(&quot;fs&quot;),
+    esprima = require(&quot;esprima&quot;),
+    estraverse = require(&quot;estraverse&quot;),
+    escodegen = require(&quot;escodegen&quot;),
+    escope = require(&quot;escope&quot;);
+
+var funcStats = {},
+    API = [&quot;tag&quot;,&quot;tag2&quot;,&quot;mount&quot;,&quot;update&quot;,&quot;Tag&quot;,&quot;observable&quot;,&quot;Router&quot;];
+
+function addStats( name ) {
+    if (!funcStats[name]) {
+        funcStats[name] = { calls: [], declarations: [], func:&quot;&quot;, calling: []}
+    }
+};
+
+var a = {};
+
+function analyze(code) {
+    var ast = esprima.parse(code);
+    // var scopeMan = escope.analyze(ast);
+
+    estraverse.traverse( ast, {
+        enter: function (node, parent) {
+            if (node.type === &#39;FunctionDeclaration&#39; ) {
+                var name = node.id.name;
+                addStats(name);
+                funcStats[name].declarations.push(node);
+                funcStats[name].func = escodegen.generate(node);
+                recurBody(node);
+
+                function recurBody(node) {
+                        if (node.body) {
+                            node.body.body &amp;amp;&amp;amp; node.body.body.forEach(function(n) {
+                                recurBody(n);
+                            });
+                            if (node.type === &quot;WhileStatement&quot;) {
+                                node.test &amp;amp;&amp;amp; recurBody(node.test);
+                            }
+                        } else {
+                            switch (node.type) {
+                                case &quot;CallExpression&quot;:
+                                    var _name = &quot;&quot;,
+                                        calling = funcStats[name].calling,
+                                        count = 0;
+                                    if (node.callee.type === &quot;Identifier&quot;) {
+                                        _name = node.callee.name;
+                                    } else if(node.callee.type === &quot;MemberExpression&quot;){
+                                        _name = node.callee.property.name;
+                                    }
+
+                                    calling.forEach(function(call) {
+                                        if (call === _name) {
+                                            count++;
+                                        }
+                                    });
+
+                                    if (count === 0) {
+                                        calling.push(_name);
+                                    }
+
+                                    node.arguments.forEach(function(n) {
+                                        recurBody(n);
+                                    });
+                                break;
+                                case &quot;IfStatement&quot;:
+                                    node.test &amp;amp;&amp;amp; recurBody(node.test);
+                                    node.consequent &amp;amp;&amp;amp; recurBody(node.consequent);
+                                    node.alternate &amp;amp;&amp;amp; recurBody(node.alternate);
+                                break;
+                                case &quot;LogicalExpression&quot;:
+                                    node.left &amp;amp;&amp;amp; recurBody(node.left);
+                                    node.right &amp;amp;&amp;amp; recurBody(node.right);
+                                break;
+                                case &quot;UnaryExpression&quot;:
+                                    node.argument &amp;amp;&amp;amp; recurBody(node.argument);
+                                break;
+                                case &quot;AssignmentExpression&quot;:
+                                    node.right &amp;amp;&amp;amp; recurBody(node.right);
+                                break;
+                                case &quot;VariableDeclaration&quot;:
+                                    node.declarations.forEach(function(n) {
+                                        recurBody(n);
+                                    });
+                                break;
+                                case &quot;VariableDeclarator&quot;:
+                                    node.init &amp;amp;&amp;amp; recurBody(node.init);
+                                break;
+                                case &quot;ExpressionStatement&quot;:
+                                    node.expression &amp;amp;&amp;amp; recurBody(node.expression);
+                                break;
+                                case &quot;ReturnStatement&quot;:
+                                    node.argument &amp;amp;&amp;amp; recurBody(node.argument);
+                                break;
+                            }
+                        }
+                };
+            } else if (node.type === &#39;CallExpression&#39; &amp;amp;&amp;amp; node.callee.type === &#39;Identifier&#39;) {
+                addStats(node.callee.name);
+                funcStats[node.callee.name].calls.push(parent);
+            } else if (node.type === &#39;CallExpression&#39; &amp;amp;&amp;amp; node.callee.type === &#39;MemberExpression&#39;) {
+                addStats(node.callee.property.name);
+                funcStats[node.callee.property.name].calls.push(parent);
+            }
+        }
+    });
+
+    var data = {},
+        statistic = {
+            count: 0,
+            nodes: [],
+            links: []
+        },
+        list = [];
+
+    Object.keys(funcStats).forEach(function(key) {
+        statistic.count++;
+        data[key] = {
+           calls: funcStats[key].calls.length,
+           declarations: funcStats[key].declarations.length,
+           func: funcStats[key].func,
+           calling: [],
+           weight: 0,
+           category: 0//0=&amp;gt;normal 1=&amp;gt;API
+       };
+
+       API.forEach(function(a) {
+           if (a === key) {
+               data[key].category = 1;
+           }
+       });
+
+       funcStats[key].calling.forEach(function(c) {
+           funcStats[c] &amp;amp;&amp;amp; data[key].calling.push(c);
+       });
+
+       data[key].weight = data[key].calling.length;
+
+       statistic.nodes.push({
+           category: data[key].category,
+           value: data[key].weight,
+           name: key
+       });
+    });
+
+    statistic.nodes.forEach(function(node,source) {
+        data[node.name].calling.forEach(function(call) {
+            statistic.nodes.forEach(function(n,t) {
+                if (n.name === call) {
+                    statistic.links.push({
+                        source: source,
+                        target: t+1,
+                        weight: 1
+                    });
+                }
+            });
+        });
+    });
+    Object.keys(funcStats).forEach(function(key) {
+        var d = data[key],
+            w = d.weight;
+        d.name = key;
+        if (list.length) {
+            var inserted = 0;
+            list.forEach(function(item,index) {
+                if (inserted) return;
+                if (item.weight &amp;lt; w) {
+                    list = list.slice(0,index).concat([d],list.slice(index));
+                    inserted ++;
+                }
+            });
+        } else {
+            list.push(d);
+        }
+    });
+    fs.writeFileSync(&#39;ast.json&#39;,JSON.stringify(list));
+};
+
+if (process.argv.length &amp;lt; 3) {
+    throw new Error(&quot;Usage: index.js file.js&quot;);
+}
+
+var filename = process.argv[2];
+console.log(&#39;[READ]\t&#39; + filename );
+var code = fs.readFileSync(filename);
+analyze(code);
+console.log(&quot;[DONE]&quot;)
+
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -700,52 +922,6 @@ PM也是，明明知道我要出去，还给我留了个需求。&lt;/p&gt;
 &lt;img src=&quot;http://ww2.sinaimg.cn/mw690/89d0a2e1gw1evcktyvt3wj20zk0qbmzm.jpg&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcktx63crj20qn0hsq4r.jpg&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;http://ww4.sinaimg.cn/mw690/89d0a2e1gw1evcktwkzutj20qn0hs761.jpg&quot; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>爬蓝调口琴网</title>
-      <link>place_your_blog_url_here/tech/2015/05/30/%E7%88%AC%E8%93%9D%E8%B0%83%E5%8F%A3%E7%90%B4%E7%BD%91.html</link>
-      <pubDate>30 May 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/tech/2015/05/30/爬蓝调口琴网</guid>
-      <description>&lt;p&gt;#爬蓝调口琴网&lt;br /&gt;
-&amp;gt;论文写好了就没事干了，本来想去旅游，完蛋流量没了，所以静下心来学学口琴，网上有个蓝调口琴网挺好哒，想写个应用装手机里，先讲讲怎么爬吧。&lt;/p&gt;
-
-&lt;p&gt;主要还是用了request模块，然而由于网站用的是GBK编码，还需要iconv-lite、bufferhelper。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function get(url,callone,calltwo){
-    var req = request(url, {timeout: 10000, pool: false});
-    req.on(&#39;error&#39;, function(err) {
-        console.log(err);
-    });
-    req.on(&#39;response&#39;, function(res) {
-        var bufferHelper = new BufferHelper();
-        res.on(&#39;data&#39;, function (chunk) {
-            bufferHelper.concat(chunk);
-        });
-        res.on(&#39;end&#39;,function(){
-            var result = iconv.decode(bufferHelper.toBuffer(),&#39;GBK&#39;);
-            callone(result,calltwo);
-        });
-    });
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;爬到了网页，用jquery来读里面的东西，用node-jquery就OK了&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var env = require(&#39;jsdom&#39;).env;
-env(html,function(err,window){
-    var $ = require(&#39;jquery&#39;)(window);
-})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这个脚本用了特愚蠢的字符串拼json的方法。。。所以趁脚本结束前还得把json封闭了。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;process.on(&#39;exit&#39;,function(){
-   fs.appendFileSync(FILE,&#39;/b]}&#39;);
-})
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
