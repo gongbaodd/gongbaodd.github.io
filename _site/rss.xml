@@ -6,9 +6,19 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Mon, 28 Sep 2015 10:44:25 +0800</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2015 10:44:25 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Jan 2016 15:14:11 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2016 15:14:11 +0800</lastBuildDate>
 
+    
+    <item>
+      <title>使用karma做单元测试</title>
+      <link>place_your_blog_url_here/2016/01/26/%E4%BD%BF%E7%94%A8karma%E5%81%9A%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.html</link>
+      <pubDate>26 Jan 2016</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/2016/01/26/使用karma做单元测试</guid>
+      <description>
+</description>
+    </item>
     
     <item>
       <title>一路向西</title>
@@ -84,7 +94,7 @@
     
     <item>
       <title>写写fekit extension</title>
-      <link>place_your_blog_url_here/tech%20fe/2015/08/25/%E5%86%99%E5%86%99fekit%20extension.html</link>
+      <link>place_your_blog_url_here/tech%20fe/2015/08/25/%E5%86%99%E5%86%99fekit-extension.html</link>
       <pubDate>25 Aug 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/tech%20fe/2015/08/25/写写fekit extension</guid>
@@ -525,7 +535,7 @@ env(html,function(err,window){
     
     <item>
       <title>Ionic官方todo guide</title>
-      <link>place_your_blog_url_here/fe/2015/05/09/ionic%E5%AE%98%E6%96%B9Todo%20guide.html</link>
+      <link>place_your_blog_url_here/fe/2015/05/09/ionic%E5%AE%98%E6%96%B9Todo-guide.html</link>
       <pubDate>09 May 2015</pubDate>
       <author>place_your_name_here</author>
       <guid>place_your_blog_url_here/fe/2015/05/09/ionic官方Todo guide</guid>
@@ -849,42 +859,6 @@ env(html,function(err,window){
 &lt;p&gt;起的一个大早前往大连东港，目的就是赶上早上九点的棒棰岛号游轮，话说，作为一个大连人，这还是头一次坐游轮，虽然海路已经不是最方便的现代交通方式了，窃以为一生还是有一次航海的经历也是极好哒～&lt;/p&gt;
 
 &lt;p&gt;大连东港是个好多大连人都陌生的地方，没错，这个曾经让世界以为要成为国际港口的大连港因为各种新兴交通方式已经冷落太久了，三月份的海风还是令人瑟瑟发抖，再加上这些俄式建筑更是给这个地方添加了不少冷清。&lt;/p&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>环渤海之行</title>
-      <link>place_your_blog_url_here/life/2015/03/28/%E7%8E%AF%E6%B8%A4%E6%B5%B7%E4%B9%8B%E8%A1%8C.html</link>
-      <pubDate>28 Mar 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/life/2015/03/28/环渤海之行</guid>
-      <description>&lt;h1 id=&quot;section&quot;&gt;环渤海之行&lt;/h1&gt;
-
-&lt;p&gt;棒棰岛 9:00～15:30 烟台                     ===================3.30 15:30 180元
-31路 职工街  50min
-烟台到蓬莱的长途汽车 烟台北马路汽车站蓬莱05:30-18:20  18元 1:30 ==3.30 18:00 18元
-蓬莱小石岛青年公寓                          =========================     40元 
-蓬莱阁                                     =====================3.31 7:00 70元
-八仙过海，三仙山                            ==========================     60元
-蓬莱到青岛 5:20~16:00                       =========================      82元
-青岛798国际青年旅社海景店X2                    ===================3.31 20:00
-八大关、栈桥                                  ====================4.1 7:00
-休息一晚                                    ======================
-青岛-泰安 可以坐高铁       200元 =================================4.2 12:00 
-泰山 k37路                      ==================================4.2 14:00
-红门国际青年旅舍&lt;br /&gt;
-泰山                          ====================================4.2 15:00 60元
-泰安-曲阜               ===========================================4.3 10:11～11:34 
-三孔                   ============================================13:00
-曲阜-济南 可以坐高铁         29元 =================================4.3 21：57～22:35
-济南站101                 &lt;br /&gt;
-7天连锁酒店(济南趵突泉店)x2    93元 ==================================4.3 
-芙蓉街 4.3
-趵突泉、黑虎泉 4.4
-大明湖 4.5                  =========================================4.5 12:00
-济南-天津 149 ======================================================= 11:45
-天津，有时间查查http://dwz.cn/F14LW&lt;/p&gt;
 
 </description>
     </item>
