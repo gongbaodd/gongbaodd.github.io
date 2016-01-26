@@ -6,8 +6,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 26 Jan 2016 16:53:55 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Jan 2016 16:53:55 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Jan 2016 17:07:43 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2016 17:07:43 +0800</lastBuildDate>
 
     
     <item>
@@ -227,6 +227,19 @@ module.exports = {
     }
 }
 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Esprima静态分析js代码</title>
+      <link>place_your_blog_url_here/fe/2015/12/25/esprima%E9%9D%99%E6%80%81%E5%88%86%E6%9E%90js%E4%BB%A3%E7%A0%81.html</link>
+      <pubDate>25 Dec 2015</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/fe/2015/12/25/esprima静态分析js代码</guid>
+      <description>&lt;h1 id=&quot;esprimajs&quot;&gt;esprima分析js代码&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
@@ -733,216 +746,6 @@ env(html,function(err,window){
    fs.appendFileSync(FILE,&#39;/b]}&#39;);
 })
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ionic官方todo guide</title>
-      <link>place_your_blog_url_here/fe/2015/05/09/ionic%E5%AE%98%E6%96%B9Todo-guide.html</link>
-      <pubDate>09 May 2015</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/fe/2015/05/09/ionic官方Todo guide</guid>
-      <description>&lt;p&gt;#ionic官方Todo Guide&lt;br /&gt;
-&amp;gt;代码在&lt;br /&gt;https://github.com/gongbaodd/myExperinments/tree/ionic_todo&lt;br /&gt;
-一直想写一个app，但是懒得设计，看到ionic官方有个guide而且没有中文版，所以写一个。&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;在head中添加对应的css和js&lt;br /&gt;
-     &lt;meta charset=&quot;utf-8&quot; /&gt;&lt;br /&gt;
-     &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width&quot; /&gt;&lt;br /&gt;
-     &lt;title&gt;&lt;/title&gt;&lt;br /&gt;
-     &lt;link href=&quot;lib/ionic/css/ionic.css&quot; rel=&quot;stylesheet&quot; /&gt;&lt;br /&gt;
-     &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot; /&gt;&lt;br /&gt;
-     &lt;script src=&quot;lib/ionic/js/ionic.bundle.js&quot;&gt;&lt;/script&gt;&lt;br /&gt;
-     &lt;script src=&quot;cordova.js&quot;&gt;&lt;/script&gt;&lt;br /&gt;
-     &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;body添加controller&lt;br /&gt;
-     &amp;lt;body ng-app=&quot;todo&quot; ng-controller=&quot;TodoCtrl&quot;&amp;gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Todo的界面，分别是左边栏（负责分配todo的类型——projects）和主界面（负责分配每一个todo项——tasks）&lt;br /&gt;
-     &lt;ion-side-menus&gt;
-         &lt;ion-side-menu-content&gt;...&lt;/ion-side-menu-content&gt;
-         &lt;ion-side-menu side=&quot;left&quot;&gt;...&lt;/ion-side-menu&gt;
-     &lt;/ion-side-menus&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Todo的行为&lt;br /&gt;
-     angular.module(‘todo’,[‘ionic’])&lt;br /&gt;
-     .factory(‘Projects’,function() {&lt;br /&gt;
-         …&lt;br /&gt;
-     }）&lt;br /&gt;
-     .controller(‘TodoCtrl’,function($scope,$timeout,$ionicModal,Projects,$ionicSideMenuDelegate) {&lt;br /&gt;
-         …&lt;br /&gt;
-     })&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;左边栏结构&lt;br /&gt;
-     &lt;ion-header-bar class=&quot;bar-dark&quot;&gt;
-         &amp;lt;h1 class=&quot;title&quot;&amp;gt;Projects&amp;lt;/h1&amp;gt;
-         &lt;button class=&quot;button button-icon ion-plus&quot; ng-click=&quot;newProject()&quot;&gt;&lt;/button&gt;
-     &lt;/ion-header-bar&gt;&lt;br /&gt;
-     &lt;ion-content scroll=&quot;false&quot;&gt;
-         &lt;ion-list&gt;
-             &lt;ion-item ng-repeat=&quot;project in projects&quot; ng-click=&quot;selectProject(project,$index)&quot; ng-class=&quot;{active:activeProject == project}&quot;&gt;&lt;/ion-item&gt;&lt;/ion-list&gt;&lt;/ion-content&gt;&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;         &amp;lt;/ion-item&amp;gt;
-     &amp;lt;/ion-list&amp;gt;
- &amp;lt;/ion-content&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;左边栏行为&lt;br /&gt;
-     .factory(‘Projects’,function() {&lt;br /&gt;
-     return {&lt;br /&gt;
-         all:function(){&lt;br /&gt;
-             var projectString = window.localStorage[‘projects’];&lt;br /&gt;
-             if(projectString){&lt;br /&gt;
-                 return angular.fromJson(projectString);&lt;br /&gt;
-             }&lt;br /&gt;
-             return [];&lt;br /&gt;
-         },&lt;br /&gt;
-         save:function(projects){&lt;br /&gt;
-             window.localStorage[‘projects’] = angular.toJson(projects);&lt;br /&gt;
-         },&lt;br /&gt;
-         newProject:function(projectTitle){&lt;br /&gt;
-             return {&lt;br /&gt;
-                 title:projectTitle,&lt;br /&gt;
-                 tasks:[]&lt;br /&gt;
-             };&lt;br /&gt;
-         },&lt;br /&gt;
-         getLastActiveIndex:function(){&lt;br /&gt;
-             return parseInt(window.localStorage[‘lastActiveProject’])||0;&lt;br /&gt;
-         },&lt;br /&gt;
-         setLastActiveIndex:function(index){&lt;br /&gt;
-             window.localStorage[‘lastActiveProject’] = index;&lt;br /&gt;
-         }&lt;br /&gt;
-     }&lt;br /&gt;
-     })&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;主界面结构&lt;br /&gt;
-     &lt;ion-header-bar class=&quot;bar-dark&quot;&gt;
-         &amp;lt;h1 class=&quot;title&quot;&amp;gt;Todo&amp;lt;/h1&amp;gt;
-         &lt;!--                New Task button--&gt;
-         &lt;button class=&quot;button button-icon&quot; ng-click=&quot;newTask()&quot;&gt;
-             &lt;i class=&quot;icon ion-compose&quot;&gt;&lt;/i&gt;
-         &lt;/button&gt;
-     &lt;/ion-header-bar&gt;&lt;br /&gt;
-     &lt;ion-content scroll=&quot;false&quot;&gt;
-     &lt;!--                our list and list items--&gt;
-         &lt;ion-list&gt;
-            &lt;ion-item ng-repeat=&quot;task in activeProject.tasks&quot;&gt;&lt;/ion-item&gt;&lt;/ion-list&gt;&lt;/ion-content&gt;&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt;        &amp;lt;/ion-item&amp;gt;
-     &amp;lt;/ion-list&amp;gt;
- &amp;lt;/ion-content&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;主界面行为&lt;br /&gt;
-     .controller(‘TodoCtrl’,function($scope,$timeout,$ionicModal,Projects,$ionicSideMenuDelegate) {&lt;/p&gt;
-
-    &lt;pre&gt;&lt;code&gt; var createProject = function(projectTitle){
-     var newProject = Projects.newProject(projectTitle);
-     $scope.projects.push(newProject);
-     Projects.save($scope.projects);
-     $scope.selectProject(newProject,$scope.projects.length-1);
- }
-
- $scope.projects = Projects.all();
-
- $scope.activeProject = $scope.projects[Projects.getLastActiveIndex()];
-
- $scope.newProject = function() {
-     var projectTitle = prompt(&quot;Project name&quot;);
-     if(projectTitle){
-         createProject(projectTitle);
-     }
- };
-
- $scope.selectProject = function(project,index){
-     $scope.activeProject = project;
-     Projects.setLastActiveIndex(index);
-     $ionicSideMenuDelegate.toggleLeft(false);
- };
-
- $ionicModal.fromTemplateUrl(&#39;new-task.html&#39;,function(modal) {
-     $scope.taskModal = modal;
- },{
-     scope:$scope,
-     animation:&#39;slide-in-up&#39;
- });
-
- $scope.createTask = function(task) {
-
-     if(!$scope.activeProject||!task){
-         return ;
-     }
-     $scope.activeProject.tasks.push({
-         title:task.title
-     });
-     $scope.taskModal.hide();
-    
-     Projects.save($scope.projects);
-    
-     task.title = &quot;&quot;;
- };
-
- $scope.newTask = function() {
-     $scope.taskModal.show();
- };
- $scope.closeNewTask = function() {
-     $scope.taskModal.hide();
- };
- $scope.toggleProjects = function() {
-     $ioncSideMenuDelegate.toggleLeft();
- };
-
- $timeout(function() {
-     if($scope.projects.length == 0){
-         while(true){
-             var projectTitle = prompt(&#39;Your first project title&#39;);
-             if(projectTitle){
-                 createProject(projectTitle);
-                 break;
-             }
-         }
-     }
- })
- });
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;新建项目的模态对话框&lt;br /&gt;
-     &lt;script id=&quot;new-task&quot; class=&quot;html&quot; type=&quot;text/ng-template&quot;&gt;
-         &amp;lt;div class=&quot;modal&quot;&amp;gt;
-         &lt;!--        Modal header bar--&gt;
-             &lt;ion-header-bar class=&quot;bar-secndary&quot;&gt;
-                 &amp;lt;h1 class=&quot;title&quot;&amp;gt;New Task&amp;lt;/h1&amp;gt;
-                 &lt;button class=&quot;button button-clear button-positive&quot; ng-click=&quot;closeNewTask()&quot;&gt;Cancel&lt;/button&gt;
-             &lt;/ion-header-bar&gt;
-             &lt;!--        Modal content area--&gt;
-             &lt;ion-content&gt;
-                 &amp;lt;form action=&quot;&quot; ng-submit=&quot;createTask(task)&quot;&amp;gt;
-                     &amp;lt;div class=&quot;list&quot;&amp;gt;
-                     &lt;label for=&quot;&quot; class=&quot;item item-input&quot;&gt;
-                         &lt;input type=&quot;text&quot; placeholder=&quot;What do you need to do?&quot; ng-model=&quot;task.title&quot; /&gt;
-                     &lt;/label&gt;
-                     &amp;lt;/div&amp;gt;
-                     &amp;lt;div class=&quot;padding&quot;&amp;gt;
-                         &lt;button type=&quot;submit&quot; class=&quot;button button-block button-positive&quot;&gt;Create Task&lt;/button&gt;
-                     &amp;lt;/div&amp;gt;
-                 &amp;lt;/form&amp;gt;
-             &lt;/ion-content&gt;
-         &amp;lt;/div&amp;gt;
-     &lt;/script&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     
