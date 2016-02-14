@@ -6,8 +6,8 @@
     <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
     <description>place_your_blog_description_here</description>
     <language>place_your_blog_language_here</language>
-    <pubDate>Tue, 26 Jan 2016 18:09:44 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Jan 2016 18:09:44 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Jan 2016 18:09:53 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Jan 2016 18:09:53 +0800</lastBuildDate>
 
     
     <item>
@@ -157,7 +157,24 @@ chrome.tabs.onUpdated.addListener(checkForValidUrl);
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// es6.js
+(function() {
+  var babel;
 
+  babel = require(&#39;babel-core&#39;);
+
+  exports.contentType = &quot;javascript&quot;;
+
+  exports.process = function(txt, path, module, cb) {
+    try {
+      return cb(null, babel.transform(txt,{
+          presets: [&quot;es2015&quot;]
+      }).code);
+    } catch (err) {
+      return cb(err);
+    }
+  };
+
+}).call(this);
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
