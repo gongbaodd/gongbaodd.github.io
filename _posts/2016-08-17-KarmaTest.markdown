@@ -10,9 +10,10 @@ categories: fe tech
 
 指对软件中的最小可测试单元进行检查和验证。
 
-<center>![举个栗子](http://i0.hdslb.com/video/05/050dcbac6717c4e1c99c6f0c0a61c4b9.jpg)</center>
+<center><img alt="举个栗子" src="http://i0.hdslb.com/video/05/050dcbac6717c4e1c99c6f0c0a61c4b9.jpg"/></center>
 
 ***老代码***
+
 ```javascript
 // getProtocol.js
 getProtocol: function() {
@@ -28,6 +29,7 @@ getProtocol: function() {
  }
 ```
 ***新代码***
+
 ```javascript
 // getProtocol.js
 getProtocol: function() {
@@ -80,7 +82,7 @@ getProtocol: function() {
 
 可是宝宝要单测的代码都是私有方法啊！！！！！！
 
-<center>![哭](http://img2.imgtn.bdimg.com/it/u=2304895309,1301584123&fm=21&gp=0.jpg)</center>
+<center><img alt="哭" src="http://img2.imgtn.bdimg.com/it/u=2304895309,1301584123&fm=21&gp=0.jpg" /></center>
 
 ### case A
 
@@ -127,7 +129,7 @@ module.exports = function() { return _add(1,1); }
 所以当我们写代码的时候要留好单元测试的接口，不管你写的代码多牛逼，
 如果你的代码不可测试，那宝宝就认为你的代码是不可读的。
 
-<center>![白眼](http://www.people.com.cn/mediafile/pic/20150203/21/15475877261822907269.jpg)</center>
+<center><img alt="白眼" src="http://www.people.com.cn/mediafile/pic/20150203/21/15475877261822907269.jpg" /></center>
 
 ## 拿什么测试
 
@@ -404,4 +406,4 @@ var Dialog = ____MODULES["babf80335465996414cd682baf25de10"];
 写安卓的时候，AS会自动生成用例，所以想让Atom也支持这一功能，找了一下plugin，基本上没有。。。<br/>
 如果我写一个的话。。。我得估一下它的必要性。。。
 
-<center>![来打我呀](http://img2.imgtn.bdimg.com/it/u=3823151670,1751373648&fm=21&gp=0.jpg)</center>
+<center><img alt="来打我呀" src="http://img2.imgtn.bdimg.com/it/u=3823151670,1751373648&fm=21&gp=0.jpg" /></center>
