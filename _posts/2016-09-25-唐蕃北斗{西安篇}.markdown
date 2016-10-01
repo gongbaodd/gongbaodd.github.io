@@ -1,3 +1,8 @@
+---
+layout: post
+category: life
+---
+
 # 唐蕃北斗
 ## 西安
 
