@@ -1,3 +1,8 @@
+---
+layout: post
+categories: fe tech
+---
+
 # 高效你的组件化开发
 
 组件化开发算是老生常谈了，最早听说这个理论，我还在大学，写着那些被后端称为模板的东西。所以当时的开发就是写成一堆*p（php、jsp等）片段然后include到一起。
@@ -160,7 +165,7 @@ M.state = M.on('input', (c)=>{
 比如下图的输入框，输入框可以找到清除按钮并监控其点击事件来
 判断自己是否需要清空，按钮监控输入框的输入事件来判断自己是否可点。
 
-
+http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f93eix7uspj20rb0gsjtg.jpg
 ![又是输入框](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f93eabffgxj219x0he0yg.jpg)
 这样组件化的又一难题就解决了。
 
