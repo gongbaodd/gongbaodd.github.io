@@ -41,7 +41,7 @@ categories: fe tech
 
 ### Web 2.0 时代
 
-![Web2.0时代的组件化]()http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f93ea5eq1oj21d90rudmu.jpg
+![Web2.0时代的组件化](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f93ea5eq1oj21d90rudmu.jpg)
 
 Web 2.0 因为AJAX的出现，用户可以实现不刷新页面与服务端交互。为了不拖累服务端，CSS和JS都各自写在一起，作为静态资源存放在CDN上加速。
 这时的CSS，因为LESS、SASS等预编译工具的出现实现了工程文件的组件化。
