@@ -87,7 +87,7 @@ Web Components的出现，一定程度把HTML、CSS和JS又耦合在一起，
 
 组件的状态是有限的，状态转变是因为受到了某一个事件。
 
-![举个例子](http://c.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=9dcdca868526cffc697fb7b68c3166a6/241f95cad1c8a786e39ff6116009c93d70cf5073.jpg)
+![举个例子](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f93ewntvqsj20ci0a13yp.jpg)
 
 比如一个输入框，初始状态为无光标、值为空。
 
