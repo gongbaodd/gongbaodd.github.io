@@ -1,8 +1,0 @@
----
-layout: post
-category: life
----
-
-# 唐蕃北斗
-## 海西州
----
