@@ -9,6 +9,13 @@ category: life
 
 # 南京站
 
+<table>
+    <tr>
+        <td><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1jw1fbdwi1phydj21kw16otyd.jpg" alt="南京站"></td>
+        <td><img src="http://ww2.sinaimg.cn/mw690/89d0a2e1jw1fbdx2eevhzj21kw23ub29.jpg" alt="南京地铁单程票"></td>
+    </tr>
+</table>
+
 鉴于上次，我选择的交通方式是地铁，这次我还是决定放弃拍摄南京地铁单程票硬币的机会，选择看看南京城街道的景色。
 
 # 南京博物院
@@ -261,6 +268,26 @@ category: life
     </tr>
 </table>
 
+![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1fbdwefgf5yj21kw16oh7y.jpg)
+
+# 南京大排档
+
+![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1fbdwhxbi2gj21kw16oazh.jpg)
+![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1fbdwhsu5exj21kw16oqs8.jpg)
+![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1fbdwhnaa0aj21kw16o4qp.jpg)
+![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1fbdwh93adoj21kw23u1ky.jpg)
+![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1fbdwgruyi6j21kw16o4qp.jpg)
+![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1fbdwgo75dlj21kw16onoy.jpg)
+
+# 夫子庙国际青旅
+
+![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdwwr5tg1j21kw23uqv5.jpg)
+![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1fbdwgcdbotj21kw16o1kb.jpg)
+![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1fbdwgl8fywj21kw16ox4x.jpg)
+![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1fbdwdrj6d9j21kw16oavn.jpg)
+![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1fbdwdviu3tj21kw16oqtz.jpg)
+![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1fbdwdns6ruj21kw16o4qp.jpg)
+
 # 六朝博物馆
 
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdbe5rx22j211x1kwk8u.jpg)
@@ -451,6 +478,7 @@ category: life
 ![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1fbdbgx5fnqj21kw11x1kx.jpg)
 ![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1fbdbgu7jraj21kw11xkhy.jpg)
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdbgsvy0fj21kw11x1cf.jpg)
+![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdwcq8dorj21kw16onoq.jpg)
 
 # 玄武湖
 
