@@ -1,3 +1,8 @@
+---
+layout: post
+category: life
+---
+
 <center>
 <img src="http://p1.bqimg.com/567571/fa5cda963ca20242.jpg" alt="北京的雪是什么感觉">
 </center>
