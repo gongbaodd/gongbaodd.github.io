@@ -436,14 +436,14 @@ typescript对mixin支持很好，
 
 ### typescript的语法
 
-* 类型化声明
+#### 类型化声明
 
         const a:string = "这是一个不可变的字符串";
         let b:string; // b只能赋字符串
         let c:any; // c可以赋任一值
         let d: () => void; // d只能赋空参数且返回为空的函数
 
-* class语法糖
+#### class语法糖
 
         class a extends b {
             constructor() {
@@ -471,9 +471,9 @@ typescript对mixin支持很好，
             }
         }
 
-* async await 上面提过了
+#### async await 上面提过了
 
-* Object解构
+#### Object解构
 
         const obj = { a: 1 };
         const name = "name";
@@ -481,7 +481,7 @@ typescript对mixin支持很好，
         const { a:xxx } = obj; // xxx===1
         const data1 = {[xxx]: 'data1'}; // {1: 'data1'}
 
-* 接口
+#### 接口
 
         interface Ia { foo: () => void; }
         interface Ib { bar: () => string; }
@@ -495,3 +495,42 @@ typescript对mixin支持很好，
                 const { name } = param;// param 必须是只含有name的对象
             }
         }
+
+### 装饰器
+
+就是前面类似于@tag,@mixin的东西，
+这个有点复杂，只说在class前面的装饰器吧,
+是用来处理对象原型的函数，
+会在构造函数执行结束后执行
+
+### Qxf router的使用(其实是express4 router的使用)
+
+#### 三种获取请求参数的方式
+
+假设一个接口是 'api/default/index?a=1'
+
+        router.param('solution', (req, res, next, value) => {
+            console.log(value); => 'default'
+            next();
+        })
+
+        router.get('api/:solution/:page', (req, res, next) => {
+            console.log(req.params) => { solution: 'default', page: 'index' }
+            console.log(req.query.a) => 1
+
+            res.write('111');// 返回111但是请求并不结束
+            res.end();　// 返回结束
+        });
+
+        router.post('api/:solution/:page', (req, res, next) => {
+            console.log(req.params) => { solution: 'default', page: 'index' }
+            console.log(req.body.a) => 1
+            res.json({aaa: 1}); //　返回　{aaa: 1}
+        });
+
+#### 中间件
+
+        router.use(`api`, (req, res, next) => {
+            req.xxx = 'xxx';
+            next();
+        });
