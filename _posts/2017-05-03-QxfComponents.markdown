@@ -432,3 +432,66 @@ typescript对mixin支持很好，
 
 改用node渲染，Qxf使用的是handlebars，riot自身也支持后端渲染。
 
+## 介绍点儿常识
+
+### typescript的语法
+
+* 类型化声明
+
+        const a:string = "这是一个不可变的字符串";
+        let b:string; // b只能赋字符串
+        let c:any; // c可以赋任一值
+        let d: () => void; // d只能赋空参数且返回为空的函数
+
+* class语法糖
+
+        class a extends b {
+            constructor() {
+                super();//执行b的构造函数
+            }
+            public foo() {
+                super.foo();//执行b的原型上的foo函数
+                console.log(`
+                    我在ａ的prototype上
+                    this指向context
+                `);
+            }
+            public bar =　() => {
+                cosnole.log(`
+                    我在a的实例里,
+                    this指向a的实例
+                `)
+            }
+            public blaha = function() {
+                cosnole.log(`
+                    tslint默认禁止使用
+                    我在a的实例里,
+                    this指向context
+                `)
+            }
+        }
+
+* async await 上面提过了
+
+* Object解构
+
+        const obj = { a: 1 };
+        const name = "name";
+        const data = { ...obj, b: 2, name }; // { a: 1, b : 2, name: "name" }
+        const { a:xxx } = obj; // xxx===1
+        const data1 = {[xxx]: 'data1'}; // {1: 'data1'}
+
+* 接口
+
+        interface Ia { foo: () => void; }
+        interface Ib { bar: () => string; }
+        interface Ic { name: string; }
+        class D { doSomeThing() { .... } }
+        class E implements Ia,Ib,D {
+            doSomeThing: () => any;// 如果实现的是类内元素，可以只声明，不实现
+            foo = () => {...} // 如果实现的是接口内元素，必须按照类型定义
+            bar = () => {...} // 必须把要实现的所有接口内的元素声明
+            constructor(param: Ic) {
+                const { name } = param;// param 必须是只含有name的对象
+            }
+        }
