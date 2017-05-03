@@ -387,9 +387,7 @@ async虽然是个实验特性，
     <xxx aaa=1 ></xxx>
     // opts == {aaa：１}
 
-所以只要把一个obersable的对象传到opts里面就行了，
-但是，随之而来的就是因为事件名是字符串，重名了咋办？
-请看后面细述。
+所以只要把一个obersable的对象传到opts里面就行了.
 
 ### 需要一个更好的mixin
 
@@ -534,3 +532,60 @@ typescript对mixin支持很好，
             req.xxx = 'xxx';
             next();
         });
+
+### 核心的几个类和接口
+
+#### 状态机存储器：　Store
+
+```new Store()```可以订阅```on```或者触发```trigger```几种事件，
+没错```riot.tag```函数里面的```this```就继承自```Store```;
+
+    const a = new Store();
+    a.on('sayHi', () => console.log('hello'));
+    a.trigger('sayHi'); // hello
+
+#### 广播控制器：　Control
+
+是一个状态机的集合，方法```addStore```可以添加状态机存储器，
+```trigger```可以广播触发存储器的事件。
+
+    const store1 = new Store();
+    store1.on('sayHi', () => console.log('hello,I'm store1'));
+    const store2 = new Store();
+    store2.on('sayHi', () => console.log('hello,I'm store2'));
+    const ctrl = new Control();
+    ctrl.addStore(store1);
+    ctrl.addStore(store2);
+    ctrl.trigger('sayHi');//hello,I'm store1hello,I'm store2
+
+#### 标签生成器：TagCore虚基类
+
+必须搭配@tag装饰器，```new```一个TagCore的子类（构造函数必须传一个Control），
+跟执行了一下```riot.tag```是一样的。
+执行```mount```方法就能在页面空标签里挂在上标签的实现，相当于执行了```riot.mount```。
+
+    @tag({
+        name: 'x-tag',
+        tmpl: `<span>{content}</span>`
+    })
+    class XTag extends TagCore {
+        onCreate(tag: IriotTag, opts: IriotOpts) {
+            this.on('mount', () => opts.ctrl.trigger('xTag_Mounted') );
+            tag.content = opts.content;
+        }
+        mount: (opt: { content: string }) => void;
+    }
+
+    const store = new Store();
+    store.on('xTag_Mounted', () => console.log('prodCasted') );
+
+    const ctrl = new Control();
+    ctrl.addStore(store);
+
+    const xTag = new XTag(ctrl);
+    xTag.mount({ content: '我就是content' });
+
+    // 页面里面的<x-tag></x-tag> 变成　<x-tag><span>我就是content</span></x-tag>
+    // 控制台打印出 prodCasted
+
+### 前后端同构初阶
