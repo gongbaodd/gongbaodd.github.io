@@ -593,3 +593,24 @@ typescript对mixin支持很好，
 一个开源的项目，可以让node端使用fetch，使用方法和whatwg里面的API是一样的，在此就不多嘴了。
 
 ### 前后端同构初阶
+
+如果看网上的一些前后端同构的资料，他们会给你如下的方案。
+
+    if (isServer) {
+        doNodeThings();
+    } else {
+        doClientThings();
+    }
+
+我可以告诉你，他们都抄自同一个骗纸。。。
+
+原因是很多前端的modules会操作window对象，
+node端的module更牛，有一些都是二进制的，
+如果用webpack1的话，如何bundle到一个js里面?
+
+#### TreeShaking
+
+树摇（字面翻译）是个es6对module的定义，
+简单地说js代码编译的时候会解析成AST语法树，
+通过分析这个语法树可以知道某一个js里面的某一个函数是多余的，
+打包的时候就可以把它剔除。
