@@ -588,4 +588,8 @@ typescript对mixin支持很好，
     // 页面里面的<x-tag></x-tag> 变成　<x-tag><span>我就是content</span></x-tag>
     // 控制台打印出 prodCasted
 
+### node-fetch
+
+一个开源的项目，可以让node端使用fetch，使用方法和whatwg里面的API是一样的，在此就不多嘴了。
+
 ### 前后端同构初阶
