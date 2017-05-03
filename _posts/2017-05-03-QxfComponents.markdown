@@ -391,7 +391,44 @@ async虽然是个实验特性，
 但是，随之而来的就是因为事件名是字符串，重名了咋办？
 请看后面细述。
 
+### 需要一个更好的mixin
+
+typescript对mixin支持很好，
+配合vscode的输入提醒代码体验十分完美，
+所以几乎可以放弃riot的mixin了
+
+* riot.mixin
+
+        // ajaxApi.js
+        {
+            init() {
+                this.on('ajaxApi', ()=> ...);
+            }
+        }
+        // xxxtag
+        riot.tag('xxx', '...', ()=> {
+            this.mixin(require('ajaxApi.js'));
+            this.trigger("ajaxApi");
+        });
+
+* @mixin(any[])
+
+        class AjaxApi {
+            ajaxApi() {
+                ...
+            }
+        }
+
+        @tag({ name: "xxx", tmpl: "..." });
+        @mixin([AjaxApi])
+        class XxxTag extends TagCore implement AjaxApi {
+            onCreate( tag, opts ) {
+                this.ajaxApi();
+            }
+            ajaxApi: () => void;
+        }
+
 ### velocity模板语法太次了
 
-改用node
+改用node渲染，Qxf使用的是handlebars，riot自身也支持后端渲染。
 
