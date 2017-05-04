@@ -1,0 +1,233 @@
+---
+type: post
+category: fe
+---
+# 回顾一下以前的Riot.js方案
+
+2015年我开始从事前端工作，开始公司正在用QApp作为前端SPA框架，
+可是在我看来QApp比较笨重(130+KB)，另外还需要引入kami做组件(100+KB)，一直想找一个轻一点的框架代替，最后选择了riot.js(76KB)来代替这两个，主要基于以下几个需求。
+
+## 大量组件化的需求
+
+QApp的最小单位是View，也就是单一页面，而我接到的需求，要么是对某个按钮做改动，要么是连做几个页面，里面的某个输入框逻辑相同。QApp中的this指向View使得这些部分既不能从View里解构出来，对部分的修改也会造成挣个View的影响。
+
+* 以前的写法
+
+        QApp.defineView({
+            html: `
+            <div node-type="vcode">
+                <input action-type="input">
+                <button action-type="vcode">发送短信</button>
+            </div>
+            <button action-type="submit">提交</button>
+           `
+            actions: {
+                // 这里的this指向整个view
+                "input:input": () => this.doInput(),
+                "submit": () => this.doSubmit(),
+                "vcode": () => this.doVcode(),
+            },
+            init: {
+                doInput() {},
+                doSubmit() {},
+                doVcode() {},
+            }
+        });
+        QApp.config({...});
+
+* 新的写法
+
+        riot.tag('pay-input',`
+            <input oninput="oninput">
+        `, ()=> {
+            // 这里的this指向整个pay-input
+        });
+        riot.tag('pay-submit', `
+            <submit ontap="onsubmit">
+                <yield/>
+            </submit>
+        `, ()=> {
+            // 这里的this指向整个pay-submit
+        });
+        riot.tag('pay-vcode', `
+            <pay-input></pay-input>
+            <pay-submit>发送短信</pay-submit>
+        `, ()=> {
+            // 这里的this指向整个pay-vcode
+        });
+        riot.tag('pay-view',`
+            <pay-vcode></pay-vcode>
+            <pay-submit>提交</pay-submit>
+        `, ()=>{
+            // 这里的this指向整个pay-view
+        });
+        riot.mount('pay-view');
+
+## XX function is undefined
+
+报错邮件以前经常会有这样的报错，究其原因，很多是由“xxx功能”我不要了这种需求造成。
+
+* 之前的调用方式
+
+        QApp.defineView({
+            init: {
+                doSomething: ()=> {}// 删我貌似很困难
+                doSomethingElse: ()=>this.doSomething()
+            },
+            ready() {
+                this.doSomething();
+            }
+        });
+
+* 之后的调用方式
+
+        riot.tag('pay-view',`...`, ()=>{
+            this.on('doSomething', ()=> doSomething()); // 不要就删掉吧
+
+            this.doSomethingElse = () => this.trigger('doSomething');
+            this.on('mount', () => {
+                this.trigger('doSomething')
+            });
+        });
+
+## 基于状态基的异步流程处理
+
+其实2015年，是异步流程处理比较混乱的一年，Promise刚出来，没多少人敢用，
+更别提generator还有async之类的东西了，
+这套方案正好利用了发布订阅的优点，
+只要在异步事件触发之前订阅上就没问题了
+
+* 之前
+
+        QApp.defineView({
+            ...,
+            ready() {
+                this.ajax({
+                    ...,
+                    success() {
+                        foo(..., () => {
+                            bar( ..., () => {
+                                ...
+                            });
+                        })
+                    }
+                });
+            }
+        });
+
+* 之后
+
+        riot.tag('pay-view', '...', () => {
+            this.on('ajaxDone', () => {
+                ...
+                this.trigger('foo');
+            });
+
+            this.on('fooDone', () => {
+               ...
+               this.trigger('bar');
+            });
+
+            this.on('barDone', () => {
+               ...
+            });
+
+            this.on('mount', () => this.trigger('ajax'));
+        });
+
+## 利用组件树检索组件
+
+项目组件化（Component）+ 事件化（Reactive）之后，
+一个页面的运行方式就成为某一个组件监控某一个组件的某一事件并对其造成的处理。
+那么需要利用祖组件树解决一下检索问题。
+
+    require("pay-input");
+    require("pay-submit");
+
+    riot.tag('pay-vcode', `
+        <pay-input></pay-input>
+        <pay-submit>发送短信</pay-submit>
+    `, ()=> this.tags["pay-submit"].on('subimit', () => {
+        this.trigger('vcodeSent');
+    }) );
+
+    riot.tag('pay-view', `
+        <pay-vcode></pay-vcode>
+        <pay-submit></pay-submit>
+    `, () => this.tags['pay-vcode'].on('vcodeSent', ()=> {
+        this.tags['pay-submit'].trigger('enabled');
+    }));
+
+
+* pay-view
+  * parent: null
+  * tags
+    * pay-vcode
+      * parent: pay-view
+      * tags
+        * pay-input
+        * pay-submit
+        * parent: pay-vcode
+      * pay-submit
+        * parent: pay-view
+
+## 利用mixin实现继承
+
+ecmascript2015之前，js一直都没有一个像样的类的表达方式，
+所以我们其实也没有一个像样的继承方式，
+混淆是目前用的最多的一种继承，大概是源自$.extend吧。
+
+* ajaxApi1
+
+        module.exports = {
+            init: {
+                this.on('ajaxApi1', () => ajax(...) );
+                this.on('ajaxApi1Done', ()　=> ... );
+            }
+        };
+
+* ajaxApi2
+
+        module.exports = {
+            init: {
+                this.on('ajaxApi2', () => ajax(...) );
+                this.on('ajaxApi2Done', () => ... );
+            }
+        };
+
+* pay-view
+
+        riot.tag('pay-view', '...', () => {
+            this.mixin(require('ajaxApi1.js'));
+            this.mixin(require('ajaxApi2.js'));
+
+            this.on('mount', () => this.trigger('ajaxApi1 ajaxApi2') );
+        });
+
+## 结合velocity和yield实现首屏渲染
+
+首屏渲染，SPA一直有这个问题。
+因为在html加载到js加载完成（甚至是一些ajax返回）之前，
+页面都是白屏，其实vm可以完成一部分后端的渲染，并替代第一个ajax。
+
+* vm之中
+
+        #set($description = "这里会代替<yield/>")
+        <pay-view>
+            <span if="$!description">$description</span>
+        </pay-view>
+        <script>
+            window.vmData = "$!vmData";
+        </script>
+
+* js里面
+
+        riot.tag('pay-view', `
+            <pay-vcode></pay-vcode>
+            <pay-submit></pay-submit>
+            <yield/>
+        `, () => {
+            const vmData = window.vmData;
+        });
+
+## SPA的路由（忽略）
