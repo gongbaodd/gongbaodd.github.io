@@ -231,3 +231,7 @@ ecmascript2015之前，js一直都没有一个像样的类的表达方式，
         });
 
 ## SPA的路由（忽略）
+
+## 视频地址
+
+http://v.youku.com/v_show/id_XMTUxMjMyMzM0OA==.html?from=s1.8-1-1.2&spm=a2h0k.8191407.0.0
