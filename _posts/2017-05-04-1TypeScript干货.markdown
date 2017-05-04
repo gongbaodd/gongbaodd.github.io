@@ -1,6 +1,6 @@
 ---
 type: post
-category: tech
+category: fe
 ---
 # TypeScript干货
 
