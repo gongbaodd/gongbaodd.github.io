@@ -49,6 +49,20 @@ category: fe
 可见，涉及到node像后端取数据并处理成state这部分逻辑是没必要加到client里面的，
 那么可以做两个文件实现node和client不同状态的处理。
 
+## 之前先介绍几个名词
+
+* 状态机存储器：　Store
+
+    ```new Store()```可以订阅```on```或者触发```trigger```几种事件，
+    没错```riot.tag```函数里面的```this```就继承自```Store```;
+
+* 广播控制器：　Control
+
+    是一个状态机的集合，方法```addStore```可以添加状态机存储器，
+    ```trigger```可以广播触发存储器的事件。
+
+* 标签生成器：TagCore虚基类
+
 * server.js
 
         class RouteStore extends Store {
