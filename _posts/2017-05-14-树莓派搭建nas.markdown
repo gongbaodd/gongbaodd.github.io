@@ -1,0 +1,15 @@
+---
+layout: post
+cateogory: tech
+---
+# 树莓派搭建NAS
+
+好忙啊，写个大纲好了
+
+## 安装RPI-Monitor
+
+## 安装吸血迅雷
+
+## Samba共享文件
+
+## ssh端口映射
