@@ -2,7 +2,7 @@
 layout: post
 category: fe
 ---
-# ![](http://i2.muimg.com/588926/aebd6aa03c07833d.png) 弃坑Riot转投Preact
+# 弃坑Riot转投Preact
 
 ![换个坑继续趟](http://i4.buimg.com/588926/431151959544ded0.jpg)
 
