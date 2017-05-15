@@ -4,6 +4,8 @@ category: fe
 ---
 # Qxf上的BigPipe的实现和优化原理
 
+![](http://i2.muimg.com/588926/2400354de719507f.jpg)
+
 Qxf其实是express下的一堆中间件的集合，所以其实我在介绍express的BigPipe实现。
 
 简单的来说，当一个html开始下载的同时浏览器就开始渲染html了（而不是等html下载完成再渲染）。
