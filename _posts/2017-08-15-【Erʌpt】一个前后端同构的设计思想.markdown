@@ -4,4 +4,8 @@ category: fe
 ---
 # 【Erʌpt】一个前后端同构的设计思想
 
-> 最近一直没有更新，确实是最近很忙
+<img src="http://ww1.sinaimg.cn/large/89d0a2e1ly1fikrpw68t9j208c08cdfx.jpg" alt="logo" width="150px">
+
+> 最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。
+
+2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是Mozilla的asm.js方案，兼容性上面要好得多。很多人关注的是性能
