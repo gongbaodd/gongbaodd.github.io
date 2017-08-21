@@ -8,4 +8,27 @@ category: fe
 
 > 最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。
 
-2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是Mozilla的asm.js方案，兼容性上面要好得多。很多人关注的是性能
+## 前提
+
+2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是Mozilla的asm.js方案，兼容性上面要好得多。很多人关注的是性能上的提升，而我觉得最先活起来的应该是前后端同构。因为大批的后端程序员可以避开javascript的各种坑去使用自己的开发语言开发前端应用了。
+
+### 最近出现了很多诸如RustWeb和Golymer的框架
+
+<table>
+<tr>
+<td>
+<img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fir7gp7j3ej20r40k6abz.jpg"/>
+</td>
+<td>
+<img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fir7nz5t8qj21040qcabg.jpg"/>
+</td>
+</tr>
+</table>
+
+### 现有的CS架构其实是在解决三个佛学问题
+
+![现有的CS架构其实是在解决三个佛学问题](http://ww1.sinaimg.cn/thumbnail/89d0a2e1ly1fir7ta8jaij20a90a9437.jpg)
+
+* 我是谁 ----- 一堆数据
+* 我从哪里来 ---- 从服务器打包
+* 要到哪里去 ---- 通过浏览器展示给用户
