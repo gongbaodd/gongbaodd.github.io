@@ -6,7 +6,7 @@ type: post
 
 ## Part I : Type System
 
-### JavaScript是一种很爽的语言
+### JavaScript 是一种很爽的语言
 
 作为一款动态语言，比如你可以执行以下代码而不用担心报错。
 
@@ -72,13 +72,13 @@ btn.onclick = () =>
     isGreater("x", "y") ? ... : ...;
 ```
 
-而正好，这个onClick在自测的时候被忽略了。上线之后就是灾难了。
+而正好，这个 onClick 在自测的时候被忽略了。上线之后就是灾难了。
 
 ---
 
 ### 动态一时爽，重构火葬场
 
-### 举个typescript的栗子
+### 举个 TS 的栗子
 
 ```javascript
 function isGreater(ａ: number, b: number): boolean {
@@ -99,7 +99,7 @@ function isGreater(ａ: number, b: number): boolean {
 
 ## Part II : TS vs Flow
 
-众多类型系统里面，typescript和flowtyped的比较类似，目标都是为了js的工程化，而且语法上除了细节几处根本没区别。
+众多类型系统里面，typescript 和 flowtyped 的比较类似，目标都是为了 JS 的工程化，而且语法上除了细节几处根本没区别。
 
 ### 对照
 
@@ -142,7 +142,7 @@ isGreater("1", "2");
 
 ### 空值检查
 
-TypeScript(strict)和Flow都能指出nullCheck函数应该指明返回值为 string | void 类型。
+TypeScript(strict) 和 Flow 都能指出 nullCheck 函数应该指明返回值为 string | void 类型。
 
 ```javascript
 function nullCheck(num: number): string {
@@ -157,7 +157,7 @@ function nullCheck(num: number): string {
 
 ### 泛型
 
-TypeScript和Flow都指出狗的数组不能加入猫的实例。
+TypeScript 和 Flow 都指出狗的数组不能加入猫的实例。
 
 ```javascript
 class Animal { }
@@ -180,7 +180,7 @@ dogs.push(new Cat);
 
 ---
 
-此处TS和Flow都能查出错误，但是报错位置不同。
+此处 TS 和 Flow 都能查出错误，但是报错位置不同。
 
 ```javascript
 //@flow
@@ -198,7 +198,7 @@ let cats: Cat[] = animals;
 
 #### Wait for IT
 
-震惊，TypeScript在这种情况下不报错！！！
+震惊，TypeScript 在这种情况下不报错！！！
 
 ```javascript
 //@flow
@@ -218,4 +218,4 @@ animals.push(new Animal);
 JSON.stringify(cats); // [{"woff":true},{"meow":true},{}]
 ```
 
-* TypeScript只做了类型检查，而JS数组是引用赋值的，因此引起了错误
+***TS 只做了类型检查，而 JS 数组是引用赋值的，因此引起了错误***
