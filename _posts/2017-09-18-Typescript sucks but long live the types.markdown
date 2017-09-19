@@ -219,3 +219,30 @@ JSON.stringify(cats); // [{"woff":true},{"meow":true},{}]
 ```
 
 ***TS 只做了类型检查，而 JS 数组是引用赋值的，因此引起了错误***
+
+#### Nominal & Structural (property-based) Typing
+
+Flow 是标称类型而 TS 是结构类型。
+
+```javascript
+class Animal { }
+class Dog extends Animal { name = "dog" }
+class Cat extends Animal { name = "cat" }
+
+let dog: Dog = new Dog;
+       // ^^^^^^^ [Flow] Cat. This type is incompatible with Dog
+dog = new Cat;
+dog = { name: "dog" };
+      // ^^^^^^^^^^^^^^^ object literal. This type is incompatible with
+```
+
+#### 对比总结
+
+|    |　TypeScript | Flow-typed |
+|----|-------------|------------|
+| 工具支持　| 有亲爸做编辑器　| 目前体验存在迟钝，但可以做 linting 前的最后工序 |
+| 第三方库定义支持　| npm @types 私有库　| flow-typed 可以安装定义，但明显少于 TS |
+| 质量检查　| tslint　| eslint　(jshint 不行) |
+| 编译　|　可以直接编译为各版本的 JS | 借助babel |
+| 迁移成本　| 可以把原来的 JS 作为类库使用，但整体依然要用 TS 写 | 可以指定要检查的文件 |
+| 其他　| 支持很多es7/8的功能　| 只是检查器，但是类型检查强于 TS |
