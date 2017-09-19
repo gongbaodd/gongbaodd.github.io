@@ -142,6 +142,8 @@ isGreater("1", "2");
 
 ### 空值检查
 
+TypeScript(strict)和Flow都能指出nullCheck函数应该指明返回值为 string | void 类型。
+
 ```javascript
 function nullCheck(num: number): string {
                                 // ^^^
@@ -154,6 +156,8 @@ function nullCheck(num: number): string {
 ```
 
 ### 泛型
+
+TypeScript和Flow都指出狗的数组不能加入猫的实例。
 
 ```javascript
 class Animal { }
@@ -173,3 +177,45 @@ dogs.push(new Cat);
       // 'Argument of type 'Cat' is not assignable to parameter of type 'Dog'.
       // ^^^^^^^ Cat. This type is incompatible with
 ```
+
+---
+
+此处TS和Flow都能查出错误，但是报错位置不同。
+
+```javascript
+//@flow
+class Animal {}
+class Dog extends Animal { woff = true }
+class Cat extends Animal { meow = true }
+
+let animals: Animal[] = [];
+            // ^^^^^^
+            // [flow] Animal (This type is incompatible with Cat)'
+let cats: Cat[] = animals;
+// ^^^
+// [ts] Type 'Animal[]' is not assignable to type 'Cat[]'.
+```
+
+#### Wait for IT
+
+震惊，TypeScript在这种情况下不报错！！！
+
+```javascript
+//@flow
+class Animal {}
+class Dog extends Animal { woff = true }
+class Cat extends Animal { meow = true }
+
+let cats: Cat[] = [];
+let animals: Animal[] = cat;
+        // ^^^^^^^^^
+        // [flow] Animal (This type is incompatible with Cat)
+
+animals.push(new Dog);
+animals.push(new Cat);
+animals.push(new Animal);
+
+JSON.stringify(cats); // [{"woff":true},{"meow":true},{}]
+```
+
+* TypeScript只做了类型检查，而JS数组是引用赋值的，因此引起了错误
