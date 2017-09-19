@@ -41,4 +41,4 @@ animals.push(new Animal);
 JSON.stringify(cats); // [{"woff":true},{"meow":true},{}]
 ```
 
-
+* TypeScript只做了类型检查，而JS数组是引用赋值的，因此引起了错误
