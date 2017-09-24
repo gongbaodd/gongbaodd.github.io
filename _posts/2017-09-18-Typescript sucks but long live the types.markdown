@@ -247,3 +247,111 @@ dog = { name: "dog" };
 | 迁移成本　| 可以把原来的 JS 作为类库使用，但整体依然要用 TS 写 | 可以指定要检查的文件 |
 | 其他　| 支持很多es7/8的功能　| 只是检查器，但是类型检查强于 TS |
 
+## Part III Types in use (TypeScript)
+
+### Library
+
+JavaScript 的类库一直是良莠不齐，所以当你有两个以上的类库可选的话，究竟选哪个可能是个问题。
+
+好在如果一个 JS 类库存在类型声明的话，可以说明这两个问题。
+
+* 官方声明：作者写这一类库的时候不是玩票地试一下
+* 第三方声明：已经有人在使用这一类库了
+
+![](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fjq8ttqtxhj20w20i4abt.jpg)
+
+那么在使用这些类库的时候起码不会有太多的坑。
+
+#### NPM declarations
+
+假如你是一个类库的作者，你已经用 typescript 写完了一个库，正准备把它发布到 npm 上面，如果你想给这个类库加上类型声明，只需在 typescript 的编译配置　(tsconfig.json)　上添加如下字段。
+
+```javascript
+"declaration": true
+```
+
+再次编译，你会看到很多```*.d.ts```文件，这就是类库的声明文件。
+
+```javascript
+function isGreater(ａ: number, b: number): boolean;
+```
+
+接下来，在```package.json```添加 type 字段，再发布的 npm 包就已经带有声明了。
+
+```javascript
+"types": "./lib/main.d.ts",
+```
+
+另外，通过在　@types 下搜索也能找到第三方的类库声明。
+
+#### 3rd party declaration
+
+有的时候，你的类库并没有声明文件，同时 @types 也没有其他人上传，你需要自己写声明文件。
+
+比如 HySDK, 只需要在项目目录里添加　.d.ts　文件
+
+```javascript
+declare module "@qnpm/hysdk" {
+    export = {
+        openWebView: (param: {
+            url: string;
+            name?: string;
+            data?: any;
+        }) => void,
+    }
+}
+
+import { openWebView } from "@qnpm/hysdk";
+openWebView({ url: "" });
+```
+
+### Types in Redux
+
+前端交互逻辑用得最多的就是发布订阅模式了，
+在发布订阅模式里面需要一个约定值来确定订阅的是哪一个事件。
+那么类型系统就派上用场了，这里拿 Redux 举例。
+
+---
+
+Redux 的问题在于，订阅和发布的约定值可以随便写。
+
+```javascript
+const store = createStore((state,{type, data}) => {
+    if (type === "action1") return ...
+    if (type === "action2") return ...
+    return state;
+})
+function doAction(action) {store.dispatch(action);}
+doAction({ type: "action1", data }); // OK
+doAction({ type: "actionX", data }); // OK
+```
+
+---
+
+我们给 action 写一个约束 IAction，这样，
+在 reducer 里面不能多写一个 actionY 事件，
+dispatch 的时候也不能指定 actionX 事件。
+
+```javascript
+interface IAction { type: "action1" | "action2", data: any }
+const store = createStore((state,{type, data}: IAction) => {
+    if (type === "action1") return ...
+    if (type === "action2") return ...
+    if (type === "actionY") return ... // Err
+    return state;
+})
+function doAction(action: IAction) {store.dispatch(action);}
+doAction({ type: "action1", data }); // OK
+doAction({ type: "actionX", data }); // Err
+```
+
+## Part IV Epilogue
+
+### 应该使用类型系统吗？
+
+|   |   |
+|---|---|
+| 页面只用于接下来的十一活动营销　| No |
+| 页面很简单就是展示文案 | No |
+| 新项目,并以后很有可能会频繁重构　| TypeScript |
+| 老项目,老文件不再改,只增加文件 | Flow |
