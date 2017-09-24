@@ -4,6 +4,8 @@ type: post
 ---
 # TypeScript Sucks but Long Live the Types
 
+[查看PPT](http://gongbushang.com/ng/types-slide/)
+
 ## Part I : Type System
 
 ### JavaScript 是一种很爽的语言
@@ -230,10 +232,10 @@ class Dog extends Animal { name = "dog" }
 class Cat extends Animal { name = "cat" }
 
 let dog: Dog = new Dog;
-       // ^^^^^^^ [Flow] Cat. This type is incompatible with Dog
 dog = new Cat;
+      // ^^^^^^^ [Flow] Cat. This type is incompatible with Dog
 dog = { name: "dog" };
-      // ^^^^^^^^^^^^^^^ object literal. This type is incompatible with
+      // ^^^^^^^^^^^^^^^ [Flow] object literal. This type is incompatible with
 ```
 
 #### 对比总结
@@ -355,3 +357,7 @@ doAction({ type: "actionX", data }); // Err
 | 页面很简单就是展示文案 | No |
 | 新项目,并以后很有可能会频繁重构　| TypeScript |
 | 老项目,老文件不再改,只增加文件 | Flow |
+
+其实，前端的类型系统到目前为止依然还有很多瑕疵，因此我说 TypeScript sucks，但是就目前的版本来说，可比它刚发布那会儿要好用的多了，起码已经到了能用的地步。
+
+随着 TS 和 Flow 的发展和互相影响，前端类型系统将会逐步完善，但那都是以后的事了。就目前来说，如果你手上有一个大工程，还没有用上类型系统，那为何不尝试一下呢？
