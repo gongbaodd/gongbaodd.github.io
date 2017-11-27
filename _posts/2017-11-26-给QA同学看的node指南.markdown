@@ -100,7 +100,7 @@ console.log(a);
 事件轮询是计算机系统的一种机制,
 JavaScript 用的是这种机制来解决单线程运行带来的问题.
 
-![](http://jbcdn2.b0.upaiyun.com/2013/10/120131024105854.jpg)
+![](http://image.beekka.com/blog/201310/2013102001.png)
 
 ## Node.js 小结
 
