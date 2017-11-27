@@ -20,7 +20,7 @@ category: tech
 
 ## 什么是 Node.js
 
-<img src="https://nodejs.org/static/images/logo.svg" width=200/>
+![](https://nodejs.org/static/images/logo.svg)
 
 Node.js 是一个开源的跨平台 javascript 运行时. 
 初期是由 Ryan Dahl 在 2009 年设计开发.
