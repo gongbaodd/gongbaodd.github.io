@@ -25,3 +25,13 @@ ArchLinuxARM 不是像 Raspbian 那样烧录的,
 
 另外 aliyun 没有 ArchLinuxARM 的源,
 但是可以使用清华的源.
+
+安装完 ohmyzsh 之后,
+切换 ssh 默认为 zsh
+
+chsh -s /usr/bin/zsh
+
+然后修改 .zsh 主题(因为我本地也是zsh),
+选择 avit 也行
+
+![](https://cloud.githubusercontent.com/assets/2618447/6316718/51a2fd9a-ba00-11e4-845a-24bed6ae9210.png)
