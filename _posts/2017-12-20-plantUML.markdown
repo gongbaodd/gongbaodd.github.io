@@ -1,0 +1,96 @@
+---
+type: post
+category: fe
+---
+# plantUML的使用
+
+参考自 [轻松从Js文件生成UML类图](https://github.com/imfly/bitcoin-on-nodejs/blob/master/4-%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/7-%E6%96%B9%E6%B3%95%E8%AE%BA/6-%E8%BD%BB%E6%9D%BE%E4%BB%8EJs%E6%96%87%E4%BB%B6%E7%94%9F%E6%88%90UML%E7%B1%BB%E5%9B%BE.md)
+
+## 使用说明
+
+vscode 安装 plantUML 插件, 编写 *.puml 文件的时候执行 Alt + D 可以预览绘制的流程图.
+
+## *.puml 文件格式说明
+
+plantUML的解析以 @startuml 开始 以 @enduml 结束
+
+## 时序图
+
+```plantuml
+@startuml
+actor Foo1
+boundary Foo2
+control Foo3
+entity Foo4
+database Foo5
+collections Foo6
+Foo1 -> Foo2 : To boundary
+Foo1 -> Foo3 : To control
+Foo1 -> Foo4 : To entity
+Foo1 -> Foo5 : To database
+Foo1 -> Foo6 : To collections
+@enduml
+```
+
+```plantuml
+@startuml
+actor Bob
+actor Alice
+actor AVertyVeryLongName as L
+Alice->Bob: Authentication Request
+Bob->Alice: Authentication Response
+Bob->L: Log transaction
+@enduml
+```
+
+## 活动图
+
+```plantuml
+@startuml
+start
+if (condition A) then (yes)
+  :Text 1;
+elseif (condition B) then (yes)
+  :Text 2;
+  stop
+elseif (condition C) then (yes)
+  :Text 3;
+elseif (condition D) then (yes)
+  :Text 4;
+else (nothing)
+  :Text else;
+endif
+stop
+@enduml
+```
+
+```plantuml
+@startuml
+
+start
+
+repeat
+  :read data;
+  :generate diagrams;
+repeat while (more data?)
+
+stop
+
+@enduml
+```
+
+## 类图
+
+```plantuml
+@startuml
+class Dummy {
+  String data
+  void methods()
+}
+
+class Flight {
+   flightNumber : Integer
+   departureTime : Date
+}
+@enduml
+```

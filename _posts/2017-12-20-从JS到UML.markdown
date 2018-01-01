@@ -1,7 +1,0 @@
----
-type: post
-category: fe
----
-# 从JS到UML
-
-参考自 [轻松从Js文件生成UML类图](https://github.com/imfly/bitcoin-on-nodejs/blob/master/4-%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/7-%E6%96%B9%E6%B3%95%E8%AE%BA/6-%E8%BD%BB%E6%9D%BE%E4%BB%8EJs%E6%96%87%E4%BB%B6%E7%94%9F%E6%88%90UML%E7%B1%BB%E5%9B%BE.md)
