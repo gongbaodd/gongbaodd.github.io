@@ -118,3 +118,82 @@ class a {
 --------- CloseBraceToken 94 96
 --- EndOfFileToken 96 96
 ```
+
+那么看看应用, 之前我写过 [plantUML的使用](http://gongbaodd.github.io/fe/2017/12/20/plantUML.html),
+正好可以试一下看看能不能自动生成类图.
+
+```typescript
+import { readFileSync } from "fs";
+import * as ts from "typescript";
+
+export function uml(src: ts.SourceFile) {
+    const classMap = {};
+    analyseNode(src);
+    console.log(draw());
+
+    function analyseNode(node: ts.Node) {
+        if (node.kind === ts.SyntaxKind.ClassDeclaration) {
+            const cls = {};
+            node.forEachChild(n => {
+                if (n.kind === ts.SyntaxKind.Identifier) {
+                    classMap[n.getText()] = cls;
+                }
+                if (n.kind === ts.SyntaxKind.PropertyDeclaration) {
+                    n.forEachChild(i => {
+                        if (i.kind === ts.SyntaxKind.Identifier) {
+                            cls[i.getText()] = "var";
+                        }
+                    });
+                }
+                if (n.kind === ts.SyntaxKind.MethodDeclaration) {
+                    n.forEachChild(i => {
+                        if (i.kind === ts.SyntaxKind.Identifier) {
+                            cls[i.getText()] = "function";
+                        }
+                    })
+                }
+            });
+        }
+        node.forEachChild(analyseNode);
+    }
+
+    function draw() {
+        const tpl = `
+@startuml
+#
+@enduml
+        `.trim();
+        let str = "";
+
+        Object.keys(classMap).forEach(className => {
+            const classItems = classMap[className];
+            str += `class ${className} {\n`;
+            Object.keys(classItems).forEach(i => {
+                str += `${classItems[i]} ${i}\n`;
+            });
+            str += "}\n";
+        });
+
+        return tpl.replace("#", str);
+    }
+}
+
+
+const file = process.argv.slice(2);
+file.forEach(f => {
+    const src = ts.createSourceFile(f, readFileSync(f).toString(), ts.ScriptTarget.ES2016, true);
+    uml(src);
+})
+
+```
+
+
+```plantuml
+@startuml
+class A {
+var num
+function getNumber
+}
+
+@enduml
+```
