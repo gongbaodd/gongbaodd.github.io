@@ -32,6 +32,9 @@ Foo1 -> Foo6 : To collections
 @enduml
 ```
 
+![](http://ww1.sinaimg.cn/large/89d0a2e1ly1fn3ikg2r9fj20pe0m6433.jpg)
+
+
 ```plantuml
 @startuml
 actor Bob
@@ -42,6 +45,8 @@ Bob->Alice: Authentication Response
 Bob->L: Log transaction
 @enduml
 ```
+
+![](http://ww1.sinaimg.cn/large/89d0a2e1ly1fn3ikg1c86j20q60ietc5.jpg)
 
 ## 活动图
 
@@ -64,6 +69,8 @@ stop
 @enduml
 ```
 
+![](http://ww1.sinaimg.cn/large/89d0a2e1ly1fn3ikfxoemj20ug0f4juf.jpg)
+
 ```plantuml
 @startuml
 
@@ -78,6 +85,8 @@ stop
 
 @enduml
 ```
+
+![](http://ww1.sinaimg.cn/large/89d0a2e1ly1fn3ikfyu6cj20c80ikjt1.jpg)
 
 ## 类图
 
@@ -94,3 +103,5 @@ class Flight {
 }
 @enduml
 ```
+
+![](http://ww1.sinaimg.cn/large/89d0a2e1ly1fn3ikftv49j20iw060jsm.jpg)
