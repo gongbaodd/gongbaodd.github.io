@@ -1,0 +1,10 @@
+---
+type: post
+category: fe
+---
+# 完成了30个kotlin安卓挑战
+
+去年逛IT邦看到了关于Kotlin的铁人赛，30个安卓demo．毕竟不是我的原创，这里贴上原地址
+
+https://ithelp.ithome.com.tw/users/20107329/ironman/1286
+
