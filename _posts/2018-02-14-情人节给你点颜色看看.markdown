@@ -44,7 +44,7 @@ function hsv2rgb(
     // 明度
     v = v < 0? 0: v > 1? 1: v;
 
-    let hi = h/60%6;
+    let hi = (h/60|0)%6;
     let f = h/60 - hi;
     let p = v*(1-s);
     let q = v*(1-f*s);
