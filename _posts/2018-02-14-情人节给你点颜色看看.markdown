@@ -4,6 +4,8 @@ category: fe
 ---
 # 情人节给你点颜色看看
 
+![示例代码](http://gongbushang.com:3000/gongbushang/pixijsPlayground/src/master/src/12-hsl_hsv.ts)
+
 CMYK用于打印, RGB用于显示屏, 然而二者都不能直观的展示颜色, 于是有了 HSL 和 HSV 坐标系.
 
 ## 简介
@@ -42,25 +44,22 @@ function hsv2rgb(
     // 饱和度
     s = s < 0? 0: s > 1? 1: s;
     // 明度
-    v = v < 0? 0: v > 1? 1: v;
+    v = (v < 0? 0: v > 1? 1: v)*255;
 
     let hi = (h/60|0)%6;
     let f = h/60 - hi;
-    let p = v*(1-s);
-    let q = v*(1-f*s);
-    let t = v*(1-(1-f)*s);
-
-    let rgb;
+    let p = v*(1-s) | 0;
+    let q = v*(1-f*s) | 0;
+    let t = v*(1-(1-f)*s) | 0;
+    v |= 0;
     switch (hi) {
-        case 0: rgb = [v, t, p]; break;
-        case 1: rgb = [q, v, p]; break;
-        case 2: rgb = [p, v, t]; break;
-        case 3: rgb = [p, q, v]; break;
-        case 4: rgb = [t, p, v]; break;
-        case 5: rgb = [v, p, q]; break;
+        case 0: return [v, t, p];
+        case 1: return [q, v, p];
+        case 2: return [p, v, t];
+        case 3: return [p, q, v];
+        case 4: return [t, p, v];
+        case 5: return [v, p, q];
     }
-
-    return rgb? rgb.map(v => v*255): [0, 0, 0];
 }
 ```
 
