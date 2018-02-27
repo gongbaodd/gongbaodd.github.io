@@ -1,0 +1,9 @@
+---
+type: post
+category: tech
+---
+# Git保存账户
+
+```shell
+git config credential.help store
+```
