@@ -153,6 +153,30 @@ class PayDevice {
 
 我们修改了 Qxf 的 logger 和 monitor 以适配支付中心的鹰眼系统，更新　member-mobile 的 payGa 以接收前端埋点。
 
+## 支付组件库
+
+### PayUI
+
+我们经过和 UE 协调，利用 Yo 制作了一套 PayUI.css，可以直接作为支付中心样式使用。
+
+![PayUI](http://ww1.sinaimg.cn/large/89d0a2e1ly1fqesxkdjt7j20c80a074u.jpg)
+
+### TS PAY COMS
+
+利用 payUI 制作的组件库，使用 rollup commonJS 打包，提供工厂方法构建。
+
+![TS PAY COMS](http://ww1.sinaimg.cn/large/89d0a2e1ly1fqet3rrs2yj217c0uwwjt.jpg)
+
+```javascript
+export const FormID = Factory.input(
+    Component, h, { CheckUtil, PayInput, PayList, MemICO },
+);
+
+export const FormIDTlist = Factory.list(
+    Component, h, { FormID, CheckItem, PayPopup, PayList },
+);
+```
+
 ## 打包系统优化
 
 ![打包系统](http://ww1.sinaimg.cn/large/89d0a2e1ly1fqes6t5852j21k60uy1kx.jpg)
@@ -170,8 +194,6 @@ class PayDevice {
 Yo 的缺点
 
 * 使用 SASS 逐文件单线程编译，效率慢
-
-![TODO:](此处需要热力图)
 
 * 使用的是 SASS 语法，不是原生 CSS 语法，并只会对使用 Yo 语法的地方做浏览器兼容处理,没有编辑器支持
 
