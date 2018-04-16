@@ -5,3 +5,44 @@ category: fe
 # lego系统一岁啦
 
 大概看了下去年的博客，我大概在五月初，对lego的第一次上线做了总结，那么现在大概就是lego的一周岁生日了。
+
+## lego的定义
+
+支付lego平台是一个支持多维度线上配置的web组件化前端渲染平台，覆盖从服务端到web前端再到数据监控的整体解决方案，目前服务于去哪儿网会员的【我的钱包】【我的银行卡】【绑卡服务】【实名认证】等服务。
+
+## CSS的优化
+
+### 使用 PostCSS 逐步代替 Yo
+
+Yo 的缺点
+
+* 使用 SASS 逐文件单线程编译，效率慢
+
+![TODO:](此处需要热力图)
+
+* 使用的是 SASS 语法，不是原生 CSS 语法，并只会对使用 Yo 语法的地方做浏览器兼容处理,没有编辑器支持
+
+```CSS
+/*** Yo 源代码 ***/
+.foo {
+    @include yoflex();
+}
+
+.bar {
+    display: flex;
+}
+```
+
+```CSS
+/*** 生成代码 ***/
+.foo {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.bar {
+    display: flex;
+}
+```
+
