@@ -54,8 +54,14 @@ returnURL=https%3A%2F%2Fmembermobilebetak.qunar.com%2Fm%2Fmember%2Fasset%2Fcoupo
 
 member-mobile 为了保证浏览器兼容性用的是 ES5，然而更多的代码库使用的是 ES6 编写，使用的时候再编译成 ES5。但是，无论 ES5 还是 ES6 都是动态类型 JS，无法对代码进行类型检查。
 
-至于关于 typescript 的好处，我不在此多余阐述，可以参考我过去的两次分享 [typescript干货](http://gongbaodd.github.io/fe/2017/05/04/1TypeScript%E5%B9%B2%E8%B4%A7.html) 和 [Typescript sucks but long live the types
+至于关于 typescript 的好处，我不在此多余阐述，可以参考我过去的记次分享 
+
+[typescript干货](http://gongbaodd.github.io/fe/2017/05/04/1TypeScript%E5%B9%B2%E8%B4%A7.html) 
+
+[Typescript sucks but long live the types
 ](http://gongbaodd.github.io/fe/2017/09/18/Typescript-sucks-but-long-live-the-types.html) 。
+
+[TypeScript编译抽象语法树](http://gongbaodd.github.io/fe/2018/01/03/typescript%E7%BC%96%E8%AF%91AST%E8%AE%AD%E7%BB%83.html)
 
 ## 架构设计
 
