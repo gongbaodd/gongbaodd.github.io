@@ -1,0 +1,17 @@
+---
+type: post
+category: fe
+---
+# Inkscape 简单使用
+
+## 改变画布为横版
+
+File - Document Properties - LandScape
+
+## 旋转对象
+
+慢速度点击两次
+
+## 多选
+
+使用 shift 和 鼠标左键
