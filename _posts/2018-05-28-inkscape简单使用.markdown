@@ -15,3 +15,7 @@ File - Document Properties - LandScape
 ## 多选
 
 使用 shift 和 鼠标左键
+
+## 小试牛刀
+
+![](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1frr2us5d6kj21uw1dyaft.jpg)
