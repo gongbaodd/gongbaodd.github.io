@@ -7,3 +7,11 @@ category: tech
 linux下面使用blender必须搭配鼠标，因为拖动需要鼠标中键，模拟的快捷键是alt+鼠标左键，笔记本上必须要关掉alt快捷键（臣妾不想做）。
 
 移动元素是鼠标右键，另外需要打开模拟小键盘（file-preference-input）才能快速切换试图。
+
+## 菜单
+
+shift-a
+
+## 学习视频
+
+https://www.blenderguru.com/tutorials/blender-beginner-tutorial-series
