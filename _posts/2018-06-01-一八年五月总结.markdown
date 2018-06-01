@@ -23,3 +23,5 @@ Graphql 和 nestjs 重新建设我的个人网站，因为现在的网站已经�
 学习谷歌 tensorflow 教程。
 
 radioactive 口琴 + ukulele 联系熟练
+
+新标日完成上册
