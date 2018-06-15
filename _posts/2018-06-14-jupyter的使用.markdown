@@ -9,6 +9,12 @@ categoy: tech
 
 安装很容易，记住每次使用docker的时候要启动deamon服务，其实不建议默认打开，因为docker会常驻8888端口，这样charles就不好抓包了。
 
+还需要把本地用户加到docker组里
+
+```shell
+gpasswd -a $USER docker
+```
+
 加速服务可以用阿里云的，相关帮助已经很清楚了。
 
 ## 安装并运行 jupyter
