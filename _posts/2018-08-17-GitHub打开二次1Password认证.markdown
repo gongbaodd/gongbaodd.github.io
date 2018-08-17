@@ -13,3 +13,7 @@ category: tech
 * 点开 1Password 的 Github 项目，点击编辑，找到 label，点击右面的三个点，选择 "one-time password"
 
 * 用三个点旁边的二维码扫描器扫描 Github 页面上的二维码。
+
+然后你就发现你的代码不能再 commandline push 了。。。
+
+* 参照 https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/ 新建一个 token， 以后用这个token作为密码即可。
