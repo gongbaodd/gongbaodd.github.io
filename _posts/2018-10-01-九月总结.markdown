@@ -35,4 +35,5 @@ category: life
 
 + 继续背极光单词
 + 看完深入浅出RxJS
++ 翻译spanner文档
 + 在深圳交几个朋友吧～
