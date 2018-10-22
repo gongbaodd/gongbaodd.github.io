@@ -47,6 +47,7 @@ function getDays(_startTime, _endTime) {
 		times.push(day);
 		startTime.add(1, 'day');
 	}
+	return times;
 }
 
 /**
@@ -67,5 +68,7 @@ function getWeeks(_startTime, _endTime) {
 		times.push(week);
 		startTime.add(1, 'week');
 	}
+
+	return times;
 }
 ```
