@@ -72,3 +72,5 @@ function getWeeks(_startTime, _endTime) {
 	return times;
 }
 ```
+
+另外， 用```moment```获取到的```unix```时间戳是秒级别的，而默认js处理```Date.now()```取到的是毫秒级别的，需要单独处理。
