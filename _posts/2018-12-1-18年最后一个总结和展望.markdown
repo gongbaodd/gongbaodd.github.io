@@ -1,5 +1,0 @@
----
-type: post
-category: life
----
-# 18年最后一个总结和展望
