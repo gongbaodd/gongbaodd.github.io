@@ -15,7 +15,7 @@ category: life
 
 # 开发
 
-我的网站挂了，算了重构吧。
+我的网站挂了，算了重构吧，正好用一下GATSBY
 
 写个新的swagger的UI
 
