@@ -41,4 +41,8 @@ You cannot add frame-ancestors directive using <meta/>
 
 add  frame-ancestor _and _X-Frame-Options _in AWS cloudfront _to avoid click jacking attack.
 
+Validations
+
+You can check your CSP content in [CSP Evaluator](https://csp-evaluator.withgoogle.com/).
+
 3. Control on `redirect_uri
