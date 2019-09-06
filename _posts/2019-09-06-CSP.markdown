@@ -45,4 +45,31 @@ Validations
 
 You can check your CSP content in [CSP Evaluator](https://csp-evaluator.withgoogle.com/).
 
+3. Subresource Integrity
+#
+CRITICALITY
+Attackers can inject arbitrary malicious content info files on the CDN.
+
+SUGGESTED FIX
+For files from CDN add integrity & crossorigin field in script and link  tags, you can calculate the hash by using SRI Hash Generator.
+
+Copy
+<script src="https://example.com/example-framework.js"
+        integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"
+        crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+        crossorigin="anonymous"/>
+﻿
+
+If the project is a S3 bucket project, the following webpack plugin can add integrity for the compiled statics.
+
+﻿
+
+webpack-subresource-integrity
+﻿
+
+You need to set output.crossOriginLoading to anonymous in webpack.config.js.
+
 3. Control on `redirect_uri
