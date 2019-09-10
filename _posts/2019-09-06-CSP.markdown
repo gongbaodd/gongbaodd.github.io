@@ -72,4 +72,4 @@ webpack-subresource-integrity
 
 You need to set output.crossOriginLoading to anonymous in webpack.config.js.
 
-3. Control on `redirect_uri
+不推荐用SRI，因为integrity会加上用户的UA
