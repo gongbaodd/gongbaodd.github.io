@@ -8,4 +8,6 @@ category: tech
 
 当然自从WSL发布以后，我尽量将所有Windows设备都撞上了Artix，然而WSL只支持64位系统，那意味着我手上用来看书的8寸小平板因为硬件架构只能保持在32位环境下面。
 
-当然我也不指望在一台7寸屏幕下面开发，但毕竟折腾精神永存，我也在这台设备上装上了fluent terminal，接下来就是配置它使用git-bash。如截图所示，接下来重启就可以了。
+当然我也不指望在一台7寸屏幕下面开发，但毕竟折腾精神永存，我也在这台设备上装上了fluent terminal，接下来就是配置它使用git-bash。如截图所示，指定执行文件为```C://Program Files/Git/bin/bash.exe```，接下来重启就可以了。
+
+![配置项](http://ww1.sinaimg.cn/mw690/89d0a2e1gy1g93k97jhn7j20zk0m8n4i.jpg)
