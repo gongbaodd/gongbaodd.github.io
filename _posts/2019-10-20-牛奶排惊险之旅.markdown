@@ -3,3 +3,5 @@ type: post
 category: life
 ---
 # 牛奶排惊险之旅
+
+![飞机石头](http://ww1.sinaimg.cn/mw690/89d0a2e1gy1g9bqe4v9rtj22vb25khdv.jpg)
