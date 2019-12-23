@@ -8,4 +8,14 @@ category: life
 
 导入的时候发现，其实UWP应用是运行在沙盒下面的，每个应用都互相隔离，不受全局的代理配置影响，这可难了我了。
 
-首先能找到的是微软技术支持提供的[利用netsh利用组策略代理](https://support.microsoft.com/zh-cn/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients)，世界体验发现没啥屌用。
+首先能找到的是微软技术支持提供的[利用netsh利用组策略代理](https://support.microsoft.com/zh-cn/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients)，实际体验发现没啥屌用。
+
+```
+netsh winhttp set proxy localhost:1080
+```
+
+然后按照[ss的issue来做](https://github.com/shadowsocks/shadowsocks-windows/issues/897#ref-issue-312924039)，貌似有一些请求通过代理了，但是大部分还是不行。
+
+```
+foreach($f in Get-ChildItem $env:LOCALAPPDATA\Packages) {CheckNetIsolation.exe LoopbackExempt -a "-n=$($f.Name)"}
+```
