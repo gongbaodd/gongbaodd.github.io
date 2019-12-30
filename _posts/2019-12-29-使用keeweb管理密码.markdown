@@ -1,0 +1,11 @@
+---
+type: post
+category: tech
+---
+# 使用keeweb管理密码
+
+如果说在Aftership工作的最大收获，应该是使用1Password管理自己的密码，以前自己的密码是结合网站域名和自己的固定字符串组合而成的，随着访问的站点越来越多，不得不说，还是有一点重复的。
+
+考虑到1Password是个收费软件，我决定参考它的开源对手，keepass。值得注意的是keepass拥有一个web客户端keeweb，并能将你的密码库加密存储到onedrive，google或者私人web服务中。
+
+目前我用edge将keeweb打包成PWA应用放在任务栏上面，接下来我会逐渐迁移现有应用的密码到上面去。
