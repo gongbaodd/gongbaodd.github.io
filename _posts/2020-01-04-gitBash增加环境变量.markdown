@@ -1,0 +1,15 @@
+---
+type: post
+category: tech
+---
+# GitBash增加环境变量
+
+WSL的运行速度比较慢，所以我在windows下面的开发很大一部分还是在GitBash下面，GitBash基于mingw开发，所以直接修改.bashrc即可
+
+```
+PATH=$PATH:/c/Program\ Files/nodejs
+alias python='winpty python.exe'
+alias ubuntu='winpty ubuntu.exe'
+```
+
+这里注意下，因为python和Ubuntu是从应用商店安装的，直接修改PATH变量会有权限问题，只能利用winpty调用。
