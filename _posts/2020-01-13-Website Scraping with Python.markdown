@@ -33,8 +33,9 @@ page 28
 
 ## Cloud
 
-+ page 206 - Scrapy Cloud
-+ page 216 - PythonAnywhere
++ page 206 - [Scrapy Cloud](https://scrapinghub.com/scrapy-cloud)
+    + page 211 - [mlab](https://mlab.com/)
++ page 216 - [PythonAnywhere](https://www.pythonanywhere.com/)
 
 
 
