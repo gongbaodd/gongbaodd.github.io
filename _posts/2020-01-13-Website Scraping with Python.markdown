@@ -1,0 +1,41 @@
+---
+type: draft
+category: tech
+---
+# Website Scraping with Python
+
+## Parsing robots.txt
+
+page 28
+
+## Using Beautiful Soup
+
+用来解析HTML
+
++ page 56 - 使用
++ page 101 - 利用strainer只解析想要的数据
+
+## Exporting the Data
+
++ page 80 - CSV
++ page 87 - JSON
++ page 90 - SQLite
++ page 97 - MongoDB
+
+## Using Scrapy
+
++ page 111
+
+## Handling JavaScript
+
++ page 186 - Splash
++ page 196 - Selenium
+
+## Cloud
+
++ page 206 - Scrapy Cloud
++ page 216 - PythonAnywhere
+
+
+
+
