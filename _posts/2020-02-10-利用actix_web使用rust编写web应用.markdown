@@ -135,6 +135,12 @@ fn main() {
 
 trait是rust上面的一个新概念，类似于JS的mixin和Java的接口，后面我会按例子来讲。
 
+很多库的trait需要单独引用，否则会编译失败，这些库往往会封装成一个prelude使用。
+
+```rust
+use gtk::prelude::*;
+```
+
 ## rust command
 
 rust是个系统级语言，可以互相访问其他程序语言分享的堆内存空间，FFI依靠的是Box，但是本篇暂时不提及，这个[代码](https://github.com/gongbaodd/rust_webAssembly_study/tree/master/command)实现的是读取并处理其它语言的std输出。
