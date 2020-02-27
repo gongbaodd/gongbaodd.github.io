@@ -122,3 +122,281 @@ cargo install cargo-generate
 npm install npm@latest -g
 ```
 
+## 你好，世界
+
+通过本部分可以创建一个Rust+WASM页面，并能在页面弹窗展示```"Hello, World!"```。
+
+### 复制项目模板
+
+这个项目的模板已经提前编译好，可以借此快速绑定、集成和打包成Web项目。
+
+利用模板创建项目的命令：
+
+```shell
+cargo generate --git https://github.com/rustwasm/wasm-pack-template
+```
+
+它会提醒你新建一个项目名称，这里我们先使用"wasm-game-of-life"。
+
+### 文件结构
+
+进入项目文件夹。
+
+```shell
+cd wasm-game-of-life
+```
+
+以下是项目文件夹：
+
+```
+wasm-game-of-life/
+├── Cargo.toml
+├── LICENSE_APACHE
+├── LICENSE_MIT
+├── README.md
+└── src
+    ├── lib.rs
+    └── utils.rs
+```
+
+接下来详细看一下：
+
+#### wasm-game-of-life/Cargo.toml
+
+```Cargo.toml```文件描述```cargo```的依赖和源文件，Rust的包管理工具和编译工具。这个包括```wasm-bindgen```依赖，我们会稍后了解其他的依赖，还有一些用来初始化```.wasm```的```crate-type```库。
+
+#### wasm-game-of-life/src/lib.rs
+
+```src/lib```文件放在Rust项目的更目录下面。它使用```wasm-bindgen```去和JavaScript链接。它能引入```window.alert```这个JavaScript函数，并暴露```greet```函数，并弹出弹框。
+
+```Rust
+mod utils;
+use wasm_bindgen::prelude::*;
+
+// 当wee_alloc特性被打开，将会使用wee_alloc作为全局分匹配器
+#[cfg(feature = "wee_alloc")]
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+
+#[wasm_bindgen]
+extern {
+    fn alert(s: &str);
+}
+
+#[wasm_bindgen]
+pub fn greet() {
+    alert("Hello, wasm-game-of-life!");
+}
+```
+
+#### wasm-game-of-life/src/utils.rs
+
+```src/utils```模块为编译Rust到WASM提供工具函数，我们后面会在调试时提到它，现在先忽略。
+
+### 编译项目
+
+使用```wasm-pack```依赖以下工具：
+
++ 保证Rust版本在1.30以上，且已经通过```rustup```安装```wasm32-unknown-unknown```工具链。
++ 使用```cargo```编译Rust到WASM。
++ 使用```wasm-bindgen```去生成JavaScript的API。
+
+为了完成以上内容，需要在根目录执行以下命令：
+
+```shell
+wasm-pack build
+```
+
+编译完成后，我们可以看到```pkg```里面的结构，里面应该有如下文件。
+
+```
+pkg/
+├── package.json
+├── README.md
+├── wasm_game_of_life_bg.wasm
+├── wasm_game_of_life.d.ts
+└── wasm_game_of_life.js
+```
+
+```README.md```文件是直接从根目录复制的，但是其他文件完全是新生成的。
+
+#### wasm-game-of-life/pkg/wasm_game_of_life_bg.wasm
+
+```.wasm```文件是Rust工具链使用Rust源代码生成的WASM的二进制文件，它包括全部的函数和数据，比方说，爆露出来的```greet```函数。
+
+#### wasm-game-of-life/pkg/wasm_game_of_life.js
+
+这个```.js```文件是```wasm-bindgen```引入DOM和JavaScript方法到Rust中，并油耗地暴露WASM的API到JavaScript中。举个例子，这里个```greet```函数包裹了WASM中的```greet```函数，目前，这个粘合还没做任何功能，当我们逐渐从WASM和JavaScript中传输数据，他会提供帮助。
+
+```javascript
+import * as wasm from "./wasm_game_of_life_bg";
+
+export function greet() {
+    return wasm.greet();
+}
+```
+
+#### wasm-game-of-life/pkg/wasm_game_of_life.d.ts
+
+这个```.d.ts```是TypeScript链接JavaScript的文件。如果你的项目中使用了TypeScript，你可以让你的WebAssembly项目被类型检查，并且你的IDE会提供代码提醒和自动完成功能。
+
+```TypeScript
+export function greet(): void;
+```
+
+#### wasm-game-of-life/pkg/package.json
+
+这个文件包括了所有生成的文件描述，并使得这个项目能够作为一个使用WebAssembly的NPM包，能够集成到JavaScript工具链并发布至NPM。
+
+```json
+{   
+  "name": "wasm-game-of-life",
+  "collaborators": [
+    "Your Name <your.email@example.com>"
+  ],
+  "description": null,
+  "version": "0.1.0",
+  "license": null,
+  "repository": null,
+  "files": [
+    "wasm_game_of_life_bg.wasm",
+    "wasm_game_of_life.d.ts"
+  ],
+  "main": "wasm_game_of_life.js",
+  "types": "wasm_game_of_life.d.ts"
+}
+```
+
+### 开始加入页面
+
+想要```wasm-game-of-life```能够展示到页面中，需要使用[```create-wasm-app```JavaScript模板](https://github.com/rustwasm/create-wasm-app)。
+
+在项目根目录执行以下命令：
+
+```shell
+npm init wasm-app www
+```
+
+这是```wasm-game-of-life/www```文件夹包括的文件。
+
+```
+wasm-game-of-life/www/
+├── bootstrap.js
+├── index.html
+├── index.js
+├── LICENSE-APACHE
+├── LICENSE-MIT
+├── package.json
+├── README.md
+└── webpack.config.js
+```
+
+#### wasm-game-of-life/www/package.json
+
+这个文件包括已经配置好的```webpack```和```webpack-dev-server```依赖，和```hello-wasm-pack```，版本号为已经发布到NPM上面的版本号。
+
+#### wasm-game-of-life/www/webpack.conf.js
+
+这个是用来配置webpack和开发服务器的文件。该文件已经提前布置好，如果只是开发则无需过多关心这个文件。
+
+#### wasm-game-of-life/www/index.html
+
+这是页面的HTML文件，它是来调用```bootstrap.js```的。
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+  </head>
+  <body>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
+```
+
+#### wasm-game-of-life/www/index.js
+
+这是JavaScript的入口文件，他引入了```hello-wasm-pack```，并带哦用了greet函数。
+
+```JavaScript
+import * as wasm from "hello-wasm-pack";
+
+wasm.greet();
+```
+
+#### 安装NPM依赖
+
+首先保证已经在```www```文件夹下面执行过```npm i```，这个命令会安装好现有依赖包括webpack和开发服务器。
+
+> 注意webpack并不是必须的，他只是个打包器并提供了开发服务器，这是我们选择它的原因。Parcel和Rollup一样支持WebAssembly模块。你也可以选择[不使用打包器](https://rustwasm.github.io/docs/wasm-bindgen/examples/without-a-bundler.html)。
+
+#### 在www文件夹中使用本地wasm-game-of-life包
+
+相比于使用NPM线上的```hello-wasm-pack```，使用本地文件会提高我们的开发舒适度。
+
+打开```www/package.json```，找到```devDependencies```，在兄弟节点增加```dependencies```字段，并在里面增加```"wasm-game-of-life": "file:../pkg"```。
+
+```JSON
+{
+  // ...
+  "dependencies": {                     // Add this three lines block!
+    "wasm-game-of-life": "file:../pkg"
+  },
+  "devDependencies": {
+    //...
+  }
+}
+```
+
+接下来修改```www/index.js```引入greet函数。
+
+```JavaScript
+import * as wasm from "wasm-game-of-life";
+
+wasm.greet();
+```
+
+既然修改了package.json，则需要重新安装他。
+
+```shell
+npm install
+```
+
+好了，现在服务器可以成功运行了。
+
+#### 启动本地服务
+
+接下来，打开一个新终端来在后台运行服务器，请在```www```文件夹下执行如下命令。
+
+```shell
+npm run start
+```
+
+打开http://localhost:8080，应当会弹出如下弹窗。
+
+![弹窗](https://rustwasm.github.io/book/images/game-of-life/hello-world.png)
+
+
+#### 练习
+
+修改greet函数，引入参数```name: &str```，重新执行```wasm-pack build```，并刷新页面使得弹窗中能够显示"Hello, {name}"。
+
+***答案***
+
+修改```src/lib.rs```
+
+```Rust
+#[wasm_bindgen]
+pub fn greet(name: &str) {
+    alert(&format!("Hello, {}!", name));
+}
+```
+
+再修改JavaScript绑定```www/index.js```
+
+```JavaScript
+wasm.greet("Your name");
+```
+
