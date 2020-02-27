@@ -73,6 +73,52 @@ Wasm使用的[内存模式](https://webassembly.github.io/spec/core/syntax/modul
 
 尽管在JavaScript和web社区中有很多讨论。WASM并没有考虑过它的运用环境。所以目前只能定义它为将来可以使用的便携运行格式。但就目前而言，wasm仍然在很多方面与JavaScript有关。不仅仅是浏览器，还有Node.js。
 
-## Conway的Game of Life
+## 关于本书
 
 这一部分开始使用Rust和WebAssembly开发[Conway的Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)。
+
+本章会讲到以下内容。
+
++ 如何搭建编译WebAssembly的Rust工具链。
++ 一个支持开发多语言程序（Rust、wasm、JavaScript、HTML和CSS）的工作流。
++ 设计最大利用rust和wasm的优势配合JavaScript的优点的API。
++ 如何调试wasm模块。
++ 如何查看wasm的时间日志（time profile）。
++ 如何减少生成的二进制文件包大小。
+
+## 安装工具
+
+本节将会介绍编译Rust编译WASM并和JavaScript集成的工具链。
+
+### Rust工具链
+
+你需要安装rust的标准工具链，[rustup，rustc和cargo](https://www.rust-lang.org/tools/install)（强烈建议你们在WSl的环境下面工作）。
+
+WASM已经推动Rust新特性进入稳定版，所以我们需要有1.30或更新版本。
+
+### wasm-pack
+
+```wasm-pack```是一站式的建造测试以及发布rust相关的wasm应用工具。
+
+```shell
+cargo install wasm-pack
+```
+
+### cargo-generate
+
+```cargo-generate```帮助你使用现存的Git仓库作为模板新建Rust项目。
+
+```shell
+cargo install cargo-generate
+```
+
+### NPM
+
+```npm```是JavaScript的包装管理器。我们将利用它，去安装和运行JavaScript的打包和测试部署。我们将把我们编译好的```.wasm```文件放到npm的包中。
+
+如果你已经安装了NPM可以执行以下命令，安装最新版。
+
+```shell
+npm install npm@latest -g
+```
+
