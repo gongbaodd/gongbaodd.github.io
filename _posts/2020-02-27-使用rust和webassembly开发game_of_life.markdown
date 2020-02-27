@@ -646,5 +646,59 @@ impl Universe {
 
 以上，Rust部分已经完工。
 
+#### 使用JavaScript渲染
 
+首先在HTML中插入<pre>标签用来展示整个宇宙。
 
+```html
+<body>
+  <pre id="game-of-life-canvas"></pre>
+  <script src="./bootstrap.js"></script>
+</body>
+```
+
+另外我们希望<pre>标签能处于页面中央。我们可以通过CSS flex box实现这个任务，在html中增加<style>标签。
+
+```css
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+修改JavaScript入口文件，将原来引入的greet函数改为Universe。
+
+```JavaScript
+import { Universe } from "wasm-game-of-life";
+```
+
+让我们在那个<pre>标签中增加新的宇宙实例吧。
+
+```JavaScript
+const pre = document.getElementById("game-of-life-canvas");
+const universe = Universe.new();
+```
+
+使用JavaScript创建一个requestAnimationFrame循环，每一次循环，就在<pre>标签中绘制一遍宇宙，并执行一次```Universe::tick```。
+
+```JavaScript
+function renderLoop() {
+  pre.textContent = universe.render();
+  universe.tick();
+
+  requestAnimationFrame(renderLoop);
+}
+```
+
+想要实现渲染，只需执行```requestAnimationFrame(renderLoop)```。
+
+确保你的本地服务任然在运行，此时你的页面应该如下所示。
+
+![浏览器页面](https://rustwasm.github.io/book/images/game-of-life/initial-game-of-life-pre.png)
