@@ -2,9 +2,9 @@
 type: post
 category: fe
 ---
-# 使用rust+webassembly开发game of life
+# 使用rust和webassembly开发game of life
 
-这是一篇翻译，原文在https://github.com/rustwasm/book.git，这可能是第一篇系统讲解rustwasm的文章了。
+这是一篇翻译，[原文](https://github.com/rustwasm/book.git)，这可能是第一篇系统讲解rustwasm的文章了。
 
 ## 这本书适合谁？
 
@@ -592,5 +592,59 @@ impl Universe {
 }
 ```
 
-目前为止，一个宇宙的状态就都被存储在cell这个向量里面了。
+目前为止，一个宇宙的状态就都被存储在cell这个向量里面了。为了提高它的可读性，让我们实现一个文本渲染器，目的是将整个宇宙按行输出为文字，每一个活着的细胞标注为Unicode符号“■”，死掉的细胞则为“□”。
+
+通过实现Rust标准库中的```Display```trait，我们可以将数据结构以一种用户交互方式输出，它也提供了一个```to_string```方法。
+
+```Rust
+use std::fmt;
+
+impl fmt::Display for Universe {
+  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+    for line in self.cells.as_slice().chunks(self.width as usize) {
+      for &cell in line {
+        let symbol = if cell == Cell::Dead {"□"} else {"■"};
+        write!(f, "\n")?;
+      }
+    }
+
+    Ok(())
+  }
+}
+```
+
+最后，我们定义一个构造器去初始化一个有趣的图案和一个渲染函数。
+
+```Rust
+#[wasm_bindgen]
+impl Universe {
+  pub fn new() -> {
+    let width = 64;
+    let height = 64;
+
+    let cells = (0..width * height)
+      .map(|i| {
+        if i%2 == 0 || i%7 == 0 {
+          Cell::Alive
+        } else {
+          Cell::Dead
+        }
+      }).collect();
+
+    Universe {
+      width,
+      height,
+      cells,
+    }
+  }
+
+  pub fn render(&self) -> String {
+    self.to_string()
+  }
+}
+```
+
+以上，Rust部分已经完工。
+
+
 
