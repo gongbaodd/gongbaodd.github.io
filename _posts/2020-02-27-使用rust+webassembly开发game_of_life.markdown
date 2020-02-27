@@ -1,5 +1,5 @@
 ---
-type : post
+type: post
 category: fe
 ---
 # 使用rust+webassembly开发game of life
@@ -379,7 +379,7 @@ npm run start
 ![弹窗](https://rustwasm.github.io/book/images/game-of-life/hello-world.png)
 
 
-#### 练习
+### 练习
 
 修改greet函数，引入参数```name: &str```，重新执行```wasm-pack build```，并刷新页面使得弹窗中能够显示"Hello, {name}"。
 
@@ -399,4 +399,198 @@ pub fn greet(name: &str) {
 ```JavaScript
 wasm.greet("Your name");
 ```
+
+## Conway的生命游戏的游戏规则
+
+如果你已经了解[Conway的生命游戏](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)，可以跳过这部分。
+
+整个Conway的生命游戏是在一个无限的二维的正交格子宇宙中，每一个细胞拥有两种生命状态，生或者死。或者说可增殖或者不可增殖。每一个细胞都和它的8个邻居交互，它们分别是纵向的，斜向的，横向的相邻。并且每一步都会发生如下的变化。
+
+1. 任何一个活着的细胞，如果有少于两个邻居就会死亡。
+2. 任何一个活细胞拥有两个或三个活着的邻居，则会继续增殖。
+3. 任何一个活着的细胞拥有三个以上活着的的邻居，则会死亡。
+4. 任何一个死掉的细胞，如果有三个活着的邻居，则会重生。
+
+最初的图案组成了最初的世界。第1代是按照以上的规则生成的，每一个细胞的生成和死亡都是同时的。他们的生存和死亡这一个时间我们称之为一刻。用程序的语言来说，这一刻是上一次生成的纯函数。这个规则一直有效。
+
+考虑设置如下的初始宇宙：
+
+![初始宇宙](https://rustwasm.github.io/book/images/game-of-life/initial-universe.png)
+
+我们可以通过考虑每一个细胞来确定下一代。最左上角的细胞已经死亡，第4条规则是唯一一个能够处理死亡细胞的规则。所以第1排的所有细胞都有相同的规则。他们都没有三个活着的邻居。只能保持死亡。
+
+当我们看到最上面的活着的细胞时，这个游戏开始变得有趣了。在第2排第3列。对于活着细胞前三个规则都可以应用。对于这一个细胞，他只有一个活着的邻居，所以规则一可用。这个细胞会在下一次争执死亡。下面那几个活着的细胞也是有一样的命运。
+
+中间的活着的细胞，还有两个邻居，上面的和下面的，这就意味着它符合规则二，他可以活到下一次增值。
+
+最后一个比较有趣的例子，就是当我们看到死掉的细胞。嗯。在中间这活着的细胞的左边和右边。这三个活着的细胞都是他们的邻居。这使得他们按照规则是可以在下一轮重生。
+
+将这些规则放在一起，我们可以获得下一刻的世界。
+
+![下一刻的世界](https://rustwasm.github.io/book/images/game-of-life/next-universe.png)
+
+根据这个例子，和确定的规则。不去并精彩的事情将会发生。
+
+![Gosper's glider gun](https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif)
+
+![Pulsar](https://upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif)
+
+![Space ship](https://upload.wikimedia.org/wikipedia/commons/3/37/Game_of_life_animated_LWSS.gif)
+
+### 练习
+
+手动计算出下一刻，宇宙应该是什么样
+
+***答案***
+
+![下一刻宇宙](https://rustwasm.github.io/book/images/game-of-life/initial-universe.png)
+
+你能找到一个稳定的没有变化的宇宙吗？
+
+***答案***
+
+这个答案其实有无数个，最平凡的答案就是它是一个空宇宙。如果是一个2×2的方格，也可以形成一个稳定的宇宙。
+
+## 实现Conway的生命游戏
+
+### 设计
+
+在开始之前呢，我们要先考虑以下几种设计模式。
+
+#### 无限宇宙
+
+生命游戏是在一个无限宇宙中玩的。但是我们没有无限的内存和计算能力。在这种情况下，我们往往会有三个选项。
+
+1. 始终追踪这个宇宙的发展，并适当的扩展宇宙。这个扩张是无限的，所以这个实现实现了就会逐渐逐渐的变得越来越慢，直到把内存全部用完。
+2. 创建一个固定的宇宙，当细胞碰到宇宙的边缘的时候，将会有更少的邻居。更简单的策略就是当他们已经达到边缘的时候，直接被宇宙剪掉。
+3. 创建一个固定的宇宙，当细胞达到边缘的时候，将会从另外一边滑入这样，我的我们的应用就可以一直跑下去。
+
+我们会按照第3个选项来实现。
+
+#### 连接Rust和JavaScript
+
+> 此部分是本人最重要的一节。
+
+JavaScript的垃圾回收堆内存，是用来调用Object和Array还有DOM结点的。而Rust存在的WebAssembly线性内存和它是截然不同的。WebAssembly目前还不能直接操作垃圾回收堆内存（在2018年4月，一个关于[接口类型（Interface Type）](https://github.com/WebAssembly/interface-types/blob/master/proposals/interface-types/Explainer.md)的提案将会改变这一局面）。JavaScript却可以读写WebAssembly的线性内存，但仅限于ArrayBuffe支持的标量（u8, i32, f64等等）。WebAssembly行数一样能处理和返回这些标量。以下讲解WebAssembly和JavaScript如何链接。
+
+wasm_bindgen定义了如何穿过这段链接计算数据结构的方法。它包括装箱Rust结构，并包装指针成为一个JavaScript类以供使用，或者提供JavaScript对象给Rust使用。wasm_bindgen非常便利，但并不是无需考虑怎样在这个链接上传输数据结构。你应该把它当作一个实现接口的工具。
+
+当设计WebAssembly和JavaScript的接口时，我们需要考虑到以下内容。
+
+1. **减少复制到和移出WebAssembly线性内存中的值**，无效的复制会造成无用的性能损耗。
+2. **最小的序列化和解序列化**，和复制类似，序列化和解序列化一样造成性能损耗，如果想要把数据无副作用地从一端传到另一端，与其说在一端序列化，到另一端解序列化，不如使用wasm_bindgen帮助我们将JavaScript的Object装箱成Rust的structure。
+
+一个结论，处理JavaScript和WebAssembly接口设计时，经常将大的、生命周期长的数据结构作为Rust类型，存储在WebAssembly线性内存中，并给JavaScript暴露一个处理方法，JavaScript调用WebAssembly转换文件，处理运算，并最终得到一个小的，可复制的结果。通过只返回计算结果，我们可以躲过复制和序列化数据的过程。
+
+#### 在生命游戏中链接Rust和JavaScript
+
+接下来结局几个要规避的问题。我们不想每刻都复制整个宇宙到WebAssembly的内存中，我们不想处理宇宙中所有的细胞，也不想在每次读写细胞的时候都穿过WebAssembly和JavaScript的分界。
+
+这是我们的4x4宇宙在内存中的结构。
+
+![4x4宇宙在内存中的结构](https://rustwasm.github.io/docs/book/images/game-of-life/universe.png)
+
+为了寻找细胞在内存中的位置，我们可以使用下面的公式。
+
+```
+index(row, column, universe) = row * width(universe) + column
+```
+
+我们有很多方法来给JavaScript暴露宇宙中的细胞。开始我们要为宇宙实现一个```std::fmt::Display```。我们可以使用一个Rust的String，每个字符代表一个细胞。这个Rust的string将会从WebAssembly的内存中复制到JavaScript的内存里，并接下来作为textContent展示到HTML里面。本节的后面，将会讲到如何把细胞展示到canvas中。
+
+> 另一种设计是让Rust返回每个细胞的生存状态列表，这样JavaScript就不需要在渲染时解析整个宇宙，这不过这个是先更加复杂些。
+
+#### Rust的实现
+
+上一章，我们复制了初始化模板，我们现在要修改这个模板。
+
+从删除greet函数，并定义宇宙中的细胞开始。
+
+```Rust
+#[wasm_bindgen]
+#[repr(u8)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Cell {
+    Dead = 0,
+    Alive = 1,
+}
+```
+
+```#[repr(u8)]```很重要，这样每个细胞都会以一个字节存储，另外Alive为1，Dead为0也很重要，这样我们就可以使用加法计算邻居数目。
+
+接下来定义宇宙，一个宇宙包括宽度，高度和一个向量的细胞。
+
+```Rust
+#[wasm_bindgen]
+pub struct Universe {
+    width: u32,
+    height: u32,
+    cells: Vec<Cell>,
+}
+```
+
+访问并转换细胞的实现如下。
+
+```Rust
+impl Univers {
+    fn get_index(&self, row: u32, column: u32) -> usize {
+        (row*self.width + column) as usize
+    }
+}
+```
+
+为了计算细胞接下来的状态，我们要统计某个细胞有多少个邻居存活。
+
+```Rust
+impl Univers {
+    fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
+        let mut count = 0;
+        for delta_row in [self.height - 1, 0, 1].iter().cloned() {
+            for delta_col in [self.width - 1, 0, 1].iter().cloned() {
+                if delta_row == 0 && delta_col ==0 {
+                    continue;
+                }
+
+                let neighbor_row = (row + delta_row) % self.height;
+                let neighbor_col = (column + delta_col) % self.width;
+                let idx = self.get_index(neighbor_row, neighbor_col);
+                count += self.cells[idx] as u8
+            }
+        }
+        count
+    }
+}
+```
+
+这个函数使用取余处理边界问题。现在我们已经有所有的必须函数了，最后只需要生成下一刻的状态即可（记住，每个函数必须在```#[wasm_bindgen]```宏之下，这样JavaScript才能接到暴露的函数）。
+
+```Rust
+#[wasm_bindgen]
+impl Universe {
+    pub fn tick(&mut self) {
+        let mut next = self.cells.clone();
+
+        for row in 0..self.height {
+            for col in 0..self.width {
+                let idx = self.get_index(row, col);
+                let cell = self.cells[idx];
+                let live_neighbors = self.live_neighbor_count(row, col);
+
+                let next_cell = match (cell, live_neighbors) {
+                    (Cell::Alive, x) if x < 2 => Cell::Dead,
+                    (Cell::Alive, 2) | (Cell::Alive, 3) => Cell::Alive,
+                    (Cell::Alive, x) if x > 3 => Cell::Dead,
+                    (Cell::Dead, 3) => Cell::Alive,
+                    (otherwise, _) => oterwise,
+                };
+
+                next[idx] = next_cell;
+            }
+        }
+        self.cells = next;
+    }
+}
+```
+
+目前为止，一个宇宙的状态就都被存储在cell这个向量里面了。
 
