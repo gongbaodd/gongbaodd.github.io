@@ -562,7 +562,7 @@ impl Univers {
 }
 ```
 
-这个函数使用取余处理边界问题。现在我们已经有所有的必须函数了，最后只需要生成下一刻的状态即可（记住，每个函数必须在```#[wasm_bindgen]```宏之下，这样JavaScript才能接到暴露的函数）。
+这个函数使用取余处理边界问题。现在我们已经有所有的必须函数了，最后只需要生成下一刻的状态即可（记住，每个函数必须在```#[wasm_bindgen]```属性之下，这样JavaScript才能接到暴露的函数）。
 
 ```Rust
 #[wasm_bindgen]
@@ -1098,7 +1098,7 @@ pub fn expected_spaceship() -> Universe {
 }
 ```
 
-现在我们写一个test_tick函数，创建以上的两个飞船。最后使用```assert_eq!```宏比较expected_ship来确保tick函数运行正确。我们添加```#[wasm_bindgen_test]```宏然保证这个函数可以在WebAssembly环境下测试。
+现在我们写一个test_tick函数，创建以上的两个飞船。最后使用```assert_eq!```宏比较expected_ship来确保tick函数运行正确。我们添加```#[wasm_bindgen_test]```属性保证这个函数可以在WebAssembly环境下测试。
 
 ```Rust
 #[wasm_bindgen_test]
@@ -1191,7 +1191,7 @@ pub fn init_panic_hook() {
 
 如果错误和交互JavaScript和Web API有关，则使用```wasm-bindgen-test```写测试。
 
-如果和JavaScript和Web API无关，这是用默认的```#[test]```宏。使用[```quickcheck```包](https://crates.io/crates/quickcheck)可以减少写测试上面的时间。
+如果和JavaScript和Web API无关，这是用默认的```#[test]```属性。使用[```quickcheck```包](https://crates.io/crates/quickcheck)可以减少写测试上面的时间。
 
 为了避免```#[test]```编译器出现连接错误，你需要一个rlib依赖，在```Cargo.toml```文件按照如下修改。
 
@@ -1363,7 +1363,7 @@ impl Universe {
 }
 ```
 
-这个方法增加第1行的宏是为了能够在JavaScript环境里面直接调用。在JavaScript文件中，监听<canvas>标签，将页面上的点击事件转换成画布上的点击事件，并调用toggle_cell方法重绘场景。
+这个方法增加第1行的属性声明是为了能够在JavaScript环境里面直接调用。在JavaScript文件中，监听<canvas>标签，将页面上的点击事件转换成画布上的点击事件，并调用toggle_cell方法重绘场景。
 
 ```Rust
 canvas.addEventListener("click", function canvasClickListener(event) {
@@ -1392,3 +1392,438 @@ canvas.addEventListener("click", function canvasClickListener(event) {
 + 新建一个<input>标签来处理每帧更新多少个刻。
 + 增加一个重置按钮，把宇宙恢复到初始状态；再增加一个消灭按钮，毁灭所有细胞。
 + 当使用```Ctrl+Click```的时候，增加一个[glider](https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life))，使用```Shift+Click```增加一个pulsar。
+
+## 性能日志(Time Profiling)
+
+本节我们将会提高这个游戏的性能，我们将会用time profiling来完成。
+
+### Time Profiling
+
+此部分将会讲解如何获得页面的性能分析，目标是提高JavaScript和WebAssembly之间的吞吐。
+
+> 永远使用```wasm-pack build```编译最新的代码，以确定你的优化正确。
+
+#### windows.performance.now()
+
+这个函数会返回以毫秒为单位的时间戳来计算页面加载速度。
+
+调用```performance.now()```的性能损耗低，所以我们可以利用它创造一个简单的测算工具而不是产生很大误差值。
+
+我们可以通过```web-sys```调用时间函数。
+
+```Rust
+extern crate web_sys;
+
+fn now() -> f64 {
+  web_sys::window()
+    .expect("should have window")
+    .performance()
+    .expect("should have a Performance")
+    .now()
+}
+```
+
+#### 开发者工具的性能查看器
+
+所有的浏览器的开发者工具都有性能查看器。这个查看器通过火焰图展示函数调用栈来表示哪一个函数耗时更长。
+
+如果你编译的时候打开了调试，则函数名将会显示在这里（如果没打开则显示一个不透明的名字，比如```wasm-function[123]```）。
+
+注意，因为性能查看器不会显示内联函数，又因为Rust和LVVM很重地依赖于内联函数，其结果就会让人感到头疼。
+
+![性能查看器无法处理内联函数](https://rustwasm.github.io/docs/book/images/game-of-life/profiler-with-rust-names.png)
+
+
+#### console.time和console.timeEnd
+
+这两个函数是浏览器的内置函数。以调用```console.time("foo")```作为开始，以```console.time("foo")```作为结束，参数是可选的。
+
+你可以通过web-sys调用```web_sys::console::time_with_label("foo")```和```web_sys::console::time_end_with_label("foo")```。
+
+如下是浏览器的截图。
+
+![使用console.time的截图](https://rustwasm.github.io/docs/book/images/game-of-life/console-time.png)
+
+另外，```console.time```和```console.timeEnd```会调用性能检查器统计出瀑布图。
+
+#### 使用#[bench]调用原生代码
+
+就像我们能使用原生的测试方法```#[test]```来测试代码，我们可以使用```#[bench]```通过操作系统的工具来查看函数性能。
+
+写好标准函数并放到```benches```文件夹下。确保```crate-type```已经引入rlib，能使测试代码能够链接。
+
+无论如何，先搞明白你知道WebAssembly里面的瓶颈之后再花费精力去调查原生的性能调查器！用你的浏览器的性能调查器，或者使用这些时间去优化你的代码不是更好？
+
+### 利用window.performance.now创建一个计时器
+
+创建一个FPS的计时器用来调查游戏的渲染速度不失为一个好办法。
+
+我们在JavaScript增加fps对象。
+
+```JavaScript
+const fps = new class {
+  constructor() {
+    this.fps = document.getElementById("fps");
+    this.frames = [];
+    this.lastFrameTimeStamp = performance.now();
+  }
+
+  render() {
+    // Convert the delta time since the last frame render into a measure
+    // of frames per second.
+    const now = performance.now();
+    const delta = now - this.lastFrameTimeStamp;
+    this.lastFrameTimeStamp = now;
+    const fps = 1 / delta * 1000;
+
+    // Save only the latest 100 timings.
+    this.frames.push(fps);
+    if (this.frames.length > 100) {
+      this.frames.shift();
+    }
+
+    // Find the max, min, and mean of our 100 latest timings.
+    let min = Infinity;
+    let max = -Infinity;
+    let sum = 0;
+    for (let i = 0; i < this.frames.length; i++) {
+      sum += this.frames[i];
+      min = Math.min(this.frames[i], min);
+      max = Math.max(this.frames[i], max);
+    }
+    let mean = sum / this.frames.length;
+
+    // Render the statistics.
+    this.fps.textContent = `
+Frames per Second:
+         latest = ${Math.round(fps)}
+avg of last 100 = ${Math.round(mean)}
+min of last 100 = ${Math.round(min)}
+max of last 100 = ${Math.round(max)}
+`.trim();
+  }
+};
+```
+
+接下来再每次迭代中调用fps render函数。
+
+```JavaScript
+const renderLoop = () => {
+    fps.render(); //new
+
+    universe.tick();
+    drawGrid();
+    drawCells();
+
+    animationId = requestAnimationFrame(renderLoop);
+};
+```
+
+最后在HTML中增加fps的展示。
+
+```JavaScript
+<div id="fps"></div>
+```
+
+增加CSS，让它展示得更好。
+
+```CSS
+#fps {
+  white-space: pre;
+  font-family: monospace;
+}
+```
+
+好了，现在可以在页面上看到FPS计数器了。
+
+### 给每一刻计算时间
+
+每一刻开始调用```console.time```，结束的时候调用```console.timeEnd```。
+
+首先，要在```Cargo.toml```里面增加web-sys。
+
+```toml
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "console",
+]
+```
+
+因为每次执行```console.time```后总要执行```console.timeEnd```，把他们包再[RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)类型下就会更加便利。
+
+```Rust
+extern crate web_sys;
+use web_sys::console;
+
+pub struct Timer<'a> {
+    name: &'a str,
+}
+
+impl<'a> Timer<'a> {
+    pub fn new(name: &'a str) -> Timer<'a> {
+        console::time_with_label(name);
+        Timer { name }
+    }
+}
+
+impl<'a> Drop for Timer<'a> {
+    fn drop(&mut self) {
+        console::time_end_with_label(self.name);
+    }
+}
+```
+
+接下来，统计每一刻用的时间是多久，只需把初始化Timer放到Universe的构造函数里。
+
+```Rust
+let _timer = Timer::new("Universe::tick");
+```
+
+如下是每一刻执行的时间。
+
+![每一刻的执行时间](https://rustwasm.github.io/book/images/game-of-life/console-time.png)
+
+另外，通过使用```console.time```和```console.timeEnd```也能获得执行性能数据。
+
+![性能数据](https://rustwasm.github.io/book/images/game-of-life/console-time-in-profiler.png)
+
+### 增加宇宙大小
+
+> 本部分是拿火狐浏览器做例子，当然还有很多浏览器有类似的功能，只是有细微的差别。这个数据是一致的，但是部分命名和标量可能不一样。
+
+如果我们把宇宙修改的大一些，会发生什么？把64x64改成128x128，结果会把fps从60降到40。
+
+如果我们打开性能监控器，并看到它的瀑布图，我们可以看到动画帧用了20毫秒，回顾60fps时渲染一页则需要16毫秒，这不仅仅是JavaScript和WebAssembly，还包括重绘的部分。
+
+![性能监视](https://rustwasm.github.io/book/images/game-of-life/drawCells-before-waterfall.png)
+
+如果仔细查看，可以看到```CanvasRenderingContext2D.fillStyle```的setter是很耗费时间的。
+
+> 再火狐，你可能看到的是"DOM"而不是"CanvasRenderingContext2D.fillStyle"，你需要打开"展示Gecko平台数据"。
+
+![火狐的性能监视器](https://rustwasm.github.io/book/images/game-of-life/profiler-firefox-show-gecko-platform.png)
+
+当然，这并不稀奇，40%的的时间都浪费在这个setter上面。
+
+> 我们可能期望性能瓶颈再tik函数上，但并不是。永远选择性能监视器观察，因为你可能浪费很多时间在无关的地方上面。
+
+在drawCell上面，fillStyle在每次动画和每个细胞上面使用。
+
+```JavaScript
+for (let row = 0; row < height; row++) {
+  for (let col = 0; col < width; col++) {
+    const idx = getIndex(row, col);
+
+    ctx.fillStyle = cells[idx] === DEAD
+      ? DEAD_COLOR
+      : ALIVE_COLOR;
+
+    ctx.fillRect(
+      col * (CELL_SIZE + 1) + 1,
+      row * (CELL_SIZE + 1) + 1,
+      CELL_SIZE,
+      CELL_SIZE
+    );
+  }
+}
+```
+
+现在我们知道fillStyle资源耗费比较多，那么我们该怎么避免他呢？我们需要判断细胞的生命状态来自决定fillStyle的值，设想，如果先设定```fillStyle = ALIVE_COLOR```，再绘制所有的活着的细胞，然后设置```fillStyle = DEAD_COLOR```，再设置所有的死细胞，最后我们只设置fillStyle两次。
+
+```JavaScript
+// Alive cells.
+ctx.fillStyle = ALIVE_COLOR;
+for (let row = 0; row < height; row++) {
+  for (let col = 0; col < width; col++) {
+    const idx = getIndex(row, col);
+    if (cells[idx] !== Cell.Alive) {
+      continue;
+    }
+
+    ctx.fillRect(
+      col * (CELL_SIZE + 1) + 1,
+      row * (CELL_SIZE + 1) + 1,
+      CELL_SIZE,
+      CELL_SIZE
+    );
+  }
+}
+
+// Dead cells.
+ctx.fillStyle = DEAD_COLOR;
+for (let row = 0; row < height; row++) {
+  for (let col = 0; col < width; col++) {
+    const idx = getIndex(row, col);
+    if (cells[idx] !== Cell.Dead) {
+      continue;
+    }
+
+    ctx.fillRect(
+      col * (CELL_SIZE + 1) + 1,
+      row * (CELL_SIZE + 1) + 1,
+      CELL_SIZE,
+      CELL_SIZE
+    );
+  }
+}
+```
+
+修改之后，刷新页面，此时的fps已经上升到60。
+
+如果重新看原来的数据，现在每一刻只使用10毫秒。
+
+![更新后的性能检查](https://rustwasm.github.io/book/images/game-of-life/drawCells-after-waterfall.png)
+
+消除了fillStyle的性能瓶颈，发现比较消耗资源的是fillRect，用来绘制每一个细胞的。
+
+![目前的性能损耗都在fillRect上面](https://rustwasm.github.io/book/images/game-of-life/drawCells-after-flamegraph.png)
+
+### 让时间变快
+
+有些人可能不喜欢等待，更希望一帧跑完九刻而不是一刻。我们可以通过修改renderLoop函数实现。
+
+```JavaScript
+for (let i = 0; i < 9; i++) {
+  universe.tick();
+}
+```
+
+在机器上，fps降到了35，但是我们一定要到60fps！
+
+现在我们知道性能瓶颈在tick函数上面，所以我们给函数的每一步都加上Timer监视，我猜测是创建向量和释放向量占用了很多资源造成的。
+
+
+
+```Rust
+pub fn tick(&mut self) {
+    let _timer = Timer::new("Universe::tick");
+
+    let mut next = {
+        let _timer = Timer::new("allocate next cells");
+        self.cells.clone()
+    };
+
+    {
+        let _timer = Timer::new("new generation");
+        for row in 0..self.height {
+            for col in 0..self.width {
+                let idx = self.get_index(row, col);
+                let cell = self.cells[idx];
+                let live_neighbors = self.live_neighbor_count(row, col);
+
+                let next_cell = match (cell, live_neighbors) {
+                    // Rule 1: Any live cell with fewer than two live neighbours
+                    // dies, as if caused by underpopulation.
+                    (Cell::Alive, x) if x < 2 => Cell::Dead,
+                    // Rule 2: Any live cell with two or three live neighbours
+                    // lives on to the next generation.
+                    (Cell::Alive, 2) | (Cell::Alive, 3) => Cell::Alive,
+                    // Rule 3: Any live cell with more than three live
+                    // neighbours dies, as if by overpopulation.
+                    (Cell::Alive, x) if x > 3 => Cell::Dead,
+                    // Rule 4: Any dead cell with exactly three live neighbours
+                    // becomes a live cell, as if by reproduction.
+                    (Cell::Dead, 3) => Cell::Alive,
+                    // All other cells remain in the same state.
+                    (otherwise, _) => otherwise,
+                };
+
+                next[idx] = next_cell;
+            }
+        }
+    }
+
+    let _timer = Timer::new("free old cells");
+    self.cells = next;
+}
+```
+
+看这些时间戳，很明显我的猜测是错误的：大部分时间确实用在计算下一代细胞上面，每一刻都调用和释放向量竟然无足轻重。所以一定要使用性能监视器！
+
+![性能监视](https://rustwasm.github.io/book/images/game-of-life/console-time-in-universe-tick.png)
+
+下一部分需要```nightly```编译，因为我们将会使用[test-feature-gate](https://doc.rust-lang.org/unstable-book/library-features/test.html)来跑benchmark（性能测试）。我们将会安装另一个工具[cargo-benchcmp](https://github.com/BurntSushi/cargo-benchcmp)。一个迷你的有```cargo bench```支持的性能测试工具。
+
+让我们写一个函数使用```#[bench]```属性，我们可以使用更成熟的测试工具测试它。
+
+```Rust
+#![feature(test)]
+
+extern crate test;
+extern crate wasm_game_of_life;
+
+#[bench]
+fn universe_ticks(b: &mut test::Bencher) {
+    let mut universe = wasm_game_of_life::Universe::new();
+
+    b.iter(|| {
+        universe.tick();
+    });
+}
+```
+
+我们也要注释掉所有```#[wasm_bindgen]```，否则"cdylib"或则其他编译流程会失败，
+
+此时，我们可以跑```cargo bench | tee before.txt```来编译项目查看性能日志了！
+
+```shell
+$ cargo bench | tee before.txt
+    Finished release [optimized + debuginfo] target(s) in 0.0 secs
+     Running target/release/deps/wasm_game_of_life-91574dfbe2b5a124
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+     Running target/release/deps/bench-8474091a05cfa2d9
+
+running 1 test
+test universe_ticks ... bench:     664,421 ns/iter (+/- 51,926)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 1 measured; 0 filtered out
+```
+
+他也告诉我们二进制文件的位置，我们可以跑第二次性能测试。但这次可以使用系统的性能测试工具。因为我用的是Linux，所以perf就是我的测试工具。
+
+```shell
+$ perf record -g target/release/deps/bench-8474091a05cfa2d9 --bench
+running 1 test
+test universe_ticks ... bench:     635,061 ns/iter (+/- 38,764)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 1 measured; 0 filtered out
+
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.178 MB perf.data (2349 samples) ]
+```
+
+查看性能测试报告，得知所有的时间都如期使用在```Universe::tick```。
+
+![perf的结果](https://rustwasm.github.io/book/images/game-of-life/bench-perf-report.png)
+
+perf会指明函数中到底是什么操作引起的性能损耗（译者：虽然我也没看出来）。
+
+![perf的结果](https://rustwasm.github.io/book/images/game-of-life/bench-perf-annotate.png)
+
+它告诉我们26.67%的时间花在总和细胞数目，23.41%的时间花在获取列序号，另外15.42%花在取得行序号。这三个性能瓶颈中，第二和第三都使用了比较耗费性能的DIV命令。这些DIV的实现是在```Universe::live_neighbor_count```。
+
+回想这个函数的定义：
+
+```Rust
+fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
+    let mut count = 0;
+    for delta_row in [self.height - 1, 0, 1].iter().cloned() {
+        for delta_col in [self.width - 1, 0, 1].iter().cloned() {
+            if delta_row == 0 && delta_col == 0 {
+                continue;
+            }
+
+            let neighbor_row = (row + delta_row) % self.height;
+            let neighbor_col = (column + delta_col) % self.width;
+            let idx = self.get_index(neighbor_row, neighbor_col);
+            count += self.cells[idx] as u8;
+        }
+    }
+    count
+}
+```
