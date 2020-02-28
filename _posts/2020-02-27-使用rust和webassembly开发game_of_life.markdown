@@ -1115,3 +1115,89 @@ pub fn test_tick() {
 ```
 
 测试这个测试函数使用```wasm-pack test --firefox --headless```。
+
+## 调试
+
+写这么多代码之前（虽然上面都写完了，我也不知道原作者抽什么风），先看一看Rust的调试工具。
+
+### 调试工具
+
+此部分将会介绍WebAssembly的调试工具。
+
+#### 使用debug标记编译
+
+如果没有打开debug标记，"name"这个部分就不会被编译到二进制程序中，错误栈也不会显示函数名，你会收到```wasm-functions[42]```而不是```wasm_game_of_file::Universe::live_neighbor_count```。
+
+调试编译，```wasm-pack build --debug```或者```cargo build```总是会默认打开debug标记。
+
+版本编译（release build），debug标记是默认关闭的，要打开debug标记，需要声明```debug=true```。
+
+```toml
+[profile.release]
+debug = true
+```
+
+#### 使用console API打印日志
+
+打印日志是最好的判断程序是否是有错的方式。在浏览器中，```console.log```函数可以将日志打印到浏览器的dev工具里。
+
+我们可以使用web-sys包去调用console API。
+
+```Rust
+extern crate web_sys;
+
+web_sys::console::log_1(&"Hello, world!".into());
+```
+
+相应的```console.error```函数用法一致，但是浏览器的调用栈还是按照```console.error```来打印。
+
+使用```console.log```：
+
+* [```web_sys::console::log```，接受一个向量的数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log.html)。
+* [```web_sys::console::log_1```，接受一个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_1.html)。
+* [```web_sys::console::log_2```，接受两个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_2.html)。
+* ...
+
+使用```console.error```：
+
+* [```web_sys::console::error```，接受一个向量的数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error.html)。
+* [```web_sys::console::error_1```，接受一个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_1.html)。
+* [```web_sys::console::error_2```，接受两个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_2.html)。
+* ...
+
+
+#### 打印崩溃日志
+
+[```console_error_panic_hook```包能通过```console.error```打印崩溃日志](https://github.com/rustwasm/console_error_panic_hook)。他能打印出格式化的崩溃信息而不是难以理解的```RuntimeError: unreachable executed```。
+
+你只需要增加调用这个钩子函数。
+
+```Rust
+#[wasm_bindgen]
+pub fn init_panic_hook() {
+  console_error_panic_hook::set_once();
+}
+```
+
+#### 使用调试器
+
+不幸的，WebAssembly的调试器依然不成熟，在很多unix系统中，DWARF是用来解析调试程序需要的数据的工具。虽然，Windows上面也有一个类似的工具。但还没有相当的工具提供给WebAssembly。所以，调试器目前能给予的功能有限，我们只能收到WebAssembly的错误而不是Rust源代码的错误。
+
+> 这里有一个故事是[跟踪WebAssembly的调试](https://github.com/WebAssembly/debugging)的，我们希望它将来会有所改善！
+
+尽管如此，调试器还是能够给调试JavaScript方面提供效力。
+
+#### 一开始就规避在WebAssembly上面使用调试
+
+如果错误和交互JavaScript和Web API有关，则使用```wasm-bindgen-test```写测试。
+
+如果和JavaScript和Web API无关，这是用默认的```#[test]```宏。使用[```quickcheck```包](https://crates.io/crates/quickcheck)可以减少写测试上面的时间。
+
+为了避免```#[test]```编译器出现连接错误，你需要一个rlib依赖，在```Cargo.toml```文件按照如下修改。
+
+```toml
+[lib]
+crate-type ["cdylib", "rlib"]
+```
+
+
