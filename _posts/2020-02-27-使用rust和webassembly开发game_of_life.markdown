@@ -1005,3 +1005,113 @@ function drawCells() {
   ctx.stroke();
 }
 ```
+
+## 测试
+
+现在我们已经实现了Rust的实现，并成功渲染在浏览器中。现在来谈谈测试WebAssembly中的Rust函数。
+
+我们将要测试tick函数，确保它能返回正确的值。
+
+接下来，我们将处理Universe的setter函数，让我们能构造不同大小的universe。
+
+```Rust
+#[wasm_bindgen]
+impl Universe {
+  pub fn set_width(&mut self, width: u32) {
+    self.width = width;
+    self.cells = (0..width * self.height).map(|_| Cell::Dead).collect()
+  }
+
+  pub fn set_height(&mut self, height: u32) {
+    self.height = height;
+    self.cells = (0..self.width * height).map(|_| Cell::Dead).collect()
+  }
+}
+```
+
+我们将会创建另一个不需要```#[wasm_bindgen]```的```impl Universe```实现，因为我们不能把所有的WebAssembly函数暴露给JavaScript，Rust生成的WebAssembly函数是不能返回引用的。可以尝试让Rust返回一个引用，查看一下编译结果中是什么错误。
+
+接下来我们要写一个get_cells来获得细胞，和一个set_cells来设置哪些细胞是活的，哪些是死的。
+
+```Rust
+impl Universe {
+  pub fn get_cells(&self) -> &[Cell] {
+    &self.cells
+  }
+
+  pub fn set_cells(&mut self, cells: &[(u32, u32)]) {
+    for (row, col) in cells.iter().cloned() {
+      let idx = self.get_index(row, col);
+      self.cells[idx] = Cell::Alive;
+    }
+  }
+}
+```
+
+现在我们将创建测试文件```tests/web.rs```。
+
+在这之前，测试环境已经配置好，请确定```wasm-pack test --chrome --headless```能够在根目录下运行。你也可以使用```--firefox```，```--safari```和```--node```选项来在其他浏览器测试你的代码。
+
+在```test/web.rs```中，我们需要到处Universe类型。
+
+```Rust
+extern crate wasm_game_of_life;
+use wasm_game_of_life:Universe;
+```
+
+在测试文件中，我们要创建一个飞船构造函数。
+
+我们要构造一个tick函数执行之前的飞船，和一个tick函数执行后的期望值。
+
+```Rust
+#[cfg(test)]
+pub fn input_spaceship() -> Universe {
+  let mut universe = Universe::new();
+
+  universe.set_width(6);
+  universe_set_height(6);
+  universe_set_cells(
+    &[
+      (1,2),
+      (2,3),
+      (3,1), (3,2),(3,3)
+    ]
+  );
+
+  universe
+}
+
+#[cfg(test)]
+pub fn expected_spaceship() -> Universe {
+  let mut universe = Universe::new();
+
+  universe.set_width(6);
+  universe_set_height(6);
+  universe_set_cells(
+    &[
+      (2,1), (2,3),
+      (3,2), (3,3),(4,2)
+    ]
+  );
+
+  universe
+}
+```
+
+现在我们写一个test_tick函数，创建以上的两个飞船。最后使用```assert_eq!```宏比较expected_ship来确保tick函数运行正确。我们添加```#[wasm_bindgen_test]```宏然保证这个函数可以在WebAssembly环境下测试。
+
+```Rust
+#[wasm_bindgen_test]
+pub fn test_tick() {
+  let mut input_universe = input_spaceship();
+  let expected_universe = expected_spaceship();
+
+  input_universe.tick();
+  assert_eq!(
+    &input_universe.get_cells(),
+    &expected_universe.get_cells(),
+  )
+}
+```
+
+测试这个测试函数使用```wasm-pack test --firefox --headless```。
