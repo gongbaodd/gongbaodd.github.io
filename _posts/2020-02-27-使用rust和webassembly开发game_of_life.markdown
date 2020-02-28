@@ -383,7 +383,7 @@ npm run start
 
 修改greet函数，引入参数```name: &str```，重新执行```wasm-pack build```，并刷新页面使得弹窗中能够显示"Hello, {name}"。
 
-***答案***
+***答案，不许看！***
 
 修改```src/lib.rs```
 
@@ -441,15 +441,15 @@ wasm.greet("Your name");
 
 手动计算出下一刻，宇宙应该是什么样
 
-***答案***
+***答案，不许看！***
 
 ![下一刻宇宙](https://rustwasm.github.io/book/images/game-of-life/initial-universe.png)
 
 你能找到一个稳定的没有变化的宇宙吗？
 
-***答案***
+***答案，不许看！***
 
-这个答案其实有无数个，最平凡的答案就是它是一个空宇宙。如果是一个2×2的方格，也可以形成一个稳定的宇宙。
+这个答案，不许看！其实有无数个，最平凡的答案，不许看！就是它是一个空宇宙。如果是一个2×2的方格，也可以形成一个稳定的宇宙。
 
 ## 实现Conway的生命游戏
 
@@ -702,3 +702,306 @@ function renderLoop() {
 确保你的本地服务任然在运行，此时你的页面应该如下所示。
 
 ![浏览器页面](https://rustwasm.github.io/book/images/game-of-life/initial-game-of-life-pre.png)
+
+#### 渲染到Canvas上
+
+在Rust中生成字符串并通过wasm-bindgen拷贝到JavaScript中做了很多无关的复制。既然JavaScript已经知道宇宙的长度和宽度，而且JavaScript本来可以直接读WebAssembly的内存，我们将要修改render方法，直接返回细胞向量的指针。
+
+同时，与其渲染Unicode字符，不如开始用Canvas API。接下来我们会开始设计这些。
+
+在html中，修改<pre>为<canvas>。
+
+```html
+<body>
+  <canvas id="game-of-life-canvas"></canvas>
+  <script src="./bootstrap.js"></script>
+</body>
+```
+
+为了能拿到Rust中的相关数据结构，我们需要为宇宙增加getter函数，暴露宇宙的宽度、高度和细胞的向量。增加如下函数。
+
+```Rust
+#[wasm_bindgen]
+impl Universe {
+  pub fn width(&self) -> u32 {
+    self.width
+  }
+
+  pub fn height(&self) -> u32 {
+    self.height
+  }
+
+  pub fn cells(&self) -> *const Cell {
+    self.cells.as_ptr()
+  }
+}
+```
+
+接下来，在JavaScript中，引入Cell，并设置几个渲染画布的常量。
+
+```JavaScript
+import { Universe, Cell } from "wasm-game-of-life";
+
+const CELL_SIZE = 5;
+const GRID_COLOR = "#CCCCCC";
+const DEAD_COLOR = "#FFFFFF";
+const LIVE_COLOR = "#000000";
+```
+
+接下来修改实现canvas的部分。
+
+```JavaScript
+const universe = Universe.new();
+const width = universe.width();
+const height = universe.height();
+
+const canvas = documnet.getElementById("game-of-life-canvas");
+canvas.height = (CELL_SIZE+1)*height + 1;
+canvas.width = (CELL_SIZE+1)*width + 1;
+
+const ctx = canvas.getContext("2d");
+
+function renderLoop() {
+  universe.tick();
+
+  drawGrid();
+  drawCells();
+
+  requestAnimationFrame(renderLoop);
+}
+```
+
+世界的网格，是一系列等宽的竖线和横线。
+
+```JavaScript
+function drawGrid() {
+  ctx.beginPath();
+  ctx.strokeStyle = GRID_COLOR;
+
+  for(let i =0; i <= width; i+=1) {
+    ctx.moveTo(i*(CELL_SIZE+1) + 1, 0);
+    ctx.lineTo(i*(CELL_SIZE+1) + 1, (CELL_SIZE+1)*height+1);
+  }
+
+  for(let i=0; i<=height; j++) {
+    ctx.moveTo(0, i*(CELL_SIZE+1)+1);
+    ctx.lineTo((CELL_SIZE+1)*width+1, i*(CELL_SIZE+1)+1);
+  }
+
+  ctx.stroke();
+}
+```
+
+我们可以直接访问WebAssembly的内存，他是直接定义在```wasm_game_of_life_bg```。为了画细胞，我们先找到一个细胞的指针，并将它们转换成Unit8Array，迭代这些细胞，并按照他们的生命状态绘制白色和黑色方块。计量避免复制所有细胞。
+
+```JavaScript
+import { memory } from "wasm-game-of-life/wasm_game_of_life_bg";
+
+function getIndex(row, column) {
+  return row*width+column;
+}
+
+function drawCells() {
+  const cellsPtr = universe.cells();
+  const cells = new Unit8Array(
+    memory.buffer,
+    cellPtr,
+    width*height,
+  );
+
+  ctx.beginPath();
+
+  for(let row=0; row<height; row+=1) {
+    for (let col=0; col<width; col+=1) {
+      const idx = getIndex(row, col);
+
+      ctx.fillStyle = cells[idx] === CellDead
+        ? DEAD_COLOR
+        : LIVE_COLOR;
+
+      ctx.fillRect(
+        cell*(CELL_SIZE+1) + 1,
+        row*(CELL_SIZE+1) + 1,
+        CELL_SIZE,
+        CELL_SIZE,
+      );
+    }
+  }
+
+  ctx.stroke();
+}
+```
+
+开始渲染，需要添加以下表达式。
+
+```JavaScript
+drawGrid();
+drawCells();
+requestAnimationFrame(renderLoop);
+```
+
+注意drawGrid和drawCell必须要在requestAnimationFrame之前执行。
+
+#### 成功了！
+
+重建WebAssembly绑定。
+
+```shell
+wasm-pack build
+```
+
+确定开发服务器还在运行，如果不是，需要执行以下命令。
+
+```shell
+npm run start
+```
+
+刷新```http://localhost:8080/```，你应该能看到如下结果。
+
+![页面](https://rustwasm.github.io/docs/book/images/game-of-life/initial-game-of-life.png)
+
+结束之前，这里还有一个不错的实现生命游戏的算法，[hashlife](https://en.wikipedia.org/wiki/Hashlife)。它使用缓存，使得程序有指数级性能提升！但是为什么我们不实现它呢？它已经超出本文涉及的范围了，本文只是专注于Rust和WebAssembly集成，但是我们强烈期望你能实现这一算法。
+
+### 练习
+
+#### 实现一台宇宙飞船
+
+#### 生成一个随机的初始环境，每个细胞有50%的生存可能
+
+***答案，不许看！***
+
+先增加js-sys依赖
+
+```toml
+[dependencies]
+js-sys="0.3"
+```
+
+接下来使用js的随机函数
+
+```Rust
+extern crate js_sys;
+
+if js_sys::Math::random() < 0.5 {
+
+} else {
+
+}
+```
+
+#### 以bit形式存储每个cell
+
+***答案，不许看！***
+
+在Rust中，使用fixedbitset代替```Vec<Cell>```;
+
+```Rust
+extern crate fixedbitset;
+use fixedbitset::FixedBitSet;
+
+#[wasm_bindgen]
+pub struct Universe {
+  width: u32,
+  height: u32,
+  cells: FixedBitSet,
+}
+```
+
+宇宙的构造器应该这么修改。
+
+```Rust
+pub fn new() -> Universe {
+  let width = 64;
+  let height = 64;
+
+  let size = (width*height) as usize;
+  let mut cells = FixedBitSet::with_capacity(size);
+
+  for i in 0..size {
+    cells.set(i, i%2==0 || i%7==0);
+  }
+
+  Universe {
+    width,
+    height,
+    cells,
+  }
+}
+```
+
+使用FixedBitSet的set方法更新宇宙的下一刻。
+
+```Rust
+next.set(idx, match (cell, live_neighbors) {
+  (true, x) if x<2 => false,
+  (true, 2) | (true, 3) => true,
+  (true, x) if x>3 => false,
+  (false, 3) => true,
+  (otherwise, _) => otherwise
+});
+```
+
+传输指针的时候，需要返回slice。
+
+```Rust
+#[wasm_bindgen]
+impl Universe {
+  pub fn cells(&self) -> *const u32 {
+    self.cells.as_slice().as_ptr()
+  }
+}
+```
+
+在JavaScript中，构造Unit8Array的时候需要除以8，以为我们是以bit存储细胞的。
+
+```JavaScript
+const cells = new Unit8Array(
+  memory.buffer,
+  cellsPtr,
+  width*height/8
+);
+```
+
+通过判断Unit8Array是否被赋值而判断细胞是否是活着的。
+
+```JavaScript
+function bitIsSet(n, arr) {
+  const byte = Math.floor(n/8);
+  const mask = 1<<(n%8);
+  return (arr[byte] & mask) == mask;
+}
+```
+
+根据以上变化，新版本的drawCells如下。
+
+```JavaScript
+function drawCells() {
+  const cellsPtr = universe.cells();
+  const cells = new Unit8Array(
+    memory.buffer,
+    cellsPtr,
+    width*height/8
+  );
+
+  ctx.beginPath();
+
+  for (let row=0; row<height; row+=1) {
+    for(let col=0; col<width; col+=1) {
+      const idx = getIndex(row, col);
+
+      ctx.fillStyle = bitIsSet(idex, cells)
+        ? LIVE_COLOR
+        : DEAD_COLOR;
+
+      ctx.fillRect(
+        col*(CELL_SIZE+1)+1,
+        row*(CELL_SIZE+1)+1,
+        CELL_SIZE,
+        CELL_SIZE,
+      );
+    }
+  }
+
+  ctx.stroke();
+}
+```
