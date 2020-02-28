@@ -1200,4 +1200,195 @@ pub fn init_panic_hook() {
 crate-type ["cdylib", "rlib"]
 ```
 
+### 在生命游戏中打开崩溃日志
 
+如果程序崩溃，最好是能够在审查工具中看到日志。
+
+在```src/utils.rs``里面有一个可选的console_error_panic_hook包，可以在Universe初始化的时候调用它。
+
+```Rust
+pub fn new() -> Universe {
+  utils::set_panic_hook();
+}
+```
+
+### 为生命游戏增加日志
+
+让我们在Rust中利用web-sys调用console，打印出每一刻的细胞状态。
+
+首先在以来中增加web-sys，修改Cargo.toml。
+
+```toml
+[dependencies.web-sys]
+version = "0.3"
+features = [
+  "console",
+]
+```
+
+为了高效，我们把```console.log```函数封装到```println!```一样的宏中。
+
+```Rust
+extern crate web_sys;
+
+macro_rules! log {
+  ($( $t:tt )*) => {
+    web_sys::console::log_1(&format!( $( $t )* ).into());
+  }
+}
+```
+
+现在可以通过调用log发送日志了。
+
+```Rust
+log!(
+  "cell[{}, {}] is initially {:?} and has {} live neighbors",
+  row,
+  col,
+  cell,
+  live_neighbors,
+)
+```
+
+### 使用调试器
+
+浏览器的调试器在调试JavaScript和Rust生成的WebAssembly很有效。
+
+举个例子，在renderLoop函数中增加```debugger;```可以暂停页面执行的某一刻。
+
+者给予我们查看每一刻细胞状态的能力。
+
+![调试画面](https://rustwasm.github.io/docs/book/images/game-of-life/debugging.png)
+
+### 练习
+
+1. 给tick方法增加log，查看细胞状态。
+2. 加入```panic!()```查看打印出来的崩溃日志。
+
+## 增加交互
+
+接下来我们要给这个游戏增加一些交互，我们会允许用户选择细胞的生死，并且允许暂停游戏，并使绘制初始图案更加简单。
+
+### 暂停和继续游戏 
+
+首先修改html，在画布上面增加一个<button>标签。
+
+```html
+<button id="play-pause"></button>
+```
+
+在JavaScript中，我们要做以下几点改动。
+
++ 追踪调用requestAnimationFrame的标识符，这样我们就能通过调用cancelAnimationFrame来终止动画。
++ 当点击播放或者暂停键的时候，先检查标识符是否存在，一旦存在，则表示动画正在运行，我们需要取消动画以保证renderLoop不再被调用。如果标识符不存在，我们需要调用requestAnimationFrame以保证动画继续运行。
+
+因为是JavaScript控制着Rust和WebAssembly，我们不需要修改Rust部分。
+
+我们引入animationId变量，保存requestAnimationFrame的结果。当没有排队的动画时，这个变量值为null。
+
+```JavaScript
+let animationId = null;
+
+function renderLoop() {
+  drawGrid();
+  drawCells();
+
+  universe.tick();
+
+  animationId = requestAnimationFrame(renderLoop);
+}
+```
+
+任何一个时间，我们可以通过判断animationId来判断这个动画是否被暂停。
+
+```JavaScript
+function isPaused() {
+  return animationId === null;
+}
+```
+
+现在，当播放暂停键被点击，当正在播放时，暂停动画。并把按钮的状态改为播放。
+
+```JavaScript
+const playPauseButton = document.getElementById("play-pause");
+
+function play() {
+  playPauseButton.textContent = "⏸";
+  renderLoop();
+};
+
+function pause() {
+  playPauseButton.textContent = "▶";
+  cancelAnimationFrame(animationId);
+  animationId = null;
+};
+
+playPauseButton.addEventListener("click", function playBtnListener(event) {
+  if (isPaused()) {
+    play();
+  } else {
+    pause();
+  }
+});
+```
+
+最后我们把之前的requestAnimationFrame函数封装成```play()```。刷新本地服务器，可以看到网页上已经有暂停按钮了。尝试点击一下它吧。
+
+### 修改一个细胞的状态
+
+现在我们能暂停这个游戏了，是时候增加一个修改细胞的功能了。
+
+想控制细胞的生死，需要给```src/lib.rs```下的Cell增加一个toggle函数。
+
+```Rust
+impl Cell {
+    fn toggle(&mut self) {
+        *self = match *self {
+            Cell::Dead => Cell::Alive,
+            Cell::Alive => Cell::Dead,
+        };
+    }
+}
+```
+
+想要修改在宇宙中的细胞需要获得细胞的行纵值，并转换为细胞的序号。
+
+```Rust
+#[wasm_bindgen]
+impl Universe {
+    pub fn toggle_cell(&mut self, row: u32, column: u32) {
+        let idx = self.get_index(row, column);
+        self.cells[idx].toggle();
+    }
+}
+```
+
+这个方法增加第1行的宏是为了能够在JavaScript环境里面直接调用。在JavaScript文件中，监听<canvas>标签，将页面上的点击事件转换成画布上的点击事件，并调用toggle_cell方法重绘场景。
+
+```Rust
+canvas.addEventListener("click", function canvasClickListener(event) {
+  const boundingRect = canvas.getBoundingClientRect();
+
+  const scaleX = canvas.width / boundingRect.width;
+  const scaleY = canvas.height / boundingRect.height;
+
+  const canvasLeft = (event.clientX - boundingRect.left) * scaleX;
+  const canvasTop = (event.clientY - boundingRect.top) * scaleY;
+
+  const row = Math.min(Math.floor(canvasTop/(CELL_SIZE + 1)), height - 1);
+  const col = Math.min(Math.floor(canvasLeft/(CELL_SIZE + 1)), width - 1);
+
+  universe.toggle_cell(row, col);
+
+  drawGrid();
+  drawCells();
+});
+```
+
+使用```wasm-pack build```重新编译，刷新网页，并更新细胞状态。
+
+### 练习
+
++ 新建一个<input>标签来处理每帧更新多少个刻。
++ 增加一个重置按钮，把宇宙恢复到初始状态；再增加一个消灭按钮，毁灭所有细胞。
++ 当使用```Ctrl+Click```的时候，增加一个[glider](https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life))，使用```Shift+Click```增加一个pulsar。
