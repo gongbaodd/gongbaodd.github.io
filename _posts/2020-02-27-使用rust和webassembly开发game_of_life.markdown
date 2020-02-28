@@ -1827,3 +1827,105 @@ fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
     count
 }
 ```
+
+使用取余运算是为了避免使用杂乱的if代码来处理边界，但导致我不得不用DIV这样比较耗费性能的指令。相反，如果用if处理边界，并展开循环，则分支条件将会比较适合CPU处理。
+
+```Rust
+fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
+    let mut count = 0;
+
+    let north = if row == 0 {
+        self.height - 1
+    } else {
+        row - 1
+    };
+
+    let south = if row == self.height - 1 {
+        0
+    } else {
+        row + 1
+    };
+
+    let west = if column == 0 {
+        self.width - 1
+    } else {
+        column - 1
+    };
+
+    let east = if column == self.width - 1 {
+        0
+    } else {
+        column + 1
+    };
+
+    let nw = self.get_index(north, west);
+    count += self.cells[nw] as u8;
+
+    let n = self.get_index(north, column);
+    count += self.cells[n] as u8;
+
+    let ne = self.get_index(north, east);
+    count += self.cells[ne] as u8;
+
+    let w = self.get_index(row, west);
+    count += self.cells[w] as u8;
+
+    let e = self.get_index(row, east);
+    count += self.cells[e] as u8;
+
+    let sw = self.get_index(south, west);
+    count += self.cells[sw] as u8;
+
+    let s = self.get_index(south, column);
+    count += self.cells[s] as u8;
+
+    let se = self.get_index(south, east);
+    count += self.cells[se] as u8;
+
+    count
+}
+```
+
+接下来再跑一次性能测试，将他输出到```after.txt```。
+
+```shell
+$ cargo bench | tee after.txt
+   Compiling wasm_game_of_life v0.1.0 (file:///home/fitzgen/wasm_game_of_life)
+    Finished release [optimized + debuginfo] target(s) in 0.82 secs
+     Running target/release/deps/wasm_game_of_life-91574dfbe2b5a124
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+     Running target/release/deps/bench-8474091a05cfa2d9
+
+running 1 test
+test universe_ticks ... bench:      87,258 ns/iter (+/- 14,632)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 1 measured; 0 filtered out
+```
+
+感觉性能提高了不少，现在对比一下前后的数据。
+
+```shell
+$ cargo benchcmp before.txt after.txt
+ name            before.txt ns/iter  after.txt ns/iter  diff ns/iter   diff %  speedup
+ universe_ticks  664,421             87,258                 -577,163  -86.87%   x 7.61
+ ```
+
+ 哇！提高了7.61倍！
+
+ WebAssembly意图和原生系统贴近，但是我们确实需要在WebAssembly环境下也作一次测试。
+
+ 从新编译程序，刷新浏览器页面，画面重新跑在60fps，每一帧大概是10毫秒。
+
+ 成功！
+
+ ![测试结果](https://rustwasm.github.io/book/images/game-of-life/waterfall-after-branches-and-unrolling.png)
+
+### 练习
+
++ 现在，下一个性能瓶颈是```Universe::tick```调用和释放函数的部分，尝试缓存细胞状态，让Universe维护两个向量，永远不释放他们，也不掉用新的区间。
++ 换一种方式实现游戏，让Rust和JavaScript以细胞的列表交互，这样能让渲染画布更快吗？你能实现这个设计同时不在每个tick函数中调用新的列表吗？
++ 就性能显示来看2D画布渲染显然不够快，使用WebGL画布重新渲染，WebGL能多快？使用WebGL能在遇到瓶颈前创建多大的宇宙空间？
