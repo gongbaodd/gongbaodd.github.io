@@ -2252,3 +2252,92 @@ WebAssembly.compileStreaming(fetch("sections.wasm"))
   console.log(text); // -> "This is a custom section"
 });
 ```
+
+## 哪些包能在WebAssembly下面使用
+
+最简单的就是列出WebAssembly上能用的Rust包：如果避开了以下内容，则这些包可以在WebAssembly使用。如果一个包支持`#![no_std]`
+的包，这个包也可能支持WebAssembly。
+
+### 以下包不能使用
+
+#### C和系统级依赖
+
+WebAssembly不提供系统一级别的库，所以任何链接系统库的地方都无法成功。
+
+使用C库可能不会成功，既然没有稳定的交叉编译ABI，和提供给WebAssembly交叉链接的连接库。虽然clang已经发布wasm32的生成，但是还远远不足。
+
+#### 文件I/O
+
+WebAssembly没有访问文件系统的功能，所以访问文件系统的库都不能使用。
+
+#### 调用线程
+
+目前有计划[加入线程](https://rustwasm.github.io/2018/10/24/multithreading-rust-and-wasm.html)，但是还没被发布。尝试调用线程会导致崩溃。
+
+### 有哪些目的的包能在WebAssembly下面使用
+
+如果只是提供[算法](https://crates.io/categories/algorithms)和[数据结构](https://crates.io/categories/data-structures)的包。
+
+#### #![no-std]
+
+[不依赖于标准库的包](https://crates.io/categories/no-std)能够运行在WebAssembly下面。
+
+#### 解析器
+
+只要是接受输入且无需文件操作的[解析器](https://crates.io/categories/parser-implementations)就可能运行在WebAssembly下。
+
+#### 文字处理
+
+[复杂的语言处理](https://crates.io/categories/text-processing)可能会运行在WebAssembly下面。
+
+#### Rust范式
+
+[适用于不同情况下的包](https://crates.io/categories/rust-patterns)可能运行在WebAssembly下。
+
+## 如何给常用库增加WebAssembly支持
+
+本部分讲解如何将常用库增加WebAssembly支持。后面的内容我就捡感兴趣的写了。
+
+### 在CI增加wasm32-unknown-unknown
+
+保证CI中增加如下命令
+
+```shell
+rustup target add wasm32-unknown-unknown
+cargo check --target wasm32-unknown-unknown
+```
+
+举个例子，在travis的配置中增加如下配置：
+
+```yaml
+matrix:
+  include:
+    - language: rust
+      rust: stable
+      name: "check wasm32 support"
+      install: rustup target add wasm32-unknown-unknown
+      script: cargo check --target wasm32-unknown-unknown
+```
+
+### 在node.js或者无头浏览器（译者：卧槽是这么翻译么）
+
+你可以使用`wasm-bindgen-test`和`wasm-pack test`去跑测试，详细内容上面已经提到。
+
+## 发布WebAssembly到线上
+
+> 发布过程几乎和任何web应用发布是一样的。
+
+为了发布Web应用，复制生成文件到线上环境，配置你的HTTP服务器让他们可访问。
+
+### 保证服务器支持application/wasm
+
+为了让浏览器加载变快，[WebAssembly.instantiateStreaming](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming)函数会使用管道传输文件（请确定你的打包器能够使用这个函数）。但是instantiateStreaming需要HTTP返回类型支持`application/wasm`，否则会丢出错误。
+
++ [如何配置Apache服务器](https://httpd.apache.org/docs/2.4/mod/mod_mime.html#addtype)
++ [如何配置Nginx服务器](https://nginx.org/en/docs/http/ngx_http_core_module.html#types)
+
+### 更多内容
+
++ [webpack线上打包的最佳实践](https://webpack.js.org/guides/production/)
+
+
