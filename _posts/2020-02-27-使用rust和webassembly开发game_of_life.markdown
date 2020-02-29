@@ -2180,3 +2180,75 @@ wasm-pack publish
 
 这会应该能行。
 
+## 与JavaScript相互交互
+
+### JavaScript函数的输出和引用
+
+#### 在Rust一边
+
+在JavaScript为主的世界里使用WebAssembly，引入和输出函数比较直接，有点类似于C。
+
+WebAssembly模块声明了一系列引入，每一个都有模块名。模块名可以使用`#[link(wasm_import_module)]`提供给`extern {...}`。
+
+导出的WebAssembly线性内存被导出作"memory"。
+
+```Rust
+// import a JS function called `foo` from the module `mod`
+#[link(wasm_import_module = "mod")]
+extern { fn foo(); }
+
+// export a Rust function called `bar`
+#[no_mangle]
+pub extern fn bar() { /* ... */ }
+```
+
+因为WebAssembly的值类型有局限，这些函数只有基础的数字类型。
+
+#### 在JavaScript一边
+
+在JavaScript中，wasm二进制文件转换成ES6模块。它必须被实例化为线性内存并由一系列函数能对应到这些引入。细节描述可在[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming)找到。
+
+ES6的模块包括从Rust暴露给JavaScript的函数，现在可以用JavaScript调用。
+
+[这里](https://www.hellorust.com/demos/add/index.html)有一个很简单的构建流程。
+
+### 除了数字
+
+当在JavaScript中使用WebAssembly，WebAssembly的内存和JavaScript的内存有很大的不同。
+
++ 每个WebAssembly模块的线性内存，JavaScript可以自由访问。
++ 对应之下，WebAssembly不能访问JavaScript的内存。
+
+所以，有两种复杂的交互。
+
++ 复制二进制数据到WebAssembly内存。
++ 建立一个在JavaScript上的堆内存，提供一堆地址。这样WebAssembly访问JavaScript对象，间接通过JavaScript访问。
+
+幸运的是，通过`bindgen`框架[`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen)可以帮助交互。这个框架可以将已习惯的Rust语言自动翻译到JavaScript。
+
+### 自定义部分（译者：所以这个到底是干什么用的？）
+
+自定义部分允许随意继承人一的数据进入WebAssembly模块，这个数据是在编译时设置，不能在运行时修改。
+
+在Rust中，自定义部分是通过`#[link_section]`属性暴露的静态数组([T; size])。
+
+```Rust
+#[link_section = "hello"]
+pub static SECTION: [u8; 24] = *b"This is a custom section";
+```
+
+这样给wasm增加一个hello部分，这个SECTION变量是随意的，但是无论怎么赋值，内容总是这些文字。
+
+这个自定义内容可以被JavaScript通过[`WebAssembly.Module.customSections`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections)获得自定义部分，它返回一个`ArrayBuffer`，如果有同名的部分，他们会被放到一个数组中。
+
+```JavaScript
+WebAssembly.compileStreaming(fetch("sections.wasm"))
+.then(mod => {
+  const sections = WebAssembly.Module.customSections(mod, "hello");
+
+  const decoder = new TextDecoder();
+  const text = decoder.decode(sections[0]);
+
+  console.log(text); // -> "This is a custom section"
+});
+```
