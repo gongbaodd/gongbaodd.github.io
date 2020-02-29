@@ -2150,3 +2150,33 @@ default = ["wee_alloc"]
 
 + 我们只实现了一个Universe，所以相比使用构造器，我们可以导出一个`static mut`实例，如果这个实例使用的是双向缓存，我们也可以让这些缓存也是全局`staic mut`。这样就移除了所有的动态调用，我们可以增加`#![no_std]`包取消掉调用器。这回能缩小多少大小？
 
+## 发布到NPM
+
+首先，确保你登入了npm。
+
+接着，使用`wasm-pack login`登入。
+
+### 发布
+
+确保已经执行`wasm-pack build`并且pkg文件已经编译好。
+
+已经准备好之后，跑`wasm-pack publish`上传包到npm。
+
+这样就发布了！
+
+有哥们照着这个指导做完发布失败，是因为"name"字段存在重名
+
+```toml
+[package]
+name = "wasm-game-of-life-my-username"
+```
+
+接着，重新编译并发布
+
+```shell
+wasm-pack build
+wasm-pack publish
+```
+
+这会应该能行。
+
