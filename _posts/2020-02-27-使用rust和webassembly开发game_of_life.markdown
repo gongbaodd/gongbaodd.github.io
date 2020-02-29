@@ -1931,3 +1931,222 @@ $ cargo benchcmp before.txt after.txt
 + 就性能显示来看2D画布渲染显然不够快，使用WebGL画布重新渲染，WebGL能多快？使用WebGL能在遇到瓶颈前创建多大的宇宙空间？
 
 ## 压缩.wasm文件大小
+
+rustc有很多配置项，可以让`.wasm`二进制文件更加小。在很多情况下更小的生成文件意味着更长的编译时间。另外更小的文件使得WebAssembly的运行时间更长。我们应该意识到这些方面上的牺牲。在这些情况下，当我们要减少编译文件大小时，我们应该考虑到使用性能监视器衡量一下这种改动是否值得。
+
+### 使用链接配置器编译
+
+在`Cargo.toml`，增加`lto=true`：
+
+```toml
+[profile.release]
+lto = true
+```
+
+者给予LLVM更多机会去内联和简化函数，不仅仅会使`.wasm`更小，还会让他在运行时运行得更快！但是会让他编译得更长。
+
+### 配置LLVM牺牲速度换文件大小
+
+LLVM默认配置是为了运行速度，并不是大小。我们可以通过更改`Cargo.toml`去修改这一配置。
+
+```toml
+[profile.release]
+opt-level = 's'
+```
+
+或者，更激进的可以把它改成"z"。
+
+但是，配置为"s"的时候有的时候会比"z"更小，所以一定要做测量！
+
+### 使用wasm-opt工具
+
+[Binaryen](https://github.com/WebAssembly/binaryen)是一个关于WebAssembly编译工具的集合。他比LLVM更加后端，使用`wasm-opt`处理生成文件常常会节省15%~20%的代码，同时又会提高运行速度。
+
+```
+# 输出为压缩的文件大小。
+wasm-opt -Os -o output.wasm input.wasm
+
+# 更激进的输出为压缩的文件大小。
+wasm-opt -Oz -o output.wasm input.wasm
+
+# 输出文件追求运行速度。
+wasm-opt -O -o output.wasm input.wasm
+
+# 输出文件更激进的追求运行速度。
+wasm-opt -O3 -o output.wasm input.wasm
+```
+
+#### 注意调试信息
+
+占用生成文件大小的主要成分是调试信息和函数名。`wasm-pack`能够默认移除调试信息。然而`wasm-opt`在使用`-g`参数时能删除函数名。
+
+这意味着，如果你按照以上操作，生成文件应该既没有调试信息也没有函数名。如果你想保留某些调试信息，请一定注意这一点。
+
+### 文件大小检查调查
+
+如果修改编译配置不能获得更小的文件大小，就应该调查一下是什么代码导致文件太大。
+
+> 就像做性能测试，我们应让工具来判断哪里出了问题，否则我们会浪费更多自己的时间。
+
+#### twiggy代码检查器
+
+[twiggy](https://github.com/rustwasm/twiggy)是一个支持WebAssembly的代码大小检查器，他能分析二进制代码的调用图，并解决如下问题：
+
++ 为什么这个函数被编译到这段代码中。
++ 这个函数占用大小是多少？如果我删除这个函数以及其相关函数我能节省多大的空间？
+
+```
+$ twiggy top -n 20 pkg/wasm_game_of_life_bg.wasm
+ Shallow Bytes │ Shallow % │ Item
+───────────────┼───────────┼────────────────────────────────────────────────────────────────────────────────────────
+          9158 ┊    19.65% ┊ "function names" subsection
+          3251 ┊     6.98% ┊ dlmalloc::dlmalloc::Dlmalloc::malloc::h632d10c184fef6e8
+          2510 ┊     5.39% ┊ <str as core::fmt::Debug>::fmt::he0d87479d1c208ea
+          1737 ┊     3.73% ┊ data[0]
+          1574 ┊     3.38% ┊ data[3]
+          1524 ┊     3.27% ┊ core::fmt::Formatter::pad::h6825605b326ea2c5
+          1413 ┊     3.03% ┊ std::panicking::rust_panic_with_hook::h1d3660f2e339513d
+          1200 ┊     2.57% ┊ core::fmt::Formatter::pad_integral::h06996c5859a57ced
+          1131 ┊     2.43% ┊ core::str::slice_error_fail::h6da90c14857ae01b
+          1051 ┊     2.26% ┊ core::fmt::write::h03ff8c7a2f3a9605
+           931 ┊     2.00% ┊ data[4]
+           864 ┊     1.85% ┊ dlmalloc::dlmalloc::Dlmalloc::free::h27b781e3b06bdb05
+           841 ┊     1.80% ┊ <char as core::fmt::Debug>::fmt::h07742d9f4a8c56f2
+           813 ┊     1.74% ┊ __rust_realloc
+           708 ┊     1.52% ┊ core::slice::memchr::memchr::h6243a1b2885fdb85
+           678 ┊     1.45% ┊ <core::fmt::builders::PadAdapter<'a> as core::fmt::Write>::write_str::h96b72fb7457d3062
+           631 ┊     1.35% ┊ universe_tick
+           631 ┊     1.35% ┊ dlmalloc::dlmalloc::Dlmalloc::dispose_chunk::hae6c5c8634e575b8
+           514 ┊     1.10% ┊ std::panicking::default_hook::{{closure}}::hfae0c204085471d5
+           503 ┊     1.08% ┊ <&'a T as core::fmt::Debug>::fmt::hba207e4f7abaece6
+```
+
+#### 手动修改LLVM-IR
+
+LLVM-IR是LLVM生成WebAssembly代码的最后一步。所以，他和最终生成的WebAssembly很像。更多的LLVM-IR代码意味着生成的文件越大，当一个函数占用了LLVM-IR中25%的位置，则代表他占用了25%的文件大小。当然这些数字只是个经验值，因为LLVM-IR还有一些WebAssembly没有的重要的信息（因为WebAssembly没有诸如DWARF调试信息）。
+
+你可以使用cargo生成LLVM-IR代码：
+
+```shell
+cargo rustc --release -- --emit llvm-ir
+```
+
+接下来你可以使用find命令去寻找存储在cargo生成目录(target)下的`.ll`文件。
+
+```shell
+find target/release -type f -name '*.ll'
+```
+
+相关可以参考[LLVM语言](https://llvm.org/docs/LangRef.html)
+
+#### 更激进的工具
+
+修改编译配置是比较好上手的。如果你想前进一个里程，你可以使用一些更激进的工具，像是重写代码以减少冗余。以下是一些不太优雅的代码，但是的确能减少生成文件大小。
+
+##### 避免字符串格式化
+
+`format!`,`to_string`等，能加入很多冗余代码。如果可能，在调试环境用格式化，而在发布环境使用静态字符串。
+
+##### 避免使用崩溃
+
+这很明显，使用twiggy之类的工具或者人工检查LLVM-IR能帮助你查出到底哪个函数崩溃。
+
+崩溃并不总是出现在`panic!()`宏，他们会在很多情况下出现。
+
++ 访问切片越界，如：`my_slice[i]`
++ 除0，如：`dividend/divider`
++ 解Option类型或者Result类型，如：`opt.unwrap()`或者`res.unwrap()`
+
+前两个可以被改成第三个，访问切片可以使用`my_slice.get(i)`。除法可以使用`checked_div`，所以你只有一种需要处理的情况。
+
+解开`Option`或者`Result`有两种方法安全的和不安全的。
+
+安全的方式是使用abort方法而不是返回None和Error值。
+
+```Rust
+#[inline]
+pub fn unwrap_abort<T>(o: Option<T>) -> T {
+  use std::process;
+  match o {
+    Some(t) => t,
+    None => process::abort(),
+  }
+}
+```
+
+最终，崩溃在`wasm32-unknown-unknown`被翻译成退出，因此不会造成代码冗余。
+
+相反的，[unreachable](https://crates.io/crates/unreachable)包为Option和Result类型提供不安全的[unchecked_unwrap](https://docs.rs/unreachable/1.0.0/unreachable/trait.UncheckedOptionExt.html#tymethod.unchecked_unwrap)方法。让Rust编译器假定Option类型是Some类型而Result类型是Ok类型。如果值是不正确的的情况是未被考虑的。你一定要在110%确认的情况下使用这个包，因为编译器可没那么聪明能预估出错误。即使你这么做了，你一定要在调试环境下面做检查，而在发布环境下去掉检查。
+
+#### 避免调用内存或者使用wee_alloc
+
+Rust的默认调用器是`dlmalloc`的一部分。它能达到10KB。如果能够避免动态调用，你应该能省下10KB。
+
+完全避免动态语言调用可能会非常困难。但是删除调用却在某些情况下很简单，在这些情况下，可以使用[`wee_alloc`](https://github.com/rustwasm/wee_alloc)代替全局的调用器可以从10KB中节省很多。`we_alloc`是当你想要一些调用器时的一个选择，并能同时减少代码大小。
+
+#### 使用trait来替代泛型
+
+当你创建一些泛型函数。
+
+```Rust
+fn whatever<T: MyTrait>(t: T) { ... }
+```
+
+`rustc`和LLVM会为不同类型生成新的函数拷贝。这为编译器提供了各种类型使用这个函数的机会。但会增加代码大小。
+
+如果你为对象提供trait，如下：
+
+```Rust
+fn whatever(t: Box<MyTrait>) { ... }
+// or
+fn whatever(t: &MyTrait) { ... }
+// etc...
+```
+
+这样经过虚调用动态派遣（dynamic dispatch）的方法就被使用了，如此只会用一个函数会放在`.wasm`。这样的缺点是丢失了编译器自定义的机会，并且增加了不直接的，动态的语言调用。
+
+#### 使用wasm-snip工具
+
+[`wasm-snip`](https://github.com/fitzgen/wasm-snip)使用`unreachable`方法代替了WebAssembly的函数。这是一个又沉又钝的锤子，更像是徒手。
+
+也许你知道有些函数可能永远不会在运行时被调用，但是编译器不能保证？掐了他！执行`wasm-opt`加上`--dce`参数，所有无关函数就会被剪掉。
+
+这个工具对删除崩溃及其有用。
+
+### 我们能把生命游戏缩到多小？
+
+默认的配置下，WebAssembly二进制大小为29410字节。
+
+```shell
+$ wc -c pkg/wasm_game_of_life_bg.wasm
+29410 pkg/wasm_game_of_life_bg.wasm
+```
+
+打开LTO之后设置`opt-level="z"`执行`wasm-opt -Oz`，结果是17317字节。
+
+```shell
+$ wc -c pkg/wasm_game_of_life_bg.wasm
+17317 pkg/wasm_game_of_life_bg.wasm
+```
+
+如果使用gzip压缩，你能搞到9045字节！
+
+```shell
+$ gzip -9 < pkg/wasm_game_of_life_bg.wasm | wc -c
+9045
+```
+
+### 练习
+
++ 使用`wasm-snp`工具删掉会有崩溃的函数，它能减少多少字节？
++ 使用`wee_alloc`作为全局调用器，，修改`Cargo.toml`：
+
+```
+[features]
+default = ["wee_alloc"]
+```
+
+能够减少多少大小呢？
+
++ 我们只实现了一个Universe，所以相比使用构造器，我们可以导出一个`static mut`实例，如果这个实例使用的是双向缓存，我们也可以让这些缓存也是全局`staic mut`。这样就移除了所有的动态调用，我们可以增加`#![no_std]`包取消掉调用器。这回能缩小多少大小？
+
