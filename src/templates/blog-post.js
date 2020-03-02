@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <p
             style={{
               ...scale(-1 / 5),
-              display: `block`,
+              display: "block",
               marginBottom: rhythm(1),
             }}
           >
@@ -51,24 +51,24 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <nav>
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            listStyle: "none",
             padding: 0,
           }}
         >
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                {`← ${previous.frontmatter.title}`}
               </Link>
             )}
           </li>
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                {`${next.frontmatter.title} →`}
               </Link>
             )}
           </li>

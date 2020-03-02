@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "audit-ci": "^2.5.1",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-feed": "^2.3.26",
@@ -36,7 +37,21 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "commitizen": "^4.0.3",
+    "emoji-cz": "^0.3.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.3"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -48,6 +63,16 @@
     "type": "git",
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn audit:ci && yarn build && yarn format"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "emoji-cz"
+    }
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -55,6 +80,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "lint": "eslint src --ext=js --fix",
+    "commit": "git-cz",
+    "audit:ci": "audit-ci",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
