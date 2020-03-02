@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "gongbaodd.github.io",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "宫不上叔-jj向上的中华田园仔",
   "version": "0.1.0",
   "author": "MiaTakeshi <gongbaodd@qq.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/gongbaodd/gongbaodd.github.io/issues"
   },
   "dependencies": {
-    "gatsby": "^2.19.7",
+    "gatsby": "^2.19.24",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-feed": "^2.3.26",
     "gatsby-plugin-google-analytics": "^2.1.34",
@@ -37,6 +37,9 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "@types/node": "^13.7.7",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.21.0",
     "audit-ci": "^2.5.1",
@@ -66,7 +69,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn audit:ci && yarn build && yarn format"
+      "pre-commit": "yarn type && yarn audit:ci && yarn format",
+      "pre-push": "yarn clean && yarn build"
     }
   },
   "config": {
@@ -78,13 +82,14 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint src --ext=js --fix",
+    "lint": "eslint src --ext=ts,js,tsx --fix",
     "commit": "git-cz",
     "audit:ci": "audit-ci",
+    "type": "tsc --noEmit",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
