@@ -39,4 +39,12 @@ module.exports = {
     "react/no-danger": ["off"],
     "no-undef": ["off"],
   },
+  overrides: [
+    {
+      files: ["gatsby-*.js"],
+      env: {
+        "@typescript-eslint/camelcase": ["off"],
+      },
+    },
+  ],
 }
