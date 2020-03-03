@@ -1,30 +1,50 @@
 import path from "path";
 
+const query = `
+{
+  allMarkdownRemark(
+    sort: { fields: [frontmatter___date], order: DESC }
+    limit: 1000
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title,
+          category
+        }
+      }
+    }
+  }
+}
+`;
+
+interface Data {
+  allMarkdownRemark: {
+    edges: Array<{
+      node: {
+        fields: {
+          slug: string;
+        };
+
+        frontmatter: {
+          title: string;
+          category: string;
+        };
+      };
+    }>;
+  };
+}
+
+type Result = { errors?: object; data: Data };
+
 async function createPages({ graphql, actions }) {
   const { createPage } = actions;
 
   const blogPost = path.resolve("./src/templates/blog-post.tsx");
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
-            }
-          }
-        }
-      }
-    `
-  );
+  const result: Result = await graphql(query);
 
   if (result.errors) {
     throw result.errors;

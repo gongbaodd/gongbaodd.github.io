@@ -1,7 +1,8 @@
 ---
 type: post
-categpry: tech
+category: tech
 ---
+
 # 流浪地球
 
 马上流浪地球就要上映了，反正也是篇中篇小说我大致看一下好了。

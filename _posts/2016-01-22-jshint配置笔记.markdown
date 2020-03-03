@@ -1,9 +1,9 @@
 ---
 layout: post
-categories: fe
+category: fe
 ---
 
-# jshint配置笔记
+# jshint 配置笔记
 
 ```javascript
 {

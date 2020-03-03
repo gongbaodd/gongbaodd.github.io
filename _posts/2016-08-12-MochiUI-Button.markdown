@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: fe tech
+category: fe
 ---
 
 # FRAMEWORK WIDGET-Mochi
@@ -13,30 +13,30 @@ categories: fe tech
 
 #### 按钮
 
-***文字内容***
+**_文字内容_**
 
-* 字号 14pt
-* 字体 PreludeWGL
-* 粗体 斜体
-* 颜色 #4b4b4b
+- 字号 14pt
+- 字体 PreludeWGL
+- 粗体 斜体
+- 颜色 #4b4b4b
 
-***圆括号***
+**_圆括号_**
 
-* 字号 30pt
-* 字体 PreludeWGL Bold
-* 颜色 #4b4b4b
+- 字号 30pt
+- 字体 PreludeWGL Bold
+- 颜色 #4b4b4b
 
-***垂直间隔***
+**_垂直间隔_**
 
 文字在圆括号中间居中。
-圆括号的行高要比文字低5点。
-文字的上下间距是8像素。
+圆括号的行高要比文字低 5 点。
+文字的上下间距是 8 像素。
 
-***水平间隔***
+**_水平间隔_**
 
 文字在圆括号中间。
 第一个括号后没有字符间隔，文字后有一个字符间隔。
-两边的间隔为8像素。
+两边的间隔为 8 像素。
 
 ![](https://mmbiz.qlogo.cn/mmbiz/aEj0pBet08t8XWyBXodZAYbVyVuyq5OktnQEwveBUqRV9ia4MGzZPoTbWNJGOmLick5G0PGBiaOeO16XZwYiavphqQ/0?wx_fmt=png)
 
@@ -47,7 +47,7 @@ categories: fe tech
 list-arrow.png 8x8 像素。
 相对于按钮垂直居中。
 
-***点击时***
+**_点击时_**
 
 圆括号要对应伸缩
 
@@ -63,6 +63,6 @@ list-arrow.png 8x8 像素。
 
 #### 按钮间隔
 
-最小水平间距2单元（16像素）
+最小水平间距 2 单元（16 像素）
 
 ![](https://mmbiz.qlogo.cn/mmbiz/aEj0pBet08t8XWyBXodZAYbVyVuyq5OkufrzdI7bqOaKIT7tIGNFQ3VibXL6hjIyQxVqTSAmcb527KHDwfV0wyA/0?wx_fmt=png)
