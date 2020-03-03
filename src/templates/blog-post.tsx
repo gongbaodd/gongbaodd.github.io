@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
+import React, { FC } from "react";
+import { Link, graphql, PageProps } from "gatsby";
 import { filterXSS as sanitize } from "xss";
 
 import Bio from "../components/bio";
@@ -7,17 +7,60 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      html
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+      }
+    }
+  }
+`;
+
+interface PageData {
+  site: {
+    siteMetadata: {
+      title: string;
+    };
+  };
+
+  markdownRemark: {
+    id: string;
+    excerpt: string;
+    html: string;
+    frontmatter: {
+      title: string;
+      date: string;
+    };
+  };
+}
+
+type RefPageData = PageData["markdownRemark"] & {
+  fields: {
+    slug: string;
+  };
+};
+
+const BlogPostTemplate: FC<PageProps<
+  PageData,
+  { previous: RefPageData; next: RefPageData }
+>> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
+      <SEO title={post.frontmatter.title} description={post.excerpt} />
       <article>
         <header>
           <h1
@@ -80,23 +123,3 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 };
 
 export default BlogPostTemplate;
-
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-      }
-    }
-  }
-`;

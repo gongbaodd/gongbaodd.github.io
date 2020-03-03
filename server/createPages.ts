@@ -12,7 +12,7 @@ const query = `
           slug
         }
         frontmatter {
-          title,
+          title
           category
         }
       }
