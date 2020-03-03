@@ -44,6 +44,13 @@ module.exports = {
       files: ["gatsby-*.js"],
       rules: {
         "@typescript-eslint/camelcase": ["off"],
+        "@typescript-eslint/no-var-requires": ["off"],
+      },
+    },
+    {
+      files: ["node_modules.d.ts"],
+      rules: {
+        "no-underscore-dangle": ["off"],
       },
     },
   ],
