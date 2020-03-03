@@ -1,6 +1,6 @@
 import React from "react";
-import { sanitize } from "dompurify";
 import { Link, graphql } from "gatsby";
+import { filterXSS as sanitize } from "xss";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
