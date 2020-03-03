@@ -69,6 +69,10 @@ const SEO = ({ description, lang, meta, title }) => {
           name: "twitter:description",
           content: metaDescription,
         },
+        {
+          name: "referrer",
+          content: "no-referrer",
+        },
       ].concat(meta)}
     />
   );

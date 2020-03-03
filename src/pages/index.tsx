@@ -14,7 +14,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: fields___slug, order: DESC }) {
       edges {
         node {
           excerpt
@@ -22,7 +22,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
           }
         }
@@ -63,7 +62,11 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug;
+        const slugReg = /\/(\d{4}-\d{2}-\d{2})-(.*)\//;
+        const { slug } = node.fields;
+        const title = slug.replace(slugReg, "$2");
+        const date = slug.replace(slugReg, "$1");
+
         return (
           <article key={node.fields.slug}>
             <header>
@@ -76,14 +79,12 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>{date}</small>
             </header>
             <section>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: sanitize(
-                    node.frontmatter.description || node.excerpt
-                  ),
+                  __html: sanitize(node.excerpt),
                 }}
               />
             </section>
