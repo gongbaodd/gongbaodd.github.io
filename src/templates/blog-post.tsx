@@ -1,4 +1,5 @@
 import React from "react";
+import { sanitize } from "dompurify";
 import { Link, graphql } from "gatsby";
 
 import Bio from "../components/bio";
@@ -37,7 +38,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: sanitize(post.html) }} />
         <hr
           style={{
             marginBottom: rhythm(1),

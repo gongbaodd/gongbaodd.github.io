@@ -3,6 +3,7 @@ import { Link, PageProps } from "gatsby";
 
 import { rhythm, scale } from "../../utils/typography";
 
+// eslint-disable-next-line no-undef
 const rootPath = `${__PATH_PREFIX__}/`;
 
 const Header: FC<{ title: string; location: PageProps["location"] }> = ({

@@ -24,7 +24,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "jam3"],
   rules: {
     quotes: ["error", "double"],
     "no-bitwise": ["off"],
@@ -35,9 +35,13 @@ module.exports = {
     "react/jsx-filename-extension": ["error", { extensions: [".tsx", ".jsx"] }],
     "react/prop-types": ["off"],
     "import/no-extraneous-dependencies": ["off"],
-    // for temporal
     "react/no-danger": ["off"],
-    "no-undef": ["off"],
+    "jam3/no-sanitizer-with-danger": [
+      "error",
+      {
+        wrapperName: ["sanitize"],
+      },
+    ],
   },
   overrides: [
     {

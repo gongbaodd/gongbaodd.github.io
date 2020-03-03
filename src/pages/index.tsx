@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { Link, graphql, PageProps } from "gatsby";
 
+import { sanitize } from "dompurify";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -70,7 +71,9 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
             <section>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: sanitize(
+                    node.frontmatter.description || node.excerpt
+                  ),
                 }}
               />
             </section>
