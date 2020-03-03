@@ -3,7 +3,7 @@ module.exports = {
     title: "宫不上叔",
     author: {
       name: "宫不上叔",
-      summary: "jj向上的中华田园仔",
+      summary: "JJ向上的中华田园仔",
     },
     description: "宫不上的诗书年华",
     siteUrl: "https://gongbaodd.github.io/",
@@ -18,20 +18,21 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/_posts`,
         name: "blog",
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/content/assets`,
-        name: "assets",
+        path: `${__dirname}/images`,
+        name: "images",
       },
     },
     {
       resolve: "gatsby-transformer-remark",
       options: {
+        pedantic: true,
         plugins: [
           {
             resolve: "gatsby-remark-images",
@@ -69,7 +70,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "content/assets/icon.png",
+        icon: "images/icon.png",
       },
     },
     "gatsby-plugin-react-helmet",
@@ -83,4 +84,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

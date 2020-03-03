@@ -1,15 +1,15 @@
 ---
 type: post
-categoy: tech
+category: tech
 ---
 
 # Jupyter 的使用
 
 ## 配置 Docker
 
-安装很容易，记住每次使用docker的时候要启动deamon服务，其实不建议默认打开，因为docker会常驻8888端口，这样charles就不好抓包了。
+安装很容易，记住每次使用 docker 的时候要启动 deamon 服务，其实不建议默认打开，因为 docker 会常驻 8888 端口，这样 charles 就不好抓包了。
 
-还需要把本地用户加到docker组里
+还需要把本地用户加到 docker 组里
 
 ```shell
 gpasswd -a $USER docker
@@ -27,20 +27,20 @@ gpasswd -a $USER docker
 
 ```
 
-运行Docker run之后会有一大堆 http://xxxx:8888/?token=xxxx 的日志。
+运行 Docker run 之后会有一大堆 http://xxxx:8888/?token=xxxx 的日志。
 
-执行```docker ps```查看哪个端口被映射了，替换地址为localhost:【端口】即可。
+执行`docker ps`查看哪个端口被映射了，替换地址为 localhost:【端口】即可。
 
 ## 使用 jupyter
 
-直接新建 python3 文件，可以直接运行代码了，使用```Ctrl+Enter```组合执行代码。
+直接新建 python3 文件，可以直接运行代码了，使用`Ctrl+Enter`组合执行代码。
 
-* ```a```插入行
-* ```b```在行后插入
-* ```x```删除行
+- `a`插入行
+- `b`在行后插入
+- `x`删除行
 
 ## 安装 tensorflow
 
 哈哈官方版本有[tensorflow-notebook](https://hub.docker.com/r/jupyter/tensorflow-notebook/)
 
-这样就可以直接学习tensorFlow啦
+这样就可以直接学习 tensorFlow 啦

@@ -24,7 +24,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "jam3"],
   rules: {
     quotes: ["error", "double"],
     "no-bitwise": ["off"],
@@ -32,19 +32,30 @@ module.exports = {
     "import/extensions": ["off"],
     "import/prefer-default-export": ["off"],
     "@typescript-eslint/explicit-function-return-type": ["off"],
-    // for temporal
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx", ".jsx"] }],
     "react/prop-types": ["off"],
-    "react/jsx-filename-extension": ["off"],
     "import/no-extraneous-dependencies": ["off"],
     "react/no-danger": ["off"],
-    "no-undef": ["off"],
+    "jam3/no-sanitizer-with-danger": [
+      "error",
+      {
+        wrapperName: ["sanitize"],
+      },
+    ],
   },
   overrides: [
     {
       files: ["gatsby-*.js"],
-      env: {
+      rules: {
         "@typescript-eslint/camelcase": ["off"],
+        "@typescript-eslint/no-var-requires": ["off"],
+      },
+    },
+    {
+      files: ["node_modules.d.ts"],
+      rules: {
+        "no-underscore-dangle": ["off"],
       },
     },
   ],
-}
+};

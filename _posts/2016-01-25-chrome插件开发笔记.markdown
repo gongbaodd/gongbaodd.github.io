@@ -1,11 +1,11 @@
 ---
 layout: post
-categories: fe
+category: fe
 ---
 
-# chrome插件开发笔记
+# chrome 插件开发笔记
 
-> [360真是一个良心企业，这样不用翻墙就能看API了](http://open.chrome.360.cn/extension_dev/overview.html)
+> [360 真是一个良心企业，这样不用翻墙就能看 API 了](http://open.chrome.360.cn/extension_dev/overview.html)
 
 # manifest.json
 
@@ -34,32 +34,36 @@ categories: fe
 }
 ```
 
-# background.js判断url并添加page action
+# background.js 判断 url 并添加 page action
 
 ```javascript
 function getDomainFromUrl(url) {
-    var a = document.createElement('a');
-    a.href = url;
-    var o = a.origin;
-    setTimeout(function() {
-        a.remove();
-    },100);
-    return o.replace(a.protocol+'//','');
-};
+  var a = document.createElement("a");
+  a.href = url;
+  var o = a.origin;
+  setTimeout(function() {
+    a.remove();
+  }, 100);
+  return o.replace(a.protocol + "//", "");
+}
 
 function checkForValidUrl(tabId, changeInfo, tab) {
-    if (getDomainFromUrl(tab.url).toLowerCase().indexOf('qunar') > -1) {
-        chrome.pageAction.show(tabId);
-    }
-};
+  if (
+    getDomainFromUrl(tab.url)
+      .toLowerCase()
+      .indexOf("qunar") > -1
+  ) {
+    chrome.pageAction.show(tabId);
+  }
+}
 
 chrome.tabs.onUpdated.addListener(checkForValidUrl);
 ```
 
-# popup里面获取本页url
+# popup 里面获取本页 url
 
 ```javascript
-chrome.tabs.getSelected(null,(tab)=>{
-    callback(tab.url);
+chrome.tabs.getSelected(null, tab => {
+  callback(tab.url);
 });
 ```
