@@ -39,8 +39,19 @@ interface PageData {
     };
   };
   allMarkdownRemark: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    edges: any[];
+    edges: Array<{
+      node: {
+        excerpt: string;
+        frontmatter: {
+          date: string;
+          title: string;
+          description: string;
+        };
+        fields: {
+          slug: string;
+        };
+      };
+    }>;
   };
 }
 
