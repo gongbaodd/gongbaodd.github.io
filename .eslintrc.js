@@ -32,19 +32,19 @@ module.exports = {
     "import/extensions": ["off"],
     "import/prefer-default-export": ["off"],
     "@typescript-eslint/explicit-function-return-type": ["off"],
-    // for temporal
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx", ".jsx"] }],
     "react/prop-types": ["off"],
-    "react/jsx-filename-extension": ["off"],
     "import/no-extraneous-dependencies": ["off"],
+    // for temporal
     "react/no-danger": ["off"],
     "no-undef": ["off"],
   },
   overrides: [
     {
       files: ["gatsby-*.js"],
-      env: {
+      rules: {
         "@typescript-eslint/camelcase": ["off"],
       },
     },
   ],
-}
+};
