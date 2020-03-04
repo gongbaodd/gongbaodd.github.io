@@ -101,6 +101,7 @@
     "commit": "git-cz",
     "audit:ci": "audit-ci -m -w decompress",
     "type": "tsc --noEmit",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/gongbaodd.github.io.git"
   }
 }
