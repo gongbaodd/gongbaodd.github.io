@@ -3,7 +3,7 @@ import path from "path";
 const query = `
 {
   allMarkdownRemark(
-    sort: { fields: [frontmatter___date], order: DESC }
+    sort: { fields: [fields___date], order: DESC }
     limit: 1000
   ) {
     edges {
@@ -13,7 +13,6 @@ const query = `
           title
         }
         frontmatter {
-          title
           category
         }
       }
@@ -32,7 +31,6 @@ interface Data {
         };
 
         frontmatter: {
-          title: string;
           category: string;
         };
       };
