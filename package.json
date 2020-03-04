@@ -99,7 +99,7 @@
     "clean": "gatsby clean",
     "lint": "eslint src --ext=ts,js,tsx --fix",
     "commit": "git-cz",
-    "audit:ci": "audit-ci",
+    "audit:ci": "audit-ci -m -w decompress",
     "type": "tsc --noEmit",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
