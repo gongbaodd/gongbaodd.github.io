@@ -1,0 +1,1582 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.491a16106869c73de5f8.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.19.24"/><link rel="icon" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4768f21272a07c96373b1d908820699b"/><title data-react-helmet="true">使用rust和webassembly开发game_of_life | 宫不上叔</title><meta data-react-helmet="true" name="description" content="使用rust和webassembly开发game of life 这是一篇翻译，原文，这可能是第一篇系统讲解rustwasm的文章了。 这本书适合谁？ 这本书适合任何对快速编译Rust和Webassembly感兴趣的人，相关的代码已经发布在网上。你应该已经了解一些Rust的知识，对JavaScript HTML和css…"/><meta data-react-helmet="true" property="og:title" content="使用rust和webassembly开发game_of_life"/><meta data-react-helmet="true" property="og:description" content="使用rust和webassembly开发game of life 这是一篇翻译，原文，这可能是第一篇系统讲解rustwasm的文章了。 这本书适合谁？ 这本书适合任何对快速编译Rust和Webassembly感兴趣的人，相关的代码已经发布在网上。你应该已经了解一些Rust的知识，对JavaScript HTML和css…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="gongbaodd"/><meta data-react-helmet="true" name="twitter:title" content="使用rust和webassembly开发game_of_life"/><meta data-react-helmet="true" name="twitter:description" content="使用rust和webassembly开发game of life 这是一篇翻译，原文，这可能是第一篇系统讲解rustwasm的文章了。 这本书适合谁？ 这本书适合任何对快速编译Rust和Webassembly感兴趣的人，相关的代码已经发布在网上。你应该已经了解一些Rust的知识，对JavaScript HTML和css…"/><meta data-react-helmet="true" name="referrer" content="no-referrer"/><link as="script" rel="preload" href="/webpack-runtime-df04da3d7c9aa742538e.js"/><link as="script" rel="preload" href="/styles-e6de4e09d8d0519894be.js"/><link as="script" rel="preload" href="/app-098fdf59af858a56ac7b.js"/><link as="script" rel="preload" href="/commons-898b4dbbf76880ce5fbd.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-tsx-8976691932302854498d.js"/><link as="fetch" rel="preload" href="/page-data/fe/2020/02/27/使用rust和webassembly开发game_of_life.html/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h1 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">宫不上叔</a></h1><main><article><header><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">February 27, 2020</p></header><section><h1>使用rust和webassembly开发game of life</h1>
+<p>这是一篇翻译，<a href="https://github.com/rustwasm/book.git">原文</a>，这可能是第一篇系统讲解rustwasm的文章了。</p>
+<h2>这本书适合谁？</h2>
+<p>这本书适合任何对快速编译Rust和Webassembly感兴趣的人，相关的代码已经发布在网上。你应该已经了解一些Rust的知识，对JavaScript HTML和css很熟悉，但你不需要是在这些方面的专家。</p>
+<p>还不了解rust？请先参阅<a href="https://doc.rust-lang.org/book/">开始使用rust语言</a>。
+不了解JavaScript的html或者是css？请参阅<a href="https://developer.mozilla.org/en-US/docs/Learn">MDN</a></p>
+<h2>为什么用rust和webAssembly</h2>
+<h3>底层支持和高效(Low-Level Control with Hign-Level Ergonomics)</h3>
+<p>Javascript的应用，纠结于如何保持高效运作。但是JavaScript的动态类型系统和垃圾回收机制，使他们不能高效。看起来很小的修改，如果不小心走出了JIT的舒适区，看起来很小的修改都会导致很严重的错误。</p>
+<h3>.wasm文件大小</h3>
+<p>因为要通过网络下载，代码的大小就变得异常重要。Rust不需要运行环境，使得编译文件不需要包括垃圾回收器。这些文件包括的只有真正需要的函数。</p>
+<h3>不要重写所有的东西</h3>
+<p>现有的代码不需要被扔走，你可以把性能最严重的JavaScript函数，交给rust去执行。</p>
+<h3>和其他工具交互融洽</h3>
+<p>Rust和WebAssembly支持现有的工具链，它支持ecmascript模块，并且你依然可以使用现有的工具链如NPM，webpack和greenkeeper。</p>
+<h2>背景和相关概念</h2>
+<h3>什么是WebAssembly</h3>
+<p>WebAssembly（wasm）是一个简单的机器模块拥有大量的<a href="https://webassembly.github.io/spec/">定义</a>。它被设计得以相近于原生的速度便携紧密地执行。</p>
+<p>作为一个开发语言，尽管是以两种方式展示的格式，wasm依然表示于同样的结构。</p>
+<ul>
+<li><code>.wat</code>文本格式（叫做WebAssembly Text），使用<a href="https://en.wikipedia.org/wiki/S-expression">S-expression</a>，有点类似于Lisp家族，像是Scheme和Clojure。</li>
+<li><code>.wasm</code>二机制格式，是一个底层的目标是让wasm虚拟机使用的格式，有些类似于ELF和Mach-O。</li>
+</ul>
+<p>以<code>.wat</code>书写的斐波那契数列如下：</p>
+<div><pre><code><span>(</span><span>module</span>
+  <span>(</span><span>func</span> <span>$fac</span> <span>(</span><span>param</span> <span>f64</span><span>)</span> <span>(</span><span>result</span> <span>f64</span><span>)</span>
+    <span>get_local</span> <span>0</span>
+    <span>f64<span>.</span>const</span> <span>1</span>
+    <span>f64<span>.</span>lt</span>
+    <span>if</span> <span>(</span><span>result</span> <span>f64</span><span>)</span>
+      <span>f64<span>.</span>const</span> <span>1</span>
+    <span>else</span>
+      <span>get_local</span> <span>0</span>
+      <span>get_local</span> <span>0</span>
+      <span>f64<span>.</span>const</span> <span>1</span>
+      <span>f64<span>.</span>sub</span>
+      <span>call</span> <span>$fac</span>
+      <span>f64<span>.</span>mul</span>
+    <span>end</span><span>)</span>
+  <span>(</span><span>export</span> <span>"fac"</span> <span>(</span><span>func</span> <span>$fac</span><span>)</span><span>)</span><span>)</span></code></pre></div>
+<p>如果感兴趣的话，可以使用<a href="https://webassembly.github.io/wabt/demo/wat2wasm/">此工具</a>执行上面的代码。</p>
+<h4>线性内存</h4>
+<p>Wasm使用的<a href="https://webassembly.github.io/spec/core/syntax/modules.html#syntax-mem">内存模式</a>很简单。一个wasm模块，可以访问的一系列内存，被限制于一个字节数组中。这些内存会<a href="https://webassembly.github.io/spec/core/syntax/instructions.html#syntax-instr-memory">增长</a>为多个页（64K）不会收缩。</p>
+<h4>Wasm是仅仅为web开发的吗？</h4>
+<p>尽管在JavaScript和web社区中有很多讨论。WASM并没有考虑过它的运用环境。所以目前只能定义它为将来可以使用的便携运行格式。但就目前而言，wasm仍然在很多方面与JavaScript有关。不仅仅是浏览器，还有Node.js。</p>
+<h2>关于本书</h2>
+<p>这一部分开始使用Rust和WebAssembly开发<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway的Game of Life</a>。</p>
+<p>本章会讲到以下内容。</p>
+<ul>
+<li>如何搭建编译WebAssembly的Rust工具链。</li>
+<li>一个支持开发多语言程序（Rust、wasm、JavaScript、HTML和CSS）的工作流。</li>
+<li>设计最大利用rust和wasm的优势配合JavaScript的优点的API。</li>
+<li>如何调试wasm模块。</li>
+<li>如何查看wasm的时间日志（time profile）。</li>
+<li>如何减少生成的二进制文件包大小。</li>
+</ul>
+<h2>安装工具</h2>
+<p>本节将会介绍编译Rust编译WASM并和JavaScript集成的工具链。</p>
+<h3>Rust工具链</h3>
+<p>你需要安装rust的标准工具链，<a href="https://www.rust-lang.org/tools/install">rustup，rustc和cargo</a>（强烈建议你们在WSl的环境下面工作）。</p>
+<p>WASM已经推动Rust新特性进入稳定版，所以我们需要有1.30或更新版本。</p>
+<h3>wasm-pack</h3>
+<p><code>wasm-pack</code>是一站式的建造测试以及发布rust相关的wasm应用工具。</p>
+<div><pre><code>cargo <span>install</span> wasm-pack</code></pre></div>
+<h3>cargo-generate</h3>
+<p><code>cargo-generate</code>帮助你使用现存的Git仓库作为模板新建Rust项目。</p>
+<div><pre><code>cargo <span>install</span> cargo-generate</code></pre></div>
+<h3>NPM</h3>
+<p><code>npm</code>是JavaScript的包装管理器。我们将利用它，去安装和运行JavaScript的打包和测试部署。我们将把我们编译好的<code>.wasm</code>文件放到npm的包中。</p>
+<p>如果你已经安装了NPM可以执行以下命令，安装最新版。</p>
+<div><pre><code><span>npm</span> <span>install</span> npm@latest -g</code></pre></div>
+<h2>你好，世界</h2>
+<p>通过本部分可以创建一个Rust+WASM页面，并能在页面弹窗展示<code>&quot;Hello, World!&quot;</code>。</p>
+<h3>复制项目模板</h3>
+<p>这个项目的模板已经提前编译好，可以借此快速绑定、集成和打包成Web项目。</p>
+<p>利用模板创建项目的命令：</p>
+<div><pre><code>cargo generate --git https://github.com/rustwasm/wasm-pack-template</code></pre></div>
+<p>它会提醒你新建一个项目名称，这里我们先使用”wasm-game-of-life”。</p>
+<h3>文件结构</h3>
+<p>进入项目文件夹。</p>
+<div><pre><code><span>cd</span> wasm-game-of-life</code></pre></div>
+<p>以下是项目文件夹：</p>
+<div><pre><code>wasm-game-of-life/
+├── Cargo.toml
+├── LICENSE_APACHE
+├── LICENSE_MIT
+├── README.md
+└── src
+    ├── lib.rs
+    └── utils.rs</code></pre></div>
+<p>接下来详细看一下：</p>
+<h4>wasm-game-of-life/Cargo.toml</h4>
+<p><code>Cargo.toml</code>文件描述<code>cargo</code>的依赖和源文件，Rust的包管理工具和编译工具。这个包括<code>wasm-bindgen</code>依赖，我们会稍后了解其他的依赖，还有一些用来初始化<code>.wasm</code>的<code>crate-type</code>库。</p>
+<h4>wasm-game-of-life/src/lib.rs</h4>
+<p><code>src/lib</code>文件放在Rust项目的更目录下面。它使用<code>wasm-bindgen</code>去和JavaScript链接。它能引入<code>window.alert</code>这个JavaScript函数，并暴露<code>greet</code>函数，并弹出弹框。</p>
+<div><pre><code><span>mod</span> utils<span>;</span>
+<span>use</span> wasm_bindgen<span>::</span>prelude<span>::</span><span>*</span><span>;</span>
+
+<span>// 当wee_alloc特性被打开，将会使用wee_alloc作为全局分匹配器</span>
+<span>#[cfg(feature = "wee_alloc")]</span>
+<span>#[global_allocator]</span>
+<span>static</span> ALLOC<span>:</span> wee_alloc<span>::</span>WeeAlloc <span>=</span> wee_alloc<span>::</span>WeeAlloc<span>::</span>INIT<span>;</span>
+
+<span>#[wasm_bindgen]</span>
+<span>extern</span> <span>{</span>
+    <span>fn</span> <span>alert</span><span>(</span>s<span>:</span> <span>&amp;</span>str<span>)</span><span>;</span>
+<span>}</span>
+
+<span>#[wasm_bindgen]</span>
+<span>pub</span> <span>fn</span> <span>greet</span><span>(</span><span>)</span> <span>{</span>
+    <span>alert</span><span>(</span><span>"Hello, wasm-game-of-life!"</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<h4>wasm-game-of-life/src/utils.rs</h4>
+<p><code>src/utils</code>模块为编译Rust到WASM提供工具函数，我们后面会在调试时提到它，现在先忽略。</p>
+<h3>编译项目</h3>
+<p>使用<code>wasm-pack</code>依赖以下工具：</p>
+<ul>
+<li>保证Rust版本在1.30以上，且已经通过<code>rustup</code>安装<code>wasm32-unknown-unknown</code>工具链。</li>
+<li>使用<code>cargo</code>编译Rust到WASM。</li>
+<li>使用<code>wasm-bindgen</code>去生成JavaScript的API。</li>
+</ul>
+<p>为了完成以上内容，需要在根目录执行以下命令：</p>
+<div><pre><code>wasm-pack build</code></pre></div>
+<p>编译完成后，我们可以看到<code>pkg</code>里面的结构，里面应该有如下文件。</p>
+<div><pre><code>pkg/
+├── package.json
+├── README.md
+├── wasm_game_of_life_bg.wasm
+├── wasm_game_of_life.d.ts
+└── wasm_game_of_life.js</code></pre></div>
+<p><code>README.md</code>文件是直接从根目录复制的，但是其他文件完全是新生成的。</p>
+<h4>wasm-game-of-life/pkg/wasm<em>game</em>of<em>life</em>bg.wasm</h4>
+<p><code>.wasm</code>文件是Rust工具链使用Rust源代码生成的WASM的二进制文件，它包括全部的函数和数据，比方说，爆露出来的<code>greet</code>函数。</p>
+<h4>wasm-game-of-life/pkg/wasm<em>game</em>of_life.js</h4>
+<p>这个<code>.js</code>文件是<code>wasm-bindgen</code>引入DOM和JavaScript方法到Rust中，并油耗地暴露WASM的API到JavaScript中。举个例子，这里个<code>greet</code>函数包裹了WASM中的<code>greet</code>函数，目前，这个粘合还没做任何功能，当我们逐渐从WASM和JavaScript中传输数据，他会提供帮助。</p>
+<div><pre><code><span>import</span> <span>*</span> <span>as</span> wasm <span>from</span> <span>"./wasm_game_of_life_bg"</span><span>;</span>
+
+<span>export</span> <span>function</span> <span>greet</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> wasm<span>.</span><span>greet</span><span>(</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<h4>wasm-game-of-life/pkg/wasm<em>game</em>of_life.d.ts</h4>
+<p>这个<code>.d.ts</code>是TypeScript链接JavaScript的文件。如果你的项目中使用了TypeScript，你可以让你的WebAssembly项目被类型检查，并且你的IDE会提供代码提醒和自动完成功能。</p>
+<div><pre><code><span>export</span> <span>function</span> <span>greet</span><span>(</span><span>)</span><span>:</span> <span>void</span><span>;</span></code></pre></div>
+<h4>wasm-game-of-life/pkg/package.json</h4>
+<p>这个文件包括了所有生成的文件描述，并使得这个项目能够作为一个使用WebAssembly的NPM包，能够集成到JavaScript工具链并发布至NPM。</p>
+<div><pre><code><span>{</span>   
+  <span>"name"</span><span>:</span> <span>"wasm-game-of-life"</span><span>,</span>
+  <span>"collaborators"</span><span>:</span> <span>[</span>
+    <span>"Your Name &lt;your.email@example.com&gt;"</span>
+  <span>]</span><span>,</span>
+  <span>"description"</span><span>:</span> <span>null</span><span>,</span>
+  <span>"version"</span><span>:</span> <span>"0.1.0"</span><span>,</span>
+  <span>"license"</span><span>:</span> <span>null</span><span>,</span>
+  <span>"repository"</span><span>:</span> <span>null</span><span>,</span>
+  <span>"files"</span><span>:</span> <span>[</span>
+    <span>"wasm_game_of_life_bg.wasm"</span><span>,</span>
+    <span>"wasm_game_of_life.d.ts"</span>
+  <span>]</span><span>,</span>
+  <span>"main"</span><span>:</span> <span>"wasm_game_of_life.js"</span><span>,</span>
+  <span>"types"</span><span>:</span> <span>"wasm_game_of_life.d.ts"</span>
+<span>}</span></code></pre></div>
+<h3>开始加入页面</h3>
+<p>想要<code>wasm-game-of-life</code>能够展示到页面中，需要使用<a href="https://github.com/rustwasm/create-wasm-app"><code>create-wasm-app</code> JavaScript模板</a>。</p>
+<p>在项目根目录执行以下命令：</p>
+<div><pre><code><span>npm</span> init wasm-app www</code></pre></div>
+<p>这是<code>wasm-game-of-life/www</code>文件夹包括的文件。</p>
+<div><pre><code>wasm-game-of-life/www/
+├── bootstrap.js
+├── index.html
+├── index.js
+├── LICENSE-APACHE
+├── LICENSE-MIT
+├── package.json
+├── README.md
+└── webpack.config.js</code></pre></div>
+<h4>wasm-game-of-life/www/package.json</h4>
+<p>这个文件包括已经配置好的<code>webpack</code>和<code>webpack-dev-server</code>依赖，和<code>hello-wasm-pack</code>，版本号为已经发布到NPM上面的版本号。</p>
+<h4>wasm-game-of-life/www/webpack.conf.js</h4>
+<p>这个是用来配置webpack和开发服务器的文件。该文件已经提前布置好，如果只是开发则无需过多关心这个文件。</p>
+<h4>wasm-game-of-life/www/index.html</h4>
+<p>这是页面的HTML文件，它是来调用<code>bootstrap.js</code>的。</p>
+<div><pre><code><span>&lt;!DOCTYPE html&gt;</span>
+<span><span><span>&lt;</span>html</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>head</span><span>&gt;</span></span>
+    <span><span><span>&lt;</span>meta</span> <span>charset</span><span><span>=</span><span>"</span>utf-8<span>"</span></span><span>&gt;</span></span>
+    <span><span><span>&lt;</span>title</span><span>&gt;</span></span>Hello wasm-pack!<span><span><span>&lt;/</span>title</span><span>&gt;</span></span>
+  <span><span><span>&lt;/</span>head</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>body</span><span>&gt;</span></span>
+    <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>./bootstrap.js<span>"</span></span><span>&gt;</span></span><span></span><span><span><span>&lt;/</span>script</span><span>&gt;</span></span>
+  <span><span><span>&lt;/</span>body</span><span>&gt;</span></span>
+<span><span><span>&lt;/</span>html</span><span>&gt;</span></span></code></pre></div>
+<h4>wasm-game-of-life/www/index.js</h4>
+<p>这是JavaScript的入口文件，他引入了<code>hello-wasm-pack</code>，并带哦用了greet函数。</p>
+<div><pre><code><span>import</span> <span>*</span> <span>as</span> wasm <span>from</span> <span>"hello-wasm-pack"</span><span>;</span>
+
+wasm<span>.</span><span>greet</span><span>(</span><span>)</span><span>;</span></code></pre></div>
+<h4>安装NPM依赖</h4>
+<p>首先保证已经在<code>www</code>文件夹下面执行过<code>npm i</code>，这个命令会安装好现有依赖包括webpack和开发服务器。</p>
+<blockquote>
+<p>注意webpack并不是必须的，他只是个打包器并提供了开发服务器，这是我们选择它的原因。Parcel和Rollup一样支持WebAssembly模块。你也可以选择<a href="https://rustwasm.github.io/docs/wasm-bindgen/examples/without-a-bundler.html">不使用打包器</a>。</p>
+</blockquote>
+<h4>在www文件夹中使用本地wasm-game-of-life包</h4>
+<p>相比于使用NPM线上的<code>hello-wasm-pack</code>，使用本地文件会提高我们的开发舒适度。</p>
+<p>打开<code>www/package.json</code>，找到<code>devDependencies</code>，在兄弟节点增加<code>dependencies</code>字段，并在里面增加<code>&quot;wasm-game-of-life&quot;: &quot;file:../pkg&quot;</code>。</p>
+<div><pre><code><span>{</span>
+  <span>// ...</span>
+  <span>"dependencies"</span><span>:</span> <span>{</span>                     <span>// Add this three lines block!</span>
+    <span>"wasm-game-of-life"</span><span>:</span> <span>"file:../pkg"</span>
+  <span>}</span><span>,</span>
+  <span>"devDependencies"</span><span>:</span> <span>{</span>
+    <span>//...</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>接下来修改<code>www/index.js</code>引入greet函数。</p>
+<div><pre><code><span>import</span> <span>*</span> <span>as</span> wasm <span>from</span> <span>"wasm-game-of-life"</span><span>;</span>
+
+wasm<span>.</span><span>greet</span><span>(</span><span>)</span><span>;</span></code></pre></div>
+<p>既然修改了package.json，则需要重新安装他。</p>
+<div><pre><code><span>npm</span> <span>install</span></code></pre></div>
+<p>好了，现在服务器可以成功运行了。</p>
+<h4>启动本地服务</h4>
+<p>接下来，打开一个新终端来在后台运行服务器，请在<code>www</code>文件夹下执行如下命令。</p>
+<div><pre><code><span>npm</span> run start</code></pre></div>
+<p>打开<a href="http://localhost:8080%EF%BC%8C%E5%BA%94%E5%BD%93%E4%BC%9A%E5%BC%B9%E5%87%BA%E5%A6%82%E4%B8%8B%E5%BC%B9%E7%AA%97%E3%80%82">http://localhost:8080，应当会弹出如下弹窗。</a></p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/hello-world.png" alt="弹窗"></p>
+<h3>练习</h3>
+<p>修改greet函数，引入参数<code>name: &amp;str</code>，重新执行<code>wasm-pack build</code>，并刷新页面使得弹窗中能够显示”Hello, {name}“。</p>
+<p><strong><em>答案，不许看！</em></strong></p>
+<p>修改<code>src/lib.rs</code></p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>pub</span> <span>fn</span> <span>greet</span><span>(</span>name<span>:</span> <span>&amp;</span>str<span>)</span> <span>{</span>
+    <span>alert</span><span>(</span><span>&amp;</span><span>format!</span><span>(</span><span>"Hello, {}!"</span><span>,</span> name<span>)</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>再修改JavaScript绑定<code>www/index.js</code></p>
+<div><pre><code>wasm<span>.</span><span>greet</span><span>(</span><span>"Your name"</span><span>)</span><span>;</span></code></pre></div>
+<h2>Conway的生命游戏的游戏规则</h2>
+<p>如果你已经了解<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway的生命游戏</a>，可以跳过这部分。</p>
+<p>整个Conway的生命游戏是在一个无限的二维的正交格子宇宙中，每一个细胞拥有两种生命状态，生或者死。或者说可增殖或者不可增殖。每一个细胞都和它的8个邻居交互，它们分别是纵向的，斜向的，横向的相邻。并且每一步都会发生如下的变化。</p>
+<ol>
+<li>任何一个活着的细胞，如果有少于两个邻居就会死亡。</li>
+<li>任何一个活细胞拥有两个或三个活着的邻居，则会继续增殖。</li>
+<li>任何一个活着的细胞拥有三个以上活着的的邻居，则会死亡。</li>
+<li>任何一个死掉的细胞，如果有三个活着的邻居，则会重生。</li>
+</ol>
+<p>最初的图案组成了最初的世界。第1代是按照以上的规则生成的，每一个细胞的生成和死亡都是同时的。他们的生存和死亡这一个时间我们称之为一刻。用程序的语言来说，这一刻是上一次生成的纯函数。这个规则一直有效。</p>
+<p>考虑设置如下的初始宇宙：</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/initial-universe.png" alt="初始宇宙"></p>
+<p>我们可以通过考虑每一个细胞来确定下一代。最左上角的细胞已经死亡，第4条规则是唯一一个能够处理死亡细胞的规则。所以第1排的所有细胞都有相同的规则。他们都没有三个活着的邻居。只能保持死亡。</p>
+<p>当我们看到最上面的活着的细胞时，这个游戏开始变得有趣了。在第2排第3列。对于活着细胞前三个规则都可以应用。对于这一个细胞，他只有一个活着的邻居，所以规则一可用。这个细胞会在下一次争执死亡。下面那几个活着的细胞也是有一样的命运。</p>
+<p>中间的活着的细胞，还有两个邻居，上面的和下面的，这就意味着它符合规则二，他可以活到下一次增值。</p>
+<p>最后一个比较有趣的例子，就是当我们看到死掉的细胞。嗯。在中间这活着的细胞的左边和右边。这三个活着的细胞都是他们的邻居。这使得他们按照规则是可以在下一轮重生。</p>
+<p>将这些规则放在一起，我们可以获得下一刻的世界。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/next-universe.png" alt="下一刻的世界"></p>
+<p>根据这个例子，和确定的规则。不去并精彩的事情将会发生。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" alt="Gosper's glider gun"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif" alt="Pulsar"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Game_of_life_animated_LWSS.gif" alt="Space ship"></p>
+<h3>练习</h3>
+<p>手动计算出下一刻，宇宙应该是什么样</p>
+<p><strong><em>答案，不许看！</em></strong></p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/initial-universe.png" alt="下一刻宇宙"></p>
+<p>你能找到一个稳定的没有变化的宇宙吗？</p>
+<p><strong><em>答案，不许看！</em></strong></p>
+<p>这个答案，不许看！其实有无数个，最平凡的答案，不许看！就是它是一个空宇宙。如果是一个2×2的方格，也可以形成一个稳定的宇宙。</p>
+<h2>实现Conway的生命游戏</h2>
+<h3>设计</h3>
+<p>在开始之前呢，我们要先考虑以下几种设计模式。</p>
+<h4>无限宇宙</h4>
+<p>生命游戏是在一个无限宇宙中玩的。但是我们没有无限的内存和计算能力。在这种情况下，我们往往会有三个选项。</p>
+<ol>
+<li>始终追踪这个宇宙的发展，并适当的扩展宇宙。这个扩张是无限的，所以这个实现实现了就会逐渐逐渐的变得越来越慢，直到把内存全部用完。</li>
+<li>创建一个固定的宇宙，当细胞碰到宇宙的边缘的时候，将会有更少的邻居。更简单的策略就是当他们已经达到边缘的时候，直接被宇宙剪掉。</li>
+<li>创建一个固定的宇宙，当细胞达到边缘的时候，将会从另外一边滑入这样，我的我们的应用就可以一直跑下去。</li>
+</ol>
+<p>我们会按照第3个选项来实现。</p>
+<h4>连接Rust和JavaScript</h4>
+<blockquote>
+<p>此部分是本人最重要的一节。</p>
+</blockquote>
+<p>JavaScript的垃圾回收堆内存，是用来调用Object和Array还有DOM结点的。而Rust存在的WebAssembly线性内存和它是截然不同的。WebAssembly目前还不能直接操作垃圾回收堆内存（在2018年4月，一个关于<a href="https://github.com/WebAssembly/interface-types/blob/master/proposals/interface-types/Explainer.md">接口类型（Interface Type）</a>的提案将会改变这一局面）。JavaScript却可以读写WebAssembly的线性内存，但仅限于ArrayBuffe支持的标量（u8, i32, f64等等）。WebAssembly行数一样能处理和返回这些标量。以下讲解WebAssembly和JavaScript如何链接。</p>
+<p>wasm<em>bindgen定义了如何穿过这段链接计算数据结构的方法。它包括装箱Rust结构，并包装指针成为一个JavaScript类以供使用，或者提供JavaScript对象给Rust使用。wasm</em>bindgen非常便利，但并不是无需考虑怎样在这个链接上传输数据结构。你应该把它当作一个实现接口的工具。</p>
+<p>当设计WebAssembly和JavaScript的接口时，我们需要考虑到以下内容。</p>
+<ol>
+<li><strong>减少复制到和移出WebAssembly线性内存中的值</strong>，无效的复制会造成无用的性能损耗。</li>
+<li><strong>最小的序列化和解序列化</strong>，和复制类似，序列化和解序列化一样造成性能损耗，如果想要把数据无副作用地从一端传到另一端，与其说在一端序列化，到另一端解序列化，不如使用wasm_bindgen帮助我们将JavaScript的Object装箱成Rust的structure。</li>
+</ol>
+<p>一个结论，处理JavaScript和WebAssembly接口设计时，经常将大的、生命周期长的数据结构作为Rust类型，存储在WebAssembly线性内存中，并给JavaScript暴露一个处理方法，JavaScript调用WebAssembly转换文件，处理运算，并最终得到一个小的，可复制的结果。通过只返回计算结果，我们可以躲过复制和序列化数据的过程。</p>
+<h4>在生命游戏中链接Rust和JavaScript</h4>
+<p>接下来结局几个要规避的问题。我们不想每刻都复制整个宇宙到WebAssembly的内存中，我们不想处理宇宙中所有的细胞，也不想在每次读写细胞的时候都穿过WebAssembly和JavaScript的分界。</p>
+<p>这是我们的4x4宇宙在内存中的结构。</p>
+<p><img src="https://rustwasm.github.io/docs/book/images/game-of-life/universe.png" alt="4x4宇宙在内存中的结构"></p>
+<p>为了寻找细胞在内存中的位置，我们可以使用下面的公式。</p>
+<div><pre><code>index(row, column, universe) = row * width(universe) + column</code></pre></div>
+<p>我们有很多方法来给JavaScript暴露宇宙中的细胞。开始我们要为宇宙实现一个<code>std::fmt::Display</code>。我们可以使用一个Rust的String，每个字符代表一个细胞。这个Rust的string将会从WebAssembly的内存中复制到JavaScript的内存里，并接下来作为textContent展示到HTML里面。本节的后面，将会讲到如何把细胞展示到canvas中。</p>
+<blockquote>
+<p>另一种设计是让Rust返回每个细胞的生存状态列表，这样JavaScript就不需要在渲染时解析整个宇宙，这不过这个是先更加复杂些。</p>
+</blockquote>
+<h4>Rust的实现</h4>
+<p>上一章，我们复制了初始化模板，我们现在要修改这个模板。</p>
+<p>从删除greet函数，并定义宇宙中的细胞开始。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>#[repr(u8)]</span>
+<span>#[derive(Clone, Copy, Debug, PartialEq, Eq)]</span>
+<span>pub</span> <span>enum</span> Cell <span>{</span>
+    Dead <span>=</span> <span>0</span><span>,</span>
+    Alive <span>=</span> <span>1</span><span>,</span>
+<span>}</span></code></pre></div>
+<p><code>#[repr(u8)]</code>很重要，这样每个细胞都会以一个字节存储，另外Alive为1，Dead为0也很重要，这样我们就可以使用加法计算邻居数目。</p>
+<p>接下来定义宇宙，一个宇宙包括宽度，高度和一个向量的细胞。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>pub</span> <span>struct</span> Universe <span>{</span>
+    width<span>:</span> u32<span>,</span>
+    height<span>:</span> u32<span>,</span>
+    cells<span>:</span> Vec<span>&lt;</span>Cell<span>&gt;</span><span>,</span>
+<span>}</span></code></pre></div>
+<p>访问并转换细胞的实现如下。</p>
+<div><pre><code><span>impl</span> Univers <span>{</span>
+    <span>fn</span> <span>get_index</span><span>(</span><span>&amp;</span><span>self</span><span>,</span> row<span>:</span> u32<span>,</span> column<span>:</span> u32<span>)</span> <span>-&gt;</span> usize <span>{</span>
+        <span>(</span>row<span>*</span><span>self</span><span>.</span>width <span>+</span> column<span>)</span> <span>as</span> usize
+    <span>}</span>
+<span>}</span></code></pre></div>
+<p>为了计算细胞接下来的状态，我们要统计某个细胞有多少个邻居存活。</p>
+<div><pre><code><span>impl</span> Univers <span>{</span>
+    <span>fn</span> <span>live_neighbor_count</span><span>(</span><span>&amp;</span><span>self</span><span>,</span> row<span>:</span> u32<span>,</span> column<span>:</span> u32<span>)</span> <span>-&gt;</span> u8 <span>{</span>
+        <span>let</span> <span>mut</span> count <span>=</span> <span>0</span><span>;</span>
+        <span>for</span> delta_row <span>in</span> <span>[</span><span>self</span><span>.</span>height <span>-</span> <span>1</span><span>,</span> <span>0</span><span>,</span> <span>1</span><span>]</span><span>.</span><span>iter</span><span>(</span><span>)</span><span>.</span><span>cloned</span><span>(</span><span>)</span> <span>{</span>
+            <span>for</span> delta_col <span>in</span> <span>[</span><span>self</span><span>.</span>width <span>-</span> <span>1</span><span>,</span> <span>0</span><span>,</span> <span>1</span><span>]</span><span>.</span><span>iter</span><span>(</span><span>)</span><span>.</span><span>cloned</span><span>(</span><span>)</span> <span>{</span>
+                <span>if</span> delta_row <span>==</span> <span>0</span> <span>&amp;&amp;</span> delta_col <span>==</span><span>0</span> <span>{</span>
+                    <span>continue</span><span>;</span>
+                <span>}</span>
+
+                <span>let</span> neighbor_row <span>=</span> <span>(</span>row <span>+</span> delta_row<span>)</span> <span>%</span> <span>self</span><span>.</span>height<span>;</span>
+                <span>let</span> neighbor_col <span>=</span> <span>(</span>column <span>+</span> delta_col<span>)</span> <span>%</span> <span>self</span><span>.</span>width<span>;</span>
+                <span>let</span> idx <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>neighbor_row<span>,</span> neighbor_col<span>)</span><span>;</span>
+                count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>idx<span>]</span> <span>as</span> u8
+            <span>}</span>
+        <span>}</span>
+        count
+    <span>}</span>
+<span>}</span></code></pre></div>
+<p>这个函数使用取余处理边界问题。现在我们已经有所有的必须函数了，最后只需要生成下一刻的状态即可（记住，每个函数必须在<code>#[wasm_bindgen]</code>属性之下，这样JavaScript才能接到暴露的函数）。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>impl</span> Universe <span>{</span>
+    <span>pub</span> <span>fn</span> <span>tick</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>)</span> <span>{</span>
+        <span>let</span> <span>mut</span> next <span>=</span> <span>self</span><span>.</span>cells<span>.</span><span>clone</span><span>(</span><span>)</span><span>;</span>
+
+        <span>for</span> row <span>in</span> <span>0</span><span>..</span><span>self</span><span>.</span>height <span>{</span>
+            <span>for</span> col <span>in</span> <span>0</span><span>..</span><span>self</span><span>.</span>width <span>{</span>
+                <span>let</span> idx <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+                <span>let</span> cell <span>=</span> <span>self</span><span>.</span>cells<span>[</span>idx<span>]</span><span>;</span>
+                <span>let</span> live_neighbors <span>=</span> <span>self</span><span>.</span><span>live_neighbor_count</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+
+                <span>let</span> next_cell <span>=</span> <span>match</span> <span>(</span>cell<span>,</span> live_neighbors<span>)</span> <span>{</span>
+                    <span>(</span>Cell<span>::</span>Alive<span>,</span> x<span>)</span> <span>if</span> x <span>&lt;</span> <span>2</span> <span>=&gt;</span> Cell<span>::</span>Dead<span>,</span>
+                    <span>(</span>Cell<span>::</span>Alive<span>,</span> <span>2</span><span>)</span> <span>|</span> <span>(</span>Cell<span>::</span>Alive<span>,</span> <span>3</span><span>)</span> <span>=&gt;</span> Cell<span>::</span>Alive<span>,</span>
+                    <span>(</span>Cell<span>::</span>Alive<span>,</span> x<span>)</span> <span>if</span> x <span>&gt;</span> <span>3</span> <span>=&gt;</span> Cell<span>::</span>Dead<span>,</span>
+                    <span>(</span>Cell<span>::</span>Dead<span>,</span> <span>3</span><span>)</span> <span>=&gt;</span> Cell<span>::</span>Alive<span>,</span>
+                    <span>(</span>otherwise<span>,</span> _<span>)</span> <span>=&gt;</span> oterwise<span>,</span>
+                <span>}</span><span>;</span>
+
+                next<span>[</span>idx<span>]</span> <span>=</span> next_cell<span>;</span>
+            <span>}</span>
+        <span>}</span>
+        <span>self</span><span>.</span>cells <span>=</span> next<span>;</span>
+    <span>}</span>
+<span>}</span></code></pre></div>
+<p>目前为止，一个宇宙的状态就都被存储在cell这个向量里面了。为了提高它的可读性，让我们实现一个文本渲染器，目的是将整个宇宙按行输出为文字，每一个活着的细胞标注为Unicode符号“■”，死掉的细胞则为“□”。</p>
+<p>通过实现Rust标准库中的<code>Display</code>trait，我们可以将数据结构以一种用户交互方式输出，它也提供了一个<code>to_string</code>方法。</p>
+<div><pre><code><span>use</span> std<span>::</span>fmt<span>;</span>
+
+<span>impl</span> fmt<span>::</span>Display <span>for</span> Universe <span>{</span>
+  <span>fn</span> <span>fmt</span><span>(</span><span>&amp;</span><span>self</span><span>,</span> f<span>:</span> <span>&amp;</span><span>mut</span> fmt<span>::</span>Formatter<span>)</span> <span>-&gt;</span> fmt<span>::</span>Result <span>{</span>
+    <span>for</span> line <span>in</span> <span>self</span><span>.</span>cells<span>.</span><span>as_slice</span><span>(</span><span>)</span><span>.</span><span>chunks</span><span>(</span><span>self</span><span>.</span>width <span>as</span> usize<span>)</span> <span>{</span>
+      <span>for</span> <span>&amp;</span>cell <span>in</span> line <span>{</span>
+        <span>let</span> symbol <span>=</span> <span>if</span> cell <span>==</span> Cell<span>::</span>Dead <span>{</span><span>"□"</span><span>}</span> <span>else</span> <span>{</span><span>"■"</span><span>}</span><span>;</span>
+        <span>write!</span><span>(</span>f<span>,</span> <span>"\n"</span><span>)</span><span>?</span><span>;</span>
+      <span>}</span>
+    <span>}</span>
+
+    <span>Ok</span><span>(</span><span>(</span><span>)</span><span>)</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>最后，我们定义一个构造器去初始化一个有趣的图案和一个渲染函数。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>impl</span> Universe <span>{</span>
+  <span>pub</span> <span>fn</span> <span>new</span><span>(</span><span>)</span> <span>-&gt;</span> <span>{</span>
+    <span>let</span> width <span>=</span> <span>64</span><span>;</span>
+    <span>let</span> height <span>=</span> <span>64</span><span>;</span>
+
+    <span>let</span> cells <span>=</span> <span>(</span><span>0</span><span>..</span>width <span>*</span> height<span>)</span>
+      <span>.</span><span>map</span><span>(</span><span><span>|</span>i<span>|</span></span> <span>{</span>
+        <span>if</span> i<span>%</span><span>2</span> <span>==</span> <span>0</span> <span>||</span> i<span>%</span><span>7</span> <span>==</span> <span>0</span> <span>{</span>
+          Cell<span>::</span>Alive
+        <span>}</span> <span>else</span> <span>{</span>
+          Cell<span>::</span>Dead
+        <span>}</span>
+      <span>}</span><span>)</span><span>.</span><span>collect</span><span>(</span><span>)</span><span>;</span>
+
+    Universe <span>{</span>
+      width<span>,</span>
+      height<span>,</span>
+      cells<span>,</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>pub</span> <span>fn</span> <span>render</span><span>(</span><span>&amp;</span><span>self</span><span>)</span> <span>-&gt;</span> String <span>{</span>
+    <span>self</span><span>.</span><span>to_string</span><span>(</span><span>)</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>以上，Rust部分已经完工。</p>
+<h4>使用JavaScript渲染</h4>
+<p>首先在HTML中插入<pre>标签用来展示整个宇宙。</p>
+<div><pre><code><span><span><span>&lt;</span>body</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>pre</span> <span>id</span><span><span>=</span><span>"</span>game-of-life-canvas<span>"</span></span><span>&gt;</span></span><span><span><span>&lt;/</span>pre</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>./bootstrap.js<span>"</span></span><span>&gt;</span></span><span></span><span><span><span>&lt;/</span>script</span><span>&gt;</span></span>
+<span><span><span>&lt;/</span>body</span><span>&gt;</span></span></code></pre></div>
+<p>另外我们希望<pre>标签能处于页面中央。我们可以通过CSS flex box实现这个任务，在html中增加&lt;style&gt;标签。</p>
+<div><pre><code><span>body</span> <span>{</span>
+  <span>position</span><span>:</span> absolute<span>;</span>
+  <span>top</span><span>:</span> 0<span>;</span>
+  <span>left</span><span>:</span> 0<span>;</span>
+  <span>width</span><span>:</span> 100%<span>;</span>
+  <span>height</span><span>:</span> 100%<span>;</span>
+  <span>display</span><span>:</span> flex<span>;</span>
+  <span>flex-direction</span><span>:</span> column<span>;</span>
+  <span>align-items</span><span>:</span> center<span>;</span>
+  <span>justify-content</span><span>:</span> center<span>;</span>
+<span>}</span></code></pre></div>
+<p>修改JavaScript入口文件，将原来引入的greet函数改为Universe。</p>
+<div><pre><code><span>import</span> <span>{</span> Universe <span>}</span> <span>from</span> <span>"wasm-game-of-life"</span><span>;</span></code></pre></div>
+<p>让我们在那个<pre>标签中增加新的宇宙实例吧。</p>
+<div><pre><code><span>const</span> pre <span>=</span> document<span>.</span><span>getElementById</span><span>(</span><span>"game-of-life-canvas"</span><span>)</span><span>;</span>
+<span>const</span> universe <span>=</span> Universe<span>.</span><span>new</span><span>(</span><span>)</span><span>;</span></code></pre></div>
+<p>使用JavaScript创建一个requestAnimationFrame循环，每一次循环，就在<pre>标签中绘制一遍宇宙，并执行一次<code>Universe::tick</code>。</p>
+<div><pre><code><span>function</span> <span>renderLoop</span><span>(</span><span>)</span> <span>{</span>
+  pre<span>.</span>textContent <span>=</span> universe<span>.</span><span>render</span><span>(</span><span>)</span><span>;</span>
+  universe<span>.</span><span>tick</span><span>(</span><span>)</span><span>;</span>
+
+  <span>requestAnimationFrame</span><span>(</span>renderLoop<span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>想要实现渲染，只需执行<code>requestAnimationFrame(renderLoop)</code>。</p>
+<p>确保你的本地服务任然在运行，此时你的页面应该如下所示。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/initial-game-of-life-pre.png" alt="浏览器页面"></p>
+<h4>渲染到Canvas上</h4>
+<p>在Rust中生成字符串并通过wasm-bindgen拷贝到JavaScript中做了很多无关的复制。既然JavaScript已经知道宇宙的长度和宽度，而且JavaScript本来可以直接读WebAssembly的内存，我们将要修改render方法，直接返回细胞向量的指针。</p>
+<p>同时，与其渲染Unicode字符，不如开始用Canvas API。接下来我们会开始设计这些。</p>
+<p>在html中，修改<pre>为&lt;canvas&gt;。</p>
+<div><pre><code><span><span><span>&lt;</span>body</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>canvas</span> <span>id</span><span><span>=</span><span>"</span>game-of-life-canvas<span>"</span></span><span>&gt;</span></span><span><span><span>&lt;/</span>canvas</span><span>&gt;</span></span>
+  <span><span><span>&lt;</span>script</span> <span>src</span><span><span>=</span><span>"</span>./bootstrap.js<span>"</span></span><span>&gt;</span></span><span></span><span><span><span>&lt;/</span>script</span><span>&gt;</span></span>
+<span><span><span>&lt;/</span>body</span><span>&gt;</span></span></code></pre></div>
+<p>为了能拿到Rust中的相关数据结构，我们需要为宇宙增加getter函数，暴露宇宙的宽度、高度和细胞的向量。增加如下函数。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>impl</span> Universe <span>{</span>
+  <span>pub</span> <span>fn</span> <span>width</span><span>(</span><span>&amp;</span><span>self</span><span>)</span> <span>-&gt;</span> u32 <span>{</span>
+    <span>self</span><span>.</span>width
+  <span>}</span>
+
+  <span>pub</span> <span>fn</span> <span>height</span><span>(</span><span>&amp;</span><span>self</span><span>)</span> <span>-&gt;</span> u32 <span>{</span>
+    <span>self</span><span>.</span>height
+  <span>}</span>
+
+  <span>pub</span> <span>fn</span> <span>cells</span><span>(</span><span>&amp;</span><span>self</span><span>)</span> <span>-&gt;</span> <span>*</span><span>const</span> Cell <span>{</span>
+    <span>self</span><span>.</span>cells<span>.</span><span>as_ptr</span><span>(</span><span>)</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>接下来，在JavaScript中，引入Cell，并设置几个渲染画布的常量。</p>
+<div><pre><code><span>import</span> <span>{</span> Universe<span>,</span> Cell <span>}</span> <span>from</span> <span>"wasm-game-of-life"</span><span>;</span>
+
+<span>const</span> <span>CELL_SIZE</span> <span>=</span> <span>5</span><span>;</span>
+<span>const</span> <span>GRID_COLOR</span> <span>=</span> <span>"#CCCCCC"</span><span>;</span>
+<span>const</span> <span>DEAD_COLOR</span> <span>=</span> <span>"#FFFFFF"</span><span>;</span>
+<span>const</span> <span>LIVE_COLOR</span> <span>=</span> <span>"#000000"</span><span>;</span></code></pre></div>
+<p>接下来修改实现canvas的部分。</p>
+<div><pre><code><span>const</span> universe <span>=</span> Universe<span>.</span><span>new</span><span>(</span><span>)</span><span>;</span>
+<span>const</span> width <span>=</span> universe<span>.</span><span>width</span><span>(</span><span>)</span><span>;</span>
+<span>const</span> height <span>=</span> universe<span>.</span><span>height</span><span>(</span><span>)</span><span>;</span>
+
+<span>const</span> canvas <span>=</span> documnet<span>.</span><span>getElementById</span><span>(</span><span>"game-of-life-canvas"</span><span>)</span><span>;</span>
+canvas<span>.</span>height <span>=</span> <span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>*</span>height <span>+</span> <span>1</span><span>;</span>
+canvas<span>.</span>width <span>=</span> <span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>*</span>width <span>+</span> <span>1</span><span>;</span>
+
+<span>const</span> ctx <span>=</span> canvas<span>.</span><span>getContext</span><span>(</span><span>"2d"</span><span>)</span><span>;</span>
+
+<span>function</span> <span>renderLoop</span><span>(</span><span>)</span> <span>{</span>
+  universe<span>.</span><span>tick</span><span>(</span><span>)</span><span>;</span>
+
+  <span>drawGrid</span><span>(</span><span>)</span><span>;</span>
+  <span>drawCells</span><span>(</span><span>)</span><span>;</span>
+
+  <span>requestAnimationFrame</span><span>(</span>renderLoop<span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>世界的网格，是一系列等宽的竖线和横线。</p>
+<div><pre><code><span>function</span> <span>drawGrid</span><span>(</span><span>)</span> <span>{</span>
+  ctx<span>.</span><span>beginPath</span><span>(</span><span>)</span><span>;</span>
+  ctx<span>.</span>strokeStyle <span>=</span> <span>GRID_COLOR</span><span>;</span>
+
+  <span>for</span><span>(</span><span>let</span> i <span>=</span><span>0</span><span>;</span> i <span>&lt;=</span> width<span>;</span> i<span>+=</span><span>1</span><span>)</span> <span>{</span>
+    ctx<span>.</span><span>moveTo</span><span>(</span>i<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span> <span>0</span><span>)</span><span>;</span>
+    ctx<span>.</span><span>lineTo</span><span>(</span>i<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span> <span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>*</span>height<span>+</span><span>1</span><span>)</span><span>;</span>
+  <span>}</span>
+
+  <span>for</span><span>(</span><span>let</span> i<span>=</span><span>0</span><span>;</span> i<span>&lt;=</span>height<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+    ctx<span>.</span><span>moveTo</span><span>(</span><span>0</span><span>,</span> i<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>+</span><span>1</span><span>)</span><span>;</span>
+    ctx<span>.</span><span>lineTo</span><span>(</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>*</span>width<span>+</span><span>1</span><span>,</span> i<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>+</span><span>1</span><span>)</span><span>;</span>
+  <span>}</span>
+
+  ctx<span>.</span><span>stroke</span><span>(</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>我们可以直接访问WebAssembly的内存，他是直接定义在<code>wasm_game_of_life_bg</code>。为了画细胞，我们先找到一个细胞的指针，并将它们转换成Unit8Array，迭代这些细胞，并按照他们的生命状态绘制白色和黑色方块。计量避免复制所有细胞。</p>
+<div><pre><code><span>import</span> <span>{</span> memory <span>}</span> <span>from</span> <span>"wasm-game-of-life/wasm_game_of_life_bg"</span><span>;</span>
+
+<span>function</span> <span>getIndex</span><span>(</span><span>row<span>,</span> column</span><span>)</span> <span>{</span>
+  <span>return</span> row<span>*</span>width<span>+</span>column<span>;</span>
+<span>}</span>
+
+<span>function</span> <span>drawCells</span><span>(</span><span>)</span> <span>{</span>
+  <span>const</span> cellsPtr <span>=</span> universe<span>.</span><span>cells</span><span>(</span><span>)</span><span>;</span>
+  <span>const</span> cells <span>=</span> <span>new</span> <span>Unit8Array</span><span>(</span>
+    memory<span>.</span>buffer<span>,</span>
+    cellPtr<span>,</span>
+    width<span>*</span>height<span>,</span>
+  <span>)</span><span>;</span>
+
+  ctx<span>.</span><span>beginPath</span><span>(</span><span>)</span><span>;</span>
+
+  <span>for</span><span>(</span><span>let</span> row<span>=</span><span>0</span><span>;</span> row<span>&lt;</span>height<span>;</span> row<span>+=</span><span>1</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> col<span>=</span><span>0</span><span>;</span> col<span>&lt;</span>width<span>;</span> col<span>+=</span><span>1</span><span>)</span> <span>{</span>
+      <span>const</span> idx <span>=</span> <span>getIndex</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+
+      ctx<span>.</span>fillStyle <span>=</span> cells<span>[</span>idx<span>]</span> <span>===</span> CellDead
+        <span>?</span> <span>DEAD_COLOR</span>
+        <span>:</span> <span>LIVE_COLOR</span><span>;</span>
+
+      ctx<span>.</span><span>fillRect</span><span>(</span>
+        cell<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+        row<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+        <span>CELL_SIZE</span><span>,</span>
+        <span>CELL_SIZE</span><span>,</span>
+      <span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+
+  ctx<span>.</span><span>stroke</span><span>(</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>开始渲染，需要添加以下表达式。</p>
+<div><pre><code><span>drawGrid</span><span>(</span><span>)</span><span>;</span>
+<span>drawCells</span><span>(</span><span>)</span><span>;</span>
+<span>requestAnimationFrame</span><span>(</span>renderLoop<span>)</span><span>;</span></code></pre></div>
+<p>注意drawGrid和drawCell必须要在requestAnimationFrame之前执行。</p>
+<h4>成功了！</h4>
+<p>重建WebAssembly绑定。</p>
+<div><pre><code>wasm-pack build</code></pre></div>
+<p>确定开发服务器还在运行，如果不是，需要执行以下命令。</p>
+<div><pre><code><span>npm</span> run start</code></pre></div>
+<p>刷新<code>http://localhost:8080/</code>，你应该能看到如下结果。</p>
+<p><img src="https://rustwasm.github.io/docs/book/images/game-of-life/initial-game-of-life.png" alt="页面"></p>
+<p>结束之前，这里还有一个不错的实现生命游戏的算法，<a href="https://en.wikipedia.org/wiki/Hashlife">hashlife</a>。它使用缓存，使得程序有指数级性能提升！但是为什么我们不实现它呢？它已经超出本文涉及的范围了，本文只是专注于Rust和WebAssembly集成，但是我们强烈期望你能实现这一算法。</p>
+<h3>练习</h3>
+<h4>实现一台宇宙飞船</h4>
+<h4>生成一个随机的初始环境，每个细胞有50%的生存可能</h4>
+<p><strong><em>答案，不许看！</em></strong></p>
+<p>先增加js-sys依赖</p>
+<div><pre><code><span>[</span><span>dependencies</span><span>]</span>
+<span>js-sys</span><span>=</span><span>"0.3"</span></code></pre></div>
+<p>接下来使用js的随机函数</p>
+<div><pre><code><span>extern</span> <span>crate</span> js_sys<span>;</span>
+
+<span>if</span> js_sys<span>::</span>Math<span>::</span><span>random</span><span>(</span><span>)</span> <span>&lt;</span> <span>0.5</span> <span>{</span>
+
+<span>}</span> <span>else</span> <span>{</span>
+
+<span>}</span></code></pre></div>
+<h4>以bit形式存储每个cell</h4>
+<p><strong><em>答案，不许看！</em></strong></p>
+<p>在Rust中，使用fixedbitset代替<code>Vec&lt;Cell&gt;</code>;</p>
+<div><pre><code><span>extern</span> <span>crate</span> fixedbitset<span>;</span>
+<span>use</span> fixedbitset<span>::</span>FixedBitSet<span>;</span>
+
+<span>#[wasm_bindgen]</span>
+<span>pub</span> <span>struct</span> Universe <span>{</span>
+  width<span>:</span> u32<span>,</span>
+  height<span>:</span> u32<span>,</span>
+  cells<span>:</span> FixedBitSet<span>,</span>
+<span>}</span></code></pre></div>
+<p>宇宙的构造器应该这么修改。</p>
+<div><pre><code><span>pub</span> <span>fn</span> <span>new</span><span>(</span><span>)</span> <span>-&gt;</span> Universe <span>{</span>
+  <span>let</span> width <span>=</span> <span>64</span><span>;</span>
+  <span>let</span> height <span>=</span> <span>64</span><span>;</span>
+
+  <span>let</span> size <span>=</span> <span>(</span>width<span>*</span>height<span>)</span> <span>as</span> usize<span>;</span>
+  <span>let</span> <span>mut</span> cells <span>=</span> FixedBitSet<span>::</span><span>with_capacity</span><span>(</span>size<span>)</span><span>;</span>
+
+  <span>for</span> i <span>in</span> <span>0</span><span>..</span>size <span>{</span>
+    cells<span>.</span><span>set</span><span>(</span>i<span>,</span> i<span>%</span><span>2</span><span>==</span><span>0</span> <span>||</span> i<span>%</span><span>7</span><span>==</span><span>0</span><span>)</span><span>;</span>
+  <span>}</span>
+
+  Universe <span>{</span>
+    width<span>,</span>
+    height<span>,</span>
+    cells<span>,</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>使用FixedBitSet的set方法更新宇宙的下一刻。</p>
+<div><pre><code>next<span>.</span><span>set</span><span>(</span>idx<span>,</span> <span>match</span> <span>(</span>cell<span>,</span> live_neighbors<span>)</span> <span>{</span>
+  <span>(</span><span>true</span><span>,</span> x<span>)</span> <span>if</span> x<span>&lt;</span><span>2</span> <span>=&gt;</span> <span>false</span><span>,</span>
+  <span>(</span><span>true</span><span>,</span> <span>2</span><span>)</span> <span>|</span> <span>(</span><span>true</span><span>,</span> <span>3</span><span>)</span> <span>=&gt;</span> <span>true</span><span>,</span>
+  <span>(</span><span>true</span><span>,</span> x<span>)</span> <span>if</span> x<span>&gt;</span><span>3</span> <span>=&gt;</span> <span>false</span><span>,</span>
+  <span>(</span><span>false</span><span>,</span> <span>3</span><span>)</span> <span>=&gt;</span> <span>true</span><span>,</span>
+  <span>(</span>otherwise<span>,</span> _<span>)</span> <span>=&gt;</span> otherwise
+<span>}</span><span>)</span><span>;</span></code></pre></div>
+<p>传输指针的时候，需要返回slice。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>impl</span> Universe <span>{</span>
+  <span>pub</span> <span>fn</span> <span>cells</span><span>(</span><span>&amp;</span><span>self</span><span>)</span> <span>-&gt;</span> <span>*</span><span>const</span> u32 <span>{</span>
+    <span>self</span><span>.</span>cells<span>.</span><span>as_slice</span><span>(</span><span>)</span><span>.</span><span>as_ptr</span><span>(</span><span>)</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>在JavaScript中，构造Unit8Array的时候需要除以8，以为我们是以bit存储细胞的。</p>
+<div><pre><code><span>const</span> cells <span>=</span> <span>new</span> <span>Unit8Array</span><span>(</span>
+  memory<span>.</span>buffer<span>,</span>
+  cellsPtr<span>,</span>
+  width<span>*</span>height<span>/</span><span>8</span>
+<span>)</span><span>;</span></code></pre></div>
+<p>通过判断Unit8Array是否被赋值而判断细胞是否是活着的。</p>
+<div><pre><code><span>function</span> <span>bitIsSet</span><span>(</span><span>n<span>,</span> arr</span><span>)</span> <span>{</span>
+  <span>const</span> byte <span>=</span> Math<span>.</span><span>floor</span><span>(</span>n<span>/</span><span>8</span><span>)</span><span>;</span>
+  <span>const</span> mask <span>=</span> <span>1</span><span>&lt;&lt;</span><span>(</span>n<span>%</span><span>8</span><span>)</span><span>;</span>
+  <span>return</span> <span>(</span>arr<span>[</span>byte<span>]</span> <span>&amp;</span> mask<span>)</span> <span>==</span> mask<span>;</span>
+<span>}</span></code></pre></div>
+<p>根据以上变化，新版本的drawCells如下。</p>
+<div><pre><code><span>function</span> <span>drawCells</span><span>(</span><span>)</span> <span>{</span>
+  <span>const</span> cellsPtr <span>=</span> universe<span>.</span><span>cells</span><span>(</span><span>)</span><span>;</span>
+  <span>const</span> cells <span>=</span> <span>new</span> <span>Unit8Array</span><span>(</span>
+    memory<span>.</span>buffer<span>,</span>
+    cellsPtr<span>,</span>
+    width<span>*</span>height<span>/</span><span>8</span>
+  <span>)</span><span>;</span>
+
+  ctx<span>.</span><span>beginPath</span><span>(</span><span>)</span><span>;</span>
+
+  <span>for</span> <span>(</span><span>let</span> row<span>=</span><span>0</span><span>;</span> row<span>&lt;</span>height<span>;</span> row<span>+=</span><span>1</span><span>)</span> <span>{</span>
+    <span>for</span><span>(</span><span>let</span> col<span>=</span><span>0</span><span>;</span> col<span>&lt;</span>width<span>;</span> col<span>+=</span><span>1</span><span>)</span> <span>{</span>
+      <span>const</span> idx <span>=</span> <span>getIndex</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+
+      ctx<span>.</span>fillStyle <span>=</span> <span>bitIsSet</span><span>(</span>idex<span>,</span> cells<span>)</span>
+        <span>?</span> <span>LIVE_COLOR</span>
+        <span>:</span> <span>DEAD_COLOR</span><span>;</span>
+
+      ctx<span>.</span><span>fillRect</span><span>(</span>
+        col<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>+</span><span>1</span><span>,</span>
+        row<span>*</span><span>(</span><span>CELL_SIZE</span><span>+</span><span>1</span><span>)</span><span>+</span><span>1</span><span>,</span>
+        <span>CELL_SIZE</span><span>,</span>
+        <span>CELL_SIZE</span><span>,</span>
+      <span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+
+  ctx<span>.</span><span>stroke</span><span>(</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<h2>测试</h2>
+<p>现在我们已经实现了Rust的实现，并成功渲染在浏览器中。现在来谈谈测试WebAssembly中的Rust函数。</p>
+<p>我们将要测试tick函数，确保它能返回正确的值。</p>
+<p>接下来，我们将处理Universe的setter函数，让我们能构造不同大小的universe。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>impl</span> Universe <span>{</span>
+  <span>pub</span> <span>fn</span> <span>set_width</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>,</span> width<span>:</span> u32<span>)</span> <span>{</span>
+    <span>self</span><span>.</span>width <span>=</span> width<span>;</span>
+    <span>self</span><span>.</span>cells <span>=</span> <span>(</span><span>0</span><span>..</span>width <span>*</span> <span>self</span><span>.</span>height<span>)</span><span>.</span><span>map</span><span>(</span><span>|</span>_<span>|</span> Cell<span>::</span>Dead<span>)</span><span>.</span><span>collect</span><span>(</span><span>)</span>
+  <span>}</span>
+
+  <span>pub</span> <span>fn</span> <span>set_height</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>,</span> height<span>:</span> u32<span>)</span> <span>{</span>
+    <span>self</span><span>.</span>height <span>=</span> height<span>;</span>
+    <span>self</span><span>.</span>cells <span>=</span> <span>(</span><span>0</span><span>..</span><span>self</span><span>.</span>width <span>*</span> height<span>)</span><span>.</span><span>map</span><span>(</span><span>|</span>_<span>|</span> Cell<span>::</span>Dead<span>)</span><span>.</span><span>collect</span><span>(</span><span>)</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>我们将会创建另一个不需要<code>#[wasm_bindgen]</code>的<code>impl Universe</code>实现，因为我们不能把所有的WebAssembly函数暴露给JavaScript，Rust生成的WebAssembly函数是不能返回引用的。可以尝试让Rust返回一个引用，查看一下编译结果中是什么错误。</p>
+<p>接下来我们要写一个get<em>cells来获得细胞，和一个set</em>cells来设置哪些细胞是活的，哪些是死的。</p>
+<div><pre><code><span>impl</span> Universe <span>{</span>
+  <span>pub</span> <span>fn</span> <span>get_cells</span><span>(</span><span>&amp;</span><span>self</span><span>)</span> <span>-&gt;</span> <span>&amp;</span><span>[</span>Cell<span>]</span> <span>{</span>
+    <span>&amp;</span><span>self</span><span>.</span>cells
+  <span>}</span>
+
+  <span>pub</span> <span>fn</span> <span>set_cells</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>,</span> cells<span>:</span> <span>&amp;</span><span>[</span><span>(</span>u32<span>,</span> u32<span>)</span><span>]</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span>row<span>,</span> col<span>)</span> <span>in</span> cells<span>.</span><span>iter</span><span>(</span><span>)</span><span>.</span><span>cloned</span><span>(</span><span>)</span> <span>{</span>
+      <span>let</span> idx <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+      <span>self</span><span>.</span>cells<span>[</span>idx<span>]</span> <span>=</span> Cell<span>::</span>Alive<span>;</span>
+    <span>}</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>现在我们将创建测试文件<code>tests/web.rs</code>。</p>
+<p>在这之前，测试环境已经配置好，请确定<code>wasm-pack test --chrome --headless</code>能够在根目录下运行。你也可以使用<code>--firefox</code>，<code>--safari</code>和<code>--node</code>选项来在其他浏览器测试你的代码。</p>
+<p>在<code>test/web.rs</code>中，我们需要到处Universe类型。</p>
+<div><pre><code><span>extern</span> <span>crate</span> wasm_game_of_life<span>;</span>
+<span>use</span> wasm_game_of_life<span>:</span>Universe<span>;</span></code></pre></div>
+<p>在测试文件中，我们要创建一个飞船构造函数。</p>
+<p>我们要构造一个tick函数执行之前的飞船，和一个tick函数执行后的期望值。</p>
+<div><pre><code><span>#[cfg(test)]</span>
+<span>pub</span> <span>fn</span> <span>input_spaceship</span><span>(</span><span>)</span> <span>-&gt;</span> Universe <span>{</span>
+  <span>let</span> <span>mut</span> universe <span>=</span> Universe<span>::</span><span>new</span><span>(</span><span>)</span><span>;</span>
+
+  universe<span>.</span><span>set_width</span><span>(</span><span>6</span><span>)</span><span>;</span>
+  <span>universe_set_height</span><span>(</span><span>6</span><span>)</span><span>;</span>
+  <span>universe_set_cells</span><span>(</span>
+    <span>&amp;</span><span>[</span>
+      <span>(</span><span>1</span><span>,</span><span>2</span><span>)</span><span>,</span>
+      <span>(</span><span>2</span><span>,</span><span>3</span><span>)</span><span>,</span>
+      <span>(</span><span>3</span><span>,</span><span>1</span><span>)</span><span>,</span> <span>(</span><span>3</span><span>,</span><span>2</span><span>)</span><span>,</span><span>(</span><span>3</span><span>,</span><span>3</span><span>)</span>
+    <span>]</span>
+  <span>)</span><span>;</span>
+
+  universe
+<span>}</span>
+
+<span>#[cfg(test)]</span>
+<span>pub</span> <span>fn</span> <span>expected_spaceship</span><span>(</span><span>)</span> <span>-&gt;</span> Universe <span>{</span>
+  <span>let</span> <span>mut</span> universe <span>=</span> Universe<span>::</span><span>new</span><span>(</span><span>)</span><span>;</span>
+
+  universe<span>.</span><span>set_width</span><span>(</span><span>6</span><span>)</span><span>;</span>
+  <span>universe_set_height</span><span>(</span><span>6</span><span>)</span><span>;</span>
+  <span>universe_set_cells</span><span>(</span>
+    <span>&amp;</span><span>[</span>
+      <span>(</span><span>2</span><span>,</span><span>1</span><span>)</span><span>,</span> <span>(</span><span>2</span><span>,</span><span>3</span><span>)</span><span>,</span>
+      <span>(</span><span>3</span><span>,</span><span>2</span><span>)</span><span>,</span> <span>(</span><span>3</span><span>,</span><span>3</span><span>)</span><span>,</span><span>(</span><span>4</span><span>,</span><span>2</span><span>)</span>
+    <span>]</span>
+  <span>)</span><span>;</span>
+
+  universe
+<span>}</span></code></pre></div>
+<p>现在我们写一个test<em>tick函数，创建以上的两个飞船。最后使用`assert</em>eq!<code>宏比较expected_ship来确保tick函数运行正确。我们添加</code>#[wasm<em>bindgen</em>test]`属性保证这个函数可以在WebAssembly环境下测试。</p>
+<div><pre><code><span>#[wasm_bindgen_test]</span>
+<span>pub</span> <span>fn</span> <span>test_tick</span><span>(</span><span>)</span> <span>{</span>
+  <span>let</span> <span>mut</span> input_universe <span>=</span> <span>input_spaceship</span><span>(</span><span>)</span><span>;</span>
+  <span>let</span> expected_universe <span>=</span> <span>expected_spaceship</span><span>(</span><span>)</span><span>;</span>
+
+  input_universe<span>.</span><span>tick</span><span>(</span><span>)</span><span>;</span>
+  <span>assert_eq!</span><span>(</span>
+    <span>&amp;</span>input_universe<span>.</span><span>get_cells</span><span>(</span><span>)</span><span>,</span>
+    <span>&amp;</span>expected_universe<span>.</span><span>get_cells</span><span>(</span><span>)</span><span>,</span>
+  <span>)</span>
+<span>}</span></code></pre></div>
+<p>测试这个测试函数使用<code>wasm-pack test --firefox --headless</code>。</p>
+<h2>调试</h2>
+<p>写这么多代码之前（虽然上面都写完了，我也不知道原作者抽什么风），先看一看Rust的调试工具。</p>
+<h3>调试工具</h3>
+<p>此部分将会介绍WebAssembly的调试工具。</p>
+<h4>使用debug标记编译</h4>
+<p>如果没有打开debug标记，“name”这个部分就不会被编译到二进制程序中，错误栈也不会显示函数名，你会收到<code>wasm-functions[42]</code>而不是<code>wasm_game_of_file::Universe::live_neighbor_count</code>。</p>
+<p>调试编译，<code>wasm-pack build --debug</code>或者<code>cargo build</code>总是会默认打开debug标记。</p>
+<p>版本编译（release build），debug标记是默认关闭的，要打开debug标记，需要声明<code>debug=true</code>。</p>
+<div><pre><code><span>[</span><span>profile.release</span><span>]</span>
+<span>debug</span> <span>=</span> <span>true</span></code></pre></div>
+<h4>使用console API打印日志</h4>
+<p>打印日志是最好的判断程序是否是有错的方式。在浏览器中，<code>console.log</code>函数可以将日志打印到浏览器的dev工具里。</p>
+<p>我们可以使用web-sys包去调用console API。</p>
+<div><pre><code><span>extern</span> <span>crate</span> web_sys<span>;</span>
+
+web_sys<span>::</span>console<span>::</span><span>log_1</span><span>(</span><span>&amp;</span><span>"Hello, world!"</span><span>.</span><span>into</span><span>(</span><span>)</span><span>)</span><span>;</span></code></pre></div>
+<p>相应的<code>console.error</code>函数用法一致，但是浏览器的调用栈还是按照<code>console.error</code>来打印。</p>
+<p>使用<code>console.log</code>：</p>
+<ul>
+<li><a href="https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log.html"><code>web_sys::console::log</code>，接受一个向量的数据做参数</a>。</li>
+<li><a href="https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_1.html"><code>web_sys::console::log_1</code>，接受一个数据做参数</a>。</li>
+<li><a href="https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_2.html"><code>web_sys::console::log_2</code>，接受两个数据做参数</a>。</li>
+<li>…</li>
+</ul>
+<p>使用<code>console.error</code>：</p>
+<ul>
+<li><a href="https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error.html"><code>web_sys::console::error</code>，接受一个向量的数据做参数</a>。</li>
+<li><a href="https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_1.html"><code>web_sys::console::error_1</code>，接受一个数据做参数</a>。</li>
+<li><a href="https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_2.html"><code>web_sys::console::error_2</code>，接受两个数据做参数</a>。</li>
+<li>…</li>
+</ul>
+<h4>打印崩溃日志</h4>
+<p><a href="https://github.com/rustwasm/console_error_panic_hook"><code>console_error_panic_hook</code>包能通过<code>console.error</code>打印崩溃日志</a>。他能打印出格式化的崩溃信息而不是难以理解的<code>RuntimeError: unreachable executed</code>。</p>
+<p>你只需要增加调用这个钩子函数。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>pub</span> <span>fn</span> <span>init_panic_hook</span><span>(</span><span>)</span> <span>{</span>
+  console_error_panic_hook<span>::</span><span>set_once</span><span>(</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<h4>使用调试器</h4>
+<p>不幸的，WebAssembly的调试器依然不成熟，在很多unix系统中，DWARF是用来解析调试程序需要的数据的工具。虽然，Windows上面也有一个类似的工具。但还没有相当的工具提供给WebAssembly。所以，调试器目前能给予的功能有限，我们只能收到WebAssembly的错误而不是Rust源代码的错误。</p>
+<blockquote>
+<p>这里有一个故事是<a href="https://github.com/WebAssembly/debugging">跟踪WebAssembly的调试</a>的，我们希望它将来会有所改善！</p>
+</blockquote>
+<p>尽管如此，调试器还是能够给调试JavaScript方面提供效力。</p>
+<h4>一开始就规避在WebAssembly上面使用调试</h4>
+<p>如果错误和交互JavaScript和Web API有关，则使用<code>wasm-bindgen-test</code>写测试。</p>
+<p>如果和JavaScript和Web API无关，这是用默认的<code>#[test]</code>属性。使用<a href="https://crates.io/crates/quickcheck"><code>quickcheck</code>包</a>可以减少写测试上面的时间。</p>
+<p>为了避免<code>#[test]</code>编译器出现连接错误，你需要一个rlib依赖，在<code>Cargo.toml</code>文件按照如下修改。</p>
+<div><pre><code><span>[</span><span>lib</span><span>]</span>
+crate-type <span>[</span><span>"cdylib"</span><span>,</span> <span>"rlib"</span><span>]</span></code></pre></div>
+<h3>在生命游戏中打开崩溃日志</h3>
+<p>如果程序崩溃，最好是能够在审查工具中看到日志。</p>
+<p>在`<code>src/utils.rs</code>里面有一个可选的console<em>error</em>panic_hook包，可以在Universe初始化的时候调用它。</p>
+<div><pre><code><span>pub</span> <span>fn</span> <span>new</span><span>(</span><span>)</span> <span>-&gt;</span> Universe <span>{</span>
+  utils<span>::</span><span>set_panic_hook</span><span>(</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<h3>为生命游戏增加日志</h3>
+<p>让我们在Rust中利用web-sys调用console，打印出每一刻的细胞状态。</p>
+<p>首先在以来中增加web-sys，修改Cargo.toml。</p>
+<div><pre><code><span>[</span><span>dependencies.web-sys</span><span>]</span>
+<span>version</span> <span>=</span> <span>"0.3"</span>
+<span>features</span> <span>=</span> <span>[</span>
+  <span>"console"</span><span>,</span>
+<span>]</span></code></pre></div>
+<p>为了高效，我们把<code>console.log</code>函数封装到<code>println!</code>一样的宏中。</p>
+<div><pre><code><span>extern</span> <span>crate</span> web_sys<span>;</span>
+
+<span>macro_rules!</span> log <span>{</span>
+  <span>(</span>$<span>(</span> $t<span>:</span>tt <span>)</span><span>*</span><span>)</span> <span>=&gt;</span> <span>{</span>
+    web_sys<span>::</span>console<span>::</span><span>log_1</span><span>(</span><span>&amp;</span><span>format!</span><span>(</span> $<span>(</span> $t <span>)</span><span>*</span> <span>)</span><span>.</span><span>into</span><span>(</span><span>)</span><span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>现在可以通过调用log发送日志了。</p>
+<div><pre><code><span>log!</span><span>(</span>
+  <span>"cell[{}, {}] is initially {:?} and has {} live neighbors"</span><span>,</span>
+  row<span>,</span>
+  col<span>,</span>
+  cell<span>,</span>
+  live_neighbors<span>,</span>
+<span>)</span></code></pre></div>
+<h3>使用调试器</h3>
+<p>浏览器的调试器在调试JavaScript和Rust生成的WebAssembly很有效。</p>
+<p>举个例子，在renderLoop函数中增加<code>debugger;</code>可以暂停页面执行的某一刻。</p>
+<p>者给予我们查看每一刻细胞状态的能力。</p>
+<p><img src="https://rustwasm.github.io/docs/book/images/game-of-life/debugging.png" alt="调试画面"></p>
+<h3>练习</h3>
+<ol>
+<li>给tick方法增加log，查看细胞状态。</li>
+<li>加入<code>panic!()</code>查看打印出来的崩溃日志。</li>
+</ol>
+<h2>增加交互</h2>
+<p>接下来我们要给这个游戏增加一些交互，我们会允许用户选择细胞的生死，并且允许暂停游戏，并使绘制初始图案更加简单。</p>
+<h3>暂停和继续游戏</h3>
+<p>首先修改html，在画布上面增加一个&lt;button&gt;标签。</p>
+<div><pre><code><span><span><span>&lt;</span>button</span> <span>id</span><span><span>=</span><span>"</span>play-pause<span>"</span></span><span>&gt;</span></span><span><span><span>&lt;/</span>button</span><span>&gt;</span></span></code></pre></div>
+<p>在JavaScript中，我们要做以下几点改动。</p>
+<ul>
+<li>追踪调用requestAnimationFrame的标识符，这样我们就能通过调用cancelAnimationFrame来终止动画。</li>
+<li>当点击播放或者暂停键的时候，先检查标识符是否存在，一旦存在，则表示动画正在运行，我们需要取消动画以保证renderLoop不再被调用。如果标识符不存在，我们需要调用requestAnimationFrame以保证动画继续运行。</li>
+</ul>
+<p>因为是JavaScript控制着Rust和WebAssembly，我们不需要修改Rust部分。</p>
+<p>我们引入animationId变量，保存requestAnimationFrame的结果。当没有排队的动画时，这个变量值为null。</p>
+<div><pre><code><span>let</span> animationId <span>=</span> <span>null</span><span>;</span>
+
+<span>function</span> <span>renderLoop</span><span>(</span><span>)</span> <span>{</span>
+  <span>drawGrid</span><span>(</span><span>)</span><span>;</span>
+  <span>drawCells</span><span>(</span><span>)</span><span>;</span>
+
+  universe<span>.</span><span>tick</span><span>(</span><span>)</span><span>;</span>
+
+  animationId <span>=</span> <span>requestAnimationFrame</span><span>(</span>renderLoop<span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>任何一个时间，我们可以通过判断animationId来判断这个动画是否被暂停。</p>
+<div><pre><code><span>function</span> <span>isPaused</span><span>(</span><span>)</span> <span>{</span>
+  <span>return</span> animationId <span>===</span> <span>null</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>现在，当播放暂停键被点击，当正在播放时，暂停动画。并把按钮的状态改为播放。</p>
+<div><pre><code><span>const</span> playPauseButton <span>=</span> document<span>.</span><span>getElementById</span><span>(</span><span>"play-pause"</span><span>)</span><span>;</span>
+
+<span>function</span> <span>play</span><span>(</span><span>)</span> <span>{</span>
+  playPauseButton<span>.</span>textContent <span>=</span> <span>"⏸"</span><span>;</span>
+  <span>renderLoop</span><span>(</span><span>)</span><span>;</span>
+<span>}</span><span>;</span>
+
+<span>function</span> <span>pause</span><span>(</span><span>)</span> <span>{</span>
+  playPauseButton<span>.</span>textContent <span>=</span> <span>"▶"</span><span>;</span>
+  <span>cancelAnimationFrame</span><span>(</span>animationId<span>)</span><span>;</span>
+  animationId <span>=</span> <span>null</span><span>;</span>
+<span>}</span><span>;</span>
+
+playPauseButton<span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>function</span> <span>playBtnListener</span><span>(</span><span>event</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span><span>isPaused</span><span>(</span><span>)</span><span>)</span> <span>{</span>
+    <span>play</span><span>(</span><span>)</span><span>;</span>
+  <span>}</span> <span>else</span> <span>{</span>
+    <span>pause</span><span>(</span><span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span><span>)</span><span>;</span></code></pre></div>
+<p>最后我们把之前的requestAnimationFrame函数封装成<code>play()</code>。刷新本地服务器，可以看到网页上已经有暂停按钮了。尝试点击一下它吧。</p>
+<h3>修改一个细胞的状态</h3>
+<p>现在我们能暂停这个游戏了，是时候增加一个修改细胞的功能了。</p>
+<p>想控制细胞的生死，需要给<code>src/lib.rs</code>下的Cell增加一个toggle函数。</p>
+<div><pre><code><span>impl</span> Cell <span>{</span>
+    <span>fn</span> <span>toggle</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>)</span> <span>{</span>
+        <span>*</span><span>self</span> <span>=</span> <span>match</span> <span>*</span><span>self</span> <span>{</span>
+            Cell<span>::</span>Dead <span>=&gt;</span> Cell<span>::</span>Alive<span>,</span>
+            Cell<span>::</span>Alive <span>=&gt;</span> Cell<span>::</span>Dead<span>,</span>
+        <span>}</span><span>;</span>
+    <span>}</span>
+<span>}</span></code></pre></div>
+<p>想要修改在宇宙中的细胞需要获得细胞的行纵值，并转换为细胞的序号。</p>
+<div><pre><code><span>#[wasm_bindgen]</span>
+<span>impl</span> Universe <span>{</span>
+    <span>pub</span> <span>fn</span> <span>toggle_cell</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>,</span> row<span>:</span> u32<span>,</span> column<span>:</span> u32<span>)</span> <span>{</span>
+        <span>let</span> idx <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>row<span>,</span> column<span>)</span><span>;</span>
+        <span>self</span><span>.</span>cells<span>[</span>idx<span>]</span><span>.</span><span>toggle</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span></code></pre></div>
+<p>这个方法增加第1行的属性声明是为了能够在JavaScript环境里面直接调用。在JavaScript文件中，监听&lt;canvas&gt;标签，将页面上的点击事件转换成画布上的点击事件，并调用toggle_cell方法重绘场景。</p>
+<div><pre><code>canvas<span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> function <span>canvasClickListener</span><span>(</span>event<span>)</span> <span>{</span>
+  <span>const</span> boundingRect <span>=</span> canvas<span>.</span><span>getBoundingClientRect</span><span>(</span><span>)</span><span>;</span>
+
+  <span>const</span> scaleX <span>=</span> canvas<span>.</span>width <span>/</span> boundingRect<span>.</span>width<span>;</span>
+  <span>const</span> scaleY <span>=</span> canvas<span>.</span>height <span>/</span> boundingRect<span>.</span>height<span>;</span>
+
+  <span>const</span> canvasLeft <span>=</span> <span>(</span>event<span>.</span>clientX <span>-</span> boundingRect<span>.</span>left<span>)</span> <span>*</span> scaleX<span>;</span>
+  <span>const</span> canvasTop <span>=</span> <span>(</span>event<span>.</span>clientY <span>-</span> boundingRect<span>.</span>top<span>)</span> <span>*</span> scaleY<span>;</span>
+
+  <span>const</span> row <span>=</span> Math<span>.</span><span>min</span><span>(</span>Math<span>.</span><span>floor</span><span>(</span>canvasTop<span>/</span><span>(</span>CELL_SIZE <span>+</span> <span>1</span><span>)</span><span>)</span><span>,</span> height <span>-</span> <span>1</span><span>)</span><span>;</span>
+  <span>const</span> col <span>=</span> Math<span>.</span><span>min</span><span>(</span>Math<span>.</span><span>floor</span><span>(</span>canvasLeft<span>/</span><span>(</span>CELL_SIZE <span>+</span> <span>1</span><span>)</span><span>)</span><span>,</span> width <span>-</span> <span>1</span><span>)</span><span>;</span>
+
+  universe<span>.</span><span>toggle_cell</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+
+  <span>drawGrid</span><span>(</span><span>)</span><span>;</span>
+  <span>drawCells</span><span>(</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span></code></pre></div>
+<p>使用<code>wasm-pack build</code>重新编译，刷新网页，并更新细胞状态。</p>
+<h3>练习</h3>
+<ul>
+<li>新建一个&lt;input&gt;标签来处理每帧更新多少个刻。</li>
+<li>增加一个重置按钮，把宇宙恢复到初始状态；再增加一个消灭按钮，毁灭所有细胞。</li>
+<li>当使用<code>Ctrl+Click</code>的时候，增加一个<a href="https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)">glider</a>，使用<code>Shift+Click</code>增加一个pulsar。</li>
+</ul>
+<h2>性能日志(Time Profiling)</h2>
+<p>本节我们将会提高这个游戏的性能，我们将会用time profiling来完成。</p>
+<h3>Time Profiling</h3>
+<p>此部分将会讲解如何获得页面的性能分析，目标是提高JavaScript和WebAssembly之间的吞吐。</p>
+<blockquote>
+<p>永远使用<code>wasm-pack build</code>编译最新的代码，以确定你的优化正确。</p>
+</blockquote>
+<h4>windows.performance.now()</h4>
+<p>这个函数会返回以毫秒为单位的时间戳来计算页面加载速度。</p>
+<p>调用<code>performance.now()</code>的性能损耗低，所以我们可以利用它创造一个简单的测算工具而不是产生很大误差值。</p>
+<p>我们可以通过<code>web-sys</code>调用时间函数。</p>
+<div><pre><code><span>extern</span> <span>crate</span> web_sys<span>;</span>
+
+<span>fn</span> <span>now</span><span>(</span><span>)</span> <span>-&gt;</span> f64 <span>{</span>
+  web_sys<span>::</span><span>window</span><span>(</span><span>)</span>
+    <span>.</span><span>expect</span><span>(</span><span>"should have window"</span><span>)</span>
+    <span>.</span><span>performance</span><span>(</span><span>)</span>
+    <span>.</span><span>expect</span><span>(</span><span>"should have a Performance"</span><span>)</span>
+    <span>.</span><span>now</span><span>(</span><span>)</span>
+<span>}</span></code></pre></div>
+<h4>开发者工具的性能查看器</h4>
+<p>所有的浏览器的开发者工具都有性能查看器。这个查看器通过火焰图展示函数调用栈来表示哪一个函数耗时更长。</p>
+<p>如果你编译的时候打开了调试，则函数名将会显示在这里（如果没打开则显示一个不透明的名字，比如<code>wasm-function[123]</code>）。</p>
+<p>注意，因为性能查看器不会显示内联函数，又因为Rust和LVVM很重地依赖于内联函数，其结果就会让人感到头疼。</p>
+<p><img src="https://rustwasm.github.io/docs/book/images/game-of-life/profiler-with-rust-names.png" alt="性能查看器无法处理内联函数"></p>
+<h4>console.time和console.timeEnd</h4>
+<p>这两个函数是浏览器的内置函数。以调用<code>console.time(&quot;foo&quot;)</code>作为开始，以<code>console.time(&quot;foo&quot;)</code>作为结束，参数是可选的。</p>
+<p>你可以通过web-sys调用<code>web_sys::console::time_with_label(&quot;foo&quot;)</code>和<code>web_sys::console::time_end_with_label(&quot;foo&quot;)</code>。</p>
+<p>如下是浏览器的截图。</p>
+<p><img src="https://rustwasm.github.io/docs/book/images/game-of-life/console-time.png" alt="使用console.time的截图"></p>
+<p>另外，<code>console.time</code>和<code>console.timeEnd</code>会调用性能检查器统计出瀑布图。</p>
+<h4>使用#[bench]调用原生代码</h4>
+<p>就像我们能使用原生的测试方法<code>#[test]</code>来测试代码，我们可以使用<code>#[bench]</code>通过操作系统的工具来查看函数性能。</p>
+<p>写好标准函数并放到<code>benches</code>文件夹下。确保<code>crate-type</code>已经引入rlib，能使测试代码能够链接。</p>
+<p>无论如何，先搞明白你知道WebAssembly里面的瓶颈之后再花费精力去调查原生的性能调查器！用你的浏览器的性能调查器，或者使用这些时间去优化你的代码不是更好？</p>
+<h3>利用window.performance.now创建一个计时器</h3>
+<p>创建一个FPS的计时器用来调查游戏的渲染速度不失为一个好办法。</p>
+<p>我们在JavaScript增加fps对象。</p>
+<div><pre><code><span>const</span> fps <span>=</span> <span>new</span> <span>class</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>fps <span>=</span> document<span>.</span><span>getElementById</span><span>(</span><span>"fps"</span><span>)</span><span>;</span>
+    <span>this</span><span>.</span>frames <span>=</span> <span>[</span><span>]</span><span>;</span>
+    <span>this</span><span>.</span>lastFrameTimeStamp <span>=</span> performance<span>.</span><span>now</span><span>(</span><span>)</span><span>;</span>
+  <span>}</span>
+
+  <span>render</span><span>(</span><span>)</span> <span>{</span>
+    <span>// Convert the delta time since the last frame render into a measure</span>
+    <span>// of frames per second.</span>
+    <span>const</span> now <span>=</span> performance<span>.</span><span>now</span><span>(</span><span>)</span><span>;</span>
+    <span>const</span> delta <span>=</span> now <span>-</span> <span>this</span><span>.</span>lastFrameTimeStamp<span>;</span>
+    <span>this</span><span>.</span>lastFrameTimeStamp <span>=</span> now<span>;</span>
+    <span>const</span> fps <span>=</span> <span>1</span> <span>/</span> delta <span>*</span> <span>1000</span><span>;</span>
+
+    <span>// Save only the latest 100 timings.</span>
+    <span>this</span><span>.</span>frames<span>.</span><span>push</span><span>(</span>fps<span>)</span><span>;</span>
+    <span>if</span> <span>(</span><span>this</span><span>.</span>frames<span>.</span>length <span>&gt;</span> <span>100</span><span>)</span> <span>{</span>
+      <span>this</span><span>.</span>frames<span>.</span><span>shift</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+
+    <span>// Find the max, min, and mean of our 100 latest timings.</span>
+    <span>let</span> min <span>=</span> <span>Infinity</span><span>;</span>
+    <span>let</span> max <span>=</span> <span>-</span><span>Infinity</span><span>;</span>
+    <span>let</span> sum <span>=</span> <span>0</span><span>;</span>
+    <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>this</span><span>.</span>frames<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+      sum <span>+=</span> <span>this</span><span>.</span>frames<span>[</span>i<span>]</span><span>;</span>
+      min <span>=</span> Math<span>.</span><span>min</span><span>(</span><span>this</span><span>.</span>frames<span>[</span>i<span>]</span><span>,</span> min<span>)</span><span>;</span>
+      max <span>=</span> Math<span>.</span><span>max</span><span>(</span><span>this</span><span>.</span>frames<span>[</span>i<span>]</span><span>,</span> max<span>)</span><span>;</span>
+    <span>}</span>
+    <span>let</span> mean <span>=</span> sum <span>/</span> <span>this</span><span>.</span>frames<span>.</span>length<span>;</span>
+
+    <span>// Render the statistics.</span>
+    <span>this</span><span>.</span>fps<span>.</span>textContent <span>=</span> <span><span>`</span><span>
+Frames per Second:
+         latest = </span><span><span>${</span>Math<span>.</span><span>round</span><span>(</span>fps<span>)</span><span>}</span></span><span>
+avg of last 100 = </span><span><span>${</span>Math<span>.</span><span>round</span><span>(</span>mean<span>)</span><span>}</span></span><span>
+min of last 100 = </span><span><span>${</span>Math<span>.</span><span>round</span><span>(</span>min<span>)</span><span>}</span></span><span>
+max of last 100 = </span><span><span>${</span>Math<span>.</span><span>round</span><span>(</span>max<span>)</span><span>}</span></span><span>
+</span><span>`</span></span><span>.</span><span>trim</span><span>(</span><span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span><span>;</span></code></pre></div>
+<p>接下来再每次迭代中调用fps render函数。</p>
+<div><pre><code><span>const</span> <span>renderLoop</span> <span>=</span> <span>(</span><span>)</span> <span>=&gt;</span> <span>{</span>
+    fps<span>.</span><span>render</span><span>(</span><span>)</span><span>;</span> <span>//new</span>
+
+    universe<span>.</span><span>tick</span><span>(</span><span>)</span><span>;</span>
+    <span>drawGrid</span><span>(</span><span>)</span><span>;</span>
+    <span>drawCells</span><span>(</span><span>)</span><span>;</span>
+
+    animationId <span>=</span> <span>requestAnimationFrame</span><span>(</span>renderLoop<span>)</span><span>;</span>
+<span>}</span><span>;</span></code></pre></div>
+<p>最后在HTML中增加fps的展示。</p>
+<div><pre><code><span>&lt;</span>div id<span>=</span><span>"fps"</span><span>&gt;</span><span>&lt;</span><span>/</span>div<span>&gt;</span></code></pre></div>
+<p>增加CSS，让它展示得更好。</p>
+<div><pre><code><span>#fps</span> <span>{</span>
+  <span>white-space</span><span>:</span> pre<span>;</span>
+  <span>font-family</span><span>:</span> monospace<span>;</span>
+<span>}</span></code></pre></div>
+<p>好了，现在可以在页面上看到FPS计数器了。</p>
+<h3>给每一刻计算时间</h3>
+<p>每一刻开始调用<code>console.time</code>，结束的时候调用<code>console.timeEnd</code>。</p>
+<p>首先，要在<code>Cargo.toml</code>里面增加web-sys。</p>
+<div><pre><code><span>[</span><span>dependencies.web-sys</span><span>]</span>
+<span>version</span> <span>=</span> <span>"0.3"</span>
+<span>features</span> <span>=</span> <span>[</span>
+  <span>"console"</span><span>,</span>
+<span>]</span></code></pre></div>
+<p>因为每次执行<code>console.time</code>后总要执行<code>console.timeEnd</code>，把他们包再<a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization">RAII</a>类型下就会更加便利。</p>
+<div><pre><code><span>extern</span> <span>crate</span> web_sys<span>;</span>
+<span>use</span> web_sys<span>::</span>console<span>;</span>
+
+<span>pub</span> <span>struct</span> Timer<span>&lt;</span><span>'a</span><span>&gt;</span> <span>{</span>
+    name<span>:</span> <span>&amp;</span><span>'a</span> str<span>,</span>
+<span>}</span>
+
+<span>impl</span><span>&lt;</span><span>'a</span><span>&gt;</span> Timer<span>&lt;</span><span>'a</span><span>&gt;</span> <span>{</span>
+    <span>pub</span> <span>fn</span> <span>new</span><span>(</span>name<span>:</span> <span>&amp;</span><span>'a</span> str<span>)</span> <span>-&gt;</span> Timer<span>&lt;</span><span>'a</span><span>&gt;</span> <span>{</span>
+        console<span>::</span><span>time_with_label</span><span>(</span>name<span>)</span><span>;</span>
+        Timer <span>{</span> name <span>}</span>
+    <span>}</span>
+<span>}</span>
+
+<span>impl</span><span>&lt;</span><span>'a</span><span>&gt;</span> Drop <span>for</span> Timer<span>&lt;</span><span>'a</span><span>&gt;</span> <span>{</span>
+    <span>fn</span> <span>drop</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>)</span> <span>{</span>
+        console<span>::</span><span>time_end_with_label</span><span>(</span><span>self</span><span>.</span>name<span>)</span><span>;</span>
+    <span>}</span>
+<span>}</span></code></pre></div>
+<p>接下来，统计每一刻用的时间是多久，只需把初始化Timer放到Universe的构造函数里。</p>
+<div><pre><code><span>let</span> _timer <span>=</span> Timer<span>::</span><span>new</span><span>(</span><span>"Universe::tick"</span><span>)</span><span>;</span></code></pre></div>
+<p>如下是每一刻执行的时间。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/console-time.png" alt="每一刻的执行时间"></p>
+<p>另外，通过使用<code>console.time</code>和<code>console.timeEnd</code>也能获得执行性能数据。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/console-time-in-profiler.png" alt="性能数据"></p>
+<h3>增加宇宙大小</h3>
+<blockquote>
+<p>本部分是拿火狐浏览器做例子，当然还有很多浏览器有类似的功能，只是有细微的差别。这个数据是一致的，但是部分命名和标量可能不一样。</p>
+</blockquote>
+<p>如果我们把宇宙修改的大一些，会发生什么？把64x64改成128x128，结果会把fps从60降到40。</p>
+<p>如果我们打开性能监控器，并看到它的瀑布图，我们可以看到动画帧用了20毫秒，回顾60fps时渲染一页则需要16毫秒，这不仅仅是JavaScript和WebAssembly，还包括重绘的部分。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/drawCells-before-waterfall.png" alt="性能监视"></p>
+<p>如果仔细查看，可以看到<code>CanvasRenderingContext2D.fillStyle</code>的setter是很耗费时间的。</p>
+<blockquote>
+<p>再火狐，你可能看到的是”DOM”而不是”CanvasRenderingContext2D.fillStyle”，你需要打开”展示Gecko平台数据”。</p>
+</blockquote>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/profiler-firefox-show-gecko-platform.png" alt="火狐的性能监视器"></p>
+<p>当然，这并不稀奇，40%的的时间都浪费在这个setter上面。</p>
+<blockquote>
+<p>我们可能期望性能瓶颈再tik函数上，但并不是。永远选择性能监视器观察，因为你可能浪费很多时间在无关的地方上面。</p>
+</blockquote>
+<p>在drawCell上面，fillStyle在每次动画和每个细胞上面使用。</p>
+<div><pre><code><span>for</span> <span>(</span><span>let</span> row <span>=</span> <span>0</span><span>;</span> row <span>&lt;</span> height<span>;</span> row<span>++</span><span>)</span> <span>{</span>
+  <span>for</span> <span>(</span><span>let</span> col <span>=</span> <span>0</span><span>;</span> col <span>&lt;</span> width<span>;</span> col<span>++</span><span>)</span> <span>{</span>
+    <span>const</span> idx <span>=</span> <span>getIndex</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+
+    ctx<span>.</span>fillStyle <span>=</span> cells<span>[</span>idx<span>]</span> <span>===</span> <span>DEAD</span>
+      <span>?</span> <span>DEAD_COLOR</span>
+      <span>:</span> <span>ALIVE_COLOR</span><span>;</span>
+
+    ctx<span>.</span><span>fillRect</span><span>(</span>
+      col <span>*</span> <span>(</span><span>CELL_SIZE</span> <span>+</span> <span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+      row <span>*</span> <span>(</span><span>CELL_SIZE</span> <span>+</span> <span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+      <span>CELL_SIZE</span><span>,</span>
+      <span>CELL_SIZE</span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>现在我们知道fillStyle资源耗费比较多，那么我们该怎么避免他呢？我们需要判断细胞的生命状态来自决定fillStyle的值，设想，如果先设定<code>fillStyle = ALIVE_COLOR</code>，再绘制所有的活着的细胞，然后设置<code>fillStyle = DEAD_COLOR</code>，再设置所有的死细胞，最后我们只设置fillStyle两次。</p>
+<div><pre><code><span>// Alive cells.</span>
+ctx<span>.</span>fillStyle <span>=</span> <span>ALIVE_COLOR</span><span>;</span>
+<span>for</span> <span>(</span><span>let</span> row <span>=</span> <span>0</span><span>;</span> row <span>&lt;</span> height<span>;</span> row<span>++</span><span>)</span> <span>{</span>
+  <span>for</span> <span>(</span><span>let</span> col <span>=</span> <span>0</span><span>;</span> col <span>&lt;</span> width<span>;</span> col<span>++</span><span>)</span> <span>{</span>
+    <span>const</span> idx <span>=</span> <span>getIndex</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+    <span>if</span> <span>(</span>cells<span>[</span>idx<span>]</span> <span>!==</span> Cell<span>.</span>Alive<span>)</span> <span>{</span>
+      <span>continue</span><span>;</span>
+    <span>}</span>
+
+    ctx<span>.</span><span>fillRect</span><span>(</span>
+      col <span>*</span> <span>(</span><span>CELL_SIZE</span> <span>+</span> <span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+      row <span>*</span> <span>(</span><span>CELL_SIZE</span> <span>+</span> <span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+      <span>CELL_SIZE</span><span>,</span>
+      <span>CELL_SIZE</span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+
+<span>// Dead cells.</span>
+ctx<span>.</span>fillStyle <span>=</span> <span>DEAD_COLOR</span><span>;</span>
+<span>for</span> <span>(</span><span>let</span> row <span>=</span> <span>0</span><span>;</span> row <span>&lt;</span> height<span>;</span> row<span>++</span><span>)</span> <span>{</span>
+  <span>for</span> <span>(</span><span>let</span> col <span>=</span> <span>0</span><span>;</span> col <span>&lt;</span> width<span>;</span> col<span>++</span><span>)</span> <span>{</span>
+    <span>const</span> idx <span>=</span> <span>getIndex</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+    <span>if</span> <span>(</span>cells<span>[</span>idx<span>]</span> <span>!==</span> Cell<span>.</span>Dead<span>)</span> <span>{</span>
+      <span>continue</span><span>;</span>
+    <span>}</span>
+
+    ctx<span>.</span><span>fillRect</span><span>(</span>
+      col <span>*</span> <span>(</span><span>CELL_SIZE</span> <span>+</span> <span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+      row <span>*</span> <span>(</span><span>CELL_SIZE</span> <span>+</span> <span>1</span><span>)</span> <span>+</span> <span>1</span><span>,</span>
+      <span>CELL_SIZE</span><span>,</span>
+      <span>CELL_SIZE</span>
+    <span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>修改之后，刷新页面，此时的fps已经上升到60。</p>
+<p>如果重新看原来的数据，现在每一刻只使用10毫秒。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/drawCells-after-waterfall.png" alt="更新后的性能检查"></p>
+<p>消除了fillStyle的性能瓶颈，发现比较消耗资源的是fillRect，用来绘制每一个细胞的。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/drawCells-after-flamegraph.png" alt="目前的性能损耗都在fillRect上面"></p>
+<h3>让时间变快</h3>
+<p>有些人可能不喜欢等待，更希望一帧跑完九刻而不是一刻。我们可以通过修改renderLoop函数实现。</p>
+<div><pre><code><span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>9</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
+  universe<span>.</span><span>tick</span><span>(</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>在机器上，fps降到了35，但是我们一定要到60fps！</p>
+<p>现在我们知道性能瓶颈在tick函数上面，所以我们给函数的每一步都加上Timer监视，我猜测是创建向量和释放向量占用了很多资源造成的。</p>
+<div><pre><code><span>pub</span> <span>fn</span> <span>tick</span><span>(</span><span>&amp;</span><span>mut</span> <span>self</span><span>)</span> <span>{</span>
+    <span>let</span> _timer <span>=</span> Timer<span>::</span><span>new</span><span>(</span><span>"Universe::tick"</span><span>)</span><span>;</span>
+
+    <span>let</span> <span>mut</span> next <span>=</span> <span>{</span>
+        <span>let</span> _timer <span>=</span> Timer<span>::</span><span>new</span><span>(</span><span>"allocate next cells"</span><span>)</span><span>;</span>
+        <span>self</span><span>.</span>cells<span>.</span><span>clone</span><span>(</span><span>)</span>
+    <span>}</span><span>;</span>
+
+    <span>{</span>
+        <span>let</span> _timer <span>=</span> Timer<span>::</span><span>new</span><span>(</span><span>"new generation"</span><span>)</span><span>;</span>
+        <span>for</span> row <span>in</span> <span>0</span><span>..</span><span>self</span><span>.</span>height <span>{</span>
+            <span>for</span> col <span>in</span> <span>0</span><span>..</span><span>self</span><span>.</span>width <span>{</span>
+                <span>let</span> idx <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+                <span>let</span> cell <span>=</span> <span>self</span><span>.</span>cells<span>[</span>idx<span>]</span><span>;</span>
+                <span>let</span> live_neighbors <span>=</span> <span>self</span><span>.</span><span>live_neighbor_count</span><span>(</span>row<span>,</span> col<span>)</span><span>;</span>
+
+                <span>let</span> next_cell <span>=</span> <span>match</span> <span>(</span>cell<span>,</span> live_neighbors<span>)</span> <span>{</span>
+                    <span>// Rule 1: Any live cell with fewer than two live neighbours</span>
+                    <span>// dies, as if caused by underpopulation.</span>
+                    <span>(</span>Cell<span>::</span>Alive<span>,</span> x<span>)</span> <span>if</span> x <span>&lt;</span> <span>2</span> <span>=&gt;</span> Cell<span>::</span>Dead<span>,</span>
+                    <span>// Rule 2: Any live cell with two or three live neighbours</span>
+                    <span>// lives on to the next generation.</span>
+                    <span>(</span>Cell<span>::</span>Alive<span>,</span> <span>2</span><span>)</span> <span>|</span> <span>(</span>Cell<span>::</span>Alive<span>,</span> <span>3</span><span>)</span> <span>=&gt;</span> Cell<span>::</span>Alive<span>,</span>
+                    <span>// Rule 3: Any live cell with more than three live</span>
+                    <span>// neighbours dies, as if by overpopulation.</span>
+                    <span>(</span>Cell<span>::</span>Alive<span>,</span> x<span>)</span> <span>if</span> x <span>&gt;</span> <span>3</span> <span>=&gt;</span> Cell<span>::</span>Dead<span>,</span>
+                    <span>// Rule 4: Any dead cell with exactly three live neighbours</span>
+                    <span>// becomes a live cell, as if by reproduction.</span>
+                    <span>(</span>Cell<span>::</span>Dead<span>,</span> <span>3</span><span>)</span> <span>=&gt;</span> Cell<span>::</span>Alive<span>,</span>
+                    <span>// All other cells remain in the same state.</span>
+                    <span>(</span>otherwise<span>,</span> _<span>)</span> <span>=&gt;</span> otherwise<span>,</span>
+                <span>}</span><span>;</span>
+
+                next<span>[</span>idx<span>]</span> <span>=</span> next_cell<span>;</span>
+            <span>}</span>
+        <span>}</span>
+    <span>}</span>
+
+    <span>let</span> _timer <span>=</span> Timer<span>::</span><span>new</span><span>(</span><span>"free old cells"</span><span>)</span><span>;</span>
+    <span>self</span><span>.</span>cells <span>=</span> next<span>;</span>
+<span>}</span></code></pre></div>
+<p>看这些时间戳，很明显我的猜测是错误的：大部分时间确实用在计算下一代细胞上面，每一刻都调用和释放向量竟然无足轻重。所以一定要使用性能监视器！</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/console-time-in-universe-tick.png" alt="性能监视"></p>
+<p>下一部分需要<code>nightly</code>编译，因为我们将会使用<a href="https://doc.rust-lang.org/unstable-book/library-features/test.html">test-feature-gate</a>来跑benchmark（性能测试）。我们将会安装另一个工具<a href="https://github.com/BurntSushi/cargo-benchcmp">cargo-benchcmp</a>。一个迷你的有<code>cargo bench</code>支持的性能测试工具。</p>
+<p>让我们写一个函数使用<code>#[bench]</code>属性，我们可以使用更成熟的测试工具测试它。</p>
+<div><pre><code><span>#![feature(test)]</span>
+
+<span>extern</span> <span>crate</span> test<span>;</span>
+<span>extern</span> <span>crate</span> wasm_game_of_life<span>;</span>
+
+<span>#[bench]</span>
+<span>fn</span> <span>universe_ticks</span><span>(</span>b<span>:</span> <span>&amp;</span><span>mut</span> test<span>::</span>Bencher<span>)</span> <span>{</span>
+    <span>let</span> <span>mut</span> universe <span>=</span> wasm_game_of_life<span>::</span>Universe<span>::</span><span>new</span><span>(</span><span>)</span><span>;</span>
+
+    b<span>.</span><span>iter</span><span>(</span><span><span>|</span><span>|</span></span> <span>{</span>
+        universe<span>.</span><span>tick</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span><span>)</span><span>;</span>
+<span>}</span></code></pre></div>
+<p>我们也要注释掉所有<code>#[wasm_bindgen]</code>，否则”cdylib”或则其他编译流程会失败，</p>
+<p>此时，我们可以跑<code>cargo bench | tee before.txt</code>来编译项目查看性能日志了！</p>
+<div><pre><code>$ cargo bench <span>|</span> <span>tee</span> before.txt
+    Finished release <span>[</span>optimized + debuginfo<span>]</span> target<span>(</span>s<span>)</span> <span>in</span> <span>0.0</span> secs
+     Running target/release/deps/wasm_game_of_life-91574dfbe2b5a124
+
+running <span>0</span> tests
+
+<span>test</span> result: ok. <span>0</span> passed<span>;</span> <span>0</span> failed<span>;</span> <span>0</span> ignored<span>;</span> <span>0</span> measured<span>;</span> <span>0</span> filtered out
+
+     Running target/release/deps/bench-8474091a05cfa2d9
+
+running <span>1</span> <span>test</span>
+<span>test</span> universe_ticks <span>..</span>. bench:     <span>664,421</span> ns/iter <span>(</span>+/- <span>51,926</span><span>)</span>
+
+<span>test</span> result: ok. <span>0</span> passed<span>;</span> <span>0</span> failed<span>;</span> <span>0</span> ignored<span>;</span> <span>1</span> measured<span>;</span> <span>0</span> filtered out</code></pre></div>
+<p>他也告诉我们二进制文件的位置，我们可以跑第二次性能测试。但这次可以使用系统的性能测试工具。因为我用的是Linux，所以perf就是我的测试工具。</p>
+<div><pre><code>$ perf record -g target/release/deps/bench-8474091a05cfa2d9 --bench
+running <span>1</span> <span>test</span>
+<span>test</span> universe_ticks <span>..</span>. bench:     <span>635,061</span> ns/iter <span>(</span>+/- <span>38,764</span><span>)</span>
+
+<span>test</span> result: ok. <span>0</span> passed<span>;</span> <span>0</span> failed<span>;</span> <span>0</span> ignored<span>;</span> <span>1</span> measured<span>;</span> <span>0</span> filtered out
+
+<span>[</span> perf record: Woken up <span>1</span> <span>times</span> to <span>write</span> data <span>]</span>
+<span>[</span> perf record: Captured and wrote <span>0.178</span> MB perf.data <span>(</span><span>2349</span> samples<span>)</span> <span>]</span></code></pre></div>
+<p>查看性能测试报告，得知所有的时间都如期使用在<code>Universe::tick</code>。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/bench-perf-report.png" alt="perf的结果"></p>
+<p>perf会指明函数中到底是什么操作引起的性能损耗（译者：虽然我也没看出来）。</p>
+<p><img src="https://rustwasm.github.io/book/images/game-of-life/bench-perf-annotate.png" alt="perf的结果"></p>
+<p>它告诉我们26.67%的时间花在总和细胞数目，23.41%的时间花在获取列序号，另外15.42%花在取得行序号。这三个性能瓶颈中，第二和第三都使用了比较耗费性能的DIV命令。这些DIV的实现是在<code>Universe::live_neighbor_count</code>。</p>
+<p>回想这个函数的定义：</p>
+<div><pre><code><span>fn</span> <span>live_neighbor_count</span><span>(</span><span>&amp;</span><span>self</span><span>,</span> row<span>:</span> u32<span>,</span> column<span>:</span> u32<span>)</span> <span>-&gt;</span> u8 <span>{</span>
+    <span>let</span> <span>mut</span> count <span>=</span> <span>0</span><span>;</span>
+    <span>for</span> delta_row <span>in</span> <span>[</span><span>self</span><span>.</span>height <span>-</span> <span>1</span><span>,</span> <span>0</span><span>,</span> <span>1</span><span>]</span><span>.</span><span>iter</span><span>(</span><span>)</span><span>.</span><span>cloned</span><span>(</span><span>)</span> <span>{</span>
+        <span>for</span> delta_col <span>in</span> <span>[</span><span>self</span><span>.</span>width <span>-</span> <span>1</span><span>,</span> <span>0</span><span>,</span> <span>1</span><span>]</span><span>.</span><span>iter</span><span>(</span><span>)</span><span>.</span><span>cloned</span><span>(</span><span>)</span> <span>{</span>
+            <span>if</span> delta_row <span>==</span> <span>0</span> <span>&amp;&amp;</span> delta_col <span>==</span> <span>0</span> <span>{</span>
+                <span>continue</span><span>;</span>
+            <span>}</span>
+
+            <span>let</span> neighbor_row <span>=</span> <span>(</span>row <span>+</span> delta_row<span>)</span> <span>%</span> <span>self</span><span>.</span>height<span>;</span>
+            <span>let</span> neighbor_col <span>=</span> <span>(</span>column <span>+</span> delta_col<span>)</span> <span>%</span> <span>self</span><span>.</span>width<span>;</span>
+            <span>let</span> idx <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>neighbor_row<span>,</span> neighbor_col<span>)</span><span>;</span>
+            count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>idx<span>]</span> <span>as</span> u8<span>;</span>
+        <span>}</span>
+    <span>}</span>
+    count
+<span>}</span></code></pre></div>
+<p>使用取余运算是为了避免使用杂乱的if代码来处理边界，但导致我不得不用DIV这样比较耗费性能的指令。相反，如果用if处理边界，并展开循环，则分支条件将会比较适合CPU处理。</p>
+<div><pre><code><span>fn</span> <span>live_neighbor_count</span><span>(</span><span>&amp;</span><span>self</span><span>,</span> row<span>:</span> u32<span>,</span> column<span>:</span> u32<span>)</span> <span>-&gt;</span> u8 <span>{</span>
+    <span>let</span> <span>mut</span> count <span>=</span> <span>0</span><span>;</span>
+
+    <span>let</span> north <span>=</span> <span>if</span> row <span>==</span> <span>0</span> <span>{</span>
+        <span>self</span><span>.</span>height <span>-</span> <span>1</span>
+    <span>}</span> <span>else</span> <span>{</span>
+        row <span>-</span> <span>1</span>
+    <span>}</span><span>;</span>
+
+    <span>let</span> south <span>=</span> <span>if</span> row <span>==</span> <span>self</span><span>.</span>height <span>-</span> <span>1</span> <span>{</span>
+        <span>0</span>
+    <span>}</span> <span>else</span> <span>{</span>
+        row <span>+</span> <span>1</span>
+    <span>}</span><span>;</span>
+
+    <span>let</span> west <span>=</span> <span>if</span> column <span>==</span> <span>0</span> <span>{</span>
+        <span>self</span><span>.</span>width <span>-</span> <span>1</span>
+    <span>}</span> <span>else</span> <span>{</span>
+        column <span>-</span> <span>1</span>
+    <span>}</span><span>;</span>
+
+    <span>let</span> east <span>=</span> <span>if</span> column <span>==</span> <span>self</span><span>.</span>width <span>-</span> <span>1</span> <span>{</span>
+        <span>0</span>
+    <span>}</span> <span>else</span> <span>{</span>
+        column <span>+</span> <span>1</span>
+    <span>}</span><span>;</span>
+
+    <span>let</span> nw <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>north<span>,</span> west<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>nw<span>]</span> <span>as</span> u8<span>;</span>
+
+    <span>let</span> n <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>north<span>,</span> column<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>n<span>]</span> <span>as</span> u8<span>;</span>
+
+    <span>let</span> ne <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>north<span>,</span> east<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>ne<span>]</span> <span>as</span> u8<span>;</span>
+
+    <span>let</span> w <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>row<span>,</span> west<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>w<span>]</span> <span>as</span> u8<span>;</span>
+
+    <span>let</span> e <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>row<span>,</span> east<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>e<span>]</span> <span>as</span> u8<span>;</span>
+
+    <span>let</span> sw <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>south<span>,</span> west<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>sw<span>]</span> <span>as</span> u8<span>;</span>
+
+    <span>let</span> s <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>south<span>,</span> column<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>s<span>]</span> <span>as</span> u8<span>;</span>
+
+    <span>let</span> se <span>=</span> <span>self</span><span>.</span><span>get_index</span><span>(</span>south<span>,</span> east<span>)</span><span>;</span>
+    count <span>+=</span> <span>self</span><span>.</span>cells<span>[</span>se<span>]</span> <span>as</span> u8<span>;</span>
+
+    count
+<span>}</span></code></pre></div>
+<p>接下来再跑一次性能测试，将他输出到<code>after.txt</code>。</p>
+<div><pre><code>$ cargo bench <span>|</span> <span>tee</span> after.txt
+   Compiling wasm_game_of_life v0.1.0 <span>(</span>file:///home/fitzgen/wasm_game_of_life<span>)</span>
+    Finished release <span>[</span>optimized + debuginfo<span>]</span> target<span>(</span>s<span>)</span> <span>in</span> <span>0.82</span> secs
+     Running target/release/deps/wasm_game_of_life-91574dfbe2b5a124
+
+running <span>0</span> tests
+
+<span>test</span> result: ok. <span>0</span> passed<span>;</span> <span>0</span> failed<span>;</span> <span>0</span> ignored<span>;</span> <span>0</span> measured<span>;</span> <span>0</span> filtered out
+
+     Running target/release/deps/bench-8474091a05cfa2d9
+
+running <span>1</span> <span>test</span>
+<span>test</span> universe_ticks <span>..</span>. bench:      <span>87,258</span> ns/iter <span>(</span>+/- <span>14,632</span><span>)</span>
+
+<span>test</span> result: ok. <span>0</span> passed<span>;</span> <span>0</span> failed<span>;</span> <span>0</span> ignored<span>;</span> <span>1</span> measured<span>;</span> <span>0</span> filtered out</code></pre></div>
+<p>感觉性能提高了不少，现在对比一下前后的数据。</p>
+<div><pre><code>$ cargo benchcmp before.txt after.txt
+ name            before.txt ns/iter  after.txt ns/iter  <span>diff</span> ns/iter   <span>diff</span> %  speedup
+ universe_ticks  <span>664,421</span>             <span>87,258</span>                 -577,163  -86.87%   x <span>7.61</span></code></pre></div>
+<p> 哇！提高了7.61倍！</p>
+<p> WebAssembly意图和原生系统贴近，但是我们确实需要在WebAssembly环境下也作一次测试。</p>
+<p> 从新编译程序，刷新浏览器页面，画面重新跑在60fps，每一帧大概是10毫秒。</p>
+<p> 成功！</p>
+<p> <img src="https://rustwasm.github.io/book/images/game-of-life/waterfall-after-branches-and-unrolling.png" alt="测试结果"></p>
+<h3>练习</h3>
+<ul>
+<li>现在，下一个性能瓶颈是<code>Universe::tick</code>调用和释放函数的部分，尝试缓存细胞状态，让Universe维护两个向量，永远不释放他们，也不掉用新的区间。</li>
+<li>换一种方式实现游戏，让Rust和JavaScript以细胞的列表交互，这样能让渲染画布更快吗？你能实现这个设计同时不在每个tick函数中调用新的列表吗？</li>
+<li>就性能显示来看2D画布渲染显然不够快，使用WebGL画布重新渲染，WebGL能多快？使用WebGL能在遇到瓶颈前创建多大的宇宙空间？</li>
+</ul>
+<h2>压缩.wasm文件大小</h2>
+<p>rustc有很多配置项，可以让<code>.wasm</code>二进制文件更加小。在很多情况下更小的生成文件意味着更长的编译时间。另外更小的文件使得WebAssembly的运行时间更长。我们应该意识到这些方面上的牺牲。在这些情况下，当我们要减少编译文件大小时，我们应该考虑到使用性能监视器衡量一下这种改动是否值得。</p>
+<h3>使用链接配置器编译</h3>
+<p>在<code>Cargo.toml</code>，增加<code>lto=true</code>：</p>
+<div><pre><code><span>[</span><span>profile.release</span><span>]</span>
+<span>lto</span> <span>=</span> <span>true</span></code></pre></div>
+<p>者给予LLVM更多机会去内联和简化函数，不仅仅会使<code>.wasm</code>更小，还会让他在运行时运行得更快！但是会让他编译得更长。</p>
+<h3>配置LLVM牺牲速度换文件大小</h3>
+<p>LLVM默认配置是为了运行速度，并不是大小。我们可以通过更改<code>Cargo.toml</code>去修改这一配置。</p>
+<div><pre><code><span>[</span><span>profile.release</span><span>]</span>
+<span>opt-level</span> <span>=</span> <span>'s'</span></code></pre></div>
+<p>或者，更激进的可以把它改成”z”。</p>
+<p>但是，配置为”s”的时候有的时候会比”z”更小，所以一定要做测量！</p>
+<h3>使用wasm-opt工具</h3>
+<p><a href="https://github.com/WebAssembly/binaryen">Binaryen</a>是一个关于WebAssembly编译工具的集合。他比LLVM更加后端，使用<code>wasm-opt</code>处理生成文件常常会节省15%~20%的代码，同时又会提高运行速度。</p>
+<div><pre><code># 输出为压缩的文件大小。
+wasm-opt -Os -o output.wasm input.wasm
+
+# 更激进的输出为压缩的文件大小。
+wasm-opt -Oz -o output.wasm input.wasm
+
+# 输出文件追求运行速度。
+wasm-opt -O -o output.wasm input.wasm
+
+# 输出文件更激进的追求运行速度。
+wasm-opt -O3 -o output.wasm input.wasm</code></pre></div>
+<h4>注意调试信息</h4>
+<p>占用生成文件大小的主要成分是调试信息和函数名。<code>wasm-pack</code>能够默认移除调试信息。然而<code>wasm-opt</code>在使用<code>-g</code>参数时能删除函数名。</p>
+<p>这意味着，如果你按照以上操作，生成文件应该既没有调试信息也没有函数名。如果你想保留某些调试信息，请一定注意这一点。</p>
+<h3>文件大小检查调查</h3>
+<p>如果修改编译配置不能获得更小的文件大小，就应该调查一下是什么代码导致文件太大。</p>
+<blockquote>
+<p>就像做性能测试，我们应让工具来判断哪里出了问题，否则我们会浪费更多自己的时间。</p>
+</blockquote>
+<h4>twiggy代码检查器</h4>
+<p><a href="https://github.com/rustwasm/twiggy">twiggy</a>是一个支持WebAssembly的代码大小检查器，他能分析二进制代码的调用图，并解决如下问题：</p>
+<ul>
+<li>为什么这个函数被编译到这段代码中。</li>
+<li>这个函数占用大小是多少？如果我删除这个函数以及其相关函数我能节省多大的空间？</li>
+</ul>
+<div><pre><code>$ twiggy top -n 20 pkg/wasm_game_of_life_bg.wasm
+ Shallow Bytes │ Shallow % │ Item
+───────────────┼───────────┼────────────────────────────────────────────────────────────────────────────────────────
+          9158 ┊    19.65% ┊ &quot;function names&quot; subsection
+          3251 ┊     6.98% ┊ dlmalloc::dlmalloc::Dlmalloc::malloc::h632d10c184fef6e8
+          2510 ┊     5.39% ┊ &lt;str as core::fmt::Debug&gt;::fmt::he0d87479d1c208ea
+          1737 ┊     3.73% ┊ data[0]
+          1574 ┊     3.38% ┊ data[3]
+          1524 ┊     3.27% ┊ core::fmt::Formatter::pad::h6825605b326ea2c5
+          1413 ┊     3.03% ┊ std::panicking::rust_panic_with_hook::h1d3660f2e339513d
+          1200 ┊     2.57% ┊ core::fmt::Formatter::pad_integral::h06996c5859a57ced
+          1131 ┊     2.43% ┊ core::str::slice_error_fail::h6da90c14857ae01b
+          1051 ┊     2.26% ┊ core::fmt::write::h03ff8c7a2f3a9605
+           931 ┊     2.00% ┊ data[4]
+           864 ┊     1.85% ┊ dlmalloc::dlmalloc::Dlmalloc::free::h27b781e3b06bdb05
+           841 ┊     1.80% ┊ &lt;char as core::fmt::Debug&gt;::fmt::h07742d9f4a8c56f2
+           813 ┊     1.74% ┊ __rust_realloc
+           708 ┊     1.52% ┊ core::slice::memchr::memchr::h6243a1b2885fdb85
+           678 ┊     1.45% ┊ &lt;core::fmt::builders::PadAdapter&lt;&#39;a&gt; as core::fmt::Write&gt;::write_str::h96b72fb7457d3062
+           631 ┊     1.35% ┊ universe_tick
+           631 ┊     1.35% ┊ dlmalloc::dlmalloc::Dlmalloc::dispose_chunk::hae6c5c8634e575b8
+           514 ┊     1.10% ┊ std::panicking::default_hook::{{closure}}::hfae0c204085471d5
+           503 ┊     1.08% ┊ &lt;&amp;&#39;a T as core::fmt::Debug&gt;::fmt::hba207e4f7abaece6</code></pre></div>
+<h4>手动修改LLVM-IR</h4>
+<p>LLVM-IR是LLVM生成WebAssembly代码的最后一步。所以，他和最终生成的WebAssembly很像。更多的LLVM-IR代码意味着生成的文件越大，当一个函数占用了LLVM-IR中25%的位置，则代表他占用了25%的文件大小。当然这些数字只是个经验值，因为LLVM-IR还有一些WebAssembly没有的重要的信息（因为WebAssembly没有诸如DWARF调试信息）。</p>
+<p>你可以使用cargo生成LLVM-IR代码：</p>
+<div><pre><code>cargo rustc --release -- --emit llvm-ir</code></pre></div>
+<p>接下来你可以使用find命令去寻找存储在cargo生成目录(target)下的<code>.ll</code>文件。</p>
+<div><pre><code><span>find</span> target/release -type f -name <span>'*.ll'</span></code></pre></div>
+<p>相关可以参考<a href="https://llvm.org/docs/LangRef.html">LLVM语言</a></p>
+<h4>更激进的工具</h4>
+<p>修改编译配置是比较好上手的。如果你想前进一个里程，你可以使用一些更激进的工具，像是重写代码以减少冗余。以下是一些不太优雅的代码，但是的确能减少生成文件大小。</p>
+<h5>避免字符串格式化</h5>
+<p><code>format!</code>,<code>to_string</code>等，能加入很多冗余代码。如果可能，在调试环境用格式化，而在发布环境使用静态字符串。</p>
+<h5>避免使用崩溃</h5>
+<p>这很明显，使用twiggy之类的工具或者人工检查LLVM-IR能帮助你查出到底哪个函数崩溃。</p>
+<p>崩溃并不总是出现在<code>panic!()</code>宏，他们会在很多情况下出现。</p>
+<ul>
+<li>访问切片越界，如：<code>my_slice[i]</code></li>
+<li>除0，如：<code>dividend/divider</code></li>
+<li>解Option类型或者Result类型，如：<code>opt.unwrap()</code>或者<code>res.unwrap()</code></li>
+</ul>
+<p>前两个可以被改成第三个，访问切片可以使用<code>my_slice.get(i)</code>。除法可以使用<code>checked_div</code>，所以你只有一种需要处理的情况。</p>
+<p>解开<code>Option</code>或者<code>Result</code>有两种方法安全的和不安全的。</p>
+<p>安全的方式是使用abort方法而不是返回None和Error值。</p>
+<div><pre><code><span>#[inline]</span>
+<span>pub</span> <span>fn</span> unwrap_abort<span>&lt;</span>T<span>&gt;</span><span>(</span>o<span>:</span> Option<span>&lt;</span>T<span>&gt;</span><span>)</span> <span>-&gt;</span> T <span>{</span>
+  <span>use</span> std<span>::</span>process<span>;</span>
+  <span>match</span> o <span>{</span>
+    <span>Some</span><span>(</span>t<span>)</span> <span>=&gt;</span> t<span>,</span>
+    None <span>=&gt;</span> process<span>::</span><span>abort</span><span>(</span><span>)</span><span>,</span>
+  <span>}</span>
+<span>}</span></code></pre></div>
+<p>最终，崩溃在<code>wasm32-unknown-unknown</code>被翻译成退出，因此不会造成代码冗余。</p>
+<p>相反的，<a href="https://crates.io/crates/unreachable">unreachable</a>包为Option和Result类型提供不安全的<a href="https://docs.rs/unreachable/1.0.0/unreachable/trait.UncheckedOptionExt.html#tymethod.unchecked_unwrap">unchecked_unwrap</a>方法。让Rust编译器假定Option类型是Some类型而Result类型是Ok类型。如果值是不正确的的情况是未被考虑的。你一定要在110%确认的情况下使用这个包，因为编译器可没那么聪明能预估出错误。即使你这么做了，你一定要在调试环境下面做检查，而在发布环境下去掉检查。</p>
+<h4>避免调用内存或者使用wee_alloc</h4>
+<p>Rust的默认调用器是<code>dlmalloc</code>的一部分。它能达到10KB。如果能够避免动态调用，你应该能省下10KB。</p>
+<p>完全避免动态语言调用可能会非常困难。但是删除调用却在某些情况下很简单，在这些情况下，可以使用<a href="https://github.com/rustwasm/wee_alloc"><code>wee_alloc</code></a>代替全局的调用器可以从10KB中节省很多。<code>we_alloc</code>是当你想要一些调用器时的一个选择，并能同时减少代码大小。</p>
+<h4>使用trait来替代泛型</h4>
+<p>当你创建一些泛型函数。</p>
+<div><pre><code><span>fn</span> whatever<span>&lt;</span>T<span>:</span> MyTrait<span>&gt;</span><span>(</span>t<span>:</span> T<span>)</span> <span>{</span> <span>...</span> <span>}</span></code></pre></div>
+<p><code>rustc</code>和LLVM会为不同类型生成新的函数拷贝。这为编译器提供了各种类型使用这个函数的机会。但会增加代码大小。</p>
+<p>如果你为对象提供trait，如下：</p>
+<div><pre><code><span>fn</span> <span>whatever</span><span>(</span>t<span>:</span> Box<span>&lt;</span>MyTrait<span>&gt;</span><span>)</span> <span>{</span> <span>...</span> <span>}</span>
+<span>// or</span>
+<span>fn</span> <span>whatever</span><span>(</span>t<span>:</span> <span>&amp;</span>MyTrait<span>)</span> <span>{</span> <span>...</span> <span>}</span>
+<span>// etc...</span></code></pre></div>
+<p>这样经过虚调用动态派遣（dynamic dispatch）的方法就被使用了，如此只会用一个函数会放在<code>.wasm</code>。这样的缺点是丢失了编译器自定义的机会，并且增加了不直接的，动态的语言调用。</p>
+<h4>使用wasm-snip工具</h4>
+<p><a href="https://github.com/fitzgen/wasm-snip"><code>wasm-snip</code></a>使用<code>unreachable</code>方法代替了WebAssembly的函数。这是一个又沉又钝的锤子，更像是徒手。</p>
+<p>也许你知道有些函数可能永远不会在运行时被调用，但是编译器不能保证？掐了他！执行<code>wasm-opt</code>加上<code>--dce</code>参数，所有无关函数就会被剪掉。</p>
+<p>这个工具对删除崩溃及其有用。</p>
+<h3>我们能把生命游戏缩到多小？</h3>
+<p>默认的配置下，WebAssembly二进制大小为29410字节。</p>
+<div><pre><code>$ <span>wc</span> -c pkg/wasm_game_of_life_bg.wasm
+<span>29410</span> pkg/wasm_game_of_life_bg.wasm</code></pre></div>
+<p>打开LTO之后设置<code>opt-level=&quot;z&quot;</code>执行<code>wasm-opt -Oz</code>，结果是17317字节。</p>
+<div><pre><code>$ <span>wc</span> -c pkg/wasm_game_of_life_bg.wasm
+<span>17317</span> pkg/wasm_game_of_life_bg.wasm</code></pre></div>
+<p>如果使用gzip压缩，你能搞到9045字节！</p>
+<div><pre><code>$ <span>gzip</span> -9 <span>&lt;</span> pkg/wasm_game_of_life_bg.wasm <span>|</span> <span>wc</span> -c
+<span>9045</span></code></pre></div>
+<h3>练习</h3>
+<ul>
+<li>使用<code>wasm-snp</code>工具删掉会有崩溃的函数，它能减少多少字节？</li>
+<li>使用<code>wee_alloc</code>作为全局调用器，，修改<code>Cargo.toml</code>：</li>
+</ul>
+<div><pre><code>[features]
+default = [&quot;wee_alloc&quot;]</code></pre></div>
+<p>能够减少多少大小呢？</p>
+<ul>
+<li>我们只实现了一个Universe，所以相比使用构造器，我们可以导出一个<code>static mut</code>实例，如果这个实例使用的是双向缓存，我们也可以让这些缓存也是全局<code>staic mut</code>。这样就移除了所有的动态调用，我们可以增加<code>#![no_std]</code>包取消掉调用器。这回能缩小多少大小？</li>
+</ul>
+<h2>发布到NPM</h2>
+<p>首先，确保你登入了npm。</p>
+<p>接着，使用<code>wasm-pack login</code>登入。</p>
+<h3>发布</h3>
+<p>确保已经执行<code>wasm-pack build</code>并且pkg文件已经编译好。</p>
+<p>已经准备好之后，跑<code>wasm-pack publish</code>上传包到npm。</p>
+<p>这样就发布了！</p>
+<p>有哥们照着这个指导做完发布失败，是因为”name”字段存在重名</p>
+<div><pre><code><span>[</span><span>package</span><span>]</span>
+<span>name</span> <span>=</span> <span>"wasm-game-of-life-my-username"</span></code></pre></div>
+<p>接着，重新编译并发布</p>
+<div><pre><code>wasm-pack build
+wasm-pack publish</code></pre></div>
+<p>这会应该能行。</p>
+<h2>与JavaScript相互交互</h2>
+<h3>JavaScript函数的输出和引用</h3>
+<h4>在Rust一边</h4>
+<p>在JavaScript为主的世界里使用WebAssembly，引入和输出函数比较直接，有点类似于C。</p>
+<p>WebAssembly模块声明了一系列引入，每一个都有模块名。模块名可以使用<code>#[link(wasm_import_module)]</code>提供给<code>extern {...}</code>。</p>
+<p>导出的WebAssembly线性内存被导出作”memory”。</p>
+<div><pre><code><span>// import a JS function called `foo` from the module `mod`</span>
+<span>#[link(wasm_import_module = "mod")]</span>
+<span>extern</span> <span>{</span> <span>fn</span> <span>foo</span><span>(</span><span>)</span><span>;</span> <span>}</span>
+
+<span>// export a Rust function called `bar`</span>
+<span>#[no_mangle]</span>
+<span>pub</span> <span>extern</span> <span>fn</span> <span>bar</span><span>(</span><span>)</span> <span>{</span> <span>/* ... */</span> <span>}</span></code></pre></div>
+<p>因为WebAssembly的值类型有局限，这些函数只有基础的数字类型。</p>
+<h4>在JavaScript一边</h4>
+<p>在JavaScript中，wasm二进制文件转换成ES6模块。它必须被实例化为线性内存并由一系列函数能对应到这些引入。细节描述可在<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming">MDN</a>找到。</p>
+<p>ES6的模块包括从Rust暴露给JavaScript的函数，现在可以用JavaScript调用。</p>
+<p><a href="https://www.hellorust.com/demos/add/index.html">这里</a>有一个很简单的构建流程。</p>
+<h3>除了数字</h3>
+<p>当在JavaScript中使用WebAssembly，WebAssembly的内存和JavaScript的内存有很大的不同。</p>
+<ul>
+<li>每个WebAssembly模块的线性内存，JavaScript可以自由访问。</li>
+<li>对应之下，WebAssembly不能访问JavaScript的内存。</li>
+</ul>
+<p>所以，有两种复杂的交互。</p>
+<ul>
+<li>复制二进制数据到WebAssembly内存。</li>
+<li>建立一个在JavaScript上的堆内存，提供一堆地址。这样WebAssembly访问JavaScript对象，间接通过JavaScript访问。</li>
+</ul>
+<p>幸运的是，通过<code>bindgen</code>框架<a href="https://github.com/rustwasm/wasm-bindgen"><code>wasm-bindgen</code></a>可以帮助交互。这个框架可以将已习惯的Rust语言自动翻译到JavaScript。</p>
+<h3>自定义部分（译者：所以这个到底是干什么用的？）</h3>
+<p>自定义部分允许随意继承人一的数据进入WebAssembly模块，这个数据是在编译时设置，不能在运行时修改。</p>
+<p>在Rust中，自定义部分是通过<code>#[link_section]</code>属性暴露的静态数组([T; size])。</p>
+<div><pre><code><span>#[link_section = "hello"]</span>
+<span>pub</span> <span>static</span> SECTION<span>:</span> <span>[</span>u8<span>;</span> <span>24</span><span>]</span> <span>=</span> <span>*</span><span>b"This is a custom section"</span><span>;</span></code></pre></div>
+<p>这样给wasm增加一个hello部分，这个SECTION变量是随意的，但是无论怎么赋值，内容总是这些文字。</p>
+<p>这个自定义内容可以被JavaScript通过<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections"><code>WebAssembly.Module.customSections</code></a>获得自定义部分，它返回一个<code>ArrayBuffer</code>，如果有同名的部分，他们会被放到一个数组中。</p>
+<div><pre><code>WebAssembly<span>.</span><span>compileStreaming</span><span>(</span><span>fetch</span><span>(</span><span>"sections.wasm"</span><span>)</span><span>)</span>
+<span>.</span><span>then</span><span>(</span><span>mod</span> <span>=&gt;</span> <span>{</span>
+  <span>const</span> sections <span>=</span> WebAssembly<span>.</span>Module<span>.</span><span>customSections</span><span>(</span>mod<span>,</span> <span>"hello"</span><span>)</span><span>;</span>
+
+  <span>const</span> decoder <span>=</span> <span>new</span> <span>TextDecoder</span><span>(</span><span>)</span><span>;</span>
+  <span>const</span> text <span>=</span> decoder<span>.</span><span>decode</span><span>(</span>sections<span>[</span><span>0</span><span>]</span><span>)</span><span>;</span>
+
+  console<span>.</span><span>log</span><span>(</span>text<span>)</span><span>;</span> <span>// -&gt; "This is a custom section"</span>
+<span>}</span><span>)</span><span>;</span></code></pre></div>
+<h2>哪些包能在WebAssembly下面使用</h2>
+<p>最简单的就是列出WebAssembly上能用的Rust包：如果避开了以下内容，则这些包可以在WebAssembly使用。如果一个包支持<code>#![no_std]</code>
+的包，这个包也可能支持WebAssembly。</p>
+<h3>以下包不能使用</h3>
+<h4>C和系统级依赖</h4>
+<p>WebAssembly不提供系统一级别的库，所以任何链接系统库的地方都无法成功。</p>
+<p>使用C库可能不会成功，既然没有稳定的交叉编译ABI，和提供给WebAssembly交叉链接的连接库。虽然clang已经发布wasm32的生成，但是还远远不足。</p>
+<h4>文件I/O</h4>
+<p>WebAssembly没有访问文件系统的功能，所以访问文件系统的库都不能使用。</p>
+<h4>调用线程</h4>
+<p>目前有计划<a href="https://rustwasm.github.io/2018/10/24/multithreading-rust-and-wasm.html">加入线程</a>，但是还没被发布。尝试调用线程会导致崩溃。</p>
+<h3>有哪些目的的包能在WebAssembly下面使用</h3>
+<p>如果只是提供<a href="https://crates.io/categories/algorithms">算法</a>和<a href="https://crates.io/categories/data-structures">数据结构</a>的包。</p>
+<h4>#![no-std]</h4>
+<p><a href="https://crates.io/categories/no-std">不依赖于标准库的包</a>能够运行在WebAssembly下面。</p>
+<h4>解析器</h4>
+<p>只要是接受输入且无需文件操作的<a href="https://crates.io/categories/parser-implementations">解析器</a>就可能运行在WebAssembly下。</p>
+<h4>文字处理</h4>
+<p><a href="https://crates.io/categories/text-processing">复杂的语言处理</a>可能会运行在WebAssembly下面。</p>
+<h4>Rust范式</h4>
+<p><a href="https://crates.io/categories/rust-patterns">适用于不同情况下的包</a>可能运行在WebAssembly下。</p>
+<h2>如何给常用库增加WebAssembly支持</h2>
+<p>本部分讲解如何将常用库增加WebAssembly支持。后面的内容我就捡感兴趣的写了。</p>
+<h3>在CI增加wasm32-unknown-unknown</h3>
+<p>保证CI中增加如下命令</p>
+<div><pre><code>rustup target <span>add</span> wasm32-unknown-unknown
+cargo check --target wasm32-unknown-unknown</code></pre></div>
+<p>举个例子，在travis的配置中增加如下配置：</p>
+<div><pre><code><span>matrix</span><span>:</span>
+  <span>include</span><span>:</span>
+    <span>-</span> <span>language</span><span>:</span> rust
+      <span>rust</span><span>:</span> stable
+      <span>name</span><span>:</span> <span>"check wasm32 support"</span>
+      <span>install</span><span>:</span> rustup target add wasm32<span>-</span>unknown<span>-</span>unknown
+      <span>script</span><span>:</span> cargo check <span>-</span><span>-</span>target wasm32<span>-</span>unknown<span>-</span>unknown</code></pre></div>
+<h3>在node.js或者无头浏览器（译者：卧槽是这么翻译么）</h3>
+<p>你可以使用<code>wasm-bindgen-test</code>和<code>wasm-pack test</code>去跑测试，详细内容上面已经提到。</p>
+<h2>发布WebAssembly到线上</h2>
+<blockquote>
+<p>发布过程几乎和任何web应用发布是一样的。</p>
+</blockquote>
+<p>为了发布Web应用，复制生成文件到线上环境，配置你的HTTP服务器让他们可访问。</p>
+<h3>保证服务器支持application/wasm</h3>
+<p>为了让浏览器加载变快，<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming">WebAssembly.instantiateStreaming</a>函数会使用管道传输文件（请确定你的打包器能够使用这个函数）。但是instantiateStreaming需要HTTP返回类型支持<code>application/wasm</code>，否则会丢出错误。</p>
+<ul>
+<li><a href="https://httpd.apache.org/docs/2.4/mod/mod_mime.html#addtype">如何配置Apache服务器</a></li>
+<li><a href="https://nginx.org/en/docs/http/ngx_http_core_module.html#types">如何配置Nginx服务器</a></li>
+</ul>
+<h3>更多内容</h3>
+<ul>
+<li><a href="https://webpack.js.org/guides/production/">webpack线上打包的最佳实践</a></li>
+</ul></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAb8MaZ6IiFcS2B//xAAbEAACAwADAAAAAAAAAAAAAAACAwABBBETIv/aAAgBAQABBQJrOsQJvM0eRXpomQwFg1kSNz//xAAWEQADAAAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8BYj//xAAYEQACAwAAAAAAAAAAAAAAAAABEAISIf/aAAgBAgEBPwGsjoQX/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQIRMQAQEmEiQYH/2gAIAQEABj8ChyYrmlPhsFy3VNiz7tioOKcJjdv/xAAbEAACAwEBAQAAAAAAAAAAAAABEQAQITFBUf/aAAgBAQABPyFQmSCYZQfeVFgIcDxfHjtEDR5BAh6FP//aAAwDAQACAAMAAAAQK8B8/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EADFjP/EABYRAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPxCaNMSZ/8QAHhABAQABBAMBAAAAAAAAAAAAAREhABAxQVFhkbH/2gAIAQEAAT8QvZXbBfbodJo5fkR5m1yVNHd4b1JdZPREoHxc3a5BFpPzVXiEVhMjt//Z" alt="宫不上叔" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/b315d/profile.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/b315d/profile.jpg 2x" src="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg" alt="宫不上叔" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by<strong>宫不上叔</strong><br/>JJ向上的中华田园仔 <a href="https://twitter.com/gongbaodd" target="_blank" rel="noopener noreferrer">推我一把</a></p></div><div style="text-align:right"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:200px;height:200px;margin-right:0.875rem;margin-bottom:0;min-width:50px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAFJ0lEQVQ4y02Va0yTZxTHHyLGRaPTZduXZYsf9MOyT8uWLFuWufhhumyCUzcIgVmqgC2Fcim0pVTojXLphbYUWnpvabkYBqXIRUac0+zih0U3YzKzOMe1RcTbZhTK89/zvuhmk7fvSZvze8///M9zXpIRSBLusymwmEG6ZjO4eE/Pn7uIe0ZMPMlp4rv9gHhvg/jvgI/dC1Oke0a0Nzazk090zWZsCiT5vAz/BotkBjd+4OPAwkniW1rcmgDeGXuIvNGbqDj3By3ovUwPDVzDu1NPsCUOEG9qIdM/f+K/vGeM52HEOx8mfU/w/sBN6CPxNXNLc/pkfi71WlvhMhlRJS6m0Ug4rQ4Or30wkgLpWwXxzIWepW9U6tyQyWAhMrgOx/V/VsNu57qmTg6f309LRGJaWiZFjVxJj32VQ5ubm6m8QgK33ZpWXFpcJd9w1c77eIb7KSvDO1dKzqRRP31jdbw/QnV6A1raTHRoaAjZ2dlwOBwIh8PIycnhYmppt1FDUxN6uuxUMn5jlcvd5JsT8bA9sZmXiCeVOvrtMvwOy3p1TS1ycnOp3+9HRUUFWEWYmJiATqfDwMAAYrEYPB4PyqVSWnLqFHQqefqjRIrr6eLunr92cWVW7BwFTKGBtRKhAPGRBDUYDFCr1bDb7TxIIBDw997eXshkMkilUgSDQSjqVFRWJkbw/C9rW4YpSPdsGbN94YdDFx5hZKA33dCooZFIhJfodDqRSCSwf/9+mNraoNE0IisrC0VFRTCbzeAU1NXVwevz0WjIn35v/AEDJqcI+3rc+FMK/X43VTc00vb2dj6Jk9vE+qTT69GgNyIciWLfvo9hMpmg1Wpx/PhxnD59mpmloFXFhetHzlwDCa7MEhJchu7cb7RGUoITRcU4ePAgamtrMTk5CVGpBJ1mI5zWeijDUYgKcyFXqtDZ2Yn8/Hz+oW1mC458+glEPecpiT0EIaE70E/+Sm3NOnyelU25p9fX10MsFkMoPAG5vBYXVV+jX1uEWkU1qqtlKCwU8NWVlpZCoayDQa2kmomrIOEVSkjgzmPZ6FVo5VW0zWKlXP84qZwRKpUKjRotbBYrepkJNrsDeXl5OHDgABQKBWw2G44c+xL2Zh0tHfsdJLDMgN1Ll/Iv3IOqUpLWGZqoUCikXJ8kEglaWlowOzvDQHZ8cfQo+vv7EI/HUVxcjJqaGh6YdfgwfE4bPhtLcqYwyV1z0t3jaSQmpla1zEmP10vdbjdfnVKphMvlwik2b1WVlfD5fDywksXc/44OJ1qbDBicvoRX+pbZLC6AvB66+RLxLiXVP6Zg1danW81Wbs4oN8AcmJPGtaG8vJy/azQaFBQU8ECrowNRdwcECSbXtwS2sbBxqrvnxduH1xCZ/nm1paGOllVWg80jNRqN/EBzIM5R7uhZLBa+HfkCIXeyYIp/j83RFb46tgoZ0Pl027jmA3unAU98ai3qsqdFzGWTpZ2NhZm2tpkgZiPk6vagulbOn6BIlx3G2Fm8Mfw3toUWsTXMYH5W4ebg4v/rq2su8No5QDl5Hd5u95rPbqYlgnyo5TJqatLDYtRDUSbCyNkxSONXsL13hZdZc/k+PhxlC9jzVHJm4Dloxy0hCd+df3viEQoHr6DEEqBVrU6oHH7IfEM45P0Obw2xDR5gl2cBbw7eRtHFewz6AK/G2JJ49gp4IcSkt97iwS86ruwgnQsyElpZzOx/hB399+nWGOtT5C677vGV8AYwibuiKbzMQFtCSWyLJPEvGpSiij0NKmIAAAAASUVORK5CYII=" alt="用支付宝给「通讯录里最帅的那位(*健)」打钱" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/4eb27b15769431ef34cc123563920a66/b3a76/alipay.png 1x,
+/static/4eb27b15769431ef34cc123563920a66/56e34/alipay.png 1.5x,
+/static/4eb27b15769431ef34cc123563920a66/0a8d8/alipay.png 2x" /><img loading="lazy" width="200" height="200" srcset="/static/4eb27b15769431ef34cc123563920a66/b3a76/alipay.png 1x,
+/static/4eb27b15769431ef34cc123563920a66/56e34/alipay.png 1.5x,
+/static/4eb27b15769431ef34cc123563920a66/0a8d8/alipay.png 2x" src="/static/4eb27b15769431ef34cc123563920a66/b3a76/alipay.png" alt="用支付宝给「通讯录里最帅的那位(*健)」打钱" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:200px;height:200px;margin-right:0.875rem;margin-bottom:0;min-width:50px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAFYUlEQVQ4yz1UaVBTVxh9dKY//OO0ta1TBIqlLrWKiiyK1mJdplZlhhaqFVAWg0ASCJiwEwKRJQlJgCSEAAnESBISshAIIBFIpy6V4lKX6dSpbR3bKdX+avuLxHua96jemTv3zn33nvedc77vow5NnaDoUXBVQFHqV1+h9zd+WVix030ke5092bXWnrQY7UpElCMBMY5dTz90p4wne47la+4PrGQeyqiw43Nnw+htysQXzBGVMVsQRv0/9nnTj0ePJD2KmdqNPbNpyPAVIN2SSz635JDD4yfxgftjRE0kItqW+GTfRHr+i3eHL2UuYxRdq3pxRm1zHlBGjSXi6FQ2FJOawPzt7wI9Ki2pKq/EqN0NhVROhBJRsMWnDBycPYFwTxzi3Z/2v3h/Yq4wBNpBMTRjnfuV66c/gvmxKyA9Lwl2Sjpgt9kJt4RL2qQSMuIYISUlJUQhk5Pp0SlIZJJg8eXKpWjfLsS5Dg0yiOXUcpTJo8eOr5/aC+Mda2BQbSAcLgcNTSIyOztLdDodRCIRtFotBgYGoNZoSE19LeGwOeiWa0jjgnwp0puAveNpZxmwB7//sCLStuPR+bud6Jaqg6xCFng8HmltbYXZbMbY2BjS0tKQl5eHiYkJsFgs1NbWglfGI1wuF37f3POsq1xEDscviheUq6joocTsozdzodZpAn26PrhH3aSiogJisRjNzc3MVKvVUKlUzJndbodCoYBUKkVpCFTWLIXC2rUU6z+ILSOflFAR9h2u+ltSsHOKAiqNioSiIvTlqqoqtLe3o7u7G8KGBlisVgZELpcjNTUVBoOBloGwCljEoNMHsxZKEGGN81HrnLsXnQ+9ULerSDm/nJSWlqKmpgb02hACUsjbccHQB0OPBjJJG6qrqxnK9A9pJplZmUTe3E4EM42IdiY9ozaNpsBx00PqKmohqBCQuro6hNxkLufk5OCCyYhbM270i8owpB9k6NKgIZ3B4XBAs2oVNkN0SUKinAmgYr37YZgxkXJuOSoqK0hlZSXa2tpAC15cXIypyQlc+fo6JC2N0JlDWnapIJFIUFZWBovFAofLgbJCHum9Z8Kbls2E2uDa89T1oxd9ql5yKuc0odODNoDP5zOAQmED6oUylInqIdDy0SHvYCShv7tcLrS0tqC6rIp0PzTijYubCPX20Jbxrl8NcFywB7mlXBISm9AR0uLT9GhTRt0uFJw5A71Oz0Sfm5vLrENDQ2gKOd9YL0L+DT7eGtoMKtqckJ+6kAeP1xNoFDVCpVaRlpYW9PT0MMlMO63X6xldPR4P2MVsRluZVAa5Qg5+KR993gFsnTyIKGs8KP1d88oI244nbXfU8I/PBk9mnwSbzSYCgYBx2WQyMXlI5yOd1F1dXejt7UWoFJHxZQa6lRrk+Hl4x7oN79uTwVRL4uhn+RunUzD206Ulh9FOCouLYDQZiUKpILSTdP7R4EqlEkajEW0yCc6Vn8PFXhN4vjq8bv0Aayzb6Q4UAhQuF/RmR0r/ppl9GHwwvCSua3re392HAcMAOR0yyul2Em2Pli43dHV2QavQQNzUBME1MdL9LFz/8yYU93XYMLIHVKaf87IXxrr2D0aOJ4B9uxa2BfeSslMZPF8vJpe9PjQLz5OWxmby7ffz6PT34Njl03jNvBFX/pjH439+w99L/yL/m3PLlI9MZ78E3etNOxtu2bYYM7kbKTPpKJqvxik3m+SNlyJrjoNkbyrCbdsRMRyH8BDN4mvVuPXXPdh+9mCr+wBetu2v/EVhlGCZvuSuZlWocZa8Z9/pC9Xns3ediQi3byerLbFkjTUOMfZdzFxrS0LUcDxjxmpzLLP/Dy+Nf1IBJPdqAAAAAElFTkSuQmCC" alt="用微信给「宫不上(*健)」打钱" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/52b29d142baa82b29abfc28722fabd79/b3a76/wechat.png 1x,
+/static/52b29d142baa82b29abfc28722fabd79/56e34/wechat.png 1.5x" /><img loading="lazy" width="200" height="200" srcset="/static/52b29d142baa82b29abfc28722fabd79/b3a76/wechat.png 1x,
+/static/52b29d142baa82b29abfc28722fabd79/56e34/wechat.png 1.5x" src="/static/52b29d142baa82b29abfc28722fabd79/b3a76/wechat.png" alt="用微信给「宫不上(*健)」打钱" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/tech/2020/02/26/WSL安装ruby环境.html">← WSL安装ruby环境</a></li><li><a rel="next" href="/movie/2020/02/28/电影补档计划：孝子贤孙伺候着.html">电影补档计划：孝子贤孙伺候着 →</a></li></ul></nav></main><footer>© 2020, Built with <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/fe/2020/02/27/使用rust和webassembly开发game_of_life.html";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-098fdf59af858a56ac7b.js"],"component---src-templates-blog-post-tsx":["/component---src-templates-blog-post-tsx-8976691932302854498d.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-fda69575792b18584c7c.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-d2e107066965e71b99db.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-tsx-8976691932302854498d.js" async=""></script><script src="/commons-898b4dbbf76880ce5fbd.js" async=""></script><script src="/app-098fdf59af858a56ac7b.js" async=""></script><script src="/styles-e6de4e09d8d0519894be.js" async=""></script><script src="/webpack-runtime-df04da3d7c9aa742538e.js" async=""></script></body></html>
