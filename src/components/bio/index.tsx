@@ -20,6 +20,20 @@ const query = graphql`
         }
       }
     }
+    alipay: file(relativePath: { regex: "/alipay.png/" }) {
+      childImageSharp {
+        fixed(width: 200, height: 200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    wechat: file(relativePath: { regex: "/wechat.png/" }) {
+      childImageSharp {
+        fixed(width: 200, height: 200) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     site {
       siteMetadata {
         author {
@@ -36,6 +50,18 @@ const query = graphql`
 
 interface Data {
   avatar: {
+    childImageSharp: {
+      fixed: FixedObject;
+    };
+  };
+
+  alipay: {
+    childImageSharp: {
+      fixed: FixedObject;
+    };
+  };
+
+  wechat: {
     childImageSharp: {
       fixed: FixedObject;
     };
@@ -75,6 +101,23 @@ const Avatar: FC<{
   );
 };
 
+const QRCode: FC<{
+  fixed: Data["alipay"]["childImageSharp"]["fixed"];
+  alt: string;
+}> = ({ fixed, alt }) => {
+  return (
+    <Image
+      fixed={fixed}
+      alt={alt}
+      style={{
+        marginRight: rhythm(1 / 2),
+        marginBottom: 0,
+        minWidth: 50,
+      }}
+    />
+  );
+};
+
 const Description: FC<{
   author: Data["site"]["siteMetadata"]["author"];
   social: Data["site"]["siteMetadata"]["social"];
@@ -100,15 +143,22 @@ const Bio: FC<{}> = () => {
   const data = useStaticQuery<Data>(query);
   const { author, social } = data.site.siteMetadata;
   return (
-    <div
-      style={{
-        display: "flex",
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <Avatar author={author} fixed={data.avatar.childImageSharp.fixed} />
-      <Description author={author} social={social} />
-    </div>
+    <>
+      <div style={{ display: "flex" }}>
+        <Avatar author={author} fixed={data.avatar.childImageSharp.fixed} />
+        <Description author={author} social={social} />
+      </div>
+      <div style={{ textAlign: "right" }}>
+        <QRCode
+          fixed={data.alipay.childImageSharp.fixed}
+          alt="用支付宝给「通讯录里最帅的那位(*健)」打钱"
+        />
+        <QRCode
+          fixed={data.wechat.childImageSharp.fixed}
+          alt="用微信给「宫不上(*健)」打钱"
+        />
+      </div>
+    </>
   );
 };
 

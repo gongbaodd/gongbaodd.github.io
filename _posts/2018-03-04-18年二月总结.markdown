@@ -1,8 +1,9 @@
 ---
 type: post
-category: life
+category: plan
 ---
-# 18年二月总结
+
+# 18 年二月总结
 
 不知不觉二月结束了，20%已经结束了！！！
 

@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: movie
 ---
+
 # 电影补档计划：饮食男女
 
 ![Eat drink man woman](https://img3.doubanio.com/view/photo/l/public/p1910899751.webp)

@@ -1,6 +1,6 @@
 ---
 type: post
-category: life
+category: plan
 ---
 
 # 补一下六月总结

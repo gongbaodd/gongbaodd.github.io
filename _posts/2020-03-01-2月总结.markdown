@@ -1,7 +1,6 @@
 ---
 type: post
-category: life
-date: 2020-03-01
+category: plan
 ---
 
 # 2 月总结

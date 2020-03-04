@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: movie
 ---
+
 # 电影补档计划：孝子贤孙伺候着
 
 ![孝子贤孙伺候着](https://img9.doubanio.com/view/photo/l/public/p2376859119.webp)

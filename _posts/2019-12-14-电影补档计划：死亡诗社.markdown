@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: movie
 ---
+
 # 电影补档计划：死亡诗社
 
 ![Dead Poets Society](https://img3.doubanio.com/view/photo/l/public/p1650499822.webp)
