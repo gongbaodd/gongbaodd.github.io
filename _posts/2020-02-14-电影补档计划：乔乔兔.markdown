@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: movie
 ---
+
 # 电影补档计划：乔乔兔
 
 ![jojo rabbit](https://img3.doubanio.com/view/photo/l/public/p2567973073.webp)

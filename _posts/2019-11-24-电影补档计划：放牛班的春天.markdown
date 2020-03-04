@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: movie
 ---
+
 # 电影补档计划：放牛班的春天
 
 ![Les Choristes](https://img3.doubanio.com/view/photo/l/public/p1932466823.webp)
@@ -13,4 +14,3 @@ category: life
 合唱团虽然没得到校长支持，却引起来董事会注意，本来顽皮的皮埃尔在老师的培养下成功挖掘出他的歌唱天赋并被推荐去音乐学校学习。
 
 学校发生火灾，断了校长的官路，校长一气之下把克莱门德开除，离开学校的时候老师收到了学生们折成纸飞机的感谢信。
-

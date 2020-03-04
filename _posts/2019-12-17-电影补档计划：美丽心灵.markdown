@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: movie
 ---
+
 # 电影补档计划：美丽心灵
 
 ![A beautiful mind](https://img3.doubanio.com/view/photo/l/public/p1665997400.webp)
