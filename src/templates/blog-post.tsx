@@ -19,8 +19,12 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
-        title
+        category
+      }
+      fields {
+        slug
         date(formatString: "MMMM DD, YYYY")
+        title
       }
     }
   }
@@ -38,8 +42,12 @@ interface PageData {
     excerpt: string;
     html: string;
     frontmatter: {
-      title: string;
+      category?: string;
+    };
+    fields: {
+      slug: string;
       date: string;
+      title: string;
     };
   };
 }
@@ -60,17 +68,9 @@ const BlogPostTemplate: FC<PageProps<
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
+      <SEO title={post.fields.title} description={post.excerpt} />
       <article>
         <header>
-          <h1
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
           <p
             style={{
               ...scale(-1 / 5),
@@ -78,7 +78,7 @@ const BlogPostTemplate: FC<PageProps<
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date}
+            {post.fields.date}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: sanitize(post.html) }} />
@@ -105,14 +105,14 @@ const BlogPostTemplate: FC<PageProps<
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                {`← ${previous.frontmatter.title}`}
+                {`← ${previous.fields.title}`}
               </Link>
             )}
           </li>
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {`${next.frontmatter.title} →`}
+                {`${next.fields.title} →`}
               </Link>
             )}
           </li>

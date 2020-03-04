@@ -14,15 +14,17 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: fields___slug, order: DESC }) {
+    allMarkdownRemark(sort: { fields: fields___date, order: DESC }) {
       edges {
         node {
           excerpt
           fields {
             slug
+            date(formatString: "MMMM DD, YYYY")
+            title
           }
           frontmatter {
-            title
+            category
           }
         }
       }
@@ -41,12 +43,12 @@ interface PageData {
       node: {
         excerpt: string;
         frontmatter: {
-          date: string;
-          title: string;
-          description: string;
+          category: string;
         };
         fields: {
           slug: string;
+          title: string;
+          date: string;
         };
       };
     }>;
@@ -62,10 +64,8 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
-        const slugReg = /\/(\d{4}-\d{2}-\d{2})-(.*)\//;
-        const { slug } = node.fields;
-        const title = slug.replace(slugReg, "$2");
-        const date = slug.replace(slugReg, "$1");
+        const { title, date } = node.fields;
+        const { category } = node.frontmatter;
 
         return (
           <article key={node.fields.slug}>
@@ -76,7 +76,7 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
                 }}
               >
                 <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
-                  {title}
+                  {(category ? `[${category}] ` : "") + title}
                 </Link>
               </h3>
               <small>{date}</small>

@@ -10,6 +10,7 @@ const query = `
       node {
         fields {
           slug
+          title
         }
         frontmatter {
           title
@@ -27,6 +28,7 @@ interface Data {
       node: {
         fields: {
           slug: string;
+          title: string;
         };
 
         frontmatter: {
