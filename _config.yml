@@ -1,5 +1,0 @@
-highlighter: true
-markdown: kramdown
-kramdown:
-    input: GFM
-    enable_coderay: true
