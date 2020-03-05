@@ -2,11 +2,12 @@
 type: post
 category: tech
 ---
+
 # win10 家庭版打开组策略
 
 无非是把 pro 版的组策略安装进来就好了
 
-```bat
+```batch
 pushd "%~dp0"
 dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt
 dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt

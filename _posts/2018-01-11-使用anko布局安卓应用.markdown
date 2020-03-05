@@ -2,13 +2,14 @@
 type: post
 category: tech
 ---
+
 # 使用 anko 布局安卓应用
 
 ## build.gradle 配置
 
 如[wiki](https://github.com/Kotlin/anko)修改两处
 
-```gradle
+```groovy
 // app(Module)
 dependencies {
     implementation "org.jetbrains.anko:anko:$anko_version"
@@ -20,7 +21,7 @@ dependencies {
 }
 ```
 
-```gradle
+```groovy
 // app(Project)
 buildscript {
     ext.kotlin_version = '1.2.10'
@@ -29,11 +30,11 @@ buildscript {
 
 ## 使用 ConstraintLayout
 
-修改build
+修改 build
 
 https://github.com/AckeeCZ/anko-constraint-layout
 
-```gradle
+```groovy
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta4'
     implementation 'cz.ackee:anko-constraint-layout:0.6.5'

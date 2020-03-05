@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link, graphql, PageProps } from "gatsby";
-import { filterXSS as sanitize } from "xss";
+import { sanitize } from "../utils/sanitize";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link, graphql, PageProps } from "gatsby";
-import { filterXSS as sanitize } from "xss";
+import { sanitize } from "../utils/sanitize";
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -81,7 +81,11 @@ const BlogPostTemplate: FC<PageProps<
             {post.fields.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: sanitize(post.html) }} />
+        <section
+          dangerouslySetInnerHTML={{
+            __html: sanitize(post.html),
+          }}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
