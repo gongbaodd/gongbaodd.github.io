@@ -66,9 +66,9 @@ const BlogPostTemplate: FC<PageProps<
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
-  const { slug, title, date } = post.fields;
+  const { title, date } = post.fields;
   const disqusConfig = {
-    identifier: slug,
+    identifier: post.id,
     title,
     url: location.href,
   };
