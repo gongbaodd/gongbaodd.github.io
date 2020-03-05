@@ -1,3 +1,11 @@
+const transformerRemark = require("./config/plugins/transformer_remark");
+const sourceFilesystems = require("./config/plugins/source_filesystem");
+const googleAnalytics = require("./config/plugins/google_analytics");
+const feed = require("./config/plugins/feed");
+const manifest = require("./config/plugins/manifest");
+const typography = require("./config/plugins/typography");
+const csp = require("./config/plugins/csp");
+
 module.exports = {
   siteMetadata: {
     title: "宫不上叔",
@@ -12,82 +20,17 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-typescript",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/_posts`,
-        name: "blog",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/images`,
-        name: "images",
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        pedantic: true,
-        plugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 590,
-            },
-          },
-          {
-            resolve: "gatsby-remark-responsive-iframe",
-            options: {
-              wrapperStyle: "margin-bottom: 1.0725rem",
-            },
-          },
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-smartypants",
-          {
-            resolve: "gatsby-remark-prismjs",
-            options: {
-              classPrefix: "language-",
-              showLineNumbers: true,
-            },
-          },
-        ],
-      },
-    },
+    "gatsby-plugin-typescript",
+    ...sourceFilesystems,
+    ...transformerRemark,
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-159827550-1",
-      },
-    },
-    // "gatsby-plugin-feed",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "宫不上叔的日记",
-        short_name: "宫不上叔",
-        start_url: "/",
-        background_color: "#ffffff",
-        theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "images/icon.png",
-      },
-    },
+    ...googleAnalytics,
+    ...feed,
+    ...manifest,
     "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/utils/typography",
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    ...typography,
+    ...csp,
+    "gatsby-plugin-offline",
   ],
 };

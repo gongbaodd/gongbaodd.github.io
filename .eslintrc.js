@@ -45,10 +45,11 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["gatsby-*.js"],
+      files: ["gatsby-*.js", "config/**/*.js"],
       rules: {
         "@typescript-eslint/camelcase": ["off"],
         "@typescript-eslint/no-var-requires": ["off"],
+        "global-require": ["off"],
       },
     },
     {
