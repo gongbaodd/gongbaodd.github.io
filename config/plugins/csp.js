@@ -13,6 +13,8 @@ module.exports = [
           "www.google-analytics.com",
           "*.sentry.io",
           "*.disqus.com",
+          "'unsafe-inline'",
+          "*",
         ].join(" "),
         "style-src": ["'self'", "'unsafe-inline'", "*.disqus.com"].join(" "),
         "img-src": ["*", "data:"].join(" "),
