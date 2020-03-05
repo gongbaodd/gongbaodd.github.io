@@ -6,6 +6,7 @@ const manifest = require("./config/plugins/manifest");
 const typography = require("./config/plugins/typography");
 const csp = require("./config/plugins/csp");
 const sentry = require("./config/plugins/sentry");
+const pageProgress = require("./config/plugins/page_progress");
 
 module.exports = {
   siteMetadata: {
@@ -22,17 +23,20 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-typescript",
-    ...sourceFilesystems,
-    ...transformerRemark,
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-page-progress",
+    "gatsby-plugin-tidy",
+    ...sourceFilesystems,
+    ...transformerRemark,
     ...googleAnalytics,
     ...feed,
     ...manifest,
-    "gatsby-plugin-react-helmet",
     ...typography,
     ...csp,
-    "gatsby-plugin-offline",
     ...sentry,
+    ...pageProgress,
   ],
 };

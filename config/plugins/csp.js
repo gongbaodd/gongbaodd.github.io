@@ -5,7 +5,7 @@ module.exports = [
       disableOnDev: true,
       reportOnly: false,
       mergeScriptHashes: true,
-      mergeStyleHashes: true,
+      mergeStyleHashes: false,
       mergeDefaultDirectives: true,
       directives: {
         "script-src": "'self' www.google-analytics.com sentry.io",
