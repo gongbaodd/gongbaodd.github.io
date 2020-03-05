@@ -10,7 +10,7 @@ module.exports = [
       directives: {
         "script-src": "'self' www.google-analytics.com sentry.io",
         "style-src": "'self' 'unsafe-inline'",
-        "img-src": "'self' data: www.google-analytics.com sentry.io",
+        "img-src": "*",
       },
     },
   },
