@@ -1,8 +1,6 @@
 import { filterXSS, whiteList } from "xss";
 
 export function sanitize(html: string): string {
-  //   return html;
-
   return filterXSS(html, {
     whiteList: {
       ...whiteList,

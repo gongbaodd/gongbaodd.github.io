@@ -2,47 +2,48 @@
 type: post
 category: fe
 ---
-# 使用rust和webassembly开发game of life
 
-这是一篇翻译，[原文](https://github.com/rustwasm/book.git)，这可能是第一篇系统讲解rustwasm的文章了。
+# 使用 rust 和 webassembly 开发 game of life
+
+这是一篇翻译，[原文](https://github.com/rustwasm/book.git)，这可能是第一篇系统讲解 rustwasm 的文章了。
 
 ## 这本书适合谁？
 
-这本书适合任何对快速编译Rust和Webassembly感兴趣的人，相关的代码已经发布在网上。你应该已经了解一些Rust的知识，对JavaScript HTML和css很熟悉，但你不需要是在这些方面的专家。
+这本书适合任何对快速编译 Rust 和 Webassembly 感兴趣的人，相关的代码已经发布在网上。你应该已经了解一些 Rust 的知识，对 JavaScript HTML 和 css 很熟悉，但你不需要是在这些方面的专家。
 
-还不了解rust？请先参阅[开始使用rust语言](https://doc.rust-lang.org/book/)。
-不了解JavaScript的html或者是css？请参阅[MDN](https://developer.mozilla.org/en-US/docs/Learn)
+还不了解 rust？请先参阅[开始使用 rust 语言](https://doc.rust-lang.org/book/)。
+不了解 JavaScript 的 html 或者是 css？请参阅[MDN](https://developer.mozilla.org/en-US/docs/Learn)
 
-## 为什么用rust和webAssembly
+## 为什么用 rust 和 webAssembly
 
 ### 底层支持和高效(Low-Level Control with Hign-Level Ergonomics)
 
-Javascript的应用，纠结于如何保持高效运作。但是JavaScript的动态类型系统和垃圾回收机制，使他们不能高效。看起来很小的修改，如果不小心走出了JIT的舒适区，看起来很小的修改都会导致很严重的错误。
+Javascript 的应用，纠结于如何保持高效运作。但是 JavaScript 的动态类型系统和垃圾回收机制，使他们不能高效。看起来很小的修改，如果不小心走出了 JIT 的舒适区，看起来很小的修改都会导致很严重的错误。
 
-### .wasm文件大小
+### .wasm 文件大小
 
-因为要通过网络下载，代码的大小就变得异常重要。Rust不需要运行环境，使得编译文件不需要包括垃圾回收器。这些文件包括的只有真正需要的函数。
+因为要通过网络下载，代码的大小就变得异常重要。Rust 不需要运行环境，使得编译文件不需要包括垃圾回收器。这些文件包括的只有真正需要的函数。
 
 ### 不要重写所有的东西
 
-现有的代码不需要被扔走，你可以把性能最严重的JavaScript函数，交给rust去执行。
+现有的代码不需要被扔走，你可以把性能最严重的 JavaScript 函数，交给 rust 去执行。
 
 ### 和其他工具交互融洽
 
-Rust和WebAssembly支持现有的工具链，它支持ecmascript模块，并且你依然可以使用现有的工具链如NPM，webpack和greenkeeper。
+Rust 和 WebAssembly 支持现有的工具链，它支持 ecmascript 模块，并且你依然可以使用现有的工具链如 NPM，webpack 和 greenkeeper。
 
 ## 背景和相关概念
 
-### 什么是WebAssembly
+### 什么是 WebAssembly
 
 WebAssembly（wasm）是一个简单的机器模块拥有大量的[定义](https://webassembly.github.io/spec/)。它被设计得以相近于原生的速度便携紧密地执行。
 
-作为一个开发语言，尽管是以两种方式展示的格式，wasm依然表示于同样的结构。
+作为一个开发语言，尽管是以两种方式展示的格式，wasm 依然表示于同样的结构。
 
-+ ```.wat```文本格式（叫做WebAssembly Text），使用[S-expression](https://en.wikipedia.org/wiki/S-expression)，有点类似于Lisp家族，像是Scheme和Clojure。
-+ ```.wasm```二机制格式，是一个底层的目标是让wasm虚拟机使用的格式，有些类似于ELF和Mach-O。
+- `.wat`文本格式（叫做 WebAssembly Text），使用[S-expression](https://en.wikipedia.org/wiki/S-expression)，有点类似于 Lisp 家族，像是 Scheme 和 Clojure。
+- `.wasm`二机制格式，是一个底层的目标是让 wasm 虚拟机使用的格式，有些类似于 ELF 和 Mach-O。
 
-以```.wat```书写的斐波那契数列如下：
+以`.wat`书写的斐波那契数列如下：
 
 ```wasm
 (module
@@ -67,38 +68,38 @@ WebAssembly（wasm）是一个简单的机器模块拥有大量的[定义](https
 
 #### 线性内存
 
-Wasm使用的[内存模式](https://webassembly.github.io/spec/core/syntax/modules.html#syntax-mem)很简单。一个wasm模块，可以访问的一系列内存，被限制于一个字节数组中。这些内存会[增长](https://webassembly.github.io/spec/core/syntax/instructions.html#syntax-instr-memory)为多个页（64K）不会收缩。
+Wasm 使用的[内存模式](https://webassembly.github.io/spec/core/syntax/modules.html#syntax-mem)很简单。一个 wasm 模块，可以访问的一系列内存，被限制于一个字节数组中。这些内存会[增长](https://webassembly.github.io/spec/core/syntax/instructions.html#syntax-instr-memory)为多个页（64K）不会收缩。
 
-#### Wasm是仅仅为web开发的吗？
+#### Wasm 是仅仅为 web 开发的吗？
 
-尽管在JavaScript和web社区中有很多讨论。WASM并没有考虑过它的运用环境。所以目前只能定义它为将来可以使用的便携运行格式。但就目前而言，wasm仍然在很多方面与JavaScript有关。不仅仅是浏览器，还有Node.js。
+尽管在 JavaScript 和 web 社区中有很多讨论。WASM 并没有考虑过它的运用环境。所以目前只能定义它为将来可以使用的便携运行格式。但就目前而言，wasm 仍然在很多方面与 JavaScript 有关。不仅仅是浏览器，还有 Node.js。
 
 ## 关于本书
 
-这一部分开始使用Rust和WebAssembly开发[Conway的Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)。
+这一部分开始使用 Rust 和 WebAssembly 开发[Conway 的 Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)。
 
 本章会讲到以下内容。
 
-+ 如何搭建编译WebAssembly的Rust工具链。
-+ 一个支持开发多语言程序（Rust、wasm、JavaScript、HTML和CSS）的工作流。
-+ 设计最大利用rust和wasm的优势配合JavaScript的优点的API。
-+ 如何调试wasm模块。
-+ 如何查看wasm的时间日志（time profile）。
-+ 如何减少生成的二进制文件包大小。
+- 如何搭建编译 WebAssembly 的 Rust 工具链。
+- 一个支持开发多语言程序（Rust、wasm、JavaScript、HTML 和 CSS）的工作流。
+- 设计最大利用 rust 和 wasm 的优势配合 JavaScript 的优点的 API。
+- 如何调试 wasm 模块。
+- 如何查看 wasm 的时间日志（time profile）。
+- 如何减少生成的二进制文件包大小。
 
 ## 安装工具
 
-本节将会介绍编译Rust编译WASM并和JavaScript集成的工具链。
+本节将会介绍编译 Rust 编译 WASM 并和 JavaScript 集成的工具链。
 
-### Rust工具链
+### Rust 工具链
 
-你需要安装rust的标准工具链，[rustup，rustc和cargo](https://www.rust-lang.org/tools/install)（强烈建议你们在WSl的环境下面工作）。
+你需要安装 rust 的标准工具链，[rustup，rustc 和 cargo](https://www.rust-lang.org/tools/install)（强烈建议你们在 WSl 的环境下面工作）。
 
-WASM已经推动Rust新特性进入稳定版，所以我们需要有1.30或更新版本。
+WASM 已经推动 Rust 新特性进入稳定版，所以我们需要有 1.30 或更新版本。
 
 ### wasm-pack
 
-`wasm-pack`是一站式的建造测试以及发布rust相关的wasm应用工具。
+`wasm-pack`是一站式的建造测试以及发布 rust 相关的 wasm 应用工具。
 
 ```shell
 cargo install wasm-pack
@@ -106,7 +107,7 @@ cargo install wasm-pack
 
 ### cargo-generate
 
-`cargo-generate`帮助你使用现存的Git仓库作为模板新建Rust项目。
+`cargo-generate`帮助你使用现存的 Git 仓库作为模板新建 Rust 项目。
 
 ```shell
 cargo install cargo-generate
@@ -114,9 +115,9 @@ cargo install cargo-generate
 
 ### NPM
 
-`npm`是JavaScript的包装管理器。我们将利用它，去安装和运行JavaScript的打包和测试部署。我们将把我们编译好的`.wasm`文件放到npm的包中。
+`npm`是 JavaScript 的包装管理器。我们将利用它，去安装和运行 JavaScript 的打包和测试部署。我们将把我们编译好的`.wasm`文件放到 npm 的包中。
 
-如果你已经安装了NPM可以执行以下命令，安装最新版。
+如果你已经安装了 NPM 可以执行以下命令，安装最新版。
 
 ```shell
 npm install npm@latest -g
@@ -124,11 +125,11 @@ npm install npm@latest -g
 
 ## 你好，世界
 
-通过本部分可以创建一个Rust+WASM页面，并能在页面弹窗展示`"Hello, World!"`。
+通过本部分可以创建一个 Rust+WASM 页面，并能在页面弹窗展示`"Hello, World!"`。
 
 ### 复制项目模板
 
-这个项目的模板已经提前编译好，可以借此快速绑定、集成和打包成Web项目。
+这个项目的模板已经提前编译好，可以借此快速绑定、集成和打包成 Web 项目。
 
 利用模板创建项目的命令：
 
@@ -163,11 +164,11 @@ wasm-game-of-life/
 
 #### wasm-game-of-life/Cargo.toml
 
-`Cargo.toml`文件描述`cargo`的依赖和源文件，Rust的包管理工具和编译工具。这个包括`wasm-bindgen`依赖，我们会稍后了解其他的依赖，还有一些用来初始化`.wasm`的`crate-type`库。
+`Cargo.toml`文件描述`cargo`的依赖和源文件，Rust 的包管理工具和编译工具。这个包括`wasm-bindgen`依赖，我们会稍后了解其他的依赖，还有一些用来初始化`.wasm`的`crate-type`库。
 
 #### wasm-game-of-life/src/lib.rs
 
-`src/lib`文件放在Rust项目的更目录下面。它使用`wasm-bindgen`去和JavaScript链接。它能引入`window.alert`这个JavaScript函数，并暴露`greet`函数，并弹出弹框。
+`src/lib`文件放在 Rust 项目的更目录下面。它使用`wasm-bindgen`去和 JavaScript 链接。它能引入`window.alert`这个 JavaScript 函数，并暴露`greet`函数，并弹出弹框。
 
 ```Rust
 mod utils;
@@ -191,15 +192,15 @@ pub fn greet() {
 
 #### wasm-game-of-life/src/utils.rs
 
-`src/utils`模块为编译Rust到WASM提供工具函数，我们后面会在调试时提到它，现在先忽略。
+`src/utils`模块为编译 Rust 到 WASM 提供工具函数，我们后面会在调试时提到它，现在先忽略。
 
 ### 编译项目
 
 使用`wasm-pack`依赖以下工具：
 
-+ 保证Rust版本在1.30以上，且已经通过`rustup`安装`wasm32-unknown-unknown`工具链。
-+ 使用`cargo`编译Rust到WASM。
-+ 使用`wasm-bindgen`去生成JavaScript的API。
+- 保证 Rust 版本在 1.30 以上，且已经通过`rustup`安装`wasm32-unknown-unknown`工具链。
+- 使用`cargo`编译 Rust 到 WASM。
+- 使用`wasm-bindgen`去生成 JavaScript 的 API。
 
 为了完成以上内容，需要在根目录执行以下命令：
 
@@ -222,23 +223,23 @@ pkg/
 
 #### wasm-game-of-life/pkg/wasm_game_of_life_bg.wasm
 
-`.wasm`文件是Rust工具链使用Rust源代码生成的WASM的二进制文件，它包括全部的函数和数据，比方说，爆露出来的`greet`函数。
+`.wasm`文件是 Rust 工具链使用 Rust 源代码生成的 WASM 的二进制文件，它包括全部的函数和数据，比方说，爆露出来的`greet`函数。
 
 #### wasm-game-of-life/pkg/wasm_game_of_life.js
 
-这个`.js`文件是`wasm-bindgen`引入DOM和JavaScript方法到Rust中，并油耗地暴露WASM的API到JavaScript中。举个例子，这里个`greet`函数包裹了WASM中的`greet`函数，目前，这个粘合还没做任何功能，当我们逐渐从WASM和JavaScript中传输数据，他会提供帮助。
+这个`.js`文件是`wasm-bindgen`引入 DOM 和 JavaScript 方法到 Rust 中，并油耗地暴露 WASM 的 API 到 JavaScript 中。举个例子，这里个`greet`函数包裹了 WASM 中的`greet`函数，目前，这个粘合还没做任何功能，当我们逐渐从 WASM 和 JavaScript 中传输数据，他会提供帮助。
 
 ```javascript
 import * as wasm from "./wasm_game_of_life_bg";
 
 export function greet() {
-    return wasm.greet();
+  return wasm.greet();
 }
 ```
 
 #### wasm-game-of-life/pkg/wasm_game_of_life.d.ts
 
-这个`.d.ts`是TypeScript链接JavaScript的文件。如果你的项目中使用了TypeScript，你可以让你的WebAssembly项目被类型检查，并且你的IDE会提供代码提醒和自动完成功能。
+这个`.d.ts`是 TypeScript 链接 JavaScript 的文件。如果你的项目中使用了 TypeScript，你可以让你的 WebAssembly 项目被类型检查，并且你的 IDE 会提供代码提醒和自动完成功能。
 
 ```TypeScript
 export function greet(): void;
@@ -246,22 +247,17 @@ export function greet(): void;
 
 #### wasm-game-of-life/pkg/package.json
 
-这个文件包括了所有生成的文件描述，并使得这个项目能够作为一个使用WebAssembly的NPM包，能够集成到JavaScript工具链并发布至NPM。
+这个文件包括了所有生成的文件描述，并使得这个项目能够作为一个使用 WebAssembly 的 NPM 包，能够集成到 JavaScript 工具链并发布至 NPM。
 
 ```json
-{   
+{
   "name": "wasm-game-of-life",
-  "collaborators": [
-    "Your Name <your.email@example.com>"
-  ],
+  "collaborators": ["Your Name <your.email@example.com>"],
   "description": null,
   "version": "0.1.0",
   "license": null,
   "repository": null,
-  "files": [
-    "wasm_game_of_life_bg.wasm",
-    "wasm_game_of_life.d.ts"
-  ],
+  "files": ["wasm_game_of_life_bg.wasm", "wasm_game_of_life.d.ts"],
   "main": "wasm_game_of_life.js",
   "types": "wasm_game_of_life.d.ts"
 }
@@ -269,7 +265,7 @@ export function greet(): void;
 
 ### 开始加入页面
 
-想要`wasm-game-of-life`能够展示到页面中，需要使用[`create-wasm-app` JavaScript模板](https://github.com/rustwasm/create-wasm-app)。
+想要`wasm-game-of-life`能够展示到页面中，需要使用[`create-wasm-app` JavaScript 模板](https://github.com/rustwasm/create-wasm-app)。
 
 在项目根目录执行以下命令：
 
@@ -293,21 +289,21 @@ wasm-game-of-life/www/
 
 #### wasm-game-of-life/www/package.json
 
-这个文件包括已经配置好的`webpack`和`webpack-dev-server`依赖，和`hello-wasm-pack`，版本号为已经发布到NPM上面的版本号。
+这个文件包括已经配置好的`webpack`和`webpack-dev-server`依赖，和`hello-wasm-pack`，版本号为已经发布到 NPM 上面的版本号。
 
 #### wasm-game-of-life/www/webpack.conf.js
 
-这个是用来配置webpack和开发服务器的文件。该文件已经提前布置好，如果只是开发则无需过多关心这个文件。
+这个是用来配置 webpack 和开发服务器的文件。该文件已经提前布置好，如果只是开发则无需过多关心这个文件。
 
 #### wasm-game-of-life/www/index.html
 
-这是页面的HTML文件，它是来调用`bootstrap.js`的。
+这是页面的 HTML 文件，它是来调用`bootstrap.js`的。
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Hello wasm-pack!</title>
   </head>
   <body>
@@ -318,7 +314,7 @@ wasm-game-of-life/www/
 
 #### wasm-game-of-life/www/index.js
 
-这是JavaScript的入口文件，他引入了`hello-wasm-pack`，并带哦用了greet函数。
+这是 JavaScript 的入口文件，他引入了`hello-wasm-pack`，并带哦用了 greet 函数。
 
 ```JavaScript
 import * as wasm from "hello-wasm-pack";
@@ -326,15 +322,15 @@ import * as wasm from "hello-wasm-pack";
 wasm.greet();
 ```
 
-#### 安装NPM依赖
+#### 安装 NPM 依赖
 
-首先保证已经在`www`文件夹下面执行过`npm i`，这个命令会安装好现有依赖包括webpack和开发服务器。
+首先保证已经在`www`文件夹下面执行过`npm i`，这个命令会安装好现有依赖包括 webpack 和开发服务器。
 
-> 注意webpack并不是必须的，他只是个打包器并提供了开发服务器，这是我们选择它的原因。Parcel和Rollup一样支持WebAssembly模块。你也可以选择[不使用打包器](https://rustwasm.github.io/docs/wasm-bindgen/examples/without-a-bundler.html)。
+> 注意 webpack 并不是必须的，他只是个打包器并提供了开发服务器，这是我们选择它的原因。Parcel 和 Rollup 一样支持 WebAssembly 模块。你也可以选择[不使用打包器](https://rustwasm.github.io/docs/wasm-bindgen/examples/without-a-bundler.html)。
 
-#### 在www文件夹中使用本地wasm-game-of-life包
+#### 在 www 文件夹中使用本地 wasm-game-of-life 包
 
-相比于使用NPM线上的`hello-wasm-pack`，使用本地文件会提高我们的开发舒适度。
+相比于使用 NPM 线上的`hello-wasm-pack`，使用本地文件会提高我们的开发舒适度。
 
 打开`www/package.json`，找到`devDependencies`，在兄弟节点增加`dependencies`字段，并在里面增加`"wasm-game-of-life": "file:../pkg"`。
 
@@ -350,7 +346,7 @@ wasm.greet();
 }
 ```
 
-接下来修改`www/index.js`引入greet函数。
+接下来修改`www/index.js`引入 greet 函数。
 
 ```JavaScript
 import * as wasm from "wasm-game-of-life";
@@ -358,7 +354,7 @@ import * as wasm from "wasm-game-of-life";
 wasm.greet();
 ```
 
-既然修改了package.json，则需要重新安装他。
+既然修改了 package.json，则需要重新安装他。
 
 ```shell
 npm install
@@ -378,12 +374,11 @@ npm run start
 
 ![弹窗](https://rustwasm.github.io/book/images/game-of-life/hello-world.png)
 
-
 ### 练习
 
-修改greet函数，引入参数`name: &str`，重新执行`wasm-pack build`，并刷新页面使得弹窗中能够显示"Hello, {name}"。
+修改 greet 函数，引入参数`name: &str`，重新执行`wasm-pack build`，并刷新页面使得弹窗中能够显示"Hello, {name}"。
 
-***答案，不许看！***
+**_答案，不许看！_**
 
 修改`src/lib.rs`
 
@@ -394,32 +389,32 @@ pub fn greet(name: &str) {
 }
 ```
 
-再修改JavaScript绑定`www/index.js`
+再修改 JavaScript 绑定`www/index.js`
 
 ```JavaScript
 wasm.greet("Your name");
 ```
 
-## Conway的生命游戏的游戏规则
+## Conway 的生命游戏的游戏规则
 
-如果你已经了解[Conway的生命游戏](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)，可以跳过这部分。
+如果你已经了解[Conway 的生命游戏](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)，可以跳过这部分。
 
-整个Conway的生命游戏是在一个无限的二维的正交格子宇宙中，每一个细胞拥有两种生命状态，生或者死。或者说可增殖或者不可增殖。每一个细胞都和它的8个邻居交互，它们分别是纵向的，斜向的，横向的相邻。并且每一步都会发生如下的变化。
+整个 Conway 的生命游戏是在一个无限的二维的正交格子宇宙中，每一个细胞拥有两种生命状态，生或者死。或者说可增殖或者不可增殖。每一个细胞都和它的 8 个邻居交互，它们分别是纵向的，斜向的，横向的相邻。并且每一步都会发生如下的变化。
 
 1. 任何一个活着的细胞，如果有少于两个邻居就会死亡。
 2. 任何一个活细胞拥有两个或三个活着的邻居，则会继续增殖。
 3. 任何一个活着的细胞拥有三个以上活着的的邻居，则会死亡。
 4. 任何一个死掉的细胞，如果有三个活着的邻居，则会重生。
 
-最初的图案组成了最初的世界。第1代是按照以上的规则生成的，每一个细胞的生成和死亡都是同时的。他们的生存和死亡这一个时间我们称之为一刻。用程序的语言来说，这一刻是上一次生成的纯函数。这个规则一直有效。
+最初的图案组成了最初的世界。第 1 代是按照以上的规则生成的，每一个细胞的生成和死亡都是同时的。他们的生存和死亡这一个时间我们称之为一刻。用程序的语言来说，这一刻是上一次生成的纯函数。这个规则一直有效。
 
 考虑设置如下的初始宇宙：
 
 ![初始宇宙](https://rustwasm.github.io/book/images/game-of-life/initial-universe.png)
 
-我们可以通过考虑每一个细胞来确定下一代。最左上角的细胞已经死亡，第4条规则是唯一一个能够处理死亡细胞的规则。所以第1排的所有细胞都有相同的规则。他们都没有三个活着的邻居。只能保持死亡。
+我们可以通过考虑每一个细胞来确定下一代。最左上角的细胞已经死亡，第 4 条规则是唯一一个能够处理死亡细胞的规则。所以第 1 排的所有细胞都有相同的规则。他们都没有三个活着的邻居。只能保持死亡。
 
-当我们看到最上面的活着的细胞时，这个游戏开始变得有趣了。在第2排第3列。对于活着细胞前三个规则都可以应用。对于这一个细胞，他只有一个活着的邻居，所以规则一可用。这个细胞会在下一次争执死亡。下面那几个活着的细胞也是有一样的命运。
+当我们看到最上面的活着的细胞时，这个游戏开始变得有趣了。在第 2 排第 3 列。对于活着细胞前三个规则都可以应用。对于这一个细胞，他只有一个活着的邻居，所以规则一可用。这个细胞会在下一次争执死亡。下面那几个活着的细胞也是有一样的命运。
 
 中间的活着的细胞，还有两个邻居，上面的和下面的，这就意味着它符合规则二，他可以活到下一次增值。
 
@@ -441,17 +436,17 @@ wasm.greet("Your name");
 
 手动计算出下一刻，宇宙应该是什么样
 
-***答案，不许看！***
+**_答案，不许看！_**
 
 ![下一刻宇宙](https://rustwasm.github.io/book/images/game-of-life/initial-universe.png)
 
 你能找到一个稳定的没有变化的宇宙吗？
 
-***答案，不许看！***
+**_答案，不许看！_**
 
-这个答案，不许看！其实有无数个，最平凡的答案，不许看！就是它是一个空宇宙。如果是一个2×2的方格，也可以形成一个稳定的宇宙。
+这个答案，不许看！其实有无数个，最平凡的答案，不许看！就是它是一个空宇宙。如果是一个 2×2 的方格，也可以形成一个稳定的宇宙。
 
-## 实现Conway的生命游戏
+## 实现 Conway 的生命游戏
 
 ### 设计
 
@@ -465,28 +460,28 @@ wasm.greet("Your name");
 2. 创建一个固定的宇宙，当细胞碰到宇宙的边缘的时候，将会有更少的邻居。更简单的策略就是当他们已经达到边缘的时候，直接被宇宙剪掉。
 3. 创建一个固定的宇宙，当细胞达到边缘的时候，将会从另外一边滑入这样，我的我们的应用就可以一直跑下去。
 
-我们会按照第3个选项来实现。
+我们会按照第 3 个选项来实现。
 
-#### 连接Rust和JavaScript
+#### 连接 Rust 和 JavaScript
 
 > 此部分是本人最重要的一节。
 
-JavaScript的垃圾回收堆内存，是用来调用Object和Array还有DOM结点的。而Rust存在的WebAssembly线性内存和它是截然不同的。WebAssembly目前还不能直接操作垃圾回收堆内存（在2018年4月，一个关于[接口类型（Interface Type）](https://github.com/WebAssembly/interface-types/blob/master/proposals/interface-types/Explainer.md)的提案将会改变这一局面）。JavaScript却可以读写WebAssembly的线性内存，但仅限于ArrayBuffe支持的标量（u8, i32, f64等等）。WebAssembly行数一样能处理和返回这些标量。以下讲解WebAssembly和JavaScript如何链接。
+JavaScript 的垃圾回收堆内存，是用来调用 Object 和 Array 还有 DOM 结点的。而 Rust 存在的 WebAssembly 线性内存和它是截然不同的。WebAssembly 目前还不能直接操作垃圾回收堆内存（在 2018 年 4 月，一个关于[接口类型（Interface Type）](https://github.com/WebAssembly/interface-types/blob/master/proposals/interface-types/Explainer.md)的提案将会改变这一局面）。JavaScript 却可以读写 WebAssembly 的线性内存，但仅限于 ArrayBuffe 支持的标量（u8, i32, f64 等等）。WebAssembly 行数一样能处理和返回这些标量。以下讲解 WebAssembly 和 JavaScript 如何链接。
 
-wasm_bindgen定义了如何穿过这段链接计算数据结构的方法。它包括装箱Rust结构，并包装指针成为一个JavaScript类以供使用，或者提供JavaScript对象给Rust使用。wasm_bindgen非常便利，但并不是无需考虑怎样在这个链接上传输数据结构。你应该把它当作一个实现接口的工具。
+wasm_bindgen 定义了如何穿过这段链接计算数据结构的方法。它包括装箱 Rust 结构，并包装指针成为一个 JavaScript 类以供使用，或者提供 JavaScript 对象给 Rust 使用。wasm_bindgen 非常便利，但并不是无需考虑怎样在这个链接上传输数据结构。你应该把它当作一个实现接口的工具。
 
-当设计WebAssembly和JavaScript的接口时，我们需要考虑到以下内容。
+当设计 WebAssembly 和 JavaScript 的接口时，我们需要考虑到以下内容。
 
-1. **减少复制到和移出WebAssembly线性内存中的值**，无效的复制会造成无用的性能损耗。
-2. **最小的序列化和解序列化**，和复制类似，序列化和解序列化一样造成性能损耗，如果想要把数据无副作用地从一端传到另一端，与其说在一端序列化，到另一端解序列化，不如使用wasm_bindgen帮助我们将JavaScript的Object装箱成Rust的structure。
+1. **减少复制到和移出 WebAssembly 线性内存中的值**，无效的复制会造成无用的性能损耗。
+2. **最小的序列化和解序列化**，和复制类似，序列化和解序列化一样造成性能损耗，如果想要把数据无副作用地从一端传到另一端，与其说在一端序列化，到另一端解序列化，不如使用 wasm_bindgen 帮助我们将 JavaScript 的 Object 装箱成 Rust 的 structure。
 
-一个结论，处理JavaScript和WebAssembly接口设计时，经常将大的、生命周期长的数据结构作为Rust类型，存储在WebAssembly线性内存中，并给JavaScript暴露一个处理方法，JavaScript调用WebAssembly转换文件，处理运算，并最终得到一个小的，可复制的结果。通过只返回计算结果，我们可以躲过复制和序列化数据的过程。
+一个结论，处理 JavaScript 和 WebAssembly 接口设计时，经常将大的、生命周期长的数据结构作为 Rust 类型，存储在 WebAssembly 线性内存中，并给 JavaScript 暴露一个处理方法，JavaScript 调用 WebAssembly 转换文件，处理运算，并最终得到一个小的，可复制的结果。通过只返回计算结果，我们可以躲过复制和序列化数据的过程。
 
-#### 在生命游戏中链接Rust和JavaScript
+#### 在生命游戏中链接 Rust 和 JavaScript
 
-接下来结局几个要规避的问题。我们不想每刻都复制整个宇宙到WebAssembly的内存中，我们不想处理宇宙中所有的细胞，也不想在每次读写细胞的时候都穿过WebAssembly和JavaScript的分界。
+接下来结局几个要规避的问题。我们不想每刻都复制整个宇宙到 WebAssembly 的内存中，我们不想处理宇宙中所有的细胞，也不想在每次读写细胞的时候都穿过 WebAssembly 和 JavaScript 的分界。
 
-这是我们的4x4宇宙在内存中的结构。
+这是我们的 4x4 宇宙在内存中的结构。
 
 ![4x4宇宙在内存中的结构](https://rustwasm.github.io/docs/book/images/game-of-life/universe.png)
 
@@ -496,15 +491,15 @@ wasm_bindgen定义了如何穿过这段链接计算数据结构的方法。它�
 index(row, column, universe) = row * width(universe) + column
 ```
 
-我们有很多方法来给JavaScript暴露宇宙中的细胞。开始我们要为宇宙实现一个`std::fmt::Display`。我们可以使用一个Rust的String，每个字符代表一个细胞。这个Rust的string将会从WebAssembly的内存中复制到JavaScript的内存里，并接下来作为textContent展示到HTML里面。本节的后面，将会讲到如何把细胞展示到canvas中。
+我们有很多方法来给 JavaScript 暴露宇宙中的细胞。开始我们要为宇宙实现一个`std::fmt::Display`。我们可以使用一个 Rust 的 String，每个字符代表一个细胞。这个 Rust 的 string 将会从 WebAssembly 的内存中复制到 JavaScript 的内存里，并接下来作为 textContent 展示到 HTML 里面。本节的后面，将会讲到如何把细胞展示到 canvas 中。
 
-> 另一种设计是让Rust返回每个细胞的生存状态列表，这样JavaScript就不需要在渲染时解析整个宇宙，这不过这个是先更加复杂些。
+> 另一种设计是让 Rust 返回每个细胞的生存状态列表，这样 JavaScript 就不需要在渲染时解析整个宇宙，这不过这个是先更加复杂些。
 
-#### Rust的实现
+#### Rust 的实现
 
 上一章，我们复制了初始化模板，我们现在要修改这个模板。
 
-从删除greet函数，并定义宇宙中的细胞开始。
+从删除 greet 函数，并定义宇宙中的细胞开始。
 
 ```Rust
 #[wasm_bindgen]
@@ -516,7 +511,7 @@ pub enum Cell {
 }
 ```
 
-`#[repr(u8)]`很重要，这样每个细胞都会以一个字节存储，另外Alive为1，Dead为0也很重要，这样我们就可以使用加法计算邻居数目。
+`#[repr(u8)]`很重要，这样每个细胞都会以一个字节存储，另外 Alive 为 1，Dead 为 0 也很重要，这样我们就可以使用加法计算邻居数目。
 
 接下来定义宇宙，一个宇宙包括宽度，高度和一个向量的细胞。
 
@@ -562,7 +557,7 @@ impl Univers {
 }
 ```
 
-这个函数使用取余处理边界问题。现在我们已经有所有的必须函数了，最后只需要生成下一刻的状态即可（记住，每个函数必须在`#[wasm_bindgen]`属性之下，这样JavaScript才能接到暴露的函数）。
+这个函数使用取余处理边界问题。现在我们已经有所有的必须函数了，最后只需要生成下一刻的状态即可（记住，每个函数必须在`#[wasm_bindgen]`属性之下，这样 JavaScript 才能接到暴露的函数）。
 
 ```Rust
 #[wasm_bindgen]
@@ -592,9 +587,9 @@ impl Universe {
 }
 ```
 
-目前为止，一个宇宙的状态就都被存储在cell这个向量里面了。为了提高它的可读性，让我们实现一个文本渲染器，目的是将整个宇宙按行输出为文字，每一个活着的细胞标注为Unicode符号“■”，死掉的细胞则为“□”。
+目前为止，一个宇宙的状态就都被存储在 cell 这个向量里面了。为了提高它的可读性，让我们实现一个文本渲染器，目的是将整个宇宙按行输出为文字，每一个活着的细胞标注为 Unicode 符号“■”，死掉的细胞则为“□”。
 
-通过实现Rust标准库中的`Display`trait，我们可以将数据结构以一种用户交互方式输出，它也提供了一个`to_string`方法。
+通过实现 Rust 标准库中的`Display`trait，我们可以将数据结构以一种用户交互方式输出，它也提供了一个`to_string`方法。
 
 ```Rust
 use std::fmt;
@@ -644,11 +639,11 @@ impl Universe {
 }
 ```
 
-以上，Rust部分已经完工。
+以上，Rust 部分已经完工。
 
-#### 使用JavaScript渲染
+#### 使用 JavaScript 渲染
 
-首先在HTML中插入<pre>标签用来展示整个宇宙。
+首先在 HTML 中插入<pre>标签用来展示整个宇宙。
 
 ```html
 <body>
@@ -657,7 +652,7 @@ impl Universe {
 </body>
 ```
 
-另外我们希望<pre>标签能处于页面中央。我们可以通过CSS flex box实现这个任务，在html中增加<style>标签。
+另外我们希望<pre>标签能处于页面中央。我们可以通过 CSS flex box 实现这个任务，在 html 中增加<style>标签。
 
 ```css
 body {
@@ -673,7 +668,7 @@ body {
 }
 ```
 
-修改JavaScript入口文件，将原来引入的greet函数改为Universe。
+修改 JavaScript 入口文件，将原来引入的 greet 函数改为 Universe。
 
 ```JavaScript
 import { Universe } from "wasm-game-of-life";
@@ -686,7 +681,7 @@ const pre = document.getElementById("game-of-life-canvas");
 const universe = Universe.new();
 ```
 
-使用JavaScript创建一个requestAnimationFrame循环，每一次循环，就在<pre>标签中绘制一遍宇宙，并执行一次`Universe::tick`。
+使用 JavaScript 创建一个 requestAnimationFrame 循环，每一次循环，就在<pre>标签中绘制一遍宇宙，并执行一次`Universe::tick`。
 
 ```JavaScript
 function renderLoop() {
@@ -703,13 +698,13 @@ function renderLoop() {
 
 ![浏览器页面](https://rustwasm.github.io/book/images/game-of-life/initial-game-of-life-pre.png)
 
-#### 渲染到Canvas上
+#### 渲染到 Canvas 上
 
-在Rust中生成字符串并通过wasm-bindgen拷贝到JavaScript中做了很多无关的复制。既然JavaScript已经知道宇宙的长度和宽度，而且JavaScript本来可以直接读WebAssembly的内存，我们将要修改render方法，直接返回细胞向量的指针。
+在 Rust 中生成字符串并通过 wasm-bindgen 拷贝到 JavaScript 中做了很多无关的复制。既然 JavaScript 已经知道宇宙的长度和宽度，而且 JavaScript 本来可以直接读 WebAssembly 的内存，我们将要修改 render 方法，直接返回细胞向量的指针。
 
-同时，与其渲染Unicode字符，不如开始用Canvas API。接下来我们会开始设计这些。
+同时，与其渲染 Unicode 字符，不如开始用 Canvas API。接下来我们会开始设计这些。
 
-在html中，修改<pre>为<canvas>。
+在 html 中，修改<pre>为<canvas>。
 
 ```html
 <body>
@@ -718,7 +713,7 @@ function renderLoop() {
 </body>
 ```
 
-为了能拿到Rust中的相关数据结构，我们需要为宇宙增加getter函数，暴露宇宙的宽度、高度和细胞的向量。增加如下函数。
+为了能拿到 Rust 中的相关数据结构，我们需要为宇宙增加 getter 函数，暴露宇宙的宽度、高度和细胞的向量。增加如下函数。
 
 ```Rust
 #[wasm_bindgen]
@@ -737,7 +732,7 @@ impl Universe {
 }
 ```
 
-接下来，在JavaScript中，引入Cell，并设置几个渲染画布的常量。
+接下来，在 JavaScript 中，引入 Cell，并设置几个渲染画布的常量。
 
 ```JavaScript
 import { Universe, Cell } from "wasm-game-of-life";
@@ -748,7 +743,7 @@ const DEAD_COLOR = "#FFFFFF";
 const LIVE_COLOR = "#000000";
 ```
 
-接下来修改实现canvas的部分。
+接下来修改实现 canvas 的部分。
 
 ```JavaScript
 const universe = Universe.new();
@@ -792,7 +787,7 @@ function drawGrid() {
 }
 ```
 
-我们可以直接访问WebAssembly的内存，他是直接定义在`wasm_game_of_life_bg`。为了画细胞，我们先找到一个细胞的指针，并将它们转换成Unit8Array，迭代这些细胞，并按照他们的生命状态绘制白色和黑色方块。计量避免复制所有细胞。
+我们可以直接访问 WebAssembly 的内存，他是直接定义在`wasm_game_of_life_bg`。为了画细胞，我们先找到一个细胞的指针，并将它们转换成 Unit8Array，迭代这些细胞，并按照他们的生命状态绘制白色和黑色方块。计量避免复制所有细胞。
 
 ```JavaScript
 import { memory } from "wasm-game-of-life/wasm_game_of_life_bg";
@@ -840,11 +835,11 @@ drawCells();
 requestAnimationFrame(renderLoop);
 ```
 
-注意drawGrid和drawCell必须要在requestAnimationFrame之前执行。
+注意 drawGrid 和 drawCell 必须要在 requestAnimationFrame 之前执行。
 
 #### 成功了！
 
-重建WebAssembly绑定。
+重建 WebAssembly 绑定。
 
 ```shell
 wasm-pack build
@@ -860,24 +855,24 @@ npm run start
 
 ![页面](https://rustwasm.github.io/docs/book/images/game-of-life/initial-game-of-life.png)
 
-结束之前，这里还有一个不错的实现生命游戏的算法，[hashlife](https://en.wikipedia.org/wiki/Hashlife)。它使用缓存，使得程序有指数级性能提升！但是为什么我们不实现它呢？它已经超出本文涉及的范围了，本文只是专注于Rust和WebAssembly集成，但是我们强烈期望你能实现这一算法。
+结束之前，这里还有一个不错的实现生命游戏的算法，[hashlife](https://en.wikipedia.org/wiki/Hashlife)。它使用缓存，使得程序有指数级性能提升！但是为什么我们不实现它呢？它已经超出本文涉及的范围了，本文只是专注于 Rust 和 WebAssembly 集成，但是我们强烈期望你能实现这一算法。
 
 ### 练习
 
 #### 实现一台宇宙飞船
 
-#### 生成一个随机的初始环境，每个细胞有50%的生存可能
+#### 生成一个随机的初始环境，每个细胞有 50%的生存可能
 
-***答案，不许看！***
+**_答案，不许看！_**
 
-先增加js-sys依赖
+先增加 js-sys 依赖
 
 ```toml
 [dependencies]
 js-sys="0.3"
 ```
 
-接下来使用js的随机函数
+接下来使用 js 的随机函数
 
 ```Rust
 extern crate js_sys;
@@ -889,11 +884,11 @@ if js_sys::Math::random() < 0.5 {
 }
 ```
 
-#### 以bit形式存储每个cell
+#### 以 bit 形式存储每个 cell
 
-***答案，不许看！***
+**_答案，不许看！_**
 
-在Rust中，使用fixedbitset代替`Vec<Cell>`;
+在 Rust 中，使用 fixedbitset 代替`Vec<Cell>`;
 
 ```Rust
 extern crate fixedbitset;
@@ -929,7 +924,7 @@ pub fn new() -> Universe {
 }
 ```
 
-使用FixedBitSet的set方法更新宇宙的下一刻。
+使用 FixedBitSet 的 set 方法更新宇宙的下一刻。
 
 ```Rust
 next.set(idx, match (cell, live_neighbors) {
@@ -941,7 +936,7 @@ next.set(idx, match (cell, live_neighbors) {
 });
 ```
 
-传输指针的时候，需要返回slice。
+传输指针的时候，需要返回 slice。
 
 ```Rust
 #[wasm_bindgen]
@@ -952,7 +947,7 @@ impl Universe {
 }
 ```
 
-在JavaScript中，构造Unit8Array的时候需要除以8，以为我们是以bit存储细胞的。
+在 JavaScript 中，构造 Unit8Array 的时候需要除以 8，以为我们是以 bit 存储细胞的。
 
 ```JavaScript
 const cells = new Unit8Array(
@@ -962,7 +957,7 @@ const cells = new Unit8Array(
 );
 ```
 
-通过判断Unit8Array是否被赋值而判断细胞是否是活着的。
+通过判断 Unit8Array 是否被赋值而判断细胞是否是活着的。
 
 ```JavaScript
 function bitIsSet(n, arr) {
@@ -972,7 +967,7 @@ function bitIsSet(n, arr) {
 }
 ```
 
-根据以上变化，新版本的drawCells如下。
+根据以上变化，新版本的 drawCells 如下。
 
 ```JavaScript
 function drawCells() {
@@ -1008,11 +1003,11 @@ function drawCells() {
 
 ## 测试
 
-现在我们已经实现了Rust的实现，并成功渲染在浏览器中。现在来谈谈测试WebAssembly中的Rust函数。
+现在我们已经实现了 Rust 的实现，并成功渲染在浏览器中。现在来谈谈测试 WebAssembly 中的 Rust 函数。
 
-我们将要测试tick函数，确保它能返回正确的值。
+我们将要测试 tick 函数，确保它能返回正确的值。
 
-接下来，我们将处理Universe的setter函数，让我们能构造不同大小的universe。
+接下来，我们将处理 Universe 的 setter 函数，让我们能构造不同大小的 universe。
 
 ```Rust
 #[wasm_bindgen]
@@ -1029,9 +1024,9 @@ impl Universe {
 }
 ```
 
-我们将会创建另一个不需要`#[wasm_bindgen]`的`impl Universe`实现，因为我们不能把所有的WebAssembly函数暴露给JavaScript，Rust生成的WebAssembly函数是不能返回引用的。可以尝试让Rust返回一个引用，查看一下编译结果中是什么错误。
+我们将会创建另一个不需要`#[wasm_bindgen]`的`impl Universe`实现，因为我们不能把所有的 WebAssembly 函数暴露给 JavaScript，Rust 生成的 WebAssembly 函数是不能返回引用的。可以尝试让 Rust 返回一个引用，查看一下编译结果中是什么错误。
 
-接下来我们要写一个get_cells来获得细胞，和一个set_cells来设置哪些细胞是活的，哪些是死的。
+接下来我们要写一个 get_cells 来获得细胞，和一个 set_cells 来设置哪些细胞是活的，哪些是死的。
 
 ```Rust
 impl Universe {
@@ -1052,7 +1047,7 @@ impl Universe {
 
 在这之前，测试环境已经配置好，请确定`wasm-pack test --chrome --headless`能够在根目录下运行。你也可以使用`--firefox`，`--safari`和`--node`选项来在其他浏览器测试你的代码。
 
-在`test/web.rs`中，我们需要到处Universe类型。
+在`test/web.rs`中，我们需要到处 Universe 类型。
 
 ```Rust
 extern crate wasm_game_of_life;
@@ -1061,7 +1056,7 @@ use wasm_game_of_life:Universe;
 
 在测试文件中，我们要创建一个飞船构造函数。
 
-我们要构造一个tick函数执行之前的飞船，和一个tick函数执行后的期望值。
+我们要构造一个 tick 函数执行之前的飞船，和一个 tick 函数执行后的期望值。
 
 ```Rust
 #[cfg(test)]
@@ -1098,7 +1093,7 @@ pub fn expected_spaceship() -> Universe {
 }
 ```
 
-现在我们写一个test_tick函数，创建以上的两个飞船。最后使用`assert_eq!`宏比较expected_ship来确保tick函数运行正确。我们添加`#[wasm_bindgen_test]`属性保证这个函数可以在WebAssembly环境下测试。
+现在我们写一个 test_tick 函数，创建以上的两个飞船。最后使用`assert_eq!`宏比较 expected_ship 来确保 tick 函数运行正确。我们添加`#[wasm_bindgen_test]`属性保证这个函数可以在 WebAssembly 环境下测试。
 
 ```Rust
 #[wasm_bindgen_test]
@@ -1118,30 +1113,30 @@ pub fn test_tick() {
 
 ## 调试
 
-写这么多代码之前（虽然上面都写完了，我也不知道原作者抽什么风），先看一看Rust的调试工具。
+写这么多代码之前（虽然上面都写完了，我也不知道原作者抽什么风），先看一看 Rust 的调试工具。
 
 ### 调试工具
 
-此部分将会介绍WebAssembly的调试工具。
+此部分将会介绍 WebAssembly 的调试工具。
 
-#### 使用debug标记编译
+#### 使用 debug 标记编译
 
-如果没有打开debug标记，"name"这个部分就不会被编译到二进制程序中，错误栈也不会显示函数名，你会收到`wasm-functions[42]`而不是`wasm_game_of_file::Universe::live_neighbor_count`。
+如果没有打开 debug 标记，"name"这个部分就不会被编译到二进制程序中，错误栈也不会显示函数名，你会收到`wasm-functions[42]`而不是`wasm_game_of_file::Universe::live_neighbor_count`。
 
-调试编译，`wasm-pack build --debug`或者`cargo build`总是会默认打开debug标记。
+调试编译，`wasm-pack build --debug`或者`cargo build`总是会默认打开 debug 标记。
 
-版本编译（release build），debug标记是默认关闭的，要打开debug标记，需要声明`debug=true`。
+版本编译（release build），debug 标记是默认关闭的，要打开 debug 标记，需要声明`debug=true`。
 
 ```toml
 [profile.release]
 debug = true
 ```
 
-#### 使用console API打印日志
+#### 使用 console API 打印日志
 
-打印日志是最好的判断程序是否是有错的方式。在浏览器中，`console.log`函数可以将日志打印到浏览器的dev工具里。
+打印日志是最好的判断程序是否是有错的方式。在浏览器中，`console.log`函数可以将日志打印到浏览器的 dev 工具里。
 
-我们可以使用web-sys包去调用console API。
+我们可以使用 web-sys 包去调用 console API。
 
 ```Rust
 extern crate web_sys;
@@ -1153,18 +1148,17 @@ web_sys::console::log_1(&"Hello, world!".into());
 
 使用`console.log`：
 
-* [`web_sys::console::log`，接受一个向量的数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log.html)。
-* [`web_sys::console::log_1`，接受一个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_1.html)。
-* [`web_sys::console::log_2`，接受两个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_2.html)。
-* ...
+- [`web_sys::console::log`，接受一个向量的数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log.html)。
+- [`web_sys::console::log_1`，接受一个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_1.html)。
+- [`web_sys::console::log_2`，接受两个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.log_2.html)。
+- ...
 
 使用`console.error`：
 
-* [`web_sys::console::error`，接受一个向量的数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error.html)。
-* [`web_sys::console::error_1`，接受一个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_1.html)。
-* [`web_sys::console::error_2`，接受两个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_2.html)。
-* ...
-
+- [`web_sys::console::error`，接受一个向量的数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error.html)。
+- [`web_sys::console::error_1`，接受一个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_1.html)。
+- [`web_sys::console::error_2`，接受两个数据做参数](https://rustwasm.github.io/wasm-bindgen/api/web_sys/console/fn.error_2.html)。
+- ...
 
 #### 打印崩溃日志
 
@@ -1181,19 +1175,19 @@ pub fn init_panic_hook() {
 
 #### 使用调试器
 
-不幸的，WebAssembly的调试器依然不成熟，在很多unix系统中，DWARF是用来解析调试程序需要的数据的工具。虽然，Windows上面也有一个类似的工具。但还没有相当的工具提供给WebAssembly。所以，调试器目前能给予的功能有限，我们只能收到WebAssembly的错误而不是Rust源代码的错误。
+不幸的，WebAssembly 的调试器依然不成熟，在很多 unix 系统中，DWARF 是用来解析调试程序需要的数据的工具。虽然，Windows 上面也有一个类似的工具。但还没有相当的工具提供给 WebAssembly。所以，调试器目前能给予的功能有限，我们只能收到 WebAssembly 的错误而不是 Rust 源代码的错误。
 
-> 这里有一个故事是[跟踪WebAssembly的调试](https://github.com/WebAssembly/debugging)的，我们希望它将来会有所改善！
+> 这里有一个故事是[跟踪 WebAssembly 的调试](https://github.com/WebAssembly/debugging)的，我们希望它将来会有所改善！
 
-尽管如此，调试器还是能够给调试JavaScript方面提供效力。
+尽管如此，调试器还是能够给调试 JavaScript 方面提供效力。
 
-#### 一开始就规避在WebAssembly上面使用调试
+#### 一开始就规避在 WebAssembly 上面使用调试
 
-如果错误和交互JavaScript和Web API有关，则使用`wasm-bindgen-test`写测试。
+如果错误和交互 JavaScript 和 Web API 有关，则使用`wasm-bindgen-test`写测试。
 
-如果和JavaScript和Web API无关，这是用默认的`#[test]`属性。使用[`quickcheck`包](https://crates.io/crates/quickcheck)可以减少写测试上面的时间。
+如果和 JavaScript 和 Web API 无关，这是用默认的`#[test]`属性。使用[`quickcheck`包](https://crates.io/crates/quickcheck)可以减少写测试上面的时间。
 
-为了避免`#[test]`编译器出现连接错误，你需要一个rlib依赖，在`Cargo.toml`文件按照如下修改。
+为了避免`#[test]`编译器出现连接错误，你需要一个 rlib 依赖，在`Cargo.toml`文件按照如下修改。
 
 ```toml
 [lib]
@@ -1204,7 +1198,7 @@ crate-type ["cdylib", "rlib"]
 
 如果程序崩溃，最好是能够在审查工具中看到日志。
 
-在```src/utils.rs``里面有一个可选的console_error_panic_hook包，可以在Universe初始化的时候调用它。
+在``src/utils.rs`里面有一个可选的 console_error_panic_hook 包，可以在 Universe 初始化的时候调用它。
 
 ```Rust
 pub fn new() -> Universe {
@@ -1214,9 +1208,9 @@ pub fn new() -> Universe {
 
 ### 为生命游戏增加日志
 
-让我们在Rust中利用web-sys调用console，打印出每一刻的细胞状态。
+让我们在 Rust 中利用 web-sys 调用 console，打印出每一刻的细胞状态。
 
-首先在以来中增加web-sys，修改Cargo.toml。
+首先在以来中增加 web-sys，修改 Cargo.toml。
 
 ```toml
 [dependencies.web-sys]
@@ -1238,7 +1232,7 @@ macro_rules! log {
 }
 ```
 
-现在可以通过调用log发送日志了。
+现在可以通过调用 log 发送日志了。
 
 ```Rust
 log!(
@@ -1252,9 +1246,9 @@ log!(
 
 ### 使用调试器
 
-浏览器的调试器在调试JavaScript和Rust生成的WebAssembly很有效。
+浏览器的调试器在调试 JavaScript 和 Rust 生成的 WebAssembly 很有效。
 
-举个例子，在renderLoop函数中增加`debugger;`可以暂停页面执行的某一刻。
+举个例子，在 renderLoop 函数中增加`debugger;`可以暂停页面执行的某一刻。
 
 者给予我们查看每一刻细胞状态的能力。
 
@@ -1262,29 +1256,29 @@ log!(
 
 ### 练习
 
-1. 给tick方法增加log，查看细胞状态。
+1. 给 tick 方法增加 log，查看细胞状态。
 2. 加入`panic!()`查看打印出来的崩溃日志。
 
 ## 增加交互
 
 接下来我们要给这个游戏增加一些交互，我们会允许用户选择细胞的生死，并且允许暂停游戏，并使绘制初始图案更加简单。
 
-### 暂停和继续游戏 
+### 暂停和继续游戏
 
-首先修改html，在画布上面增加一个<button>标签。
+首先修改 html，在画布上面增加一个<button>标签。
 
 ```html
 <button id="play-pause"></button>
 ```
 
-在JavaScript中，我们要做以下几点改动。
+在 JavaScript 中，我们要做以下几点改动。
 
-+ 追踪调用requestAnimationFrame的标识符，这样我们就能通过调用cancelAnimationFrame来终止动画。
-+ 当点击播放或者暂停键的时候，先检查标识符是否存在，一旦存在，则表示动画正在运行，我们需要取消动画以保证renderLoop不再被调用。如果标识符不存在，我们需要调用requestAnimationFrame以保证动画继续运行。
+- 追踪调用 requestAnimationFrame 的标识符，这样我们就能通过调用 cancelAnimationFrame 来终止动画。
+- 当点击播放或者暂停键的时候，先检查标识符是否存在，一旦存在，则表示动画正在运行，我们需要取消动画以保证 renderLoop 不再被调用。如果标识符不存在，我们需要调用 requestAnimationFrame 以保证动画继续运行。
 
-因为是JavaScript控制着Rust和WebAssembly，我们不需要修改Rust部分。
+因为是 JavaScript 控制着 Rust 和 WebAssembly，我们不需要修改 Rust 部分。
 
-我们引入animationId变量，保存requestAnimationFrame的结果。当没有排队的动画时，这个变量值为null。
+我们引入 animationId 变量，保存 requestAnimationFrame 的结果。当没有排队的动画时，这个变量值为 null。
 
 ```JavaScript
 let animationId = null;
@@ -1299,7 +1293,7 @@ function renderLoop() {
 }
 ```
 
-任何一个时间，我们可以通过判断animationId来判断这个动画是否被暂停。
+任何一个时间，我们可以通过判断 animationId 来判断这个动画是否被暂停。
 
 ```JavaScript
 function isPaused() {
@@ -1332,13 +1326,13 @@ playPauseButton.addEventListener("click", function playBtnListener(event) {
 });
 ```
 
-最后我们把之前的requestAnimationFrame函数封装成`play()`。刷新本地服务器，可以看到网页上已经有暂停按钮了。尝试点击一下它吧。
+最后我们把之前的 requestAnimationFrame 函数封装成`play()`。刷新本地服务器，可以看到网页上已经有暂停按钮了。尝试点击一下它吧。
 
 ### 修改一个细胞的状态
 
 现在我们能暂停这个游戏了，是时候增加一个修改细胞的功能了。
 
-想控制细胞的生死，需要给`src/lib.rs`下的Cell增加一个toggle函数。
+想控制细胞的生死，需要给`src/lib.rs`下的 Cell 增加一个 toggle 函数。
 
 ```Rust
 impl Cell {
@@ -1363,7 +1357,7 @@ impl Universe {
 }
 ```
 
-这个方法增加第1行的属性声明是为了能够在JavaScript环境里面直接调用。在JavaScript文件中，监听<canvas>标签，将页面上的点击事件转换成画布上的点击事件，并调用toggle_cell方法重绘场景。
+这个方法增加第 1 行的属性声明是为了能够在 JavaScript 环境里面直接调用。在 JavaScript 文件中，监听<canvas>标签，将页面上的点击事件转换成画布上的点击事件，并调用 toggle_cell 方法重绘场景。
 
 ```Rust
 canvas.addEventListener("click", function canvasClickListener(event) {
@@ -1389,17 +1383,17 @@ canvas.addEventListener("click", function canvasClickListener(event) {
 
 ### 练习
 
-+ 新建一个<input>标签来处理每帧更新多少个刻。
-+ 增加一个重置按钮，把宇宙恢复到初始状态；再增加一个消灭按钮，毁灭所有细胞。
-+ 当使用`Ctrl+Click`的时候，增加一个[glider](https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life))，使用`Shift+Click`增加一个pulsar。
+- 新建一个<input>标签来处理每帧更新多少个刻。
+- 增加一个重置按钮，把宇宙恢复到初始状态；再增加一个消灭按钮，毁灭所有细胞。
+- 当使用`Ctrl+Click`的时候，增加一个[glider](<https://en.wikipedia.org/wiki/Glider_(Conway%27s_Life)>)，使用`Shift+Click`增加一个 pulsar。
 
 ## 性能日志(Time Profiling)
 
-本节我们将会提高这个游戏的性能，我们将会用time profiling来完成。
+本节我们将会提高这个游戏的性能，我们将会用 time profiling 来完成。
 
 ### Time Profiling
 
-此部分将会讲解如何获得页面的性能分析，目标是提高JavaScript和WebAssembly之间的吞吐。
+此部分将会讲解如何获得页面的性能分析，目标是提高 JavaScript 和 WebAssembly 之间的吞吐。
 
 > 永远使用`wasm-pack build`编译最新的代码，以确定你的优化正确。
 
@@ -1429,16 +1423,15 @@ fn now() -> f64 {
 
 如果你编译的时候打开了调试，则函数名将会显示在这里（如果没打开则显示一个不透明的名字，比如`wasm-function[123]`）。
 
-注意，因为性能查看器不会显示内联函数，又因为Rust和LVVM很重地依赖于内联函数，其结果就会让人感到头疼。
+注意，因为性能查看器不会显示内联函数，又因为 Rust 和 LVVM 很重地依赖于内联函数，其结果就会让人感到头疼。
 
 ![性能查看器无法处理内联函数](https://rustwasm.github.io/docs/book/images/game-of-life/profiler-with-rust-names.png)
 
-
-#### console.time和console.timeEnd
+#### console.time 和 console.timeEnd
 
 这两个函数是浏览器的内置函数。以调用`console.time("foo")`作为开始，以`console.time("foo")`作为结束，参数是可选的。
 
-你可以通过web-sys调用`web_sys::console::time_with_label("foo")`和`web_sys::console::time_end_with_label("foo")`。
+你可以通过 web-sys 调用`web_sys::console::time_with_label("foo")`和`web_sys::console::time_end_with_label("foo")`。
 
 如下是浏览器的截图。
 
@@ -1450,15 +1443,15 @@ fn now() -> f64 {
 
 就像我们能使用原生的测试方法`#[test]`来测试代码，我们可以使用`#[bench]`通过操作系统的工具来查看函数性能。
 
-写好标准函数并放到`benches`文件夹下。确保`crate-type`已经引入rlib，能使测试代码能够链接。
+写好标准函数并放到`benches`文件夹下。确保`crate-type`已经引入 rlib，能使测试代码能够链接。
 
-无论如何，先搞明白你知道WebAssembly里面的瓶颈之后再花费精力去调查原生的性能调查器！用你的浏览器的性能调查器，或者使用这些时间去优化你的代码不是更好？
+无论如何，先搞明白你知道 WebAssembly 里面的瓶颈之后再花费精力去调查原生的性能调查器！用你的浏览器的性能调查器，或者使用这些时间去优化你的代码不是更好？
 
-### 利用window.performance.now创建一个计时器
+### 利用 window.performance.now 创建一个计时器
 
-创建一个FPS的计时器用来调查游戏的渲染速度不失为一个好办法。
+创建一个 FPS 的计时器用来调查游戏的渲染速度不失为一个好办法。
 
-我们在JavaScript增加fps对象。
+我们在 JavaScript 增加 fps 对象。
 
 ```JavaScript
 const fps = new class {
@@ -1505,7 +1498,7 @@ max of last 100 = ${Math.round(max)}
 };
 ```
 
-接下来再每次迭代中调用fps render函数。
+接下来再每次迭代中调用 fps render 函数。
 
 ```JavaScript
 const renderLoop = () => {
@@ -1519,13 +1512,13 @@ const renderLoop = () => {
 };
 ```
 
-最后在HTML中增加fps的展示。
+最后在 HTML 中增加 fps 的展示。
 
 ```JavaScript
 <div id="fps"></div>
 ```
 
-增加CSS，让它展示得更好。
+增加 CSS，让它展示得更好。
 
 ```CSS
 #fps {
@@ -1534,13 +1527,13 @@ const renderLoop = () => {
 }
 ```
 
-好了，现在可以在页面上看到FPS计数器了。
+好了，现在可以在页面上看到 FPS 计数器了。
 
 ### 给每一刻计算时间
 
 每一刻开始调用`console.time`，结束的时候调用`console.timeEnd`。
 
-首先，要在`Cargo.toml`里面增加web-sys。
+首先，要在`Cargo.toml`里面增加 web-sys。
 
 ```toml
 [dependencies.web-sys]
@@ -1574,7 +1567,7 @@ impl<'a> Drop for Timer<'a> {
 }
 ```
 
-接下来，统计每一刻用的时间是多久，只需把初始化Timer放到Universe的构造函数里。
+接下来，统计每一刻用的时间是多久，只需把初始化 Timer 放到 Universe 的构造函数里。
 
 ```Rust
 let _timer = Timer::new("Universe::tick");
@@ -1592,23 +1585,23 @@ let _timer = Timer::new("Universe::tick");
 
 > 本部分是拿火狐浏览器做例子，当然还有很多浏览器有类似的功能，只是有细微的差别。这个数据是一致的，但是部分命名和标量可能不一样。
 
-如果我们把宇宙修改的大一些，会发生什么？把64x64改成128x128，结果会把fps从60降到40。
+如果我们把宇宙修改的大一些，会发生什么？把 64x64 改成 128x128，结果会把 fps 从 60 降到 40。
 
-如果我们打开性能监控器，并看到它的瀑布图，我们可以看到动画帧用了20毫秒，回顾60fps时渲染一页则需要16毫秒，这不仅仅是JavaScript和WebAssembly，还包括重绘的部分。
+如果我们打开性能监控器，并看到它的瀑布图，我们可以看到动画帧用了 20 毫秒，回顾 60fps 时渲染一页则需要 16 毫秒，这不仅仅是 JavaScript 和 WebAssembly，还包括重绘的部分。
 
 ![性能监视](https://rustwasm.github.io/book/images/game-of-life/drawCells-before-waterfall.png)
 
-如果仔细查看，可以看到`CanvasRenderingContext2D.fillStyle`的setter是很耗费时间的。
+如果仔细查看，可以看到`CanvasRenderingContext2D.fillStyle`的 setter 是很耗费时间的。
 
-> 再火狐，你可能看到的是"DOM"而不是"CanvasRenderingContext2D.fillStyle"，你需要打开"展示Gecko平台数据"。
+> 再火狐，你可能看到的是"DOM"而不是"CanvasRenderingContext2D.fillStyle"，你需要打开"展示 Gecko 平台数据"。
 
 ![火狐的性能监视器](https://rustwasm.github.io/book/images/game-of-life/profiler-firefox-show-gecko-platform.png)
 
-当然，这并不稀奇，40%的的时间都浪费在这个setter上面。
+当然，这并不稀奇，40%的的时间都浪费在这个 setter 上面。
 
-> 我们可能期望性能瓶颈再tik函数上，但并不是。永远选择性能监视器观察，因为你可能浪费很多时间在无关的地方上面。
+> 我们可能期望性能瓶颈再 tik 函数上，但并不是。永远选择性能监视器观察，因为你可能浪费很多时间在无关的地方上面。
 
-在drawCell上面，fillStyle在每次动画和每个细胞上面使用。
+在 drawCell 上面，fillStyle 在每次动画和每个细胞上面使用。
 
 ```JavaScript
 for (let row = 0; row < height; row++) {
@@ -1629,7 +1622,7 @@ for (let row = 0; row < height; row++) {
 }
 ```
 
-现在我们知道fillStyle资源耗费比较多，那么我们该怎么避免他呢？我们需要判断细胞的生命状态来自决定fillStyle的值，设想，如果先设定`fillStyle = ALIVE_COLOR`，再绘制所有的活着的细胞，然后设置`fillStyle = DEAD_COLOR`，再设置所有的死细胞，最后我们只设置fillStyle两次。
+现在我们知道 fillStyle 资源耗费比较多，那么我们该怎么避免他呢？我们需要判断细胞的生命状态来自决定 fillStyle 的值，设想，如果先设定`fillStyle = ALIVE_COLOR`，再绘制所有的活着的细胞，然后设置`fillStyle = DEAD_COLOR`，再设置所有的死细胞，最后我们只设置 fillStyle 两次。
 
 ```JavaScript
 // Alive cells.
@@ -1669,19 +1662,19 @@ for (let row = 0; row < height; row++) {
 }
 ```
 
-修改之后，刷新页面，此时的fps已经上升到60。
+修改之后，刷新页面，此时的 fps 已经上升到 60。
 
-如果重新看原来的数据，现在每一刻只使用10毫秒。
+如果重新看原来的数据，现在每一刻只使用 10 毫秒。
 
 ![更新后的性能检查](https://rustwasm.github.io/book/images/game-of-life/drawCells-after-waterfall.png)
 
-消除了fillStyle的性能瓶颈，发现比较消耗资源的是fillRect，用来绘制每一个细胞的。
+消除了 fillStyle 的性能瓶颈，发现比较消耗资源的是 fillRect，用来绘制每一个细胞的。
 
 ![目前的性能损耗都在fillRect上面](https://rustwasm.github.io/book/images/game-of-life/drawCells-after-flamegraph.png)
 
 ### 让时间变快
 
-有些人可能不喜欢等待，更希望一帧跑完九刻而不是一刻。我们可以通过修改renderLoop函数实现。
+有些人可能不喜欢等待，更希望一帧跑完九刻而不是一刻。我们可以通过修改 renderLoop 函数实现。
 
 ```JavaScript
 for (let i = 0; i < 9; i++) {
@@ -1689,11 +1682,9 @@ for (let i = 0; i < 9; i++) {
 }
 ```
 
-在机器上，fps降到了35，但是我们一定要到60fps！
+在机器上，fps 降到了 35，但是我们一定要到 60fps！
 
-现在我们知道性能瓶颈在tick函数上面，所以我们给函数的每一步都加上Timer监视，我猜测是创建向量和释放向量占用了很多资源造成的。
-
-
+现在我们知道性能瓶颈在 tick 函数上面，所以我们给函数的每一步都加上 Timer 监视，我猜测是创建向量和释放向量占用了很多资源造成的。
 
 ```Rust
 pub fn tick(&mut self) {
@@ -1743,7 +1734,7 @@ pub fn tick(&mut self) {
 
 ![性能监视](https://rustwasm.github.io/book/images/game-of-life/console-time-in-universe-tick.png)
 
-下一部分需要`nightly`编译，因为我们将会使用[test-feature-gate](https://doc.rust-lang.org/unstable-book/library-features/test.html)来跑benchmark（性能测试）。我们将会安装另一个工具[cargo-benchcmp](https://github.com/BurntSushi/cargo-benchcmp)。一个迷你的有`cargo bench`支持的性能测试工具。
+下一部分需要`nightly`编译，因为我们将会使用[test-feature-gate](https://doc.rust-lang.org/unstable-book/library-features/test.html)来跑 benchmark（性能测试）。我们将会安装另一个工具[cargo-benchcmp](https://github.com/BurntSushi/cargo-benchcmp)。一个迷你的有`cargo bench`支持的性能测试工具。
 
 让我们写一个函数使用`#[bench]`属性，我们可以使用更成熟的测试工具测试它。
 
@@ -1784,7 +1775,7 @@ test universe_ticks ... bench:     664,421 ns/iter (+/- 51,926)
 test result: ok. 0 passed; 0 failed; 0 ignored; 1 measured; 0 filtered out
 ```
 
-他也告诉我们二进制文件的位置，我们可以跑第二次性能测试。但这次可以使用系统的性能测试工具。因为我用的是Linux，所以perf就是我的测试工具。
+他也告诉我们二进制文件的位置，我们可以跑第二次性能测试。但这次可以使用系统的性能测试工具。因为我用的是 Linux，所以 perf 就是我的测试工具。
 
 ```shell
 $ perf record -g target/release/deps/bench-8474091a05cfa2d9 --bench
@@ -1801,11 +1792,11 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 1 measured; 0 filtered out
 
 ![perf的结果](https://rustwasm.github.io/book/images/game-of-life/bench-perf-report.png)
 
-perf会指明函数中到底是什么操作引起的性能损耗（译者：虽然我也没看出来）。
+perf 会指明函数中到底是什么操作引起的性能损耗（译者：虽然我也没看出来）。
 
 ![perf的结果](https://rustwasm.github.io/book/images/game-of-life/bench-perf-annotate.png)
 
-它告诉我们26.67%的时间花在总和细胞数目，23.41%的时间花在获取列序号，另外15.42%花在取得行序号。这三个性能瓶颈中，第二和第三都使用了比较耗费性能的DIV命令。这些DIV的实现是在`Universe::live_neighbor_count`。
+它告诉我们 26.67%的时间花在总和细胞数目，23.41%的时间花在获取列序号，另外 15.42%花在取得行序号。这三个性能瓶颈中，第二和第三都使用了比较耗费性能的 DIV 命令。这些 DIV 的实现是在`Universe::live_neighbor_count`。
 
 回想这个函数的定义：
 
@@ -1828,7 +1819,7 @@ fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
 }
 ```
 
-使用取余运算是为了避免使用杂乱的if代码来处理边界，但导致我不得不用DIV这样比较耗费性能的指令。相反，如果用if处理边界，并展开循环，则分支条件将会比较适合CPU处理。
+使用取余运算是为了避免使用杂乱的 if 代码来处理边界，但导致我不得不用 DIV 这样比较耗费性能的指令。相反，如果用 if 处理边界，并展开循环，则分支条件将会比较适合 CPU 处理。
 
 ```Rust
 fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
@@ -1912,27 +1903,27 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 1 measured; 0 filtered out
 $ cargo benchcmp before.txt after.txt
  name            before.txt ns/iter  after.txt ns/iter  diff ns/iter   diff %  speedup
  universe_ticks  664,421             87,258                 -577,163  -86.87%   x 7.61
- ```
+```
 
- 哇！提高了7.61倍！
+哇！提高了 7.61 倍！
 
- WebAssembly意图和原生系统贴近，但是我们确实需要在WebAssembly环境下也作一次测试。
+WebAssembly 意图和原生系统贴近，但是我们确实需要在 WebAssembly 环境下也作一次测试。
 
- 从新编译程序，刷新浏览器页面，画面重新跑在60fps，每一帧大概是10毫秒。
+从新编译程序，刷新浏览器页面，画面重新跑在 60fps，每一帧大概是 10 毫秒。
 
- 成功！
+成功！
 
- ![测试结果](https://rustwasm.github.io/book/images/game-of-life/waterfall-after-branches-and-unrolling.png)
+![测试结果](https://rustwasm.github.io/book/images/game-of-life/waterfall-after-branches-and-unrolling.png)
 
 ### 练习
 
-+ 现在，下一个性能瓶颈是`Universe::tick`调用和释放函数的部分，尝试缓存细胞状态，让Universe维护两个向量，永远不释放他们，也不掉用新的区间。
-+ 换一种方式实现游戏，让Rust和JavaScript以细胞的列表交互，这样能让渲染画布更快吗？你能实现这个设计同时不在每个tick函数中调用新的列表吗？
-+ 就性能显示来看2D画布渲染显然不够快，使用WebGL画布重新渲染，WebGL能多快？使用WebGL能在遇到瓶颈前创建多大的宇宙空间？
+- 现在，下一个性能瓶颈是`Universe::tick`调用和释放函数的部分，尝试缓存细胞状态，让 Universe 维护两个向量，永远不释放他们，也不掉用新的区间。
+- 换一种方式实现游戏，让 Rust 和 JavaScript 以细胞的列表交互，这样能让渲染画布更快吗？你能实现这个设计同时不在每个 tick 函数中调用新的列表吗？
+- 就性能显示来看 2D 画布渲染显然不够快，使用 WebGL 画布重新渲染，WebGL 能多快？使用 WebGL 能在遇到瓶颈前创建多大的宇宙空间？
 
-## 压缩.wasm文件大小
+## 压缩.wasm 文件大小
 
-rustc有很多配置项，可以让`.wasm`二进制文件更加小。在很多情况下更小的生成文件意味着更长的编译时间。另外更小的文件使得WebAssembly的运行时间更长。我们应该意识到这些方面上的牺牲。在这些情况下，当我们要减少编译文件大小时，我们应该考虑到使用性能监视器衡量一下这种改动是否值得。
+rustc 有很多配置项，可以让`.wasm`二进制文件更加小。在很多情况下更小的生成文件意味着更长的编译时间。另外更小的文件使得 WebAssembly 的运行时间更长。我们应该意识到这些方面上的牺牲。在这些情况下，当我们要减少编译文件大小时，我们应该考虑到使用性能监视器衡量一下这种改动是否值得。
 
 ### 使用链接配置器编译
 
@@ -1943,11 +1934,11 @@ rustc有很多配置项，可以让`.wasm`二进制文件更加小。在很多�
 lto = true
 ```
 
-者给予LLVM更多机会去内联和简化函数，不仅仅会使`.wasm`更小，还会让他在运行时运行得更快！但是会让他编译得更长。
+者给予 LLVM 更多机会去内联和简化函数，不仅仅会使`.wasm`更小，还会让他在运行时运行得更快！但是会让他编译得更长。
 
-### 配置LLVM牺牲速度换文件大小
+### 配置 LLVM 牺牲速度换文件大小
 
-LLVM默认配置是为了运行速度，并不是大小。我们可以通过更改`Cargo.toml`去修改这一配置。
+LLVM 默认配置是为了运行速度，并不是大小。我们可以通过更改`Cargo.toml`去修改这一配置。
 
 ```toml
 [profile.release]
@@ -1958,9 +1949,9 @@ opt-level = 's'
 
 但是，配置为"s"的时候有的时候会比"z"更小，所以一定要做测量！
 
-### 使用wasm-opt工具
+### 使用 wasm-opt 工具
 
-[Binaryen](https://github.com/WebAssembly/binaryen)是一个关于WebAssembly编译工具的集合。他比LLVM更加后端，使用`wasm-opt`处理生成文件常常会节省15%~20%的代码，同时又会提高运行速度。
+[Binaryen](https://github.com/WebAssembly/binaryen)是一个关于 WebAssembly 编译工具的集合。他比 LLVM 更加后端，使用`wasm-opt`处理生成文件常常会节省 15%~20%的代码，同时又会提高运行速度。
 
 ```
 # 输出为压缩的文件大小。
@@ -1988,12 +1979,12 @@ wasm-opt -O3 -o output.wasm input.wasm
 
 > 就像做性能测试，我们应让工具来判断哪里出了问题，否则我们会浪费更多自己的时间。
 
-#### twiggy代码检查器
+#### twiggy 代码检查器
 
-[twiggy](https://github.com/rustwasm/twiggy)是一个支持WebAssembly的代码大小检查器，他能分析二进制代码的调用图，并解决如下问题：
+[twiggy](https://github.com/rustwasm/twiggy)是一个支持 WebAssembly 的代码大小检查器，他能分析二进制代码的调用图，并解决如下问题：
 
-+ 为什么这个函数被编译到这段代码中。
-+ 这个函数占用大小是多少？如果我删除这个函数以及其相关函数我能节省多大的空间？
+- 为什么这个函数被编译到这段代码中。
+- 这个函数占用大小是多少？如果我删除这个函数以及其相关函数我能节省多大的空间？
 
 ```
 $ twiggy top -n 20 pkg/wasm_game_of_life_bg.wasm
@@ -2021,23 +2012,23 @@ $ twiggy top -n 20 pkg/wasm_game_of_life_bg.wasm
            503 ┊     1.08% ┊ <&'a T as core::fmt::Debug>::fmt::hba207e4f7abaece6
 ```
 
-#### 手动修改LLVM-IR
+#### 手动修改 LLVM-IR
 
-LLVM-IR是LLVM生成WebAssembly代码的最后一步。所以，他和最终生成的WebAssembly很像。更多的LLVM-IR代码意味着生成的文件越大，当一个函数占用了LLVM-IR中25%的位置，则代表他占用了25%的文件大小。当然这些数字只是个经验值，因为LLVM-IR还有一些WebAssembly没有的重要的信息（因为WebAssembly没有诸如DWARF调试信息）。
+LLVM-IR 是 LLVM 生成 WebAssembly 代码的最后一步。所以，他和最终生成的 WebAssembly 很像。更多的 LLVM-IR 代码意味着生成的文件越大，当一个函数占用了 LLVM-IR 中 25%的位置，则代表他占用了 25%的文件大小。当然这些数字只是个经验值，因为 LLVM-IR 还有一些 WebAssembly 没有的重要的信息（因为 WebAssembly 没有诸如 DWARF 调试信息）。
 
-你可以使用cargo生成LLVM-IR代码：
+你可以使用 cargo 生成 LLVM-IR 代码：
 
 ```shell
 cargo rustc --release -- --emit llvm-ir
 ```
 
-接下来你可以使用find命令去寻找存储在cargo生成目录(target)下的`.ll`文件。
+接下来你可以使用 find 命令去寻找存储在 cargo 生成目录(target)下的`.ll`文件。
 
 ```shell
 find target/release -type f -name '*.ll'
 ```
 
-相关可以参考[LLVM语言](https://llvm.org/docs/LangRef.html)
+相关可以参考[LLVM 语言](https://llvm.org/docs/LangRef.html)
 
 #### 更激进的工具
 
@@ -2049,19 +2040,19 @@ find target/release -type f -name '*.ll'
 
 ##### 避免使用崩溃
 
-这很明显，使用twiggy之类的工具或者人工检查LLVM-IR能帮助你查出到底哪个函数崩溃。
+这很明显，使用 twiggy 之类的工具或者人工检查 LLVM-IR 能帮助你查出到底哪个函数崩溃。
 
 崩溃并不总是出现在`panic!()`宏，他们会在很多情况下出现。
 
-+ 访问切片越界，如：`my_slice[i]`
-+ 除0，如：`dividend/divider`
-+ 解Option类型或者Result类型，如：`opt.unwrap()`或者`res.unwrap()`
+- 访问切片越界，如：`my_slice[i]`
+- 除 0，如：`dividend/divider`
+- 解 Option 类型或者 Result 类型，如：`opt.unwrap()`或者`res.unwrap()`
 
 前两个可以被改成第三个，访问切片可以使用`my_slice.get(i)`。除法可以使用`checked_div`，所以你只有一种需要处理的情况。
 
 解开`Option`或者`Result`有两种方法安全的和不安全的。
 
-安全的方式是使用abort方法而不是返回None和Error值。
+安全的方式是使用 abort 方法而不是返回 None 和 Error 值。
 
 ```Rust
 #[inline]
@@ -2076,15 +2067,15 @@ pub fn unwrap_abort<T>(o: Option<T>) -> T {
 
 最终，崩溃在`wasm32-unknown-unknown`被翻译成退出，因此不会造成代码冗余。
 
-相反的，[unreachable](https://crates.io/crates/unreachable)包为Option和Result类型提供不安全的[unchecked_unwrap](https://docs.rs/unreachable/1.0.0/unreachable/trait.UncheckedOptionExt.html#tymethod.unchecked_unwrap)方法。让Rust编译器假定Option类型是Some类型而Result类型是Ok类型。如果值是不正确的的情况是未被考虑的。你一定要在110%确认的情况下使用这个包，因为编译器可没那么聪明能预估出错误。即使你这么做了，你一定要在调试环境下面做检查，而在发布环境下去掉检查。
+相反的，[unreachable](https://crates.io/crates/unreachable)包为 Option 和 Result 类型提供不安全的[unchecked_unwrap](https://docs.rs/unreachable/1.0.0/unreachable/trait.UncheckedOptionExt.html#tymethod.unchecked_unwrap)方法。让 Rust 编译器假定 Option 类型是 Some 类型而 Result 类型是 Ok 类型。如果值是不正确的的情况是未被考虑的。你一定要在 110%确认的情况下使用这个包，因为编译器可没那么聪明能预估出错误。即使你这么做了，你一定要在调试环境下面做检查，而在发布环境下去掉检查。
 
-#### 避免调用内存或者使用wee_alloc
+#### 避免调用内存或者使用 wee_alloc
 
-Rust的默认调用器是`dlmalloc`的一部分。它能达到10KB。如果能够避免动态调用，你应该能省下10KB。
+Rust 的默认调用器是`dlmalloc`的一部分。它能达到 10KB。如果能够避免动态调用，你应该能省下 10KB。
 
-完全避免动态语言调用可能会非常困难。但是删除调用却在某些情况下很简单，在这些情况下，可以使用[`wee_alloc`](https://github.com/rustwasm/wee_alloc)代替全局的调用器可以从10KB中节省很多。`we_alloc`是当你想要一些调用器时的一个选择，并能同时减少代码大小。
+完全避免动态语言调用可能会非常困难。但是删除调用却在某些情况下很简单，在这些情况下，可以使用[`wee_alloc`](https://github.com/rustwasm/wee_alloc)代替全局的调用器可以从 10KB 中节省很多。`we_alloc`是当你想要一些调用器时的一个选择，并能同时减少代码大小。
 
-#### 使用trait来替代泛型
+#### 使用 trait 来替代泛型
 
 当你创建一些泛型函数。
 
@@ -2092,9 +2083,9 @@ Rust的默认调用器是`dlmalloc`的一部分。它能达到10KB。如果能�
 fn whatever<T: MyTrait>(t: T) { ... }
 ```
 
-`rustc`和LLVM会为不同类型生成新的函数拷贝。这为编译器提供了各种类型使用这个函数的机会。但会增加代码大小。
+`rustc`和 LLVM 会为不同类型生成新的函数拷贝。这为编译器提供了各种类型使用这个函数的机会。但会增加代码大小。
 
-如果你为对象提供trait，如下：
+如果你为对象提供 trait，如下：
 
 ```Rust
 fn whatever(t: Box<MyTrait>) { ... }
@@ -2105,9 +2096,9 @@ fn whatever(t: &MyTrait) { ... }
 
 这样经过虚调用动态派遣（dynamic dispatch）的方法就被使用了，如此只会用一个函数会放在`.wasm`。这样的缺点是丢失了编译器自定义的机会，并且增加了不直接的，动态的语言调用。
 
-#### 使用wasm-snip工具
+#### 使用 wasm-snip 工具
 
-[`wasm-snip`](https://github.com/fitzgen/wasm-snip)使用`unreachable`方法代替了WebAssembly的函数。这是一个又沉又钝的锤子，更像是徒手。
+[`wasm-snip`](https://github.com/fitzgen/wasm-snip)使用`unreachable`方法代替了 WebAssembly 的函数。这是一个又沉又钝的锤子，更像是徒手。
 
 也许你知道有些函数可能永远不会在运行时被调用，但是编译器不能保证？掐了他！执行`wasm-opt`加上`--dce`参数，所有无关函数就会被剪掉。
 
@@ -2115,21 +2106,21 @@ fn whatever(t: &MyTrait) { ... }
 
 ### 我们能把生命游戏缩到多小？
 
-默认的配置下，WebAssembly二进制大小为29410字节。
+默认的配置下，WebAssembly 二进制大小为 29410 字节。
 
 ```shell
 $ wc -c pkg/wasm_game_of_life_bg.wasm
 29410 pkg/wasm_game_of_life_bg.wasm
 ```
 
-打开LTO之后设置`opt-level="z"`执行`wasm-opt -Oz`，结果是17317字节。
+打开 LTO 之后设置`opt-level="z"`执行`wasm-opt -Oz`，结果是 17317 字节。
 
 ```shell
 $ wc -c pkg/wasm_game_of_life_bg.wasm
 17317 pkg/wasm_game_of_life_bg.wasm
 ```
 
-如果使用gzip压缩，你能搞到9045字节！
+如果使用 gzip 压缩，你能搞到 9045 字节！
 
 ```shell
 $ gzip -9 < pkg/wasm_game_of_life_bg.wasm | wc -c
@@ -2138,8 +2129,8 @@ $ gzip -9 < pkg/wasm_game_of_life_bg.wasm | wc -c
 
 ### 练习
 
-+ 使用`wasm-snp`工具删掉会有崩溃的函数，它能减少多少字节？
-+ 使用`wee_alloc`作为全局调用器，，修改`Cargo.toml`：
+- 使用`wasm-snp`工具删掉会有崩溃的函数，它能减少多少字节？
+- 使用`wee_alloc`作为全局调用器，，修改`Cargo.toml`：
 
 ```
 [features]
@@ -2148,19 +2139,19 @@ default = ["wee_alloc"]
 
 能够减少多少大小呢？
 
-+ 我们只实现了一个Universe，所以相比使用构造器，我们可以导出一个`static mut`实例，如果这个实例使用的是双向缓存，我们也可以让这些缓存也是全局`staic mut`。这样就移除了所有的动态调用，我们可以增加`#![no_std]`包取消掉调用器。这回能缩小多少大小？
+- 我们只实现了一个 Universe，所以相比使用构造器，我们可以导出一个`static mut`实例，如果这个实例使用的是双向缓存，我们也可以让这些缓存也是全局`staic mut`。这样就移除了所有的动态调用，我们可以增加`#![no_std]`包取消掉调用器。这回能缩小多少大小？
 
-## 发布到NPM
+## 发布到 NPM
 
-首先，确保你登入了npm。
+首先，确保你登入了 npm。
 
 接着，使用`wasm-pack login`登入。
 
 ### 发布
 
-确保已经执行`wasm-pack build`并且pkg文件已经编译好。
+确保已经执行`wasm-pack build`并且 pkg 文件已经编译好。
 
-已经准备好之后，跑`wasm-pack publish`上传包到npm。
+已经准备好之后，跑`wasm-pack publish`上传包到 npm。
 
 这样就发布了！
 
@@ -2180,17 +2171,17 @@ wasm-pack publish
 
 这会应该能行。
 
-## 与JavaScript相互交互
+## 与 JavaScript 相互交互
 
-### JavaScript函数的输出和引用
+### JavaScript 函数的输出和引用
 
-#### 在Rust一边
+#### 在 Rust 一边
 
-在JavaScript为主的世界里使用WebAssembly，引入和输出函数比较直接，有点类似于C。
+在 JavaScript 为主的世界里使用 WebAssembly，引入和输出函数比较直接，有点类似于 C。
 
-WebAssembly模块声明了一系列引入，每一个都有模块名。模块名可以使用`#[link(wasm_import_module)]`提供给`extern {...}`。
+WebAssembly 模块声明了一系列引入，每一个都有模块名。模块名可以使用`#[link(wasm_import_module)]`提供给`extern {...}`。
 
-导出的WebAssembly线性内存被导出作"memory"。
+导出的 WebAssembly 线性内存被导出作"memory"。
 
 ```Rust
 // import a JS function called `foo` from the module `mod`
@@ -2202,44 +2193,44 @@ extern { fn foo(); }
 pub extern fn bar() { /* ... */ }
 ```
 
-因为WebAssembly的值类型有局限，这些函数只有基础的数字类型。
+因为 WebAssembly 的值类型有局限，这些函数只有基础的数字类型。
 
-#### 在JavaScript一边
+#### 在 JavaScript 一边
 
-在JavaScript中，wasm二进制文件转换成ES6模块。它必须被实例化为线性内存并由一系列函数能对应到这些引入。细节描述可在[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming)找到。
+在 JavaScript 中，wasm 二进制文件转换成 ES6 模块。它必须被实例化为线性内存并由一系列函数能对应到这些引入。细节描述可在[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming)找到。
 
-ES6的模块包括从Rust暴露给JavaScript的函数，现在可以用JavaScript调用。
+ES6 的模块包括从 Rust 暴露给 JavaScript 的函数，现在可以用 JavaScript 调用。
 
 [这里](https://www.hellorust.com/demos/add/index.html)有一个很简单的构建流程。
 
 ### 除了数字
 
-当在JavaScript中使用WebAssembly，WebAssembly的内存和JavaScript的内存有很大的不同。
+当在 JavaScript 中使用 WebAssembly，WebAssembly 的内存和 JavaScript 的内存有很大的不同。
 
-+ 每个WebAssembly模块的线性内存，JavaScript可以自由访问。
-+ 对应之下，WebAssembly不能访问JavaScript的内存。
+- 每个 WebAssembly 模块的线性内存，JavaScript 可以自由访问。
+- 对应之下，WebAssembly 不能访问 JavaScript 的内存。
 
 所以，有两种复杂的交互。
 
-+ 复制二进制数据到WebAssembly内存。
-+ 建立一个在JavaScript上的堆内存，提供一堆地址。这样WebAssembly访问JavaScript对象，间接通过JavaScript访问。
+- 复制二进制数据到 WebAssembly 内存。
+- 建立一个在 JavaScript 上的堆内存，提供一堆地址。这样 WebAssembly 访问 JavaScript 对象，间接通过 JavaScript 访问。
 
-幸运的是，通过`bindgen`框架[`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen)可以帮助交互。这个框架可以将已习惯的Rust语言自动翻译到JavaScript。
+幸运的是，通过`bindgen`框架[`wasm-bindgen`](https://github.com/rustwasm/wasm-bindgen)可以帮助交互。这个框架可以将已习惯的 Rust 语言自动翻译到 JavaScript。
 
 ### 自定义部分（译者：所以这个到底是干什么用的？）
 
-自定义部分允许随意继承人一的数据进入WebAssembly模块，这个数据是在编译时设置，不能在运行时修改。
+自定义部分允许随意继承人一的数据进入 WebAssembly 模块，这个数据是在编译时设置，不能在运行时修改。
 
-在Rust中，自定义部分是通过`#[link_section]`属性暴露的静态数组([T; size])。
+在 Rust 中，自定义部分是通过`#[link_section]`属性暴露的静态数组([T; size])。
 
 ```Rust
 #[link_section = "hello"]
 pub static SECTION: [u8; 24] = *b"This is a custom section";
 ```
 
-这样给wasm增加一个hello部分，这个SECTION变量是随意的，但是无论怎么赋值，内容总是这些文字。
+这样给 wasm 增加一个 hello 部分，这个 SECTION 变量是随意的，但是无论怎么赋值，内容总是这些文字。
 
-这个自定义内容可以被JavaScript通过[`WebAssembly.Module.customSections`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections)获得自定义部分，它返回一个`ArrayBuffer`，如果有同名的部分，他们会被放到一个数组中。
+这个自定义内容可以被 JavaScript 通过[`WebAssembly.Module.customSections`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections)获得自定义部分，它返回一个`ArrayBuffer`，如果有同名的部分，他们会被放到一个数组中。
 
 ```JavaScript
 WebAssembly.compileStreaming(fetch("sections.wasm"))
@@ -2253,61 +2244,61 @@ WebAssembly.compileStreaming(fetch("sections.wasm"))
 });
 ```
 
-## 哪些包能在WebAssembly下面使用
+## 哪些包能在 WebAssembly 下面使用
 
-最简单的就是列出WebAssembly上能用的Rust包：如果避开了以下内容，则这些包可以在WebAssembly使用。如果一个包支持`#![no_std]`
-的包，这个包也可能支持WebAssembly。
+最简单的就是列出 WebAssembly 上能用的 Rust 包：如果避开了以下内容，则这些包可以在 WebAssembly 使用。如果一个包支持`#![no_std]`
+的包，这个包也可能支持 WebAssembly。
 
 ### 以下包不能使用
 
-#### C和系统级依赖
+#### C 和系统级依赖
 
-WebAssembly不提供系统一级别的库，所以任何链接系统库的地方都无法成功。
+WebAssembly 不提供系统一级别的库，所以任何链接系统库的地方都无法成功。
 
-使用C库可能不会成功，既然没有稳定的交叉编译ABI，和提供给WebAssembly交叉链接的连接库。虽然clang已经发布wasm32的生成，但是还远远不足。
+使用 C 库可能不会成功，既然没有稳定的交叉编译 ABI，和提供给 WebAssembly 交叉链接的连接库。虽然 clang 已经发布 wasm32 的生成，但是还远远不足。
 
-#### 文件I/O
+#### 文件 I/O
 
-WebAssembly没有访问文件系统的功能，所以访问文件系统的库都不能使用。
+WebAssembly 没有访问文件系统的功能，所以访问文件系统的库都不能使用。
 
 #### 调用线程
 
 目前有计划[加入线程](https://rustwasm.github.io/2018/10/24/multithreading-rust-and-wasm.html)，但是还没被发布。尝试调用线程会导致崩溃。
 
-### 有哪些目的的包能在WebAssembly下面使用
+### 有哪些目的的包能在 WebAssembly 下面使用
 
 如果只是提供[算法](https://crates.io/categories/algorithms)和[数据结构](https://crates.io/categories/data-structures)的包。
 
 #### #![no-std]
 
-[不依赖于标准库的包](https://crates.io/categories/no-std)能够运行在WebAssembly下面。
+[不依赖于标准库的包](https://crates.io/categories/no-std)能够运行在 WebAssembly 下面。
 
 #### 解析器
 
-只要是接受输入且无需文件操作的[解析器](https://crates.io/categories/parser-implementations)就可能运行在WebAssembly下。
+只要是接受输入且无需文件操作的[解析器](https://crates.io/categories/parser-implementations)就可能运行在 WebAssembly 下。
 
 #### 文字处理
 
-[复杂的语言处理](https://crates.io/categories/text-processing)可能会运行在WebAssembly下面。
+[复杂的语言处理](https://crates.io/categories/text-processing)可能会运行在 WebAssembly 下面。
 
-#### Rust范式
+#### Rust 范式
 
-[适用于不同情况下的包](https://crates.io/categories/rust-patterns)可能运行在WebAssembly下。
+[适用于不同情况下的包](https://crates.io/categories/rust-patterns)可能运行在 WebAssembly 下。
 
-## 如何给常用库增加WebAssembly支持
+## 如何给常用库增加 WebAssembly 支持
 
-本部分讲解如何将常用库增加WebAssembly支持。后面的内容我就捡感兴趣的写了。
+本部分讲解如何将常用库增加 WebAssembly 支持。后面的内容我就捡感兴趣的写了。
 
-### 在CI增加wasm32-unknown-unknown
+### 在 CI 增加 wasm32-unknown-unknown
 
-保证CI中增加如下命令
+保证 CI 中增加如下命令
 
 ```shell
 rustup target add wasm32-unknown-unknown
 cargo check --target wasm32-unknown-unknown
 ```
 
-举个例子，在travis的配置中增加如下配置：
+举个例子，在 travis 的配置中增加如下配置：
 
 ```yaml
 matrix:
@@ -2319,25 +2310,23 @@ matrix:
       script: cargo check --target wasm32-unknown-unknown
 ```
 
-### 在node.js或者无头浏览器（译者：卧槽是这么翻译么）
+### 在 node.js 或者无头浏览器（译者：卧槽是这么翻译么）
 
 你可以使用`wasm-bindgen-test`和`wasm-pack test`去跑测试，详细内容上面已经提到。
 
-## 发布WebAssembly到线上
+## 发布 WebAssembly 到线上
 
-> 发布过程几乎和任何web应用发布是一样的。
+> 发布过程几乎和任何 web 应用发布是一样的。
 
-为了发布Web应用，复制生成文件到线上环境，配置你的HTTP服务器让他们可访问。
+为了发布 Web 应用，复制生成文件到线上环境，配置你的 HTTP 服务器让他们可访问。
 
-### 保证服务器支持application/wasm
+### 保证服务器支持 application/wasm
 
-为了让浏览器加载变快，[WebAssembly.instantiateStreaming](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming)函数会使用管道传输文件（请确定你的打包器能够使用这个函数）。但是instantiateStreaming需要HTTP返回类型支持`application/wasm`，否则会丢出错误。
+为了让浏览器加载变快，[WebAssembly.instantiateStreaming](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming)函数会使用管道传输文件（请确定你的打包器能够使用这个函数）。但是 instantiateStreaming 需要 HTTP 返回类型支持`application/wasm`，否则会丢出错误。
 
-+ [如何配置Apache服务器](https://httpd.apache.org/docs/2.4/mod/mod_mime.html#addtype)
-+ [如何配置Nginx服务器](https://nginx.org/en/docs/http/ngx_http_core_module.html#types)
+- [如何配置 Apache 服务器](https://httpd.apache.org/docs/2.4/mod/mod_mime.html#addtype)
+- [如何配置 Nginx 服务器](https://nginx.org/en/docs/http/ngx_http_core_module.html#types)
 
 ### 更多内容
 
-+ [webpack线上打包的最佳实践](https://webpack.js.org/guides/production/)
-
-
+- [webpack 线上打包的最佳实践](https://webpack.js.org/guides/production/)
