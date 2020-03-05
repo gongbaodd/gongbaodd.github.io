@@ -18,6 +18,7 @@ module.exports = [
         ].join(" "),
         "style-src": ["'self'", "'unsafe-inline'", "*.disqus.com"].join(" "),
         "img-src": ["*", "data:"].join(" "),
+        "default-src": ["'self'", "*.disqus.com"].join(" "),
       },
     },
   },
