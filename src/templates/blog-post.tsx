@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import { Link, graphql, PageProps } from "gatsby";
-import { sanitize } from "../utils/sanitize";
+import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 
+import { sanitize } from "../utils/sanitize";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
-import { DiscussionEmbed } from "disqus-react";
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -67,6 +67,11 @@ const BlogPostTemplate: FC<PageProps<
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
   const { slug, title, date } = post.fields;
+  const disqusConfig = {
+    identifier: slug,
+    title,
+    url: location.href,
+  };
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -125,14 +130,8 @@ const BlogPostTemplate: FC<PageProps<
         </ul>
       </nav>
 
-      <DiscussionEmbed
-        shortname="gongbaodd-github-io"
-        config={{
-          identifier: slug,
-          title,
-          url: location.href,
-        }}
-      />
+      <CommentCount config={disqusConfig} placeholder="..." />
+      <Disqus config={disqusConfig} />
     </Layout>
   );
 };
