@@ -8,9 +8,9 @@ module.exports = [
       mergeStyleHashes: true,
       mergeDefaultDirectives: true,
       directives: {
-        "script-src": "'self' www.google-analytics.com",
+        "script-src": "'self' www.google-analytics.com sentry.io",
         "style-src": "'self' 'unsafe-inline'",
-        "img-src": "'self' data: www.google-analytics.com",
+        "img-src": "'self' data: www.google-analytics.com sentry.io",
       },
     },
   },

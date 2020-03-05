@@ -5,6 +5,7 @@ const feed = require("./config/plugins/feed");
 const manifest = require("./config/plugins/manifest");
 const typography = require("./config/plugins/typography");
 const csp = require("./config/plugins/csp");
+const sentry = require("./config/plugins/sentry");
 
 module.exports = {
   siteMetadata: {
@@ -32,5 +33,6 @@ module.exports = {
     ...typography,
     ...csp,
     "gatsby-plugin-offline",
+    ...sentry,
   ],
 };
