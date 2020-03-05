@@ -8,8 +8,8 @@ module.exports = [
       mergeStyleHashes: false,
       mergeDefaultDirectives: true,
       directives: {
-        "script-src": "'self' www.google-analytics.com sentry.io",
-        "style-src": "'self' 'unsafe-inline'",
+        "script-src": "'self' www.google-analytics.com sentry.io disqus.com",
+        "style-src": "'self' 'unsafe-inline' disqus.com",
         "img-src": "* data:",
       },
     },

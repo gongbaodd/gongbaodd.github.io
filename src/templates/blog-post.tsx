@@ -6,6 +6,7 @@ import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
+import { DiscussionEmbed } from "disqus-react";
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -65,10 +66,11 @@ const BlogPostTemplate: FC<PageProps<
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
+  const { slug, title, date } = post.fields;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={post.fields.title} description={post.excerpt} />
+      <SEO title={title} description={post.excerpt} />
       <article>
         <header>
           <p
@@ -78,7 +80,7 @@ const BlogPostTemplate: FC<PageProps<
               marginBottom: rhythm(1),
             }}
           >
-            {post.fields.date}
+            {date}
           </p>
         </header>
         <section
@@ -122,6 +124,15 @@ const BlogPostTemplate: FC<PageProps<
           </li>
         </ul>
       </nav>
+
+      <DiscussionEmbed
+        shortname="gongbaodd-github-io"
+        config={{
+          identifier: slug,
+          title,
+          url: location.href,
+        }}
+      />
     </Layout>
   );
 };
