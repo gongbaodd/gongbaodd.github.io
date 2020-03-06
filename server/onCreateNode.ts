@@ -1,5 +1,4 @@
 import { createFilePath } from "gatsby-source-filesystem";
-import pinyin from "pinyin";
 
 import { slug2path } from "./utils/slug_path";
 
@@ -10,14 +9,6 @@ const onCreateNode = ({ node, actions, getNode }) => {
     const value = createFilePath({ node, getNode });
     const { category } = node.frontmatter;
     const { path, year, month, day, title } = slug2path(value, category);
-
-    createNodeField({
-      name: "pinyin",
-      node,
-      value: pinyin(title.slice(0, 10), { style: pinyin.STYLE_NORMAL })
-        .flat()
-        .join("_"),
-    });
 
     createNodeField({
       name: "slug",

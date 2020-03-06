@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link, graphql, PageProps } from "gatsby";
-import { Disqus, CommentCount } from "gatsby-plugin-disqus";
+import withUtterances from "with-utterances";
 
 import { sanitize } from "../utils/sanitize";
 import Bio from "../components/bio";
@@ -26,7 +26,6 @@ export const pageQuery = graphql`
         slug
         date(formatString: "MMMM DD, YYYY")
         title
-        pinyin
       }
     }
   }
@@ -50,7 +49,6 @@ interface PageData {
       slug: string;
       date: string;
       title: string;
-      pinyin: string;
     };
   };
 }
@@ -68,12 +66,7 @@ const BlogPostTemplate: FC<PageProps<
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
-  const { title, date, pinyin } = post.fields;
-  const disqusConfig = {
-    identifier: post.id,
-    title: pinyin,
-    url: location.href,
-  };
+  const { title, date } = post.fields;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -131,11 +124,12 @@ const BlogPostTemplate: FC<PageProps<
           </li>
         </ul>
       </nav>
-
-      <CommentCount config={disqusConfig} placeholder="..." />
-      <Disqus config={disqusConfig} />
     </Layout>
   );
 };
 
-export default BlogPostTemplate;
+export default withUtterances(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  BlogPostTemplate as any,
+  "gongbaodd/gongbaodd.github.io"
+);
