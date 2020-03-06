@@ -129,7 +129,11 @@ const BlogPostTemplate: FC<PageProps<
 };
 
 export default withUtterances(
+  // TODO: Fix this
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   BlogPostTemplate as any,
-  "gongbaodd/gongbaodd.github.io"
+  "gongbaodd/gongbaodd.github.io",
+  "github-light",
+  "og:title",
+  "comments"
 );
