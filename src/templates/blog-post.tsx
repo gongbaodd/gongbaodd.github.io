@@ -26,6 +26,7 @@ export const pageQuery = graphql`
         slug
         date(formatString: "MMMM DD, YYYY")
         title
+        pinyin
       }
     }
   }
@@ -49,6 +50,7 @@ interface PageData {
       slug: string;
       date: string;
       title: string;
+      pinyin: string;
     };
   };
 }
@@ -66,10 +68,10 @@ const BlogPostTemplate: FC<PageProps<
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
-  const { title, date } = post.fields;
+  const { title, date, pinyin } = post.fields;
   const disqusConfig = {
     identifier: post.id,
-    title,
+    title: pinyin,
     url: location.href,
   };
 
