@@ -111,6 +111,7 @@
     "audit:ci": "audit-ci -m -a 1488 -a 1217",
     "type": "tsc --noEmit",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0",
-    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/gongbaodd.github.io.git -b master"
+    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/gongbaodd.github.io.git -b master",
+    "deploy:coding": "sh ./scripts/deploy_to_coding.sh"
   }
 }
