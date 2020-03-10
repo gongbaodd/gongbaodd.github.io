@@ -5,7 +5,7 @@ category: book
 
 # 读完「你不知道的 JS」第一版
 
-![You don't know about JS cover](../images/post/post/2020-03-09.png)
+![You don't know about JS cover](./2020-03-09-cover.png)
 
 「你不知道的 JS」是[getify](https://github.com/getify)的一本关于深究 JavaScript 的书，中文版分为三册，前一阵子发现作者正在更新第二版，读了几页真的不错，于是找来第一版读了下。
 
