@@ -1,35 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[宫不上的诗书年华]]></description><link>https://gongbaodd.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Mar 2020 04:35:52 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[ssh 免密码登录  总是忘，这里做个记录。 简单说就是把本地的存储到远端机器的里面，详细操作可参考此文。]]></description><link>https://gongbaodd.github.io/tech/2020/03/10/ssh免密码登录.html</link><guid isPermaLink="false">https://gongbaodd.github.io/tech/2020/03/10/ssh免密码登录.html</guid><content:encoded>&lt;h1&gt;ssh 免密码登录&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Your Site's RSS Feed]]></title><description><![CDATA[宫不上的诗书年华]]></description><link>https://gongbaodd.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Mar 2020 05:29:59 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[ssh 免密码登录 总是忘，这里做个记录。 简单说就是把本地的存储到远端机器的里面，详细操作可参考此文。]]></description><link>https://gongbaodd.github.io/tech/2020/03/10/ssh免密码登录.html</link><guid isPermaLink="false">https://gongbaodd.github.io/tech/2020/03/10/ssh免密码登录.html</guid><content:encoded>&lt;h1&gt;ssh 免密码登录&lt;/h1&gt;
+&lt;p&gt;总是忘，这里做个记录。&lt;/p&gt;
+&lt;p&gt;简单说就是把本地的&lt;code class=&quot;language-text&quot;&gt;id_rsa.pub&lt;/code&gt;存储到远端机器的&lt;code class=&quot;language-text&quot;&gt;authorized_keys&lt;/code&gt;里面，详细操作可参考&lt;a href=&quot;http://www.linuxproblem.org/art_9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;此文&lt;/a&gt;。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[读完「你不知道的 JS」第一版  「你不知道的 JS」是getify的一本关于深究 JavaScript…]]></description><link>https://gongbaodd.github.io/book/2020/03/09/读完「你不知道的JS」第一版.html</link><guid isPermaLink="false">https://gongbaodd.github.io/book/2020/03/09/读完「你不知道的JS」第一版.html</guid><content:encoded>&lt;h1&gt;读完「你不知道的 JS」第一版&lt;/h1&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 200px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3ed565f7ccf88dcd15a6d7952ec848d8/772e8/2020-03-10.png&quot;
+    href=&quot;/static/d4136e1c858a3358e0229c3502df0f18/10ab7/2020-03-09-cover.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAClUlEQVQ4y81Uy0viURS+6iZikiB6CGpSCdlDjHIRpGG1CCpt0a427dpUUJoLhbI3BYJBUTAVQRC91tGideamlf0JuZo2M4uC/H1zzmEUM5gZmhZz4eP+7nl899zvd89Vt7e3evVJ4+bmJs+l+yQodXFxEbm6urqnSu/S6XTq8fEx9fz8nALwW7y8vKQymUzq4eEhlUwm766vr+9PT0+j6vLyEtFoFOPj45iamkIoFMLCwgKWlpawurqKtbW1PHi9srKC5eVlzM/PIxwOY3p6WnIjkQhOTk6gjo+Ps42Nja9U7D+hoaHhdX9/P6uOjo40p9OJmpoabXR0FM3NzRgZGUF/fz+6u7vh8XjgdrtBSSgpKYFer5d1dXU1+vr64HK52Ke1tbVhb29PUwcHB7Db7WDSyclJVFZWIhaLob29XY5xfn6Ojo4OdHV1oby8HGazGb29veI/OzvD4OCgbMb5Ozs7ULu7u7JLRUUFJiYm4PV6pTLWdWxsTHSqra0VQoPBAL/fj9LSUgwMDIieNptNCFtbW7G1tQW1vb0tx7RarWJk4s7OTphMJpYBVVVVQkAawWg0SgwTcByfRqfTybqpqQnxeBwqkUigpaVFjB8Ba8qzw+HA5uYmFLFqXCELy0diJ+9aiJytmKzQTzcF6+vrUMSaJ+Tdisn+hF8VakxImmqKWLOkT5aNhOxHUVdXl11cXHxVGxsb6OnpgcViEeHr6+tl/hvkYvmH+nw++euKWuwrtdp3wje6f0+0yxPZnqi98qBAQaGNYziWcziX8IPa8VAeiEAgUEb36wuDvt9geHj4DYr9ubyhoaEyIaOX5rOeQ3V4SAVSe6nZ2Vk1MzMjczAYVPTi5DE3N/cOOR/HFuYy1/8/fgJ+kfx1x6yBEAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAB10lEQVQoz2P4cNsfE3284//yqt/zy35PL/m+ue4H5L6/5f/jUcC7m/4XDnid3uX56JwPkMuAqROo4s/TwDkTHSsKrVPiLQ5ucgeq+/YwYM8at0B/UxMTQ0MjAzs7o54mOyya3wI1Pwuc1e+YkmDh6216YIP7/1dBZ3Z7mpgaqmno6RnoGxsbqGroKSjr4rAZrDknzTIs2Gzfevf/74Jaa2xV1HRtbIzWL3S5etg7M8UyMdYcn+b0JMuQQLP9QJvfBFUW2QCtdXM1fnHV7//boOeXfYGBgl3z76eB8yc7enma2NsZHd7sAVQ9s89RQ0vfxNQgLsp87zr3T3eB4ReIU/PcSY5hwaauzsaHt3j8fRb46Lyvn4+pspqulo6evoF+XKT5jpVuOJ09s98xL8MqPMTswEb3n48DvtwLuHvKpyDTChjU6pp6QC/oGxigaH57A6QTSII09zlmp1oB/QyMqp+PA19d8/v+MAAYZ8BIriuzsbA0RNEMTAlAG749CACmB2A8z5vsFB1u7uNlcmiTB9Cs748Cnl32/XIPpOb/6yCgt01NkTQD9aye51KaZ/34gi/Qk83Vtv4+pgF+psAYBpo7udPBw91k+0o3oMrP9wIu7PeysjIEAFGzcPT6eK4RAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;ssh&quot;
-        title=&quot;ssh&quot;
-        src=&quot;/static/3ed565f7ccf88dcd15a6d7952ec848d8/772e8/2020-03-10.png&quot;
-        srcset=&quot;/static/3ed565f7ccf88dcd15a6d7952ec848d8/12f09/2020-03-10.png 148w,
-/static/3ed565f7ccf88dcd15a6d7952ec848d8/772e8/2020-03-10.png 200w&quot;
-        sizes=&quot;(max-width: 200px) 100vw, 200px&quot;
+        alt=&quot;You don&amp;#39;t know about JS cover&quot;
+        title=&quot;You don&amp;#39;t know about JS cover&quot;
+        src=&quot;/static/d4136e1c858a3358e0229c3502df0f18/fcda8/2020-03-09-cover.png&quot;
+        srcset=&quot;/static/d4136e1c858a3358e0229c3502df0f18/12f09/2020-03-09-cover.png 148w,
+/static/d4136e1c858a3358e0229c3502df0f18/e4a3f/2020-03-09-cover.png 295w,
+/static/d4136e1c858a3358e0229c3502df0f18/fcda8/2020-03-09-cover.png 590w,
+/static/d4136e1c858a3358e0229c3502df0f18/efc66/2020-03-09-cover.png 885w,
+/static/d4136e1c858a3358e0229c3502df0f18/c83ae/2020-03-09-cover.png 1180w,
+/static/d4136e1c858a3358e0229c3502df0f18/10ab7/2020-03-09-cover.png 1552w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;总是忘，这里做个记录。&lt;/p&gt;
-&lt;p&gt;简单说就是把本地的&lt;code class=&quot;language-text&quot;&gt;id_rsa.pub&lt;/code&gt;存储到远端机器的&lt;code class=&quot;language-text&quot;&gt;authorized_keys&lt;/code&gt;里面，详细操作可参考&lt;a href=&quot;http://www.linuxproblem.org/art_9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;此文&lt;/a&gt;。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[读完「你不知道的 JS」第一版 You don't know about JS cover 「你不知道的 JS」是getify的一本关于深究 JavaScript…]]></description><link>https://gongbaodd.github.io/book/2020/03/09/读完「你不知道的JS」第一版.html</link><guid isPermaLink="false">https://gongbaodd.github.io/book/2020/03/09/读完「你不知道的JS」第一版.html</guid><content:encoded>&lt;h1&gt;读完「你不知道的 JS」第一版&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;../images/post/post/2020-03-09.png&quot; alt=&quot;You don&amp;#x27;t know about JS cover&quot;&gt;&lt;/p&gt;
 &lt;p&gt;「你不知道的 JS」是&lt;a href=&quot;https://github.com/getify&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;getify&lt;/a&gt;的一本关于深究 JavaScript 的书，中文版分为三册，前一阵子发现作者正在更新第二版，读了几页真的不错，于是找来第一版读了下。&lt;/p&gt;
 &lt;p&gt;第一版第一册就是深究词法、上下文，这些东西大部分书都提的比较少，说实话，虽然我已经了解了，但是总是忘。这本书第二版比第一版好太多了，有兴趣的可以去读一下。&lt;/p&gt;
 &lt;p&gt;第二册，异步，关于 promise 和生成器，应该是现有的关于异步写的最详细的书了，不过我更感兴趣他能更深度讲解一下 observable，虽然这个还不是 JavaScript 的标准。&lt;/p&gt;
@@ -2763,16 +2766,16 @@ alias ubuntu=&amp;#39;winpty ubuntu.exe&amp;#39;&lt;/code&gt;&lt;span aria-hidde
 &lt;p&gt;美女与野兽或者哈尔的移动城堡。&lt;/p&gt;
 &lt;p&gt;在一个架空的英国，女主宵禁时间走在街上被秘密警察骚扰，此时男主出现杀死两名警察，并带女主站在楼顶听大街上放的违禁音乐，这一行为被监控抓到，女主被当成逃犯追捕。&lt;/p&gt;
 &lt;p&gt;男主其实是一次军事实验的实验品，并打算报复。女主得知男主的刺杀计划，试图阻止未果，并离开男主。女主躲在自己的前同事家里，但是同事因为播放嘲笑政治视频被抓，勾起女主童年父母因政治原因被抓的记忆。女主被男主抓回城堡，在城堡里面女主得知原城堡主人是一个女演员，因为女同行为被抓捕。&lt;/p&gt;
-&lt;p&gt;男主因为复仇而死，女主将他的尸体放到装满炸药的地铁上炸毁国会。而伦敦则被装扮为男主的人包围。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[电影补档计划：两杆大烟枪 Lock Stock & Two Smcking Barrels 一小哥赌博误入圈套欠债 50 万，为了还债，小哥和朋友决定抢毒贩邻居，为了抢邻居他们用 70…]]></description><link>https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：两杆大烟枪.html</link><guid isPermaLink="false">https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：两杆大烟枪.html</guid><content:encoded>&lt;h1&gt;电影补档计划：两杆大烟枪&lt;/h1&gt;
+&lt;p&gt;男主因为复仇而死，女主将他的尸体放到装满炸药的地铁上炸毁国会。而伦敦则被装扮为男主的人包围。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[电影补档计划：飞越疯人院 One flew over the Cuckoo's Nest…]]></description><link>https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：飞越疯人院.html</link><guid isPermaLink="false">https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：飞越疯人院.html</guid><content:encoded>&lt;h1&gt;电影补档计划：飞越疯人院&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://img1.doubanio.com/view/photo/l/public/p2518112317.webp&quot; alt=&quot;One flew over the Cuckoo&amp;#x27;s Nest&quot;&gt;&lt;/p&gt;
+&lt;p&gt;又一个理想主义幻灭的故事。&lt;/p&gt;
+&lt;p&gt;墨菲通过装疯逃避劳改被送到疯人院。他在疯人院里组织赌博，破坏院规。投票要求看棒球世界杯失败之后，组织部分人偷船钓鱼。向往自由的墨菲被抓回疯人院后又准备和一样装疯的「老酋长」逃到加拿大。告别晚会玩过头了，没能逃离成功。&lt;/p&gt;
+&lt;p&gt;墨菲被割掉前额叶，「老酋长」憋死了墨菲，以墨菲曾经宣扬的方式逃离疯人院。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[电影补档计划：两杆大烟枪 Lock Stock & Two Smcking Barrels 一小哥赌博误入圈套欠债 50 万，为了还债，小哥和朋友决定抢毒贩邻居，为了抢邻居他们用 70…]]></description><link>https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：两杆大烟枪.html</link><guid isPermaLink="false">https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：两杆大烟枪.html</guid><content:encoded>&lt;h1&gt;电影补档计划：两杆大烟枪&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/photo/l/public/p2238483070.webp&quot; alt=&quot;Lock Stock &amp;#x26; Two Smcking Barrels&quot;&gt;&lt;/p&gt;
 &lt;p&gt;一小哥赌博误入圈套欠债 50 万，为了还债，小哥和朋友决定抢毒贩邻居，为了抢邻居他们用 700 磅买了两把枪。&lt;/p&gt;
 &lt;p&gt;然而邻居也在抢劫他们的供应商，邻居抢劫回来刚好被小哥一伙人抢走。小哥大发横财一夜挥霍，回家发现邻居被毒品头目解决，钱也被抢走。&lt;/p&gt;
 &lt;p&gt;小哥不知道这两把枪其实是收藏品，价格不菲。小哥的债主刚好打这两把枪的主意，他雇了两伙人去抢，没想到在乱斗中一起团灭。&lt;/p&gt;
-&lt;p&gt;小哥安排朋友销毁这两杆枪之后才意识到枪价格不菲，故事结束。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[电影补档计划：飞越疯人院 One flew over the Cuckoo's Nest…]]></description><link>https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：飞越疯人院.html</link><guid isPermaLink="false">https://gongbaodd.github.io/movie/2019/12/16/电影补档计划：飞越疯人院.html</guid><content:encoded>&lt;h1&gt;电影补档计划：飞越疯人院&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://img1.doubanio.com/view/photo/l/public/p2518112317.webp&quot; alt=&quot;One flew over the Cuckoo&amp;#x27;s Nest&quot;&gt;&lt;/p&gt;
-&lt;p&gt;又一个理想主义幻灭的故事。&lt;/p&gt;
-&lt;p&gt;墨菲通过装疯逃避劳改被送到疯人院。他在疯人院里组织赌博，破坏院规。投票要求看棒球世界杯失败之后，组织部分人偷船钓鱼。向往自由的墨菲被抓回疯人院后又准备和一样装疯的「老酋长」逃到加拿大。告别晚会玩过头了，没能逃离成功。&lt;/p&gt;
-&lt;p&gt;墨菲被割掉前额叶，「老酋长」憋死了墨菲，以墨菲曾经宣扬的方式逃离疯人院。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[美剧硅谷完结 http://www.piedpiper.com/ Silicon Valley 再见了 pied piper~ 很喜欢最后所有角色不惜一切阻止这个产品上线的情节]]></description><link>https://gongbaodd.github.io/tv/2019/12/16/美剧硅谷完结.html</link><guid isPermaLink="false">https://gongbaodd.github.io/tv/2019/12/16/美剧硅谷完结.html</guid><content:encoded>&lt;h1&gt;美剧硅谷完结&lt;/h1&gt;
+&lt;p&gt;小哥安排朋友销毁这两杆枪之后才意识到枪价格不菲，故事结束。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[美剧硅谷完结 http://www.piedpiper.com/ Silicon Valley 再见了 pied piper~ 很喜欢最后所有角色不惜一切阻止这个产品上线的情节]]></description><link>https://gongbaodd.github.io/tv/2019/12/16/美剧硅谷完结.html</link><guid isPermaLink="false">https://gongbaodd.github.io/tv/2019/12/16/美剧硅谷完结.html</guid><content:encoded>&lt;h1&gt;美剧硅谷完结&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.piedpiper.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;http://www.piedpiper.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://img3.doubanio.com/view/photo/l/public/p2571694925.webp&quot; alt=&quot;Silicon Valley&quot;&gt;&lt;/p&gt;
 &lt;p&gt;再见了 pied piper~ 很喜欢最后所有角色不惜一切阻止这个产品上线的情节&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[小米平板二代安装Windows 因为我手上的iwork8被我玩坏了，当务之急我需要一款8寸左右的小平板来看书。 市面上的平板8寸的已经不多，即使是有也大多是安卓板子。老实说，安卓做平板其实还是只能做玩具。自从灵动推出个人移动领域，用在移动端的i3886/amd64芯片就只有酷睿m…]]></description><link>https://gongbaodd.github.io/tech/2019/12/14/MiPad2安装Windows.html</link><guid isPermaLink="false">https://gongbaodd.github.io/tech/2019/12/14/MiPad2安装Windows.html</guid><content:encoded>&lt;h1&gt;小米平板二代安装Windows&lt;/h1&gt;
@@ -4130,14 +4133,14 @@ stop&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;timer &lt;span
 &lt;p&gt;memUsage、 cpuUsage、 eventLoopLag：队列延迟， libuv&lt;/p&gt;
 &lt;h3&gt;LongStackTrace组件的实现&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ctolib.com/topics-134009.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;问题背景&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/medns/longstack&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;具体代码&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[终于赶上了人才公园的日出 一直想去看看，可就是起不来，分明从家到这里就10分钟]]></description><link>https://gongbaodd.github.io/life/2018/10/07/人才公园的日出.html</link><guid isPermaLink="false">https://gongbaodd.github.io/life/2018/10/07/人才公园的日出.html</guid><content:encoded>&lt;h1&gt;终于赶上了人才公园的日出&lt;/h1&gt;
-&lt;p&gt;一直想去看看，可就是起不来，分明从家到这里就10分钟&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.ruguoapp.com/Fq7ifDg8OFckTtwRM8N2ztZPL9l5.jpg?imageMogr2/auto-orient/thumbnail/2500x9999%3E&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.ruguoapp.com/Fj7j-kKkrxKdxPfe7FzZeZ8xCBsA.jpg?imageMogr2/auto-orient/thumbnail/2500x9999%3E&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[RxJS深入浅出 RxJS，早有耳闻，尤其是如果你使用过Angular，RxJS是会接触到的。 我要推荐《RxJS深入浅出》在于它真的很仔细，尤其是说明schedule的部分，作者甚至仔细解释了microTask和macroTask的区别。 同时，单元测试部分，用RxJS…]]></description><link>https://gongbaodd.github.io/book/2018/10/07/RxJS深入浅出.html</link><guid isPermaLink="false">https://gongbaodd.github.io/book/2018/10/07/RxJS深入浅出.html</guid><content:encoded>&lt;h1&gt;RxJS深入浅出&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/medns/longstack&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;具体代码&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[RxJS深入浅出 RxJS，早有耳闻，尤其是如果你使用过Angular，RxJS是会接触到的。 我要推荐《RxJS深入浅出》在于它真的很仔细，尤其是说明schedule的部分，作者甚至仔细解释了microTask和macroTask的区别。 同时，单元测试部分，用RxJS…]]></description><link>https://gongbaodd.github.io/book/2018/10/07/RxJS深入浅出.html</link><guid isPermaLink="false">https://gongbaodd.github.io/book/2018/10/07/RxJS深入浅出.html</guid><content:encoded>&lt;h1&gt;RxJS深入浅出&lt;/h1&gt;
 &lt;p&gt;RxJS，早有耳闻，尤其是如果你使用过Angular，RxJS是会接触到的。&lt;/p&gt;
 &lt;p&gt;我要推荐《RxJS深入浅出》在于它真的很仔细，尤其是说明schedule的部分，作者甚至仔细解释了microTask和macroTask的区别。&lt;/p&gt;
 &lt;p&gt;同时，单元测试部分，用RxJS的TestSchedule处理异步看起来真的比写n个mockImplementOnce要好得多。&lt;/p&gt;
-&lt;p&gt;多说无益，我在思考写个usecase看看它是不是真的很好用。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[…]]></description><link>https://gongbaodd.github.io/life/2018/10/06/工业展览馆&amp;华强北&amp;华侨城创意园.html</link><guid isPermaLink="false">https://gongbaodd.github.io/life/2018/10/06/工业展览馆&amp;华强北&amp;华侨城创意园.html</guid><content:encoded>&lt;h1&gt;工业展览馆、华强北和华侨城创意园&lt;/h1&gt;
+&lt;p&gt;多说无益，我在思考写个usecase看看它是不是真的很好用。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[终于赶上了人才公园的日出 一直想去看看，可就是起不来，分明从家到这里就10分钟]]></description><link>https://gongbaodd.github.io/life/2018/10/07/人才公园的日出.html</link><guid isPermaLink="false">https://gongbaodd.github.io/life/2018/10/07/人才公园的日出.html</guid><content:encoded>&lt;h1&gt;终于赶上了人才公园的日出&lt;/h1&gt;
+&lt;p&gt;一直想去看看，可就是起不来，分明从家到这里就10分钟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.ruguoapp.com/Fq7ifDg8OFckTtwRM8N2ztZPL9l5.jpg?imageMogr2/auto-orient/thumbnail/2500x9999%3E&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.ruguoapp.com/Fj7j-kKkrxKdxPfe7FzZeZ8xCBsA.jpg?imageMogr2/auto-orient/thumbnail/2500x9999%3E&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[…]]></description><link>https://gongbaodd.github.io/life/2018/10/06/工业展览馆&amp;华强北&amp;华侨城创意园.html</link><guid isPermaLink="false">https://gongbaodd.github.io/life/2018/10/06/工业展览馆&amp;华强北&amp;华侨城创意园.html</guid><content:encoded>&lt;h1&gt;工业展览馆、华强北和华侨城创意园&lt;/h1&gt;
 &lt;p&gt;上次去中心书城的时候，本来想看看灯光秀，可是人太多了，回去的路上看二次元舞蹈排练的时候看到了工业展览馆。&lt;/p&gt;
 &lt;h2&gt;工业展览馆&lt;/h2&gt;
 &lt;p&gt;工业展览馆在市民中心楼上，里面基本也是歌颂改革开放了。但是那个电梯！完美了&lt;/p&gt;
@@ -4187,19 +4190,6 @@ stop&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;timer &lt;span
 &lt;li&gt;看完深入浅出 RxJS&lt;/li&gt;
 &lt;li&gt;翻译 spanner 文档&lt;/li&gt;
 &lt;li&gt;在深圳交几个朋友吧～&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[…]]></description><link>https://gongbaodd.github.io/life/2018/09/24/南山书城.html</link><guid isPermaLink="false">https://gongbaodd.github.io/life/2018/09/24/南山书城.html</guid><content:encoded>&lt;h1&gt;南山书城&lt;/h1&gt;
-&lt;p&gt;话说我住的离书城不远，当初找房子就找的后海和书城之间，可惜那屋子没抢到。&lt;/p&gt;
-&lt;p&gt;南山书城很挤，估计是开学，孩子蜂拥而至。我逛书城很简单，看看最近有啥畅销书，记下书名然后找电子版，实在不行，估摸着看看有没有纸质版再卖二手。&lt;/p&gt;
-&lt;p&gt;好了，这是接下来几个月的书单。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;上一堂最好玩的日本学&lt;/li&gt;
-&lt;li&gt;深入浅出RxJS&lt;/li&gt;
-&lt;li&gt;计算机程序设计艺术 排序与查找&lt;/li&gt;
-&lt;li&gt;程序员面试笔试宝典（well）&lt;/li&gt;
-&lt;li&gt;Web前端测试与集成&lt;/li&gt;
-&lt;li&gt;以太坊技术详解与实战&lt;/li&gt;
-&lt;li&gt;D3 API详解&lt;/li&gt;
-&lt;li&gt;图说D3 数据可视化利器从入门到进阶&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[纪念一下在深圳的第一个月饼节 没想到中秋三天假就这么结束了，总结一下： 第一天，去了南山博物馆，南山图书馆（书有点少，byTheWay）。看到了《三体》的舞台剧海报，无奈180块的座位卖光了，380块的话，我也没那么爱大刘的作品嘛～ 第二天。 跑了10k…]]></description><link>https://gongbaodd.github.io/life/2018/09/24/纪念一下在深圳的第一个月饼节.html</link><guid isPermaLink="false">https://gongbaodd.github.io/life/2018/09/24/纪念一下在深圳的第一个月饼节.html</guid><content:encoded>&lt;h1&gt;纪念一下在深圳的第一个月饼节&lt;/h1&gt;
 &lt;p&gt;没想到中秋三天假就这么结束了，总结一下：&lt;/p&gt;
 &lt;ol&gt;
@@ -4239,7 +4229,20 @@ stop&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;timer &lt;span
 &lt;li&gt;去人才公园跑步，全是赏月的人，囧。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[记一个关于 iBus 的教训 大概今年开始，chrome在linux里面就没办法正常看输入框，到了8月更惨，vscode和atom都完蛋了，完全看不到输入法的面板（也许我得考虑英文输入了）。 其实是个hidpi的问题，chromium对输入光标的位置处理和linux…]]></description><link>https://gongbaodd.github.io/fe/2018/09/23/记一个教训关于ibus的.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2018/09/23/记一个教训关于ibus的.html</guid><content:encoded>&lt;h1&gt;记一个关于 iBus 的教训&lt;/h1&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[…]]></description><link>https://gongbaodd.github.io/life/2018/09/24/南山书城.html</link><guid isPermaLink="false">https://gongbaodd.github.io/life/2018/09/24/南山书城.html</guid><content:encoded>&lt;h1&gt;南山书城&lt;/h1&gt;
+&lt;p&gt;话说我住的离书城不远，当初找房子就找的后海和书城之间，可惜那屋子没抢到。&lt;/p&gt;
+&lt;p&gt;南山书城很挤，估计是开学，孩子蜂拥而至。我逛书城很简单，看看最近有啥畅销书，记下书名然后找电子版，实在不行，估摸着看看有没有纸质版再卖二手。&lt;/p&gt;
+&lt;p&gt;好了，这是接下来几个月的书单。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;上一堂最好玩的日本学&lt;/li&gt;
+&lt;li&gt;深入浅出RxJS&lt;/li&gt;
+&lt;li&gt;计算机程序设计艺术 排序与查找&lt;/li&gt;
+&lt;li&gt;程序员面试笔试宝典（well）&lt;/li&gt;
+&lt;li&gt;Web前端测试与集成&lt;/li&gt;
+&lt;li&gt;以太坊技术详解与实战&lt;/li&gt;
+&lt;li&gt;D3 API详解&lt;/li&gt;
+&lt;li&gt;图说D3 数据可视化利器从入门到进阶&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[记一个关于 iBus 的教训 大概今年开始，chrome在linux里面就没办法正常看输入框，到了8月更惨，vscode和atom都完蛋了，完全看不到输入法的面板（也许我得考虑英文输入了）。 其实是个hidpi的问题，chromium对输入光标的位置处理和linux…]]></description><link>https://gongbaodd.github.io/fe/2018/09/23/记一个教训关于ibus的.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2018/09/23/记一个教训关于ibus的.html</guid><content:encoded>&lt;h1&gt;记一个关于 iBus 的教训&lt;/h1&gt;
 &lt;p&gt;大概今年开始，chrome在linux里面就没办法正常看输入框，到了8月更惨，vscode和atom都完蛋了，完全看不到输入法的面板（也许我得考虑英文输入了）。&lt;/p&gt;
 &lt;p&gt;其实是个hidpi的问题，chromium对输入光标的位置处理和linux处理不同，导致输入法都跪了，没错，不只是fcitx。这次我就以为这是fcitx的bug，换了ibus，结果ibus其实也很多坑。&lt;/p&gt;
 &lt;h2&gt;安装和配置ibus&lt;/h2&gt;
@@ -7725,81 +7728,7 @@ class PayView extends TagCore implement Ajax1 {
 
 PayView.mount({});&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[webpack2 tree-shaking（树摇） es6 module里面详述了树摇的的实现，但是webpack1始终没能实现，后来rollup实现了，于是大量框架转用rollup，去年webpack2发布，带来的就是这个tree-shaking功能。 AST…]]></description><link>https://gongbaodd.github.io/fe/2017/05/04/2WebPack2{treeShaking和extTextPlugin}.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2017/05/04/2WebPack2{treeShaking和extTextPlugin}.html</guid><content:encoded>&lt;h1&gt;webpack2&lt;/h1&gt;
-&lt;h2&gt;tree-shaking（树摇）&lt;/h2&gt;
-&lt;p&gt;es6 module里面详述了树摇的的实现，但是webpack1始终没能实现，后来rollup实现了，于是大量框架转用rollup，去年webpack2发布，带来的就是这个tree-shaking功能。&lt;/p&gt;
-&lt;h3&gt;AST树&lt;/h3&gt;
-&lt;p&gt;所有的代码，编译或者执行之前都会被转义成AST树，
-那么AST树是啥&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let a;
-let b = 1 + 1;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;代码&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;声明表达式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;let 声明&lt;/li&gt;
-&lt;li&gt;变量名 a&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;赋值表达式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;加法运算&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;常量1&lt;/li&gt;
-&lt;li&gt;常量1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;声明表达式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;let 声明&lt;/li&gt;
-&lt;li&gt;变量名 b&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;module的解析&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// module a
-
-export function foo() {...}
-export function bar() {...}
-
-// js
-
-import { foo, bar } from a;
-
-foo();&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;webpack会将代码解析成AST树，并发现bar并没有用过，就不会被打包进去。&lt;/p&gt;
-&lt;h2&gt;extTextPlugin&lt;/h2&gt;
-&lt;p&gt;这是webpack的一个插件，可以解析出代码里面的css单独打包。这样css可以和组件放在一起了。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;declare const require;
-require(&amp;quot;./style.scss&amp;quot;);
-
-@tag({
-    name: &amp;quot;pay-toast&amp;quot;,
-    tmpl: `
-    &amp;lt;div class=&amp;quot;pay-toast&amp;quot;&amp;gt;{content}&amp;lt;/div&amp;gt;
-    `,
-})
-export class PayToast extends TagCore {
-    public name: string = payToastConsts.name;
-    public onCreate(tag: ItoastTag, opts: ItoastRiotOpts) {
-        tag.update(opts);
-    }
-   public appendTag() {
-       const document = window.document;
-       const elem = document.createElement(this.name);
-       document.body.appendChild(elem);
-   }
-}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[postcss干货 上文说过，借助extTextPlugin可以把多个组件的css抽取成一个css，但webpack做的只是简单的文件拼接。处理css的地方要交给postcss。 cssnext cssnext使用caniuse.com的数据判断css…]]></description><link>https://gongbaodd.github.io/fe/2017/05/04/3postcss干货{cssnext和cssnano}.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2017/05/04/3postcss干货{cssnext和cssnano}.html</guid><content:encoded>&lt;h1&gt;postcss干货&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[postcss干货 上文说过，借助extTextPlugin可以把多个组件的css抽取成一个css，但webpack做的只是简单的文件拼接。处理css的地方要交给postcss。 cssnext cssnext使用caniuse.com的数据判断css…]]></description><link>https://gongbaodd.github.io/fe/2017/05/04/3postcss干货{cssnext和cssnano}.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2017/05/04/3postcss干货{cssnext和cssnano}.html</guid><content:encoded>&lt;h1&gt;postcss干货&lt;/h1&gt;
 &lt;p&gt;上文说过，借助extTextPlugin可以把多个组件的css抽取成一个css，但webpack做的只是简单的文件拼接。处理css的地方要交给postcss。&lt;/p&gt;
 &lt;h2&gt;cssnext&lt;/h2&gt;
 &lt;p&gt;cssnext使用caniuse.com的数据判断css需要支持到哪些浏览器，并自动做出可行的css解决方案（当然让ie6支持flex还是不行的）。&lt;/p&gt;
@@ -7838,15 +7767,6 @@ export class PayToast extends TagCore {
 &lt;li&gt;请求接口，或者查数据库，处理数据 =&gt; 等待返回，或者直接操作页面&lt;/li&gt;
 &lt;li&gt;如果有接口返回，渲染出state并以script标签返回 =&gt; 根据收到的state二次渲染已经在dom树的组件&lt;/li&gt;
 &lt;li&gt;全部接口返回，结束请求 =&gt; 页面加载完成&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[项目完成情况 封装完成但还没有上传npm QunarSniff中间件 QunarLogin中间件 TagCore，Control，Store fetch（用于合并请求，基于node-fetch） hysdk、QConfig-client-node， Qxf, PayGa…]]></description><link>https://gongbaodd.github.io/fe/2017/05/04/6项目完成情况.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2017/05/04/6项目完成情况.html</guid><content:encoded>&lt;h1&gt;项目完成情况&lt;/h1&gt;
-&lt;h2&gt;封装完成但还没有上传npm&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;QunarSniff中间件&lt;/li&gt;
-&lt;li&gt;QunarLogin中间件&lt;/li&gt;
-&lt;li&gt;TagCore，Control，Store&lt;/li&gt;
-&lt;li&gt;fetch（用于合并请求，基于node-fetch）&lt;/li&gt;
-&lt;li&gt;hysdk、QConfig-client-node， Qxf, PayGa 等的TypeScript封装&lt;/li&gt;
-&lt;li&gt;完成公用组件： yo-header, yo-logo, pay-toast&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Isomophic App 如果你已经了解过前后端同构的话，你一定知道如下的方案 那你看的文档应该都转发自同一个人。 这种做法很有局限性 你引用的module必须是umd打包的 你引用的module必须不存在二进制包 这回你知道为啥react…]]></description><link>https://gongbaodd.github.io/fe/2017/05/04/5IsomophicApp实现原理.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2017/05/04/5IsomophicApp实现原理.html</guid><content:encoded>&lt;h1&gt;Isomophic App&lt;/h1&gt;
 &lt;p&gt;如果你已经了解过前后端同构的话，你一定知道如下的方案&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if (isServer) {
@@ -7941,7 +7861,90 @@ control.addStore(someStore);
 const app = new App(control);&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;这样App、someStore这部分可以同构，clientStore和routeStore分别针对运行环境处理就可以了&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[写啥题目呢 回顾一下 去年三月，我分享了一个用riotjs开发前端的方案，既然已经有一年的时间了，就先回顾一下。 这套方案出自2015年，之前一直使用的是公司的QApp解决方案，后来发现使用上存在问题，
+&lt;p&gt;这样App、someStore这部分可以同构，clientStore和routeStore分别针对运行环境处理就可以了&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[项目完成情况 封装完成但还没有上传npm QunarSniff中间件 QunarLogin中间件 TagCore，Control，Store fetch（用于合并请求，基于node-fetch） hysdk、QConfig-client-node， Qxf, PayGa…]]></description><link>https://gongbaodd.github.io/fe/2017/05/04/6项目完成情况.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2017/05/04/6项目完成情况.html</guid><content:encoded>&lt;h1&gt;项目完成情况&lt;/h1&gt;
+&lt;h2&gt;封装完成但还没有上传npm&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;QunarSniff中间件&lt;/li&gt;
+&lt;li&gt;QunarLogin中间件&lt;/li&gt;
+&lt;li&gt;TagCore，Control，Store&lt;/li&gt;
+&lt;li&gt;fetch（用于合并请求，基于node-fetch）&lt;/li&gt;
+&lt;li&gt;hysdk、QConfig-client-node， Qxf, PayGa 等的TypeScript封装&lt;/li&gt;
+&lt;li&gt;完成公用组件： yo-header, yo-logo, pay-toast&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[webpack2 tree-shaking（树摇） es6 module里面详述了树摇的的实现，但是webpack1始终没能实现，后来rollup实现了，于是大量框架转用rollup，去年webpack2发布，带来的就是这个tree-shaking功能。 AST…]]></description><link>https://gongbaodd.github.io/fe/2017/05/04/2WebPack2{treeShaking和extTextPlugin}.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2017/05/04/2WebPack2{treeShaking和extTextPlugin}.html</guid><content:encoded>&lt;h1&gt;webpack2&lt;/h1&gt;
+&lt;h2&gt;tree-shaking（树摇）&lt;/h2&gt;
+&lt;p&gt;es6 module里面详述了树摇的的实现，但是webpack1始终没能实现，后来rollup实现了，于是大量框架转用rollup，去年webpack2发布，带来的就是这个tree-shaking功能。&lt;/p&gt;
+&lt;h3&gt;AST树&lt;/h3&gt;
+&lt;p&gt;所有的代码，编译或者执行之前都会被转义成AST树，
+那么AST树是啥&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let a;
+let b = 1 + 1;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;代码&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;声明表达式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;let 声明&lt;/li&gt;
+&lt;li&gt;变量名 a&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;赋值表达式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;加法运算&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;常量1&lt;/li&gt;
+&lt;li&gt;常量1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;声明表达式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;let 声明&lt;/li&gt;
+&lt;li&gt;变量名 b&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;module的解析&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// module a
+
+export function foo() {...}
+export function bar() {...}
+
+// js
+
+import { foo, bar } from a;
+
+foo();&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;webpack会将代码解析成AST树，并发现bar并没有用过，就不会被打包进去。&lt;/p&gt;
+&lt;h2&gt;extTextPlugin&lt;/h2&gt;
+&lt;p&gt;这是webpack的一个插件，可以解析出代码里面的css单独打包。这样css可以和组件放在一起了。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;declare const require;
+require(&amp;quot;./style.scss&amp;quot;);
+
+@tag({
+    name: &amp;quot;pay-toast&amp;quot;,
+    tmpl: `
+    &amp;lt;div class=&amp;quot;pay-toast&amp;quot;&amp;gt;{content}&amp;lt;/div&amp;gt;
+    `,
+})
+export class PayToast extends TagCore {
+    public name: string = payToastConsts.name;
+    public onCreate(tag: ItoastTag, opts: ItoastRiotOpts) {
+        tag.update(opts);
+    }
+   public appendTag() {
+       const document = window.document;
+       const elem = document.createElement(this.name);
+       document.body.appendChild(elem);
+   }
+}&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[写啥题目呢 回顾一下 去年三月，我分享了一个用riotjs开发前端的方案，既然已经有一年的时间了，就先回顾一下。 这套方案出自2015年，之前一直使用的是公司的QApp解决方案，后来发现使用上存在问题，
 并在试图寻找一套可行的替代方案。 组件化方案 QApp的最小单位是View…]]></description><link>https://gongbaodd.github.io/2017/05/03/QxfComponents.html</link><guid isPermaLink="false">https://gongbaodd.github.io/2017/05/03/QxfComponents.html</guid><content:encoded>&lt;h1&gt;写啥题目呢&lt;/h1&gt;
 &lt;h2&gt;回顾一下&lt;/h2&gt;
 &lt;p&gt;去年三月，我分享了一个用riotjs开发前端的方案，既然已经有一年的时间了，就先回顾一下。&lt;/p&gt;
@@ -12687,22 +12690,7 @@ scenne.add(axes);&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;
 export QT_IM_MODULE=fcitx&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;没问题啦～&lt;/p&gt;
 &lt;h2&gt;后记&lt;/h2&gt;
-&lt;p&gt;编辑器不好使的那段时候，我改用了Brackets，很棒的编辑器，做整个项目的时候很好使，而且速度比atom、sublime都快。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[华语情歌 你不爱我，我明白的，可是我的心情，好低落～～～～ 欧美流行 你不爱我，你特么彪吗？你爱那个碧池，你特么瞎吗？ 朋克摇滚 都尼玛不爱我！都尼玛不要我！ 印度音乐 不爱就不爱吧～大家一起跳起来～]]></description><link>https://gongbaodd.github.io/music/2015/02/08/吐槽haha.html</link><guid isPermaLink="false">https://gongbaodd.github.io/music/2015/02/08/吐槽haha.html</guid><content:encoded>&lt;h1&gt;华语情歌&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;你不爱我，我明白的，可是我的心情，好低落～～～～&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;欧美流行&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;你不爱我，你特么彪吗？你爱那个碧池，你特么瞎吗？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;朋克摇滚&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;都尼玛不爱我！都尼玛不要我！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;印度音乐&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;不爱就不爱吧～大家一起跳起来～&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[jQuery.fn.init()   接收三个参数，selector,context,rootjQuery 默认的$()传的值实际上考虑了很多种情况，下面是返回值 false,undefined,null node节点 “body” 字符串，单独标签<tag></tag…]]></description><link>https://gongbaodd.github.io/fe/2015/02/08/jQuery.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2015/02/08/jQuery.html</guid><content:encoded>&lt;h1&gt;jQuery.fn.init()&lt;/h1&gt;
+&lt;p&gt;编辑器不好使的那段时候，我改用了Brackets，很棒的编辑器，做整个项目的时候很好使，而且速度比atom、sublime都快。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[jQuery.fn.init()   接收三个参数，selector,context,rootjQuery 默认的$()传的值实际上考虑了很多种情况，下面是返回值 false,undefined,null node节点 “body” 字符串，单独标签<tag></tag…]]></description><link>https://gongbaodd.github.io/fe/2015/02/08/jQuery.html</link><guid isPermaLink="false">https://gongbaodd.github.io/fe/2015/02/08/jQuery.html</guid><content:encoded>&lt;h1&gt;jQuery.fn.init()&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;  接收三个参数，selector,context,rootjQuery&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -12772,4 +12760,19 @@ this.context = selector.context;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quo
 &lt;p&gt;其它&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;return jQuery.makeArray(selector,this);&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item></channel></rss>
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[华语情歌 你不爱我，我明白的，可是我的心情，好低落～～～～ 欧美流行 你不爱我，你特么彪吗？你爱那个碧池，你特么瞎吗？ 朋克摇滚 都尼玛不爱我！都尼玛不要我！ 印度音乐 不爱就不爱吧～大家一起跳起来～]]></description><link>https://gongbaodd.github.io/music/2015/02/08/吐槽haha.html</link><guid isPermaLink="false">https://gongbaodd.github.io/music/2015/02/08/吐槽haha.html</guid><content:encoded>&lt;h1&gt;华语情歌&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你不爱我，我明白的，可是我的心情，好低落～～～～&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;欧美流行&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你不爱我，你特么彪吗？你爱那个碧池，你特么瞎吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;朋克摇滚&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;都尼玛不爱我！都尼玛不要我！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;印度音乐&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不爱就不爱吧～大家一起跳起来～&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item></channel></rss>
