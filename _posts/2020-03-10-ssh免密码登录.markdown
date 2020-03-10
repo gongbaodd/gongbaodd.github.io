@@ -5,7 +5,7 @@ category: tech
 
 # ssh 免密码登录
 
-![ssh](/images/2020-03-10.png)
+![ssh](../images/post/2020-03-10.png)
 
 总是忘，这里做个记录。
 
