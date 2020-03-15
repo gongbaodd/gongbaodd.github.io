@@ -20,7 +20,7 @@ tag: coding.net Jenkins docker
 
 Jenkins 的主要功能是检出代码(git clone)，编译代码，执行测试，打包成 docker image 最后上传到制品库。详细内容可以参考[代码](https://github.com/gongbaodd/query.gongbushang.com/blob/master/Jenkinsfile)。
 
-```gradle
+```groovy
 pipeline {
   agent any
   stages {

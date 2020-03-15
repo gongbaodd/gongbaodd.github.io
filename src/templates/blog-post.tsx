@@ -2,11 +2,12 @@ import React, { FC } from "react";
 import { Link, graphql, PageProps } from "gatsby";
 import withUtterances from "with-utterances";
 
-import { sanitize } from "../utils/sanitize";
 import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
+
+const sanitize = (html: string) => html;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

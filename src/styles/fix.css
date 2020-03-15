@@ -2,3 +2,9 @@
   top: 1em;
   left: 1em;
 }
+
+figcaption.gatsby-resp-image-figcaption {
+  text-align: center;
+  font-style: italic;
+  color: grey;
+}

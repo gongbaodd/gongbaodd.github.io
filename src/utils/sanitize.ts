@@ -7,6 +7,7 @@ export function sanitize(html: string): string {
       pre: ["class", "style"],
       code: ["class"],
       span: ["class", "style", "aria-hidden"],
+      img: ["class", "src"],
     },
     stripIgnoreTag: true,
   });
