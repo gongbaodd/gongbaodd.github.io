@@ -49,6 +49,8 @@
     "xss": "^1.0.6"
   },
   "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.1.3",
+    "@types/cypress-cucumber-preprocessor": "^1.14.0",
     "@types/dompurify": "^2.0.1",
     "@types/node": "^13.7.7",
     "@types/react": "^16.9.23",
@@ -100,7 +102,11 @@
       "path": "emoji-cz"
     }
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "scripts": {
+    "install:win32": "HUSKY_SKIP_INSTALL=1 yarn install",
     "dev": "yarn clean && gatsby develop --host=0.0.0.0",
     "build": "gatsby build",
     "develop": "gatsby develop",

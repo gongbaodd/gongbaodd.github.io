@@ -45,24 +45,23 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["gatsby-*.js", "config/**/*.js"],
+      files: [
+        "gatsby-*.js",
+        "config/**/*.js",
+        "cypress/**/*.ts",
+        "cypress/**/*.js",
+      ],
       rules: {
         "@typescript-eslint/camelcase": ["off"],
         "@typescript-eslint/no-var-requires": ["off"],
         "global-require": ["off"],
+        "no-undef": ["off"],
       },
     },
     {
       files: ["node_modules.d.ts"],
       rules: {
         "no-underscore-dangle": ["off"],
-      },
-    },
-    {
-      files: ["cypress/integration/*.spec.js"],
-      rules: {
-        "no-underscore-dangle": ["off"],
-        "no-undef": ["off"],
       },
     },
   ],
