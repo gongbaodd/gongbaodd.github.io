@@ -58,5 +58,12 @@ module.exports = {
         "no-underscore-dangle": ["off"],
       },
     },
+    {
+      files: ["cypress/integration/*.spec.js"],
+      rules: {
+        "no-underscore-dangle": ["off"],
+        "no-undef": ["off"],
+      },
+    },
   ],
 };
