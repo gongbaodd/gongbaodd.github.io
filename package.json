@@ -58,7 +58,6 @@
     "@typescript-eslint/parser": "^2.21.0",
     "audit-ci": "^2.5.1",
     "commitizen": "^4.0.3",
-    "cypress": "^4.1.0",
     "cypress-cucumber-preprocessor": "^2.0.1",
     "emoji-cz": "^0.3.1",
     "eslint": "^6.8.0",
@@ -119,10 +118,6 @@
     "audit:ci": "audit-ci -m -a 1488 -a 1217",
     "type": "tsc --noEmit",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0",
-    "test:cy:version": "cypress version",
-    "test:cy:verify": "cypress verify",
-    "test:cy:win32": "Cypress.exe",
-    "test:cy:run": "cypress run",
     "cp:cname": "sh ./scripts/cp_cname.sh",
     "deploy:coding": "sh ./scripts/deploy_to_coding.sh",
     "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/gongbaodd.github.io.git -b master"
