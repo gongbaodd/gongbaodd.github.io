@@ -7,6 +7,7 @@ const typography = require("./config/plugins/typography");
 const csp = require("./config/plugins/csp");
 const sentry = require("./config/plugins/sentry");
 const pageProgress = require("./config/plugins/page_progress");
+const sourcemap = require("./config/plugins/sourcemap");
 
 module.exports = {
   siteMetadata: {
@@ -38,5 +39,6 @@ module.exports = {
     ...csp,
     ...sentry,
     ...pageProgress,
+    ...sourcemap,
   ],
 };

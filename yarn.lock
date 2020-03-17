@@ -6778,6 +6778,11 @@ gatsby-plugin-manifest@^2.2.39:
     semver "^5.7.1"
     sharp "^0.23.4"
 
+gatsby-plugin-no-sourcemaps@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-no-sourcemaps/download/gatsby-plugin-no-sourcemaps-2.1.2.tgz#43dd8d5ca8eb375a54c95990d9801397fd7d5235"
+  integrity sha1-Q92NXKjrN1pUyVmQ2YATl/19UjU=
+
 gatsby-plugin-offline@^3.0.32:
   version "3.0.32"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.32.tgz#9907421e7359f79b22da7f654c4a69749cf136c5"

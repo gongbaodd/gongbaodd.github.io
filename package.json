@@ -68,6 +68,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "gatsby-plugin-no-sourcemaps": "^2.1.2",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
@@ -106,7 +107,7 @@
   "scripts": {
     "install:win32": "HUSKY_SKIP_INSTALL=1 yarn install",
     "dev": "yarn clean && gatsby develop --host=0.0.0.0",
-    "build": "gatsby build",
+    "build": "NODE_ENV=production gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "start": "npm run develop",
