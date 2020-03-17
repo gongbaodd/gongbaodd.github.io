@@ -10,3 +10,8 @@ deploy:
   skip_cleanup: true
   on:
     branch: gatsby
+cache:
+  npm: true
+  directories:
+    - ~/.cache
+    - ./cypress
