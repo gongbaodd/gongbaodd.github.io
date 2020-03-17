@@ -15,6 +15,7 @@ module.exports = [
           "'unsafe-inline'",
           "utteranc.es",
           "*.utteranc.es",
+          "*.cloudflareinsights.com",
         ].join(" "),
         "style-src": [
           "'self'",
@@ -22,7 +23,7 @@ module.exports = [
           "utteranc.es",
           "*.utteranc.es",
         ].join(" "),
-        "img-src": ["*", "data:"].join(" "),
+        "img-src": ["*", "data:", "*.cloudflareinsights.com"].join(" "),
         "default-src": ["'self'", "utteranc.es", "*.utteranc.es"].join(" "),
       },
     },
