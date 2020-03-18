@@ -24,7 +24,12 @@ module.exports = [
           "*.utteranc.es",
         ].join(" "),
         "img-src": ["*", "data:", "*.cloudflareinsights.com"].join(" "),
-        "default-src": ["'self'", "utteranc.es", "*.utteranc.es"].join(" "),
+        "default-src": [
+          "'self'",
+          "utteranc.es",
+          "*.utteranc.es",
+          "fonts.gstatic.com",
+        ].join(" "),
       },
     },
   },
