@@ -3,7 +3,6 @@ const sourceFilesystems = require("./config/plugins/source_filesystem");
 const googleAnalytics = require("./config/plugins/google_analytics");
 const feed = require("./config/plugins/feed");
 const manifest = require("./config/plugins/manifest");
-const typography = require("./config/plugins/typography");
 const csp = require("./config/plugins/csp");
 const sentry = require("./config/plugins/sentry");
 const pageProgress = require("./config/plugins/page_progress");
@@ -30,12 +29,12 @@ module.exports = {
     "gatsby-plugin-offline",
     "gatsby-plugin-page-progress",
     "gatsby-plugin-tidy",
+    "gatsby-plugin-theme-ui",
     ...sourceFilesystems,
     ...transformerRemark,
     ...googleAnalytics,
     ...feed,
     ...manifest,
-    ...typography,
     ...csp,
     ...sentry,
     ...pageProgress,
