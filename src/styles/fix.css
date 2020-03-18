@@ -17,3 +17,8 @@ code[class*="language-"] {
 a:visited {
   color: indianred;
 }
+
+.plog_post p {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}

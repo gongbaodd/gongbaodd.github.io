@@ -85,6 +85,7 @@ const BlogPostTemplate: FC<PageProps<
           </p>
         </header>
         <section
+          className="plog_post"
           dangerouslySetInnerHTML={{
             __html: sanitize(post.html),
           }}
