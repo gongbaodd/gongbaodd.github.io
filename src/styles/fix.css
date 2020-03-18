@@ -13,3 +13,7 @@ code[class*="language-"] {
   background: transparent;
   box-shadow: 0 0 0 transparent;
 }
+
+a:visited {
+  color: indianred;
+}

@@ -46,8 +46,7 @@
     "typeface-montserrat": "0.0.75",
     "typeface-roboto": "^0.0.75",
     "typography": "^0.16.19",
-    "typography-theme-alton": "^0.16.19",
-    "typography-theme-github": "^0.16.19",
+    "typography-theme-doelger": "^0.16.19",
     "with-utterances": "^1.5.0",
     "xss": "^1.0.6"
   },

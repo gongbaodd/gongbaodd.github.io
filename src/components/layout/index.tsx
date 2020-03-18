@@ -30,7 +30,7 @@ const Header: FC<{ title: string; location: PageProps["location"] }> = ({
     <h1 style={style}>
       <small className={TOKEN_FUNC}>blog</small>
       <small className={TOKEN_PUNC}>(</small>
-      <Link className={TOKEN_STR} to="/">
+      <Link className={TOKEN_STR} style={{ textDecoration: "none" }} to="/">
         <small>{quote}</small>
         {title}
         <small>{quote}</small>
@@ -56,7 +56,7 @@ const Layout = ({ location, title, children }) => {
       style={{
         marginLeft: "auto",
         marginRight: "auto",
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(42),
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >

@@ -90,7 +90,7 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
                 <br />
                 <Link
                   className={TOKEN_STR}
-                  style={{ paddingLeft: "1em" }}
+                  style={{ paddingLeft: "1em", textDecoration: "none" }}
                   to={node.fields.slug}
                 >
                   <small>{quote}</small>

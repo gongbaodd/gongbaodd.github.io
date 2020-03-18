@@ -134,7 +134,7 @@ export default withUtterances(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   BlogPostTemplate as any,
   "gongbaodd/gongbaodd.github.io",
-  "github-light",
+  "dark-blue",
   "og:title",
   "comments"
 );
