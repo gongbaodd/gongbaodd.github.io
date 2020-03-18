@@ -1,8 +1,8 @@
-import deep from "@theme-ui/preset-deep";
+import theme from "@theme-ui/preset-deep";
 
 export default {
-  ...deep,
+  ...theme,
   styles: {
-    ...deep,
+    ...theme,
   },
 };

@@ -55,6 +55,14 @@ interface PageData {
   };
 }
 
+// eslint-disable-next-line quotes
+const quote = '"';
+const TOKEN_FUNC = "token function";
+const TOKEN_PUNC = "token punctuation";
+const TOKEN_STR = "token string";
+const TOKEN_OP = "token operator";
+const TOKEN_COMMENT = "token comment";
+
 const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
@@ -68,25 +76,45 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
         const { category } = node.frontmatter;
 
         return (
-          <article key={node.fields.slug}>
+          <article key={node.fields.slug} style={{ marginBottom: "2em" }}>
             <header>
+              <small className={TOKEN_COMMENT}>{`/** ${date} **/`}</small>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
-                  {(category ? `[${category}] ` : "") + title}
+                <small className={TOKEN_FUNC}>post</small>
+                <small className={TOKEN_OP}>{`<${category || "{}"}>`}</small>
+                <small className={TOKEN_PUNC}>(</small>
+                <br />
+                <Link
+                  className={TOKEN_STR}
+                  style={{ paddingLeft: "1em" }}
+                  to={node.fields.slug}
+                >
+                  <small>{quote}</small>
+                  {title}
+                  <small>{quote}</small>
                 </Link>
+                <br />
+                <small className={TOKEN_PUNC}>)</small>
+                <small className={TOKEN_PUNC}>;</small>
               </h3>
-              <small>{date}</small>
             </header>
             <section>
+              <span className={TOKEN_COMMENT}>/**</span>
               <p
+                className={TOKEN_COMMENT}
                 dangerouslySetInnerHTML={{
                   __html: sanitize(node.excerpt),
                 }}
+                style={{
+                  marginBottom: 0,
+                  paddingLeft: "1em",
+                }}
               />
+              <span className={TOKEN_COMMENT}>**/</span>
             </section>
           </article>
         );

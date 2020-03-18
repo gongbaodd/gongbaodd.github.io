@@ -1,9 +1,7 @@
 import Typography from "typography";
-import githubTheme from "typography-theme-github";
+import altonTheme from "typography-theme-alton";
 
-// delete Wordpress2016.googleFonts;
-
-const typography = new Typography(githubTheme);
+const typography = new Typography(altonTheme);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== "production") {

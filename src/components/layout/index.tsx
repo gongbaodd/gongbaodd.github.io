@@ -5,6 +5,11 @@ import { rhythm, scale } from "../../utils/typography";
 
 // eslint-disable-next-line no-undef
 const rootPath = `${__PATH_PREFIX__}/`;
+// eslint-disable-next-line quotes
+const quote = '"';
+const TOKEN_FUNC = "token function";
+const TOKEN_PUNC = "token punctuation";
+const TOKEN_STR = "token string";
 
 const Header: FC<{ title: string; location: PageProps["location"] }> = ({
   title,
@@ -18,22 +23,20 @@ const Header: FC<{ title: string; location: PageProps["location"] }> = ({
         marginTop: 0,
       }
     : {
-        fontFamily: "Montserrat, sans-serif",
         marginTop: 0,
       };
 
   return (
     <h1 style={style}>
-      <Link
-        style={{
-          boxShadow: "none",
-          textDecoration: "none",
-          color: "inherit",
-        }}
-        to="/"
-      >
+      <small className={TOKEN_FUNC}>blog</small>
+      <small className={TOKEN_PUNC}>(</small>
+      <Link className={TOKEN_STR} to="/">
+        <small>{quote}</small>
         {title}
+        <small>{quote}</small>
       </Link>
+      <small className={TOKEN_PUNC}>)</small>
+      <small className={TOKEN_PUNC}>;</small>
     </h1>
   );
 };

@@ -1163,7 +1163,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.8.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.8.7.tgz#8fefce9802db54881ba59f90bb28719b4996324d"
   integrity sha512-+AATMUFppJDw6aiR5NVPHqIQBlV/Pj8wY/EZH+lmvRdUo9xBaz/rF3alAwFJQavvKfeOlPE7oaaDHVbcySbCsg==
@@ -4279,7 +4279,7 @@ compare-versions@^3.5.1:
   resolved "https://registry.yarnpkg.com/compare-versions/-/compare-versions-3.6.0.tgz#1a5689913685e5a87637b8d3ffca75514ec41d62"
   integrity sha512-W6Af2Iw1z4CB7q4uU4hv646dW9GQuBM+YpC0UvUCWSD8w90SJjp+ujJuXaEMtAXBtSqGfMPuFOVn4/+FlaqfBA==
 
-compass-vertical-rhythm@^1.4.5:
+compass-vertical-rhythm@^1.2.1, compass-vertical-rhythm@^1.4.5:
   version "1.4.5"
   resolved "https://registry.yarnpkg.com/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.5.tgz#4baa8d7068fda164d3675d706775d7547e8750f5"
   integrity sha512-bJo3IYX7xmmZCDYjrT2XolaiNjGZ4E2JvUGxpdU0ecbH4ZLK786wvc8aHKVrGrKct9JlkmJbUi8YLrQWvOc+uA==
@@ -7169,6 +7169,13 @@ gatsby-plugin-typescript@^2.2.0:
     "@babel/preset-typescript" "^7.7.4"
     "@babel/runtime" "^7.7.6"
     babel-plugin-remove-graphql-queries "^2.7.23"
+
+gatsby-plugin-typography@^2.3.25:
+  version "2.3.25"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-typography/download/gatsby-plugin-typography-2.3.25.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-plugin-typography%2Fdownload%2Fgatsby-plugin-typography-2.3.25.tgz#81ccbd1354b67b5c501fbb13d81d880b4b0987d3"
+  integrity sha1-gcy9E1S2e1xQH7sT2B2IC0sJh9M=
+  dependencies:
+    "@babel/runtime" "^7.8.7"
 
 gatsby-react-router-scroll@^2.1.22:
   version "2.1.22"
@@ -14845,10 +14852,24 @@ typescript@^3.8.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
   integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
+typography-breakpoint-constants@^0.16.19:
+  version "0.16.19"
+  resolved "https://registry.npm.taobao.org/typography-breakpoint-constants/download/typography-breakpoint-constants-0.16.19.tgz#e0e89147749562cbb46ce76c47ff0f73372765e7"
+  integrity sha1-4OiRR3SVYsu0bOdsR/8PczcnZec=
+
 typography-normalize@^0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
   integrity sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ==
+
+typography-theme-alton@^0.16.19:
+  version "0.16.19"
+  resolved "https://registry.npm.taobao.org/typography-theme-alton/download/typography-theme-alton-0.16.19.tgz#0204ae473e159f4a66c76f3f8a6edd98e4d63625"
+  integrity sha1-AgSuRz4Vn0pmx28/im7dmOTWNiU=
+  dependencies:
+    compass-vertical-rhythm "^1.2.1"
+    gray-percentage "^2.0.0"
+    typography-breakpoint-constants "^0.16.19"
 
 typography-theme-github@^0.16.19:
   version "0.16.19"

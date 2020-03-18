@@ -30,6 +30,7 @@ module.exports = {
     "gatsby-plugin-page-progress",
     "gatsby-plugin-tidy",
     "gatsby-plugin-theme-ui",
+    "gatsby-plugin-typography",
     ...sourceFilesystems,
     ...transformerRemark,
     ...googleAnalytics,
