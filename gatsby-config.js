@@ -7,6 +7,7 @@ const csp = require("./config/plugins/csp");
 const sentry = require("./config/plugins/sentry");
 const pageProgress = require("./config/plugins/page_progress");
 const sourcemap = require("./config/plugins/sourcemap");
+const robotsTxt = require("./config/plugins/robots_txt");
 
 module.exports = {
   siteMetadata: {
@@ -31,7 +32,8 @@ module.exports = {
     "gatsby-plugin-tidy",
     "gatsby-plugin-theme-ui",
     "gatsby-plugin-typography",
-    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-sitemap",
+    ...robotsTxt,
     ...sourceFilesystems,
     ...transformerRemark,
     ...googleAnalytics,
