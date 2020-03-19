@@ -8,8 +8,6 @@ deploy:
   script:
     - yarn install && yarn build && yarn cy:test && yarn cp:cname && yarn deploy && yarn deploy:coding
   skip_cleanup: true
-  on:
-    branch: gatsby
 cache:
   npm: true
   directories:
