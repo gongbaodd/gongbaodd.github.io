@@ -2001,10 +2001,10 @@
   resolved "https://registry.yarnpkg.com/@types/configstore/-/configstore-2.1.1.tgz#cd1e8553633ad3185c3f2f239ecff5d2643e92b6"
   integrity sha1-zR6FU2M60xhcPy8jns/10mQ+krY=
 
-"@types/cypress-cucumber-preprocessor@1.14.0":
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/@types/cypress-cucumber-preprocessor/-/cypress-cucumber-preprocessor-1.14.0.tgz#41d8ffb2b608d3ed4ab998a0c4394056f75af1e0"
-  integrity sha512-bOl4u6seZtxNIGa6J6xydroPntTxxWy8uqIrZ3OY10C96fUes4mZvJKY6NvOoe61/OVafG/UEFa+X2ZWKE6Ltw==
+"@types/cypress-cucumber-preprocessor@1.14.1":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@types/cypress-cucumber-preprocessor/-/cypress-cucumber-preprocessor-1.14.1.tgz#9787f4e89553ebc6359ce157a26ad51ed14aa98b"
+  integrity sha512-CpYsiQ49UrOmadhFg0G5RkokPUmGGctD01mOWjNxFxHw5VgIRv33L2RyFHL8klaAI4HaedGN3Tcj4HTQ65hn+A==
 
 "@types/debug@^0.0.30":
   version "0.0.30"
