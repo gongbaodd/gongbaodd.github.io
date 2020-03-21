@@ -6,7 +6,7 @@ node_js:
 deploy:
   provider: script
   script:
-    - yarn install && yarn build && yarn cy:test && yarn cp:cname && yarn deploy && yarn deploy:coding
+    - yarn install && yarn build && yarn es:check && yarn cy:test && yarn cp:cname && yarn deploy && yarn deploy:coding
   skip_cleanup: true
 cache:
   npm: true
