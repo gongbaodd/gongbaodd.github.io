@@ -1,13 +1,13 @@
 language: node_js
 before_script:
   - npm install -g gatsby-cli
-node_js:
-  - "12.16"
-deploy:
-  provider: script
-  script:
-    - yarn install && yarn build && yarn es:check && yarn cy:test && yarn cp:cname && yarn deploy && yarn deploy:coding
-  skip_cleanup: true
+script:
+  - yarn build
+  - yarn es:check
+  - yarn cy:test
+  - yarn cp:cname
+  - yarn deploy
+  - yarn deploy:coding
 cache:
   npm: true
   directories:
