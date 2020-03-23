@@ -1,0 +1,19 @@
+- name: Lighthouse CI Action
+  uses: treosh/lighthouse-ci-action@v2
+  with:
+    # List of URL(s) to analyze
+    urls: # optional
+    # Path to a Lighthouse budgets.json file
+    budgetPath: # optional
+    # Path to a LHCI lighthouserc.json file
+    configPath: # optional
+    # Opt-out of saving Lighthouse results as an action artifacts
+    uploadArtifacts: # optional
+    # 
+    temporaryPublicStorage: # optional
+    # Number of runs to do per URL
+    runs: # optional, default is 1
+    # Address of a LHCI server
+    serverBaseUrl: # optional
+    # API token to push to LHCI server
+    serverToken: # optional
