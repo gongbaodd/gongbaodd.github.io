@@ -129,11 +129,11 @@ const Description: FC<{
       <br />
       <>{`${author.summary} `}</>
       <a
-        href={`https://twitter.com/${social.twitter}`}
+        href="https://gongbushang.com/contact"
         target="_blank"
         rel="noopener noreferrer"
       >
-        推我一把
+        找我玩呀
       </a>
     </p>
   );
