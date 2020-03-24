@@ -1,14 +1,3 @@
-const githubRibbon = [
-  {
-    resolve: "gatsby-plugin-github-ribbon",
-    options: {
-      project: "https://github.com/gongbaodd/gongbaodd.github.io",
-      color: "gray",
-      position: "right",
-    },
-  },
-];
-
 const images = [
   {
     resolve: "gatsby-remark-images",
@@ -54,7 +43,6 @@ module.exports = [
     resolve: "gatsby-transformer-remark",
     options: {
       plugins: [
-        ...githubRibbon,
         ...images,
         ...iframe,
         ...prismjs,

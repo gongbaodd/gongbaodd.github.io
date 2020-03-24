@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link, PageProps } from "gatsby";
-
+import Github from "../github";
 import { rhythm, scale } from "../../utils/typography";
 
 // eslint-disable-next-line no-undef
@@ -60,6 +60,7 @@ const Layout = ({ location, title, children }) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
+      <Github />
       <Header title={title} location={location} />
       <main>{children}</main>
       <Footer />
