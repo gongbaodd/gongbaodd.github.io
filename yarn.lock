@@ -6993,6 +6993,11 @@ gatsby-plugin-feed@2.4.1:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
+gatsby-plugin-github-ribbon@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-github-ribbon/download/gatsby-plugin-github-ribbon-1.1.0.tgz#62edb7370f7fecaa1be341f3407019d751baaade"
+  integrity sha1-Yu23Nw9/7Kob40HzQHAZ11G6qt4=
+
 gatsby-plugin-google-analytics@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.2.1.tgz#0dbc464dce05784ed80766bf51eba783f8970145"
