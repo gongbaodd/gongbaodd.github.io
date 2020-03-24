@@ -121,7 +121,7 @@ const QRCode: FC<{
 const Description: FC<{
   author: Data["site"]["siteMetadata"]["author"];
   social: Data["site"]["siteMetadata"]["social"];
-}> = ({ author, social }) => {
+}> = ({ author }) => {
   return (
     <p>
       <>Written by</>
