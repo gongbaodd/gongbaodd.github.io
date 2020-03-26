@@ -37,7 +37,7 @@
     "gatsby-transformer-sharp": "2.4.2",
     "moment": "2.24.0",
     "prismjs": "1.19.0",
-    "react-github-corner": "^2.3.0",
+    "react-github-corner": "2.3.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
@@ -60,7 +60,7 @@
     "@types/node": "13.9.3",
     "@types/react": "16.9.25",
     "@types/react-dom": "16.9.5",
-    "@typescript-eslint/parser": "2.24.0",
+    "@typescript-eslint/parser": "2.25.0",
     "audit-ci": "2.5.1",
     "commitizen": "4.0.3",
     "cypress-cucumber-preprocessor": "2.0.1",
@@ -78,9 +78,9 @@
     "gatsby-plugin-no-sourcemaps": "2.2.0",
     "gh-pages": "2.2.0",
     "husky": "4.2.3",
-    "lint-staged": "10.0.8",
-    "prettier": "1.19.1",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "lint-staged": "10.0.9",
+    "prettier": "2.0.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
