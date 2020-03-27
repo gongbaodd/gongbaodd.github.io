@@ -112,3 +112,7 @@ src/routes
 这样会在`window`上面注入一个`__SAPPER__`变量把 server 端预加载的值赋上去。
 
 因为 sapper 还在 beta 阶段，我也不敢拿来开发什么大项目，但真心想写写 svelte，因为它在很多地方非常有新意，历史包袱也不大，暂时写个 [CSS playground](https://css.gongbushang.com/) 来做 [CSS Secrets](http://shop.oreilly.com/product/0636920031123.do) 的笔记好了。
+
+## 单元测试
+
+[testing-library](https://testing-library.com/docs/svelte-testing-library/intro) 提供单元测试支持，配置起来绝对比 react 和 vue 简单，只是因为比较新，所以没有类似的 create react app 这种官方脚手架，当然如果 sapper 出正式版了就算有了。
