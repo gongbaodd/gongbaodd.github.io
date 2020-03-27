@@ -63,7 +63,7 @@
     "@typescript-eslint/parser": "2.25.0",
     "audit-ci": "2.5.1",
     "commitizen": "4.0.3",
-    "cypress-cucumber-preprocessor": "2.0.1",
+    "cypress-cucumber-preprocessor": "2.1.0",
     "emoji-cz": "0.3.1",
     "es-check": "5.1.0",
     "eslint": "6.8.0",
