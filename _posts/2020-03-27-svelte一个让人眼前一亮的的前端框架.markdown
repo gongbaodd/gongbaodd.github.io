@@ -30,7 +30,7 @@ tag: svelte sapper JavaScript rollup
 
 看到了吗？没有多出来的 `Vue.extend()`，HTML 和 JavaScript 部分的交互竟然这儿么完美！要是 CSS 再加把力就更好了（不过如果是 CSS in JS 的话...那还是用某个 preprocessor 勉强一下好了）。HTML 模板类似比较简单的 handlebars 语法，甚至支持异步模板。
 
-另外 svelte 没有虚拟 DOM，这一点我有一些相见恨晚，我之前就写过[文章](./2016-03-31-VUE&Riot&React实力比较.markdown)质疑虚拟 DOM 是不是真的能带来性能提高（结果是性能很差），但是最终被人喷了，导致一年后不得不[弃坑 riotjs 改用 preact](./2017-05-15-弃坑Riot转向Preact.markdown)。但我始终认为虚拟 DOM 更是一个范式而不是能带来性能提升的神器。所以你代码差，换什么范式，性能都差，喷别人之前先称称自己几斤几两好么？
+另外 svelte 没有虚拟 DOM，这一点我有一些相见恨晚，我之前就写过[文章](/fe/2016/03/31/VUE&Riot&React实力比较.html)质疑虚拟 DOM 是不是真的能带来性能提高（结果是性能很差），但是最终被人喷了，导致一年后不得不[弃坑 riotjs 改用 preact](/fe/2017/05/15/弃坑Riot转向Preact.html)。但我始终认为虚拟 DOM 更是一个范式而不是能带来性能提升的神器。所以你代码差，换什么范式，性能都差，喷别人之前先称称自己几斤几两好么？
 
 svelte 符合响应式模式，这一点和 riotjs 很类似，借助 svelte 这个编译器，写好的组件会被编译成响应式函数。也许拿 riotjs 做比方会比较难，这里拿 react 做比方，在 react 中实现响应式需要使用`setState()`。
 
