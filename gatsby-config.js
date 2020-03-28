@@ -33,6 +33,7 @@ module.exports = {
     "gatsby-plugin-theme-ui",
     "gatsby-plugin-typography",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-catch-links",
     ...robotsTxt,
     ...sourceFilesystems,
     ...transformerRemark,

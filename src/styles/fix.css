@@ -14,6 +14,7 @@ code[class*="language-"] {
   box-shadow: 0 0 0 transparent;
 }
 
+a,
 a:visited {
   color: indianred;
 }
