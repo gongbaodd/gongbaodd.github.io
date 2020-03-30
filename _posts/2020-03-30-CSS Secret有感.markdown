@@ -31,3 +31,47 @@ tag: CSS
 - css variables
 
 当然这些那会儿都还没有，所以闲着没事儿干的时候还要多逛逛[css-tricks](https://css-tricks.com/)。
+
+还有，在写[svelte](/fe/2020/03/27/svelte一个让人眼前一亮的的前端框架.html)曾经提过如果有一个比较好的 CSS 和 JavaScript 以及 HTML 交互的方法就好了，细想之下 css variables 或许可以。试想如下结构。
+
+```html
+// Back.svelte
+<div class="bg">
+  <slot></slot>
+</div>
+
+<style>
+  .bg {
+    --color: red;
+  }
+</style>
+```
+
+```html
+// Menu.svelte
+<ul>
+  <li>Menu</li>
+</ul>
+
+<style>
+  ul > li {
+    color: var(--color, blue);
+  }
+</style>
+```
+
+```html
+// App.svelte
+<script>
+  import Back from "Back.svelte";
+  import Menu from "Menu.svelte";
+</script>
+
+<Back>
+  <menu></menu>
+</Back>
+```
+
+此时的 Menu 应该是 Back 里面设置好的红色（我自己没尝试，只是写这个博文的时候临时起意）。这最大的好处显而易见，类似于 react 里面的 theme，`<Back/>`组件给`<Menu/>`组件提供了配合的样式，而不仅仅局限于 JavaScript 传入的数据。
+
+只可惜 CSS variables 需要做向下兼容，而且就算是 postcss 的[postcss-css-variables](https://www.npmjs.com/package/postcss-css-variables)也只能兼容放到`:root`下的变量（那要你有何用囧），不过就[caniuse](https://caniuse.com/#feat=css-variables)的数据，不考虑中国用户的话，确实可以大胆使用 CSS variables，就算是降级估计也没那么难看吧。
