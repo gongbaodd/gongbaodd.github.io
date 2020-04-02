@@ -60,3 +60,7 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 ## 可视化管理 mongodb
 
 可以使用[adminmongo](https://github.com/mrvautin/adminMongo)提供一套简单可用的 WebUI，我已经写到了 docker compose 里面了。
+
+另外`environment`里面的`PASSWORD`并不好使，已经有[issue](https://github.com/mrvautin/adminMongo/issues/166)，不过已经是 2017 年的了，最快的解决方式就是删除`config/app.json`，只需要在 portainer 里面选择`Containers > mongodb_adminmongo_1` 点击 `Edit`，修改 `Command` 并重新部署。
+
+![portainer的设置](./2020-04-02-portainer-config.jpg)
