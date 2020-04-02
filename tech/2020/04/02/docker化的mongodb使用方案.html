@@ -35,7 +35,58 @@ services:
 <p>使用 <a href="https://www.portainer.io/" target="_blank" rel="noopener noreferrer">portainer</a> 能够可视化管理现在运行的 docker。执行如下命令，再访问 localhost:9000，嗒嗒！以后再也不需要执行<code class="language-text">docker ps</code>了。</p>
 <div class="gatsby-highlight" data-language="shell"><pre style="counter-reset: linenumber NaN" class="language-shell line-numbers"><code class="language-shell">docker run -d -p <span class="token number">8000</span>:8000 -p <span class="token number">9000</span>:9000 --name<span class="token operator">=</span>portainer --restart<span class="token operator">=</span>always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <h2>可视化管理 mongodb</h2>
-<p>可以使用<a href="https://github.com/mrvautin/adminMongo" target="_blank" rel="noopener noreferrer">adminmongo</a>提供一套简单可用的 WebUI，我已经写到了 docker compose 里面了。</p></section><hr style="margin-bottom:1.45rem"/><footer><div style="display:flex"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.725rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAb8MaZ6IiFcS2B//xAAbEAACAwADAAAAAAAAAAAAAAACAwABBBETIv/aAAgBAQABBQJrOsQJvM0eRXpomQwFg1kSNz//xAAWEQADAAAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8BYj//xAAYEQACAwAAAAAAAAAAAAAAAAABEAISIf/aAAgBAgEBPwGsjoQX/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQIRMQAQEmEiQYH/2gAIAQEABj8ChyYrmlPhsFy3VNiz7tioOKcJjdv/xAAbEAACAwEBAQAAAAAAAAAAAAABEQAQITFBUf/aAAgBAQABPyFQmSCYZQfeVFgIcDxfHjtEDR5BAh6FP//aAAwDAQACAAMAAAAQK8B8/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EADFjP/EABYRAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPxCaNMSZ/8QAHhABAQABBAMBAAAAAAAAAAAAAREhABAxQVFhkbH/2gAIAQEAAT8QvZXbBfbodJo5fkR5m1yVNHd4b1JdZPREoHxc3a5BFpPzVXiEVhMjt//Z" alt="宫不上叔" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
+<p>可以使用<a href="https://github.com/mrvautin/adminMongo" target="_blank" rel="noopener noreferrer">adminmongo</a>提供一套简单可用的 WebUI，我已经写到了 docker compose 里面了。</p>
+<p>另外<code class="language-text">environment</code>里面的<code class="language-text">PASSWORD</code>并不好使，已经有<a href="https://github.com/mrvautin/adminMongo/issues/166" target="_blank" rel="noopener noreferrer">issue</a>，不过已经是 2017 年的了，最快的解决方式就是删除<code class="language-text">config/app.json</code>，只需要在 portainer 里面选择<code class="language-text">Containers &gt; mongodb_adminmongo_1</code> 点击 <code class="language-text">Edit</code>，修改 <code class="language-text">Command</code> 并重新部署。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f081c6cc2378ea441c3dadd8474c78a2/be8ee/2020-04-02-portainer-config.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.48648648648649%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHsbKhC/wD/xAAXEAEAAwAAAAAAAAAAAAAAAAABAhEg/9oACAEBAAEFAglef//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAIDAAAAAAAAAAAAAAAAAAERICFx/9oACAEBAAY/ArIWS//EABoQAAICAwAAAAAAAAAAAAAAAAABEBExUYH/2gAIAQEAAT8hVu9oORULB//aAAwDAQACAAMAAAAQPM//xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8QDJ//xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QXZ//xAAaEAADAQADAAAAAAAAAAAAAAAAAREhQVFh/9oACAEBAAE/EE2kvEPzRbBF0QolmkL5M//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/f081c6cc2378ea441c3dadd8474c78a2/cbe2e/2020-04-02-portainer-config.webp 148w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/3084c/2020-04-02-portainer-config.webp 295w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/5ca24/2020-04-02-portainer-config.webp 590w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/dad35/2020-04-02-portainer-config.webp 885w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/2baf0/2020-04-02-portainer-config.webp 1180w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/712a0/2020-04-02-portainer-config.webp 1552w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/f081c6cc2378ea441c3dadd8474c78a2/a80bd/2020-04-02-portainer-config.jpg 148w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/1c91a/2020-04-02-portainer-config.jpg 295w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/1c72d/2020-04-02-portainer-config.jpg 590w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/a8a14/2020-04-02-portainer-config.jpg 885w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/fbd2c/2020-04-02-portainer-config.jpg 1180w,
+/static/f081c6cc2378ea441c3dadd8474c78a2/be8ee/2020-04-02-portainer-config.jpg 1552w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/f081c6cc2378ea441c3dadd8474c78a2/1c72d/2020-04-02-portainer-config.jpg"
+          alt="portainer的设置"
+          title="portainer的设置"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">portainer的设置</figcaption>
+  </figure></p></section><hr style="margin-bottom:1.45rem"/><footer><div style="display:flex"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.725rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAb8MaZ6IiFcS2B//xAAbEAACAwADAAAAAAAAAAAAAAACAwABBBETIv/aAAgBAQABBQJrOsQJvM0eRXpomQwFg1kSNz//xAAWEQADAAAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8BYj//xAAYEQACAwAAAAAAAAAAAAAAAAABEAISIf/aAAgBAgEBPwGsjoQX/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQIRMQAQEmEiQYH/2gAIAQEABj8ChyYrmlPhsFy3VNiz7tioOKcJjdv/xAAbEAACAwEBAQAAAAAAAAAAAAABEQAQITFBUf/aAAgBAQABPyFQmSCYZQfeVFgIcDxfHjtEDR5BAh6FP//aAAwDAQACAAMAAAAQK8B8/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EADFjP/EABYRAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPxCaNMSZ/8QAHhABAQABBAMBAAAAAAAAAAAAAREhABAxQVFhkbH/2gAIAQEAAT8QvZXbBfbodJo5fkR5m1yVNHd4b1JdZPREoHxc3a5BFpPzVXiEVhMjt//Z" alt="宫不上叔" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
 /static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
 /static/e7fa6079ba0f0465659fcadeda34cc25/b315d/profile.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
 /static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
