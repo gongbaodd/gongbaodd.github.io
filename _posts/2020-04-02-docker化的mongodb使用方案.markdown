@@ -15,6 +15,7 @@ version: '3.7'
 
 volumes:
   mongo:
+  strapi:
 
 services:
   mongo:
@@ -30,8 +31,26 @@ services:
       - 1234:1234
     environment:
       - HOST=0.0.0.0
+      - CONN_NAME=mongo
+      - DB_HOST=mongo
+      - DB_PORT=27017
+      - PASSWORD=$ADMIN_MONGO_PASSWORD
     links:
       - mongo:mongo
+  strapi:
+      image: <strapi registry>
+      environment:
+        DATABASE_CLIENT: mongo
+        DATABASE_NAME: strapi
+        DATABASE_HOST: mongo
+        DATABASE_PORT: 27017
+      links:
+        - mongo:mongo
+      volumes:
+        - ./app:/srv/app
+      ports:
+        - '1337:1337'
+
 
 ```
 
