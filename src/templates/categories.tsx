@@ -1,19 +1,23 @@
 import React, { FC } from "react";
-import { graphql, PageProps } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 
-import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Bio from "../components/bio";
 import BlogLink from "../components/BlogLink";
+import { FilterOptions } from "../values/FilterOptions";
 
 export const pageQuery = graphql`
-  query {
+  query BlogPostsByCategory($category: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: fields___date, order: DESC }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: $category } } }
+      sort: { fields: fields___date, order: DESC }
+    ) {
       edges {
         node {
           excerpt
@@ -54,17 +58,25 @@ interface PageData {
   };
 }
 
-const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
+export interface PageContext {
+  category: string;
+  filterOption: FilterOptions;
+}
+
+const CategoryTemplate: FC<PageProps<PageData, { category }>> = ({
+  data,
+  location,
+  pageContext: { category },
+}) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title={category} />
       <Bio />
       {posts.map(({ node }) => {
         const { title, date, slug } = node.fields;
-        const { category } = node.frontmatter;
 
         return (
           <BlogLink
@@ -81,4 +93,4 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
   );
 };
 
-export default BlogIndex;
+export default CategoryTemplate;
