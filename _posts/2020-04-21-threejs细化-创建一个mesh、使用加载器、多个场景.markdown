@@ -147,3 +147,7 @@ export default () => {
 ```
 
 这里`useFrame`的第二个参数表示它的优先级，值越高，越先渲染，这意味着比它优先级低的场景渲染之前要把`gl.autoClear`设置为`false`，以避免被清除。
+
+## 其它
+
+另外可以看看京东的一篇博客[凹凸实验室](https://aotu.io/notes/2018/10/18/cannonjs/index.html)。
