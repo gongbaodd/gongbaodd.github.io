@@ -22,13 +22,13 @@
         <span class="token operator">&lt;</span>mesh arg<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">BoxBufferGeometry</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">MeshBasicMaterial</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>Canvas<span class="token operator">></span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
-<p>官网还提供了一个绝妙的方法，但是我试过，不好使…王德发？</p>
+<p>官网还提供了一个绝妙的方法。</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// 实现不了，不知道咋回事儿</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>
     <span class="token operator">&lt;</span>Canvas<span class="token operator">></span>
         <span class="token operator">&lt;</span>mesh<span class="token operator">></span>
-            <span class="token operator">&lt;</span>boxBufferGeometry <span class="token operator">/</span><span class="token operator">></span>
-            <span class="token operator">&lt;</span>meshBasicMaterial <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>boxBufferGeometry attach<span class="token operator">=</span><span class="token string">"geometry"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>meshBasicMaterial attach<span class="token operator">=</span><span class="token string">"material"</span> <span class="token operator">/</span><span class="token operator">></span>
         <span class="token operator">&lt;</span><span class="token operator">/</span>mesh<span class="token operator">></span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>Canvas<span class="token operator">></span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
