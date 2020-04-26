@@ -36,15 +36,15 @@ export default () => (
 );
 ```
 
-官网还提供了一个绝妙的方法，但是我试过，不好使...王德发？
+官网还提供了一个绝妙的方法。
 
 ```JavaScript
 // 实现不了，不知道咋回事儿
 export default () => (
     <Canvas>
         <mesh>
-            <boxBufferGeometry />
-            <meshBasicMaterial />
+            <boxBufferGeometry attach="geometry" />
+            <meshBasicMaterial attach="material" />
         </mesh>
     </Canvas>
 );
