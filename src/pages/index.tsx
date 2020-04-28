@@ -27,6 +27,10 @@ export const pageQuery = graphql`
           }
         }
       }
+      group(field: frontmatter___category) {
+        fieldValue
+        totalCount
+      }
     }
   }
 `;
@@ -51,17 +55,36 @@ interface PageData {
         };
       };
     }>;
+    group: Array<{
+      fieldValue: string;
+      totalCount: number;
+    }>;
   };
 }
 
 const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
+  const categories = data.allMarkdownRemark.group;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
+      <table>
+        <thead>
+          <tr>
+            {categories.map(({ fieldValue }) => (
+              <td>{fieldValue}</td>
+            ))}
+          </tr>
+        </thead>
+        <tr>
+          {categories.map(({ totalCount }) => (
+            <td>{totalCount}</td>
+          ))}
+        </tr>
+      </table>
       {posts.map(({ node }) => {
         const { title, date, slug } = node.fields;
         const { category } = node.frontmatter;
