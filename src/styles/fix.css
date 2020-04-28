@@ -3,6 +3,7 @@ body {
     linear-gradient(90deg, hsla(0, 0%, 50%, 0.05) 2px, transparent 0),
     linear-gradient(hsla(0, 0%, 100%, 0.01) 1px, transparent 0),
     linear-gradient(90deg, hsla(0, 0%, 100%, 0.01) 1px, transparent 0);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
 }
 
 .line-numbers .line-numbers-rows {
