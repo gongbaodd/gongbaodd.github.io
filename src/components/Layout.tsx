@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link, PageProps } from "gatsby";
-import Github from "../github";
-import { rhythm, scale } from "../../utils/typography";
+import Github from "./github";
+import { rhythm, scale } from "../utils/typography";
 
 // eslint-disable-next-line no-undef
 const rootPath = `${__PATH_PREFIX__}/`;
@@ -10,11 +10,15 @@ const quote = '"';
 const TOKEN_FUNC = "token function";
 const TOKEN_PUNC = "token punctuation";
 const TOKEN_STR = "token string";
+const TOKEN_OP = "token operator";
 
-const Header: FC<{ title: string; location: PageProps["location"] }> = ({
-  title,
-  location,
-}) => {
+interface HeaderProps {
+  title: string;
+  location: PageProps["location"];
+  category?: string;
+}
+
+const Header: FC<HeaderProps> = ({ title, location, category }) => {
   const isRoot = location.pathname === rootPath;
   const style = isRoot
     ? {
@@ -35,8 +39,22 @@ const Header: FC<{ title: string; location: PageProps["location"] }> = ({
         {title}
         <small>{quote}</small>
       </Link>
-      <small className={TOKEN_PUNC}>)</small>
-      <small className={TOKEN_PUNC}>;</small>
+      {category && (
+        <>
+          <small className={TOKEN_PUNC}>{",{category:"}</small>
+          <span className={TOKEN_OP}>
+            <small>{quote}</small>
+            {category}
+            <small>{quote}</small>
+          </span>
+          <small className={TOKEN_PUNC}>{"});"}</small>
+        </>
+      )}
+      {!category && (
+        <>
+          <small className={TOKEN_PUNC}>{");"}</small>
+        </>
+      )}
     </h1>
   );
 };
@@ -50,7 +68,7 @@ const Footer: FC<{}> = () => {
   );
 };
 
-const Layout = ({ location, title, children }) => {
+const Layout: FC<HeaderProps> = ({ children, title, location, category }) => {
   return (
     <div
       style={{
@@ -61,7 +79,7 @@ const Layout = ({ location, title, children }) => {
       }}
     >
       <Github />
-      <Header title={title} location={location} />
+      <Header title={title} location={location} category={category} />
       <main>{children}</main>
       <Footer />
     </div>

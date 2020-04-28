@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { PageProps, graphql } from "gatsby";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import Bio from "../components/bio";
 import BlogLink from "../components/BlogLink";
@@ -72,7 +72,7 @@ const CategoryTemplate: FC<PageProps<PageData, { category }>> = ({
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} category={category}>
       <SEO title={category} />
       <Bio />
       {posts.map(({ node }) => {

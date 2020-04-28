@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { graphql, PageProps } from "gatsby";
 
 import Bio from "../components/bio";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import BlogLink from "../components/BlogLink";
 

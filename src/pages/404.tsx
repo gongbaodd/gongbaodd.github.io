@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { graphql, PageProps } from "gatsby";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
 export const pageQuery = graphql`
