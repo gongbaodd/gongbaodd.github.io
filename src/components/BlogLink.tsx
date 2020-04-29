@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "gatsby";
+import { Container } from "theme-ui";
 
 import { rhythm } from "../utils/typography";
 import { sanitize } from "../utils/sanitize";
@@ -22,7 +23,7 @@ interface Props {
 
 const BlogLink: FC<Props> = ({ date, category, slug, title, excerpt }) => {
   return (
-    <article style={{ marginBottom: "2em" }}>
+    <Container mb={4}>
       <header>
         <small className={TOKEN_COMMENT}>{`/** ${date} **/`}</small>
         <h3
@@ -73,7 +74,7 @@ const BlogLink: FC<Props> = ({ date, category, slug, title, excerpt }) => {
         />
         <span className={TOKEN_COMMENT}>**/</span>
       </section>
-    </article>
+    </Container>
   );
 };
 

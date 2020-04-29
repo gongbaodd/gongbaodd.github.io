@@ -37,11 +37,6 @@ export const pageQuery = graphql`
 `;
 
 interface PageData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
   allMarkdownRemark: {
     edges: Array<{
       node: {
@@ -64,11 +59,10 @@ interface PageData {
 }
 
 const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO title="All posts" />
       <Bio />
       <GroupLink />
