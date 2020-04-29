@@ -11,11 +11,6 @@ const sanitize = (html: string) => html;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -33,12 +28,6 @@ export const pageQuery = graphql`
 `;
 
 interface PageData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
-
   markdownRemark: {
     id: string;
     excerpt: string;
@@ -65,12 +54,11 @@ const BlogPostTemplate: FC<PageProps<
   { previous: RefPageData; next: RefPageData }
 >> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
   const { title, date } = post.fields;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO title={title} description={post.excerpt} />
       <article>
         <header>

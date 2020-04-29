@@ -4,16 +4,12 @@ import { PageProps, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import Bio from "../components/bio";
-import BlogLink from "../components/BlogLink";
+import Posts from "../components/Posts";
+import GroupLinks from "../components/GroupLinks";
 import { FilterOptions } from "../values/FilterOptions";
 
 export const pageQuery = graphql`
   query BlogPostsByCategory($category: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(
       filter: { frontmatter: { category: { eq: $category } } }
       sort: { fields: fields___date, order: DESC }
@@ -36,11 +32,6 @@ export const pageQuery = graphql`
 `;
 
 interface PageData {
-  site: {
-    siteMetadata: {
-      title: string;
-    };
-  };
   allMarkdownRemark: {
     edges: Array<{
       node: {
@@ -68,27 +59,12 @@ const CategoryTemplate: FC<PageProps<PageData, { category }>> = ({
   location,
   pageContext: { category },
 }) => {
-  const siteTitle = data.site.siteMetadata.title;
-  const posts = data.allMarkdownRemark.edges;
-
   return (
-    <Layout location={location} title={siteTitle} category={category}>
+    <Layout location={location} category={category}>
       <SEO title={category} />
       <Bio />
-      {posts.map(({ node }) => {
-        const { title, date, slug } = node.fields;
-
-        return (
-          <BlogLink
-            slug={slug}
-            date={date}
-            category={category}
-            title={title}
-            key={slug}
-            excerpt={node.excerpt}
-          />
-        );
-      })}
+      <GroupLinks />
+      <Posts data={data} />
     </Layout>
   );
 };

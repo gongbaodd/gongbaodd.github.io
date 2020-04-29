@@ -1,7 +1,8 @@
 ---
 type: post
 category: tech
-tag: windows
+tag:
+  - windows
 ---
 
 # 分享一个 Windows 下面的鼠标手势工具 StrokesPlus
