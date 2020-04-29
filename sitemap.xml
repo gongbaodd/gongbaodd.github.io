@@ -37,14 +37,14 @@
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/26/WSL安装ruby环境.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/02/25/使用stryker做mutation test.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/23/Mouse_without_borders让鼠标同时连接四台设备.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/fe/2020/02/22/我也谈谈hoisting.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/22/分享一个Windows下面的鼠标手势工具strokesPlus.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/fe/2020/02/22/我也谈谈hoisting.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/02/21/Windows安装flutter开发环境.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/17/电影补档计划：时空恋旅人.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/15/Github项目徽章地址.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/15/电影补档计划：利刃出鞘.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/movie/2020/02/14/电影补档计划：婚姻故事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/14/电影补档计划：乔乔兔.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/movie/2020/02/14/电影补档计划：婚姻故事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/13/Windows下为Rust提供QT环境（弃）.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/12/Windows下为Rust提供GTK环境.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/11/电影补档计划：好莱坞往事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -410,8 +410,8 @@
 <url> <loc>https://blog.gongbushang.com/life/2015/08/18/琼B之行.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2015/05/30/爬蓝调口琴网.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2015/05/09/ionic官方Todo guide.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/fe/2015/05/04/nativescript试探报告.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2015/05/04/ionic的安装和配置.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/fe/2015/05/04/nativescript试探报告.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2015/04/12/环渤海之行后感.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2015/03/28/环渤海之行.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2015/03/21/Don&#039;t Starve console.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
