@@ -1,63 +1,7 @@
 import React, { FC } from "react";
-import { Link, PageProps } from "gatsby";
 import Github from "./github";
-import { rhythm, scale } from "../utils/typography";
-
-// eslint-disable-next-line no-undef
-const rootPath = `${__PATH_PREFIX__}/`;
-// eslint-disable-next-line quotes
-const quote = '"';
-const TOKEN_FUNC = "token function";
-const TOKEN_PUNC = "token punctuation";
-const TOKEN_STR = "token string";
-const TOKEN_OP = "token operator";
-
-interface HeaderProps {
-  title: string;
-  location: PageProps["location"];
-  category?: string;
-}
-
-const Header: FC<HeaderProps> = ({ title, location, category }) => {
-  const isRoot = location.pathname === rootPath;
-  const style = isRoot
-    ? {
-        ...scale(1.5),
-        marginBottom: rhythm(1.5),
-        marginTop: 0,
-      }
-    : {
-        marginTop: 0,
-      };
-
-  return (
-    <h1 style={style}>
-      <small className={TOKEN_FUNC}>blog</small>
-      <small className={TOKEN_PUNC}>(</small>
-      <Link className={TOKEN_STR} style={{ textDecoration: "none" }} to="/">
-        <small>{quote}</small>
-        {title}
-        <small>{quote}</small>
-      </Link>
-      {category && (
-        <>
-          <small className={TOKEN_PUNC}>{",{category:"}</small>
-          <span className={TOKEN_OP}>
-            <small>{quote}</small>
-            {category}
-            <small>{quote}</small>
-          </span>
-          <small className={TOKEN_PUNC}>{"});"}</small>
-        </>
-      )}
-      {!category && (
-        <>
-          <small className={TOKEN_PUNC}>{");"}</small>
-        </>
-      )}
-    </h1>
-  );
-};
+import { rhythm } from "../utils/typography";
+import Header, { HeaderProps } from "../components/Header";
 
 const Footer: FC<{}> = () => {
   return (
@@ -68,7 +12,7 @@ const Footer: FC<{}> = () => {
   );
 };
 
-const Layout: FC<HeaderProps> = ({ children, title, location, category }) => {
+const Layout: FC<HeaderProps> = ({ children, location, category }) => {
   return (
     <div
       style={{
@@ -79,7 +23,7 @@ const Layout: FC<HeaderProps> = ({ children, title, location, category }) => {
       }}
     >
       <Github />
-      <Header title={title} location={location} category={category} />
+      <Header location={location} category={category} />
       <main>{children}</main>
       <Footer />
     </div>

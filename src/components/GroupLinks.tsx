@@ -4,7 +4,7 @@ import { Container } from "theme-ui";
 import CategoryLink from "../components/CategoryLink";
 
 const query = graphql`
-  query CategoryQuery {
+  query {
     allMarkdownRemark {
       group(field: frontmatter___category) {
         fieldValue
