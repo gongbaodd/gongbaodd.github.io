@@ -1,7 +1,11 @@
 ---
 type: post
 category: fe
-tag: cypress Windows WSL2 MSYS
+tag:
+  - cypress
+  - Windows
+  - WSL2
+  - MSYS
 ---
 
 # Windows 下面搞 Cypress 真心不容易

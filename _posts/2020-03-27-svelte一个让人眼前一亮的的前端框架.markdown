@@ -1,7 +1,11 @@
 ---
 type: post
 category: fe
-tag: svelte sapper JavaScript rollup
+tag:
+  - svelte
+  - sapper
+  - JavaScript
+  - rollup
 ---
 
 # Svelte 让人眼前一亮的前端框架

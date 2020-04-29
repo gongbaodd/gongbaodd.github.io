@@ -1,7 +1,8 @@
 ---
 type: post
 category: fe
-tag: CSS
+tag:
+  - CSS
 ---
 
 # CSS Secret 有感

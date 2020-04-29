@@ -1,7 +1,10 @@
 ---
 type: post
 category: tech
-tag: WSL2 virtualbox hyper-v
+tag:
+  - WSL2
+  - virtualbox
+  - hyper-v
 ---
 
 # 应该是目前最好的 WSL2 和 Virtualbox 共存的方法了

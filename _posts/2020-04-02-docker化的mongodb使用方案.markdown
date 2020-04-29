@@ -1,7 +1,10 @@
 ---
 type: post
 category: tech
-tag: docker portainer mongodb
+tag:
+  - docker
+  - portainer
+  - mongodb
 ---
 
 # docker 化的 mongodb 使用方案

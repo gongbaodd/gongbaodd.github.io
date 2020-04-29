@@ -1,7 +1,10 @@
 ---
 type: post
 category: tech
-tag: coding.net Jenkins docker
+tag:
+  - coding.net
+  - jenkins
+  - docker
 ---
 
 # Coding.net 使用 Jenkins 实现自动部署(CI/CD)

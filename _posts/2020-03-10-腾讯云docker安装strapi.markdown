@@ -1,7 +1,10 @@
 ---
 type: post
 category: fe
-tag: docker tencent strapi
+tag:
+  - docker
+  - tencent
+  - strapi
 ---
 
 # 腾讯云 docker 安装 strapi

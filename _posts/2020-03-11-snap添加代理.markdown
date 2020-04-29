@@ -1,7 +1,12 @@
 ---
 type: post
 category: tech
-tag: microk8s snap docker shadowsocks proxy
+tag:
+  - microk8s
+  - snap
+  - docker
+  - shadowsocks
+  - proxy
 ---
 
 # 为 snap 添加代理

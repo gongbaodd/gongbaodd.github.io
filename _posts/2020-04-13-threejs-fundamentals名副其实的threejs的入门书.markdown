@@ -1,7 +1,10 @@
 ---
 type: post
 category: book
-tag: threejs JavaScript webGL
+tag:
+  - threejs
+  - JavaScript
+  - webGL
 ---
 
 # threejs fundamentals 名副其实的 threejs 入门书

@@ -1,7 +1,9 @@
 ---
 type: post
 category: book
-tag: JavaScript functinal-programming
+tag:
+  - JavaScript
+  - functinal-programming
 ---
 
 ![cover](./2020-03-21-functional-light-javascript.png)

@@ -1,7 +1,10 @@
 ---
 type: post
 category: fe
-tag: threejs JavaScript webGL
+tag:
+  - threejs
+  - JavaScript
+  - webGL
 ---
 
 # threejs 细化-创建一个 mesh、使用加载器、多个场景

@@ -1,7 +1,10 @@
 ---
 type: post
 category: fe
-tag: css tailwind postcss
+tag:
+  - css
+  - tailwind
+  - postcss
 ---
 
 # [Tailwind](https://tailwindcss.com/) 一个像宏语言的 CSS 解决方案

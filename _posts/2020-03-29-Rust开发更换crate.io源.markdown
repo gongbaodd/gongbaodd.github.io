@@ -1,7 +1,11 @@
 ---
 type: post
 category: fe
-tag: rust crate.io ustc cargo
+tag:
+  - rust
+  - crate.io
+  - ustc
+  - cargo
 ---
 
 # Rust 开发更换 crate.io 源

@@ -1,7 +1,10 @@
 ---
 type: post
 category: tech
-tag: windows facial-recognition
+tag:
+  - windows
+  - facial-recognition
+  - keyLemon
 ---
 
 # keyLemon 让任何一个摄像头都支持人脸登入

@@ -1,7 +1,9 @@
 ---
 type: post
 category: tech
-tag: apt proxy
+tag:
+  - apt
+  - proxy
 ---
 
 # 为 apt 添加代理

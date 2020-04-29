@@ -1,7 +1,9 @@
 ---
 type: post
 category: fe
-tag: observablehq d3
+tag:
+  - observablehq
+  - d3
 ---
 
 # 学习 D3 的新姿势

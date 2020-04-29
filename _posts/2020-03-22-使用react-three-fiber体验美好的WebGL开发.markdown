@@ -1,7 +1,10 @@
 ---
 type: post
 category: fe
-tag: threejs webGL react
+tag:
+  - threejs
+  - webGL
+  - react
 ---
 
 # 使用 react-three-fiber 体验美好的 WebGL 开发

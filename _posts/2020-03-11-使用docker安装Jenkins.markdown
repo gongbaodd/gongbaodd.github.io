@@ -1,7 +1,10 @@
 ---
 type: post
 category: tech
-tag: docker jenkins ci
+tag:
+  - docker
+  - jenkins
+  - ci
 ---
 
 # 使用 docker 安装 Jenkins

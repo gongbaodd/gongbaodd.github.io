@@ -1,7 +1,11 @@
 ---
 type: post
 category: fe
-tag: observablehq JavaScript d3 jupyter
+tag:
+  - observablehq
+  - JavaScript
+  - d3
+  - jupyter
 ---
 
 # ObservableHQ-JS 终于有自己的 Jupyter 笔记本了
