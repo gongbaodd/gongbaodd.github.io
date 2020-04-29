@@ -1,10 +1,12 @@
 import React, { FC } from "react";
-import { graphql, PageProps } from "gatsby";
+import { graphql, PageProps, Link } from "gatsby";
+import { Badge } from "theme-ui";
 
 import Bio from "../components/bio";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import BlogLink from "../components/BlogLink";
+import CategoryLink from "../components/CategoryLink";
 
 export const pageQuery = graphql`
   query {
@@ -71,20 +73,17 @@ const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      <table>
-        <thead>
-          <tr>
-            {categories.map(({ fieldValue }) => (
-              <td>{fieldValue}</td>
-            ))}
-          </tr>
-        </thead>
-        <tr>
-          {categories.map(({ totalCount }) => (
-            <td>{totalCount}</td>
-          ))}
-        </tr>
-      </table>
+      <div>
+        {categories.map(({ fieldValue, totalCount }) => {
+          return (
+            <CategoryLink
+              key={fieldValue}
+              fieldValue={fieldValue}
+              totalCount={totalCount}
+            />
+          );
+        })}
+      </div>
       {posts.map(({ node }) => {
         const { title, date, slug } = node.fields;
         const { category } = node.frontmatter;

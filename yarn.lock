@@ -2576,6 +2576,43 @@
   resolved "https://registry.npm.taobao.org/@types/stack-utils/download/@types/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha1-CoUdO9lkmPolwzq3J47TvWXwbD4=
 
+"@types/styled-system@*":
+  version "5.1.9"
+  resolved "https://registry.npm.taobao.org/@types/styled-system/download/@types/styled-system-5.1.9.tgz#8baac8f6eca9e0bd5768c175ca5ce1f2d6f61ade"
+  integrity sha1-i6rI9uyp4L1XaMF1ylzh8tb2Gt4=
+  dependencies:
+    csstype "^2.6.9"
+
+"@types/styled-system__css@*":
+  version "5.0.8"
+  resolved "https://registry.npm.taobao.org/@types/styled-system__css/download/@types/styled-system__css-5.0.8.tgz#3886fc89e003aadda858349a5cf324fe54b09980"
+  integrity sha1-OIb8ieADqt2oWDSaXPMk/lSwmYA=
+  dependencies:
+    csstype "^2.6.6"
+
+"@types/theme-ui@*", "@types/theme-ui@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.npm.taobao.org/@types/theme-ui/download/@types/theme-ui-0.3.1.tgz#45e7064b53de401fc405a1b7a6405b2dea51ffde"
+  integrity sha1-RecGS1PeQB/EBaG3pkBbLepR/94=
+  dependencies:
+    "@emotion/serialize" "^0.11.15"
+    "@types/react" "*"
+    "@types/styled-system" "*"
+    "@types/styled-system__css" "*"
+    "@types/theme-ui__components" "*"
+    csstype "^2.6.6"
+
+"@types/theme-ui__components@*":
+  version "0.2.4"
+  resolved "https://registry.npm.taobao.org/@types/theme-ui__components/download/@types/theme-ui__components-0.2.4.tgz#96e4342eb00a4164a66ac6b58dcf1877bd3cec1a"
+  integrity sha1-luQ0LrAKQWSmasa1jc8Yd7087Bo=
+  dependencies:
+    "@emotion/core" "^10.0.0"
+    "@emotion/styled" "^10.0.0"
+    "@types/react" "*"
+    "@types/styled-system" "*"
+    "@types/theme-ui" "*"
+
 "@types/tmp@^0.0.33":
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
@@ -5404,6 +5441,11 @@ csstype@^2.5.7:
   version "2.6.9"
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.9.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.9.tgz#05141d0cd557a56b8891394c1911c40c8a98d098"
   integrity sha1-BRQdDNVXpWuIkTlMGRHEDIqY0Jg=
+
+csstype@^2.6.6, csstype@^2.6.9:
+  version "2.6.10"
+  resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.10.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
+  integrity sha1-5jr1DmbXwmbttrMpCc/Qqr4Dkos=
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
