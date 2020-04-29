@@ -7,10 +7,10 @@ interface Props {
   totalCount: number;
 }
 
-const CategoryLink: FC<Props> = ({ fieldValue, totalCount }) => {
+const TagLink: FC<Props> = ({ fieldValue, totalCount }) => {
   return (
     <Link
-      to={`/categories/${fieldValue}`}
+      to={`/tags/${fieldValue}`}
       style={{ marginRight: ".5em", display: "inline-block" }}
     >
       {fieldValue}
@@ -19,12 +19,12 @@ const CategoryLink: FC<Props> = ({ fieldValue, totalCount }) => {
   );
 };
 
-export default CategoryLink;
+export default TagLink;
 
-const categoryQuery = graphql`
+const tagQuery = graphql`
   query {
     allMarkdownRemark {
-      group(field: frontmatter___category) {
+      group(field: frontmatter___tag) {
         fieldValue
         totalCount
       }
@@ -41,15 +41,15 @@ interface Query {
   };
 }
 
-export const CategoryLinks = () => {
+export const TagLinks = () => {
   const {
-    allMarkdownRemark: { group: categories },
-  } = useStaticQuery<Query>(categoryQuery);
+    allMarkdownRemark: { group: tags },
+  } = useStaticQuery<Query>(tagQuery);
 
   return (
     <>
-      {categories.map(({ fieldValue, totalCount }) => (
-        <CategoryLink
+      {tags.map(({ fieldValue, totalCount }) => (
+        <TagLink
           key={fieldValue}
           fieldValue={fieldValue}
           totalCount={totalCount}
