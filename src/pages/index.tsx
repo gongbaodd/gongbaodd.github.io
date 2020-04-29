@@ -1,12 +1,11 @@
 import React, { FC } from "react";
-import { graphql, PageProps, Link } from "gatsby";
-import { Badge } from "theme-ui";
+import { graphql, PageProps } from "gatsby";
 
 import Bio from "../components/bio";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import BlogLink from "../components/BlogLink";
-import CategoryLink from "../components/CategoryLink";
+import GroupLink from "../components/GroupLinks";
 
 export const pageQuery = graphql`
   query {
@@ -67,23 +66,12 @@ interface PageData {
 const BlogIndex: FC<PageProps<PageData>> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
-  const categories = data.allMarkdownRemark.group;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
-      <div>
-        {categories.map(({ fieldValue, totalCount }) => {
-          return (
-            <CategoryLink
-              key={fieldValue}
-              fieldValue={fieldValue}
-              totalCount={totalCount}
-            />
-          );
-        })}
-      </div>
+      <GroupLink />
       {posts.map(({ node }) => {
         const { title, date, slug } = node.fields;
         const { category } = node.frontmatter;
