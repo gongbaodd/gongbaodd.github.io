@@ -6,11 +6,12 @@ import SEO from "../components/seo";
 import Bio from "../components/bio";
 import Posts from "../components/Posts";
 import GroupLinks from "../components/GroupLinks";
+import { FilterOptions } from "../values/FilterOptions";
 
 export const pageQuery = graphql`
-  query BlogPostsByCategory($category: String!) {
+  query BlogPostsByTags($tag: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: $category } } }
+      filter: { frontmatter: { tag: { in: [$tag] } } }
       sort: { fields: fields___date, order: DESC }
     ) {
       edges {
@@ -22,7 +23,7 @@ export const pageQuery = graphql`
             title
           }
           frontmatter {
-            category
+            tag
           }
         }
       }
@@ -36,7 +37,7 @@ interface PageData {
       node: {
         excerpt: string;
         frontmatter: {
-          category: string;
+          tag: string[];
         };
         fields: {
           slug: string;
@@ -49,17 +50,18 @@ interface PageData {
 }
 
 export interface PageContext {
-  category: string;
+  tag: string;
+  filterOption: FilterOptions;
 }
 
-const CategoryTemplate: FC<PageProps<PageData, PageContext>> = ({
+const CategoryTemplate: FC<PageProps<PageData, { tag }>> = ({
   data,
   location,
-  pageContext: { category },
+  pageContext: { tag },
 }) => {
   return (
-    <Layout location={location} category={category}>
-      <SEO title={category} />
+    <Layout location={location}>
+      <SEO title={tag} />
       <Bio />
       <GroupLinks />
       <Posts data={data} />

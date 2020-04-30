@@ -28,7 +28,8 @@ interface Query {
       node: {
         excerpt: string;
         frontmatter: {
-          category: string;
+          category?: string;
+          tag?: string[];
         };
         fields: {
           slug: string;
@@ -59,7 +60,7 @@ const Posts: FC<Props> = ({ data }) => {
           <BlogLink
             slug={slug}
             date={date}
-            category={cate}
+            category={cate || ""}
             title={title}
             key={slug}
             excerpt={node.excerpt}
