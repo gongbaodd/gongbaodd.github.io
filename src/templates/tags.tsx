@@ -6,7 +6,6 @@ import SEO from "../components/seo";
 import Bio from "../components/bio";
 import Posts from "../components/Posts";
 import GroupLinks from "../components/GroupLinks";
-import { FilterOptions } from "../values/FilterOptions";
 
 export const pageQuery = graphql`
   query BlogPostsByTags($tag: String!) {
@@ -24,6 +23,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             tag
+            category
           }
         }
       }
@@ -38,6 +38,7 @@ interface PageData {
         excerpt: string;
         frontmatter: {
           tag: string[];
+          category: string;
         };
         fields: {
           slug: string;
@@ -51,10 +52,9 @@ interface PageData {
 
 export interface PageContext {
   tag: string;
-  filterOption: FilterOptions;
 }
 
-const CategoryTemplate: FC<PageProps<PageData, { tag }>> = ({
+const CategoryTemplate: FC<PageProps<PageData, PageContext>> = ({
   data,
   location,
   pageContext: { tag },
