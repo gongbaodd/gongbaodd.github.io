@@ -5,7 +5,7 @@ import { PageContext } from "../../src/templates/tags";
 const query = `
 {
     allMarkdownRemark(sort: {order: DESC, fields: [fields___date]}) {
-      group(field: frontmatter___tag) {
+      group(field: fields___tag) {
         fieldValue
       }
     }

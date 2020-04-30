@@ -5,7 +5,8 @@ import { slug2path } from "./utils/slug_path";
 
 interface MdNode extends Node {
   frontmatter: {
-    category: string;
+    category: string | null;
+    tag: string[] | null;
   };
 }
 
@@ -15,8 +16,8 @@ const createMdNodeFields = (
   createNodeField: CreateNodeArgs["actions"]["createNodeField"]
 ) => {
   const value = createFilePath({ node, getNode });
-  const { category } = node.frontmatter;
-  const { path, year, month, day, title } = slug2path(value, category);
+  const { category, tag } = node.frontmatter;
+  const { path, year, month, day, title } = slug2path(value, category || "");
 
   createNodeField({
     name: "slug",
@@ -52,6 +53,12 @@ const createMdNodeFields = (
     name: "date",
     node,
     value: new Date([year, month, day].join("-")),
+  });
+
+  createNodeField({
+    name: "tag",
+    node,
+    value: (tag || []).map((t) => t.toLowerCase()),
   });
 };
 

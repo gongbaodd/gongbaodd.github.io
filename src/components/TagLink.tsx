@@ -24,7 +24,7 @@ export default TagLink;
 const tagQuery = graphql`
   query {
     allMarkdownRemark {
-      group(field: frontmatter___tag) {
+      group(field: fields___tag) {
         fieldValue
         totalCount
       }

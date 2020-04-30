@@ -10,7 +10,7 @@ import GroupLinks from "../components/GroupLinks";
 export const pageQuery = graphql`
   query BlogPostsByTags($tag: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { tag: { in: [$tag] } } }
+      filter: { fields: { tag: { in: [$tag] } } }
       sort: { fields: fields___date, order: DESC }
     ) {
       edges {
@@ -20,9 +20,9 @@ export const pageQuery = graphql`
             slug
             date(formatString: "MMMM DD, YYYY")
             title
+            tag
           }
           frontmatter {
-            tag
             category
           }
         }
@@ -37,13 +37,13 @@ interface PageData {
       node: {
         excerpt: string;
         frontmatter: {
-          tag: string[];
           category: string;
         };
         fields: {
           slug: string;
           title: string;
           date: string;
+          tag?: string[];
         };
       };
     }>;
