@@ -32,9 +32,10 @@ interface TitleQuery {
 export interface HeaderProps {
   location: PageProps["location"];
   category?: string;
+  tag?: string;
 }
 
-const Header: FC<HeaderProps> = ({ location, category }) => {
+const Header: FC<HeaderProps> = ({ location, category, tag }) => {
   const isRoot = location.pathname === rootPath;
   const style = isRoot
     ? {
@@ -73,7 +74,18 @@ const Header: FC<HeaderProps> = ({ location, category }) => {
           <small className={TOKEN_PUNC}>{"});"}</small>
         </>
       )}
-      {!category && <small className={TOKEN_PUNC}>);</small>}
+      {tag && (
+        <>
+          <small className={TOKEN_PUNC}>{",{tag:"}</small>
+          <span className={TOKEN_OP}>
+            <small>{quote}</small>
+            {tag}
+            <small>{quote}</small>
+          </span>
+          <small className={TOKEN_PUNC}>{"});"}</small>
+        </>
+      )}
+      {!category && !tag && <small className={TOKEN_PUNC}>);</small>}
     </h1>
   );
 };

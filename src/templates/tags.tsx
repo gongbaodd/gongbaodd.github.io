@@ -60,7 +60,7 @@ const CategoryTemplate: FC<PageProps<PageData, PageContext>> = ({
   pageContext: { tag },
 }) => {
   return (
-    <Layout location={location}>
+    <Layout location={location} tag={tag}>
       <SEO title={tag} />
       <Bio />
       <GroupLinks />

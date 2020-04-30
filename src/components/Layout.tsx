@@ -12,7 +12,7 @@ const Footer: FC<{}> = () => {
   );
 };
 
-const Layout: FC<HeaderProps> = ({ children, location, category }) => {
+const Layout: FC<HeaderProps> = ({ children, location, category, tag }) => {
   return (
     <div
       style={{
@@ -23,7 +23,7 @@ const Layout: FC<HeaderProps> = ({ children, location, category }) => {
       }}
     >
       <Github />
-      <Header location={location} category={category} />
+      <Header location={location} category={category} tag={tag} />
       <main>{children}</main>
       <Footer />
     </div>
