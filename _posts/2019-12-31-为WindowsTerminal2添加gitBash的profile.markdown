@@ -1,10 +1,13 @@
 ---
 type: post
 category: tech
+tag:
+  - windows-terminal
 ---
-# 为Windows Terminal 2添加git bash的profile
 
-粘贴以下代码到settings中。
+# 为 Windows Terminal 2 添加 git bash 的 profile
+
+粘贴以下代码到 settings 中。
 
 ```JSON
         {

@@ -1,6 +1,8 @@
 ---
 type: post
 category: tech
+tag:
+  - ssh
 ---
 
 # ssh 免密码登录

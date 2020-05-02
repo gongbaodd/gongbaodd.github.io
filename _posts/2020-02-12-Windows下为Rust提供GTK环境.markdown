@@ -1,6 +1,9 @@
 ---
 type: post
 category: tech
+tag:
+  - rust
+  - gtk
 ---
 
 # Windows 下为 Rust 提供 GTK 环境

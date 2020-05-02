@@ -1,11 +1,14 @@
 ---
 type: post
 category: fe
+tag:
+  - test
 ---
-# 2019年的Node测试最佳实践
+
+# 2019 年的 Node 测试最佳实践
 
 这其实不是一篇总结文档，而是一个笔记，基于[NodeJs && JS testing best practise](https://medium.com/@me_37286/yoni-goldberg-javascript-nodejs-testing-best-practices-2b98924c9347)。
 
-比较有趣的是，[Stryker Mutator](https://stryker-mutator.io/)这个工具，可以用来做mutation testing，简单说，一般测试工具只能保证代码经过了分支，这个工具可以通过修改部分代码逻辑（比如把true改成false）来判断代码是否还会经过这个逻辑。
+比较有趣的是，[Stryker Mutator](https://stryker-mutator.io/)这个工具，可以用来做 mutation testing，简单说，一般测试工具只能保证代码经过了分支，这个工具可以通过修改部分代码逻辑（比如把 true 改成 false）来判断代码是否还会经过这个逻辑。
 
 再一个就是[License Checker](https://www.npmjs.com/package/license-checker)和[plagiarism check](https://www.npmjs.com/package/plagiarism-checker)，就是避免自己养肥了被别人割韭菜。

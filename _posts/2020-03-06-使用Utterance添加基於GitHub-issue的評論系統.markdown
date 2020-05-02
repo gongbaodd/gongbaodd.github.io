@@ -1,6 +1,8 @@
 ---
 type: post
 category: fe
+tag:
+  - github
 ---
 
 # 使用 Utterance 为博客添加基于 Github-issue 的评论系统

@@ -1,30 +1,33 @@
 ---
 type: post
 category: tech
+tag:
+  - compilers
 ---
+
 # 静态词法作用域
 
-最近在看rust，里面提到静态词法作用域，一个神奇的deja-vu，于是我急忙查了下它是啥。
+最近在看 rust，里面提到静态词法作用域，一个神奇的 deja-vu，于是我急忙查了下它是啥。
 
-rust和js都是静态词法作用域，简单说，作用域中的变量在编译时已经确定，不会随着运行时变化而变化。
+rust 和 js 都是静态词法作用域，简单说，作用域中的变量在编译时已经确定，不会随着运行时变化而变化。
 
 ```javascript
 var a = 1;
 
 function foo() {
-    var a = 2;
+  var a = 2;
 
-    bar();
+  bar();
 }
 
 function bar() {
-    console.log(a);
+  console.log(a);
 }
 
-foo();// print 1
+foo(); // print 1
 ```
 
-而相对的shell就是动态作用域。
+而相对的 shell 就是动态作用域。
 
 ```shell
 value=1

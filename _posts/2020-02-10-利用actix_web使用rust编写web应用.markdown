@@ -1,6 +1,9 @@
 ---
 type: post
 category: fe
+tag:
+  - rust
+  - actix_web
 ---
 
 # 利用 actix_web 使用 rust 编写 web 应用

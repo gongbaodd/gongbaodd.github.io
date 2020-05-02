@@ -1,6 +1,9 @@
 ---
 type: post
 category: fe
+tag:
+  - rust
+  - wasm
 ---
 
 # 使用 rust 和 webassembly 开发 game of life

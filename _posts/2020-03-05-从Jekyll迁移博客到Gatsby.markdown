@@ -1,6 +1,9 @@
 ---
 type: post
 category: fe
+tag:
+  - jekyll
+  - gatsby
 ---
 
 # 从 Jekyll 迁移博客到 Gatsby

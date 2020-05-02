@@ -1,10 +1,13 @@
 ---
 type: post
 category: tech
+tag:
+  - jupyter
 ---
-# 修复Windows下打开Jupyter报NotImplementError
 
-打开```/c/Users/{USER_NAME}/AppData/Local/Programs/Python/Python38/Lib/asyncio/__init__/py```.
+# 修复 Windows 下打开 Jupyter 报 NotImplementError
+
+打开`/c/Users/{USER_NAME}/AppData/Local/Programs/Python/Python38/Lib/asyncio/__init__/py`.
 
 修改
 
