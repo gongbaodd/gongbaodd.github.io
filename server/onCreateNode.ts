@@ -1,6 +1,6 @@
 import { createFilePath } from "gatsby-source-filesystem";
 import { CreateNodeArgs, Node } from "gatsby";
-
+import _ from "lodash";
 import { slug2path } from "./utils/slug_path";
 
 interface MdNode extends Node {
@@ -58,7 +58,7 @@ const createMdNodeFields = (
   createNodeField({
     name: "tag",
     node,
-    value: (tag || []).map((t) => t.toLowerCase()),
+    value: _.map<string>(tag, (t: string) => t.toLowerCase()),
   });
 };
 

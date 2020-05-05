@@ -1,7 +1,10 @@
 ---
 type: post
 category: fe
-tag: react-native flutter dart
+tag:
+  - react-native
+  - flutter
+  - dart
 ---
 
 # 从 RN 到 Flutter-从 Dart 开始
