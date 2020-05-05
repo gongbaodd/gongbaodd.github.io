@@ -59,6 +59,12 @@
     "xss": "1.0.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/cli": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "@theme-ui/preset-deep": "0.3.0",
     "@types/dompurify": "2.0.1",
     "@types/enzyme": "3.10.5",
@@ -70,6 +76,7 @@
     "@types/theme-ui": "^0.3.1",
     "@typescript-eslint/parser": "2.26.0",
     "audit-ci": "2.5.1",
+    "babel-loader": "^8.1.0",
     "commitizen": "4.0.3",
     "emoji-cz": "0.3.1",
     "enzyme": "3.11.0",
@@ -141,6 +148,8 @@
     "cp:cname": "sh ./scripts/cp_cname.sh",
     "deploy:coding": "sh ./scripts/deploy_to_coding.sh",
     "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/gongbaodd.github.io.git -b master",
-    "es:check": "es-check"
+    "es:check": "es-check",
+    "storybook": "NODE_ENV=production start-storybook -p 6006",
+    "build-storybook": "NODE_ENV=production build-storybook"
   }
 }
