@@ -9,6 +9,7 @@ const pageProgress = require("./config/plugins/page_progress");
 const sourcemap = require("./config/plugins/sourcemap");
 const robotsTxt = require("./config/plugins/robots_txt");
 const nodeFields = require("./config/plugins/node_fields");
+const jsonOutput = require("./config/plugins/json_output");
 const siteMetadata = require("./config/meta/site.js");
 
 module.exports = {
@@ -36,5 +37,6 @@ module.exports = {
     ...sentry,
     ...pageProgress,
     ...sourcemap,
+    ...jsonOutput,
   ],
 };

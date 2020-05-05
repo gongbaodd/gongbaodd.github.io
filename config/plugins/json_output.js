@@ -19,14 +19,6 @@ const graphQLQuery = `
   }
 `;
 
-const serialize = (results) =>
-  results.data.allMarkdownRemark.edges.map(({ node }) => ({
-    path: node.fields.slug,
-    title: node.frontmatter.title,
-    created: node.fields.date,
-    html: node.html,
-  }));
-
 const siteMetaData = require("../meta/site");
 
 module.exports = [
@@ -34,7 +26,6 @@ module.exports = [
     resolve: `gatsby-plugin-json-output`,
     options: {
       graphQLQuery,
-      serialize,
       siteUrl: siteMetaData.siteUrl,
     },
   },
