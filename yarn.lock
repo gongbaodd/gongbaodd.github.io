@@ -4789,7 +4789,7 @@ colors@1.0.x:
   resolved "https://registry.npm.taobao.org/colors/download/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
   integrity sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=
 
-colors@^1.1.2:
+colors@^1.1.2, colors@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -7830,6 +7830,13 @@ gatsby-plugin-google-analytics@2.2.2:
   dependencies:
     "@babel/runtime" "^7.8.7"
     minimatch "3.0.4"
+
+gatsby-plugin-json-output@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-json-output/download/gatsby-plugin-json-output-1.1.3.tgz#7d0f2ad0fccb14a299fd2deda5d502909f6ae82b"
+  integrity sha1-fQ8q0PzLFKKZ/S3tpdUCkJ9q6Cs=
+  dependencies:
+    colors "^1.4.0"
 
 gatsby-plugin-manifest@2.3.3:
   version "2.3.3"
