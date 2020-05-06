@@ -33,9 +33,27 @@ export interface HeaderProps {
   location: PageProps["location"];
   category?: string;
   tag?: string;
+  series?: string;
 }
 
-const Header: FC<HeaderProps> = ({ location, category, tag }) => {
+const FilterOption: FC<{
+  name: Exclude<keyof HeaderProps, "location">;
+  value: string;
+}> = ({ name, value }) => {
+  return (
+    <>
+      <small className={TOKEN_PUNC}>{`,{${name}:`}</small>
+      <span className={TOKEN_OP}>
+        <small>{quote}</small>
+        {value}
+        <small>{quote}</small>
+      </span>
+      <small className={TOKEN_PUNC}>{"});"}</small>
+    </>
+  );
+};
+
+const Header: FC<HeaderProps> = ({ location, category, tag, series }) => {
   const isRoot = location.pathname === rootPath;
   const style = isRoot
     ? {
@@ -63,29 +81,10 @@ const Header: FC<HeaderProps> = ({ location, category, tag }) => {
         />
         <small>{quote}</small>
       </Link>
-      {category && (
-        <>
-          <small className={TOKEN_PUNC}>{",{category:"}</small>
-          <span className={TOKEN_OP}>
-            <small>{quote}</small>
-            {category}
-            <small>{quote}</small>
-          </span>
-          <small className={TOKEN_PUNC}>{"});"}</small>
-        </>
-      )}
-      {tag && (
-        <>
-          <small className={TOKEN_PUNC}>{",{tag:"}</small>
-          <span className={TOKEN_OP}>
-            <small>{quote}</small>
-            {tag}
-            <small>{quote}</small>
-          </span>
-          <small className={TOKEN_PUNC}>{"});"}</small>
-        </>
-      )}
-      {!category && !tag && <small className={TOKEN_PUNC}>);</small>}
+      {category && <FilterOption name="category" value={category} />}
+      {tag && <FilterOption name="tag" value={tag} />}
+      {series && <FilterOption name="series" value={series} />}
+      {!category && !tag && !series && <small className={TOKEN_PUNC}>);</small>}
     </h1>
   );
 };

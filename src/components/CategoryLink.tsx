@@ -2,8 +2,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import CountLink from "./CountLink";
 
-export default CategoryLink;
-
 const categoryQuery = graphql`
   query {
     allMarkdownRemark {
