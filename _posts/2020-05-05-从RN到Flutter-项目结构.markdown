@@ -5,6 +5,9 @@ tag:
   - flutter
   - dart
   - react-native
+series:
+  name: 从RN到Flutter
+  number: 3
 ---
 
 # 从 RN 到 Flutter-项目结构

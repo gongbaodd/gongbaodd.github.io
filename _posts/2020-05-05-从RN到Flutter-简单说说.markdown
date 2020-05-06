@@ -5,6 +5,9 @@ tag:
   - react-native
   - flutter
   - dart
+series:
+  name: 从RN到Flutter
+  number: 2
 ---
 
 # 从 RN 到 Flutter-简单说说
