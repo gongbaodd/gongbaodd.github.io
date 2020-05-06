@@ -201,3 +201,137 @@ Stack(
 | ![Android Stack](https://flutter.dev/assets/get-started/android/react-native/stack-65e0c9e7fc3db73d80d3943f6e88fc788819b1ab4c1354c11e4711298e26ecd0.png) | ![iOS Stack](https://flutter.dev/assets/get-started/ios/react-native/stack-04b7bf2727e1eb71f5dfea8430ee833f24be1ced1893ae86270795b2ab76c5b9.png) |
 
 更多信息可以查看`Stack`对象[文档](https://api.flutter.dev/flutter/widgets/Stack-class.html)。
+
+## 样式
+
+### 如何处理组件样式
+
+在 React Native 中，内联样式和`stylesheets.create`是用来处理组件样式的。
+
+```tsx
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
+
+<View style={styles.container}>
+  <Text style={{ fontSize: 32, color: "cyan", fontWeight: "600" }}>
+    This is a simple text
+  </Text>
+</View>;
+```
+
+在 Flutter 中，`Text`部件可以使用`TextStyle`类，这个类的对象也可以给多个部件复用。
+
+```dart
+var textStyle = TextStyle(
+    fontSize: 32.0,
+    color: Colors.cyan,
+    fontWeight: FontWeight.w600,
+);
+
+Center(
+    child: Column(
+        children: <Widget>[
+            Text(
+                'sample text',
+                style: textStyle,
+            ),
+            Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Icon(
+                    Icons.lightbulb_outline,
+                    size: 48.0,
+                    color: Colors.redAccent,
+                ),
+            ),
+        ],
+    ),
+)
+```
+
+| Android Style                                                                                                                                                     | iOS Style                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Android Style](https://flutter.dev/assets/get-started/android/react-native/flutterstyling-10cfb607a02859b2a1e9767237029b3cc47891fd017bd70d84536de26383b39c.gif) | ![iOS Style](https://flutter.dev/assets/get-started/ios/react-native/flutterstyling-8b812e5226435b0db6f72b4f2f03a7c72b45bf0794965a0bee882fea909fc7b8.gif) |
+
+### 如何使用图标和颜色
+
+React Native 没有支持图标的库（这点我不是很同意）。
+
+在 Flutter 中，引入 Material 库包含一堆[Material 图标](https://api.flutter.dev/flutter/material/Icons-class.html)和[颜色](https://api.flutter.dev/flutter/material/Colors-class.html)。
+
+```dart
+Icon(Icons.lightbulb_outline, color: COlors.redAccent)
+```
+
+使用`Icons`类时，记住要把`uses-material-design: true`设置在`pubspec.yaml`中。这保证`MaterialIcons`字体会被包括在应用中。
+
+```yaml
+name: my_awesome_application
+flutter:
+  uses-material-design: true
+```
+
+Flutter 的[Cupertino](https://flutter.dev/docs/development/ui/widgets/cupertino)包，完全遵守 iOS 设计语言。要使用`CupertinoIcons`字体，在项目中增加`cupertino_icons`依赖。
+
+```yaml
+name: my_awesome_application
+dependencies:
+  cupertino_icons: ^0.1.0
+```
+
+要完全的自定义组件的色彩和样式，使用`ThemeData`来定义主题。设置`MaterialApp`的`ThemeData`对象。`Colors`类提供遵守 Material 设计语言的调色盘。
+
+```dart
+Widget build() {
+    return MaterialApp(
+        title: "Sample App",
+        theme: ThemeData(
+            primarySwatch: Colors.blue,
+            textSelectionColor: Colors.red,
+        ),
+        home: SampleAppPage()
+    );
+}
+```
+
+### 如何增加主题样式
+
+在 Ract Native，主题是组件定义好的。
+
+在 Flutter 中，使用`ThemeData`类为整个`MaterialApp`部件提供主题。
+
+```dart
+Widget build() {
+    return MaterialApp(
+        title: "Sample App",
+        theme: ThemeData(
+            primarySwatch: Colors.blue,
+            textSelectionColor: Colors.red,
+        ),
+        home: SampleAppPage()
+    );
+}
+```
+
+一个`Theme`甚至可以不依赖于`MaterialApp`部件。[Theme](https://api.flutter.dev/flutter/material/Theme-class.html)部件需要一个`ThemeData`传入它的`data`参数中，以适配它的所有子部件。
+
+```dart
+class SampleTheme extends StatelessWidget {
+    Widget build(BuildContext context) {
+      return Theme(
+           data: ThemeData(
+               primaryColor: Colors.cyan,
+               brightness: brightness,
+           ),
+           child: Scaffold(
+               backgroundColor: Theme.of(context).primaryColor,
+           )
+       )
+    }
+}
+```
