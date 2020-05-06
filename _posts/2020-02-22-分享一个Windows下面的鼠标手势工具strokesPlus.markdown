@@ -3,6 +3,8 @@ type: post
 category: tech
 tag:
   - windows
+series:
+  name: Windows舒适指南
 ---
 
 # 分享一个 Windows 下面的鼠标手势工具 StrokesPlus

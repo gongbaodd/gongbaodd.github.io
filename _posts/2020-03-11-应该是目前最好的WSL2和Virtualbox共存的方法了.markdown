@@ -5,6 +5,8 @@ tag:
   - WSL2
   - virtualbox
   - hyper-v
+series:
+  name: Windows舒适指南
 ---
 
 # 应该是目前最好的 WSL2 和 Virtualbox 共存的方法了

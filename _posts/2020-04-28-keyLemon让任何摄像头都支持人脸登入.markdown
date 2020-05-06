@@ -5,6 +5,8 @@ tag:
   - windows
   - facial-recognition
   - keyLemon
+series:
+  name: Windows舒适指南
 ---
 
 # keyLemon 让任何一个摄像头都支持人脸登入

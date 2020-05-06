@@ -1,6 +1,10 @@
 ---
 type: post
 category: tech
+tag:
+  - windows
+series:
+  name: Windows舒适指南
 ---
 
 # 安利一下 Windows Powertoy
