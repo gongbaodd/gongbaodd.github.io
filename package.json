@@ -98,6 +98,7 @@
     "jest": "25.2.4",
     "lint-staged": "10.1.1",
     "prettier": "2.0.2",
+    "storybook-addon-designs": "^5.2.1",
     "ts-jest": "25.2.1",
     "typescript": "3.8.3"
   },
