@@ -2,12 +2,12 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import CountLink from "./CountLink";
 
-export default CategoryLink;
+export default TagLink;
 
-const categoryQuery = graphql`
+const tagQuery = graphql`
   query {
     allMarkdownRemark {
-      group(field: frontmatter___category) {
+      group(field: frontmatter___series___name) {
         fieldValue
         totalCount
       }
@@ -24,16 +24,16 @@ interface Query {
   };
 }
 
-export const CategoryLinks = () => {
+export const SeriesLinks = () => {
   const {
-    allMarkdownRemark: { group: categories },
-  } = useStaticQuery<Query>(categoryQuery);
+    allMarkdownRemark: { group: tags },
+  } = useStaticQuery<Query>(tagQuery);
 
   return (
     <>
-      {categories.map(({ fieldValue, totalCount }) => (
+      {tags.map(({ fieldValue, totalCount }) => (
         <CountLink
-          to={`/categories/${fieldValue}`}
+          to={`/series/${fieldValue}`}
           key={fieldValue}
           fieldValue={fieldValue}
           totalCount={totalCount}

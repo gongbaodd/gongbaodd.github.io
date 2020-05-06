@@ -1,25 +1,6 @@
-import { Link, graphql, useStaticQuery } from "gatsby";
-import { Badge } from "theme-ui";
-import React, { FC } from "react";
-
-interface Props {
-  fieldValue: string;
-  totalCount: number;
-}
-
-const TagLink: FC<Props> = ({ fieldValue, totalCount }) => {
-  return (
-    <Link
-      to={`/tags/${fieldValue}`}
-      style={{ marginRight: ".5em", display: "inline-block" }}
-    >
-      {fieldValue}
-      <Badge variant="circle">{totalCount}</Badge>
-    </Link>
-  );
-};
-
-export default TagLink;
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
+import CountLink from "./CountLink";
 
 const tagQuery = graphql`
   query {
@@ -49,7 +30,8 @@ export const TagLinks = () => {
   return (
     <>
       {tags.map(({ fieldValue, totalCount }) => (
-        <TagLink
+        <CountLink
+          to={`/tags/${fieldValue}`}
           key={fieldValue}
           fieldValue={fieldValue}
           totalCount={totalCount}
