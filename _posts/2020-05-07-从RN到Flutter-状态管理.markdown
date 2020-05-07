@@ -192,6 +192,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
    }
    ```
 
+| Android StatedulWidget                                                                                                                                                    | iOS StatefulWidget                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Android StatedulWidget ](https://flutter.dev/assets/get-started/android/react-native/state-change-f7c0c14b9e1e2685b25c9e42f42a8d35ea9be544bbae3849579283bc631d9e26.gif) | ![iOS StatefulWidget](https://flutter.dev/assets/get-started/ios/react-native/state-change-f25a8c982e6cddbb81b069c8e2acb9de5cb62c66bba2be2ff79e08269d4e6add.gif) |
+
 ## flutter_hooks
 
 [flutter_hooks](https://pub.dev/packages/flutter_hooks)是一个第三方库，参考 react-hooks 实现的`HookWidget`，最大的好处就是少写很多冗余代码和冗余的类。
