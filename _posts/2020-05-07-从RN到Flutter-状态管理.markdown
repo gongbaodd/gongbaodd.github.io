@@ -128,6 +128,70 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 }
 ```
 
+## 状态部件的最佳实践
+
+设计部件时需要考虑一些事情。
+
+1. 考虑是要用`StatefulWidget`还是用`StateleddWidget`。
+
+   在 Flutter 中，部件或是有状态或是无状态主要依赖于它的状态是否改变。
+
+   - 如果部件会变——用户会与它交互或者数据更新会修改 UI，那它就是有状态的。
+   - 如果部件是确定的或者不变的那它就是无状态的。
+
+2. 决定用哪个对象管理部件状态。
+
+   - 部件管理自己的状态
+   - 父部件管理子部件的状态
+   - 以上两者都有
+
+   当考虑时，需要遵守以下原则：
+
+   - 如果状态是用户数据，如勾选框是否被勾选或者滑块的位置，那最好由父部件管理状态。
+   - 如果状态是优化交互，如动画，则最好由自己管理状态。
+   - 只要有疑问，放到父组件管理状态是更好的选择。
+
+3. StatefulWidget 的子类和状态
+
+   `MyStatefulWidget`类管理自己的状态——它继承自`StatefulWidget`，并重载`createState()`方法来创建状态，框架会调用`createState()`来建造部件。就像上面的例子，`createState()`创建一个`_MyStatefulWidgetState`实例。
+
+   ```dart
+   class MyStatefulWidget extends StatefulWidget {
+      MyStatefulWidget({Key key, this.title}) : super(key: key);
+      final String title;
+
+      @override
+      _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+    }
+
+    class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+
+      @override
+      Widget build(BuildContext context) {
+          ...
+      }
+    }
+   ```
+
+4. 把部件应用于部件树
+
+   ```dart
+   class MyStatelessWidget extends StatelessWidget {
+   // This widget is the root of your application.
+
+   @override
+   Widget build(BuildContext context) {
+     return MaterialApp(
+       title: 'Flutter Demo',
+       theme: ThemeData(
+         primarySwatch: Colors.blue,
+       ),
+       home: MyStatefulWidget(title: 'State Change Demo'),
+     );
+   }
+   }
+   ```
+
 ## flutter_hooks
 
 [flutter_hooks](https://pub.dev/packages/flutter_hooks)是一个第三方库，参考 react-hooks 实现的`HookWidget`，最大的好处就是少写很多冗余代码和冗余的类。
