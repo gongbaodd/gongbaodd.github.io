@@ -7,6 +7,7 @@ tag:
   - keyLemon
 series:
   name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # keyLemon 让任何一个摄像头都支持人脸登入

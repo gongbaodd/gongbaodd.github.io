@@ -8,9 +8,9 @@ import Posts from "../components/Posts";
 import GroupLinks from "../components/GroupLinks";
 
 export const pageQuery = graphql`
-  query BlogPostsBySeries($series: String!) {
+  query BlogPostsBySeries($seriesName: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { series: { name: { eq: $series } } } }
+      filter: { frontmatter: { series: { name: { eq: $seriesName } } } }
       sort: {
         order: ASC
         fields: [fields___date, frontmatter___series___number]
@@ -57,17 +57,17 @@ interface PageData {
 }
 
 export interface PageContext {
-  series: string;
+  seriesName: string;
 }
 
 const CategoryTemplate: FC<PageProps<PageData, PageContext>> = ({
   data,
   location,
-  pageContext: { series },
+  pageContext: { seriesName },
 }) => {
   return (
-    <Layout location={location} series={series}>
-      <SEO title={series} />
+    <Layout location={location} series={seriesName}>
+      <SEO title={seriesName} />
       <Bio />
       <GroupLinks />
       <Posts data={data} />

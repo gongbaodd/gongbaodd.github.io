@@ -5,6 +5,7 @@ tag:
   - windows
 series:
   name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # 分享一个 Windows 下面的鼠标手势工具 StrokesPlus

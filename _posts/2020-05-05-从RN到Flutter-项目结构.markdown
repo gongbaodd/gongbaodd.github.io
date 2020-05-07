@@ -7,6 +7,7 @@ tag:
   - react-native
 series:
   name: 从RN到Flutter
+  slug: Flutter-for-RN-devs
   number: 3
 ---
 

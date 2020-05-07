@@ -5,9 +5,18 @@ import CountLink from "./CountLink";
 const tagQuery = graphql`
   query {
     allMarkdownRemark {
-      group(field: frontmatter___series___name) {
+      group(field: frontmatter___series___slug) {
         fieldValue
         totalCount
+        edges {
+          node {
+            frontmatter {
+              series {
+                name
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -18,6 +27,15 @@ interface Query {
     group: Array<{
       fieldValue: string;
       totalCount: number;
+      edges: Array<{
+        node: {
+          frontmatter: {
+            series: {
+              slug: string;
+            };
+          };
+        };
+      }>;
     }>;
   };
 }
@@ -29,14 +47,30 @@ export const SeriesLinks = () => {
 
   return (
     <>
-      {tags.map(({ fieldValue, totalCount }) => (
-        <CountLink
-          to={`/series/${fieldValue}`}
-          key={fieldValue}
-          fieldValue={fieldValue}
-          totalCount={totalCount}
-        />
-      ))}
+      {tags.map(
+        ({
+          fieldValue,
+          totalCount,
+          edges: [
+            {
+              node: {
+                frontmatter: {
+                  series: { slug },
+                },
+              },
+            },
+          ],
+        }) => {
+          return (
+            <CountLink
+              to={`/series/${slug}`}
+              key={slug}
+              fieldValue={fieldValue}
+              totalCount={totalCount}
+            />
+          );
+        }
+      )}
     </>
   );
 };

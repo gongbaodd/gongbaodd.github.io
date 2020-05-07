@@ -5,6 +5,7 @@ tag:
   - windows
 series:
   name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # 安利一下 Windows Powertoy

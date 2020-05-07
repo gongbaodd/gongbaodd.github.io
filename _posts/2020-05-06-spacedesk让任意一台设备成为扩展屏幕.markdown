@@ -5,6 +5,7 @@ tag:
   - windows
 series:
   name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # spacedesk 让任意一台设备成为扩展屏幕

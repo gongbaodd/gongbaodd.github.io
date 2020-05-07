@@ -5,17 +5,36 @@ import { PageContext } from "../../src/templates/series";
 const query = `
 {
   allMarkdownRemark(sort: {fields: [fields___date, frontmatter___series___number], order: ASC}) {
-    group(field: frontmatter___series___name) {
+    group(field: frontmatter___series___slug) {
       fieldValue
+      edges {
+        node {
+          frontmatter {
+            series {
+              name
+            }
+          }
+        }
+      }
     }
   }
 }
+
 `;
 
 interface Data {
   allMarkdownRemark: {
     group: Array<{
       fieldValue: string;
+      edges: Array<{
+        node: {
+          frontmatter: {
+            series: {
+              name: string;
+            };
+          };
+        };
+      }>;
     }>;
   };
 }
@@ -38,15 +57,28 @@ async function createTags(
     return;
   }
 
-  result.data.allMarkdownRemark.group.forEach(({ fieldValue }) => {
-    createPage<PageContext>({
-      path: `series/${fieldValue}`,
-      component: CategoryTemplate,
-      context: {
-        series: fieldValue,
-      },
-    });
-  });
+  result.data.allMarkdownRemark.group.forEach(
+    ({
+      fieldValue,
+      edges: [
+        {
+          node: {
+            frontmatter: {
+              series: { name },
+            },
+          },
+        },
+      ],
+    }) => {
+      createPage<PageContext>({
+        path: `series/${fieldValue}`,
+        component: CategoryTemplate,
+        context: {
+          seriesName: name,
+        },
+      });
+    }
+  );
 }
 
 export default createTags;

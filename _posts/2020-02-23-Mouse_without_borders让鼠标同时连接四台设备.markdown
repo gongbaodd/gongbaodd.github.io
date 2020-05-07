@@ -5,6 +5,7 @@ tag:
   - windows
 series:
   name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # Mouse without borders 让鼠标同时连接 4 台 PC

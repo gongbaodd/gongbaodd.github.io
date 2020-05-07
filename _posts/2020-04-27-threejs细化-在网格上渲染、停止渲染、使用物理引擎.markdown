@@ -6,6 +6,7 @@ tag:
   - webgl
 series:
   name: 细品threejs
+  slug: threejs-howto
 ---
 
 # threejs 细化-在网格上渲染，停止渲染，使用物理引擎

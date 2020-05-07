@@ -7,6 +7,7 @@ tag:
   - react
 series:
   name: 细品threejs
+  slug: threejs-howto
 ---
 
 # 使用 react-three-fiber 体验美好的 WebGL 开发
