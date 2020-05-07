@@ -18,7 +18,7 @@ series:
 
 StrokesPlus 安装很简单，依然使用的是 chocolatey。
 
-```
+```shell
 sudo choco install strokesplus
 ```
 

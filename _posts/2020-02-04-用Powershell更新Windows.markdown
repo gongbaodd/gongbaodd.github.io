@@ -3,6 +3,9 @@ type: post
 category: tech
 tag:
   - powershell
+series:
+  name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # 用 Powershell 更新 Windows

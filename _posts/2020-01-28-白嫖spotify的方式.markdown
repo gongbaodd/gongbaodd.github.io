@@ -3,6 +3,9 @@ type: post
 category: tech
 tag:
   - spotify
+series:
+  name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # 白嫖 spotify 的方式
