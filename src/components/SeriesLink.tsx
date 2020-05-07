@@ -31,7 +31,7 @@ interface Query {
         node: {
           frontmatter: {
             series: {
-              slug: string;
+              name: string;
             };
           };
         };
