@@ -55,7 +55,7 @@ export const SeriesLinks = () => {
             {
               node: {
                 frontmatter: {
-                  series: { slug },
+                  series: { name },
                 },
               },
             },
@@ -63,9 +63,9 @@ export const SeriesLinks = () => {
         }) => {
           return (
             <CountLink
-              to={`/series/${slug}`}
-              key={slug}
-              fieldValue={fieldValue}
+              to={`/series/${fieldValue}`}
+              key={fieldValue}
+              fieldValue={name}
               totalCount={totalCount}
             />
           );
