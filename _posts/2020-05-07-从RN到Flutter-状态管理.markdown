@@ -127,3 +127,38 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 ```
+
+## flutter_hooks
+
+[flutter_hooks](https://pub.dev/packages/flutter_hooks)是一个第三方库，参考 react-hooks 实现的`HookWidget`，最大的好处就是少写很多冗余代码和冗余的类。
+
+就像上面的例子，可以写成如下类。
+
+```dart
+class Home extends HookWidget {
+  @override
+  Widget build(BuildContext context) {
+    final showText = useState<bool>(false);
+
+    return Scaffold(
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            showText.value ? Text('Hello') : Container(),
+            Padding(
+              padding: EdgeInsets.only(top: 70.0),
+              child: RaisedButton(
+                onPressed: () {
+                  print("clicked");
+                  showText.value = !showText.value;
+                },
+                child: Text('show Text'),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
