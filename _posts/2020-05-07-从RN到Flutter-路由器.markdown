@@ -68,7 +68,7 @@ class App extends StatelessWidget{
 Navigator.of(context).pushNamed('/a');
 ```
 
-你可以使用`push`方法调用已存在的[Route](https://api.flutter.dev/flutter/widgets/Route-class.html)，这样会动画返回已经打开的 Route。下面的例子中[MaterialPageRoute](https://api.flutter.dev/flutter/material/MaterialPageRoute-class.html)提供一个模态的页面，并适配系统动画。
+你可以使用`push`方法调用已存在的[Route](https://api.flutter.dev/flutter/widgets/Route-class.html)，这样会动画打开 Route。下面的例子中[MaterialPageRoute](https://api.flutter.dev/flutter/material/MaterialPageRoute-class.html)提供一个模态的页面，并适配系统动画。
 
 ```dart
 Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)
@@ -124,6 +124,157 @@ TabBar(
 
 一个`TabController`用于协调`TabBar`和`TabBarView`。构造参数中的`length`属性，提供选项卡的个数。一个`TickerProvider`被用来处理框架状态变化的消息的，通过`vsync`传入。`vsync:this`参数是创建`TabController`必要的。
 
-[TickerProvider](https://api.flutter.dev/flutter/scheduler/TickerProvider-class.html)是可以产生[Ticker](https://api.flutter.dev/flutter/scheduler/Ticker-class.html)对象的类的接口。Ticker 是可以用来接收框架消息的对象，但是他们基本上都是间接通过[AnimationController](https://api.flutter.dev/flutter/animation/AnimationController-class.html)。`AnimationController`需要`TickerProvider`来获取`Ticker`对象。如果你正在从 State 里面创建一个 AnimationController，你可以使用[TickerProviderStateMixin](https://api.flutter.dev/flutter/widgets/TickerProviderStateMixin-mixin.html)或者[SingleTickerProviderStateMixin](https://api.flutter.dev/flutter/widgets/SingleTickerProviderStateMixin-mixin.html)对象以得到`TrickerProvider`。
+[TickerProvider](https://api.flutter.dev/flutter/scheduler/TickerProvider-class.html)是可以产生[Ticker](https://api.flutter.dev/flutter/scheduler/Ticker-class.html)对象的类的接口。Ticker 是可以用来接收框架消息的对象，但是他们基本上都是间接通过[AnimationController](https://api.flutter.dev/flutter/animation/AnimationController-class.html)。`AnimationController`需要`TickerProvider`来获取`Ticker`对象。如果你正在从 State 里面创建一个 AnimationController，你可以使用[TickerProviderStateMixin](https://api.flutter.dev/flutter/widgets/TickerProviderStateMixin-mixin.html)或者[SingleTickerProviderStateMixin](https://api.flutter.dev/flutter/widgets/SingleTickerProviderStateMixin-mixin.html)对象以得到`TrickerProvider`。如果你用的是`flutter-hooks`你可以使用`useSingleTickerProvider`获取`Ticker`对象。
 
 [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html)部件封装了一个新的`TabBar`部件并创建两个选项卡。`TabBarView`部件通过`body`参数传入。所有页面的`TabBar`都是`TabBarView`部件的子部件。
+
+```dart
+class Home extends StatefulWidget {
+  Home() : super();
+  @override
+  State<StatefulWidget> createState() {
+    return _Home();
+  }
+}
+
+class _Home extends State<Home> with SingleTickerProviderStateMixin {
+  @override
+  Widget build(BuildContext context) {
+    TabController controller = TabController(length: 2, vsync: this);
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('home'),
+        ),
+        bottomNavigationBar: Material(
+          color: Colors.blue,
+          child: TabBar(
+            controller: controller,
+            tabs: <Tab>[
+              Tab(
+                icon: Icon(Icons.person),
+              ),
+              Tab(
+                icon: Icon(Icons.email),
+              )
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: <Widget>[
+            Center(
+              child: Text('person'),
+            ),
+            Center(
+              child: Text('email'),
+            )
+          ],
+          controller: controller,
+        ));
+  }
+}
+
+```
+
+当然也可以使用`flutter-hooks`，其实如果收拾一下的话都要写两个类，就看你爱怎么写了。
+
+```dart
+class Home extends HookWidget {
+  @override
+  Widget build(BuildContext context) {
+    final vsync = useSingleTickerProvider();
+    final controller = useMemoized(() {
+      return TabController(length: 2, vsync: vsync);
+    });
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home'),
+      ),
+      bottomNavigationBar: Material(
+        color: Colors.blue,
+        child: TabBar(
+          controller: controller,
+          tabs: <Widget>[
+            Tab(icon: Icon(Icons.person)),
+            Tab(icon: Icon(Icons.email))
+          ],
+        ),
+      ),
+      body: TabBarView(
+        controller: controller,
+        children: <Widget>[
+          Center(child: Text("person")),
+          Center(
+            child: Text("email"),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+```
+
+## 抽屉导航
+
+在 React Native 中，需要引入`react-navigation`包，并使用`createDrawerNavigator`和`DrawerNavigation`。
+
+```js
+export default MyApp = DrawerNavigator({
+  Home: {
+    screen: SimpleApp,
+  },
+  Screen2: {
+    screen: drawScreen,
+  },
+});
+```
+
+在 Flutter 中，我们可以使用`Drawer`部件结合`Scaffold`部件创建 Material 设计语言的抽屉。想要创建一个带有抽屉的应用，需要将`Drawer`封装至`Scaffold`中。`Scaffold`部件提供一套基于[Material 设计标准](https://material.io/design)的样式结构，并且还支持许多特殊的 Material 设计组件，比如`Drawer`、`AppBar`和`SnackBar`。
+
+`Drawer`部件是一个基于 Material 设计的控制台，它在`Scaffold`水平方向的边缘，展示应用的导航链接。你可以在这个部件中使用[RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)和[Text](https://api.flutter.dev/flutter/widgets/Text-class.html)组件，或者一个列表。在下面的例子中[ListTile](https://api.flutter.dev/flutter/material/ListTile-class.html)就提供了点击导航的功能。
+
+```dart
+// Flutter
+Drawer(
+  child:ListTile(
+    leading: Icon(Icons.change_history),
+    title: Text('Screen2'),
+    onTap: () {
+      Navigator.of(context).pushNamed('/b');
+    },
+  ),
+  elevation: 20.0,
+),
+```
+
+在`Scaffold`部件的`AppBar`会自动适配给`Drawer`一个图标，并且`Scaffold`能够自动处理`Drawer`的左滑手势。
+
+```dart
+// Flutter
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    drawer: Drawer(
+      child: ListTile(
+        leading: Icon(Icons.change_history),
+        title: Text('Screen2'),
+        onTap: () {
+          Navigator.of(context).pushNamed('/b');
+        },
+      ),
+      elevation: 20.0,
+    ),
+    appBar: AppBar(
+      title: Text('Home'),
+    ),
+    body: Container(),
+  );
+}
+```
+
+另外，如果不爽页面转场动画单一，然后自己又懒得写动画，可以直接用[page_transition](https://pub.dev/packages/page_transition)包。
+
+| Android Drawer                                                                                                                                                 | iOS Drawer                                                                                                                                             |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Android Drawer](https://flutter.dev/assets/get-started/android/react-native/navigation-98906732ed22d9aa8e0ce0eb846dbcc7d24c123ad026c359f9f7fcc44ba99230.gif) | ![iOS Drawer](https://flutter.dev/assets/get-started/ios/react-native/navigation-1939f60628bec820bad0fe88d58c562984c1c00d8cfd755a4135f4321a37417e.gif) |
