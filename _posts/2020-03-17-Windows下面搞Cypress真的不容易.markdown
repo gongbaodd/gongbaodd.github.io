@@ -6,6 +6,7 @@ tag:
   - Windows
   - WSL2
   - MSYS
+  - VcXsrv
 ---
 
 # Windows 下面搞 Cypress 真心不容易
