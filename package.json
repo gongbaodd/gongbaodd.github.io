@@ -142,7 +142,7 @@
     "clean": "gatsby clean",
     "lint": "eslint src --ext=ts,js,tsx --fix",
     "commit": "git-cz",
-    "audit:ci": "audit-ci -m -a 1488 -a 1217",
+    "audit:ci": "audit-ci -m -a 1488 -a 1217 -a 1486 -a 1219",
     "type": "tsc --noEmit",
     "test": "jest",
     "cy:test": "sh scripts/run_cypress.sh",
