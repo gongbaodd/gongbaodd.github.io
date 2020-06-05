@@ -1,9 +1,954 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta http-equiv="Content-Security-Policy" content="base-uri &#x27;self&#x27;; default-src &#x27;self&#x27; utteranc.es *.utteranc.es fonts.gstatic.com; script-src &#x27;self&#x27; www.google-analytics.com *.sentry.io &#x27;unsafe-inline&#x27; utteranc.es *.utteranc.es *.cloudflareinsights.com; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27; utteranc.es *.utteranc.es; object-src &#x27;none&#x27;; form-action &#x27;self&#x27;; font-src &#x27;self&#x27; data:; connect-src &#x27;self&#x27;; img-src * data: *.cloudflareinsights.com;"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.45 'georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'georgia',serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}ul{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:0.85rem;line-height:1.45rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}blockquote{margin-left:1.45rem;margin-right:1.45rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.45rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.45rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}li > ul{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.45rem / 2);}code{font-size:0.85rem;line-height:1.45rem;}kbd{font-size:0.85rem;line-height:1.45rem;}samp{font-size:0.85rem;line-height:1.45rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96667rem;padding-right:0.96667rem;padding-top:0.725rem;padding-bottom:calc(0.725rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}</style><style data-href="/css/../css/styles.5195110af6dfadcdbe57.css">@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:100;src:local("Roboto Thin "),local("Roboto-Thin"),url(/js/static/roboto-latin-100-7370c3679472e9560965ff48a4399d0b.woff2) format("woff2"),url(/js/static/roboto-latin-100-5cb7edfceb233100075dc9a1e12e8da3.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:100;src:local("Roboto Thin italic"),local("Roboto-Thinitalic"),url(/js/static/roboto-latin-100italic-f8b1df51ba843179fa1cc9b53d58127a.woff2) format("woff2"),url(/js/static/roboto-latin-100italic-f9e8e590b4e0f1ff83469bb2a55b8488.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:300;src:local("Roboto Light "),local("Roboto-Light"),url(/js/static/roboto-latin-300-ef7c6637c68f269a882e73bcb57a7f6a.woff2) format("woff2"),url(/js/static/roboto-latin-300-b00849e00f4c2331cddd8ffb44a6720b.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:300;src:local("Roboto Light italic"),local("Roboto-Lightitalic"),url(/js/static/roboto-latin-300italic-14286f3ba79c6627433572dfa925202e.woff2) format("woff2"),url(/js/static/roboto-latin-300italic-4df32891a5f2f98a363314f595482e08.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url(/js/static/roboto-latin-400-479970ffb74f2117317f9d24d9e317fe.woff2) format("woff2"),url(/js/static/roboto-latin-400-60fa3c0614b8fb2f394fa29944c21540.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:400;src:local("Roboto Regular italic"),local("Roboto-Regularitalic"),url(/js/static/roboto-latin-400italic-51521a2a8da71e50d871ac6fd2187e87.woff2) format("woff2"),url(/js/static/roboto-latin-400italic-fe65b8335ee19dd944289f9ed3178c78.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:local("Roboto Medium "),local("Roboto-Medium"),url(/js/static/roboto-latin-500-020c97dc8e0463259c2f9df929bb0c69.woff2) format("woff2"),url(/js/static/roboto-latin-500-87284894879f5b1c229cb49c8ff6decc.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:500;src:local("Roboto Medium italic"),local("Roboto-Mediumitalic"),url(/js/static/roboto-latin-500italic-db4a2a231f52e497c0191e8966b0ee58.woff2) format("woff2"),url(/js/static/roboto-latin-500italic-288ad9c6e8b43cf02443a1f499bdf67e.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url(/js/static/roboto-latin-700-2735a3a69b509faf3577afd25bdf552e.woff2) format("woff2"),url(/js/static/roboto-latin-700-adcde98f1d584de52060ad7b16373da3.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:700;src:local("Roboto Bold italic"),local("Roboto-Bolditalic"),url(/js/static/roboto-latin-700italic-da0e717829e033a69dec97f1e155ae42.woff2) format("woff2"),url(/js/static/roboto-latin-700italic-81f57861ed4ac74741f5671e1dff2fd9.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:900;src:local("Roboto Black "),local("Roboto-Black"),url(/js/static/roboto-latin-900-9b3766ef4a402ad3fdeef7501a456512.woff2) format("woff2"),url(/js/static/roboto-latin-900-bb1e4dc6333675d11ada2e857e7f95d7.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:900;src:local("Roboto Black italic"),local("Roboto-Blackitalic"),url(/js/static/roboto-latin-900italic-ebf6d1640ccddb99fb49f73c052c55a8.woff2) format("woff2"),url(/js/static/roboto-latin-900italic-28f9151055c950874d2c6803a39b425b.woff) format("woff")}code[class*=language-],pre[class*=language-]{font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.4em .8em;margin:.5em 0;overflow:auto;background:url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(0,0,0,.2)'%3E%3Cpolygon points='0,50 50,0 0,0'/%3E%3Cpolygon points='0,100 50,100 100,50 100,0'/%3E%3C/svg%3E");background-size:1em 1em}code[class*=language-]{background:#000;color:#fff;box-shadow:-.3em 0 0 .3em #000,.3em 0 0 .3em #000}:not(pre)>code[class*=language-]{padding:.2em;border-radius:.3em;box-shadow:none;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#aaa}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.number,.token.property,.token.symbol,.token.tag{color:#0cf}.token.attr-name,.token.builtin,.token.char,.token.selector,.token.string{color:#ff0}.language-css .token.string,.token.entity,.token.inserted,.token.operator,.token.url,.token.variable{color:#9acd32}.token.atrule,.token.attr-value,.token.keyword{color:#ff1493}.token.important,.token.regex{color:orange}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.deleted{color:red}pre.diff-highlight.diff-highlight>code .token.deleted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.deleted:not(.prefix){background-color:rgba(255,0,0,.3);display:inline}pre.diff-highlight.diff-highlight>code .token.inserted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.inserted:not(.prefix){background-color:rgba(0,255,128,.3);display:inline}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}html{overflow:hidden;background-color:#222639}.parallex{-webkit-perspective:10px;perspective:10px;-webkit-perspective-origin:top;perspective-origin:top;height:100vh;overflow:auto}.parallex,.parallex_group{position:relative;width:auto}.parallex_group{-webkit-transform-style:preserve-3d;transform-style:preserve-3d;overflow:hidden}.back{position:absolute;background-image:linear-gradient(hsla(0,0%,50%,.05) 2px,transparent 0),linear-gradient(90deg,hsla(0,0%,50%,.05) 2px,transparent 0),linear-gradient(hsla(0,0%,100%,.01) 1px,transparent 0),linear-gradient(90deg,hsla(0,0%,100%,.01) 1px,transparent 0);background-size:50px 50px,50px 50px,10px 10px,10px 10px;width:100%;height:100%;-webkit-transform:translateZ(-5px) scale3d(1.5,1.5,1);transform:translateZ(-5px) scale3d(1.5,1.5,1);z-index:-1}.line-numbers .line-numbers-rows{top:.5em;left:1em}figcaption.gatsby-resp-image-figcaption{text-align:center;font-style:italic;color:grey}code[class*=language-]{background:transparent;box-shadow:0 0 0 transparent}a,a:visited{color:#cd5c5c}.plog_post p{margin-bottom:2.5rem;margin-top:2.5rem}</style><meta name="generator" content="Gatsby 2.20.9"/><title data-react-helmet="true">工业站！探清水河 | 宫不上叔</title><meta data-react-helmet="true" name="description" content="工业站！探清水河 我一直喜欢"/><meta data-react-helmet="true" property="og:title" content="工业站！探清水河"/><meta data-react-helmet="true" property="og:description" content="工业站！探清水河 我一直喜欢"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="gongbaodd"/><meta data-react-helmet="true" name="twitter:title" content="工业站！探清水河"/><meta data-react-helmet="true" name="twitter:description" content="工业站！探清水河 我一直喜欢"/><meta data-react-helmet="true" name="referrer" content="no-referrer"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Your Site&#x27;s RSS Feed" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#000000"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4768f21272a07c96373b1d908820699b"/><link as="script" rel="preload" href="/js/webpack-runtime.1128877134dd6738a110.js"/><link as="script" rel="preload" href="/js/framework.4732038a8fedfb595f9d.js"/><link as="script" rel="preload" href="/js/styles.fccaeeb72400eb0ced43.js"/><link as="script" rel="preload" href="/js/app.ca33e2403ad2617d18e4.js"/><link as="script" rel="preload" href="/js/39ddafa25508f9ab66adb98084ff770131ab7c55.4edcc5d983042c77304e.js"/><link as="script" rel="preload" href="/js/bfdad691425d6cb1bcd0448c8ba1904ad83e8ddc.688b0da9f1421dd960ac.js"/><link as="script" rel="preload" href="/js/component---src-templates-blog-post-tsx.c46ab7c7be2552c3eca8.js"/><link as="fetch" rel="preload" href="/page-data/travel/2020/06/04/工业站！探清水河.html/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>(function() { try {
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta http-equiv="Content-Security-Policy" content="base-uri &#x27;self&#x27;; default-src &#x27;self&#x27; utteranc.es *.utteranc.es fonts.gstatic.com; script-src &#x27;self&#x27; www.google-analytics.com *.sentry.io &#x27;unsafe-inline&#x27; utteranc.es *.utteranc.es *.cloudflareinsights.com; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27; utteranc.es *.utteranc.es; object-src &#x27;none&#x27;; form-action &#x27;self&#x27;; font-src &#x27;self&#x27; data:; connect-src &#x27;self&#x27;; img-src * data: *.cloudflareinsights.com;"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.45 'georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'georgia',serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}ul{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:0.85rem;line-height:1.45rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}blockquote{margin-left:1.45rem;margin-right:1.45rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.45rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.45rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}li > ul{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.45rem / 2);}code{font-size:0.85rem;line-height:1.45rem;}kbd{font-size:0.85rem;line-height:1.45rem;}samp{font-size:0.85rem;line-height:1.45rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96667rem;padding-right:0.96667rem;padding-top:0.725rem;padding-bottom:calc(0.725rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}</style><style data-href="/css/../css/styles.5195110af6dfadcdbe57.css">@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:100;src:local("Roboto Thin "),local("Roboto-Thin"),url(/js/static/roboto-latin-100-7370c3679472e9560965ff48a4399d0b.woff2) format("woff2"),url(/js/static/roboto-latin-100-5cb7edfceb233100075dc9a1e12e8da3.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:100;src:local("Roboto Thin italic"),local("Roboto-Thinitalic"),url(/js/static/roboto-latin-100italic-f8b1df51ba843179fa1cc9b53d58127a.woff2) format("woff2"),url(/js/static/roboto-latin-100italic-f9e8e590b4e0f1ff83469bb2a55b8488.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:300;src:local("Roboto Light "),local("Roboto-Light"),url(/js/static/roboto-latin-300-ef7c6637c68f269a882e73bcb57a7f6a.woff2) format("woff2"),url(/js/static/roboto-latin-300-b00849e00f4c2331cddd8ffb44a6720b.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:300;src:local("Roboto Light italic"),local("Roboto-Lightitalic"),url(/js/static/roboto-latin-300italic-14286f3ba79c6627433572dfa925202e.woff2) format("woff2"),url(/js/static/roboto-latin-300italic-4df32891a5f2f98a363314f595482e08.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url(/js/static/roboto-latin-400-479970ffb74f2117317f9d24d9e317fe.woff2) format("woff2"),url(/js/static/roboto-latin-400-60fa3c0614b8fb2f394fa29944c21540.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:400;src:local("Roboto Regular italic"),local("Roboto-Regularitalic"),url(/js/static/roboto-latin-400italic-51521a2a8da71e50d871ac6fd2187e87.woff2) format("woff2"),url(/js/static/roboto-latin-400italic-fe65b8335ee19dd944289f9ed3178c78.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:local("Roboto Medium "),local("Roboto-Medium"),url(/js/static/roboto-latin-500-020c97dc8e0463259c2f9df929bb0c69.woff2) format("woff2"),url(/js/static/roboto-latin-500-87284894879f5b1c229cb49c8ff6decc.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:500;src:local("Roboto Medium italic"),local("Roboto-Mediumitalic"),url(/js/static/roboto-latin-500italic-db4a2a231f52e497c0191e8966b0ee58.woff2) format("woff2"),url(/js/static/roboto-latin-500italic-288ad9c6e8b43cf02443a1f499bdf67e.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url(/js/static/roboto-latin-700-2735a3a69b509faf3577afd25bdf552e.woff2) format("woff2"),url(/js/static/roboto-latin-700-adcde98f1d584de52060ad7b16373da3.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:700;src:local("Roboto Bold italic"),local("Roboto-Bolditalic"),url(/js/static/roboto-latin-700italic-da0e717829e033a69dec97f1e155ae42.woff2) format("woff2"),url(/js/static/roboto-latin-700italic-81f57861ed4ac74741f5671e1dff2fd9.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:900;src:local("Roboto Black "),local("Roboto-Black"),url(/js/static/roboto-latin-900-9b3766ef4a402ad3fdeef7501a456512.woff2) format("woff2"),url(/js/static/roboto-latin-900-bb1e4dc6333675d11ada2e857e7f95d7.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:900;src:local("Roboto Black italic"),local("Roboto-Blackitalic"),url(/js/static/roboto-latin-900italic-ebf6d1640ccddb99fb49f73c052c55a8.woff2) format("woff2"),url(/js/static/roboto-latin-900italic-28f9151055c950874d2c6803a39b425b.woff) format("woff")}code[class*=language-],pre[class*=language-]{font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.4em .8em;margin:.5em 0;overflow:auto;background:url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(0,0,0,.2)'%3E%3Cpolygon points='0,50 50,0 0,0'/%3E%3Cpolygon points='0,100 50,100 100,50 100,0'/%3E%3C/svg%3E");background-size:1em 1em}code[class*=language-]{background:#000;color:#fff;box-shadow:-.3em 0 0 .3em #000,.3em 0 0 .3em #000}:not(pre)>code[class*=language-]{padding:.2em;border-radius:.3em;box-shadow:none;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#aaa}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.number,.token.property,.token.symbol,.token.tag{color:#0cf}.token.attr-name,.token.builtin,.token.char,.token.selector,.token.string{color:#ff0}.language-css .token.string,.token.entity,.token.inserted,.token.operator,.token.url,.token.variable{color:#9acd32}.token.atrule,.token.attr-value,.token.keyword{color:#ff1493}.token.important,.token.regex{color:orange}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.deleted{color:red}pre.diff-highlight.diff-highlight>code .token.deleted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.deleted:not(.prefix){background-color:rgba(255,0,0,.3);display:inline}pre.diff-highlight.diff-highlight>code .token.inserted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.inserted:not(.prefix){background-color:rgba(0,255,128,.3);display:inline}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}html{overflow:hidden;background-color:#222639}.parallex{-webkit-perspective:10px;perspective:10px;-webkit-perspective-origin:top;perspective-origin:top;height:100vh;overflow:auto}.parallex,.parallex_group{position:relative;width:auto}.parallex_group{-webkit-transform-style:preserve-3d;transform-style:preserve-3d;overflow:hidden}.back{position:absolute;background-image:linear-gradient(hsla(0,0%,50%,.05) 2px,transparent 0),linear-gradient(90deg,hsla(0,0%,50%,.05) 2px,transparent 0),linear-gradient(hsla(0,0%,100%,.01) 1px,transparent 0),linear-gradient(90deg,hsla(0,0%,100%,.01) 1px,transparent 0);background-size:50px 50px,50px 50px,10px 10px,10px 10px;width:100%;height:100%;-webkit-transform:translateZ(-5px) scale3d(1.5,1.5,1);transform:translateZ(-5px) scale3d(1.5,1.5,1);z-index:-1}.line-numbers .line-numbers-rows{top:.5em;left:1em}figcaption.gatsby-resp-image-figcaption{text-align:center;font-style:italic;color:grey}code[class*=language-]{background:transparent;box-shadow:0 0 0 transparent}a,a:visited{color:#cd5c5c}.plog_post p{margin-bottom:2.5rem;margin-top:2.5rem}</style><meta name="generator" content="Gatsby 2.20.9"/><title data-react-helmet="true">工业站！探清水河 | 宫不上叔</title><meta data-react-helmet="true" name="description" content="工业站！探清水河 我一直喜欢老火车，在北京的时候就特意去过火车博物馆。其实深圳也有一个小的火车博物馆（说起来也不算，毕竟就是个网红拍照场所），叫做工业站，之前是深圳去九龙中的一个小站（清河还是草埔来着，查攻略的时候两个说法都有）。 公交到章輋(shē…"/><meta data-react-helmet="true" property="og:title" content="工业站！探清水河"/><meta data-react-helmet="true" property="og:description" content="工业站！探清水河 我一直喜欢老火车，在北京的时候就特意去过火车博物馆。其实深圳也有一个小的火车博物馆（说起来也不算，毕竟就是个网红拍照场所），叫做工业站，之前是深圳去九龙中的一个小站（清河还是草埔来着，查攻略的时候两个说法都有）。 公交到章輋(shē…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="gongbaodd"/><meta data-react-helmet="true" name="twitter:title" content="工业站！探清水河"/><meta data-react-helmet="true" name="twitter:description" content="工业站！探清水河 我一直喜欢老火车，在北京的时候就特意去过火车博物馆。其实深圳也有一个小的火车博物馆（说起来也不算，毕竟就是个网红拍照场所），叫做工业站，之前是深圳去九龙中的一个小站（清河还是草埔来着，查攻略的时候两个说法都有）。 公交到章輋(shē…"/><meta data-react-helmet="true" name="referrer" content="no-referrer"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Your Site&#x27;s RSS Feed" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#000000"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4768f21272a07c96373b1d908820699b"/><link as="script" rel="preload" href="/js/webpack-runtime.298955378ebd40b9011f.js"/><link as="script" rel="preload" href="/js/framework.4732038a8fedfb595f9d.js"/><link as="script" rel="preload" href="/js/styles.fccaeeb72400eb0ced43.js"/><link as="script" rel="preload" href="/js/app.ca33e2403ad2617d18e4.js"/><link as="script" rel="preload" href="/js/39ddafa25508f9ab66adb98084ff770131ab7c55.4edcc5d983042c77304e.js"/><link as="script" rel="preload" href="/js/bfdad691425d6cb1bcd0448c8ba1904ad83e8ddc.688b0da9f1421dd960ac.js"/><link as="script" rel="preload" href="/js/component---src-templates-blog-post-tsx.c46ab7c7be2552c3eca8.js"/><link as="fetch" rel="preload" href="/page-data/travel/2020/06/04/工业站！探清水河.html/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>(function() { try {
   var mode = localStorage.getItem('theme-ui-color-mode');
   if (!mode) return
   document.body.classList.add('theme-ui-' + mode);
 } catch (e) {} })();</script><div id="___gatsby"><style data-emotion-css="7huip">body{color:var(--theme-ui-colors-text,hsl(210,50%,96%));background-color:var(--theme-ui-colors-background,hsl(230,25%,18%));}</style><style data-emotion-css="0"></style><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="parallex"><div class="parallex_group"><div class="back"></div><div class="front"><div style="margin-left:auto;margin-right:auto;max-width:60.9rem;padding:2.175rem 1.0875rem"><a href="https://github.com/gongbaodd/gongbaodd.github.io" class="github-corner" aria-label="打开Github"><svg width="80" height="80" viewBox="0 0 250 250" style="position:absolute;top:0;fill:#fff;right:0"><path class="octo-banner" d="M0 0l115 115h15l12 27 108 108V0z" fill="deeppink"></path><path class="octo-arm" d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16" style="-webkit-transform-origin:130px 106px;transform-origin:130px 106px"></path><path class="octo-body" d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"></path></svg></a><h1 style="margin-top:0"><small class="token function">blog</small><small class="token punctuation">(</small><a class="token string" style="text-decoration:none" href="/"><small>&quot;</small>宫不上叔<small>&quot;</small></a><small class="token punctuation">);</small></h1><main><article><header><p style="font-size:0.87055rem;line-height:1.45rem;display:block;margin-bottom:1.45rem">June 04, 2020</p></header><section class="blog_post"><h1>工业站！探清水河</h1>
-<p>我一直喜欢</p></section><hr style="margin-bottom:1.45rem"/><footer><div style="display:flex"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.725rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAb8MaZ6IiFcS2B//xAAbEAACAwADAAAAAAAAAAAAAAACAwABBBETIv/aAAgBAQABBQJrOsQJvM0eRXpomQwFg1kSNz//xAAWEQADAAAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8BYj//xAAYEQACAwAAAAAAAAAAAAAAAAABEAISIf/aAAgBAgEBPwGsjoQX/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQIRMQAQEmEiQYH/2gAIAQEABj8ChyYrmlPhsFy3VNiz7tioOKcJjdv/xAAbEAACAwEBAQAAAAAAAAAAAAABEQAQITFBUf/aAAgBAQABPyFQmSCYZQfeVFgIcDxfHjtEDR5BAh6FP//aAAwDAQACAAMAAAAQK8B8/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EADFjP/EABYRAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPxCaNMSZ/8QAHhABAQABBAMBAAAAAAAAAAAAAREhABAxQVFhkbH/2gAIAQEAAT8QvZXbBfbodJo5fkR5m1yVNHd4b1JdZPREoHxc3a5BFpPzVXiEVhMjt//Z" alt="宫不上叔" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
+<p>我一直喜欢老火车，在北京的时候就特意去过火车博物馆。其实深圳也有一个小的火车博物馆（说起来也不算，毕竟就是个网红拍照场所），叫做工业站，之前是深圳去九龙中的一个小站（清河还是草埔来着，查攻略的时候两个说法都有）。</p>
+<p>公交到章輋(shē)村站，穿过村子看到下图的桥就是工业站了。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/20198bb675129dce58de8fc7d0bb56ef/5ac89/001.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABaL8uWWk//8QAGhAAAwADAQAAAAAAAAAAAAAAAAECAxESFP/aAAgBAQABBQJ5OT00LKxVRC6TiN//xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAIAQMBAT8BxH//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQIBAT8Buq//xAAbEAACAgMBAAAAAAAAAAAAAAAAAQIhIjKRcf/aAAgBAQAGPwKoyXpskZTl02Zdmq4f/8QAHBAAAwABBQAAAAAAAAAAAAAAAAERITFBcbHB/9oACAEBAAE/IYO9mCZGqkGLU7tJF6CEyuWSob//2gAMAwEAAgADAAAAEJgP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERUf/aAAgBAwEBPxBLBJ//xAAXEQEAAwAAAAAAAAAAAAAAAAAAARFR/9oACAECAQE/EJ0Wf//EAB8QAQEAAQIHAAAAAAAAAAAAAAERACFxMVGBkaGxwf/aAAgBAQABPxCkvFSkeR94S0dQGO+EKvRMzbJBo786Fb+sdTj8mf/Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/20198bb675129dce58de8fc7d0bb56ef/cbe2e/001.webp 148w,
+/static/20198bb675129dce58de8fc7d0bb56ef/3084c/001.webp 295w,
+/static/20198bb675129dce58de8fc7d0bb56ef/5ca24/001.webp 590w,
+/static/20198bb675129dce58de8fc7d0bb56ef/dad35/001.webp 885w,
+/static/20198bb675129dce58de8fc7d0bb56ef/2baf0/001.webp 1180w,
+/static/20198bb675129dce58de8fc7d0bb56ef/efe91/001.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/20198bb675129dce58de8fc7d0bb56ef/a80bd/001.jpg 148w,
+/static/20198bb675129dce58de8fc7d0bb56ef/1c91a/001.jpg 295w,
+/static/20198bb675129dce58de8fc7d0bb56ef/1c72d/001.jpg 590w,
+/static/20198bb675129dce58de8fc7d0bb56ef/a8a14/001.jpg 885w,
+/static/20198bb675129dce58de8fc7d0bb56ef/fbd2c/001.jpg 1180w,
+/static/20198bb675129dce58de8fc7d0bb56ef/5ac89/001.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/20198bb675129dce58de8fc7d0bb56ef/1c72d/001.jpg"
+          alt="门口用车厢做的的茶饮"
+          title="门口用车厢做的的茶饮"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">门口用车厢做的的茶饮</figcaption>
+  </figure></p>
+<p>背这桥沿着铁路走不到一公里就能看见以前的老站台了。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/da3509d22a307b474cb8824324931d51/5ac89/002.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAUXM6xJzg//EABwQAAIABwAAAAAAAAAAAAAAAAECAAMQESExMv/aAAgBAQABBQJQRBnvbDUblt//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwGH/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAAREAAhAh/9oACAEBAAY/AmORWLjeHP/EABsQAQACAgMAAAAAAAAAAAAAAAEAITFBUYGh/9oACAEBAAE/IULUbxMSm0LiVH0wDieCUj//2gAMAwEAAgADAAAAELw//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QhH//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPxCq/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARIUFRcaH/2gAIAQEAAT8QMg5jfglSVMEYpKN8J1nHEFU5uJWlPJ//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/da3509d22a307b474cb8824324931d51/cbe2e/002.webp 148w,
+/static/da3509d22a307b474cb8824324931d51/3084c/002.webp 295w,
+/static/da3509d22a307b474cb8824324931d51/5ca24/002.webp 590w,
+/static/da3509d22a307b474cb8824324931d51/dad35/002.webp 885w,
+/static/da3509d22a307b474cb8824324931d51/2baf0/002.webp 1180w,
+/static/da3509d22a307b474cb8824324931d51/efe91/002.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/da3509d22a307b474cb8824324931d51/a80bd/002.jpg 148w,
+/static/da3509d22a307b474cb8824324931d51/1c91a/002.jpg 295w,
+/static/da3509d22a307b474cb8824324931d51/1c72d/002.jpg 590w,
+/static/da3509d22a307b474cb8824324931d51/a8a14/002.jpg 885w,
+/static/da3509d22a307b474cb8824324931d51/fbd2c/002.jpg 1180w,
+/static/da3509d22a307b474cb8824324931d51/5ac89/002.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/da3509d22a307b474cb8824324931d51/1c72d/002.jpg"
+          alt="铁路"
+          title="铁路"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">铁路</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/adc045c6c28c6272b0bbba0ff8cd8803/5ac89/003.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABno5uoaIK/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAEDEBQC/9oACAEBAAEFAuZGaTRJTr//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAbEAABBAMAAAAAAAAAAAAAAAAAICExMjNBof/aAAgBAQAGPwJiupMnEf/EABsQAQADAAMBAAAAAAAAAAAAAAEAESExQVGB/9oACAEBAAE/ISFtAKyCrdW+4o4gg5rqJqez/9oADAMBAAIAAwAAABBf3//EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQMBAT8QQe2F/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAgBAgEBPxAU5a3/xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhMUFRkcH/2gAIAQEAAT8QOVgLIOddewiwmxeMDVRCqNFH5NHBo4lgW1Zi4KOTuf/Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/adc045c6c28c6272b0bbba0ff8cd8803/cbe2e/003.webp 148w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/3084c/003.webp 295w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/5ca24/003.webp 590w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/dad35/003.webp 885w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/2baf0/003.webp 1180w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/efe91/003.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/adc045c6c28c6272b0bbba0ff8cd8803/a80bd/003.jpg 148w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/1c91a/003.jpg 295w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/1c72d/003.jpg 590w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/a8a14/003.jpg 885w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/fbd2c/003.jpg 1180w,
+/static/adc045c6c28c6272b0bbba0ff8cd8803/5ac89/003.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/adc045c6c28c6272b0bbba0ff8cd8803/1c72d/003.jpg"
+          alt="工业站"
+          title="工业站"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">工业站</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1ac0812717f17b61e454009a122a7b56/5ac89/004.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAAB59zaBPFif//EABoQAQABBQAAAAAAAAAAAAAAAAEAAhAREjH/2gAIAQEAAQUCzSIi7pHtv//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/Aaf/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGH/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAEDERIgIZH/2gAIAQEABj8CqpEXLhrD/8QAGhAAAwEAAwAAAAAAAAAAAAAAAAERcSExQf/aAAgBAQABPyGFUHbSBKx4sp04h8Ifh//aAAwDAQACAAMAAAAQFz//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QU2F//8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EIC//8QAGxABAAMAAwEAAAAAAAAAAAAAAQARITFRscH/2gAIAQEAAT8QSwlsF27ziBMPoxp6uCLXofa5qIBAArqYocUT/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/1ac0812717f17b61e454009a122a7b56/cbe2e/004.webp 148w,
+/static/1ac0812717f17b61e454009a122a7b56/3084c/004.webp 295w,
+/static/1ac0812717f17b61e454009a122a7b56/5ca24/004.webp 590w,
+/static/1ac0812717f17b61e454009a122a7b56/dad35/004.webp 885w,
+/static/1ac0812717f17b61e454009a122a7b56/2baf0/004.webp 1180w,
+/static/1ac0812717f17b61e454009a122a7b56/efe91/004.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/1ac0812717f17b61e454009a122a7b56/a80bd/004.jpg 148w,
+/static/1ac0812717f17b61e454009a122a7b56/1c91a/004.jpg 295w,
+/static/1ac0812717f17b61e454009a122a7b56/1c72d/004.jpg 590w,
+/static/1ac0812717f17b61e454009a122a7b56/a8a14/004.jpg 885w,
+/static/1ac0812717f17b61e454009a122a7b56/fbd2c/004.jpg 1180w,
+/static/1ac0812717f17b61e454009a122a7b56/5ac89/004.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/1ac0812717f17b61e454009a122a7b56/1c72d/004.jpg"
+          alt="老站台"
+          title="老站台"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">老站台</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/29c7a2da24b281b72ff6f841a8d4c386/5ac89/005.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDAv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABgUZkZm//xAAaEAACAwEBAAAAAAAAAAAAAAABAgADETFB/9oACAEBAAEFAq7jWA53XnkXn//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AYf/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGn/8QAHBAAAQMFAAAAAAAAAAAAAAAAAQACEBIhQVFx/9oACAEBAAY/AnCm2FuD2f/EABoQAAMAAwEAAAAAAAAAAAAAAAABESExcRD/2gAIAQEAAT8hoY22mi0q26SsqucDA0oueH//2gAMAwEAAgADAAAAEGPv/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QhH//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8QtNf/xAAbEAEAAwADAQAAAAAAAAAAAAABABEhMUGBUf/aAAgBAQABPxBfBN9Jz3uIIw3S8fp5LdNpRgV7gIgVB34iUqrP/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/29c7a2da24b281b72ff6f841a8d4c386/cbe2e/005.webp 148w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/3084c/005.webp 295w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/5ca24/005.webp 590w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/dad35/005.webp 885w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/2baf0/005.webp 1180w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/efe91/005.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/29c7a2da24b281b72ff6f841a8d4c386/a80bd/005.jpg 148w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/1c91a/005.jpg 295w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/1c72d/005.jpg 590w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/a8a14/005.jpg 885w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/fbd2c/005.jpg 1180w,
+/static/29c7a2da24b281b72ff6f841a8d4c386/5ac89/005.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/29c7a2da24b281b72ff6f841a8d4c386/1c72d/005.jpg"
+          alt="东风车头"
+          title="东风车头"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">东风车头</figcaption>
+  </figure></p>
+<p>火车不多，也就两辆。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1fdeef1c1623c4f8654c1db7800b5df8/151cf/007.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAEeriqsNHg//8QAHBAAAQMFAAAAAAAAAAAAAAAAAQIREgADBBAy/9oACAEBAAEFApmd9bIJek9ZGv/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABkQAAIDAQAAAAAAAAAAAAAAAAIQAAFhcf/aAAgBAQAGPwKppMOL/8QAGhABAAIDAQAAAAAAAAAAAAAAARFBABAhMf/aAAgBAQABPyGQRvDGg9yVK6Ep1XX/2gAMAwEAAgADAAAAEMw//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAhMf/aAAgBAwEBPxBhzl//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8Q0yS//8QAHhABAAIBBAMAAAAAAAAAAAAAAQARITFBUWFxkaH/2gAIAQEAAT8QXCLJnMR+APFZa+QKRfbUVWNSq9wTUhrPU3fM/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/1fdeef1c1623c4f8654c1db7800b5df8/cbe2e/007.webp 148w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/3084c/007.webp 295w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/5ca24/007.webp 590w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/dad35/007.webp 885w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/2baf0/007.webp 1180w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/a110d/007.webp 1181w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/1fdeef1c1623c4f8654c1db7800b5df8/a80bd/007.jpg 148w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/1c91a/007.jpg 295w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/1c72d/007.jpg 590w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/a8a14/007.jpg 885w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/fbd2c/007.jpg 1180w,
+/static/1fdeef1c1623c4f8654c1db7800b5df8/151cf/007.jpg 1181w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/1fdeef1c1623c4f8654c1db7800b5df8/1c72d/007.jpg"
+          alt="两车之间"
+          title="两车之间"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">两车之间</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a58c2c01630e5ba1b5fbdf2391199b25/5ac89/008.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAAB4aUzSEFB/8QAGRABAQEAAwAAAAAAAAAAAAAAAgEDAAQQ/9oACAEBAAEFAs1In2TOLd2+/wD/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwGH/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Bp//EABoQAAICAwAAAAAAAAAAAAAAAAABAhEgIoH/2gAIAQEABj8CRpF9Lw//xAAaEAACAwEBAAAAAAAAAAAAAAAAARExQXFR/9oACAEBAAE/IXxixF+2+BrlHDYLTn0aU0f/2gAMAwEAAgADAAAAEAcP/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAEDAQE/EJ1H/8QAFxEAAwEAAAAAAAAAAAAAAAAAARARMf/aAAgBAgEBPxChi//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExQYFRcf/aAAgBAQABPxBcjTfAfnzDdWXkDzvFRu6EDIEiBNGK1LNLjHQ+Z//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/a58c2c01630e5ba1b5fbdf2391199b25/cbe2e/008.webp 148w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/3084c/008.webp 295w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/5ca24/008.webp 590w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/dad35/008.webp 885w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/2baf0/008.webp 1180w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/efe91/008.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/a58c2c01630e5ba1b5fbdf2391199b25/a80bd/008.jpg 148w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/1c91a/008.jpg 295w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/1c72d/008.jpg 590w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/a8a14/008.jpg 885w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/fbd2c/008.jpg 1180w,
+/static/a58c2c01630e5ba1b5fbdf2391199b25/5ac89/008.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/a58c2c01630e5ba1b5fbdf2391199b25/1c72d/008.jpg"
+          alt="铁路"
+          title="铁路"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">铁路</figcaption>
+  </figure></p>
+<p>虽然车站取消了，但是周边的铁路依然还用于运输，旁边还时不时有和谐号路过。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8074149988a023c85be87ddcb885f0ae/3cb18/009.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 140.54054054054052%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAAFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABXmG0gV2zTJzl2LuR/8QAHRAAAgICAwEAAAAAAAAAAAAAAQIAAxESBBAhIv/aAAgBAQABBQI68hGXqtmQnW9SINYrgG1/vMTwYn//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAABIP/aAAgBAgEBPwFj/8QAHBAAAQQDAQAAAAAAAAAAAAAAAQACEBESIUEy/9oACAEBAAY/ArZ6m2lZAU/ojqGJNrW4Ef/EAB0QAAICAgMBAAAAAAAAAAAAAAABETEhYUFRgeH/2gAIAQEAAT8h6WDF9PSc5NMmEkemzLSIBE00HzduZY2oTA5IO0f/2gAMAwEAAgADAAAAEDA5g//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ECE//8QAFREBAQAAAAAAAAAAAAAAAAAAISD/2gAIAQIBAT8QTH//xAAeEAEBAAICAwEBAAAAAAAAAAABEQAhUXExQWGB0f/aAAgBAQABPxAwGnYzZx/HBZqnTJ8P6YIiQi6fmIcDeH7GKAfFxjCCo2wMiKUiPBSq9YcAJ0o9Yh2hcJXoFuTjRz//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/8074149988a023c85be87ddcb885f0ae/cbe2e/009.webp 148w,
+/static/8074149988a023c85be87ddcb885f0ae/3084c/009.webp 295w,
+/static/8074149988a023c85be87ddcb885f0ae/5ca24/009.webp 590w,
+/static/8074149988a023c85be87ddcb885f0ae/a9b84/009.webp 605w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/8074149988a023c85be87ddcb885f0ae/a80bd/009.jpg 148w,
+/static/8074149988a023c85be87ddcb885f0ae/1c91a/009.jpg 295w,
+/static/8074149988a023c85be87ddcb885f0ae/1c72d/009.jpg 590w,
+/static/8074149988a023c85be87ddcb885f0ae/3cb18/009.jpg 605w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/8074149988a023c85be87ddcb885f0ae/1c72d/009.jpg"
+          alt="站牌"
+          title="站牌"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">站牌</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1efe110b19a45818a786cbd713667916/5ac89/010.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGOpLIoMsr/xAAaEAEAAwADAAAAAAAAAAAAAAABAAIDBBAR/9oACAEBAAEFAjVld7EOUd2D3//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABsQAAICAwEAAAAAAAAAAAAAAAABITICEDFx/9oACAEBAAY/Aqsq36TjO+H/xAAcEAACAgIDAAAAAAAAAAAAAAAAARFBECExcaH/2gAIAQEAAT8hdt3ImS6Ah+Z4oqHB/9oADAMBAAIAAwAAABAoz//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EEf/xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAECAQE/EIxb/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARIUFRMWH/2gAIAQEAAT8QoL3Ev3sWFUw5g7cGT7K6gvWAaalJwan/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/1efe110b19a45818a786cbd713667916/cbe2e/010.webp 148w,
+/static/1efe110b19a45818a786cbd713667916/3084c/010.webp 295w,
+/static/1efe110b19a45818a786cbd713667916/5ca24/010.webp 590w,
+/static/1efe110b19a45818a786cbd713667916/dad35/010.webp 885w,
+/static/1efe110b19a45818a786cbd713667916/2baf0/010.webp 1180w,
+/static/1efe110b19a45818a786cbd713667916/efe91/010.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/1efe110b19a45818a786cbd713667916/a80bd/010.jpg 148w,
+/static/1efe110b19a45818a786cbd713667916/1c91a/010.jpg 295w,
+/static/1efe110b19a45818a786cbd713667916/1c72d/010.jpg 590w,
+/static/1efe110b19a45818a786cbd713667916/a8a14/010.jpg 885w,
+/static/1efe110b19a45818a786cbd713667916/fbd2c/010.jpg 1180w,
+/static/1efe110b19a45818a786cbd713667916/5ac89/010.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/1efe110b19a45818a786cbd713667916/1c72d/010.jpg"
+          alt="路过的和谐号"
+          title="路过的和谐号"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">路过的和谐号</figcaption>
+  </figure></p>
+<p>车皮上面还有一些有时代感的刻字囧。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bc4a898d7e213d8fab3b6d0609ce32b6/5ac89/011.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABmuiK4//EABYQAQEBAAAAAAAAAAAAAAAAAAAREP/aAAgBAQABBQLYiP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAMBAQEBAAAAAAAAAAAAAAABEVEhYeH/2gAIAQEAAT8h7fDtI79GmIaYiMR//9oADAMBAAIAAwAAABBcH//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAgMBAAAAAAAAAAAAAAEAEUFxUWHh8f/aAAgBAQABPxCkEBGLgaNxsIWL0lU5jE8tPjT/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/bc4a898d7e213d8fab3b6d0609ce32b6/cbe2e/011.webp 148w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/3084c/011.webp 295w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/5ca24/011.webp 590w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/dad35/011.webp 885w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/2baf0/011.webp 1180w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/efe91/011.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/bc4a898d7e213d8fab3b6d0609ce32b6/a80bd/011.jpg 148w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/1c91a/011.jpg 295w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/1c72d/011.jpg 590w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/a8a14/011.jpg 885w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/fbd2c/011.jpg 1180w,
+/static/bc4a898d7e213d8fab3b6d0609ce32b6/5ac89/011.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/bc4a898d7e213d8fab3b6d0609ce32b6/1c72d/011.jpg"
+          alt="永爱TFBOYS"
+          title="永爱TFBOYS"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">永爱TFBOYS</figcaption>
+  </figure></p>
+<p>车站的标语很有时代感，话说对于疫情还挺应景。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/eb2d94614ee31dad3298ec8f1039a40c/3d95f/012.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABVlsZccos/8QAGhABAQACAwAAAAAAAAAAAAAAAgEAEgMTIf/aAAgBAQABBQJvZEp50XPBLzO3a5//xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAgBAwEBPwFX/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQIBAT8BR//EABsQAAIBBQAAAAAAAAAAAAAAAAABMRAhInGR/9oACAEBAAY/AmzFF2iE9k8p/8QAGhABAQACAwAAAAAAAAAAAAAAAQAhQRFRkf/aAAgBAQABPyFEd2EVjiwGQKMdzVfiexv/2gAMAwEAAgADAAAAEGDv/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERUf/aAAgBAwEBPxBsuj//xAAXEQADAQAAAAAAAAAAAAAAAAAAARFR/9oACAECAQE/EEqTB//EABwQAQACAgMBAAAAAAAAAAAAAAEAETFhIVFxwf/aAAgBAQABPxBmLVjrUaRRlD7KbSFle18rXnNS5WqUGA64iW1naz//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/eb2d94614ee31dad3298ec8f1039a40c/cbe2e/012.webp 148w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/3084c/012.webp 295w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/5ca24/012.webp 590w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/dad35/012.webp 885w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/fd213/012.webp 994w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/eb2d94614ee31dad3298ec8f1039a40c/a80bd/012.jpg 148w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/1c91a/012.jpg 295w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/1c72d/012.jpg 590w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/a8a14/012.jpg 885w,
+/static/eb2d94614ee31dad3298ec8f1039a40c/3d95f/012.jpg 994w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/eb2d94614ee31dad3298ec8f1039a40c/1c72d/012.jpg"
+          alt="时代感的标语"
+          title="时代感的标语"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">时代感的标语</figcaption>
+  </figure></p>
+<p>车道边的小心火车标志。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e7ab8cbca7af5972265af10639787185/5ac89/013.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFAv/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAFShHpXLRoT/8QAGxAAAQQDAAAAAAAAAAAAAAAAAQACAxMSITH/2gAIAQEAAQUCEjlVqpRFP7GTh//EABcRAAMBAAAAAAAAAAAAAAAAAAABERL/2gAIAQMBAT8Bapk//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECERP/2gAIAQIBAT8BUqNGf//EABkQAAMAAwAAAAAAAAAAAAAAAAABERAhMf/aAAgBAQAGPwKS06ssWz//xAAcEAACAgIDAAAAAAAAAAAAAAAAARExQZEhgbH/2gAIAQEAAT8hn63JLl0SSWUMqWM7HnwtDZ//2gAMAwEAAgADAAAAEEPf/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERMf/aAAgBAwEBPxCHSr//xAAWEQADAAAAAAAAAAAAAAAAAAABEDH/2gAIAQIBAT8QPKP/xAAaEAACAwEBAAAAAAAAAAAAAAABEQAhMVFh/9oACAEBAAE/EDXXaJolWjBFE4ijoImAO1OOmlqcDUDWx4f6n//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/e7ab8cbca7af5972265af10639787185/cbe2e/013.webp 148w,
+/static/e7ab8cbca7af5972265af10639787185/3084c/013.webp 295w,
+/static/e7ab8cbca7af5972265af10639787185/5ca24/013.webp 590w,
+/static/e7ab8cbca7af5972265af10639787185/dad35/013.webp 885w,
+/static/e7ab8cbca7af5972265af10639787185/2baf0/013.webp 1180w,
+/static/e7ab8cbca7af5972265af10639787185/efe91/013.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/e7ab8cbca7af5972265af10639787185/a80bd/013.jpg 148w,
+/static/e7ab8cbca7af5972265af10639787185/1c91a/013.jpg 295w,
+/static/e7ab8cbca7af5972265af10639787185/1c72d/013.jpg 590w,
+/static/e7ab8cbca7af5972265af10639787185/a8a14/013.jpg 885w,
+/static/e7ab8cbca7af5972265af10639787185/fbd2c/013.jpg 1180w,
+/static/e7ab8cbca7af5972265af10639787185/5ac89/013.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/e7ab8cbca7af5972265af10639787185/1c72d/013.jpg"
+          alt="小心火车"
+          title="小心火车"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">小心火车</figcaption>
+  </figure></p>
+<p>遗憾的是附近除了茶饮并没有更多玩的地方了，这对于文青来说真是打击。火车站附近大概两公里，有一个很大的洪湖公园，从地图上看，有点模仿美国中央公园的感觉。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/77892f94ab90a5618906e171411e6d4c/ddced/014.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABEKJEPGeL/8QAGhAAAgIDAAAAAAAAAAAAAAAAAQIAAwQQEf/aAAgBAQABBQIZAjNYSLX5v//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/Aaf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAgMAAAAAAAAAAAAAAAAAEQIhEiCh/9oACAEBAAY/Aqj0bLw0/8QAGhABAAMAAwAAAAAAAAAAAAAAAQARMUFhcf/aAAgBAQABPyGkiLxN7I8ZWadwyXQwV1n/2gAMAwEAAgADAAAAEEwP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/EFWt/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAh/9oACAECAQE/EKF//8QAGxABAAMBAAMAAAAAAAAAAAAAAQARMSFBgaH/2gAIAQEAAT8QFhIm0KWToVhKEkDVT8i352KpNcgFo+5//9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/77892f94ab90a5618906e171411e6d4c/cbe2e/014.webp 148w,
+/static/77892f94ab90a5618906e171411e6d4c/3084c/014.webp 295w,
+/static/77892f94ab90a5618906e171411e6d4c/5ca24/014.webp 590w,
+/static/77892f94ab90a5618906e171411e6d4c/dad35/014.webp 885w,
+/static/77892f94ab90a5618906e171411e6d4c/abb12/014.webp 1100w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/77892f94ab90a5618906e171411e6d4c/a80bd/014.jpg 148w,
+/static/77892f94ab90a5618906e171411e6d4c/1c91a/014.jpg 295w,
+/static/77892f94ab90a5618906e171411e6d4c/1c72d/014.jpg 590w,
+/static/77892f94ab90a5618906e171411e6d4c/a8a14/014.jpg 885w,
+/static/77892f94ab90a5618906e171411e6d4c/ddced/014.jpg 1100w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/77892f94ab90a5618906e171411e6d4c/1c72d/014.jpg"
+          alt="洪湖公园的荷花"
+          title="洪湖公园的荷花"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">洪湖公园的荷花</figcaption>
+  </figure></p>
+<p>走出洪湖公园就能看到地王大厦和京基 100，如果眼神好，还能看见更远的平安中心。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0af5f73ef6375a45c9280f4473f8f6ac/72747/015.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAU8jZqWISH//xAAaEAACAgMAAAAAAAAAAAAAAAABAgASERMh/9oACAEBAAEFAl6bgHcsVmwzGXM//8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Bh//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/Aar/xAAaEAABBQEAAAAAAAAAAAAAAAAAAQIQIWEx/9oACAEBAAY/AlwdhZ2f/8QAGxABAAICAwAAAAAAAAAAAAAAAQAxESFhgaH/2gAIAQEAAT8h0pSuJBxSYKPUFkIi3bOXyf/aAAwDAQACAAMAAAAQVw//xAAWEQADAAAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8QhER//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QtT//xAAbEAEBAQACAwAAAAAAAAAAAAABEQAhYTFx0f/aAAgBAQABPxBkJEQ0aXeSpBzLS44lXSmunReGZC1ewwNAz0+b/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/0af5f73ef6375a45c9280f4473f8f6ac/cbe2e/015.webp 148w,
+/static/0af5f73ef6375a45c9280f4473f8f6ac/3084c/015.webp 295w,
+/static/0af5f73ef6375a45c9280f4473f8f6ac/5ca24/015.webp 590w,
+/static/0af5f73ef6375a45c9280f4473f8f6ac/79237/015.webp 764w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/0af5f73ef6375a45c9280f4473f8f6ac/a80bd/015.jpg 148w,
+/static/0af5f73ef6375a45c9280f4473f8f6ac/1c91a/015.jpg 295w,
+/static/0af5f73ef6375a45c9280f4473f8f6ac/1c72d/015.jpg 590w,
+/static/0af5f73ef6375a45c9280f4473f8f6ac/72747/015.jpg 764w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/0af5f73ef6375a45c9280f4473f8f6ac/1c72d/015.jpg"
+          alt="地王大厦和京基100"
+          title="地王大厦和京基100"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">地王大厦和京基100</figcaption>
+  </figure></p>
+<p>大概 1~2km 之外就是深圳的老街，一直觉得这条街拉低了深圳一线城市的形象，但是 whatever，游客都来这儿。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/09e2f442a75d5fd1f940a1b723a5752e/5ac89/016.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABnRWszlgv/8QAGhAAAgIDAAAAAAAAAAAAAAAAAQIAMQMRFP/aAAgBAQABBQLpYs+XcIMWjBX/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAXEAEAAwAAAAAAAAAAAAAAAAARACBB/9oACAEBAAY/Ahmlf//EABsQAQADAAMBAAAAAAAAAAAAAAEAESExQXHR/9oACAEBAAE/IQRCjeNYNeHU+xbjfrCdICEpk//aAAwDAQACAAMAAAAQvw//xAAXEQEAAwAAAAAAAAAAAAAAAAAAASEx/9oACAEDAQE/EI1T/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEhMf/aAAgBAgEBPxCcW//EABsQAQADAQADAAAAAAAAAAAAAAEAESFRMUGR/9oACAEBAAE/EEpsQUDiR5G7IvbhGiOgMOEA1yVPB8iGQr7Sf//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/09e2f442a75d5fd1f940a1b723a5752e/cbe2e/016.webp 148w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/3084c/016.webp 295w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/5ca24/016.webp 590w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/dad35/016.webp 885w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/2baf0/016.webp 1180w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/efe91/016.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/09e2f442a75d5fd1f940a1b723a5752e/a80bd/016.jpg 148w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/1c91a/016.jpg 295w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/1c72d/016.jpg 590w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/a8a14/016.jpg 885w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/fbd2c/016.jpg 1180w,
+/static/09e2f442a75d5fd1f940a1b723a5752e/5ac89/016.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/09e2f442a75d5fd1f940a1b723a5752e/1c72d/016.jpg"
+          alt="老街"
+          title="老街"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">老街</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/376058948107b32cad7abe2c434540b6/ff5b6/017.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABA//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAEih4dItL//xAAaEAACAgMAAAAAAAAAAAAAAAABAgADETEz/9oACAEBAAEFAkZ1jXZArUwcjDv/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAgMAAAAAAAAAAAAAAAAAEQECECFx/9oACAEBAAY/AmKNsc2K9z//xAAbEAACAgMBAAAAAAAAAAAAAAAAAREhMVGhwf/aAAgBAQABPyGejQ5roC1Db0joHszH/9oADAMBAAIAAwAAABCUH//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/EIf/xAAXEQADAQAAAAAAAAAAAAAAAAAAARFB/9oACAECAQE/EJpGf//EAB8QAQABAwQDAAAAAAAAAAAAAAERABAhMVFhcYGhwf/aAAgBAQABPxAmBOUYDL1TFgb4HnqhlMSsB7bA0+Hyy//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/376058948107b32cad7abe2c434540b6/cbe2e/017.webp 148w,
+/static/376058948107b32cad7abe2c434540b6/3084c/017.webp 295w,
+/static/376058948107b32cad7abe2c434540b6/5ca24/017.webp 590w,
+/static/376058948107b32cad7abe2c434540b6/dad35/017.webp 885w,
+/static/376058948107b32cad7abe2c434540b6/c18de/017.webp 1052w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/376058948107b32cad7abe2c434540b6/a80bd/017.jpg 148w,
+/static/376058948107b32cad7abe2c434540b6/1c91a/017.jpg 295w,
+/static/376058948107b32cad7abe2c434540b6/1c72d/017.jpg 590w,
+/static/376058948107b32cad7abe2c434540b6/a8a14/017.jpg 885w,
+/static/376058948107b32cad7abe2c434540b6/ff5b6/017.jpg 1052w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/376058948107b32cad7abe2c434540b6/1c72d/017.jpg"
+          alt="老街"
+          title="老街"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">老街</figcaption>
+  </figure></p>
+<p>在老街吃了份螺蛳粉，请记住，戴口罩不要吃螺蛳粉！！！坐公交熏得我头晕眼花，途径深业上城，突然意识到我还没去过，下车去逛一下。</p>
+<p>深业上城的测温区，虽然听说过很久了，但这种测温装置我还是第一次见到。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b87ac57ae99825c5d45397a0e9a8dae4/50055/018.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAwAEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAEFfmD2Si//xAAbEAABBAMAAAAAAAAAAAAAAAAAAgMRMQESE//aAAgBAQABBQLpsQkw9A7SrP/EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPwFNZ//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPwEcJ//EABgQAQADAQAAAAAAAAAAAAAAAAEAECNh/9oACAEBAAY/AjN7GmFf/8QAGhABAAIDAQAAAAAAAAAAAAAAAQAhETGhUf/aAAgBAQABPyEdReiUow4iUbnATijuf//aAAwDAQACAAMAAAAQ28//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EHI0h//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAgEBPxAkyf/EABsQAQACAgMAAAAAAAAAAAAAAAEAERAxIUGh/9oACAEBAAE/EEATYWqrtSqgRaPgVHcGQUO8Y9ObJ//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/b87ac57ae99825c5d45397a0e9a8dae4/cbe2e/018.webp 148w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/3084c/018.webp 295w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/5ca24/018.webp 590w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/dad35/018.webp 885w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/2dbb9/018.webp 1012w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/b87ac57ae99825c5d45397a0e9a8dae4/a80bd/018.jpg 148w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/1c91a/018.jpg 295w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/1c72d/018.jpg 590w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/a8a14/018.jpg 885w,
+/static/b87ac57ae99825c5d45397a0e9a8dae4/50055/018.jpg 1012w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/b87ac57ae99825c5d45397a0e9a8dae4/1c72d/018.jpg"
+          alt="测温区"
+          title="测温区"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">测温区</figcaption>
+  </figure></p>
+<p>深业上城带有一点包豪斯风格的街道，很吸引各种网红来打卡，旁边也有很多来拍婚纱照的人。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6ab27056fac02e2dc9af105399d798b1/ad68d/019.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQX/xAAVAQEBAAAAAAAAAAAAAAAAAAACAP/aAAwDAQACEAMQAAABjTrQrjnjv//EABwQAAICAgMAAAAAAAAAAAAAAAECAAMREiExMv/aAAgBAQABBQIcoEwdFaVS3yOv/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAET/9oACAEDAQE/AbGb/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQIBAT8BU//EABwQAAEDBQAAAAAAAAAAAAAAAAEAEBECEiExcf/aAAgBAQAGPwLO4abwEeKlv//EABsQAAICAwEAAAAAAAAAAAAAAAABETEhUYGh/9oACAEBAAE/IV6q6JKabIyZ/TRc/CNgf//aAAwDAQACAAMAAAAQS/8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAACFB/9oACAEDAQE/EKK1/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAx/9oACAECAQE/EBgBl//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExgUFxof/aAAgBAQABPxCwGtiMKzx3CJwIKVcAjQCy89M+tE13m66InI8T/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/6ab27056fac02e2dc9af105399d798b1/cbe2e/019.webp 148w,
+/static/6ab27056fac02e2dc9af105399d798b1/3084c/019.webp 295w,
+/static/6ab27056fac02e2dc9af105399d798b1/5ca24/019.webp 590w,
+/static/6ab27056fac02e2dc9af105399d798b1/dad35/019.webp 885w,
+/static/6ab27056fac02e2dc9af105399d798b1/446b5/019.webp 1170w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/6ab27056fac02e2dc9af105399d798b1/a80bd/019.jpg 148w,
+/static/6ab27056fac02e2dc9af105399d798b1/1c91a/019.jpg 295w,
+/static/6ab27056fac02e2dc9af105399d798b1/1c72d/019.jpg 590w,
+/static/6ab27056fac02e2dc9af105399d798b1/a8a14/019.jpg 885w,
+/static/6ab27056fac02e2dc9af105399d798b1/ad68d/019.jpg 1170w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/6ab27056fac02e2dc9af105399d798b1/1c72d/019.jpg"
+          alt="深业上城"
+          title="深业上城"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">深业上城</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/55204c3e813ec4cce81db8f7b8bafc17/5ac89/020.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGWwq/LNNxP/8QAGhAAAgIDAAAAAAAAAAAAAAAAARIAAgMQQ//aAAgBAQABBQIAJbFRFOuJn//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAAICAwAAAAAAAAAAAAAAAAIRAAEgIlH/2gAIAQEABj8CuMS24sf/xAAYEAADAQEAAAAAAAAAAAAAAAAAASERMf/aAAgBAQABPyFhkjOgW6gxmCbU2GvA1P/aAAwDAQACAAMAAAAQHD//xAAWEQADAAAAAAAAAAAAAAAAAAABEEH/2gAIAQMBAT8QMX//xAAWEQEBAQAAAAAAAAAAAAAAAAABEDH/2gAIAQIBAT8QHZ//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUGB/9oACAEBAAE/EL8hR93eSrYQvKPvIWbBuCBQvByUVqacYl9Z/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/55204c3e813ec4cce81db8f7b8bafc17/cbe2e/020.webp 148w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/3084c/020.webp 295w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/5ca24/020.webp 590w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/dad35/020.webp 885w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/2baf0/020.webp 1180w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/efe91/020.webp 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/55204c3e813ec4cce81db8f7b8bafc17/a80bd/020.jpg 148w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/1c91a/020.jpg 295w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/1c72d/020.jpg 590w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/a8a14/020.jpg 885w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/fbd2c/020.jpg 1180w,
+/static/55204c3e813ec4cce81db8f7b8bafc17/5ac89/020.jpg 1210w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/55204c3e813ec4cce81db8f7b8bafc17/1c72d/020.jpg"
+          alt="Just do IT"
+          title="Just do IT"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">Just do IT</figcaption>
+  </figure></p></section><hr style="margin-bottom:1.45rem"/><footer><div style="display:flex"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.725rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAb8MaZ6IiFcS2B//xAAbEAACAwADAAAAAAAAAAAAAAACAwABBBETIv/aAAgBAQABBQJrOsQJvM0eRXpomQwFg1kSNz//xAAWEQADAAAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8BYj//xAAYEQACAwAAAAAAAAAAAAAAAAABEAISIf/aAAgBAgEBPwGsjoQX/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQIRMQAQEmEiQYH/2gAIAQEABj8ChyYrmlPhsFy3VNiz7tioOKcJjdv/xAAbEAACAwEBAQAAAAAAAAAAAAABEQAQITFBUf/aAAgBAQABPyFQmSCYZQfeVFgIcDxfHjtEDR5BAh6FP//aAAwDAQACAAMAAAAQK8B8/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EADFjP/EABYRAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPxCaNMSZ/8QAHhABAQABBAMBAAAAAAAAAAAAAREhABAxQVFhkbH/2gAIAQEAAT8QvZXbBfbodJo5fkR5m1yVNHd4b1JdZPREoHxc3a5BFpPzVXiEVhMjt//Z" alt="宫不上叔" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
 /static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
 /static/e7fa6079ba0f0465659fcadeda34cc25/b315d/profile.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
 /static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
@@ -29,4 +974,4 @@
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/travel/2020/06/04/工业站！探清水河.html";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":[],"component---cache-caches-gatsby-plugin-offline-app-shell-js":[],"component---src-templates-blog-post-tsx":[],"component---src-templates-categories-tsx":[],"component---src-templates-tags-tsx":[],"component---src-templates-series-tsx":[],"component---src-pages-404-tsx":[],"component---src-pages-index-tsx":[]};/*]]>*/</script><script src="/js/component---src-templates-blog-post-tsx.c46ab7c7be2552c3eca8.js" async=""></script><script src="/js/bfdad691425d6cb1bcd0448c8ba1904ad83e8ddc.688b0da9f1421dd960ac.js" async=""></script><script src="/js/39ddafa25508f9ab66adb98084ff770131ab7c55.4edcc5d983042c77304e.js" async=""></script><script src="/js/app.ca33e2403ad2617d18e4.js" async=""></script><script src="/js/styles.fccaeeb72400eb0ced43.js" async=""></script><script src="/js/framework.4732038a8fedfb595f9d.js" async=""></script><script src="/js/webpack-runtime.1128877134dd6738a110.js" async=""></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/travel/2020/06/04/工业站！探清水河.html";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":[],"component---cache-caches-gatsby-plugin-offline-app-shell-js":[],"component---src-templates-blog-post-tsx":[],"component---src-templates-categories-tsx":[],"component---src-templates-tags-tsx":[],"component---src-templates-series-tsx":[],"component---src-pages-404-tsx":[],"component---src-pages-index-tsx":[]};/*]]>*/</script><script src="/js/component---src-templates-blog-post-tsx.c46ab7c7be2552c3eca8.js" async=""></script><script src="/js/bfdad691425d6cb1bcd0448c8ba1904ad83e8ddc.688b0da9f1421dd960ac.js" async=""></script><script src="/js/39ddafa25508f9ab66adb98084ff770131ab7c55.4edcc5d983042c77304e.js" async=""></script><script src="/js/app.ca33e2403ad2617d18e4.js" async=""></script><script src="/js/styles.fccaeeb72400eb0ced43.js" async=""></script><script src="/js/framework.4732038a8fedfb595f9d.js" async=""></script><script src="/js/webpack-runtime.298955378ebd40b9011f.js" async=""></script></body></html>
