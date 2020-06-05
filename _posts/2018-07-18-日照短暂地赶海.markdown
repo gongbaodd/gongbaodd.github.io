@@ -1,7 +1,8 @@
 ---
 type: post
-category: fe
+category: travel
 ---
+
 # 日照短暂地赶海
 
 ![我在日照的沙滩看沙雕](https://i0.hdslb.com/bfs/archive/3cdf519fbe344f2f43d5ebde674e848c12607847.jpg@320w_200h_100Q_1c.webp)

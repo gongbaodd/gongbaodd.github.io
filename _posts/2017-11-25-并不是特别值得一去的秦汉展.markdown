@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 并不是特别值得一去的秦汉展
 
 今年大都会展了一个秦汉展,为了照顾国内情绪吧,国博也展了一个.

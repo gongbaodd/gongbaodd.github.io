@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 深圳中心书城
 
 人太多。。。不是说十一深圳成空城了么，这么个空法？

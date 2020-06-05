@@ -1,10 +1,12 @@
 ---
 layout: post
-category: life
+category: travel
 ---
 
 # 唐蕃北斗
+
 ## 海南州
+
 ---
 
 # 拉脊山

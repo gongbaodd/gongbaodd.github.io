@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 旅行总结
 
 北京 - 邯郸 - 郑州 - 武汉 - 宜昌 - 重庆 - 成都 - 西宁 - 拉萨

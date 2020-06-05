@@ -1,4 +1,6 @@
 ---
-layout: post
-category: life
+type: post
+category: travel
 ---
+
+# 故宫躲人攻略

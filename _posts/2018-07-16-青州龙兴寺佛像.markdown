@@ -1,7 +1,8 @@
 ---
 type: post
-category: fe
+category: travel
 ---
+
 # 青州龙兴寺佛像
 
 ![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqixp1j20s00s075c.jpg)

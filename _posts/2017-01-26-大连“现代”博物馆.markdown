@@ -1,7 +1,9 @@
 ---
-layout: post
-category: life
+type: post
+category: travel
 ---
+
+# 大连“现代”博物馆
 
 ![](http://wx1.sinaimg.cn/mw690/89d0a2e1ly1fc7umkynsvj21kw11xndb.jpg)
 ![](http://wx1.sinaimg.cn/mw690/89d0a2e1ly1fc7umlp7mfj21kw11x4h5.jpg)

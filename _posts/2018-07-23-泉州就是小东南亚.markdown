@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 泉州就是小东南亚
 
 ![](https://i2.hdslb.com/bfs/archive/b374dbf4f0da2222817a93a0364091a3d14c1388.jpg@320w_200h_100Q_1c.webp)

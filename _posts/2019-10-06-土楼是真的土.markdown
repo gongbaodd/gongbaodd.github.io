@@ -1,5 +1,6 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 土楼是真的土

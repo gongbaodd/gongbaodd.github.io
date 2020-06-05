@@ -1,12 +1,13 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 深圳油画村
 
 本来打算本周去广州的，结果周六中午起来的，算了，洗了衣服收拾下一天就结束了（天呐(＞﹏＜)）
 
-周六下雨换来了个晴朗的周日，干脆坐3号线去大芬村看看油画，反正小的时候就看过NHK的纪录片了。
+周六下雨换来了个晴朗的周日，干脆坐 3 号线去大芬村看看油画，反正小的时候就看过 NHK 的纪录片了。
 
 ![大芬村车站](https://cdn.ruguoapp.com/FkVDtlzbYAH4UhMOaHsuLOzzjIDv.jpeg?imageMogr2/auto-orient/thumbnail/2000000@)
 
@@ -14,7 +15,7 @@ category: life
 
 ![城中村一览](https://cdn.ruguoapp.com/Fp2p6VnaocSACFrttmiBA45Zl2cj.jpeg?imageMogr2/auto-orient/thumbnail/2000000@)
 
-其实深圳的城中村大部分不是如此，像这样的平房也就是艺术家能搞得出，真正的城中村真心压抑，楼与楼挨得很近，基本上都是6,7层的样子。
+其实深圳的城中村大部分不是如此，像这样的平房也就是艺术家能搞得出，真正的城中村真心压抑，楼与楼挨得很近，基本上都是 6,7 层的样子。
 
 ![向日葵](https://cdn.ruguoapp.com/FgcZLXG-TLRb75li19mm7_SgwLuU.jpeg?imageMogr2/auto-orient/thumbnail/1999000@)
 
@@ -30,4 +31,4 @@ category: life
 
 ![](https://ws1.sinaimg.cn/mw690/89d0a2e1gy1fxcmo9gohaj21k03407wj.jpg)
 
-之后想去高交会，可惜到了已经快闭幕了，既然今年没Intel只有华为中兴国人自己玩，那就算了吧（只是安慰。。。）
+之后想去高交会，可惜到了已经快闭幕了，既然今年没 Intel 只有华为中兴国人自己玩，那就算了吧（只是安慰。。。）

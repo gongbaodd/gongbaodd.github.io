@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 待在昆明的感觉就是北京春天最舒服的那几天
 
 ## 车上风景

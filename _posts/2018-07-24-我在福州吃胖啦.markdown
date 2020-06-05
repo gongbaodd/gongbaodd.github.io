@@ -1,7 +1,8 @@
 ---
 type: post
-category: fe
+category: travel
 ---
+
 # 我在福州吃胖啦
 
 ![](https://i2.hdslb.com/bfs/archive/f30c5f5c3d82318a529b5a023693adcbe1027215.jpg@320w_200h_100Q_1c.webp)

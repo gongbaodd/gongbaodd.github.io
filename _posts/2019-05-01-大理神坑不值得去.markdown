@@ -1,5 +1,6 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 大理神坑不值得去

@@ -1,9 +1,9 @@
 ---
-layout: post
-category: life
+type: post
+category: travel
 ---
 
-# history
+# 全国唯一的侵略者博物馆——旅顺博物馆
 
 ![](http://wx4.sinaimg.cn/mw690/89d0a2e1ly1fc7u0bvkpmj21kw11x4qp.jpg)
 ![](http://wx2.sinaimg.cn/mw690/89d0a2e1ly1fc7u0dpnwzj21kw11x1kx.jpg)
@@ -58,7 +58,6 @@ category: life
 ![](http://wx3.sinaimg.cn/mw690/89d0a2e1ly1fc7u1wsea7j21kw11xkew.jpg)
 ![](http://wx4.sinaimg.cn/mw690/89d0a2e1ly1fc7u1y3gk3j21kw11xh82.jpg)
 ![](http://wx2.sinaimg.cn/mw690/89d0a2e1ly1fc7u1z3osfj21kw11xnfo.jpg)
-
 
 ![](http://wx1.sinaimg.cn/mw690/89d0a2e1ly1fc7ucb7dfnj21kw11x4ew.jpg)
 ![](http://wx1.sinaimg.cn/mw690/89d0a2e1ly1fc7ucbym4dj21kw11xk7g.jpg)

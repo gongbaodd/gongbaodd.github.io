@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 补上，没完成的厦门之旅
 
 ## 预定票

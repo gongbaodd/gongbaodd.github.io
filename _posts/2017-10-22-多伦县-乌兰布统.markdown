@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 丰宁县-木兰围场-御道口-多伦县-乌兰布统
 
 ![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfovppfbpj21je15k10g.jpg)
@@ -63,4 +64,3 @@ category: life
 ![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfoljamszj20v615kwjc.jpg)
 
 ![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfoljbj1xj20v615kjvm.jpg)
-

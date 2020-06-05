@@ -1,6 +1,6 @@
 ---
 type: post
-category: life
+category: travel
 ---
 
 # 红排角野泳记录

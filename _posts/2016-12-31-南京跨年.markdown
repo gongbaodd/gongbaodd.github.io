@@ -1,9 +1,11 @@
 ---
 layout: post
-category: life
+category: travel
 ---
 
-年初，我去黄山时在南京做过中转，逛了古朴的总统府和繁华的夫子庙秦淮河，对这座古都充满向往。于是在2016年年末，我带上下载好一整套《明朝那些事儿》的kindle到达了我向往了一整年的地方。
+# 南京跨年
+
+年初，我去黄山时在南京做过中转，逛了古朴的总统府和繁华的夫子庙秦淮河，对这座古都充满向往。于是在 2016 年年末，我带上下载好一整套《明朝那些事儿》的 kindle 到达了我向往了一整年的地方。
 
 南京相比于西安，火车票是好买了点儿，然而我还是没能买到称心的那张，就像今年去西安一样，我又坐了一整夜。
 
@@ -66,7 +68,7 @@ category: life
 
 ![珐琅彩瓷器](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbd9nmbd73j21kw11xat4.jpg)
 
-大报恩寺，可以算是古代的瓷房子，已经在太平天国时期被摧毁了，但是由于当时建造时，做了五份备件埋于地下才幸免于难（不过这份备件在毫无保护的环境下放在博物馆里，还真担心那个熊孩子给碰坏了呢😱）。
+大报恩寺，可以算是古代的瓷房子，已经在太平天国时期被摧毁了，但是由于当时建造时，做了五份备件埋于地下才幸免于难（不过这份备件在毫无保护的环境下放在博物馆里，还真担心那个熊孩子给碰坏了呢 😱）。
 
 ![大报恩寺琉璃门](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbd9no1791j211x1kw1fb.jpg)
 
@@ -148,7 +150,7 @@ category: life
 
 ## 艺术馆
 
-逛到艺术馆，我已经是筋疲力竭了（毕竟一宿没睡），其实艺术馆前面还有一个全国博物馆摄影展（看过这个才发现我逛过的博物馆真TM少），又不是我拍的，就不发照片了。
+逛到艺术馆，我已经是筋疲力竭了（毕竟一宿没睡），其实艺术馆前面还有一个全国博物馆摄影展（看过这个才发现我逛过的博物馆真 TM 少），又不是我拍的，就不发照片了。
 
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdb3leodrj211x1kwqia.jpg)
 ![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdb3la9f5j21kw11xkb5.jpg)
@@ -239,9 +241,9 @@ category: life
 特展馆的其它馆，看了《我在故宫修文物》必去的钟表馆。
 
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdb2k8i88j211x1kw4fw.jpg)
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdb2j5k9bj21kw11xqlq.jpg)        
+![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdb2j5k9bj21kw11xqlq.jpg)  
 ![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdb2hi7izj211x1kw7l4.jpg)
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdb2i8amsj211x1kwka5.jpg)        
+![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdb2i8amsj211x1kwka5.jpg)
 
 ## 瓷器馆
 
@@ -250,7 +252,7 @@ category: life
 ![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1fbdb2g5872j211x1kw185.jpg)
 ![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1fbdb2f6kwjj21kw11x17y.jpg)
 
-瓷器馆门口有一小哥在长凳上酣睡，乍一看有几分帅气。突然来了一个妹子，远远地拿出手机打开自拍，摆好亲吻造型就是一张。好一朵江南小野花，说好的江南妹子的内敛呢？金陵妹子身上完全看不到啊😂。
+瓷器馆门口有一小哥在长凳上酣睡，乍一看有几分帅气。突然来了一个妹子，远远地拿出手机打开自拍，摆好亲吻造型就是一张。好一朵江南小野花，说好的江南妹子的内敛呢？金陵妹子身上完全看不到啊 😂。
 
 ## 镇馆之宝？
 
@@ -288,7 +290,7 @@ category: life
 
 # 中山门城墙
 
-上城墙要十块钱，而且不是连着的（坑爹啊，走一半才发现从内墙翻过去简直小case。。。），抱着对沈万三的信仰，我还是掏了钱的。
+上城墙要十块钱，而且不是连着的（坑爹啊，走一半才发现从内墙翻过去简直小 case。。。），抱着对沈万三的信仰，我还是掏了钱的。
 
 ![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1fbdb1zqdkij21kw11xdxe.jpg)
 
@@ -347,7 +349,7 @@ category: life
 
 # 六朝博物馆
 
-六朝博物馆是售票的，30块，我个人觉得还是挺值，当然如果相对于南博的免费来说就不值了。
+六朝博物馆是售票的，30 块，我个人觉得还是挺值，当然如果相对于南博的免费来说就不值了。
 
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdbe5rx22j211x1kwk8u.jpg)
 
@@ -474,10 +476,9 @@ category: life
 ![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1fbdbe8645hj21kw11xtom.jpg)
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdbe79x89j21kw11xtoa.jpg)
 
-
 # 江南织造博物馆
 
-江南织造，看介绍说是原地复建的，喜欢《红楼梦》的有福了，里面有个放映厅循环播放《红楼梦》。门票也是30，里面的高层应该是餐馆，不是展厅。
+江南织造，看介绍说是原地复建的，喜欢《红楼梦》的有福了，里面有个放映厅循环播放《红楼梦》。门票也是 30，里面的高层应该是餐馆，不是展厅。
 
 ![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1fbdbe4kkqfj21kw11xtql.jpg)
 ![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1fbdbe4i43ej21kw11xtq3.jpg)
@@ -568,7 +569,7 @@ category: life
 
 # 南京大屠杀纪念馆
 
-爱国者不是一般的多啊，排了很长时间的队，而且还有插队的😤。
+爱国者不是一般的多啊，排了很长时间的队，而且还有插队的 😤。
 
 ![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdbcrsbitj21kw11xwzx.jpg)
 ![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1fbdbcps428j21kw11x4e0.jpg)
@@ -581,7 +582,7 @@ category: life
 ![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdbcithd4j21kw11xha6.jpg)
 ![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdbcjsuepj21kw11xqiw.jpg)
 
-整个纪念馆十分压抑，当然很多处出于尊重我就不拍照了，里面有一个十二秒，一滴水从高空落下刚好十二秒，暗示南京大屠杀每12秒会死一个人。
+整个纪念馆十分压抑，当然很多处出于尊重我就不拍照了，里面有一个十二秒，一滴水从高空落下刚好十二秒，暗示南京大屠杀每 12 秒会死一个人。
 
 ![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1fbdbcowfvkj21kw11xnbi.jpg)
 
@@ -629,7 +630,7 @@ category: life
 ![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1fbdbgidirej21kw11x17z.jpg)
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdbg227d3j21kw11xtq3.jpg)
 
-在玄武湖中央可以眺望到远处的南京站，可是如果要过去的话，并没有直线道路😂。
+在玄武湖中央可以眺望到远处的南京站，可是如果要过去的话，并没有直线道路 😂。
 
 ![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1fbdbg1bndmj21kw11xnc9.jpg)
 

@@ -1,7 +1,8 @@
 ---
 type: post
-category: life
+category: travel
 ---
+
 # 改革开放博物馆
 
 位置在蛇口海上世界附近，楼下是《博物志》里面经常提到的设计互联。
