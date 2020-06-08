@@ -1,0 +1,52 @@
+---
+type: post
+category: book
+tag:
+  - tensorflow
+  - keras
+  - wsl2
+  - python
+series:
+  name: 张量麻辣烫
+  slug: learn-tensorflow
+---
+
+# Keras 二分类问题-电影评论分类
+
+> 「Python 深度学习」的例子在[GitHub](https://github.com/fchollet/deep-learning-with-python-notebooks)上。
+> 别问我为啥不写在 notebook 上，等我心情好就给网站加一下这给你功能吧
+
+将 IMDB 上的 50000 条两极分化的评论，一般用于训练，一半用于测试。这些数据中 data 是词索引组成的二维数组，每一行对应每条评论，label 为 0\1 数组，0 表示负面评论，1 表示积极评论。
+
+```py
+import keras
+from keras.datasets import imdb
+
+(train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words = 1000)
+```
+
+数据集里面的数字可以解析成。
+
+```py
+word_index = imdb.get_word_index()
+reverse_word_index = dict([(value, key) for (key, value) in word_index.items()])
+decoded_review = ' '.join([reverse_word_index.get(i-3, '?') for i in train_data[0]])
+```
+
+使用以下方法即可以把训练数据处理成 0/1 数组。
+
+```py
+import numpy as np
+
+def vectorize_sequences(sequences, dimension=10000):
+    results = np.zeros((len(sequences), dimension))
+    for i, sequence in enumerate(sequences):
+        results[i, sequence] = 1
+    return results
+
+x_train = vectorize_sequences(train_data)
+x_test = vectorize_sequesnces(test_data)
+
+y_train = np.array(train_labels).astype('float32')
+y_test = np.array(test_labels).astype('float32')
+```
