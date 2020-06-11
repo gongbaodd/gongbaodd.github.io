@@ -11,7 +11,7 @@ series:
   slug: learn-tensorflow
 ---
 
-# Keras 二分类问题-电影评论分类
+# Keras 分类问题-电影评论分类
 
 > 「Python 深度学习」的例子在[GitHub](https://github.com/fchollet/deep-learning-with-python-notebooks)上。
 > 别问我为啥不写在 notebook 上，等我心情好就给网站加一下这给你功能吧
@@ -142,3 +142,9 @@ array([[0.3796336 ],
        [0.14184406],
        [0.47513008]], dtype=float32)
 ```
+
+## 多分类问题
+
+书中还介绍了路透社新闻分类，不同点是构建网络时选用单元比较多（书中选择 64 维，因为有 46 个分类），最后一层激活函数选择`softmax`函数，它能保证这 46 个类的概率和为 1.
+
+最终编译时应选择`categorical_crossentropy`做损失函数。
