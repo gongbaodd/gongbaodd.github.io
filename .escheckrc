@@ -1,5 +1,0 @@
-{
-  "ecmaVersion": "es5",
-  "module": false,
-  "files": "./public/js/*.js"
-}
