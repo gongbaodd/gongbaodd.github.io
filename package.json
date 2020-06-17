@@ -28,8 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn audit:ci && lint-staged",
-      "pre-push": "yarn clean && yarn build"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -46,25 +45,13 @@
     "nonGlobalStepDefinitions": true
   },
   "scripts": {
-    "install:win32": "HUSKY_SKIP_INSTALL=1 yarn install",
-    "dev": "yarn clean && gatsby develop --host=0.0.0.0",
-    "build": "NODE_ENV=production gatsby build",
-    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint src --ext=ts,js,tsx --fix",
     "commit": "git-cz",
-    "audit:ci": "audit-ci -m -a 1488 -a 1217 -a 1486 -a 1219",
-    "type": "tsc --noEmit",
-    "test": "jest",
-    "cy:test": "sh scripts/run_cypress.sh",
-    "cp:cname": "sh ./scripts/cp_cname.sh",
-    "deploy:coding": "sh ./scripts/deploy_to_coding.sh",
-    "deploy": "gh-pages -d public -r https://$GH_TOKEN@github.com/gongbaodd/gongbaodd.github.io.git -b master",
-    "es:check": "es-check",
-    "storybook": "NODE_ENV=production start-storybook -p 6006",
-    "build-storybook": "NODE_ENV=production build-storybook"
+    "test": "echo \"no test needed\" && exit 0",
+    "build": "sh ./scripts/generate.sh"
   }
 }
