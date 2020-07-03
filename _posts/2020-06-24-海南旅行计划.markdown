@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: plan
 ---
 
 # 海南旅行计划
