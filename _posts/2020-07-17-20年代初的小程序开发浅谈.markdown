@@ -26,3 +26,7 @@ category: fe
 ## SVG
 
 小程序 CSS 中支持 SVG。这点可以有，好多图我都是 figma 里面妥妥拽拽导出 SVG。但是在 Vdom 中直接插入 SVG 还是不行。
+
+## WSL
+
+另外，在 Windows 下面开发小程序是无法使用 WSL 环境的，哪怕是映射过去的文件地址也不行，但是可以把项目放在 Windows 的目录下如`/mnt/c/minprogram`开发。
