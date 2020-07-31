@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://blog.gongbushang.com/sitemap.xml
-Host: https://blog.gongbushang.com
+Disallow:
