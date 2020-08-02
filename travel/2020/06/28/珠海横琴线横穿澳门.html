@@ -1,0 +1,737 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta http-equiv="Content-Security-Policy" content="base-uri &#x27;self&#x27;; default-src &#x27;self&#x27; utteranc.es *.utteranc.es fonts.gstatic.com; script-src &#x27;self&#x27; www.google-analytics.com *.sentry.io &#x27;unsafe-inline&#x27; utteranc.es *.utteranc.es *.cloudflareinsights.com; style-src &#x27;self&#x27; &#x27;unsafe-inline&#x27; utteranc.es *.utteranc.es; object-src &#x27;none&#x27;; form-action &#x27;self&#x27;; font-src &#x27;self&#x27; data:; connect-src &#x27;self&#x27;; img-src * data: *.cloudflareinsights.com;"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.45 'georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'georgia',serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}ul{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:0.85rem;line-height:1.45rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}blockquote{margin-left:1.45rem;margin-right:1.45rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.45rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.45rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}li > ul{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.45rem / 2);}code{font-size:0.85rem;line-height:1.45rem;}kbd{font-size:0.85rem;line-height:1.45rem;}samp{font-size:0.85rem;line-height:1.45rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96667rem;padding-right:0.96667rem;padding-top:0.725rem;padding-bottom:calc(0.725rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}</style><style data-href="/css/../css/styles.5195110af6dfadcdbe57.css">@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:100;src:local("Roboto Thin "),local("Roboto-Thin"),url(/js/static/roboto-latin-100-7370c3679472e9560965ff48a4399d0b.woff2) format("woff2"),url(/js/static/roboto-latin-100-5cb7edfceb233100075dc9a1e12e8da3.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:100;src:local("Roboto Thin italic"),local("Roboto-Thinitalic"),url(/js/static/roboto-latin-100italic-f8b1df51ba843179fa1cc9b53d58127a.woff2) format("woff2"),url(/js/static/roboto-latin-100italic-f9e8e590b4e0f1ff83469bb2a55b8488.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:300;src:local("Roboto Light "),local("Roboto-Light"),url(/js/static/roboto-latin-300-ef7c6637c68f269a882e73bcb57a7f6a.woff2) format("woff2"),url(/js/static/roboto-latin-300-b00849e00f4c2331cddd8ffb44a6720b.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:300;src:local("Roboto Light italic"),local("Roboto-Lightitalic"),url(/js/static/roboto-latin-300italic-14286f3ba79c6627433572dfa925202e.woff2) format("woff2"),url(/js/static/roboto-latin-300italic-4df32891a5f2f98a363314f595482e08.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url(/js/static/roboto-latin-400-479970ffb74f2117317f9d24d9e317fe.woff2) format("woff2"),url(/js/static/roboto-latin-400-60fa3c0614b8fb2f394fa29944c21540.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:400;src:local("Roboto Regular italic"),local("Roboto-Regularitalic"),url(/js/static/roboto-latin-400italic-51521a2a8da71e50d871ac6fd2187e87.woff2) format("woff2"),url(/js/static/roboto-latin-400italic-fe65b8335ee19dd944289f9ed3178c78.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:500;src:local("Roboto Medium "),local("Roboto-Medium"),url(/js/static/roboto-latin-500-020c97dc8e0463259c2f9df929bb0c69.woff2) format("woff2"),url(/js/static/roboto-latin-500-87284894879f5b1c229cb49c8ff6decc.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:500;src:local("Roboto Medium italic"),local("Roboto-Mediumitalic"),url(/js/static/roboto-latin-500italic-db4a2a231f52e497c0191e8966b0ee58.woff2) format("woff2"),url(/js/static/roboto-latin-500italic-288ad9c6e8b43cf02443a1f499bdf67e.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url(/js/static/roboto-latin-700-2735a3a69b509faf3577afd25bdf552e.woff2) format("woff2"),url(/js/static/roboto-latin-700-adcde98f1d584de52060ad7b16373da3.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:700;src:local("Roboto Bold italic"),local("Roboto-Bolditalic"),url(/js/static/roboto-latin-700italic-da0e717829e033a69dec97f1e155ae42.woff2) format("woff2"),url(/js/static/roboto-latin-700italic-81f57861ed4ac74741f5671e1dff2fd9.woff) format("woff")}@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:900;src:local("Roboto Black "),local("Roboto-Black"),url(/js/static/roboto-latin-900-9b3766ef4a402ad3fdeef7501a456512.woff2) format("woff2"),url(/js/static/roboto-latin-900-bb1e4dc6333675d11ada2e857e7f95d7.woff) format("woff")}@font-face{font-family:Roboto;font-style:italic;font-display:swap;font-weight:900;src:local("Roboto Black italic"),local("Roboto-Blackitalic"),url(/js/static/roboto-latin-900italic-ebf6d1640ccddb99fb49f73c052c55a8.woff2) format("woff2"),url(/js/static/roboto-latin-900italic-28f9151055c950874d2c6803a39b425b.woff) format("woff")}code[class*=language-],pre[class*=language-]{font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.4em .8em;margin:.5em 0;overflow:auto;background:url("data:image/svg+xml;charset=utf-8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgba(0,0,0,.2)'%3E%3Cpolygon points='0,50 50,0 0,0'/%3E%3Cpolygon points='0,100 50,100 100,50 100,0'/%3E%3C/svg%3E");background-size:1em 1em}code[class*=language-]{background:#000;color:#fff;box-shadow:-.3em 0 0 .3em #000,.3em 0 0 .3em #000}:not(pre)>code[class*=language-]{padding:.2em;border-radius:.3em;box-shadow:none;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#aaa}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.number,.token.property,.token.symbol,.token.tag{color:#0cf}.token.attr-name,.token.builtin,.token.char,.token.selector,.token.string{color:#ff0}.language-css .token.string,.token.entity,.token.inserted,.token.operator,.token.url,.token.variable{color:#9acd32}.token.atrule,.token.attr-value,.token.keyword{color:#ff1493}.token.important,.token.regex{color:orange}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.deleted{color:red}pre.diff-highlight.diff-highlight>code .token.deleted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.deleted:not(.prefix){background-color:rgba(255,0,0,.3);display:inline}pre.diff-highlight.diff-highlight>code .token.inserted:not(.prefix),pre>code.diff-highlight.diff-highlight .token.inserted:not(.prefix){background-color:rgba(0,255,128,.3);display:inline}pre[class*=language-].line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}html{overflow:hidden;background-color:#222639}.parallex{-webkit-perspective:10px;perspective:10px;-webkit-perspective-origin:top;perspective-origin:top;height:100vh;overflow:auto}.parallex,.parallex_group{position:relative;width:auto}.parallex_group{-webkit-transform-style:preserve-3d;transform-style:preserve-3d;overflow:hidden}.back{position:absolute;background-image:linear-gradient(hsla(0,0%,50%,.05) 2px,transparent 0),linear-gradient(90deg,hsla(0,0%,50%,.05) 2px,transparent 0),linear-gradient(hsla(0,0%,100%,.01) 1px,transparent 0),linear-gradient(90deg,hsla(0,0%,100%,.01) 1px,transparent 0);background-size:50px 50px,50px 50px,10px 10px,10px 10px;width:100%;height:100%;-webkit-transform:translateZ(-5px) scale3d(1.5,1.5,1);transform:translateZ(-5px) scale3d(1.5,1.5,1);z-index:-1}.line-numbers .line-numbers-rows{top:.5em;left:1em}figcaption.gatsby-resp-image-figcaption{text-align:center;font-style:italic;color:grey}code[class*=language-]{background:transparent;box-shadow:0 0 0 transparent}a,a:visited{color:#cd5c5c}.plog_post p{margin-bottom:2.5rem;margin-top:2.5rem}</style><meta name="generator" content="Gatsby 2.20.9"/><title data-react-helmet="true">珠海横琴线横穿澳门 | 宫不上叔</title><meta data-react-helmet="true" name="description" content="珠海横琴线横穿澳门 B…"/><meta data-react-helmet="true" property="og:title" content="珠海横琴线横穿澳门"/><meta data-react-helmet="true" property="og:description" content="珠海横琴线横穿澳门 B…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="gongbaodd"/><meta data-react-helmet="true" name="twitter:title" content="珠海横琴线横穿澳门"/><meta data-react-helmet="true" name="twitter:description" content="珠海横琴线横穿澳门 B…"/><meta data-react-helmet="true" name="referrer" content="no-referrer"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Your Site&#x27;s RSS Feed" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#000000"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4768f21272a07c96373b1d908820699b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4768f21272a07c96373b1d908820699b"/><link as="script" rel="preload" href="/js/webpack-runtime.9a08f15e31beef547719.js"/><link as="script" rel="preload" href="/js/framework.4732038a8fedfb595f9d.js"/><link as="script" rel="preload" href="/js/styles.fccaeeb72400eb0ced43.js"/><link as="script" rel="preload" href="/js/app.555ee784654cb06ddf2b.js"/><link as="script" rel="preload" href="/js/39ddafa25508f9ab66adb98084ff770131ab7c55.4edcc5d983042c77304e.js"/><link as="script" rel="preload" href="/js/bfdad691425d6cb1bcd0448c8ba1904ad83e8ddc.688b0da9f1421dd960ac.js"/><link as="script" rel="preload" href="/js/component---src-templates-blog-post-tsx.c46ab7c7be2552c3eca8.js"/><link as="fetch" rel="preload" href="/page-data/travel/2020/06/28/珠海横琴线横穿澳门.html/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>(function() { try {
+  var mode = localStorage.getItem('theme-ui-color-mode');
+  if (!mode) return
+  document.body.classList.add('theme-ui-' + mode);
+} catch (e) {} })();</script><div id="___gatsby"><style data-emotion-css="7huip">body{color:var(--theme-ui-colors-text,hsl(210,50%,96%));background-color:var(--theme-ui-colors-background,hsl(230,25%,18%));}</style><style data-emotion-css="0"></style><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><div class="parallex"><div class="parallex_group"><div class="back"></div><div class="front"><div style="margin-left:auto;margin-right:auto;max-width:60.9rem;padding:2.175rem 1.0875rem"><a href="https://github.com/gongbaodd/gongbaodd.github.io" class="github-corner" aria-label="打开Github"><svg width="80" height="80" viewBox="0 0 250 250" style="position:absolute;top:0;fill:#fff;right:0"><path class="octo-banner" d="M0 0l115 115h15l12 27 108 108V0z" fill="deeppink"></path><path class="octo-arm" d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16" style="-webkit-transform-origin:130px 106px;transform-origin:130px 106px"></path><path class="octo-body" d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"></path></svg></a><h1 style="margin-top:0"><small class="token function">blog</small><small class="token punctuation">(</small><a class="token string" style="text-decoration:none" href="/"><small>&quot;</small>宫不上叔<small>&quot;</small></a><small class="token punctuation">);</small></h1><main><article><header><p style="font-size:0.87055rem;line-height:1.45rem;display:block;margin-bottom:1.45rem">June 28, 2020</p></header><section class="blog_post"><h1>珠海横琴线横穿澳门</h1>
+<p><img src="https://www.bilibili.com/video/bv14v411B7Tt" alt="B站连接"></p>
+<p>一直没有机会去澳门，疫情期间就更没机会了，不过最近招商游轮开了新航线，从深圳蛇口港到珠海横琴港，中间会横穿澳门，怎么说也算是去过澳门了。</p>
+<h2>横穿澳门</h2>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/73f4a66663bb08acefd03f0549ab2c1b/4b190/1.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 105.40540540540542%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAVABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwH/2gAMAwEAAhADEAAAAfZlmmIY64J00GP/xAAZEAACAwEAAAAAAAAAAAAAAAAAEQEQQSH/2gAIAQEAAQUCzSYFb6z/xAAWEQADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8BdP/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEP/aAAgBAgEBPwE0L//EABYQAAMAAAAAAAAAAAAAAAAAAAAwMf/aAAgBAQAGPwIiP//EABwQAAMAAgMBAAAAAAAAAAAAAAABESExEEFRgf/aAAgBAQABPyH1siSPg9q2FTNPjJ1umwwP/9oADAMBAAIAAwAAABDE/wCB/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQQf/aAAgBAwEBPxBXmMq//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAQ/9oACAECAQE/EAaCX//EABwQAQACAwEBAQAAAAAAAAAAAAEAESExUUFxYf/aAAgBAQABPxBtKG2h52NJCjufn7PZUl99ZdsO8ey2SRFeTawXyWNQVeN3P//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/73f4a66663bb08acefd03f0549ab2c1b/cbe2e/1.webp 148w,
+/static/73f4a66663bb08acefd03f0549ab2c1b/3084c/1.webp 295w,
+/static/73f4a66663bb08acefd03f0549ab2c1b/5ca24/1.webp 590w,
+/static/73f4a66663bb08acefd03f0549ab2c1b/d00b9/1.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/73f4a66663bb08acefd03f0549ab2c1b/a80bd/1.jpg 148w,
+/static/73f4a66663bb08acefd03f0549ab2c1b/1c91a/1.jpg 295w,
+/static/73f4a66663bb08acefd03f0549ab2c1b/1c72d/1.jpg 590w,
+/static/73f4a66663bb08acefd03f0549ab2c1b/4b190/1.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/73f4a66663bb08acefd03f0549ab2c1b/1c72d/1.jpg"
+          alt="航线中间经过澳门"
+          title="航线中间经过澳门"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">航线中间经过澳门</figcaption>
+  </figure></p>
+<p>因为澳门是由澳门半岛和氹仔与路环岛（后面两个岛已经填海连起来了），这次航线就是从澳门这两个岛中间穿过。</p>
+<p>招商邮轮疫情期间这个航线单程只要 65 块钱，于是一大早我便赶到蛇口港登船。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8c9756b64f3ebe8151719db046febde5/4b190/2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAID/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAHXJNiAP//EABkQAQACAwAAAAAAAAAAAAAAAAEAAgMQIf/aAAgBAQABBQJyMtazE67/AP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAXEQADAQAAAAAAAAAAAAAAAAAAARES/9oACAECAQE/AdMrP//EABkQAAIDAQAAAAAAAAAAAAAAAAAxAREgof/aAAgBAQAGPwJSUPmP/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERIRAxYYH/2gAIAQEAAT8hmV6UJVaOoXhGPZ//2gAMAwEAAgADAAAAEOs//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQBBcf/aAAgBAwEBPxAQy5v/xAAXEQEAAwAAAAAAAAAAAAAAAAAAAVFh/9oACAECAQE/EJsbP//EAB4QAQABAwUBAAAAAAAAAAAAAAEAESExEEGRocHR/9oACAEBAAE/EA7utxQHMaGUVw9wC8PsTXLFbS//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/8c9756b64f3ebe8151719db046febde5/cbe2e/2.webp 148w,
+/static/8c9756b64f3ebe8151719db046febde5/3084c/2.webp 295w,
+/static/8c9756b64f3ebe8151719db046febde5/5ca24/2.webp 590w,
+/static/8c9756b64f3ebe8151719db046febde5/d00b9/2.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/8c9756b64f3ebe8151719db046febde5/a80bd/2.jpg 148w,
+/static/8c9756b64f3ebe8151719db046febde5/1c91a/2.jpg 295w,
+/static/8c9756b64f3ebe8151719db046febde5/1c72d/2.jpg 590w,
+/static/8c9756b64f3ebe8151719db046febde5/4b190/2.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/8c9756b64f3ebe8151719db046febde5/1c72d/2.jpg"
+          alt="蛇口港"
+          title="蛇口港"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">蛇口港</figcaption>
+  </figure></p>
+<p>回头可以看见连接深圳香港的深港大桥，左边是深圳右边是蛇口。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/963fc1b3d5b7eb82d3493d20e45860af/4b190/3.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAaWc/bLyYr//xAAZEAADAAMAAAAAAAAAAAAAAAAAAQIQERL/2gAIAQEAAQUCVydSO42LH//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABcRAQADAAAAAAAAAAAAAAAAAAABERL/2gAIAQIBAT8BtqX/xAAWEAEBAQAAAAAAAAAAAAAAAABBECD/2gAIAQEABj8CY4//xAAaEAEBAAIDAAAAAAAAAAAAAAABABEhEDGR/9oACAEBAAE/IWbQMYdZidPMcG//2gAMAwEAAgADAAAAEN/f/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/EGR//8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8QsP/EABsQAQADAQADAAAAAAAAAAAAAAEAETEhYYGR/9oACAEBAAE/EBhT3x8loJjvLjYfReJ71ia1ib2f/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/963fc1b3d5b7eb82d3493d20e45860af/cbe2e/3.webp 148w,
+/static/963fc1b3d5b7eb82d3493d20e45860af/3084c/3.webp 295w,
+/static/963fc1b3d5b7eb82d3493d20e45860af/5ca24/3.webp 590w,
+/static/963fc1b3d5b7eb82d3493d20e45860af/d00b9/3.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/963fc1b3d5b7eb82d3493d20e45860af/a80bd/3.jpg 148w,
+/static/963fc1b3d5b7eb82d3493d20e45860af/1c91a/3.jpg 295w,
+/static/963fc1b3d5b7eb82d3493d20e45860af/1c72d/3.jpg 590w,
+/static/963fc1b3d5b7eb82d3493d20e45860af/4b190/3.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/963fc1b3d5b7eb82d3493d20e45860af/1c72d/3.jpg"
+          alt="深港大桥"
+          title="深港大桥"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">深港大桥</figcaption>
+  </figure></p>
+<p>途径珠港澳大桥，照片左边金字塔形状的建筑的是珠港澳大桥的人工岛。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7df417b7b4683b67dc1193f93ad5bcfc/4b190/4.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHsWeVi5EZ//8QAFhABAQEAAAAAAAAAAAAAAAAAEgAg/9oACAEBAAEFAnOeP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABYRAQEBAAAAAAAAAAAAAAAAAAAREv/aAAgBAgEBPwGtP//EABYQAQEBAAAAAAAAAAAAAAAAADEAIP/aAAgBAQAGPwIiMf/EABgQAAMBAQAAAAAAAAAAAAAAAAABERDx/9oACAEBAAE/IVIjrBDGf//aAAwDAQACAAMAAAAQLA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8QltP/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAxECFRkf/aAAgBAQABPxDaVx1xRYOCLt6MLS0//9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/7df417b7b4683b67dc1193f93ad5bcfc/cbe2e/4.webp 148w,
+/static/7df417b7b4683b67dc1193f93ad5bcfc/3084c/4.webp 295w,
+/static/7df417b7b4683b67dc1193f93ad5bcfc/5ca24/4.webp 590w,
+/static/7df417b7b4683b67dc1193f93ad5bcfc/d00b9/4.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/7df417b7b4683b67dc1193f93ad5bcfc/a80bd/4.jpg 148w,
+/static/7df417b7b4683b67dc1193f93ad5bcfc/1c91a/4.jpg 295w,
+/static/7df417b7b4683b67dc1193f93ad5bcfc/1c72d/4.jpg 590w,
+/static/7df417b7b4683b67dc1193f93ad5bcfc/4b190/4.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/7df417b7b4683b67dc1193f93ad5bcfc/1c72d/4.jpg"
+          alt="珠港澳大桥人工岛"
+          title="珠港澳大桥人工岛"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">珠港澳大桥人工岛</figcaption>
+  </figure></p>
+<p>因为疫情关系，珠三角间的健康码还没能互通，大桥上面一辆车都没有。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f9718e703185944de94c5602a435279b/4b190/5.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABm1n3Ui2Kg//EABgQAAMBAQAAAAAAAAAAAAAAAAECEQAQ/9oACAEBAAEFAllBSVcO/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAWEQADAAAAAAAAAAAAAAAAAAAAARL/2gAIAQIBAT8BplM//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAERECExQdH/2gAIAQEAAT8hbdaDsMcuaEM//9oADAMBAAIAAwAAABBML//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAwEBPxALC//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/EFof/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFBEIH/2gAIAQEAAT8QJmaDuJhapeDZNcz4vhtbm8//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/f9718e703185944de94c5602a435279b/cbe2e/5.webp 148w,
+/static/f9718e703185944de94c5602a435279b/3084c/5.webp 295w,
+/static/f9718e703185944de94c5602a435279b/5ca24/5.webp 590w,
+/static/f9718e703185944de94c5602a435279b/d00b9/5.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/f9718e703185944de94c5602a435279b/a80bd/5.jpg 148w,
+/static/f9718e703185944de94c5602a435279b/1c91a/5.jpg 295w,
+/static/f9718e703185944de94c5602a435279b/1c72d/5.jpg 590w,
+/static/f9718e703185944de94c5602a435279b/4b190/5.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/f9718e703185944de94c5602a435279b/1c72d/5.jpg"
+          alt="珠港澳大桥"
+          title="珠港澳大桥"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">珠港澳大桥</figcaption>
+  </figure></p>
+<p>途径的海岛架满风车用于发电。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2eede37b89a56aac5b041bd25ae9fef2/4b190/6.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABAv/EABYBAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABXheayVDj/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAECEhMg/9oACAEBAAEFArxNEaLj/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BV//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAQEBAAAAAAAAAAAAAAAAADEAIP/aAAgBAQAGPwJmcf/EABgQAAIDAAAAAAAAAAAAAAAAAAABEBFh/9oACAEBAAE/IWCg7Bz/AP/aAAwDAQACAAMAAAAQj/8A/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Qqn//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPxCq/8QAHhAAAgEDBQAAAAAAAAAAAAAAAREAECExQVFhcYH/2gAIAQEAAT8QOF2e7nPDqJx7AzVX/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/2eede37b89a56aac5b041bd25ae9fef2/cbe2e/6.webp 148w,
+/static/2eede37b89a56aac5b041bd25ae9fef2/3084c/6.webp 295w,
+/static/2eede37b89a56aac5b041bd25ae9fef2/5ca24/6.webp 590w,
+/static/2eede37b89a56aac5b041bd25ae9fef2/d00b9/6.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/2eede37b89a56aac5b041bd25ae9fef2/a80bd/6.jpg 148w,
+/static/2eede37b89a56aac5b041bd25ae9fef2/1c91a/6.jpg 295w,
+/static/2eede37b89a56aac5b041bd25ae9fef2/1c72d/6.jpg 590w,
+/static/2eede37b89a56aac5b041bd25ae9fef2/4b190/6.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/2eede37b89a56aac5b041bd25ae9fef2/1c72d/6.jpg"
+          alt="风车"
+          title="风车"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">风车</figcaption>
+  </figure></p>
+<p>大概一小时左右，船驶入澳门，此时已经能收到澳门的短信了，但是广播要求最好不要打开漫游，以避免影响到健康码。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/70f76e43b8d262681169e4f933023751/4b190/7.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAAB0tGiLEzb/8QAGhAAAQUBAAAAAAAAAAAAAAAAAAECEBESIv/aAAgBAQABBQLY2jkSf//EABYRAQEBAAAAAAAAAAAAAAAAAAASAf/aAAgBAwEBPwGU4//EABYRAAMAAAAAAAAAAAAAAAAAAAABEv/aAAgBAgEBPwG2Wz//xAAYEAACAwAAAAAAAAAAAAAAAAAAASAhMv/aAAgBAQAGPwLLLTj/AP/EABkQAQEBAAMAAAAAAAAAAAAAAAEAERAhMf/aAAgBAQABPyE3Op0mTXjwJv/aAAwDAQACAAMAAAAQr8//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPxBDL//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/EAJ//8QAGRABAQEBAQEAAAAAAAAAAAAAAREAIYGx/9oACAEBAAE/EEkYSKl+ud/iDWOOXM+ZN3//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/70f76e43b8d262681169e4f933023751/cbe2e/7.webp 148w,
+/static/70f76e43b8d262681169e4f933023751/3084c/7.webp 295w,
+/static/70f76e43b8d262681169e4f933023751/5ca24/7.webp 590w,
+/static/70f76e43b8d262681169e4f933023751/d00b9/7.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/70f76e43b8d262681169e4f933023751/a80bd/7.jpg 148w,
+/static/70f76e43b8d262681169e4f933023751/1c91a/7.jpg 295w,
+/static/70f76e43b8d262681169e4f933023751/1c72d/7.jpg 590w,
+/static/70f76e43b8d262681169e4f933023751/4b190/7.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/70f76e43b8d262681169e4f933023751/1c72d/7.jpg"
+          alt="澳门塔"
+          title="澳门塔"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">澳门塔</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a1dd9392698b1c6c8a3555b3a116262a/4b190/8.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAACA//EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABX0BtF0K2/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAECERAi/9oACAEBAAEFApuUOpzyI3n/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGI/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/Aauv/8QAGBAAAgMAAAAAAAAAAAAAAAAAADEBICH/2gAIAQEABj8CyRjp/8QAGxABAQACAwEAAAAAAAAAAAAAAQARITFBUYH/2gAIAQEAAT8h2e7uWnb5GRU+yscwt//aAAwDAQACAAMAAAAQfw//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCEP//EABURAQEAAAAAAAAAAAAAAAAAABEQ/9oACAECAQE/EGsv/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITGhQYH/2gAIAQEAAT8Qt6D9N3yUQIdqVIbiPmIZaUSspS3yf//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/a1dd9392698b1c6c8a3555b3a116262a/cbe2e/8.webp 148w,
+/static/a1dd9392698b1c6c8a3555b3a116262a/3084c/8.webp 295w,
+/static/a1dd9392698b1c6c8a3555b3a116262a/5ca24/8.webp 590w,
+/static/a1dd9392698b1c6c8a3555b3a116262a/d00b9/8.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/a1dd9392698b1c6c8a3555b3a116262a/a80bd/8.jpg 148w,
+/static/a1dd9392698b1c6c8a3555b3a116262a/1c91a/8.jpg 295w,
+/static/a1dd9392698b1c6c8a3555b3a116262a/1c72d/8.jpg 590w,
+/static/a1dd9392698b1c6c8a3555b3a116262a/4b190/8.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/a1dd9392698b1c6c8a3555b3a116262a/1c72d/8.jpg"
+          alt="澳门塔和新葡京"
+          title="澳门塔和新葡京"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">澳门塔和新葡京</figcaption>
+  </figure></p>
+<p>澳门的葡式建筑很有特色，比如下面的 8 字摩天轮。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4885a69cdfb52e5a1f2bc9adac5817d7/4b190/9.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDAv/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABdDeiwiP/xAAbEAACAwADAAAAAAAAAAAAAAAAAQIDEQQSFP/aAAgBAQABBQKN5Lkrt6KjEYtxH//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AYf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQIBAT8Buq//xAAaEAADAAMBAAAAAAAAAAAAAAAAATEhIjKR/9oACAEBAAY/Ass1h2ReEREf/8QAHBABAAIBBQAAAAAAAAAAAAAAAQAh8RFBUYGR/9oACAEBAAE/IaTuqCRoRvzHChOJU8JjJ//aAAwDAQACAAMAAAAQQP8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/ELDH/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EINP/8QAHBABAAIDAAMAAAAAAAAAAAAAAQAhETFxkdHx/9oACAEBAAE/EFHtMUGIFSRZaO+QDqcXqLTPjTFBFaM+Un//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/4885a69cdfb52e5a1f2bc9adac5817d7/cbe2e/9.webp 148w,
+/static/4885a69cdfb52e5a1f2bc9adac5817d7/3084c/9.webp 295w,
+/static/4885a69cdfb52e5a1f2bc9adac5817d7/5ca24/9.webp 590w,
+/static/4885a69cdfb52e5a1f2bc9adac5817d7/d00b9/9.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/4885a69cdfb52e5a1f2bc9adac5817d7/a80bd/9.jpg 148w,
+/static/4885a69cdfb52e5a1f2bc9adac5817d7/1c91a/9.jpg 295w,
+/static/4885a69cdfb52e5a1f2bc9adac5817d7/1c72d/9.jpg 590w,
+/static/4885a69cdfb52e5a1f2bc9adac5817d7/4b190/9.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/4885a69cdfb52e5a1f2bc9adac5817d7/1c72d/9.jpg"
+          alt="8字摩天轮"
+          title="8字摩天轮"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">8字摩天轮</figcaption>
+  </figure></p>
+<p>到达横琴港看澳门那边，和香港差不多的是，澳门也把最不发达的地方面向大陆。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5ac1eccbeb9ad62c5305b9d81452c15b/4b190/10.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABQ682Zx4f/8QAGxAAAQQDAAAAAAAAAAAAAAAAAQACAxEQEkH/2gAIAQEAAQUCAcBc1aSY4v/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABwQAAEDBQAAAAAAAAAAAAAAAAABAhESICEyof/aAAgBAQAGPwLCuIqWDftn/8QAGxAAAQQDAAAAAAAAAAAAAAAAAAERICFRYZH/2gAIAQEAAT8hRiP+D1JlRsQP/9oADAMBAAIAAwAAABAbL//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxCIiP/EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EJZen//EABoQAQACAwEAAAAAAAAAAAAAAAEAESExkXH/2gAIAQEAAT8QyEK2mhD3q0Pdy3fTBYwM/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/5ac1eccbeb9ad62c5305b9d81452c15b/cbe2e/10.webp 148w,
+/static/5ac1eccbeb9ad62c5305b9d81452c15b/3084c/10.webp 295w,
+/static/5ac1eccbeb9ad62c5305b9d81452c15b/5ca24/10.webp 590w,
+/static/5ac1eccbeb9ad62c5305b9d81452c15b/d00b9/10.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/5ac1eccbeb9ad62c5305b9d81452c15b/a80bd/10.jpg 148w,
+/static/5ac1eccbeb9ad62c5305b9d81452c15b/1c91a/10.jpg 295w,
+/static/5ac1eccbeb9ad62c5305b9d81452c15b/1c72d/10.jpg 590w,
+/static/5ac1eccbeb9ad62c5305b9d81452c15b/4b190/10.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/5ac1eccbeb9ad62c5305b9d81452c15b/1c72d/10.jpg"
+          alt="从横琴港看向澳门"
+          title="从横琴港看向澳门"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">从横琴港看向澳门</figcaption>
+  </figure></p>
+<p>下面是横琴港的照片和我的盛世美颜。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d37a4308db6544ce7838ae94d1c8e8a1/4b190/11.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABY3RSLJKM3//EAB0QAAAFBQAAAAAAAAAAAAAAAAABAhESAxMjMkP/2gAIAQEAAQUCW0JoIXyHJ8lLX//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AUf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8Bta//xAAbEAABBAMAAAAAAAAAAAAAAAABABARIQIxgf/aAAgBAQAGPwKqKkxK0S2HW//EABsQAAMBAAMBAAAAAAAAAAAAAAABESExQVFx/9oACAEBAAE/IdFuguDG31kc+grdt7hUq5Qze32f/9oADAMBAAIAAwAAABBQL//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAwEBPxANj//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/EILf/8QAGRABAQEBAQEAAAAAAAAAAAAAAREhADHB/9oACAEBAAE/ELhKstz5wrDNTV65wGCOQEK0rvnAgsJLjvUKLXr3/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/d37a4308db6544ce7838ae94d1c8e8a1/cbe2e/11.webp 148w,
+/static/d37a4308db6544ce7838ae94d1c8e8a1/3084c/11.webp 295w,
+/static/d37a4308db6544ce7838ae94d1c8e8a1/5ca24/11.webp 590w,
+/static/d37a4308db6544ce7838ae94d1c8e8a1/d00b9/11.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/d37a4308db6544ce7838ae94d1c8e8a1/a80bd/11.jpg 148w,
+/static/d37a4308db6544ce7838ae94d1c8e8a1/1c91a/11.jpg 295w,
+/static/d37a4308db6544ce7838ae94d1c8e8a1/1c72d/11.jpg 590w,
+/static/d37a4308db6544ce7838ae94d1c8e8a1/4b190/11.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/d37a4308db6544ce7838ae94d1c8e8a1/1c72d/11.jpg"
+          alt="钟楼"
+          title="钟楼"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">钟楼</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5581d19c9dce01704054f17617511d01/4b190/12.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABarnaSoiF/8QAGhABAQACAwAAAAAAAAAAAAAAAQACAwQRE//aAAgBAQABBQLHkdHqs7GJm//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AYj/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8BG1v/xAAZEAACAwEAAAAAAAAAAAAAAAAAMQEgIaH/2gAIAQEABj8C3gxxT//EABwQAAICAgMAAAAAAAAAAAAAAAABETEhUZGxwf/aAAgBAQABPyFDIJJ0HiQS0S+0ryeyx//aAAwDAQACAAMAAAAQr+//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QQ2L/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxBSX//EABsQAQACAwEBAAAAAAAAAAAAAAEAMREhQXGh/9oACAEBAAE/EBkoVbGrg2V02HfyEvHFAwmGio49QnJP/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/5581d19c9dce01704054f17617511d01/cbe2e/12.webp 148w,
+/static/5581d19c9dce01704054f17617511d01/3084c/12.webp 295w,
+/static/5581d19c9dce01704054f17617511d01/5ca24/12.webp 590w,
+/static/5581d19c9dce01704054f17617511d01/d00b9/12.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/5581d19c9dce01704054f17617511d01/a80bd/12.jpg 148w,
+/static/5581d19c9dce01704054f17617511d01/1c91a/12.jpg 295w,
+/static/5581d19c9dce01704054f17617511d01/1c72d/12.jpg 590w,
+/static/5581d19c9dce01704054f17617511d01/4b190/12.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/5581d19c9dce01704054f17617511d01/1c72d/12.jpg"
+          alt="港口"
+          title="港口"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">港口</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/01500aefa615ddd720ea2ad1e6a9fdcc/4b190/13.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGiutFjWEsP/8QAGxABAAICAwAAAAAAAAAAAAAAAQIDBBAREyH/2gAIAQEAAQUCLeEuXI7Q0SSRZ5//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFX/8QAGhAAAgIDAAAAAAAAAAAAAAAAACEBERAxUf/aAAgBAQAGPwKlRPDWFIz/xAAaEAADAQADAAAAAAAAAAAAAAAAAREhYXGh/9oACAEBAAE/IWiNgfGjwP0XKi1ZaMaQr0f/2gAMAwEAAgADAAAAEH/v/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/EJGP/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAh/9oACAECAQE/EB2P/8QAGhAAAgMBAQAAAAAAAAAAAAAAAREAITFBcf/aAAgBAQABPxAAZPUc9gmBhGKJQzoWpcUkUgrkXouBfXCW5F0M/9k='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/01500aefa615ddd720ea2ad1e6a9fdcc/cbe2e/13.webp 148w,
+/static/01500aefa615ddd720ea2ad1e6a9fdcc/3084c/13.webp 295w,
+/static/01500aefa615ddd720ea2ad1e6a9fdcc/5ca24/13.webp 590w,
+/static/01500aefa615ddd720ea2ad1e6a9fdcc/d00b9/13.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/01500aefa615ddd720ea2ad1e6a9fdcc/a80bd/13.jpg 148w,
+/static/01500aefa615ddd720ea2ad1e6a9fdcc/1c91a/13.jpg 295w,
+/static/01500aefa615ddd720ea2ad1e6a9fdcc/1c72d/13.jpg 590w,
+/static/01500aefa615ddd720ea2ad1e6a9fdcc/4b190/13.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/01500aefa615ddd720ea2ad1e6a9fdcc/1c72d/13.jpg"
+          alt="我"
+          title="我"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">我</figcaption>
+  </figure></p>
+<p>尴尬的地方是这个港口非常小，小到连一个公共厕所都没有，最近的厕所也要 500m 左右。</p>
+<h2>长隆</h2>
+<p>横琴是珠海比较欠发达的地方，几乎除了长隆就没什么可以提的地方了，从横琴到珠海市区或者机场都要到长隆乘坐旅游巴士，而且这两个地方的买票地点不一样。景区的工作人员会带你去前往市区的买票点，去机场的买票点则在各种酒店（企鹅酒店或者马戏酒店），在微信搜索珠海机场快线也能预定车票。</p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4662b0c37078fe9c20cfd1bf5fe174c3/4b190/14.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFAwT/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAcHochITjL//xAAZEAACAwEAAAAAAAAAAAAAAAABAgADETL/2gAIAQEAAQUCxWIbJsRFJuAAt7//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwGH/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/AbqP/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECESEyEFGR/9oACAEBAAY/AryhVKUn0as1XhhVx//EABoQAQADAQEBAAAAAAAAAAAAAAEAESFxMUH/2gAIAQEAAT8hXUq+1DQRWNiL+ZTaP2M1cETbWf/aAAwDAQACAAMAAAAQky//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPxAM/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxC2sg//xAAdEAEAAgICAwAAAAAAAAAAAAABABEhQTFRYYGh/9oACAEBAAE/ECBVig+LAByqg5ofUwRVKUTPmPVh5QYn5LUble0dz//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/4662b0c37078fe9c20cfd1bf5fe174c3/cbe2e/14.webp 148w,
+/static/4662b0c37078fe9c20cfd1bf5fe174c3/3084c/14.webp 295w,
+/static/4662b0c37078fe9c20cfd1bf5fe174c3/5ca24/14.webp 590w,
+/static/4662b0c37078fe9c20cfd1bf5fe174c3/d00b9/14.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/4662b0c37078fe9c20cfd1bf5fe174c3/a80bd/14.jpg 148w,
+/static/4662b0c37078fe9c20cfd1bf5fe174c3/1c91a/14.jpg 295w,
+/static/4662b0c37078fe9c20cfd1bf5fe174c3/1c72d/14.jpg 590w,
+/static/4662b0c37078fe9c20cfd1bf5fe174c3/4b190/14.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/4662b0c37078fe9c20cfd1bf5fe174c3/1c72d/14.jpg"
+          alt="长隆"
+          title="长隆"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">长隆</figcaption>
+  </figure></p>
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/25896dbad0c1b40576dd3a44920188d3/4b190/15.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABW2pEs4IA/8QAHRAAAAYDAQAAAAAAAAAAAAAAAAECAxITBBEhMv/aAAgBAQABBQKaEqk2LNAyKzO4876//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAgBAwEBPwFyYj//xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIDEv/aAAgBAgEBPwHbQ7JH/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERIQJBgVH/2gAIAQEABj8CUKTwrEVaZw4f/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERITFBcVH/2gAIAQEAAT8hwtI9ZfdGtsdMLcuFlKlEqseD/9oADAMBAAIAAwAAABCw/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAABADH/2gAIAQMBAT8QCGMv/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxBZhFyn/8QAGxABAQACAwEAAAAAAAAAAAAAAREAQSExUXH/2gAIAQEAAT8QVYkVYpZMYgOolJ9MJXB5GR/Gokd3A2EocG8OiqM25//Z'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+        <source
+          srcset="/static/25896dbad0c1b40576dd3a44920188d3/cbe2e/15.webp 148w,
+/static/25896dbad0c1b40576dd3a44920188d3/3084c/15.webp 295w,
+/static/25896dbad0c1b40576dd3a44920188d3/5ca24/15.webp 590w,
+/static/25896dbad0c1b40576dd3a44920188d3/d00b9/15.webp 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/25896dbad0c1b40576dd3a44920188d3/a80bd/15.jpg 148w,
+/static/25896dbad0c1b40576dd3a44920188d3/1c91a/15.jpg 295w,
+/static/25896dbad0c1b40576dd3a44920188d3/1c72d/15.jpg 590w,
+/static/25896dbad0c1b40576dd3a44920188d3/4b190/15.jpg 800w"
+          sizes="(max-width: 590px) 100vw, 590px"
+          type="image/jpeg"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          src="/static/25896dbad0c1b40576dd3a44920188d3/1c72d/15.jpg"
+          alt="长隆马戏酒店"
+          title="长隆马戏酒店"
+          loading="lazy"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        />
+      </picture>
+  </a>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">长隆马戏酒店</figcaption>
+  </figure></p></section><hr style="margin-bottom:1.45rem"/><footer><div style="display:flex"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.725rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAIEAQMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAb8MaZ6IiFcS2B//xAAbEAACAwADAAAAAAAAAAAAAAACAwABBBETIv/aAAgBAQABBQJrOsQJvM0eRXpomQwFg1kSNz//xAAWEQADAAAAAAAAAAAAAAAAAAABESD/2gAIAQMBAT8BYj//xAAYEQACAwAAAAAAAAAAAAAAAAABEAISIf/aAAgBAgEBPwGsjoQX/8QAHhAAAQMEAwAAAAAAAAAAAAAAAQIRMQAQEmEiQYH/2gAIAQEABj8ChyYrmlPhsFy3VNiz7tioOKcJjdv/xAAbEAACAwEBAQAAAAAAAAAAAAABEQAQITFBUf/aAAgBAQABPyFQmSCYZQfeVFgIcDxfHjtEDR5BAh6FP//aAAwDAQACAAMAAAAQK8B8/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EADFjP/EABYRAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAgEBPxCaNMSZ/8QAHhABAQABBAMBAAAAAAAAAAAAAREhABAxQVFhkbH/2gAIAQEAAT8QvZXbBfbodJo5fkR5m1yVNHd4b1JdZPREoHxc3a5BFpPzVXiEVhMjt//Z" alt="宫不上叔" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/b315d/profile.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg 1x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/aba1d/profile.jpg 1.5x,
+/static/e7fa6079ba0f0465659fcadeda34cc25/b315d/profile.jpg 2x" src="/static/e7fa6079ba0f0465659fcadeda34cc25/99438/profile.jpg" alt="宫不上叔" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by<strong>宫不上叔</strong><br/>JJ向上的中华田园仔 <a href="https://gongbushang.com/contact" target="_blank" rel="noopener noreferrer">找我玩呀</a></p></div><div style="text-align:right"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:200px;height:200px;margin-right:0.725rem;margin-bottom:0;min-width:50px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAFMklEQVQ4y01VbUxTVxg+oNPMLG4zLnPZn/lHs5/Llu3Hth8S94NtTpgDzSIijEpbCrQghdvSAqXloy39olD6RQttLRREWkWkYuaicS5zW2J0WbIPHUKBKoKbm7OU8+zcMred5N6c3OQ853me93nfS7J8C4RfG3zzWaRvNovf7wreepY4Z0TEvXCeeO8+IJ67IP1LYPvfiTNxgbjuSHaGZrZlDtpvs7MLmXNZ/etYZKN//QO/nvIlSog3Oft0DHjt7EMcmriF6vjPtGjoa/rh8A28cf4xNkcB4lmc3+CdK39y7l+M/4MRz5yPhB/jrchttAZiqyaDPi04fIi6TB1wmzshEwloKDCYVvvHU+9EF0CGUyDu2TAY/rpKHsuxLpOB9ZPRNVhu/rEacDvSzZwcXq+XCsViKpZUoa6Bo58UFNL29nbaIK2Ew2Jca7ycSJExhuaeO5HBsN1eJ5btnRWSyCoU0z+mzo0EqVbXhg69gY5HozQvLw9msxmhUAgFBQWw2WzUZLFSXVs7Ag4rlZ37IUVGKRiGLAO2OzzzPDN/Pn/6Pnx2S7q2To7CgwcpYweZTIa2tjbE43G0trZiaGgI4XAYHo8H1VIpPVYuhIarW8uJzfGe3ntpcOZFQpx3qraeBgyDo6vlpcUYj8UoD6JSqXg20Gq1KCkpQUtLCyKRCORyOaqrq+Hz+aBUqamsQojAha9SW1gRWfXlhPQlLr9/8RGikXBa3dRMg8Egtdvt6O7uxsTEBHJycqDv7ISGAe7fvx9lZWXQ6/Xw+/3gOAXcHg8dGuhPvz25wgAXLhP2+qvpahIjfjdVMUCr1QqBQACpVJqRq2FS1RodAsEQ9uzJQScD51kfPXoUjY2NqOeUVCooXisc/g5kYJkF0X8PmvgNKpcI8ZngGHJzc1FbW4upqSmIKyTo7epAj0UFLhCGqOQQ5PUcent7UVRUhKqqKnSZLcjPfQ9if5xuGHrI8jOwhNap69TaocUH+z6izc3NmZsrKytRWlqK+no5LimPYFhThvqGGtSxovGeqtVqiEQicMpGaBRyqjv7DUhwmRLiW3p8/Mx1aLnjtNPYRXt6eqDT6VBcXAyuoQHMBliMXRgZHIDZYkPR4cPYu3cvu6gevNcHCgph1jXTmsnvwdQyQFfyStEXK1BIK9LatnbKWFGj0ZhhyEKMOzMz6GES8z4+wGITxtjYGIRCIWpqasD7vS8vH31mAw5Msui4WfewTqnZOZlGbHIqpWFyXW43dTqdUCgUaGAMXS5XRpqMFcntdmcqz3vMccxLhwM6TQui0xfxcuQey2ICZIf/l+3Ek1xsuroIs6ZxzWCy8IGmfGfwwDwoz4RnzEvUaDSZgiiVSphs3Qj2dUN85iabREmwibXe1MQ1V/VcdBXB81dSHU1KWlElRTAYoixvlA807yvPqrCwECaTCRKJBJ8eKYbHZoLt1DSeCd/PsMv28ZKt/8ww51zo1c8B76nJVNBhWxNXVKDTYKRGk5nqDQaIxGLmpYMfEpneHuy1whA4iV2nH2KTL4Etgwysnz0b+cHKFkB5P8OvTAPqc9fh7rWv9tvNVMjaUdUgp4Y2Laz6dsgl5Tgdi4KLXcMLw2zo9s+j+ssHeHeC7d3z+G9aP1n2X8VkcDn5ZvwRBCe/hcjgosfbLVBbXeDcI8h3xvH6eJKPCANIYPdoEoJLK+Cu/YYdYfb9yS9gEz9oVT+t7+03txPHvIK1UmJz5E9si6zQrSeWkB1cZuF9kGGSzZjx7LaFFhnQYkby1sAi/gb6BKiiHh948QAAAABJRU5ErkJggg==" alt="用支付宝给「通讯录里最帅的那位(*健)」打钱" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/4eb27b15769431ef34cc123563920a66/b3a76/alipay.png 1x,
+/static/4eb27b15769431ef34cc123563920a66/56e34/alipay.png 1.5x,
+/static/4eb27b15769431ef34cc123563920a66/0a8d8/alipay.png 2x" /><img loading="lazy" width="200" height="200" srcset="/static/4eb27b15769431ef34cc123563920a66/b3a76/alipay.png 1x,
+/static/4eb27b15769431ef34cc123563920a66/56e34/alipay.png 1.5x,
+/static/4eb27b15769431ef34cc123563920a66/0a8d8/alipay.png 2x" src="/static/4eb27b15769431ef34cc123563920a66/b3a76/alipay.png" alt="用支付宝给「通讯录里最帅的那位(*健)」打钱" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:200px;height:200px;margin-right:0.725rem;margin-bottom:0;min-width:50px"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAFYUlEQVQ4yz1UaVBTVxh9dKY//OO0ta1TBIqlLrWKiiyK1mJdplZlhhaqFVAWg0ASCJiwEwKRJQlJgCSEAAnESBISshAIIBFIpy6V4lKX6dSpbR3bKdX+avuLxHua96jemTv3zn33nvedc77vow5NnaDoUXBVQFHqV1+h9zd+WVix030ke5092bXWnrQY7UpElCMBMY5dTz90p4wne47la+4PrGQeyqiw43Nnw+htysQXzBGVMVsQRv0/9nnTj0ePJD2KmdqNPbNpyPAVIN2SSz635JDD4yfxgftjRE0kItqW+GTfRHr+i3eHL2UuYxRdq3pxRm1zHlBGjSXi6FQ2FJOawPzt7wI9Ki2pKq/EqN0NhVROhBJRsMWnDBycPYFwTxzi3Z/2v3h/Yq4wBNpBMTRjnfuV66c/gvmxKyA9Lwl2Sjpgt9kJt4RL2qQSMuIYISUlJUQhk5Pp0SlIZJJg8eXKpWjfLsS5Dg0yiOXUcpTJo8eOr5/aC+Mda2BQbSAcLgcNTSIyOztLdDodRCIRtFotBgYGoNZoSE19LeGwOeiWa0jjgnwp0puAveNpZxmwB7//sCLStuPR+bud6Jaqg6xCFng8HmltbYXZbMbY2BjS0tKQl5eHiYkJsFgs1NbWglfGI1wuF37f3POsq1xEDscviheUq6joocTsozdzodZpAn26PrhH3aSiogJisRjNzc3MVKvVUKlUzJndbodCoYBUKkVpCFTWLIXC2rUU6z+ILSOflFAR9h2u+ltSsHOKAiqNioSiIvTlqqoqtLe3o7u7G8KGBlisVgZELpcjNTUVBoOBloGwCljEoNMHsxZKEGGN81HrnLsXnQ+9ULerSDm/nJSWlqKmpgb02hACUsjbccHQB0OPBjJJG6qrqxnK9A9pJplZmUTe3E4EM42IdiY9ozaNpsBx00PqKmohqBCQuro6hNxkLufk5OCCyYhbM270i8owpB9k6NKgIZ3B4XBAs2oVNkN0SUKinAmgYr37YZgxkXJuOSoqK0hlZSXa2tpAC15cXIypyQlc+fo6JC2N0JlDWnapIJFIUFZWBovFAofLgbJCHum9Z8Kbls2E2uDa89T1oxd9ql5yKuc0odODNoDP5zOAQmED6oUylInqIdDy0SHvYCShv7tcLrS0tqC6rIp0PzTijYubCPX20Jbxrl8NcFywB7mlXBISm9AR0uLT9GhTRt0uFJw5A71Oz0Sfm5vLrENDQ2gKOd9YL0L+DT7eGtoMKtqckJ+6kAeP1xNoFDVCpVaRlpYW9PT0MMlMO63X6xldPR4P2MVsRluZVAa5Qg5+KR993gFsnTyIKGs8KP1d88oI244nbXfU8I/PBk9mnwSbzSYCgYBx2WQyMXlI5yOd1F1dXejt7UWoFJHxZQa6lRrk+Hl4x7oN79uTwVRL4uhn+RunUzD206Ulh9FOCouLYDQZiUKpILSTdP7R4EqlEkajEW0yCc6Vn8PFXhN4vjq8bv0Aayzb6Q4UAhQuF/RmR0r/ppl9GHwwvCSua3re392HAcMAOR0yyul2Em2Pli43dHV2QavQQNzUBME1MdL9LFz/8yYU93XYMLIHVKaf87IXxrr2D0aOJ4B9uxa2BfeSslMZPF8vJpe9PjQLz5OWxmby7ffz6PT34Njl03jNvBFX/pjH439+w99L/yL/m3PLlI9MZ78E3etNOxtu2bYYM7kbKTPpKJqvxik3m+SNlyJrjoNkbyrCbdsRMRyH8BDN4mvVuPXXPdh+9mCr+wBetu2v/EVhlGCZvuSuZlWocZa8Z9/pC9Xns3ediQi3byerLbFkjTUOMfZdzFxrS0LUcDxjxmpzLLP/Dy+Nf1IBJPdqAAAAAElFTkSuQmCC" alt="用微信给「宫不上(*健)」打钱" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/52b29d142baa82b29abfc28722fabd79/b3a76/wechat.png 1x,
+/static/52b29d142baa82b29abfc28722fabd79/56e34/wechat.png 1.5x" /><img loading="lazy" width="200" height="200" srcset="/static/52b29d142baa82b29abfc28722fabd79/b3a76/wechat.png 1x,
+/static/52b29d142baa82b29abfc28722fabd79/56e34/wechat.png 1.5x" src="/static/52b29d142baa82b29abfc28722fabd79/b3a76/wechat.png" alt="用微信给「宫不上(*健)」打钱" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/travel/2020/06/27/蛇口仅剩的一家魅族线下体验店.html">← 蛇口仅剩的一家魅族线下体验店</a></li><li><a rel="next" href="/tv/2020/06/30/隐秘的角落.html">隐秘的角落 →</a></li></ul></nav></main><footer>© 2020, Built with <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-159827550-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/travel/2020/06/28/珠海横琴线横穿澳门.html";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":[],"component---cache-caches-gatsby-plugin-offline-app-shell-js":[],"component---src-templates-blog-post-tsx":[],"component---src-templates-categories-tsx":[],"component---src-templates-tags-tsx":[],"component---src-templates-series-tsx":[],"component---src-pages-404-tsx":[],"component---src-pages-index-tsx":[]};/*]]>*/</script><script src="/js/component---src-templates-blog-post-tsx.c46ab7c7be2552c3eca8.js" async=""></script><script src="/js/bfdad691425d6cb1bcd0448c8ba1904ad83e8ddc.688b0da9f1421dd960ac.js" async=""></script><script src="/js/39ddafa25508f9ab66adb98084ff770131ab7c55.4edcc5d983042c77304e.js" async=""></script><script src="/js/app.555ee784654cb06ddf2b.js" async=""></script><script src="/js/styles.fccaeeb72400eb0ced43.js" async=""></script><script src="/js/framework.4732038a8fedfb595f9d.js" async=""></script><script src="/js/webpack-runtime.9a08f15e31beef547719.js" async=""></script></body></html>
