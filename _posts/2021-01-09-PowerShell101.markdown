@@ -1,6 +1,8 @@
 ---
 type: post
 category: tech
+tag:
+  - powershell
 ---
 
 # Powershell 101
@@ -37,3 +39,12 @@ $count = (ls ./).count # 控制台输出当前目录文件个数
 - 所有用户的单一 powershell 端
 - 每个用户的所有 powershell 端
 - 所有用户的所有 powershell 端
+
+## 工具
+
+安装`posh-git`来自动提示`git`和`oh-my-posh`来美化界面。
+
+```powershell
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+```
