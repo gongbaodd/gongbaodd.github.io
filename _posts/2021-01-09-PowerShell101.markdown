@@ -48,3 +48,19 @@ $count = (ls ./).count # 控制台输出当前目录文件个数
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 ```
+
+修改`$profile`并且引入这两个包，并设定oh-my-posh的主题。
+
+```powershell
+Import-Module oh-my-posh
+Import-Module posh-git
+Set-Theme Robbyrussell
+```
+
+另外，系统可能禁止执行外部代码，造成上面的脚本无法执行，此时需要在管理员模式下面修改规则。
+
+```powershell
+get-executionpolicy # 可能输出 Restrictrd
+set-executionpolicy remotesigned
+```
+
