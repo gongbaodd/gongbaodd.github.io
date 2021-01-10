@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://blog.gongbushang.com/tech/2021/01/09/解决husky在Windows上面无法安装的问题.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2021/01/09/PowerShell101.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/tech/2021/01/09/解决husky在Windows上面无法安装的问题.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2021/01/07/ReactNative调试时找不到script.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/tv/2021/01/04/弥留之国的爱丽丝.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/12/27/Google的代码评审标准.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/12/24/Haproxy和nginx做SS中继.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/travel/2020/12/20/扬州，不愧是他的城市.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -81,8 +82,8 @@
 <url> <loc>https://blog.gongbushang.com/tv/2020/05/10/好莱坞-一锅陈年老鸭汤.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/08/从RN到Flutter-动画.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/08/从RN到Flutter-手势.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/fe/2020/05/07/从RN到Flutter-数据.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/07/从RN到Flutter-状态管理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/fe/2020/05/07/从RN到Flutter-数据.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/07/从RN到Flutter-路由器.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/05/06/spacedesk让任意一台设备成为扩展屏幕.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/06/从RN到Flutter-布局及样式部件.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -135,8 +136,8 @@
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/17/电影补档计划：时空恋旅人.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/15/Github项目徽章地址.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/15/电影补档计划：利刃出鞘.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/movie/2020/02/14/电影补档计划：婚姻故事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/14/电影补档计划：乔乔兔.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/movie/2020/02/14/电影补档计划：婚姻故事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/13/Windows下为Rust提供QT环境（弃）.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/12/Windows下为Rust提供GTK环境.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/11/电影补档计划：好莱坞往事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -177,9 +178,9 @@
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/18/电影补档计划：钢琴家.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/12/17/电影补档计划：本杰明巴顿奇事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/17/电影补档计划：美丽心灵.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：两杆大烟枪.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：V字仇杀队.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：飞越疯人院.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：两杆大烟枪.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tv/2019/12/16/美剧硅谷完结.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/12/14/MiPad2安装Windows.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/14/电影补档计划：死亡诗社.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -220,8 +221,8 @@
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/21/电影补档计划：忠犬八公.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/20/电影补档计划：美丽人生.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/11/19/fluent terminal适配git bash.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/tech/2019/11/19/怎么在Window 10 Home安装docker desktop.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/19/电影补档计划：这个杀手不太冷.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/tech/2019/11/19/怎么在Window 10 Home安装docker desktop.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/11/18/在深圳怎么异地补身份证.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/17/电影补档计划：阿甘正传.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/11/17/风火G&amp;G打卡.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
