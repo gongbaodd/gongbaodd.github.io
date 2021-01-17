@@ -1,6 +1,6 @@
 ---
 type: post
-category: tech
+category: book
 tag:
     - rust
 ---
