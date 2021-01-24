@@ -71,4 +71,6 @@ replace-with = 'ustc'
 registry = "git://mirrors.ustc.edu.cn/crates.io-index"
 ```
 
+flutter 使用清华源`export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter";export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"`
+
 大概先做这么多
