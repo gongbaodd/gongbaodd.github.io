@@ -74,3 +74,7 @@ registry = "git://mirrors.ustc.edu.cn/crates.io-index"
 flutter 使用清华源`export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter";export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"`
 
 大概先做这么多
+
+### 问题
+
+其实问题还是很多的，除了没有无线，休眠之后往往就卡死了，另外，很多镜像都不支持虚拟化，那意味着 Docker 也不能使用。
