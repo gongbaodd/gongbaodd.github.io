@@ -90,8 +90,8 @@
 <url> <loc>https://blog.gongbushang.com/tech/2020/05/11/WSL下运行Xserver鼠标太小.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/10/Flutter的手表应用-从入门到放弃.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tv/2020/05/10/好莱坞-一锅陈年老鸭汤.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/fe/2020/05/08/从RN到Flutter-手势.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/08/从RN到Flutter-动画.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/fe/2020/05/08/从RN到Flutter-手势.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/07/从RN到Flutter-数据.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/07/从RN到Flutter-状态管理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/05/07/从RN到Flutter-路由器.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -154,8 +154,8 @@
 <url> <loc>https://blog.gongbushang.com/fe/2020/02/10/利用actix_web使用rust编写web应用.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2020/02/09/电影补档计划1917.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/06/git中的CRLF和LF.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/tech/2020/02/04/用Powershell更新Windows.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/02/04/Windows上使用scrapy爬网页.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/tech/2020/02/04/用Powershell更新Windows.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/plan/2020/02/01/一月总结和二月计划.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/01/31/monect让手机变成鼠标.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/01/28/白嫖spotify的方式.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -166,8 +166,8 @@
 <url> <loc>https://blog.gongbushang.com/life/2020/01/12/歌舞剧「巴黎圣母院」.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/01/06/修复Windows下打开Jupyter时报NotImplementError.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/01/05/利用CloudFlare实现网站https访问.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/tech/2020/01/04/转换kindle书籍到pdf.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2020/01/04/gitBash增加环境变量.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/tech/2020/01/04/转换kindle书籍到pdf.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2020/01/03/2019年的Node测试最佳实践.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/12/31/为WindowsTerminal2添加gitBash的profile.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/plan/2019/12/30/2019年终总结.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -175,8 +175,8 @@
 <url> <loc>https://blog.gongbushang.com/life/2019/12/26/不开心，撒了13块.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/12/24/Windows命令行默认使用英语.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/12/23/为UWP应用代理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/movie/2019/12/21/电影补档计划：黑客帝国.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/21/电影补档计划：最后一篇.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/movie/2019/12/21/电影补档计划：黑客帝国.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/20/电影补档计划：小鞋子.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/20/电影补档计划：拯救大兵雷恩.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/20/电影补档计划：阿凡达.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -189,8 +189,8 @@
 <url> <loc>https://blog.gongbushang.com/life/2019/12/17/电影补档计划：本杰明巴顿奇事.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/17/电影补档计划：美丽心灵.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：V字仇杀队.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：飞越疯人院.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：两杆大烟枪.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/movie/2019/12/16/电影补档计划：飞越疯人院.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tv/2019/12/16/美剧硅谷完结.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/12/14/MiPad2安装Windows.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/14/电影补档计划：死亡诗社.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -217,8 +217,8 @@
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/30/电影补档计划：怦然心动.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/29/电影补档计划：当幸福来敲门.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/11/28/安利一下windows powertoy.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/life/2019/11/28/电影补档计划：教父.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/11/28/树莓派Ubuntu实现sslocal负载匀衡.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/life/2019/11/28/电影补档计划：教父.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/27/电影补档计划：无间道.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/travel/2019/11/26/南山游泳馆.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/11/26/树莓派Ubuntu重启音频.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -237,8 +237,8 @@
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/17/电影补档计划：阿甘正传.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/11/17/风火G&amp;G打卡.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/11/16/南山博物馆：永远的长安.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/movie/2019/11/15/电影补档计划：霸王别姬.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2019/11/15/没想到小杜wifi还能用.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/movie/2019/11/15/电影补档计划：霸王别姬.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/11/14/电影补档计划：肖申克的救赎.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/11/13/为啥不买车买房.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/11/09/补胎液是个神奇的东西.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -443,8 +443,8 @@
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/15/弃坑Riot转向Preact.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2017/05/14/树莓派搭建nas.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/0回顾一下以前的riotjs方案.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/fe/2017/05/04/2WebPack2{treeShaking和extTextPlugin}.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/1TypeScript干货.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/fe/2017/05/04/2WebPack2{treeShaking和extTextPlugin}.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/3postcss干货{cssnext和cssnano}.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/4Qxf上的bigPipe实现和优化原理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/5IsomophicApp实现原理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -522,8 +522,8 @@
 <url> <loc>https://blog.gongbushang.com/fe/2015/03/14/LearningInThreeJS(1)基本之基本.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2015/02/17/ArchLinux升级搜狗输入法后bug的解决方案.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2015/02/17/pacman改下载器.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/fe/2015/02/08/jQuery.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/music/2015/02/08/吐槽haha.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/fe/2015/02/08/jQuery.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2012/01/08/Soul.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/categories/book</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/categories/fe</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
