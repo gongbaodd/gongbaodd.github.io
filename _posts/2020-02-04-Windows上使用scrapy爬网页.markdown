@@ -34,6 +34,8 @@ sudo choco install pyenv-win
 - `pyenv version`查看现在的 python 版本。
 - `pyenv versions`查看安装过的 python 版本。
 
+win10 上了一个新功能，控制台会引导 python 到应用商店，在“设置>应用和功能>应用执行名”中可以勾掉这个功能
+
 ## virtualenv
 
 python 的包管理其实很差，都是放到 global 下面，这就导致多个项目可能都用同一个依赖。那么如何实现每个项目都有自己的依赖呢？这就靠 virtualenv。
