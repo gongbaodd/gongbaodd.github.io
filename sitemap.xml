@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://blog.gongbushang.com/book/2021/03/08/对角化.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/book/2021/03/07/特征值.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/book/2021/03/06/内积施密特正交化.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/book/2021/03/05/线性方程组考研题.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -189,8 +190,8 @@
 <url> <loc>https://blog.gongbushang.com/life/2019/12/26/不开心，撒了13块.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/12/24/Windows命令行默认使用英语.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/life/2019/12/23/为UWP应用代理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/movie/2019/12/21/电影补档计划：最后一篇.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/21/电影补档计划：黑客帝国.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/movie/2019/12/21/电影补档计划：最后一篇.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/20/电影补档计划：小鞋子.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/20/电影补档计划：拯救大兵雷恩.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/movie/2019/12/20/电影补档计划：阿凡达.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -457,9 +458,9 @@
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/15/弃坑Riot转向Preact.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/tech/2017/05/14/树莓派搭建nas.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/0回顾一下以前的riotjs方案.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.gongbushang.com/fe/2017/05/04/1TypeScript干货.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/2WebPack2{treeShaking和extTextPlugin}.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/3postcss干货{cssnext和cssnano}.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.gongbushang.com/fe/2017/05/04/1TypeScript干货.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/4Qxf上的bigPipe实现和优化原理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/5IsomophicApp实现原理.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.gongbushang.com/fe/2017/05/04/6项目完成情况.html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
