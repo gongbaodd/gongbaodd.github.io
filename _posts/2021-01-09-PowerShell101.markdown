@@ -3,6 +3,9 @@ type: post
 category: tech
 tag:
   - powershell
+series:
+  name: Windows舒适指南
+  slug: windows-howto
 ---
 
 # Powershell 101
@@ -49,7 +52,7 @@ Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 ```
 
-修改`$profile`并且引入这两个包，并设定oh-my-posh的主题。
+修改`$profile`并且引入这两个包，并设定 oh-my-posh 的主题。
 
 ```powershell
 Import-Module oh-my-posh
@@ -63,4 +66,3 @@ Set-Theme Robbyrussell
 get-executionpolicy # 可能输出 Restrictrd
 set-executionpolicy remotesigned
 ```
-
