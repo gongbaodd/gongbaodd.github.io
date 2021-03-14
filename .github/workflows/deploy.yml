@@ -41,6 +41,7 @@ jobs:
       - run: cd ..
       - name: Deploy 🚀
         uses: crazy-max/ghaction-github-pages@v2
+        with:
           target_branch: gh-pages
           build_dir: public
         GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
