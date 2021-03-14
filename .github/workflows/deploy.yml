@@ -34,11 +34,7 @@ jobs:
         with:
           repository: gongbaodd/blog.gongbushang.com
           path: generator
-      - run: cd generator
-      - run: yarn
-      - run: yarn build
-      - run: yarn cp:cname
-      - run: cd ..
+      - run: cd generator && yarn && yarn build && yarn cp:name
       - name: Deploy 🚀
         uses: crazy-max/ghaction-github-pages@v2
         with:
