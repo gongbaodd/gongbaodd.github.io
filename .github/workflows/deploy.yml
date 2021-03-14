@@ -44,4 +44,5 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: public
-        GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
