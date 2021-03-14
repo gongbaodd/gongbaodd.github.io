@@ -30,4 +30,17 @@ jobs:
           node-version: 12.16.1
       - run: npm install -g yarn
       - run: npm install -g gatsby-cli
+      - uses: actions/checkout@v2
+        with:
+          repository: gongbaodd/blog.gongbushang.com
+          path: generator
+      - run: cd generator
+      - run: yarn
       - run: yarn build
+      - run: yarn cp:cname
+      - run: cd ..
+      - name: Deploy 🚀
+          uses: crazy-max/ghaction-github-pages@v2
+            target_branch: gh-pages
+            build_dir: public
+          GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
