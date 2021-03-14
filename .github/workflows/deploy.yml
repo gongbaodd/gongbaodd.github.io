@@ -40,7 +40,7 @@ jobs:
       - run: yarn cp:cname
       - run: cd ..
       - name: Deploy 🚀
-          uses: crazy-max/ghaction-github-pages@v2
-            target_branch: gh-pages
-            build_dir: public
-          GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
+        uses: crazy-max/ghaction-github-pages@v2
+          target_branch: gh-pages
+          build_dir: public
+        GITHUB_TOKEN: ${{ secrets.PAGES_TOKEN }}
