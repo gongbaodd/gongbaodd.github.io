@@ -30,10 +30,17 @@ jobs:
           node-version: 12.16.1
       - run: npm install -g yarn
       - run: npm install -g gatsby-cli
+      
       - uses: actions/checkout@v2
         with:
           repository: gongbaodd/blog.gongbushang.com
           path: generator
+
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+      
       - run: rm -Rf generator/_posts
       - run: cp -Rf _posts generator/
       - run: cd generator && yarn && yarn build && yarn cp:cname
