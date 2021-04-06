@@ -1,6 +1,8 @@
 ---
 type: post
 category: tech
+tag:
+  - typing
 ---
 
 # keybr 一个练习打字的网站

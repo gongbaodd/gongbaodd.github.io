@@ -1,0 +1,63 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  overflow="visible"
+  x="500.5"
+  y="500.5"
+  xmlns:v="https://vecta.io/nano"
+><defs><path d="M0 0l3 10h-6z" stroke="none" id="A" /></defs><svg
+    height="480"
+    overflow="visible"
+    viewBox="0 0 580 400"
+    width="696"
+  ><g transform="translate(105 100)" stroke="#000"><path
+        fill="none"
+        d="M330.5 0H0"
+      /><use
+        x="340"
+        transform="matrix(.000002 1 -1 .000002 339.999331 -340)"
+        xlink:href="#A"
+      /></g><g transform="translate(285 105)" stroke="#000"><path
+        fill="none"
+        d="M154.243 7.557L80 105 0 200"
+      /><use
+        x="160"
+        transform="matrix(.795432 .606043 -.606043 .795432 32.73088 -96.966856)"
+        xlink:href="#A"
+      /></g><g transform="translate(110 105)" stroke="#000"><path
+        fill="none"
+        d="M153.974 187.656L0 0"
+      /><use
+        x="160"
+        y="195"
+        xlink:href="#A"
+        transform="matrix(-.773073 .634317 -.634317 -.773073 407.383522 244.258432)"
+      /></g><g transform="translate(300 105)" stroke="#000"><path
+        fill="none"
+        d="M126.44 4.121L0 65"
+      /><use
+        x="135"
+        transform="matrix(.433817 .901001 -.901001 .433817 76.434712 -121.635139)"
+        xlink:href="#A"
+      /></g><g transform="translate(115 105)" stroke="#000"><path
+        fill="none"
+        d="M161.042 56.838L0 0"
+      /><use
+        x="170"
+        y="60"
+        xlink:href="#A"
+        transform="matrix(-.332819 .942991 -.942991 -.332819 283.15868 -80.339279)"
+      /></g><g transform="translate(285 180)"><g stroke="#000"><path
+          fill="none"
+          d="M.901 95.543L10 0"
+        /><use
+          y="105"
+          transform="matrix(-.995495 -.094809 .094809 -.995495 -9.954959 209.527024)"
+          xlink:href="#A"
+        /></g></g><text fill="#000" class="A"><tspan
+        x="95"
+        y="77.12"
+      >A</tspan><tspan x="457.5" y="77.12">B</tspan><tspan
+        x="267.5"
+        y="324.62"
+      >C</tspan><tspan x="297.5" y="154.62">D</tspan></text></svg></svg>
