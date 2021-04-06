@@ -11,7 +11,7 @@ jobs:
           urls: |
             https://blog.gongbushang.com
       - name: Save results
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: lighthouse-results
           path: ".lighthouseci" # This will save the Lighthouse results as .json files
