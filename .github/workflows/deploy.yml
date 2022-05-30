@@ -57,7 +57,7 @@ jobs:
       - run: cp -Rf _posts generator/
       - run: cd generator && yarn && yarn build
       - name: Deploy 🚀
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: master
           build_dir: generator/public
