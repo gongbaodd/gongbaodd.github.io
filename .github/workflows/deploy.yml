@@ -21,14 +21,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js 16.15.0
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16.15.0
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-node-modules
         with:
@@ -43,12 +43,12 @@ jobs:
       - run: npm install -g yarn
       - run: npm install -g gatsby-cli
       
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           repository: gongbaodd/blog.gongbushang.com
           path: generator
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
@@ -57,7 +57,7 @@ jobs:
       - run: cp -Rf _posts generator/
       - run: cd generator && yarn && yarn build
       - name: Deploy 🚀
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: master
           build_dir: generator/public
