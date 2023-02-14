@@ -4,5 +4,8 @@
         "figma",
         "gongbaodd",
         "ustc"
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "gatsby"
     ]
 }
