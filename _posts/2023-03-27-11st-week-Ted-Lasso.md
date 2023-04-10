@@ -1,6 +1,6 @@
 ---
 type: post
-category: tech
+category: plan
 ---
 
 # 11st Week: Ted Lasso
