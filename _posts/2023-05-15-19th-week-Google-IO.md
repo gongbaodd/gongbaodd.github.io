@@ -2,7 +2,7 @@
 type: post
 category: plan
 ---
-# 20th week Google IO
+# 19th week Google IO
 
 Tried AImoji this week, using stable diffusion to generate emoji. Try [this video](https://t.co/IiWIS6MQJY) to learn more about training a picture.
 
