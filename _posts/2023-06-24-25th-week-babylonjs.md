@@ -9,7 +9,7 @@ This week is all about BabylonJS. I was trying to refactor [Summer Festival](htt
 
 Game developing is little different with UI developing. Since the canvas repaints in every frame. I don't need to care too much about the reactive system. In every frame, there is a pre-render function to pull state from the store.
 
-Unity can be used to export BabylonJS App. Using [Scene exporter](https://doc.babylonjs.com/communityExtensions/Unity/Exporter), it is a paid tool, can find a free alpha version on github. After using it, I found it can export gltf file, the code part is not helpful. Same situation in [needle engine](https://engine.needle.tools/docs/getting-started).
+Unity can be used to export BabylonJS App. Using [Scene exporter](https://doc.babylonjs.com/communityExtensions/Unity/Exporter), it is a paid tool, can find a free alpha version on github. After using it, I found it can export gltf file, the code part is not helpful. Same situation in [needle engine](https://engine.needle.tools/docs/getting-started). (BTW, needle engine only works on node v16)
 
 [cannon](https://schteppe.github.io/cannon.js/) is deprecated now, it's been rewritten to [cannon.es](https://github.com/pmndrs/cannon-es). I strongly suggest to read these [code](https://github.com/brianzinn/react-babylonjs/blob/master/packages/static/content/examples/physics/BouncySphere.tsx
 http://grideasy.github.io/tutorials/Using_The_Physics_Engine

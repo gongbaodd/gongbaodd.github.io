@@ -15,3 +15,5 @@ category: tech
 5. choose scene in MRTK example, change the profile into quest
 
 6. build and run
+
+check [this](https://www.youtube.com/watch?v=wSPXTRYxq9A&list=PLQMQNmwN3FvzWQ1Hyb4XRnVncvCmcU8YY&ab_channel=DilmerValecillos) and [this](https://www.youtube.com/watch?v=rb5GZVDREdk&ab_channel=DilmerValecillos) videos for details
