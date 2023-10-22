@@ -1,0 +1,40 @@
+---
+type: post
+category: plan
+---
+
+# 不知不觉进入六月了
+
+回顾一下竟然过去一个月都没写博客，也没什么原因，虽然也发生了好多东西，但是一直没腾出时间去记录它。
+
+说说这个月发生了什么，我有从后端调到了前端了，其实是打算辞职的哈哈，很简单，如果你翻到我去年的计划，我是打算工作一年后端的，现在来看，也快到了交付日期了，说说当时到后端的原因，第一，我从没在生产中接触过工程化的后端，第二，去年的前端处在一个不断有新的 best practise 代替旧的 best practise，而又必须保留旧的 best practise 作为技术债务的尴尬时期。现在好多了，不会有人说你拿 typescript 写代码是浪费时间，也不会有更多人和你讨论是 react 好还是 vue 好还是 angular。
+
+我应该抽点时间处理下过去一年学了什么，包括怎么用 swagger 做文档，OData 做的 Restful 最佳实践，怎么用 ajv 做校验层，使用 IOC 优化代码结构，bigquery 和 spanner 作为数据层，k8s 怎么优化部署，serverless 和 SQS，redis 做 ratelimit，怎么去计算工作量，怎么去定义 OKR（基本这六个月我都是按照 OKR 来操作，因为如果是 KPI 的话，我相当于啥也没完成啊 😄）... ...不得不说过去将近一年时间对我来说成长不是一点点。
+
+## 本月推荐
+
+告别了 GOT 的烂尾，其实并不可惜，后面迎来了 Chernobyl 和 years and years，超级值得看的美剧，再加上这个月初会上映的 Good Omens，六月好爽啊~
+
+![years and years剧照](https://cdn.ruguoapp.com/Fh1zM5Diyl6fcXarD40KNGDkQUGG.jpeg?imageMogr2/auto-orient/thumbnail/2332800@)
+
+腾冲好地方，去云南一定要去看看，有火山有古镇有温泉，大理就别去了。
+
+美食，潮汕粉粿，潮汕的韭菜盒子，外面是米粉包着的，尝起来 QQ 弹弹的。
+
+![](https://cdn.ruguoapp.com/FtbDPTlqonehtS9ELFfpL9pWBTYi.jpeg?imageMogr2/auto-orient/thumbnail/400x2000%3E/quality/70/interlace/1)
+
+还有 zdog，用 svg 做的 3D 代码库，好玩，可以试试用来做我的头像哈哈。
+
+## 本月遗憾
+
+为了晒黑买了助晒油，深圳居然都在下雨！！！
+
+没有整理书目，现在优盘都快满了。。。
+
+## 本月计划
+
+1. 去凯里完成贵州之行
+2. 搬家，因为 7 月房子就到期了
+3. 安排接下来几个月的桂林、澳门、江西和台湾的计划
+4. 准备查看澳洲留学的资料
+5. 整理书目，准备下一个月的读书计划

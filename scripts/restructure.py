@@ -17,7 +17,10 @@ for filename in files:
         # Split the filename into parts based on "-"
         parts = filename.split("-")
         # Remove the date prefix from the filename
-        new_filename = filename[11:]  # Assuming the date format is "yyyy-mm-dd-xxx.md"
+        chinese_name = filename[11:]  # Assuming the date format is "yyyy-mm-dd-xxx.md"
+
+        english_slug = chinese_name  # Use the original name for mixed language filenames
+
 
         # Extract the year, month, and day from the parts
         year = parts[0]
@@ -31,7 +34,7 @@ for filename in files:
         os.makedirs(new_directory, exist_ok=True)
         
           # Construct the new file path in the destination directory
-        new_filepath = os.path.join(new_directory, new_filename)
+        new_filepath = os.path.join(new_directory, english_slug)
 
         # Copy the file to the new path
         shutil.copy(os.path.join(source_directory, filename), new_filepath)

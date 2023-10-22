@@ -1,0 +1,10 @@
+---
+type: post
+category: tech
+tag:
+  - typing
+---
+
+# keybr 一个练习打字的网站
+
+感觉自己的盲打速度不行，需要一个网站练习下，[keybr](https://www.keybr.com/)是一个不错的打字网站，以一种循序渐进的方式来练习，另外还有数据统计，接下来我打算练习一个月看看能否提高。

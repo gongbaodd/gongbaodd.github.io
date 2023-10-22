@@ -1,0 +1,76 @@
+---
+type: post
+category: fe
+---
+
+# moment 获取跨越一段时间的月和周
+
+这个实现是同步实现，其实最好改成异步实现。
+
+另外关于```time.startOf('month')```竟然传递的是引用，简单说```time```改变之后这个值还会变，所以要```clone```一下。
+
+```javascript
+/**
+ * @param {moment.Moment} _startTime
+ * @param {moment.Moment} _endTime
+ * @returns {moment.Moment[]}
+ */
+function getMonths(_startTime, _endTime) {
+	const startTime = _startTime.clone();
+	const endTime = _endTime.clone();
+	const times = [];
+	while (
+		endTime > startTime ||
+		startTime.format('YYYYMM') === endTime.format('YYYYMM')
+	) {
+		const month = startTime.startOf('month').clone();
+		times.push(month);
+		startTime.add(1, 'month');
+	}
+	return times;
+}
+
+/**
+ * @param {moment.Moment} _startTime
+ * @param {moment.Moment} _endTime
+ * @returns {moment.Moment[]}
+ */
+function getDays(_startTime, _endTime) {
+	const startTime = _startTime.clone();
+	const endTime = _endTime.clone();
+	const times = [];
+	while (
+		endTime > startTime ||
+		startTime.format('YYYYMMDD') === endTime.format('YYYYMMDD')
+	) {
+		const day = startTime.startOf('day').clone();
+		times.push(day);
+		startTime.add(1, 'day');
+	}
+	return times;
+}
+
+/**
+ * @param {moment.Moment} startTime
+ * @param {moment.Moment} endTime
+ * @returns {moment.Moment[]}
+ */
+function getWeeks(_startTime, _endTime) {
+	const startTime = _startTime.clone();
+	const endTime = _endTime.clone();
+	const times = [];
+	while (
+		endTime > startTime ||
+		startTime.endOf('week').format('YYYYMMDD') ===
+			endTime.endOf('week').format('YYYYMMDD')
+	) {
+		const week = startTime.startOf('week').clone();
+		times.push(week);
+		startTime.add(1, 'week');
+	}
+
+	return times;
+}
+```
+
+另外， 用```moment```获取到的```unix```时间戳是秒级别的，而默认js处理```Date.now()```取到的是毫秒级别的，需要单独处理。
