@@ -36,8 +36,7 @@ non_english_files = find_files_with_non_english_characters(directory_path)
 
 for file in non_english_files:
     filename = os.path.basename(file)
+    directory = os.path.dirname(file)
     name, ext = os.path.splitext(filename)
-    print("ext:" + ext)
-    print(name)
     new_name = replace_non_english_with_hyphen(name)
-    if new_name : print(new_name + ext)
+    if new_name : os.rename(file, directory + "/" + new_name + ext)
