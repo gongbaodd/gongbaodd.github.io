@@ -1,6 +1,12 @@
 import os
 import re
 import string
+from googletrans import Translator
+
+def translate_chinese_to_english(chinese_text):
+    translator = Translator()
+    translation = translator.translate(chinese_text, src='zh-CN', dest='en')
+    return translation.text
 
 def contains_non_english_characters(text):
     english_characters = set(string.ascii_letters + string.digits + string.punctuation + " ")
@@ -40,3 +46,7 @@ for file in non_english_files:
     name, ext = os.path.splitext(filename)
     new_name = replace_non_english_with_hyphen(name)
     if new_name : os.rename(file, directory + "/" + new_name + ext)
+    else:  
+        new_name = translate_chinese_to_english(name)
+        new_name = new_name.replace(" ", "-")
+        os.rename(file, directory + "/" + new_name + ext)
