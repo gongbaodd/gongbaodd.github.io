@@ -1,6 +1,6 @@
 ---
-type: plan
-category: post
+type: post
+category: plan
 ---
 
 # 23rd Week: Book computer deep dive
