@@ -6,8 +6,6 @@ tag:
   - functinal-programming
 ---
 
-![cover](./2020-03-21-functional-light-javascript.png)
-
 比较简单的一本[开源书](https://github.com/getify/Functional-Light-JS)，大概算函数式编程的入门书+JavaScript 部分介绍了。
 
 推荐章节：

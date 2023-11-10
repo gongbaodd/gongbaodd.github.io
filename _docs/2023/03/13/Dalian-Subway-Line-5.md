@@ -13,3 +13,21 @@ category: travel
 青云街，一言难尽...好吧，叔叔阿姨喜欢
 虎滩站头顶有海洋动物的 LED，虽然卡通感高，但是和梭鱼湾站有一种呼应的感觉，怎么不是每一站都有大连站梭鱼湾站和虎滩站的审美
 虎滩新区出来就是渔人码头，以后出来装文青方便了
+
+![](./dalian-subway-5.jpg)
+
+![](./dalian-subway-5-242.jpg)
+
+![](./dalian-subway-5-301.jpg)
+
+![](./dalian-subway-5-533.jpg)
+
+![](./dalian-subway-5-573.jpg)
+
+![](./dalian-subway-5-618.jpg)
+
+![](./dalian-subway-5-682.jpg)
+
+![](./dalian-subway-5-687.jpg)
+
+![](./dalian-subway-5-945.jpg)

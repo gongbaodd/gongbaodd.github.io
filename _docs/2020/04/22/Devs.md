@@ -5,7 +5,7 @@ category: tv
 
 # Devs -配乐很美丽，故事有点虎头蛇尾的剧
 
-![Devs cover](./2020-04-22-devs.jpg)
+![Devs cover](./devs.jpg)
 
 本剧的主角 Lily 和她的男友在一家高端技术公司工作，男友因为项目表现优异被提拔到 Devs 项目中。当天晚上，男友因为帮助俄罗斯特工偷窃 Devs 的代码而被公司的保安男杀害。
 
