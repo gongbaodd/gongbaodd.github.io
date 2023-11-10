@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 post: fe
 ---
 # 写啥题目呢

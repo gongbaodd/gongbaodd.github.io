@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: tech
 ---
 # 第二块屏幕

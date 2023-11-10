@@ -1,3 +1,12 @@
+---
+type: post
+category: tech
+tag:
+    - vim
+    - linux
+    - windows
+---
+
 > 请原谅我又一次跳票了~
 
 # 前言

@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: tech
 ---
 # sinopia搭建你的私人NPM

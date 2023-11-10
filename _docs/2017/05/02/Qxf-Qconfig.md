@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 post: fe
 ---
 # 结合Qxf和Qconfig解决前端热发布

@@ -1,4 +1,4 @@
 ---
-layout: post
+type: post
 category: tech
 ---

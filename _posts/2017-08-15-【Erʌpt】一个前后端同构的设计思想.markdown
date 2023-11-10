@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: fe
 ---
 # 【Erʌpt】一个前后端同构的设计思想

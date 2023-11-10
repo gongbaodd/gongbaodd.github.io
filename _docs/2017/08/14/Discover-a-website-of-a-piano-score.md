@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: life
 ---
 # 发现一个口琴谱的网站

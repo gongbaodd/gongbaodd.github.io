@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: fe
 ---
 # 弃坑Riot转投Preact

@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: fe
 ---
 # 我把riotjs-typed开源了

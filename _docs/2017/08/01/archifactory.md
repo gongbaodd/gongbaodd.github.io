@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: fe
 ---
 # Achifactory私有源的坑

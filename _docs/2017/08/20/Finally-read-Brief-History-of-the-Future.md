@@ -1,5 +1,5 @@
 ---
-layout: post
+type: post
 category: life
 ---
 # 终于读完了《未来简史》
