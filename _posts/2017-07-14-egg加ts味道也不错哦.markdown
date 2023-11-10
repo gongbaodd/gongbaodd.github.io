@@ -1,5 +1,5 @@
 ---
-type: fe
+type: post
 category: tech
 ---
 # 起因
