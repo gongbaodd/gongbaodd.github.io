@@ -1,6 +1,6 @@
 ---
 type: post
-post: fe
+category: fe
 ---
 # 写啥题目呢
 

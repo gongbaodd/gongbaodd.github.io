@@ -1,6 +1,6 @@
 ---
 type: post
-post: fe
+category: fe
 ---
 # 结合Qxf和Qconfig解决前端热发布
 
