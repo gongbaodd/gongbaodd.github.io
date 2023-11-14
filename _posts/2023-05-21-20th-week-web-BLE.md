@@ -1,6 +1,6 @@
 ---
 type: post
-category: post
+category: plan
 ---
 # 20th week web BLE
 
