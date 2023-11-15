@@ -1,6 +1,0 @@
----
-type: post
-category: fe
----
-# 神奇的打印字符
-
