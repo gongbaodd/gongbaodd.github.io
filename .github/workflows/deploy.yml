@@ -31,14 +31,9 @@ jobs:
         with:
           repository: gongbaodd/blog.gongbushang.com
           path: generator
-
-      - uses: actions/cache@v3
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       
-      - run: rm -Rf generator/_posts
-      - run: cp -Rf _posts generator/
+      - run: rm -Rf generator/src/content/blog/
+      - run: cp -Rf _docs generator/src/content/blog
       - run: cd generator && npm install && npm run build
       - name: Deploy 🚀
         uses: crazy-max/ghaction-github-pages@v3
