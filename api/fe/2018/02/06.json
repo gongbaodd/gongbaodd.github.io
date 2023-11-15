@@ -1,0 +1,1 @@
+{"posts":[{"id":"2018/02/06/TexturePacker.md","slug":"2018/02/06/texturepacker","body":"# 用 TexturePacker 做雪碧图\n\n在 setting 里面选择格式, 如 PixiJS, 然后点击 Publish Sprite Sheet 会生成对应的 png 和 json","collection":"blog","data":{"type":"post","category":"fe"}}]}

@@ -1,0 +1,1 @@
+{"posts":[{"id":"2018/02/27/Git.md","slug":"2018/02/27/git","body":"# Git保存账户\n\n用 Git 保存账户名和密码\n\n```shell\ngit config credential.help store\n```\n","collection":"blog","data":{"type":"post","category":"tech"}}]}

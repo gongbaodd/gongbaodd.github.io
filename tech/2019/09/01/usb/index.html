@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en" class="h-full relative" data-astro-cid-d3haqyqs><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v3.5.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><!-- Font preloads --><!-- <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin /> --><!-- Canonical URL --><link rel="canonical" href="https://growgen.xyz/tech/2019/09/01/usb/"><!-- Primary Meta Tags --><title>GrowGen | 给我整 | 谈一谈USB</title><meta name="title" content="GrowGen | 给我整 | 谈一谈USB"><meta name="description" content="这篇文章其实是之前挖的坑，大上个月在改造我的平板的时候，就像写这篇文章了。说说这个平板吧，酷比魔方iwork8，8英寸的windows平板，用来读pdf刚刚好，只是存储不是很足而且只有一个micro-usb接口。所以我更期望给它改造成usb..."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://growgen.xyz/tech/2019/09/01/usb/"><meta property="og:title" content="GrowGen | 给我整 | 谈一谈USB"><meta property="og:description" content="这篇文章其实是之前挖的坑，大上个月在改造我的平板的时候，就像写这篇文章了。说说这个平板吧，酷比魔方iwork8，8英寸的windows平板，用来读pdf刚刚好，只是存储不是很足而且只有一个micro-usb接口。所以我更期望给它改造成usb..."><meta property="og:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://growgen.xyz/tech/2019/09/01/usb/"><meta property="twitter:title" content="GrowGen | 给我整 | 谈一谈USB"><meta property="twitter:description" content="这篇文章其实是之前挖的坑，大上个月在改造我的平板的时候，就像写这篇文章了。说说这个平板吧，酷比魔方iwork8，8英寸的windows平板，用来读pdf刚刚好，只是存储不是很足而且只有一个micro-usb接口。所以我更期望给它改造成usb..."><meta property="twitter:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><script>
+      const getThemePreference = () => {
+        const stored = localStorage?.getItem('theme')
+        if (stored) {
+          return stored
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      const isDark = () => getThemePreference() === 'dark'
+      document.documentElement.classList[isDark() ? 'add' : 'remove']('dark')
+    
+      if(localStorage) {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains('dark')
+          localStorage.setItem('theme', isDark ? 'dark' : 'light')
+        })
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+      }
+    </script><link rel="stylesheet" href="/_astro/_slug_.74c705b0.css" />
+<link rel="stylesheet" href="/_astro/_slug_.28853c60.css" /></head><body class="min-h-full grid grid-cols-1" data-astro-cid-d3haqyqs><header class="h-16 sticky p-0 px-4 z-10 top-0  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" data-astro-cid-3ef6ksr2><nav class="flex items-center justify-between" data-astro-cid-3ef6ksr2><h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>GrowGen | 给我整</a></h2><div class="flex items-center gap-4" data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Home</a><a href="/all" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Blog</a><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="1831nl" prefix="r0" component-url="/_astro/DarkModeToggle.123dfc23.js" component-export="ModeToggle" renderer-url="/_astro/client.97c1142b.js" props="{&quot;data-astro-cid-3ef6ksr2&quot;:[0,true]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;ModeToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-:r0R0:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button><!--astro:end--></astro-island></div></nav></header><main class="min-h-full grid grid-cols-1 justify-items-center"><article class="markdown-body max-w-6xl"><h1 id="谈一谈usb">谈一谈USB</h1>
+<p>这篇文章其实是之前挖的坑，大上个月在改造我的平板的时候，就像写这篇文章了。说说这个平板吧，酷比魔方iwork8，8英寸的windows平板，用来读pdf刚刚好，只是存储不是很足而且只有一个micro-usb接口。所以我更期望给它改造成usb type-c接口或者增加一个标准usb接口，然而当我粗略查询micro-usb和type-c针脚的不同点的时候，发现并不是那么简单。当然，最后我还是给这个平板装上了标准usb接口，而这篇文章也就油然而生了。</p>
+<h2 id="usb的产生">USB的产生</h2>
+<p>如果你是近些年才使用了计算机，那么熟知的接口自然就只有USB，然而就在上世纪90年代，计算机接口的分工还有所不同。当时还有链接屏幕的串口，链接打印机的并口，链接键盘鼠标的PS/2口，声卡显卡的PCI-E，而现在基本上都被USB统一天下了。</p>
+<p>根据Wikipedia，在1994年，7家公司开始开发USB，通用串口，目标是实现为计算接提供可以通用适配多种外设，包括足够的电量适配和数据传输，他们组织了USB-IF，以后每次技术更新都要提交到USB-IF中。7家公司分别提供了对USB从软件到硬件的支持（颇有一点点西方神话众神造物的感觉）。其中Intel于1995年研发出了USB的集成单元。到1996年1月，USB终于发布了1.0版本（有趣的是红荔村也是1996年出来的，这俩没什么关系，主要是我刚吃完红荔村）。</p>
+<h3 id="usb-1x">USB 1.x</h3>
+<p>USB最早发布了两个版本每秒1.5Mbit/s的【Low Speed】和12Mbit/s的【Full Speed】，大概一首3MB的歌，Low Speed需要传输16s，而Full Speed需要2s，如果拆解过这两款数据线，Full Speed会有另外一条解决静电的地线。可见Low Speed是用来处理如鼠标、键盘等设备，而Full Speed则处理如打印机软盘等设备，显然在1.0时链接屏幕还是不行的，如果一张1MB的图片光传输就要1s，那基本上看视频就和看PPT一样了。</p>
+<p>Windows 95于1997年开始预装USB的驱动。1998年8月，USB1.1发布，苹果全线产品开始推动USB，在苹果的影响之下，PC也开始推动市场上的计算机换代使用USB。</p>
+<p>USB 1.x的时候其实没有对小型接口的形状有描述，以至于除了标准的type-A（最常见的长方形接口）和方形的type-B（我在打印机上面见到过）接口的其它接口基本上由厂家自定义，要知道90年代末期可是mp3、mp4大爆发的年代。</p>
+<h3 id="usb-2x">USB 2.x</h3>
+<p>到了2000年4月，60MB/s的【High Speed】传输版本发布，发布了usb-min和usb-micro标准（从Wikipedia看基本上算是整理出来的，可见这个组织初期的地位是多低…）；提供了USB供电标准，允许1.5A到5A的接口（这么大的跨度，估计也是个整理的数值）；On-the-go允许主从设备反向链接。</p>
+<h4 id="usb-on-the-go">USB on the go</h4>
+<p>USB初期设计是一个主从设备，计算机链接U盘，计算机就是主设备，U盘则是从设备。可是随着平板等一系列设备出现，这种平板链接U盘的时候是主设备，而链接计算机的时候又是从设备，除了给这种平板两个接口之外，还可以依赖一个转接口反转主从位置，这就是USB OTG。</p>
+<h3 id="usb-3x">USB 3.x</h3>
+<p>USB 3.0于2008年11月提出称之为【Super Speed】，允许5Gbit/s传输速率，支持每byte以10bit传输，所以会按照500MB/s单工传输。</p>
+<p>USB 3.1于2013年7月发布，将USB 3.0改名为【USB 3.1 Gen 1】，并将USB 3.1命名为【Super Speed+】也叫【USB 3.1 Gen 2】，Super Speed+对于Super Speed的改造就是修改原有的单工传输为双工传输，这样单方向传输速率可以达到1GB/s。</p>
+<p>USB 3.2于2017年发布，主要是将Super Speed和Super Speed+实现在USB type-c接口上，并允许传输效率达到1.25~2.5GB/s。</p>
+<p>写到这里，感觉USB 3系列有点晕。基本上每个子版本都被改名了，现在是按照速率命名：</p>
+<ul>
+<li>符合USB 3.0标准，但是速率为5Gbit/s的接口被命名为USB 3.2 Gen 1</li>
+<li>符合USB 3.0标准，但是速率为10Gbit/s的接口被命名为USB 3.2 Gen 2</li>
+<li>符合USB 3.0标准，但是速率为20Gbit/s的接口被命名为USB 3.2 Gen 2x2</li>
+</ul>
+<p>所以目前号称是USB 3.2的接口说不定它是08年的USB 3.0接口。</p>
+<h3 id="usb-4">USB 4</h3>
+<p>2019年8月，USB 4发布，支持40Gbit/s和Thunderbolt 3协议，并向下兼容USB 2.0和USB 3.2协议。</p>
+<h4 id="什么是thunderbolt协议">什么是Thunderbolt协议</h4>
+<p>这个协议是Intel和苹果合作实现的，用来代替PCIe和DisplayPort接口，Thunderbolt 3选择使用USB type-c作为默认接口。</p>
+<h2 id="usb的针脚定义">USB的针脚定义</h2>
+<h4 id="标准usb">标准USB</h4>
+<p>包括+5V， Data-， Data+， Ground，当然这一直是USB2.0的标准</p>
+<h4 id="迷你usb">迷你USB</h4>
+<p>包括+5V，Data-， Data+， ID（用于OTG），Ground</p>
+<h4 id="type-c">Type-C</h4>
+<p>因为Type-C接口支持正反方向，所以两个方向的针脚排列是镜像的。包括Ground，SuperSpeed+，SuperSpeed-，+5V，Configure， D+， D-，SideBand use，+5V，SuperSpeed-， SuperSpeed+，Ground。</p>
+<p>所以想拿Type-C的针脚链接迷你USB的主板，基本是不太可能的。</p>
+<h2 id="usb的特征和限制">USB的特征和限制</h2>
+<ol>
+<li>USB的设计基于主从模式，主设备提供对从设备的控制，至于人体输入设备或者OTG设备则需要额外芯片处理。</li>
+<li>链接于同一台主设备的两台从设备不能互相连通。</li>
+<li>两台主设备链接不能互相联通。</li>
+<li>目前的USB线缆只能保证近距离数据传输，远程传输需要依赖远程传输的设备，当然USB-4中还包括光纤，所以这个限制只算是目前。</li>
+</ol>
+<h1 id="参考">参考</h1>
+<p>[1] USB <a href="https://en.wikipedia.org/wiki/USB" rel="noopener noreferrer nofollow" target="_blank">https://en.wikipedia.org/wiki/USB</a>
+[2] USB hardware <a href="https://en.wikipedia.org/wiki/USB_hardware#Connectors" rel="noopener noreferrer nofollow" target="_blank">https://en.wikipedia.org/wiki/USB_hardware#Connectors</a>
+[3] USB_On-The-Go <a href="https://en.wikipedia.org/wiki/USB_On-The-Go" rel="noopener noreferrer nofollow" target="_blank">https://en.wikipedia.org/wiki/USB_On-The-Go</a>
+[4] USB-C <a href="https://en.wikipedia.org/wiki/USB-C" rel="noopener noreferrer nofollow" target="_blank">https://en.wikipedia.org/wiki/USB-C</a>
+[5] A brief history of USB, what it replaced, and what has failed to replace it <a href="https://arstechnica.com/gadgets/2014/08/a-brief-history-of-usb-what-it-replaced-and-what-has-failed-to-replace-it/" rel="noopener noreferrer nofollow" target="_blank">https://arstechnica.com/gadgets/2014/08/a-brief-history-of-usb-what-it-replaced-and-what-has-failed-to-replace-it/</a></p></article><footer data-astro-cid-sz7xmlte>
+&copy; 2023 宫不上, built with <span class="heart" data-astro-cid-sz7xmlte>❤️</span>. All rights reserved.
+</footer></main></body></html>

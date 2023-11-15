@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="en" class="h-full relative" data-astro-cid-d3haqyqs><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v3.5.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><!-- Font preloads --><!-- <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin /> --><!-- Canonical URL --><link rel="canonical" href="https://growgen.xyz/fe/2020/05/29/webrtc/"><!-- Primary Meta Tags --><title>GrowGen | 给我整 | WebRTC，谈谈我这几天对它的研究</title><meta name="title" content="GrowGen | 给我整 | WebRTC，谈谈我这几天对它的研究"><meta name="description" content="WebRTC 是一个我在大学时期就关注的技术了，然而由于时间过早，很多技术细节都还在草案上就暂时罢休。今年年初，全世界都进入在家办公状态，视频会议工具被推到风口浪尖，webRTC 技术又一次被推到小高潮，于是便有了这个实现以及这篇文章。
+
+..."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://growgen.xyz/fe/2020/05/29/webrtc/"><meta property="og:title" content="GrowGen | 给我整 | WebRTC，谈谈我这几天对它的研究"><meta property="og:description" content="WebRTC 是一个我在大学时期就关注的技术了，然而由于时间过早，很多技术细节都还在草案上就暂时罢休。今年年初，全世界都进入在家办公状态，视频会议工具被推到风口浪尖，webRTC 技术又一次被推到小高潮，于是便有了这个实现以及这篇文章。
+
+..."><meta property="og:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://growgen.xyz/fe/2020/05/29/webrtc/"><meta property="twitter:title" content="GrowGen | 给我整 | WebRTC，谈谈我这几天对它的研究"><meta property="twitter:description" content="WebRTC 是一个我在大学时期就关注的技术了，然而由于时间过早，很多技术细节都还在草案上就暂时罢休。今年年初，全世界都进入在家办公状态，视频会议工具被推到风口浪尖，webRTC 技术又一次被推到小高潮，于是便有了这个实现以及这篇文章。
+
+..."><meta property="twitter:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><script>
+      const getThemePreference = () => {
+        const stored = localStorage?.getItem('theme')
+        if (stored) {
+          return stored
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      const isDark = () => getThemePreference() === 'dark'
+      document.documentElement.classList[isDark() ? 'add' : 'remove']('dark')
+    
+      if(localStorage) {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains('dark')
+          localStorage.setItem('theme', isDark ? 'dark' : 'light')
+        })
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+      }
+    </script><link rel="stylesheet" href="/_astro/_slug_.74c705b0.css" />
+<link rel="stylesheet" href="/_astro/_slug_.28853c60.css" /></head><body class="min-h-full grid grid-cols-1" data-astro-cid-d3haqyqs><header class="h-16 sticky p-0 px-4 z-10 top-0  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" data-astro-cid-3ef6ksr2><nav class="flex items-center justify-between" data-astro-cid-3ef6ksr2><h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>GrowGen | 给我整</a></h2><div class="flex items-center gap-4" data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Home</a><a href="/all" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Blog</a><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="1831nl" prefix="r0" component-url="/_astro/DarkModeToggle.123dfc23.js" component-export="ModeToggle" renderer-url="/_astro/client.97c1142b.js" props="{&quot;data-astro-cid-3ef6ksr2&quot;:[0,true]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;ModeToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-:r0R0:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button><!--astro:end--></astro-island></div></nav></header><main class="min-h-full grid grid-cols-1 justify-items-center"><article class="markdown-body max-w-6xl"><h1 id="webrtc谈谈我这几天对它的研究">WebRTC，谈谈我这几天对它的研究</h1>
+<p>WebRTC 是一个我在大学时期就关注的技术了，然而由于时间过早，很多技术细节都还在草案上就暂时罢休。今年年初，全世界都进入在家办公状态，视频会议工具被推到风口浪尖，webRTC 技术又一次被推到小高潮，于是便有了<a href="https://github.com/gongbaodd/ReactRTC" rel="noopener noreferrer nofollow" target="_blank">这个实现</a>以及这篇文章。</p>
+<h2 id="webrtc-是什么">WebRTC 是什么</h2>
+<p>WebRTC 是实现网络端视频会议的技术，包括实现获取客户端的媒体 API，如获取摄像头以及麦克风的 <code>navigator.mediaDevices.getUserMedia()</code> 以及录制屏幕的 <code>navigator.mediaDevices.getDisplayMedia()</code>；还有实现双端数据传输的 <code>RTCPeerConnection</code> 类。</p>
+<p>目前主流的实现方式是将用户本地视频上传到后台服务器，由服务器转发视频数据到客户端。很恐怖是吧，没错，这就是为什么疫情刚刚开始大部分视频服务都因为访问过多而宕机，但是因为技术架构相对简单，容易实现并可以迁移到多个平台上面。</p>
+<p>WebRTC 依赖的是 P2P 技术，一旦两台机器实现连接，双方直接进行数据传输而不需要第三方转发，所以相对安全，但是实现细节比较困难，强烈推荐看一下 MDN 的<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API" rel="noopener noreferrer nofollow" target="_blank">介绍</a>。</p>
+<h2 id="两台机器如何连接">两台机器如何连接</h2>
+<p>P2P 说起来简单，实现起来并不容易，目前互联网主流使用 IPv4 协议，这意味着在网络环境中，真正暴漏的单一 IP 对应的是后台基于 NAT（Network Address Transition）技术连接的一簇终端设备。当我们使用网络传输数据时，是有一台暴露在外网的路由将收到的数据转发给自己的端口上面，但这一层转发，很多实现是广播的，意味着端口上面的每一台设备都能收到传输数据，如果要指定某台机器接收，需要在数据包里包含设备的描述，就好像 90 年代打电话往往要胡同门口小卖铺的王大爷叫一下。实现多设备链接就需要使用 ICE 技术（你的地址描述）的 TURN 或者 STUN 服务（提供地址描述的服务）。</p>
+<h3 id="ice-技术">ICE 技术</h3>
+<p>ICE（Interactive Connectivity Establishment）技术，我称之为「破冰」技术，它提供一个通过 TURN 或者 STUN 服务获取的一堆关于本地地址的描述，在 webRTC 中可以<a href="https://codesandbox.io/s/reactrtc-f365m?file=/src/components/PeerConnection.tsx:2363-2403" rel="noopener noreferrer nofollow" target="_blank">获得本地描述</a>和<a href="https://codesandbox.io/s/reactrtc-f365m?file=/src/components/PeerConnection.tsx:3078-3139" rel="noopener noreferrer nofollow" target="_blank">添加远端描述</a>。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#B392F0">useEffect</span><span style="color:#E1E4E8">(() </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">  // 获取本地地址</span></span>
+<span class="line"><span style="color:#E1E4E8">  connection.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"icecandidate"</span><span style="color:#E1E4E8">, (</span><span style="color:#FFAB70">event</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (event.candidate) {</span></span>
+<span class="line"><span style="color:#6A737D">      // TODO: 保存 `event.candidate.toJSON()` 到服务器</span></span>
+<span class="line"><span style="color:#6A737D">      // ...</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">}, [connection]);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> onGetRemoteCandidate</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> useCallback</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">  // 添加远端地址</span></span>
+<span class="line"><span style="color:#F97583">  await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">addIceCandidate</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#B392F0"> RTCIceCandidate</span><span style="color:#E1E4E8">(data));</span></span>
+<span class="line"><span style="color:#E1E4E8">}, [connection]);</span></span></code></pre>
+<h3 id="stun-服务和-turn-服务">STUN 服务和 TURN 服务</h3>
+<p>STUN（Session Traversal Utilities for NAT）是一个能够帮助获取到客户端地址描述的协议。</p>
+<p><img src="https://mdn.mozillademos.org/files/6115/webrtc-stun.png" alt="STUN 服务"></p>
+<p>在 RTCPeerConnection 中可以使用 google 的 STUN 服务。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#E1E4E8"> [</span><span style="color:#79B8FF">connection</span><span style="color:#E1E4E8">] </span><span style="color:#F97583">=</span><span style="color:#B392F0"> useState</span><span style="color:#E1E4E8">(() </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> RTCPeerConnection</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">    iceServers: [</span></span>
+<span class="line"><span style="color:#E1E4E8">      {</span></span>
+<span class="line"><span style="color:#E1E4E8">        urls: [</span></span>
+<span class="line"><span style="color:#9ECBFF">          "stun:stun1.l.google.com:19302"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#9ECBFF">          "stun:stun2.l.google.com:19302"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#E1E4E8">      },</span></span>
+<span class="line"><span style="color:#E1E4E8">    ],</span></span>
+<span class="line"><span style="color:#E1E4E8">    iceCandidatePoolSize: </span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<p>而 TURN（Traversal Using Relays around NAT）则针对于只能接受对称 NAT（Symmetric NAT） 的路由器，设备对应的端口可变，相对于传统的锥形 NAT（Cone NAT），需要在 STUN 协议的基础上增加 Relay 转发。</p>
+<p><img src="https://mdn.mozillademos.org/files/6117/webrtc-turn.png" alt="TURN 协议"></p>
+<p>如果心情好的话，你可以使用<a href="https://github.com/coturn/coturn" rel="noopener noreferrer nofollow" target="_blank">COTURN</a>自己搭建一个 TURN 服务，更多关于 P2P 协议的描述可以参考<a href="https://www.cnblogs.com/pannengzhi/p/5048965.html" rel="noopener noreferrer nofollow" target="_blank">这篇博文</a>。</p>
+<h3 id="sdp-会话描述">SDP 会话描述</h3>
+<p>如果你写过 HTTP 服务的话，一定会知道，要实现一个有状态的 HTTP 请求的实现基于会话，服务器和客户端通过一个会话 ID 实现双方的认证。会话在 P2P 下一样成立，这个会话 ID 则称为 SDP（Session Description Protocol）。</p>
+<p>一个 SDP 的结构如下，m 表示会话中的媒体描述。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">v</span><span style="color:#E1E4E8">=0</span></span>
+<span class="line"><span style="color:#F97583">o</span><span style="color:#E1E4E8">=mozilla...THIS_IS_SDPARTA-76.0.1 8725109466872836540 0 IN IP4 0.0.0.0</span></span>
+<span class="line"><span style="color:#F97583">s</span><span style="color:#E1E4E8">=-</span></span>
+<span class="line"><span style="color:#F97583">t</span><span style="color:#E1E4E8">=0 0</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=fingerprint:sha-256 A9:89:58:E6:B5:E3:23:F8:F4:4C:15:13:58:F5:7B</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=group:BUNDLE 0 1</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=ice-options:trickle</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=msid-semantic:WMS *</span></span>
+<span class="line"><span style="color:#F97583">m</span><span style="color:#E1E4E8">=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101</span></span>
+<span class="line"><span style="color:#F97583">c</span><span style="color:#E1E4E8">=IN IP4 0.0.0.0</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=sendrecv</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=extmap:2/recvonly urn:ietf:params:rtp-hdrext:csrc-audio-level</span></span>
+<span class="line"><span style="color:#F97583">m</span><span style="color:#E1E4E8">=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97</span></span>
+<span class="line"><span style="color:#F97583">c</span><span style="color:#E1E4E8">=IN IP4 0.0.0.0</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=sendrecv</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time</span></span>
+<span class="line"><span style="color:#F97583">a</span><span style="color:#E1E4E8">=extmap:5 urn:ietf:params:rtp-hdrext:toffset</span></span></code></pre>
+<p>当然生成二进制 SDP 的过程是不需要人工字符串拼接的，可以使用<code>connection.createOffer</code>和<code>connection.createAnswer</code>生 SDP，并使用<code>connection.setLocalDescription</code>和<code>connection.setRemoteDescription</code>建立会话。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">// 发起端生成SDP</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> createOffer</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> useCallback</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> offer</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">createOffer</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">  await</span><span style="color:#E1E4E8"> conn.</span><span style="color:#B392F0">setLocalDescription</span><span style="color:#E1E4E8">(offer);</span></span>
+<span class="line"><span style="color:#6A737D">  // TODO: 保存发起端的SDP到服务器</span></span>
+<span class="line"><span style="color:#6A737D">  // ...</span></span>
+<span class="line"><span style="color:#E1E4E8">}, [connection]);</span></span></code></pre>
+<h2 id="p2p-会议室的流程">P2P 会议室的流程</h2>
+<h3 id="事前准备">事前准备</h3>
+<p>了解了上面的部分，我们需要如下内容以完成一次 P2P 连接</p>
+<ul>
+<li>一个 STUN 服务或者一个 TURN 服务来获取地址描述</li>
+<li>一台服务器，能够实现存储一端 ICECandidate（地址描述） 和 SDP（会话描述），并使另一端通过无论是 websocket 实现还是像 firebase 一样做轮询（polling）的技术获取数据。</li>
+<li>两台终端设备，其实要的就是两个<code>RTCPeerConnection</code>，但如果需要视频会议的话，还需要两个以上摄像头（反正我有 3 台 PC~）。</li>
+</ul>
+<h3 id="1-设置-rtcpeerconnection">1. 设置 RTCPeerConnection</h3>
+<p>注意，网上很多示例会创建一个<code>localConnection</code>和一个<code>remoteConnection</code>，因为他们是在一台终端上做演示，所以理论上如果只要两台设备联络，代码里面创建一个<code>RTCPeerConnection</code>就可以实现两台设备连接了。</p>
+<p><a href="https://codesandbox.io/s/github/gongbaodd/ReactRTC?file=/src/components/PeerConnection.tsx:618-663" rel="noopener noreferrer nofollow" target="_blank">这里</a>因为项目用的是 React，我把实现封装成了一个<code>PeerConnection</code>组件。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> config</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  iceServers: [</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      urls: [</span><span style="color:#9ECBFF">"stun:stun1.l.google.com:19302"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"stun:stun2.l.google.com:19302"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#E1E4E8">  ],</span></span>
+<span class="line"><span style="color:#E1E4E8">  iceCandidatePoolSize: </span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">};</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> CTX</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> createContext</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">RTCPeerConnection</span><span style="color:#F97583"> |</span><span style="color:#79B8FF"> null</span><span style="color:#E1E4E8">>(</span><span style="color:#79B8FF">null</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> const</span><span style="color:#B392F0"> PeerConnection</span><span style="color:#F97583">:</span><span style="color:#B392F0"> FC</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> ({ </span><span style="color:#FFAB70">children</span><span style="color:#E1E4E8"> }) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#E1E4E8"> [</span><span style="color:#79B8FF">connection</span><span style="color:#E1E4E8">] </span><span style="color:#F97583">=</span><span style="color:#B392F0"> useState</span><span style="color:#E1E4E8">(() </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> RTCPeerConnection</span><span style="color:#E1E4E8">(config);</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> &#x3C;</span><span style="color:#B392F0">CTX</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">Provider</span><span style="color:#B392F0"> value</span><span style="color:#E1E4E8">={</span><span style="color:#FFAB70">connection</span><span style="color:#E1E4E8">} </span><span style="color:#B392F0">children</span><span style="color:#E1E4E8">={</span><span style="color:#FFAB70">children</span><span style="color:#E1E4E8">} />;</span></span>
+<span class="line"><span style="color:#E1E4E8">};</span></span></code></pre>
+<h3 id="2-处理本地-icecandidate">2. 处理本地 IceCandidate</h3>
+<p>建立好 RTCPeerConnection 对象后，需要收集本地的 IceCandidate 并上传至服务器。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#B392F0">useEffect</span><span style="color:#E1E4E8">(() </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">  // 获取本地地址</span></span>
+<span class="line"><span style="color:#6A737D">  // 假设这段代码是发起端，存储数据到callerAddress</span></span>
+<span class="line"><span style="color:#6A737D">  // 如果是接收端，则存储到calleeAddress</span></span>
+<span class="line"><span style="color:#E1E4E8">  connection.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"icecandidate"</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> (</span><span style="color:#FFAB70">event</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (event.candidate) {</span></span>
+<span class="line"><span style="color:#F97583">      const</span><span style="color:#79B8FF"> db</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> firebase.</span><span style="color:#B392F0">firestore</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">      const</span><span style="color:#79B8FF"> caller</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> db.</span><span style="color:#B392F0">collection</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"callerAddress"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">      caller.</span><span style="color:#B392F0">add</span><span style="color:#E1E4E8">(event.candidate);</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">}, [connection]);</span></span></code></pre>
+<h3 id="3-获得远端-icecandidate">3. 获得远端 IceCandidate</h3>
+<p>从数据库中中找到远端的地址（根据黑暗森林法则，如果知道对方地址，就可以杀死对方了），知道对方地址就可以建立会话了。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">// 获得远端地址</span></span>
+<span class="line"><span style="color:#6A737D">// 同样假设这段代码是发起端</span></span>
+<span class="line"><span style="color:#6A737D">// 如果是接收端，则需要监视callerAddress</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> db</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> firebase.</span><span style="color:#B392F0">firestore</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> caller</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> db.</span><span style="color:#B392F0">collection</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"calleeAddress"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">caller.</span><span style="color:#B392F0">onSnapshot</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">snapshot</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  snapshot.</span><span style="color:#B392F0">docChanges</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">forEach</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> (</span><span style="color:#FFAB70">change</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (change.type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "added"</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">      const</span><span style="color:#79B8FF"> address</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> change.doc.</span><span style="color:#B392F0">data</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">      await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">addIceCandidate</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#B392F0"> RTCIceCandidate</span><span style="color:#E1E4E8">(address));</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<p>至此两边已经了解对方地址，可以进行会话了。</p>
+<h3 id="4-发起方获得本地媒体数据">4. 发起方获得本地媒体数据</h3>
+<p>通过<code>navigator.mediaDevices.getUserMedia</code>获得媒体数据后，可以用<code>addTracks</code>函数把数据流添加到连接里面。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> getUserMedia</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> useCallback</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> userStream</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> navigator.mediaDevices.</span><span style="color:#B392F0">getUserMedia</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">    video: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    audio: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">  userStream.</span><span style="color:#B392F0">getTracks</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">forEach</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">t</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">    connection.</span><span style="color:#B392F0">addTrack</span><span style="color:#E1E4E8">(t, localStream);</span></span>
+<span class="line"><span style="color:#E1E4E8">    console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"[P2P] stream to peer"</span><span style="color:#E1E4E8">, localStream);</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">}, [connection]);</span></span></code></pre>
+<h3 id="5-发起方发送-offer-sdp">5. 发起方发送 offer SDP</h3>
+<p>了解对方地址之后，发起方就可以发送 SDP 来建立会话了。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> createOffer</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> useCallback</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> offer</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">createOffer</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">  await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">setLocalDescription</span><span style="color:#E1E4E8">(offer);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> db</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> firebase.</span><span style="color:#B392F0">firestore</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> offer</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> db.</span><span style="color:#B392F0">collection</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"offer"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">  offer.</span><span style="color:#B392F0">add</span><span style="color:#E1E4E8">({ type: offer.type, sdp: offer.sdp });</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#E1E4E8"> offer;</span></span>
+<span class="line"><span style="color:#E1E4E8">}, [connection]);</span></span></code></pre>
+<h3 id="6-接收方收到-offer并返回-answer-sdp">6. 接收方收到 offer，并返回 answer SDP</h3>
+<p>接收方通过轮询服务器得到 offer，为连接添加远端会话描述，生成自己的会话描述（answer SDP），并存储到服务器，注意，这些步骤是不能更换的。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> db</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> firebase.</span><span style="color:#B392F0">firestore</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> offerRef</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> db.</span><span style="color:#B392F0">collection</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"offer"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> answerRef</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> db.</span><span style="color:#B392F0">collection</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"answer"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">offerRef.</span><span style="color:#B392F0">onSnapshot</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">snapshot</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  snapshot.</span><span style="color:#B392F0">docChanges</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">forEach</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> (</span><span style="color:#FFAB70">change</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (change.type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "added"</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">      const</span><span style="color:#79B8FF"> offer</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> change.doc.</span><span style="color:#B392F0">data</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">      await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">setRemoteDescription</span><span style="color:#E1E4E8">(offer); </span><span style="color:#6A737D">// 设置远端会话描述</span></span>
+<span class="line"><span style="color:#F97583">      const</span><span style="color:#79B8FF"> answer</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> conn.</span><span style="color:#B392F0">createAnswer</span><span style="color:#E1E4E8">(); </span><span style="color:#6A737D">// 生成本地会话描述</span></span>
+<span class="line"><span style="color:#F97583">      await</span><span style="color:#E1E4E8"> conn.</span><span style="color:#B392F0">setLocalDescription</span><span style="color:#E1E4E8">(answer); </span><span style="color:#6A737D">// 设置本地会话描述</span></span>
+<span class="line"><span style="color:#F97583">      await</span><span style="color:#E1E4E8"> answerRef.</span><span style="color:#B392F0">add</span><span style="color:#E1E4E8">(answer); </span><span style="color:#6A737D">// 存储本地会话到云端</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<h3 id="7-发起方收到-answer会话建立">7. 发起方收到 answer，会话建立</h3>
+<p>和接收方类似，发送方也需要从服务器收到会话的应答，设置好远端会话描述后，会话开始。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> db</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> firebase.</span><span style="color:#B392F0">firestore</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> answerRef</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> db.</span><span style="color:#B392F0">collection</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"answer"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">answerRef.</span><span style="color:#B392F0">onSnapshot</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">snapshot</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  snapshot.</span><span style="color:#B392F0">docChanges</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">forEach</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">async</span><span style="color:#E1E4E8"> (</span><span style="color:#FFAB70">change</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (change.type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "added"</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">      const</span><span style="color:#79B8FF"> answer</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> change.doc.</span><span style="color:#B392F0">data</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">      await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">setRemoteDescription</span><span style="color:#E1E4E8">(answer); </span><span style="color:#6A737D">// 设置远端会话描述</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<h3 id="8-收到远端媒体流">8. 收到远端媒体流</h3>
+<p>通过监听 track 事件，就可以获取远端媒体流了。注意，track 事件返回的是多个媒体流（因为 RTCPeerConnection 的<code>addTrack</code>可以使用多个媒体流），每个媒体流包括音轨和画轨。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> video</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> useRef</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">HTMLVideoElement</span><span style="color:#E1E4E8">>(</span><span style="color:#79B8FF">null</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">useEffect</span><span style="color:#E1E4E8">(() </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  connection.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"track"</span><span style="color:#E1E4E8">, ({ </span><span style="color:#FFAB70">streams</span><span style="color:#E1E4E8">: [</span><span style="color:#FFAB70">remoteStream</span><span style="color:#E1E4E8">] }) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    const</span><span style="color:#79B8FF"> stream</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> MediaStream</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">    remoteStream.</span><span style="color:#B392F0">getTracks</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">forEach</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">t</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> stream.</span><span style="color:#B392F0">addTrack</span><span style="color:#E1E4E8">(t));</span></span>
+<span class="line"><span style="color:#E1E4E8">    video.current </span><span style="color:#F97583">&#x26;&#x26;</span><span style="color:#E1E4E8"> video.current.srcObj </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> stream; </span><span style="color:#6A737D">// 设置HTML元素使用远端媒体流</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">}, [connection]);</span></span></code></pre>
+<h3 id="9-会话结束">9. 会话结束</h3>
+<p>停止一个媒体流，要关闭它的轨道。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#E1E4E8">stream.</span><span style="color:#B392F0">getTracks</span><span style="color:#E1E4E8">().</span><span style="color:#B392F0">forEach</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">t</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> t.</span><span style="color:#B392F0">stop</span><span style="color:#E1E4E8">());</span></span></code></pre>
+<p>关闭连接则需要调用<code>close</code>函数。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">await</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">close</span><span style="color:#E1E4E8">();</span></span></code></pre>
+<h2 id="传输文字信息">传输文字信息</h2>
+<p>RTCPeerConnection 不仅仅可以传输媒体流，使用<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Simple_RTCDataChannel_sample" rel="noopener noreferrer nofollow" target="_blank">RTCDataChannel</a>可以传递文字信息。</p>
+<p>每一个 RTCPeerConnection 建立之后会有一个”datachannel”事件，这个事件会返回一个 chennel 对象，用来接收发送方传来的数据。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#E1E4E8">connection.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"datachannel"</span><span style="color:#E1E4E8">, ({ </span><span style="color:#FFAB70">channel</span><span style="color:#E1E4E8"> }) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  channel.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"open"</span><span style="color:#E1E4E8">, () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">    console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"[P2P receiver] open"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">  channel.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"message"</span><span style="color:#E1E4E8">, ({ </span><span style="color:#FFAB70">data</span><span style="color:#E1E4E8"> }) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">    console.</span><span style="color:#B392F0">error</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"[P2P receiver] message"</span><span style="color:#E1E4E8">, data);</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">  channel.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"close"</span><span style="color:#E1E4E8">, () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">    console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"[P2P receiver] closed"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<p>在发起端创建一个 datachannel 向远端发送数据了。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> sender</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> connection.</span><span style="color:#B392F0">createDataChannel</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"xxx"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">// ... 发送信息必须在sender收到open事件后</span></span>
+<span class="line"><span style="color:#E1E4E8">sender.</span><span style="color:#B392F0">send</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"hello"</span><span style="color:#E1E4E8">); </span><span style="color:#6A737D">// 向接收端发送"hello"字符串</span></span></code></pre>
+<h2 id="附录">附录</h2>
+<h3 id="实现多端链接">实现多端链接</h3>
+<p>目前为止，RTCPeerConnection 只能做一对一连接。不过，要想实现多端连接，可以创建多个 RTCPeerConnection。那么一个浏览器最多能使用多少个 RTCPeerConnection 呢？根据<a href="https://bloggeek.me/webrtc-rtcpeerconnection-one-per-stream/" rel="noopener noreferrer nofollow" target="_blank">这篇文章</a>，显然这个问题比较复杂，这个文章里面提过大概是 200 个，但由于网络等原因，可能并不能顺利建立这么多连接。</p>
+<h3 id="调试方法">调试方法</h3>
+<p>我不太清楚出了什么状况，我的 demo 只能在火狐里面跑起来，但是调试起来类似，可以参考<a href="https://testrtc.com/webrtc-internals-parameters/" rel="noopener noreferrer nofollow" target="_blank">这篇</a>。</p>
+<h3 id="pwa-里面能用-p2p-吗">PWA 里面能用 P2P 吗</h3>
+<p>既然 DataChannel 能够实现端对端传输文字信息，那么结合 ServiceWorker 我们是不是可以创建一个完全去中心化的网页呢？答案是目前不可以，但是方案已经写进 webtorrent，具体内容可以在<a href="https://github.com/webtorrent/webtorrent/issues/1721" rel="noopener noreferrer nofollow" target="_blank">此链接</a>跟进。</p>
+<h3 id="codesandbox-的使用体验">CodeSandbox 的使用体验</h3>
+<p>CodeSandbox 可以理解为一个线上 Web 前端开发编辑器。</p>
+<p>因为现在是五月末六月初，在大陆依赖于 npm 的开发到了无比艰难的一段时间，导致我开始不得不考虑在<a href="https://codesandbox.io/" rel="noopener noreferrer nofollow" target="_blank">CodeSandbox</a>进行开发。开发体验还是很可观的，虽然写代码会出现不跟手的情况，偶尔代码会出现因为远端没同步导致丢失（好在可以通过 github 同步）。</p>
+<p>我推荐以下情况可以考虑使用 codeSandbox：</p>
+<ul>
+<li>一个全新的项目</li>
+<li>项目比较简单，浏览器不至于卡死</li>
+</ul></article><footer data-astro-cid-sz7xmlte>
+&copy; 2023 宫不上, built with <span class="heart" data-astro-cid-sz7xmlte>❤️</span>. All rights reserved.
+</footer></main></body></html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en" class="h-full relative" data-astro-cid-d3haqyqs><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v3.5.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><!-- Font preloads --><!-- <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin /> --><!-- Canonical URL --><link rel="canonical" href="https://growgen.xyz/fe/2020/05/07/rn-flutter/"><!-- Primary Meta Tags --><title>GrowGen | 给我整 | 从 RN 到 Flutter-路由器</title><meta name="title" content="GrowGen | 给我整 | 从 RN 到 Flutter-路由器"><meta name="description" content="我要死了，这个系列怎么这么长。
+
+许多应用都有多个页面来展示不同信息。比方说，你可能在页面展示一个产品的图片，当用户点击时打开这个产品的详情。
+
+在 Android，新的页面叫做 Activities。在 iOS 新的页面叫 ViewCon..."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://growgen.xyz/fe/2020/05/07/rn-flutter/"><meta property="og:title" content="GrowGen | 给我整 | 从 RN 到 Flutter-路由器"><meta property="og:description" content="我要死了，这个系列怎么这么长。
+
+许多应用都有多个页面来展示不同信息。比方说，你可能在页面展示一个产品的图片，当用户点击时打开这个产品的详情。
+
+在 Android，新的页面叫做 Activities。在 iOS 新的页面叫 ViewCon..."><meta property="og:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://growgen.xyz/fe/2020/05/07/rn-flutter/"><meta property="twitter:title" content="GrowGen | 给我整 | 从 RN 到 Flutter-路由器"><meta property="twitter:description" content="我要死了，这个系列怎么这么长。
+
+许多应用都有多个页面来展示不同信息。比方说，你可能在页面展示一个产品的图片，当用户点击时打开这个产品的详情。
+
+在 Android，新的页面叫做 Activities。在 iOS 新的页面叫 ViewCon..."><meta property="twitter:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><script>
+      const getThemePreference = () => {
+        const stored = localStorage?.getItem('theme')
+        if (stored) {
+          return stored
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      const isDark = () => getThemePreference() === 'dark'
+      document.documentElement.classList[isDark() ? 'add' : 'remove']('dark')
+    
+      if(localStorage) {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains('dark')
+          localStorage.setItem('theme', isDark ? 'dark' : 'light')
+        })
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+      }
+    </script><link rel="stylesheet" href="/_astro/_slug_.74c705b0.css" />
+<link rel="stylesheet" href="/_astro/_slug_.28853c60.css" /></head><body class="min-h-full grid grid-cols-1" data-astro-cid-d3haqyqs><header class="h-16 sticky p-0 px-4 z-10 top-0  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" data-astro-cid-3ef6ksr2><nav class="flex items-center justify-between" data-astro-cid-3ef6ksr2><h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>GrowGen | 给我整</a></h2><div class="flex items-center gap-4" data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Home</a><a href="/all" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Blog</a><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="1831nl" prefix="r0" component-url="/_astro/DarkModeToggle.123dfc23.js" component-export="ModeToggle" renderer-url="/_astro/client.97c1142b.js" props="{&quot;data-astro-cid-3ef6ksr2&quot;:[0,true]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;ModeToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-:r0R0:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button><!--astro:end--></astro-island></div></nav></header><main class="min-h-full grid grid-cols-1 justify-items-center"><article class="markdown-body max-w-6xl"><h1 id="从-rn-到-flutter-路由器">从 RN 到 Flutter-路由器</h1>
+<blockquote>
+<p>我要死了，这个系列怎么这么长。</p>
+</blockquote>
+<p>许多应用都有多个页面来展示不同信息。比方说，你可能在页面展示一个产品的图片，当用户点击时打开这个产品的详情。</p>
+<p>在 Android，新的页面叫做 Activities。在 iOS 新的页面叫 ViewControllers，在 Flutter，新的页面也是部件！包括导航至这些页面的导航器也是导航器部件。</p>
+<h2 id="如何在页面中导航">如何在页面中导航</h2>
+<p>在 React Native 里面，有三个导航器<code>StackNavigator</code>，<code>TabNavigator</code>和<code>DrawerNavigator</code>。都提供了配置的接口。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">// React Native</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> MyApp</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> TabNavigator</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">  { Home: { screen: HomeScreen }, Notifications: { screen: tabNavScreen } },</span></span>
+<span class="line"><span style="color:#E1E4E8">  { tabBarOptions: { activeTintColor: </span><span style="color:#9ECBFF">"#e91e63"</span><span style="color:#E1E4E8"> } }</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> SimpleApp</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> StackNavigator</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">  Home: { screen: MyApp },</span></span>
+<span class="line"><span style="color:#E1E4E8">  stackScreen: { screen: StackScreen },</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span>
+<span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> default</span><span style="color:#E1E4E8"> MyApp1 </span><span style="color:#F97583">=</span><span style="color:#B392F0"> DrawerNavigator</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">  Home: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    screen: SimpleApp,</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">  Screen2: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    screen: drawerScreen,</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<p>在 Flutter 中，有两个部件用于处理页面路由。</p>
+<ul>
+<li><code>Route</code> 是页面的抽象。</li>
+<li><code>Navigator</code> 是管理路由的部件。</li>
+</ul>
+<p><code>Navigator</code>通过将一列页面以堆的方式覆盖，并提供方法管理这个堆，像是<a href="https://api.flutter.dev/flutter/widgets/Navigator/push.html" rel="noopener noreferrer nofollow" target="_blank">Navigator.push</a>和<a href="https://api.flutter.dev/flutter/widgets/Navigator/pop.html" rel="noopener noreferrer nofollow" target="_blank">Navigator.pop</a>。<a href="https://api.flutter.dev/flutter/material/MaterialApp-class.html" rel="noopener noreferrer nofollow" target="_blank">MaterialApp</a> 部件提供 routes 参数接受这些路由，这些路由可能会明确指出或者动态生成，比如标题动画。下面是一个指明路由的例子。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#79B8FF"> App</span><span style="color:#F97583"> extends</span><span style="color:#79B8FF"> StatelessWidget</span><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#79B8FF">    Widget</span><span style="color:#B392F0"> build</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">BuildContext</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> context) {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#79B8FF"> MaterialApp</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">           routes</span><span style="color:#F97583">:</span><span style="color:#F97583"> &#x3C;</span><span style="color:#79B8FF">String</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">WidgetBuilder</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#9ECBFF">                '/a'</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">BuildContext</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> context) </span><span style="color:#F97583">=></span><span style="color:#B392F0"> usualNavscreen</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#9ECBFF">                '/b'</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">BuildContext</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> context) </span><span style="color:#F97583">=></span><span style="color:#B392F0"> drawerNavscreen</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#E1E4E8">          },</span></span>
+<span class="line"><span style="color:#E1E4E8">       ),</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>使用<code>Navigator.of()</code>并指定一个<code>BuildContext</code>来处理导航，比如前往某个特定页面，可以使用<code>pushNamed</code>。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#79B8FF">Navigator</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">of</span><span style="color:#E1E4E8">(context).</span><span style="color:#B392F0">pushNamed</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'/a'</span><span style="color:#E1E4E8">);</span></span></code></pre>
+<p>你可以使用<code>push</code>方法调用已存在的<a href="https://api.flutter.dev/flutter/widgets/Route-class.html" rel="noopener noreferrer nofollow" target="_blank">Route</a>，这样会动画打开 Route。下面的例子中<a href="https://api.flutter.dev/flutter/material/MaterialPageRoute-class.html" rel="noopener noreferrer nofollow" target="_blank">MaterialPageRoute</a>提供一个模态的页面，并适配系统动画。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#79B8FF">Navigator</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(context, </span><span style="color:#79B8FF">MaterialPageRoute</span><span style="color:#E1E4E8">(builder</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">BuildContext</span><span style="color:#E1E4E8"> context)</span></span>
+<span class="line"><span style="color:#F97583"> =></span><span style="color:#79B8FF"> UsualNavscreen</span><span style="color:#E1E4E8">()));</span></span></code></pre>
+<h2 id="如何使用选项卡和抽屉导航">如何使用选项卡和抽屉导航</h2>
+<p>在 Material 设计语言中，为 Flutter 提供了两种导航选项，tab 和 drawer。如果空间使用 tab 很紧张，则 drawer 是个不错的替代。</p>
+<h3 id="选项卡导航">选项卡导航</h3>
+<p>在 React Native 中，<code>createBottomTabNavigator</code>和<code>TabNavigation</code>被用来处理选项卡和导航。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> { createBottomTabNavigator } </span><span style="color:#F97583">from</span><span style="color:#9ECBFF"> "react-navigation"</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> MyApp</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> TabNavigator</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">  { Home: { screen: HomeScreen }, Notifications: { screen: tabNavScreen } },</span></span>
+<span class="line"><span style="color:#E1E4E8">  { tabBarOptions: { activeTintColor: </span><span style="color:#9ECBFF">"#e91e63"</span><span style="color:#E1E4E8"> } }</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span></code></pre>
+<p>Flutter 提供特别的部件处理抽屉和选项卡导航。</p>
+<ul>
+<li>
+<p><a href="https://api.flutter.dev/flutter/material/TabController-class.html" rel="noopener noreferrer nofollow" target="_blank">TabController</a></p>
+<p>提供<code>TabBar</code>和<code>TabBarView</code>的控制器</p>
+</li>
+<li>
+<p><a href="https://api.flutter.dev/flutter/material/TabBar-class.html" rel="noopener noreferrer nofollow" target="_blank">TabBar</a></p>
+<p>展示横向的选项卡</p>
+</li>
+<li>
+<p><a href="https://api.flutter.dev/flutter/material/Tab-class.html" rel="noopener noreferrer nofollow" target="_blank">Tab</a></p>
+<p>展示 Material 设计语言的单一选项</p>
+</li>
+<li>
+<p><a href="https://api.flutter.dev/flutter/material/TabBarView-class.html" rel="noopener noreferrer nofollow" target="_blank">TabBarView</a></p>
+<p>展示选中的选项卡</p>
+</li>
+</ul>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#79B8FF">TabController</span><span style="color:#E1E4E8"> controller </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> TabController</span><span style="color:#E1E4E8">(length</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> 2</span><span style="color:#E1E4E8">, vsync</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> this</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">TabBar</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">    tabs</span><span style="color:#F97583">:</span><span style="color:#F97583"> &#x3C;</span><span style="color:#79B8FF">Tab</span><span style="color:#F97583">></span><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#79B8FF">        Tab</span><span style="color:#E1E4E8">(icon</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.person),),</span></span>
+<span class="line"><span style="color:#79B8FF">        Tab</span><span style="color:#E1E4E8">(icon</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.email),),</span></span>
+<span class="line"><span style="color:#E1E4E8">    ],</span></span>
+<span class="line"><span style="color:#E1E4E8">    controller</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> controller,</span></span>
+<span class="line"><span style="color:#E1E4E8">),</span></span></code></pre>
+<p>一个<code>TabController</code>用于协调<code>TabBar</code>和<code>TabBarView</code>。构造参数中的<code>length</code>属性，提供选项卡的个数。一个<code>TickerProvider</code>被用来处理框架状态变化的消息的，通过<code>vsync</code>传入。<code>vsync:this</code>参数是创建<code>TabController</code>必要的。</p>
+<p><a href="https://api.flutter.dev/flutter/scheduler/TickerProvider-class.html" rel="noopener noreferrer nofollow" target="_blank">TickerProvider</a>是可以产生<a href="https://api.flutter.dev/flutter/scheduler/Ticker-class.html" rel="noopener noreferrer nofollow" target="_blank">Ticker</a>对象的类的接口。Ticker 是可以用来接收框架消息的对象，但是他们基本上都是间接通过<a href="https://api.flutter.dev/flutter/animation/AnimationController-class.html" rel="noopener noreferrer nofollow" target="_blank">AnimationController</a>。<code>AnimationController</code>需要<code>TickerProvider</code>来获取<code>Ticker</code>对象。如果你正在从 State 里面创建一个 AnimationController，你可以使用<a href="https://api.flutter.dev/flutter/widgets/TickerProviderStateMixin-mixin.html" rel="noopener noreferrer nofollow" target="_blank">TickerProviderStateMixin</a>或者<a href="https://api.flutter.dev/flutter/widgets/SingleTickerProviderStateMixin-mixin.html" rel="noopener noreferrer nofollow" target="_blank">SingleTickerProviderStateMixin</a>对象以得到<code>TrickerProvider</code>。如果你用的是<code>flutter-hooks</code>你可以使用<code>useSingleTickerProvider</code>获取<code>Ticker</code>对象。</p>
+<p><a href="https://api.flutter.dev/flutter/material/Scaffold-class.html" rel="noopener noreferrer nofollow" target="_blank">Scaffold</a>部件封装了一个新的<code>TabBar</code>部件并创建两个选项卡。<code>TabBarView</code>部件通过<code>body</code>参数传入。所有页面的<code>TabBar</code>都是<code>TabBarView</code>部件的子部件。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#79B8FF"> Home</span><span style="color:#F97583"> extends</span><span style="color:#79B8FF"> StatefulWidget</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">  Home</span><span style="color:#E1E4E8">() </span><span style="color:#F97583">:</span><span style="color:#79B8FF"> super</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">  @override</span></span>
+<span class="line"><span style="color:#79B8FF">  State</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#79B8FF">StatefulWidget</span><span style="color:#E1E4E8">> </span><span style="color:#B392F0">createState</span><span style="color:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#79B8FF"> _Home</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#79B8FF"> _Home</span><span style="color:#F97583"> extends</span><span style="color:#79B8FF"> State</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#79B8FF">Home</span><span style="color:#E1E4E8">> </span><span style="color:#F97583">with</span><span style="color:#79B8FF"> SingleTickerProviderStateMixin</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  @override</span></span>
+<span class="line"><span style="color:#79B8FF">  Widget</span><span style="color:#B392F0"> build</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">BuildContext</span><span style="color:#E1E4E8"> context) {</span></span>
+<span class="line"><span style="color:#79B8FF">    TabController</span><span style="color:#E1E4E8"> controller </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> TabController</span><span style="color:#E1E4E8">(length</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> 2</span><span style="color:#E1E4E8">, vsync</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> this</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#79B8FF"> Scaffold</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">        appBar</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> AppBar</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">          title</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'home'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">        ),</span></span>
+<span class="line"><span style="color:#E1E4E8">        bottomNavigationBar</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Material</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">          color</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Colors</span><span style="color:#E1E4E8">.blue,</span></span>
+<span class="line"><span style="color:#E1E4E8">          child</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> TabBar</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">            controller</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> controller,</span></span>
+<span class="line"><span style="color:#E1E4E8">            tabs</span><span style="color:#F97583">:</span><span style="color:#F97583"> &#x3C;</span><span style="color:#79B8FF">Tab</span><span style="color:#F97583">></span><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#79B8FF">              Tab</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">                icon</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.person),</span></span>
+<span class="line"><span style="color:#E1E4E8">              ),</span></span>
+<span class="line"><span style="color:#79B8FF">              Tab</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">                icon</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.email),</span></span>
+<span class="line"><span style="color:#E1E4E8">              )</span></span>
+<span class="line"><span style="color:#E1E4E8">            ],</span></span>
+<span class="line"><span style="color:#E1E4E8">          ),</span></span>
+<span class="line"><span style="color:#E1E4E8">        ),</span></span>
+<span class="line"><span style="color:#E1E4E8">        body</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> TabBarView</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">          children</span><span style="color:#F97583">:</span><span style="color:#F97583"> &#x3C;</span><span style="color:#79B8FF">Widget</span><span style="color:#F97583">></span><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#79B8FF">            Center</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">              child</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'person'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">            ),</span></span>
+<span class="line"><span style="color:#79B8FF">            Center</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">              child</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'email'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">            )</span></span>
+<span class="line"><span style="color:#E1E4E8">          ],</span></span>
+<span class="line"><span style="color:#E1E4E8">          controller</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> controller,</span></span>
+<span class="line"><span style="color:#E1E4E8">        ));</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>当然也可以使用<code>flutter-hooks</code>，其实如果收拾一下的话都要写两个类，就看你爱怎么写了。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#79B8FF"> Home</span><span style="color:#F97583"> extends</span><span style="color:#79B8FF"> HookWidget</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">  @override</span></span>
+<span class="line"><span style="color:#79B8FF">  Widget</span><span style="color:#B392F0"> build</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">BuildContext</span><span style="color:#E1E4E8"> context) {</span></span>
+<span class="line"><span style="color:#F97583">    final</span><span style="color:#E1E4E8"> vsync </span><span style="color:#F97583">=</span><span style="color:#B392F0"> useSingleTickerProvider</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">    final</span><span style="color:#E1E4E8"> controller </span><span style="color:#F97583">=</span><span style="color:#B392F0"> useMemoized</span><span style="color:#E1E4E8">(() {</span></span>
+<span class="line"><span style="color:#F97583">      return</span><span style="color:#79B8FF"> TabController</span><span style="color:#E1E4E8">(length</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> 2</span><span style="color:#E1E4E8">, vsync</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> vsync);</span></span>
+<span class="line"><span style="color:#E1E4E8">    });</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#79B8FF"> Scaffold</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">      appBar</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> AppBar</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">        title</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Home'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">      ),</span></span>
+<span class="line"><span style="color:#E1E4E8">      bottomNavigationBar</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Material</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">        color</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Colors</span><span style="color:#E1E4E8">.blue,</span></span>
+<span class="line"><span style="color:#E1E4E8">        child</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> TabBar</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">          controller</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> controller,</span></span>
+<span class="line"><span style="color:#E1E4E8">          tabs</span><span style="color:#F97583">:</span><span style="color:#F97583"> &#x3C;</span><span style="color:#79B8FF">Widget</span><span style="color:#F97583">></span><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#79B8FF">            Tab</span><span style="color:#E1E4E8">(icon</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.person)),</span></span>
+<span class="line"><span style="color:#79B8FF">            Tab</span><span style="color:#E1E4E8">(icon</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.email))</span></span>
+<span class="line"><span style="color:#E1E4E8">          ],</span></span>
+<span class="line"><span style="color:#E1E4E8">        ),</span></span>
+<span class="line"><span style="color:#E1E4E8">      ),</span></span>
+<span class="line"><span style="color:#E1E4E8">      body</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> TabBarView</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">        controller</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> controller,</span></span>
+<span class="line"><span style="color:#E1E4E8">        children</span><span style="color:#F97583">:</span><span style="color:#F97583"> &#x3C;</span><span style="color:#79B8FF">Widget</span><span style="color:#F97583">></span><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#79B8FF">          Center</span><span style="color:#E1E4E8">(child</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"person"</span><span style="color:#E1E4E8">)),</span></span>
+<span class="line"><span style="color:#79B8FF">          Center</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">            child</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"email"</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">          )</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#E1E4E8">      ),</span></span>
+<span class="line"><span style="color:#E1E4E8">    );</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<h2 id="抽屉导航">抽屉导航</h2>
+<p>在 React Native 中，需要引入<code>react-navigation</code>包，并使用<code>createDrawerNavigator</code>和<code>DrawerNavigation</code>。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> default</span><span style="color:#E1E4E8"> MyApp </span><span style="color:#F97583">=</span><span style="color:#B392F0"> DrawerNavigator</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">  Home: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    screen: SimpleApp,</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">  Screen2: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    screen: drawScreen,</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<p>在 Flutter 中，我们可以使用<code>Drawer</code>部件结合<code>Scaffold</code>部件创建 Material 设计语言的抽屉。想要创建一个带有抽屉的应用，需要将<code>Drawer</code>封装至<code>Scaffold</code>中。<code>Scaffold</code>部件提供一套基于<a href="https://material.io/design" rel="noopener noreferrer nofollow" target="_blank">Material 设计标准</a>的样式结构，并且还支持许多特殊的 Material 设计组件，比如<code>Drawer</code>、<code>AppBar</code>和<code>SnackBar</code>。</p>
+<p><code>Drawer</code>部件是一个基于 Material 设计的控制台，它在<code>Scaffold</code>水平方向的边缘，展示应用的导航链接。你可以在这个部件中使用<a href="https://api.flutter.dev/flutter/material/RaisedButton-class.html" rel="noopener noreferrer nofollow" target="_blank">RaisedButton</a>和<a href="https://api.flutter.dev/flutter/widgets/Text-class.html" rel="noopener noreferrer nofollow" target="_blank">Text</a>组件，或者一个列表。在下面的例子中<a href="https://api.flutter.dev/flutter/material/ListTile-class.html" rel="noopener noreferrer nofollow" target="_blank">ListTile</a>就提供了点击导航的功能。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">// Flutter</span></span>
+<span class="line"><span style="color:#79B8FF">Drawer</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">  child</span><span style="color:#F97583">:</span><span style="color:#79B8FF">ListTile</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">    leading</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.change_history),</span></span>
+<span class="line"><span style="color:#E1E4E8">    title</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Screen2'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">    onTap</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> () {</span></span>
+<span class="line"><span style="color:#79B8FF">      Navigator</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">of</span><span style="color:#E1E4E8">(context).</span><span style="color:#B392F0">pushNamed</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'/b'</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#E1E4E8">  ),</span></span>
+<span class="line"><span style="color:#E1E4E8">  elevation</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> 20.0</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">),</span></span></code></pre>
+<p>在<code>Scaffold</code>部件的<code>AppBar</code>会自动适配给<code>Drawer</code>一个图标，并且<code>Scaffold</code>能够自动处理<code>Drawer</code>的左滑手势。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">// Flutter</span></span>
+<span class="line"><span style="color:#F97583">@override</span></span>
+<span class="line"><span style="color:#79B8FF">Widget</span><span style="color:#B392F0"> build</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">BuildContext</span><span style="color:#E1E4E8"> context) {</span></span>
+<span class="line"><span style="color:#F97583">  return</span><span style="color:#79B8FF"> Scaffold</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">    drawer</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Drawer</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">      child</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> ListTile</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">        leading</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Icon</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">Icons</span><span style="color:#E1E4E8">.change_history),</span></span>
+<span class="line"><span style="color:#E1E4E8">        title</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Screen2'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">        onTap</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> () {</span></span>
+<span class="line"><span style="color:#79B8FF">          Navigator</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">of</span><span style="color:#E1E4E8">(context).</span><span style="color:#B392F0">pushNamed</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'/b'</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">        },</span></span>
+<span class="line"><span style="color:#E1E4E8">      ),</span></span>
+<span class="line"><span style="color:#E1E4E8">      elevation</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> 20.0</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    ),</span></span>
+<span class="line"><span style="color:#E1E4E8">    appBar</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> AppBar</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">      title</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Text</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'Home'</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">    ),</span></span>
+<span class="line"><span style="color:#E1E4E8">    body</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> Container</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#E1E4E8">  );</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<p>另外，如果不爽页面转场动画单一，然后自己又懒得写动画，可以直接用<a href="https://pub.dev/packages/page_transition" rel="noopener noreferrer nofollow" target="_blank">page_transition</a>包。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Android Drawer</th><th>iOS Drawer</th></tr></thead><tbody><tr><td><img src="https://flutter.dev/assets/get-started/android/react-native/navigation-98906732ed22d9aa8e0ce0eb846dbcc7d24c123ad026c359f9f7fcc44ba99230.gif" alt="Android Drawer"></td><td><img src="https://flutter.dev/assets/get-started/ios/react-native/navigation-1939f60628bec820bad0fe88d58c562984c1c00d8cfd755a4135f4321a37417e.gif" alt="iOS Drawer"></td></tr></tbody></table></article><footer data-astro-cid-sz7xmlte>
+&copy; 2023 宫不上, built with <span class="heart" data-astro-cid-sz7xmlte>❤️</span>. All rights reserved.
+</footer></main></body></html>

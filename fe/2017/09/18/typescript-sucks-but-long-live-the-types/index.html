@@ -1,0 +1,382 @@
+<!DOCTYPE html><html lang="en" class="h-full relative" data-astro-cid-d3haqyqs><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v3.5.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><!-- Font preloads --><!-- <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin /> --><!-- Canonical URL --><link rel="canonical" href="https://growgen.xyz/fe/2017/09/18/typescript-sucks-but-long-live-the-types/"><!-- Primary Meta Tags --><title>GrowGen | 给我整 | TypeScript Sucks but Long Live the Types</title><meta name="title" content="GrowGen | 给我整 | TypeScript Sucks but Long Live the Types"><meta name="description" content="查看PPT
+
+Part I : Type System
+
+JavaScript 是一种很爽的语言
+
+作为一款动态语言，比如你可以执行以下代码而不用担心报错。
+
+但是，如果遇到了下面这种情况，就算是灾难了。
+
+所以我们写代码的时候，都会加注释..."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://growgen.xyz/fe/2017/09/18/typescript-sucks-but-long-live-the-types/"><meta property="og:title" content="GrowGen | 给我整 | TypeScript Sucks but Long Live the Types"><meta property="og:description" content="查看PPT
+
+Part I : Type System
+
+JavaScript 是一种很爽的语言
+
+作为一款动态语言，比如你可以执行以下代码而不用担心报错。
+
+但是，如果遇到了下面这种情况，就算是灾难了。
+
+所以我们写代码的时候，都会加注释..."><meta property="og:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://growgen.xyz/fe/2017/09/18/typescript-sucks-but-long-live-the-types/"><meta property="twitter:title" content="GrowGen | 给我整 | TypeScript Sucks but Long Live the Types"><meta property="twitter:description" content="查看PPT
+
+Part I : Type System
+
+JavaScript 是一种很爽的语言
+
+作为一款动态语言，比如你可以执行以下代码而不用担心报错。
+
+但是，如果遇到了下面这种情况，就算是灾难了。
+
+所以我们写代码的时候，都会加注释..."><meta property="twitter:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><script>
+      const getThemePreference = () => {
+        const stored = localStorage?.getItem('theme')
+        if (stored) {
+          return stored
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      const isDark = () => getThemePreference() === 'dark'
+      document.documentElement.classList[isDark() ? 'add' : 'remove']('dark')
+    
+      if(localStorage) {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains('dark')
+          localStorage.setItem('theme', isDark ? 'dark' : 'light')
+        })
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+      }
+    </script><link rel="stylesheet" href="/_astro/_slug_.74c705b0.css" />
+<link rel="stylesheet" href="/_astro/_slug_.28853c60.css" /></head><body class="min-h-full grid grid-cols-1" data-astro-cid-d3haqyqs><header class="h-16 sticky p-0 px-4 z-10 top-0  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" data-astro-cid-3ef6ksr2><nav class="flex items-center justify-between" data-astro-cid-3ef6ksr2><h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>GrowGen | 给我整</a></h2><div class="flex items-center gap-4" data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Home</a><a href="/all" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Blog</a><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="1831nl" prefix="r0" component-url="/_astro/DarkModeToggle.123dfc23.js" component-export="ModeToggle" renderer-url="/_astro/client.97c1142b.js" props="{&quot;data-astro-cid-3ef6ksr2&quot;:[0,true]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;ModeToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-:r0R0:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button><!--astro:end--></astro-island></div></nav></header><main class="min-h-full grid grid-cols-1 justify-items-center"><article class="markdown-body max-w-6xl"><h1 id="typescript-sucks-but-long-live-the-types">TypeScript Sucks but Long Live the Types</h1>
+<p><a href="http://gongbushang.com/ng/types-slide/" rel="noopener noreferrer nofollow" target="_blank">查看PPT</a></p>
+<h2 id="part-i--type-system">Part I : Type System</h2>
+<h3 id="javascript-是一种很爽的语言">JavaScript 是一种很爽的语言</h3>
+<p>作为一款动态语言，比如你可以执行以下代码而不用担心报错。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">var</span><span style="color:#E1E4E8"> num </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "3"</span><span style="color:#F97583"> -</span><span style="color:#9ECBFF"> "2"</span><span style="color:#E1E4E8">;　</span><span style="color:#6A737D">// num = 1</span></span></code></pre>
+<hr>
+<p>但是，如果遇到了下面这种情况，就算是灾难了。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#B392F0">isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"1000"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"233"</span><span style="color:#E1E4E8">); </span><span style="color:#6A737D">// false</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">ａ</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">b</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">></span><span style="color:#E1E4E8"> b;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<hr>
+<p>所以我们写代码的时候，都会加注释</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">/**</span></span>
+<span class="line"><span style="color:#6A737D">* 是否为最大</span></span>
+<span class="line"><span style="color:#6A737D">* 参数传数字啊</span></span>
+<span class="line"><span style="color:#6A737D">* 谁不传谁是小狗</span></span>
+<span class="line"><span style="color:#6A737D">* </span><span style="color:#F97583">@constructor</span></span>
+<span class="line"><span style="color:#6A737D">* </span><span style="color:#F97583">@param</span><span style="color:#B392F0"> {number}</span><span style="color:#6A737D"> ａ</span></span>
+<span class="line"><span style="color:#6A737D">* </span><span style="color:#F97583">@param</span><span style="color:#B392F0"> {number}</span><span style="color:#E1E4E8"> b</span></span>
+<span class="line"><span style="color:#6A737D">* </span><span style="color:#F97583">@returns</span><span style="color:#B392F0"> {boolean}</span></span>
+<span class="line"><span style="color:#6A737D">**/</span></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">ａ</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">b</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">></span><span style="color:#E1E4E8"> b;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<hr>
+<p>可是总有人不看注释，所以这个函数变成了</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">a</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">b</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">    const</span><span style="color:#79B8FF"> T_NUM</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> "number"</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#79B8FF">        T_NUM</span><span style="color:#F97583"> ===</span><span style="color:#F97583"> typeof</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">&#x26;&#x26;</span></span>
+<span class="line"><span style="color:#79B8FF">        T_NUM</span><span style="color:#F97583"> ===</span><span style="color:#F97583"> typeof</span><span style="color:#E1E4E8"> b</span></span>
+<span class="line"><span style="color:#E1E4E8">    ) {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">></span><span style="color:#E1E4E8"> b;</span></span>
+<span class="line"><span style="color:#E1E4E8">    } </span><span style="color:#F97583">else</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">        throw</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"参数传数字啊，扎心了，老铁！"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<hr>
+<p>这还没完呢，假设这次改动出现在某次重构中，此前这个isGreater方法已经遍布你的项目了。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#E1E4E8">btn.</span><span style="color:#B392F0">onclick</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span></span>
+<span class="line"><span style="color:#B392F0">    isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"x"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"y"</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">?</span><span style="color:#F97583"> ...</span><span style="color:#F97583"> :</span><span style="color:#F97583"> ...</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<p>而正好，这个 onClick 在自测的时候被忽略了。上线之后就是灾难了。</p>
+<hr>
+<h3 id="动态一时爽重构火葬场">动态一时爽，重构火葬场</h3>
+<h3 id="举个-ts-的栗子">举个 TS 的栗子</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">ａ</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">b</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">)</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> boolean</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">></span><span style="color:#E1E4E8"> b;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h3 id="类型系统的优势">类型系统的优势</h3>
+<ul>
+<li>代码可读性高</li>
+<li>更有利于重构</li>
+<li>IDE能更好地支持</li>
+<li>预防某些类型相关的错误</li>
+</ul>
+<h3 id="比较流行的js类型系统">比较流行的JS类型系统</h3>
+<p><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fjow3fyxzbj20fy0baq4k.jpg" alt=""></p>
+<h2 id="part-ii--ts-vs-flow">Part II : TS vs Flow</h2>
+<p>众多类型系统里面，typescript 和 flowtyped 的比较类似，目标都是为了 JS 的工程化，而且语法上除了细节几处根本没区别。</p>
+<h3 id="对照">对照</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>TypeScript</th><th>Flow-typed</th></tr></thead><tbody><tr><td>by</td><td>Microsoft</td><td>Facebook</td></tr><tr><td>in</td><td>TypeScript</td><td>OCamel</td></tr><tr><td>is A</td><td>Compiler</td><td>Checker</td></tr><tr><td>VSCode</td><td>原生支持</td><td>安装插件</td></tr><tr><td>webpack</td><td>ts-loader</td><td>babel</td></tr><tr><td>config</td><td>json</td><td>config</td></tr><tr><td>version</td><td>2.3.2</td><td>0.54.1</td></tr></tbody></table>
+<h3 id="简单比对">简单比对</h3>
+<h4 id="typescript">TypeScript</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">a</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">b</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">)</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> boolean</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">></span><span style="color:#E1E4E8"> b;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"1"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"2"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">      // ^^^^</span></span>
+<span class="line"><span style="color:#6A737D">      // Argument of type "1" is not assignable to parameter of type 'number'.</span></span></code></pre>
+<h3 id="flow-typed">Flow-typed</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">//@flow</span></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">a</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">b</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">)</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> boolean</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> a </span><span style="color:#F97583">></span><span style="color:#E1E4E8"> b;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"1"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"2"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">        // ^^^  ^^^</span></span>
+<span class="line"><span style="color:#6A737D">        // string (This type is incompatible with the expected param type of number)</span></span></code></pre>
+<h3 id="空值检查">空值检查</h3>
+<p>TypeScript(strict) 和 Flow 都能指出 nullCheck 函数应该指明返回值为 string | void 类型。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> nullCheck</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">num</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">)</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> string</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">                                // ^^^</span></span>
+<span class="line"><span style="color:#6A737D">                                // [ts] Function lacks ending return statement and return type does not include 'undefined'.</span></span>
+<span class="line"><span style="color:#6A737D">                                // [flow] This type is incompatible with an implicitly-returned undefined.</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (num </span><span style="color:#F97583">></span><span style="color:#79B8FF"> 10</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#9ECBFF"> "it's ok"</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h3 id="泛型">泛型</h3>
+<p>TypeScript 和 Flow 都指出狗的数组不能加入猫的实例。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { }</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Dog</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">woff</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> true</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Cat</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">meow</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> true</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> animals</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [];</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> dogs</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Dog</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [];</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> cat</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Cat</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [];</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">animals.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#E1E4E8"> Animal);</span></span>
+<span class="line"><span style="color:#E1E4E8">animals.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#E1E4E8"> Dog);</span></span>
+<span class="line"><span style="color:#E1E4E8">animals.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#E1E4E8"> Cat);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">dogs.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#E1E4E8"> Cat);</span></span>
+<span class="line"><span style="color:#6A737D">      // ^^^^^^^^</span></span>
+<span class="line"><span style="color:#6A737D">      // 'Argument of type 'Cat' is not assignable to parameter of type 'Dog'.</span></span>
+<span class="line"><span style="color:#6A737D">      // ^^^^^^^ Cat. This type is incompatible with</span></span></code></pre>
+<hr>
+<p>此处 TS 和 Flow 都能查出错误，但是报错位置不同。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">//@flow</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> {}</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Dog</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">woff</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> true</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Cat</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">meow</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> true</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> animals</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [];</span></span>
+<span class="line"><span style="color:#6A737D">            // ^^^^^^</span></span>
+<span class="line"><span style="color:#6A737D">            // [flow] Animal (This type is incompatible with Cat)'</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> cats</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Cat</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> animals;</span></span>
+<span class="line"><span style="color:#6A737D">// ^^^</span></span>
+<span class="line"><span style="color:#6A737D">// [ts] Type 'Animal[]' is not assignable to type 'Cat[]'.</span></span></code></pre>
+<h4 id="wait-for-it">Wait for IT</h4>
+<p>震惊，TypeScript 在这种情况下不报错！！！</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#6A737D">//@flow</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> {}</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Dog</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">woff</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> true</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Cat</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">meow</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> true</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> cats</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Cat</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> [];</span></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> animals</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8">[] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> cat;</span></span>
+<span class="line"><span style="color:#6A737D">        // ^^^^^^^^^</span></span>
+<span class="line"><span style="color:#6A737D">        // [flow] Animal (This type is incompatible with Cat)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">animals.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#E1E4E8"> Dog);</span></span>
+<span class="line"><span style="color:#E1E4E8">animals.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#E1E4E8"> Cat);</span></span>
+<span class="line"><span style="color:#E1E4E8">animals.</span><span style="color:#B392F0">push</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">new</span><span style="color:#E1E4E8"> Animal);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">JSON</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">stringify</span><span style="color:#E1E4E8">(cats); </span><span style="color:#6A737D">// [{"woff":true},{"meow":true},{}]</span></span></code></pre>
+<p><em><strong>TS 只做了类型检查，而 JS 数组是引用赋值的，因此引起了错误</strong></em></p>
+<h4 id="nominal--structural-property-based-typing">Nominal &#x26; Structural (property-based) Typing</h4>
+<p>Flow 是标称类型而 TS 是结构类型。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { }</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Dog</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">name</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> "dog"</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Cat</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Animal</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">name</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> "cat"</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">let</span><span style="color:#E1E4E8"> dog</span><span style="color:#F97583">:</span><span style="color:#B392F0"> Dog</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#E1E4E8"> Dog;</span></span>
+<span class="line"><span style="color:#E1E4E8">dog </span><span style="color:#F97583">=</span><span style="color:#F97583"> new</span><span style="color:#E1E4E8"> Cat;</span></span>
+<span class="line"><span style="color:#6A737D">      // ^^^^^^^ [Flow] Cat. This type is incompatible with Dog</span></span>
+<span class="line"><span style="color:#E1E4E8">dog </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> { name: </span><span style="color:#9ECBFF">"dog"</span><span style="color:#E1E4E8"> };</span></span>
+<span class="line"><span style="color:#6A737D">      // ^^^^^^^^^^^^^^^ [Flow] object literal. This type is incompatible with</span></span></code></pre>
+<h4 id="对比总结">对比总结</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>　TypeScript</th><th>Flow-typed</th></tr></thead><tbody><tr><td>工具支持　</td><td>有亲爸做编辑器　</td><td>目前体验存在迟钝，但可以做 linting 前的最后工序</td></tr><tr><td>第三方库定义支持　</td><td>npm @types 私有库　</td><td>flow-typed 可以安装定义，但明显少于 TS</td></tr><tr><td>质量检查　</td><td>tslint　</td><td>eslint　(jshint 不行)</td></tr><tr><td>编译　</td><td>　可以直接编译为各版本的 JS</td><td>借助babel</td></tr><tr><td>迁移成本　</td><td>可以把原来的 JS 作为类库使用，但整体依然要用 TS 写</td><td>可以指定要检查的文件</td></tr><tr><td>其他　</td><td>支持很多es7/8的功能　</td><td>只是检查器，但是类型检查强于 TS</td></tr></tbody></table>
+<h2 id="part-iii-types-in-use-typescript">Part III Types in use (TypeScript)</h2>
+<h3 id="library">Library</h3>
+<p>JavaScript 的类库一直是良莠不齐，所以当你有两个以上的类库可选的话，究竟选哪个可能是个问题。</p>
+<p>好在如果一个 JS 类库存在类型声明的话，可以说明这两个问题。</p>
+<ul>
+<li>官方声明：作者写这一类库的时候不是玩票地试一下</li>
+<li>第三方声明：已经有人在使用这一类库了</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fjq8ttqtxhj20w20i4abt.jpg" alt=""></p>
+<p>那么在使用这些类库的时候起码不会有太多的坑。</p>
+<h4 id="npm-declarations">NPM declarations</h4>
+<p>假如你是一个类库的作者，你已经用 typescript 写完了一个库，正准备把它发布到 npm 上面，如果你想给这个类库加上类型声明，只需在 typescript 的编译配置　(tsconfig.json)　上添加如下字段。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#9ECBFF">"declaration"</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span></span></code></pre>
+<p>再次编译，你会看到很多<code>*.d.ts</code>文件，这就是类库的声明文件。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> isGreater</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">ａ</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">b</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">)</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> boolean</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<p>接下来，在<code>package.json</code>添加 type 字段，再发布的 npm 包就已经带有声明了。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#9ECBFF">"types"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"./lib/main.d.ts"</span><span style="color:#E1E4E8">,</span></span></code></pre>
+<p>另外，通过在　@types 下搜索也能找到第三方的类库声明。</p>
+<h4 id="3rd-party-declaration">3rd party declaration</h4>
+<p>有的时候，你的类库并没有声明文件，同时 @types 也没有其他人上传，你需要自己写声明文件。</p>
+<p>比如 HySDK, 只需要在项目目录里添加　.d.ts　文件</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">declare</span><span style="color:#F97583"> module</span><span style="color:#9ECBFF"> "@qnpm/hysdk"</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    export</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#B392F0">        openWebView</span><span style="color:#E1E4E8">: (</span><span style="color:#FFAB70">param</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#FFAB70">            url</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> string</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">            name</span><span style="color:#F97583">?:</span><span style="color:#79B8FF"> string</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">            data</span><span style="color:#F97583">?:</span><span style="color:#79B8FF"> any</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">        }) </span><span style="color:#F97583">=></span><span style="color:#F97583"> void</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> { openWebView } </span><span style="color:#F97583">from</span><span style="color:#9ECBFF"> "@qnpm/hysdk"</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#B392F0">openWebView</span><span style="color:#E1E4E8">({ url: </span><span style="color:#9ECBFF">""</span><span style="color:#E1E4E8"> });</span></span></code></pre>
+<h3 id="types-in-redux">Types in Redux</h3>
+<p>前端交互逻辑用得最多的就是发布订阅模式了，
+在发布订阅模式里面需要一个约定值来确定订阅的是哪一个事件。
+那么类型系统就派上用场了，这里拿 Redux 举例。</p>
+<hr>
+<p>Redux 的问题在于，订阅和发布的约定值可以随便写。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> store</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> createStore</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">state</span><span style="color:#E1E4E8">,{</span><span style="color:#FFAB70">type</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">data</span><span style="color:#E1E4E8">}) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "action1"</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">return</span><span style="color:#F97583"> ...</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "action2"</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">return</span><span style="color:#F97583"> ...</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> state;</span></span>
+<span class="line"><span style="color:#E1E4E8">})</span></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> doAction</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">action</span><span style="color:#E1E4E8">) {store.</span><span style="color:#B392F0">dispatch</span><span style="color:#E1E4E8">(action);}</span></span>
+<span class="line"><span style="color:#B392F0">doAction</span><span style="color:#E1E4E8">({ type: </span><span style="color:#9ECBFF">"action1"</span><span style="color:#E1E4E8">, data }); </span><span style="color:#6A737D">// OK</span></span>
+<span class="line"><span style="color:#B392F0">doAction</span><span style="color:#E1E4E8">({ type: </span><span style="color:#9ECBFF">"actionX"</span><span style="color:#E1E4E8">, data }); </span><span style="color:#6A737D">// OK</span></span></code></pre>
+<hr>
+<p>我们给 action 写一个约束 IAction，这样，
+在 reducer 里面不能多写一个 actionY 事件，
+dispatch 的时候也不能指定 actionX 事件。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">interface</span><span style="color:#B392F0"> IAction</span><span style="color:#E1E4E8"> { </span><span style="color:#FFAB70">type</span><span style="color:#F97583">:</span><span style="color:#9ECBFF"> "action1"</span><span style="color:#F97583"> |</span><span style="color:#9ECBFF"> "action2"</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">data</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> any</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> store</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> createStore</span><span style="color:#E1E4E8">((</span><span style="color:#FFAB70">state</span><span style="color:#E1E4E8">,{</span><span style="color:#FFAB70">type</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">data</span><span style="color:#E1E4E8">}</span><span style="color:#F97583">:</span><span style="color:#B392F0"> IAction</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "action1"</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">return</span><span style="color:#F97583"> ...</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "action2"</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">return</span><span style="color:#F97583"> ...</span></span>
+<span class="line"><span style="color:#F97583">    if</span><span style="color:#E1E4E8"> (type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "actionY"</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">return</span><span style="color:#F97583"> ...</span><span style="color:#6A737D"> // Err</span></span>
+<span class="line"><span style="color:#F97583">    return</span><span style="color:#E1E4E8"> state;</span></span>
+<span class="line"><span style="color:#E1E4E8">})</span></span>
+<span class="line"><span style="color:#F97583">function</span><span style="color:#B392F0"> doAction</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">action</span><span style="color:#F97583">:</span><span style="color:#B392F0"> IAction</span><span style="color:#E1E4E8">) {store.</span><span style="color:#B392F0">dispatch</span><span style="color:#E1E4E8">(action);}</span></span>
+<span class="line"><span style="color:#B392F0">doAction</span><span style="color:#E1E4E8">({ type: </span><span style="color:#9ECBFF">"action1"</span><span style="color:#E1E4E8">, data }); </span><span style="color:#6A737D">// OK</span></span>
+<span class="line"><span style="color:#B392F0">doAction</span><span style="color:#E1E4E8">({ type: </span><span style="color:#9ECBFF">"actionX"</span><span style="color:#E1E4E8">, data }); </span><span style="color:#6A737D">// Err</span></span></code></pre>
+<h2 id="part-iv-epilogue">Part IV Epilogue</h2>
+<h3 id="应该使用类型系统吗">应该使用类型系统吗？</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>页面只用于接下来的十一活动营销　</td><td>No</td></tr><tr><td>页面很简单就是展示文案</td><td>No</td></tr><tr><td>新项目,并以后很有可能会频繁重构　</td><td>TypeScript</td></tr><tr><td>老项目,老文件不再改,只增加文件</td><td>Flow</td></tr></tbody></table>
+<p>其实，前端的类型系统到目前为止依然还有很多瑕疵，因此我说 TypeScript sucks，但是就目前的版本来说，可比它刚发布那会儿要好用的多了，起码已经到了能用的地步。</p>
+<p>随着 TS 和 Flow 的发展和互相影响，前端类型系统将会逐步完善，但那都是以后的事了。就目前来说，如果你手上有一个大工程，还没有用上类型系统，那为何不尝试一下呢？</p></article><footer data-astro-cid-sz7xmlte>
+&copy; 2023 宫不上, built with <span class="heart" data-astro-cid-sz7xmlte>❤️</span>. All rights reserved.
+</footer></main></body></html>

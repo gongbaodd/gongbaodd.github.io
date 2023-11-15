@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en" class="h-full relative" data-astro-cid-d3haqyqs><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v3.5.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><!-- Font preloads --><!-- <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin /> --><!-- Canonical URL --><link rel="canonical" href="https://growgen.xyz/fe/2020/04/21/threejs-mesh/"><!-- Primary Meta Tags --><title>GrowGen | 给我整 | threejs 细化-创建一个 mesh、使用加载器、多个场景</title><meta name="title" content="GrowGen | 给我整 | threejs 细化-创建一个 mesh、使用加载器、多个场景"><meta name="description" content="记录下最近几天的事，终于 Dell 的维修把我电脑的风扇修好了，不过感觉 inspiron 的风扇设计有 bug，新风扇估计也撑不了多久，但愿只是我多疑了。另外通过神奇的某宝，我将我手上的小米平板二升级了内存和硬盘，考虑到 8GB 内存对于..."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://growgen.xyz/fe/2020/04/21/threejs-mesh/"><meta property="og:title" content="GrowGen | 给我整 | threejs 细化-创建一个 mesh、使用加载器、多个场景"><meta property="og:description" content="记录下最近几天的事，终于 Dell 的维修把我电脑的风扇修好了，不过感觉 inspiron 的风扇设计有 bug，新风扇估计也撑不了多久，但愿只是我多疑了。另外通过神奇的某宝，我将我手上的小米平板二升级了内存和硬盘，考虑到 8GB 内存对于..."><meta property="og:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://growgen.xyz/fe/2020/04/21/threejs-mesh/"><meta property="twitter:title" content="GrowGen | 给我整 | threejs 细化-创建一个 mesh、使用加载器、多个场景"><meta property="twitter:description" content="记录下最近几天的事，终于 Dell 的维修把我电脑的风扇修好了，不过感觉 inspiron 的风扇设计有 bug，新风扇估计也撑不了多久，但愿只是我多疑了。另外通过神奇的某宝，我将我手上的小米平板二升级了内存和硬盘，考虑到 8GB 内存对于..."><meta property="twitter:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><script>
+      const getThemePreference = () => {
+        const stored = localStorage?.getItem('theme')
+        if (stored) {
+          return stored
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      const isDark = () => getThemePreference() === 'dark'
+      document.documentElement.classList[isDark() ? 'add' : 'remove']('dark')
+    
+      if(localStorage) {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains('dark')
+          localStorage.setItem('theme', isDark ? 'dark' : 'light')
+        })
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+      }
+    </script><link rel="stylesheet" href="/_astro/_slug_.74c705b0.css" />
+<link rel="stylesheet" href="/_astro/_slug_.28853c60.css" /></head><body class="min-h-full grid grid-cols-1" data-astro-cid-d3haqyqs><header class="h-16 sticky p-0 px-4 z-10 top-0  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" data-astro-cid-3ef6ksr2><nav class="flex items-center justify-between" data-astro-cid-3ef6ksr2><h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>GrowGen | 给我整</a></h2><div class="flex items-center gap-4" data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Home</a><a href="/all" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Blog</a><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="1831nl" prefix="r0" component-url="/_astro/DarkModeToggle.123dfc23.js" component-export="ModeToggle" renderer-url="/_astro/client.97c1142b.js" props="{&quot;data-astro-cid-3ef6ksr2&quot;:[0,true]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;ModeToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-:r0R0:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button><!--astro:end--></astro-island></div></nav></header><main class="min-h-full grid grid-cols-1 justify-items-center"><article class="markdown-body max-w-6xl"><h1 id="threejs-细化-创建一个-mesh使用加载器多个场景">threejs 细化-创建一个 mesh、使用加载器、多个场景</h1>
+<p>记录下最近几天的事，终于 Dell 的维修把我电脑的风扇修好了，不过感觉 inspiron 的风扇设计有 bug，新风扇估计也撑不了多久，但愿只是我多疑了。另外通过神奇的某宝，我将我手上的小米平板二升级了内存和硬盘，考虑到 8GB 内存对于 Atom Z8500 这个 CPU 有点多余，于是升级到了 4GB + 128GB，到手之后果然比 2GB 流畅（当然肯定没法比酷睿了），所以这个配置还是比较推荐的。</p>
+<p>回到主题，最近一周我都在使用 react-three-fiber 来学习 threejs，这里会做一个系列来详细整理一下。</p>
+<h2 id="创建一个-mesh">创建一个 mesh</h2>
+<p>可以使用 JSX 创建 mesh, 因为 mesh 有 material 和 geometry 两个访问器，在 JSX 中可以作为属性使用。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>export default () => (</span></span>
+<span class="line"><span>    &#x3C;Canvas></span></span>
+<span class="line"><span>        &#x3C;mesh</span></span>
+<span class="line"><span>            name="mesh"</span></span>
+<span class="line"><span>            material={new MeshBasicMaterial()}</span></span>
+<span class="line"><span>            geometry={new BoxBufferGeometry(1, 1, 1)}</span></span>
+<span class="line"><span>        /></span></span>
+<span class="line"><span>    &#x3C;/Canvas></span></span>
+<span class="line"><span>);</span></span></code></pre>
+<p>当然作为参数也可以。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>export default () => (</span></span>
+<span class="line"><span>    &#x3C;Canvas></span></span>
+<span class="line"><span>        &#x3C;mesh arg={[new BoxBufferGeometry(1, 1, 1), new MeshBasicMaterial()]}/></span></span>
+<span class="line"><span>    &#x3C;/Canvas></span></span>
+<span class="line"><span>);</span></span></code></pre>
+<p>官网还提供了一个绝妙的方法。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>// 实现不了，不知道咋回事儿</span></span>
+<span class="line"><span>export default () => (</span></span>
+<span class="line"><span>    &#x3C;Canvas></span></span>
+<span class="line"><span>        &#x3C;mesh></span></span>
+<span class="line"><span>            &#x3C;boxBufferGeometry attach="geometry" /></span></span>
+<span class="line"><span>            &#x3C;meshBasicMaterial attach="material" /></span></span>
+<span class="line"><span>        &#x3C;/mesh></span></span>
+<span class="line"><span>    &#x3C;/Canvas></span></span>
+<span class="line"><span>);</span></span></code></pre>
+<p>另外因为 Canvas 里面的元素和 JSX 的绑定使用的是 memo，所以如果使用 primitive 定义元素的时候会丢。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>// 这么做虽然会渲染出来，但是Box有的时候会丢</span></span>
+<span class="line"><span>const Box = new Mesh(</span></span>
+<span class="line"><span>    new BoxBufferGeometry(1, 1, 1),</span></span>
+<span class="line"><span>    new MeshBasicMaterial(),</span></span>
+<span class="line"><span>);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>export default () => (</span></span>
+<span class="line"><span>    &#x3C;Canvas></span></span>
+<span class="line"><span>        &#x3C;primitive object={Box} /></span></span>
+<span class="line"><span>    &#x3C;/Canvas></span></span>
+<span class="line"><span>);</span></span></code></pre>
+<h2 id="加载器">加载器</h2>
+<p>加载 texture 时，可以使用<code>useEffect</code>自己写，当然也有更优雅的方法，利用 react 自己的<code>useMemo</code>或者<code>useCallback</code>，再就是使用 react three fiber 的<code>useLoader</code>。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>// 使用 useMemo</span></span>
+<span class="line"><span>const Plane = () => {</span></span>
+<span class="line"><span>    const texture = useMemo(() => new TextureLoader().load("xxx.jpg"), [])</span></span>
+<span class="line"><span>    return &#x3C;mesh</span></span>
+<span class="line"><span>        material={new MeshBasicMaterial({map: texture})}</span></span>
+<span class="line"><span>        geometry={new PlaneGeometry(1, 1)}</span></span>
+<span class="line"><span>    /></span></span>
+<span class="line"><span>}</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>// 使用 useLoader</span></span>
+<span class="line"><span>const PlaneAsync = () => {</span></span>
+<span class="line"><span>    const [texture] = useLoader(TextureLoader, "xxx.jpg");</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    return &#x3C;mesh</span></span>
+<span class="line"><span>        material={new MeshBasicMaterial({map: texture})}</span></span>
+<span class="line"><span>        geometry={new PlaneGeometry(1, 1)}</span></span>
+<span class="line"><span>    /></span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>const Plane = () => (</span></span>
+<span class="line"><span>        &#x3C;Suspense fallback={&#x3C;mesh />}></span></span>
+<span class="line"><span>            &#x3C;PlaneAsync /></span></span>
+<span class="line"><span>        &#x3C;/Suspense></span></span>
+<span class="line"><span>    )</span></span></code></pre>
+<h2 id="使用多个场景">使用多个场景</h2>
+<p>three react fiber 会默认给一个场景(scene)、一个摄像头(camera)还有一个渲染器(render)。可是如果我需要多个场景，比如建模工具往往会给一个正交视图以及正视图，这种情况就需要多个场景。</p>
+<p>首先要使用<code>setDefaultCamera</code>将新建的摄像头代替默认摄像头。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>export default () => {</span></span>
+<span class="line"><span>    const { setDefaultCamera } = useThree();</span></span>
+<span class="line"><span>    const camera = useRef&#x3C;PerspectiveCamera>();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    useLayoutEffect(() => camera.current &#x26;&#x26; setDefaultCamera(camera.current), [])</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    return &#x3C;perspectiveCamera</span></span>
+<span class="line"><span>      name="camera"</span></span>
+<span class="line"><span>      ref={camera}</span></span>
+<span class="line"><span>    /></span></span>
+<span class="line"><span>}</span></span></code></pre>
+<p>接下来是创建场景，场景不需要代替原有场景，但是需要使用<code>useFrame</code>修改<code>render</code>方法。</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>// 再原画面的左上角绘制场景</span></span>
+<span class="line"><span>export default () => {</span></span>
+<span class="line"><span>    const scene = useRef&#x3C;Scene>();</span></span>
+<span class="line"><span>    const {</span></span>
+<span class="line"><span>        size: {left, top, width, height},</span></span>
+<span class="line"><span>        camera,</span></span>
+<span class="line"><span>    } = useThree();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    useFrame(({ gl }) => {</span></span>
+<span class="line"><span>        gl.autoClear = true;</span></span>
+<span class="line"><span>        gl.setScissor(left, top, width / 2, height / 2);</span></span>
+<span class="line"><span>        gl.setViewport(left, top, width / 2, height / 2);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        scene.current &#x26;&#x26; gl.render(scene, camera)</span></span>
+<span class="line"><span>    }, 10);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    return (</span></span>
+<span class="line"><span>        &#x3C;scene ref={scene}></span></span>
+<span class="line"><span>            &#x3C;mesh /></span></span>
+<span class="line"><span>        &#x3C;/scene></span></span>
+<span class="line"><span>    );</span></span>
+<span class="line"><span>}</span></span></code></pre>
+<p>这里<code>useFrame</code>的第二个参数表示它的优先级，值越高，越先渲染，这意味着比它优先级低的场景渲染之前要把<code>gl.autoClear</code>设置为<code>false</code>，以避免被清除。</p>
+<h2 id="其它">其它</h2>
+<p>另外可以看看京东的一篇博客<a href="https://aotu.io/notes/2018/10/18/cannonjs/index.html" rel="noopener noreferrer nofollow" target="_blank">凹凸实验室</a>。</p></article><footer data-astro-cid-sz7xmlte>
+&copy; 2023 宫不上, built with <span class="heart" data-astro-cid-sz7xmlte>❤️</span>. All rights reserved.
+</footer></main></body></html>

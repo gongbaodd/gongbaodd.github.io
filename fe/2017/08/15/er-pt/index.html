@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="en" class="h-full relative" data-astro-cid-d3haqyqs><head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v3.5.0"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><!-- Font preloads --><!-- <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin /> --><!-- Canonical URL --><link rel="canonical" href="https://growgen.xyz/fe/2017/08/15/er-pt/"><!-- Primary Meta Tags --><title>GrowGen | 给我整 | 【Erʌpt】一个前后端同构的设计思想</title><meta name="title" content="GrowGen | 给我整 | 【Erʌpt】一个前后端同构的设计思想"><meta name="description" content="最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。
+
+精美PPT~（花了十多分钟呢
+
+前提
+
+2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是..."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://growgen.xyz/fe/2017/08/15/er-pt/"><meta property="og:title" content="GrowGen | 给我整 | 【Erʌpt】一个前后端同构的设计思想"><meta property="og:description" content="最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。
+
+精美PPT~（花了十多分钟呢
+
+前提
+
+2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是..."><meta property="og:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://growgen.xyz/fe/2017/08/15/er-pt/"><meta property="twitter:title" content="GrowGen | 给我整 | 【Erʌpt】一个前后端同构的设计思想"><meta property="twitter:description" content="最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。
+
+精美PPT~（花了十多分钟呢
+
+前提
+
+2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是..."><meta property="twitter:image" content="https://growgen.xyz/blog-placeholder-1.jpg"><script>
+      const getThemePreference = () => {
+        const stored = localStorage?.getItem('theme')
+        if (stored) {
+          return stored
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+      const isDark = () => getThemePreference() === 'dark'
+      document.documentElement.classList[isDark() ? 'add' : 'remove']('dark')
+    
+      if(localStorage) {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains('dark')
+          localStorage.setItem('theme', isDark ? 'dark' : 'light')
+        })
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+      }
+    </script><link rel="stylesheet" href="/_astro/_slug_.74c705b0.css" />
+<link rel="stylesheet" href="/_astro/_slug_.28853c60.css" /></head><body class="min-h-full grid grid-cols-1" data-astro-cid-d3haqyqs><header class="h-16 sticky p-0 px-4 z-10 top-0  bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" data-astro-cid-3ef6ksr2><nav class="flex items-center justify-between" data-astro-cid-3ef6ksr2><h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>GrowGen | 给我整</a></h2><div class="flex items-center gap-4" data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Home</a><a href="/all" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg>Blog</a><style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var b=Object.defineProperty;var f=(c,o,i)=>o in c?b(c,o,{enumerable:!0,configurable:!0,writable:!0,value:i}):c[o]=i;var l=(c,o,i)=>(f(c,typeof o!="symbol"?o+"":o,i),i);var p;{let c={0:t=>m(t),1:t=>i(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(i(t)),5:t=>new Set(i(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[e,r]=t;return e in c?c[e](r):void 0},i=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,r])=>[e,o(r)]));customElements.get("astro-island")||customElements.define("astro-island",(p=class extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var d;if(!this.hydrator||!this.isConnected)return;let e=(d=this.parentElement)==null?void 0:d.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let r=this.querySelectorAll("astro-slot"),a={},h=this.querySelectorAll("template[data-astro-template]");for(let n of h){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("data-astro-template")||"default"]=n.innerHTML,n.remove())}for(let n of r){let s=n.closest(this.tagName);s!=null&&s.isSameNode(this)&&(a[n.getAttribute("name")||"default"]=n.innerHTML)}let u;try{u=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(n){let s=this.getAttribute("component-url")||"<unknown>",y=this.getAttribute("component-export");throw y&&(s+=` (export ${y})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),n),n}await this.hydrator(this)(this.Component,u,a,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),r.disconnect(),this.childrenConnectedCallback()},r=new MutationObserver(()=>{var a;((a=this.lastChild)==null?void 0:a.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});r.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}start(){let e=JSON.parse(this.getAttribute("opts")),r=this.getAttribute("client");if(Astro[r]===void 0){window.addEventListener(`astro:${r}`,()=>this.start(),{once:!0});return}Astro[r](async()=>{let a=this.getAttribute("renderer-url"),[h,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),a?import(a):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(!d.includes("."))this.Component=h[d];else{this.Component=h;for(let n of d.split("."))this.Component=this.Component[n]}return this.hydrator=u,this.hydrate},e,this)}attributeChangedCallback(){this.hydrate()}},l(p,"observedAttributes",["props"]),p))}})();</script><astro-island uid="1831nl" prefix="r0" component-url="/_astro/DarkModeToggle.123dfc23.js" component-export="ModeToggle" renderer-url="/_astro/client.97c1142b.js" props="{&quot;data-astro-cid-3ef6ksr2&quot;:[0,true]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;ModeToggle&quot;,&quot;value&quot;:true}" await-children=""><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-:r0R0:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg><span class="sr-only">Toggle theme</span></button><!--astro:end--></astro-island></div></nav></header><main class="min-h-full grid grid-cols-1 justify-items-center"><article class="markdown-body max-w-6xl"><h1 id="erʌpt一个前后端同构的设计思想">【Erʌpt】一个前后端同构的设计思想</h1>
+<img src="http://ww1.sinaimg.cn/large/89d0a2e1ly1fikrpw68t9j208c08cdfx.jpg" alt="logo" width="150px">
+<blockquote>
+<p>最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。</p>
+</blockquote>
+<p><a href="http://gongbushang.com/ng/ERUPT/" rel="noopener noreferrer nofollow" target="_blank">精美PPT~（花了十多分钟呢</a></p>
+<h2 id="前提">前提</h2>
+<p>2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是Mozilla的asm.js方案，兼容性上面要好得多。很多人关注的是性能上的提升，而我觉得最先活起来的应该是前后端同构。因为大批的后端程序员可以避开javascript的各种坑去使用自己的开发语言开发前端应用了。</p>
+<h3 id="最近出现了很多诸如rustweb和golymer的框架">最近出现了很多诸如RustWeb和Golymer的框架</h3>
+<table>
+<tbody><tr>
+<td>
+<img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fir7gp7j3ej20r40k6abz.jpg">
+</td>
+<td>
+<img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fir7nz5t8qj21040qcabg.jpg">
+</td>
+</tr>
+</tbody></table>
+<h3 id="cs架构解决的问题">CS架构解决的问题</h3>
+<p><img src="http://ww1.sinaimg.cn/thumbnail/89d0a2e1ly1fir7ta8jaij20a90a9437.jpg" alt="现有的CS架构"></p>
+<ul>
+<li>我是谁</li>
+<li>我从哪里来</li>
+<li>要到哪里去</li>
+</ul>
+<h3 id="照以前前后端分离的方案">照以前前后端分离的方案</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>server</th><th>client</th></tr></thead><tbody><tr><td>返回html</td><td>发出请求</td></tr><tr><td>空闲</td><td>获取css、js等资源</td></tr><tr><td>空闲</td><td>发出ajax请求</td></tr><tr><td>返回数据</td><td>空闲</td></tr><tr><td>空闲</td><td>渲染数据</td></tr></tbody></table>
+<h3 id="前后端同构的做法">前后端同构的做法</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>server</th><th>client</th></tr></thead><tbody><tr><td>返回html头部</td><td>发出请求</td></tr><tr><td>返回html碎片</td><td>获取css、js</td></tr><tr><td>返回html碎片</td><td>渲染碎片</td></tr><tr><td>返回end</td><td>结束页面渲染</td></tr></tbody></table>
+<h3 id="小结一">小结一</h3>
+<p>前后端同构是在“我是谁？”这一部分做了优化。</p>
+<h3 id="前后端同构的优势">前后端同构的优势</h3>
+<ol>
+<li>SEO，不多说了；</li>
+<li>减少http请求数；</li>
+<li>减少用户初次访问页面的白页时间；</li>
+<li>减少因前后端分离造成的技术障碍。</li>
+</ol>
+<h3 id="前后端同构的策略">前后端同构的策略</h3>
+<ol>
+<li>精确渲染</li>
+<li>结构渲染</li>
+<li>模板渲染</li>
+</ol>
+<h4 id="精确渲染">精确渲染</h4>
+<p>把页面首屏的内容都渲染出来。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiylzsf71jj20hs0b4mxf.jpg" alt="精确渲染"></p>
+<h4 id="精确渲染的评价">精确渲染的评价</h4>
+<p>优点</p>
+<ul>
+<li>渲染出来的页面就是用户看到的</li>
+</ul>
+<p>缺点</p>
+<ul>
+<li>部分后端请求会阻塞页面的渲染</li>
+</ul>
+<h4 id="结构渲染">结构渲染</h4>
+<p>把初始状态的首屏渲染出来然后在同一请求中把应该展示的状态展示出来。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiym4385dfj20hs0b4jro.jpg" alt="结构渲染"></p>
+<h4 id="框架渲染的评价">框架渲染的评价</h4>
+<p>优点</p>
+<ul>
+<li>解决了精确渲染会阻塞的问题</li>
+</ul>
+<p>缺点</p>
+<ul>
+<li>对于新闻类型的页面，框架渲染不利于SEO</li>
+</ul>
+<h4 id="模板渲染">模板渲染</h4>
+<p>把模板直接作为html传到客户端。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiynhe7jenj20hs0b43ys.jpg" alt="模板渲染"></p>
+<h4 id="模板渲染的评价">模板渲染的评价</h4>
+<p>优点</p>
+<ul>
+<li>字符串渲染，计算开销最小</li>
+</ul>
+<p>缺点</p>
+<ul>
+<li>用户会看到未渲染的模板变量</li>
+</ul>
+<h3 id="小结二">小结二</h3>
+<p>应该结合精确渲染和框架渲染</p>
+<h2 id="介绍erʌpt">介绍Erʌpt</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th></th><th>Erʌpt</th><th></th></tr></thead><tbody><tr><td>E</td><td>Express</td><td>这都不知道？退下吧</td></tr><tr><td>R</td><td>React</td><td>这也不知道？别看了</td></tr><tr><td>ʌ</td><td>Values</td><td>基于Redux的异步数据管理</td></tr><tr><td>P</td><td>Pipe</td><td>HTML渲染器</td></tr><tr><td>T</td><td>Tunnel</td><td>同步数据管理</td></tr></tbody></table>
+<h2 id="values异步数据管理">Values异步数据管理</h2>
+<h3 id="单向数据流">单向数据流</h3>
+<p>react的render函数是会不断轮询页面上绑定的数据来进行页面更新的。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>value===“bud”</th><th>value===“bloom”</th></tr></thead><tbody><tr><td><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiyoot1ss4j20m80gojsi.jpg" alt=""></td><td><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiyotbnajvj20m80godgz.jpg" alt=""></td></tr></tbody></table>
+<h3 id="values的写法">Values的写法</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> TestValues</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Values</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">    public</span><span style="color:#B392F0"> getReducer</span><span style="color:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#B392F0"> combineReducers</span><span style="color:#E1E4E8">({</span></span>
+<span class="line"><span style="color:#E1E4E8">            flower: TestValues.</span><span style="color:#B392F0">FlowerValue</span><span style="color:#E1E4E8">(),</span></span>
+<span class="line"><span style="color:#E1E4E8">        });</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#F97583">    public</span><span style="color:#F97583"> static</span><span style="color:#B392F0"> FlowerValue</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> () </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> ( </span><span style="color:#FFAB70">value</span><span style="color:#F97583"> =</span><span style="color:#9ECBFF"> "bud"</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">action</span><span style="color:#E1E4E8"> ) </span><span style="color:#F97583">=></span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#F97583">            if</span><span style="color:#E1E4E8"> ( action.type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "开花"</span><span style="color:#E1E4E8"> ) </span><span style="color:#F97583">return</span><span style="color:#9ECBFF"> "bloom"</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">            if</span><span style="color:#E1E4E8"> ( action.type </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> "被狗踩了"</span><span style="color:#E1E4E8"> ) </span><span style="color:#F97583">return</span><span style="color:#9ECBFF"> "baiduLogo"</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">            return</span><span style="color:#E1E4E8"> value;</span></span>
+<span class="line"><span style="color:#E1E4E8">        }</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h3 id="怎么使用values">怎么使用Values</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> v</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> TestValues</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> store</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> createStore</span><span style="color:#E1E4E8">(v.</span><span style="color:#B392F0">getReducer</span><span style="color:#E1E4E8">());</span></span>
+<span class="line"><span style="color:#E1E4E8">store.</span><span style="color:#B392F0">getState</span><span style="color:#E1E4E8">(); </span><span style="color:#6A737D">// { flower: "bud" }</span></span></code></pre>
+<h3 id="pipe-html渲染器">Pipe HTML渲染器</h3>
+<p>用于利用React renderToString 生成HTML。</p>
+<h3 id="pipe的写法">Pipe的写法</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> TestPipe</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> Pipe</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">Request</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">Response</span><span style="color:#E1E4E8">> {</span></span>
+<span class="line"><span style="color:#F97583">    constructor</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">request</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">response</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#79B8FF">        super</span><span style="color:#E1E4E8">( request, response, minifyParams);</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#F97583">    public</span><span style="color:#B392F0"> renderPage</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">tunnel</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#79B8FF">        this</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">html</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">`</span></span>
+<span class="line"><span style="color:#9ECBFF">        &#x3C;!doctype html></span></span>
+<span class="line"><span style="color:#9ECBFF">        &#x3C;html></span></span>
+<span class="line"><span style="color:#9ECBFF">            &#x3C;body></span></span>
+<span class="line"><span style="color:#9ECBFF">            ${</span><span style="color:#79B8FF">this</span><span style="color:#9ECBFF">.</span><span style="color:#B392F0">JSX2HTML</span><span style="color:#9ECBFF">(</span></span>
+<span class="line"><span style="color:#F97583">                &#x3C;</span><span style="color:#E1E4E8">Provider</span><span style="color:#E1E4E8"> store</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">{</span><span style="color:#E1E4E8">store</span><span style="color:#9ECBFF">}</span><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#9ECBFF">                    &#x3C;</span><span style="color:#B392F0">Page</span><span style="color:#9ECBFF">>&#x3C;/</span><span style="color:#B392F0">Page</span><span style="color:#9ECBFF">></span></span>
+<span class="line"><span style="color:#F97583">                &#x3C;/</span><span style="color:#E1E4E8">Provider</span><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#9ECBFF">            )</span><span style="color:#9ECBFF">}</span></span>
+<span class="line"><span style="color:#9ECBFF">            &#x3C;/body></span></span>
+<span class="line"><span style="color:#9ECBFF">        &#x3C;/html></span></span>
+<span class="line"><span style="color:#9ECBFF">        `</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#79B8FF">        this</span><span style="color:#E1E4E8">.response.</span><span style="color:#B392F0">end</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h3 id="tunnel同步数据管理">Tunnel同步数据管理</h3>
+<h4 id="tunnel的设计">Tunnel的设计</h4>
+<p>前后端同构的意思是要在后端完成一部分工作，当前端getState的时候，获取的是后端生成并注入到前端作用域的state，也就是说这个对象在后端完成set工作，而在前端完成get工作。</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiypthxr4jj20m80goq4f.jpg" alt="Tunnel设计"></p>
+<h4 id="tunnel的使用">Tunnel的使用</h4>
+<p>Server</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> t</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Tunnel</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"QNR_GLOBAL"</span><span style="color:#E1E4E8">, {}, value);</span></span>
+<span class="line"><span style="color:#E1E4E8">Pipe.</span><span style="color:#B392F0">renderPage</span><span style="color:#E1E4E8">(t)</span></span></code></pre>
+<p>Client</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> t</span><span style="color:#F97583"> =</span><span style="color:#F97583"> new</span><span style="color:#B392F0"> Tunnel</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">t.$state </span><span style="color:#6A737D">// { flower: "bud" }</span></span>
+<span class="line"><span style="color:#E1E4E8">window.</span><span style="color:#79B8FF">QNR_GLOBAL</span><span style="color:#6A737D"> // { $state: { flower: "bud" } }</span></span></code></pre>
+<h2 id="结论">结论</h2>
+<p>Ervpt是VPT在react+express上面的实现，能够很好地实现前后端同构中的精确渲染和结构渲染，基于这套思想我相信它能带来一场新的前后端分离的革命，也就是前端能够主导全部的页面逻辑，后端专注于接口的优化。</p></article><footer data-astro-cid-sz7xmlte>
+&copy; 2023 宫不上, built with <span class="heart" data-astro-cid-sz7xmlte>❤️</span>. All rights reserved.
+</footer></main></body></html>

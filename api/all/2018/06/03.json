@@ -1,0 +1,1 @@
+{"posts":[{"id":"2018/06/03/linuxMint.md","slug":"2018/06/03/linuxmint","body":"# LinuxMint 修改移动窗口快捷键\n\nAlt 在 blender 中很重要，所以要修改 LinuxMint 的 keyBinding\n\n打开 DConfig，点击 org > cinnamon > desktop > wm > preferences， 修改  mouse-button-modifier 中 <Alt> 为 <Super>","collection":"blog","data":{"type":"post","category":"tech"}}]}

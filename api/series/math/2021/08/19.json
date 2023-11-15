@@ -1,0 +1,1 @@
+{"posts":[{"id":"2021/08/19/Triple-points.md","slug":"2021/08/19/triple-points","body":"\n# 三重积分\n\n球面坐标系\n\n$$\n\\begin{cases}\n    x = r\\sin\\phi\\cos\\theta \\\\\n    y = r\\sin\\phi\\sin\\theta \\\\\n    z = r\\cos\\phi\n\\end{cases}\n$$\n","collection":"blog","data":{"type":"post","category":"book","tag":["math"],"series":{"slug":"math","name":"高等数学"}}}]}

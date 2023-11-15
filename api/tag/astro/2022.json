@@ -1,0 +1,1 @@
+{"posts":[{"id":"2022/08/24/Astro.md","slug":"2022/08/24/astro","body":"\n# Astro 算是比较终极状态的前端框架了\n\n这几天刷油管发现都在推荐一个 Astro 的框架，这算是一个比 React、Vue 更高一维度的框架，\n它可以使用目前已知的主流前端框架作为渲染器生成静态页面，同时可以把页面中需要交互的部分以「岛」的形式添加到页面里。\n\n更有趣的，同一个项目可以接受不同的框架，相比于 Next、Gatsby 等，它看起来是更加简单易用的。\n","collection":"blog","data":{"type":"post","category":"tech","tag":["astro","js"]}}]}
