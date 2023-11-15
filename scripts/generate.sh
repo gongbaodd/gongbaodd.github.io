@@ -1,8 +1,6 @@
 git clone https://github.com/gongbaodd/blog.gongbushang.com.git generator
-rm -Rf generator/_posts
-cp -Rf _posts generator/
+rm -Rf generator/src/content/blog/
+cp -Rf _docs generator/src/content/blog
 cd generator
-yarn
-yarn build
-yarn cp:cname
-yarn deploy && yarn deploy:coding
+npm install
+npm run build
