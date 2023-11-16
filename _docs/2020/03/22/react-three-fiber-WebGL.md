@@ -30,7 +30,7 @@ react-three-fiber 的[官方文档链接](https://inspiring-wiles-b4ffe0.netlify
 
 如果想把原来的 threejs 模块迁移到 react 模块，只需要使用一层 primitive 包装即可。每个拥有 set 和 get 的参数都可以作为 props 的成员，构造器参数则是`props.args: any[]`类型。
 
-```JavaScript
+```js
 const grid = new GridHelper(2000, 20, 0x000000, 0x0000000);
 (grid.material as Material).opacity = 0.2;
 (grid.material as Material).transparent = true;
@@ -54,7 +54,7 @@ const Grid = () => {
 
 使用时需要把你的 scene 和 THREE 模块暴露给 window 作用域。
 
-```JavaScript
+```js
 window.scene = scene;
 window.THREE = THREE;
 ```

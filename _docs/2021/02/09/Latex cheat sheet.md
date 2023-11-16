@@ -7,7 +7,7 @@ tag:
 
 # Latex cheat sheet
 
-```letax
+```latex
 \sum_{i=1}^{k+1}i
 ```
 
@@ -15,7 +15,7 @@ $$
 \sum_{i=1}^{k+1}i
 $$
 
-```letax
+```latex
 \frac{k(k+1)}{2} + k + 1
 ```
 

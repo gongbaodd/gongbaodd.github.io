@@ -141,7 +141,7 @@ $O(n\log^2{n})$不稳定排序
 
 升级版的插入排序，每隔一个 gap 进行一次排序，直到 gap 缩到 1。
 
-```Rust
+```rs
 fn shell<T: Ord>(arr: &mut [T]) {
     let length = arr.len();
     let mut gap = length / 2;
@@ -165,7 +165,7 @@ $O(n\log{n})$不稳定排序
 
 将数组转换成大顶堆，把作为根的最大值排到数组最后，再去除最大值重新排序。
 
-```Rust
+```rs
 fn heap(data: &mut Vec<i32>) {
     if data.len() < 2 {
         return ;

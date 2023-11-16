@@ -286,7 +286,7 @@ module.exports = function(config) {
 
 如果你有一个 Dialog 对象，你想看看它的 show 函数执行后页面是否有类名`.dialog`的 dom 节点。
 
-```JavaScript
+```js
 describe('Dialog', ()=>{
     var _d = new Dialog();
     it('show', ()=>{
@@ -298,7 +298,7 @@ describe('Dialog', ()=>{
 
 再如，Dialog 有一个 sendVcode 函数，执行的时候会发起 Ajax 请求，你要 Mock 一个 Ajax 请求
 
-```JavaScript
+```js
 describe('Mock AJAX', ()=>{
     var mock = JSON.stringify({
         status: 200,

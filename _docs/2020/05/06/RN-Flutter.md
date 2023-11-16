@@ -123,7 +123,7 @@ Widget getCanvas() {
 
 在 React Native，许多布局可以通过 props 传入。比如，你可以使用`View`的`style`属性去指定 flexbox 布局。想要让组件成列排列，可以指定样式为`flexDirection: "column"`。
 
-```JavaScript
+```js
 <View
     style={{
         flex: 1,
@@ -138,7 +138,7 @@ Widget getCanvas() {
 
 举个例子，`Column`和`Row`组件接受一个数组作为参数来以列或者以行排列。一个`Container`部件既能处理样式也能处理布局，一个`Center`部件可以将组件居中。
 
-```Dart
+```dart
 Center(
     child: Column(
         children: <Widget> [

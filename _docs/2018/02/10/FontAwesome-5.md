@@ -27,7 +27,7 @@ Qunar的很多图片都是用iconfont实现的,
 npx create-react-app awesome --scripts-version=react-scripts-ts
 ```
 
-```JSX
+```jsx
 <FontAwesomeIcon icon={faCoffee}/>
 ```
 
@@ -38,7 +38,7 @@ npx create-react-app awesome --scripts-version=react-scripts-ts
 比如放大(grow)或者缩小(shrink),
 后面的数字的单位是 1/16em.
 
-```JSX
+```jsx
 <FontAwesomeIcon
     {...{
         icon: faCoffee,
@@ -55,7 +55,7 @@ npx create-react-app awesome --scripts-version=react-scripts-ts
 
 ## 新功能:遮罩
 
-```JSX
+```jsx
 <Font
     {...{
         icon: faCoffee,
@@ -71,7 +71,7 @@ npx create-react-app awesome --scripts-version=react-scripts-ts
 
 两个图标层叠
 
-```JSX
+```jsx
         <span className="fa-layers fa-fw fa-border">
           <Font
             {...{
@@ -92,7 +92,7 @@ npx create-react-app awesome --scripts-version=react-scripts-ts
 
 图标添加数字角标,默认右上(指定位置: fa-layers-${bottom|top}-${left|right}).
 
-```JSX
+```jsx
         <span className="fa-layers fa-fw">
           <Font
             {...{
@@ -105,7 +105,7 @@ npx create-react-app awesome --scripts-version=react-scripts-ts
 
 叠加文字
 
-```JSX
+```jsx
         <span className="fa-layers fa-fw">
           <Font
             {...{

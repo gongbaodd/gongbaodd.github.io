@@ -19,7 +19,7 @@ tag:
 
 先序遍历，先把跟压入栈，执行 next 出栈取值，并将右子树和左子树压入栈，直到栈空，返回 None。
 
-```Rust
+```rs
 struct TreeIter<'tree> {
     order: Order,
     stack: Vec<&'tree Tree>,
@@ -58,7 +58,7 @@ impl<'tree> Iterator for TreeIter<'tree> {
 
 中序遍历，先把根的左手边按节点拆成几棵没有左子树的树压入栈，执行 next 的时候逐一弹出，如果弹出的子树有右子树，把右子树也拆成没有左子树的子树压入栈。
 
-```Rust
+```rs
 struct TreeIter<'tree> {
     order: Order,
     stack: Vec<&'tree Tree>,
@@ -100,7 +100,7 @@ impl<'tree> Iterator for TreeIter<'tree> {
 
 后序遍历，相比于前两个准备工作多一些，需要两个栈，第一个栈按照先序遍历一样压栈，不同的是，先序遍历为了先出栈左子树（根左右）而先压栈右子树，这里要先压栈左子树。第一个栈的出栈元素直接压入第二个栈。执行 next 时，直接从第二个栈出栈即可。
 
-```Rust
+```rs
 struct TreeIter<'tree> {
     order: Order,
     stack: Vec<&'tree Tree>,
@@ -142,7 +142,7 @@ impl<'tree> Iterator for TreeIter<'tree> {
 
 按层遍历，就是把每一层的节点按层压入栈
 
-```Rust
+```rs
 struct LevelIter<'tree> {
     stack: Vec<Vec<&'tree Tree>>,
 }

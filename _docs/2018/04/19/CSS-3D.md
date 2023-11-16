@@ -10,7 +10,7 @@ category: fe
 
 很多人其实认为只要写下
 
-```CSS
+```css
 .3d-Object {
     transform: rotateY(180deg);
 }
@@ -18,7 +18,7 @@ category: fe
 
 但最终效果并不是三维的旋转，原因是它的父元素必须是一个有深度的盒子。
 
-```CSS
+```css
 .box {
     perspective: 800px;
 }
@@ -30,7 +30,7 @@ category: fe
 
 如果是希望旋转180度后不展示背面可以添加 backface-visibility。
 
-```CSS
+```css
 .box .3d-Object {
     transform: rotateY(180deg);
     backface-visibility: hidden;

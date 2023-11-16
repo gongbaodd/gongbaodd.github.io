@@ -49,14 +49,14 @@ flutter create <projectname>
 
 在 React Native 中，你需要引入组件。
 
-```JavaScript
+```js
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 ```
 
 在 Flutter 中，需要引入`material.dart`包来使用 Material Design 库中的部件。要使用 iOS 样式的部件则需要引入 Cupertino 库。想使用更多基础部件，需要引入他们的库，或者你也可以自己写一个部件库，并引入。
 
-```Dart
+```dart
 import "package:flutter/material.dart";
 import "package:flutter/cupertino.dart";
 import "package:flutter/widgets.dart";
@@ -93,7 +93,7 @@ export default App;
 
 在 Flutter 中，创建一个 Hello World 应用需要使用`Center`和`Text`核心部件，`Center`部件在部件树的根部件，并拥有唯一子部件`Text`。
 
-```Dart
+```dart
 import "package:flutter/material.dart";
 
 main() {
@@ -130,7 +130,7 @@ main() {
 
 如下的例子使用 Material Design 创建部件，在此例子中，部件树链接在`MaterialApp`跟部件下。
 
-```Dart
+```dart
 import "package:flutter/material.dart";
 
 Widget MyApp() {

@@ -203,7 +203,7 @@ Yo 的缺点
 
 * 使用的是 SASS 语法，不是原生 CSS 语法，并只会对使用 Yo 语法的地方做浏览器兼容处理,没有编辑器支持
 
-```CSS
+```css
 /*** Yo 源代码 ***/
 .foo {
     @include yoflex();
@@ -214,7 +214,7 @@ Yo 的缺点
 }
 ```
 
-```CSS
+```css
 /*** 生成代码 ***/
 .foo {
     display: -moz-flex;
@@ -231,7 +231,7 @@ Yo 的缺点
 
 CSS 一直存在很严重的类名覆盖问题，由于 CSS 的类名都存在于一个全局域中，当两个组件中存在重名类名，其中一个会被覆盖。
 
-```CSS
+```css
 /**a-button.css**/
 .button {
     background: red;
@@ -245,7 +245,7 @@ CSS 一直存在很严重的类名覆盖问题，由于 CSS 的类名都存在�
 
 使用 CSS-modules 后，编译好的 CSS 文件会处理掉重名类名。
 
-```CSS
+```css
 .button-a {
     background: red;
 }

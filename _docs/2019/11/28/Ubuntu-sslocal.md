@@ -15,7 +15,7 @@ pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
 
 修改 sslocal 配置，server 连接的是本地 haproxy 端口，增加/etc/shadowsocks/default.json
 
-```JSON
+```json
 {
     "server": "127.0.0.1",
     "server_port": 8888,
@@ -46,7 +46,7 @@ WantedBy=multi-user.target
 
 好了，sslocal 的部分说完了，接下来 apt 安装 haproxy，修改/etc/haproxy/haproxy.cfg，增加以下行。
 
-```INI
+```ini
 listen status
     bind *:1111
     mode  http

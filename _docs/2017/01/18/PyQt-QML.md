@@ -27,7 +27,7 @@ view.show()
 app.exec_()
 ```
 
-```qml
+```js
 import Qt 4.7
 
 Rectangle {
@@ -64,7 +64,7 @@ view.show()
 app.exec_()
 ```
 
-```qml
+```js
 import Qt 4.7
 
 Rectangle {
@@ -107,7 +107,7 @@ view.show()
 app.exec_()
 ```
 
-```qml
+```js
 import Qt 4.7
 
 Rectangle {
@@ -157,7 +157,7 @@ view.show()
 app.exec_()
 ```
 
-```qml
+```js
 import Qt 4.7
 
 Rectangle {

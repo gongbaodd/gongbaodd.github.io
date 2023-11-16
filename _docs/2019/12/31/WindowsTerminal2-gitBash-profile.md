@@ -9,7 +9,7 @@ tag:
 
 粘贴以下代码到 settings 中。
 
-```JSON
+```json
         {
             "guid": "{00000000-0000-0000-ba54-000000000002}",
             "commandline" : "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l",

@@ -173,7 +173,7 @@ wasm-game-of-life/
 
 `src/lib`文件放在 Rust 项目的更目录下面。它使用`wasm-bindgen`去和 JavaScript 链接。它能引入`window.alert`这个 JavaScript 函数，并暴露`greet`函数，并弹出弹框。
 
-```Rust
+```rs
 mod utils;
 use wasm_bindgen::prelude::*;
 
@@ -244,7 +244,7 @@ export function greet() {
 
 这个`.d.ts`是 TypeScript 链接 JavaScript 的文件。如果你的项目中使用了 TypeScript，你可以让你的 WebAssembly 项目被类型检查，并且你的 IDE 会提供代码提醒和自动完成功能。
 
-```TypeScript
+```ts
 export function greet(): void;
 ```
 
@@ -319,7 +319,7 @@ wasm-game-of-life/www/
 
 这是 JavaScript 的入口文件，他引入了`hello-wasm-pack`，并带哦用了 greet 函数。
 
-```JavaScript
+```js
 import * as wasm from "hello-wasm-pack";
 
 wasm.greet();
@@ -337,7 +337,7 @@ wasm.greet();
 
 打开`www/package.json`，找到`devDependencies`，在兄弟节点增加`dependencies`字段，并在里面增加`"wasm-game-of-life": "file:../pkg"`。
 
-```JSON
+```json
 {
   // ...
   "dependencies": {                     // Add this three lines block!
@@ -351,7 +351,7 @@ wasm.greet();
 
 接下来修改`www/index.js`引入 greet 函数。
 
-```JavaScript
+```js
 import * as wasm from "wasm-game-of-life";
 
 wasm.greet();
@@ -385,7 +385,7 @@ npm run start
 
 修改`src/lib.rs`
 
-```Rust
+```rs
 #[wasm_bindgen]
 pub fn greet(name: &str) {
     alert(&format!("Hello, {}!", name));
@@ -394,7 +394,7 @@ pub fn greet(name: &str) {
 
 再修改 JavaScript 绑定`www/index.js`
 
-```JavaScript
+```js
 wasm.greet("Your name");
 ```
 
@@ -504,7 +504,7 @@ index(row, column, universe) = row * width(universe) + column
 
 从删除 greet 函数，并定义宇宙中的细胞开始。
 
-```Rust
+```rs
 #[wasm_bindgen]
 #[repr(u8)]
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
@@ -518,7 +518,7 @@ pub enum Cell {
 
 接下来定义宇宙，一个宇宙包括宽度，高度和一个向量的细胞。
 
-```Rust
+```rs
 #[wasm_bindgen]
 pub struct Universe {
     width: u32,
@@ -529,7 +529,7 @@ pub struct Universe {
 
 访问并转换细胞的实现如下。
 
-```Rust
+```rs
 impl Univers {
     fn get_index(&self, row: u32, column: u32) -> usize {
         (row*self.width + column) as usize
@@ -539,7 +539,7 @@ impl Univers {
 
 为了计算细胞接下来的状态，我们要统计某个细胞有多少个邻居存活。
 
-```Rust
+```rs
 impl Univers {
     fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
         let mut count = 0;
@@ -562,7 +562,7 @@ impl Univers {
 
 这个函数使用取余处理边界问题。现在我们已经有所有的必须函数了，最后只需要生成下一刻的状态即可（记住，每个函数必须在`#[wasm_bindgen]`属性之下，这样 JavaScript 才能接到暴露的函数）。
 
-```Rust
+```rs
 #[wasm_bindgen]
 impl Universe {
     pub fn tick(&mut self) {
@@ -594,7 +594,7 @@ impl Universe {
 
 通过实现 Rust 标准库中的`Display`trait，我们可以将数据结构以一种用户交互方式输出，它也提供了一个`to_string`方法。
 
-```Rust
+```rs
 use std::fmt;
 
 impl fmt::Display for Universe {
@@ -613,7 +613,7 @@ impl fmt::Display for Universe {
 
 最后，我们定义一个构造器去初始化一个有趣的图案和一个渲染函数。
 
-```Rust
+```rs
 #[wasm_bindgen]
 impl Universe {
   pub fn new() -> {
@@ -673,20 +673,20 @@ body {
 
 修改 JavaScript 入口文件，将原来引入的 greet 函数改为 Universe。
 
-```JavaScript
+```js
 import { Universe } from "wasm-game-of-life";
 ```
 
 让我们在那个<pre>标签中增加新的宇宙实例吧。
 
-```JavaScript
+```js
 const pre = document.getElementById("game-of-life-canvas");
 const universe = Universe.new();
 ```
 
 使用 JavaScript 创建一个 requestAnimationFrame 循环，每一次循环，就在<pre>标签中绘制一遍宇宙，并执行一次`Universe::tick`。
 
-```JavaScript
+```js
 function renderLoop() {
   pre.textContent = universe.render();
   universe.tick();
@@ -718,7 +718,7 @@ function renderLoop() {
 
 为了能拿到 Rust 中的相关数据结构，我们需要为宇宙增加 getter 函数，暴露宇宙的宽度、高度和细胞的向量。增加如下函数。
 
-```Rust
+```rs
 #[wasm_bindgen]
 impl Universe {
   pub fn width(&self) -> u32 {
@@ -737,7 +737,7 @@ impl Universe {
 
 接下来，在 JavaScript 中，引入 Cell，并设置几个渲染画布的常量。
 
-```JavaScript
+```js
 import { Universe, Cell } from "wasm-game-of-life";
 
 const CELL_SIZE = 5;
@@ -748,7 +748,7 @@ const LIVE_COLOR = "#000000";
 
 接下来修改实现 canvas 的部分。
 
-```JavaScript
+```js
 const universe = Universe.new();
 const width = universe.width();
 const height = universe.height();
@@ -771,7 +771,7 @@ function renderLoop() {
 
 世界的网格，是一系列等宽的竖线和横线。
 
-```JavaScript
+```js
 function drawGrid() {
   ctx.beginPath();
   ctx.strokeStyle = GRID_COLOR;
@@ -792,7 +792,7 @@ function drawGrid() {
 
 我们可以直接访问 WebAssembly 的内存，他是直接定义在`wasm_game_of_life_bg`。为了画细胞，我们先找到一个细胞的指针，并将它们转换成 Unit8Array，迭代这些细胞，并按照他们的生命状态绘制白色和黑色方块。计量避免复制所有细胞。
 
-```JavaScript
+```js
 import { memory } from "wasm-game-of-life/wasm_game_of_life_bg";
 
 function getIndex(row, column) {
@@ -832,7 +832,7 @@ function drawCells() {
 
 开始渲染，需要添加以下表达式。
 
-```JavaScript
+```js
 drawGrid();
 drawCells();
 requestAnimationFrame(renderLoop);
@@ -877,7 +877,7 @@ js-sys="0.3"
 
 接下来使用 js 的随机函数
 
-```Rust
+```rs
 extern crate js_sys;
 
 if js_sys::Math::random() < 0.5 {
@@ -893,7 +893,7 @@ if js_sys::Math::random() < 0.5 {
 
 在 Rust 中，使用 fixedbitset 代替`Vec<Cell>`;
 
-```Rust
+```rs
 extern crate fixedbitset;
 use fixedbitset::FixedBitSet;
 
@@ -907,7 +907,7 @@ pub struct Universe {
 
 宇宙的构造器应该这么修改。
 
-```Rust
+```rs
 pub fn new() -> Universe {
   let width = 64;
   let height = 64;
@@ -929,7 +929,7 @@ pub fn new() -> Universe {
 
 使用 FixedBitSet 的 set 方法更新宇宙的下一刻。
 
-```Rust
+```rs
 next.set(idx, match (cell, live_neighbors) {
   (true, x) if x<2 => false,
   (true, 2) | (true, 3) => true,
@@ -941,7 +941,7 @@ next.set(idx, match (cell, live_neighbors) {
 
 传输指针的时候，需要返回 slice。
 
-```Rust
+```rs
 #[wasm_bindgen]
 impl Universe {
   pub fn cells(&self) -> *const u32 {
@@ -952,7 +952,7 @@ impl Universe {
 
 在 JavaScript 中，构造 Unit8Array 的时候需要除以 8，以为我们是以 bit 存储细胞的。
 
-```JavaScript
+```js
 const cells = new Unit8Array(
   memory.buffer,
   cellsPtr,
@@ -962,7 +962,7 @@ const cells = new Unit8Array(
 
 通过判断 Unit8Array 是否被赋值而判断细胞是否是活着的。
 
-```JavaScript
+```js
 function bitIsSet(n, arr) {
   const byte = Math.floor(n/8);
   const mask = 1<<(n%8);
@@ -972,7 +972,7 @@ function bitIsSet(n, arr) {
 
 根据以上变化，新版本的 drawCells 如下。
 
-```JavaScript
+```js
 function drawCells() {
   const cellsPtr = universe.cells();
   const cells = new Unit8Array(
@@ -1012,7 +1012,7 @@ function drawCells() {
 
 接下来，我们将处理 Universe 的 setter 函数，让我们能构造不同大小的 universe。
 
-```Rust
+```rs
 #[wasm_bindgen]
 impl Universe {
   pub fn set_width(&mut self, width: u32) {
@@ -1031,7 +1031,7 @@ impl Universe {
 
 接下来我们要写一个 get_cells 来获得细胞，和一个 set_cells 来设置哪些细胞是活的，哪些是死的。
 
-```Rust
+```rs
 impl Universe {
   pub fn get_cells(&self) -> &[Cell] {
     &self.cells
@@ -1052,7 +1052,7 @@ impl Universe {
 
 在`test/web.rs`中，我们需要到处 Universe 类型。
 
-```Rust
+```rs
 extern crate wasm_game_of_life;
 use wasm_game_of_life:Universe;
 ```
@@ -1061,7 +1061,7 @@ use wasm_game_of_life:Universe;
 
 我们要构造一个 tick 函数执行之前的飞船，和一个 tick 函数执行后的期望值。
 
-```Rust
+```rs
 #[cfg(test)]
 pub fn input_spaceship() -> Universe {
   let mut universe = Universe::new();
@@ -1098,7 +1098,7 @@ pub fn expected_spaceship() -> Universe {
 
 现在我们写一个 test_tick 函数，创建以上的两个飞船。最后使用`assert_eq!`宏比较 expected_ship 来确保 tick 函数运行正确。我们添加`#[wasm_bindgen_test]`属性保证这个函数可以在 WebAssembly 环境下测试。
 
-```Rust
+```rs
 #[wasm_bindgen_test]
 pub fn test_tick() {
   let mut input_universe = input_spaceship();
@@ -1141,7 +1141,7 @@ debug = true
 
 我们可以使用 web-sys 包去调用 console API。
 
-```Rust
+```rs
 extern crate web_sys;
 
 web_sys::console::log_1(&"Hello, world!".into());
@@ -1169,7 +1169,7 @@ web_sys::console::log_1(&"Hello, world!".into());
 
 你只需要增加调用这个钩子函数。
 
-```Rust
+```rs
 #[wasm_bindgen]
 pub fn init_panic_hook() {
   console_error_panic_hook::set_once();
@@ -1203,7 +1203,7 @@ crate-type ["cdylib", "rlib"]
 
 在``src/utils.rs`里面有一个可选的 console_error_panic_hook 包，可以在 Universe 初始化的时候调用它。
 
-```Rust
+```rs
 pub fn new() -> Universe {
   utils::set_panic_hook();
 }
@@ -1225,7 +1225,7 @@ features = [
 
 为了高效，我们把`console.log`函数封装到`println!`一样的宏中。
 
-```Rust
+```rs
 extern crate web_sys;
 
 macro_rules! log {
@@ -1237,7 +1237,7 @@ macro_rules! log {
 
 现在可以通过调用 log 发送日志了。
 
-```Rust
+```rs
 log!(
   "cell[{}, {}] is initially {:?} and has {} live neighbors",
   row,
@@ -1283,7 +1283,7 @@ log!(
 
 我们引入 animationId 变量，保存 requestAnimationFrame 的结果。当没有排队的动画时，这个变量值为 null。
 
-```JavaScript
+```js
 let animationId = null;
 
 function renderLoop() {
@@ -1298,7 +1298,7 @@ function renderLoop() {
 
 任何一个时间，我们可以通过判断 animationId 来判断这个动画是否被暂停。
 
-```JavaScript
+```js
 function isPaused() {
   return animationId === null;
 }
@@ -1306,7 +1306,7 @@ function isPaused() {
 
 现在，当播放暂停键被点击，当正在播放时，暂停动画。并把按钮的状态改为播放。
 
-```JavaScript
+```js
 const playPauseButton = document.getElementById("play-pause");
 
 function play() {
@@ -1337,7 +1337,7 @@ playPauseButton.addEventListener("click", function playBtnListener(event) {
 
 想控制细胞的生死，需要给`src/lib.rs`下的 Cell 增加一个 toggle 函数。
 
-```Rust
+```rs
 impl Cell {
     fn toggle(&mut self) {
         *self = match *self {
@@ -1350,7 +1350,7 @@ impl Cell {
 
 想要修改在宇宙中的细胞需要获得细胞的行纵值，并转换为细胞的序号。
 
-```Rust
+```rs
 #[wasm_bindgen]
 impl Universe {
     pub fn toggle_cell(&mut self, row: u32, column: u32) {
@@ -1362,7 +1362,7 @@ impl Universe {
 
 这个方法增加第 1 行的属性声明是为了能够在 JavaScript 环境里面直接调用。在 JavaScript 文件中，监听<canvas>标签，将页面上的点击事件转换成画布上的点击事件，并调用 toggle_cell 方法重绘场景。
 
-```Rust
+```rs
 canvas.addEventListener("click", function canvasClickListener(event) {
   const boundingRect = canvas.getBoundingClientRect();
 
@@ -1408,7 +1408,7 @@ canvas.addEventListener("click", function canvasClickListener(event) {
 
 我们可以通过`web-sys`调用时间函数。
 
-```Rust
+```rs
 extern crate web_sys;
 
 fn now() -> f64 {
@@ -1456,7 +1456,7 @@ fn now() -> f64 {
 
 我们在 JavaScript 增加 fps 对象。
 
-```JavaScript
+```js
 const fps = new class {
   constructor() {
     this.fps = document.getElementById("fps");
@@ -1503,7 +1503,7 @@ max of last 100 = ${Math.round(max)}
 
 接下来再每次迭代中调用 fps render 函数。
 
-```JavaScript
+```js
 const renderLoop = () => {
     fps.render(); //new
 
@@ -1517,13 +1517,13 @@ const renderLoop = () => {
 
 最后在 HTML 中增加 fps 的展示。
 
-```JavaScript
+```js
 <div id="fps"></div>
 ```
 
 增加 CSS，让它展示得更好。
 
-```CSS
+```css
 #fps {
   white-space: pre;
   font-family: monospace;
@@ -1548,7 +1548,7 @@ features = [
 
 因为每次执行`console.time`后总要执行`console.timeEnd`，把他们包再[RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization)类型下就会更加便利。
 
-```Rust
+```rs
 extern crate web_sys;
 use web_sys::console;
 
@@ -1572,7 +1572,7 @@ impl<'a> Drop for Timer<'a> {
 
 接下来，统计每一刻用的时间是多久，只需把初始化 Timer 放到 Universe 的构造函数里。
 
-```Rust
+```rs
 let _timer = Timer::new("Universe::tick");
 ```
 
@@ -1606,7 +1606,7 @@ let _timer = Timer::new("Universe::tick");
 
 在 drawCell 上面，fillStyle 在每次动画和每个细胞上面使用。
 
-```JavaScript
+```js
 for (let row = 0; row < height; row++) {
   for (let col = 0; col < width; col++) {
     const idx = getIndex(row, col);
@@ -1627,7 +1627,7 @@ for (let row = 0; row < height; row++) {
 
 现在我们知道 fillStyle 资源耗费比较多，那么我们该怎么避免他呢？我们需要判断细胞的生命状态来自决定 fillStyle 的值，设想，如果先设定`fillStyle = ALIVE_COLOR`，再绘制所有的活着的细胞，然后设置`fillStyle = DEAD_COLOR`，再设置所有的死细胞，最后我们只设置 fillStyle 两次。
 
-```JavaScript
+```js
 // Alive cells.
 ctx.fillStyle = ALIVE_COLOR;
 for (let row = 0; row < height; row++) {
@@ -1679,7 +1679,7 @@ for (let row = 0; row < height; row++) {
 
 有些人可能不喜欢等待，更希望一帧跑完九刻而不是一刻。我们可以通过修改 renderLoop 函数实现。
 
-```JavaScript
+```js
 for (let i = 0; i < 9; i++) {
   universe.tick();
 }
@@ -1689,7 +1689,7 @@ for (let i = 0; i < 9; i++) {
 
 现在我们知道性能瓶颈在 tick 函数上面，所以我们给函数的每一步都加上 Timer 监视，我猜测是创建向量和释放向量占用了很多资源造成的。
 
-```Rust
+```rs
 pub fn tick(&mut self) {
     let _timer = Timer::new("Universe::tick");
 
@@ -1741,7 +1741,7 @@ pub fn tick(&mut self) {
 
 让我们写一个函数使用`#[bench]`属性，我们可以使用更成熟的测试工具测试它。
 
-```Rust
+```rs
 #![feature(test)]
 
 extern crate test;
@@ -1803,7 +1803,7 @@ perf 会指明函数中到底是什么操作引起的性能损耗（译者：虽
 
 回想这个函数的定义：
 
-```Rust
+```rs
 fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
     let mut count = 0;
     for delta_row in [self.height - 1, 0, 1].iter().cloned() {
@@ -1824,7 +1824,7 @@ fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
 
 使用取余运算是为了避免使用杂乱的 if 代码来处理边界，但导致我不得不用 DIV 这样比较耗费性能的指令。相反，如果用 if 处理边界，并展开循环，则分支条件将会比较适合 CPU 处理。
 
-```Rust
+```rs
 fn live_neighbor_count(&self, row: u32, column: u32) -> u8 {
     let mut count = 0;
 
@@ -2057,7 +2057,7 @@ find target/release -type f -name '*.ll'
 
 安全的方式是使用 abort 方法而不是返回 None 和 Error 值。
 
-```Rust
+```rs
 #[inline]
 pub fn unwrap_abort<T>(o: Option<T>) -> T {
   use std::process;
@@ -2082,7 +2082,7 @@ Rust 的默认调用器是`dlmalloc`的一部分。它能达到 10KB。如果能
 
 当你创建一些泛型函数。
 
-```Rust
+```rs
 fn whatever<T: MyTrait>(t: T) { ... }
 ```
 
@@ -2090,7 +2090,7 @@ fn whatever<T: MyTrait>(t: T) { ... }
 
 如果你为对象提供 trait，如下：
 
-```Rust
+```rs
 fn whatever(t: Box<MyTrait>) { ... }
 // or
 fn whatever(t: &MyTrait) { ... }
@@ -2186,7 +2186,7 @@ WebAssembly 模块声明了一系列引入，每一个都有模块名。模块�
 
 导出的 WebAssembly 线性内存被导出作"memory"。
 
-```Rust
+```rs
 // import a JS function called `foo` from the module `mod`
 #[link(wasm_import_module = "mod")]
 extern { fn foo(); }
@@ -2226,7 +2226,7 @@ ES6 的模块包括从 Rust 暴露给 JavaScript 的函数，现在可以用 Jav
 
 在 Rust 中，自定义部分是通过`#[link_section]`属性暴露的静态数组([T; size])。
 
-```Rust
+```rs
 #[link_section = "hello"]
 pub static SECTION: [u8; 24] = *b"This is a custom section";
 ```
@@ -2235,7 +2235,7 @@ pub static SECTION: [u8; 24] = *b"This is a custom section";
 
 这个自定义内容可以被 JavaScript 通过[`WebAssembly.Module.customSections`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections)获得自定义部分，它返回一个`ArrayBuffer`，如果有同名的部分，他们会被放到一个数组中。
 
-```JavaScript
+```js
 WebAssembly.compileStreaming(fetch("sections.wasm"))
 .then(mod => {
   const sections = WebAssembly.Module.customSections(mod, "hello");

@@ -38,7 +38,7 @@ tag:
 
 svelte 符合响应式模式，这一点和 riotjs 很类似，借助 svelte 这个编译器，写好的组件会被编译成响应式函数。也许拿 riotjs 做比方会比较难，这里拿 react 做比方，在 react 中实现响应式需要使用`setState()`。
 
-```JavaScript
+```js
 const Com = () => {
     const [state, setState] = useState(1);
     useEffect(() => setState(state + 1), [])
@@ -59,7 +59,7 @@ const Com = () => {
 
 而由于 svelte 是个编译器，svelte 里面不仅代码更少，而且正确的输出了`stateX2`的值。
 
-```HTML
+```html
 <script>
 import { onMount } from "svelte";
 

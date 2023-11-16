@@ -13,7 +13,7 @@ tag:
 
 我记得曾有一段时间，好像是使用 YUI 那会儿，CSS 的 class 往往会命名成布局规则，比如希望一个 div 有 10 像素的留白，就给他添加一个 class，`.margin-10px`，然后对这个 class 的描述为。
 
-```CSS
+```css
 .margin-10px {
     margin: 10px;
 }
@@ -35,7 +35,7 @@ tag:
 
 就拿前面的`.avatar`来举例，使用 tailwind 的代码应如下（注意 tailwind 单位不是 px 而是 rem，这里假定 html 的字体大小为 10px）。
 
-```CSS
+```css
 .avatar {
     @apply m-4;
     @apply p-2;

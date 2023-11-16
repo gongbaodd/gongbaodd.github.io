@@ -30,7 +30,7 @@ final screenWidth = screenSize.width;
 
 在安卓的 MainActivity 中可以调用如下方法向 Flutter 传递表盘状态，注意因为是 Wear OS，所以在`Android/app/build.gradle`修改`minSdkVersion`为 23，并在以下依赖中增加以下项目。
 
-```gradle
+```groovy
 dependencies {
     ...
     implementation 'com.android.support:wear:27.1.1'

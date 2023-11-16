@@ -36,7 +36,7 @@ css很尴尬，我想用postcss，但貌似meteor的postcss包并不是很给力
 
 要用到Apollolink，在请求头里面添加meteor-login-token，在后面的 resolver 里面的 context 对象里面就有 userId 这个值了。
 
-```JavaScript
+```js
 const apolloLink = new ApolloLink(
     (operation, forward) => {
         const token = Accounts._storedLoginToken();

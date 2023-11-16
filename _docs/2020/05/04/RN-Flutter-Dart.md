@@ -40,7 +40,7 @@ function startHere() {
 
 Dart 有一个顶级`main()`函数作为入口函数使用。
 
-```Dart
+```dart
 main() {}
 ```
 
@@ -54,7 +54,7 @@ main() {}
 console.log("Hello JavaScript!");
 ```
 
-```Dart
+```dart
 print("Hello Dart!");
 ```
 
@@ -74,7 +74,7 @@ var name = "JavaScript";
 
 在 Dart 中，变量必须声明类型，或者让系统能够预判类型。
 
-```Dart
+```dart
 String name = "Dart";
 var otherName = "Dart";
 ```
@@ -106,7 +106,7 @@ int x; // null
 
 在 JavaScript 中非空对象被认为是真值。
 
-```JavaScript
+```js
 var myNull = null;
 if (!myNull) {
   console.log("null是假值");
@@ -119,7 +119,7 @@ if (!zero) {
 
 Dart 中，只有布尔真值是真值。
 
-```Dart
+```dart
 var myNull = null;
 if (myNull == null) {
   print("使用 == null 做空值检查");
@@ -136,7 +136,7 @@ if (zero == 0) {
 
 两个语言的函数基本上相同。
 
-```JavaScript
+```js
 function fn() {
   return true;
 }
@@ -179,7 +179,7 @@ getIp()
 
 而在 Dart 中，使用 [Future](https://dart.dev/tutorials/language/futures) 对象处理异步。
 
-```Dart
+```dart
 import "dart:convert";
 import "package:http/http.dart" as http;
 

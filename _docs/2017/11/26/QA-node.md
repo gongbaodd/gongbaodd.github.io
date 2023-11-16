@@ -85,12 +85,12 @@ var a = "浏览器下打印日志";
 console.log(a);
 ```
 
-```JavaScript
+```js
 var a = ".Net下打印日志";
 print(a);
 ```
 
-```JavaScript
+```js
 var a = "Node.js下打印日志";
 console.log(a);
 ```

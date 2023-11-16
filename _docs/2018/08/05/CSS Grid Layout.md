@@ -41,7 +41,7 @@ category: fe
 
 很简单，使用 Grid Layout 的最大好处是页面布局由CSS全部接管，意味着想把```.item5```改成header只需要修改```grid-area```即可，```grid-template-area```结合 media query　可以实现适配不同设备，如打印机布局相比于屏幕来说界面比较窄。
 
-```CSS
+```css
 @media print {
     .grid {
         grid-template-area: "header"

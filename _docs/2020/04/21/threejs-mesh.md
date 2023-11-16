@@ -20,7 +20,7 @@ series:
 
 可以使用 JSX 创建 mesh, 因为 mesh 有 material 和 geometry 两个访问器，在 JSX 中可以作为属性使用。
 
-```JavaScript
+```js
 export default () => (
     <Canvas>
         <mesh
@@ -34,7 +34,7 @@ export default () => (
 
 当然作为参数也可以。
 
-```JavaScript
+```js
 export default () => (
     <Canvas>
         <mesh arg={[new BoxBufferGeometry(1, 1, 1), new MeshBasicMaterial()]}/>
@@ -44,7 +44,7 @@ export default () => (
 
 官网还提供了一个绝妙的方法。
 
-```JavaScript
+```js
 // 实现不了，不知道咋回事儿
 export default () => (
     <Canvas>
@@ -58,7 +58,7 @@ export default () => (
 
 另外因为 Canvas 里面的元素和 JSX 的绑定使用的是 memo，所以如果使用 primitive 定义元素的时候会丢。
 
-```JavaScript
+```js
 // 这么做虽然会渲染出来，但是Box有的时候会丢
 const Box = new Mesh(
     new BoxBufferGeometry(1, 1, 1),
@@ -76,7 +76,7 @@ export default () => (
 
 加载 texture 时，可以使用`useEffect`自己写，当然也有更优雅的方法，利用 react 自己的`useMemo`或者`useCallback`，再就是使用 react three fiber 的`useLoader`。
 
-```JavaScript
+```js
 // 使用 useMemo
 const Plane = () => {
     const texture = useMemo(() => new TextureLoader().load("xxx.jpg"), [])
@@ -87,7 +87,7 @@ const Plane = () => {
 }
 ```
 
-```JavaScript
+```js
 // 使用 useLoader
 const PlaneAsync = () => {
     const [texture] = useLoader(TextureLoader, "xxx.jpg");
@@ -111,7 +111,7 @@ three react fiber 会默认给一个场景(scene)、一个摄像头(camera)还�
 
 首先要使用`setDefaultCamera`将新建的摄像头代替默认摄像头。
 
-```TypeScript
+```ts
 export default () => {
     const { setDefaultCamera } = useThree();
     const camera = useRef<PerspectiveCamera>();
@@ -127,7 +127,7 @@ export default () => {
 
 接下来是创建场景，场景不需要代替原有场景，但是需要使用`useFrame`修改`render`方法。
 
-```TypeScript
+```ts
 // 再原画面的左上角绘制场景
 export default () => {
     const scene = useRef<Scene>();
