@@ -1,9 +1,7 @@
 GENERATOR_DIR=./generator
-if [ ! -d "$GENERATOR_DIR" ]; then
-    git clone https://github.com/gongbaodd/blog.gongbushang.com.git $GENERATOR_DIR
-fi
+rm -Rf $GENERATOR_DIR
+git clone https://github.com/gongbaodd/blog.gongbushang.com.git $GENERATOR_DIR
 cd $GENERATOR_DIR
-echo "entering ${GENERATOR_DIR}"
 git pull
 rm -Rf ./src/content/blog/
 cp -Rf ../_docs ./src/content/blog
