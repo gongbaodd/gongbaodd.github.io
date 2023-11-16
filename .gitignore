@@ -75,3 +75,5 @@ yarn-error.log
 
 reduxcache*/
 *.Identifier
+
+generator/
