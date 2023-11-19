@@ -9,7 +9,7 @@ tag:
     - scavengers-reign
 ---
 
-# Too many TV endings this week
+# Week 46: Too many TV endings this week
 
 ## Loki
 
