@@ -90,7 +90,7 @@ npx create-react-app awesome --scripts-version=react-scripts-ts
         </span>
 ```
 
-图标添加数字角标,默认右上(指定位置: fa-layers-${bottom|top}-${left|right}).
+图标添加数字角标,默认右上(指定位置: `fa-layers-${bottom|top}-${left|right}`).
 
 ```jsx
         <span className="fa-layers fa-fw">

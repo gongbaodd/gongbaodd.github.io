@@ -3,12 +3,13 @@ type: post
 category: fe
 ---
 
-#ionic官方Todo Guide
+# ionic官方Todo Guide
 >代码在<br>https://github.com/gongbaodd/myExperinments/tree/ionic_todo
 一直想写一个app，但是懒得设计，看到ionic官方有个guide而且没有中文版，所以写一个。
 
 ---
 1. 在head中添加对应的css和js
+```html
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title></title>
@@ -17,17 +18,21 @@ category: fe
         <script src="lib/ionic/js/ionic.bundle.js"></script>
         <script src="cordova.js"></script>
         <script src="js/app.js"></script>
-        
+```        
 2. body添加controller
-        <body ng-app="todo" ng-controller="TodoCtrl">
+```html
+        <body ng-app="todo" ng-controller="TodoCtrl"> 
+```
         
 3. Todo的界面，分别是左边栏（负责分配todo的类型——projects）和主界面（负责分配每一个todo项——tasks）
+```html
         <ion-side-menus>
             <ion-side-menu-content>...</ion-side-menu-content>
             <ion-side-menu side="left">...</ion-side-menu>
         </ion-side-menus>
-      
+```      
 4. Todo的行为
+```js       
         angular.module('todo',['ionic'])
         .factory('Projects',function() {
             ...
@@ -35,8 +40,9 @@ category: fe
         .controller('TodoCtrl',function($scope,$timeout,$ionicModal,Projects,$ionicSideMenuDelegate) {
             ...
         })
-
+```
 5. 左边栏结构
+```html
         <ion-header-bar class="bar-dark">
             <h1 class="title">Projects</h1>
             <button class="button button-icon ion-plus" ng-click="newProject()"></button>
@@ -48,8 +54,9 @@ category: fe
                 </ion-item>
             </ion-list>
         </ion-content>
-        
+```        
 6. 左边栏行为
+```js
         .factory('Projects',function() {
         return {
             all:function(){
@@ -76,8 +83,9 @@ category: fe
             }
         }
         })
-        
+```        
 7. 主界面结构
+```html
         <ion-header-bar class="bar-dark">
             <h1 class="title">Todo</h1>
             <!--                New Task button-->
@@ -93,8 +101,9 @@ category: fe
                </ion-item>
             </ion-list>
         </ion-content>
-        
+```        
 8. 主界面行为
+```js
         .controller('TodoCtrl',function($scope,$timeout,$ionicModal,Projects,$ionicSideMenuDelegate) {
     
         var createProject = function(projectTitle){
@@ -165,8 +174,9 @@ category: fe
             }
         })
         });
-        
+```        
 9. 新建项目的模态对话框
+```html
         <script id="new-task" class="html" type="text/ng-template">
             <div class="modal">
             <!--        Modal header bar-->
@@ -189,3 +199,4 @@ category: fe
                 </ion-content>
             </div>
         </script>
+```
