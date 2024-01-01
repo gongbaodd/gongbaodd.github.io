@@ -32,3 +32,9 @@ I want to continue my study in BEFdev. And I will build some new tools with reac
 I will try anabolics in gym. And I will try to get a remote job in Thailand.
 
 I want to apply a school to further my study in VR.
+
+## My Yearly Gadget
+
+- Quest 3
+- GL-iNet Wifi
+- Surface Dial
