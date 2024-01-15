@@ -32,3 +32,7 @@ Using Lazada can pay electric bills, only charge 5 baht, lower than 711, which i
 ## Expo.io
 
 Another thing I did in this week, is that I finished an expo tutorial, this time is not for an android App, I am planning to make iOS apps this year.
+
+## CES
+
+Lenovo's Android Windows mix laptop is cool
