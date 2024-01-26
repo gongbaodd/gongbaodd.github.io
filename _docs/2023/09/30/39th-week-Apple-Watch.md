@@ -1,6 +1,11 @@
 ---
 type: post
 category: plan
+tags:
+    - VMware
+    - Mac
+    - Apple Watch
+    - Sonoma
 ---
 
 # 39th Week - Apple Watch
