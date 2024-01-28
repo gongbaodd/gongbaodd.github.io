@@ -1,6 +1,13 @@
 ---
 type: post
 category: plan
+tag:
+    - Nx
+    - NativeWind
+    - solito
+    - ignite
+    - meta spark
+    - same-site Cookie
 ---
 # Week3: Apple Developer Account
 
