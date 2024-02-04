@@ -37,10 +37,10 @@ xcodebuild -list -project <project_name>.xcodeproj
 Besides the `.xcodeproj` file there should be a `.xcworkspace` file. Use the scheme to make an archive.
 
 ```bash
-xcodebuild -workspace <project_name>.xcworkspace -scheme <scheme_name> -configuration Release clean archive -achivePath usigned.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+xcodebuild -workspace <project_name>.xcworkspace -scheme <scheme_name> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
 ```
 
-then, you will get an `usigned.xcarchive` file.
+then, you will get an `unsigned.xcarchive` file.
 
 ### Finally, make the ipa file
 
