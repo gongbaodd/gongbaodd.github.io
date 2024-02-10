@@ -105,3 +105,7 @@ Yes, I checked some other frameworks. Like ionic, sadly it was still in a PWA st
 ## TV
 
 `Mr & Mrs Smith` an under covered marriage drama, good to watch.
+
+## Food
+
+Tried KFC in Thailand. Price is cheaper than Mcdonald. Not so tasty, beverage is self-helped.
