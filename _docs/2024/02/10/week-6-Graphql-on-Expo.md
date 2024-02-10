@@ -102,3 +102,6 @@ And test, unit test, of course I will use vitest. But integration test is a litt
 
 Yes, I checked some other frameworks. Like ionic, sadly it was still in a PWA status. I mean since transition view was out, we should try some multiple page stuff. But they have their reason, iOS have not support transition view yet. This is [a video about running astro 3.0 on ionic](https://www.youtube.com/watch?v=ZFNwTJiDEvU&ab_channel=SimonGrimm).
  
+## TV
+
+`Mr & Mrs Smith` an under covered marriage drama, good to watch.
