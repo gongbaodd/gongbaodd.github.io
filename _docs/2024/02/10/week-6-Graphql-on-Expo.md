@@ -13,7 +13,7 @@ tag:
 ---
 # Week 6: Graphql on Expo
 
-In [2023/05/29](../../../2023/05//29/21st-week-cloudflare-workers-and-graphql-yoga.md), I wrote about how to use graphql-yoga in cloudflare worker. This week I tried to make another API and use URQL as a client in Expo Go.
+In [2023/05/29](../../../2023/05//29/21st-week-cloudflare-workers-and-graphql-yoga), I wrote about how to use graphql-yoga in cloudflare worker. This week I tried to make another API and use URQL as a client in Expo Go.
 
 ## Cloudflare Worker
 
