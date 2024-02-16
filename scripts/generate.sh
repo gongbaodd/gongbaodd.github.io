@@ -5,5 +5,5 @@ cd $GENERATOR_DIR
 git pull
 rm -Rf ./src/content/blog/
 cp -Rf ../_docs ./src/content/blog
-npm install
-npm run build
+yarn
+yarn build
