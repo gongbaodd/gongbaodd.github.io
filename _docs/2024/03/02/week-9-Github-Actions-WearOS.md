@@ -11,6 +11,7 @@ tag:
     - SwiftWebUI
     - rust
     - swift
+    - zhou-chu
 ---
 # Week 9: Github Actions and WearOS
 
@@ -50,3 +51,6 @@ This means, I can write swiftUI on Linux, combine CRUX to make a cross-platform 
 
 Last year, one of my major study is babylon.js. Since I have an iPhone now, I wanted to build [babylon react native](https://www.babylonjs.com/reactnative/) on my phone. Sadly, the project only supports iOS 12 (I'm using 17). I guess I gonna give up on this. Expo might be a better choice. And what's more. I found this [viro react](https://viro-community.readme.io/docs/overview) which also uses ARkit and ARCore to build AR apps. It has a project to support oculus, but It is obsolete now. I think I will try it some time later.
 
+## Zhou Chu
+
+Zhou Chu(周处除三害), The pidgen the pig and the snake. A nice taiwan movie. Very satisfying kind like hong kong movie. Must see in 2024.
