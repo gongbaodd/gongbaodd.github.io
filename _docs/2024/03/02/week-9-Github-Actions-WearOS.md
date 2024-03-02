@@ -28,7 +28,7 @@ I finally bought a galaxy watch 6 classic. It is on the way. This week, as plane
 
 I mentioned that flutter supports wearOS. Yes, I can build flutter, and the apk is 50MB just the same to the native one. Sadly, the scaffold package, which has pre-build watch sizes was obsolete. I don't think digging too deep is a good idea. But I still read the [blog](https://verygood.ventures/blog/building-wear-os-apps-with-flutter-a-very-good-guide).
 
-I also found this [watchOS tutorial](https://www.youtube.com/watch?v=DfWQV_NaS9I&ab_channel=CredoAcademy) from Credo Academy. I will try it next week.
+I also found this [watchOS tutorial](https://www.youtube.com/watch?v=DfWQV_NaS9I&ab_channel=CredoAcademy) from Credo Academy. Also I found this official [WatchOS Swift UI document](https://developer.apple.com/documentation/watchos-apps/creating-an-intuitive-and-effective-ui-in-watchos-10). I will try it next week.
 
 ## CRUX: cross-platform app using rust
 
