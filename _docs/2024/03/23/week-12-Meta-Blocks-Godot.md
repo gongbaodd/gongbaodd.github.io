@@ -15,3 +15,8 @@ Last week, I used most time to learn unity. I bumped into some problems. For the
 Another thing, because I kept get new pushes from godot. So I tried to use it follow [this video](https://www.youtube.com/watch?v=7XWyZblSnZA&t=264s) this week. Turns out to make a XR app is much easier than unity. The [documents](https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4) are clear.
 
 Godot is cool, but since meta toolkit is easy enough. I will still use unity for a while.
+
+## Avatar: Legend of Korra
+
+Finished the two series of Avatar. Masterpiece. Different from avatar Ang. Avatar Korra is born in a more modern world. Avatar Ang ends the fire nation's invasion. But after he died, there are still two things unfinished. Rebuild the air nation and the peace of the newly built republic city. Left Korra to finish.
+
