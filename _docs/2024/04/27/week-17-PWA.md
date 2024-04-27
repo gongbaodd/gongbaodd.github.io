@@ -17,3 +17,7 @@ Just finished a Thai language exam. Learnt some Thai words from [PrayutChen](htt
 ## Tattoo ideas
 
 [tatuants](https://www.tatuantes.com/) provides some tattoo ideas.
+
+## Fallout
+
+Fallout is a Game based TV series. It tells a world after the nuclear war. Three main characters, one from the shelter, one from the land and another was half man half zombie. I can't say it's enjoyable to watch, although many people recommend it. I am not fond of the art style, it feels like bad CG. And the story is easy to guess.
