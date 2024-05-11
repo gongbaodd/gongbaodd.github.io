@@ -3,7 +3,7 @@ type: post
 category: plan
 ---
 
-# Cashless Bangkok
+# Week 18: Cashless Bangkok
 
 If you own a Thailand bankcard, you can use Prompt Pay as payment, which uses QRCode as identification to transfer, like alipay and wechat-pay.
 
