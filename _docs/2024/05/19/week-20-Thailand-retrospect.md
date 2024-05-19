@@ -43,6 +43,8 @@ The drinks are deep. Red bull is a Thailand drink which is famouse around world.
 
 Food in thailand is cheaper than in China. But you have to find out. I often go to terminal 21, where I can have a feast in about 100 Baht.
 
+A year in Thailand is all summer. But the April is unbearable, that's why there are a lot holidays in April. After April will be a lot rains, so the weather can be cooler.
+
 ## Others
 
 This week, I tried to use [msw](https://github.com/mswjs/msw) as a backend mocking service in testing. And I used [mediapipe's pose landmarker](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker) to make a training counter. And I found this [Threejs 中文网](http://www.webgl3d.cn/pages/001888/) a great help in learning threejs.
