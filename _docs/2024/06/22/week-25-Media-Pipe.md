@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tag:
+tags:
     - Media Pipe
     - getUserMedia
 ---
