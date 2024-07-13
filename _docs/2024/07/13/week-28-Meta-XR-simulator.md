@@ -2,7 +2,7 @@
 type: post
 category: plan
 ---
-# Week28: Android 14 and Meta XR simulator
+# Week 28: Android 14 and Meta XR simulator
 
 Most of this week I was working on trying new ROM on my phone and tablet. I have wrote another article about this. I tried to use Magisk to do some root stuff. Well, I lost the interests.
 
