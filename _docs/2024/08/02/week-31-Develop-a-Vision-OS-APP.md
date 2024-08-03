@@ -6,7 +6,7 @@ tags:
     - swiftData
 ---
 
-# Develop a Vision OS APP
+# Week 31: Develop a Vision OS APP
 
 Last week, I decide to work through Apple's [Develop in Swift tutorial](https://developer.apple.com/tutorials/develop-in-swift). Because I had already learnt Swift UI, so I skipped the Swift UI fundamentals part. 
 
