@@ -29,3 +29,5 @@ The 23rd, rainy. I met a lot friends. I went to the museum of banned books. List
 The 24th. I moved out of hostel to the school dorm. I was like totally hang over I slept all day.
 
 The 25th. I found a local asian food store. It only opens in afternoons. It very sunny about 28 degree. Erik, a norwegian friend said he is gonna die. However, all the International students got a big meet up. There were too many attendants made it looks like a parade. Even the boat on the shore blew for us. I've tried the water in the noon. So I jumped into the water with Erik. However, it's coastal, I got a lot cut. But it was very funny and crazy.
+
+And I met my roommate Svet. Very clean guy, who helped me clean the kitchen. Super expecting what will come the next week.
