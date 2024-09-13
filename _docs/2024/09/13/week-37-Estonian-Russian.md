@@ -6,7 +6,7 @@ tags:
     - Russian
 ---
 
-# Estonian and Russian
+# Week 37: Estonian and Russian
 
 It is officially my first study week. Last week is kind of a try on every courses. So, today I am going to talk about my first impression on these classes.
 
