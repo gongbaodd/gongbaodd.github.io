@@ -8,7 +8,7 @@ tag:
     - TTS
 ---
 
-# ChatGPT as Teachers
+# Week 39: ChatGPT as Teachers
 
 Yes, today is also about studying Estonian and Russian. But more on AI side. Right now, both two languages are about the changes on the verbs. Except for memorizing the words and handwriting, I also have to deal with the pronunciation. Then I realized that I can use ChatGPT. 
 
