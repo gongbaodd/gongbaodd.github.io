@@ -13,6 +13,6 @@ My deepest impression is [Jeremy Dalton](https://jeremydaltonxr.com/) from PWC. 
 
 Then [Ana Ribeiro](https://x.com/anagamedev) told stories about her way from student to VR game developer. And made a studio on pixel ripped.
 
-[VSight](https://x.com/vsightio) is like the game overcooked but in industry.
+[VSight](https://x.com/vsightio) using AR to help workers remotely. And another company [hansab](https://www.hansab.com/) is making a solution like the game overcooked but in industry.
 
 During the second days' session, I tried xReal ans vision pro. I also tried [7 sense](https://7sense.ee/) to help blind people to see the world.
