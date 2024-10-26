@@ -14,3 +14,11 @@ Linus kicked a lot Russian accounts out of the Linux community. A big shock in o
 I touched pixel watch for the first time. I really like the design. But I worry the pebble shell can not last long.
 
 Mac mini is like twice price here than PinDuoDuo. I know I will have 2 years' warranty. But it is a lot of money. Apple is going to announce new Mac mini. I hope it is not what I want. So I can hang out more not to decide to find a job.
+
+## Extraordinary
+
+I finished the second season of Extraordinary. Expecting the third season.
+
+## Bolt scooter
+
+My first try on bolt scooter. Super scared of the speed.
