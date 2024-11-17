@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+tags:
+    - devtool
+    - eruda
 ---
 # 30th week shader
 
