@@ -49,3 +49,4 @@ The last 4 months, I was studying games in Estonia. I will study in Estonia unti
 - try to attend GameDEV.js game jam
 - try to attend JS13K game jam
 - try to make a XR game
+- find a job in Estonia
