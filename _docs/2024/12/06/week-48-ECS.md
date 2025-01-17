@@ -7,6 +7,8 @@ tags:
 
 # Week 48: ECS
 
+> The following content will add more description after Jan 17 2025. I got some more ideas after I tried Unity DOTS.
+
 Because I am a web developer, I am more familiar with MVC design pattern. I have already heard of ECS design pattern in Game development. I decide to implement it in the Digital Graphic and Digital Sound Course work.
 
 The graphic idea is from [Airspace Defender](https://www.meta.com/en-gb/experiences/airspace-defender/7523170214434197/?srsltid=AfmBOoqRU1rANUexpLi7gnPuKhJrlrwnxUr5mEepMZagoInHAm6Uj7RC). Originally I want to make a webXR one using [p5xr](https://p5xr.org/). But it looks the project is not maintained for a long time. So I decide not to invest time on it this time.
