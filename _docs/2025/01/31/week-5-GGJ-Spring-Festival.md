@@ -1,6 +1,11 @@
 ---
 type: post
 category: plan
+tags:
+    - GGJ
+    - Spring Festival
+    - Deep Seek
+    - Janus
 ---
 # Week 5: Global Game Jam 2025 and Spring Festival in Tallinn
 
