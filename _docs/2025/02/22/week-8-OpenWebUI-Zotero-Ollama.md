@@ -16,7 +16,7 @@ tags:
 
 ## Godot XR Gamejam
 
-This week is the voting week of ![Godot XR Gamejam 2025](https://itch.io/jam/godot-xr-game-jam-feb-2025). I saw a lot good works.
+This week is the voting week of [Godot XR Gamejam 2025](https://itch.io/jam/godot-xr-game-jam-feb-2025). I saw a lot good works.
 
 - [Your Hand Is A Dragon (XR)](https://andyman404.itch.io/your-hand-is-a-dragon), your hand is a flying dragon.
 - [A Wizards Way](https://bearlikelion.itch.io/a-wizards-way), XR puzzle game.
