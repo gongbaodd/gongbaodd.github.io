@@ -16,6 +16,10 @@ Another thing, debugging on webassembly is not possible in Unity. You can debug 
 
 However, unity is still a good choice for gaming on web. But if I want a gamefy web page, I think js framework like three.js or babylon.js is still a better choice.
 
+## TypescriptGO
+
+Typescript 7 is going to be rewritten in go. I tried the prototype version. A lot function are not implemented yet. Since it will greatly improve the type checking process. I like it.
+
 ## TV Show
 
 ホットスポット is a Japanese TV drama that I started to watch this week. Talks about the main character finds her colleague is an alien. Very fun to watch and relax.
