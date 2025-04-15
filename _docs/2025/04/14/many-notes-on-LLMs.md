@@ -1,6 +1,10 @@
 ---
 type: post
 category: tech
+tags:
+    - embeddings
+    - MCP
+    - Yolo
 ---
 
 # Many notes on LLMs
@@ -16,3 +20,5 @@ It is interesting, but all the data are mocked. It cost me 1 dollar to just run 
 [OpenAI Embeddings and Vector Databases Crash Course](https://youtu.be/ySus5ZS0b94?si=ElnafGTi_q7Ss4cd)
 
 [$0 Embeddings (OpenAI vs. free & open source)](https://youtu.be/QdDoFfkVkcw?si=GkHlhI0ZLMkK8lTq)
+
+[yolo v10 本地部署与训练教程。](https://youtu.be/7YRJIAIhMpw?si=GpN6JzbjMCb9Lhtt)
