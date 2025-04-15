@@ -24,3 +24,5 @@ It is interesting, but all the data are mocked. It cost me 1 dollar to just run 
 [yolo v10 本地部署与训练教程。](https://youtu.be/7YRJIAIhMpw?si=GpN6JzbjMCb9Lhtt)
 
 [Microsoft AI Toolkit](https://developer.microsoft.com/zh-cn/reactor/events/25357/?event_check_in=jjB2Xdy1UlYnyIlhDvvNuGBIFPGAjMmuZZULLcV%2fewQICa5Xy26hVPfV9LK9royOYMSuuHoyNaKRwFTLuQDxOg%3d%3d)
+
+[Github Models](https://github.com/marketplace/models/)
