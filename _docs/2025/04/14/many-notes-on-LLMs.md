@@ -26,3 +26,7 @@ It is interesting, but all the data are mocked. It cost me 1 dollar to just run 
 [Microsoft AI Toolkit](https://developer.microsoft.com/zh-cn/reactor/events/25357/?event_check_in=jjB2Xdy1UlYnyIlhDvvNuGBIFPGAjMmuZZULLcV%2fewQICa5Xy26hVPfV9LK9royOYMSuuHoyNaKRwFTLuQDxOg%3d%3d)
 
 [Github Models](https://github.com/marketplace/models/)
+
+[Prototyping AI Agents with GitHub Models](https://developer.microsoft.com/zh-cn/reactor/events/25481/?event_check_in=jjB2Xdy1UlYnyIlhDvvNuGBIFPGAjMmuZZULLcV%2fewQICa5Xy26hVPfV9LK9royOYMSuuHoyNaKRwFTLuQDxOg%3d%3d)
+
+[Your First AI Agent in JS with Azure AI Agent Service](https://developer.microsoft.com/zh-cn/reactor/events/25381/?event_check_in=jjB2Xdy1UlYnyIlhDvvNuGBIFPGAjMmuZZULLcV%2fewQICa5Xy26hVPfV9LK9royOYMSuuHoyNaKRwFTLuQDxOg%3d%3d)
