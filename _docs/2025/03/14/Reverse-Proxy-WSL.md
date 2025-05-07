@@ -1,7 +1,7 @@
 ---
 type: post
 category: tech
-tags: 
+tag: 
     - wsl
     - reverse-proxy
     - web-ble

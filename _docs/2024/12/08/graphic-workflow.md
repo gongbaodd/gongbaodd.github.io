@@ -1,7 +1,7 @@
 ---
 type: post
 category: tech
-tags:
+tag:
     - qrcode
     - inkscape
     - krita

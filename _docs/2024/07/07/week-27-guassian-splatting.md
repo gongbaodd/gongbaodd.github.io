@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
     - chrome AI
     - Guassian Splatting
     - memory leak

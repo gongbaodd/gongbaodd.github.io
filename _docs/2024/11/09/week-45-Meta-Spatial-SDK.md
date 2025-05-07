@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
     - meta
     - spatial-
     - unreal

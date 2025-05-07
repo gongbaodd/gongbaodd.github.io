@@ -1,7 +1,7 @@
 ---
 type: post
 category: life
-tags:
+tag:
     - hackathon
 ---
 # EdHack 2024

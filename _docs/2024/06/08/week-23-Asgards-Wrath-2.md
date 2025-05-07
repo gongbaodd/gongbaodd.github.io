@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
     - webGL
     - three.js
     - quest

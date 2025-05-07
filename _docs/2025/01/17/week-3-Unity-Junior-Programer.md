@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
     - unity
 ---
 # Week 3: Unity Junior Programer

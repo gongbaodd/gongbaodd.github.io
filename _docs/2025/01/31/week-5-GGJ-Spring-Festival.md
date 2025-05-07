@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
     - GGJ
     - Spring Festival
     - Deep Seek

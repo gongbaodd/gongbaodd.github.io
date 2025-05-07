@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
     - Flowise
     - Genetic Algorithm
     - ADSR

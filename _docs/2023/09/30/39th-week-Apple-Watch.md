@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
     - VMware
     - Mac
     - Apple Watch

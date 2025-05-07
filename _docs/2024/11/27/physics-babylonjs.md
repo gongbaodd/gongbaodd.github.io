@@ -1,7 +1,7 @@
 ---
 type: post
 category: fe
-tags:
+tag:
     - babylonjs
 ---
 # Physics in Babylonjs

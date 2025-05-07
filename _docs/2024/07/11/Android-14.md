@@ -1,7 +1,7 @@
 ---
 type: post
 category: tech
-tags:
+tag:
     - android 14
     - lineageOS
     - crDroid
