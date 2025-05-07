@@ -10,6 +10,7 @@ tag:
  - expo-router
  - ionic
  - astro
+ - cloudflare
 ---
 # Week 6: Graphql on Expo
 

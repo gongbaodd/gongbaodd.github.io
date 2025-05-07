@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+tags:
+    - cloudflare
 ---
 
 # Week 12: Vibe Coding P2P Project
