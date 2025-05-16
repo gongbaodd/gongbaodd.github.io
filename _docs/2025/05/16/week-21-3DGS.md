@@ -6,6 +6,12 @@ tag:
 ---
 # Week 21: 3DGS
 
+## WASM memory
+
+I always think why WASM is not replacing JS. Turns out that WASM can not have a scalable memory. The memory needs to be allocated by JS manually. This is a big limitation for WASM. I think it make a lot game engine like Unity and Unreal hard to run on web, because the images need memory. So, if you are focusing on the web, a web based game engine is always a better choice.
+
+## 3DGS
+
 Finally, I can talk about 3DGS. Last time I mentioned it was in [2024](../../../2024/07/07/week-27-guassian-splatting). Actually, During these years, I never stopped studying it.
 
 Right now, there are two phone apps can be used to scan environments to 3DGS. [Luma 3D Capture](https://apps.apple.com/us/app/luma-3d-capture/id1615849914) and [Scaniverse](https://apps.apple.com/us/app/scaniverse-3d-scanner/id1541433223), they both easy to use and support to export PLY files.
