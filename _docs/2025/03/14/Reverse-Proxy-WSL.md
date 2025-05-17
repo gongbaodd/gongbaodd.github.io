@@ -6,6 +6,7 @@ tag:
     - reverse-proxy
     - web-ble
     - https
+    - caddy
 ---
 # FAILED - Reverse Proxy WSL for Web-BLE development
 
