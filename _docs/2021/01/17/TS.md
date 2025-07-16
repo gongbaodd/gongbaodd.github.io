@@ -4,7 +4,6 @@ category: book
 tag:
     - typescript
 ---
-
 # 重学TS
 
 毕竟半年没拿起来typescript了赶紧找了本书补充一下，个人还是推荐要跟进ts的官方blog

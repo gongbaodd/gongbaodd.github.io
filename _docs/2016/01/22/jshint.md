@@ -2,7 +2,6 @@
 type: post
 category: fe
 ---
-
 # jshint 配置笔记
 
 ```javascript

@@ -2,7 +2,6 @@
 type: post
 category: fe
 ---
-
 # webpack 里面使用 riot-loader
 
 ```javascript

@@ -2,7 +2,6 @@
 type: post
 category: fe
 ---
-
 # 写最正规的 commitment
 
 需要一个工具 Commitizen

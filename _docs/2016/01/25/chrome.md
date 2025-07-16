@@ -2,7 +2,6 @@
 type: post
 category: fe
 ---
-
 # chrome 插件开发笔记
 
 > [360 真是一个良心企业，这样不用翻墙就能看 API 了](http://open.chrome.360.cn/extension_dev/overview.html)

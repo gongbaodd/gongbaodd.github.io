@@ -2,7 +2,6 @@
 type: post
 category: fe
 ---
-
 # 使用 karma 来做单元测试
 
 > 最近一直在搞 riot，想弄一个单测，正好官网提供了 karma 组件，搞起来吧

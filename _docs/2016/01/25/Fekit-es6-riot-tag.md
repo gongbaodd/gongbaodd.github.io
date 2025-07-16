@@ -2,7 +2,6 @@
 type: post
 category: fe
 ---
-
 # Fekit 支持 es6 和 riot 的 tag
 
 在如下目录里面添加 tag.js 和 es6.js
