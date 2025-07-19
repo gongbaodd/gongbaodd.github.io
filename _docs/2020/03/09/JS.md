@@ -4,7 +4,6 @@ category: book
 tag:
   - JavaScript
 ---
-
 # 读完「你不知道的 JS」第一版
 
 ![book cover](./you-dont-know-about-JS.jpg)
