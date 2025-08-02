@@ -1,5 +1,5 @@
 ---
-type: draft
+type: post
 category: travel
 ---
 
