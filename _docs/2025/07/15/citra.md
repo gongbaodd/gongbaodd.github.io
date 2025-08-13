@@ -3,6 +3,10 @@ type: post
 category: tech
 tags:
     - 3DS
+cover: {
+    url: "./citra.png",
+    alt: "citra icon"
+}
 ---
 
 # Citra: A 3DS Emulator

@@ -3,6 +3,10 @@ type: post
 category: plan
 tags:
  - museum
+cover: {
+    url: "./selfie.png",
+    alt: "my photo in Proto Factory"
+}
 ---
 
 # Week 30: Proto Factory

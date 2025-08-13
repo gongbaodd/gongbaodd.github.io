@@ -1,6 +1,9 @@
 ---
 type: post
 category: fe
+cover: 
+    url: "./snapshot.png"
+    alt: "snapshot on the old build"
 tags:
     - mantine
     - astro
@@ -14,8 +17,6 @@ If you noticed, I am rebuilding my website again.
 At first, this website was built for me to record [my graduation trip](/travel/2015/03/28/Bohai-Rim). I used Jekyll with a jQuery template. Because I didn't find a suitable image hosting, the trip site was never done. However, since then I started post some tech articles until now.
 
 Later in 2020, I rebuild [the website into Gatsby](/fe/2020/03/05/Jekyll-Gatsby). I wanted to use graphql, and I made this website structure into date based folder style. Reread this blog I wrote 5 years ago. I believe that untill now, I still think changing to Gatsby is not a good idea. Yeah, graphql is disappointing...To be honest, I always wanted to find an alternate.
-
-![snapshot on the old build](./snapshot.png)
 
 In 2023, when I saw Astro started to support [View Transition](/plan/2023/08/20/33rd-ViewTransition), I thought it is the time. But then I got burned out transfering into the new tech stack. I have to admit, although Gatsby is feels too compound, it handles markdown files and images better than Astro, at least then. 
 

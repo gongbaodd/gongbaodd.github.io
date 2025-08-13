@@ -1,6 +1,10 @@
 ---
 type: post
 category: plan
+cover: {
+    url: "./hearing-aid.jpg",
+    alt: "hearing aid prototype"
+}
 tags:
     - edge-impulse
     - machine-learning

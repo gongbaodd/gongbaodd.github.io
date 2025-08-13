@@ -1,6 +1,10 @@
 ---
 type: post
 category: sport
+cover: {
+    url: "./surfing.png",
+    alt: "playing efoils"
+}
 ---
 # RayFoil
 

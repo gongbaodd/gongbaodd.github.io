@@ -1,6 +1,9 @@
 ---
 type: post
 category: tech
+cover: 
+    url: "./nsfw.png"
+    alt: "nsfw sign"
 tag:
     - porn
     - VR

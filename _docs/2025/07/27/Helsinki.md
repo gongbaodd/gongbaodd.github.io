@@ -1,6 +1,10 @@
 ---
 type: post
 category: travel
+cover: {
+    url: "./super-cell.jpg",
+    alt: "super cell building"
+}
 ---
 
 # A trip to Helsinki
