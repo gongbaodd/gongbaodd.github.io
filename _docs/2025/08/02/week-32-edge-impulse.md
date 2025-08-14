@@ -11,13 +11,21 @@ tags:
     - arduino
 ---
 
-# Week 32: Edge Impulse
+# Week 32: Edge Impulse & DIY Hearing Aid
 
-This week is my second week of Tallinn summer school. We started to use arduino to make a hearing aid device. To distinguish different sounds, I use Edge Impulse to train a machine Learning model. However, arduino does not have enough memory. Eventually, we changed to Heltec Lora ESP32.
+This week marks my **second week at Tallinn Summer School**! 🌞  
+We kicked off a project to build a **hearing aid device** using Arduino. To distinguish different sounds, I trained a **machine learning model** with **Edge Impulse**.  
 
-- The arduino [code](https://github.com/gongbaodd/hearing_aid/tree/main/sketches/main). 
-- The machine learning [steps](https://studio.edgeimpulse.com/public/757088/live).
+However… Arduino didn’t have enough memory 😅. So, we switched to a **Heltec LoRa ESP32** — much better for this kind of project.  
 
-To make the project, I also watched some video from [bilibili](https://www.bilibili.com/video/BV1ADBUYmE8Q/?share_source=copy_web&vd_source=0161e564e6ea2247143fd95f4d81e6c0) and [youtube](https://youtu.be/dYTukgY9kEU?si=IJ-cDs9eg3hJq2Fq).
+Some useful links from the project:  
+- Arduino [code](https://github.com/gongbaodd/hearing_aid/tree/main/sketches/main)  
+- Machine learning [steps](https://studio.edgeimpulse.com/public/757088/live)  
 
-To show image on the screen, I tried to make xbm files learnt from [this tutorial](https://youtu.be/ac5CYQ3OJ7c?si=lYtThTf8I-MUOPAJ).
+For guidance, I also watched tutorials on:  
+- [Bilibili](https://www.bilibili.com/video/BV1ADBUYmE8Q/?share_source=copy_web&vd_source=0161e564e6ea2247143fd95f4d81e6c0)  
+- [YouTube](https://youtu.be/dYTukgY9kEU?si=IJ-cDs9eg3hJq2Fq)  
+
+To display images on the screen, I experimented with **XBM files**, following [this tutorial](https://youtu.be/ac5CYQ3OJ7c?si=lYtThTf8I-MUOPAJ) 🖼️.  
+
+It’s been a fun mix of **hardware, ML, and a bit of trial and error** — learning by doing is the best! 🚀

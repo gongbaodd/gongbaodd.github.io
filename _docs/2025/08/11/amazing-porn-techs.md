@@ -12,24 +12,30 @@ tag:
     - NSFW
 ---
 
-# Amazing Porn Techs
+# Amazing Porn Techs: VR, IoT, and More
 
-I recently tried to some porn websites. Web techs on those sites are just amazing.
+I recently explored some adult websites, and honestly… the web tech behind them is kind of amazing 🤯.
 
-## Web VR
+## 🕶️ Web VR
 
-Most web VR sites are game sites, UIs are not playing an important part. But in most cases, UI is very important to human interaction. There are some APPs on Meta Quest that have complex UIs:
+Most WebVR sites are more like games, and UI usually isn’t the main focus. But in adult VR experiences, **UI is everything** for human interaction. Some apps on Meta Quest really nailed complex UIs:  
 
-- [Youtube](https://www.meta.com/en-gb/experiences/youtube/2002317119880945/), shows three panels together, the center one is the screen. You can move the screens together and you can also choose to switch between spatial App and 2D App.
-- Netflix, I am not sure netflex still provides spatial APPs, it used to provide very gamified environment, that you are in some kind bedroom with a virtual TV set, and the interaction is basically controlling the 2D UI in the TV.
-- [Theater Elsewhere](https://www.meta.com/en-gb/experiences/theater-elsewhere/2515021945210953/), it shows 2D panel besides your controller.
+- [YouTube](https://www.meta.com/en-gb/experiences/youtube/2002317119880945/) – shows three panels together, with the center being the main screen. You can move the screens around and switch between **spatial app** and **2D app**.  
+- Netflix – used to offer a gamified environment, like being in a bedroom with a virtual TV. The UI was basically a 2D interface in a 3D world.  
+- [Theater Elsewhere](https://www.meta.com/en-gb/experiences/theater-elsewhere/2515021945210953/) – displays 2D panels next to your controller for easy interaction.  
 
-This is the first webVR website I met that with an spatial GUI, [BFTV](boyfriend.show), It is majorly porn broadcasting, Many actors are just not very attractive, honestly. But it provides VR mode, in VR mode, if the host provides 180 video, it will be shown in a sphere, like Youtube, it provides panels to show comments and descriptions, the panels are draggable! When you use the controller to click on the screen, it will show a circlar menu to send tips.
+The first WebVR site I found with a fully **spatial GUI** is [BFTV](https://boyfriend.show). It’s mostly porn broadcasting. Honestly, not all actors are super attractive 😅, but the tech is cool:  
 
-One thing that I am not satisfied is that there is not a 3DGS or dual eye porn provided, I really want to see how they are in used.
+- **VR mode:** 180° videos show in a sphere (like YouTube VR)  
+- **Panels:** comments and descriptions are draggable  
+- **Controller interaction:** click the screen and a circular menu pops up to send tips  
 
-## IoT
+One thing missing? No 3DGS or dual-eye porn yet. I really want to see how that would work in practice 👀.
 
-There is a company called [lovense](https://www.lovense.com), it makes remote sex vibrators. Turns out so many porn actors use that to do broadcasting. This device actually provides SDKs to support the broadcasting Apps. If the device were not so expensive, I really want to buy one and develope something on that.
+## 🔌 IoT in Porn
 
-You can find these casts on [chaturbate](https://chaturbate.com/). These vibrators will vibrates when users tip on the host. Sometimes I wonder if the vibrations are real, or the hosts are just faking...
+There’s a company called [Lovense](https://www.lovense.com) that makes **remote sex toys**. Many porn actors use these for live broadcasting. The devices even come with **SDKs** for app integration.  
+
+If they weren’t so pricey, I’d totally get one and tinker with some projects 😅.  
+
+You can see these in action on [Chaturbate](https://chaturbate.com/). The vibrators react to tips from viewers. Sometimes I wonder… are the vibrations real, or just for show? 🤔

@@ -8,8 +8,18 @@ tag:
     - fuzzy-search
 ---
 
-# MiniSearch: An in-browser Search Engine
+# MiniSearch: An In-Browser Search Engine You’ll Love
 
-I am working on rebuilding my website. Years ago, I want to add an [algolia](https://www.algolia.com/) search feature. I was just too lazy to implement that. Turns out, you do not need to build an [Elasticsearch](https://www.elastic.co/elasticsearch) backend, An in browser search engine called [Mini Search](https://github.com/lucaong/minisearch) provides all the features that I need.
+Lately, I’ve been rebuilding my website 🛠️.  
+Years ago, I thought about adding [Algolia](https://www.algolia.com/) for search… but honestly, I was too lazy 😅.  
 
-Here is a [article](https://lucaongaro.eu/blog/2019/01/30/minisearch-client-side-fulltext-search-engine.html) by the author about this search engine. It uses radix tree to index contents and TF-LDF algorithm to do fuzzy search. The author also compared it with two other search engines, [Lunr.js](https://lunrjs.com/) and [fuse.js](https://www.fusejs.io/).
+Turns out — you don’t *need* a big backend like [Elasticsearch](https://www.elastic.co/elasticsearch) for good search.  
+Meet [**MiniSearch**](https://github.com/lucaong/minisearch) — a tiny, **in-browser** search engine that has *all* the features I need. 🚀
+
+If you’re curious, here’s [an awesome article](https://lucaongaro.eu/blog/2019/01/30/minisearch-client-side-fulltext-search-engine.html) by the creator.  
+It uses a **radix tree** for indexing 📂 and a **TF-IDF** algorithm for fuzzy matching ✨.  
+The author even compares it with two other search engines:  
+- [Lunr.js](https://lunrjs.com/) 📚  
+- [Fuse.js](https://www.fusejs.io/) 🔎
+
+Honestly, if you just want fast, offline-friendly search without running a server — MiniSearch might be your new best friend ❤️.

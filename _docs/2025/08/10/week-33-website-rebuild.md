@@ -8,30 +8,38 @@ tags:
     - mantine
     - astro
 ---
-# Website Rebuild
 
-If you noticed, I am rebuilding my website again.
+# 🔨 Website Rebuild
 
-## Story of the website
+Yep… I’m rebuilding my website **again** 😅.
 
-At first, this website was built for me to record [my graduation trip](/travel/2015/03/28/Bohai-Rim). I used Jekyll with a jQuery template. Because I didn't find a suitable image hosting, the trip site was never done. However, since then I started post some tech articles until now.
+## 📖 Story of the Website
 
-Later in 2020, I rebuild [the website into Gatsby](/fe/2020/03/05/Jekyll-Gatsby). I wanted to use graphql, and I made this website structure into date based folder style. Reread this blog I wrote 5 years ago. I believe that untill now, I still think changing to Gatsby is not a good idea. Yeah, graphql is disappointing...To be honest, I always wanted to find an alternate.
+Originally, this site was just for me to document [my graduation trip](/travel/2015/03/28/Bohai-Rim). Back then, I used **Jekyll** with a jQuery template. I never finished it because I couldn’t find a proper image hosting solution. Still, I kept posting tech articles along the way.  
 
-In 2023, when I saw Astro started to support [View Transition](/plan/2023/08/20/33rd-ViewTransition), I thought it is the time. But then I got burned out transfering into the new tech stack. I have to admit, although Gatsby is feels too compound, it handles markdown files and images better than Astro, at least then. 
+In 2020, I migrated to [Gatsby](/fe/2020/03/05/Jekyll-Gatsby). I wanted **GraphQL** and a date-based folder structure. Looking back at my blog from 5 years ago… yeah, switching to Gatsby probably wasn’t the best idea 🤷. GraphQL was kind of disappointing, and I always wanted a better alternative.  
 
-And becuase there were too many legacy files, I had to think about monorepo solutions. I wasted too much time building a dark mode switch and the infinate scroll. Also ViewTransition has many limitation that not able to simpily be applied on any DOMs. Eventually, the website UI was just orgininal shadcn.
+Fast forward to 2023, I saw Astro start supporting [View Transition](/plan/2023/08/20/33rd-ViewTransition) and thought it was the perfect time to switch. But migrating burned me out. Gatsby might have been complicated, but it handled markdown and images better than Astro at the time.  
 
-Recently, I have to rebuild the website, because every build of one commit costs me over 44min. Here goes the rebuild story.
+On top of that, too many legacy files meant I had to consider **monorepo solutions**. I wasted a ton of time building a dark mode switch and infinite scroll. View Transition had lots of limitations too — it couldn’t be applied to any DOM element easily. Eventually, the UI ended up just using the original **shadcn** setup.
 
-## This Rebuild
+Recently, I had to rebuild again because every build was taking **over 44 minutes per commit** ⏱️. So here we go…  
 
-At first, I just want to make an incremental build modification, this feature was introduced in Astro v4 but got revoke in Astro v5. Then I decided to change one stack, maybe [11ty](https://www.11ty.dev/) or [hugo](https://gohugo.io/). With the Gatsby rebuild history, I realized to transfer a content website into another stack, you need to consider too many, File structures, markdown contents, images, latex... 
+## ⚡ This Rebuild
 
-Probably stay on Astro stack, plus, I never finished the ViewTransition part. There is a good thing that Astro has, it supports multiple frameworks to write components. My personal opinion, island archetecture is better than RSC. It gives me more choises than other framework can give.
+At first, I just wanted **incremental builds**, a feature introduced in Astro v4 but revoked in v5. I also considered switching stacks to [11ty](https://www.11ty.dev/) or [Hugo](https://gohugo.io/). But after the Gatsby migration experience, I realized transferring a content-heavy site is a nightmare — file structures, markdown, images, LaTeX… everything matters.  
 
-On the UI, I decide to change shadcn to [Mantine](https://mantine.dev/). In comparison, Mantine is way equiped than [shadcn](https://ui.shadcn.com/), even with [radix UI](https://www.radix-ui.com/). Shadcn uses tailwind, I personaly do not like a big CSS reset, although I am still using Tailwind in this build. The only unhappy problem is that Mantine is actually not supporting Astro (need a little modification). In the blog list page, I used MUI's [Masonry](https://mui.com/material-ui/react-masonry/). I wanted to build masonry since the last build, however, I am still not satisfied with the latest one, eventough, it is better.
+So I decided to **stay on Astro**. The upside? Astro supports multiple frameworks for components. Personally, I like the **island architecture** more than RSC — it gives more flexibility than other frameworks.  
 
-This rebuild aims to build an in browser AI, supports more social contents and support my portfolios. right now I am still refining the UI. I hope the goals will be reached.
+For UI, I switched from **shadcn** to [Mantine](https://mantine.dev/). Honestly, Mantine is way more equipped than shadcn (even with [Radix UI](https://www.radix-ui.com/)). I’m not a fan of big CSS resets, so this suits me better — although I’m still using Tailwind in parts.  
 
+Some highlights:  
+- Blog list page uses MUI’s [Masonry](https://mui.com/material-ui/react-masonry/) — I wanted masonry layout since the last build, and this one is much better, though still not perfect.  
+- Mantine doesn’t officially support Astro, so a little tweaking was needed.  
 
+This rebuild is not just cosmetic. The goal is to:  
+1. Build an **in-browser AI** 🤖  
+2. Support more **social content**  
+3. Showcase my **portfolio**  
+
+Right now, I’m still refining the UI, but I’m hopeful these goals will be met 🚀.

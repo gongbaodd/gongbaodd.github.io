@@ -6,8 +6,11 @@ cover: {
     alt: "playing efoils"
 }
 ---
-# RayFoil
 
-Summer is so short in Tallinn, right now, it is below 20 degrees now. This Monday, when it is still over 20 degrees. I found this efoil experience on [fienta](https://fienta.com/et/s/ray-foil-efoili-surfitreening-iglupargis-noblessner-tallinn).
+# 🏄‍♂️ RayFoil Adventure
 
-It is simpler than I thought. There is a hand hold controller, you can control it to accelerate or decelerate. The efoil will lift you up when you reach a certain speed. It is very fun, but I am not good at it, I fell into the water many times. 
+Summer in Tallinn is so short… it’s already below 20°C! 🌬️ But this Monday, when it was still over 20°C, I stumbled upon this **efoil experience** on [Fienta](https://fienta.com/et/s/ray-foil-efoili-surfitreening-iglupargis-noblessner-tallinn).  
+
+It was **way simpler than I expected**. There’s a hand-held controller to speed up or slow down. Once you hit a certain speed, the efoil lifts you above the water — it feels like flying! 🚀  
+
+Super fun… though I’m definitely not a pro yet 😅. Fell into the water more times than I’d like to admit 💦.
