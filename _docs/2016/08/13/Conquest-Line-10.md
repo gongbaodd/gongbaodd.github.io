@@ -1,188 +1,189 @@
 ---
 type: post
 category: travel
+cover: {
+    url: "./h-0.jpg",
+    alt: "selfie"
+}
+---
+# 🚇 征服十号线！
+
+> 每天上班都要路过十号线，突然好奇：作为世界上最长的地铁环线，其它站都啥样？  
+> 那就干脆来一场——**跑完十号线大挑战**！（顺便开几个 portal 😏）
+
+![十号线周边portal](./portal.jpg)
+
 ---
 
-# 征服十号线！
+## 🗺️ 先看看路线
 
-> 每天上班都经过十号线，不禁好奇，作为世界上最长的地铁环线，其它站是什么样的？于是我下了个决定，跑完十号线（顺便开几个 portal）！
+![地铁十号线](./map.jpg)
 
-![十号线周边portal](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hlzyegm9j20qo1be4b3.jpg)
+北京地铁十号线建于 2008 年奥运前夕：  
+- **一期**（巴沟—劲松）主要连通中关村、CBD 和国贸这几个经济核心区。  
+- **二期**完工后变成环线，全长 45 站，算是北京打工人必坐线路之一。
 
-## 了解一下路线
+这次我从 **火器营** 出发，到 **公主坟** 收尾（公主坟—火器营是我上班常走的，就跳过了）。  
+中途 **能跑就跑，能吃就吃**，一路相当快活～ 😆
 
-![地铁十号线](http://img1.gtimg.com/house/pics/hv1/183/103/1169/76040673.jpg)
+![路线截图](./gudong.jpg)
 
-北京地铁十号线是 08 年为奥运会建设，一期（巴沟-劲松）是为了连通中关村 CBD 和国贸这两个经济核心，拉动内需嘛，二期完成了这个环线全长 45 站，应该算是北京工作必坐线路了。
+---
 
-这次的路程起于火器营，最后到公主坟站结束（公主坟到火器营这一段上班经常走就不走了），期间玩的玩跑的跑吃的吃，十分快活。
+## 🌳 火器营 → 巴沟
 
-![路线截图](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hn0yhgawj20qo1bejxv.jpg)
+沿着颐和园御河水路（昆玉河）跑，景色真心赞 👍
 
-## 火器营-巴沟
+![火器营](./h-0.jpg)  
+![火器营](./h-1.jpg)  
+![昆玉河](./h2.jpg)  
+![树Doge](./h3.jpg)  
+![巴沟](./h4.jpg)  
+![bagou](./h5.jpg)  
+![bagou](./h6.jpg)
 
-火器营到巴沟中间经过颐和园的御河水路（昆玉河），景色十分优美
+---
 
-![火器营](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hnb4qhinj21i02007wh.jpg)
+## 🏙️ 苏州街 → 西土城
 
-![火器营](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hngjhce5j21kw16o4qp.jpg)
+出了巴沟就没步道了，这里已经是**中关村**腹地～
 
-![昆玉河](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hngvzg8mj21kw16o1kx.jpg)
+![suzhoujie](./s0.jpg)  
+![zhichunli](./s1.jpg)  
+![zhichunlu](./s2.jpg)  
+![xitucheng](./s3.jpg)
 
-![树Doge](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hnayaa62j21kw23ue82.jpg)
+---
 
-![巴沟](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnggb2mmj21kw16ou0l.jpg)
+## 🏞️ 西土城 → 芍药居
 
-![bagou](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnks417xj21kw16o1kx.jpg)
+北段沿着**元大都遗址**，跑起来很舒服，还有点小文艺。
 
-![bagou](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hnb8hcufj21i0200e81.jpg)
+![mudanyuan](./x1.jpg)  
+![jiandemen](./x2.jpg)  
+![haitanghuaxi](./x3.jpg)  
+![anzhenmen](./x4.jpg)  
+![huixinxijie](./x5.jpg)  
+![selfie](./x6.jpg)  
+![beauti](./x7.jpg)
 
-## 苏州街-西土城
+---
 
-出了巴沟，已经没了供行人锻炼的步道了，这里就是中关村了
+## 😵 迷路警告
 
-![suzhoujie](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnbfs0esj21kw23uhdt.jpg)
+拐弯的地方迷路了……
 
-![zhichunli](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hnbipc2aj21kw16o1kx.jpg)
+![lost](./lost.jpg)
 
-![zhichunlu](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hnbmrqlnj21kw16ohdt.jpg)
+---
 
-![xitucheng](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnbub7g8j21kw23uhdu.jpg)
+## ❓ 光熙门
 
-## 西土城-芍药居
+误打误撞到了五号线 🤦‍♂️ 十号线你在哪？
 
-到了西土城，又出现了可以跑步的道路，就是元大都遗址，整个十号线北部都沿着这条线路走的。
+![5](./g1.jpg)  
+![5](./g2.jpg)
 
-![mudanyuan](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hnbx637pj21kw16ou09.jpg)
+---
 
-![jiandemen](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hnc0r6g5j21i02007wh.jpg)
+## 🌃 亮马桥 → 劲松
 
-![haitanghuaxi](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnc6mqsej21kw23ux6p.jpg)
+终于回到十号线！  
+东边和中关村一样，不太适合跑，不过周边 portal 倒是挺多～（比如**天上人间**）
 
-![anzhenmen](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hncbfctyj21kw16onpd.jpg)
+![nongye](./l1.jpg)  
+![tuanjiehu](./l2.jpg)  
+> Hello，三里屯不夜城～
 
-![huixinxijie](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hncjgzanj21kw16ohdt.jpg)
+![茶馆](./l3.jpg)  
+> 窗上还有瀑布流下来，视觉降温 ❄️
 
-![selfie](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hncnol6oj21i0200hdt.jpg)
+![hujialou](./l4.jpg)  
+![dakucha](./l5.jpg)  
+![jintaixizhao](./l6.jpg)  
+> 大裤衩远看挺好，近了全是工地 🏗️
 
-![beauti](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hncrztuij21kw16ohdt.jpg)
+![guomao](./l7.jpg)  
+![qingfeng](./l8.jpg)  
+> 北方小秦淮——庆丰公园
 
-元大都遗址周围有一些饭馆、咖啡厅，偶尔还有点小文艺
+![gongyuan](./l9.jpg)  
+![shuangjing](./l10.jpg)  
+![jinsong](./l11.jpg)
 
-## 迷路
+---
 
-到了弯路，我就迷路了。。。
+## 🏺 潘家园 → 十里河
 
-![lost](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hncuz93kj21kw16o7v1.jpg)
+文玩圣地，假古董一大堆 😂
 
-## 光熙门
+![panjia](./p1.jpg)  
+![huawei](./p2.jpg)  
+![shilihe](./p3.jpg)  
+![tianjiao](./p4.jpg)  
+> 胡同里卖核桃 50 一个，震惊…
 
-误打误撞地跑到了五号线的路上，十号线，你在哪里啊？
+---
 
-![5](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hncyr50zj21kw16oe81.jpg)
+## 🏜️ 成寿寺 → 宋家庄
 
-![5](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnd7f6vnj21kw23u1ky.jpg)
+又迷路！  
+这里和三元桥不一样，到处是空地，寥无人烟。
 
-## 亮马桥-劲松
+![chengshou](./c1.jpg)  
+![songjia](./c2.jpg)  
 
-终于找到了十号线，已经到了北京东面的繁华地带，跟中关村一样，这条路不太适合跑啊～（不过周围有天上人间的 portal 哦～）
+路宽人少，跑起来倒是挺爽。  
+看到 KFC 赶紧来瓶九珍，结果吸管也是“惊喜”……
 
-![nongye](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hndak0khj21kw16o4qp.jpg)
+![KFC](./c3.jpg)
 
-![tuanjiehu](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hndetqlzj21kw23uhdt.jpg)
+---
 
-> hello,不夜的三里屯～
+## 🏘️ 石榴庄 → 角门西
 
-![茶馆](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hndhpyvyj21kw16o1kx.jpg)
+渐渐进入人口密集区，物价比北边便宜。  
+虽然有跑道，但条件差一些。
 
-> 这个茶馆窗户上有由上而下的瀑布，看起来一阵清凉
+![shiliu](./j1.jpg)  
+![dahongmen](./j2.jpg)  
+![machang](./j3.jpg)  
+![jiaomend](./j4.jpg)  
 
-![hujialou](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hndmm2cgj21kw23ukjl.jpg)
+> 马拉松距离达成 ✔️
 
-![dakucha](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hndsx1bvj21kw23u7wi.jpg)
+---
 
-![jintaixizhao](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hne9diuxj21kw23u7wi.jpg)
+## 🍢 草桥 → 丰台
 
-> 大裤衩远眺还不错，近了就发现周围全是工地啊
+![caoqiao](./f1.jpg)  
+![wanliu](./f2.jpg)  
+![fengtai](./f3.jpg)  
 
-![guomao](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnechuiwj21kw16o4qp.jpg)
+丰台烧烤摊太多了！香味直接劝退跑步计划 🤤
 
-![qingfeng](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnegkol3j21kw16oe81.jpg)
+不过地铁线路征服的最大难点是——**地下没死胡同，地面可不一样**。  
+比如丰台站被火车道拦着，泥洼站被高铁拦着……
 
-> 卖包子卖出公园啦～哈哈，这是号称北方小秦淮的庆丰公园，以前是通往通州的～
+---
 
-![gongyuan](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnekonvbj21kw16ohdt.jpg)
+## 🚏 西局 → 公主坟
 
-![shuangjing](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnenxm38j21kw16o1kx.jpg)
+![xxiju](./xg1.jpg)  
+![xiju](./xg2.jpg)  
+![liuliqiao](./xg3.jpg)  
+![gongzhufen](./xg4.jpg)  
 
-![jinsong](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnervof4j21kw23ub29.jpg)
+终于到终点！  
+两条腿都酸了，立马坐公交回家啃西瓜 🍉
 
-## 潘家园-十里河
+---
 
-文玩圣地啊，到处都是卖假古董的
+## 🎯 总结
 
-![panjia](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hneulmq7j21kw16ohas.jpg)
+一开始只是想看看十号线的全貌，后来变成挑战路线，再后来是挑战自己。  
+到最后发现，能跑到哪算哪，沿途见识和经历才是最有意思的。  
 
-![huawei](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnewie5kj21kw16owzs.jpg)
-
-![shilihe](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnezo2bdj21i02004qp.jpg)
-
-![tianjiao](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hnf4cewvj21kw23ukjl.jpg)
-
-> 以为能穿过这里到分钟寺，可惜是个胡同，这里 50 一个核头，我靠！
-
-## 成寿寺-宋家庄
-
-我有迷路了，这回和三元桥不一样，到处都是空地，寥无人烟，最后找到一家空旷的居然之家，发现已经到了成寿寺
-
-![chengshou](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnf7kxdwj21i02007wh.jpg)
-
-![songjia](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnfa6m64j21kw16okhf.jpg)
-
-这里路很宽，人也少，大白天路况和海淀区半夜似的，跑步倒是很爽。
-
-![KFC](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hnfd290dj21kw23u1kx.jpg)
-
-> 终于看到一家 KFC，赶紧买瓶九珍，可是这吸管。。。。
-
-## 石榴庄-角门西
-
-逐渐到了人口密集的地方，这里物价比北面低，有一些跑步的步道，但是比北面差多了。
-
-![shiliu](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnfigf59j21kw23uu0x.jpg)
-
-![dahongmen](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnfkelguj21kw16oatz.jpg)
-
-![machang](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnfmee4cj21kw16okbs.jpg)
-
-![jiaomend](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hnfopqd6j21kw16onjd.jpg)
-
-![jiaomenxi](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f7hnfrn5ghj21kw16o1kx.jpg)
-
-> 马拉松长度达成了哈哈哈哈
-
-## 草桥-丰台
-
-![caoqiao](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hnfu557aj21kw16oe4a.jpg)
-
-![wanliu](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hnfvy4muj21kw16oh5k.jpg)
-
-![fengtai](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hnfygejej21kw16odz5.jpg)
-
-丰台站的烧烤摊真多！挨个摆一个烤羊腿，看得我口水直流，到了十号线西南角，我终于意识到，征服地铁线路最难的一点是地铁走的是地下，不涉及死胡同。。。比如丰台站被火车道拦成死胡同，泥洼站被高铁拦成死胡同。。。
-
-## 西局-公主坟
-
-![xxiju](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hng2epdej21kw16o7oj.jpg)
-
-![xiju](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f7hng5hrlgj21kw16o1kx.jpg)
-
-![liuliqiao](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f7hngb4mqij21kw16oqlt.jpg)
-
-![gongzhufen](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f7hngdaeiuj21kw16oe0m.jpg)
-
-终于到了公主坟，两腿都酸了，急忙坐上公交，回去啃西瓜去。
-
-## 总结
-
-实际上，开始就一个好奇，我能不能逛完这个十号线。后来变成一种挑战，挑战这条线路。再后来变成挑战自己，我跑完了劲松能不能跑到十里河？跑到了十里河能不能跑到角门西，跑到角门西能不能到丰台。到最后，见识了很多，经历了很多，也不在乎这全程能不能跑完了，也许这就是人生吧，如果有机会让我重来一次，我会说，咱能试试 2 号线不（苦笑）～
+如果让我再来一次？  
+我可能会说：  
+> 咱能试试 2 号线不…（苦笑）

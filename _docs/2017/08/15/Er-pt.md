@@ -4,7 +4,7 @@ category: fe
 ---
 # 【Erʌpt】一个前后端同构的设计思想
 
-<img src="http://ww1.sinaimg.cn/large/89d0a2e1ly1fikrpw68t9j208c08cdfx.jpg" alt="logo" width="150px">
+![logo](./logo.png)
 
 > 最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。
 
@@ -16,20 +16,15 @@ category: fe
 
 ### 最近出现了很多诸如RustWeb和Golymer的框架
 
-<table>
-<tr>
-<td>
-<img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fir7gp7j3ej20r40k6abz.jpg"/>
-</td>
-<td>
-<img src="http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fir7nz5t8qj21040qcabg.jpg"/>
-</td>
-</tr>
-</table>
+
+![rustweb](./rustweb.jpg)
+
+![goplymer](./golymer.jpg)
+
 
 ### CS架构解决的问题
 
-![现有的CS架构](http://ww1.sinaimg.cn/thumbnail/89d0a2e1ly1fir7ta8jaij20a90a9437.jpg)
+![现有的CS架构](./shenyang.jpg)
 
 * 我是谁
 * 我从哪里来
@@ -75,7 +70,7 @@ category: fe
 
 把页面首屏的内容都渲染出来。
 
-![精确渲染](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiylzsf71jj20hs0b4mxf.jpg)
+![精确渲染](./rendering.jpg)
 
 #### 精确渲染的评价
 
@@ -91,7 +86,7 @@ category: fe
 
 把初始状态的首屏渲染出来然后在同一请求中把应该展示的状态展示出来。
 
-![结构渲染](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiym4385dfj20hs0b4jro.jpg)
+![结构渲染](./structure.jpg)
 
 #### 框架渲染的评价
 
@@ -107,7 +102,7 @@ category: fe
 
 把模板直接作为html传到客户端。
 
-![模板渲染](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiynhe7jenj20hs0b43ys.jpg)
+![模板渲染](./template.jpg)
 
 #### 模板渲染的评价
 
@@ -141,7 +136,7 @@ react的render函数是会不断轮询页面上绑定的数据来进行页面更
 
 | value==="bud" | value==="bloom" |
 |--|--|
-|![](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiyoot1ss4j20m80gojsi.jpg)|![](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiyotbnajvj20m80godgz.jpg)|
+|![](./bud.jpg)|![](./bloom.jpg)|
 
 ### Values的写法
 
@@ -205,7 +200,7 @@ class TestPipe extends Pipe<Request, Response> {
 
 前后端同构的意思是要在后端完成一部分工作，当前端getState的时候，获取的是后端生成并注入到前端作用域的state，也就是说这个对象在后端完成set工作，而在前端完成get工作。
 
-![Tunnel设计](http://ww1.sinaimg.cn/mw690/89d0a2e1ly1fiypthxr4jj20m80goq4f.jpg)
+![Tunnel设计](./tunnel.jpg)
 
 #### Tunnel的使用
 
