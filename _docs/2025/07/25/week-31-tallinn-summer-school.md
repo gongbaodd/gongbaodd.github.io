@@ -2,10 +2,11 @@
 type: post
 category: plan
 cover: {
-    url: "./gifts",
+    url: "./gifts.jpg",
     alt: "gifts"
 }
 ---
+
 
 # Week 31: Tallinn Summer School
 
