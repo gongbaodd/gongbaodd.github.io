@@ -7,6 +7,10 @@ cover:
 tags:
     - mantine
     - astro
+    - react
+series:
+    name: "website-rebuild"
+    slug: "website-rebuild"
 ---
 
 # 🔨 Website Rebuild

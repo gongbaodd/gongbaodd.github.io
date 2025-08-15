@@ -1,12 +1,12 @@
 ---
 type: post
-category: travel
+category: sport
 cover: {
-    url: "./h-0.jpg",
+    url: "./x6.jpg",
     alt: "selfie"
 }
 ---
-# 🚇 征服十号线！
+# 🏃 征服十号线！
 
 > 每天上班都要路过十号线，突然好奇：作为世界上最长的地铁环线，其它站都啥样？  
 > 那就干脆来一场——**跑完十号线大挑战**！（顺便开几个 portal 😏）
