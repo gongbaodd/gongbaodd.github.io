@@ -1,13 +1,15 @@
 ---
 type: post
 category: tech
-tags:
+tag:
     - godot
     - mcp
 ---
 
 # Godot MCP
 
-As I am making a game in Godot. I am planning to use vide coding on that. I installed [Godot MCP](https://github.com/Coding-Solo/godot-mcp) on the cursor editor. It can load the editor, however, not many exciting things happened.
+I’m working on a game in Godot and planning to try **voice coding** for it.  
+I installed [Godot MCP](https://github.com/Coding-Solo/godot-mcp) in the Cursor editor. It can load the Godot editor just fine, but… not much exciting happened after that.
 
-Anyway, during using that, I happened opened Microsoft Voice Access. It is like Siri on Windows. That is quite amazing.
+Interestingly, while experimenting with it, I accidentally opened **Microsoft Voice Access**—basically like Siri for Windows.  
+Pretty amazing, actually.

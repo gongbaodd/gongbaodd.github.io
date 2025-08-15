@@ -4,7 +4,7 @@ category: fe
 cover: 
     url: "./snapshot.png"
     alt: "snapshot on the old build"
-tags:
+tag:
     - mantine
     - astro
     - react

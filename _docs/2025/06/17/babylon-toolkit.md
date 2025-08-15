@@ -1,21 +1,31 @@
 ---
 type: post
 category: fe
-tags:
+tag:
     - babylonjs
+cover:
+    url: https://editor.babylonjs.com/documentation/composing-scene/adding-objects.png
+    alt: image from editor.babylonjs.com
 ---
+
 # Babylon Editor & Babylon Toolkit
 
-I tried two babylon tools this week, [Babylon Editor](https://editor.babylonjs.com/) and [Babylon Toolkit](https://www.babylontoolkit.com/).
+This week I tried two Babylon.js tools: [Babylon Editor](https://editor.babylonjs.com/) 🖥️ and [Babylon Toolkit](https://www.babylontoolkit.com/) 🧰.
 
-## Babylon Editor
+## 🖌️ Babylon Editor
 
-Babylon Editor is an electron packed windows scene editor for babylon.js. The editor exports the scene as `.babylon` file and use `babylonjs-editor-tools` for integrate the script to the game objects.
+Babylon Editor is an Electron-based Windows scene editor for Babylon.js.  
+It exports scenes as `.babylon` files 📦 and uses `babylonjs-editor-tools` to integrate scripts with game objects.
 
-The editor uses webpack as bundler, so the compiling time is comparable long. It uses commonJS module in the script integration, to use vite as a bundler, `vite-plugin-require` can be used to transpile require into import but a class formed script integration is needed.
+⚡ The editor uses Webpack as the bundler, so compile times can be relatively long.  
+📜 It uses CommonJS modules for script integration. If you want to use Vite instead, you can use `vite-plugin-require` to transpile `require` into `import`—but you’ll need to structure your script integration as a class.
 
-Another thing, @babylonjs/havok is not usable in vite because of an unclosed wasm support issue. Use it as a global script can work around this issue.
+⚠️ Note: `@babylonjs/havok` currently doesn’t work in Vite due to an unresolved WASM support issue. A workaround is to load it as a global script.
 
-## Babylon Toolkit
+## 🏗️ Babylon Toolkit
 
-Babylon Toolkit uses Unity as the babylon.js editor. It compiles almost all the Unity features into babylon including physics animation and AI. [Community edition](https://github.com/babylontoolkit/CommunityEdition) is free of use. There is [a video](https://youtu.be/d1spQKztIZI?si=deXXfnOfOeKXc_QD) to help you make a small project. Another [git repo](https://github.com/MackeyK24/UMD-StarterAssets) to show how to include the exported files in a JS project. I found it quite big to dig into, however compiling unity to JS is not an easy thing. I will follow up this project, but right now, I probably stick on Babylon Editor.
+Babylon Toolkit uses Unity as the editor for Babylon.js, compiling nearly all Unity features—physics ⚙️, animation 🎬, AI 🧠—into Babylon.  
+The [Community Edition](https://github.com/babylontoolkit/CommunityEdition) is free to use.  
+🎥 There’s also a [video tutorial](https://youtu.be/d1spQKztIZI?si=deXXfnOfOeKXc_QD) for making a small project and a [starter repo](https://github.com/MackeyK24/UMD-StarterAssets) showing how to include exported files in a JS project.
+
+It’s quite a big system to dive into, and compiling Unity to JS isn’t trivial. I’ll keep an eye on it 👀, but for now I’ll probably stick with Babylon Editor.

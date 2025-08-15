@@ -5,7 +5,7 @@ cover: {
     url: "./hearing-aid.jpg",
     alt: "hearing aid prototype"
 }
-tags:
+tag:
     - edge-impulse
     - machine-learning
     - arduino

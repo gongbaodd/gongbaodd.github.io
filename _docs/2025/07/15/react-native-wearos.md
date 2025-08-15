@@ -1,20 +1,24 @@
 ---
 type: post
 category: fe
-tags:
+tag:
     - react-native
     - wearos
     - expo
 ---
 
-# React Native WearOS
+# ⌚ React Native on WearOS
 
-Last year, I was trying to [make Apps on wearables](/plan/2024/03/02/week-9-github-actions-wearos). But I didn't continue. As I am doing some clean up on my todo list. I found this trying to make react native app on WearOS idea.
+Last year, I experimented with [building apps for wearables](/plan/2024/03/02/week-9-github-actions-wearos), but I didn’t continue. While cleaning up my todo list, I revisited the idea of making a **React Native app for WearOS**.
 
-The conclusion still, it is better to write native apps for WearOS.
+**Conclusion:** it’s still better to write **native apps** for WearOS.  
 
-The best experience for React Native is Expo. However, there is no native support for WearOS. The Expo Go App is not installable on WearOS. There is an implementation for React Native, [React Native Wear Connectivity](https://github.com/fabOnReact/react-native-wear-connectivity.git). You have to run react native locally, that means so many configurations and so many terminal windows to open. The coding experience is not better than native development.
+The best React Native experience comes through **Expo**, but unfortunately, there’s **no native WearOS support**. The Expo Go app can’t even be installed on WearOS.  
 
-When using React Native project, it is still an option to install expo SDKs. Just run `install-expo-modules@latest`, after that, remember to add NODE_ENV to make the project running.
+There’s a library called [React Native Wear Connectivity](https://github.com/fabOnReact/react-native-wear-connectivity.git) — it works, but you need to run React Native locally. That means juggling **lots of configurations** and multiple terminal windows. Honestly, the experience is not better than native development 😅.
 
-Actually, I am afraid of linking Android dependencies. I prefer to use `expo prebuild` to reuse the native code.
+If you still want to use Expo in a React Native project:  
+1. Run `install-expo-modules@latest`  
+2. Remember to set `NODE_ENV` to make the project run  
+
+Personally, I prefer using `expo prebuild` to **reuse native code**, so I can avoid the headache of linking Android dependencies.

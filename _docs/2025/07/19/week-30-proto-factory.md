@@ -1,7 +1,7 @@
 ---
 type: post
 category: plan
-tags:
+tag:
  - museum
 cover: {
     url: "./selfie.png",
@@ -9,18 +9,25 @@ cover: {
 }
 ---
 
-# Week 30: Proto Factory
+# Week 30: Proto Factory & Museum Hopping
 
-This Thursday and Friday, I went to three museums. Lennusadam(the Estonian Maritime Museum), PROTO invention factory and Kai Art Center.
+This Thursday and Friday turned into a mini museum marathon 🎟️ — I visited **three** places:  
+**Lennusadam** (Estonian Maritime Museum), **PROTO Invention Factory**, and **Kai Art Center**.
 
-## Lennusadam
+## ⚓ Lennusadam
 
-Lennusadam used to be a seaplane harbor, now it serves both as a museum and a harbor. You can visit a submarine, and all the boats that owned by the museum. There are also some exhibitions about the history of the discovery age.
+Lennusadam was once a **seaplane harbor**, and now it’s part museum, part harbor.  
+Highlights:  
+- Explore a **real submarine** 🚢  
+- See historic boats owned by the museum  
+- Exhibitions about the **Age of Discovery** and maritime history  
 
-## PROTO Invention Factory
+## 🕰️ PROTO Invention Factory
 
-PROTO is a place where you can try out different inventions and technologies. They use VR to simulate a steampunk world where you can try all the inventions in their proto types.
+PROTO is like stepping into a **steampunk playground**.  
+Using VR, they transport you into a world of early inventions — you can try out **prototype versions** of all kinds of quirky machines. Think “science fair meets fantasy novel” 🥽⚙️.
 
-## Kai Art Center
+## 🎨 Kai Art Center
 
-Kai Art is now exhibiting Building Absolutely Nothing Anywhere Nearby. It is a art style showing what is a community's responsibility.
+Currently hosting **_Building Absolutely Nothing Anywhere Nearby_**, an exhibition exploring what it means for a community to take responsibility.  
+It’s conceptual, reflective, and definitely makes you think 🤔.

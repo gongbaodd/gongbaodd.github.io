@@ -1,18 +1,18 @@
 ---
 type: post
 category: tech
-tags:
+tag:
     - 3DS
 cover: {
     url: "./citra.png",
-    alt: "citra icon"
+    alt: "Citra icon"
 }
 ---
 
 # Citra: A 3DS Emulator
 
-[Citra VR](https://sidequestvr.com/app/29066/citravr-beta) is a 3DS emulator for the Meta Quest. 
+[Citra VR](https://sidequestvr.com/app/29066/citravr-beta) is a **Nintendo 3DS emulator** for the Meta Quest, bringing the handheld’s dual-screen, stereoscopic 3D experience into virtual reality.
 
-You can download the 3D ROMs from [Citra's official website](https://citra-emulator.com/).
+You can grab 3D-compatible ROMs from [Citra’s official website](https://citra-emulator.com/).
 
-The 3Ds Games are mostly in dual-eye 3D, it is perfect for VR.
+Since most 3DS games were designed with dual-eye 3D in mind, they feel *perfectly at home* in VR — almost like they were made for it.

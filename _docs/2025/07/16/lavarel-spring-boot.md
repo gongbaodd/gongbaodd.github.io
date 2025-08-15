@@ -1,16 +1,16 @@
 ---
 type: post
 category: tech
-tags:
+tag:
     - laravel
     - spring-boot
 ---
+
 # Laravel and Spring Boot in 2025
 
-I just realized that I can use Jetbrains' Educational Pack. Since I got time, why not download all of them and have a try?
+I recently realized I can use **JetBrains’ Educational Pack** 🎓 — so why not download *all* the IDEs and play around?
 
-It has been years of not using Spring boot, since I left Qunar. I do not have any project that uses Java. Lately I heard that spring boot now supports kotlin. So I did a try. Just go to the [Spring Initializr](https://start.spring.io/) add spring web as dependency, then the project template is done.
+It’s been years since I last touched **Spring Boot** (back in my Qunar days), and I haven’t had a Java project in ages. But I heard it now supports **Kotlin**, so I gave it a try.  
+A quick visit to [Spring Initializr](https://start.spring.io/), select **Spring Web**, and boom — project template ready. Add a controller, use `@GetMapping` for the endpoint, and you’ve got yourself a REST server. 🚀
 
-The rest of it is as simple as making a restful server. I just need to add a controller, and then I can use the `@GetMapping` annotation to map the request to a method.
-
-Laravel is much easier, I almost forgot how easy to use a PHP framework. And the starter template supports user authentication out of box. brilliant!
+**Laravel**, on the other hand, reminded me just how *ridiculously easy* PHP frameworks can be. The starter template even comes with user authentication right out of the box. Brilliant!

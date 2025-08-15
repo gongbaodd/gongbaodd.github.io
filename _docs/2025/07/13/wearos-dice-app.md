@@ -1,16 +1,16 @@
 ---
 type: post
 category: fe
-tags:
+tag:
     - wearos
     - kotlin
 ---
 
-# WearOS Dice App
+# 🎲 WearOS Dice App
 
-It is been so long for me to try to make a wearOS app. [Last time](/plan/2024/06/29/week-26-adb-over-wifi) I check, the building experience is too slow. And Android development is preference is also a pain.
+It’s been a while since I last tried making a **WearOS app**. [Last time](/plan/2024/06/29/week-26-adb-over-wifi) I checked, the build process was painfully slow, and Android development itself is a bit of a headache 😅.
 
-This time I tried to make a simple dice app. Using ViewModel. There are some packages needed to be added in the `build.gradle` file. The editor still not remind you, but you can ask Gemini to find the packages.
+This time, I decided to make a **simple dice app** using **ViewModel**. Some dependencies need to be added in the `build.gradle` file — the editor won’t always remind you, but tools like **Gemini** can help find the right packages.
 
 ```kotlin
 // Dice.kt
@@ -100,4 +100,4 @@ fun DefaultPreview() {
 }
 ```
 
-Send the app to the watch is still a pain. Now I am using [wearos toolbox](https://wearosbox.com/) to install the apk.
+Sending the app to the watch is still a bit painful 😅. Right now I’m using [wearos toolbox](https://wearosbox.com/) to install the APK, which makes life a little easier.

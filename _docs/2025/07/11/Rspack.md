@@ -1,19 +1,22 @@
 ---
 type: post
 category: fe
-tags:
+tag:
     - rspack
+cover:
+  url: https://assets.rspack.rs/rspack/assets/rspack-v1-0-homepage.png
+  alt: rspack log
 ---
 
-# Rebuild project using Rspack
+# ⚡ Rebuilding a Project with Rspack
 
-In [Babylon Editor & Babylon Toolkit](/fe/2025/06/17/babylon-toolkit) I mentioned the old project template was using webpack and it was very slow, and because it uses many old techs, the vite migration is very hard.
+In [Babylon Editor & Babylon Toolkit](/fe/2025/06/17/babylon-toolkit), I mentioned that the old project template was using **Webpack**, which was painfully slow. Migrating to **Vite** was tricky because of all the legacy tech involved.  
 
-I was told that [rspack](https://rspack.rs/) supports webpack well. So I tried to migrate the project to rspack. It was super easy.
+I heard that [Rspack](https://rspack.rs/) has **great Webpack compatibility**, so I decided to give it a try — and wow, it was **super easy**.
 
-Install rsbuild in the project
+### Install Rspack
 
-```shell
+```bash
 yarn add @rsbuild/core @rsbuild/plugin-react
 ```
 
@@ -40,4 +43,6 @@ export default defineConfig({
 });
 ```
 
-Then everything works, you do not event need an "index.html" file.
+That’s it! Everything just works — you don’t even need an index.html file. 🚀
+
+Rspack feels like a lightning-fast, Webpack-compatible alternative that’s perfect for legacy projects.

@@ -1,27 +1,36 @@
 ---
 type: post
 category: plan
-tags:
+tag:
   - godot
+cover:
+  url: https://cdn2.unrealengine.com/godot-fb-tw-share-image-1920x1080-0abe26cbac38.jpg
+  alt: godot image from epic store
 ---
 
 # Week 27: Godot
 
-This week I was working on a game, [landlord simulator](https://github.com/gongbaodd/landlord-simulator). I mentioned last week that I was building a CI. base on the CI data, I realized that the most used version of Godot is 4.3.
+This week I was working on a game, [Landlord Simulator](https://github.com/gongbaodd/landlord-simulator).  
+Last week I mentioned I was setting up a CI pipeline—based on the CI data, I found that the most used version of Godot right now is **4.3**.
 
 ## External Editor
 
-Godot editor provides its own editor, however, I prefer to use Visual Studio Code. `Editor Settings -> Text Editor -> External Editor`, choose your vscode position, add `Exec Flags` to `{project} --goto {file}:{line}:{col}`.
+Godot comes with its own built-in editor, but I prefer Visual Studio Code.  
+To set it up, go to:
+
+`Editor Settings -> Text Editor -> External Editor`  
+
+Then select the path to your VS Code executable, and set **Exec Flags** to: `{project} --goto {file}:{line}:{col}`.
 
 ## Dialogue System
 
-I use [Dialogue Nodes](https://github.com/nagidev/DialogueNodes). 
+For dialogue, I’m using [Dialogue Nodes](https://github.com/nagidev/DialogueNodes).
 
 ## Animation Tree
 
-Godot provides a powerful animation system. The document sucks. 
+Godot has a powerful animation system… but the documentation isn’t great.
 
+## Caveats
 
-## Caveats 
-
-The build result may not be as expected. Sometimes the online release version is different from my local release version. That means the engine is still not stable enough
+The build results may not always match your expectations.  
+Sometimes the online release build is different from my local release build—so the engine still feels a bit unstable at times.

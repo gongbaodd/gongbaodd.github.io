@@ -1,9 +1,12 @@
 ---
 type: post
 category: fe
-tags:
+tag:
     - AI
     - huggingface
+cover:
+    url: https://huggingface.co/blog/assets/infrastructure-alerting/thumbnail.jpg
+    alt: huggingface icon
 ---
 # HuggingFace Transformer.js
 

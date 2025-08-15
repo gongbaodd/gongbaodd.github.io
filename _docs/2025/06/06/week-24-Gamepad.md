@@ -12,49 +12,53 @@ tag:
     - langchain
     - LanceDB
     - behavior-tree
+cover:
+    url: ./gamepad.jpg
+    alt: gamepad
 ---
 
-# Week 24: Gamepad
+# Week 24: Gamepad 🎮
 
-## EasySMX X15
+## EasySMX X15 🕹️
 
-To support my study on games, I bought an EasySMX X15 gamepad from TEMU. I was very worried about the quality. I checked Linus Tech Tips's video on the X10. It turns out very good. It is 25 eros, while if I want to buy one here in Estonia, a gamepad costs 50 eros. Although they are better qualities and long warranty, I don't need it.
+To support my game studies, I bought an EasySMX X15 gamepad from TEMU. I was worried about the quality at first 🤔, but after checking Linus Tech Tips' video on the X10, it turns out it’s really solid! 💪  
+It cost only 25€ compared to 50€ locally in Estonia. Sure, local ones have longer warranties and higher quality, but I don’t need that right now.
 
-## Unreal Engine Study
+## Unreal Engine Study 🖥️
 
-To study Unreal Engine is not very easy, especially when your hardware is limited. Last week Unreal 5.6 was released, when I installed it and opened the project, I can feel that my computer is not able to let me develop on that. Then I tried 4.23, which is the last version that supports a web build. My computer handles it well. However, the market place is not available for UE4 and I have to use Visual Studio 2017 with UE4. There is a third party [asset manager](https://assetmanager.studio/) for UE, but I do not think it works. So right now I am using UE5.0, I changed the scalability to low, and everything is fine. I can't find the option in 5.6. So I will continue using 5.0 for now. In the future I will upgrade for 5.5, because the machine learning feature.
+Studying Unreal Engine can be tough, especially on limited hardware. 😅  
+Last week, UE 5.6 was released, but my computer struggled. I went back to UE 4.23 for web builds, which ran fine, but the marketplace isn’t available there. So for now, I’m using **UE 5.0** on low settings. Later, I’ll upgrade to 5.5 for machine learning features.  
 
-Stumbling yet I still finished the beginner course of [The Community Highlight: Programming Tutorials](https://dev.epicgames.com/community/learning/courses/wNm/unreal-engine-community-highlight-programming-tutorials/Jp8J/unreal-engine-learning-blueprints-through-creating-a-super-mario-type-of-collectibles-part-1). Though, a lot of instructions are not clear to me.
+Courses I explored:  
+- [Programming Tutorials: Community Highlight](https://dev.epicgames.com/community/learning/courses/wNm/unreal-engine-community-highlight-programming-tutorials/Jp8J/unreal-engine-learning-blueprints-through-creating-a-super-mario-type-of-collectibles-part-1) – beginner-friendly, but some instructions unclear 🤷‍♂️  
+- [Code a First-Person Adventure Game](https://dev.epicgames.com/documentation/en-us/unreal-engine/code-a-firstperson-adventure-game-in-unreal-engine) – still rusty on some parts, even after [Tom Looman's C++ Guide](https://www.tomlooman.com/unreal-engine-cpp-guide/)  
+- [Your First Hour in UE 5.2](https://dev.epicgames.com/community/learning/courses/3ke/your-first-hour-in-unreal-engine-5-2/vvdk/) – a better starting point, I’ll continue here  
+- Later: [Stack-O-Bot](https://dev.epicgames.com/community/learning/paths/yG/stack-o-bot) to explore more tools 🤖
 
-The same feeling to another course [Code a First-Person Adventure Game](https://dev.epicgames.com/documentation/en-us/unreal-engine/code-a-firstperson-adventure-game-in-unreal-engine). Even though I have read [Tom Looman's Unreal Engine C++ Complete Guide](https://www.tomlooman.com/unreal-engine-cpp-guide/), many things are still rusty to me.
+## Bevy Study 🌱
 
-Then I went to [Your First Hour in Unreal Engine 5.2](https://dev.epicgames.com/community/learning/courses/3ke/your-first-hour-in-unreal-engine-5-2/vvdk/your-first-hour-in-unreal-engine-5-2-overview). This one feels like a good start. I will try to start with it .
+Bevy is a rising star in the game world, but adoption isn’t trivial. 🚀  
+Current version is 0.xx, so APIs change frequently. Tutorials often break.  
+I tried the [Bevy 3D Third Person Tutorial](https://youtu.be/qW0l_aEJfvc?si=M6hLAxoTWOlTImVv), but many APIs weren’t available in 0.16, even after downgrading to 0.10.  
+Still fascinated by [bevy_ecs](https://docs.rs/bevy_ecs/latest/bevy_ecs/) and its [archetype memory layout](https://taintedcoders.com/bevy/archetypes) – maybe I’ll build a WASM package for web game dev someday.
 
-Then I will go to [Stack-O-Bot](https://dev.epicgames.com/community/learning/paths/yG/stack-o-bot) project to learn more tools.
+## bitECS ⚡
 
-## Bevy Study
+[bitECS](https://github.com/NateTheGreatt/bitECS) is an ECS framework for JavaScript. Found it while researching Bevy ECS. Looks like a solid implementation for some JS projects.
 
-Another funny one is Bevy. This is a rising star in game world. During last week's study, I still find it is not easy to adopt. Right now bevy is ar 0.XX version, meaning many APIs will change, a tutorial may be out date in a few months. I tried [Bevy 3d Third Person Tutorial](https://youtu.be/qW0l_aEJfvc?si=M6hLAxoTWOlTImVv), most APIs are not available in 0.16, even downgraded to 0.10, some third party plugins are still failing.
+## LLM Study 🤖
 
-Well, I am still interested in [bevy_ecs](https://docs.rs/bevy_ecs/latest/bevy_ecs/) and its [archetype memory layout](https://taintedcoders.com/bevy/archetypes). In the future, I might use it to build a wasm package for web end game development.
+I’ve been exploring **LangChain.js** + [HuggingFace transformer.js](https://huggingface.co/docs/transformers/v4.17.0/en/index). LangChain handles workflows, HuggingFace handles models – a perfect combo! ✨  
 
-## bitECS
+Also discovered [LanceDB](https://lancedb.github.io/lancedb/) – a vector database that runs in both Docker and browser. 🗃️
 
-[bitECS](https://github.com/NateTheGreatt/bitECS) is an ECS framework for JavaScript. I found it when researching bevy-ecs. It looks a nice implementation that I will use for some projects.
+## Game AI 🕹️🤖
 
-## LLM Study
+As I mentioned in [Week 17](/plan/2025/04/26/week-17-behavior-graph), behavior trees are widely used in Unity and UE. FSMs and AI tools from games often influence front-end dev.  
+I found [yuka](https://github.com/Mugen87/yuka) – a JS behavior tree framework I can use.  
 
-This week I was also studying langchain.js. I made a little research on [hugginface's transformer.js](https://huggingface.co/docs/transformers/v4.17.0/en/index). I found they can be used together, as langchain for workflow and huggingface for model.
+Recommended books for deeper study:  
+- [Programming Game AI by Example](https://www.amazon.com/Programming-Example-Wordware-Developers-Library/dp/1556220782) 📚  
+- [3D Math Primer for Graphics and Game Development](https://www.amazon.com/Math-Primer-Graphics-Game-Development/dp/1568817231) 📐  
 
-The [LanceDB](https://lancedb.github.io/lancedb/) is a good vector database that can run in both docker and browser. 
-
-## Game AI
-
-[Week 17](/plan/2025/04/26/week-17-behavior-graph) I mentioned behavior tree in Unity. It is also used widely in UE. I always think that what is thriving in game development will eventually affect front end development, Like FSM. I found [yuka](https://github.com/Mugen87/yuka) is a JS behavior tree framework I can use.
-
-The author suggested two books that I can read. 
-
-- [Programming Game AI by Example](https://www.amazon.com/Programming-Example-Wordware-Developers-Library/dp/1556220782)
-- [3D Math Primer for Graphics and Game Development](https://www.amazon.com/Math-Primer-Graphics-Game-Development/dp/1568817231/)
-
-The two books remind me of Unity's [Artificial Intelligence for Beginners](https://learn.unity.com/course/artificial-intelligence-for-beginners) course I haven't finished yet. And UE's [Learning Agents (5.5)](https://dev.epicgames.com/community/learning/courses/GAR/unreal-engine-learning-agents-5-5/bZnJ/unreal-engine-learning-agents-5-5).
+These remind me of Unity's [Artificial Intelligence for Beginners](https://learn.unity.com/course/artificial-intelligence-for-beginners) and UE's [Learning Agents (5.5)](https://dev.epicgames.com/community/learning/courses/GAR/unreal-engine-learning-agents-5-5/bZnJ/unreal-engine-learning-agents-5-5) courses I still want to finish. 🚀
