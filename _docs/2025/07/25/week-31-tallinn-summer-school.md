@@ -2,8 +2,8 @@
 type: post
 category: plan
 cover: {
-    url: "https://www.tlu.ee/sites/default/files/styles/image_1300xn/public/2023-08/Summer%20School%20team%20at%20the%20Closing%20event.JPEG",
-    alt: "image from tlu.ee"
+    url: "./gifts",
+    alt: "gifts"
 }
 ---
 
