@@ -5,6 +5,9 @@ tag:
     - android
     - godot
     - unity
+cover:
+    url: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK6dxV8hsDXdBTwRvrRSk2nilKJc3owJh48S2PjczAxYRjVHafZaAacwa-gN3LB9M8gqX5xsWcvuQmJypyyckWEWjVU-RCfErdYlDBchmQBvqy7SXo1A-VILCSeHRGymBJAJOaor8C5bA/s0/192107754__34085217__148018.png
+    alt: android icon in developer.android.com
 ---
 
 # Game Activities in Android (Unity/Godot)

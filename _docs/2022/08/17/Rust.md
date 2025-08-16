@@ -4,6 +4,9 @@ category: tech
 tag:
   - algorithm
   - Rust
+cover: 
+    url: https://opensource.com/sites/default/files/lead-images/rust_programming_crab_sea.png
+    alt: rust logo from opensource.com
 ---
 
 # Rust 实现的几个排序算法
