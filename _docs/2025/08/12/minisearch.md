@@ -5,7 +5,7 @@ tag:
     - fuzzy-search
 ---
 
-# MiniSearch: An In-Browser Search Engine You’ll Love
+# 🔎 MiniSearch: An In-Browser Search Engine You’ll Love
 
 Lately, I’ve been rebuilding my website 🛠️.  
 Years ago, I thought about adding [Algolia](https://www.algolia.com/) for search… but honestly, I was too lazy 😅.  
