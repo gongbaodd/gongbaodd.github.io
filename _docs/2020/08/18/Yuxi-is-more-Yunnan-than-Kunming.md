@@ -2,7 +2,7 @@
 type: post
 category: travel
 cover: 
-  href: ./1.jpg
+  url: ./1.jpg
   alt: yuxi musuem
 ---
 # 玉溪比昆明更加云南 🌿
