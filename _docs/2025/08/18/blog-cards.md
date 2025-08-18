@@ -84,6 +84,6 @@ How to pick the box size? Count the words! 📝
 I’m hitting pause on these cards for now, but the story isn’t over.  
 
 - Still want to **tilt multi-line titles** for a poster vibe 🎭  
-- Currently, Astro backend handles the SVGs/colors → could be better in a **remark plugin** so everything’s ready at markdown parsing  
+- Currently, Astro backend handles the SVGs/colors → could be better in a **remark plugin** so everything’s ready at markdown parsing, In fact, I triggered a performance problem once, which caused about 1 hour of building time 😅.
 
 Stay tuned – these blog cards might get even snazzier soon! 🚀
