@@ -3,6 +3,9 @@ type: post
 category: fe
 tag:
     - fuzzy-search
+series:
+    name: "website-rebuild"
+    slug: "website-rebuild"
 ---
 
 # 🔎 MiniSearch: An In-Browser Search Engine You’ll Love
