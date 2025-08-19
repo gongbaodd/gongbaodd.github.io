@@ -5,19 +5,33 @@ tag:
     - Bluetooth
     - Android
     - video-doodle
+cover:
+    url: ./Istanbul.jpg
+    alt: me at istanbul airport
 ---
-# Week 33: Before Istanbul
+# Week 33: Before Istanbul ✈️🌍  
 
-This week is my last week in China. Right now, I am in the Beijing Airport waiting for my plane to Istanbul.
+This week is my last week in China 🇨🇳. Right now, I’m chilling at Beijing Airport, waiting for my flight to Istanbul.  
 
-I always wanted to write an Android APP to control devices' volume through bluetooth. Because my Samsung watch can not pair with iPhone. But now, I have changed one pair of ear plugs with volume control. Seems the requirement is solved. However I still watched some [tutorials](https://www.youtube.com/watch?v=A41hkHoYu4M) on Youtube.
+I always wanted to write an Android app to control device volume over Bluetooth 🎧📱. The reason? My Samsung watch can’t pair with iPhone 😅. But recently I got a new pair of earplugs with volume control, so the problem kinda solved itself. Still, I couldn’t resist watching some [tutorials](https://www.youtube.com/watch?v=A41hkHoYu4M) on YouTube.  
 
-Another cool thing, I found this [AI enhanced Video doodle tool](https://www-sop.inria.fr/reves/Basilic/2023/YBNWKB23/), it works as a video editor to draw doodles in videos.
+Another fun discovery — I came across this [AI-enhanced video doodle tool](https://www-sop.inria.fr/reves/Basilic/2023/YBNWKB23/) 🖊️🎥. It’s basically a video editor that lets you draw doodles directly on videos. Pretty cool!  
 
-My travel so far, after leaving Dalian at 1:00 PM, with 5 hours' railway to the Beijing Chaoyang Station. This is a new Station, is not provided a underground. There are buses to go to the center city. The bus stops look like those from Shenzhen Bay to Hong Kong. No 413 is to the Airport Underground Line. From terminal to terminal, Dong Zhi Men. Only costs 1 yuan.
+## The journey so far 🚆🚌  
 
-You can eat some food in Dong Zhi Men. Then go to the airport by the Airport Line to T3. It costs 26 yuan. Beijing Airport provides small train to go from terminals to terminals. The International Terminal is T3. 
+- Left Dalian at 1:00 PM.  
+- Took a 5-hour train to Beijing Chaoyang Station.  
+- The station is new, but no underground line yet. Instead, you hop on buses to the city center 🚍.  
+- The bus stops felt a lot like the Shenzhen Bay → Hong Kong ones.  
+- No. 413 bus takes you to the Airport Express Line for just 1 yuan! 💸  
+- Grabbed some food at Dongzhimen 🍜, then switched to the Airport Line → T3. That costs 26 yuan.  
 
-After the train, it's the harbour check. This time is much easier than that in Nanjing. When they check my intention and cash carefully and asked why I did not leave straight from Liaoning.
+Beijing Airport even has a small train that takes you between terminals 🚊. My international terminal is T3.  
 
-This is still half of the journey. After arriving Istanbul, I guess a free meal will be provided. And then I will go to Estonia, my guy Karl, a school body assigned to me will be waiting for me.
+The border check this time was smoother than in Nanjing ✅. They still asked about my travel plans, money, and why I wasn’t flying directly from Liaoning.  
+
+## What’s next ✨  
+
+This is just half the journey. After landing in Istanbul, I think there’ll be a free meal 🍽️ (hopefully 🤞). Then, I’ll continue on to Estonia 🇪🇪, where Karl — my assigned school buddy — will be waiting for me. Can’t wait! 🙌  
+
+![Me at instabul airport](./Istanbul.jpg)
