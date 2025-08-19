@@ -1,23 +1,30 @@
 ---
 type: post
 category: plan
+cover:
+    url: ./macaw.jpg
+    alt: selfie
 ---
 
-# 42nd Week - Trip to Hong Kong & Macow
+# Week 42: Trip to Hong Kong & Macau ✈️🏮
 
-## Bankcards
+## Bank Cards 💳
 
-I applied HSBC, BoCHK, ZA Bank, Livi Bank, And Bank and Airstar Bank. I didn't get a card from HSBC. The others are fine.
+I applied for **HSBC, BoCHK, ZA Bank, Livi Bank, And Bank, and Airstar Bank**.  
+No luck with HSBC 😅, but the others worked out fine.
 
-## Meta Quest 3
+## Meta Quest 3 🕶️
 
-I bought Meta quest 3 in WanChai. The new mix reality feature is awesome.
+Picked up a **Meta Quest 3** in Wan Chai.  
+The new **mixed reality feature** is super cool — can’t wait to try more!
 
-## Macow Museum
+## Macau Museum 🏛️
 
-Learned to be tolerance from a mile budda sculpture. There is a nice game in the museum.
+![selfie](./macaw.jpg)
 
-## Hong Kong Museum of Culture
+Learned a thing or two about **tolerance** from a giant Buddha sculpture 🙏.  
+Also, there’s a really fun game inside the museum 🎮.
 
-A show about Jin Yong is fun to watch.
+## Hong Kong Museum of Culture 🎭
 
+Caught a show about **Jin Yong** — and it was actually pretty fun to watch!

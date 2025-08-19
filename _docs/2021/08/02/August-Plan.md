@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+cover:
+  url: https://m.media-amazon.com/images/M/MV5BNjAxMTA5NWQtMDk0YS00Njg5LWI3MjMtODM4MDZmYTA0YWY4XkEyXkFqcGc@._V1_FMjpg_UY3900_.jpg
+  alt: justice league from imdb
 ---
 
 # 八月计划

@@ -1,8 +1,12 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BYzdjODIyMjctNDM2YS00N2MxLTg5YmEtNTc5M2EwMTg0OThhXkEyXkFqcGc@._V1_FMjpg_UX1086_.jpg
+    alt: from imdb
 ---
 
 # Soul
 
-皮克斯每年的固有泪目电影，这回的主题竟不是要坚持梦想，用一句俗话说，就是哥们别把掳走窄了。
+皮克斯每年必来的泪点电影，这次竟然不是“坚持梦想”的老梗🎬😭  
+用一句俗话说——哥们，这次别把自己局限太窄啦😂

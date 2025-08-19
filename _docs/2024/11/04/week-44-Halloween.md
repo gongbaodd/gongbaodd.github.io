@@ -6,25 +6,48 @@ tag:
     - spatial-SDK
     - Unreal
     - EdTech
+cover:
+    url: ./halloween.jpg
+    alt: group photo
 ---
-# Week 44: Halloween
 
-This is my first Halloween. I dressed up with a white sheet from JYSK as a ghost. Because I can not find any costume shop, and I can't afford expensive costume.
+# Week 44: Halloween 🎃👻
 
-It was an escape room game hold in some second year students' apartment. We had fun and they made everything carefully.
+This was my **first Halloween ever**!  
+I dressed up as a ghost with nothing but a white sheet from JYSK (cheap & effective 😅). Couldn’t find a costume shop nearby, and honestly, I couldn’t afford an expensive one anyway.  
 
-## RenderDoc
+We played an **escape room game** in some second-year students’ apartment. They had prepared everything really carefully — and it turned out super fun! 🙌  
 
-Last month, I focus a lot on WebGL shader. I wasted a lot of time. Not only because I am not familiar the grammar. I don't know when to use shader and how to debug it. ChatGPT helped a lot, but still not enough.
+![group photo](./halloween.jpg)
 
-I found this tool called RenderDoc. It is a free and open-source graphics debugger. It can capture and replay frame. I haven't use it yet. But I will try it next time.
+---
 
-Another thing, I learnt some graphic effects in Krita in 2D graphic class. I think I can try to use shader to implement them.
+## RenderDoc 🖥️
 
-## Meta Spatial SDK
+Last month, I spent a lot of time struggling with **WebGL shaders**.  
+Not only am I not super familiar with the syntax, but I also wasn’t sure *when* to use shaders or *how* to debug them 🤯.  
 
-I found this, when I was helping some student to do their VR project. Turns out meta already announced their SDK for android studio. And also the unreal support. I will try these two in the following week.
+ChatGPT helped a lot (shoutout 🙏), but it still wasn’t enough.  
 
-## EdTech Hackathon
+Then I discovered **RenderDoc** — a free, open-source graphics debugger that lets you capture and replay frames. I haven’t used it yet, but I’ll definitely try it next time.  
 
-I attended one team and we are going to make an APP for Estonian study. I read some API that is a digitalized Estonian dictionary, [Ekilex](https://github.com/keeleinstituut/ekilex/wiki/Ekilex-API). The website is all in Estonian. I need time to figure out how to use it.
+Meanwhile, in my **2D graphics class**, I learned some fun effects in Krita 🎨. I think I’ll try recreating them with shaders soon.
+
+---
+
+## Meta Spatial SDK 🕶️
+
+While helping some students with their VR project, I found out that **Meta already released their Spatial SDK**.  
+It even has support for **Android Studio** and **Unreal Engine**.  
+
+Gonna test both in the coming weeks 👀.
+
+---
+
+## EdTech Hackathon 🚀
+
+I joined a team for an **EdTech Hackathon**! We’re working on an app to help people study Estonian 🇪🇪.  
+
+I came across [Ekilex](https://github.com/keeleinstituut/ekilex/wiki/Ekilex-API) — a digital Estonian dictionary API. The catch? The whole website is in Estonian 😅. So I’ll need some time to figure out how to actually use it.  
+
+Excited to see where this goes! 🙌

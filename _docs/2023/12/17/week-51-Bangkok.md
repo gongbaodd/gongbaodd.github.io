@@ -1,11 +1,16 @@
 ---
 type: post
 category: plan
+cover:
+    url: ./thailand.jpg
+    alt: the king's gardern
 ---
 
 # Week 51: First Impression of Bangkok
 
 I am in bangkok today!
+
+![thailand](./thailand.jpg)
 
 ## Preparation
 
