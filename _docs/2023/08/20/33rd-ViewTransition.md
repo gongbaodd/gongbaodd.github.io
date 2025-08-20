@@ -1,27 +1,30 @@
 ---
 type: post
 category: plan
+cover:
+    url: https://blog.logrocket.com/wp-content/uploads/2021/08/astro-cool-parts.png
+    alt: astro logo from logrocket
 ---
-# The 33rd week: View Transition
 
-## WebComponent
+# Week 33: View Transition ✨
 
-lit is a good [web component](https://www.youtube.com/watch?v=2I7uX8m0Ta0&ab_channel=WebDevSimplified) library. To use it in typescript need [decorators](https://lit.dev/docs/components/decorators/#decorators-typescript).
+## Web Components 🧩
 
-## View Transition
+I’ve been looking into [Lit](https://www.youtube.com/watch?v=2I7uX8m0Ta0&ab_channel=WebDevSimplified) — it’s a pretty neat library for building web components. If you’re using TypeScript, you’ll need [decorators](https://lit.dev/docs/components/decorators/#decorators-typescript) to get the most out of it.  
 
-Astro.js supports [view transition](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API). It is a good way to make a block element animate between pages.
+## View Transitions 🎞️
 
-## 3D
+Astro.js now supports [View Transitions](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API). It’s a slick way to animate block elements between pages, giving your site a smoother, app-like feel.  
 
-[This](https://d.design) is a 3D modeling website by Alibaba.
+## 3D Stuff 🕶️
 
-[ogl](https://github.com/oframe/ogl) is a small 3D rendering library.
+- [d.design](https://d.design) → Alibaba’s 3D modeling site, worth checking out!  
+- [OGL](https://github.com/oframe/ogl) → a lightweight 3D rendering library that’s super clean and minimal.  
 
-## Germany 
+## Germany 🇩🇪
 
-[This](daad.de) website provides information about studying in Germany.
+Found [DAAD](https://daad.de) — a great resource if you’re considering studying in Germany.  
 
-## Thailand
+## Thailand 🇹🇭
 
-[Duke language school](https://dukelanguage.com/english-calendar/) in Thailand is a good place to learn Thai.
+If you’re up for learning Thai, [Duke Language School](https://dukelanguage.com/english-calendar/) in Thailand looks like a solid option.  
