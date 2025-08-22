@@ -6,6 +6,8 @@ tag:
     - godot
     - TallinnJS
     - rapidAPI
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 26: BabylonJS graphical development, Godot CI and TallinnJS

@@ -5,6 +5,8 @@ cover: {
     url: "./super-cell.jpg",
     alt: "super cell building"
 }
+city:
+  - Helsinki, Finland
 ---
 
 # A trip to Helsinki

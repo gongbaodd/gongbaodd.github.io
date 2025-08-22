@@ -6,6 +6,8 @@ tag:
     - Spring Festival
     - Deep Seek
     - Janus
+city:
+  - Tallinn, Estonia
 ---
 # Week 5: Global Game Jam 2025 and Spring Festival in Tallinn
 

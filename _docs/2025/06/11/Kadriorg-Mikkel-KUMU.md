@@ -6,6 +6,8 @@ tag:
 cover:
     url: ./kadriorg.jpg
     alt: I am in front of kadriorg
+city:
+  - Tallinn, Estonia
 ---
 
 # Kadriorg, Mikkel, and KUMU: Your Perfect Art-Hopping Day in Tallinn! 🎨

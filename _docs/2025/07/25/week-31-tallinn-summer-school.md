@@ -5,6 +5,8 @@ cover: {
     url: "./gifts.jpg",
     alt: "gifts"
 }
+city:
+  - Tallinn, Estonia
 ---
 
 

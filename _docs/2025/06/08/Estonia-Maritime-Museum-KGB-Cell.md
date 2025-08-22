@@ -4,6 +4,8 @@ category: travel
 cover:
     url: https://visitestonia.com/images/2093860/Margarita7.jpg@640w
     alt: fat magret in visitestonia.com
+city:
+  - Tallinn, Estonia
 ---
 # Fat Magret Museum & KGB Cell 🏰⚓🕵️‍♂️
 

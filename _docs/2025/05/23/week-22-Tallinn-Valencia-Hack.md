@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+city:
+  - Tallinn, Estonia
 ---
 # Week 22: Tallinn Valencia Hackathon
 

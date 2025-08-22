@@ -12,6 +12,8 @@ tag:
 cover:
     url: https://linnamuuseum.ee/wp-content/uploads/2023/05/neitsitorn.jpg
     alt: image from linnamuuseum.ee
+city:
+  - Tallinn, Estonia
 ---
 
 # 🏰 Week 28: Kiek in de Kök, Tallinn

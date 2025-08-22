@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Tallinn, Estonia
 ---
 # Museum of Estonian Architecture
 
