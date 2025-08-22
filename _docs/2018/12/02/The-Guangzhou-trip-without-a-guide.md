@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Guangzhou, China
 ---
 # 没做攻略的广州行
 

@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Shenzhen, China
 ---
 
 # 工业展览馆、华强北和华侨城创意园

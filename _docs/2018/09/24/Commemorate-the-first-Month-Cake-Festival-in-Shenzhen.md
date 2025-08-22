@@ -1,6 +1,9 @@
 ---
 type: post
 category: life
+city:
+  - Shenzhen, China
+  - Nanshan, China
 ---
 # 纪念一下在深圳的第一个月饼节
 

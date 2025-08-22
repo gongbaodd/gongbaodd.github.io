@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Shanghai, China
 ---
 
 # 上海陆家嘴看看果果大佬

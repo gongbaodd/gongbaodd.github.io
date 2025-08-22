@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Shenzhen, China
 ---
 
 # 深圳博物馆

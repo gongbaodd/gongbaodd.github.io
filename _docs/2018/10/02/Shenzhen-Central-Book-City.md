@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Shenzhen, China
 ---
 
 # 深圳中心书城

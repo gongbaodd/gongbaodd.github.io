@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Qingzhou, China
 ---
 
 # 青州龙兴寺佛像

@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Shenzhen, China
 ---
 
 # 大鹏湾里的团建

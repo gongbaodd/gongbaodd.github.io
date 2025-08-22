@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Rizhao, China
 ---
 
 # 日照短暂地赶海

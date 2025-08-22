@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Shenzhen, China
 ---
 
 # 雨中的南头古城和中山公园

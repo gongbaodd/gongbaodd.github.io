@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Quanzhou, China
 ---
 
 # 泉州就是小东南亚

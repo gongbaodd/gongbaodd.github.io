@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Fuzhou, China
 ---
 
 # 我在福州吃胖啦

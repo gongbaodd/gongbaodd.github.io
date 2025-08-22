@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Nanshan, China
 ---
 
 # 南山博物馆 & 南山图书馆

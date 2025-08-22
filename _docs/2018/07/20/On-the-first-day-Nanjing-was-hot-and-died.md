@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Nanjing, China
 ---
 
 # 入伏第一天南京热死了

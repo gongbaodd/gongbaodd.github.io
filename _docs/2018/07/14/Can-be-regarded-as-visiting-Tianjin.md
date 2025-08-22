@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Tianjin, China
 ---
 
 # 可算把天津逛了

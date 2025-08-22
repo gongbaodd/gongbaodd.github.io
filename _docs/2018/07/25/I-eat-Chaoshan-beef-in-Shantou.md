@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Shantou, China
 ---
 
 # 我在汕头吃潮汕牛肉
