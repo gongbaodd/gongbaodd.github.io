@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Zhuhai, China
 ---
 
 # 珠海过年

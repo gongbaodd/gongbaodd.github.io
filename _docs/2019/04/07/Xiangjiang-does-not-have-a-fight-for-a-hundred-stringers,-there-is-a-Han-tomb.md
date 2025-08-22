@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Changsha, China
 ---
 
 # 湘江没有百舸争流，倒有汉墓一座

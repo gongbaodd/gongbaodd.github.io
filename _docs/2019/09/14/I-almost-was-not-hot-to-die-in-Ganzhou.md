@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Ganzhou, China
 ---
 # 我在赣州差点没被热死
 

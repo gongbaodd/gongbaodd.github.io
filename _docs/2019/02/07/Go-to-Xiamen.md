@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Xiamen, China
 ---
 
 # 走走！去厦门

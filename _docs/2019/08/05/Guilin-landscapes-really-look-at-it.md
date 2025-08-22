@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Guilin, China
 ---
 
 # 桂林山水确实不虚一看

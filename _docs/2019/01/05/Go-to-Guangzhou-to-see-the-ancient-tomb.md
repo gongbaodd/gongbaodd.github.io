@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Guangzhou, China
 ---
 # 到广州看古墓
 

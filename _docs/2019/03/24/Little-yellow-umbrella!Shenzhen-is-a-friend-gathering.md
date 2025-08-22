@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Shenzhen, China
 ---
 # 小黄伞！深圳即友聚会啦
 

@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Kaili, China
+  - Guizhou, China
 ---
 
 # 凯里朗德苗寨，还是贵州凉快

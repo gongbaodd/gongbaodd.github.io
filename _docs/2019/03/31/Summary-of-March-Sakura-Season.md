@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+city:
+  - Shenzhen, China
 ---
 
 # 三月总结： 樱花季

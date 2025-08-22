@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+city:
+  - Tengchong, China
 ---
 
 # 不知不觉进入六月了

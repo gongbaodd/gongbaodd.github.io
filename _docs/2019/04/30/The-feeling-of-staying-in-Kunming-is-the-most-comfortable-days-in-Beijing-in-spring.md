@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Kunming, China
 ---
 
 # 待在昆明的感觉就是北京春天最舒服的那几天

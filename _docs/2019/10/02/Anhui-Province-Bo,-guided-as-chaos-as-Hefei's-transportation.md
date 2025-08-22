@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Hefei, China
 ---
 
 # 安徽省博，导引和合肥的交通一样混乱

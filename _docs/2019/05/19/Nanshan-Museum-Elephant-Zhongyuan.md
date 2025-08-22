@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Nanshan, China
 ---
 
 # 在南山博物馆看大象中原

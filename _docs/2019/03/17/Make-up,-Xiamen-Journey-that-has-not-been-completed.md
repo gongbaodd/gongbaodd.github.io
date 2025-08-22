@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Xiamen, China
 ---
 
 # 补上，没完成的厦门之旅
