@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Sanya, China
 cover:
     url: ./89d0a2e1gw1evfz20ngz0j20xm0luq7a.jpg
     alt: the group photo

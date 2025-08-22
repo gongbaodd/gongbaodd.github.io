@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Dalian, China
 ---
 
 # 环渤海故事之行

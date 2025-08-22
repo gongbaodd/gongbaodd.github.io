@@ -1,6 +1,14 @@
 ---
 type: post
 category: travel
+city:
+  - Yantai, China
+  - Penglai, China
+  - Qingdao, China
+  - Tai'an, China
+  - Qufu, China
+  - Jinan, China
+  - Tianjin, China
 ---
 
 # 环渤海之行

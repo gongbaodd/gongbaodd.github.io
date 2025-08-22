@@ -1,6 +1,16 @@
 ---
 type: post
 category: life
+city:
+  - Beijing, China
+  - Datong, China
+  - Pingyao, China
+  - Linfen, China
+  - Huashan, China
+  - Xi'an, China
+  - Sanmenxia, China
+  - Luoyang, China
+  - Zhengzhou, China
 ---
 
 # 9.29
