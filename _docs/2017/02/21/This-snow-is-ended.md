@@ -1,6 +1,14 @@
 ---
 type: post
 category: life
+city:
+  - Beijing, China
+  - Gubeikou, China
+  - Datong, China
+  - Pingyao, China
+  - Linfen, China
+  - Huashan, China
+  - Lintong, China
 ---
 
 <center>

@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Lushun, China
 ---
 
 # 全国唯一的侵略者博物馆——旅顺博物馆

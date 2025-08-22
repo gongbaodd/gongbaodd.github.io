@@ -1,6 +1,11 @@
 ---
 type: post
 category: life
+city:
+  - Datong, China
+  - Beijing, China
+  - Xi'an, China
+  - Nanjing, China
 ---
 
 好吧，上次说到哪儿了？

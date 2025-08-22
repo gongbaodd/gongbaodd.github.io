@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Datong, China
 ---
 
 从今天起，我打算换一种日记形式写博客，因为貌似是在腾不出时间来维护它，不如就用琐碎的时间当做微博来记也不错。

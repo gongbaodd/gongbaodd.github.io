@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Beijing, China
 ---
 
 # 东张西望——国博里的卢浮宫百年创想

@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Beijing, China
 ---
 
 # 清真中的清真其实没有牛肉面

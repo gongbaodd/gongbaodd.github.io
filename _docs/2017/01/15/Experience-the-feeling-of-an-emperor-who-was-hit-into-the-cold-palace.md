@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Beijing, China
 ---
 
 上次国博卢浮宫展一文，我说国博人太多，又不想出天安门于是去了太庙，那么这次就说说太庙。

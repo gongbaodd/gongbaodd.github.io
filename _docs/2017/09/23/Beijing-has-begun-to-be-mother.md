@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Beijing, China
 ---
 # 北京都开始娘了
 

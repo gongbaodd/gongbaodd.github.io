@@ -1,6 +1,8 @@
 ---
 category: travel
 type: post
+city:
+  - Beijing, China
 ---
 
 # 千里江山&赵孟頫&茜茜公主

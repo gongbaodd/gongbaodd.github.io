@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Fengning County, China
+  - Duolun County, China
 ---
 
 # 丰宁县-木兰围场-御道口-多伦县-乌兰布统

@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Beijing, China
+  - Shijiazhuang, China
 ---
 
 # 并不是特别值得一去的秦汉展

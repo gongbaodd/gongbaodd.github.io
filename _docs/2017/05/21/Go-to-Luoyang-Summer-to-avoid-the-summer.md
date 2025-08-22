@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Luoyang, China
+  - Beijing, China
 ---
 
 # 到洛阳避暑

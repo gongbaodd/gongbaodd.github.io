@@ -1,6 +1,8 @@
 ---
 type: post
 category: life
+city:
+  - Beijing, China
 ---
 # 去大葆台啥也没看着，一首《南方姑娘》纪念一下冻成狗的日子
 

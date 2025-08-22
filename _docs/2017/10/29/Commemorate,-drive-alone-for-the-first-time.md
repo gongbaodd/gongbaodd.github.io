@@ -1,6 +1,8 @@
 ---
 category: travel
 type: post
+city:
+  - Beijing, China
 ---
 
 # 纪念一下先是去香山然后去百望山，最后哪也没去，但毕竟是第一次独自驾车的经历
