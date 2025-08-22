@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+city:
+  - Dalian, China
 ---
 
 # 二月计划

@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Dalian, China
 ---
 
 # 大连美术馆

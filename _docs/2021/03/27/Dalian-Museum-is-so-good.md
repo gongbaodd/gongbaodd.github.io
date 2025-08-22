@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Dalian, China
+  - Lushun, China
 ---
 
 # 大连博物馆，风好正扬帆
