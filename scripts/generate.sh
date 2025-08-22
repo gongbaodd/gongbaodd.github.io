@@ -4,9 +4,4 @@ git clone  --recurse-submodules https://github.com/gongbaodd/blog.gongbushang.co
 cd $GENERATOR_DIR
 git pull
 pnpm install
-# prepare document
-cd src/content
-pnpm run prepare
-cd ../../
-# start build
 pnpm run build
