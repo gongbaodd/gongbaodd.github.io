@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Beijing, China
 ---
 
 # 我在美术馆寻文艺却寻出了，喵

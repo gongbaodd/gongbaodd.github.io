@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Nanjing, China
+  - Beijing, China
 ---
 
 # 南京跨年

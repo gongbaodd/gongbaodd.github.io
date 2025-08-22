@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Haixi Prefecture, China
 ---
 
 # 唐蕃北斗

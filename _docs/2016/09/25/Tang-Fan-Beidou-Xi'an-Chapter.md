@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Xi'an, China
+  - Beijing, China
 ---
 
 # 唐蕃北斗

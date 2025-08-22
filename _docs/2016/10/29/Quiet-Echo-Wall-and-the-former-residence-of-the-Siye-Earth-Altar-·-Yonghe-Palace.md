@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Beijing, China
+  - Xining, China
 ---
 
 # 安静的回音壁和四爷故居

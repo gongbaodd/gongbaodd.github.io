@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Xining, China
 ---
 
 # 唐蕃北斗

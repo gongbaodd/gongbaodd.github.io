@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Lanzhou, China
+  - Xi'an, China
 ---
 
 # 唐蕃北斗

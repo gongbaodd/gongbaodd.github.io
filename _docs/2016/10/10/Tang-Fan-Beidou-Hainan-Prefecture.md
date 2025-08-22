@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Hainan Prefecture, China
 ---
 
 # 唐蕃北斗
