@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 43: Riigikogu

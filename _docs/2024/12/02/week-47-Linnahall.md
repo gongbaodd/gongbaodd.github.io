@@ -4,6 +4,8 @@ category: tech
 cover:
     url: ./linnahall.jpg
     alt: theatre in linnahall
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 47: Linnahall 🏛️

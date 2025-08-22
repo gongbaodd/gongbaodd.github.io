@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Bangkok, Thailand
 ---
 
 # How to Extend Thailand eVisa

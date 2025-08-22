@@ -4,6 +4,8 @@ category: plan
 tag:
     - Estonian
     - Russian
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 37: Estonian and Russian

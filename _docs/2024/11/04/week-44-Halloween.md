@@ -9,6 +9,8 @@ tag:
 cover:
     url: ./halloween.jpg
     alt: group photo
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 44: Halloween 🎃👻

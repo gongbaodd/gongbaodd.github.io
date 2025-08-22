@@ -4,6 +4,8 @@ category: plan
 tag:
     - game-ideas
     - pixelIt
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 38: European Parliament Role Play Game

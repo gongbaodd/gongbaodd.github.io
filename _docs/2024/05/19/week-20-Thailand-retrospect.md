@@ -5,6 +5,8 @@ tag:
     - msw
     - mediapipe
     - threejs
+city:
+  - Bangkok, Thailand
 ---
 
 # Week 20: Thailand Retrospect

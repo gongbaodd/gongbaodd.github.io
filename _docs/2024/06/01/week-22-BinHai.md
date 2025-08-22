@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+city:
+  - Beijing, China
+  - Binhai, China
 ---
 # Week 22: BinHai
 

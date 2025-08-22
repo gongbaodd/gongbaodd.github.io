@@ -4,6 +4,8 @@ category: plan
 cover:
     url: ./pet.jpg
     alt: lucky
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 51: Pets 🐶

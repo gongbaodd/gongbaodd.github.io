@@ -8,6 +8,10 @@ tag:
 cover:
     url: ./Istanbul.jpg
     alt: me at istanbul airport
+city:
+  - Dalian, China
+  - Beijing, China
+  - Istanbul, Turkey
 ---
 # Week 33: Before Istanbul ✈️🌍  
 

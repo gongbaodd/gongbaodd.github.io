@@ -1,6 +1,11 @@
 ---
 type: post
 category: plan
+city:
+  - Bangkok, Thailand
+  - Kunming, China
+  - Beijing, China
+  - Langfang, China
 ---
 # Week 21: Boeing 787
 

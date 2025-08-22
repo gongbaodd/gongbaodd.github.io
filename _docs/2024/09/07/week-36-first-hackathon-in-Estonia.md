@@ -1,6 +1,8 @@
 ---
 type: post
 category: post
+city:
+  - Tallinn, Estonia
 ---
 
 # Week 36: My First Hackathon in Estonia

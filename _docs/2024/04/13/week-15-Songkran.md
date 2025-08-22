@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+city:
+  - Bangkok, Thailand
 ---
 # Week 15: Songkran Festival
 

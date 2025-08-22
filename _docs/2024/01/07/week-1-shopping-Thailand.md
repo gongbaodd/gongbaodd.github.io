@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+city:
+  - Bangkok, Thailand
 ---
 # Week 1: Shopping in Thailand
 
