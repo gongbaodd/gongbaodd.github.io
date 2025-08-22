@@ -13,7 +13,12 @@
     "gh-pages": "4.0.0",
     "husky": "8.0.1",
     "lint-staged": "12.5.0",
-    "prettier": "2.6.2"
+    "node-vibrant": "^4.0.3",
+    "path": "^0.12.7",
+    "potrace": "^2.1.8",
+    "prettier": "2.6.2",
+    "sharp": "^0.34.3",
+    "url": "^0.11.4"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -51,6 +56,12 @@
     "lint": "eslint src --ext=ts,js,tsx --fix",
     "commit": "git-cz",
     "test": "echo \"no test needed\" && exit 0",
-    "build": "sh ./scripts/generate.sh"
+    "build": "sh ./scripts/generate.sh",
+    "prepare": "node scripts/prepare.mjs"
+  },
+  "dependencies": {
+    "chroma-js": "^3.1.2",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3"
   }
 }
