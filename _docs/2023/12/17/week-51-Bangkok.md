@@ -4,6 +4,8 @@ category: plan
 cover:
     url: ./thailand.jpg
     alt: the king's gardern
+city:
+  - Bangkok, Thailand
 ---
 
 # Week 51: First Impression of Bangkok

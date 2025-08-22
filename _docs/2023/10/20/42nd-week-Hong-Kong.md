@@ -4,6 +4,9 @@ category: plan
 cover:
     url: ./macaw.jpg
     alt: selfie
+city:
+  - Hong Kong
+  - Macau
 ---
 
 # Week 42: Trip to Hong Kong & Macau ✈️🏮

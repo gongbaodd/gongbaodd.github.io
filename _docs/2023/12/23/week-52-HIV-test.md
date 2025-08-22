@@ -4,6 +4,8 @@ category: plan
 cover:
     url: ./art.jpg
     alt: artwork in clinic
+city:
+  - Bangkok, Thailand
 ---
 # Week 52: Did an HIV Test 🩺
 

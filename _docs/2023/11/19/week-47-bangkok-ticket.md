@@ -14,6 +14,8 @@ tag:
     - capacitor
     - iis
     - bangkok
+city:
+  - Bangkok, Thailand
 ---
 
 # Week 47: I Bought a Ticket to Bangkok
