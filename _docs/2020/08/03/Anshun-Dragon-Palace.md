@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+city:
+  - Guiyang, China
+  - Anshun, China
 ---
 
 # 安顺龙宫

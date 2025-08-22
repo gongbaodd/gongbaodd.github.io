@@ -1,6 +1,10 @@
 ---
 type: post
 category: travel
+city:
+  - Dunhuang, China
+  - Lanzhou, China
+  - Jiayuguan, China
 ---
 
 # 没有暖气的敦煌

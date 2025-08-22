@@ -1,6 +1,25 @@
 ---
 type: post
 category: travel
+city:
+  - Shijiazhuang, China
+  - Urumqi, China
+  - Changji, China
+  - Fuyun, China
+  - Koktokay, China
+  - Kanas, China
+  - Buerjin, China
+  - Altay, China
+  - Baihaba, China
+  - Hem, China
+  - Wuerhe, China
+  - Sayram Lake, China
+  - Alashankou, China
+  - Ili, China
+  - Yining, China
+  - Nalati, China
+  - Bayanbulak, China
+  - Korla, China
 ---
 
 # 在新疆的北面画了一个圈

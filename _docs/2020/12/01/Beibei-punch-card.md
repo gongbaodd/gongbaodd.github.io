@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Mohe, China
 ---
 
 # 北陲打卡之行

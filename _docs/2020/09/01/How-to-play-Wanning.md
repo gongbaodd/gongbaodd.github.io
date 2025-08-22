@@ -1,6 +1,10 @@
 ---
 type: post
 category: travel
+city:
+  - Wanning, China
+  - Haikou, China
+  - Sanya, China
 ---
 
 # 万宁怎么玩

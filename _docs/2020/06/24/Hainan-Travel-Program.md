@@ -1,6 +1,11 @@
 ---
 type: post
 category: plan
+city:
+  - Zhuhai, China
+  - Haikou, China
+  - Sanya, China
+  - Changsha, China
 ---
 
 # 海南旅行计划

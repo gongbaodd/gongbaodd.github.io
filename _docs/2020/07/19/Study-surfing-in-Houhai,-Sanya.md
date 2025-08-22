@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+  - Sanya, China
 ---
 
 # 在三亚后海学习冲浪

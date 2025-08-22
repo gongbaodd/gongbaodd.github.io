@@ -1,6 +1,10 @@
 ---
 type: post
 category: travel
+city:
+  - Shenzhen, China
+  - Beijing, China
+  - Kowloon, Hong Kong
 ---
 
 # 工业站！探清水河

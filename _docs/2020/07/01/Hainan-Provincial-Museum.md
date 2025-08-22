@@ -1,6 +1,11 @@
 ---
 type: post
 category: travel
+city:
+  - Haikou, China
+  - Xiamen, China
+  - Shantou, China
+  - Guangzhou, China
 ---
 
 # 海南省博物馆
