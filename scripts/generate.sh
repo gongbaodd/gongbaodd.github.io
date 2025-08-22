@@ -7,5 +7,6 @@ pnpm -v
 git clone  --recurse-submodules https://github.com/gongbaodd/blog.gongbushang.com.git $GENERATOR_DIR
 cd $GENERATOR_DIR
 git pull
-npm install --legacy-peer-deps
+npm i pnpm
+npx pnpm install
 npm run build
