@@ -1,14 +1,15 @@
 ---
 type: post
-category: fe
+category: plan
 series:
     name: "website-rebuild"
     slug: "website-rebuild"
 tag:
     - PV
+    - React
 ---
 
-# 🐐 Goat Counter
+# Week 35: 🐐 Goat Counter
 
 Never thought this would happen — I was at the gym 🏋️ when I got a message saying my Cloudflare quota was maxed out… all because of the little PV counter I built [earlier](/fe/2025/08/18/pv). 😅  
 
@@ -20,3 +21,5 @@ It comes with:
 - 🔌 APIs so I can display PVs directly on my site  
 
 And the best part? It’s currently **unlimited & free**, plus you can even self-host it if you want. 🚀
+
+In this week, I also rewrite part of the blog card logic, make it build faster. And I added some UI components from [React Bits](https://www.reactbits.dev/). And finished the archive page.

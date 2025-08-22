@@ -1,15 +1,19 @@
 ---
 type: post
 category: tech
+tag:
+    - Pebble
 ---
+
+# Pebble JS ⌚
 
 >这个月初，任性买了刚发布的pebble time，一直还没写个应用，这个周末抽出时间看看。
 
-# 开头
+## 开头
 
 pebble的应用可以用C和Node开发，开发工具也可以使用[cloudpebble](https://cloudpebble.net/)（墙内用户伤不起）或者下载sdk离线开发。
 
-# 安装SDK
+## 安装SDK
 
 mac安装pebble sdk太简单了
 
@@ -19,18 +23,18 @@ brew install pebble/pebble-sdk/pebble-sdk
 
 网路顺畅的话，安装就完成了。
 
-# 建立PebbleJS工程
+## 建立PebbleJS工程
 
 离线建C项目只要运行```pebble new-project xxx```就好，但是js项目需要把github上的项目https://github.com/pebble/pebblejs.git clone下来
 
 ```
 git clone https://github.com/pebble/pebblejs.git
 ```
-# 文件目录
+## 文件目录
 
 pebble应用的配置文件在appinfo.json里面，逻辑代码都写在src下的js/app.js里
 
-# UI module
+## UI module
 
 引入ui模块
 
@@ -38,7 +42,7 @@ pebble应用的配置文件在appinfo.json里面，逻辑代码都写在src下�
 var ui = require('ui');
 ```
 
-## Window
+### Window
 
 ```
 var wind = new UI.Window({
@@ -51,7 +55,7 @@ wind.show();
 
 <img src="https://developer.getpebble.com/assets/images/getting-started/watchface-tutorial/1-blank.png">
 
-## Card
+### Card
 
 创建一个卡片
 
@@ -81,7 +85,7 @@ wind.show();
 
 >Card还有body和icon属性
 
-## Menu
+### Menu
 
     var resultsMenu = new UI.Menu({
         sections: [{
@@ -104,13 +108,13 @@ wind.show();
 
 <img src="https://developer.getpebble.com/assets/images/getting-started/pebble-js-tutorial/2-menu.png">
 
-# 编译
+## 编译
 
 ```
 pebble build
 ```
 
-#安装
+## 安装
 
 ```
 pebble install --phone 192.168.1.107//你的手机ip，记得打开pebble的调试模式

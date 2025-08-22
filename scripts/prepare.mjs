@@ -39,8 +39,13 @@ async function collectMetadata() {
 
       if (data?.cover?.url) {
         let relPath = path.relative(ROOT_DIR, file);
-        relPath = toUnixPath(relPath).replace(/\.md$/, "");
-        relPath = "/" + relPath;
+        relPath = toUnixPath(relPath)
+          .replace(/\.md$/, "")
+          .toLowerCase()
+          .replace(/[^\w\/-]+/g, "") // replace punctuation (except / and -) with -
+          .replace(/\/+/g, "/") // collapse multiple slashes
+          .replace(/^-+/, "") // remove leading -
+          .replace(/-+$/, ""); // remove trailing -
 
         const old = oldData[relPath];
 
@@ -85,7 +90,8 @@ async function getColorSet(imagePathOrUrl, mdDirAbs) {
 
   if (isRemote(imagePathOrUrl)) {
     const res = await fetch(imagePathOrUrl);
-    if (!res.ok) throw new Error(`Failed to fetch ${imagePathOrUrl}: ${res.status}`);
+    if (!res.ok)
+      throw new Error(`Failed to fetch ${imagePathOrUrl}: ${res.status}`);
     buffer = Buffer.from(await res.arrayBuffer());
     buffer = await sharp(buffer).png().toBuffer();
   } else {
