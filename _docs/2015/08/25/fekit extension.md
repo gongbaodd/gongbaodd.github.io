@@ -3,6 +3,8 @@ type: post
 category: fe
 ---
 
+# Fekit Extension 初探
+
 > 这几天公司里面的 QA 资源紧张，手上压了 4 个分支还没有发布，
 > 干脆腾出时间研究研究 fekit 的 extension，最好能贡献点代码。
 
@@ -11,12 +13,12 @@ category: fe
 
 > [Fekit 的 github 地址](https://github.com/rinh/fekit)<br> >[FekitExtension 的模板地址](https://github.com/rinh/fekit-extension-template)<br> >[FekitExtension 的一个示例](https://github.com/rinh/fekit-extension-hf)
 
-# 谈谈需求
+## 谈谈需求
 
-我想写一个工具，在运行 fekit server 之前把项目中的每个 js 加入一个 DOM 的插入供作，
+我想写一个工具，在运行 fekit server 之前把项目中的每个 js 加入一个 DOM 的插入，
 插入一个显示编译 ip 地址的 div，在 server 结束之后将这句 js 删掉。
 
-# 怎么写？
+## 怎么写？
 
 单独按照 Extension 模板里面写，没办法调试啊！！！怎么办？我干脆在
 `/usr/local/lib/node_modules/fekit/lib/commands/`
@@ -38,13 +40,13 @@ category: fe
 
 可以运行`fekit msg`试试了
 
-# 都是些什么玩意儿
+## 都是些什么玩意儿
 
-## optimist
+### optimist
 
 看了许多现成的示例，optimist 就是给命令添加参数
 
-## options
+### options
 
     {
          _: [ 'msg' ],
@@ -53,7 +55,7 @@ category: fe
          cwd: '~'
      }
 
-## module
+### module
 
 > 全局对象
 
@@ -104,7 +106,7 @@ category: fe
              ]
         }
 
-# 开始大干一场吧
+## 开始大干一场吧
 
 通过判断 options 里面是否有 p 和 u 来判断是否打包，读 option 得 cwd 判断项目根目录，这样就能读取
 fekit.config 了，将 fekit.config 里面的每个 js 插一段脚本，在 u 里面将这段脚本删除，大功告成。
