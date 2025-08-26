@@ -5,11 +5,7 @@ category: fe
 
 # Fekit Extension 初探
 
-> 这几天公司里面的 QA 资源紧张，手上压了 4 个分支还没有发布，
-> 干脆腾出时间研究研究 fekit 的 extension，最好能贡献点代码。
-
-> Fekit 是去哪儿网的前端部署及开发工具，相比于 gulp、grunt 等工具
-> ，Fekit 需要用户的学习成本较低，上手比较快。
+> 这几天公司里面的 QA 资源紧张，手上压了 4 个分支还没有发布，干脆腾出时间研究研究 fekit 的 extension，最好能贡献点代码。Fekit 是去哪儿网的前端部署及开发工具，相比于 gulp、grunt 等工具，Fekit 需要用户的学习成本较低，上手比较快。
 
 > [Fekit 的 github 地址](https://github.com/rinh/fekit)<br> >[FekitExtension 的模板地址](https://github.com/rinh/fekit-extension-template)<br> >[FekitExtension 的一个示例](https://github.com/rinh/fekit-extension-hf)
 
@@ -24,6 +20,8 @@ category: fe
 `/usr/local/lib/node_modules/fekit/lib/commands/`
 下面开刀，在里面新建一个 msg.js,它大概是这个样子的
 
+```js
+
     (function(){
         exports.usage = "在js里面插一个插入DOM的脚本";
         exports.set_options = function(optimist) {
@@ -37,6 +35,7 @@ category: fe
 
         }
     }).call(this);
+```
 
 可以运行`fekit msg`试试了
 
@@ -48,16 +47,21 @@ category: fe
 
 ### options
 
+```js
+
     {
          _: [ 'msg' ],
          '$0': 'fekit',
          p:true,
          cwd: '~'
      }
+```
 
 ### module
 
 > 全局对象
+
+```js
 
     {
         id: '/usr/local/lib/node_modules/fekit/lib/commands/msg.js',
@@ -105,6 +109,7 @@ category: fe
              '/node_modules'
              ]
         }
+```
 
 ## 开始大干一场吧
 
