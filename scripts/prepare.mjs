@@ -7,7 +7,8 @@ import sharp from "sharp";
 import { Vibrant } from "node-vibrant/node";
 import chroma from "chroma-js";
 import potrace from "potrace";
-
+import "dotenv/config";
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const ROOT_DIR = "./_docs"; // change to your folder
 const OUTPUT_FILE = "./metadata.json";
 
@@ -36,37 +37,68 @@ async function collectMetadata() {
     try {
       const raw = await fs.readFile(file, "utf-8");
       const { data } = matter(raw);
+      let relPath = path.relative(ROOT_DIR, file);
+      relPath = toUnixPath(relPath)
+        .replace(/\.md$/, "")
+        .toLowerCase()
+        .replace(/[^\w\/-]+/g, "") // replace punctuation (except / and -) with -
+        .replace(/\/+/g, "/") // collapse multiple slashes
+        .replace(/^-+/, "") // remove leading -
+        .replace(/-+$/, ""); // remove trailing -
+
+      const old = oldData[relPath];
+      let result = undefined;
+
+      if (data.city && GOOGLE_API_KEY) {
+        if (old && old.city && JSON.stringify(old.city) === JSON.stringify(data.city)) {
+          result = old;
+          console.log(`⚡ Skipped (unchanged): ${relPath}`);
+        } else {
+          const locations = [];
+
+          for (let i = 0; i < data.city.length; i++) {
+            const searchData = await fetch(
+              `https://maps.googleapis.com/maps/api/geocode/json?address=${data.city[i]}&key=${GOOGLE_API_KEY}`
+            );
+            const searchDataJson = await searchData.json();
+            const location = searchDataJson.results[0].geometry.location;
+            locations.push({
+              latitude: location.lat,
+              longitude: location.lng,
+            });
+          }
+
+          result = {
+            file: relPath,
+            city: data.city,
+            locations,
+          };
+        }
+      }
 
       if (data?.cover?.url) {
-        let relPath = path.relative(ROOT_DIR, file);
-        relPath = toUnixPath(relPath)
-          .replace(/\.md$/, "")
-          .toLowerCase()
-          .replace(/[^\w\/-]+/g, "") // replace punctuation (except / and -) with -
-          .replace(/\/+/g, "/") // collapse multiple slashes
-          .replace(/^-+/, "") // remove leading -
-          .replace(/-+$/, ""); // remove trailing -
-
-        const old = oldData[relPath];
-
         // skip processing if cover url is unchanged
         if (old && old.cover?.url === data.cover.url) {
-          results.push(old);
+          result = old
           console.log(`⚡ Skipped (unchanged): ${relPath}`);
           continue;
         }
 
         // otherwise process the cover
         const colorSet = await getColorSet(data.cover.url, path.dirname(file));
-        results.push({
+
+        result = {
+          ...(result ?? {}),
           file: relPath,
           cover: data.cover,
           colorSet,
           ...data,
-        });
+        };
 
-        console.log(`✅ Processed: ${relPath}`);
       }
+
+      result && results.push(result)
+      console.log(`✅ Processed: ${relPath}`);
     } catch (err) {
       console.error(`❌ Error parsing ${file}:`, err.message);
     }

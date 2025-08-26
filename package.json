@@ -57,11 +57,14 @@
     "commit": "git-cz",
     "test": "echo \"no test needed\" && exit 0",
     "build": "sh ./scripts/generate.sh",
-    "prepare": "node scripts/prepare.mjs"
+    "doc:prepare": "node scripts/prepare.mjs"
   },
   "dependencies": {
     "chroma-js": "^3.1.2",
+    "cities.json": "^1.1.50",
+    "dotenv": "^17.2.1",
     "fast-glob": "^3.3.3",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "iso-3166-1": "^2.1.1"
   }
 }
