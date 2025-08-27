@@ -1,6 +1,9 @@
 ---
 type: post
 category: fe
+series:
+    name: "website-rebuild"
+    slug: "website-rebuild"
 tag:
     - SSE
     - NDJSON

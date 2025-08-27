@@ -1,14 +1,17 @@
 ---
 type: post
 category: fe
+series:
+    name: "website-rebuild"
+    slug: "website-rebuild"
 cover:
     url: https://i.imgur.com/6Lo8oun.jpg
     alt: masonry layout
 ---
 
-# Masonry Layout 🧱
+# Masonry Layout
 
-I want to write a more detailed article, but right now, my time is just super short.  
+I want to write a more detailed article, but right now, my time is just super short. Recently I rebuilt [this website](/all) into masonry layout. Here are some notes I took.
 
 ---
 
