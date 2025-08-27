@@ -31,7 +31,9 @@ async function collectMetadata() {
     console.log("ℹ️ No existing metadata.json found, starting fresh.");
   }
 
-  const results = [];
+  // start from old data to keep JSON stable and minimize diffs
+  const results = Object.values(oldData);
+  const indexByFile = Object.fromEntries(results.map((item, idx) => [item.file, idx]));
 
   for (const file of files) {
     try {
@@ -47,57 +49,37 @@ async function collectMetadata() {
         .replace(/-+$/, ""); // remove trailing -
 
       const old = oldData[relPath];
-      let result = undefined;
+      const locationPart = await processLocation(data, old);
+      const coverPart = await processCover(data, old, file);
 
-      if (data.city && GOOGLE_API_KEY) {
-        if (old && old.city && JSON.stringify(old.city) === JSON.stringify(data.city)) {
-          result = old;
-          console.log(`⚡ Skipped (unchanged): ${relPath}`);
-        } else {
-          const locations = [];
+      let didChange = false;
+      if (locationPart || coverPart || !old) {
+        const merged = old ? { ...old } : { file: relPath };
+        if (locationPart) {
+          merged.city = locationPart.city;
+          merged.locations = locationPart.locations;
+        }
+        if (coverPart) {
+          merged.cover = coverPart.cover;
+          merged.colorSet = coverPart.colorSet;
+        }
 
-          for (let i = 0; i < data.city.length; i++) {
-            const searchData = await fetch(
-              `https://maps.googleapis.com/maps/api/geocode/json?address=${data.city[i]}&key=${GOOGLE_API_KEY}`
-            );
-            const searchDataJson = await searchData.json();
-            const location = searchDataJson.results[0].geometry.location;
-            locations.push({
-              latitude: location.lat,
-              longitude: location.lng,
-            });
+        const idx = indexByFile[relPath];
+        if (typeof idx === "number") {
+          // Only replace when there is an actual change
+          const before = JSON.stringify(results[idx]);
+          const after = JSON.stringify(merged);
+          if (before !== after) {
+            results[idx] = merged;
+            didChange = true;
           }
-
-          result = {
-            file: relPath,
-            city: data.city,
-            locations,
-          };
-        }
-      }
-
-      if (data?.cover?.url) {
-        // skip processing if cover url is unchanged
-        if (old && old.cover?.url === data.cover.url) {
-          result = { ...(result ?? {}), ...old };
-          console.log(`⚡ Skipped cover (unchanged): ${relPath}`);
         } else {
-          // otherwise process the cover
-          const colorSet = await getColorSet(data.cover.url, path.dirname(file));
-
-          result = {
-            ...(result ?? {}),
-            file: relPath,
-            cover: data.cover,
-            colorSet,
-            ...data,
-          };
+          indexByFile[relPath] = results.length;
+          results.push(merged);
+          didChange = true;
         }
-
       }
-
-      result && results.push(result)
-      console.log(`✅ Processed: ${relPath}`);
+      console.log(didChange ? `✅ Processed: ${relPath}` : `⏭️ Skipped: ${relPath}`);
     } catch (err) {
       console.error(`❌ Error parsing ${file}:`, err.message);
     }
@@ -186,4 +168,41 @@ function findNearestTitleColor(color) {
     }
   }
   return nearestColor;
+}
+
+// ---- processors ----
+async function processLocation(data, old) {
+  if (!data?.city || !GOOGLE_API_KEY) return undefined;
+
+  if (old && old.city && JSON.stringify(old.city) === JSON.stringify(data.city)) {
+    return { city: old.city, locations: old.locations };
+  }
+
+  const locations = [];
+  for (let i = 0; i < data.city.length; i++) {
+    const searchData = await fetch(
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${data.city[i]}&key=${GOOGLE_API_KEY}`
+    );
+    const searchDataJson = await searchData.json();
+    const location = searchDataJson.results?.[0]?.geometry?.location;
+    if (location) {
+      locations.push({ latitude: location.lat, longitude: location.lng });
+    }
+  }
+
+  return { city: data.city, locations };
+}
+
+async function processCover(data, old, file) {
+  if (!data?.cover?.url) return undefined;
+
+  if (old && old.cover?.url === data.cover.url) {
+    return undefined;
+  }
+
+  const colorSet = await getColorSet(data.cover.url, path.dirname(file));
+  return {
+    cover: data.cover,
+    colorSet,
+  };
 }
