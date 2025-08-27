@@ -8,6 +8,9 @@ tag:
     - rapidAPI
 city:
   - Tallinn, Estonia
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1756298461/IMG_7216_y311d6.jpg
+  alt: lift 99
 ---
 
 # Week 26: BabylonJS graphical development, Godot CI and TallinnJS
