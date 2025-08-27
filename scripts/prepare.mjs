@@ -79,21 +79,20 @@ async function collectMetadata() {
       if (data?.cover?.url) {
         // skip processing if cover url is unchanged
         if (old && old.cover?.url === data.cover.url) {
-          result = old
-          console.log(`⚡ Skipped (unchanged): ${relPath}`);
-          continue;
+          result = { ...(result ?? {}), ...old };
+          console.log(`⚡ Skipped cover (unchanged): ${relPath}`);
+        } else {
+          // otherwise process the cover
+          const colorSet = await getColorSet(data.cover.url, path.dirname(file));
+
+          result = {
+            ...(result ?? {}),
+            file: relPath,
+            cover: data.cover,
+            colorSet,
+            ...data,
+          };
         }
-
-        // otherwise process the cover
-        const colorSet = await getColorSet(data.cover.url, path.dirname(file));
-
-        result = {
-          ...(result ?? {}),
-          file: relPath,
-          cover: data.cover,
-          colorSet,
-          ...data,
-        };
 
       }
 
