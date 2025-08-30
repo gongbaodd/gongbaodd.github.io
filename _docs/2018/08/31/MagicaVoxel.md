@@ -1,6 +1,11 @@
 ---
 type: post
 category: tech
+tag:
+    - MagicaVoxel
+cover:
+    url: ./wxb.png
+    alt: 韦小宝 made with MagicaVoxel
 ---
 # MagicaVoxel 使用笔记
 

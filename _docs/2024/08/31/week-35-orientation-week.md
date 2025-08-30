@@ -3,14 +3,23 @@ type: post
 category: plan
 city:
   - Tallinn, Estonia
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1756555639/IMG_4887_ma1hov.jpg
+  alt: me on Pirita
 ---
 
-# Week 35: Orientation Week
+# Week 35: Orientation Week 🎉
 
-It was a very fast week. Most things are about clubs in ESN. ESN is a school union in Europe. Study how to use the library. Because I don't have a TRP yet, I can't use it as a library card. And the school libraries were separated in different places in the city. However, the city is not big, libraries to libraries are like only dosens minutes. And I was so astonished that student can choose to exchange to any other schools in Europe. Then on Thursday, there is a cultural evening. I thought it was all about food and movies. Well, it is majorly music and dancing. So I danced for 2 hours.
+This week flew by so fast! ⏳ Most of it was about **ESN (Erasmus Student Network)** — basically the big student union in Europe. I also learned how to use the library 📚. Since I don’t have my TRP yet, I can’t use it as a library card, and the school libraries are scattered around the city. Luckily, Tallinn isn’t that big — hopping from one library to another only takes a dozen minutes 🚶‍♂️.  
 
-On Friday, it is the information session for my study. Honestly, it is my first time to know a presentation can be made as a game. And my lab was like a playground with all kinds of game consoles. After the lab tour, It is opening ceremony. It's like a market place, a lot bands, a lot music.
+What amazed me most 🤯 is that students can actually choose to exchange to *any other school in Europe*! 🌍 On Thursday, there was a **Cultural Evening**. I expected food and movies 🍿, but it turned out to be mostly music and dancing 💃🕺. Ended up dancing for 2 whole hours!
 
-After the ceremony, I went to Pirita Beach to drink some beer. The sun sets at 8:30 P.M. It is so enjoyable. Then I opened a bolt account, and called a bolt for my first time.
+![Game library](https://res.cloudinary.com/dmq8ipket/image/upload/v1756555629/IMG_4875_pifjfn.jpg)
 
-I realized the self cashier in the Rimi Supermarket has a weigh inside of it. If you know the Estonian names of the fruits and vegetables, you can weigh them self-served.
+Friday was my study information session. Honestly, it was the **first time I saw a presentation made as a game** 🎮 — super fun! My lab felt more like a playground, full of game consoles. After the lab tour came the **Opening Ceremony** — a festival-like market 🎶🎪 with bands and lots of music.  
+
+![Pirita beach](https://res.cloudinary.com/dmq8ipket/image/upload/v1756555635/IMG_4890_nqxctn.jpg)
+
+After that, I chilled at **Pirita Beach** 🍻, watching the sunset around 8:30 PM 🌅. Such a perfect vibe. Later, I opened a Bolt account 🚖 and took my very first ride!  
+
+Oh, and one more discovery — the self-checkout in **Rimi Supermarket** 🛒 actually has a hidden scale ⚖️. If you know the Estonian names for fruits and veggies 🥕🍎, you can weigh them yourself. Pretty neat!
