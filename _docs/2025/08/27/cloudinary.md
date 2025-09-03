@@ -1,6 +1,9 @@
 ---
 type: post
 category: tech
+series:
+    name: "website-rebuild"
+    slug: "website-rebuild"
 tag:
     - DAM
 ---
