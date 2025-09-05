@@ -2,74 +2,78 @@
 type: post
 category: fe
 ---
-Web UI Security matters
-Read 51 penetration test and Front-End-Checklist first.
 
-1. Reverse tab nabbing
-CRITICALITY:
+# Frontend Security: CSP and Essential Web UI Protection
 
-An attacker might use this technique to silently load other pages on the parent tab which can be used for malicious operations such as phishing attacks.
+Security isn't just a backend concern - your frontend needs protection too! Before diving in, make sure you've read through "51 penetration test" and the "Front-End-Checklist" for the full picture.
 
-SUGGESTED FIX:
+## 1. Reverse Tab Nabbing - The Sneaky Attack
 
-Please ensure that user-controlled (anchor tag with target="_blank") links have the following attribute set: 
+**What's the deal?**
+Ever clicked a link that opens in a new tab? Attackers can hijack your original tab and redirect it to a phishing site while you're distracted. Pretty sneaky, right?
 
-Copy
+**The simple fix:**
+Just add this to any user-controlled links with `target="_blank"`:
+
+```html
 rel="noopener noreferrer"
-More about the fix: https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html#tabnabbing﻿
+```
 
+That's it! This prevents the new page from accessing your original tab.
 
-2. Content security policy
-CRITICALITY:
-An attacker may inject scripts into the HTML files to steal user's information, such as Cookie, JWT token. If the CSP header is not offered, the browser will use same-origin policy standard, attackers can do XSS attack by injecting <img/> tags or <script/> tags.
+Want the technical details? Check out [OWASP's HTML5 Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html#tabnabbing).
 
-SUGGESTED FIX:
-Currently we have two kinds of projects:
+## 2. Content Security Policy (CSP) - Your XSS Shield
 
-S3 bucket project: The CI uploads webpack compiled static files to AWS S3 bucket,  the server is served by AWS cloud front.
-Node project: The project has one node server to serve itself.
-For S3 bucket project
-Most of the CSP directives can be added using <meta/> tags.
+**Why you need this:**
+Without CSP, browsers fall back to same-origin policy, which leaves you vulnerable to XSS attacks. Attackers can inject `<img/>` or `<script/>` tags to steal cookies, JWT tokens, and other sensitive data.
 
-install csp-html-webpack-plugin into the projectyarn add -D csp-html-webpack-plugin
+**Implementation depends on your setup:**
 
-you can use the configuration in admin.aftership.com, including reCAPTCHA, Newrelic Browser & google-analytics.
+### For S3 Bucket Projects
+When your CI uploads webpack files to AWS S3 and serves via CloudFront:
 
-Some directives such as frame-ancestors can not be added by <meta/> tag. A response header is needed to add to the website.
+1. **Install the CSP plugin:**
+   ```bash
+   yarn add -D csp-html-webpack-plugin
+   ```
 
-You cannot add frame-ancestors directive using <meta/>
+2. **Use proven configurations:** Check out the setup from admin.aftership.com - it covers reCAPTCHA, New Relic Browser, and Google Analytics.
 
-add  frame-ancestor _and _X-Frame-Options _in AWS cloudfront _to avoid click jacking attack.
+3. **Handle frame-ancestors separately:** Some directives can't use `<meta/>` tags and need response headers. Add `frame-ancestors` and `X-Frame-Options` in AWS CloudFront to prevent clickjacking.
 
-Validations
+### For Node Projects
+When you have a Node server handling everything, you can set CSP headers directly in your server configuration.
 
-You can check your CSP content in [CSP Evaluator](https://csp-evaluator.withgoogle.com/).
+**Validate your setup:**
+Use [Google's CSP Evaluator](https://csp-evaluator.withgoogle.com/) to check if your policy is solid.
 
-3. Subresource Integrity
-#
-CRITICALITY
-Attackers can inject arbitrary malicious content info files on the CDN.
+## 3. Subresource Integrity (SRI) - Trust But Verify
 
-SUGGESTED FIX
-For files from CDN add integrity & crossorigin field in script and link  tags, you can calculate the hash by using SRI Hash Generator.
+**The problem:**
+CDNs can be compromised, and attackers might inject malicious content into your external scripts and stylesheets.
 
-Copy
+**The solution:**
+Add integrity checks to your external resources:
+
+```html
 <script src="https://example.com/example-framework.js"
         integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"
         crossorigin="anonymous"></script>
+
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
-        crossorigin="anonymous"/>
-﻿
+      rel="stylesheet" 
+      integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+      crossorigin="anonymous"/>
+```
 
-If the project is a S3 bucket project, the following webpack plugin can add integrity for the compiled statics.
+Generate hashes using the [SRI Hash Generator](https://www.srihash.org/).
 
-﻿
+### For S3 Projects with Webpack
+Use the `webpack-subresource-integrity` plugin and set `output.crossOriginLoading` to `"anonymous"` in your webpack config.
 
-webpack-subresource-integrity
-﻿
+**Pro tip:** SRI isn't always recommended for user-generated content since integrity hashes can include user agent information, potentially creating privacy concerns.
 
-You need to set output.crossOriginLoading to anonymous in webpack.config.js.
+---
 
-不推荐用SRI，因为integrity会加上用户的UA
+**Bottom line:** These three techniques form a solid foundation for frontend security. They're not magic bullets, but they'll protect you from the most common web-based attacks. Stay vigilant out there!
