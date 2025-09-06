@@ -18,21 +18,35 @@ This museum is like a small village, and I spent nearly four hours exploring! It
 
 ### A Glimpse into the Past 🐄
 
+Cozy bird's nests
+
 ![A cozy bird's nest](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098651/IMG_7913_s3nulg.jpg) 🐦
+
+A bountiful vegetable garden
 
 ![A bountiful vegetable garden](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098650/IMG_7921_psk51h.jpg) 🥕
 
 ![A scene of farm life](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098648/IMG_7931_s314tz.jpg) 🌾
 
+A traditional 19th-century farmhouse
+
 ![A traditional 19th-century farmhouse](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098654/IMG_7933_noh5eq.jpg) 🏠
 
 ![A farm from the 19th century](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098661/IMG_7929_hyj03u.jpg) 🏡
 
+A majestic windmill
+
 ![A majestic windmill](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098654/IMG_7938_de929k.jpg) 🌬️
+
+Keeping the wolves at bay
 
 ![Keeping the wolves at bay](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098658/IMG_7952_cwjvmt.jpg) 🐺
 
+fish house by the sea
+
 ![A charming fish house by the sea](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098661/IMG_7977_kcpxou.jpg) 🎣
+
+sea view
 
 ![A peaceful sea view](https://res.cloudinary.com/dmq8ipket/image/upload/v1757099258/LMC_20250905_1441100.PHOTOSPHERE_sh2qcx.jpg) 🌊
 
@@ -52,10 +66,16 @@ The rabbits here are surprisingly big—about the size of two of my heads! 🤯
 
 ### Soviet-Era History & Community Life 🏫
 
+A collective farmer building from the Soviet era
+
 ![A collective farmer building from the Soviet era](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098661/IMG_7993_gfpygp.jpg) 🏘️
 
 ![An old bus](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098674/IMG_7994_xdyy68.jpg) 🚌
 
+fireman's tower
+
 ![The old fireman's tower](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098651/IMG_7999_wyvwiy.jpg) 🚒
+
+The schoolhouse
 
 ![The schoolhouse](https://res.cloudinary.com/dmq8ipket/image/upload/v1757098666/IMG_7998_cnln4l.jpg) 🏫
