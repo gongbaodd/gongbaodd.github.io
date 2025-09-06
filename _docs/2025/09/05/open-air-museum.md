@@ -1,11 +1,11 @@
 ---
 type: post
 category: plan
-city: 
-    - Tallinn, Estonia
+city:
+  - Tallinn, Estonia
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757100149/Screenshot_2025-09-05_222203_qcul4o.png
-    alt: play ground
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757100149/Screenshot_2025-09-05_222203_qcul4o.png
+  alt: play ground
 ---
 
 # Week 37: A Journey Back in Time at the Estonian Open Air Museum
