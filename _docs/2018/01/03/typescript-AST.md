@@ -119,7 +119,7 @@ class a {
 --- EndOfFileToken 96 96
 ```
 
-那么看看应用, 之前我写过 [plantUML的使用](http://gongbaodd.github.io/fe/2017/12/20/plantUML.html),
+那么看看应用, 之前我写过 [plantUML的使用](/fe/2017/12/20/plantuml),
 正好可以试一下看看能不能自动生成类图.
 
 ```typescript
