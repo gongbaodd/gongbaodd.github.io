@@ -1,7 +1,21 @@
 ---
 type: post
 category: life
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757342689/zhihu_5_wzpztb.jpg
+    alt: leaflet
+city:
+    - Shenzhen, China
 ---
+
 # 知乎：你不知道诊所
 
-[vlog只支持移动端看](https://m.okjike.com/originalPosts/5b93edda99b4740011dca903?username=a03ab857-dd35-44d3-8373-97e7a855db39&utm_source=wechat_timeline&from=timeline)
+周末去看刘看山。
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1757342700/zhihu_1_wuzgii.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1757342685/zhihu_2_agdnud.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1757342685/zhihu_3_ym2ddv.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1757342706/zhihu_4_fcmtoj.jpg)

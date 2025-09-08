@@ -6,7 +6,7 @@ tag:
   - zig
 ---
 
-# KMP 匹配算法
+# KMP 匹配算法(Zig)
 
 要从一个字符串 ababcabcacbababcac 中查中一个片段如 abcac 可以使用 KMP 算法。
 
