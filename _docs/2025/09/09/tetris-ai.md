@@ -14,7 +14,7 @@ I think I never heard of Mini-Max Algorithm. Yes, as the teacher asks anyone kno
 
 But when he issued a sample. Player and PC play in turns, they can choose to move the same piece 1 step or 2 steps. The first get to the end wins. I realized that it is simple to just build one binary tree, to find the leaf == 0 or less than 0. Count the branches, if it is odd,player wins, even, PC wins.
 
-<!-- <iframe src="https://step-game.vercel.app/" class="max-w-screen-md m-auto" alt="the example game"> -->
+<iframe src="https://step-game.vercel.app/" class="max-w-screen-md m-auto" alt="the example game">
 
 This is actually very close to the mini-max algorithm. The so called Mini Max algorithm means calculate the smallest value for the opponent and calculate the max value for your self.
 
