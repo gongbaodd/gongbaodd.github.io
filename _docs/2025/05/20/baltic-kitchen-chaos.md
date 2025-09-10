@@ -5,7 +5,11 @@ cover:
     url: https://img.itch.zone/aW1nLzIxMjU3OTg5LmpwZw==/original/c3SN0%2B.jpg
     alt: game screenshot
 tag:
- - portfolio
+    - Unity
+    - HandTracking
+    - MediaPipe
+    - WebSocket
+    - portfolio
 ---
 
 # 🍳 Baltic Kitchen Chaos  
