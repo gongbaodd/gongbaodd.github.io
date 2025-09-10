@@ -9,6 +9,7 @@ tag:
     - edge-impulse
     - machine-learning
     - arduino
+    - portfolio
 ---
 
 # Week 32: Edge Impulse & DIY Hearing Aid

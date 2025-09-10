@@ -4,6 +4,8 @@ category: lab
 cover:
     url: https://img.itch.zone/aW1nLzIxMjU3OTg5LmpwZw==/original/c3SN0%2B.jpg
     alt: game screenshot
+tag:
+ - portfolio
 ---
 
 # 🍳 My Game: Baltic Kitchen Chaos  

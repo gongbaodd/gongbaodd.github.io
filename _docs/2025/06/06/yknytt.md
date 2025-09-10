@@ -4,14 +4,17 @@ category: tech
 tag:
     - godot
     - c#
+    - portfolio
 cover:
-    url: https://lastfm.freetls.fastly.net/i/u/770x0/32e343d87302a0a119599424b2fe7512.webp
-    alt: knytt stories icon from w.atwiki.jp
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757490358/RHhG0_i8rbsp.png
+    alt: Neon Night
 ---
 
-# YKnytt: Bringing Knytt Stories to the Web 🎮
+# YKnytt: Bringing My Knytt Stories (Neon Night) to the Web 🎮
 
 Remember when I talked about [Knytt Stories](/plan/2025/03/07/week-10-knyttstories) in my blog? 🤔 It's this amazing platformer game with a built-in level editor that lets you create your own adventures. The only downside? It was Windows-only... until now! 
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1757492007/1749216563708_ymik6w.jpg)
 
 Enter [YKnytt](https://github.com/youkaicountry/yknytt) 🚀 - a brilliant rewrite built in Godot that brings Knytt Stories to the web and beyond! This means you can finally play those atmospheric platforming levels in your browser, no matter what OS you're using.
 
