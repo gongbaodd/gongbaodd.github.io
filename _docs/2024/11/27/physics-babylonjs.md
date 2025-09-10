@@ -3,8 +3,13 @@ type: post
 category: fe
 tag:
     - babylonjs
+    - physics
+    - portfolio
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757518981/%E5%9B%BE%E7%89%871_monpvf.png
+    alt: dice
 ---
-# Physics in Babylonjs
+# A Dice UV Tool
 
 I want to make a [rolling dice](https://rolling-dice-eight.vercel.app/), I found it very hard to add physics on the mesh, turns out I have to tie the imported mesh with a mesh that natively in babylonjs.
 

@@ -4,7 +4,7 @@ category: lab
 tag:
     - portfolio
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757501845/Screenshot_2025-09-10_135724_xtjmpp.png
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757507105/image31_fgwc17.gif
     alt: screenshot
 ---
 # Catch the ball
