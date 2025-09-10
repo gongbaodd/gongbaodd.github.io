@@ -6,11 +6,11 @@ tag:
     - c#
     - portfolio
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757490358/RHhG0_i8rbsp.png
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757518632/Screenshot_2025-09-10_183440_f7qy4h.png
     alt: Neon Night
 ---
 
-# YKnytt: Bringing My Knytt Stories (Neon Night) to the Web 🎮
+# Neon Night: My Knytt Level
 
 Remember when I talked about [Knytt Stories](/plan/2025/03/07/week-10-knyttstories) in my blog? 🤔 It's this amazing platformer game with a built-in level editor that lets you create your own adventures. The only downside? It was Windows-only... until now! 
 
