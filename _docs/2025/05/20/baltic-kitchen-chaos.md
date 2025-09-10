@@ -8,7 +8,7 @@ tag:
  - portfolio
 ---
 
-# 🍳 My Game: Baltic Kitchen Chaos  
+# 🍳 Baltic Kitchen Chaos  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wx0j_Wm60Mw?si=7mpn_URL6sHQ4mvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
