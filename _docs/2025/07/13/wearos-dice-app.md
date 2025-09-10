@@ -4,7 +4,6 @@ category: fe
 tag:
     - wearos
     - kotlin
-    - portfolio
 ---
 
 # 🎲 WearOS Dice App
