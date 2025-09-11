@@ -5,7 +5,7 @@ tag:
     - Unity
     - portfolio
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757494717/Screenshot_2025-09-10_115254_xrklg6.png
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757595745/Screenshot_2025-09-11_160145_cgbi5m.png
     alt: screen shot
 ---
 # Ninja Paws, Fruit Ninja mix Diablo
