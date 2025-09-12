@@ -28,7 +28,7 @@ I still really want to find an internship here in Tallinn. I've done plenty of r
 
 With only a month to find an internship, I've decided to build a web version of my resume. I used to create a custom resume for every company as a sign of respect, but after years, I've realized most recruiters just look at your LinkedIn profile anyway. 🙄
 
-## 🖨️ Bringing the Web to Print with `@media print`
+## 🖨️ Bringing the Web to Print
 
 I totally forgot that I used to have a web-based resume! Back in 2018, I even wrote [a blog post](/fe/2018/08/05/css-grid-layout) about using `@media print` to make a website printable with a clean layout. I was reminded of it recently while reading [Martin Tournoij's blog](https://www.arp242.net/); he has his CV right there on his website. So, I decided to do the same and rebuilt my web CV for this new site.
 
@@ -60,3 +60,12 @@ To hide components I don't want in the printed version (like a search bar on a P
 ```
 
 There is still compatibility problem. In Firefox, a flex box wrap will cause a new page. But it is easy to fix. Thank god no one uses IE any more 👀.
+
+And `@page`, I did not use it very much, you can identify the print page size and the margin of the paper.
+
+```css
+@page {
+    size: a4;
+    margin: 0cm;
+}
+```
