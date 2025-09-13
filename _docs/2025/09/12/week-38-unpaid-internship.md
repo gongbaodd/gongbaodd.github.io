@@ -69,3 +69,51 @@ And `@page`, I did not use it very much, you can identify the print page size an
     margin: 0cm;
 }
 ```
+
+## And yes, Unexpectly unexpected things happened
+
+The webviews in many hybrid application they will block `print` request 🙄. These make the work harder because simple `gloabalThis.print` can not identify whether print is supported or not. But I can listen to the `beforeprint` event, if the event is not triggered in 500 ms, I consider the `print` function is blocked, and share [a PDF file](https://res.cloudinary.com/dmq8ipket/image/upload/v1757748988/Resume_-_Jian_Gong_-_Web_Game_Dev_kkddqr.pdf).
+
+```ts
+
+export enum PRINT_SUPPORT_STATUS {
+    TRUE,
+    FALSE,
+    UNKNOWN
+}   
+
+export const $isPrintSupported = atom(globalThis.print == undefined? PRINT_SUPPORT_STATUS.FALSE : PRINT_SUPPORT_STATUS.UNKNOWN)
+const $isPrintRequested = atom(false)
+
+onMount($isPrintSupported, () => {
+    const printWindowOpened = () => {
+        $isPrintSupported.set(PRINT_SUPPORT_STATUS.TRUE)
+    }
+
+    window.addEventListener("beforeprint", printWindowOpened);
+    return () => {
+        window.removeEventListener("beforeprint", printWindowOpened)
+    }
+})
+
+onSet($isPrintRequested, (isPrintRequested) => {
+    if (isPrintRequested) {
+        setTimeout(() => {
+            if ($isPrintSupported.get() !== PRINT_SUPPORT_STATUS.TRUE) {
+                $isPrintSupported.set(PRINT_SUPPORT_STATUS.FALSE)
+            }
+        }, 500)
+    }
+})
+
+
+export function requestPrint() {
+    $isPrintRequested.set(true)
+    print()
+}
+
+const pdfLink = "https://res.cloudinary.com/dmq8ipket/image/upload/v1757748988/Resume_-_Jian_Gong_-_Web_Game_Dev_kkddqr.pdf"
+export function requestPDF() {
+    location.href = pdfLink
+}
+```
