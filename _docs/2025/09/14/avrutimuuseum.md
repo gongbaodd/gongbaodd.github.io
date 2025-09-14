@@ -5,7 +5,7 @@ cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757876731/IMG_8101_jsl7ek.jpg
     alt: selfie
 ---
-# Avrutimuuseum: Computer Museum in Estonia 💻✨
+# Avrutimuuseum: Computer Museum in Estonia
 
 Today I dropped by the **Avrutimuuseum**, the Computer Museum in Estonia. Such a nostalgic trip through the history of computing — from Soviet-era machines to quirky devices that once shaped (and sometimes failed) the future of tech. 🚀  
 
@@ -106,3 +106,13 @@ Today I dropped by the **Avrutimuuseum**, the Computer Museum in Estonia. Such a
 ---
 
 Such a fun dive into tech history. Every piece felt like a step that led us to the devices we casually use today. 🖥️📱💿
+
+<iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dmq8ipket&public_id=IMG_8060_zuur1t&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
