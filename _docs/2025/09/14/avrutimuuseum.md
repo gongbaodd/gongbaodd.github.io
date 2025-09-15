@@ -4,6 +4,8 @@ category: tech
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757876731/IMG_8101_jsl7ek.jpg
     alt: selfie
+city:
+  - Tallinn, Estonia
 ---
 # Arvutimuuseum: Computer Museum in Estonia
 
