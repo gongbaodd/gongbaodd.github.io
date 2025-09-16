@@ -52,9 +52,6 @@ However… Arduino didn’t have enough memory 😅. So, we switched to a **Helt
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758052122/Screenshot_2025-09-16_224821_ors0kg.png)
 
-### Scenario
-
-![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758052173/Screenshot_2025-09-16_224906_b4buvr.png)
 
 |||
 |--|--|
@@ -64,6 +61,11 @@ However… Arduino didn’t have enough memory 😅. So, we switched to a **Helt
 | Goals | Wants to stay in his own house |
 | | Feel safe |
 | | Get alerted when there is an emergency or phone call from his children. |
+
+### Scenario
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758052173/Screenshot_2025-09-16_224906_b4buvr.png)
+
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758052198/Screenshot_2025-09-16_224932_ftayxw.png)
 
