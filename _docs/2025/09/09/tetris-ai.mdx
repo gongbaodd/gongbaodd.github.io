@@ -123,7 +123,7 @@ c = -0.35663 \\
 d = -0.184483
 $$
 
-## Implementing Mini-Max in Tetris 🤖
+## Implementing Mini-Max in Tetris, First Try 🤖
 
 Here's where it gets tricky - Tetris pieces are random! So our decision tree height is usually just 1. But if we know the next few pieces in the sequence, we can go deeper.
 
@@ -133,6 +133,47 @@ Here's where it gets tricky - Tetris pieces are random! So our decision tree hei
 |---------------------------|--|
 |![Horizontal movement options](https://res.cloudinary.com/dmq8ipket/image/upload/v1757428250/Screenshot_2025-09-09_161709-1_zgnkei.png)| ![Rotation options](https://res.cloudinary.com/dmq8ipket/image/upload/v1757428987/Screenshot_2025-09-09_161709-2_zt9dj1.png) |
 
-For each piece, we typically have around 36 possible moves (9 positions × 4 rotations). Consider if we show a sequence of pieces not only one, the calculation will be $36^n$. Definately need pruning.
+For each piece, we typically have around 36 possible moves (9 positions × 4 rotations). Consider if we show a sequence of pieces not only one, the calculation will be $36^n$. Definately need pruning. 
+
+Another thing… this game currently only uses the **Max** part of the Mini-Max algorithm 🤯.  
+Yeah… I think I need to change my plan.  
+
+## 🎮 Change into Turns Game
+
+Ohh, wait! I might have overcomplicated things 😅.  
+What if I make it a **turn-based game**? The player and the AI take turns.  
+Each turn, I’ll show **two pieces**:  
+- one for the current player,  
+- one for the opponent.  
+
+That way, the AI can actually use the **full Mini-Max algorithm**! 🧠✨  
+
+## 📜 Rules
+
+So, what about the rules… 🤔
+
+Classic Tetris scoring looks like this:
+
+| Row clear | Points |
+|--|--|
+| Single | 100 |
+| Double | 300 |
+| Triple | 500 |
+| Tetris | 800 |
+
+There are also some high-level moves like **T-Spin** (when you rotate the T piece at the very last moment to clear rows).  
+I probably won’t implement it (too tricky to test 😅), but here are the points anyway:
+
+| Row clear | Points |
+|--|--|
+| Single | 800 |
+| Double | 1200 |
+| Triple | 1600 |
+
+And don’t forget *Combos* 🔥 — every time you chain clears, you get **+50 points** extra.  
+
+---
+
+👉 Wanna try it out? Play the game here: [pixtris.vercel.app](https://pixtris.vercel.app/) 🎉  
 
 > unfinished
