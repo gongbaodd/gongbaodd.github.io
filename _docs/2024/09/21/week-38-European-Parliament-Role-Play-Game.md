@@ -7,7 +7,7 @@ tag:
 city:
   - Tallinn, Estonia
 cover:
-  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1758370268/IMG_1771OK_bpntjv.jpg
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/a_-360/IMG_1771OK_bpntjv.jpg
   alt: group photo
 ---
 
@@ -38,6 +38,8 @@ I went with the **water issue**. At first, I got a proposal of €50M and no age
 Then came a twist — **an earthquake hit** 🌍⚡ and *all decisions had to be voted on again*!  
 
 In the end, every proposal passed ✅, which felt like a rare win in politics.  
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758370268/IMG_1771OK_bpntjv.jpg)
 
 ---  
 Overall, it was a surprisingly engaging way to mix learning and play — and maybe even sparked some inspiration for my own game projects 🎮💡
