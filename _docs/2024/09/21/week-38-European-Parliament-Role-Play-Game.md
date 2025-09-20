@@ -2,28 +2,42 @@
 type: post
 category: plan
 tag:
-    - game-ideas
-    - pixelIt
+  - game-ideas
+  - pixelIt
 city:
   - Tallinn, Estonia
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1758370268/IMG_1771OK_bpntjv.jpg
+  alt: group photo
 ---
 
-# Week 38: European Parliament Role Play Game
+# Week 38: European Parliament Role Play Game 🎲🇪🇺
 
-It is a week full of studying. But I have got some new game ideas. 
+This week was packed with studying 📚, but I also came up with some fresh game ideas 👾✨  
 
-- A digital board game, I decide to use ChatGPT as helper to make it work on p5.js. I decide to make it as my Digital Graphics and sounds home work. And maybe I will use it to do game jam.
-- A pixel art maker, I found a JS library to make image into pixels, [pixelIt](https://github.com/giventofly/pixelit)
+- **Digital board game** 🎮 — I’m planning to use ChatGPT as a helper and build it in **p5.js**. It’ll be my *Digital Graphics & Sounds* homework, and maybe even my next game jam entry.  
+- **Pixel art maker** 🟦 — I stumbled upon [**pixelIt**](https://github.com/giventofly/pixelit), a JS library that turns images into pixel art. Super fun for quick retro vibes!
 
-This Friday, I went to try the European Parliament Role Play Game. It is one of my Digital Learning Game homework. The game is like The Sims. The players play as an European Parliament Member of the four parties: Tradition, Solidarity, Liberty and Ecology. 
+---
 
-There are two issues.
+On Friday, I joined the **European Parliament Role Play Game** as part of my *Digital Learning Game* course.  
 
-- Make new water infrastructure to save water, it needs information system, new infrastructure and researchers. It need more budget by raising the water fees.
-- Implanting chips for Identification. It is for security reasons to implant chips inside people.
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758370268/IMG_1774OK_mmdf1b.jpg)
 
-I choose the water issue. Firstly, I got a decision, with 50m Euros and no agency. My party needs more, so we rejected that. 
+The vibe was like *The Sims*, but with politics — you play as a European Parliament member from one of four parties: **Tradition, Solidarity, Liberty, or Ecology** 🏛️.
 
-In the middle of the game. There is a twist. An earthquake happened causing all the decision to be voted again.
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758370269/IMG_1789ok_rb10wn.jpg)
 
-Finally, all the decisions were approved.
+The game revolved around two hot issues:  
+
+1. 💧 **Water infrastructure** — building systems, hiring researchers, and raising fees to fund it.  
+2. 💳 **Implanting ID chips** — justified as “for security reasons.”  
+
+I went with the **water issue**. At first, I got a proposal of €50M and no agency support. My party wanted more, so we rejected it.  
+
+Then came a twist — **an earthquake hit** 🌍⚡ and *all decisions had to be voted on again*!  
+
+In the end, every proposal passed ✅, which felt like a rare win in politics.  
+
+---  
+Overall, it was a surprisingly engaging way to mix learning and play — and maybe even sparked some inspiration for my own game projects 🎮💡

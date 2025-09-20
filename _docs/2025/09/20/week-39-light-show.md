@@ -37,6 +37,10 @@ Thankfully, the show replays every 40 minutes ⏳. So I just chilled on the gras
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758367632/IMG_8169_kifr3a.jpg)
 
+On the way back to dorm, I saw this hot dog vendor. Finaly see some street food at night.
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758367667/IMG_8171_dqd43j.jpg)
+
 Here’s a short clip 🎥 from the magical night ✨👇
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DBR20KrOz6s?si=4NUMa2MQbnNAjGmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
