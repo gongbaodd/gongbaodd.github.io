@@ -4,6 +4,10 @@ category: fe
 tag:
     - algorithm
     - portfolio
+    - pixi.js
+    - lit.js
+    - daisyUI
+    - Tailwind
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757423926/Screenshot_2025-09-09_161709_wdnjql.png
     alt: tetris
@@ -79,7 +83,7 @@ The game continues until someone runs out of space to place pieces. It's like Te
 
 To make Mini-Max work, we need a solid scoring system. Let me break down how we evaluate each possible move:
 
-<DescriptionImage mah={1000} src="https://res.cloudinary.com/dmq8ipket/image/upload/v1757423926/Screenshot_2025-09-09_161709_wdnjql.png" alt="Tetris board analysis example">
+<DescriptionImage mah={1600} src="https://res.cloudinary.com/dmq8ipket/image/upload/v1757423926/Screenshot_2025-09-09_161709_wdnjql.png" alt="Tetris board analysis example">
 
 **Tetris Board Evaluation Example**: Here's what happens when we drop this "Z" piece without rotation
 
@@ -88,14 +92,30 @@ Let's look at our key metrics:
 **🏗️ Height**: $ 28 = 4 + 0 + 0 + 5 + 5 + 4 + 3 + 2 + 1 + 4 $  
 *Lower is better - we don't want towering stacks!*
 
+```ts
+getHeightsSumIfDropped(specs: { tetromino: Tetromino, startCol: number }[]): number 
+```
+
 **🧹 Cleared Rows**: $ 0 $  
 *Higher is better - more cleared rows = more points*
+
+```ts
+getClearedRowsCountIfDropped(specs: { tetromino: Tetromino, startCol: number }[]): number
+```
 
 **🕳️ Holes**: $ 4 $  
 *Lower is better - holes are the enemy of Tetris*
 
+```ts
+getHolesCountIfDropped(specs: { tetromino: Tetromino, startCol: number }[]): number
+```
+
 **📈 Gradient**: $ 16 = |4-0| + |0-0| + |0-5| + |5-5| + |5-4| + |4-3| + |3-2| + |2-1| + |1-4| $  
 *Lower is better - we want smooth, even surfaces*
+
+```ts
+getAdjacentHeightDiffSumIfDropped(specs: { tetromino: Tetromino, startCol: number }[]): number
+```
 
 </DescriptionImage>
 
@@ -172,8 +192,130 @@ I probably won’t implement it (too tricky to test 😅), but here are the poin
 
 And don’t forget *Combos* 🔥 — every time you chain clears, you get **+50 points** extra.  
 
+## 🎨 The UI – Upgrading Pixtris 
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758702645/Screenshot_2025-09-24_112929_iaqeay.png)
+
+Okay, coding time 🚀. Since there are already tons of Tetris clones out there, I didn’t reinvent the wheel. Instead, I picked an open-source project called [pixtris](https://github.com/ajur/pixtris) (originally built with Pixi.js v4) and upgraded it to **Pixi.js v8 + TypeScript**. 
+ 👉 You can check out my fork here: [github.com/gongbaodd/pixtris](https://github.com/gongbaodd/pixtris). 
+
+--- 
+
+### 📊 Scoreboard with Lit.js
+
+ For the scoreboard UI, I used **Lit.js**. Why? 
+ 
+ - It’s *non-invasive*, so I didn’t need to wrap the whole Pixtris project in a new framework. 
+ - I could just drop a web component in. 
+ - And honestly... I wanted to finally test Lit in a real project. 
+ 
+ But here’s the verdict: 😅 It feels very **2018**. Web Components sounded promising, but now we’re living in the **hooks era**. 
+ Also, Lit.js needed some extra TypeScript configs: 
+ 
+ ```json 
+ { 
+    "useDefineForClassFields": false, 
+    "experimentalDecorators": true 
+} 
+ ``` 
+ --- 
+ 
+### 🎨 Styling with Tailwind + DaisyUI
+ 
+Since Lit.js doesn’t come with a big UI ecosystem, I went with **Tailwind** + **DaisyUI** (the universal solution). 
+⚠️ But here’s the trap with Web Components: they **don’t share stylesheets** with the parent document. 
+That means you gotta import CSS *inline* inside your component: 
+
+```js
+import daisyCss from "../style.css?inline" 
+```
+--- 
+
+### 🔄 State Machine
+
+For state management, I kept it simple: just used **nanostores**. Lightweight and good enough for this project ✨. 
+
 ---
 
-👉 Wanna try it out? Play the game here: [pixtris.vercel.app](https://pixtris.vercel.app/) 🎉  
+## 🧠 Mini-Max Logic – Making Tetris Think
 
-> unfinished
+So here’s the fun part – I wanted to give Tetris some brains. I implemented a **Mini-Max algorithm**, commonly used in turn-based games. 
+The idea: 
+
+- Every move *you* make (MAX) → your opponent (MIN) tries to minimize your score. 
+- You then choose the move that maximizes your outcome, assuming the opponent always makes the worst choice for you. 
+
+```mermaid 
+graph TD 
+A["Your moves (MAX)"] 
+    A --> A1[Move A] 
+    A --> B1[Move B] 
+    A --> C1[Move C] 
+
+    %% Move A branch 
+    A1 --> A1a["Opponent move A1 = 3"] 
+    A1 --> A1b["Opponent move A2 = 7"] 
+    A1 --> A1c["Opponent move A3 = 2"]
+    
+     %% Move B branch 
+     B1 --> B1a["Opponent move B1 = 4"] 
+     B1 --> B1b["Opponent move B2 = 6"] 
+     
+     %% Move C branch 
+     C1 --> C1a["Opponent move C1 = 5"] 
+     C1 --> C1b["Opponent move C2 = 1"] 
+``` 
+
+Opponent’s evil choices 😈: 
+    
+    - Move A → picks **A3 = 2** 
+    - Move B → picks **B1 = 4** 
+    - Move C → picks **C2 = 1** 
+    
+So your best option is **Move B** (score 4). 
+
+--- 
+
+### 🚫 But There’s a Catch
+
+In Tetris, the opponent can “choose” invalid placements (aka **-Infinity**). That means the AI ends up being more like a chaotic gremlin 👾 
+instead of a strategic genius. To fix that, I just ignored all the **-Infinity nodes**.
+ This way, the AI plays reasonably without sabotaging everything. Here’s what the decision tree looks like: 
+ 
+ ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758705148/Screenshot_2025-09-24_095405_oylroy.png) 
+
+```ts
+    type Branch = Map<number/*column num*/, Map<number/*rotation count*/, number/*score*/ | Branch>>;
+    /**
+	 * Build an evaluation map for all columns and rotations for a given tetromino.
+	 * The returned Map has keys as column indices. Each value is a Map whose keys
+	 * are rotation indices (0..3) and values are the evaluation score computed as:
+	 *   -0.510066 * getHeightsSumIfDropped
+	 * +  0.760666 * getClearedRowsCountIfDropped
+	 * + -0.35663  * getHolesCountIfDropped
+	 * + -0.184483 * getAdjacentHeightDiffSumIfDropped
+	 * Invalid placements are scored as Number.NEGATIVE_INFINITY.
+	 *
+	 * This method does not mutate the provided tetromino or the board.
+    */
+    getPlacementEvaluationMap(tetrominoes: Tetromino[]): Branch
+```
+ 
+ Applying the move inside `spawnTetromino()`. 
+ 
+ --- 
+ 
+ ### 🐛 Known Bug
+
+There’s still a sneaky async bug: sometimes the turn algorithm fails and the AI just takes over the game completely 🤖.
+I call it a *feature* now 
+
+– an evil AI mode. 💀 
+
+--- 
+
+## 🎮 Try It Out 
+
+👉 Wanna play? Check it out here: [pixtris.vercel.app](https://pixtris.vercel.app/) 
+
+🎉 Tip: if it feels too fast, hit pause ⏸️ and think about your next move!
