@@ -4,8 +4,15 @@ category: life
 city:
   - Shenzhen, China
   - Nanshan, China
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1758693696/IMG_20180919_204523_at5xsf.jpg
+    alt: drone
 ---
 # 纪念一下在深圳的第一个月饼节
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758693524/IMG_20180924_202523_iaxfkw.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1758693696/IMG_20180919_204523_at5xsf.jpg)
 
 没想到中秋三天假就这么结束了，总结一下：
 
