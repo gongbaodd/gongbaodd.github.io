@@ -10,4 +10,4 @@ cover:
 ---
 # Missile Command
 
-You can play it in [this link](https://vercel.com/gongbaodds-projects/missile-command).
+You can play it in [this link](https://missile-command-rho.vercel.app/).
