@@ -3,9 +3,14 @@ type: post
 category: plan
 tag: 
   - ECS
+  - p5.js
+  - portfolio
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757502358/Screenshot_2025-09-10_140146_h0bzw4.png
+    alt: screenshot
 ---
 
-# Week 48: ECS
+# Week 48: Missile Command: an ECS game inplementation
 
 > The following content will add more description after Jan 17 2025. I got some more ideas after I tried Unity DOTS.
 
@@ -14,6 +19,8 @@ Because I am a web developer, I am more familiar with MVC design pattern. I have
 The graphic idea is from [Airspace Defender](https://www.meta.com/en-gb/experiences/airspace-defender/7523170214434197/?srsltid=AfmBOoqRU1rANUexpLi7gnPuKhJrlrwnxUr5mEepMZagoInHAm6Uj7RC). Originally I want to make a webXR one using [p5xr](https://p5xr.org/). But it looks the project is not maintained for a long time. So I decide not to invest time on it this time.
 
 The whole developing time is one week of the spare time after school.
+
+You can play it in [this link](https://missile-command-rho.vercel.app/).
 
 ## goals
 
