@@ -9,4 +9,4 @@ category: tech
 
 好在某宝还是有些东西的，比如这个胶皮遮光罩，首先，因为是胶皮的，不用担心螺口对不上的问题，还有拍摄一些被镜子遮盖的物体就不用担心反光之类的事儿了。
 
-![胶皮遮光罩](http://ww1.sinaimg.cn/mw690/89d0a2e1gy1g8lv93gm89j23401k0e83.jpg)
+![胶皮遮光罩](https://res.cloudinary.com/dmq8ipket/image/upload/v1759310750/89d0a2e1gy1g8lv93gm89j23401k0e83_xmry0w.jpg)

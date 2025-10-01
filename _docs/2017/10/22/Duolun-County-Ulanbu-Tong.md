@@ -2,68 +2,79 @@
 type: post
 category: travel
 city:
-  - Fengning County, China
-  - Duolun County, China
+  - Chifeng, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1759307115/25_pohl7v.jpg
+  alt: selfie
 ---
 
 # 丰宁县-木兰围场-御道口-多伦县-乌兰布统
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfovppfbpj21je15k10g.jpg)
+内蒙的巨大包子和莜面
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfovxsbg7j20v615kq8e.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307115/01_axpbze.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfohstx5gj21qc15k46b.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307166/02_ubjsnp.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolkmgfwj21qc15k132.jpg)
+自驾出发！
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolmma4fj21qc15kwnp.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307170/03_ui50nb.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolletvpj21qc15k7cl.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307167/04_rcxfld.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolsh7uxj21qc15kn3p.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307162/05_honuuo.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolp2cmcj21qc15kn9o.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307161/06_b56fi4.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfom1mn7mj21qc15k1ev.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307158/07_q8gsl3.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolvvjohj21qc15kh7b.jpg)
+木兰围场
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfom0pyo6j21qc15k4qp.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307153/08_qcjt3s.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfom1u3tfj21qc15kh8y.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307165/09_vzzazg.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolj9g3hj20rq15kjtz.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307164/10_yyov43.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfollq5fzj21qc15k11k.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307169/11_bincep.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolj9rbsj21qc15kn15.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307154/12_dsafli.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolvqx8kj21qc15kh57.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307137/13_jjobue.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolsanjwj21qc15kwui.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307141/14_zglwb5.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolrym6lj21qc15k1bz.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307134/15_waqe53.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolnqrkmj21qc15kk12.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307149/16_yxvl0i.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfom1bwaij21qc15k7wh.jpg)
+## 乌兰布统
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolqs70mj21qc15kwrn.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307144/17_sv2d33.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfoluei6cj21uo18gdvo.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307141/18_xgq8cr.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolmpbymj21qc15k47h.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307134/19_zbqklq.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolprcuqj21qc15k4dk.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307144/20_lwmiwq.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolkamy1j21qc15kqa1.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307128/21_ybajeu.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolxzn93j21qd15ktxl.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307129/22_qxb8yj.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolxzn93j21qd15ktxl.jpg)
+终于有城市了
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfolpdqvwj21qc15kqh5.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307121/23_a5k4lj.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfoljamszj20v615kwjc.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307124/24_zbj93b.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flfoljbj1xj20v615kjvm.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307115/25_pohl7v.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307129/26_za1hb5.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307118/27_uvo2vu.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307112/28_zjmj31.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759307111/29_ditqin.jpg)
+
