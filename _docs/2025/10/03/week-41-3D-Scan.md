@@ -4,81 +4,82 @@ category: tech
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1759499231/552532190_1140605504076650_2371037736575177324_n_r9jekh.jpg
     alt: scan
+city:
+    - Tallinn, Estonia
 ---
-# Week 41: 3D Scan
+# Week 41: 3D Scan 🎨
 
 ## 3D Scan
 
-This week, I started a school project. In which we started to use 3D print to help Museums exhibiting their exhibitions. As the customers are not allowed to touch the exhibitions, we decide to use 3D printing to solve this. As planned we decided to use *3D scanning*, *AI generations* and *modeling* to solve this problem.
+This week kicked off an exciting school project where we're helping museums make their exhibitions more accessible through 3D printing technology. Since visitors can't touch the original artifacts, we're creating tactile replicas using three approaches: *3D scanning*, *AI generation*, and *manual modeling*.
 
-### The exhibits
+### The Exhibits 🏛️
 
-I never thought the objects are so small and in the storage room,(also not big) we do not have a network connection. Everything we collect can only be processed after. Which is very hard. Since we do not know the scan is succeed or not.
+Working with museum artifacts brought some unexpected challenges. The objects were surprisingly small, and the storage room—equally compact—had zero network connectivity. This meant processing everything after the fact, with no way to verify scan quality on-site. Talk about working blind!
 
-For example, this [Shoe Shape item](https://lumalabs.ai/capture/437AA66C-A9DE-4B37-9D53-6B7BD5E3ADA3), I believe I touched the table. Eventually the front view of the item is tilted.
+Take this [Shoe-Shaped Item](https://lumalabs.ai/capture/437AA66C-A9DE-4B37-9D53-6B7BD5E3ADA3), for example. I accidentally touched the table during scanning, resulting in a tilted front view—not ideal! 😅
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500392/IMG_8291_cmdfvd.png)
 
-I also tried to use scanniverse, but there are not many instructions on the scanning, so the result is not as [expected](https://scaniverse.com/scan/x4cqo57ikqijfh2a).
+I experimented with Scanniverse too, but the lack of clear instructions led to disappointing [results](https://scaniverse.com/scan/x4cqo57ikqijfh2a).
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500354/E5869558-1D91-424D-8353-7BB84017BD57_a4qraz.png)
 
-Also, this [Scratcher](https://lumalabs.ai/capture/CBB17018-2E41-49EB-83D8-516432AFD791), the rear view is totally broken.
+This [Back Scratcher](https://lumalabs.ai/capture/CBB17018-2E41-49EB-83D8-516432AFD791)? The rear view completely fell apart.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500388/IMG_8288_hmadw3.png)
 
-The [mummy hand](https://lumalabs.ai/capture/B8878821-31C4-4644-B177-933D8B0588D6) is the best scan.
+The star of the show was definitely this [Mummy Hand](https://lumalabs.ai/capture/B8878821-31C4-4644-B177-933D8B0588D6)—by far our best scan! 🌟
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500391/IMG_8289_o0k8ut.png)
 
-And, these scans are point clouds. Need further process to make them into meshes.
+Important note: These scans are point clouds and require additional processing to convert them into usable meshes.
 
-### Test scan
+### Test Scan Round 📱
 
-Because all the scans have to be processed online and to see the result in the other day. As I find out most scans are not as expected. I decided to do a test scan to make sure which software is suit for my situation.
+After discovering most museum scans didn't meet expectations, I ran controlled tests at home to find the right tool for our constraints.
 
-
-#### Luma 3D
+#### Luma 3D ⭐
 
 [See the result](https://lumalabs.ai/capture/61382180-037A-4553-9052-949074B88C46) 
 
-Luma 3D gives the best instructions of all the softwares. Frist, choose the scan space, then scan base on the guide lines.
+Luma 3D provided the clearest instructions of any software. First, you select the scan space, then follow intuitive guidelines.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500377/IMG_8284_nrcnxa.png)
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500382/IMG_8285_pmmloe.png)
 
-The scan can be stored locally, but needed to upload to process the result. The result is point cloud. Need further process to transform it into mesh.
+Scans save locally but require cloud upload for processing. Output is a point cloud needing mesh conversion.
 
-#### Scannivers(Detail Scan)
+#### Scanniverse (Detail Scan) 🔍
 
 [See the result](https://scaniverse.com/scan/rih4hstdvia7qltb)
 
-Scannivers detail scan is fast, but there is not enough instruction of how much I have scaned. 
+Detail scanning was fast, but lacked progress indicators—hard to know when you've captured enough data.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500375/IMG_8281_acybxb.png)
 
-After scanning you can see a preprocessed scan result
+The preview feature was helpful:
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500375/IMG_8282_n8ll9b.png)
 
-Altough the result is mesh, but the scanned model need adjust.
+While it outputs meshes directly, significant cleanup is usually needed.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500377/IMG_8283_jwvawd.png)
 
-#### Scannivers (Splat Scan)
+#### Scanniverse (Splat Scan) ✨
 
 [See the result](https://scaniverse.com/scan/vefa4tajbvku2ehx)
 
-Splat scan in Scannivers is like Luma 3D, the result is also point cloud.
+Similar to Luma 3D, this produces point cloud results.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500369/IMG_8278_lhrq3r.png)
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500371/IMG_8280_fwaksz.png)
 
-#### Reality Scan
+#### RealityScan 📸
 
-Reality scan scans the object first then do the clips.
+RealityScan captures the full object first, then handles cropping afterward.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500363/IMG_8275_iokdna.png)
 
@@ -86,67 +87,65 @@ Reality scan scans the object first then do the clips.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500367/IMG_8277_kkmaom.png)
 
-The same as the scanniverse, the scan need more adjust.
+Like Scanniverse, results need considerable post-processing.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500352/8E08905F-851B-4455-82E9-2054F90A164F_jgpkqh.png)
 
-#### Kiri Engine
+#### Kiri Engine 🎯
 
-Like Luma 3D, kiri provides almost the same instructions.
+Kiri provides similar guidance to Luma 3D.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500365/IMG_8271_axhhqg.png)
 
-But it has to finish the local process first then go on next scan. Also the server process is non free.
+The downside? You must complete local processing before starting a new scan, and server processing isn't free.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500354/IMG_8272_lmqdfp.png)
 
-Although it is local processed, the result looks better than Reality scan and scaniverse.
+Despite being locally processed, results looked cleaner than RealityScan and Scanniverse.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759500356/IMG_8273_wvb6jj.png)
 
-### Conclusion
+### Scanning Conclusion 📋
 
-If we need to use 3d Scan, a rescan maybe needed. Right now only the mummy hand is usable. But we can continue to use the gamepad as the further research.
+We'll likely need to rescan most artifacts. Currently, only the mummy hand is production-ready, though the gamepad shows promise for continued research.
 
-Because we need tp find out:
+**Outstanding questions:**
+- How to convert point clouds (from Luma 3D) into meshes?
+- How to correct tilted mesh scans?
+- How to properly stabilize exhibits for scanning?
 
-- how to transfer point cloud, like Luma 3D, to mesh
-- how to straight some tilted mesh scan 
+### AI Generation: The Surprise Winner! 🤖✨
 
-And if we need a rescan, we still need to know how to *make the exhizibits stand*
-
-### AI generation
-
-However, AI generation is unexpectedly successful. I used [Tencent's HunYuan 3D Generation](https://3d.hunyuan.tencent.com/). 
+Plot twist: AI generation exceeded all expectations! I used [Tencent's HunYuan 3D](https://3d.hunyuan.tencent.com/).
 
 [See the result](https://3d.hunyuan.tencent.com/share?shareId=97a63ac7-c0b2-407e-ad27-c904daf71a7b)
 
-Compared with 3D scan, this is rather simple, just upload the front, rear, left right view. And wait.
+The process is beautifully simple: upload front, back, left, and right photos, then wait.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759503069/image_dafhdg.png)
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759503066/image_1_nwqq0z.png)
 
-The result, texture included is amazingly correct.
+The results—textures and all—were surprisingly accurate! 🎯
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1759503183/image_2_hgeoc9.png)
 
-Everyday, you can generate 20 models using the server. So, to do further research:
+The free tier allows 20 models daily. Next steps:
+- Explore local deployment options
+- Calculate costs for large-scale production
 
-- Try to build a local service
-- Calculate the price if we make large amout of scans
+## AI in CRM: MindStone Meetup 💼
 
-## AI in CRM, MindStone AI meetup
+This week, I dove into [人工智能客户关系管理（AI CRM）系统研究报告（2025年）](https://notebooklm.google.com/notebook/b62ec1e4-ca21-426e-8ed6-f28f70448a54?authuser=1)—a comprehensive report on AI implementation in Chinese CRM systems.
 
-This week, I read the [人工智能客户关系管理（AI CRM）系统研究报告（2025年）](https://notebooklm.google.com/notebook/b62ec1e4-ca21-426e-8ed6-f28f70448a54?authuser=1). This is a report on Chinese AI used in CRM.
+Full disclosure: CRM has always felt a bit dry to me. Relational databases, regulations, compliance—it's typically middle-aged programmer territory. You know the type: shirt tucked in, leather shoes, square glasses, pen in the pocket... (Okay, fine, I'm middle-aged now too! 😅)
 
-CRM to me, is quite boring, majorly about relation database and regulation stuff. It is like a typical middle aged programmer's work (Well I am middle aged now)， who wears shirts under the belt and leather shoes. usually with a squared glasses and a pen in the upper pocket... 
+But here's the thing: CRM represents a *massive* segment of IT, and they're among the last to embrace AI integration.
 
-Yeah, but CRM is a huge part of information technology and they are probably the last group in IT who starts to use AI.
+### MindStone AI Meetup, Tallinn 🇪🇪
 
-So in this week, I attended Mindstone AI meetup in Tallinn. They are sharing some AI usages in their CRM systems. Most like using ChatGPT to write SQL stuff. 
+I attended the MindStone AI meetup where they demonstrated AI applications in their CRM systems—primarily using ChatGPT for SQL generation.
 
-In some way, they look like only started to use AI in recent few days. The fresh feelings are not flushed by the AI hallusination yet.
+The vibe was refreshingly optimistic, like they'd just discovered AI last week. That honeymoon phase before AI hallucinations become a daily frustration! 😄
 
-But, CRMs are more focusing on stable, so it is understandable they handle this new technology carefully.
-
+To their credit, CRM systems prioritize stability above all else, so approaching new technology cautiously makes perfect sense. Better slow and steady than breaking production systems, right?
