@@ -1,6 +1,9 @@
 ---
 type: post
 category: life
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1759488912/Screenshot_2025-10-03_135420_gtb5ca.png
+    alt: thumb
 ---
 # Pentax延时摄影
 
@@ -8,4 +11,12 @@ category: life
 
 选择间隔拍摄，选择INFO可以设置拍摄次数和时长。
 
-[点击链接查看延时结果](http://onetake.dafork.com/static/photos/xeq9ebk.html)
+<iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dmq8ipket&public_id=1572432834301_fnu1xv&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
