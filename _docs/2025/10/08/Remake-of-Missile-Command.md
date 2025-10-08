@@ -6,6 +6,7 @@ cover:
     alt: defender
 tag:
     - babylonjs
+    - yuka
     - portfolio
 ---
 
@@ -147,3 +148,56 @@ classDiagram
     Missile "1" --> "1" Position : target
 
 ```
+## 🏗️ How Do I Place the Buildings?
+
+![Building placement visualization](https://res.cloudinary.com/dmq8ipket/image/upload/v1759940257/Screenshot_2025-10-08_191152_layk4c.png)
+
+To place the buildings on the plate, I used random numbers combined with trigonometric functions (`sin`, `cos`) to generate polar coordinates. 🎲
+```js
+const angle = Math.random() * Math.PI * 2;
+const distance = Math.random() * (groundRadius - 5);
+const x = Math.cos(angle) * distance;
+const z = Math.sin(angle) * distance;
+const y = 0;
+```
+
+### 🔍 Collision Detection
+
+Next, I calculate whether the proposed position is already occupied. For this, I leverage [Yuka](https://mugen87.github.io/yuka/docs/index.html)'s AABB (Axis-Aligned Bounding Box) system:
+
+```ts
+function getHouseAABB(position: Vector3, size: Vector3): YukaAABB {
+    const points = []
+    // Push the 8 corners of the house
+    points.push(new YukaVector3(position.x + size.x / 2, position.y + size.y / 2, position.z + size.z / 2));
+    /* ... */
+
+    return new YukaAABB().fromPoints(points);
+}
+
+function isValidHousePosition(ctx: SceneContext, position: Vector3, size: Vector3): boolean {
+    // Keep ground boundary constraint (circular ground with radius 30)
+    const distanceFromCenter = Math.sqrt(position.x * position.x + position.z * position.z);
+    if (distanceFromCenter + Math.max(size.x, size.z) / 2 > 30) {
+        return false;
+    }
+
+    const proposedAABB = getHouseAABB(position, size)
+
+    // Test intersection with existing houses (box vs box)
+    for (const house of ctx.gameState.houses) {
+        const existingAABB = getHouseAABB(house.position, house.size)
+        if (proposedAABB.intersectsAABB(existingAABB)) {
+            return false;
+        }
+    }
+}
+```
+
+### ♻️ Retry Strategy
+
+The algorithm simply tries multiple times until it finds a valid position. In my implementation, I attempt up to **100 iterations**. This ensures that buildings are randomly distributed across the ground while maintaining proper spacing and preventing overlaps. ✨
+
+## 🎯 Conclusion
+
+This was an exciting experiment combining **Babylon.js** and **Yuka**! Yuka offers many powerful features that are worth exploring further. I'm confident I'll be incorporating it into future projects. 🚀
