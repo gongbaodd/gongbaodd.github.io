@@ -2,7 +2,10 @@
 type: post
 category: travel
 city:
-  - Hainan Prefecture, China
+  - Hainan Tibetan Autonomous Prefecture, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1760274374/008_tq8xi2.jpg
+  alt: selfie
 ---
 
 # 唐蕃北斗
@@ -13,39 +16,43 @@ city:
 
 # 拉脊山
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8nk5z3d1aj218g0lw46n.jpg)
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8nk5wbrznj218g0tmdsw.jpg)
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8nk5ygohpj218g0tmak0.jpg)
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8nk5x8u7dj218g0tm47l.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274376/001_wfxzme.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274375/002_u0ifr3.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274375/003_hwo2iy.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274374/004_teoino.jpg)
 
 # 橡皮山
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8nk5ztyd2j217a0suqak.jpg)
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8nk61j2z2j218g0tm4eq.jpg)
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f8nk63lqp0j218g0tmwpi.jpg)
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f96xc7ljnbj20xc18gapi.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274373/005_resrcy.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274374/006_lxqxcm.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274371/007_lpn09j.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274371/007_lpn09j.jpg)
 
 # 日月山
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8nk64i2i0j214m0on7c1.jpg)
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f8nk66sfcwj218g0tmtjf.jpg)
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8nk65t695j218g0tmk0r.jpg)
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8nk67h5tmj215z0in0xx.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274374/008_tq8xi2.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274370/009_elacfd.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274369/010_x1ukkl.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274369/011_obd18d.jpg)
 
 # 青海湖
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8nk68q0m6j218g0tmn75.jpg)
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8nk69xd2yj216z0ms103.jpg)
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f8nk6baw01j218g0pu4az.jpg)
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8nk6c28q3j218g0kg7c6.jpg)
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8nk6cxxhrj218g0tmdp0.jpg)
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8nk6ds0r6j218g0tm46l.jpg)
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8nk6euhsvj218g0tm47a.jpg)
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f8nk6g91soj217a0suwnv.jpg)
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8nk6hhp8gj218g0tmqfw.jpg)
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f8nk6ifra8j20qj0sutek.jpg)
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8nk6j84q4j20o10gitc9.jpg)
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8nk6m2eauj215t0ron4s.jpg)
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8nk6msk6bj218g0tmths.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274367/012_l6s3sp.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274367/013_etd4ki.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274365/014_scsn0i.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274365/015_eg3ixb.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274363/016_qdqxv1.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274362/017_rwdnet.jpg)
+
 
 # 黑马河
+
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274362/018_innsb6.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274362/019_sgljui.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274362/020_v6e945.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274361/021_yk74p9.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274361/022_ph3xjl.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274360/023_dsqgyn.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274360/024_pvjsp7.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760274377/025_e5knqj.jpg)

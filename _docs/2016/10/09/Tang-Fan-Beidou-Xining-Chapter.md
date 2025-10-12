@@ -3,90 +3,96 @@ type: post
 category: travel
 city:
   - Xining, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1760272544/026_knl544.jpg
+  alt: xining
 ---
 
-# 唐蕃北斗
+# 西游记：西宁
 
-## 西宁
+## 西宁火车站
 
----
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272521/001_qhoz7z.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f96vztsxfbj218g0xc1a6.jpg)
+## 青海博物馆
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevvtwssj20tm18g1ic.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272522/002_qhqykx.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevgpfkcj217o0n2gu8.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272521/003_iocowt.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevg4gkxj218g0tmds7.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272523/004_xt3a5n.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevigsvxj214a0tmaqi.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272523/005_ajusqw.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mevjdl9hj214z0radnu.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272522/006_z1zcif.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mevkevwgj212q0swaj8.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272524/007_ukxktm.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevm1lnpj215z0rzgy3.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272524/008_ypliqo.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8mevn5ea4j20xc0kt7af.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272524/009_ptsvkw.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevo47qmj20qf0suq90.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272524/010_sr2gdf.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevp0r3rj218g0mp494.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272525/011_a3bfsb.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mevpzxl4j217a0suak1.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272525/012_puosdv.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevqpxluj20wj0tmqbh.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272529/013_aq3res.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f8mevs1s8pj20yz0m710n.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272530/014_zi7zql.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mevt3j2hj218g0tmtlp.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272531/015_yywkwi.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevaib0cj218g0tmk4g.jpg)
+## 马步芳公馆
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mfai5ujrj217u0t7wt7.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272531/016_dfncpe.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mfalq3mbj218g0tm1f2.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272532/017_drgevb.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mfaqj5y5j21680vonae.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272533/018_mvtknt.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mfan2dw8j218g0tm13j.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272532/019_vvj4ms.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mfap9vdkj20yo0st7d1.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272533/020_ukvvcf.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mfaobhobj218g0oetmc.jpg)
+## 莫家街
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8mevbmsd4j218g0m7gxe.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272538/022_vntjut.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8me79okhij218g0qcank.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272539/023_awelt9.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8me7dd3hvj218g0latrb.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272539/024_lzfftw.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8me7bk2hzj21690pg1ab.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272540/025_xtrxoj.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8mevciscxj215t0nvwmt.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272544/026_knl544.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8mevdhdnbj216w0lfn4o.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272540/027_mpodqk.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f8meve4kwzj20pe0oejxv.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272540/028_qqktkl.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f8me7glw8yj218f0o7dq9.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272540/030_bobewy.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f8me7euu4mj218g0q1ds8.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272542/031_cbko9e.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f8me7gz2rgj218g0jnah7.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272518/032_nu6olu.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f96wc61oiaj218g0ucqn4.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272517/033_qkbzgd.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f96wc72okxj20xb18gndw.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272518/034_yctgri.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f96wrilfozj218g0xcu0p.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272518/35_t7jceh.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f96wrk9nwrj218g0xc1kx.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272519/36_qptbmx.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f96wrl2pj7j20xb18gk8q.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272519/37_yr7uwz.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f96wrn1kd7j217e0wjtlm.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272520/38_wj2cks.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f96wrne8o8j218f0ko12e.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272520/39_yqv4hn.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f96x74d7gsj20xb0oqwno.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272520/40_tar541.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760272542/41_wmckhx.jpg)
+

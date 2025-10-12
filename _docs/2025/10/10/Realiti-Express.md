@@ -49,6 +49,8 @@ But honestly... I bet **Godot** could do the same thing.
 
 And Helsinki XR Centre shared their [XR roadmap](https://miro.com/app/board/uXjVL7Ffy2M=/)
 
+Also, there are some defence techs. I am not a war person, and a lot defence techs they do not share so much. So there are not so much to learn.
+
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760187187/IMG_8384_zomvcx.jpg)
 
 Dinner spot of the night — serving vibes straight out of *1984*.  
