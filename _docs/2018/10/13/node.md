@@ -1,8 +1,13 @@
 ---
 type: post
 category: fe
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1760275824/IMG_20181013_163219_roqqoo.jpg
+    alt: photo
 ---
 # 阿里深圳node地下铁
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1760275824/IMG_20181013_163219_roqqoo.jpg)
 
 ## 渲染服务化，egg.js北斗
 
