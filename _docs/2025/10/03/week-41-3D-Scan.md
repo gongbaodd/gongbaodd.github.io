@@ -6,6 +6,9 @@ cover:
     alt: scan
 city:
     - Tallinn, Estonia
+series:
+  name: 3D printing
+  slug: 3d-printing
 ---
 # Week 41: 3D Scan 🎨
 
