@@ -1,6 +1,6 @@
 ---
 type: post
-category: film
+category: movie
 ---
 # Deadpool & Wolverine
 
