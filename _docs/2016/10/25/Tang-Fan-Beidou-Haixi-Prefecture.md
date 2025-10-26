@@ -2,10 +2,13 @@
 type: post
 category: travel
 city:
-  - Haixi Prefecture, China
+  - Haixi Mongol and Tibetan Autonomous Prefecture, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761516225/weng_20160914_073738_a9g0ob.jpg
+  alt: selfie
 ---
 
-# 唐蕃北斗
+# 西游记：海西州
 
 ## 海西州
 
@@ -13,9 +16,9 @@ city:
 
 # 茶卡盐湖
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f96xc94bs6j21kw16o4ka.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761516225/weng_20160914_073738_a9g0ob.jpg)
 
 # 大柴旦
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f96xm65gqqj217k09543n.jpg)
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f96xm6qsf7j218g0xcanj.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761516333/weng_20160915_013708_ecax6c.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761516333/weng_20160917_081913_yhhlr0.jpg)
