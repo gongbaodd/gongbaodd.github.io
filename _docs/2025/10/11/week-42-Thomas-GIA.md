@@ -3,7 +3,7 @@ type: post
 category: life
 ---
 
-# I Am Low IQ for the First Time 🤯
+# Week 42: I Am Low IQ for the First Time 🤯
 
 ## The Dream Team That Couldn’t
 This summer, I got an *“internship offer”* from a group who claimed they would **revolutionize hiring**.  

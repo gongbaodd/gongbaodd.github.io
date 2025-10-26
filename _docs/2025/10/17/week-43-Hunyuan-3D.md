@@ -9,7 +9,7 @@ cover:
     alt: print
 ---
 
-# 🧵 Week 42: Hunyuan 3D Adventures
+# 🧵 Week 43: Hunyuan 3D Adventures
 
 Two weeks ago, I mentioned that I was diving into a project involving 3D printing — and I’ve already finished [the 3D scanning part](/tech/2025/10/03/week-41-3d-scan). 🎥✨  
 
