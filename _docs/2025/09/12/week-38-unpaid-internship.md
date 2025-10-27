@@ -38,7 +38,7 @@ It seems `@media print` really took off around 2018. Many libraries, like the on
 
 To hide components I don't want in the printed version (like a search bar on a PDF), I simply hide everything under the body and then reveal only the content I want, positioning it `absolute`.
 
-```CSS
+```css
 
 @media print {
     body * {
