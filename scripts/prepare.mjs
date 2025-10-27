@@ -7,6 +7,7 @@ import sharp from "sharp";
 import { Vibrant } from "node-vibrant/node";
 import chroma from "chroma-js";
 import potrace from "potrace";
+import { SobelService } from '@musical-sniffle/sobel-edge-detection';
 import "dotenv/config";
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const ROOT_DIR = "./_docs"; // change to your folder
@@ -106,14 +107,14 @@ async function getColorSet(imagePathOrUrl, mdDirAbs, relPath) {
     if (!res.ok)
       throw new Error(`Failed to fetch ${imagePathOrUrl}: ${res.status}`);
     buffer = Buffer.from(await res.arrayBuffer());
-    buffer = await sharp(buffer).png().toBuffer();
+    buffer = await sharpSobel(buffer);
   } else {
     let p = imagePathOrUrl;
     if (p.startsWith("/@fs/")) p = p.slice("/@fs/".length);
     p = stripQuery(p);
     let abs = path.isAbsolute(p) ? p : path.resolve(mdDirAbs, p);
     buffer = await fs.readFile(abs);
-    buffer = await sharp(buffer).png().toBuffer();
+    buffer = await sharpSobel(buffer);
   }
 
   const palette = await Vibrant.from(buffer).getPalette();
@@ -145,6 +146,37 @@ async function getColorSet(imagePathOrUrl, mdDirAbs, relPath) {
     },
   };
 }
+
+async function sharpSobel(inputBuffer) {
+  const { data, info } = await sharp(inputBuffer)
+    .ensureAlpha()
+    .greyscale()
+    .resize({ width: 500 })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  const sobelService = new SobelService();
+  const { width, channels, height } = info;
+  const { imageData: detected } = sobelService.applySobel(
+    new Uint8ClampedArray(data.buffer),
+    width,
+    height,
+    channels
+  );
+
+  // Invert colors
+  for (let i = 0; i < detected.length; i += 4) {
+    detected[i] = 255 - detected[i];     // R
+    detected[i + 1] = 255 - detected[i + 1]; // G
+    detected[i + 2] = 255 - detected[i + 2]; // B
+    // Alpha channel (i + 3) remains unchanged
+  }
+
+  return await sharp(detected, { raw: { channels: 4, height, width } })
+    .normalize()
+    .png()
+    .toBuffer();
+}
+
 
 // ---- color helpers ----
 const prefix = "--mantine-color-";
