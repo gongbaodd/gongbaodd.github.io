@@ -76,6 +76,9 @@ cover:
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761517390/IMG_20201017_150022_1_coiqd2.jpg)
 
 喀纳斯内如童话一般，淡蓝的河水从雪山上蜿蜒流入丛林。
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761546555/IMG_20201018_104024_awe9mr.jpg)
+
 山上天气真的很冷，手机电量在以可见的速度下坠。
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761517392/IMG_20201017_163226_ed8fwt.jpg)

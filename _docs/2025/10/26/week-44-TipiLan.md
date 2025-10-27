@@ -2,7 +2,7 @@
 type: post
 category: plan
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761513320/IMG_8514_rwjb9o.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761546248/IMG_8514_s9sbte.jpg
     alt: selfie
 ---
 

@@ -50,7 +50,7 @@ async function collectMetadata() {
 
       const old = oldData[relPath];
       const locationPart = await processLocation(data, old);
-      const coverPart = await processCover(data, old, file);
+      const coverPart = await processCover(data, old, file, relPath);
 
       let didChange = false;
       if (locationPart || coverPart || !old) {
@@ -98,7 +98,7 @@ function stripQuery(u) {
   return u.replace(/[?#].*$/, "");
 }
 
-async function getColorSet(imagePathOrUrl, mdDirAbs) {
+async function getColorSet(imagePathOrUrl, mdDirAbs, relPath) {
   let buffer;
 
   if (isRemote(imagePathOrUrl)) {
@@ -126,6 +126,15 @@ async function getColorSet(imagePathOrUrl, mdDirAbs) {
     );
   });
 
+  // Save trace as SVG file
+  if (relPath) {
+    const coverDir = path.join(process.cwd(), "cover");
+    await fs.mkdir(coverDir, { recursive: true });
+    const svgFileName = relPath.replace(/\//g, "-") + ".svg";
+    const svgPath = path.join(coverDir, svgFileName);
+    await fs.writeFile(svgPath, trace, "utf-8");
+  }
+
   return {
     get bgColor() {
       return palette.Muted?.hex ?? "";
@@ -134,7 +143,6 @@ async function getColorSet(imagePathOrUrl, mdDirAbs) {
       const hex = palette.Vibrant?.hex;
       return hex ? findNearestTitleColor(hex) : "";
     },
-    trace,
   };
 }
 
@@ -193,14 +201,14 @@ async function processLocation(data, old) {
   return { city: data.city, locations };
 }
 
-async function processCover(data, old, file) {
+async function processCover(data, old, file, relPath) {
   if (!data?.cover?.url) return undefined;
 
   if (old && old.cover?.url === data.cover.url) {
     return undefined;
   }
 
-  const colorSet = await getColorSet(data.cover.url, path.dirname(file));
+  const colorSet = await getColorSet(data.cover.url, path.dirname(file), relPath);
   return {
     cover: data.cover,
     colorSet,
