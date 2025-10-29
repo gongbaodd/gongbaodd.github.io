@@ -103,21 +103,22 @@ function stripQuery(u) {
 }
 
 async function getColorSet(imagePathOrUrl, mdDirAbs, relPath) {
+  let bufferForColor;
   let buffer;
 
   if (isRemote(imagePathOrUrl)) {
     const res = await fetch(imagePathOrUrl);
     if (!res.ok)
       throw new Error(`Failed to fetch ${imagePathOrUrl}: ${res.status}`);
-    buffer = Buffer.from(await res.arrayBuffer());
-    buffer = await sharpSobel(buffer);
+    bufferForColor = Buffer.from(await res.arrayBuffer());
+    buffer = await sharpSobel(bufferForColor);
   } else {
     let p = imagePathOrUrl;
     if (p.startsWith("/@fs/")) p = p.slice("/@fs/".length);
     p = stripQuery(p);
     let abs = path.isAbsolute(p) ? p : path.resolve(mdDirAbs, p);
-    buffer = await fs.readFile(abs);
-    buffer = await sharpSobel(buffer);
+    bufferForColor = await fs.readFile(abs);
+    buffer = await sharpSobel(bufferForColor);
   }
 
   const palette = await Vibrant.from(buffer).getPalette();

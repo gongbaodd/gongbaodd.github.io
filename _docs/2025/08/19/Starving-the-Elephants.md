@@ -2,7 +2,7 @@
 type: post
 category: book
 cover:
-    url: https://apjjf.org/wp-content/uploads/2023/11/7295_1.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761745430/7295_1_zy9yx2.jpg
     alt: image from apjjf.org
 ---
 

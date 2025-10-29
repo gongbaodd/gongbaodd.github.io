@@ -409,4 +409,3 @@ private resolveMarkerHit(laserIndex: number, x: number, z: number): void {
   allowfullscreen
   frameborder="0"
 ></iframe>
-```
