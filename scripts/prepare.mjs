@@ -80,7 +80,10 @@ async function collectMetadata() {
           didChange = true;
         }
       }
-      console.log(didChange ? `✅ Processed: ${relPath}` : `⏭️ Skipped: ${relPath}`);
+
+      if (didChange) {
+        console.log(`✅ Processed: ${relPath}`);
+      }
     } catch (err) {
       console.error(`❌ Error parsing ${file}:`, err.message);
     }

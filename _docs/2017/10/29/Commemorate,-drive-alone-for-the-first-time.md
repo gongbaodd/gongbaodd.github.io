@@ -3,20 +3,23 @@ category: travel
 type: post
 city:
   - Beijing, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/007_blio62.jpg
+  alt: road trip
 ---
 
 # 纪念一下先是去香山然后去百望山，最后哪也没去，但毕竟是第一次独自驾车的经历
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flg7pfrve7j21je15kdjk.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761740976/001_ngqwfg.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flg7pqz18mj21je15k7ip.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761740977/002_ycrpaz.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flg7pqy8gkj21je15kqjp.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761740979/003_gzaxba.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flg7pr8nmzj21je15kh3e.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/004_sqb571.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flg7pr1gznj21je15kh0g.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761740979/005_dluvzm.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flg7pq27zqj20xc18ggq8.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/006_xot1aq.jpg)
 
-![](http://ww1.sinaimg.cn/large/89d0a2e1ly1flg7ppijy1j207w05xdgj.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/007_blio62.jpg)

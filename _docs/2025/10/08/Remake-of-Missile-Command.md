@@ -7,10 +7,11 @@ cover:
 tag:
     - babylonjs
     - yuka
+    - colyseus
     - portfolio
 ---
 
-# 🚀 3D Missile Command: Battle Mode (1v1)
+# 🚀 3D Missile Command on Colyseus
 
 ![](https://www.growgen.xyz/_astro/week-48-1.BeLVKpHd_LgsTr.webp)
 
@@ -148,7 +149,7 @@ classDiagram
     Missile "1" --> "1" Position : target
 
 ```
-## 🏗️ How Do I Place the Buildings?
+## 🔍 Collision Detection
 
 ![Building placement visualization](https://res.cloudinary.com/dmq8ipket/image/upload/v1759940257/Screenshot_2025-10-08_191152_layk4c.png)
 
@@ -160,8 +161,6 @@ const x = Math.cos(angle) * distance;
 const z = Math.sin(angle) * distance;
 const y = 0;
 ```
-
-### 🔍 Collision Detection
 
 Next, I calculate whether the proposed position is already occupied. For this, I leverage [Yuka](https://mugen87.github.io/yuka/docs/index.html)'s AABB (Axis-Aligned Bounding Box) system:
 
@@ -194,10 +193,220 @@ function isValidHousePosition(ctx: SceneContext, position: Vector3, size: Vector
 }
 ```
 
-### ♻️ Retry Strategy
+## 🚀 Missile's Gravity
 
-The algorithm simply tries multiple times until it finds a valid position. In my implementation, I attempt up to **100 iterations**. This ensures that buildings are randomly distributed across the ground while maintaining proper spacing and preventing overlaps. ✨
+The vertical gravity calculation 🌍
 
-## 🎯 Conclusion
+$$
+v = v + gravity * t \\
+dy = v * t
+$$
 
-This was an exciting experiment combining **Babylon.js** and **Yuka**! Yuka offers many powerful features that are worth exploring further. I'm confident I'll be incorporating it into future projects. 🚀
+```ts
+const gravity = -2;
+m.verticalVelocity += gravity * dt;
+const dy = m.verticalVelocity * dt;
+...
+m.position.y += dy; 
+````
+
+---
+
+## 🧠 Using Colyseus as Backend
+
+At first, I used **Firebase** as the backend — but the network was too slow 🐢.
+So I switched to **Colyseus** ⚡ for a faster, real-time multiplayer backend.
+
+---
+
+### ⚙️ Project Setup
+
+After running into some monorepo headaches 🌀 (the `@colyseus/schema` package didn’t play nicely),
+I decided to split it into **two separate projects** instead.
+
+Setting things up took longer than expected ⏳ — so if you’re starting fresh,
+it’s better to use the official [Colyseus example project](https://github.com/colyseus/colyseus-examples). ✅
+
+---
+
+### 🧩 Game State
+
+To maintain a **single source of truth** 🧭, all physics are calculated on the **server side**.
+
+Here’s the schema definition 👇
+
+```ts
+class GameState extends Schema {
+  @type([Player]) players: ArraySchema<Player> = new ArraySchema<Player>();
+  @type([House]) houses: ArraySchema<House> = new ArraySchema<House>();
+  @type([Missile]) missiles: ArraySchema<Missile> = new ArraySchema<Missile>();
+  @type([Laser]) lasers: ArraySchema<Laser> = new ArraySchema<Laser>();
+  @type([Marker]) markers: ArraySchema<Marker> = new ArraySchema<Marker>();
+  @type("boolean") isGameOver: boolean = false;
+}
+```
+
+At first, I wanted to use [Babylon’s serializer](https://doc.babylonjs.com/typedoc/classes/BABYLON.SceneSerializer)
+to compute the scene server-side and stream it to clients.
+However, `@colyseus/schema` requires strict descriptions, so I dropped that plan 🙅‍♂️.
+
+Colyseus provides a handy **`@colyseus/playground`** 🧪 — where you can inspect the entire game state structure visually.
+
+On the client, use `onStateChange` to react to state updates:
+
+```ts
+room.onStateChange(handler);
+```
+
+You can also use [`getStateCallbacks`](https://docs.colyseus.io/state/callbacks)
+to listen to specific value changes 🎯.
+
+---
+
+### 🏠 Game Room
+
+To communicate between client and server, the server listens for the following events 🎮:
+
+| Event Name      | Description                   |
+| --------------- | ----------------------------- |
+| `spawn_missile` | Attackers spawn missiles      |
+| `add_marker`    | Defenders set laser targets   |
+| `assign_role`   | Any player chooses their role |
+
+```ts
+export class GameRoom extends Room<GameState> {
+  state = new GameState();
+
+  onCreate() {
+    this.onMessage("spawn_missile", (client, { x, z }) => {...});
+    this.onMessage("add_marker", (client, { x, y, z }) => {...});
+    this.onMessage("assign_role", (client, { role }) => {...});
+    this.initializeScene();
+    this.setSimulationInterval((deltaTime) => this.update(deltaTime), 50);
+  }
+
+  onJoin(client, options) {...}
+  onLeave(client) {...}
+  onDispose() {...}
+}
+```
+
+Client-side event sending example 📡:
+
+```ts
+function getClient(): Client {
+  if (!client) {
+    const server = process.env.SERVER || "ws://localhost:2567";
+    client = new Client(server);
+  }
+  return client;
+}
+
+async function getRoom(): Promise<Room> {
+  if (!roomPromise) {
+    const client = getClient();
+    const roomName = "missile_command";
+    const connect = (opts?: Record<string, unknown>) =>
+      client.joinOrCreate(roomName, opts).catch(async () => {
+        try {
+          return await client.create(roomName, opts);
+        } catch {
+          return await client.join(roomName, opts);
+        }
+      });
+    roomPromise = connect();
+  }
+  return await roomPromise;
+}
+
+// Usage
+const room = await getRoom();
+room.send("spawn_missile", { x, z });
+```
+
+---
+
+## 🕹️ Rules
+
+### 🧨 Attackers
+
+Each missile costs **10 points** 💸 to launch,
+but hitting a target earns **100 points** 💥.
+
+```ts
+private hitHouse(h: House, attackerSessionId: string): void {
+  h.isHit = true;
+  h.isDestroyed = true;
+
+  const attacker = this.findPlayer(attackerSessionId);
+  if (attacker) attacker.score += 100;
+}
+
+private spawnMissile(x: number, z: number, clientSessionId: string): void {
+  const attacker = this.findPlayer(clientSessionId);
+  if (attacker) attacker.score -= 10;
+
+  const m = new Missile();
+  m.position.set(x, 75, z);
+  m.target = new Vec3(x, 0, z);
+  m.speed = 0; 
+  m.verticalVelocity = 0; 
+  m.isActive = true; 
+  m.isHit = false;
+  m.color = { r: Math.random(), g: Math.random(), b: Math.random() };
+  m.id = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  m.clientSessionId = clientSessionId;
+  this.state.missiles.push(m);
+}
+```
+
+### 🛡️ Defenders
+
+Destroying a missile rewards **50 points** ✨.
+
+```ts
+private resolveMarkerHit(laserIndex: number, x: number, z: number): void {
+  const explosionRadius = 5;
+  let destroyedCount = 0;
+
+  for (const m of this.state.missiles) {
+    if (!m.isActive) continue;
+    const d = Math.hypot(m.position.x - x, m.position.z - z);
+    if (d <= explosionRadius) {
+      m.isActive = false;
+      destroyedCount++;
+    }
+  }
+
+  const marker = this.state.markers.find(m => !m.isDone && m.assignedLaserIndex === laserIndex);
+  if (marker) {
+    marker.isDone = true;
+    if (destroyedCount > 0) {
+      const player = this.findPlayer(marker.clientSessionId);
+      if (player) player.score += destroyedCount * 50;
+    }
+  }
+}
+```
+
+---
+
+## 🚢 Deployment
+
+🧩 **Open Source Code:** [Missile Command on GitHub](https://github.com/gongbaodd/Missile-Command/tree/babylon)
+
+* **Server:** `/apps/server` — deployed on [Render.com](https://missile-command.onrender.com/) ☁️
+* **Client:** `/apps/client` — live on [Netlify](https://missile-command.netlify.app/) 🌐
+
+🎥 **Gameplay Preview:**
+
+<iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dmq8ipket&public_id=missile_command_kjrofc&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
+```

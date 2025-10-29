@@ -358,19 +358,22 @@
   {
     "file": "2016/10/29/quiet-echo-wall-and-the-former-residence-of-the-siye-earth-altar--yonghe-palace",
     "city": [
-      "Beijing, China",
-      "Xining, China"
+      "Beijing, China"
     ],
     "locations": [
       {
         "latitude": 39.904211,
         "longitude": 116.407395
-      },
-      {
-        "latitude": 36.6172899,
-        "longitude": 101.77782
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761739583/037_zzsrjv.jpg",
+      "alt": "ticket"
+    },
+    "colorSet": {
+      "bgColor": "#7c7c7c",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   },
   {
     "file": "2016/11/06/the-baby-is-really-old"
@@ -2691,7 +2694,15 @@
         "latitude": 39.904211,
         "longitude": 116.407395
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/007_blio62.jpg",
+      "alt": "road trip"
+    },
+    "colorSet": {
+      "bgColor": "#808080",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   },
   {
     "file": "2017/09/17/13",

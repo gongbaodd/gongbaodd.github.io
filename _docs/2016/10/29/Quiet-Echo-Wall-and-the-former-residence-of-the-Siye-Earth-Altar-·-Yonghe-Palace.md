@@ -3,7 +3,9 @@ type: post
 category: travel
 city:
   - Beijing, China
-  - Xining, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761739583/037_zzsrjv.jpg
+  alt: ticket
 ---
 
 # 安静的回音壁和四爷故居
@@ -30,13 +32,13 @@ city:
 
 好不容易到了周末，出来溜一趟看看帝都的秋景确实不错，所以我一路从南坞走到了地坛公园。当然也可以坐地铁到雍和宫下，也不是我风格啊～更何况，要想看地坛，一定要从安定门出来，从牌楼进才最正宗！
 
-![地坛牌坊](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f99hrvbvlaj216p0sg4c2.jpg)
+![地坛牌坊](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739553/001_dp1kv3.jpg)
 
 不记得天坛有没有牌楼了，过了青年湖公园，走几步过人行天桥的时候就能远远地看到地坛牌楼了。过了牌楼，还没到售票窗口，所以这里的银杏大道，是免费哒～
 
-![前方是售票窗口](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99hs1hd08j218g0tmh6r.jpg)
+![前方是售票窗口](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739555/002_ndfnh5.jpg)
 
-![刚进入西门就是一条银杏大道](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hs4o2xqj218g0tmh3i.jpg)
+![刚进入西门就是一条银杏大道](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739555/003_utcg8m.jpg)
 
 其实地坛门票也就两块，买了票刚进去便是一条银杏大道。
 
@@ -44,37 +46,37 @@ city:
 
 走进西门，向南走到头（其实我在找正门 T.T），找到一处貌似是广场舞的场地，话说地坛也被改成市民公园了。场地一边有一处建筑，建筑的门口屏风花纹很有意思，门上的门环也很有京味儿。
 
-![屏风花纹](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hs703lmj218g0tm12i.jpg)
+![屏风花纹](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739553/004_mly0b2.jpg)
 
-![门环](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99hs88rhwj218g0tmjyv.jpg)
+![门环](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739554/005_z59apz.jpg)
 
 场地对面是路标，前方就是坐南朝北的地坛（方泽坛），话说为了拍好这个路标我可费了好大心思了。
 
-![路标](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99hu1rdw4j20wi17e7wh.jpg)
+![路标](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739562/006_ijobzq.jpg)
 
 ## 斋宫
 
 其实这个有意思的建筑，就是斋宫，算是给地仙儿们做饭的地儿了，可惜不对外开放，内部应该和天坛斋宫类似吧。
 
-![斋宫](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f99htpwvrdj218g0tm7gv.jpg)
+![斋宫](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739556/007_biyogp.jpg)
 
 斋宫外，还有一处隐形路，在修的应该是宰牲亭，好可惜难得的一处有树有楼，人又少的地儿。
 
-![斋宫外](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hsbgnc6j218g0tm7sm.jpg)
+![斋宫外](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739559/008_cvhwml.jpg)
 
-![宰牲亭](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f99htmkaa2j218g0tm1kg.jpg)
+![宰牲亭](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739563/009_uxli0q.jpg)
 
 天坛也有双亭，不过是圆的，这个是方的。
 
-![双亭](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99hto72idj218g0tm7kk.jpg)
+![双亭](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739559/010_mbi3ky.jpg)
 
 介绍说地坛的纹饰以凤凰为主，但我看到的还都是龙，而且非常卡通囧。
 
-![有意思的龙纹](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99htsdg09j215z0rzgzc.jpg)
+![有意思的龙纹](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739560/011_ob1jyj.jpg)
 
-![银杏](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99hu6fj0gj218g0xchdt.jpg)
+![银杏](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739564/012_lihkvn.jpg)
 
-![银杏](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99hv2oy3jj21kw16o1ky.jpg)
+![银杏](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739564/013_qtooxb.jpg)
 
 ## 皇祇室
 
@@ -82,67 +84,67 @@ city:
 
 5 块钱的园中园票，可以游览皇祇室和方泽坛。皇祇室内部供着五镇、五岳、五滇和四海的牌位，还有清朝几位皇上的牌位。
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f99hsnjas8j20ri0pcte7.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739564/013_qtooxb.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99hsmmt5tj218g0tmn5q.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739563/015_uxyxsg.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f99hspmshbj218g0tmgu4.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739568/016_lwy9te.jpg)
 
 ## 方泽坛
 
 方泽坛仿照南京方泽坛（已毁），方形祭坛，瓦片为黄色。这里的设计，虽然不比天坛大，但也有回音壁的效果，在地坛喊话，确实洪亮，同时也没有天坛那么多人对着墙喊话的那种尴尬场面。
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hscwdgdj218g0tm13x.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739566/017_qi1xss.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hse1vd7j218g0tmtji.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739566/018_kxkj6i.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99hsf42ycj218g0tmqdc.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739567/019_jtccxu.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hsfx9isj218g0tm46z.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739567/020_jjdekk.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hshyuikj218g0tmn7r.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739568/021_xu3sey.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hsjt8tij218g0tmwq8.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739569/022_dggfb1.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99hslhisvj21790staka.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739569/023_onuhbb.jpg)
 
 地坛后面还有一个更大大中轴线银杏道（个人感觉也是最美的，可惜拍照的人太多了），呃，按照皇祇室坐南朝北的特点，其实应该是前门，但是后来的天坛公园是坐南朝北的，所以到底是前还是后呢？
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99hti0gwfj218g0tmqt7.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739573/024_utkkin.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99htuk5uzj218g0tm7tu.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739574/025_uyegrn.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99hucbgtdj21kw16ou0x.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739575/026_ohmlzo.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99huizjsej21kw16ou0x.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739577/027_trykk7.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99htjm9rij215h0rm4ct.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739574/028_chc8g3.jpg)
 
 像中国很多其它公园，有老人在地上练字，呃。。。和画。
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99htxgdy3j218g0xcu0t.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739575/029_fwbsmq.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f99hupylcpj21kw16ox6p.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739580/030_sbv1ex.jpg)
 
 ## 地坛东门
 
 地坛东门其实是个门球场，感觉还好啦，比起先农坛，地坛被民俗化得少多了，不过还是难得拍到了梦寐以求的墙+树+瓦的效果。
 
-![墙+树+瓦](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99hsugdtlj218g0tm1kx.jpg)
+![墙+树+瓦](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739580/031_f3miop.jpg)
 
 ## 中医药养生园
 
 东门附近，是中医药养生园，就是一个介绍养生的主题园中园，内部有点苏州园林的感觉，免费嘛，逛一逛吧。
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1jw1f99hsznyohj218g0tmb27.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739580/031_f3miop.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1jw1f99ht3depxj218g0tm7ll.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739583/032_otspmu.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99ht628bdj218g0tm7fs.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739580/033_o8zowl.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1jw1f99ht9qh8oj215z0rz11x.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739578/034_j7ptyv.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1jw1f99htfh9pdj218g0tm1kx.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739580/035_qikhfc.jpg)
 
 ---
 
@@ -152,79 +154,81 @@ city:
 
 雍和宫门票 25，里面有一张光盘，还包括一捆香。
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f9beubsgqkj218g0tmn6m.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739585/036_ugns81.jpg)
 
 ## 牌楼
 
 门口牌楼后面就看到绿油油的银杏树林了，很奇怪，地坛和雍和宫那么近，地坛银杏都黄了，雍和宫里面却没有。
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9bevjmgqkj214i0mzk2n.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739583/037_zzsrjv.jpg)
 
 建议租一下语音讲解，看似里面的免费讲解不是给我这种人物的（瞬间觉得西宁西关清真大寺好很多）。
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9bevmwqwpj215z0rznaj.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739584/038_p5ekuz.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739585/039_laoumg.jpg)
 
 门口的龙饰确实比地坛里面威武了点。
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9bevjchavj218g0tmk2t.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739584/040_vdsot5.jpg)
 
 ## 银杏大道
 
 银杏大道上会噼里啪啦的跌落白果，所以拍照要小心了。
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9bevictu0j21kw11xe81.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739588/041_vmntzd.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f9bevfq6c3j21kw11xart.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739586/042_gicaug.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f9beuebuf3j21kw11xb29.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739589/043_byrm0n.jpg)
 
 ## 昭泰门
 
 门边有免费赠香的，毕竟是在门票里的，我就领了一捆。考虑到敬佛还要还原，这一捆我是一根没用就拿回家了。
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9beuf3wmpj21520o3qd7.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739590/044_temnav.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f9beufouisj20tm18gaja.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739589/045_q6drne.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9bevex4bnj21kw11xh6q.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739589/046_mp0oty.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9beuie2b6j218g0tmndh.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739591/047_ocruyx.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9beuh5x1fj218g0tmguj.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739591/048_sqabji.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9beugdskjj218g0tmah5.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739591/049_dr9dpd.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9beupp2hgj21790sth5n.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739594/050_awzz5j.jpg)
 
 ## 主殿
 
 主殿名字就叫雍和宫，因为以前这里才是入口，里面的柿子已经熟了。
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9beusa5yfj218g0tm4d4.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739594/051_y0vach.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9bevbd9npj21kw11x4qp.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739596/052_sikddp.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9beurjxuxj218g0tmwyr.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739596/052_sikddp.jpg)
 
 ## 法轮殿
 
 记得在西关清真大寺的时候听讲解说北京有一个类似的建筑，应该说的就是这里了吧，结合了中西文化的建筑，新颖而奇特。
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9beuynmi7j218g0tmk0b.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739596/052_sikddp.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9beuuap6ej218g0tmk29.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739595/053_vxy1ul.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9beutk3tlj218g0tmqfo.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739593/054_rz05pw.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9beusrlt6j218g0tmtg5.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739594/055_xz9oia.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f9beuv785dj218g0tmgyi.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739596/056_ifeij0.jpg)
 
 观音像已经用玻璃封上，看不清。但两边的建筑确实有《阿房宫赋》里面檐牙高啄的感觉。
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9beux9e7fj21790stk4b.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739596/057_rc8afv.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9bev2x3ppj218g0tmh04.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739598/058_qm9za6.jpg)
 
 ## 万福阁
 
@@ -232,30 +236,37 @@ city:
 
 可惜不让拍啊～汗，里面的老外拍得倒是很起劲，我刚拿起相机就被叫停了。
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9bev91ee0j21kw11xkap.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739602/059_iv4hdb.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9beuxw0ifj218g0tmds5.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739599/060_lya5pw.jpg)
 
-![](http://ww3.sinaimg.cn/mw690/89d0a2e1gw1f9beuwfeqtj21790stk6l.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739599/061_eup6h9.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739600/062_cvrjwr.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739602/063_yselpr.jpg)
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739602/063_yselpr.jpg)
+
 
 ## 藏传佛教博物馆
 
 因为看过青海博物馆，这个博物馆里面看到的自然也没觉得稀奇了。有意思的经历倒也有，比如这个曼达盘，当有人路过的时候，念出了“曼达”二字，正好旁边有一个藏族老人，很明显老人不会说汉语，听到有人说曼达，自己也附和道“曼达”。
 
-![曼达](http://ww4.sinaimg.cn/mw690/89d0a2e1jw9f9bf4cfrjvj20tm18g158.jpg)
+![曼达](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739607/064_nv81ly.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f9bev6d501j21790stn5r.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739602/065_sepmzk.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9bev5s81xj218g0tmk03.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739602/066_x8qust.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9bev588c8j21790stn5q.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739603/067_mrobbb.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9bev3x5ibj20oc0tmdme.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739606/068_jnqosn.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9bev3ll5lj21460sgn5f.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739604/069_nsf4qr.jpg)
 
-![](http://ww4.sinaimg.cn/mw690/89d0a2e1gw1f9bev2b2xtj20q90t2ah2.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739609/070_oerrhf.jpg)
 
-![](http://ww1.sinaimg.cn/mw690/89d0a2e1gw1f9bev1h7suj218g0tmaj5.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739605/071_bceylz.jpg)
 
-![](http://ww2.sinaimg.cn/mw690/89d0a2e1gw1f9bev0hucij218g0tmdty.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1761739607/072_z7caaz.jpg)
