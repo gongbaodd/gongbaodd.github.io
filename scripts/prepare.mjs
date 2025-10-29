@@ -110,18 +110,20 @@ async function getColorSet(imagePathOrUrl, mdDirAbs, relPath) {
     const res = await fetch(imagePathOrUrl);
     if (!res.ok)
       throw new Error(`Failed to fetch ${imagePathOrUrl}: ${res.status}`);
-    bufferForColor = Buffer.from(await res.arrayBuffer());
+    buffer = Buffer.from(await res.arrayBuffer());
+    bufferForColor = await sharp(buffer).png().toBuffer();
     buffer = await sharpSobel(bufferForColor);
   } else {
     let p = imagePathOrUrl;
     if (p.startsWith("/@fs/")) p = p.slice("/@fs/".length);
     p = stripQuery(p);
     let abs = path.isAbsolute(p) ? p : path.resolve(mdDirAbs, p);
-    bufferForColor = await fs.readFile(abs);
+    buffer = await fs.readFile(abs);
+    bufferForColor = await sharp(buffer).png().toBuffer();
     buffer = await sharpSobel(bufferForColor);
   }
 
-  const palette = await Vibrant.from(buffer).getPalette();
+  const palette = await Vibrant.from(bufferForColor).getPalette();
 
   const trace = await new Promise((res, rej) => {
     potrace.trace(

@@ -18,6 +18,12 @@
     "file": "2015/05/04/nativescript"
   },
   {
+    "file": "2015/05/09/ionic-todoguide"
+  },
+  {
+    "file": "2015/05/30/climbing-blue-harm-network"
+  },
+  {
     "file": "2015/04/12/apocalypse-of-the-bohai-sea",
     "city": [
       "Dalian, China"
@@ -30,22 +36,10 @@
     ]
   },
   {
-    "file": "2015/05/09/ionic-todoguide"
-  },
-  {
-    "file": "2015/05/30/climbing-blue-harm-network"
-  },
-  {
     "file": "2015/08/23/pebblejs-pebble"
   },
   {
     "file": "2015/08/25/fekitextension"
-  },
-  {
-    "file": "2015/03/14/learninginthreejs-1"
-  },
-  {
-    "file": "2015/03/15/threejs"
   },
   {
     "file": "2015/08/18/b",
@@ -63,54 +57,9 @@
       "alt": "the group photo"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#867463",
+      "titleColor": "--mantine-color-orange-2"
     }
-  },
-  {
-    "file": "2015/03/21/dontstarveconsole"
-  },
-  {
-    "file": "2015/03/28/bohai-rim",
-    "city": [
-      "Yantai, China",
-      "Penglai, China",
-      "Qingdao, China",
-      "Tai'an, China",
-      "Qufu, China",
-      "Jinan, China",
-      "Tianjin, China"
-    ],
-    "locations": [
-      {
-        "latitude": 37.4635299,
-        "longitude": 121.44801
-      },
-      {
-        "latitude": 37.8106399,
-        "longitude": 120.75898
-      },
-      {
-        "latitude": 36.0662299,
-        "longitude": 120.38299
-      },
-      {
-        "latitude": 36.1999399,
-        "longitude": 117.0884
-      },
-      {
-        "latitude": 35.4746899,
-        "longitude": 117.24542
-      },
-      {
-        "latitude": 36.6518399,
-        "longitude": 117.12009
-      },
-      {
-        "latitude": 39.085099,
-        "longitude": 117.199369
-      }
-    ]
   },
   {
     "file": "2015/09/04/chengde",
@@ -128,8 +77,8 @@
       "alt": "group photo"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#a57862",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -188,819 +137,640 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#818181",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#7f817a",
+      "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2015/03/14/learninginthreejs-1"
+  },
+  {
+    "file": "2015/03/15/threejs"
+  },
+  {
+    "file": "2015/03/21/dontstarveconsole"
+  },
+  {
+    "file": "2015/03/28/bohai-rim",
+    "city": [
+      "Yantai, China",
+      "Penglai, China",
+      "Qingdao, China",
+      "Tai'an, China",
+      "Qufu, China",
+      "Jinan, China",
+      "Tianjin, China"
+    ],
+    "locations": [
+      {
+        "latitude": 37.4635299,
+        "longitude": 121.44801
+      },
+      {
+        "latitude": 37.8106399,
+        "longitude": 120.75898
+      },
+      {
+        "latitude": 36.0662299,
+        "longitude": 120.38299
+      },
+      {
+        "latitude": 36.1999399,
+        "longitude": 117.0884
+      },
+      {
+        "latitude": 35.4746899,
+        "longitude": 117.24542
+      },
+      {
+        "latitude": 36.6518399,
+        "longitude": 117.12009
+      },
+      {
+        "latitude": 39.085099,
+        "longitude": 117.199369
+      }
+    ]
   },
   {
     "file": "2015/12/25/esprima-js"
   },
   {
-    "file": "2016/01/20/webpack-riot-loader"
+    "file": "2018/01/03/typescript-ast"
   },
   {
-    "file": "2016/01/22/jshint"
+    "file": "2018/01/04/win10"
   },
   {
-    "file": "2016/01/25/chrome"
+    "file": "2018/01/11/anko"
   },
   {
-    "file": "2016/01/25/fekit-es6-riot-tag"
+    "file": "2018/01/24/30-kotlin"
   },
   {
-    "file": "2016/01/26/karma"
+    "file": "2018/01/28/18-1"
   },
   {
-    "file": "2016/01/27/commitment"
+    "file": "2018/03/04/18"
   },
   {
-    "file": "2016/02/14/vim"
+    "file": "2018/03/20/i-am-bored"
   },
   {
-    "file": "2016/03/31/vue-riot-react"
+    "file": "2018/02/03/webpack-nestjs"
   },
   {
-    "file": "2016/08/11/mochiui"
+    "file": "2018/02/06/texturepacker"
   },
   {
-    "file": "2016/08/12/mochiui-button"
+    "file": "2018/02/07/webpack"
   },
   {
-    "file": "2016/08/13/conquest-line-10",
-    "cover": {
-      "url": "./x6.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#858585",
-      "titleColor": "--mantine-color-indigo-2"
-    }
+    "file": "2018/02/08/preactcsstransation"
   },
   {
-    "file": "2016/08/17/karmatest"
+    "file": "2018/02/09/about-innovation"
   },
   {
-    "file": "2016/09/06/sonicjs-loading"
+    "file": "2018/02/10/fontawesome-5"
   },
   {
-    "file": "2016/09/25/tang-fan-beidou-xian-chapter",
+    "file": "2018/02/14/valentines-day-for-you-some-color-to-see"
+  },
+  {
+    "file": "2018/02/17/two-forbidden-books"
+  },
+  {
+    "file": "2018/02/19/pixijs"
+  },
+  {
+    "file": "2018/02/27/git"
+  },
+  {
+    "file": "2018/02/25/about"
+  },
+  {
+    "file": "2018/04/01/march-summary"
+  },
+  {
+    "file": "2018/04/09/graphql"
+  },
+  {
+    "file": "2018/04/10/archlinux-vscode"
+  },
+  {
+    "file": "2018/04/15/finally-pulling-the-preserved-egg-lean-meat-ravioli"
+  },
+  {
+    "file": "2018/04/16/lego"
+  },
+  {
+    "file": "2018/04/17/devtools-node"
+  },
+  {
+    "file": "2018/04/19/css-3d"
+  },
+  {
+    "file": "2018/04/20/laveienrose"
+  },
+  {
+    "file": "2018/04/18/talk-about-unpopular-human-puncture"
+  },
+  {
+    "file": "2018/04/22/from-guiyuan-tianju-to-the-renaissance"
+  },
+  {
+    "file": "2018/04/21/summarize-yesterdays-promotion-and-defense"
+  },
+  {
+    "file": "2018/04/29/division-daily-on-the-first-day"
+  },
+  {
+    "file": "2018/05/25/travel-summary"
+  },
+  {
+    "file": "2018/05/26/blender"
+  },
+  {
+    "file": "2018/05/28/inkscape"
+  },
+  {
+    "file": "2018/06/01/summary-in-may-18th"
+  },
+  {
+    "file": "2018/06/03/linuxmint"
+  },
+  {
+    "file": "2018/06/14/jupyter"
+  },
+  {
+    "file": "2018/06/24/redbird"
+  },
+  {
+    "file": "2018/06/28/the-current-cloud-service-available"
+  },
+  {
+    "file": "2018/07/05/6"
+  },
+  {
+    "file": "2018/07/07/gulpv4-task"
+  },
+  {
+    "file": "2018/07/10/apollo-meteor"
+  },
+  {
+    "file": "2018/07/14/can-be-regarded-as-visiting-tianjin",
     "city": [
-      "Xi'an, China",
-      "Beijing, China"
+      "Tianjin, China"
     ],
     "locations": [
       {
-        "latitude": 34.2658138,
-        "longitude": 108.9540936
-      },
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758802089/20_up896o.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7b7b7b",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2016/10/01/tang-fan-beidou-lanzhou-chapter",
-    "city": [
-      "Lanzhou, China",
-      "Xi'an, China"
-    ],
-    "locations": [
-      {
-        "latitude": 36.0613799,
-        "longitude": 103.83417
-      },
-      {
-        "latitude": 34.2658138,
-        "longitude": 108.9540936
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759304195/24_s9mnnm.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#787878",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2016/10/09/tang-fan-beidou-xining-chapter",
-    "city": [
-      "Xining, China"
-    ],
-    "locations": [
-      {
-        "latitude": 36.6172899,
-        "longitude": 101.77782
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760272544/026_knl544.jpg",
-      "alt": "xining"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2016/10/24/efficient-your-component-development"
-  },
-  {
-    "file": "2016/10/10/tang-fan-beidou-hainan-prefecture",
-    "city": [
-      "Hainan Tibetan Autonomous Prefecture, China"
-    ],
-    "locations": [
-      {
-        "latitude": 36.2866299,
-        "longitude": 100.62037
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760274374/008_tq8xi2.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#878787",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2016/10/25/tang-fan-beidou-haixi-prefecture",
-    "city": [
-      "Haixi Mongol and Tibetan Autonomous Prefecture, China"
-    ],
-    "locations": [
-      {
-        "latitude": 37.3770999,
-        "longitude": 97.37122000000001
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761516225/weng_20160914_073738_a9g0ob.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2016/10/29/quiet-echo-wall-and-the-former-residence-of-the-siye-earth-altar--yonghe-palace",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761739583/037_zzsrjv.jpg",
-      "alt": "ticket"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2016/11/06/the-baby-is-really-old"
-  },
-  {
-    "file": "2016/11/08/the-rare-beautiful-scenery-of-bargou-mountains-and-water-garden"
-  },
-  {
-    "file": "2016/11/09/archlinux"
-  },
-  {
-    "file": "2016/11/12/i-found-literature-and-art-in-the-art-museum-but-meow",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 39.085099,
+        "longitude": 117.199369
       }
     ]
   },
   {
-    "file": "2016/11/26/where-is-the-magic-animal-where-is-the-magic-animal-where-is-the-magic-animal"
-  },
-  {
-    "file": "2016/12/07/suzuki-canteen"
-  },
-  {
-    "file": "2016/12/31/nanjing-new-year",
+    "file": "2018/07/16/buddha-statue-of-longxing-temple-in-qingzhou",
     "city": [
-      "Nanjing, China",
-      "Beijing, China"
+      "Qingzhou, China"
     ],
     "locations": [
       {
-        "latitude": 32.0583799,
-        "longitude": 118.79647
-      },
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 36.6845599,
+        "longitude": 118.4796599
       }
     ]
   },
   {
-    "file": "2017/01/09/pyqt"
-  },
-  {
-    "file": "2016/12/19/new-female-roommate"
-  },
-  {
-    "file": "2017/01/10/halal-in-halal-has-no-beef-noodles",
+    "file": "2018/07/18/rizhao-rushed-to-the-sea-briefly",
     "city": [
-      "Beijing, China"
+      "Rizhao, China"
     ],
     "locations": [
       {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 35.4164599,
+        "longitude": 119.52719
       }
     ]
   },
   {
-    "file": "2017/01/14/looking-at-the-east-the-centennial-i-think-of-the-louvre-in-guobi",
+    "file": "2018/07/22/shanghai-lujiazui-to-see-the-guoguo-big-guy",
     "city": [
-      "Beijing, China"
+      "Shanghai, China"
     ],
     "locations": [
       {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 31.230416,
+        "longitude": 121.473701
       }
     ]
   },
   {
-    "file": "2017/01/15/experience-the-feeling-of-an-emperor-who-was-hit-into-the-cold-palace",
+    "file": "2018/07/20/on-the-first-day-nanjing-was-hot-and-died",
     "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ]
-  },
-  {
-    "file": "2017/01/17/vscode-python-python36"
-  },
-  {
-    "file": "2017/01/18/pyqt-qml"
-  },
-  {
-    "file": "2017/01/22/those-things-in-the-ming-dynasty"
-  },
-  {
-    "file": "2017/01/24/troubles-on-the-train-grocery-store"
-  },
-  {
-    "file": "2017/01/25/the-only-invaders-museum-in-the-country-lushun-museum",
-    "city": [
-      "Lushun, China"
-    ],
-    "locations": [
-      {
-        "latitude": 38.8512899,
-        "longitude": 121.26208
-      }
-    ]
-  },
-  {
-    "file": "2017/01/26/dalian-modern-museum",
-    "city": [
-      "Dalian, China"
-    ],
-    "locations": [
-      {
-        "latitude": 38.9139899,
-        "longitude": 121.6147
-      }
-    ]
-  },
-  {
-    "file": "2017/01/31/dalian-sanya-ocean-world",
-    "city": [
-      "Dalian, China"
-    ],
-    "locations": [
-      {
-        "latitude": 38.9139899,
-        "longitude": 121.6147
-      }
-    ]
-  },
-  {
-    "file": "2017/02/01/the-forbidden-city-hiding-people",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ]
-  },
-  {
-    "file": "2017/02/03/node-302"
-  },
-  {
-    "file": "2017/02/05/the-bank-card-password-is-hidden-on-the-card-no-wonder-bai-yexing"
-  },
-  {
-    "file": "2017/02/10/ap",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757843221/P70218-103625_hoi4d5.jpg",
-      "alt": "rasp pi"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2017/02/21/this-snow-is-ended",
-    "city": [
-      "Beijing, China",
-      "Gubeikou, China",
-      "Datong, China",
-      "Pingyao, China",
-      "Linfen, China",
-      "Huashan, China",
-      "Lintong, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      },
-      {
-        "latitude": 40.69209,
-        "longitude": 117.1639
-      },
-      {
-        "latitude": 40.0763699,
-        "longitude": 113.30001
-      },
-      {
-        "latitude": 37.1893399,
-        "longitude": 112.17557
-      },
-      {
-        "latitude": 36.0882199,
-        "longitude": 111.51962
-      },
-      {
-        "latitude": 31.7330399,
-        "longitude": 118.64118
-      },
-      {
-        "latitude": 34.3666999,
-        "longitude": 109.21421
-      }
-    ]
-  },
-  {
-    "file": "2017/03/12/chinese-printing-museum-and-the-chinese-millennium-temple-of-the-museum-of-china",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ]
-  },
-  {
-    "file": "2017/03/18/looking-at-the-east-the-national-british-british-hundred-cultural-relics-exhibition",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ]
-  },
-  {
-    "file": "2017/03/19/yuyuan-tan-and-the-central-china-temple",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ]
-  },
-  {
-    "file": "2017/03/25/it-is-a-tower-or-a-tower-or-a-tower",
-    "city": [
-      "Zhengding, China"
-    ],
-    "locations": [
-      {
-        "latitude": 38.1461899,
-        "longitude": 114.57109
-      }
-    ]
-  },
-  {
-    "file": "2017/03/26/the-hebei-museum-is-the-shame-of-the-cemetery-industry-in-my-country",
-    "city": [
-      "Shijiazhuang, China"
-    ],
-    "locations": [
-      {
-        "latitude": 38.0427599,
-        "longitude": 114.5143
-      }
-    ]
-  },
-  {
-    "file": "2017/04/02/maijishan-grottoes",
-    "city": [
-      "Tianshui, China"
-    ],
-    "locations": [
-      {
-        "latitude": 34.5808499,
-        "longitude": 105.72486
-      }
-    ]
-  },
-  {
-    "file": "2017/04/03/tianshui-museum",
-    "city": [
-      "Tianshui, China"
-    ],
-    "locations": [
-      {
-        "latitude": 34.5808499,
-        "longitude": 105.72486
-      }
-    ]
-  },
-  {
-    "file": "2017/04/05/shanxi-museum",
-    "city": [
-      "Taiyuan, China"
-    ],
-    "locations": [
-      {
-        "latitude": 37.8705899,
-        "longitude": 112.55067
-      }
-    ]
-  },
-  {
-    "file": "2017/04/28/the-same-night-sky-jelly-huayan-temple-knife-noodles-city-walls",
-    "city": [
-      "Datong, China"
-    ],
-    "locations": [
-      {
-        "latitude": 40.0763699,
-        "longitude": 113.30001
-      }
-    ]
-  },
-  {
-    "file": "2017/05/01/the-same-night-sky-guandi-temple-datong-museum",
-    "city": [
-      "Datong, China",
-      "Beijing, China",
-      "Xi'an, China",
       "Nanjing, China"
     ],
     "locations": [
       {
-        "latitude": 40.0763699,
-        "longitude": 113.30001
-      },
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      },
-      {
-        "latitude": 34.2658138,
-        "longitude": 108.9540936
-      },
-      {
         "latitude": 32.0583799,
         "longitude": 118.79647
       }
     ]
   },
   {
-    "file": "2017/05/02/qxf-qconfig"
-  },
-  {
-    "file": "2017/05/03/qxfcomponents"
-  },
-  {
-    "file": "2017/05/14/nas"
-  },
-  {
-    "file": "2017/05/04/0-riotjs"
-  },
-  {
-    "file": "2017/05/04/1typescript"
-  },
-  {
-    "file": "2017/05/04/2webpack2-treeshaking-exttextplugin"
-  },
-  {
-    "file": "2017/05/04/3postcss-cssnext-cssnano"
-  },
-  {
-    "file": "2017/05/04/4qxf-bigpipe"
-  },
-  {
-    "file": "2017/05/04/5isomophicapp"
-  },
-  {
-    "file": "2017/05/04/6"
-  },
-  {
-    "file": "2017/05/15/riot-preact"
-  },
-  {
-    "file": "2017/05/21/go-to-luoyang-summer-to-avoid-the-summer",
+    "file": "2018/07/23/quanzhou-is-little-southeast-asia",
     "city": [
-      "Luoyang, China",
-      "Beijing, China"
+      "Quanzhou, China"
     ],
     "locations": [
       {
-        "latitude": 34.6181299,
-        "longitude": 112.45402
-      },
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 24.8740499,
+        "longitude": 118.67583
       }
     ]
   },
   {
-    "file": "2017/05/28/second-screen"
-  },
-  {
-    "file": "2017/05/29/conquest-line-2"
-  },
-  {
-    "file": "2017/05/30/sad-wps4linux"
-  },
-  {
-    "file": "2017/06/03/sinopia-npm"
-  },
-  {
-    "file": "2017/06/04/riotjs-typed"
-  },
-  {
-    "file": "2017/06/15/nock-node-mock"
-  },
-  {
-    "file": "2017/07/08/greater-china"
-  },
-  {
-    "file": "2017/07/09/wish-me-a-happy-birthday"
-  },
-  {
-    "file": "2017/07/14/egg-ts"
-  },
-  {
-    "file": "2017/07/30/different-mealfounding-of-the-army"
-  },
-  {
-    "file": "2017/08/01/archifactory"
-  },
-  {
-    "file": "2017/08/14/discover-a-website-of-a-piano-score",
-    "cover": {
-      "url": "https://images.unsplash.com/photo-1682271920907-781daffc09a6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "alt": "harmonica picture from unsplash.com"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2017/08/15/er-pt"
-  },
-  {
-    "file": "2017/08/20/finally-read-brief-history-of-the-future",
-    "cover": {
-      "url": "https://www.ynharari.com/wp-content/uploads/2018/02/d2.jpg",
-      "alt": "image from ynharari.com"
-    },
-    "colorSet": {
-      "bgColor": "#878787",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2017/08/27/go-to-dazaitai-and-watch-nothing-a-southern-girl-commemorates-the-days-when-you-froze-into-a-dog",
+    "file": "2018/07/24/i-eat-fat-in-fuzhou",
     "city": [
-      "Beijing, China"
+      "Fuzhou, China"
     ],
     "locations": [
       {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 26.0742099,
+        "longitude": 119.29647
+      }
+    ]
+  },
+  {
+    "file": "2018/07/25/i-eat-chaoshan-beef-in-shantou",
+    "city": [
+      "Shantou, China"
+    ],
+    "locations": [
+      {
+        "latitude": 23.3534999,
+        "longitude": 116.68221
+      }
+    ]
+  },
+  {
+    "file": "2018/07/27/pixijs-l"
+  },
+  {
+    "file": "2018/08/04/7"
+  },
+  {
+    "file": "2018/08/05/cssgridlayout"
+  },
+  {
+    "file": "2018/08/07/react16"
+  },
+  {
+    "file": "2018/08/14/aframejs",
+    "cover": {
+      "url": "https://aframe.io/images/blog/introducing-aframe.png",
+      "alt": "logo from aframe.io"
+    },
+    "colorSet": {
+      "bgColor": "#546c9c",
+      "titleColor": "--mantine-color-blue-2"
+    }
+  },
+  {
+    "file": "2018/08/22/mock-fs-io"
+  },
+  {
+    "file": "2018/08/23/prettier-eslint"
+  },
+  {
+    "file": "2018/08/17/github-1password"
+  },
+  {
+    "file": "2018/08/24/eslint-plugin-typelint-jsdoc-linting"
+  },
+  {
+    "file": "2018/08/26/shenzhen-museum",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
       }
     ],
     "cover": {
-      "url": "./uk.jpg",
-      "alt": "play uklele"
+      "url": "./sz.jpg",
+      "alt": "fish lantern"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#ada84c",
+      "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2018/08/28/functionalreactiveprogramming-baconjs"
+  },
+  {
+    "file": "2018/08/29/openapi-swagger"
+  },
+  {
+    "file": "2018/08/31/magicavoxel",
+    "cover": {
+      "url": "./wxb.png",
+      "alt": "韦小宝 made with MagicaVoxel"
+    },
+    "colorSet": {
+      "bgColor": "#ac8c64",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2018/09/01/reform-and-opening-up-museum",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756724714/IMG_20180901_141240_tli0ut.jpg",
+      "alt": "inside"
+    },
+    "colorSet": {
+      "bgColor": "#b67165",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2018/09/02/august-summary"
+  },
+  {
+    "file": "2018/09/16/pixel-villain-that-is-not-up-to-the-palace",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757842513/89d0a2e1ly8fvbin6w7x3j20ru0ruwez_dhtrse.jpg",
+      "alt": "avatar"
+    },
+    "colorSet": {
+      "bgColor": "#9a7356",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2018/09/08/you-dont-know-the-clinic",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757342689/zhihu_5_wzpztb.jpg",
+      "alt": "leaflet"
+    },
+    "colorSet": {
+      "bgColor": "#a47a5d",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2018/09/22/nanshan-museum-and-nanshan-library",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758522948/IMG_20180922_150233_bnad4m.jpg",
+      "alt": "nanshan museum"
+    },
+    "colorSet": {
+      "bgColor": "#868076",
       "titleColor": "--mantine-color-indigo-2"
     }
   },
   {
-    "file": "2017/09/17/13",
+    "file": "2018/09/23/ibus"
+  },
+  {
+    "file": "2018/09/24/commemorate-the-first-month-cake-festival-in-shenzhen",
     "city": [
-      "Beijing, China"
+      "Shenzhen, China",
+      "Nanshan, China"
     ],
     "locations": [
       {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      },
+      {
+        "latitude": 22.5333199,
+        "longitude": 113.93041
       }
     ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758028540/16_a1gxtu.jpg",
-      "alt": "selfie"
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758693696/IMG_20180919_204523_at5xsf.jpg",
+      "alt": "drone"
     },
     "colorSet": {
-      "bgColor": "#808080",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6479b4",
+      "titleColor": "--mantine-color-cyan-2"
     }
   },
   {
-    "file": "2017/09/18/typescriptsucksbutlonglivethetypes"
-  },
-  {
-    "file": "2017/09/20/runwiththewind"
-  },
-  {
-    "file": "2017/09/30/after-reading-prince-mas-twelve-twelve-times"
-  },
-  {
-    "file": "2017/09/23/beijing-has-begun-to-be-mother",
+    "file": "2018/09/24/nanshan-book-city",
     "city": [
-      "Beijing, China"
+      "Nanshan, China"
     ],
     "locations": [
       {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 22.5333199,
+        "longitude": 113.93041
+      }
+    ]
+  },
+  {
+    "file": "2018/10/01/summary-of-september"
+  },
+  {
+    "file": "2018/10/02/shenzhen-central-book-city",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
       }
     ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758522693/89d0a2e1ly1fk9sfli90gj23vc2kxe83_ujv6r9.jpg",
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759305950/IMG_20181002_173222_oiry7k.jpg",
+      "alt": "building"
+    },
+    "colorSet": {
+      "bgColor": "#8a837a",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2018/10/04/bai-caotang-drink-sugar-water",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759575387/IMG_20181004_123700_urw9cm.jpg",
+      "alt": "baicaotang"
+    },
+    "colorSet": {
+      "bgColor": "#959a68",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2018/10/05/anker"
+  },
+  {
+    "file": "2018/10/06/industrial-exhibition-hall--huaqiangbei--overseas-chinese-town-creative-park",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579985/IMG_20181006_142813_w1mood.jpg",
+      "alt": "elevator"
+    },
+    "colorSet": {
+      "bgColor": "#82625c",
+      "titleColor": "--mantine-color-green-4"
+    }
+  },
+  {
+    "file": "2018/10/07/park-of-talent-park",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579988/IMG_20181007_063336_elszpk.jpg",
+      "alt": "sunlight"
+    },
+    "colorSet": {
+      "bgColor": "#5b8ca8",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2018/10/07/rxjs"
+  },
+  {
+    "file": "2018/10/13/node",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760275824/IMG_20181013_163219_roqqoo.jpg",
       "alt": "photo"
     },
     "colorSet": {
-      "bgColor": "#7f7f7f",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9e8150",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
-    "file": "2017/10/04/happy-mid-autumn-festival",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579370/89d0a2e1ly1fk9ri8jtdvj23vc2kwb2f_epoxgl.jpg",
-      "alt": "photo"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
+    "file": "2018/10/16/get"
   },
   {
-    "file": "2017/10/05/ukulele"
+    "file": "2018/10/18/algolia"
   },
   {
-    "file": "2017/10/17/linux-swap"
+    "file": "2018/10/21/moon-and-six-shi-shi"
   },
   {
-    "file": "2017/10/22/duolun-county-ulanbu-tong",
+    "file": "2018/10/22/moment"
+  },
+  {
+    "file": "2018/11/04/hurry-october-summary"
+  },
+  {
+    "file": "2018/11/16/a-magical-printing-character"
+  },
+  {
+    "file": "2018/11/18/shenzhen-oil-painting-village",
     "city": [
-      "Chifeng, China"
+      "Shenzhen, China"
     ],
     "locations": [
       {
-        "latitude": 42.2585999,
-        "longitude": 118.88894
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759307115/25_pohl7v.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2017/10/29/commemorate-drive-alone-for-the-first-time",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/007_blio62.jpg",
-      "alt": "road trip"
-    },
-    "colorSet": {
-      "bgColor": "#808080",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2017/11/19/qianli-jiangshan--zhao-mengfu--princess-sissi",
-    "city": [
-      "Beijing, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.904211,
-        "longitude": 116.407395
+        "latitude": 22.5428599,
+        "longitude": 114.05956
       }
     ]
   },
   {
-    "file": "2017/11/22/buildingisomorphicjavascriptapps"
-  },
-  {
-    "file": "2017/11/25/its-not-a-particularly-worthwhile-qin-and-han-show",
+    "file": "2018/11/25/the-ancient-city-of-nantou-and-zhongshan-park-in-the-rain",
     "city": [
-      "Beijing, China",
-      "Shijiazhuang, China"
+      "Shenzhen, China"
     ],
     "locations": [
       {
-        "latitude": 39.904211,
-        "longitude": 116.407395
-      },
-      {
-        "latitude": 38.0427599,
-        "longitude": 114.5143
+        "latitude": 22.5428599,
+        "longitude": 114.05956
       }
     ]
   },
   {
-    "file": "2017/11/26/qa-node"
+    "file": "2018/11/24/the-group-building-in-dapeng-bay",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ]
   },
   {
-    "file": "2017/12/08/archlinux"
+    "file": "2018/12/01/18"
   },
   {
-    "file": "2017/12/20/plantuml"
+    "file": "2018/06/22/meteor-todoapp"
   },
   {
-    "file": "2017/12/23/p2p"
+    "file": "2018/12/04/remember-the-lesson-of-a-cold"
   },
   {
-    "file": "2017/12/25/webar"
+    "file": "2018/12/16/postman-prescript"
   },
   {
-    "file": "2017/12/26/mac-20264"
+    "file": "2018/12/24/18"
   },
   {
-    "file": "2017/12/31/rewind"
+    "file": "2018/12/25/css"
   },
   {
     "file": "2019/01/01/8102-9102"
@@ -1033,6 +803,18 @@
     "file": "2019/01/19/windows"
   },
   {
+    "file": "2019/02/07/go-to-xiamen",
+    "city": [
+      "Xiamen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 24.4795099,
+        "longitude": 118.0894799
+      }
+    ]
+  },
+  {
     "file": "2019/02/04/shenzhen-new-years-eve",
     "city": [
       "Shenzhen, China"
@@ -1045,14 +827,14 @@
     ]
   },
   {
-    "file": "2019/02/07/go-to-xiamen",
+    "file": "2018/12/02/the-guangzhou-trip-without-a-guide",
     "city": [
-      "Xiamen, China"
+      "Guangzhou, China"
     ],
     "locations": [
       {
-        "latitude": 24.4795099,
-        "longitude": 118.0894799
+        "latitude": 23.1290799,
+        "longitude": 113.26436
       }
     ]
   },
@@ -1069,10 +851,10 @@
     ]
   },
   {
-    "file": "2019/02/19/jest-exceedsmaxof500kb"
+    "file": "2019/02/11/19"
   },
   {
-    "file": "2019/02/20/awssqs"
+    "file": "2019/02/19/jest-exceedsmaxof500kb"
   },
   {
     "file": "2019/02/24/grass-list"
@@ -1081,7 +863,7 @@
     "file": "2019/02/25/javascript-unsignedint"
   },
   {
-    "file": "2019/02/11/19"
+    "file": "2019/02/20/awssqs"
   },
   {
     "file": "2019/03/08/read-things-of-the-yuan-dynasty"
@@ -1111,9 +893,6 @@
     ]
   },
   {
-    "file": "2019/03/30/css"
-  },
-  {
     "file": "2019/03/31/summary-of-march-sakura-season",
     "city": [
       "Shenzhen, China"
@@ -1141,6 +920,12 @@
     ]
   },
   {
+    "file": "2019/03/30/css"
+  },
+  {
+    "file": "2019/04/27/windows"
+  },
+  {
     "file": "2019/04/07/xiangjiang-does-not-have-a-fight-for-a-hundred-stringers-there-is-a-han-tomb",
     "city": [
       "Changsha, China"
@@ -1151,9 +936,6 @@
         "longitude": 112.93886
       }
     ]
-  },
-  {
-    "file": "2019/04/27/windows"
   },
   {
     "file": "2019/04/30/the-feeling-of-staying-in-kunming-is-the-most-comfortable-days-in-beijing-in-spring",
@@ -1192,10 +974,10 @@
     ]
   },
   {
-    "file": "2019/05/04/maythe4thbewithme"
+    "file": "2019/05/18/i-also-have-a-ball-head"
   },
   {
-    "file": "2019/05/18/i-also-have-a-ball-head"
+    "file": "2019/05/04/maythe4thbewithme"
   },
   {
     "file": "2019/05/19/nanshan-museum-elephant-zhongyuan",
@@ -1275,34 +1057,79 @@
     "file": "2019/08/24/early-september-plan"
   },
   {
+    "file": "2019/09/01/usb"
+  },
+  {
+    "file": "2019/09/04/webpack"
+  },
+  {
+    "file": "2019/09/06/csp"
+  },
+  {
+    "file": "2019/09/09/pentax",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759488912/Screenshot_2025-10-03_135420_gtb5ca.png",
+      "alt": "thumb"
+    },
+    "colorSet": {
+      "bgColor": "#848975",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2019/09/10/cloudflareworker-csp"
+  },
+  {
+    "file": "2019/09/14/i-almost-was-not-hot-to-die-in-ganzhou",
+    "city": [
+      "Ganzhou, China"
+    ],
+    "locations": [
+      {
+        "latitude": 25.8310899,
+        "longitude": 114.93476
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757655653/IMG_20190914_171656_sgcmdq.jpg",
+      "alt": "bridge"
+    },
+    "colorSet": {
+      "bgColor": "#7e817a",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2019/09/20/hi-everyone-i-am-iron",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758369805/89d0a2e1gy1g8hgaccb8sj22001i0hdu_lxvq4e.jpg",
+      "alt": "sketch"
+    },
+    "colorSet": {
+      "bgColor": "#9e7253",
+      "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2019/09/20/movie-supplementary-plan-avatar",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_QL75_UY281_CR0,0,190,281_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#96756d",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
     "file": "2019/10/01/see-which-little-cute-marriage-is-married",
     "cover": {
       "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759307863/89d0a2e1gy1g8hhh42kv4j23401k0u0z_jnyoej.jpg",
       "alt": "photo"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2019/10/02/anhui-province-bo-guided-as-chaos-as-hefeis-transportation",
-    "city": [
-      "Hefei, China"
-    ],
-    "locations": [
-      {
-        "latitude": 31.8205699,
-        "longitude": 117.22901
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759308163/IMG_20191002_122039_tup9hr.jpg",
-      "alt": "building"
-    },
-    "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#ae516c",
+      "titleColor": "--mantine-color-grape-3"
     }
   },
   {
@@ -1321,9 +1148,12 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#94856c",
+      "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2019/09/27/jest"
   },
   {
     "file": "2019/10/06/tulou-is-real-soil",
@@ -1341,8 +1171,28 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#938b7d",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2019/10/07/zhangzhou-is-really-a-fairy-everywhere",
+    "city": [
+      "Zhangzhou, China"
+    ],
+    "locations": [
+      {
+        "latitude": 24.5134699,
+        "longitude": 117.64725
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759309914/IMG_20191007_103342_1_lqsfl0.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a07b78",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -1361,8 +1211,8 @@
       "alt": "light show"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#a39259",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -1381,31 +1231,31 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#787878",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#b06d6e",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
     "file": "2019/10/13/reading-hong-kongs-brief-history-feels"
   },
   {
-    "file": "2019/10/07/zhangzhou-is-really-a-fairy-everywhere",
+    "file": "2019/10/20/milk-volleyball-scream-tour",
     "city": [
-      "Zhangzhou, China"
+      "Shenzhen, China"
     ],
     "locations": [
       {
-        "latitude": 24.5134699,
-        "longitude": 117.64725
+        "latitude": 22.5428599,
+        "longitude": 114.05956
       }
     ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759309914/IMG_20191007_103342_1_lqsfl0.jpg",
-      "alt": "selfie"
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759310539/89d0a2e1gy1g9bqe4v9rtj22vb25khdv_bwqfe2.jpg",
+      "alt": "picture"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#5b99a2",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -1424,8 +1274,8 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#975a52",
+      "titleColor": "--mantine-color-yellow-2"
     }
   },
   {
@@ -1435,36 +1285,16 @@
     "file": "2019/11/04/plan-for-the-first-half-of-november"
   },
   {
-    "file": "2019/10/20/milk-volleyball-scream-tour",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759310539/89d0a2e1gy1g9bqe4v9rtj22vb25khdv_bwqfe2.jpg",
-      "alt": "picture"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
+    "file": "2019/11/09/the-tire-tonic-is-a-magical-thing"
   },
   {
     "file": "2019/11/07/amway-a-universal-cleaning-paste"
   },
   {
-    "file": "2019/11/09/the-tire-tonic-is-a-magical-thing"
+    "file": "2019/11/13/why-not-buy-a-car-and-buy-a-house"
   },
   {
     "file": "2019/11/14/movie-supplementary-plan-shawshanks-redemption"
-  },
-  {
-    "file": "2019/11/13/why-not-buy-a-car-and-buy-a-house"
   },
   {
     "file": "2019/11/15/movie-supplement-plan-farewell-my-concubine"
@@ -1483,6 +1313,15 @@
   },
   {
     "file": "2019/11/18/how-to-make-up-for-id-card-in-shenzhen"
+  },
+  {
+    "file": "2019/11/19/fluentterminal-gitbash"
+  },
+  {
+    "file": "2019/11/19/movie-supplementary-plan-this-killer-is-not-too-cold"
+  },
+  {
+    "file": "2019/11/19/window10home-dockerdesktop"
   },
   {
     "file": "2019/11/20/movie-supplement-plan-beautiful-life"
@@ -1533,72 +1372,13 @@
     "file": "2019/11/30/movie-supplementary-plan"
   },
   {
-    "file": "2019/09/01/usb"
+    "file": "2019/12/03/movie-supplement-plan-alive"
   },
   {
-    "file": "2019/09/04/webpack"
+    "file": "2019/12/03/movie-supplementary-program-prosecutor-witnesses"
   },
   {
-    "file": "2019/09/06/csp"
-  },
-  {
-    "file": "2019/09/09/pentax",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759488912/Screenshot_2025-10-03_135420_gtb5ca.png",
-      "alt": "thumb"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2019/09/10/cloudflareworker-csp"
-  },
-  {
-    "file": "2019/09/14/i-almost-was-not-hot-to-die-in-ganzhou",
-    "city": [
-      "Ganzhou, China"
-    ],
-    "locations": [
-      {
-        "latitude": 25.8310899,
-        "longitude": 114.93476
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757655653/IMG_20190914_171656_sgcmdq.jpg",
-      "alt": "bridge"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2019/09/20/hi-everyone-i-am-iron",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758369805/89d0a2e1gy1g8hgaccb8sj22001i0hdu_lxvq4e.jpg",
-      "alt": "sketch"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2019/09/20/movie-supplementary-plan-avatar",
-    "cover": {
-      "url": "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_QL75_UY281_CR0,0,190,281_.jpg",
-      "alt": "poster from imdb"
-    },
-    "colorSet": {
-      "bgColor": "#888888",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2019/09/27/jest"
+    "file": "2019/12/02/windows"
   },
   {
     "file": "2019/12/01/movie-supplementary-plan-cant-reach-its-reach"
@@ -1607,19 +1387,7 @@
     "file": "2019/12/01/movie-supplementary-program-batmans-dark-knight"
   },
   {
-    "file": "2019/12/02/windows"
-  },
-  {
-    "file": "2019/12/03/movie-supplement-plan-alive"
-  },
-  {
-    "file": "2019/12/03/movie-supplementary-program-prosecutor-witnesses"
-  },
-  {
     "file": "2019/12/04/movie-supplementary-plan"
-  },
-  {
-    "file": "2019/12/06/movie-file-plan-city-of-sky"
   },
   {
     "file": "2019/12/05/movie-supplement-plan-twelve-angry-hans"
@@ -1628,19 +1396,13 @@
     "file": "2019/12/05/movie-supplementary-program-young-school-fantasy-drift"
   },
   {
-    "file": "2019/11/19/fluentterminal-gitbash"
-  },
-  {
-    "file": "2019/11/19/movie-supplementary-plan-this-killer-is-not-too-cold"
-  },
-  {
-    "file": "2019/11/19/window10home-dockerdesktop"
-  },
-  {
-    "file": "2019/12/07/movie-supplementary-plan-the-last-emperor"
+    "file": "2019/12/06/movie-file-plan-city-of-sky"
   },
   {
     "file": "2019/12/08/movie-file-plan-hals-mobile-castle"
+  },
+  {
+    "file": "2019/12/07/movie-supplementary-plan-the-last-emperor"
   },
   {
     "file": "2019/12/09/movie-supplementary-plan-paradise-cinema"
@@ -1682,8 +1444,8 @@
       "alt": "from imdb"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#907c72",
+      "titleColor": "--mantine-color-dark-8"
     }
   },
   {
@@ -1711,8 +1473,8 @@
       "alt": "poster from imdb"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6e898e",
+      "titleColor": "--mantine-color-dark-8"
     }
   },
   {
@@ -1746,8 +1508,8 @@
       "alt": "matrix from imdb"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#54a078",
+      "titleColor": "--mantine-color-green-4"
     }
   },
   {
@@ -1763,10 +1525,237 @@
     "file": "2019/12/29/keeweb"
   },
   {
+    "file": "2019/12/31/windowsterminal2-gitbash-profile"
+  },
+  {
     "file": "2019/12/30/2019"
   },
   {
-    "file": "2019/12/31/windowsterminal2-gitbash-profile"
+    "file": "2016/01/20/webpack-riot-loader"
+  },
+  {
+    "file": "2016/01/22/jshint"
+  },
+  {
+    "file": "2016/01/25/chrome"
+  },
+  {
+    "file": "2016/01/25/fekit-es6-riot-tag"
+  },
+  {
+    "file": "2016/01/26/karma"
+  },
+  {
+    "file": "2016/01/27/commitment"
+  },
+  {
+    "file": "2016/02/14/vim"
+  },
+  {
+    "file": "2016/03/31/vue-riot-react"
+  },
+  {
+    "file": "2016/08/11/mochiui"
+  },
+  {
+    "file": "2016/08/12/mochiui-button"
+  },
+  {
+    "file": "2016/08/13/conquest-line-10",
+    "cover": {
+      "url": "./x6.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a77b61",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2016/10/01/tang-fan-beidou-lanzhou-chapter",
+    "city": [
+      "Lanzhou, China",
+      "Xi'an, China"
+    ],
+    "locations": [
+      {
+        "latitude": 36.0613799,
+        "longitude": 103.83417
+      },
+      {
+        "latitude": 34.2658138,
+        "longitude": 108.9540936
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759304195/24_s9mnnm.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a48761",
+      "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2016/08/17/karmatest"
+  },
+  {
+    "file": "2016/10/09/tang-fan-beidou-xining-chapter",
+    "city": [
+      "Xining, China"
+    ],
+    "locations": [
+      {
+        "latitude": 36.6172899,
+        "longitude": 101.77782
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760272544/026_knl544.jpg",
+      "alt": "xining"
+    },
+    "colorSet": {
+      "bgColor": "#838375",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2016/10/10/tang-fan-beidou-hainan-prefecture",
+    "city": [
+      "Hainan Tibetan Autonomous Prefecture, China"
+    ],
+    "locations": [
+      {
+        "latitude": 36.2866299,
+        "longitude": 100.62037
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760274374/008_tq8xi2.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#9f6c61",
+      "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2016/10/24/efficient-your-component-development"
+  },
+  {
+    "file": "2016/10/29/quiet-echo-wall-and-the-former-residence-of-the-siye-earth-altar--yonghe-palace",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761739583/037_zzsrjv.jpg",
+      "alt": "ticket"
+    },
+    "colorSet": {
+      "bgColor": "#96774e",
+      "titleColor": "--mantine-color-green-4"
+    }
+  },
+  {
+    "file": "2016/10/25/tang-fan-beidou-haixi-prefecture",
+    "city": [
+      "Haixi Mongol and Tibetan Autonomous Prefecture, China"
+    ],
+    "locations": [
+      {
+        "latitude": 37.3770999,
+        "longitude": 97.37122000000001
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761516225/weng_20160914_073738_a9g0ob.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#8f9780",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2016/11/06/the-baby-is-really-old"
+  },
+  {
+    "file": "2016/11/08/the-rare-beautiful-scenery-of-bargou-mountains-and-water-garden"
+  },
+  {
+    "file": "2016/11/09/archlinux"
+  },
+  {
+    "file": "2016/11/12/i-found-literature-and-art-in-the-art-museum-but-meow",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ]
+  },
+  {
+    "file": "2016/11/26/where-is-the-magic-animal-where-is-the-magic-animal-where-is-the-magic-animal"
+  },
+  {
+    "file": "2016/12/07/suzuki-canteen"
+  },
+  {
+    "file": "2016/12/19/new-female-roommate"
+  },
+  {
+    "file": "2016/12/31/nanjing-new-year",
+    "city": [
+      "Nanjing, China",
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 32.0583799,
+        "longitude": 118.79647
+      },
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ]
+  },
+  {
+    "file": "2016/09/06/sonicjs-loading"
+  },
+  {
+    "file": "2016/09/25/tang-fan-beidou-xian-chapter",
+    "city": [
+      "Xi'an, China",
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 34.2658138,
+        "longitude": 108.9540936
+      },
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758802089/20_up896o.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#636e87",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2020/01/03/2019-node"
@@ -1782,9 +1771,6 @@
   },
   {
     "file": "2020/01/06/windows-jupyter-notimplementerror"
-  },
-  {
-    "file": "2020/01/12/opera-dance-dance-notre-dame"
   },
   {
     "file": "2020/01/13/websitescrapingwithpython"
@@ -1805,6 +1791,9 @@
     "file": "2020/01/31/monect"
   },
   {
+    "file": "2020/01/12/opera-dance-dance-notre-dame"
+  },
+  {
     "file": "2020/02/01/summary-and-february-plan-in-january"
   },
   {
@@ -1815,6 +1804,9 @@
   },
   {
     "file": "2020/02/06/git-crlf-lf"
+  },
+  {
+    "file": "2020/02/09/1917"
   },
   {
     "file": "2020/02/10/actix-web-rust-web"
@@ -1829,15 +1821,6 @@
     "file": "2020/02/13/windows-rust-qt"
   },
   {
-    "file": "2020/02/09/1917"
-  },
-  {
-    "file": "2020/02/14/movie-supplementary-plan-qiao-qiao-rabbit"
-  },
-  {
-    "file": "2020/02/14/movie-supplementary-program-marriage-story"
-  },
-  {
     "file": "2020/02/15/github"
   },
   {
@@ -1847,6 +1830,26 @@
     "file": "2020/02/17/movie-supplementary-program-time-and-space-love-traveler"
   },
   {
+    "file": "2019/10/02/anhui-province-bo-guided-as-chaos-as-hefeis-transportation",
+    "city": [
+      "Hefei, China"
+    ],
+    "locations": [
+      {
+        "latitude": 31.8205699,
+        "longitude": 117.22901
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759308163/IMG_20191002_122039_tup9hr.jpg",
+      "alt": "building"
+    },
+    "colorSet": {
+      "bgColor": "#728186",
+      "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
     "file": "2020/02/21/windows-flutter"
   },
   {
@@ -1854,9 +1857,6 @@
   },
   {
     "file": "2020/02/22/windows-strokesplus"
-  },
-  {
-    "file": "2020/02/23/mouse-without-borders"
   },
   {
     "file": "2020/02/25/stryker-mutationtest"
@@ -1871,10 +1871,19 @@
     "file": "2020/02/28/movie-supplementary-file-plan-filial-piety-and-grandson"
   },
   {
+    "file": "2020/02/23/mouse-without-borders"
+  },
+  {
     "file": "2020/02/29/movie-supplementary-program-imitate-the-game"
   },
   {
     "file": "2020/03/01/2"
+  },
+  {
+    "file": "2020/02/14/movie-supplementary-plan-qiao-qiao-rabbit"
+  },
+  {
+    "file": "2020/02/14/movie-supplementary-program-marriage-story"
   },
   {
     "file": "2020/03/05/jekyll-gatsby"
@@ -1884,6 +1893,12 @@
   },
   {
     "file": "2020/03/09/js"
+  },
+  {
+    "file": "2020/03/10/docker-strapi"
+  },
+  {
+    "file": "2020/03/10/ssh"
   },
   {
     "file": "2020/03/11/apt"
@@ -1896,12 +1911,6 @@
   },
   {
     "file": "2020/03/11/wsl2-virtualbox"
-  },
-  {
-    "file": "2020/03/10/docker-strapi"
-  },
-  {
-    "file": "2020/03/10/ssh"
   },
   {
     "file": "2020/03/15/codingnet-jenkins-ci-cd"
@@ -1931,42 +1940,6 @@
     "file": "2020/03/31/2020-q1"
   },
   {
-    "file": "2020/04/02/docker-mongodb"
-  },
-  {
-    "file": "2020/04/04/observablehq-js-jupyter"
-  },
-  {
-    "file": "2020/04/09/amazons-anti-drug-drama-zero-zero"
-  },
-  {
-    "file": "2020/04/13/threejs-fundamentals-threejs"
-  },
-  {
-    "file": "2020/04/16/css"
-  },
-  {
-    "file": "2020/04/07/d3"
-  },
-  {
-    "file": "2020/04/21/threejs-mesh"
-  },
-  {
-    "file": "2020/04/22/devs"
-  },
-  {
-    "file": "2020/04/25/talesfromtheloop"
-  },
-  {
-    "file": "2020/04/26/hunger-platform-direct-reviewing-class-questions-movies"
-  },
-  {
-    "file": "2020/04/27/threejs"
-  },
-  {
-    "file": "2020/04/28/keylemon"
-  },
-  {
     "file": "2020/05/01/4"
   },
   {
@@ -1991,7 +1964,7 @@
     "file": "2020/05/07/rn-flutter"
   },
   {
-    "file": "2020/05/11/wsl-xserver"
+    "file": "2020/05/08/rn-flutter"
   },
   {
     "file": "2020/05/10/flutter"
@@ -2003,19 +1976,19 @@
     "file": "2020/05/12/flutter-cicd"
   },
   {
+    "file": "2020/05/11/wsl-xserver"
+  },
+  {
     "file": "2020/05/18/talk-about-my-experience-as-a-idle-fish-seller"
   },
   {
     "file": "2020/05/20/record-jdcoms-experience-of-being-deceived-in-the-world-of-yuexiang-in-the-world"
   },
   {
-    "file": "2020/05/28/if-the-demon-is-reduced-the-ghosts-and-gods-after-the-founding-of-the-peoples-republic-of-china-went-to-hong-kong"
-  },
-  {
-    "file": "2020/05/08/rn-flutter"
-  },
-  {
     "file": "2020/05/29/webrtc"
+  },
+  {
+    "file": "2020/05/28/if-the-demon-is-reduced-the-ghosts-and-gods-after-the-founding-of-the-peoples-republic-of-china-went-to-hong-kong"
   },
   {
     "file": "2020/06/01/6",
@@ -2040,6 +2013,15 @@
     ]
   },
   {
+    "file": "2020/06/06/python"
+  },
+  {
+    "file": "2020/06/07/wsl2-keras"
+  },
+  {
+    "file": "2020/06/08/keras"
+  },
+  {
     "file": "2020/06/04/industrial-stationdiscover-qingshuihe",
     "city": [
       "Shenzhen, China",
@@ -2060,15 +2042,6 @@
         "longitude": 114.1796057
       }
     ]
-  },
-  {
-    "file": "2020/06/06/python"
-  },
-  {
-    "file": "2020/06/07/wsl2-keras"
-  },
-  {
-    "file": "2020/06/08/keras"
   },
   {
     "file": "2020/06/10/keras"
@@ -2110,13 +2083,46 @@
     "file": "2020/06/27/shekou-only-one-of-the-meizu-offline-experience-stores"
   },
   {
-    "file": "2020/06/28/zhuhai-hengqin-line-crossing-macau"
-  },
-  {
     "file": "2020/06/30/hidden-corner"
   },
   {
-    "file": "2020/07/03/dark"
+    "file": "2020/06/28/zhuhai-hengqin-line-crossing-macau"
+  },
+  {
+    "file": "2020/04/02/docker-mongodb"
+  },
+  {
+    "file": "2020/04/04/observablehq-js-jupyter"
+  },
+  {
+    "file": "2020/04/07/d3"
+  },
+  {
+    "file": "2020/04/09/amazons-anti-drug-drama-zero-zero"
+  },
+  {
+    "file": "2020/04/13/threejs-fundamentals-threejs"
+  },
+  {
+    "file": "2020/04/16/css"
+  },
+  {
+    "file": "2020/04/21/threejs-mesh"
+  },
+  {
+    "file": "2020/04/22/devs"
+  },
+  {
+    "file": "2020/04/26/hunger-platform-direct-reviewing-class-questions-movies"
+  },
+  {
+    "file": "2020/04/27/threejs"
+  },
+  {
+    "file": "2020/04/28/keylemon"
+  },
+  {
+    "file": "2020/04/25/talesfromtheloop"
   },
   {
     "file": "2020/07/01/hainan-provincial-museum",
@@ -2146,6 +2152,9 @@
     ]
   },
   {
+    "file": "2020/07/03/dark"
+  },
+  {
     "file": "2020/07/17/20"
   },
   {
@@ -2164,13 +2173,13 @@
     "file": "2020/07/24/2d-svg-3d"
   },
   {
+    "file": "2020/07/26/wanjiali-can-really-be-a-hard-core-endorsement-of-changsha"
+  },
+  {
     "file": "2020/07/25/the-changsha-museum-is-still-worth-going"
   },
   {
     "file": "2020/07/27/7"
-  },
-  {
-    "file": "2020/07/26/wanjiali-can-really-be-a-hard-core-endorsement-of-changsha"
   },
   {
     "file": "2020/07/28/in-addition-to-the-tall-the-guizhou-museum-should-consider-some-connotative-things"
@@ -2183,6 +2192,295 @@
   },
   {
     "file": "2020/07/31/a-scenic-spot-in-yelanggus-imagination"
+  },
+  {
+    "file": "2020/09/01/how-to-play-wanning",
+    "city": [
+      "Wanning, China",
+      "Haikou, China",
+      "Sanya, China"
+    ],
+    "locations": [
+      {
+        "latitude": 18.7953199,
+        "longitude": 110.38975
+      },
+      {
+        "latitude": 20.0442199,
+        "longitude": 110.19989
+      },
+      {
+        "latitude": 18.2524799,
+        "longitude": 109.51209
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756725178/IMG_20200901_111846_lynr9z.jpg",
+      "alt": "coconut chicken"
+    },
+    "colorSet": {
+      "bgColor": "#996d59",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2020/09/04/boundaries",
+    "city": [
+      "Sanya, China"
+    ],
+    "locations": [
+      {
+        "latitude": 18.2524799,
+        "longitude": 109.51209
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884199/IMG_20200905_023541_lk1mmi.jpg",
+      "alt": "me"
+    },
+    "colorSet": {
+      "bgColor": "#9f855b",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2020/09/06/ow",
+    "city": [
+      "Sanya, China"
+    ],
+    "locations": [
+      {
+        "latitude": 18.2524799,
+        "longitude": 109.51209
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884004/mmexport1599490051276_kqi3ha.jpg",
+      "alt": "dive"
+    },
+    "colorSet": {
+      "bgColor": "#5e979e",
+      "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2020/09/07/great-east-sea-surfing-experience",
+    "city": [
+      "Sanya, China"
+    ],
+    "locations": [
+      {
+        "latitude": 18.2524799,
+        "longitude": 109.51209
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884516/IMG_20200906_190251_xacwi0.jpg",
+      "alt": "me"
+    },
+    "colorSet": {
+      "bgColor": "#93666f",
+      "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2020/09/08/rotating-on-the-train-crossing-the-qiongzhou-strait",
+    "city": [
+      "Zhanjiang, China"
+    ],
+    "locations": [
+      {
+        "latitude": 21.2713399,
+        "longitude": 110.35894
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884894/Screenshot_2025-09-03_103248_ngx0ey.png",
+      "alt": "inside of ship"
+    },
+    "colorSet": {
+      "bgColor": "#888177",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2020/09/09/in-zhanjiang-oysters-are-unmanned",
+    "city": [
+      "Zhanjiang, China"
+    ],
+    "locations": [
+      {
+        "latitude": 21.2713399,
+        "longitude": 110.35894
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884613/IMG_20200908_200148_pxzjad.jpg",
+      "alt": "oyster"
+    },
+    "colorSet": {
+      "bgColor": "#9f8b50",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2020/09/16/watch-the-exhibition-in-hohhot-for-two-days",
+    "city": [
+      "Hohhot, China"
+    ],
+    "locations": [
+      {
+        "latitude": 40.8414899,
+        "longitude": 111.75199
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757658631/IMG_20200916_142512_hijtdm.jpg",
+      "alt": "hohhot"
+    },
+    "colorSet": {
+      "bgColor": "#5474ac",
+      "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2020/09/18/ordos-is-the-way-to-open-inner-mongolia",
+    "city": [
+      "Ordos, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.6084499,
+        "longitude": 109.78087
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757660348/IMG_20200918_114937_qoakwk.jpg",
+      "alt": "horse"
+    },
+    "colorSet": {
+      "bgColor": "#b2a86e",
+      "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2020/09/20/passing-by-baotou-museum",
+    "city": [
+      "Baotou, China"
+    ],
+    "locations": [
+      {
+        "latitude": 40.6578099,
+        "longitude": 109.84021
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757660580/IMG_20200920_122023_wfrsex.jpg",
+      "alt": "chess"
+    },
+    "colorSet": {
+      "bgColor": "#9c875a",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2020/09/23/directly-pounding-huanglong",
+    "city": [
+      "Huanglong, China"
+    ],
+    "locations": [
+      {
+        "latitude": 35.5843199,
+        "longitude": 109.84018
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757661289/IMG_20200923_154306_whryyz.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a67e73",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2020/09/24/jiuzhaigou-watched-water-to-see-blu-ray-fatigue",
+    "city": [
+      "Jiuzhaigou, China"
+    ],
+    "locations": [
+      {
+        "latitude": 33.2614199,
+        "longitude": 104.23567
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757661736/IMG_20200924_113602_qm4vqe.jpg",
+      "alt": "lake"
+    },
+    "colorSet": {
+      "bgColor": "#a68c5a",
+      "titleColor": "--mantine-color-blue-2"
+    }
+  },
+  {
+    "file": "2020/09/27/nb",
+    "city": [
+      "Chengdu, China",
+      "Guanghan, China"
+    ],
+    "locations": [
+      {
+        "latitude": 30.5722599,
+        "longitude": 104.0665099
+      },
+      {
+        "latitude": 30.9770599,
+        "longitude": 104.28249
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757662319/IMG_20200926_112253_m5pmld.jpg",
+      "alt": "panda"
+    },
+    "colorSet": {
+      "bgColor": "#aa7258",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2020/09/28/i-only-remember-one-towering-yuelou-in-mianyang",
+    "city": [
+      "Mianyang, China"
+    ],
+    "locations": [
+      {
+        "latitude": 31.4675099,
+        "longitude": 104.6795999
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757663120/IMG_20200929_131859_u7fyfr.jpg",
+      "alt": "building"
+    },
+    "colorSet": {
+      "bgColor": "#a0ad58",
+      "titleColor": "--mantine-color-blue-2"
+    }
+  },
+  {
+    "file": "2020/09/30/talk-about-fraud-during-travel"
+  },
+  {
+    "file": "2020/09/14/yinchuan-has-no-mcdonalds",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757657823/IMG_20200911_140404_u8asp0.jpg",
+      "alt": "crying buddha"
+    },
+    "colorSet": {
+      "bgColor": "#948272",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2020/08/03/anshun-dragon-palace",
@@ -2214,10 +2512,10 @@
     "file": "2020/08/10/http2"
   },
   {
-    "file": "2020/08/11/kunmings-flowing-account"
+    "file": "2020/08/12/the-complicated-universal-travel-trip"
   },
   {
-    "file": "2020/08/12/the-complicated-universal-travel-trip"
+    "file": "2020/08/11/kunmings-flowing-account"
   },
   {
     "file": "2020/08/18/yuxi-is-more-yunnan-than-kunming",
@@ -2226,8 +2524,8 @@
       "alt": "yuxi musuem"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#8f674f",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -2237,8 +2535,8 @@
       "alt": "mengzi hotel"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#a39264",
+      "titleColor": "--mantine-color-green-4"
     }
   },
   {
@@ -2257,19 +2555,8 @@
       "alt": "建水城门"
     },
     "colorSet": {
-      "bgColor": "#888888",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/08/15/the-finale-of-shies-agent-grandpa-qinghui",
-    "cover": {
-      "url": "https://m.media-amazon.com/images/M/MV5BMTkwODYyMjgzOV5BMl5BanBnXkFtZTgwODAzMTE5MjE@._V1_.jpg",
-      "alt": "poster from imdb"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#a07055",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -2288,318 +2575,9 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#ac5454",
+      "titleColor": "--mantine-color-green-4"
     }
-  },
-  {
-    "file": "2020/08/30/you-have-to-do-a-strategy-to-go-to-wudang-mountain",
-    "city": [
-      "Shiyan, China"
-    ],
-    "locations": [
-      {
-        "latitude": 32.6291799,
-        "longitude": 110.79801
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756458437/IMG_20200828_150504_qkzo0e.jpg",
-      "alt": "武当山"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/01/how-to-play-wanning",
-    "city": [
-      "Wanning, China",
-      "Haikou, China",
-      "Sanya, China"
-    ],
-    "locations": [
-      {
-        "latitude": 18.7953199,
-        "longitude": 110.38975
-      },
-      {
-        "latitude": 20.0442199,
-        "longitude": 110.19989
-      },
-      {
-        "latitude": 18.2524799,
-        "longitude": 109.51209
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756725178/IMG_20200901_111846_lynr9z.jpg",
-      "alt": "coconut chicken"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/04/boundaries",
-    "city": [
-      "Sanya, China"
-    ],
-    "locations": [
-      {
-        "latitude": 18.2524799,
-        "longitude": 109.51209
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884199/IMG_20200905_023541_lk1mmi.jpg",
-      "alt": "me"
-    },
-    "colorSet": {
-      "bgColor": "#898989",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/06/ow",
-    "city": [
-      "Sanya, China"
-    ],
-    "locations": [
-      {
-        "latitude": 18.2524799,
-        "longitude": 109.51209
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884004/mmexport1599490051276_kqi3ha.jpg",
-      "alt": "dive"
-    },
-    "colorSet": {
-      "bgColor": "#888888",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/07/great-east-sea-surfing-experience",
-    "city": [
-      "Sanya, China"
-    ],
-    "locations": [
-      {
-        "latitude": 18.2524799,
-        "longitude": 109.51209
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884516/IMG_20200906_190251_xacwi0.jpg",
-      "alt": "me"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/08/rotating-on-the-train-crossing-the-qiongzhou-strait",
-    "city": [
-      "Zhanjiang, China"
-    ],
-    "locations": [
-      {
-        "latitude": 21.2713399,
-        "longitude": 110.35894
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884894/Screenshot_2025-09-03_103248_ngx0ey.png",
-      "alt": "inside of ship"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/09/in-zhanjiang-oysters-are-unmanned",
-    "city": [
-      "Zhanjiang, China"
-    ],
-    "locations": [
-      {
-        "latitude": 21.2713399,
-        "longitude": 110.35894
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884613/IMG_20200908_200148_pxzjad.jpg",
-      "alt": "oyster"
-    },
-    "colorSet": {
-      "bgColor": "#8b8b8b",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/14/yinchuan-has-no-mcdonalds",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757657823/IMG_20200911_140404_u8asp0.jpg",
-      "alt": "crying buddha"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/16/watch-the-exhibition-in-hohhot-for-two-days",
-    "city": [
-      "Hohhot, China"
-    ],
-    "locations": [
-      {
-        "latitude": 40.8414899,
-        "longitude": 111.75199
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757658631/IMG_20200916_142512_hijtdm.jpg",
-      "alt": "hohhot"
-    },
-    "colorSet": {
-      "bgColor": "#7f7f7f",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/18/ordos-is-the-way-to-open-inner-mongolia",
-    "city": [
-      "Ordos, China"
-    ],
-    "locations": [
-      {
-        "latitude": 39.6084499,
-        "longitude": 109.78087
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757660348/IMG_20200918_114937_qoakwk.jpg",
-      "alt": "horse"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/20/passing-by-baotou-museum",
-    "city": [
-      "Baotou, China"
-    ],
-    "locations": [
-      {
-        "latitude": 40.6578099,
-        "longitude": 109.84021
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757660580/IMG_20200920_122023_wfrsex.jpg",
-      "alt": "chess"
-    },
-    "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/23/directly-pounding-huanglong",
-    "city": [
-      "Huanglong, China"
-    ],
-    "locations": [
-      {
-        "latitude": 35.5843199,
-        "longitude": 109.84018
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757661289/IMG_20200923_154306_whryyz.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/24/jiuzhaigou-watched-water-to-see-blu-ray-fatigue",
-    "city": [
-      "Jiuzhaigou, China"
-    ],
-    "locations": [
-      {
-        "latitude": 33.2614199,
-        "longitude": 104.23567
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757661736/IMG_20200924_113602_qm4vqe.jpg",
-      "alt": "lake"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/27/nb",
-    "city": [
-      "Chengdu, China",
-      "Guanghan, China"
-    ],
-    "locations": [
-      {
-        "latitude": 30.5722599,
-        "longitude": 104.0665099
-      },
-      {
-        "latitude": 30.9770599,
-        "longitude": 104.28249
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757662319/IMG_20200926_112253_m5pmld.jpg",
-      "alt": "panda"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/28/i-only-remember-one-towering-yuelou-in-mianyang",
-    "city": [
-      "Mianyang, China"
-    ],
-    "locations": [
-      {
-        "latitude": 31.4675099,
-        "longitude": 104.6795999
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757663120/IMG_20200929_131859_u7fyfr.jpg",
-      "alt": "building"
-    },
-    "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2020/09/30/talk-about-fraud-during-travel"
   },
   {
     "file": "2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
@@ -2702,8 +2680,8 @@
       "alt": "me"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#738eac",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -2722,8 +2700,8 @@
       "alt": "trees"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9c845c",
+      "titleColor": "--mantine-color-yellow-2"
     }
   },
   {
@@ -2752,7 +2730,24 @@
     ]
   },
   {
-    "file": "2020/11/11/never-found-that-shenyang-is-so-prosperous"
+    "file": "2020/08/30/you-have-to-do-a-strategy-to-go-to-wudang-mountain",
+    "city": [
+      "Shiyan, China"
+    ],
+    "locations": [
+      {
+        "latitude": 32.6291799,
+        "longitude": 110.79801
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756458437/IMG_20200828_150504_qkzo0e.jpg",
+      "alt": "武当山"
+    },
+    "colorSet": {
+      "bgColor": "#958367",
+      "titleColor": "--mantine-color-yellow-2"
+    }
   },
   {
     "file": "2020/11/18/20"
@@ -2779,8 +2774,8 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#855d4d",
+      "titleColor": "--mantine-color-yellow-2"
     }
   },
   {
@@ -2790,14 +2785,17 @@
     "file": "2020/12/09/after-skiing-the-snail-house-has-finished-watching-the-blade-of-ghosts"
   },
   {
+    "file": "2020/12/15/crossfit"
+  },
+  {
     "file": "2020/12/18/dont-rent-the-interpreter-at-the-zhenjiang-museum",
     "cover": {
       "url": "./zhenjiang.jpg",
       "alt": "xijindu"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#b46c5c",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -2807,187 +2805,317 @@
       "alt": "yangzhou"
     },
     "colorSet": {
-      "bgColor": "#787878",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#737bac",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
     "file": "2020/12/24/haproxy-nginx-ss"
   },
   {
-    "file": "2020/12/15/crossfit"
-  },
-  {
     "file": "2020/12/27/google"
   },
   {
-    "file": "2018/01/03/typescript-ast"
+    "file": "2017/01/09/pyqt"
   },
   {
-    "file": "2018/01/04/win10"
-  },
-  {
-    "file": "2018/01/11/anko"
-  },
-  {
-    "file": "2018/01/24/30-kotlin"
-  },
-  {
-    "file": "2018/01/28/18-1"
-  },
-  {
-    "file": "2018/02/03/webpack-nestjs"
-  },
-  {
-    "file": "2018/02/06/texturepacker"
-  },
-  {
-    "file": "2018/02/07/webpack"
-  },
-  {
-    "file": "2018/02/08/preactcsstransation"
-  },
-  {
-    "file": "2018/02/09/about-innovation"
-  },
-  {
-    "file": "2018/02/10/fontawesome-5"
-  },
-  {
-    "file": "2018/02/14/valentines-day-for-you-some-color-to-see"
-  },
-  {
-    "file": "2018/02/17/two-forbidden-books"
-  },
-  {
-    "file": "2018/02/25/about"
-  },
-  {
-    "file": "2018/02/27/git"
-  },
-  {
-    "file": "2018/03/04/18"
-  },
-  {
-    "file": "2018/03/20/i-am-bored"
-  },
-  {
-    "file": "2018/04/01/march-summary"
-  },
-  {
-    "file": "2018/04/09/graphql"
-  },
-  {
-    "file": "2018/02/19/pixijs"
-  },
-  {
-    "file": "2018/04/10/archlinux-vscode"
-  },
-  {
-    "file": "2018/04/15/finally-pulling-the-preserved-egg-lean-meat-ravioli"
-  },
-  {
-    "file": "2018/04/16/lego"
-  },
-  {
-    "file": "2018/04/17/devtools-node"
-  },
-  {
-    "file": "2018/04/18/talk-about-unpopular-human-puncture"
-  },
-  {
-    "file": "2018/04/19/css-3d"
-  },
-  {
-    "file": "2018/04/20/laveienrose"
-  },
-  {
-    "file": "2018/04/21/summarize-yesterdays-promotion-and-defense"
-  },
-  {
-    "file": "2018/04/22/from-guiyuan-tianju-to-the-renaissance"
-  },
-  {
-    "file": "2018/04/29/division-daily-on-the-first-day"
-  },
-  {
-    "file": "2018/05/25/travel-summary"
-  },
-  {
-    "file": "2018/05/26/blender"
-  },
-  {
-    "file": "2018/05/28/inkscape"
-  },
-  {
-    "file": "2018/06/03/linuxmint"
-  },
-  {
-    "file": "2018/06/14/jupyter"
-  },
-  {
-    "file": "2018/06/01/summary-in-may-18th"
-  },
-  {
-    "file": "2018/06/22/meteor-todoapp"
-  },
-  {
-    "file": "2018/06/28/the-current-cloud-service-available"
-  },
-  {
-    "file": "2018/06/24/redbird"
-  },
-  {
-    "file": "2018/07/05/6"
-  },
-  {
-    "file": "2018/07/07/gulpv4-task"
-  },
-  {
-    "file": "2018/07/10/apollo-meteor"
-  },
-  {
-    "file": "2018/07/14/can-be-regarded-as-visiting-tianjin",
+    "file": "2017/01/10/halal-in-halal-has-no-beef-noodles",
     "city": [
-      "Tianjin, China"
+      "Beijing, China"
     ],
     "locations": [
       {
-        "latitude": 39.085099,
-        "longitude": 117.199369
+        "latitude": 39.904211,
+        "longitude": 116.407395
       }
     ]
   },
   {
-    "file": "2018/07/16/buddha-statue-of-longxing-temple-in-qingzhou",
+    "file": "2017/01/14/looking-at-the-east-the-centennial-i-think-of-the-louvre-in-guobi",
     "city": [
-      "Qingzhou, China"
+      "Beijing, China"
     ],
     "locations": [
       {
-        "latitude": 36.6845599,
-        "longitude": 118.4796599
+        "latitude": 39.904211,
+        "longitude": 116.407395
       }
     ]
   },
   {
-    "file": "2018/07/18/rizhao-rushed-to-the-sea-briefly",
+    "file": "2017/01/15/experience-the-feeling-of-an-emperor-who-was-hit-into-the-cold-palace",
     "city": [
-      "Rizhao, China"
+      "Beijing, China"
     ],
     "locations": [
       {
-        "latitude": 35.4164599,
-        "longitude": 119.52719
+        "latitude": 39.904211,
+        "longitude": 116.407395
       }
     ]
   },
   {
-    "file": "2018/07/20/on-the-first-day-nanjing-was-hot-and-died",
+    "file": "2020/11/11/never-found-that-shenyang-is-so-prosperous"
+  },
+  {
+    "file": "2017/01/17/vscode-python-python36"
+  },
+  {
+    "file": "2017/01/18/pyqt-qml"
+  },
+  {
+    "file": "2017/01/22/those-things-in-the-ming-dynasty"
+  },
+  {
+    "file": "2017/01/24/troubles-on-the-train-grocery-store"
+  },
+  {
+    "file": "2017/01/25/the-only-invaders-museum-in-the-country-lushun-museum",
     "city": [
+      "Lushun, China"
+    ],
+    "locations": [
+      {
+        "latitude": 38.8512899,
+        "longitude": 121.26208
+      }
+    ]
+  },
+  {
+    "file": "2020/08/15/the-finale-of-shies-agent-grandpa-qinghui",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMTkwODYyMjgzOV5BMl5BanBnXkFtZTgwODAzMTE5MjE@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#b05254",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2017/01/26/dalian-modern-museum",
+    "city": [
+      "Dalian, China"
+    ],
+    "locations": [
+      {
+        "latitude": 38.9139899,
+        "longitude": 121.6147
+      }
+    ]
+  },
+  {
+    "file": "2017/02/01/the-forbidden-city-hiding-people",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ]
+  },
+  {
+    "file": "2017/02/03/node-302"
+  },
+  {
+    "file": "2017/01/31/dalian-sanya-ocean-world",
+    "city": [
+      "Dalian, China"
+    ],
+    "locations": [
+      {
+        "latitude": 38.9139899,
+        "longitude": 121.6147
+      }
+    ]
+  },
+  {
+    "file": "2017/02/10/ap",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757843221/P70218-103625_hoi4d5.jpg",
+      "alt": "rasp pi"
+    },
+    "colorSet": {
+      "bgColor": "#aa8865",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2017/02/21/this-snow-is-ended",
+    "city": [
+      "Beijing, China",
+      "Gubeikou, China",
+      "Datong, China",
+      "Pingyao, China",
+      "Linfen, China",
+      "Huashan, China",
+      "Lintong, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      },
+      {
+        "latitude": 40.69209,
+        "longitude": 117.1639
+      },
+      {
+        "latitude": 40.0763699,
+        "longitude": 113.30001
+      },
+      {
+        "latitude": 37.1893399,
+        "longitude": 112.17557
+      },
+      {
+        "latitude": 36.0882199,
+        "longitude": 111.51962
+      },
+      {
+        "latitude": 31.7330399,
+        "longitude": 118.64118
+      },
+      {
+        "latitude": 34.3666999,
+        "longitude": 109.21421
+      }
+    ]
+  },
+  {
+    "file": "2017/03/12/chinese-printing-museum-and-the-chinese-millennium-temple-of-the-museum-of-china",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ]
+  },
+  {
+    "file": "2017/03/18/looking-at-the-east-the-national-british-british-hundred-cultural-relics-exhibition",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ]
+  },
+  {
+    "file": "2017/03/19/yuyuan-tan-and-the-central-china-temple",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ]
+  },
+  {
+    "file": "2017/02/05/the-bank-card-password-is-hidden-on-the-card-no-wonder-bai-yexing"
+  },
+  {
+    "file": "2017/03/25/it-is-a-tower-or-a-tower-or-a-tower",
+    "city": [
+      "Zhengding, China"
+    ],
+    "locations": [
+      {
+        "latitude": 38.1461899,
+        "longitude": 114.57109
+      }
+    ]
+  },
+  {
+    "file": "2017/03/26/the-hebei-museum-is-the-shame-of-the-cemetery-industry-in-my-country",
+    "city": [
+      "Shijiazhuang, China"
+    ],
+    "locations": [
+      {
+        "latitude": 38.0427599,
+        "longitude": 114.5143
+      }
+    ]
+  },
+  {
+    "file": "2017/04/02/maijishan-grottoes",
+    "city": [
+      "Tianshui, China"
+    ],
+    "locations": [
+      {
+        "latitude": 34.5808499,
+        "longitude": 105.72486
+      }
+    ]
+  },
+  {
+    "file": "2017/04/03/tianshui-museum",
+    "city": [
+      "Tianshui, China"
+    ],
+    "locations": [
+      {
+        "latitude": 34.5808499,
+        "longitude": 105.72486
+      }
+    ]
+  },
+  {
+    "file": "2017/04/05/shanxi-museum",
+    "city": [
+      "Taiyuan, China"
+    ],
+    "locations": [
+      {
+        "latitude": 37.8705899,
+        "longitude": 112.55067
+      }
+    ]
+  },
+  {
+    "file": "2017/04/28/the-same-night-sky-jelly-huayan-temple-knife-noodles-city-walls",
+    "city": [
+      "Datong, China"
+    ],
+    "locations": [
+      {
+        "latitude": 40.0763699,
+        "longitude": 113.30001
+      }
+    ]
+  },
+  {
+    "file": "2017/05/01/the-same-night-sky-guandi-temple-datong-museum",
+    "city": [
+      "Datong, China",
+      "Beijing, China",
+      "Xi'an, China",
       "Nanjing, China"
     ],
     "locations": [
+      {
+        "latitude": 40.0763699,
+        "longitude": 113.30001
+      },
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      },
+      {
+        "latitude": 34.2658138,
+        "longitude": 108.9540936
+      },
       {
         "latitude": 32.0583799,
         "longitude": 118.79647
@@ -2995,402 +3123,294 @@
     ]
   },
   {
-    "file": "2018/07/22/shanghai-lujiazui-to-see-the-guoguo-big-guy",
+    "file": "2017/05/03/qxfcomponents"
+  },
+  {
+    "file": "2017/05/04/0-riotjs"
+  },
+  {
+    "file": "2017/05/04/1typescript"
+  },
+  {
+    "file": "2017/05/04/2webpack2-treeshaking-exttextplugin"
+  },
+  {
+    "file": "2017/05/04/3postcss-cssnext-cssnano"
+  },
+  {
+    "file": "2017/05/04/4qxf-bigpipe"
+  },
+  {
+    "file": "2017/05/04/5isomophicapp"
+  },
+  {
+    "file": "2017/05/04/6"
+  },
+  {
+    "file": "2017/05/15/riot-preact"
+  },
+  {
+    "file": "2017/05/28/second-screen"
+  },
+  {
+    "file": "2017/05/21/go-to-luoyang-summer-to-avoid-the-summer",
     "city": [
-      "Shanghai, China"
+      "Luoyang, China",
+      "Beijing, China"
     ],
     "locations": [
       {
-        "latitude": 31.230416,
-        "longitude": 121.473701
-      }
-    ]
-  },
-  {
-    "file": "2018/07/23/quanzhou-is-little-southeast-asia",
-    "city": [
-      "Quanzhou, China"
-    ],
-    "locations": [
-      {
-        "latitude": 24.8740499,
-        "longitude": 118.67583
-      }
-    ]
-  },
-  {
-    "file": "2018/07/24/i-eat-fat-in-fuzhou",
-    "city": [
-      "Fuzhou, China"
-    ],
-    "locations": [
-      {
-        "latitude": 26.0742099,
-        "longitude": 119.29647
-      }
-    ]
-  },
-  {
-    "file": "2018/07/25/i-eat-chaoshan-beef-in-shantou",
-    "city": [
-      "Shantou, China"
-    ],
-    "locations": [
-      {
-        "latitude": 23.3534999,
-        "longitude": 116.68221
-      }
-    ]
-  },
-  {
-    "file": "2018/07/27/pixijs-l"
-  },
-  {
-    "file": "2018/08/04/7"
-  },
-  {
-    "file": "2018/08/05/cssgridlayout"
-  },
-  {
-    "file": "2018/08/07/react16"
-  },
-  {
-    "file": "2018/08/14/aframejs",
-    "cover": {
-      "url": "https://aframe.io/images/blog/introducing-aframe.png",
-      "alt": "logo from aframe.io"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2018/08/17/github-1password"
-  },
-  {
-    "file": "2018/08/22/mock-fs-io"
-  },
-  {
-    "file": "2018/08/23/prettier-eslint"
-  },
-  {
-    "file": "2018/08/24/eslint-plugin-typelint-jsdoc-linting"
-  },
-  {
-    "file": "2018/08/26/shenzhen-museum",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ],
-    "cover": {
-      "url": "./sz.jpg",
-      "alt": "fish lantern"
-    },
-    "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2018/08/28/functionalreactiveprogramming-baconjs"
-  },
-  {
-    "file": "2018/08/29/openapi-swagger"
-  },
-  {
-    "file": "2018/09/01/reform-and-opening-up-museum",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756724714/IMG_20180901_141240_tli0ut.jpg",
-      "alt": "inside"
-    },
-    "colorSet": {
-      "bgColor": "#747474",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2018/08/31/magicavoxel",
-    "cover": {
-      "url": "./wxb.png",
-      "alt": "韦小宝 made with MagicaVoxel"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2018/09/02/august-summary"
-  },
-  {
-    "file": "2018/09/08/you-dont-know-the-clinic",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757342689/zhihu_5_wzpztb.jpg",
-      "alt": "leaflet"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2018/09/16/pixel-villain-that-is-not-up-to-the-palace",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757842513/89d0a2e1ly8fvbin6w7x3j20ru0ruwez_dhtrse.jpg",
-      "alt": "avatar"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2018/09/23/ibus"
-  },
-  {
-    "file": "2018/09/24/commemorate-the-first-month-cake-festival-in-shenzhen",
-    "city": [
-      "Shenzhen, China",
-      "Nanshan, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
+        "latitude": 34.6181299,
+        "longitude": 112.45402
       },
       {
-        "latitude": 22.5333199,
-        "longitude": 113.93041
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758693696/IMG_20180919_204523_at5xsf.jpg",
-      "alt": "drone"
-    },
-    "colorSet": {
-      "bgColor": "#8b8b8b",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2018/09/24/nanshan-book-city",
-    "city": [
-      "Nanshan, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5333199,
-        "longitude": 113.93041
+        "latitude": 39.904211,
+        "longitude": 116.407395
       }
     ]
   },
   {
-    "file": "2018/11/04/hurry-october-summary"
+    "file": "2017/05/14/nas"
   },
   {
-    "file": "2018/11/16/a-magical-printing-character"
+    "file": "2017/05/29/conquest-line-2"
   },
   {
-    "file": "2018/11/18/shenzhen-oil-painting-village",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ]
+    "file": "2017/05/02/qxf-qconfig"
   },
   {
-    "file": "2018/11/24/the-group-building-in-dapeng-bay",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ]
+    "file": "2017/05/30/sad-wps4linux"
   },
   {
-    "file": "2018/11/25/the-ancient-city-of-nantou-and-zhongshan-park-in-the-rain",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ]
+    "file": "2017/06/03/sinopia-npm"
   },
   {
-    "file": "2018/10/01/summary-of-september"
+    "file": "2017/06/04/riotjs-typed"
   },
   {
-    "file": "2018/10/02/shenzhen-central-book-city",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ],
+    "file": "2017/06/15/nock-node-mock"
+  },
+  {
+    "file": "2017/07/08/greater-china"
+  },
+  {
+    "file": "2017/07/09/wish-me-a-happy-birthday"
+  },
+  {
+    "file": "2017/07/14/egg-ts"
+  },
+  {
+    "file": "2017/07/30/different-mealfounding-of-the-army"
+  },
+  {
+    "file": "2017/08/01/archifactory"
+  },
+  {
+    "file": "2017/08/14/discover-a-website-of-a-piano-score",
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759305950/IMG_20181002_173222_oiry7k.jpg",
-      "alt": "building"
+      "url": "https://images.unsplash.com/photo-1682271920907-781daffc09a6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "alt": "harmonica picture from unsplash.com"
     },
     "colorSet": {
-      "bgColor": "#7f7f7f",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#737c91",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
-    "file": "2018/10/04/bai-caotang-drink-sugar-water",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ],
+    "file": "2017/08/15/er-pt"
+  },
+  {
+    "file": "2017/08/20/finally-read-brief-history-of-the-future",
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759575387/IMG_20181004_123700_urw9cm.jpg",
-      "alt": "baicaotang"
+      "url": "https://www.ynharari.com/wp-content/uploads/2018/02/d2.jpg",
+      "alt": "image from ynharari.com"
     },
     "colorSet": {
-      "bgColor": "#8c8c8c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#766e84",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
-    "file": "2018/10/05/anker"
-  },
-  {
-    "file": "2018/10/06/industrial-exhibition-hall--huaqiangbei--overseas-chinese-town-creative-park",
+    "file": "2017/08/27/go-to-dazaitai-and-watch-nothing-a-southern-girl-commemorates-the-days-when-you-froze-into-a-dog",
     "city": [
-      "Shenzhen, China"
+      "Beijing, China"
     ],
     "locations": [
       {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
+        "latitude": 39.904211,
+        "longitude": 116.407395
       }
     ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579985/IMG_20181006_142813_w1mood.jpg",
-      "alt": "elevator"
+      "url": "./uk.jpg",
+      "alt": "play uklele"
     },
     "colorSet": {
-      "bgColor": "#737373",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9a7e68",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
-    "file": "2018/10/13/node",
+    "file": "2017/09/17/13",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760275824/IMG_20181013_163219_roqqoo.jpg",
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758028540/16_a1gxtu.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a5816e",
+      "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2017/09/18/typescriptsucksbutlonglivethetypes"
+  },
+  {
+    "file": "2017/09/20/runwiththewind"
+  },
+  {
+    "file": "2017/09/23/beijing-has-begun-to-be-mother",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758522693/89d0a2e1ly1fk9sfli90gj23vc2kxe83_ujv6r9.jpg",
       "alt": "photo"
     },
     "colorSet": {
-      "bgColor": "#747474",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#54779c",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
-    "file": "2018/10/07/park-of-talent-park",
+    "file": "2017/09/30/after-reading-prince-mas-twelve-twelve-times"
+  },
+  {
+    "file": "2017/10/04/happy-mid-autumn-festival",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579370/89d0a2e1ly1fk9ri8jtdvj23vc2kwb2f_epoxgl.jpg",
+      "alt": "photo"
+    },
+    "colorSet": {
+      "bgColor": "#a4945c",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2017/10/05/ukulele"
+  },
+  {
+    "file": "2017/10/22/duolun-county-ulanbu-tong",
     "city": [
-      "Shenzhen, China"
+      "Chifeng, China"
     ],
     "locations": [
       {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
+        "latitude": 42.2585999,
+        "longitude": 118.88894
       }
     ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579988/IMG_20181007_063336_elszpk.jpg",
-      "alt": "sunlight"
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759307115/25_pohl7v.jpg",
+      "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#957155",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
-    "file": "2018/10/07/rxjs"
-  },
-  {
-    "file": "2018/10/16/get"
-  },
-  {
-    "file": "2018/10/18/algolia"
-  },
-  {
-    "file": "2018/10/21/moon-and-six-shi-shi"
-  },
-  {
-    "file": "2018/10/22/moment"
-  },
-  {
-    "file": "2018/12/02/the-guangzhou-trip-without-a-guide",
+    "file": "2017/10/29/commemorate-drive-alone-for-the-first-time",
     "city": [
-      "Guangzhou, China"
+      "Beijing, China"
     ],
     "locations": [
       {
-        "latitude": 23.1290799,
-        "longitude": 113.26436
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/007_blio62.jpg",
+      "alt": "road trip"
+    },
+    "colorSet": {
+      "bgColor": "#a4845f",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2017/10/17/linux-swap"
+  },
+  {
+    "file": "2017/11/19/qianli-jiangshan--zhao-mengfu--princess-sissi",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
       }
     ]
   },
   {
-    "file": "2018/12/01/18"
+    "file": "2017/11/22/buildingisomorphicjavascriptapps"
   },
   {
-    "file": "2018/12/04/remember-the-lesson-of-a-cold"
+    "file": "2017/11/25/its-not-a-particularly-worthwhile-qin-and-han-show",
+    "city": [
+      "Beijing, China",
+      "Shijiazhuang, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      },
+      {
+        "latitude": 38.0427599,
+        "longitude": 114.5143
+      }
+    ]
   },
   {
-    "file": "2018/12/16/postman-prescript"
+    "file": "2017/12/08/archlinux"
   },
   {
-    "file": "2018/12/24/18"
+    "file": "2017/12/20/plantuml"
   },
   {
-    "file": "2018/12/25/css"
+    "file": "2017/12/23/p2p"
+  },
+  {
+    "file": "2017/11/26/qa-node"
+  },
+  {
+    "file": "2017/12/26/mac-20264"
+  },
+  {
+    "file": "2017/12/25/webar"
   },
   {
     "file": "2021/01/04/alice-in-the-country-of-dai"
+  },
+  {
+    "file": "2017/12/31/rewind"
   },
   {
     "file": "2021/01/07/reactnative-script"
@@ -3399,13 +3419,19 @@
     "file": "2021/01/07/sweet-home"
   },
   {
+    "file": "2021/01/10/audorelay"
+  },
+  {
+    "file": "2021/01/13/barrier"
+  },
+  {
+    "file": "2021/01/13/learning-rust-with-entirely-too-many-linked-list"
+  },
+  {
     "file": "2021/01/09/husky-windows"
   },
   {
     "file": "2021/01/09/powershell101"
-  },
-  {
-    "file": "2021/01/10/audorelay"
   },
   {
     "file": "2021/01/17/ts"
@@ -3436,12 +3462,6 @@
   },
   {
     "file": "2021/02/09/latexcheatsheet"
-  },
-  {
-    "file": "2021/01/13/barrier"
-  },
-  {
-    "file": "2021/01/13/learning-rust-with-entirely-too-many-linked-list"
   },
   {
     "file": "2021/02/10/matrix"
@@ -3495,39 +3515,19 @@
     "file": "2021/03/09/secondary"
   },
   {
+    "file": "2021/03/10/featured-value-secondary-entrance-examination-questions"
+  },
+  {
     "file": "2021/03/11/linear-space-and-linear-transformation"
   },
   {
     "file": "2021/03/11/windows"
   },
   {
-    "file": "2021/03/10/featured-value-secondary-entrance-examination-questions"
-  },
-  {
     "file": "2021/03/12/march-plan"
   },
   {
-    "file": "2021/03/23/mit"
-  },
-  {
-    "file": "2018/09/22/nanshan-museum-and-nanshan-library",
-    "city": [
-      "Shenzhen, China"
-    ],
-    "locations": [
-      {
-        "latitude": 22.5428599,
-        "longitude": 114.05956
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758522948/IMG_20180922_150233_bnad4m.jpg",
-      "alt": "nanshan museum"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
+    "file": "2021/03/13/computer-system-overview"
   },
   {
     "file": "2021/03/18/dalian-art-museum",
@@ -3540,6 +3540,9 @@
         "longitude": 121.6147
       }
     ]
+  },
+  {
+    "file": "2021/03/23/mit"
   },
   {
     "file": "2021/03/27/dalian-museum-is-so-good",
@@ -3565,19 +3568,19 @@
     "file": "2021/04/01/application-of-linear-equation-group"
   },
   {
-    "file": "2021/04/14/higher-mathematics-preparation-knowledge"
-  },
-  {
     "file": "2021/04/05/input-production-model"
   },
   {
     "file": "2021/04/05/the-adjacent-matrix-of-the-figure"
   },
   {
-    "file": "2021/04/18/higher-mathematics-must-back"
+    "file": "2021/04/14/higher-mathematics-preparation-knowledge"
   },
   {
     "file": "2021/04/22/function-image"
+  },
+  {
+    "file": "2021/04/18/higher-mathematics-must-back"
   },
   {
     "file": "2021/04/25/important-formula"
@@ -3601,6 +3604,12 @@
     "file": "2021/05/29/taylor-formula-and-the-remaining-items"
   },
   {
+    "file": "2021/06/11/one-yuan-function-integral"
+  },
+  {
+    "file": "2021/06/21/multi-micro-science"
+  },
+  {
     "file": "2021/07/06/frequently-differential-equation"
   },
   {
@@ -3616,15 +3625,12 @@
       "alt": "justice league from imdb"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#848484",
       "titleColor": "--mantine-color-indigo-2"
     }
   },
   {
     "file": "2021/08/02/switch"
-  },
-  {
-    "file": "2021/08/18/multi-function-points"
   },
   {
     "file": "2021/08/19/matrix"
@@ -3636,10 +3642,13 @@
     "file": "2021/08/20/features-and-feature-vectors"
   },
   {
+    "file": "2021/08/31/basic-formula-for-probability-theory"
+  },
+  {
     "file": "2021/09/07/common-random-variable-distribution-type"
   },
   {
-    "file": "2021/08/31/basic-formula-for-probability-theory"
+    "file": "2021/08/18/multi-function-points"
   },
   {
     "file": "2021/09/08/mutual-independent-random-variable-distribution-and-convolution-formula"
@@ -3648,22 +3657,13 @@
     "file": "2021/09/27/expectation-and-square-difference"
   },
   {
-    "file": "2021/06/11/one-yuan-function-integral"
-  },
-  {
-    "file": "2021/06/21/multi-micro-science"
-  },
-  {
-    "file": "2021/10/08/error-sorting"
-  },
-  {
     "file": "2021/12/28/im-finished"
   },
   {
     "file": "2021/12/29/vscode-c-ide"
   },
   {
-    "file": "2022/01/02/amdahl"
+    "file": "2021/10/08/error-sorting"
   },
   {
     "file": "2022/01/08/soul",
@@ -3672,15 +3672,15 @@
       "alt": "from imdb"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#617c91",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
     "file": "2022/01/09/fixed-point-number"
   },
   {
-    "file": "2022/03/21/barrier-deskdroid-universalcontrol"
+    "file": "2022/01/02/amdahl"
   },
   {
     "file": "2022/02/25/johnathanagassisavedmylife",
@@ -3689,8 +3689,8 @@
       "alt": "picture from imdb"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9f9071",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -3700,24 +3700,34 @@
     "file": "2022/05/30/wsl2"
   },
   {
-    "file": "2022/06/20/makefile"
+    "file": "2022/06/14/vscode-neovim"
   },
   {
-    "file": "2022/06/14/vscode-neovim"
+    "file": "2022/06/20/makefile"
   },
   {
     "file": "2022/06/29/kindle"
   },
   {
-    "file": "2022/08/17/rust",
-    "cover": {
-      "url": "https://opensource.com/sites/default/files/lead-images/rust_programming_crab_sea.png",
-      "alt": "rust logo from opensource.com"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
+    "file": "2022/07/05/cmake"
+  },
+  {
+    "file": "2022/03/21/barrier-deskdroid-universalcontrol"
+  },
+  {
+    "file": "2022/07/27/wxwidgets"
+  },
+  {
+    "file": "2022/07/31/swiftui"
+  },
+  {
+    "file": "2022/09/08/kmp"
+  },
+  {
+    "file": "2022/09/08/traversing-a-binary-tree"
+  },
+  {
+    "file": "2022/09/09/opengl"
   },
   {
     "file": "2022/08/11/opengl-tutorial"
@@ -3729,8 +3739,19 @@
       "alt": "Astro logo from logrocket.com"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#577ea0",
       "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2022/08/17/rust",
+    "cover": {
+      "url": "https://opensource.com/sites/default/files/lead-images/rust_programming_crab_sea.png",
+      "alt": "rust logo from opensource.com"
+    },
+    "colorSet": {
+      "bgColor": "#9c7a52",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -3740,27 +3761,9 @@
       "alt": "bun logo"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#965151",
+      "titleColor": "--mantine-color-yellow-2"
     }
-  },
-  {
-    "file": "2022/09/09/opengl"
-  },
-  {
-    "file": "2022/09/08/kmp"
-  },
-  {
-    "file": "2022/09/08/traversing-a-binary-tree"
-  },
-  {
-    "file": "2022/07/05/cmake"
-  },
-  {
-    "file": "2022/07/27/wxwidgets"
-  },
-  {
-    "file": "2022/07/31/swiftui"
   },
   {
     "file": "2023/01/01/2022-retrospective-immersed-vr"
@@ -3775,22 +3778,19 @@
     "file": "2023/01/15/2th-week-retrospective-hackintosh"
   },
   {
-    "file": "2023/01/24/the-3rd-week-week-of-luna-vim"
-  },
-  {
     "file": "2023/01/29/the-forth-week-touch-typing"
   },
   {
     "file": "2023/02/08/5th-week-get-a-keyboard"
   },
   {
-    "file": "2023/02/19/7th-week-ssds-are-so-cheap"
-  },
-  {
     "file": "2023/02/14/6th-week-use-ai-wifi-direct"
   },
   {
-    "file": "2023/02/26/8th-week-bigfrontenddev"
+    "file": "2023/01/24/the-3rd-week-week-of-luna-vim"
+  },
+  {
+    "file": "2023/02/19/7th-week-ssds-are-so-cheap"
   },
   {
     "file": "2023/02/27/wsa-on-win10"
@@ -3799,7 +3799,13 @@
     "file": "2023/03/05/9th-week-holofit"
   },
   {
+    "file": "2023/02/26/8th-week-bigfrontenddev"
+  },
+  {
     "file": "2023/03/09/riftcat-a-cardboard-vr-headset"
+  },
+  {
+    "file": "2023/03/20/10th-week-glinet"
   },
   {
     "file": "2023/03/13/10th-week-dev-containers"
@@ -3817,28 +3823,22 @@
     ]
   },
   {
-    "file": "2023/03/20/10th-week-glinet"
-  },
-  {
     "file": "2023/03/27/11st-week-ted-lasso"
   },
   {
     "file": "2023/04/04/12th-week-tetris"
   },
   {
-    "file": "2023/04/16/14th-week-a-shit-load-of-money"
+    "file": "2023/04/10/13th-week-grid-layout"
   },
   {
-    "file": "2023/04/10/13th-week-grid-layout"
+    "file": "2023/04/16/14th-week-a-shit-load-of-money"
   },
   {
     "file": "2023/04/25/15th-week"
   },
   {
     "file": "2023/05/01/16th-week-guis"
-  },
-  {
-    "file": "2021/03/13/computer-system-overview"
   },
   {
     "file": "2023/05/03/reactive-in-guis"
@@ -3850,6 +3850,9 @@
     "file": "2023/05/07/17th-week-stablediffusion"
   },
   {
+    "file": "2023/05/09/aimoji"
+  },
+  {
     "file": "2023/05/15/19th-week-google-io"
   },
   {
@@ -3859,49 +3862,46 @@
     "file": "2023/05/18/ngrok-reverse-proxy-service"
   },
   {
-    "file": "2023/05/09/aimoji"
-  },
-  {
     "file": "2023/05/21/20th-week-web-ble"
-  },
-  {
-    "file": "2023/05/26/trpc"
   },
   {
     "file": "2023/05/29/21st-week-cloudflare-workers-and-graphql-yoga"
   },
   {
-    "file": "2023/06/09/thought-about-wear-os"
+    "file": "2023/05/26/trpc"
   },
   {
     "file": "2023/06/04/22nd-week-use-an-utra-wide-screen"
   },
   {
-    "file": "2023/06/11/23rd-week-book-computer-deep-dive"
+    "file": "2023/06/09/thought-about-wear-os"
   },
   {
     "file": "2023/06/19/24th-week-vscode"
   },
   {
-    "file": "2023/07/01/26tn-week-using-ubuntu"
-  },
-  {
-    "file": "2023/06/29/fnl-23"
+    "file": "2023/06/11/23rd-week-book-computer-deep-dive"
   },
   {
     "file": "2023/06/24/25th-week-babylonjs"
   },
   {
+    "file": "2023/06/29/fnl-23"
+  },
+  {
     "file": "2023/07/08/27th-week-aus-462"
+  },
+  {
+    "file": "2023/07/01/26tn-week-using-ubuntu"
   },
   {
     "file": "2023/07/15/28th-week-mrtk3-on-web"
   },
   {
-    "file": "2023/07/30/30th-week-shader"
+    "file": "2023/07/22/29th-week-geospatial"
   },
   {
-    "file": "2023/07/22/29th-week-geospatial"
+    "file": "2023/07/30/30th-week-shader"
   },
   {
     "file": "2023/08/06/31st-goodbye-whv-nz"
@@ -3910,21 +3910,15 @@
     "file": "2023/08/12/32nd-autumn-now"
   },
   {
-    "file": "2023/08/26/34th-week"
-  },
-  {
     "file": "2023/08/20/33rd-viewtransition",
     "cover": {
       "url": "https://blog.logrocket.com/wp-content/uploads/2021/08/astro-cool-parts.png",
       "alt": "astro logo from logrocket"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#577ea0",
       "titleColor": "--mantine-color-indigo-2"
     }
-  },
-  {
-    "file": "2023/09/04/35th-week"
   },
   {
     "file": "2023/09/24/38th-week-opencore"
@@ -3933,7 +3927,19 @@
     "file": "2023/09/30/39th-week-apple-watch"
   },
   {
+    "file": "2023/08/26/34th-week"
+  },
+  {
+    "file": "2023/09/04/35th-week"
+  },
+  {
     "file": "2023/10/07/40th-week-trip"
+  },
+  {
+    "file": "2023/11/04/44th-week-website"
+  },
+  {
+    "file": "2023/10/29/43rd-week-back-home"
   },
   {
     "file": "2023/10/20/42nd-week-hong-kong",
@@ -3956,15 +3962,9 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#996d54",
+      "titleColor": "--mantine-color-red-3"
     }
-  },
-  {
-    "file": "2023/10/29/43rd-week-back-home"
-  },
-  {
-    "file": "2023/11/04/44th-week-website"
   },
   {
     "file": "2023/11/05/growgen-rebuild-todos"
@@ -3994,7 +3994,24 @@
     "file": "2023/12/04/week-49-applying-schools"
   },
   {
-    "file": "2023/12/12/week-50-ready-for-thailand"
+    "file": "2023/12/23/week-52-hiv-test",
+    "city": [
+      "Bangkok, Thailand"
+    ],
+    "locations": [
+      {
+        "latitude": 13.7563309,
+        "longitude": 100.5017651
+      }
+    ],
+    "cover": {
+      "url": "./art.jpg",
+      "alt": "artwork in clinic"
+    },
+    "colorSet": {
+      "bgColor": "#7b7a87",
+      "titleColor": "--mantine-color-grape-3"
+    }
   },
   {
     "file": "2023/12/17/week-51-bangkok",
@@ -4012,29 +4029,15 @@
       "alt": "the king's gardern"
     },
     "colorSet": {
-      "bgColor": "#838383",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#a78858",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
-    "file": "2023/12/23/week-52-hiv-test",
-    "city": [
-      "Bangkok, Thailand"
-    ],
-    "locations": [
-      {
-        "latitude": 13.7563309,
-        "longitude": 100.5017651
-      }
-    ],
-    "cover": {
-      "url": "./art.jpg",
-      "alt": "artwork in clinic"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
+    "file": "2023/12/12/week-50-ready-for-thailand"
+  },
+  {
+    "file": "2024/01/01/2023-retrospective"
   },
   {
     "file": "2024/01/07/week-1-shopping-thailand",
@@ -4047,9 +4050,6 @@
         "longitude": 100.5017651
       }
     ]
-  },
-  {
-    "file": "2024/01/01/2023-retrospective"
   },
   {
     "file": "2024/01/14/week-2-cmlink"
@@ -4085,18 +4085,18 @@
     "file": "2024/02/24/week-8-ionic-maui"
   },
   {
-    "file": "2024/03/02/week-9-github-actions-wearos"
-  },
-  {
     "file": "2024/02/26/cost-count",
     "cover": {
       "url": "https://raw.githubusercontent.com/gongbaodd/cost-count/refs/heads/master/assets/images/app-icon-all.png",
       "alt": "icon"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#ba6474",
+      "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2024/03/02/week-9-github-actions-wearos"
   },
   {
     "file": "2024/03/09/week-10-watchos-crux-avatar"
@@ -4105,10 +4105,10 @@
     "file": "2024/03/16/week-11-vr-galaxy-watch-6"
   },
   {
-    "file": "2024/03/23/week-12-meta-blocks-godot"
+    "file": "2024/03/30/week-13-3-body-steroids"
   },
   {
-    "file": "2024/03/30/week-13-3-body-steroids"
+    "file": "2024/03/23/week-12-meta-blocks-godot"
   },
   {
     "file": "2024/04/07/week-14-samsung-health"
@@ -4138,12 +4138,27 @@
       "alt": "icon"
     },
     "colorSet": {
-      "bgColor": "#797979",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#bca66c",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
     "file": "2024/05/04/week-18-cashless-bangkok",
+    "city": [
+      "Bangkok, Thailand"
+    ],
+    "locations": [
+      {
+        "latitude": 13.7563309,
+        "longitude": 100.5017651
+      }
+    ]
+  },
+  {
+    "file": "2024/05/11/week-19-clerksons-farm"
+  },
+  {
+    "file": "2024/05/19/week-20-thailand-retrospect",
     "city": [
       "Bangkok, Thailand"
     ],
@@ -4199,28 +4214,13 @@
     ]
   },
   {
-    "file": "2024/05/11/week-19-clerksons-farm"
-  },
-  {
-    "file": "2024/05/19/week-20-thailand-retrospect",
-    "city": [
-      "Bangkok, Thailand"
-    ],
-    "locations": [
-      {
-        "latitude": 13.7563309,
-        "longitude": 100.5017651
-      }
-    ]
-  },
-  {
-    "file": "2024/06/08/week-23-asgards-wrath-2"
-  },
-  {
     "file": "2024/06/16/week-24-inside-no-9"
   },
   {
     "file": "2024/06/22/week-25-media-pipe"
+  },
+  {
+    "file": "2024/06/08/week-23-asgards-wrath-2"
   },
   {
     "file": "2024/06/29/week-26-adb-over-wifi"
@@ -4232,6 +4232,9 @@
     "file": "2024/07/07/week-27-guassian-splatting"
   },
   {
+    "file": "2024/07/13/week-28-meta-xr-simulator"
+  },
+  {
     "file": "2024/07/11/android-14"
   },
   {
@@ -4241,10 +4244,10 @@
     "file": "2024/07/25/swift-ui-tutorial"
   },
   {
-    "file": "2024/07/13/week-28-meta-xr-simulator"
+    "file": "2024/07/27/week-30-the-olympics-2024"
   },
   {
-    "file": "2024/07/27/week-30-the-olympics-2024"
+    "file": "2024/08/02/week-31-develop-a-vision-os-app"
   },
   {
     "file": "2024/07/28/deadpoolwolverine"
@@ -4278,12 +4281,9 @@
       "alt": "me at istanbul airport"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#8d7b7a",
+      "titleColor": "--mantine-color-red-3"
     }
-  },
-  {
-    "file": "2024/08/02/week-31-develop-a-vision-os-app"
   },
   {
     "file": "2024/08/25/week-34-dawn-of-master-study",
@@ -4301,28 +4301,8 @@
       "alt": "Selfie at the beach"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2024/08/31/week-35-orientation-week",
-    "city": [
-      "Tallinn, Estonia"
-    ],
-    "locations": [
-      {
-        "latitude": 59.43696079999999,
-        "longitude": 24.7535746
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756555639/IMG_4887_ma1hov.jpg",
-      "alt": "me on Pirita"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#66839f",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
@@ -4341,8 +4321,28 @@
       "alt": "in the hackathon"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#845c94",
+      "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2024/08/31/week-35-orientation-week",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756555639/IMG_4887_ma1hov.jpg",
+      "alt": "me on Pirita"
+    },
+    "colorSet": {
+      "bgColor": "#a4696c",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -4373,8 +4373,8 @@
       "alt": "group photo"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#958768",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -4390,8 +4390,8 @@
       "alt": "dog walker"
     },
     "colorSet": {
-      "bgColor": "#7f7f7f",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#916450",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -4404,8 +4404,8 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#808080",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#5e6a9c",
+      "titleColor": "--mantine-color-green-4"
     }
   },
   {
@@ -4424,8 +4424,8 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#5e7ca4",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -4435,8 +4435,8 @@
       "alt": "player"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6c6cac",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -4455,8 +4455,8 @@
       "alt": "group photo"
     },
     "colorSet": {
-      "bgColor": "#737373",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9b5b52",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -4464,20 +4464,6 @@
   },
   {
     "file": "2024/11/15/week-45-whispercpp"
-  },
-  {
-    "file": "2024/11/22/week-46-flowise-genetic-algorithm-ecs"
-  },
-  {
-    "file": "2024/11/27/physics-babylonjs",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757518981/%E5%9B%BE%E7%89%871_monpvf.png",
-      "alt": "dice"
-    },
-    "colorSet": {
-      "bgColor": "#888888",
-      "titleColor": "--mantine-color-indigo-2"
-    }
   },
   {
     "file": "2024/11/17/babylonjs-threejs-custom-texture"
@@ -4492,9 +4478,12 @@
       "alt": "screenshot"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#627ea5",
       "titleColor": "--mantine-color-indigo-2"
     }
+  },
+  {
+    "file": "2024/11/22/week-46-flowise-genetic-algorithm-ecs"
   },
   {
     "file": "2024/11/25/ball-box",
@@ -4503,12 +4492,94 @@
       "alt": "screenshot"
     },
     "colorSet": {
-      "bgColor": "#949494",
+      "bgColor": "#9a8c64",
       "titleColor": "--mantine-color-indigo-2"
     }
   },
   {
     "file": "2024/11/25/nearest-neighbour"
+  },
+  {
+    "file": "2024/11/27/physics-babylonjs",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757518981/%E5%9B%BE%E7%89%871_monpvf.png",
+      "alt": "dice"
+    },
+    "colorSet": {
+      "bgColor": "#a4966f",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2024/12/02/week-47-linnahall",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "./linnahall.jpg",
+      "alt": "theatre in linnahall"
+    },
+    "colorSet": {
+      "bgColor": "#a65d5a",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2024/12/06/week-48-ecs",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757502358/Screenshot_2025-09-10_140146_h0bzw4.png",
+      "alt": "screenshot"
+    },
+    "colorSet": {
+      "bgColor": "#9d6f62",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2024/12/08/graphic-workflow"
+  },
+  {
+    "file": "2024/12/16/2d-graphics",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757505304/%E5%9B%BE%E7%89%871_zsd1jo.png",
+      "alt": "poster"
+    },
+    "colorSet": {
+      "bgColor": "#5e79ac",
+      "titleColor": "--mantine-color-grape-3"
+    }
+  },
+  {
+    "file": "2024/12/23/week-50-rapidminer"
+  },
+  {
+    "file": "2024/12/15/week-49-android-xr"
+  },
+  {
+    "file": "2024/12/28/week-51-pets",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "./pet.jpg",
+      "alt": "lucky"
+    },
+    "colorSet": {
+      "bgColor": "#97846a",
+      "titleColor": "--mantine-color-grape-3"
+    }
   },
   {
     "file": "2025/01/03/2024-retrospective"
@@ -4520,8 +4591,8 @@
       "alt": "screenshot"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#5c5c9d",
+      "titleColor": "--mantine-color-dark-8"
     }
   },
   {
@@ -4546,106 +4617,35 @@
     ]
   },
   {
-    "file": "2025/02/07/discoin",
-    "cover": {
-      "url": "https://dis-coin.vercel.app/Discoin-cover-image.jpg",
-      "alt": "cover"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/02/07/week-6-unityvr"
-  },
-  {
     "file": "2025/02/15/enchanted-wizard",
     "cover": {
       "url": "https://img.itch.zone/aW1nLzE5ODg1ODg3LnBuZw==/347x500/AC%2BLS0.png",
       "alt": "cover"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#b48c62",
       "titleColor": "--mantine-color-indigo-2"
     }
+  },
+  {
+    "file": "2025/02/07/discoin",
+    "cover": {
+      "url": "https://dis-coin.vercel.app/Discoin-cover-image.jpg",
+      "alt": "cover"
+    },
+    "colorSet": {
+      "bgColor": "#966e85",
+      "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2025/02/07/week-6-unityvr"
   },
   {
     "file": "2025/02/16/week-7-godotxr"
   },
   {
     "file": "2025/02/22/week-8-openwebui-zotero-ollama"
-  },
-  {
-    "file": "2024/12/02/week-47-linnahall",
-    "city": [
-      "Tallinn, Estonia"
-    ],
-    "locations": [
-      {
-        "latitude": 59.43696079999999,
-        "longitude": 24.7535746
-      }
-    ],
-    "cover": {
-      "url": "./linnahall.jpg",
-      "alt": "theatre in linnahall"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2024/12/06/week-48-ecs",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757502358/Screenshot_2025-09-10_140146_h0bzw4.png",
-      "alt": "screenshot"
-    },
-    "colorSet": {
-      "bgColor": "#8a8a8a",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2024/12/08/graphic-workflow"
-  },
-  {
-    "file": "2024/12/15/week-49-android-xr"
-  },
-  {
-    "file": "2024/12/16/2d-graphics",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757505304/%E5%9B%BE%E7%89%871_zsd1jo.png",
-      "alt": "poster"
-    },
-    "colorSet": {
-      "bgColor": "#8b8b8b",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2024/12/23/week-50-rapidminer"
-  },
-  {
-    "file": "2024/12/28/week-51-pets",
-    "city": [
-      "Tallinn, Estonia"
-    ],
-    "locations": [
-      {
-        "latitude": 59.43696079999999,
-        "longitude": 24.7535746
-      }
-    ],
-    "cover": {
-      "url": "./pet.jpg",
-      "alt": "lucky"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
   },
   {
     "file": "2025/03/01/week-9-unity-ar"
@@ -4657,12 +4657,9 @@
       "alt": "blender screenshot"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#a49154",
+      "titleColor": "--mantine-color-dark-8"
     }
-  },
-  {
-    "file": "2025/03/07/week-10-knyttstories"
   },
   {
     "file": "2025/03/12/museum-of-estonian-architecture",
@@ -4680,6 +4677,9 @@
     "file": "2025/03/13/week-11-unity-on-web"
   },
   {
+    "file": "2025/03/07/week-10-knyttstories"
+  },
+  {
     "file": "2025/03/14/reverse-proxy-wsl"
   },
   {
@@ -4692,8 +4692,8 @@
       "alt": "espresso"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#609db9",
+      "titleColor": "--mantine-color-yellow-2"
     }
   },
   {
@@ -4706,16 +4706,16 @@
     "file": "2025/04/06/dots-basic"
   },
   {
-    "file": "2025/04/14/many-notes-on-llms"
-  },
-  {
     "file": "2025/04/11/week-15-many-hackathons"
   },
   {
-    "file": "2025/04/26/week-17-behavior-graph"
+    "file": "2025/04/14/many-notes-on-llms"
   },
   {
     "file": "2025/04/19/week-16-agents"
+  },
+  {
+    "file": "2025/04/26/week-17-behavior-graph"
   },
   {
     "file": "2025/05/02/humoid-poly",
@@ -4724,15 +4724,15 @@
       "alt": "mirror"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#83706c",
+      "titleColor": "--mantine-color-grape-3"
     }
   },
   {
-    "file": "2025/05/03/week-18-waku"
+    "file": "2025/05/09/week-19-unreal-on-web"
   },
   {
-    "file": "2025/05/09/week-19-unreal-on-web"
+    "file": "2025/05/03/week-18-waku"
   },
   {
     "file": "2025/05/13/building-unreal-engine"
@@ -4744,6 +4744,17 @@
     "file": "2025/05/16/week-21-3dgs"
   },
   {
+    "file": "2025/05/20/baltic-kitchen-chaos",
+    "cover": {
+      "url": "https://img.itch.zone/aW1nLzIxMjU3OTg5LmpwZw==/original/c3SN0%2B.jpg",
+      "alt": "game screenshot"
+    },
+    "colorSet": {
+      "bgColor": "#b48c64",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
     "file": "2025/05/19/immersive-web-emulator-runtime"
   },
   {
@@ -4753,20 +4764,12 @@
       "alt": "screenshot in quest 3"
     },
     "colorSet": {
-      "bgColor": "#878787",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#5a84a2",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
-    "file": "2025/05/20/baltic-kitchen-chaos",
-    "cover": {
-      "url": "https://img.itch.zone/aW1nLzIxMjU3OTg5LmpwZw==/original/c3SN0%2B.jpg",
-      "alt": "game screenshot"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
+    "file": "2025/05/27/unity-test-framework"
   },
   {
     "file": "2025/05/23/cool-spot"
@@ -4787,16 +4790,13 @@
     "file": "2025/05/31/week-23-dify"
   },
   {
-    "file": "2025/05/27/unity-test-framework"
-  },
-  {
     "file": "2025/06/06/week-24-gamepad",
     "cover": {
       "url": "./gamepad.jpg",
       "alt": "gamepad"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#b19556",
       "titleColor": "--mantine-color-indigo-2"
     }
   },
@@ -4807,8 +4807,8 @@
       "alt": "Neon Night"
     },
     "colorSet": {
-      "bgColor": "#898989",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#876248",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
@@ -4827,12 +4827,20 @@
       "alt": "fat magret in visitestonia.com"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#968573",
+      "titleColor": "--mantine-color-lime-2"
     }
   },
   {
-    "file": "2025/06/13/week-25-ai-local"
+    "file": "2025/06/10/langchain",
+    "cover": {
+      "url": "https://api.nuget.org/v3-flatcontainer/langchain.core/0.17.0/icon",
+      "alt": "langchain icon"
+    },
+    "colorSet": {
+      "bgColor": "#6884a8",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2025/06/11/huggingface-transformer",
@@ -4841,8 +4849,8 @@
       "alt": "huggingface icon"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#84acbc",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -4861,9 +4869,12 @@
       "alt": "I am in front of kadriorg"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9f885a",
+      "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2025/06/13/week-25-ai-local"
   },
   {
     "file": "2025/06/17/babylon-toolkit",
@@ -4872,55 +4883,8 @@
       "alt": "image from editor.babylonjs.com"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/06/10/langchain",
-    "cover": {
-      "url": "https://api.nuget.org/v3-flatcontainer/langchain.core/0.17.0/icon",
-      "alt": "langchain icon"
-    },
-    "colorSet": {
-      "bgColor": "#787878",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/06/27/moon-rider",
-    "cover": {
-      "url": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2020/01/moon-rider-webxr-1021x580.jpg",
-      "alt": "image from roadtovr.com"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/06/27/week-27-godot",
-    "cover": {
-      "url": "https://cdn2.unrealengine.com/godot-fb-tw-share-image-1920x1080-0abe26cbac38.jpg",
-      "alt": "godot image from epic store"
-    },
-    "colorSet": {
-      "bgColor": "#878787",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/06/23/web-services-2025"
-  },
-  {
-    "file": "2025/07/04/ninja-paws",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757595745/Screenshot_2025-09-11_160145_cgbi5m.png",
-      "alt": "screen shot"
-    },
-    "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#5e8ca4",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -4942,8 +4906,44 @@
       "alt": "lift 99"
     },
     "colorSet": {
-      "bgColor": "#808080",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6390ae",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2025/06/23/web-services-2025"
+  },
+  {
+    "file": "2025/06/27/moon-rider",
+    "cover": {
+      "url": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2020/01/moon-rider-webxr-1021x580.jpg",
+      "alt": "image from roadtovr.com"
+    },
+    "colorSet": {
+      "bgColor": "#ab658e",
+      "titleColor": "--mantine-color-grape-3"
+    }
+  },
+  {
+    "file": "2025/06/27/week-27-godot",
+    "cover": {
+      "url": "https://cdn2.unrealengine.com/godot-fb-tw-share-image-1920x1080-0abe26cbac38.jpg",
+      "alt": "godot image from epic store"
+    },
+    "colorSet": {
+      "bgColor": "#6166a0",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2025/07/04/ninja-paws",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757595745/Screenshot_2025-09-11_160145_cgbi5m.png",
+      "alt": "screen shot"
+    },
+    "colorSet": {
+      "bgColor": "#ac7454",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -4962,8 +4962,8 @@
       "alt": "image from linnamuuseum.ee"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6f95bb",
+      "titleColor": "--mantine-color-yellow-2"
     }
   },
   {
@@ -4973,8 +4973,8 @@
       "alt": "cover"
     },
     "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6c7c94",
+      "titleColor": "--mantine-color-grape-3"
     }
   },
   {
@@ -4984,8 +4984,8 @@
       "alt": "rspack log"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#955c54",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -4998,25 +4998,14 @@
     "file": "2025/07/16/lavarel-spring-boot"
   },
   {
-    "file": "2025/07/19/week-30-proto-factory",
-    "cover": {
-      "url": "./selfie.png",
-      "alt": "my photo in Proto Factory"
-    },
-    "colorSet": {
-      "bgColor": "#848484",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
     "file": "2025/07/15/citra",
     "cover": {
       "url": "./citra.png",
       "alt": "Citra icon"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#976101",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -5026,8 +5015,8 @@
       "alt": "android icon in developer.android.com"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#4f869a",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -5037,8 +5026,8 @@
       "alt": "poster from IMDB"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#679eb1",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
@@ -5048,23 +5037,14 @@
     "file": "2025/07/15/react-native-wearos"
   },
   {
-    "file": "2025/07/25/week-31-tallinn-summer-school",
-    "city": [
-      "Tallinn, Estonia"
-    ],
-    "locations": [
-      {
-        "latitude": 59.43696079999999,
-        "longitude": 24.7535746
-      }
-    ],
+    "file": "2025/07/19/week-30-proto-factory",
     "cover": {
-      "url": "./gifts.jpg",
-      "alt": "gifts"
+      "url": "./selfie.png",
+      "alt": "my photo in Proto Factory"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#8f826d",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -5083,19 +5063,8 @@
       "alt": "super cell building"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/08/02/week-32-edge-impulse",
-    "cover": {
-      "url": "./hearing-aid.jpg",
-      "alt": "hearing aid prototype"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6187b0",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
@@ -5105,8 +5074,39 @@
       "alt": "playing efoils"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#8a7e77",
       "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2025/07/25/week-31-tallinn-summer-school",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "./gifts.jpg",
+      "alt": "gifts"
+    },
+    "colorSet": {
+      "bgColor": "#927b69",
+      "titleColor": "--mantine-color-dark-8"
+    }
+  },
+  {
+    "file": "2025/08/02/week-32-edge-impulse",
+    "cover": {
+      "url": "./hearing-aid.jpg",
+      "alt": "hearing aid prototype"
+    },
+    "colorSet": {
+      "bgColor": "#9c8f66",
+      "titleColor": "--mantine-color-yellow-2"
     }
   },
   {
@@ -5116,8 +5116,8 @@
       "alt": "snapshot on the old build"
     },
     "colorSet": {
-      "bgColor": "#777777",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9c7d5d",
+      "titleColor": "--mantine-color-dark-8"
     }
   },
   {
@@ -5127,8 +5127,8 @@
       "alt": "nsfw sign"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#5c549c",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
@@ -5141,7 +5141,7 @@
       "alt": "VJ Day from wikipedia"
     },
     "colorSet": {
-      "bgColor": "#888888",
+      "bgColor": "#7c7c7c",
       "titleColor": "--mantine-color-indigo-2"
     }
   },
@@ -5149,10 +5149,21 @@
     "file": "2025/08/18/pv"
   },
   {
-    "file": "2025/08/20/goatcounter"
+    "file": "2025/08/19/starving-the-elephants",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761745430/7295_1_zy9yx2.jpg",
+      "alt": "image from apjjf.org"
+    },
+    "colorSet": {
+      "bgColor": "#98604f",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2025/08/25/ndjson"
+  },
+  {
+    "file": "2025/08/20/goatcounter"
   },
   {
     "file": "2025/08/27/cloudinary"
@@ -5164,8 +5175,8 @@
       "alt": "react-map-gl hero image"
     },
     "colorSet": {
-      "bgColor": "#838383",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6d91b9",
+      "titleColor": "--mantine-color-blue-2"
     }
   },
   {
@@ -5175,8 +5186,8 @@
       "alt": "masonry layout"
     },
     "colorSet": {
-      "bgColor": "#7e7e7e",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#acac4c",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -5186,128 +5197,8 @@
       "alt": "rainy opening ceremony"
     },
     "colorSet": {
-      "bgColor": "#737373",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/03/week-41-3d-scan",
-    "city": [
-      "Tallinn, Estonia"
-    ],
-    "locations": [
-      {
-        "latitude": 59.43696079999999,
-        "longitude": 24.7535746
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759499231/552532190_1140605504076650_2371037736575177324_n_r9jekh.jpg",
-      "alt": "scan"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/08/remake-of-missile-command",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759920254/defender_instruction_erc481.png",
-      "alt": "defender"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/10/realiti-express",
-    "city": [
-      "Tallinn, Estonia"
-    ],
-    "locations": [
-      {
-        "latitude": 59.43696079999999,
-        "longitude": 24.7535746
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760187186/IMG_8364_llbpk9.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/11/week-42-thomas-gia"
-  },
-  {
-    "file": "2025/10/16/ulemiste",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760734234/IMG_8414_qy7w8j.jpg",
-      "alt": "in playtech"
-    },
-    "colorSet": {
-      "bgColor": "#888888",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/17/week-43-hunyuan-3d",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760732820/IMG_8398_uf74nj.jpg",
-      "alt": "print"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/18/northern-light",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760905081/IMG_8445_hmfhh1.jpg",
-      "alt": "linnahall"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/19/lison-maru",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760906403/p2917440895_wvcvap.webp",
-      "alt": "screenshot"
-    },
-    "colorSet": {
-      "bgColor": "#898989",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/20/cursor-meetup",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761038783/IMG_8488_kip0mj.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/10/26/week-44-tipilan",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761546248/IMG_8514_s9sbte.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#925c5e",
+      "titleColor": "--mantine-color-yellow-2"
     }
   },
   {
@@ -5329,8 +5220,8 @@
       "alt": "play ground"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#997e6f",
+      "titleColor": "--mantine-color-green-4"
     }
   },
   {
@@ -5355,8 +5246,8 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#898989",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#9b7b62",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -5375,28 +5266,8 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
-    }
-  },
-  {
-    "file": "2025/09/20/week-39-light-show",
-    "city": [
-      "Tallinn, Estonia"
-    ],
-    "locations": [
-      {
-        "latitude": 59.43696079999999,
-        "longitude": 24.7535746
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758367603/IMG_8151_wnzgnt.jpg",
-      "alt": "selfie"
-    },
-    "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#b48b6d",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -5415,8 +5286,8 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#747474",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#8f8473",
+      "titleColor": "--mantine-color-orange-2"
     }
   },
   {
@@ -5426,8 +5297,28 @@
       "alt": "poster"
     },
     "colorSet": {
-      "bgColor": "#7f7f7f",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#6f90a5",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2025/09/20/week-39-light-show",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758367603/IMG_8151_wnzgnt.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#71a583",
+      "titleColor": "--mantine-color-red-3"
     }
   },
   {
@@ -5446,19 +5337,128 @@
       "alt": "selfie"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
+      "bgColor": "#92695a",
+      "titleColor": "--mantine-color-blue-2"
+    }
+  },
+  {
+    "file": "2025/10/03/week-41-3d-scan",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759499231/552532190_1140605504076650_2371037736575177324_n_r9jekh.jpg",
+      "alt": "scan"
+    },
+    "colorSet": {
+      "bgColor": "#6e7b91",
+      "titleColor": "--mantine-color-blue-2"
+    }
+  },
+  {
+    "file": "2025/10/08/remake-of-missile-command",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759920254/defender_instruction_erc481.png",
+      "alt": "defender"
+    },
+    "colorSet": {
+      "bgColor": "#a09b55",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2025/10/10/realiti-express",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760187186/IMG_8364_llbpk9.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#9d714d",
       "titleColor": "--mantine-color-indigo-2"
     }
   },
   {
-    "file": "2025/08/19/starving-the-elephants",
+    "file": "2025/10/11/week-42-thomas-gia"
+  },
+  {
+    "file": "2025/10/16/ulemiste",
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761745430/7295_1_zy9yx2.jpg",
-      "alt": "image from apjjf.org"
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760734234/IMG_8414_qy7w8j.jpg",
+      "alt": "in playtech"
     },
     "colorSet": {
-      "bgColor": "#7c7c7c",
-      "titleColor": "--mantine-color-indigo-2"
+      "bgColor": "#898072",
+      "titleColor": "--mantine-color-blue-2"
+    }
+  },
+  {
+    "file": "2025/10/17/week-43-hunyuan-3d",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760732820/IMG_8398_uf74nj.jpg",
+      "alt": "print"
+    },
+    "colorSet": {
+      "bgColor": "#9b9049",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2025/10/18/northern-light",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760905081/IMG_8445_hmfhh1.jpg",
+      "alt": "linnahall"
+    },
+    "colorSet": {
+      "bgColor": "#70886a",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2025/10/19/lison-maru",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760906403/p2917440895_wvcvap.webp",
+      "alt": "screenshot"
+    },
+    "colorSet": {
+      "bgColor": "#887d77",
+      "titleColor": "--mantine-color-gray-2"
+    }
+  },
+  {
+    "file": "2025/10/20/cursor-meetup",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761038783/IMG_8488_kip0mj.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a18265",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2025/10/26/week-44-tipilan",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761546248/IMG_8514_s9sbte.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a07f69",
+      "titleColor": "--mantine-color-red-3"
     }
   }
 ]
