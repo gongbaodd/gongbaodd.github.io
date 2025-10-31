@@ -5460,5 +5460,16 @@
       "bgColor": "#a07f69",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2025/10/31/week-45-colyseus",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761924996/unnamed_1_nusckr.jpg",
+      "alt": "missile command"
+    },
+    "colorSet": {
+      "bgColor": "#7e9a71",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]
