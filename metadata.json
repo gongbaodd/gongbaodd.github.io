@@ -5471,5 +5471,16 @@
       "bgColor": "#7e9a71",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2025/11/02/digiwise-gamejam",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762187122/IMG_8560_xtu0ts.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a47854",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]
