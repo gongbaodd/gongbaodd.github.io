@@ -5482,5 +5482,16 @@
       "bgColor": "#a47854",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2025/11/05/triplydb",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762341638/ComfyUI_00001_assjl_1762341207_i59jrn.png",
+      "alt": "VTON"
+    },
+    "colorSet": {
+      "bgColor": "#a48466",
+      "titleColor": "--mantine-color-orange-2"
+    }
   }
 ]
