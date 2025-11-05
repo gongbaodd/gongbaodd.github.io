@@ -2727,7 +2727,15 @@
         "latitude": 39.7713799,
         "longitude": 98.28707999999999
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762345941/Screenshot_2025-11-05_142821_nuer5c.png",
+      "alt": "museum"
+    },
+    "colorSet": {
+      "bgColor": "#9f855e",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2020/08/30/you-have-to-do-a-strategy-to-go-to-wudang-mountain",
