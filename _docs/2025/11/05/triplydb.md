@@ -12,7 +12,7 @@ tag:
   - RunningHub
   - pokemon
 ---
-# Week 46: Exploring WikiData, TriplyDB & VTON 🧵✨
+# Week 46: Exploring WikiData, TriplyDB & VTON
 
 This week, I dived into two interesting projects: using **WikiData** for garment exploration with VTON models, and building a small **Pokémon game** with TriplyDB. Here’s a recap of my experiments and findings.
 
@@ -198,10 +198,27 @@ You can see a table of jackets with images, countries, and other metadata.
 
 I used [RunningHub](https://www.runninghub.cn/) to test the **FLUX CAT VTON model**.
 
-| Input Person                                                                                                  | Input Garment                                                                                        | Result                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| ![Person](https://res.cloudinary.com/dmq8ipket/image/upload/v1762339768/Telsa-CEO-Elon-Musk-2014_caktxx.webp) | ![Jacket](https://res.cloudinary.com/dmq8ipket/image/upload/v1762339767/Jacket_MET_DT409_cldxvl.jpg) | ![Result](https://res.cloudinary.com/dmq8ipket/image/upload/v1762339770/ComfyUI_00001_bpukq_1762339293_ddgkqm.jpg) |
-| ![Person](https://res.cloudinary.com/dmq8ipket/image/upload/v1762341285/IMGP6788_sppuvd.jpg) | ![Armour](https://res.cloudinary.com/dmq8ipket/image/upload/v1762341281/Armor_of_Emperor_Ferdinand_I__1503_1564__MET_DT773_duyy9u.jpg) | ![Result](https://res.cloudinary.com/dmq8ipket/image/upload/v1762341638/ComfyUI_00001_assjl_1762341207_i59jrn.png) |
+<table><thead><tr><th>Input Person</th><th>Input Garment</th><th>Result</th></tr></thead><tbody><tr><td>
+  <img src="https://res.cloudinary.com/dmq8ipket/image/upload/v1762339768/Telsa-CEO-Elon-Musk-2014_caktxx.webp" alt="Person" width=400>
+</td>
+<td>
+  <img src="https://res.cloudinary.com/dmq8ipket/image/upload/v1762339767/Jacket_MET_DT409_cldxvl.jpg" alt="Jacket" width=400>
+</td>
+<td>
+  <img src="https://res.cloudinary.com/dmq8ipket/image/upload/v1762339770/ComfyUI_00001_bpukq_1762339293_ddgkqm.jpg" alt="Result" width=400>
+</td>
+</tr>
+<tr>
+<td>
+  <img src="https://res.cloudinary.com/dmq8ipket/image/upload/v1762341285/IMGP6788_sppuvd.jpg" alt="Person" width=400>
+</td>
+<td>
+  <img src="https://res.cloudinary.com/dmq8ipket/image/upload/v1762341281/Armor_of_Emperor_Ferdinand_I__1503_1564__MET_DT773_duyy9u.jpg" alt="Armour" width=400>
+</td>
+<td>
+  <img src="https://res.cloudinary.com/dmq8ipket/image/upload/v1762341638/ComfyUI_00001_assjl_1762341207_i59jrn.png" alt="Result" width=400>
+</td>
+</tr></tbody></table>
 
 **Conclusion:**
 
