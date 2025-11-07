@@ -1686,7 +1686,15 @@
     "file": "2016/11/06/the-baby-is-really-old"
   },
   {
-    "file": "2016/11/08/the-rare-beautiful-scenery-of-bargou-mountains-and-water-garden"
+    "file": "2016/11/08/the-rare-beautiful-scenery-of-bargou-mountains-and-water-garden",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762506768/P61108-084441_l9smll.jpg",
+      "alt": "beijing"
+    },
+    "colorSet": {
+      "bgColor": "#5c7fb0",
+      "titleColor": "--mantine-color-yellow-2"
+    }
   },
   {
     "file": "2016/11/09/archlinux"
@@ -4468,7 +4476,15 @@
     }
   },
   {
-    "file": "2024/11/09/week-45-meta-spatial-sdk"
+    "file": "2024/11/09/week-45-meta-spatial-sdk",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762507161/download_zhzrpj.webp",
+      "alt": "image from meta"
+    },
+    "colorSet": {
+      "bgColor": "#976753",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2024/11/15/week-45-whispercpp"
