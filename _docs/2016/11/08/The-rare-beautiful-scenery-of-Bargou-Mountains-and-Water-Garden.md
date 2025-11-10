@@ -1,8 +1,13 @@
 ---
 type: post
 category: travel
+cover: 
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1762506768/P61108-084441_l9smll.jpg
+    alt: beijing
+city:
+    - Beijing, China
 ---
 
 # 巴沟山水园难得的美景
 
-![](http://ww4.sinaimg.cn/large/89d0a2e1gw1f9ki6zighhj21kw16oh7r.jpg)
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1762506768/P61108-084441_l9smll.jpg)

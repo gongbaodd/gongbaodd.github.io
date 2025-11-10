@@ -4,6 +4,6 @@ category: life
 ---
 # 安利一款万能清洁膏
 
-![Gumption](http://ww1.sinaimg.cn/mw690/89d0a2e1gy1g8qosrx9vuj20l40l4q4i.jpg)
+![Gumption](https://res.cloudinary.com/dmq8ipket/image/upload/v1762506924/gumption-scaled_x9javz.jpg)
 
 这个Gumption万能清洁膏乍一看是和牙膏类似的东西，但是经过我一个月的使用发现真的是一个神器，不管是多么重的油污拿它蹭上去一会儿拿抹布擦一下就光洁如新了。
