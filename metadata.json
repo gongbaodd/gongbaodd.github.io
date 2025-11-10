@@ -1694,7 +1694,16 @@
     "colorSet": {
       "bgColor": "#5c7fb0",
       "titleColor": "--mantine-color-yellow-2"
-    }
+    },
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ]
   },
   {
     "file": "2016/11/09/archlinux"
@@ -2871,7 +2880,24 @@
     ]
   },
   {
-    "file": "2020/11/11/never-found-that-shenyang-is-so-prosperous"
+    "file": "2020/11/11/never-found-that-shenyang-is-so-prosperous",
+    "city": [
+      "Shenyang, China"
+    ],
+    "locations": [
+      {
+        "latitude": 41.804778,
+        "longitude": 123.432968
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762815286/Screenshot_2025-11-10_234930_rarmpu.png",
+      "alt": "zhongjie"
+    },
+    "colorSet": {
+      "bgColor": "#867160",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2017/01/17/vscode-python-python36"
@@ -5515,6 +5541,41 @@
     },
     "colorSet": {
       "bgColor": "#a48466",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2025/11/09/to-brandenburg",
+    "city": [
+      "Tallinn, Estonia",
+      "Riga, Latvia",
+      "Berlin, Germany",
+      "Brandenburg, Germany"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      },
+      {
+        "latitude": 56.9676941,
+        "longitude": 24.1056221
+      },
+      {
+        "latitude": 52.52000659999999,
+        "longitude": 13.404954
+      },
+      {
+        "latitude": 52.1313922,
+        "longitude": 13.2162494
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762804424/selfie_zsvpka.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#9f7c56",
       "titleColor": "--mantine-color-orange-2"
     }
   }
