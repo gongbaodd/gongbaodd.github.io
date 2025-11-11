@@ -1718,7 +1718,15 @@
         "latitude": 39.904211,
         "longitude": 116.407395
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762900432/002_vmq8tb.jpg",
+      "alt": "front"
+    },
+    "colorSet": {
+      "bgColor": "#a07c56",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2016/11/26/where-is-the-magic-animal-where-is-the-magic-animal-where-is-the-magic-animal"
@@ -5593,7 +5601,7 @@
   {
     "file": "2025/11/10/brandenburg-walk-tour",
     "city": [
-      "Barndenburg, Germany"
+      "Brandenburg, Germany"
     ],
     "locations": [
       {
