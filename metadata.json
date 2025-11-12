@@ -5617,5 +5617,25 @@
       "bgColor": "#97725e",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2025/11/11/berlin-walk-tour",
+    "city": [
+      "Berlin, Germany"
+    ],
+    "locations": [
+      {
+        "latitude": 52.52000659999999,
+        "longitude": 13.404954
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762972357/IMG_8726_op4fss.jpg",
+      "alt": "selfie in front of Brandenburg gate"
+    },
+    "colorSet": {
+      "bgColor": "#a07d57",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]

@@ -37,6 +37,8 @@ The food is decent, very typical of German campus meals.
 
 ![food](https://res.cloudinary.com/dmq8ipket/image/upload/v1762850255/IMG_8667_pevtqi.jpg)
 
+![Chicken Schnizel](https://res.cloudinary.com/dmq8ipket/image/upload/v1762971574/IMG_8707_rfhbyu.jpg)
+
 ---
 
 ## 🏰 Old Town
@@ -87,3 +89,5 @@ Later, I dropped by **Rewe** and **Rossmann** to grab some supplements, cola bee
 ---
 
 Brandenburg might not be the most tourist-friendly place, but its **quiet charm, lakeside views, and authentic atmosphere** make it a memorable stop on my journey through Germany. 🌿🇩🇪
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1762971498/2B82ADE6-CC94-45FB-9819-65C8855F8119_teftgm.jpg)
