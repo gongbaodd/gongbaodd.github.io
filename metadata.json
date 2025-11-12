@@ -5630,12 +5630,11 @@
       }
     ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762972357/IMG_8726_op4fss.jpg",
-      "alt": "selfie in front of Brandenburg gate"
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762972356/IMG_8729_htdwcg.jpg"
     },
     "colorSet": {
-      "bgColor": "#a07d57",
-      "titleColor": "--mantine-color-red-3"
+      "bgColor": "#8b5f48",
+      "titleColor": "--mantine-color-dark-8"
     }
   }
 ]
