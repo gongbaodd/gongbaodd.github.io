@@ -2,10 +2,10 @@
 type: post
 category: life
 city:
-    - Berlin, Germany
+  - Berlin, Germany
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1762972356/IMG_8729_htdwcg.jpg
-    alt: selfie in front of Brandenburg gate
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1762972356/IMG_8729_htdwcg.jpg
+  alt: selfie in front of Brandenburg gate
 ---
 
 # 🌃 Berlin by Night: An Insightful Walk Tour
