@@ -86,6 +86,10 @@ After almost **2 hours on the train**, I finally arrived in Brandenburg — tire
 
 ![kebab pizza](https://res.cloudinary.com/dmq8ipket/image/upload/v1762806116/IMG_8661_quzpme.jpg)
 
-Brandenburg isn’t actually that small — its **market size feels bigger than Tallinn**, and surprisingly, **everyday items in the cheapest level are cheaper** too. 💶 I’ll share more about the city in my next post!
+Brandenburg isn’t actually that small — its **market size feels bigger than Tallinn**, and surprisingly, **everyday items in the cheapest level are cheaper** too. 
+
+Also, the floors are starting from zero.
+
+💶 I’ll share more about the city in my next post!
 
 
