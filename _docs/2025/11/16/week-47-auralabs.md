@@ -8,7 +8,7 @@ cover:
   alt: group photo
 ---
 
-# 🇩🇪 Week 46: A Day in Berlin and the AuraLabs Experience
+# Week 47: The AuraLabs
 
 ## Navigating the Berlin Transit Maze 🤯
 
