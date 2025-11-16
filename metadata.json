@@ -5661,5 +5661,25 @@
       "bgColor": "#8b5f48",
       "titleColor": "--mantine-color-dark-8"
     }
+  },
+  {
+    "file": "2025/11/16/week-46-auralabs",
+    "city": [
+      "Berlin, Germany"
+    ],
+    "locations": [
+      {
+        "latitude": 52.52000659999999,
+        "longitude": 13.404954
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763297833/7883fd8f-5cfc-4ed4-8668-500383c47974_vnknv9.jpg",
+      "alt": "group photo"
+    },
+    "colorSet": {
+      "bgColor": "#9e6a5e",
+      "titleColor": "--mantine-color-grape-3"
+    }
   }
 ]

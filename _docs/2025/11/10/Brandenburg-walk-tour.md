@@ -39,6 +39,8 @@ The food is decent, very typical of German campus meals.
 
 ![Chicken Schnizel](https://res.cloudinary.com/dmq8ipket/image/upload/v1762971574/IMG_8707_rfhbyu.jpg)
 
+![Thai food](https://res.cloudinary.com/dmq8ipket/image/upload/v1763297824/IMG_8783_jaslle.jpg)
+
 ---
 
 ## 🏰 Old Town
@@ -85,6 +87,22 @@ Even the **beer bottles** here are interesting — they have special flip-top ca
 Later, I dropped by **Rewe** and **Rossmann** to grab some supplements, cola beer, and the famous **German-colored Fanta**. 🇩🇪🥤, Surprisingly, the payment supports Alipay and wechat pay.
 
 ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1762850257/IMG_8702_syb6of.jpg)
+
+Raw meat sandwich.
+
+![Mettstulle](https://res.cloudinary.com/dmq8ipket/image/upload/v1763297822/IMG_8771_yvdem4.jpg)
+
+Sushi in the store
+
+![Sushi](https://res.cloudinary.com/dmq8ipket/image/upload/v1763297824/IMG_8772_z15pt8.jpg)
+
+Huge beer area
+
+![beer](https://res.cloudinary.com/dmq8ipket/image/upload/v1763297824/IMG_8779_ne4lwv.jpg)
+
+Different flavor Colas
+
+![cola](https://res.cloudinary.com/dmq8ipket/image/upload/v1763297824/IMG_8777_ujvgux.jpg)
 
 ---
 

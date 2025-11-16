@@ -1,6 +1,6 @@
 ---
 type: post
-category: movie、
+category: movie
 cover: 
     url: https://m.media-amazon.com/images/M/MV5BYjMzZjcwNzItNTYwZC00NzAxLWE3MmMtYmU3ZjdkMWMxNDMwXkEyXkFqcGc@._V1_.jpg
     alt: imdb
