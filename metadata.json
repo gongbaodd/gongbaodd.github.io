@@ -1297,13 +1297,38 @@
     "file": "2019/11/14/movie-supplementary-plan-shawshanks-redemption"
   },
   {
-    "file": "2019/11/15/movie-supplement-plan-farewell-my-concubine"
+    "file": "2019/11/15/movie-supplement-plan-farewell-my-concubine",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BYjMzZjcwNzItNTYwZC00NzAxLWE3MmMtYmU3ZjdkMWMxNDMwXkEyXkFqcGc@._V1_.jpg",
+      "alt": "imdb"
+    },
+    "colorSet": {
+      "bgColor": "#8167ad",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   },
   {
     "file": "2019/11/15/wifi"
   },
   {
-    "file": "2019/11/16/nanshan-museum-forever-changan"
+    "file": "2019/11/16/nanshan-museum-forever-changan",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763295230/012_gixqfn.jpg",
+      "alt": "wushi"
+    },
+    "colorSet": {
+      "bgColor": "#927b6c",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2019/11/17/g-g"
