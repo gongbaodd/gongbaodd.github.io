@@ -2,7 +2,10 @@
 type: post
 category: life
 tag:
-    - hackathon
+  - hackathon
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1763406880/IMG_5967_gkwxrh.jpg
+  alt: card
 ---
 # EdHack 2024
 

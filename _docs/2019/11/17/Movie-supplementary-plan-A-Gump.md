@@ -1,6 +1,9 @@
 ---
 type: post
 category: movie
+cover:
+  url: https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_QL75_UY281_CR2,0,190,281_.jpg
+  alt: poster from imdb
 ---
 
 # 电影补档计划：阿甘正传

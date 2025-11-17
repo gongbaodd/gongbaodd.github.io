@@ -1331,10 +1331,35 @@
     }
   },
   {
-    "file": "2019/11/17/g-g"
+    "file": "2019/11/17/g-g",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763406631/g_g_bs6gfp.jpg",
+      "alt": "the hall"
+    },
+    "colorSet": {
+      "bgColor": "#908479",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
-    "file": "2019/11/17/movie-supplementary-plan-a-gump"
+    "file": "2019/11/17/movie-supplementary-plan-a-gump",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_QL75_UY281_CR2,0,190,281_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#8a7870",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2019/11/18/how-to-make-up-for-id-card-in-shenzhen"
@@ -4552,7 +4577,15 @@
     "file": "2024/11/17/babylonjs-threejs-custom-texture"
   },
   {
-    "file": "2024/11/17/edhack"
+    "file": "2024/11/17/edhack",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763406880/IMG_5967_gkwxrh.jpg",
+      "alt": "card"
+    },
+    "colorSet": {
+      "bgColor": "#9c7a59",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2024/11/17/magustasweet",
