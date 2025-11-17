@@ -11,6 +11,7 @@ tag:
   - VTON
   - RunningHub
   - pokemon
+  - portfolio
 ---
 # Week 46: Exploring WikiData, TriplyDB & VTON
 
