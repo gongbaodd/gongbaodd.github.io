@@ -9,7 +9,7 @@ tag:
     - portfolio
 ---
 
-# Week 48: Strudel REPL 🥐🎵
+# Week 48: Smart Player with Strudel REPL
 
 I started this week trying to make some noise with [Sonic Pi](https://sonic-pi.net/). It's a fantastic tool, but we had a failure to communicate: it speaks Ruby, and I... well, I prefer JavaScript. 🙅‍♂️
 
