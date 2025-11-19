@@ -5734,5 +5734,16 @@
       "bgColor": "#9e6a5e",
       "titleColor": "--mantine-color-grape-3"
     }
+  },
+  {
+    "file": "2025/11/18/entity-db",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763550325/entity_csmuox.png",
+      "alt": "entity-db"
+    },
+    "colorSet": {
+      "bgColor": "#7c7c7c",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   }
 ]
