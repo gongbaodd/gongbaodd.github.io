@@ -11,6 +11,8 @@ tag:
 
 # Week 48: Smart Player with Strudel REPL
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PFYujqUuYeo?si=aoCYGviS8jJbWCSf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 I started this week trying to make some noise with [Sonic Pi](https://sonic-pi.net/). It's a fantastic tool, but we had a failure to communicate: it speaks Ruby, and I... well, I prefer JavaScript. 🙅‍♂️
 
 After some digging, I stumbled upon [Strudel](https://strudel.cc/). It's a code REPL for music generation that brings the Tidal Cycles language right into the browser. The only catch? The [official workshop](https://strudel.cc/de/workshop/getting-started/) is in German. *Entschuldigung?* 🥨
@@ -442,7 +444,3 @@ export default function Strudel() {
 ## The Result 🎉
 
 The rest of the plumbing connects to the LLM logic from my previous EntityDB post. I can now ask for "spooky vibes" or "something for a Parisian cafe," and the tool finds the matching Strudel script and plays it instantly.
-
-Check it out in action:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PFYujqUuYeo?si=aoCYGviS8jJbWCSf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen\>\</iframe\>

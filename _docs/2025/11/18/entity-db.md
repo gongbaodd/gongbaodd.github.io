@@ -17,6 +17,9 @@ cover:
 
 # Build a Browser-Based RAG (No Server Required!) 🤯
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fTAmndZi1Wg?si=ucsvfQs8bj678zew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 Two years ago, I was tinkering with Chrome's built-in AI. Back then, it used the `window.ai` API. Naturally, in true tech fashion, that API has already been deprecated and sent to the graveyard. 🪦
 
 Fast forward to last year: I noticed Google's [MediaPipe](/plan/2024/06/29/week-26-adb-over-wifi) was starting to integrate cool features like text embedding directly into Gemini.
@@ -345,5 +348,3 @@ It's not all sunshine and rainbows.
 ## The Result 🎉
 
 It actually works! A fully browser-based RAG system. No API keys, no cloud bills, just pure local compute power.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fTAmndZi1Wg?si=ucsvfQs8bj678zew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
