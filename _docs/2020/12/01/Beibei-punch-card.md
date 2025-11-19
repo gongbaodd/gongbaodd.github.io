@@ -3,6 +3,9 @@ type: post
 category: travel
 city:
   - Mohe, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1763569063/mmexport1606725104076_ibdohi.jpg
+  alt: selfie
 ---
 
 # 北陲打卡之行

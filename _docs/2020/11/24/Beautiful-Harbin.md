@@ -1,6 +1,11 @@
 ---
 type: post
 category: travel
+city:
+  - Harbin, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1763568466/harbin_b6jzpy.jpg
+  alt: selfie
 ---
 
 # 美丽的哈尔滨

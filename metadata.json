@@ -2788,7 +2788,24 @@
     }
   },
   {
-    "file": "2020/10/30/the-jiaguan-city-planning-museum-which-is-open-for-me"
+    "file": "2020/10/30/the-jiaguan-city-planning-museum-which-is-open-for-me",
+    "city": [
+      "Jiayuguan, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.7713799,
+        "longitude": 98.28707999999999
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763569792/jiayuguan_hcmh1g.png",
+      "alt": "museum"
+    },
+    "colorSet": {
+      "bgColor": "#51759b",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
     "file": "2020/11/01/there-is-no-heating",
@@ -2841,10 +2858,44 @@
     }
   },
   {
-    "file": "2020/11/18/20"
+    "file": "2020/11/18/20",
+    "city": [
+      "Beihai, China"
+    ],
+    "locations": [
+      {
+        "latitude": 21.4811199,
+        "longitude": 109.12008
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763568124/IMG_20201117_142255_1_zdbs2l.jpg",
+      "alt": "selfie on beihai beach"
+    },
+    "colorSet": {
+      "bgColor": "#547c9c",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
-    "file": "2020/11/24/beautiful-harbin"
+    "file": "2020/11/24/beautiful-harbin",
+    "city": [
+      "Harbin, China"
+    ],
+    "locations": [
+      {
+        "latitude": 45.7567307,
+        "longitude": 126.6424173
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763568466/harbin_b6jzpy.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#9d585f",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2020/12/01/beibei-punch-card",
@@ -2856,7 +2907,15 @@
         "latitude": 52.9720899,
         "longitude": 122.53864
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763569063/mmexport1606725104076_ibdohi.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#5574a8",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   },
   {
     "file": "2020/12/03/i-learned-to-ski",
