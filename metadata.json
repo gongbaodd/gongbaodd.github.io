@@ -286,7 +286,56 @@
     "file": "2018/04/29/division-daily-on-the-first-day"
   },
   {
-    "file": "2018/05/25/travel-summary"
+    "file": "2018/05/25/travel-summary",
+    "city": [
+      "Beijing, China",
+      "Handan, China",
+      "Zhengzhou, China",
+      "Wuhan, China",
+      "Yichang, China",
+      "Chongqing, China",
+      "Chengdu, China",
+      "Xining, China",
+      "Lhasa, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      },
+      {
+        "latitude": 36.6255599,
+        "longitude": 114.53918
+      },
+      {
+        "latitude": 34.7472499,
+        "longitude": 113.62493
+      },
+      {
+        "latitude": 30.5927599,
+        "longitude": 114.30525
+      },
+      {
+        "latitude": 30.69177969999999,
+        "longitude": 111.2863313
+      },
+      {
+        "latitude": 29.5656843,
+        "longitude": 106.5511838
+      },
+      {
+        "latitude": 30.5722599,
+        "longitude": 104.0665099
+      },
+      {
+        "latitude": 36.6172899,
+        "longitude": 101.77782
+      },
+      {
+        "latitude": 29.6526199,
+        "longitude": 91.13775
+      }
+    ]
   },
   {
     "file": "2018/05/26/blender"

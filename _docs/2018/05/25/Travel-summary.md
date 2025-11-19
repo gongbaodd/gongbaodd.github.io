@@ -1,6 +1,16 @@
 ---
 type: post
 category: travel
+city:
+    - Beijing, China
+    - Handan, China
+    - Zhengzhou, China
+    - Wuhan, China
+    - Yichang, China
+    - Chongqing, China
+    - Chengdu, China
+    - Xining, China
+    - Lhasa, China
 ---
 
 # 旅行总结
