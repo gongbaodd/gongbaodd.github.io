@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+    - Zhenjiang, China
 cover: 
     url: ./zhenjiang.jpg
     alt: xijindu

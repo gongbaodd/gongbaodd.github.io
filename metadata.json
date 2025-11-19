@@ -2926,16 +2926,59 @@
     "colorSet": {
       "bgColor": "#855d4d",
       "titleColor": "--mantine-color-yellow-2"
-    }
+    },
+    "city": [
+      "Harbin, China"
+    ],
+    "locations": [
+      {
+        "latitude": 45.7567307,
+        "longitude": 126.6424173
+      }
+    ]
   },
   {
-    "file": "2020/12/06/there-is-really-nothing-to-play-in-changchun"
+    "file": "2020/12/06/there-is-really-nothing-to-play-in-changchun",
+    "city": [
+      "Changchun, China"
+    ],
+    "locations": [
+      {
+        "latitude": 43.8160199,
+        "longitude": 125.32357
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763570593/changchun_pt9vgy.jpg",
+      "alt": "那有山"
+    },
+    "colorSet": {
+      "bgColor": "#85725c",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2020/12/09/after-skiing-the-snail-house-has-finished-watching-the-blade-of-ghosts"
   },
   {
-    "file": "2020/12/15/crossfit"
+    "file": "2020/12/15/crossfit",
+    "city": [
+      "Nanjing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 32.0583799,
+        "longitude": 118.79647
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763570967/nanjing_vsy9h0.jpg",
+      "alt": "panorama"
+    },
+    "colorSet": {
+      "bgColor": "#a3886a",
+      "titleColor": "--mantine-color-yellow-2"
+    }
   },
   {
     "file": "2020/12/18/dont-rent-the-interpreter-at-the-zhenjiang-museum",
@@ -2946,7 +2989,16 @@
     "colorSet": {
       "bgColor": "#b46c5c",
       "titleColor": "--mantine-color-red-3"
-    }
+    },
+    "city": [
+      "Zhenjiang, China"
+    ],
+    "locations": [
+      {
+        "latitude": 32.1895899,
+        "longitude": 119.425
+      }
+    ]
   },
   {
     "file": "2020/12/20/yangzhou-worthy-of-his-city",
@@ -2957,7 +3009,16 @@
     "colorSet": {
       "bgColor": "#737bac",
       "titleColor": "--mantine-color-blue-2"
-    }
+    },
+    "city": [
+      "Yangzhou, China"
+    ],
+    "locations": [
+      {
+        "latitude": 32.3935799,
+        "longitude": 119.41269
+      }
+    ]
   },
   {
     "file": "2020/12/24/haproxy-nginx-ss"

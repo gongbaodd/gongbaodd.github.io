@@ -1,9 +1,16 @@
 ---
 type: post
 category: travel
+city:
+  - Nanjing, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1763570967/nanjing_vsy9h0.jpg
+  alt: panorama
 ---
 
 # 牛首山、鸡鸣寺和南京的 CrossFit
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1763570967/nanjing_vsy9h0.jpg)
 
 > 感谢南京同学赠送给我的南京两天白吃白喝之旅~
 

@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+    - Yangzhou, China
 cover:
     url: ./yangzhou.jpg
     alt: yangzhou

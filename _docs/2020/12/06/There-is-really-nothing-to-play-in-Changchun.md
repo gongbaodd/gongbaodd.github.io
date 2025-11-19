@@ -1,6 +1,11 @@
 ---
 type: post
 category: travel
+city:
+    - Changchun, China
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1763570593/changchun_pt9vgy.jpg
+    alt: 那有山
 ---
 
 # 长春还真没什么玩的

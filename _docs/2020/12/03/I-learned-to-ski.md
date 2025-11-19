@@ -1,6 +1,8 @@
 ---
 type: post
 category: travel
+city:
+    - Harbin, China
 cover:
     url: ./ski.jpg
     alt: selfie
