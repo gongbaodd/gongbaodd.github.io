@@ -1368,7 +1368,15 @@
     "file": "2019/11/19/fluentterminal-gitbash"
   },
   {
-    "file": "2019/11/19/movie-supplementary-plan-this-killer-is-not-too-cold"
+    "file": "2019/11/19/movie-supplementary-plan-this-killer-is-not-too-cold",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BNGRkYTNhOWQtYmI0Ni00MjZhLWJmMzAtMTA2Mjg4NGNiNDU0XkEyXkFqcGc@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#787f88",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2019/11/19/window10home-dockerdesktop"
@@ -3466,7 +3474,15 @@
         "latitude": 39.904211,
         "longitude": 116.407395
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763565010/005_dvlokh.jpg",
+      "alt": "千里江山图"
+    },
+    "colorSet": {
+      "bgColor": "#a87c69",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2017/11/22/buildingisomorphicjavascriptapps"

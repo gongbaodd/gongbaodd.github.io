@@ -1,6 +1,9 @@
 ---
 type: post
 category: movie
+cover:
+  url: https://m.media-amazon.com/images/M/MV5BNGRkYTNhOWQtYmI0Ni00MjZhLWJmMzAtMTA2Mjg4NGNiNDU0XkEyXkFqcGc@._V1_.jpg
+  alt: poster from imdb
 ---
 
 # 电影补档计划： 这个杀手不太冷
