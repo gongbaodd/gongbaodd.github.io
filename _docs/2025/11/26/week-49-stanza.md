@@ -7,8 +7,7 @@ cover:
 tag:
     - nlp
 ---
-
-## 🚀 Week 49: Stanza for Speed-Reading - The TL;DR Tool!
+# 🚀 Week 49: Stanza for Speed-Reading - The TL;DR Tool!
 
 ### The Quest for Quick Knowledge 🤓
 
