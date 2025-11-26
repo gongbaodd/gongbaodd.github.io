@@ -1452,10 +1452,26 @@
     "file": "2019/11/25/movie-supplementary-program-my-neighbor-totoro"
   },
   {
-    "file": "2019/11/26/movie-supplement-plan-furnace"
+    "file": "2019/11/26/movie-supplement-plan-furnace",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMTUyNTc3NTg3M15BMl5BanBnXkFtZTgwMzc1MTAzMjE@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#90897e",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
-    "file": "2019/11/26/nanshan-swimel"
+    "file": "2019/11/26/nanshan-swimel",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1764164825/89d0a2e1gy1g9bq8k5cz3j23401k0hdx_mhu0qj.jpg",
+      "alt": "pool"
+    },
+    "colorSet": {
+      "bgColor": "#5b96a2",
+      "titleColor": "--mantine-color-cyan-2"
+    }
   },
   {
     "file": "2019/11/26/ubuntu"
@@ -1836,7 +1852,15 @@
     }
   },
   {
-    "file": "2016/11/26/where-is-the-magic-animal-where-is-the-magic-animal-where-is-the-magic-animal"
+    "file": "2016/11/26/where-is-the-magic-animal-where-is-the-magic-animal-where-is-the-magic-animal",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMjMxOTM1OTI4MV5BMl5BanBnXkFtZTgwODE5OTYxMDI@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#578698",
+      "titleColor": "--mantine-color-blue-2"
+    }
   },
   {
     "file": "2016/12/07/suzuki-canteen"
@@ -5933,5 +5957,16 @@
   },
   {
     "file": "2025/11/19/week-48-strudel"
+  },
+  {
+    "file": "2025/11/26/week-49-stanza",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1764159570/zelda_qwisem.jpg",
+      "alt": "zelda dialogue"
+    },
+    "colorSet": {
+      "bgColor": "#a18e67",
+      "titleColor": "--mantine-color-orange-2"
+    }
   }
 ]

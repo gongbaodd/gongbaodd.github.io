@@ -1,6 +1,9 @@
 ---
 type: post
 category: travel
+cover:
+   url: https://m.media-amazon.com/images/M/MV5BMjMxOTM1OTI4MV5BMl5BanBnXkFtZTgwODE5OTYxMDI@._V1_.jpg
+   alt: poster from imdb
 ---
 
 # 神奇动物在哪里？神奇动物在哪里？神奇动物在哪里

@@ -20,7 +20,6 @@ category: tech
 
 ## 什么是 Node.js
 
-![](http://click-labs.com/wp-content/uploads/2014/05/nodejs_logo_green.jpg)
 
 Node.js 是一个开源的跨平台 javascript 运行时. 
 初期是由 Ryan Dahl 在 2009 年设计开发.
@@ -100,15 +99,11 @@ console.log(a);
 事件轮询是计算机系统的一种机制,
 JavaScript 用的是这种机制来解决单线程运行带来的问题.
 
-![](http://image.beekka.com/blog/201310/2013102001.png)
-
 ## Node.js 小结
 
-![](https://img3.doubanio.com/lpic/s27269296.jpg)
 
 ## 什么是 NPM
 
-![](http://playnode.io/2012/img/profile/aa.jpg)
 
 NPM 是 2010年由 Isaac Z. Schlueter 开发,
 用于 JavaScript 的模块管理.
@@ -194,7 +189,6 @@ npm run test
 
 ## 什么是 Express
 
-![](http://img.kuqin.com/upimg/allimg/140806/2330395116-1.jpg)
 
 Express 是 TJ Holowaychuk 于 2009年开发的, 基于 Node.js 平台，快速、开放、极简的 web 开发框架。
 

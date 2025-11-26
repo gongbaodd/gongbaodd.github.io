@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BMTUyNTc3NTg3M15BMl5BanBnXkFtZTgwMzc1MTAzMjE@._V1_.jpg
+    alt: poster from imdb
 ---
 
 # 电影补档计划：熔炉
 
-![熔炉](https://img9.doubanio.com/view/photo/l/public/p1363250216.webp)
+![熔炉](https://m.media-amazon.com/images/M/MV5BMTUyNTc3NTg3M15BMl5BanBnXkFtZTgwMzc1MTAzMjE@._V1_.jpg)
 
 故事发生在「雾津」这个虚拟化的城市，主角是去残障学校任教的美术老师，男主发现学校里面有校长和老师性侵学生的事情，于是带着三个学生开始检举。最后校长和性侵学生的老师三人只得到了轻微惩罚，被性侵的学生找到性侵他的老师一并卧轨而亡。
 
