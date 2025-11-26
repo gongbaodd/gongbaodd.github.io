@@ -5968,5 +5968,25 @@
       "bgColor": "#a18e67",
       "titleColor": "--mantine-color-orange-2"
     }
+  },
+  {
+    "file": "2025/11/27/pydata",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1764191543/IMG_8902_pfvgni.jpg",
+      "alt": "Selfie at the PyData event"
+    },
+    "colorSet": {
+      "bgColor": "#a17267",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]
