@@ -1519,13 +1519,29 @@
     "file": "2019/12/05/movie-supplementary-program-young-school-fantasy-drift"
   },
   {
-    "file": "2019/12/06/movie-file-plan-city-of-sky"
+    "file": "2019/12/06/movie-file-plan-city-of-sky",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BZjcyMjg2MzktNjg4YS00MjQzLTg0YWQtMjUyZDk2Y2Y0YzZjXkEyXkFqcGc@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#ab8f68",
+      "titleColor": "--mantine-color-cyan-2"
+    }
   },
   {
     "file": "2019/12/08/movie-file-plan-hals-mobile-castle"
   },
   {
-    "file": "2019/12/07/movie-supplementary-plan-the-last-emperor"
+    "file": "2019/12/07/movie-supplementary-plan-the-last-emperor",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BYjIxYWFiMDgtZTgyMy00MjFiLWIyMmEtNGIyZjc1NTRlMzQ3XkEyXkFqcGc@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#a58e5c",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2019/12/09/movie-supplementary-plan-paradise-cinema"
@@ -1863,7 +1879,24 @@
     }
   },
   {
-    "file": "2016/12/07/suzuki-canteen"
+    "file": "2016/12/07/suzuki-canteen",
+    "city": [
+      "Beijing, China"
+    ],
+    "locations": [
+      {
+        "latitude": 39.904211,
+        "longitude": 116.407395
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1765131601/suzuki_itvu93.png",
+      "alt": "suzuki"
+    },
+    "colorSet": {
+      "bgColor": "#8f664f",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2016/12/19/new-female-roommate"

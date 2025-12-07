@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BZjcyMjg2MzktNjg4YS00MjQzLTg0YWQtMjUyZDk2Y2Y0YzZjXkEyXkFqcGc@._V1_.jpg
+    alt: poster from imdb
 ---
 
 # 电影补档计划： 天空之城
 
-![天空の城ラピュタ](https://img1.doubanio.com/view/photo/l/public/p1446261379.webp)
+![天空の城ラピュタ](https://m.media-amazon.com/images/M/MV5BZjcyMjg2MzktNjg4YS00MjQzLTg0YWQtMjUyZDk2Y2Y0YzZjXkEyXkFqcGc@._V1_.jpg)
 
 一个简单的孩子战胜大魔王的故事。
 

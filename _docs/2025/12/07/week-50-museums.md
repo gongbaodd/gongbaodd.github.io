@@ -9,7 +9,7 @@ cover:
     alt: selfie
 ---
 
-# A Journey Through Estonian History and Heritage: Maarjamäe Palace, Sagadi Forest, and Palmse Manor 🏰🌲🎬
+# Week 50: Maarjamäe Palace, Sagadi Forest, and Palmse Manor
 
 ## 🇪🇪 Estonian History Museum (Maarjamäe Palace)
 

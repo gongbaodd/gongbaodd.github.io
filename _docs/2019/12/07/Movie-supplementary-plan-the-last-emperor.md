@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BYjIxYWFiMDgtZTgyMy00MjFiLWIyMmEtNGIyZjc1NTRlMzQ3XkEyXkFqcGc@._V1_.jpg
+    alt: poster from imdb
 ---
 
 # 电影补档计划：末代皇帝
 
-![末代皇帝](https://img3.doubanio.com/view/photo/l/public/p2528667052.webp)
+![末代皇帝](https://m.media-amazon.com/images/M/MV5BYjIxYWFiMDgtZTgyMy00MjFiLWIyMmEtNGIyZjc1NTRlMzQ3XkEyXkFqcGc@._V1_.jpg)
 
 溥仪是淳亲王的大儿子，被慈禧临死前指定为皇帝。溥仪和奶妈到宫里学习规矩，7 年后溥仪才再次见到亲生父母和自己的弟弟溥杰。溥杰告诉溥仪，外面还有一个皇帝，坐着轿车，溥仪只是紫禁城的皇帝罢了，溥仪才意识到自己一直被人瞒着。
 
