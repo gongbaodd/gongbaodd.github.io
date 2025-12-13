@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BYzEyMzQ1OTktZTljZi00OWQzLWE2ZmUtZjQyNzBjYjE1NTc0XkEyXkFqcGc@._V1_.jpg
+    alt: poster from imdb
 ---
 
 # 电影补档计划：何以为家
 
-![何以为家](https://img1.doubanio.com/view/photo/l/public/p2555295759.webp)
+![何以为家](https://m.media-amazon.com/images/M/MV5BYzEyMzQ1OTktZTljZi00OWQzLWE2ZmUtZjQyNzBjYjE1NTc0XkEyXkFqcGc@._V1_.jpg)
 
 赞恩因为姐姐被父母强制嫁给房东而离家出走。在街上认识了被黑户滞留叙利亚的黑人女人收留，照顾女人的孩子。但是女人因为非法移民被抓走，赞恩带着孩子想要以难民身份离开叙利亚，当他回家取身份证明的时候发现姐姐因为难产而死。十二岁的赞恩捅伤姐姐的丈夫，并上法庭状告父母。
 

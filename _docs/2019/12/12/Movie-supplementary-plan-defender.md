@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BMjI2ODg5NDcxN15BMl5BanBnXkFtZTgwMDEzNzIwMTE@._V1_.jpg
+    alt: poster from imdb
 ---
 
 # 电影补档计划： 辩护人
 
-![변호인](https://img3.doubanio.com/view/photo/l/public/p2158166535.webp)
+![변호인](https://m.media-amazon.com/images/M/MV5BMjI2ODg5NDcxN15BMl5BanBnXkFtZTgwMDEzNzIwMTE@._V1_.jpg)
 
 并不了解韩国历史，不敢妄加评论，看的我一脸懵逼，但也确实很感动。韩国打字机很有趣啊，好像是按照笔画输入的。
 

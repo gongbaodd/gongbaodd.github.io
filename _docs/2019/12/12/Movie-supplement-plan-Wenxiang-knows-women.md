@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BNzc5ODg2NzMtYTQ4MS00MWFiLWI5NWMtNWNkODNmZjE0ZGVjXkEyXkFqcGc@._V1_.jpg
+    alt: poster from imdb
 ---
 
 # 闻香识女人
 
-![scent of a woman](https://img1.doubanio.com/view/photo/l/public/p2550757929.webp)
+![scent of a woman](https://m.media-amazon.com/images/M/MV5BNzc5ODg2NzMtYTQ4MS00MWFiLWI5NWMtNWNkODNmZjE0ZGVjXkEyXkFqcGc@._V1_.jpg)
 
 查理在当地的一所私立学校依靠奖学金就读，在图书馆的路上遇见学生恶作剧。事发之后，老师以哈佛就读或被开除做威胁要求查理指正。查理不愿意成为告密者，也不愿意被开除。
 

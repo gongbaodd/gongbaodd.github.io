@@ -1562,13 +1562,37 @@
     "file": "2019/12/11/movie-supplementary-program-fighting-club"
   },
   {
-    "file": "2019/12/12/movie-supplement-plan-wenxiang-knows-women"
+    "file": "2019/12/12/movie-supplement-plan-wenxiang-knows-women",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BNzc5ODg2NzMtYTQ4MS00MWFiLWI5NWMtNWNkODNmZjE0ZGVjXkEyXkFqcGc@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#728196",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
-    "file": "2019/12/12/movie-supplementary-plan-defender"
+    "file": "2019/12/12/movie-supplementary-plan-defender",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMjI2ODg5NDcxN15BMl5BanBnXkFtZTgwMDEzNzIwMTE@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#b08b6e",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
-    "file": "2019/12/13/movie-supplementary-plan-why-think-of-home"
+    "file": "2019/12/13/movie-supplementary-plan-why-think-of-home",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BYzEyMzQ1OTktZTljZi00OWQzLWE2ZmUtZjQyNzBjYjE1NTc0XkEyXkFqcGc@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#866f64",
+      "titleColor": "--mantine-color-blue-2"
+    }
   },
   {
     "file": "2019/12/14/mipad2-windows"
