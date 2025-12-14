@@ -1598,7 +1598,15 @@
     "file": "2019/12/14/mipad2-windows"
   },
   {
-    "file": "2019/12/14/movie-supplement-plan-death-poetry-society"
+    "file": "2019/12/14/movie-supplement-plan-death-poetry-society",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMDYwNGVlY2ItMWYxMS00YjZiLWE5MTAtYWM5NWQ2ZWJjY2Q3XkEyXkFqcGc@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#b39664",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2019/12/16/american-drama-silicon-valley-end",
@@ -6069,6 +6077,17 @@
     "colorSet": {
       "bgColor": "#727372",
       "titleColor": "--mantine-color-yellow-2"
+    }
+  },
+  {
+    "file": "2025/12/14/week-51-pannellum",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1764718465/Scene_6_Tallinn_psetfi.png",
+      "alt": "city view"
+    },
+    "colorSet": {
+      "bgColor": "#507aa1",
+      "titleColor": "--mantine-color-orange-2"
     }
   }
 ]
