@@ -1,6 +1,8 @@
 ---
 type: post
 category: plan
+tag:
+    - retrospective
 ---
 # 2024 Retrospective
 
