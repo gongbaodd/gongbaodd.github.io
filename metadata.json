@@ -1670,7 +1670,15 @@
     "file": "2019/12/20/movie-supplementary-program-save-the-soldier-renn"
   },
   {
-    "file": "2019/12/21/movie-supplement-plan-last-article"
+    "file": "2019/12/21/movie-supplement-plan-last-article",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BNWY3M2NmNDAtYTllMy00ZmFhLTkxMWUtNzU1MDJiYWQ1ZjNlXkEyXkFqcGc@._V1_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#6477a3",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2019/12/21/movie-supplementary-program-hacker-empire",
@@ -4946,7 +4954,15 @@
     }
   },
   {
-    "file": "2024/12/23/week-50-rapidminer"
+    "file": "2024/12/23/week-50-rapidminer",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_FMjpg_UY576_.jpg",
+      "alt": "the substance poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#9c6464",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
     "file": "2024/12/15/week-49-android-xr"
@@ -6089,5 +6105,8 @@
       "bgColor": "#507aa1",
       "titleColor": "--mantine-color-orange-2"
     }
+  },
+  {
+    "file": "2025/12/21/week-52-2025-retrospective"
   }
 ]
