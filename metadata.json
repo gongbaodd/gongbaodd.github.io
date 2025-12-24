@@ -816,7 +816,15 @@
     "file": "2018/12/16/postman-prescript"
   },
   {
-    "file": "2018/12/24/18"
+    "file": "2018/12/24/18",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1766576900/IMG_20181222_185720_pirtwa.jpg",
+      "alt": "Hong Kong street view"
+    },
+    "colorSet": {
+      "bgColor": "#837e74",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2018/12/25/css"
