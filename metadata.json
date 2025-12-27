@@ -6127,5 +6127,16 @@
       "bgColor": "#a1707c",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2025/12/27/week-53-2d-3d",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1766840888/Screenshot_2025-12-27_150327_fuqd9h.png",
+      "alt": "test image"
+    },
+    "colorSet": {
+      "bgColor": "#9d8a62",
+      "titleColor": "--mantine-color-dark-8"
+    }
   }
 ]
