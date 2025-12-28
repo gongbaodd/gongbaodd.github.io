@@ -52,7 +52,8 @@ Unfortunately, due to hardware limitations, I still couldn’t successfully conv
 That said, I did learn something important 🧠: **AI-based 2D-to-3D video conversion is usually a two-step process**:
 
 1. Predict a **depth map**
-2. Combine the depth map with the original video to generate a **side-by-side 3D video**
+2. Combine the depth map with the original video to generate a left scene and a right scene
+3. Using **inpainting model** to mask the holes of the newly generated video then combine the two scenes into side by side 3D video.
 
 ---
 
@@ -101,6 +102,7 @@ You’ll end up with something like this:
    * The generated depth map
    * The output directory
 4. Change the encoder to a **common, well-supported one**
+5. Change the **DOF strength** to zero
 
 If the output video doesn’t play on **Quest 3**, you can re-encode it using `ffmpeg`:
 
@@ -111,7 +113,7 @@ ffmpeg -i input.mp4 -c:v libx265 -crf 20 -preset medium -c:a aac -b:a 192k outpu
 Also you can use the GPU if you are using a Nvidia GPU.
 
 ```shell
-ffmpeg -i .\out-rush_LRF_Full_SBS_audio.mp4 -c:v hevc_nvenc -preset p5 -cq 20 -c:a aac -b:a 192k output_HEVC_NVENC.mp4
+ffmpeg -i input.mp4 -c:v hevc_nvenc -preset p5 -cq 20 -c:a aac -b:a 192k output_HEVC_NVENC.mp4
 ```
 
 ---
