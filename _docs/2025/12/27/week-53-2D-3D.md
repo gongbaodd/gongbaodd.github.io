@@ -108,6 +108,12 @@ If the output video doesn’t play on **Quest 3**, you can re-encode it using `f
 ffmpeg -i input.mp4 -c:v libx265 -crf 20 -preset medium -c:a aac -b:a 192k output_HEVC.mp4
 ```
 
+Also you can use the GPU if you are using a Nvidia GPU.
+
+```shell
+ffmpeg -i .\out-rush_LRF_Full_SBS_audio.mp4 -c:v hevc_nvenc -preset p5 -cq 20 -c:a aac -b:a 192k output_HEVC_NVENC.mp4
+```
+
 ---
 
 Overall, it’s exciting to see how **accessible 2D-to-3D conversion** has become 🤩. What used to feel like sci-fi is now just a few clicks (and some GPU pain) away. Can’t wait to see where this goes next 🚀🕶️
