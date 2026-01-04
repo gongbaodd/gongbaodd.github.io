@@ -6138,5 +6138,16 @@
       "bgColor": "#9d8a62",
       "titleColor": "--mantine-color-dark-8"
     }
+  },
+  {
+    "file": "2026/01/04/week-0-gym",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1767527566/WhatsApp_Image_2026-01-04_at_13.50.09_ill1ew.jpg",
+      "alt": "doodle"
+    },
+    "colorSet": {
+      "bgColor": "#898883",
+      "titleColor": "--mantine-color-orange-2"
+    }
   }
 ]
