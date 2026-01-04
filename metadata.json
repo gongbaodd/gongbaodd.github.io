@@ -3797,7 +3797,15 @@
     "file": "2017/12/25/webar"
   },
   {
-    "file": "2021/01/04/alice-in-the-country-of-dai"
+    "file": "2021/01/04/alice-in-the-country-of-dai",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BYmMzODA4M2MtMjBmNC00YjFhLTg4NzgtODgyNzE4NWQxMThmXkEyXkFqcGc@._V1_FMjpg_UY337_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#92705a",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2017/12/31/rewind"

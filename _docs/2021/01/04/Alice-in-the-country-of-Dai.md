@@ -1,6 +1,9 @@
 ---
 type: post
 category: tv
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BYmMzODA4M2MtMjBmNC00YjFhLTg4NzgtODgyNzE4NWQxMThmXkEyXkFqcGc@._V1_FMjpg_UY337_.jpg
+    alt: poster from imdb
 ---
 
 # 弥留之国的爱丽丝
