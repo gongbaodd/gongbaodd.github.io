@@ -6157,5 +6157,16 @@
       "bgColor": "#898883",
       "titleColor": "--mantine-color-orange-2"
     }
+  },
+  {
+    "file": "2026/01/09/week-1-pcvr",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1767957551/Home_2x_lmfsvh.png",
+      "alt": "Steam VR"
+    },
+    "colorSet": {
+      "bgColor": "#7a9172",
+      "titleColor": "--mantine-color-cyan-2"
+    }
   }
 ]
