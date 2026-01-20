@@ -6168,5 +6168,25 @@
       "bgColor": "#7a9172",
       "titleColor": "--mantine-color-cyan-2"
     }
+  },
+  {
+    "file": "2026/01/15/warsaw",
+    "city": [
+      "Warsaw, Poland"
+    ],
+    "locations": [
+      {
+        "latitude": 52.2296756,
+        "longitude": 21.0122287
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768943804/67F26F9E-3147-4F3B-9B95-79B71AEC0B31_pjhw5w.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#617e96",
+      "titleColor": "--mantine-color-blue-2"
+    }
   }
 ]
