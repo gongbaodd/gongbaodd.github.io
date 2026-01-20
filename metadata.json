@@ -6188,5 +6188,85 @@
       "bgColor": "#617e96",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2026/01/17/berghain",
+    "city": [
+      "Berlin, Germany"
+    ],
+    "locations": [
+      {
+        "latitude": 52.52000659999999,
+        "longitude": 13.404954
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768950768/IMG_9290_ysf6vq.jpg",
+      "alt": "lighter"
+    },
+    "colorSet": {
+      "bgColor": "#963502",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2026/01/18/cologn",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768951561/IMG_9346_uhlkbh.jpg",
+      "alt": "church"
+    },
+    "colorSet": {
+      "bgColor": "#8b7d68",
+      "titleColor": "--mantine-color-dark-8"
+    },
+    "city": [
+      "Cologne, Germany"
+    ],
+    "locations": [
+      {
+        "latitude": 50.937531,
+        "longitude": 6.9602786
+      }
+    ]
+  },
+  {
+    "file": "2026/01/19/brussel",
+    "city": [
+      "Brussel, Belgium"
+    ],
+    "locations": [
+      {
+        "latitude": 50.8260453,
+        "longitude": 4.3802052
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768952113/IMG_9420_hmouw0.jpg",
+      "alt": "comic museum"
+    },
+    "colorSet": {
+      "bgColor": "#956e4f",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2026/01/21/paris",
+    "city": [
+      "Paris, France"
+    ],
+    "locations": [
+      {
+        "latitude": 48.8575475,
+        "longitude": 2.3513765
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768952204/IMG_9600_al0mlh.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#b4a460",
+      "titleColor": "--mantine-color-orange-2"
+    }
   }
 ]
