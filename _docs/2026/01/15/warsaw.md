@@ -8,7 +8,7 @@ cover:
     alt: selfie
 ---
 
-# Week 2: Warsaw
+# Week 2: Warsaw, an uprising cold city
 
 I am officially beginning my "expensive" journey from Tallinn to Porto using only green travel (buses and trains). On the 12th, I was still debating when to leave when I noticed a FlixBus heading to Warsaw in just a few hours. I hesitated—it’s a 15-hour journey, and sadly, there is no sleeper train option. However, I realized I couldn't stop in every single city if I wanted to make progress. I hit "book" and began the trek.
 
