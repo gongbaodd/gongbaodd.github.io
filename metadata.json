@@ -2019,7 +2019,15 @@
     "file": "2020/01/16/rust"
   },
   {
-    "file": "2020/01/22/movie-supplementary-plan-confession"
+    "file": "2020/01/22/movie-supplementary-plan-confession",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BY2Q2MzNiNzctM2VjOC00YmU5LWI3YWYtYWUwNzFjYmViOTlkXkEyXkFqcGc@._V1_FMjpg_UY337_.jpg",
+      "alt": "poster from imdb"
+    },
+    "colorSet": {
+      "bgColor": "#8e686b",
+      "titleColor": "--mantine-color-grape-3"
+    }
   },
   {
     "file": "2020/01/28/spotify"

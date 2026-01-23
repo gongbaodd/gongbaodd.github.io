@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BY2Q2MzNiNzctM2VjOC00YmU5LWI3YWYtYWUwNzFjYmViOTlkXkEyXkFqcGc@._V1_FMjpg_UY337_.jpg
+    alt: poster from imdb
 ---
 
 # 电影补档计划： 告白
 
-![告白](https://img9.doubanio.com/view/photo/l/public/p689520756.webp)
+![告白](https://m.media-amazon.com/images/M/MV5BY2Q2MzNiNzctM2VjOC00YmU5LWI3YWYtYWUwNzFjYmViOTlkXkEyXkFqcGc@._V1_FMjpg_UY337_.jpg)
 
 松隆子饰演的女教师女儿被两个学生残忍虐杀，然而两个男生却因为少年保护而幸免于责罚。教师离职前向全班宣布她在男生的牛奶里加入艾滋病血液。
 
