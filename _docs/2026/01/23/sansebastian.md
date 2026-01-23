@@ -48,6 +48,7 @@ I used **Doubao (豆包)** and **Gemini** as my personal tour guides while wande
 
 **The verdict?** Doubao is more chatty with information, while Gemini feels more intuitive to interact with. However, you always have to fact-check! Doubao tried to convince me a regular tree was a sculpture. I’m pretty sure it was just... a tree. 🌳😂
 
+And the network signal was not very stable. Sometime you lost connection while shopping. 🛍️
 
 ---
 
