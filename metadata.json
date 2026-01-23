@@ -6276,5 +6276,30 @@
       "bgColor": "#b4a460",
       "titleColor": "--mantine-color-orange-2"
     }
+  },
+  {
+    "file": "2026/01/23/sansebastian",
+    "city": [
+      "Hendaye, France",
+      "San Sebastián, Spain"
+    ],
+    "locations": [
+      {
+        "latitude": 43.359399,
+        "longitude": -1.766148
+      },
+      {
+        "latitude": 43.318237,
+        "longitude": -1.9817051
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769200027/IMG_9827_igipla.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#a8845a",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   }
 ]
