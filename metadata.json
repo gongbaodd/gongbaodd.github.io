@@ -6301,5 +6301,60 @@
       "bgColor": "#a8845a",
       "titleColor": "--mantine-color-indigo-2"
     }
+  },
+  {
+    "file": "2026/01/24/salamanca",
+    "city": [
+      "Burgos, Spain",
+      "Palencia, Spain",
+      "Salamanca, Spain"
+    ],
+    "locations": [
+      {
+        "latitude": 42.3504659,
+        "longitude": -3.689354499999999
+      },
+      {
+        "latitude": 42.0096857,
+        "longitude": -4.5288016
+      },
+      {
+        "latitude": 40.9701039,
+        "longitude": -5.663539699999999
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769375891/IMG_0111_q3s6me.jpg",
+      "alt": "generated Salamanca"
+    },
+    "colorSet": {
+      "bgColor": "#9b745c",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2026/01/25/porto",
+    "city": [
+      "Vilar Formoso, Portigal",
+      "Porto, Portugal"
+    ],
+    "locations": [
+      {
+        "latitude": 40.6148457,
+        "longitude": -6.837111999999999
+      },
+      {
+        "latitude": 41.1579438,
+        "longitude": -8.629105299999999
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769377036/IMG_0222_dgcpsg.jpg",
+      "alt": "selfie in porto"
+    },
+    "colorSet": {
+      "bgColor": "#a97f57",
+      "titleColor": "--mantine-color-dark-8"
+    }
   }
 ]
