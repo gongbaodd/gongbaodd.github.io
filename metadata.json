@@ -3269,7 +3269,15 @@
         "latitude": 38.8512899,
         "longitude": 121.26208
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769382525/IMGP2897_hzykms.jpg",
+      "alt": "lvshun"
+    },
+    "colorSet": {
+      "bgColor": "#8e8479",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2020/08/15/the-finale-of-shies-agent-grandpa-qinghui",
