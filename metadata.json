@@ -3300,7 +3300,15 @@
         "latitude": 38.9139899,
         "longitude": 121.6147
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769413686/002_gzpnzg.jpg",
+      "alt": "dalian"
+    },
+    "colorSet": {
+      "bgColor": "#80827d",
+      "titleColor": "--mantine-color-gray-2"
+    }
   },
   {
     "file": "2017/02/01/the-forbidden-city-hiding-people",
@@ -6364,5 +6372,67 @@
       "bgColor": "#a97f57",
       "titleColor": "--mantine-color-dark-8"
     }
+  },
+  {
+    "file": "2026/02/01/lisbon",
+    "city": [
+      "Lisbon, Portugal"
+    ],
+    "locations": [
+      {
+        "latitude": 38.7222524,
+        "longitude": -9.1393366
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769988546/IMG_0562_mruafb.jpg",
+      "alt": "SB"
+    },
+    "colorSet": {
+      "bgColor": "#a08846",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2026/02/01/lusofona",
+    "city": [
+      "Porto, Portugal"
+    ],
+    "locations": [
+      {
+        "latitude": 41.1579438,
+        "longitude": -8.629105299999999
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769988101/DE77EA9A-52EA-4329-B10A-9CB37AB0CD84_gwbnl8.jpg",
+      "alt": "meme"
+    },
+    "colorSet": {
+      "bgColor": "#a5715d",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
+    "file": "2026/02/02/evora",
+    "city": [
+      "Evora, Portugal",
+      "Merida, Spain",
+      "Madrid, Spain"
+    ],
+    "locations": [
+      {
+        "latitude": 38.571431,
+        "longitude": -7.913501999999999
+      },
+      {
+        "latitude": 38.9394272,
+        "longitude": -6.365157
+      },
+      {
+        "latitude": 40.41672790000001,
+        "longitude": -3.7032905
+      }
+    ]
   }
 ]
