@@ -3320,7 +3320,15 @@
         "latitude": 39.904211,
         "longitude": 116.407395
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769991147/P70201-143804_htfmct.jpg",
+      "alt": "forbidden city"
+    },
+    "colorSet": {
+      "bgColor": "#8a757a",
+      "titleColor": "--mantine-color-lime-2"
+    }
   },
   {
     "file": "2017/02/03/node-302"
