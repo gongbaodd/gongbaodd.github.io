@@ -8,16 +8,39 @@ city:
     - Lisbon, Portugal
 ---
 
-# Lisbon earth quake experience
+# Lisbon: Quakes, Rain
 
-Yes, I know it will be 100% pecent raining in Lisbon, so I only planed for one day. The artwork of the subway of Lisbon is amazing. Every stop hhas its style. There is no GPS in the subway. I was nervously looking at the information screen in case of wrong stop. In Lisbon, all the transportation supports bank card payment, although, when the card is used as bus card, the whole day, it can not used for other payment...
+I knew the forecast called for 100% rain, so I kept my Lisbon itinerary tight with just a one-day plan. Despite the weather, the city found ways to surprise me! 🇵🇹
 
-I went to Porta de Embarque Doca da Marinha, a free view of Lisbon, anyway, beacuse of the rain, I barely see anything. I think it is not better than the view near Igreja de Sao Roque, although you can not see the sea, you can pass by Bica on the way.
+### 🚇 Art Underground
 
-There is a food court called time out. Nice place for singular traveler like me.
+The artwork in the Lisbon subway is absolutely stunning—every single stop has its own unique style! 🎨 One quick tip: there is **no GPS signal** in the metro. I found myself glued to the information screens, nervously making sure I didn't miss my stop. 😅
 
-Then I went to the earth quake museum, the main reason of the trip. The ticket was 26 euros, quite expensive, but it is worhy. The museum was an escape room gamification of Lisbon's 1755 earth quake. Visitors go inside(a time machine) to collect docuemnts of rebuilding the city. There is a limited visit of each hour the devices in the musuem is disney level so it is totally worth visiting.
+**Traveler’s Note on Payments:** 💳
+While Lisbon’s transportation supports bank card payments (contactless), be careful! If you use your card as a transit pass, it may be locked out of making other types of purchases for the rest of the day.
 
-Jeronimos Monastery and Belem Tower are nearby, but they are both under maintaining now. As I went back, there was a parade which cut down all the buses, ahh a parade under such storm.
+---
 
+### 🏛️ Views and Food
 
+I headed to **Porta de Embarque Doca da Marinha** for a free view of the city, but the rain was so thick I could barely see a thing! 🌫️ Honestly, I think the view near **Igreja de São Roque** is better. Even though you don't see the sea, the walk takes you right past the iconic **Bica** neighborhood. 🚠
+
+For lunch, I hit up **Time Out Market**. It’s a fantastic food court and a perfect spot for solo travelers like me to grab a high-quality bite. 🍲
+
+---
+
+### 🌋 The Earthquake Museum (Quake)
+
+The main reason for my trip was the **Earthquake Museum**, and it did not disappoint! 🎟️ At **€26**, the ticket felt a bit pricey, but it was worth every cent.
+
+It’s essentially a gamified "escape room" experience centered around the Great Lisbon Earthquake of 1755. You step into a "time machine" ⏳ to collect historical documents for rebuilding the city. The production value is **Disney-level** quality. Because they limit the number of visitors per hour, it never feels overcrowded. Truly a must-see!
+
+In the middle of the visiting, I received the government's message about huge storm and flood. Makes the experience go to another level.
+
+---
+
+### 🏰 A Rainy Finale
+
+I tried to visit the **Jerónimos Monastery** and **Belém Tower**, but unfortunately, both are currently undergoing maintenance. 🛠️
+
+To top off the day, a parade broke out just as I was heading back. It completely cut off the bus routes—a full-on parade in the middle of a storm! ☔️ Only in Lisbon!

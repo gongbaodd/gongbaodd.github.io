@@ -8,30 +8,52 @@ city:
     - Porto, Portugal
 ---
 
-# Week 4: Study in Lusofona University
+# Week 4: Studying at Lusófona University 🇵🇹
 
-We are in the new room of Lusofona University. The classroom we were in have a great view of one of Porto's sightseeing, Mariadouro.
+We are settled into our new room at **Lusófona University**. The classroom offers a stunning view of one of Porto’s most famous sights, the Miradouro. 🏫✨
 
-The school generously provides free cafe and lunch. So that we can taste the authentic Portugal meals.
+The school has been very generous, providing free coffee and lunch so we can taste authentic Portuguese meals. ☕️🍴
 
-First class, esstential usage of QGIS. This is the point of me choosing this study. As I always wanted to load the free Tallinn map and Hong Kong maps, but I do not know how. This course give me exactly what I want.
+### Mastering QGIS and Python 🗺️💻
 
-The portugal foods are too sweet. Although, now I kind of getting used to that, I still hope that at least include some vegetables. Since I will be staying for one week. I ordered one week pass in the Fox Gym. Because of football. Portugal has its culture on working out. There are big screens in the gym that shows the football match.
+The first class covered the essential usage of **QGIS**. This was actually the main reason I chose this study! I’ve always wanted to load free maps of Tallinn and Hong Kong but didn't know how; this course gave me exactly the skills I needed. 📍
 
-There were two storms while I stayed in Portugal. They totally ruined many of my plans. Where I live is about 10 min to the school. It is quite convinient. 2km to the gym, A lidl cross road. 2km from the city center, so it is not so noisy at night. Nearby, there is a cemetery, on a non rainy morning, the view is spectecular.
+On the second day, we dived into **Machine Learning with Python**. Since I have experience with [RapidMiner](/plan/2024/12/23/week-50-RapidMiner), it felt like a smooth transition—just switching to a different tool for the same logic. 🤖
 
-The second day, we studied machine learning with python. Because I used [rapid miner](/plan/2024/12/23/week-50-RapidMiner) before, it was like just change one tool.
+### Life in Porto: Gyms, Storms, and Sugar 🍬🌦️
 
-There is a gap between these two storms, we can finally see some sun lights. We made a plan to do a wine tasting. And a boat trip across the river. The last two days, we were asked to make a project plan based on Geographical data and machine learning.
+Portuguese food is a bit too sweet for my palate. While I’m starting to get used to it, I still find myself wishing for more vegetables! 🥗
 
-Finally we present our solution based on Zero Hunger. Our solution was using the satellite images(rain, temperature, moisture, color) and history disease data to make a CNN model to predict corps' disease. However, I got a disagreement with my teammates. My team think we should focus on improving the quantity of the corps in order to solve hunger problem. I think mordern hunger problem is distribution problem, what should improve is the road, the storage and the contact from farmers to the sellers, just improve the quantity will lower the corp price which is no good for the farmers.
+Since I’m here for a week, I grabbed a pass at **Fox Gym**. Portugal has a huge workout culture, likely fueled by their love for football ⚽️—the gym even has big screens showing matches while you train! 🏋️‍♂️
 
-It was interesting that both Europeans and Africans do not get the idea of "谷贱伤农", low grain prices hurt the farmers, which is a simple agriculture economy problem that every Chinese child was taught when we were young. Everyone has to eat, so the grains' requirement is always staying in a constant value. If you suddenly improve the quantity, whereas the requirement unchange, the price will go low. And our project is to ask farmers to pay to cut down their revenue. 
+The weather was a challenge, though. Two storms hit during my stay, ruining many of my outdoor plans. However, my location is very convenient:
 
-However, crop disease is a key reason causing famen. Maybe we can focus not on the quantities but in case of incident. Or maybe improve the quality, as many food will use less chemicals, they will be healthier than those with chemicals to prevent insects.
+* **School:** 10-minute walk.
+* **Gym:** 2km away (with a Lidl right across the road).
+* **City Center:** 2km away (far enough to be quiet at night).
+* **Nearby:** A local cemetery which, on a non-rainy morning, offers a spectacular view. ☁️🌅
 
-My original plan was to use Geographical data for cities to build wind road. As cities have hot islands. And data center is becomming more and more common. If we order these heat zones correctly, we should build a wind road. The road can exzhaust waste air, cool down the city and provide clean energy solutions. My target user should be the resident companies that wish to build infustructures in the city. The solution should be a great proof for them to make their plans. 
+### The Project: Data, Hunger, and Economics 🌾📊
+
+Between the storms, the sun finally came out, allowing us to enjoy some wine tasting and a boat trip across the river. 🍷🛥️
+
+For the final two days, we worked on a project plan combining **Geographical Data** and **Machine Learning**. Our team presented a solution for **Zero Hunger**, using satellite imagery (rain, temperature, moisture, color) and historical disease data to create a **CNN model** to predict crop diseases. 🛰️
+
+I did have a bit of a disagreement with my teammates, though:
+
+* **Their View:** Focus on increasing crop quantity to solve hunger.
+* **My View:** Modern hunger is a **distribution problem**. We should improve roads, storage, and the direct link between farmers and sellers. 🚚
+
+I found it fascinating that both my European and African teammates weren't familiar with the concept of **"谷贱伤农"** (low grain prices hurt the farmers). This is a basic agricultural economic principle taught to Chinese children: grain demand is relatively constant. If you suddenly spike the supply without a change in demand, prices crash. Our project was essentially asking farmers to pay for a tool that might lower their total revenue. 📉
+
+Instead, I suggested focusing on **preventing total loss** from incidents or **improving quality** (using fewer chemicals), which makes the produce healthier and more valuable. 🌿
+
+### Looking Forward 🌬️🏢
+
+My original vision was to use Geographical data to map **"wind roads"** in cities. As data centers become more common and urban heat islands grow, these wind corridors could exhaust waste air, cool the city, and provide clean energy solutions. My target users would be companies looking to build sustainable urban infrastructure.
+
+### A Final Seafood Treat 🦐
+
+On my last day in Porto, I bought a pack of seafood for only **4 euros**. It is incredibly cheap here! You couldn't even buy a pack of shrimp in Tallinn for that price. 🇪🇪➡️🇵🇹
 
 ![group photo](https://res.cloudinary.com/dmq8ipket/image/upload/v1769988438/9304810c-c9c3-4598-82ba-60406e589b3f_zssnfb.jpg)
-
-Last day in Porto, I bought a pack of seafood, it was so cheap here in Portugal, only cost 4 euros. You can't buy a pack of shrimp in Tallinn in 4 euros.

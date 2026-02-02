@@ -3,20 +3,26 @@ type: post
 category: tech
 ---
 
-# Panorama Planet Effect
+# Creating the "Tiny Planet" Effect
 
-As I am travelling I have collected so many panorama pictures. So I decide to make a planet effect on these panorama photos.
+While traveling lately, I’ve been hoarding panorama shots like souvenirs. 📸 Looking at them all, I decided it was time to bring back the **"Planet Effect"** (Stereographic Projection) to give these landscapes a literal spin.
 
-9 years ago, I have an insta 360 camera that can catch panorama pictures and they provide planet effect. Nowadays I use pixel camera. However, pixcel camera can not include myself. 
+### The Evolution of the Orbit 🔄
+About 9 years ago, I used an **Insta360** camera. It was seamless—it captured everything and generated that perfect tiny planet effect instantly. Nowadays, I’ve switched to my **Pixel camera**. The quality is great, but there’s a catch: it’s nearly impossible to include myself in the shot without looking like a glitch in the matrix! 🥴
 
-To make planet effect is simple, 1. provide square canvas. 2. Filter -> Distort -> Polar coordinates.
+### The Manual Method 🛠️
+In theory, making a tiny planet is a simple two-step recipe in Photoshop:
+1.  Resize the image into a **square canvas**.
+2.  Apply **Filter -> Distort -> Polar Coordinates**.
 
-However I got problem in using AI to draw me standing in the center.
+### The AI Struggle 🤖
+Since I couldn't get myself in the frame, I figured I’d let AI handle the heavy lifting. I tried to "Inpaint" myself into the center of the planet, but the results were... questionable:
 
-Gemini messed up my face and my position.
+* **Gemini:** Totally lost the plot on my face and positioning. 🎭
+* **Doubao:** Messed up my clothes and features. 👕
+* **ChatGPT (DALL-E):** Got the face somewhat okay, but the background became a chaotic mess. 🌀
 
-Doubao messed up my clothes and face.
+### The Verdict ⚖️
+It turns out that AI still struggles with the extreme distortion of polar coordinates. It doesn't quite "understand" that the bottom of the image is a single point and the top is a full circle. 
 
-ChatGPT, a little difference on my face, but he background is totally messed up.
-
-It seems that more manual steps are needed on make effects on it.
+It looks like if I want to be the king of my own little world, I’m going to need some old-fashioned manual editing skills. 🎨

@@ -7,18 +7,26 @@ city:
     - Madrid, Spain
 ---
 
-# Evora, Merida, Madrid: A visit to the ancient Rome
+### Evora, Mérida, Madrid: Chasing Ancient Rome
 
-Fleeing from the heavy rain from Lisbon, I took a Flixbus and arrived Evora. Evora is a small city, at 9 P.M. the city is already in peace. All the building was red roof white wall with yellow color as decoration. They look like those houses in Tibet. As I aim to see the skul church, and the light was not on. The city was covered a little scary heresy style to me.
+**Fleeing the Storm to Evora** 🌧️
+Escaping the heavy rains of Lisbon, I hopped on a Flixbus and landed in **Evora**. By 9:00 PM, the city was draped in a deep, quiet peace. The architecture caught my eye immediately: white walls, red roofs, and bright yellow trim. It actually reminded me of the traditional houses in Tibet! 🏘️
 
-In the morning, the weather is lovely, I went to the ancient Rome temple then went to the skul church. The bones are from black death, this church is to let people find peace from death. Now the church is half church and half musuem. There is a platform in the church, where you can see the whole view of the city.
+I went looking for the famous **Chapel of Bones** (Capela dos Ossos), but the lights were off. In the dark, the city took on a slightly eerie, "heresy-style" vibe that was a bit chilling! 👻
 
-As I left the church, the weather turns bad. ALthough I know it will rain, it was still a little surprising because it turned into hail.
+**Bones, Temples, and... Hail?** 🦴
+The next morning brought beautiful weather. I visited the **Roman Temple of Evora** 🏛️ before heading back to the Bone Chapel. Built with bones from the Black Death era, the chapel is intended to help visitors find peace with mortality. Today, it’s half-church, half-museum, featuring a rooftop platform with a stunning panoramic view of the city. 🏰
 
-I wet my whole body as I got to the bus station, the rain stopped. The tart in Evora is more delicious than in Lisbon, they use yogurt to make them. It was very delicous, I am not sure it is because of the storm or the yogurt.
+As I left, the weather turned on a dime. I expected rain, but I got **hail** instead! 🌨️ I arrived at the bus station soaking wet, just as the sun decided to come back out.
 
-As I went into Spain, the old Spain filter came back. The world changed from blue storm into red and yellow nostalgia film. Then I arrived Merida. Merida was the capital of the Ibiria penisulla. There are ancient Roman relics everywhere in the city. 
+> **Travel Tip:** The tarts in Evora are a must-try! Unlike the Lisbon version, they use yogurt, making them incredibly creamy. I’m not sure if it was the yogurt or the post-storm hunger, but they were the best I've had. 🥧😋
 
-The cost in Merida is quite cheap, I had two meals in the Cafe in the train station in total not more than 10 euros. And the bathroom doesn't charge you money!
+**The "Old Spain" Filter** 🎞️
+Crossing into Spain felt like a scene change in a movie. The "blue storm" vibe of Portugal vanished, replaced by the warm, red-and-yellow nostalgia of a vintage film. I arrived in **Mérida**, once the capital of the Roman province of Lusitania. Roman relics are everywhere—it’s like an open-air museum! 🏛️
 
-At the time I am writing the post, I am on my trip to Madrid. Hope there will be no more unexpected on the trip.
+Mérida is also incredibly budget-friendly. I had two full meals at the train station café for under €10 total. Plus, the bathroom there was free—a small but huge win for any traveler! 💰🙌
+
+**The AI Betrayal in Madrid** 🤖🏾
+Of course, it wouldn't be a trip without a little chaos. My train to **Madrid** was 30 minutes late, but the real trouble started at the metro station. I asked an AI if I was on the right platform; it gave me a confident "Yes."
+
+Halfway through the ride, I realized I was heading the complete opposite direction! When I confronted the AI, it "apologized" and directed me to a transfer station... that didn't actually allow transfers. 🤦‍♂️ After a long detour, I finally made it to my hostel an hour late.
