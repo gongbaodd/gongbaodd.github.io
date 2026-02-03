@@ -12,9 +12,17 @@ city:
 
 We are settled into our new room at **Lusófona University**. The classroom offers a stunning view of one of Porto’s most famous sights, the Miradouro. 🏫✨
 
+![Food](https://res.cloudinary.com/dmq8ipket/image/upload/v1770115729/IMG_0233_knlo4n.jpg)
+
 The school has been very generous, providing free coffee and lunch so we can taste authentic Portuguese meals. ☕️🍴
 
+![Empire Mcdonald](https://res.cloudinary.com/dmq8ipket/image/upload/v1770116640/IMG_0200_rqqech.jpg)
+
+There is a grand Mcdonald around city hall. It is quite royal to have burger inside.
+
 ### Mastering QGIS and Python 🗺️💻
+
+![GIS](https://res.cloudinary.com/dmq8ipket/image/upload/v1770115782/IMG_0234_e1ng3d.jpg)
 
 The first class covered the essential usage of **QGIS**. This was actually the main reason I chose this study! I’ve always wanted to load free maps of Tallinn and Hong Kong but didn't know how; this course gave me exactly the skills I needed. 📍
 
@@ -26,6 +34,8 @@ Portuguese food is a bit too sweet for my palate. While I’m starting to get us
 
 Since I’m here for a week, I grabbed a pass at **Fox Gym**. Portugal has a huge workout culture, likely fueled by their love for football ⚽️—the gym even has big screens showing matches while you train! 🏋️‍♂️
 
+![storm](https://res.cloudinary.com/dmq8ipket/image/upload/v1770116227/IMG_0276_ne1ztc.jpg)
+
 The weather was a challenge, though. Two storms hit during my stay, ruining many of my outdoor plans. However, my location is very convenient:
 
 * **School:** 10-minute walk.
@@ -33,11 +43,20 @@ The weather was a challenge, though. Two storms hit during my stay, ruining many
 * **City Center:** 2km away (far enough to be quiet at night).
 * **Nearby:** A local cemetery which, on a non-rainy morning, offers a spectacular view. ☁️🌅
 
+![cemetery](https://res.cloudinary.com/dmq8ipket/image/upload/v1770116333/IMG_0255_e5cpv7.jpg)
+
 ### The Project: Data, Hunger, and Economics 🌾📊
+
+![Porto](https://res.cloudinary.com/dmq8ipket/image/upload/v1770115896/IMG_0312_m1g4bc.jpg)
 
 Between the storms, the sun finally came out, allowing us to enjoy some wine tasting and a boat trip across the river. 🍷🛥️
 
+![wine tasting](https://res.cloudinary.com/dmq8ipket/image/upload/v1770115967/F2B66031-68BD-45A8-8810-EF8F427B6255_xy6nto.jpg)
+
 For the final two days, we worked on a project plan combining **Geographical Data** and **Machine Learning**. Our team presented a solution for **Zero Hunger**, using satellite imagery (rain, temperature, moisture, color) and historical disease data to create a **CNN model** to predict crop diseases. 🛰️
+
+![Solution](https://res.cloudinary.com/dmq8ipket/image/upload/v1770116940/IMG_0832_qio1od.jpg)
+
 
 I did have a bit of a disagreement with my teammates, though:
 
@@ -47,6 +66,10 @@ I did have a bit of a disagreement with my teammates, though:
 I found it fascinating that both my European and African teammates weren't familiar with the concept of **"谷贱伤农"** (low grain prices hurt the farmers). This is a basic agricultural economic principle taught to Chinese children: grain demand is relatively constant. If you suddenly spike the supply without a change in demand, prices crash. Our project was essentially asking farmers to pay for a tool that might lower their total revenue. 📉
 
 Instead, I suggested focusing on **preventing total loss** from incidents or **improving quality** (using fewer chemicals), which makes the produce healthier and more valuable. 🌿
+
+![Persona](https://res.cloudinary.com/dmq8ipket/image/upload/v1770116149/Screenshot_2026-02-03_115527_yewbct.png)
+
+![Crop Watchers](https://res.cloudinary.com/dmq8ipket/image/upload/v1770116043/Screenshot_2026-02-03_115338_tany8v.png)
 
 ### Looking Forward 🌬️🏢
 
