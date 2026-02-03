@@ -6442,5 +6442,16 @@
         "longitude": -3.7032905
       }
     ]
+  },
+  {
+    "file": "2026/01/30/planet-effect",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770113557/FnqBocaPUPwPMYQ2pkVnkR1ySuqUv3_kuko0q.png",
+      "alt": "planet"
+    },
+    "colorSet": {
+      "bgColor": "#9c6f5a",
+      "titleColor": "--mantine-color-lime-2"
+    }
   }
 ]
