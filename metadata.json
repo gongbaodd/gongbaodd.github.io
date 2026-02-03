@@ -6441,7 +6441,15 @@
         "latitude": 40.41672790000001,
         "longitude": -3.7032905
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770117393/IMG_0743_tifoxr.jpg",
+      "alt": "skulls"
+    },
+    "colorSet": {
+      "bgColor": "#8d7968",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2026/01/30/planet-effect",

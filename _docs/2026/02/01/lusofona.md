@@ -10,6 +10,8 @@ city:
 
 # Week 4: Studying at Lusófona University 🇵🇹
 
+![group photo](https://res.cloudinary.com/dmq8ipket/image/upload/v1769988438/9304810c-c9c3-4598-82ba-60406e589b3f_zssnfb.jpg)
+
 We are settled into our new room at **Lusófona University**. The classroom offers a stunning view of one of Porto’s most famous sights, the Miradouro. 🏫✨
 
 ![Food](https://res.cloudinary.com/dmq8ipket/image/upload/v1770115729/IMG_0233_knlo4n.jpg)
@@ -79,4 +81,5 @@ My original vision was to use Geographical data to map **"wind roads"** in citie
 
 On my last day in Porto, I bought a pack of seafood for only **4 euros**. It is incredibly cheap here! You couldn't even buy a pack of shrimp in Tallinn for that price. 🇪🇪➡️🇵🇹
 
-![group photo](https://res.cloudinary.com/dmq8ipket/image/upload/v1769988438/9304810c-c9c3-4598-82ba-60406e589b3f_zssnfb.jpg)
+![sea food](https://res.cloudinary.com/dmq8ipket/image/upload/v1770117183/IMG_0489_ioqtup.jpg)
+
