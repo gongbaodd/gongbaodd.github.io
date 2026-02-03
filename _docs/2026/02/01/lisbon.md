@@ -6,6 +6,9 @@ cover:
     alt: SB
 city:
     - Lisbon, Portugal
+tag:
+    - Gamification
+    - XR
 ---
 
 # Lisbon: Quakes, Rain
