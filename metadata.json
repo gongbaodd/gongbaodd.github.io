@@ -6461,5 +6461,45 @@
       "bgColor": "#9c6f5a",
       "titleColor": "--mantine-color-lime-2"
     }
+  },
+  {
+    "file": "2026/02/04/prado",
+    "city": [
+      "Madrid, Spain"
+    ],
+    "locations": [
+      {
+        "latitude": 40.41672790000001,
+        "longitude": -3.7032905
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770336747/IMG_0934_mca0xy.jpg",
+      "alt": "horses"
+    },
+    "colorSet": {
+      "bgColor": "#86847b",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2026/02/05/sagrada-familia",
+    "city": [
+      "Barcelona, Spain"
+    ],
+    "locations": [
+      {
+        "latitude": 41.3874374,
+        "longitude": 2.1686496
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770336876/IMG_1059_wlmm4d.jpg",
+      "alt": "church"
+    },
+    "colorSet": {
+      "bgColor": "#637087",
+      "titleColor": "--mantine-color-blue-2"
+    }
   }
 ]
