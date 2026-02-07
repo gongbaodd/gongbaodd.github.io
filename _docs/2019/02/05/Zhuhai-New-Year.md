@@ -3,6 +3,9 @@ type: post
 category: travel
 city:
   - Zhuhai, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1770504201/zhuhai_zf2na1.jpg
+  alt: zhuhai
 ---
 
 # 珠海过年
