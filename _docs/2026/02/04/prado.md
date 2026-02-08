@@ -40,7 +40,7 @@ The Prado is conveniently located right near the park. Pro tip: tickets are free
 
 * **The Tech Struggle:** Warning! There is almost **zero data signal** inside. I wanted to use AI as my personal tour guide, but the signal just wouldn't cooperate. Luckily, the special exhibition area has free Wi-Fi! 📶
 
-* **No Photos Allowed:** This was a bit frustrating. The Prado is very strict about cameras—even if you're just trying to snap a photo of the name tag to know the artist. 🚫📸 I believe museums should be about spreading knowledge, but they are very old-school here.
+* **No Photos Allowed:** This was a bit frustrating. The Prado is very strict about cameras—even if you're just trying to snap a photo of the name tag to know the artist. 🚫📸 I believe museums should be about spreading knowledge, but they are very old-school here. I think museum should provide multiple options for different people. For example, I am more interested in the materials on the artwork than the story of it. The modern AI can do that.
 
 ![Muse Muse](https://res.cloudinary.com/dmq8ipket/image/upload/v1770505254/IMG_0944_ezthd0.jpg)
 

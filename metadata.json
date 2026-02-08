@@ -6535,6 +6535,14 @@
         "latitude": 45.468503,
         "longitude": 9.182402699999999
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770580346/IMG_1186_yvtbq1.jpg",
+      "alt": "Basilique Notre-Dame de la Garde"
+    },
+    "colorSet": {
+      "bgColor": "#7e8289",
+      "titleColor": "--mantine-color-orange-2"
+    }
   }
 ]
