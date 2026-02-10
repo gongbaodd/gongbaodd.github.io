@@ -8,7 +8,7 @@ cover:
     alt: church
 ---
 
-## 🇪🇸 Barcelona: Gaudi's canvas
+# 🇪🇸 Barcelona: Sea and Gaudi's canvas
 
 ### 😴 The Rude Awakening
 
