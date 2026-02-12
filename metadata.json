@@ -6611,5 +6611,25 @@
       "bgColor": "#678cb0",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2026/02/12/munchen",
+    "city": [
+      "Munich, Germany"
+    ],
+    "locations": [
+      {
+        "latitude": 48.1351253,
+        "longitude": 11.5819806
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770933738/IMG_1546_fqo32j.jpg",
+      "alt": "chinese tower"
+    },
+    "colorSet": {
+      "bgColor": "#66809c",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   }
 ]
