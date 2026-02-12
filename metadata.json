@@ -6574,10 +6574,20 @@
     }
   },
   {
+    "file": "2026/02/12/manchen"
+  },
+  {
+    "file": "2026/02/14/prague"
+  },
+  {
+    "file": "2026/02/16/krakow"
+  },
+  {
     "file": "2026/02/10/swiss",
     "city": [
-      "Zurich, Swiss",
-      "Konstanz, Germany"
+      "Zurich, Switzerland",
+      "Konstanz, Germany",
+      "Munich, Germany"
     ],
     "locations": [
       {
@@ -6587,24 +6597,19 @@
       {
         "latitude": 47.6779808,
         "longitude": 9.1736741
+      },
+      {
+        "latitude": 48.1351253,
+        "longitude": 11.5819806
       }
     ],
     "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770753967/IMG_1424_l6hxyi.jpg",
-      "alt": "victorinox"
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770930898/IMG_1394_jxi3ww.jpg",
+      "alt": "Zurich"
     },
     "colorSet": {
-      "bgColor": "#8a6d5b",
-      "titleColor": "--mantine-color-dark-8"
+      "bgColor": "#678cb0",
+      "titleColor": "--mantine-color-blue-2"
     }
-  },
-  {
-    "file": "2026/02/12/manchen"
-  },
-  {
-    "file": "2026/02/14/prague"
-  },
-  {
-    "file": "2026/02/16/krakow"
   }
 ]
