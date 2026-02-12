@@ -20,6 +20,8 @@ On my way to **Marienplatz**, I stumbled upon **Asamkirche**. This church is a h
 
 ![Marienplatz](https://res.cloudinary.com/dmq8ipket/image/upload/v1770933742/IMG_1478_ti3ihc.jpg)
 
+<iframe src="https://youtube.com/shorts/XHD8zQg8KC4?si=Oukryz3uPGCL9udX" frameborder="0" allowfullscreen></iframe>
+
 I made it to the main square just in time for the 11 AM **Glockenspiel** at the New Town Hall (Rathaus). Watching the copper puppets reenact scenes from Munich's history is a classic "must-do," and it didn't disappoint.
 
 ## Local Bites and City Legends
