@@ -2065,7 +2065,15 @@
     "file": "2020/02/10/actix-web-rust-web"
   },
   {
-    "file": "2020/02/11/movie-supplementary-plan-hollywood-past"
+    "file": "2020/02/11/movie-supplementary-plan-hollywood-past",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg",
+      "alt": "poster"
+    },
+    "colorSet": {
+      "bgColor": "#557fa8",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2020/02/12/windows-rust-gtk"

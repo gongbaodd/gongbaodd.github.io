@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+  url: https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg
+  alt: poster
 ---
 
 # 电影补档计划：好莱坞往事
 
-![Once upon a time in Hollywood](https://img1.doubanio.com/view/photo/l/public/p2571312408.webp)
+![Once upon a time in Hollywood](https://m.media-amazon.com/images/M/MV5BMzMzNmViNjYtN2ViNi00NDM3LWFlMmItNDYyMGIzY2EzZjE2XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg)
 
 全片只看最后面半个小时，就是一部完美的电影。然而必须要看完前面两个小时冗长而又莫名其妙的故事（毕竟我对好莱坞的历史一无所知，所有格梗都看不出来）。
 

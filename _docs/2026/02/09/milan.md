@@ -75,3 +75,5 @@ Before heading back, I stopped at **Esselunga**—the supermarket locals swear b
 ![Station](https://res.cloudinary.com/dmq8ipket/image/upload/v1770928737/IMG_1331_e4lh2y.jpg)
 
 I finished my night at the **Milano Centrale** station. The building was beautifully lit up in the colors of the Italian flag (green, white, and red) 🇮🇹, featuring a giant apple sculpture and a **TCL Olympic showroom** right in front. After a quick grocery run to Lidl and Pam—where the shelves were almost empty!—I headed back to prep for another busy day of travel. 😴
+
+![XReal](https://res.cloudinary.com/dmq8ipket/image/upload/v1770928730/IMG_1335_wtqrnn.jpg)
