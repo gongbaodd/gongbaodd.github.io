@@ -6577,26 +6577,6 @@
     "file": "2026/02/12/manchen"
   },
   {
-    "file": "2026/02/14/prague",
-    "city": [
-      "Prague, Czechia"
-    ],
-    "locations": [
-      {
-        "latitude": 50.0755381,
-        "longitude": 14.4378005
-      }
-    ],
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1771016362/IMG_1664_g1oavs.jpg",
-      "alt": "sculpture"
-    },
-    "colorSet": {
-      "bgColor": "#84837f",
-      "titleColor": "--mantine-color-dark-8"
-    }
-  },
-  {
     "file": "2026/02/16/krakow"
   },
   {
@@ -6646,6 +6626,26 @@
     },
     "colorSet": {
       "bgColor": "#66809c",
+      "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2026/02/14/prague",
+    "city": [
+      "Prague, Czechia"
+    ],
+    "locations": [
+      {
+        "latitude": 50.0755381,
+        "longitude": 14.4378005
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1771106138/IMG_1665_bs70qq.jpg",
+      "alt": "sculpture"
+    },
+    "colorSet": {
+      "bgColor": "#5f7fa3",
       "titleColor": "--mantine-color-indigo-2"
     }
   }
