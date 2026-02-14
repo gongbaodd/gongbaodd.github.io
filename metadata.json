@@ -6577,7 +6577,24 @@
     "file": "2026/02/12/manchen"
   },
   {
-    "file": "2026/02/16/krakow"
+    "file": "2026/02/16/krakow",
+    "city": [
+      "krakow, Poland"
+    ],
+    "locations": [
+      {
+        "latitude": 50.06465009999999,
+        "longitude": 19.9449799
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1771107476/IMG_1878_eyrpxi.jpg",
+      "alt": "snow view"
+    },
+    "colorSet": {
+      "bgColor": "#7f7869",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
     "file": "2026/02/10/swiss",
