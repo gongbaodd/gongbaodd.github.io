@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BNmE0OWJlM2MtNzhmMi00YmQyLTlmY2EtZmUzNzBiNGRlN2JkXkEyXkFqcGc@._V1_FMjpg_UY720_.jpg
+    alt: poster
 ---
 
 # 电影补档计划：婚姻故事
 
-![Marriage Story](https://img1.doubanio.com/view/photo/l/public/p2571760178.webp)
+![Marriage Story](https://m.media-amazon.com/images/M/MV5BNmE0OWJlM2MtNzhmMi00YmQyLTlmY2EtZmUzNzBiNGRlN2JkXkEyXkFqcGc@._V1_FMjpg_UY720_.jpg)
 
 开罗人和寡姐的离婚故事。
 

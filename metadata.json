@@ -2141,10 +2141,26 @@
     "file": "2020/03/01/2"
   },
   {
-    "file": "2020/02/14/movie-supplementary-plan-qiao-qiao-rabbit"
+    "file": "2020/02/14/movie-supplementary-plan-qiao-qiao-rabbit",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BYmFmNmUyMjYtZTFjNS00OWQyLThhZmMtMGZkYTQ3YjY0ZDQ1XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg",
+      "alt": "poster"
+    },
+    "colorSet": {
+      "bgColor": "#a68271",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
-    "file": "2020/02/14/movie-supplementary-program-marriage-story"
+    "file": "2020/02/14/movie-supplementary-program-marriage-story",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BNmE0OWJlM2MtNzhmMi00YmQyLTlmY2EtZmUzNzBiNGRlN2JkXkEyXkFqcGc@._V1_FMjpg_UY720_.jpg",
+      "alt": "poster"
+    },
+    "colorSet": {
+      "bgColor": "#a4845c",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
     "file": "2020/03/05/jekyll-gatsby"

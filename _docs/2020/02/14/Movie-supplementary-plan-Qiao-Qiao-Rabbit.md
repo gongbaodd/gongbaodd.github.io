@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BYmFmNmUyMjYtZTFjNS00OWQyLThhZmMtMGZkYTQ3YjY0ZDQ1XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg
+    alt: poster
 ---
 
 # 电影补档计划：乔乔兔
 
-![jojo rabbit](https://img3.doubanio.com/view/photo/l/public/p2567973073.webp)
+![jojo rabbit](https://m.media-amazon.com/images/M/MV5BYmFmNmUyMjYtZTFjNS00OWQyLThhZmMtMGZkYTQ3YjY0ZDQ1XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg)
 
 乔乔是个小纳粹热爱者，参加童子兵的时候因为不忍心杀死兔子被同伴嘲笑为乔乔兔，因为不小心被炸伤而不能参加二战。
 
