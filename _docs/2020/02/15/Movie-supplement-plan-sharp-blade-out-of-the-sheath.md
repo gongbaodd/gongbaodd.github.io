@@ -1,11 +1,14 @@
 ---
 type: post
 category: movie
+cover:
+    url: https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_FMjpg_UY2880_.jpg
+    alt: poster
 ---
 
 # 电影补档计划：利刃出鞘
 
-![Knives out](https://img9.doubanio.com/view/photo/l/public/p2575381156.webp)
+![Knives out](https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_FMjpg_UY2880_.jpg)
 
 双男主海报一出来就知道谁是凶手了。
 
