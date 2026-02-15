@@ -2085,7 +2085,15 @@
     "file": "2020/02/15/github"
   },
   {
-    "file": "2020/02/15/movie-supplement-plan-sharp-blade-out-of-the-sheath"
+    "file": "2020/02/15/movie-supplement-plan-sharp-blade-out-of-the-sheath",
+    "cover": {
+      "url": "https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_FMjpg_UY2880_.jpg",
+      "alt": "poster"
+    },
+    "colorSet": {
+      "bgColor": "#b86a78",
+      "titleColor": "--mantine-color-yellow-2"
+    }
   },
   {
     "file": "2020/02/17/movie-supplementary-program-time-and-space-love-traveler"
