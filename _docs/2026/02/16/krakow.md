@@ -65,3 +65,5 @@ Finally, I visited the **Wawel Dragon** sculpture. Legend says a dragon used to 
 ![Dragon](https://res.cloudinary.com/dmq8ipket/image/upload/v1771185657/IMG_1995_w2jlei.jpg)
 
 The sculpture usually spits real fire every few minutes, but I think it was too cold today—the dragon stayed quiet. 🥶🔥
+
+Fun tip: 胡芦娃(Kurwa) is a curse word in Polish.
