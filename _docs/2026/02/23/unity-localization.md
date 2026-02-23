@@ -38,7 +38,7 @@ Go to `Window -> TextMeshPro -> Font Asset Creator` and use these specs:
 | **Cyrillic** | 1024x1024 | 10px | `400-4FF, 500-52F` |
 | **Greek** | 1024x1024 | 10px | `370-3FF, 1F00-1FFF` |
 | **Latin Extended** | 1024x1024 | 10px | `0100-017F` |
-| **Japanese** | 4096x4096 | 5px | Hiragana, Katakana, Kanji (`3040-309F...4E00-9FFF`) |
+| **Japanese** | 4096x4096 | 5px | Hiragana, Katakana, Katakana Extensions, Full-width forms, Kanji (`3040-309F,30A0-30FF,31F0-31FF,FF00-FFEF,4E00-9FFF`) |
 | **Korean** | 4096x4096 | 5px | `1100-11FF, 3130-318F, AC00-D7AF, FF00-FFEF` |
 | **Simp. Chinese** | 4096x4096 | 5px | [3500 Common Characters](https://gist.github.com/jjgod/1432945) |
 | **Trad. Chinese** | 4096x4096 | 5px | `4E00-9FA5, FF00-FFEF` |
