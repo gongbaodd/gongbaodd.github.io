@@ -4,6 +4,7 @@ category: tech
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1771937287/572d276765b9446da560daaffbd2cf0f.mov_20260224_144215.666_fhozdz.jpg
     alt: screen shot
+tag: xr
 ---
 
 # Meta Horizon OS 2.0
