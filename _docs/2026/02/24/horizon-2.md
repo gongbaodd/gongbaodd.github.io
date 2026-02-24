@@ -8,7 +8,7 @@ tag:
  - xr
 ---
 
-# Meta Horizon OS 2.0
+# Horizon OS 2.0
 
 During the month I was traveling ✈️, a lot of breakthroughs quietly happened. One of the biggest updates? **Meta officially rolled out Horizon OS 2.0.**
 

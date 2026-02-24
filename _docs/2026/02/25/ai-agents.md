@@ -2,8 +2,6 @@
 type: post
 category: tech
 tag:
-  - openclaw
-  - opencode
   - LLM
 ---
 
