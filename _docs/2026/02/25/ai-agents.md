@@ -48,6 +48,31 @@ My experience with **Opencode** was quite different. I tested two models:
 - `qwen2.5-coder:7b`
 - `qwen3:8b`
 
+Before starting, set environment variable `OLLAMA_HOST` to `0.0.0.0` and you need to manually edit the config file `~/.config/opencode/opencode.json`.
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (Local)",
+      "options": {
+        "baseURL": "http://<WSL Host>:11434/v1"
+      },
+      "models": {
+        "qwen2.5-coder:7b": {
+          "name": "qwen2.5-coder:7b"
+        },
+        "qwen3:8b": {
+          "name": "qwen3:8b"
+        }
+      }
+    }
+  }
+}
+```
+
 Results weren’t great:
 
 - `qwen2.5-coder` hallucinated and got stuck in tool‑calling loops 🤯🔧  
