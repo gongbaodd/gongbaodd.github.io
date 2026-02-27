@@ -6723,5 +6723,28 @@
       "bgColor": "#887a6e",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2026/02/25/ai-agents"
+  },
+  {
+    "file": "2026/02/27/tartu",
+    "city": [
+      "Tartu, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 58.37798299999999,
+        "longitude": 26.7290383
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1772192867/IMG_2162_hnlswd.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#917158",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]
