@@ -8,43 +8,6 @@ cover:
     alt: selfie
 ---
 
-# Week8: Tartu
-
-Before my museum card went expired. I set foot to Tartu. The city is the second largest city of Estonia. And also the cultural center of the country. The national muesum and the highest university are both located here.
-
-From Tallinn to Tartu, I can choose train or bus. Compared with trains, buses are much cheaper and more time slots to choose. 
-
-## Estonian National Museum(EESTi Rahva Muuseum)
-
-I left Tallinn in the morning, about 2 hour's ride I arrived Tartu at lunch time. The national museum is in the suburb, around 3 km to the city center. In front of the museum, you can see the famouse upside down house.
-
-![Tagurpidi Maja](https://res.cloudinary.com/dmq8ipket/image/upload/v1772192866/IMG_2151_sfu9la.jpg)
-
-There are not much to see in the museum. But the museum experience is perfect. You can swipe you ticket on any exhibitions and save them online for later read. This is my [link](https://mu.erm.ee/VND7U).
-
-![Ticket](https://res.cloudinary.com/dmq8ipket/image/upload/v1772192865/IMG_2130_yi4qp3.jpg)
-
-## Gunpowder Cellar(Püssirohukelder)
-
-This was an old gun powder storage hall near the Tartu University. Now it is a restaurant.
-
-![Püssirohukelder](https://res.cloudinary.com/dmq8ipket/image/upload/v1772192872/IMG_2175_aooqaz.jpg)
-
-## City Hall
-
-In front of city hall, there is a free skating ground. If you do not have shoes, you can rent one pair for 8 euros.
-
-![City hall](https://res.cloudinary.com/dmq8ipket/image/upload/v1772192867/IMG_2164_mbtogi.jpg)
-
-## University of Tartu Museum (Tartu Ülikooli muuseum)
-
-![University Museum](https://res.cloudinary.com/dmq8ipket/image/upload/v1772194094/IMG_2195_rcumif.jpg)
-
-The building now is half museum and half ruin. It was destroyed during the grat north war. And now used as Tartu university's museum. The museum has more detailed history of Estonia during 1300~1900.
-
-Tartu feels different to Tallinn. There is not an old town, but a city wide university makes it more acedemic. Not like Tallinn, the most covered store is not Rimi or Svelt, it is Coop. I quite like the fried chickein in Coop. 
-
-
 # Week 8: Tartu
 
 Just before my Museum Card expired, I decided to set foot in **Tartu**! 🚆 Known as the second-largest city in Estonia, it is truly the country's intellectual and cultural heartbeat. It’s home to the prestigious University of Tartu and the stunning National Museum. 🏛️✨
