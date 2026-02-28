@@ -58,7 +58,8 @@
     "commit": "git-cz",
     "test": "echo \"no test needed\" && exit 0",
     "build": "sh ./scripts/generate.sh",
-    "doc:prepare": "node scripts/prepare.mjs"
+    "doc:prepare": "node scripts/prepare.mjs",
+    "fetch:podcast": "node scripts/fetch-podcast.mjs"
   },
   "dependencies": {
     "@musical-sniffle/sobel-edge-detection": "1.0.0-beta.1",
@@ -66,6 +67,7 @@
     "cities.json": "^1.1.50",
     "dotenv": "^17.2.1",
     "fast-glob": "^3.3.3",
-    "iso-3166-1": "^2.1.1"
+    "iso-3166-1": "^2.1.1",
+    "xml2js": "^0.6.2"
   }
 }

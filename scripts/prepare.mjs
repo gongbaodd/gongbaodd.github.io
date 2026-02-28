@@ -3,11 +3,8 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import fg from "fast-glob";
-import sharp from "sharp";
-import { Vibrant } from "node-vibrant/node";
 import chroma from "chroma-js";
-import potrace from "potrace";
-import { SobelService } from '@musical-sniffle/sobel-edge-detection';
+import { getColorSet, TITLE_COLOR_MAP } from "./lib/image-metadata.mjs";
 import "dotenv/config";
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const ROOT_DIR = "./_docs"; // change to your folder
@@ -94,127 +91,6 @@ async function collectMetadata() {
 }
 
 // ---- helpers ----
-function isRemote(u) {
-  return /^https?:\/\//i.test(u);
-}
-
-function stripQuery(u) {
-  return u.replace(/[?#].*$/, "");
-}
-
-async function getColorSet(imagePathOrUrl, mdDirAbs, relPath) {
-  let bufferForColor;
-  let buffer;
-
-  if (isRemote(imagePathOrUrl)) {
-    const res = await fetch(imagePathOrUrl);
-    if (!res.ok)
-      throw new Error(`Failed to fetch ${imagePathOrUrl}: ${res.status}`);
-    buffer = Buffer.from(await res.arrayBuffer());
-    bufferForColor = await sharp(buffer).png().toBuffer();
-    buffer = await sharpSobel(bufferForColor);
-  } else {
-    let p = imagePathOrUrl;
-    if (p.startsWith("/@fs/")) p = p.slice("/@fs/".length);
-    p = stripQuery(p);
-    let abs = path.isAbsolute(p) ? p : path.resolve(mdDirAbs, p);
-    buffer = await fs.readFile(abs);
-    bufferForColor = await sharp(buffer).png().toBuffer();
-    buffer = await sharpSobel(bufferForColor);
-  }
-
-  const palette = await Vibrant.from(bufferForColor).getPalette();
-
-  const trace = await new Promise((res, rej) => {
-    potrace.trace(
-      buffer,
-      { turdSize: 100, optCurve: true, optTolerance: 0.4 },
-      (err, svg) => (err ? rej(err) : res(svg))
-    );
-  });
-
-  // Save trace as SVG file
-  if (relPath) {
-    const coverDir = path.join(process.cwd(), "cover");
-    await fs.mkdir(coverDir, { recursive: true });
-    const svgFileName = relPath.replace(/\//g, "-") + ".svg";
-    const svgPath = path.join(coverDir, svgFileName);
-    await fs.writeFile(svgPath, trace, "utf-8");
-  }
-
-  return {
-    get bgColor() {
-      return palette.Muted?.hex ?? "";
-    },
-    get titleColor() {
-      const hex = palette.Vibrant?.hex;
-      return hex ? findNearestTitleColor(hex) : "";
-    },
-  };
-}
-
-async function sharpSobel(inputBuffer) {
-  const { data, info } = await sharp(inputBuffer)
-    .ensureAlpha()
-    .greyscale()
-    .resize({ width: 500 })
-    .raw()
-    .toBuffer({ resolveWithObject: true });
-  const sobelService = new SobelService();
-  const { width, channels, height } = info;
-  const { imageData: detected } = sobelService.applySobel(
-    new Uint8ClampedArray(data.buffer),
-    width,
-    height,
-    channels
-  );
-
-  // Invert colors
-  for (let i = 0; i < detected.length; i += 4) {
-    detected[i] = 255 - detected[i];     // R
-    detected[i + 1] = 255 - detected[i + 1]; // G
-    detected[i + 2] = 255 - detected[i + 2]; // B
-    // Alpha channel (i + 3) remains unchanged
-  }
-
-  return await sharp(detected, { raw: { channels: 4, height, width } })
-    .normalize()
-    .png()
-    .toBuffer();
-}
-
-
-// ---- color helpers ----
-const prefix = "--mantine-color-";
-export const TITLE_COLOR_MAP = Object.entries({
-  "pink-2": "#fcc2d7",
-  "indigo-2": "#bac8ff",
-  "yellow-2": "#ffec99",
-  "green-4": "#69db7c",
-  "orange-2": "#ffd8a8",
-  "teal-2": "#96f2d7",
-  "violet-2": "#d0bfff",
-  "cyan-2": "#99e9f2",
-  "grape-3": "#e599f7",
-  "blue-2": "#a5d8ff",
-  "lime-2": "#d8f5a2",
-  "dark-8": "#1f1f1f",
-  "red-3": "#ffa8a8",
-  "gray-2": "#e9ecef",
-}).reduce((sum, [name, value]) => ({ ...sum, [prefix + name]: value }), {});
-
-function findNearestTitleColor(color) {
-  let distance = Infinity;
-  let nearestColor = "";
-  for (const [name, value] of Object.entries(TITLE_COLOR_MAP)) {
-    const dis = chroma.deltaE(color, value);
-    if (dis < distance) {
-      distance = dis;
-      nearestColor = name;
-    }
-  }
-  return nearestColor;
-}
 
 // ---- processors ----
 async function processLocation(data, old) {
@@ -246,7 +122,11 @@ async function processCover(data, old, file, relPath) {
     return undefined;
   }
 
-  const colorSet = await getColorSet(data.cover.url, path.dirname(file), relPath);
+  const colorSet = await getColorSet(data.cover.url, {
+    baseDir: path.dirname(file),
+    relPath,
+    saveTraceToDir: path.join(process.cwd(), "cover"),
+  });
   return {
     cover: data.cover,
     colorSet,
