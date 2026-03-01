@@ -118,18 +118,15 @@ export async function getColorSet(imagePathOrUrl, options = {}) {
   });
 
   // Save trace as SVG file if requested
-  let savedTrace = undefined;
   if (relPath && saveTraceToDir) {
     await fs.mkdir(saveTraceToDir, { recursive: true });
     const svgFileName = relPath.replace(/\//g, "-") + ".svg";
     const svgPath = path.join(saveTraceToDir, svgFileName);
     await fs.writeFile(svgPath, trace, "utf-8");
-    savedTrace = trace;
   }
 
   return {
     bgColor: palette.Muted?.hex ?? "",
     titleColor: palette.Vibrant?.hex ? findNearestTitleColor(palette.Vibrant.hex) : "",
-    ...(savedTrace && { trace: savedTrace }),
   };
 }
