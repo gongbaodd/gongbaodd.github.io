@@ -4,6 +4,9 @@ category: tech
 tag:
     - localization
     - Unity
+series:
+  name: Unity Localization
+  slug: unity-localization
 ---
 
 # Week 7: Mastering Localization in Unity
@@ -83,6 +86,8 @@ I opted for **OAuth** for [authentication](https://console.cloud.google.com/apis
 ---
 
 Is this over? No, there are very long words in different languages, these have to be polished manually. 😅
+
+To read about making a language selection feature, please forward to [this blog](/tech/2026/03/02/unity-localization).
 
 
 
