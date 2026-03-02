@@ -3,6 +3,10 @@ type: post
 category: tech
 tag:
   - LLM
+  - vibe-coding
+series:
+    name: Vibe Coding
+    slug: vibe-coding
 ---
 
 # 🤖 AI Agents

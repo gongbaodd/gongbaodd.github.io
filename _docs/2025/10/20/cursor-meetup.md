@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761038783/IMG_8488_kip0mj.jpg
     alt: selfie
+series:
+    name: Vibe Coding
+    slug: vibe-coding
 ---
 
 # Cursor Meetup 💻☕

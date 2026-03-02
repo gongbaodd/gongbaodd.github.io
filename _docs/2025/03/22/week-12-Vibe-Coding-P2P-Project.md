@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - cloudflare
+series:
+    name: Vibe Coding
+    slug: vibe-coding
 ---
 
 # Week 12: Vibe Coding P2P Project
