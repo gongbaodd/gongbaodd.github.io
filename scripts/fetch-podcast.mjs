@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
+import { pathToFileURL } from 'node:url';
 import { parseStringPromise } from "xml2js";
 import { getColorSet } from "./lib/image-metadata.mjs";
 
@@ -127,6 +128,22 @@ async function enrichEpisodesWithColors(episodes) {
 }
 
 /**
+ * Load existing podcast.json if present; return { channel, episodes } or null
+ */
+async function loadExistingPodcast() {
+  try {
+    const raw = await fs.readFile(OUTPUT_FILE, "utf-8");
+    const data = JSON.parse(raw);
+    if (data.episodes && Array.isArray(data.episodes)) {
+      return data;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Main fetch and process function
  */
 async function fetchAndProcessPodcast() {
@@ -145,25 +162,52 @@ async function fetchAndProcessPodcast() {
     
     console.log(`✅ Channel: ${channelData.title}`);
     
-    // Parse episodes
+    // Parse episodes from RSS
     const items = channel.item || [];
-    const episodes = items.map((item, idx) => parseEpisode(item, idx));
-    console.log(`📻 Found ${episodes.length} episodes`);
+    const rssEpisodes = items.map((item, idx) => parseEpisode(item, idx));
+    console.log(`📻 Found ${rssEpisodes.length} episodes in RSS`);
     
-    // Enrich with color metadata
-    const enrichedEpisodes = await enrichEpisodesWithColors(episodes);
+    // Load existing podcast.json and split into existing vs new
+    const existing = await loadExistingPodcast();
+    const existingIds = existing
+      ? new Set(existing.episodes.map((ep) => ep.id))
+      : new Set();
     
-    // Write to file
+    const newEpisodes = rssEpisodes.filter((ep) => !existingIds.has(ep.id));
+    const existingEpisodes = existing
+      ? existing.episodes.filter((ep) =>
+          rssEpisodes.some((rss) => rss.id === ep.id)
+        )
+      : [];
+    
+    if (newEpisodes.length === 0) {
+      console.log("✅ No new episodes; podcast.json unchanged.");
+      return;
+    }
+    
+    console.log(`📥 ${existingEpisodes.length} existing, ${newEpisodes.length} new`);
+    
+    // Enrich only new episodes with color metadata
+    const enrichedNew = await enrichEpisodesWithColors(newEpisodes);
+    
+    // Merge: keep RSS order (newest first), existing entries unchanged, new appended by RSS order
+    const mergedEpisodes = rssEpisodes.map((rss) => {
+      const existingEp = existingEpisodes.find((e) => e.id === rss.id);
+      if (existingEp) return existingEp;
+      const newEp = enrichedNew.find((e) => e.id === rss.id);
+      return newEp;
+    }).filter(Boolean);
+    
     const output = {
       channel: channelData,
-      episodes: enrichedEpisodes,
+      episodes: mergedEpisodes,
       lastUpdated: new Date().toISOString(),
     };
-    
+
     await fs.writeFile(OUTPUT_FILE, JSON.stringify(output, null, 2), "utf-8");
-    console.log(`\n✨ Podcast data saved to ${OUTPUT_FILE}`);
+    console.log(`\n✨ Podcast data saved to ${OUTPUT_FILE} (${newEpisodes.length} new episode(s) added)`);
     console.log(`📁 Trace SVGs saved to ${TRACE_DIR}/`);
-    
+
   } catch (err) {
     console.error("❌ Error fetching podcast:", err.message);
     process.exit(1);
@@ -171,7 +215,7 @@ async function fetchAndProcessPodcast() {
 }
 
 // Run if this is the main module
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   fetchAndProcessPodcast();
 }
 

@@ -7,6 +7,21 @@
   },
   "episodes": [
     {
+      "id": "ep-e3g32dn",
+      "title": "给我整点宜家效应",
+      "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3g32dn",
+      "pubDate": "Sat, 07 Mar 2026 15:38:14 GMT",
+      "description": "<p>本周是 2026 年第 9 周，也是妇女节前夕。这一周，主播沉浸在高强度的 AI 编程（Webcoding）中，不仅上线了新的播客页面，还对“AI 创造”产生了一些有趣的思考。</p><ul><li><p><strong>播客页正式上线：</strong> 耗资 30 美分，由 AI 纯手工（指令）打造。虽然没有播放器只有链接，虽然代码写得“惨不忍睹”，但它能用了！</p></li><li><p><strong>省钱流 AI 调用大法：</strong> 分享了一个实用的技巧——先用高阶模型（如 Claude 4.5/4.6）定义任务并存为 Skill，再调用便宜模型（如 Gemini）执行，大幅降低 API 开销。</p></li><li><p><strong>Unity 本地化小技巧：</strong> 在做语言切换列表时，发现扩展 Unity Locale 类来直接存储国旗 Meta 数据非常顺手。</p></li><li><p><strong>“宜家效应”与 AI 编程：</strong> 参加了线下 Meetup，感叹很多人对自己用 AI 搓出来的简陋工具充满“老父亲般”的爱。这种“亲手拼装”的错觉，正是现代版的宜家效应。</p></li><li><p><strong>行业真相：</strong> 有钱人负责用 AI 堆出“屎山”获得快乐，我们负责在他们财务自由后维护这些“屎山”确保不失业。</p></li></ul><ul><li><p><strong>OpenRouter:</strong> 用于调用各类大模型。</p></li><li><p><strong>BildIt.me:</strong> 宣称生成原生应用，实则 React Native 的 Webcoding 平台。</p></li><li><p><strong>IKEA Effect（宜家效应）：</strong> 指人们倾向于高度评价自己参与构建的物品。</p></li></ul>",
+      "summary": "本周是 2026 年第 9 周，也是妇女节前夕。这一周，主播沉浸在高强度的 AI 编程（Webcoding）中，不仅上线了新的播客页面，还对“AI 创造”产生了一些有趣的思考。播客页正式上线： 耗资 30 美分，由 AI 纯手工（指令）打造。虽然没有播放器只有链接，虽然代码写得“惨不忍睹”，但它能用了！省钱流 AI 调用大法： 分享了一个实用的技巧——先用高阶模型（如 Claude 4.5/4.6",
+      "duration": "00:11:52",
+      "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/116541303/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-7%2F011b4b19-5e73-41d0-8dd9-46f2bfe5d448.m4a",
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1772897678018-8649f8dd5a782.jpg",
+      "colorSet": {
+        "bgColor": "#6c769c",
+        "titleColor": "--mantine-color-orange-2"
+      }
+    },
+    {
       "id": "ep-e3fmqub",
       "title": "给我整到塔尔图",
       "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3fmqub",
@@ -1687,5 +1702,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-03-01T09:06:16.502Z"
+  "lastUpdated": "2026-03-08T21:14:01.262Z"
 }
