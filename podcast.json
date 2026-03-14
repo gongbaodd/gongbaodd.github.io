@@ -7,6 +7,21 @@
   },
   "episodes": [
     {
+      "id": "VR-e3ge492",
+      "title": "给我整个虚幻引擎上VR",
+      "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/VR-e3ge492",
+      "pubDate": "Sat, 14 Mar 2026 08:57:25 GMT",
+      "description": "<p></p><ul><li><p>本周基本都在折腾 <strong>Unreal Engine</strong>，主要是为了论文里的 VR / Quest 开发。</p></li><li><p>笔记本性能不太行，跑 UE 风扇像直升机一样。</p></li></ul><p><strong>开发过程</strong></p><ul><li><p>UE 5.7 已经没有官方 Quest 插件，需要用 <strong>Oculus 的 UE 分支自己编译</strong>。</p></li><li><p>尝试本地编译和分布式编译，都没有成功。</p></li><li><p>最后改用 <strong>OpenXR</strong>，成功跑起来了一个 Quest 应用。</p></li></ul><p><strong>遇到的问题</strong></p><ul><li><p>Android 打包需要折腾 <strong>SDK / NDK 版本</strong>，版本太高或太低都不行，必须刚好匹配。</p></li></ul><p><strong>一些体验</strong></p><ul><li><p>UE 的 <strong>物理系统很真实</strong>：比如无人机移动会有惯性。</p></li><li><p>打包后的 <strong>APK 很小（约 19MB）</strong>，说明很多高级渲染效果在移动端不会带上。</p></li><li><p><strong>Blueprint</strong> 没感觉比写代码更好用，图一大就很乱。</p></li><li><p><strong>AI 对 UE 帮助不大</strong>，经常幻觉。</p></li></ul><p><strong>总结</strong></p><ul><li><p>折腾很多，收获不算大，但至少 <strong>OpenXR 跑通了</strong>。</p></li><li><p>下周继续。</p></li></ul><p></p>",
+      "summary": "本周基本都在折腾 Unreal Engine，主要是为了论文里的 VR / Quest 开发。笔记本性能不太行，跑 UE 风扇像直升机一样。开发过程UE 5.7 已经没有官方 Quest 插件，需要用 Oculus 的 UE 分支自己编译。尝试本地编译和分布式编译，都没有成功。最后改用 OpenXR，成功跑起来了一个 Quest 应用。遇到的问题Android 打包需要折腾 SDK / NDK 版",
+      "duration": "00:05:58",
+      "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/116903650/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-14%2Fb8b96c35-2049-b5f3-b863-132ebe2c330f.m4a",
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1773478554905-03896ed3445fb.jpg",
+      "colorSet": {
+        "bgColor": "#7c7c7c",
+        "titleColor": "--mantine-color-indigo-2"
+      }
+    },
+    {
       "id": "ep-e3g32dn",
       "title": "给我整点宜家效应",
       "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3g32dn",
@@ -1702,5 +1717,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-03-08T21:14:01.262Z"
+  "lastUpdated": "2026-03-14T08:58:02.465Z"
 }
