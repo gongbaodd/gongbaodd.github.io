@@ -3472,7 +3472,15 @@
         "latitude": 39.904211,
         "longitude": 116.407395
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774007444/mmexport1489972610694_1_edzics.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#9d7e5f",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2017/02/05/the-bank-card-password-is-hidden-on-the-card-no-wonder-bai-yexing"
@@ -6769,5 +6777,23 @@
       "bgColor": "#9c8c5c",
       "titleColor": "--mantine-color-orange-2"
     }
+  },
+  {
+    "file": "2026/03/07/week-9-ikea-effect"
+  },
+  {
+    "file": "2026/03/08/blueprint"
+  },
+  {
+    "file": "2026/03/11/ue-android"
+  },
+  {
+    "file": "2026/03/10/unreal-engine-accelerator"
+  },
+  {
+    "file": "2026/03/13/ue"
+  },
+  {
+    "file": "2026/03/15/worktree"
   }
 ]
