@@ -4,6 +4,9 @@ category: travel
 city:
   - Dalian, China
   - Lushun, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774701130/IMG_20210327_174519_qxd7pd.jpg
+  alt: Dalian Museum
 ---
 
 # 大连博物馆，风好正扬帆

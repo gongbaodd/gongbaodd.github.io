@@ -190,7 +190,15 @@
         "latitude": 39.085099,
         "longitude": 117.199369
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774700949/P50330-090259_gmzfch.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#ac7964",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2015/12/25/esprima-js"
@@ -4045,7 +4053,15 @@
         "latitude": 38.8512899,
         "longitude": 121.26208
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774701130/IMG_20210327_174519_qxd7pd.jpg",
+      "alt": "Dalian Museum"
+    },
+    "colorSet": {
+      "bgColor": "#945454",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2021/03/31/delomization-application-of-matrix"

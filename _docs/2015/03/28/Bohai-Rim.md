@@ -9,6 +9,9 @@ city:
   - Qufu, China
   - Jinan, China
   - Tianjin, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774700949/P50330-090259_gmzfch.jpg
+  alt: selfie
 ---
 
 # 环渤海之行
