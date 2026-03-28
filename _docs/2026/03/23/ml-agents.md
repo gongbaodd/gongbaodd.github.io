@@ -10,7 +10,7 @@ cover:
     alt: training
 ---
 
-# ML-Agents on M-Series Macs
+# Week 12: ML-Agents on M-Series Macs
 
 
 Let’s be honest: setting up a Machine Learning environment on Apple Silicon (M1/M2/M3) can feel like a marathon. Recently, I’ve been diving into ML training, and doing it on a Mac Mini is... let's say, an "adventure." 🧗‍♂️
