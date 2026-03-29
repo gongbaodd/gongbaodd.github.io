@@ -6841,5 +6841,16 @@
       "bgColor": "#888888",
       "titleColor": "--mantine-color-indigo-2"
     }
+  },
+  {
+    "file": "2026/03/29/drone-sim",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774817120/44436976-4ccd-407e-ad8e-64fae8094b38_dlyfmx.webp",
+      "alt": "Yue's Ultimate Drone"
+    },
+    "colorSet": {
+      "bgColor": "#657a9e",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   }
 ]
