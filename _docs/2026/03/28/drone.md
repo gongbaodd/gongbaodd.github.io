@@ -79,7 +79,7 @@ The First-Person View (FPV) experience is defined by the synchronization between
 
 Modern FPV controllers utilize two primary stick configurations. The critical difference between an FPV transmitter and a standard gaming controller is the **throttle axis**, which lacks a spring-return mechanism to allow for precise altitude maintenance.
 
-![BetaFPV's LiteRadio 2 SE Radio Transmitter](https://res.cloudinary.com/dmq8ipket/image/upload/v1774733833/image_xpcsnd.png)
+![Transmitter(Left) and  Gamepad(Right)](https://res.cloudinary.com/dmq8ipket/image/upload/v1774786355/drilldown_cbyjs3.jpg)
 
 The industry standardizes these controls into two primary layouts:
 
