@@ -6830,5 +6830,16 @@
       "bgColor": "#74949c",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2026/03/28/drone",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774705651/Screenshot_2026-03-28_154726_p4z5ae.png",
+      "alt": "Gyroplane No. 1"
+    },
+    "colorSet": {
+      "bgColor": "#888888",
+      "titleColor": "--mantine-color-indigo-2"
+    }
   }
 ]
