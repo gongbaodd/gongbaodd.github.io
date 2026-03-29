@@ -9,6 +9,8 @@ series:
 
 # Drone Agent, a PID implementation
 
+*PID history*
+
 Proportional integral derivative (PID) is a type of controller that is most commonly used and applied in mechanical systems (Idrissi et al., 2022).
 
 The controller consists of three main components:
