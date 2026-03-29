@@ -4,6 +4,7 @@ category: tech
 series:
     name: Master Thesis
     slug: master
+    number: 1
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774817120/44436976-4ccd-407e-ad8e-64fae8094b38_dlyfmx.webp
     alt: Yue's Ultimate Drone

@@ -4,6 +4,7 @@ category: tech
 series:
     name: Master Thesis
     slug: master
+    number: 0
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774705651/Screenshot_2026-03-28_154726_p4z5ae.png
     alt: Gyroplane No. 1
