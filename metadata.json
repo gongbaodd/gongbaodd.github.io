@@ -6852,5 +6852,27 @@
       "bgColor": "#657a9e",
       "titleColor": "--mantine-color-indigo-2"
     }
+  },
+  {
+    "file": "2026/03/29/drone-agent",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774818351/image_dnjbva.png",
+      "alt": "path design"
+    },
+    "colorSet": {
+      "bgColor": "#66987a",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2026/03/30/drone-rl-agent",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774882926/Screen_Recording_2026-03-23_163639.mp4_20260330_180108.753_jiilcz.png",
+      "alt": "training process"
+    },
+    "colorSet": {
+      "bgColor": "#7c7474",
+      "titleColor": "--mantine-color-orange-2"
+    }
   }
 ]

@@ -10,7 +10,7 @@ cover:
     alt: path design
 ---
 
-# Drone Agent: A PID Implementation for Self-Leveling and Path Following
+# Drone Agent: A PID Implementation for Self-Leveling drones
 
 ## 1. Introduction to PID Control
 
