@@ -111,6 +111,8 @@ To monitor progress, we implemented a color-coded feedback system:
 * Episode Length: Positively correlated with rewards; as the agent improved, it survived longer without crashing (falling too low).
 * Environment/Cumulative Reward Histograms: also shows when training time raises, reward start to raise.
 
+![Result](https://res.cloudinary.com/dmq8ipket/image/upload/v1774888648/image-1_si4wom.png)
+
 ## 4. Tutoring UI
 
 The RL agent successfully learned to hover with high precision. By adjusting the `DecisionRequester`, we created a smoother control hint for the UI, matching the pace of human perception.
