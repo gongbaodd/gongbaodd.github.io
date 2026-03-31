@@ -8,6 +8,9 @@ series:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774817120/44436976-4ccd-407e-ad8e-64fae8094b38_dlyfmx.webp
     alt: Yue's Ultimate Drone
+tag:
+  - Unity
+  - drone
 ---
 
 # Implementation of Drone Physics: A Case Study of Yue’s Ultimate Drone

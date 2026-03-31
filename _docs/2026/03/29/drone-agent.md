@@ -8,6 +8,11 @@ series:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774818351/image_dnjbva.png
     alt: path design
+tag:
+  - robotics
+  - PID
+  - ai
+  - drone
 ---
 
 # Drone Agent: A PID Implementation for Self-Leveling drones
@@ -119,4 +124,3 @@ Idrissi, M., Salami, M., & Annaz, F. (2022). A Review of Quadrotor Unmanned Aeri
 Lynch, K. M., & Park, F. C. (2017). Modern Robotics: Mechanics, Planning, and Control (1st ed.). Cambridge University Press. https://doi.org/10.1017/9781316661239
 
 Paredes, Juan, Prashin Sharma, Brian Ha, et al. “Development, Implementation, and Experimental Outdoor Evaluation of Quadcopter Controllers for Computationally Limited Embedded Systems.” arXiv:2105.14231. Preprint, arXiv, June 1, 2021. https://doi.org/10.48550/arXiv.2105.14231.
-

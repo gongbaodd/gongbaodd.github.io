@@ -8,6 +8,8 @@ series:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774705651/Screenshot_2026-03-28_154726_p4z5ae.png
     alt: Gyroplane No. 1
+tag:
+  - drone
 ---
 # Quadcopter Flight
 
@@ -128,4 +130,3 @@ Karahan, M. Development  Stages of Quadrotors from Past to  Present: A Review. D
 Usama, A., Dora, M., Elhadidy, M., Khater, H., & Alkelany, O. (2021). First Person View Drone - FPV. The International Undergraduate Research Conference, 5(5), 437–440. https://journals.ekb.eg/article_246400.html
 
 BetaFPV. (2022). LiteRadio 3 radio transmitter user manual. https://support.betafpv.com/hc/en-us/article_attachments/55907267618073
-

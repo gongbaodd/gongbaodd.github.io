@@ -8,9 +8,14 @@ series:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774882926/Screen_Recording_2026-03-23_163639.mp4_20260330_180108.753_jiilcz.png
     alt: training process
+tag:
+  - Unity
+  - ML
+  - drone
+  - AI
 ---
 
-# Drone Agent: A Reinforcement Learning Implementation for Self-Leveling
+# Drone Agent: A RL Implementation for Self-Leveling drones
 
 ## 1. Introduction
 
@@ -125,4 +130,3 @@ Barto, A. G. (2019). Reinforcement Learning: Connections, Surprises, Challenges.
 Unity Technologies. (n.d.). ML-Agents overview (Version 4.0). Unity Manual. Retrieved [Insert Month Day, Year], from https://docs.unity3d.com/Packages/com.unity.ml-agents@4.0/manual/index.html
 
 OpenAI. (2017, July 20). Proximal policy optimization. https://openai.com/index/openai-baselines-ppo/
-

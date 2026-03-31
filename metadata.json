@@ -6874,5 +6874,16 @@
       "bgColor": "#7c7474",
       "titleColor": "--mantine-color-orange-2"
     }
+  },
+  {
+    "file": "2026/03/31/xr-dev",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774953924/www.meta.com_quest_quest-3__srsltid_AfmBOoqs1QjxuoVjeYycRNUe7_-7SAFY9-LlMpUCgiTFVnVYA_R-Wv4p_jqaqxy.png",
+      "alt": "meta quest 3"
+    },
+    "colorSet": {
+      "bgColor": "#746e8b",
+      "titleColor": "--mantine-color-blue-2"
+    }
   }
 ]
