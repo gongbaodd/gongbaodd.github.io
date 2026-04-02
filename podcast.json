@@ -7,6 +7,21 @@
   },
   "episodes": [
     {
+      "id": "ep-e3hb8c7",
+      "title": "给我整的硕士论文完成一半了",
+      "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3hb8c7",
+      "pubDate": "Thu, 02 Apr 2026 15:41:04 GMT",
+      "description": "<p></p><p><strong>论文进展</strong></p><ul><li><strong>当前页数：</strong> 28页（目标100页）。</li><li><strong>核心内容：</strong></li><li><strong>观看剧集：</strong> 《匹兹堡急诊室》（<em>The Pitt</em>）。</li><li><strong>剧集特点：</strong> 第二季共15集，每集1小时，对应一天的15个小时。</li><li><strong>观后感：</strong> 剧情极度紧张。通过观看高压力的医疗剧，起到了缓解写论文压力的效果。</li></ul><p></p>",
+      "summary": "论文进展当前页数： 28页（目标100页）。核心内容：观看剧集： 《匹兹堡急诊室》（The Pitt）。剧集特点： 第二季共15集，每集1小时，对应一天的15个小时。观后感： 剧情极度紧张。通过观看高压力的医疗剧，起到了缓解写论文压力的效果。",
+      "duration": "00:02:34",
+      "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/117858119/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-2%2F11ea1f33-1c6c-abdb-0514-1d7a5bb81133.m4a",
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1775144431011-3490e87fd64bf.jpg",
+      "colorSet": {
+        "bgColor": "#997f68",
+        "titleColor": "--mantine-color-orange-2"
+      }
+    },
+    {
       "id": "FPV-e3h38a3",
       "title": "给我整个机吧 FPV",
       "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/FPV-e3h38a3",
@@ -1747,5 +1762,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-03-28T09:00:44.862Z"
+  "lastUpdated": "2026-04-02T15:52:03.414Z"
 }
