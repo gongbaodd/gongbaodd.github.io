@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1775143299/P80331-225325_psptqq.jpg
+    alt: tattoo
 ---
 
 # 三月总结
@@ -10,6 +13,8 @@ category: plan
 算是个模拟吧，总之从头至尾很尴尬，估计分数不高，反正有机会今年还会再考。
 
 ## 纹身
+
+![tattoo](https://res.cloudinary.com/dmq8ipket/image/upload/v1775143299/P80331-225325_psptqq.jpg)
 
 最后选择了黑色孤儿 Cosima 的鹦鹉螺纹，纹了 1 个小时，800 就这么交代了。。。
 

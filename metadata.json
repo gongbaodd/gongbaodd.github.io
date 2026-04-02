@@ -266,7 +266,15 @@
     "file": "2018/02/25/about"
   },
   {
-    "file": "2018/04/01/march-summary"
+    "file": "2018/04/01/march-summary",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775143299/P80331-225325_psptqq.jpg",
+      "alt": "tattoo"
+    },
+    "colorSet": {
+      "bgColor": "#7d7f77",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2018/04/09/graphql"
@@ -3535,7 +3543,15 @@
         "latitude": 34.5808499,
         "longitude": 105.72486
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775142493/IMG_20170402_130839_385_i43sgs.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#9f8162",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2017/04/03/tianshui-museum",
@@ -3547,7 +3563,15 @@
         "latitude": 34.5808499,
         "longitude": 105.72486
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775142895/P70404-103545_jske9x.jpg",
+      "alt": "qingming"
+    },
+    "colorSet": {
+      "bgColor": "#996c5c",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2017/04/05/shanxi-museum",
@@ -3559,7 +3583,15 @@
         "latitude": 37.8705899,
         "longitude": 112.55067
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775143188/IMGP5331_tp6t1f.jpg",
+      "alt": "show"
+    },
+    "colorSet": {
+      "bgColor": "#8f6a59",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2017/04/28/the-same-night-sky-jelly-huayan-temple-knife-noodles-city-walls",
@@ -3571,7 +3603,15 @@
         "latitude": 40.0763699,
         "longitude": 113.30001
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775143134/P70430-182316_gm3uk3.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#9a6f4d",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
     "file": "2017/05/01/the-same-night-sky-guandi-temple-datong-museum",
