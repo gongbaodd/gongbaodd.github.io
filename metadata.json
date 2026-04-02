@@ -6885,5 +6885,16 @@
       "bgColor": "#746e8b",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2026/04/02/pitt",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775139184/MV5BMDQ2ZTdjM2ItYWIyYy00ZjFmLWI1MjctMDE1MDdkYWE4MmZjXkEyXkFqcGc._V1_FMjpg_UX1920__tldjmy.jpg",
+      "alt": "screenshots"
+    },
+    "colorSet": {
+      "bgColor": "#a1865c",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]
