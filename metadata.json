@@ -6936,5 +6936,19 @@
       "bgColor": "#a1865c",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2026/04/04/git"
+  },
+  {
+    "file": "2026/04/06/behavior-graph",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775471593/Screenshot_2026-04-06_133228_nbcg6m.png",
+      "alt": "behavior graph"
+    },
+    "colorSet": {
+      "bgColor": "#78a25f",
+      "titleColor": "--mantine-color-grape-3"
+    }
   }
 ]
