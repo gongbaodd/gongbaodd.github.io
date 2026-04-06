@@ -6958,5 +6958,16 @@
       "bgColor": "#78a25f",
       "titleColor": "--mantine-color-grape-3"
     }
+  },
+  {
+    "file": "2026/04/06/bolt-diy",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775487390/Screenshot_2026-04-06_173832_tyx0ec.png",
+      "alt": "todoapp"
+    },
+    "colorSet": {
+      "bgColor": "#60a858",
+      "titleColor": "--mantine-color-dark-8"
+    }
   }
 ]
