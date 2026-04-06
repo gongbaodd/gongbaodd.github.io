@@ -1006,7 +1006,15 @@
         "latitude": 28.2277799,
         "longitude": 112.93886
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775479113/hey_sailor_w0inma.jpg",
+      "alt": "橘子洲"
+    },
+    "colorSet": {
+      "bgColor": "#566ca1",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2019/03/30/css"
