@@ -3,6 +3,8 @@ type: post
 category: tech
 tag:
     - vibe-coding
+    - llm
+    - AI
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1775487390/Screenshot_2026-04-06_173832_tyx0ec.png
     alt: todoapp
