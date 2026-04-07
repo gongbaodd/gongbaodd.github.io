@@ -3,11 +3,16 @@ type: post
 category: travel
 city:
   - Kunming, China
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1775576075/IMG_20190428_164104_tvwsal.jpg
+    alt: 官渡古城
 ---
 
 # 待在昆明的感觉就是北京春天最舒服的那几天
 
 ## 车上风景
+
+![view](https://res.cloudinary.com/dmq8ipket/image/upload/v1775576010/IMG_20190427_133343_hhuqe9.jpg)
 
 从深圳去昆明是有高铁的，路线是直接穿过广东、广西和贵州到达云南的「几」字形高速铁路。想要看风景的童鞋其实可以放弃了，基本上过了桂林就开始横穿横断山脉的各种山洞。然而桂林山川的确值得一看，火车会在短暂的几分钟时间里穿越桂林独特的山川，此时看着风景臆想一下火车在山峦中穿梭的情景也是不错的体验。
 

@@ -1032,7 +1032,15 @@
         "latitude": 28.2277799,
         "longitude": 112.93886
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775575532/Screenshot_2026-04-07_182424_jjzyhf.png",
+      "alt": "茶颜悦色"
+    },
+    "colorSet": {
+      "bgColor": "#9e8d78",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2019/04/30/the-feeling-of-staying-in-kunming-is-the-most-comfortable-days-in-beijing-in-spring",
@@ -1044,7 +1052,15 @@
         "latitude": 24.8796599,
         "longitude": 102.83322
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576075/IMG_20190428_164104_tvwsal.jpg",
+      "alt": "官渡古城"
+    },
+    "colorSet": {
+      "bgColor": "#5c8baa",
+      "titleColor": "--mantine-color-blue-2"
+    }
   },
   {
     "file": "2019/05/01/dali-shenkeng-is-not-worth-going",
@@ -1056,7 +1072,15 @@
         "latitude": 25.6064799,
         "longitude": 100.26764
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576016/IMG_20190430_160259_1_irmxeg.jpg",
+      "alt": "大鹏金翅鸟"
+    },
+    "colorSet": {
+      "bgColor": "#a08077",
+      "titleColor": "--mantine-color-blue-2"
+    }
   },
   {
     "file": "2019/05/03/tengchong-is-the-most-perfect-form-of-travel-nowadays",
@@ -1068,10 +1092,26 @@
         "latitude": 25.0205299,
         "longitude": 98.49096999999999
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576470/IMG_20190501_193146_epfbph.jpg",
+      "alt": "和顺古镇"
+    },
+    "colorSet": {
+      "bgColor": "#a39451",
+      "titleColor": "--mantine-color-blue-2"
+    }
   },
   {
-    "file": "2019/05/18/i-also-have-a-ball-head"
+    "file": "2019/05/18/i-also-have-a-ball-head",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576470/IMG_20190501_193018_sseyen.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#8c7b6f",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2019/05/04/maythe4thbewithme"
@@ -1086,10 +1126,26 @@
         "latitude": 22.5333199,
         "longitude": 113.93041
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576785/IMG_20190519_155027_znowng.jpg",
+      "alt": "henan"
+    },
+    "colorSet": {
+      "bgColor": "#92786a",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
-    "file": "2019/05/25/take-another-black-golden-roof-again"
+    "file": "2019/05/25/take-another-black-golden-roof-again",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775577113/89d0a2e1gy1g3dyz88llxj22pj42bb2g_ctvoin.jpg",
+      "alt": "shenzhen"
+    },
+    "colorSet": {
+      "bgColor": "#ae9f74",
+      "titleColor": "--mantine-color-orange-2"
+    }
   },
   {
     "file": "2019/05/26/script-killing-and-wenhe-youyou-corluses"
