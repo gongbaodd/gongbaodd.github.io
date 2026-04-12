@@ -4,6 +4,9 @@ category: fe
 tag:
     - Unity
     - XR
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1775991934/mrtk_examples_nearmenu_scene_gq7qug.png
+    alt: MRTK
 ---
 # XRUIs in Unity
 

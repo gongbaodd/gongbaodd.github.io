@@ -7036,5 +7036,19 @@
       "bgColor": "#788faa",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2026/04/09/week-14-xr"
+  },
+  {
+    "file": "2026/04/11/xrui",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775991934/mrtk_examples_nearmenu_scene_gq7qug.png",
+      "alt": "MRTK"
+    },
+    "colorSet": {
+      "bgColor": "#a07670",
+      "titleColor": "--mantine-color-dark-8"
+    }
   }
 ]
