@@ -7050,5 +7050,19 @@
       "bgColor": "#a07670",
       "titleColor": "--mantine-color-dark-8"
     }
+  },
+  {
+    "file": "2026/04/14/ar"
+  },
+  {
+    "file": "2026/04/19/parnu",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1776680375/IMG_2451_q4mui0.jpg",
+      "alt": "street view"
+    },
+    "colorSet": {
+      "bgColor": "#6d7f99",
+      "titleColor": "--mantine-color-dark-8"
+    }
   }
 ]
