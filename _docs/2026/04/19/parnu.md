@@ -2,7 +2,7 @@
 type: post
 category: travel
 city:
-    - Parnu, Estonia
+    - Pärnu, Estonia
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1776680375/IMG_2451_q4mui0.jpg
     alt: street view
