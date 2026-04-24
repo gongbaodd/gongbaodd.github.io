@@ -8,7 +8,7 @@ cover:
     alt: cachyos
 ---
 
-# CachyOS: Returning to Linux
+# Week 16: CachyOS
 
 After three years of stable Windows usage, I have decided to return to Linux. 🐧
 
@@ -33,6 +33,8 @@ I eventually found [CachyOS](https://wiki.cachyos.org/), which is based on **Arc
 * **Niri Desktop**: My first attempt used the Niri scrollable panel. Like COSMIC, it faced Wayland-related scaling issues.
 
 * **KDE Plasma**: I switched to KDE for its flexibility. Although my GPU no longer supports X11 natively, I managed X11 app scaling using environment variables: `GDK_BACKEND=x11 GDK_SCALE=2`. It is not perfect (fonts are often either too large or too small), but it is functional. ⚖️
+
+I used [BTRfs](/plan/2024/02/04/week-5-expo-go) but I never knew that it takes snapshots, so that if the system crashed, I can go back to one snapshot. 
 
 ### Hardware & Performance
 
