@@ -4,6 +4,9 @@ category: fe
 tag:
     - XR
     - Unity
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1777044079/Screenshot_20260424_181754_elhesj.png
+    alt: screen shot
 ---
 
 # AR: Environment Blend
