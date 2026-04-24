@@ -3,6 +3,10 @@ type: post
 category: tech
 tag:
   - XR
+series:
+    name: Master Thesis
+    slug: master
+    number: 4
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1774953924/www.meta.com_quest_quest-3__srsltid_AfmBOoqs1QjxuoVjeYycRNUe7_-7SAFY9-LlMpUCgiTFVnVYA_R-Wv4p_jqaqxy.png
   alt: meta quest 3

@@ -4,6 +4,10 @@ category: fe
 tag:
     - Unity
     - XR
+series:
+    name: Master Thesis
+    slug: master
+    number: 6
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1775991934/mrtk_examples_nearmenu_scene_gq7qug.png
     alt: MRTK

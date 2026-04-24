@@ -4,6 +4,10 @@ category: fe
 tag:
     - XR
     - Unity
+series:
+    name: Master Thesis
+    slug: master
+    number: 7
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1777044079/Screenshot_20260424_181754_elhesj.png
     alt: screen shot

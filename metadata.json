@@ -7052,7 +7052,15 @@
     }
   },
   {
-    "file": "2026/04/17/terrain"
+    "file": "2026/04/17/terrain",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1777046104/Screenshot_2026-04-17_093559_vgx2tz.png",
+      "alt": "vana tallinn"
+    },
+    "colorSet": {
+      "bgColor": "#9c7c5c",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
     "file": "2019/05/25/take-another-black-golden-roof-again",

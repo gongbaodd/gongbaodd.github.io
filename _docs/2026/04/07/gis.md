@@ -9,6 +9,10 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1775556276/Screenshot_2026-04-07_113628_dwbx5z.png
     alt: Tallinn
+series:
+    name: Master Thesis
+    slug: master
+    number: 5
 ---
 
 # 🌍 GIS in Unity
