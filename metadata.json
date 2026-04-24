@@ -1137,17 +1137,6 @@
     }
   },
   {
-    "file": "2019/05/25/take-another-black-golden-roof-again",
-    "cover": {
-      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775577113/89d0a2e1gy1g3dyz88llxj22pj42bb2g_ctvoin.jpg",
-      "alt": "shenzhen"
-    },
-    "colorSet": {
-      "bgColor": "#ae9f74",
-      "titleColor": "--mantine-color-orange-2"
-    }
-  },
-  {
     "file": "2019/05/26/script-killing-and-wenhe-youyou-corluses"
   },
   {
@@ -7055,7 +7044,39 @@
     "file": "2026/04/14/ar"
   },
   {
+    "file": "2026/04/17/terrain"
+  },
+  {
+    "file": "2019/05/25/take-another-black-golden-roof-again",
+    "city": [
+      "Shenzhen, China"
+    ],
+    "locations": [
+      {
+        "latitude": 22.5428599,
+        "longitude": 114.05956
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775577113/89d0a2e1gy1g3dyz88llxj22pj42bb2g_ctvoin.jpg",
+      "alt": "shenzhen"
+    },
+    "colorSet": {
+      "bgColor": "#ae9f74",
+      "titleColor": "--mantine-color-orange-2"
+    }
+  },
+  {
     "file": "2026/04/19/parnu",
+    "city": [
+      "Pärnu, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 58.3916898,
+        "longitude": 24.4952895
+      }
+    ],
     "cover": {
       "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1776680375/IMG_2451_q4mui0.jpg",
       "alt": "street view"

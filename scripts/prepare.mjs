@@ -94,25 +94,39 @@ async function collectMetadata() {
 
 // ---- processors ----
 async function processLocation(data, old) {
-  if (!data?.city || !GOOGLE_API_KEY) return undefined;
+  if (!data?.city) return undefined;
+  const cityList = Array.isArray(data.city) ? data.city : [data.city];
 
-  if (old && old.city && JSON.stringify(old.city) === JSON.stringify(data.city)) {
+  if (!GOOGLE_API_KEY) {
+    console.error("❌ GOOGLE_API_KEY is missing, skipping geocoding and keeping empty/previous locations.");
+    return { city: cityList, locations: old?.locations ?? [] };
+  }
+
+  if (old && old.city && JSON.stringify(old.city) === JSON.stringify(cityList)) {
     return { city: old.city, locations: old.locations };
   }
 
   const locations = [];
-  for (let i = 0; i < data.city.length; i++) {
-    const searchData = await fetch(
-      `https://maps.googleapis.com/maps/api/geocode/json?address=${data.city[i]}&key=${GOOGLE_API_KEY}`
-    );
-    const searchDataJson = await searchData.json();
-    const location = searchDataJson.results?.[0]?.geometry?.location;
-    if (location) {
-      locations.push({ latitude: location.lat, longitude: location.lng });
+  for (let i = 0; i < cityList.length; i++) {
+    try {
+      const city = cityList[i];
+      const searchData = await fetch(
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(city)}&key=${GOOGLE_API_KEY}`
+      );
+      const searchDataJson = await searchData.json();
+      const location = searchDataJson.results?.[0]?.geometry?.location;
+      if (location) {
+        locations.push({ latitude: location.lat, longitude: location.lng });
+      } else {
+        console.error(`❌ Failed to fetch location for city: ${city}`);
+      }
+    } catch (err) {
+      const city = cityList[i];
+      console.error(`❌ Error fetching location for city: ${city}`, err.message);
     }
   }
 
-  return { city: data.city, locations };
+  return { city: cityList, locations };
 }
 
 async function processCover(data, old, file, relPath) {
