@@ -7104,5 +7104,16 @@
   },
   {
     "file": "2026/04/22/xr-drone-sim"
+  },
+  {
+    "file": "2026/04/24/cachyos",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1777048975/1080x360_culme4.jpg",
+      "alt": "cachyos"
+    },
+    "colorSet": {
+      "bgColor": "#448c94",
+      "titleColor": "--mantine-color-blue-2"
+    }
   }
 ]
