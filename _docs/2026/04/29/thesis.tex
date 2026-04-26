@@ -1,0 +1,347 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=2.54cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,     
+    filecolor=magenta,   
+    urlcolor=blue,       
+    citecolor=blue       
+}
+
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{sample.bib}
+
+\title{Designing an XR Drone Training Simulator}
+\author{Jian Gong}
+
+\begin{document}
+
+\begin{titlepage}
+\makeatletter
+    \centering
+    \vspace{2cm}
+    {\large Tallinn University}\\
+    \vspace{0.5cm}
+    {\large School of Digital Technologies} \\
+    \vspace{0.5cm}
+    {\large DTLGM.DT Digital Learning Games}
+
+    \vfill
+
+    {\huge \textbf{ \@title }}\\
+    \vspace{2cm}
+    {\large Master's Thesis}
+
+    \vfill
+    \vfill
+
+    \begin{flushright}
+        {\large Author: \@author} \\
+        \vspace{0.3cm}
+        {\large Supervisor: Martin Sillaots}
+    \end{flushright}
+
+    \vfill
+
+    {\large Tallinn 2026}
+\makeatother
+\end{titlepage}
+
+
+
+% ---------------------------
+\newpage
+\begin{abstract}
+
+\textbf{Idea (Problem)} \\
+Interest in physical skill training is declining, while many domains still require skilled human operators. Traditional training methods lack engagement in digital environments.
+
+\textbf{Methods} \\
+This study develops a gamified XR-based digital twin system for FPV drone training, integrating immersive interaction, physics-based simulation, and PID-based AI-assisted co-training.
+
+\textbf{Most Important Outcome} \\
+A functional XR training system providing real-time AI guidance and supporting interactive skill practice.
+
+\textbf{Conclusions} \\
+XR environments combined with AI feedback can support engaging physical skill training.
+
+\end{abstract}
+
+\section*{Keywords}
+XR, Digital Twin, FPV Drone, Skill Training, Gamification, Human-AI Co-training, PID Control
+% ---------------------------
+
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\newpage
+\section{Introduction}
+
+\subsection{Background}
+Declining engagement in physical skill learning contrasts with ongoing demand for skilled operators. XR provides immersive environments for interaction and simulation.
+
+\subsection{Previous Studies}
+Prior work includes drone simulation, XR-based training systems, and AI-based control.
+
+\subsection{Need for Additional Research}
+Limited integration of XR with learning-oriented design and AI-assisted real-time guidance.
+
+\subsection{Problem Statement}
+How to design an XR system that supports engaging and repeatable physical skill training?
+
+\subsection{Goal}
+To develop a gamified XR training system with AI-assisted co-training.
+
+\subsection{Research Questions}
+\begin{itemize}
+    \item How can XR support physical skill training?
+    \item How can AI assist users during interaction?
+    \item What system design supports repeated practice?
+\end{itemize}
+
+\subsection{Methods Overview}
+Design-based research with iterative prototyping.
+
+% ---------------------------
+\newpage
+\section{Theoretical Background}
+
+\subsection{Concepts}
+\begin{itemize}
+    \item Physical skill acquisition
+    \item Gamification
+    \item Digital twin environments
+    \item XR interaction
+\end{itemize}
+
+\subsection{Theories}
+\begin{itemize}
+    \item Experiential learning
+    \item Deliberate practice
+    \item Feedback-based learning
+\end{itemize}
+
+\subsection{Results from Previous Studies}
+Simulation enables safe training, XR improves immersion, and feedback enhances learning.
+
+\subsection{Open Questions}
+\begin{itemize}
+    \item How to maintain engagement?
+    \item Required fidelity in XR?
+\end{itemize}
+
+\subsection{Disagreements}
+Simulation vs real-world transfer; fidelity vs performance.
+
+\subsection{Research Gap}
+Lack of XR systems integrating learning design and AI guidance.
+% ---------------------------
+\newpage
+\section{Methodology}
+
+\subsection{Research Strategy}
+Design-based research with Agile iteration and spike prototyping.
+
+\subsection{Study Process}
+\begin{enumerate}
+    \item Drone physics implementation
+    \item PID control system
+    \item XR environment (OpenXR, MRTK)
+    \item AI-assisted guidance
+    \item RL prototype (exploratory)
+    \item System integration
+\end{enumerate}
+
+\subsection{Study Object}
+XR system built in Unity using OpenXR and MRTK. Includes FPV drone simulation.
+
+\subsection{Limitations}
+Limited task complexity and no full user study.
+
+\subsection{Data Collection}
+System behavior observation, control performance, RL metrics.
+
+\subsection{Validity and Reliability}
+Controlled simulation and repeatable conditions.
+
+\subsection{Data Analysis}
+Qualitative analysis and RL reward evaluation.
+
+\subsection{Data Presentation}
+Diagrams, graphs, and interface screenshots.
+
+% ---------------------------
+
+
+\newpage
+\section{Results}
+
+\subsection{Main Results}
+\begin{itemize}
+    \item Functional XR training system
+    \item Stable PID-based AI guidance
+    \item Interactive training environment
+\end{itemize}
+
+\subsection{Diagrams and Tables}
+\begin{itemize}
+    \item System architecture
+    \item Control loop
+    \item RL reward curve
+\end{itemize}
+
+\subsection{Examples}
+Hover stabilization and guided control.
+
+\subsection{Conclusion}
+System feasibility demonstrated.
+
+% ---------------------------
+\newpage
+\section{Discussion}
+
+\subsection{Research Questions Revisited}
+XR supports training; AI provides guidance; system design partially validated.
+
+\subsection{Interpretation}
+XR enables immersion; AI provides feedback; combined supports learning.
+
+\subsection{Connection to Theory}
+Supports experiential and feedback-based learning.
+
+\subsection{Contribution}
+\begin{itemize}
+    \item XR-based training system
+    \item AI-assisted co-training approach
+    \item Integration of gamification and simulation
+\end{itemize}
+
+\subsection{Limitations}
+No user study, limited RL, simplified tasks.
+
+\subsection{Future Work}
+User evaluation, more complex tasks, improved AI.
+
+% ---------------------------
+\newpage
+\section{Summary}
+
+\subsection{Goals}
+Develop XR training system with AI guidance.
+
+\subsection{Results}
+Functional system with immersive interaction.
+
+\subsection{Generalization}
+XR supports skill training.
+
+\subsection{Practical Use}
+Prototype training framework.
+
+\subsection{Future Study}
+Learning validation and system expansion.
+
+% ---------------------------
+\newpage
+\section{Delete this}
+\subsection{How to create Sections and Subsections}
+
+Simply use the section and subsection commands, as in this example document! With Overleaf, all the formatting and numbering is handled automatically according to the template you've chosen. If you're using the Visual Editor, you can also create new section and subsections via the buttons in the editor toolbar.
+
+\subsection{How to include Figures}
+
+First you have to upload the image file from your computer using the upload link in the file-tree menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+
+Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by. You can find out more about adding images to your documents in this help article on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.25\linewidth]{frog.jpg}
+\caption{\label{fig:frog}This frog was uploaded via the file-tree menu.}
+\end{figure}
+
+\subsection{How to add Tables}
+
+Use the table and tabular environments for basic tables --- see Table~\ref{tab:widgets}, for example. For more information, please see this help article on \href{https://www.overleaf.com/learn/latex/tables}{tables}.
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\subsection{How to add Comments and Track Changes}
+
+Comments can be added to your project by highlighting some text and clicking ``Add comment'' in the top right of the editor pane. To view existing comments, click on the Review menu in the toolbar above. To reply to a comment, click on the Reply button in the lower right corner of the comment. You can close the Review pane by clicking its name on the toolbar when you're done reviewing for the time being.
+
+Track changes are available on all our \href{https://www.overleaf.com/user/subscription/plans}{premium plans}, and can be toggled on or off using the option at the top of the Review pane. Track changes allow you to keep track of every change made to the document, along with the person making the change.
+
+\subsection{How to add Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}
+\item Like this,
+\item and like this.
+\end{enumerate}
+\dots or bullet points \dots
+\begin{itemize}
+\item Like this,
+\item and like this.
+\end{itemize}
+
+\subsection{How to write Mathematics}
+
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+\[S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i\]
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+
+\subsection{How to change the margins and paper size}
+
+Usually the template you're using will have the page margins and paper size set correctly for that use-case. For example, if you're using a journal article template provided by the journal publisher, that template will be formatted according to their requirements. In these cases, it's best not to alter the margins directly.
+
+If however you're using a more general template, such as this one, and would like to alter the margins, a common way to do so is via the geometry package. You can find the geometry package loaded in the preamble at the top of this example file, and if you'd like to learn more about how to adjust the settings, please visit this help article on \href{https://www.overleaf.com/learn/latex/page_size_and_margins}{page size and margins}.
+
+\subsection{How to change the document language and spell check settings}
+
+Overleaf supports many different languages, including multiple different languages within one document.
+
+To configure the document language, simply edit the option provided to the babel package in the preamble at the top of this example project. To learn more about the different options, please visit this help article on \href{https://www.overleaf.com/learn/latex/International_language_support}{international language support}.
+
+To change the spell check language, simply open the Overleaf menu at the top left of the editor window, scroll down to the spell check setting, and adjust accordingly.
+
+\subsection{How to add Citations and a References List}
+
+You can simply upload a \verb|.bib| file containing your BibTeX entries, created with a tool such as JabRef. You can then cite entries from it, like this: \cite{greenwade93}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|. You can find a \href{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}{video tutorial here} to learn more about BibTeX.
+
+If you have an \href{https://www.overleaf.com/user/subscription/plans}{upgraded account}, you can also import your Mendeley or Zotero library directly as a \verb|.bib| file, via the upload menu in the file-tree.
+
+\subsection{Good luck!}
+
+We hope you find Overleaf useful, and do take a look at our \href{https://www.overleaf.com/learn}{help library} for more tutorials and user guides! Please also let us know if you have any feedback using the \textbf{Contact us} link at the bottom of the Overleaf menu --- or use the contact form at \url{https://www.overleaf.com/contact}.
+
+\printbibliography
+\end{document}
