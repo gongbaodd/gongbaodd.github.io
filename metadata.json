@@ -7115,5 +7115,28 @@
       "bgColor": "#448c94",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2026/04/24/microsoft-visit",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1777200183/Screenshot_20260426_133708-1_zpfhht.png",
+      "alt": "bolt car"
+    },
+    "colorSet": {
+      "bgColor": "#977f57",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2026/04/29/thesis"
   }
 ]
