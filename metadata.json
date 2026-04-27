@@ -7138,5 +7138,16 @@
   },
   {
     "file": "2026/04/29/thesis"
+  },
+  {
+    "file": "2026/04/26/asus-dial",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1777273746/Screenshot_20260427_100750_d9eqxu.png",
+      "alt": "screen shot"
+    },
+    "colorSet": {
+      "bgColor": "#6b987d",
+      "titleColor": "--mantine-color-green-4"
+    }
   }
 ]
