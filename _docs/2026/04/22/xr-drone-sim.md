@@ -1,8 +1,14 @@
 ---
 type: post
 category: tech
+tag:
+    - xr
+series:
+    name: Master Thesis
+    slug: master
+    number: 9
 ---
-# XR Drone Simulator
+# Some OpenXR specs
 
 > 「大事なのは技術ではなく、体験です。」“What matters is not the technology, but the experience.” --Shigeru Miyamoto
 
@@ -99,30 +105,3 @@ XR_EXT_hand_interaction, XR_ANDROID_mouse_interaction
 Unity XR Interaction Toolkit(XRI)
 
 The most widely used framework. It is designed to support OpenXR standards using native Unity components, making it a versatile choice for cross-platform development.
-
-
-## Prefabs in XRI, ISDK and MRTK
-
-## What interactables we need in XR simulator
-
-## Tutorials on interacts
-
-## Using GIS to build digital twin of a city
-
-### Buildings
-
-Using ArcGIS to render the buildings
-
-Using MCP and skills to 
-
-### Occlusion Culling 
-
-### Terrain
-
-## Path design
-
-## Gamification elements
-
-### Safe zone(Invisible walls)
-
-### PBL (Coint collecting)
