@@ -45,7 +45,7 @@ WantedBy=default.target
 Give them `udev` permissions, edit `/etc/udev/rules.d/99-asus-wheel.rules`
 
 ```ini
-KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", MODE="0666"
+KERNEL=="hidraw*", MODE="0666", GROUP="wheel"
 ```
 
 Apply the rules with:
