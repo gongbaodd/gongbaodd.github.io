@@ -9,7 +9,7 @@ cover:
     alt: test play
 ---
 
-# Week 17: Thesis Submitted! 🚀
+# Week 18: Thesis Submitted! 🚀
 
 After nearly disappearing for two months, I have finally finished my master's thesis! 🎉
 
