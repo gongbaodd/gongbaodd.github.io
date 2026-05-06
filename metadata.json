@@ -7149,5 +7149,25 @@
       "bgColor": "#6b987d",
       "titleColor": "--mantine-color-green-4"
     }
+  },
+  {
+    "file": "2026/05/02/week-17-overleaf"
+  },
+  {
+    "file": "2026/05/05/steam-linux"
+  },
+  {
+    "file": "2026/05/05/win-linux-time"
+  },
+  {
+    "file": "2026/05/06/thesis",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1778054303/IMG_2512_httesq.jpg",
+      "alt": "test play"
+    },
+    "colorSet": {
+      "bgColor": "#9b6a5c",
+      "titleColor": "--mantine-color-blue-2"
+    }
   }
 ]
