@@ -7169,5 +7169,16 @@
       "bgColor": "#9b6a5c",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2026/05/07/linux-vr",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1778172300/vr_uzatx9.webp",
+      "alt": "wivrn"
+    },
+    "colorSet": {
+      "bgColor": "#745b46",
+      "titleColor": "--mantine-color-blue-2"
+    }
   }
 ]
