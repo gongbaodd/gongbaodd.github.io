@@ -7180,5 +7180,27 @@
       "bgColor": "#745b46",
       "titleColor": "--mantine-color-blue-2"
     }
+  },
+  {
+    "file": "2026/05/09/gemma4",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1778313496/Screenshot_20260509_104540_csjvof.png",
+      "alt": "slot machine"
+    },
+    "colorSet": {
+      "bgColor": "#6c7c8b",
+      "titleColor": "--mantine-color-red-3"
+    }
+  },
+  {
+    "file": "2026/05/09/vlm",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1778324468/IMG_2525_poaqlk.jpg",
+      "alt": "input image"
+    },
+    "colorSet": {
+      "bgColor": "#9b6d56",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]
