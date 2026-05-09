@@ -32,9 +32,7 @@ After that I tried to use the video generate tool, the video is a little creepy.
 
 <tbody>
   <td>
-
-![Input](https://res.cloudinary.com/dmq8ipket/image/upload/v1778324468/IMG_2525_poaqlk.jpg)
-
+<img src="https://res.cloudinary.com/dmq8ipket/image/upload/v1778324468/IMG_2525_poaqlk.jpg" width="315" />
   </td>
   <td>
 <iframe width="315" height="560" 
