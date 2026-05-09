@@ -18,15 +18,35 @@ You can see, that is much better than last year, though some detail on my trouse
 
 After that I tried to use the video generate tool, the video is a little creepy.
 
-| Input | Output |
-|-------|--------|
-| ![Input](https://res.cloudinary.com/dmq8ipket/image/upload/v1778324468/IMG_2525_poaqlk.jpg) |  <iframe width="315" height="560" 
+<table>
+<thead>
+<tr>
+  <td>
+    Input
+  </td>
+  <td>
+    Output
+  </td>
+</tr>
+</thead>
+
+<tbody>
+  <td>
+
+![Input](https://res.cloudinary.com/dmq8ipket/image/upload/v1778324468/IMG_2525_poaqlk.jpg)
+
+  </td>
+  <td>
+<iframe width="315" height="560" 
   src="https://www.youtube.com/embed/H2L74kM4MiY" 
   title="YouTube video player" 
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen>
-</iframe> |
+</iframe>
+  </td>
+</tbody>
+</table
 
 Then, the cool part, [Tencent's Hunyuan world generation](https://3d.hunyuan.tencent.com/sceneTo3D). What is surprising me it that, the world is not only a 3DGS you can walk around, but also, the buildings are with collider.
 
