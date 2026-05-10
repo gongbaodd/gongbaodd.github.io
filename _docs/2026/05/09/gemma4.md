@@ -8,6 +8,14 @@ cover:
 
 # Gemma 4 is Good 🤖
 
+<iframe width="315" height="560" 
+  src="https://www.youtube.com/embed/6kRUd-qDS4s" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+
 Last month, I talked about [Bolt.diy](/tech/2026/04/06/bolt-diy) where I used **Qwen2.5-code** to make local AI vibe coding. 💻
 
 There is a website, [canirun](https://www.canirun.ai), where I can find the models that I can run on my hardware. 🔍
