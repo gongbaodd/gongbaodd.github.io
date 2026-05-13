@@ -7202,5 +7202,16 @@
       "bgColor": "#9b6d56",
       "titleColor": "--mantine-color-red-3"
     }
+  },
+  {
+    "file": "2026/05/13/letter",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1778672332/p2932127868_xubj5i.webp",
+      "alt": "poster"
+    },
+    "colorSet": {
+      "bgColor": "#a1615e",
+      "titleColor": "--mantine-color-red-3"
+    }
   }
 ]
