@@ -7216,5 +7216,16 @@
   },
   {
     "file": "2026/05/14/week-19"
+  },
+  {
+    "file": "2026/05/17/alpha-window",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779013758/Screenshot_20260517_132614_iumlih.png",
+      "alt": "ColorKey solution"
+    },
+    "colorSet": {
+      "bgColor": "#645c94",
+      "titleColor": "--mantine-color-grape-3"
+    }
   }
 ]
