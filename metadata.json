@@ -7227,5 +7227,16 @@
       "bgColor": "#645c94",
       "titleColor": "--mantine-color-grape-3"
     }
+  },
+  {
+    "file": "2026/05/18/pydata-tallinn",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779134466/IMG_2608_h8zy0o.jpg",
+      "alt": "selfie"
+    },
+    "colorSet": {
+      "bgColor": "#60aa8f",
+      "titleColor": "--mantine-color-cyan-2"
+    }
   }
 ]

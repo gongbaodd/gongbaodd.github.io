@@ -3,6 +3,7 @@ type: post
 category: tech
 tag:
     - xr
+    - x11
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1778172300/vr_uzatx9.webp
     alt: wivrn
@@ -43,6 +44,13 @@ I looked for ways to mirror my desktop to the headset:
 
 * **WayVR:** I attempted to use [WayVR](https://github.com/wayvr-org/wayvr) alongside WiVRn. While there were no error logs, the headset remained blank 🌑.
 * **Workaround:** For now, using an **HDMI capture card** 🔌 is a more reliable solution for monitoring.
+* **X11 (Working Workaround):** To fix this, I reverted to an Xorg session by installing the X11 packages:
+
+```shell
+sudo pacman -S plasma-x11-session kwin-x11 xorg-server
+```
+
+Logging into the Xorg environment allows WayVR to run correctly. Once inside the headset, look at your left wrist while holding the controller, and click the DP1 button to view and select the desired desktop window.
 
 ## 📝 Conclusion
 
