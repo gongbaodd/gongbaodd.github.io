@@ -7,6 +7,21 @@
   },
   "episodes": [
     {
+      "id": "ep-e3jl09a",
+      "title": "给我整一个黑袍剧终有感",
+      "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3jl09a",
+      "pubDate": "Wed, 20 May 2026 11:41:02 GMT",
+      "description": "<p>01. 《黑袍纠察队》最终季完结感悟</p><ul><li><p><strong>信息过载的困扰</strong>：在 AI 和互联网时代，打开 B 站或 YouTube 就会充斥着各种（包括 AI 生成的）结局预测，造成严重的信息爆炸。</p></li><li><p><strong>大结局评价</strong>：整体感觉制作预算不足，未能达到类似《复仇者联盟4》那种宏大的宣发预期（且宣发也是 AI 做的）。后半集因角色失去超能力演变为“肉身互搏”，缺乏视觉期待。</p></li><li><p><strong>编剧的无奈</strong>：剧情基本遵循原著漫画走向，编剧也已在前一集借角色之口吐槽了“大结局有多难写”。</p></li><li><p><strong>完结的心态</strong>：由于该剧长期占据过多的信息流和个人精力，迎来大结局让主播松了一口气，感到十分轻松。</p></li></ul>",
+      "summary": "01. 《黑袍纠察队》最终季完结感悟信息过载的困扰：在 AI 和互联网时代，打开 B 站或 YouTube 就会充斥着各种（包括 AI 生成的）结局预测，造成严重的信息爆炸。大结局评价：整体感觉制作预算不足，未能达到类似《复仇者联盟4》那种宏大的宣发预期（且宣发也是 AI 做的）。后半集因角色失去超能力演变为“肉身互搏”，缺乏视觉期待。编剧的无奈：剧情基本遵循原著漫画走向，编剧也已在前一集借角色之",
+      "duration": "00:03:34",
+      "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/120274666/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-20%2F85d9f0d8-7807-007c-dddd-1a3f919053a8.m4a",
+      "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1779277244886-706fcb2eb9b07.jpg",
+      "colorSet": {
+        "bgColor": "#5d8084",
+        "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
       "id": "Canva-e3jc78i",
       "title": "给我整一下Canva",
       "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/Canva-e3jc78i",
@@ -1852,5 +1867,5 @@
       }
     }
   ],
-  "lastUpdated": "2026-05-14T14:45:31.009Z"
+  "lastUpdated": "2026-05-20T15:55:18.001Z"
 }
