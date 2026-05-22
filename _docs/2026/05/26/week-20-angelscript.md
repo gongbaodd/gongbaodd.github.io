@@ -39,7 +39,7 @@ There is no prebuilt version of UE with AngelScript. You must build it from the 
 ```shell
 ./Setup.sh
 ./GenerateProjectFiles.sh
-./Engine/Build/BatchFiles/Linux/RunUBT.sh UnrealEditor Linux Development
+./Engine/Build/BatchFiles/RunUAT.sh BuildTarget -Target=UnrealEditor -Platform=Linux -Configuration=Development
 ```
 
 * **Build Time:** The local compilation took 3 hours.
