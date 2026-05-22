@@ -4,6 +4,9 @@ category: travel
 city:
   - Luoyang, China
   - Beijing, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1779463608/IMG_20170522_143447_097_mu1jbj.jpg
+  alt: luoyang
 ---
 
 # 到洛阳避暑

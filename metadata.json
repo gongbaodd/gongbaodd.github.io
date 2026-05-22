@@ -3738,7 +3738,15 @@
         "latitude": 39.904211,
         "longitude": 116.407395
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779463608/IMG_20170522_143447_097_mu1jbj.jpg",
+      "alt": "luoyang"
+    },
+    "colorSet": {
+      "bgColor": "#958b6b",
+      "titleColor": "--mantine-color-dark-8"
+    }
   },
   {
     "file": "2017/05/14/nas"
