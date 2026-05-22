@@ -36,6 +36,12 @@ Compared to Blueprints, AngelScript offers clear advantages:
 
 There is no prebuilt version of UE with AngelScript. You must build it from the source following the [Official Installation Guide](https://angelscript.hazelight.se/getting-started/installation/).
 
+```shell
+./Setup.sh
+./GenerateProjectFiles.sh
+./Engine/Build/BatchFiles/Linux/RunUBT.sh UnrealEditor Linux Development
+```
+
 * **Build Time:** The local compilation took 3 hours.
 * **Stability:** The custom-built version is less stable than official prebuilt binaries. Note that projects created with this version cannot be opened using standard UE prebuilt editors.
 
