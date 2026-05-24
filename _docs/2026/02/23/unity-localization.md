@@ -5,8 +5,8 @@ tag:
     - localization
     - Unity
 series:
-  name: Unity Localization
-  slug: unity-localization
+    name: Grandpa's bee Haven
+    slug: grandpa-bee
 ---
 
 # Week 7: Mastering Localization in Unity

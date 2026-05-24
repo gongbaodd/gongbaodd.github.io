@@ -6,6 +6,9 @@ cover:
     alt: ColorKey solution
 tag:
     - Unity
+series:
+    name: Grandpa's bee Haven
+    slug: grandpa-bee
 ---
 
 # Unity Transparent Window in Win32

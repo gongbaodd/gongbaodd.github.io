@@ -7257,5 +7257,47 @@
       "bgColor": "#5ba55f",
       "titleColor": "--mantine-color-indigo-2"
     }
+  },
+  {
+    "file": "2026/05/23/electron",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779645228/Screenshot_20260522_161147_hbofle.png",
+      "alt": "clippy"
+    },
+    "colorSet": {
+      "bgColor": "#a2a45c",
+      "titleColor": "--mantine-color-lime-2"
+    }
+  },
+  {
+    "file": "2026/05/22/week-20-angelscript",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779451397/Screenshot_20260522_150144-1_cv61p1.png",
+      "alt": "screenshot"
+    },
+    "colorSet": {
+      "bgColor": "#5ba55f",
+      "titleColor": "--mantine-color-indigo-2"
+    }
+  },
+  {
+    "file": "2026/05/24/kopli",
+    "city": [
+      "Tallinn, Estonia"
+    ],
+    "locations": [
+      {
+        "latitude": 59.43696079999999,
+        "longitude": 24.7535746
+      }
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779647307/IMG_2642_arykas.jpg",
+      "alt": "cat"
+    },
+    "colorSet": {
+      "bgColor": "#a48758",
+      "titleColor": "--mantine-color-dark-8"
+    }
   }
 ]

@@ -5,8 +5,8 @@ tag:
     - localization
     - Unity
 series:
-  name: Unity Localization
-  slug: unity-localization
+    name: Grandpa's bee Haven
+    slug: grandpa-bee
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1772457886/Screenshot_2026-03-02_152127_cpo1s1.png
     alt: language selection
