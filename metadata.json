@@ -359,7 +359,15 @@
         "latitude": 29.6526199,
         "longitude": 91.13775
       }
-    ]
+    ],
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779709288/IMG_20180515_133949_d4vzlo.jpg",
+      "alt": "Lhasa"
+    },
+    "colorSet": {
+      "bgColor": "#a3884f",
+      "titleColor": "--mantine-color-red-3"
+    }
   },
   {
     "file": "2018/05/26/blender"

@@ -11,6 +11,9 @@ city:
     - Chengdu, China
     - Xining, China
     - Lhasa, China
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1779709288/IMG_20180515_133949_d4vzlo.jpg
+    alt: Lhasa
 ---
 
 # 旅行总结
