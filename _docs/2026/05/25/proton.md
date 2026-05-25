@@ -61,4 +61,10 @@ public class LinuxBackgroundCanvas : MonoBehaviour
 
 ## 📸 Result
 
+In Linux, run the following command to test the result.
+
+```shell
+STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/${username}/.steam/root" STEAM_COMPAT_DATA_PATH="/home/${username}/.proton_bee" /home/${username}/.steam/root/steamapps/common/Proton\ 10.0/proton run "/home/${username}/Downloads/win32/win32/Grandpa's Bee Haven.exe"
+```
+
 ![Result](https://res.cloudinary.com/dmq8ipket/image/upload/v1779700322/Screenshot_20260525_120028_fm3doc.png)
