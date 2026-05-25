@@ -7299,5 +7299,16 @@
       "bgColor": "#a48758",
       "titleColor": "--mantine-color-dark-8"
     }
+  },
+  {
+    "file": "2026/05/25/proton",
+    "cover": {
+      "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779700322/Screenshot_20260525_120028_fm3doc.png",
+      "alt": "grandpa's bee haven"
+    },
+    "colorSet": {
+      "bgColor": "#90826f",
+      "titleColor": "--mantine-color-blue-2"
+    }
   }
 ]
