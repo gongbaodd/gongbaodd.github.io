@@ -55,3 +55,11 @@ Logging into the Xorg environment allows WayVR to run correctly. Once inside the
 ## 📝 Conclusion
 
 Yes, **XR development on Linux** is possible, specifically with **Godot** 🛠️. However, the overall experience is not as seamless as on Windows. If you are committed to the Godot ecosystem, Linux is a viable host environment.
+
+<iframe width="315" height="560" 
+        src="https://www.youtube.com/embed/3sBtgYangI4" 
+        title="Developing VR in Linux #godot #gamedev #cachyos #antigravity" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+</iframe>
