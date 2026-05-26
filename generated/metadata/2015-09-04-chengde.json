@@ -1,0 +1,21 @@
+{
+  "file": "2015/09/04/chengde",
+  "hash": "c10c6eb054283b6924fe490cd0b93a18adb5c9f1f69dc35fea881be73cded6a7",
+  "city": [
+    "Chengde, China"
+  ],
+  "locations": [
+    {
+      "latitude": 40.95149989999999,
+      "longitude": 117.9634
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759084841/P50904-133751_o3uk3n.jpg",
+    "alt": "group photo"
+  },
+  "colorSet": {
+    "bgColor": "#a57862",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

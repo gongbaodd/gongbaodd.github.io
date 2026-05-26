@@ -1,0 +1,23 @@
+{
+  "file": "2020/06/01/6",
+  "hash": "a2c24b308b5e892691af239316455100bea92d2b89b7de7d6009ce426a94169c",
+  "city": [
+    "Shenzhen, China",
+    "Dalian, China",
+    "Haikou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    },
+    {
+      "latitude": 38.9139899,
+      "longitude": 121.6147
+    },
+    {
+      "latitude": 20.0442199,
+      "longitude": 110.19989
+    }
+  ]
+}

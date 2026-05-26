@@ -1,0 +1,12 @@
+{
+  "file": "2023/08/20/33rd-viewtransition",
+  "hash": "5c892efa0d77030f92953ee18a1ea735cbe750cb86d38c68fcfb69bc4b8c50ec",
+  "cover": {
+    "url": "https://blog.logrocket.com/wp-content/uploads/2021/08/astro-cool-parts.png",
+    "alt": "astro logo from logrocket"
+  },
+  "colorSet": {
+    "bgColor": "#577ea0",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

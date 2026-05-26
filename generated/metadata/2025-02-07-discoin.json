@@ -1,0 +1,12 @@
+{
+  "file": "2025/02/07/discoin",
+  "hash": "060d14628f2af8eeffc2fabf79340e21e0b68f39b2fe171eac5fefb40828848e",
+  "cover": {
+    "url": "https://dis-coin.vercel.app/Discoin-cover-image.jpg",
+    "alt": "cover"
+  },
+  "colorSet": {
+    "bgColor": "#966e85",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

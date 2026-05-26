@@ -1,0 +1,21 @@
+{
+  "file": "2019/09/14/i-almost-was-not-hot-to-die-in-ganzhou",
+  "hash": "10151570ce1044c6e32c404b1f253991f556ecc4ad75d5e56d1c2ed3f974c0f1",
+  "city": [
+    "Ganzhou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 25.8310899,
+      "longitude": 114.93476
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757655653/IMG_20190914_171656_sgcmdq.jpg",
+    "alt": "bridge"
+  },
+  "colorSet": {
+    "bgColor": "#7e817a",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

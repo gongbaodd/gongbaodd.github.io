@@ -1,0 +1,21 @@
+{
+  "file": "2019/11/16/nanshan-museum-forever-changan",
+  "hash": "95f684252382b66e3988938c53198b3ff9b9157151b421da0a78f8534bf9a742",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763295230/012_gixqfn.jpg",
+    "alt": "wushi"
+  },
+  "colorSet": {
+    "bgColor": "#927b6c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

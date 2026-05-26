@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/04/boundaries",
+  "hash": "76be6c1c10449a0fb85674cd176ecfed0c3d954ab4cdfa6fa50aa2b6a0933426",
+  "city": [
+    "Sanya, China"
+  ],
+  "locations": [
+    {
+      "latitude": 18.2524799,
+      "longitude": 109.51209
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884199/IMG_20200905_023541_lk1mmi.jpg",
+    "alt": "me"
+  },
+  "colorSet": {
+    "bgColor": "#9f855b",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

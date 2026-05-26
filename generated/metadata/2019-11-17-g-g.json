@@ -1,0 +1,21 @@
+{
+  "file": "2019/11/17/g-g",
+  "hash": "2ae193063e61df26c83a998d2a53d940e21a8c519411ff1f200104d5c29473d0",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763406631/g_g_bs6gfp.jpg",
+    "alt": "the hall"
+  },
+  "colorSet": {
+    "bgColor": "#908479",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

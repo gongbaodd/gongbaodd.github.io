@@ -1,0 +1,21 @@
+{
+  "file": "2017/04/03/tianshui-museum",
+  "hash": "701b0c815a988fde7c8a76f67f958baee607720044afc98ceb6d53fd59ed4c90",
+  "city": [
+    "Tianshui, China"
+  ],
+  "locations": [
+    {
+      "latitude": 34.5808499,
+      "longitude": 105.72486
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775142895/P70404-103545_jske9x.jpg",
+    "alt": "qingming"
+  },
+  "colorSet": {
+    "bgColor": "#996c5c",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

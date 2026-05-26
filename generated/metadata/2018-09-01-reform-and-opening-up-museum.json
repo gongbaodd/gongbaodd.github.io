@@ -1,0 +1,21 @@
+{
+  "file": "2018/09/01/reform-and-opening-up-museum",
+  "hash": "990b93782679826817e32be57c476a345f469fdb83cd4b212044251db0399b3c",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756724714/IMG_20180901_141240_tli0ut.jpg",
+    "alt": "inside"
+  },
+  "colorSet": {
+    "bgColor": "#b67165",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

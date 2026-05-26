@@ -1,0 +1,12 @@
+{
+  "file": "2018/08/14/aframejs",
+  "hash": "4937e5da7a9bbadf01eac8aa0b18f650c41dd8e1ee82a0bda939e5e85945a2bb",
+  "cover": {
+    "url": "https://aframe.io/images/blog/introducing-aframe.png",
+    "alt": "logo from aframe.io"
+  },
+  "colorSet": {
+    "bgColor": "#546c9c",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

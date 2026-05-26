@@ -1,0 +1,31 @@
+{
+  "file": "2020/11/01/there-is-no-heating",
+  "hash": "e374e2bb830a3c9534c05e00ce0171fe0a0831dd7e933d383899a10608828ccf",
+  "city": [
+    "Dunhuang, China",
+    "Lanzhou, China",
+    "Jiayuguan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 40.1421899,
+      "longitude": 94.66197
+    },
+    {
+      "latitude": 36.0613799,
+      "longitude": 103.83417
+    },
+    {
+      "latitude": 39.7713799,
+      "longitude": 98.28707999999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762345941/Screenshot_2025-11-05_142821_nuer5c.png",
+    "alt": "museum"
+  },
+  "colorSet": {
+    "bgColor": "#9f855e",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

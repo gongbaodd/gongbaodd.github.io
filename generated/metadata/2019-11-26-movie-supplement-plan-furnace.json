@@ -1,0 +1,12 @@
+{
+  "file": "2019/11/26/movie-supplement-plan-furnace",
+  "hash": "f6abe4c511795cb5b304818576e46700b98d8f3071cfcf07b45de7733ddc129a",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BMTUyNTc3NTg3M15BMl5BanBnXkFtZTgwMzc1MTAzMjE@._V1_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#90897e",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "file": "2020/09/01/how-to-play-wanning",
+  "hash": "5434aba68ee8549f2d56bb50b081a9fec5015ffcf61dbacd73969b8952e85030",
+  "city": [
+    "Wanning, China",
+    "Haikou, China",
+    "Sanya, China"
+  ],
+  "locations": [
+    {
+      "latitude": 18.7953199,
+      "longitude": 110.38975
+    },
+    {
+      "latitude": 20.0442199,
+      "longitude": 110.19989
+    },
+    {
+      "latitude": 18.2524799,
+      "longitude": 109.51209
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756725178/IMG_20200901_111846_lynr9z.jpg",
+    "alt": "coconut chicken"
+  },
+  "colorSet": {
+    "bgColor": "#996d59",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

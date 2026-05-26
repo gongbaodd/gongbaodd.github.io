@@ -1,0 +1,18 @@
+{
+  "file": "2020/08/03/anshun-dragon-palace",
+  "hash": "0dbf1846b4a4a07a6b683c213e600904f283e5eb995076af3ef38120aa21c0f2",
+  "city": [
+    "Guiyang, China",
+    "Anshun, China"
+  ],
+  "locations": [
+    {
+      "latitude": 26.6475899,
+      "longitude": 106.63019
+    },
+    {
+      "latitude": 26.2536699,
+      "longitude": 105.9462
+    }
+  ]
+}

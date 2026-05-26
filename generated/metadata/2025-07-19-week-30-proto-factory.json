@@ -1,0 +1,12 @@
+{
+  "file": "2025/07/19/week-30-proto-factory",
+  "hash": "6dab35a2a5a94999930c5f86bfe5a63a7fae5167f1d709c1ecb45c7e442f28c6",
+  "cover": {
+    "url": "./selfie.png",
+    "alt": "my photo in Proto Factory"
+  },
+  "colorSet": {
+    "bgColor": "#8f826d",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

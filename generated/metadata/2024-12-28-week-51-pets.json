@@ -1,0 +1,21 @@
+{
+  "file": "2024/12/28/week-51-pets",
+  "hash": "44faff2d7282f0dc5c63c45692e7d3db130d6fd693159eda2bacdf6f518c48d1",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "./pet.jpg",
+    "alt": "lucky"
+  },
+  "colorSet": {
+    "bgColor": "#97846a",
+    "titleColor": "--mantine-color-grape-3"
+  }
+}

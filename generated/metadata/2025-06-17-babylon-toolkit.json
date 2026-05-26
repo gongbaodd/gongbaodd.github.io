@@ -1,0 +1,12 @@
+{
+  "file": "2025/06/17/babylon-toolkit",
+  "hash": "ad81f8d026605ddf0f97065df8fc4e6274d495afe7a1e0aa12ad9728454e4634",
+  "cover": {
+    "url": "https://editor.babylonjs.com/documentation/composing-scene/adding-objects.png",
+    "alt": "image from editor.babylonjs.com"
+  },
+  "colorSet": {
+    "bgColor": "#5e8ca4",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

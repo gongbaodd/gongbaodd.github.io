@@ -1,0 +1,21 @@
+{
+  "file": "2016/12/07/suzuki-canteen",
+  "hash": "9bd22bed1e24b671e8b6b161ff67f6522cbfe3dddb48df724a2772197c36d662",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1765131601/suzuki_itvu93.png",
+    "alt": "suzuki"
+  },
+  "colorSet": {
+    "bgColor": "#8f664f",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

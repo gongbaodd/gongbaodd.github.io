@@ -1,0 +1,21 @@
+{
+  "file": "2017/10/29/commemorate-drive-alone-for-the-first-time",
+  "hash": "33c00472a03bce6bfd297b19a943d4caff09c4702102b36e75b4f9347b11a00a",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761740978/007_blio62.jpg",
+    "alt": "road trip"
+  },
+  "colorSet": {
+    "bgColor": "#a4845f",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

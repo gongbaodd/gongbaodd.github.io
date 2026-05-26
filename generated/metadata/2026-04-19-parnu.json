@@ -1,0 +1,21 @@
+{
+  "file": "2026/04/19/parnu",
+  "hash": "2df4eb7ac953d07dbfebae83b7a385f367a9c899912a713ba4cc60453e658e92",
+  "city": [
+    "Pärnu, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 58.3916898,
+      "longitude": 24.4952895
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1776680375/IMG_2451_q4mui0.jpg",
+    "alt": "street view"
+  },
+  "colorSet": {
+    "bgColor": "#6d7f99",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

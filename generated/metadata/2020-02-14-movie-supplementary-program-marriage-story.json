@@ -1,0 +1,12 @@
+{
+  "file": "2020/02/14/movie-supplementary-program-marriage-story",
+  "hash": "3a93b2a4939eadd5db9f5889a324f328227756d07911647f6989afd2cae2b1db",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BNmE0OWJlM2MtNzhmMi00YmQyLTlmY2EtZmUzNzBiNGRlN2JkXkEyXkFqcGc@._V1_FMjpg_UY720_.jpg",
+    "alt": "poster"
+  },
+  "colorSet": {
+    "bgColor": "#a4845c",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

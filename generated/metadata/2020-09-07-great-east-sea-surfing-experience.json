@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/07/great-east-sea-surfing-experience",
+  "hash": "98b3314cc0e7e78de34d1eac681b07c669a082f08a90204efe5fbe8fd02e855e",
+  "city": [
+    "Sanya, China"
+  ],
+  "locations": [
+    {
+      "latitude": 18.2524799,
+      "longitude": 109.51209
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884516/IMG_20200906_190251_xacwi0.jpg",
+    "alt": "me"
+  },
+  "colorSet": {
+    "bgColor": "#93666f",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

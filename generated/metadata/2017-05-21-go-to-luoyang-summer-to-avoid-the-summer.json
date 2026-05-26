@@ -1,0 +1,26 @@
+{
+  "file": "2017/05/21/go-to-luoyang-summer-to-avoid-the-summer",
+  "hash": "d3e5254fc0b52411c3e15bfcf339feab3866ffb006bd9d698226f69c4ac9ea0c",
+  "city": [
+    "Luoyang, China",
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 34.6181299,
+      "longitude": 112.45402
+    },
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779463608/IMG_20170522_143447_097_mu1jbj.jpg",
+    "alt": "luoyang"
+  },
+  "colorSet": {
+    "bgColor": "#958b6b",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

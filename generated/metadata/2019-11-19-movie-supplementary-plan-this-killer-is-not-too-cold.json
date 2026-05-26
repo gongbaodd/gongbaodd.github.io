@@ -1,0 +1,12 @@
+{
+  "file": "2019/11/19/movie-supplementary-plan-this-killer-is-not-too-cold",
+  "hash": "7e5b7f5c750a7700fe4a31919914b7666cf4a6d95e76656f61808de77f91a72c",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BNGRkYTNhOWQtYmI0Ni00MjZhLWJmMzAtMTA2Mjg4NGNiNDU0XkEyXkFqcGc@._V1_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#787f88",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

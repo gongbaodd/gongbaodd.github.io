@@ -1,0 +1,12 @@
+{
+  "file": "2026/04/06/bolt-diy",
+  "hash": "6c1e6bb828ec4e949819d17d7d04323bcad544c7feedac58998f7f352f1fc012",
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775487390/Screenshot_2026-04-06_173832_tyx0ec.png",
+    "alt": "todoapp"
+  },
+  "colorSet": {
+    "bgColor": "#60a858",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

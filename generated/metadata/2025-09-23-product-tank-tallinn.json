@@ -1,0 +1,21 @@
+{
+  "file": "2025/09/23/product-tank-tallinn",
+  "hash": "164f618b93ae65efe5555a1188aa233df56c8eb79370b44e4210375a4644de96",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758625577/IMG_8189_oxb8ez.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#8f8473",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

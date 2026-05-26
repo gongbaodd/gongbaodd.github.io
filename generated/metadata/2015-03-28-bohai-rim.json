@@ -1,0 +1,51 @@
+{
+  "file": "2015/03/28/bohai-rim",
+  "hash": "6a862b1507bcc145b9f7a467553b60e3efb2c1698ab5a24a794c3b1c8d10b766",
+  "city": [
+    "Yantai, China",
+    "Penglai, China",
+    "Qingdao, China",
+    "Tai'an, China",
+    "Qufu, China",
+    "Jinan, China",
+    "Tianjin, China"
+  ],
+  "locations": [
+    {
+      "latitude": 37.4635299,
+      "longitude": 121.44801
+    },
+    {
+      "latitude": 37.8106399,
+      "longitude": 120.75898
+    },
+    {
+      "latitude": 36.0662299,
+      "longitude": 120.38299
+    },
+    {
+      "latitude": 36.1999399,
+      "longitude": 117.0884
+    },
+    {
+      "latitude": 35.4746899,
+      "longitude": 117.24542
+    },
+    {
+      "latitude": 36.6518399,
+      "longitude": 117.12009
+    },
+    {
+      "latitude": 39.085099,
+      "longitude": 117.199369
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774700949/P50330-090259_gmzfch.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#ac7964",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

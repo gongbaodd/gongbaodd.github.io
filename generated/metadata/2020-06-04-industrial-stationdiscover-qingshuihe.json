@@ -1,0 +1,23 @@
+{
+  "file": "2020/06/04/industrial-stationdiscover-qingshuihe",
+  "hash": "9455f5214cf82ed0cd03238ebde7bf955efbf1e3a80e684ec1474bac72035781",
+  "city": [
+    "Shenzhen, China",
+    "Beijing, China",
+    "Kowloon, Hong Kong"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    },
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    },
+    {
+      "latitude": 22.3185673,
+      "longitude": 114.1796057
+    }
+  ]
+}

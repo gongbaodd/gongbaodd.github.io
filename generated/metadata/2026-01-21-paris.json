@@ -1,0 +1,21 @@
+{
+  "file": "2026/01/21/paris",
+  "hash": "8b3588f2d717fe2c65d672c285056fed601cf09adcd9d79f71ec950c58db4cbe",
+  "city": [
+    "Paris, France"
+  ],
+  "locations": [
+    {
+      "latitude": 48.8575475,
+      "longitude": 2.3513765
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768952204/IMG_9600_al0mlh.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#b4a460",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

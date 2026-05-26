@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/09/in-zhanjiang-oysters-are-unmanned",
+  "hash": "a40830857d4ed2d11e0cd8fae1730cd8a9ba5d661b2ed691dee5b9e13d6adfa5",
+  "city": [
+    "Zhanjiang, China"
+  ],
+  "locations": [
+    {
+      "latitude": 21.2713399,
+      "longitude": 110.35894
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884613/IMG_20200908_200148_pxzjad.jpg",
+    "alt": "oyster"
+  },
+  "colorSet": {
+    "bgColor": "#9f8b50",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2019/10/27/red-row-koko-yoshi",
+  "hash": "7639186daec5bafee55432fd294fc0f2fda2b7c10ed9308854c65a4fb0c27b21",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759310637/89d0a2e1gy1g9bqe44gkuj20u0140tzj_joiabf.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#975a52",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

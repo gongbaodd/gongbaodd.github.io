@@ -1,0 +1,21 @@
+{
+  "file": "2017/08/27/go-to-dazaitai-and-watch-nothing-a-southern-girl-commemorates-the-days-when-you-froze-into-a-dog",
+  "hash": "c3c44daee0f09decb7c8b2e2531cd55fc4198003cfa49e00015ac68f226c258d",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "./uk.jpg",
+    "alt": "play uklele"
+  },
+  "colorSet": {
+    "bgColor": "#9a7e68",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

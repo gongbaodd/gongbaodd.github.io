@@ -1,0 +1,12 @@
+{
+  "file": "2020/02/14/movie-supplementary-plan-qiao-qiao-rabbit",
+  "hash": "1b2e28d196bde90f19f07cda01c7257cb1ddd88505ec66f2afd1efd28b63639e",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BYmFmNmUyMjYtZTFjNS00OWQyLThhZmMtMGZkYTQ3YjY0ZDQ1XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg",
+    "alt": "poster"
+  },
+  "colorSet": {
+    "bgColor": "#a68271",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "file": "2024/05/25/week-21-boeing-787",
+  "hash": "fdf41dec886ef8e55aacad5ce91365be784b89a518e4ea49032ba182f3138588",
+  "city": [
+    "Bangkok, Thailand",
+    "Kunming, China",
+    "Beijing, China",
+    "Langfang, China"
+  ],
+  "locations": [
+    {
+      "latitude": 13.7563309,
+      "longitude": 100.5017651
+    },
+    {
+      "latitude": 24.8796599,
+      "longitude": 102.83322
+    },
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    },
+    {
+      "latitude": 39.5377499,
+      "longitude": 116.68376
+    }
+  ]
+}

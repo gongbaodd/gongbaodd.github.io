@@ -1,0 +1,21 @@
+{
+  "file": "2018/10/04/bai-caotang-drink-sugar-water",
+  "hash": "5173e41d12e3e52c7fecf96560a3f7d22f23ed8142d08d82c6974e6dfc3c7ac1",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759575387/IMG_20181004_123700_urw9cm.jpg",
+    "alt": "baicaotang"
+  },
+  "colorSet": {
+    "bgColor": "#959a68",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

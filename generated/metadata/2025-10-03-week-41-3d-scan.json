@@ -1,0 +1,21 @@
+{
+  "file": "2025/10/03/week-41-3d-scan",
+  "hash": "04bd6775a953707e7304e82ff4dd12e1a32463a0c49d9f0290448b0fe7a10f17",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759499231/552532190_1140605504076650_2371037736575177324_n_r9jekh.jpg",
+    "alt": "scan"
+  },
+  "colorSet": {
+    "bgColor": "#6e7b91",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

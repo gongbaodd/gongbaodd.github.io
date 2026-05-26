@@ -1,0 +1,21 @@
+{
+  "file": "2025/09/05/open-air-museum",
+  "hash": "b5f310de8ff53115915c93928e6d495121f15e7bf928a95e4b5925f8c4ae4270",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757100149/Screenshot_2025-09-05_222203_qcul4o.png",
+    "alt": "play ground"
+  },
+  "colorSet": {
+    "bgColor": "#997e6f",
+    "titleColor": "--mantine-color-green-4"
+  }
+}

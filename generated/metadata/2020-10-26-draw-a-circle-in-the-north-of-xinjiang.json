@@ -1,0 +1,106 @@
+{
+  "file": "2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
+  "hash": "218f691fecf890b4695e1978f439aea497739edd5c1472f876773641fe12d975",
+  "city": [
+    "Shijiazhuang, China",
+    "Urumqi, China",
+    "Changji, China",
+    "Fuyun, China",
+    "Koktokay, China",
+    "Kanas, China",
+    "Buerjin, China",
+    "Altay, China",
+    "Baihaba, China",
+    "Hem, China",
+    "Wuerhe, China",
+    "Sayram Lake, China",
+    "Alashankou, China",
+    "Ili, China",
+    "Yining, China",
+    "Nalati, China",
+    "Bayanbulak, China",
+    "Korla, China"
+  ],
+  "locations": [
+    {
+      "latitude": 38.0427599,
+      "longitude": 114.5143
+    },
+    {
+      "latitude": 43.8266299,
+      "longitude": 87.61688
+    },
+    {
+      "latitude": 44.0111699,
+      "longitude": 87.30822
+    },
+    {
+      "latitude": 46.9936199,
+      "longitude": 89.52552999999999
+    },
+    {
+      "latitude": 47.221611,
+      "longitude": 89.811189
+    },
+    {
+      "latitude": 48.8170057,
+      "longitude": 87.0429996
+    },
+    {
+      "latitude": 47.6998899,
+      "longitude": 86.86313
+    },
+    {
+      "latitude": 47.8269999,
+      "longitude": 88.13243
+    },
+    {
+      "latitude": 48.70169,
+      "longitude": 86.79055
+    },
+    {
+      "latitude": 35.86166,
+      "longitude": 104.195397
+    },
+    {
+      "latitude": 46.1138,
+      "longitude": 85.66775
+    },
+    {
+      "latitude": 44.6,
+      "longitude": 81.1166667
+    },
+    {
+      "latitude": 45.1732799,
+      "longitude": 82.55447
+    },
+    {
+      "latitude": 43.91688990000001,
+      "longitude": 81.32415999999999
+    },
+    {
+      "latitude": 43.9771499,
+      "longitude": 81.52732
+    },
+    {
+      "latitude": 43.328611,
+      "longitude": 84.004044
+    },
+    {
+      "latitude": 35.86166,
+      "longitude": 104.195397
+    },
+    {
+      "latitude": 41.7264299,
+      "longitude": 86.1736899
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761517393/IMG_20201019_095219_yepkpv.jpg",
+    "alt": "me"
+  },
+  "colorSet": {
+    "bgColor": "#738eac",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2026/01/17/berghain",
+  "hash": "6e40e158bfc877e42e62b5737a4c4c16c308573605a7123b6ad6187bff38d0f8",
+  "city": [
+    "Berlin, Germany"
+  ],
+  "locations": [
+    {
+      "latitude": 52.52000659999999,
+      "longitude": 13.404954
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768950768/IMG_9290_ysf6vq.jpg",
+    "alt": "lighter"
+  },
+  "colorSet": {
+    "bgColor": "#963502",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

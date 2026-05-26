@@ -1,0 +1,12 @@
+{
+  "file": "2025/08/27/map",
+  "hash": "407823298b06a30c212dc5377b1055574305e626cc540a86cceb90314c49a45d",
+  "cover": {
+    "url": "https://visgl.github.io/react-map-gl/images/hero.jpg",
+    "alt": "react-map-gl hero image"
+  },
+  "colorSet": {
+    "bgColor": "#6d91b9",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

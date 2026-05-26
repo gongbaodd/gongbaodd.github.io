@@ -1,0 +1,21 @@
+{
+  "file": "2016/10/10/tang-fan-beidou-hainan-prefecture",
+  "hash": "a8b70673dc6ed1693110daa8cf7aea27c4449ea21c0b30f1aea70def67934169",
+  "city": [
+    "Hainan Tibetan Autonomous Prefecture, China"
+  ],
+  "locations": [
+    {
+      "latitude": 36.2866299,
+      "longitude": 100.62037
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760274374/008_tq8xi2.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9f6c61",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

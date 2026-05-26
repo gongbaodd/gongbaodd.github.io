@@ -1,0 +1,12 @@
+{
+  "file": "2019/12/13/movie-supplementary-plan-why-think-of-home",
+  "hash": "7ad4b744e4d4cefbabff09963e1d0d685b16fefeec161ade2791c7339da2a612",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BYzEyMzQ1OTktZTljZi00OWQzLWE2ZmUtZjQyNzBjYjE1NTc0XkEyXkFqcGc@._V1_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#866f64",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

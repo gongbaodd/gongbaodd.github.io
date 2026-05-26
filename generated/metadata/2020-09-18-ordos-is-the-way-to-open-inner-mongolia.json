@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/18/ordos-is-the-way-to-open-inner-mongolia",
+  "hash": "9a3c6aa2543a25c906fa3957e1adf1463768e9bf54b6ae81307b877fa4822cc4",
+  "city": [
+    "Ordos, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.6084499,
+      "longitude": 109.78087
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757660348/IMG_20200918_114937_qoakwk.jpg",
+    "alt": "horse"
+  },
+  "colorSet": {
+    "bgColor": "#b2a86e",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

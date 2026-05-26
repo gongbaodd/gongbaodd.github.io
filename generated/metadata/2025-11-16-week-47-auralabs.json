@@ -1,0 +1,21 @@
+{
+  "file": "2025/11/16/week-47-auralabs",
+  "hash": "377bf31012d65781d6a47f4bacb0887e0f09b412b6bb3aecdc3701602fb8a6c5",
+  "city": [
+    "Berlin, Germany"
+  ],
+  "locations": [
+    {
+      "latitude": 52.52000659999999,
+      "longitude": 13.404954
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763297833/7883fd8f-5cfc-4ed4-8668-500383c47974_vnknv9.jpg",
+    "alt": "group photo"
+  },
+  "colorSet": {
+    "bgColor": "#9e6a5e",
+    "titleColor": "--mantine-color-grape-3"
+  }
+}

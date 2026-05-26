@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/16/krakow",
+  "hash": "e10a66a93a6fdff2089a7f253b49f9fab2ce698aa223355f1d44209ced0f1589",
+  "city": [
+    "krakow, Poland"
+  ],
+  "locations": [
+    {
+      "latitude": 50.06465009999999,
+      "longitude": 19.9449799
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1771107476/IMG_1878_eyrpxi.jpg",
+    "alt": "snow view"
+  },
+  "colorSet": {
+    "bgColor": "#7f7869",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

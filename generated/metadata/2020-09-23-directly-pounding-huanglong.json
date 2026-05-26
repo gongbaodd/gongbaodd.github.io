@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/23/directly-pounding-huanglong",
+  "hash": "963fe8ab7b146d9d44380063c15c5069d72f6024d92654467f87319f3236e3d2",
+  "city": [
+    "Huanglong, China"
+  ],
+  "locations": [
+    {
+      "latitude": 35.5843199,
+      "longitude": 109.84018
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757661289/IMG_20200923_154306_whryyz.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#a67e73",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2025/07/05/week-28-kiek-in-de-kok",
+  "hash": "b8b98845907f82b8df3abc23f703b6cf50e434efefa3e561b910e306cdcfef32",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://linnamuuseum.ee/wp-content/uploads/2023/05/neitsitorn.jpg",
+    "alt": "image from linnamuuseum.ee"
+  },
+  "colorSet": {
+    "bgColor": "#6f95bb",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

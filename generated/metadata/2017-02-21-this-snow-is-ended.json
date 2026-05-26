@@ -1,0 +1,43 @@
+{
+  "file": "2017/02/21/this-snow-is-ended",
+  "hash": "fea6e5635ff6ee8bbd2d357b539c7d5a092f89f870eebe9ca8a0f4493ad3c783",
+  "city": [
+    "Beijing, China",
+    "Gubeikou, China",
+    "Datong, China",
+    "Pingyao, China",
+    "Linfen, China",
+    "Huashan, China",
+    "Lintong, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    },
+    {
+      "latitude": 40.69209,
+      "longitude": 117.1639
+    },
+    {
+      "latitude": 40.0763699,
+      "longitude": 113.30001
+    },
+    {
+      "latitude": 37.1893399,
+      "longitude": 112.17557
+    },
+    {
+      "latitude": 36.0882199,
+      "longitude": 111.51962
+    },
+    {
+      "latitude": 31.7330399,
+      "longitude": 118.64118
+    },
+    {
+      "latitude": 34.3666999,
+      "longitude": 109.21421
+    }
+  ]
+}

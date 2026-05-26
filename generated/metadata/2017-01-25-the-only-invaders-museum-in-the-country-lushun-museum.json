@@ -1,0 +1,21 @@
+{
+  "file": "2017/01/25/the-only-invaders-museum-in-the-country-lushun-museum",
+  "hash": "9f615d32341cf14c328843479cbabeb3d7105614228ca258f4900ddc8bbad226",
+  "city": [
+    "Lushun, China"
+  ],
+  "locations": [
+    {
+      "latitude": 38.8512899,
+      "longitude": 121.26208
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769382525/IMGP2897_hzykms.jpg",
+    "alt": "lvshun"
+  },
+  "colorSet": {
+    "bgColor": "#8e8479",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

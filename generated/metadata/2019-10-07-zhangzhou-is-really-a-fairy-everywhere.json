@@ -1,0 +1,21 @@
+{
+  "file": "2019/10/07/zhangzhou-is-really-a-fairy-everywhere",
+  "hash": "fea840271f5696bd63f5ac4972e3e6c4adc004bf47aac3062b0c7d74c3aff56a",
+  "city": [
+    "Zhangzhou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 24.5134699,
+      "longitude": 117.64725
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759309914/IMG_20191007_103342_1_lqsfl0.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#a07b78",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2019/10/08/guangji-lights-are-bright-the-fish-is-difficult",
+  "hash": "d50e03b3b5d42221ac3cdb0f5f58e0e728a134d98235432546a42d60b9fead51",
+  "city": [
+    "chaozhou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 23.6566999,
+      "longitude": 116.62296
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759310132/IMG_20191007_210256_kmgqoo.jpg",
+    "alt": "light show"
+  },
+  "colorSet": {
+    "bgColor": "#a39259",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2026/01/19/brussel",
+  "hash": "3a9d4bf6f7313d80247b67c5f7d3d4237edb0bc6cb7ff288b19439f3bbe6e173",
+  "city": [
+    "Brussel, Belgium"
+  ],
+  "locations": [
+    {
+      "latitude": 50.8260453,
+      "longitude": 4.3802052
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768952113/IMG_9420_hmouw0.jpg",
+    "alt": "comic museum"
+  },
+  "colorSet": {
+    "bgColor": "#956e4f",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2018/09/22/nanshan-museum-and-nanshan-library",
+  "hash": "6a2b2d7f717c092a8338e78719cdaf3875d79f91223e40e4e1f02db710dc94ca",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758522948/IMG_20180922_150233_bnad4m.jpg",
+    "alt": "nanshan museum"
+  },
+  "colorSet": {
+    "bgColor": "#868076",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

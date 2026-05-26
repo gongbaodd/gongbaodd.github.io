@@ -1,0 +1,21 @@
+{
+  "file": "2025/07/27/helsinki",
+  "hash": "d85aa65bc508f87bff57bb4e55db2aaa9d4b1761e4ca786a4d591c0cc8004052",
+  "city": [
+    "Helsinki, Finland"
+  ],
+  "locations": [
+    {
+      "latitude": 60.16985569999999,
+      "longitude": 24.938379
+    }
+  ],
+  "cover": {
+    "url": "./super-cell.jpg",
+    "alt": "super cell building"
+  },
+  "colorSet": {
+    "bgColor": "#6187b0",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

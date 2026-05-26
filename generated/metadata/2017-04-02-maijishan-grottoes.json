@@ -1,0 +1,21 @@
+{
+  "file": "2017/04/02/maijishan-grottoes",
+  "hash": "8a4cd36e75fdb3a3683e1a6e80a267d2af1781e5cb24ab1465ca9acbea80e2db",
+  "city": [
+    "Tianshui, China"
+  ],
+  "locations": [
+    {
+      "latitude": 34.5808499,
+      "longitude": 105.72486
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775142493/IMG_20170402_130839_385_i43sgs.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9f8162",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

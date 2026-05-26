@@ -1,0 +1,21 @@
+{
+  "file": "2020/12/15/crossfit",
+  "hash": "6d308d029ee174bc5bcd74d82ccff2302ff9fd761a2015f2c1a4f960d26cc170",
+  "city": [
+    "Nanjing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 32.0583799,
+      "longitude": 118.79647
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763570967/nanjing_vsy9h0.jpg",
+    "alt": "panorama"
+  },
+  "colorSet": {
+    "bgColor": "#a3886a",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

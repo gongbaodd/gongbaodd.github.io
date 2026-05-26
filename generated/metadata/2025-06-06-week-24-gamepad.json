@@ -1,0 +1,12 @@
+{
+  "file": "2025/06/06/week-24-gamepad",
+  "hash": "ad44f8708de8504a30ee65396f499305af41819a06d02a7861e37ca9ea71ad3b",
+  "cover": {
+    "url": "./gamepad.jpg",
+    "alt": "gamepad"
+  },
+  "colorSet": {
+    "bgColor": "#b19556",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "file": "2026/01/25/porto",
+  "hash": "cafaa36a1868dacc51ad873f70be2f6f11b88b925e7fa99dfc86183864fc98c9",
+  "city": [
+    "Vilar Formoso, Portigal",
+    "Porto, Portugal"
+  ],
+  "locations": [
+    {
+      "latitude": 40.6148457,
+      "longitude": -6.837111999999999
+    },
+    {
+      "latitude": 41.1579438,
+      "longitude": -8.629105299999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769377036/IMG_0222_dgcpsg.jpg",
+    "alt": "selfie in porto"
+  },
+  "colorSet": {
+    "bgColor": "#a97f57",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

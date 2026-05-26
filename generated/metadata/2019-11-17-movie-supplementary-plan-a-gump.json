@@ -1,0 +1,12 @@
+{
+  "file": "2019/11/17/movie-supplementary-plan-a-gump",
+  "hash": "342abc948041c7cefeea8c84d9d6a50782ed90b5721a260f6404c4d47df46910",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_QL75_UY281_CR2,0,190,281_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#8a7870",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

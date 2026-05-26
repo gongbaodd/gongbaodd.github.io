@@ -1,0 +1,12 @@
+{
+  "file": "2020/02/15/movie-supplement-plan-sharp-blade-out-of-the-sheath",
+  "hash": "0ebce2f04536a1efbed5abab269ab7722874755a47b6a6cbe28b8e778c76a874",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_FMjpg_UY2880_.jpg",
+    "alt": "poster"
+  },
+  "colorSet": {
+    "bgColor": "#b86a78",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

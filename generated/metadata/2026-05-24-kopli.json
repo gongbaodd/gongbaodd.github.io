@@ -1,0 +1,21 @@
+{
+  "file": "2026/05/24/kopli",
+  "hash": "848231098617359b378d44e6fd88858f9ac57dae7725eaad9c60d17a861cc884",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779647307/IMG_2642_arykas.jpg",
+    "alt": "cat"
+  },
+  "colorSet": {
+    "bgColor": "#a48758",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2018/10/02/shenzhen-central-book-city",
+  "hash": "50e828dbe4f98dec97a13984ae8ac7e61c39b6df9633063ad619210d4896cb68",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759305950/IMG_20181002_173222_oiry7k.jpg",
+    "alt": "building"
+  },
+  "colorSet": {
+    "bgColor": "#8a837a",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

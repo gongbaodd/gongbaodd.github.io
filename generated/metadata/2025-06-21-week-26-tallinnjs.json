@@ -1,0 +1,21 @@
+{
+  "file": "2025/06/21/week-26-tallinnjs",
+  "hash": "13daf52b102ceffb2315454132f7ae0ae0d5899872f507acefa56e6f1fe32ed2",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756298461/IMG_7216_y311d6.jpg",
+    "alt": "lift 99"
+  },
+  "colorSet": {
+    "bgColor": "#6390ae",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

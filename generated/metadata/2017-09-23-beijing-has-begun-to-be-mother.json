@@ -1,0 +1,21 @@
+{
+  "file": "2017/09/23/beijing-has-begun-to-be-mother",
+  "hash": "3aa5b37804815c0584d6f18794af12b588b1b0c6179ed801423c6af00a2b0dc9",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758522693/89d0a2e1ly1fk9sfli90gj23vc2kxe83_ujv6r9.jpg",
+    "alt": "photo"
+  },
+  "colorSet": {
+    "bgColor": "#54779c",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

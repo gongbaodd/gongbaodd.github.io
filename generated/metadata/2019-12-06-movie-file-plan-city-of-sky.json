@@ -1,0 +1,12 @@
+{
+  "file": "2019/12/06/movie-file-plan-city-of-sky",
+  "hash": "1af6b3638c7861ff1306a35d6f65291d3eed160d576ead287b5fbb772202d90b",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BZjcyMjg2MzktNjg4YS00MjQzLTg0YWQtMjUyZDk2Y2Y0YzZjXkEyXkFqcGc@._V1_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#ab8f68",
+    "titleColor": "--mantine-color-cyan-2"
+  }
+}

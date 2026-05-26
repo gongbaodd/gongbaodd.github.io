@@ -1,0 +1,21 @@
+{
+  "file": "2019/04/30/the-feeling-of-staying-in-kunming-is-the-most-comfortable-days-in-beijing-in-spring",
+  "hash": "04d751fdc2a5448cd1a0afb92b86d79e7c720900a534bd7d7099694624812ac5",
+  "city": [
+    "Kunming, China"
+  ],
+  "locations": [
+    {
+      "latitude": 24.8796599,
+      "longitude": 102.83322
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576075/IMG_20190428_164104_tvwsal.jpg",
+    "alt": "官渡古城"
+  },
+  "colorSet": {
+    "bgColor": "#5c8baa",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

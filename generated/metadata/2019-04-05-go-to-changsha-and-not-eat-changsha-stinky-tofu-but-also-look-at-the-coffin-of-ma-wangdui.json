@@ -1,0 +1,21 @@
+{
+  "file": "2019/04/05/go-to-changsha-and-not-eat-changsha-stinky-tofu-but-also-look-at-the-coffin-of-ma-wangdui",
+  "hash": "9e897faa26bd78fe3fbaead32b23e21a9f2317d4535ba95826ba0c777eea6a77",
+  "city": [
+    "Changsha, China"
+  ],
+  "locations": [
+    {
+      "latitude": 28.2277799,
+      "longitude": 112.93886
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775479113/hey_sailor_w0inma.jpg",
+    "alt": "橘子洲"
+  },
+  "colorSet": {
+    "bgColor": "#566ca1",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

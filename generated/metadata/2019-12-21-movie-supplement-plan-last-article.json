@@ -1,0 +1,12 @@
+{
+  "file": "2019/12/21/movie-supplement-plan-last-article",
+  "hash": "f4bf5633fd852a868526014d858ac984795b5f1824ad934badd5e344ae03cd37",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BNWY3M2NmNDAtYTllMy00ZmFhLTkxMWUtNzU1MDJiYWQ1ZjNlXkEyXkFqcGc@._V1_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#6477a3",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

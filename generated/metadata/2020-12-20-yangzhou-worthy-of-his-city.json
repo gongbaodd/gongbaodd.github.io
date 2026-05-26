@@ -1,0 +1,21 @@
+{
+  "file": "2020/12/20/yangzhou-worthy-of-his-city",
+  "hash": "665cad2e556ab758ef2ed8706bd8548f0f2a5f2ad649022c1e67904a75aecea1",
+  "city": [
+    "Yangzhou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 32.3935799,
+      "longitude": 119.41269
+    }
+  ],
+  "cover": {
+    "url": "./yangzhou.jpg",
+    "alt": "yangzhou"
+  },
+  "colorSet": {
+    "bgColor": "#737bac",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

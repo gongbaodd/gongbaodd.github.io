@@ -1,0 +1,12 @@
+{
+  "file": "2025/06/11/huggingface-transformer",
+  "hash": "48a381f808118e535088f9103b89f270b581d5f67bda167dbc69f44077728aba",
+  "cover": {
+    "url": "https://huggingface.co/blog/assets/infrastructure-alerting/thumbnail.jpg",
+    "alt": "huggingface icon"
+  },
+  "colorSet": {
+    "bgColor": "#84acbc",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

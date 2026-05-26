@@ -1,0 +1,21 @@
+{
+  "file": "2019/02/05/zhuhai-new-year",
+  "hash": "0c0a556dd5960822664973b1e7d59ce19373a2c7c6d57539c6cacc693849b4f3",
+  "city": [
+    "Zhuhai, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.2708599,
+      "longitude": 113.57666
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770504201/zhuhai_zf2na1.jpg",
+    "alt": "zhuhai"
+  },
+  "colorSet": {
+    "bgColor": "#ac9166",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

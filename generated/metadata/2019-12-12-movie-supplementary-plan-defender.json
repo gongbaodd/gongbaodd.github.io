@@ -1,0 +1,12 @@
+{
+  "file": "2019/12/12/movie-supplementary-plan-defender",
+  "hash": "b306d498a323adbcb2198674c01ac4e97c2a1f57d71c3f8a310f8684e2906671",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BMjI2ODg5NDcxN15BMl5BanBnXkFtZTgwMDEzNzIwMTE@._V1_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#b08b6e",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

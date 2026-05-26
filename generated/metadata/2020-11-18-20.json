@@ -1,0 +1,21 @@
+{
+  "file": "2020/11/18/20",
+  "hash": "3cbf8ada41c6bea8cd77e0ed32d3d1ef531c28d3d78986e3203681fb7517575c",
+  "city": [
+    "Beihai, China"
+  ],
+  "locations": [
+    {
+      "latitude": 21.4811199,
+      "longitude": 109.12008
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763568124/IMG_20201117_142255_1_zdbs2l.jpg",
+    "alt": "selfie on beihai beach"
+  },
+  "colorSet": {
+    "bgColor": "#547c9c",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

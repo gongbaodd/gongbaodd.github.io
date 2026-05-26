@@ -1,0 +1,21 @@
+{
+  "file": "2019/10/03/ningbo-city-bo-okay",
+  "hash": "07ae1f7b94a573d1b328b9d9107c528e74e08b873dace85dbb05b5ac9917c7b5",
+  "city": [
+    "Ningbo, China"
+  ],
+  "locations": [
+    {
+      "latitude": 29.868336,
+      "longitude": 121.54399
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759309305/IMG_20191003_154318_1_m5z9ic.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#94856c",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "file": "2025/11/09/to-brandenburg",
+  "hash": "029a97554f13d310ec5d3c0b84f507459a6b2237a7916fcbcc7de610b5561795",
+  "city": [
+    "Tallinn, Estonia",
+    "Riga, Latvia",
+    "Berlin, Germany",
+    "Brandenburg, Germany"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    },
+    {
+      "latitude": 56.9676941,
+      "longitude": 24.1056221
+    },
+    {
+      "latitude": 52.52000659999999,
+      "longitude": 13.404954
+    },
+    {
+      "latitude": 52.1313922,
+      "longitude": 13.2162494
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762804424/selfie_zsvpka.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9f7c56",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

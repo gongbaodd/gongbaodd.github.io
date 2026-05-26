@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/05/sagrada-familia",
+  "hash": "3c2575ea98010bcd483252fffacb7de7503e8d1debe26e64fe74e18610bc48ba",
+  "city": [
+    "Barcelona, Spain"
+  ],
+  "locations": [
+    {
+      "latitude": 41.3874374,
+      "longitude": 2.1686496
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770336876/IMG_1059_wlmm4d.jpg",
+    "alt": "church"
+  },
+  "colorSet": {
+    "bgColor": "#637087",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2016/10/09/tang-fan-beidou-xining-chapter",
+  "hash": "9e44a20c892cb525e5ef628dd2b30d108927eab4e6511ea2b9ecd1d8cdd8bff9",
+  "city": [
+    "Xining, China"
+  ],
+  "locations": [
+    {
+      "latitude": 36.6172899,
+      "longitude": 101.77782
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760272544/026_knl544.jpg",
+    "alt": "xining"
+  },
+  "colorSet": {
+    "bgColor": "#838375",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

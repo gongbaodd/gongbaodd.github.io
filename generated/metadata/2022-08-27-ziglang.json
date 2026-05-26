@@ -1,0 +1,12 @@
+{
+  "file": "2022/08/27/ziglang",
+  "hash": "f01b189bea05fd10593128f6aa1ccd5bdf3dc938464e9fd855a4bce2ea6156c9",
+  "cover": {
+    "url": "https://bun.sh/logo.svg",
+    "alt": "bun logo"
+  },
+  "colorSet": {
+    "bgColor": "#965151",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

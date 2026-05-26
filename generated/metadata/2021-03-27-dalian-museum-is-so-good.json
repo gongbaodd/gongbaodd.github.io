@@ -1,0 +1,26 @@
+{
+  "file": "2021/03/27/dalian-museum-is-so-good",
+  "hash": "6075f7ed4efeda7195aad8d143bf2ac18d9d6ccb96b42eaec89b162e1a9f1f24",
+  "city": [
+    "Dalian, China",
+    "Lushun, China"
+  ],
+  "locations": [
+    {
+      "latitude": 38.9139899,
+      "longitude": 121.6147
+    },
+    {
+      "latitude": 38.8512899,
+      "longitude": 121.26208
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774701130/IMG_20210327_174519_qxd7pd.jpg",
+    "alt": "Dalian Museum"
+  },
+  "colorSet": {
+    "bgColor": "#945454",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

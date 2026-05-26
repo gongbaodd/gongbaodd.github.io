@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/08/rotating-on-the-train-crossing-the-qiongzhou-strait",
+  "hash": "acdecec022b31ccc86cb76dcd5b409567fe87b73db952747cd404971227779f6",
+  "city": [
+    "Zhanjiang, China"
+  ],
+  "locations": [
+    {
+      "latitude": 21.2713399,
+      "longitude": 110.35894
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884894/Screenshot_2025-09-03_103248_ngx0ey.png",
+    "alt": "inside of ship"
+  },
+  "colorSet": {
+    "bgColor": "#888177",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

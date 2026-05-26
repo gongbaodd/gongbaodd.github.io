@@ -1,0 +1,21 @@
+{
+  "file": "2020/08/26/in-xishuangbanna-in-xishuangbanna-you-must-always-bring-the-knowledge-of-huajun",
+  "hash": "d5c761db2d843b224ddcc7b8778236c91371f7c0779753d8ab2fbfa35b04aa41",
+  "city": [
+    "Jinghong, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.0000799,
+      "longitude": 100.77163
+    }
+  ],
+  "cover": {
+    "url": "./selfie.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#ac5454",
+    "titleColor": "--mantine-color-green-4"
+  }
+}

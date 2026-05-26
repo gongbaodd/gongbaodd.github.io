@@ -1,0 +1,61 @@
+{
+  "file": "2015/09/28/all-the-way-to-west",
+  "hash": "9f97caae6cc510fa2631aa0ba9fe570663cc76b424f1071d6bf9dbd28ea0b14f",
+  "city": [
+    "Beijing, China",
+    "Datong, China",
+    "Pingyao, China",
+    "Linfen, China",
+    "Huashan, China",
+    "Xi'an, China",
+    "Sanmenxia, China",
+    "Luoyang, China",
+    "Zhengzhou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    },
+    {
+      "latitude": 40.0763699,
+      "longitude": 113.30001
+    },
+    {
+      "latitude": 37.1893399,
+      "longitude": 112.17557
+    },
+    {
+      "latitude": 36.0882199,
+      "longitude": 111.51962
+    },
+    {
+      "latitude": 31.7330399,
+      "longitude": 118.64118
+    },
+    {
+      "latitude": 34.2658138,
+      "longitude": 108.9540936
+    },
+    {
+      "latitude": 34.7727068,
+      "longitude": 111.2000526
+    },
+    {
+      "latitude": 34.6181299,
+      "longitude": 112.45402
+    },
+    {
+      "latitude": 34.7472499,
+      "longitude": 113.62493
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759085814/89d0a2e1jw1ewkwryzdpkj218g0tm7bf_wgwxjc.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#7f817a",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

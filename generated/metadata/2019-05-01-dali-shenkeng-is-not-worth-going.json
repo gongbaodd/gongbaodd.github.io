@@ -1,0 +1,21 @@
+{
+  "file": "2019/05/01/dali-shenkeng-is-not-worth-going",
+  "hash": "38ff9d0e3c8fc45e528c2928c825b5f7f60cf674c028c967dac5cfa1d289eae0",
+  "city": [
+    "Dali, China"
+  ],
+  "locations": [
+    {
+      "latitude": 25.6064799,
+      "longitude": 100.26764
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576016/IMG_20190430_160259_1_irmxeg.jpg",
+    "alt": "大鹏金翅鸟"
+  },
+  "colorSet": {
+    "bgColor": "#a08077",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2016/11/08/the-rare-beautiful-scenery-of-bargou-mountains-and-water-garden",
+  "hash": "fd8b7eea3c25f5a009f9f6aabaa0396252081037d4012d28584458f1bd90d1f9",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762506768/P61108-084441_l9smll.jpg",
+    "alt": "beijing"
+  },
+  "colorSet": {
+    "bgColor": "#5c7fb0",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

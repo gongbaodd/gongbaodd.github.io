@@ -1,0 +1,12 @@
+{
+  "file": "2025/08/10/week-33-website-rebuild",
+  "hash": "9c915187f37181ae654fe8406ed69e73b34ce8200444f03f7c3757c444d1dc6f",
+  "cover": {
+    "url": "./snapshot.png",
+    "alt": "snapshot on the old build"
+  },
+  "colorSet": {
+    "bgColor": "#9c7d5d",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

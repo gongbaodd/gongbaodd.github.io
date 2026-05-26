@@ -1,0 +1,26 @@
+{
+  "file": "2016/09/25/tang-fan-beidou-xian-chapter",
+  "hash": "3f39a3596267cb484600d3b2f44400695e3ade68aad24200ee807f0817f6a660",
+  "city": [
+    "Xi'an, China",
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 34.2658138,
+      "longitude": 108.9540936
+    },
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758802089/20_up896o.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#636e87",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

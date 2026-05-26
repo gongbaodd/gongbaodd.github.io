@@ -1,0 +1,12 @@
+{
+  "file": "2019/12/18/movie-supplement-plan-i-am-not-a-medicine-god",
+  "hash": "0144fa191e92ff61dc3a936c525a48bfb3f9cfa39d7711fd3f83261252ca8513",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BYzkzNDZkNzctZGRmMS00NmI0LTg3YjctMmMzMWFmM2Y2NDNkXkEyXkFqcGc@._V1_FMjpg_UX618_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#6e898e",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

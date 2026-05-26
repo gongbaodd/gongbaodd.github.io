@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/24/jiuzhaigou-watched-water-to-see-blu-ray-fatigue",
+  "hash": "109630feafa4c22a574cabb9203e52f852d2213b33ca518fd7f9876d514d6681",
+  "city": [
+    "Jiuzhaigou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 33.2614199,
+      "longitude": 104.23567
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757661736/IMG_20200924_113602_qm4vqe.jpg",
+    "alt": "lake"
+  },
+  "colorSet": {
+    "bgColor": "#a68c5a",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

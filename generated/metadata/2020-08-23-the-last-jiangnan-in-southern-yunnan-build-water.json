@@ -1,0 +1,21 @@
+{
+  "file": "2020/08/23/the-last-jiangnan-in-southern-yunnan-build-water",
+  "hash": "c9025d1e943ce196142d71d56963e13baa77889605b1fef5c78c9b40e9a692df",
+  "city": [
+    "Jianshui, China"
+  ],
+  "locations": [
+    {
+      "latitude": 23.6349899,
+      "longitude": 102.82699
+    }
+  ],
+  "cover": {
+    "url": "./jianshui.jpg",
+    "alt": "建水城门"
+  },
+  "colorSet": {
+    "bgColor": "#a07055",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

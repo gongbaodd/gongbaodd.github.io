@@ -1,0 +1,21 @@
+{
+  "file": "2025/06/11/kadriorg-mikkel-kumu",
+  "hash": "3375aa6b2ff159b7e5e381ec1cf919d68dc8adc2f547193e0f79e027ae990f56",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "./kadriorg.jpg",
+    "alt": "I am in front of kadriorg"
+  },
+  "colorSet": {
+    "bgColor": "#9f885a",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

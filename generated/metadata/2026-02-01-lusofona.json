@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/01/lusofona",
+  "hash": "ff199c5bcedcac07a25eecb7873a00959e8fa7fa037365ef338d5b4ea551a1a0",
+  "city": [
+    "Porto, Portugal"
+  ],
+  "locations": [
+    {
+      "latitude": 41.1579438,
+      "longitude": -8.629105299999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769988101/DE77EA9A-52EA-4329-B10A-9CB37AB0CD84_gwbnl8.jpg",
+    "alt": "meme"
+  },
+  "colorSet": {
+    "bgColor": "#a5715d",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

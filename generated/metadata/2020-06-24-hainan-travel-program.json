@@ -1,0 +1,28 @@
+{
+  "file": "2020/06/24/hainan-travel-program",
+  "hash": "3f57e991dabba5f09debb9c0c893d723a4e462137cb9cab3865aa7f225cd231b",
+  "city": [
+    "Zhuhai, China",
+    "Haikou, China",
+    "Sanya, China",
+    "Changsha, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.2708599,
+      "longitude": 113.57666
+    },
+    {
+      "latitude": 20.0442199,
+      "longitude": 110.19989
+    },
+    {
+      "latitude": 18.2524799,
+      "longitude": 109.51209
+    },
+    {
+      "latitude": 28.2277799,
+      "longitude": 112.93886
+    }
+  ]
+}

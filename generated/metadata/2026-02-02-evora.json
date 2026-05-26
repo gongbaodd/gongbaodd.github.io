@@ -1,0 +1,31 @@
+{
+  "file": "2026/02/02/evora",
+  "hash": "56c8782f7c32e1a3c6c443ed162f6508e416f72856992a0e01888b3d1b096e72",
+  "city": [
+    "Evora, Portugal",
+    "Merida, Spain",
+    "Madrid, Spain"
+  ],
+  "locations": [
+    {
+      "latitude": 38.571431,
+      "longitude": -7.913501999999999
+    },
+    {
+      "latitude": 38.9394272,
+      "longitude": -6.365157
+    },
+    {
+      "latitude": 40.41672790000001,
+      "longitude": -3.7032905
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770117393/IMG_0743_tifoxr.jpg",
+    "alt": "skulls"
+  },
+  "colorSet": {
+    "bgColor": "#8d7968",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "file": "2026/01/24/salamanca",
+  "hash": "4da8271f64a21e2a56dad70774993b1743e4053c9cdcd32393457cc67e88f449",
+  "city": [
+    "Burgos, Spain",
+    "Palencia, Spain",
+    "Salamanca, Spain"
+  ],
+  "locations": [
+    {
+      "latitude": 42.3504659,
+      "longitude": -3.689354499999999
+    },
+    {
+      "latitude": 42.0096857,
+      "longitude": -4.5288016
+    },
+    {
+      "latitude": 40.9701039,
+      "longitude": -5.663539699999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769375891/IMG_0111_q3s6me.jpg",
+    "alt": "generated Salamanca"
+  },
+  "colorSet": {
+    "bgColor": "#9b745c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

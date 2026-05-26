@@ -1,0 +1,12 @@
+{
+  "file": "2019/12/07/movie-supplementary-plan-the-last-emperor",
+  "hash": "ab995fd3340cae94ec7ff24e6d6b55f7f38b8f7301c1155862e232d7f54d35c7",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BYjIxYWFiMDgtZTgyMy00MjFiLWIyMmEtNGIyZjc1NTRlMzQ3XkEyXkFqcGc@._V1_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#a58e5c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/14/prague",
+  "hash": "1a888afcab3fa490ecf682eb753526ff7b3572107d462eb5da8f82cbaea60623",
+  "city": [
+    "Prague, Czechia"
+  ],
+  "locations": [
+    {
+      "latitude": 50.0755381,
+      "longitude": 14.4378005
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1771106138/IMG_1665_bs70qq.jpg",
+    "alt": "sculpture"
+  },
+  "colorSet": {
+    "bgColor": "#5f7fa3",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

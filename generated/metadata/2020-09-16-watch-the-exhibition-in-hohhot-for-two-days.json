@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/16/watch-the-exhibition-in-hohhot-for-two-days",
+  "hash": "33defe96b1b2802d99984db11fa7d45a38603d0f95e15bf8c21d46350cae47f2",
+  "city": [
+    "Hohhot, China"
+  ],
+  "locations": [
+    {
+      "latitude": 40.8414899,
+      "longitude": 111.75199
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757658631/IMG_20200916_142512_hijtdm.jpg",
+    "alt": "hohhot"
+  },
+  "colorSet": {
+    "bgColor": "#5474ac",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

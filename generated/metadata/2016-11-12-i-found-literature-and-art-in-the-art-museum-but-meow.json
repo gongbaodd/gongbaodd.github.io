@@ -1,0 +1,21 @@
+{
+  "file": "2016/11/12/i-found-literature-and-art-in-the-art-museum-but-meow",
+  "hash": "6870dd4782eefb0ba8b042fb11977e8c082f1b0e74a780dc23b7563f6e66fee1",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762900432/002_vmq8tb.jpg",
+    "alt": "front"
+  },
+  "colorSet": {
+    "bgColor": "#a07c56",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

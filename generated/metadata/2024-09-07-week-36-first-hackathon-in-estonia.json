@@ -1,0 +1,21 @@
+{
+  "file": "2024/09/07/week-36-first-hackathon-in-estonia",
+  "hash": "4ac68103fd8556446c7ebcf824433636709cebbe542e3e603ccc1feb64b43f40",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "./photo.jpg",
+    "alt": "in the hackathon"
+  },
+  "colorSet": {
+    "bgColor": "#845c94",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

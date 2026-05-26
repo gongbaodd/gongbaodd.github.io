@@ -1,0 +1,21 @@
+{
+  "file": "2025/09/20/week-39-light-show",
+  "hash": "6e5380fecc9904282d7fed8dcb617429ea638e6949e227870f1341b387eb6932",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758367603/IMG_8151_wnzgnt.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#71a583",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2017/09/17/13",
+  "hash": "2b6de6f0a6344b134103bbad328f81d641052d1d1065846a5289a949fe4f4717",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758028540/16_a1gxtu.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#a5816e",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

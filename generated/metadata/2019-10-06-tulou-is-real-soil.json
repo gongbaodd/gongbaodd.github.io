@@ -1,0 +1,21 @@
+{
+  "file": "2019/10/06/tulou-is-real-soil",
+  "hash": "f66fd6a5c879dadfe34f4da9b2b9a31fe6ab9d55ad20e28245d6fc4661d6059a",
+  "city": [
+    "Longyan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 25.0750399,
+      "longitude": 117.01722
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759309802/IMG_20191006_132607_sjc8eq.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#938b7d",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

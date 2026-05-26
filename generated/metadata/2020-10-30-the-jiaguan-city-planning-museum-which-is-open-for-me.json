@@ -1,0 +1,21 @@
+{
+  "file": "2020/10/30/the-jiaguan-city-planning-museum-which-is-open-for-me",
+  "hash": "4b756386aad593e935a1243e19595b3dc3383a146f562ca9ae479027def20ffd",
+  "city": [
+    "Jiayuguan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.7713799,
+      "longitude": 98.28707999999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763569792/jiayuguan_hcmh1g.png",
+    "alt": "museum"
+  },
+  "colorSet": {
+    "bgColor": "#51759b",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

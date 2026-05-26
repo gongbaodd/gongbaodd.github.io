@@ -1,0 +1,26 @@
+{
+  "file": "2025/12/07/week-50-museums",
+  "hash": "7b5f3e5db466eb67bacb4c26ea30f47d29bf125132ede77e647dcb78e10007fa",
+  "city": [
+    "Tallinn, Estonia",
+    "Lääne-Virumaa, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    },
+    {
+      "latitude": 59.30188159999999,
+      "longitude": 26.3280312
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1765129135/Screenshot_2025-12-07_193818_yvdyvf.png",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#727372",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

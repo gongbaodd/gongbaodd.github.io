@@ -1,0 +1,21 @@
+{
+  "file": "2020/12/06/there-is-really-nothing-to-play-in-changchun",
+  "hash": "7e75cd25f2f3fc0a0f89a64a48c54f25e2c032281f49ff859ee2a01c2f2d5227",
+  "city": [
+    "Changchun, China"
+  ],
+  "locations": [
+    {
+      "latitude": 43.8160199,
+      "longitude": 125.32357
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763570593/changchun_pt9vgy.jpg",
+    "alt": "那有山"
+  },
+  "colorSet": {
+    "bgColor": "#85725c",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

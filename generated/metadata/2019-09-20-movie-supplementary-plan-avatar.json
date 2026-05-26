@@ -1,0 +1,12 @@
+{
+  "file": "2019/09/20/movie-supplementary-plan-avatar",
+  "hash": "5b03a3985a8487ad39cfe98bdf8a235668218c5dc5ab035b62ed348fd0d5ff57",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_QL75_UY281_CR0,0,190,281_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#96756d",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

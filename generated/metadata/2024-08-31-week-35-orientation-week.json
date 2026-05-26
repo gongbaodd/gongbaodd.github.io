@@ -1,0 +1,21 @@
+{
+  "file": "2024/08/31/week-35-orientation-week",
+  "hash": "a27f9e9cd5ac5c7c0efaf0669b86b0f89a293e81b0ba2484bd73df15d648f494",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756555639/IMG_4887_ma1hov.jpg",
+    "alt": "me on Pirita"
+  },
+  "colorSet": {
+    "bgColor": "#a4696c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

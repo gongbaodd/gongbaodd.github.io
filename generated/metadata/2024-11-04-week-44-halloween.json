@@ -1,0 +1,21 @@
+{
+  "file": "2024/11/04/week-44-halloween",
+  "hash": "f35e7ad8a8babfe48b679be230905beb4ea1e754f0a7f4054bfd65d4d23d864d",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "./halloween.jpg",
+    "alt": "group photo"
+  },
+  "colorSet": {
+    "bgColor": "#9b5b52",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2020/11/11/never-found-that-shenyang-is-so-prosperous",
+  "hash": "1792c3e7fdb967e1c1eb6e684851aae5e9dfd574cf930522c65a23b6482da7ff",
+  "city": [
+    "Shenyang, China"
+  ],
+  "locations": [
+    {
+      "latitude": 41.804778,
+      "longitude": 123.432968
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762815286/Screenshot_2025-11-10_234930_rarmpu.png",
+    "alt": "zhongjie"
+  },
+  "colorSet": {
+    "bgColor": "#867160",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2017/03/19/yuyuan-tan-and-the-central-china-temple",
+  "hash": "a9362d079d9c8d5a73ef66c11e6307ce7d88c76c2432e94a4f6b28b52e37d6c5",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1774007444/mmexport1489972610694_1_edzics.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9d7e5f",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

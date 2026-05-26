@@ -1,0 +1,21 @@
+{
+  "file": "2020/10/28/tamas-spare-tire-jiuquan-jinta-populus-forest",
+  "hash": "1fc69ca169b4fd5bbce4c73d265a633e093a95f19b054e9619c291264e80fcc2",
+  "city": [
+    "Jiuquan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.7325499,
+      "longitude": 98.49394
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761546626/mmexport1603896276948_bkspkj.jpg",
+    "alt": "trees"
+  },
+  "colorSet": {
+    "bgColor": "#9c845c",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

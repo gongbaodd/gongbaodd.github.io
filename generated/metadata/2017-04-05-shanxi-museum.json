@@ -1,0 +1,21 @@
+{
+  "file": "2017/04/05/shanxi-museum",
+  "hash": "fdf0477e499a2b19f87bfa8a557fe1e40e08d648ca8bfea0f2d28d22de623aa5",
+  "city": [
+    "Taiyuan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 37.8705899,
+      "longitude": 112.55067
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775143188/IMGP5331_tp6t1f.jpg",
+    "alt": "show"
+  },
+  "colorSet": {
+    "bgColor": "#8f6a59",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

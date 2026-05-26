@@ -1,0 +1,21 @@
+{
+  "file": "2017/11/19/qianli-jiangshan--zhao-mengfu--princess-sissi",
+  "hash": "dae5c8b75444e60b468b768cf32de8432d579e7bc55e170bba2791292f688af7",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763565010/005_dvlokh.jpg",
+    "alt": "千里江山图"
+  },
+  "colorSet": {
+    "bgColor": "#a87c69",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

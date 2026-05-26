@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/04/prado",
+  "hash": "2dc4c0a2f5f817b23af2fbc0f0728e80098d8ec89e5afb44a591337305eaf2ec",
+  "city": [
+    "Madrid, Spain"
+  ],
+  "locations": [
+    {
+      "latitude": 40.41672790000001,
+      "longitude": -3.7032905
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770336747/IMG_0934_mca0xy.jpg",
+    "alt": "horses"
+  },
+  "colorSet": {
+    "bgColor": "#86847b",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

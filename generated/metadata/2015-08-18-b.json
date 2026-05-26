@@ -1,0 +1,21 @@
+{
+  "file": "2015/08/18/b",
+  "hash": "f14d238f1b228cd49d0d0d33c5ab458f02d5fd565c0909a7b722d974778b3e2a",
+  "city": [
+    "Sanya, China"
+  ],
+  "locations": [
+    {
+      "latitude": 18.2524799,
+      "longitude": 109.51209
+    }
+  ],
+  "cover": {
+    "url": "./89d0a2e1gw1evfz20ngz0j20xm0luq7a.jpg",
+    "alt": "the group photo"
+  },
+  "colorSet": {
+    "bgColor": "#867463",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

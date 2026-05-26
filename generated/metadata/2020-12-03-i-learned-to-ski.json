@@ -1,0 +1,21 @@
+{
+  "file": "2020/12/03/i-learned-to-ski",
+  "hash": "86617ced45059262b2f2f538cb4a28c518193ba022e0502fd5aaf9df7c5364f4",
+  "city": [
+    "Harbin, China"
+  ],
+  "locations": [
+    {
+      "latitude": 45.7567307,
+      "longitude": 126.6424173
+    }
+  ],
+  "cover": {
+    "url": "./ski.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#855d4d",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2020/11/24/beautiful-harbin",
+  "hash": "d2f8ecbfd78514a397604d9293ff08579b9885c320cfc82872e69f0c84fadbd8",
+  "city": [
+    "Harbin, China"
+  ],
+  "locations": [
+    {
+      "latitude": 45.7567307,
+      "longitude": 126.6424173
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763568466/harbin_b6jzpy.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9d585f",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

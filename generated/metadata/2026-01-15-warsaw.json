@@ -1,0 +1,21 @@
+{
+  "file": "2026/01/15/warsaw",
+  "hash": "81055c7245bda7b49402d9dfdf91329a739c38c2cbd43c4b874b5a6953b9529b",
+  "city": [
+    "Warsaw, Poland"
+  ],
+  "locations": [
+    {
+      "latitude": 52.2296756,
+      "longitude": 21.0122287
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1768943804/67F26F9E-3147-4F3B-9B95-79B71AEC0B31_pjhw5w.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#617e96",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

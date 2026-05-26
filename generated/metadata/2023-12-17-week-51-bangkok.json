@@ -1,0 +1,21 @@
+{
+  "file": "2023/12/17/week-51-bangkok",
+  "hash": "a2c52fb4076b25ac9c213f89d624e5ba81f26f3120355b2aa8f949581d916b95",
+  "city": [
+    "Bangkok, Thailand"
+  ],
+  "locations": [
+    {
+      "latitude": 13.7563309,
+      "longitude": 100.5017651
+    }
+  ],
+  "cover": {
+    "url": "./thailand.jpg",
+    "alt": "the king's gardern"
+  },
+  "colorSet": {
+    "bgColor": "#a78858",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

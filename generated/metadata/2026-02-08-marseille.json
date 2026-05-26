@@ -1,0 +1,36 @@
+{
+  "file": "2026/02/08/marseille",
+  "hash": "9c94c8cf59ef1a3e80b42bab7c3dc12e4c982ada8e7f5d427a250445c64a64dd",
+  "city": [
+    "Marseille, France",
+    "Nice, France",
+    "Genova, Italy",
+    "Millan, Italy"
+  ],
+  "locations": [
+    {
+      "latitude": 43.3025742,
+      "longitude": 5.369074299999999
+    },
+    {
+      "latitude": 43.7101728,
+      "longitude": 7.261953200000001
+    },
+    {
+      "latitude": 44.4071448,
+      "longitude": 8.934738099999999
+    },
+    {
+      "latitude": 45.468503,
+      "longitude": 9.182402699999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770580346/IMG_1186_yvtbq1.jpg",
+    "alt": "Basilique Notre-Dame de la Garde"
+  },
+  "colorSet": {
+    "bgColor": "#7e8289",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

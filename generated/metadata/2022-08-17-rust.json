@@ -1,0 +1,12 @@
+{
+  "file": "2022/08/17/rust",
+  "hash": "df2b930d1e0bf2cf1a46a190d2a89d0ad0346636bf70a6fbb90e8344ac265573",
+  "cover": {
+    "url": "https://opensource.com/sites/default/files/lead-images/rust_programming_crab_sea.png",
+    "alt": "rust logo from opensource.com"
+  },
+  "colorSet": {
+    "bgColor": "#9c7a52",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

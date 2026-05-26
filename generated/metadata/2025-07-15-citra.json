@@ -1,0 +1,12 @@
+{
+  "file": "2025/07/15/citra",
+  "hash": "ae407f1dd5b770308d990e0239ffe14cb9c03e068e8ed8b560d83bf78cdd7f68",
+  "cover": {
+    "url": "./citra.png",
+    "alt": "Citra icon"
+  },
+  "colorSet": {
+    "bgColor": "#976101",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

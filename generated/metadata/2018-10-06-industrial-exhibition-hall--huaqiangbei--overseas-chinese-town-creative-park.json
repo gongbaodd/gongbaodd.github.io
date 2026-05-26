@@ -1,0 +1,21 @@
+{
+  "file": "2018/10/06/industrial-exhibition-hall--huaqiangbei--overseas-chinese-town-creative-park",
+  "hash": "a9023bca3802bb12e01514444342c9550d2e034fc4ae9fb2f516e19697820a94",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579985/IMG_20181006_142813_w1mood.jpg",
+    "alt": "elevator"
+  },
+  "colorSet": {
+    "bgColor": "#82625c",
+    "titleColor": "--mantine-color-green-4"
+  }
+}

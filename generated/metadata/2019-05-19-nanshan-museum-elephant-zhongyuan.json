@@ -1,0 +1,21 @@
+{
+  "file": "2019/05/19/nanshan-museum-elephant-zhongyuan",
+  "hash": "30892eed0e74849c1da6a6d6f36055cc5bcc680c9fa618695bfa71e0cad6fbb1",
+  "city": [
+    "Nanshan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5333199,
+      "longitude": 113.93041
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576785/IMG_20190519_155027_znowng.jpg",
+    "alt": "henan"
+  },
+  "colorSet": {
+    "bgColor": "#92786a",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

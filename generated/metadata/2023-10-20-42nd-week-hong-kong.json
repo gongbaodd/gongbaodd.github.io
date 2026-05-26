@@ -1,0 +1,26 @@
+{
+  "file": "2023/10/20/42nd-week-hong-kong",
+  "hash": "dbf9701515c4bf15c44cea436de16b3a1e1e314367036c10e14533e93dfa8009",
+  "city": [
+    "Hong Kong",
+    "Macau"
+  ],
+  "locations": [
+    {
+      "latitude": 22.3193039,
+      "longitude": 114.1693611
+    },
+    {
+      "latitude": 22.198745,
+      "longitude": 113.543873
+    }
+  ],
+  "cover": {
+    "url": "./macaw.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#996d54",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

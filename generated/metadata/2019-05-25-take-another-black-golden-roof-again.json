@@ -1,0 +1,21 @@
+{
+  "file": "2019/05/25/take-another-black-golden-roof-again",
+  "hash": "c4019ecc398141cd0b84f51a464756a29c94245aea574eb9bbc87d6f60ec14cc",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775577113/89d0a2e1gy1g3dyz88llxj22pj42bb2g_ctvoin.jpg",
+    "alt": "shenzhen"
+  },
+  "colorSet": {
+    "bgColor": "#ae9f74",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "file": "2025/08/27/masonry",
+  "hash": "847fe4348d9cf475f0e631ae0fbe9cc5ed281e6b4a9140673ec94fe2afbcfb38",
+  "cover": {
+    "url": "https://i.imgur.com/6Lo8oun.jpg",
+    "alt": "masonry layout"
+  },
+  "colorSet": {
+    "bgColor": "#acac4c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

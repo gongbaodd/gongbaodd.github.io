@@ -1,0 +1,21 @@
+{
+  "file": "2025/07/25/week-31-tallinn-summer-school",
+  "hash": "fe659836d83972cc3466ffab14b609afdf65d2c082ccb61514e091389847afc6",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "./gifts.jpg",
+    "alt": "gifts"
+  },
+  "colorSet": {
+    "bgColor": "#927b69",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

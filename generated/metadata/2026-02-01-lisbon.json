@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/01/lisbon",
+  "hash": "fb1f45a3f9cbdf0f0e9160efa03b47362ffcc0a31a0f1d699fc9585050fd29e0",
+  "city": [
+    "Lisbon, Portugal"
+  ],
+  "locations": [
+    {
+      "latitude": 38.7222524,
+      "longitude": -9.1393366
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769988546/IMG_0562_mruafb.jpg",
+    "alt": "SB"
+  },
+  "colorSet": {
+    "bgColor": "#a08846",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2020/12/18/dont-rent-the-interpreter-at-the-zhenjiang-museum",
+  "hash": "64507d16a00881dcfc4ed72399c1f8f57796914f6a72343ec23502dbf7888007",
+  "city": [
+    "Zhenjiang, China"
+  ],
+  "locations": [
+    {
+      "latitude": 32.1895899,
+      "longitude": 119.425
+    }
+  ],
+  "cover": {
+    "url": "./zhenjiang.jpg",
+    "alt": "xijindu"
+  },
+  "colorSet": {
+    "bgColor": "#b46c5c",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

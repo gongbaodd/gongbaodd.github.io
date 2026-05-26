@@ -1,0 +1,21 @@
+{
+  "file": "2020/12/01/beibei-punch-card",
+  "hash": "6929ecc171dcf85c2ccbc282220b9682d3542cac698873eacdd774cdc3308a8f",
+  "city": [
+    "Mohe, China"
+  ],
+  "locations": [
+    {
+      "latitude": 52.9720899,
+      "longitude": 122.53864
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1763569063/mmexport1606725104076_ibdohi.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#5574a8",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

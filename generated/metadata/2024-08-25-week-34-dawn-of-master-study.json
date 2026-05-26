@@ -1,0 +1,21 @@
+{
+  "file": "2024/08/25/week-34-dawn-of-master-study",
+  "hash": "a773e0b04131fa8262bf00ea3b65e3e7e3afb2757dc127eb125c3eea7af8edb8",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "./selfie.jpg",
+    "alt": "Selfie at the beach"
+  },
+  "colorSet": {
+    "bgColor": "#66839f",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

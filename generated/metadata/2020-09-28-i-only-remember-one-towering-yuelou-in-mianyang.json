@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/28/i-only-remember-one-towering-yuelou-in-mianyang",
+  "hash": "59d40158c9469a5737c6ea8d03ab5ab0f5286738610b8c6a20fa220eefc76a79",
+  "city": [
+    "Mianyang, China"
+  ],
+  "locations": [
+    {
+      "latitude": 31.4675099,
+      "longitude": 104.6795999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757663120/IMG_20200929_131859_u7fyfr.jpg",
+    "alt": "building"
+  },
+  "colorSet": {
+    "bgColor": "#a0ad58",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/06/ow",
+  "hash": "f62d5134998963554f684d95fb8a6b93102d9bb0cd45a12caf21037379cb2b69",
+  "city": [
+    "Sanya, China"
+  ],
+  "locations": [
+    {
+      "latitude": 18.2524799,
+      "longitude": 109.51209
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884004/mmexport1599490051276_kqi3ha.jpg",
+    "alt": "dive"
+  },
+  "colorSet": {
+    "bgColor": "#5e979e",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

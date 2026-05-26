@@ -1,0 +1,12 @@
+{
+  "file": "2022/08/24/astro",
+  "hash": "d97c0a1659de7e38afe92075287131c7e76d90c0b1efa7f65c9697e2feed62d5",
+  "cover": {
+    "url": "https://blog.logrocket.com/wp-content/uploads/2021/08/astro-cool-parts.png",
+    "alt": "Astro logo from logrocket.com"
+  },
+  "colorSet": {
+    "bgColor": "#577ea0",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2024/12/02/week-47-linnahall",
+  "hash": "79e41297d70c559db280171727410ce5f37d6d71345047b9d95a86c3836e5a58",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "./linnahall.jpg",
+    "alt": "theatre in linnahall"
+  },
+  "colorSet": {
+    "bgColor": "#a65d5a",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

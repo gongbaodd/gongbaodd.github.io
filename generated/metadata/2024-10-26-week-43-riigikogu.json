@@ -1,0 +1,21 @@
+{
+  "file": "2024/10/26/week-43-riigikogu",
+  "hash": "fba2cd30f322d17af119b13bfa36d5cfcd738e122686bb2a5f68709217d7c51b",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761518087/IMG_5744_big0fu.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#5e7ca4",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2018/09/08/you-dont-know-the-clinic",
+  "hash": "b82542cc88eef3b548c2802c88f17e43afc57d773304810571fc9c370126466b",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757342689/zhihu_5_wzpztb.jpg",
+    "alt": "leaflet"
+  },
+  "colorSet": {
+    "bgColor": "#a47a5d",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "file": "2025/08/02/week-32-edge-impulse",
+  "hash": "986591a7a27631b030ce8bf77dd81b55300c7538a877b79fc5b2f914695d6c47",
+  "cover": {
+    "url": "./hearing-aid.jpg",
+    "alt": "hearing aid prototype"
+  },
+  "colorSet": {
+    "bgColor": "#9c8f66",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

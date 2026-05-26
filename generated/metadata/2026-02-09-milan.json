@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/09/milan",
+  "hash": "ed9837e2a44cb2a79288598e93170631600facb13e474885dda51e550d1c7b07",
+  "city": [
+    "Milan, Italy"
+  ],
+  "locations": [
+    {
+      "latitude": 45.468503,
+      "longitude": 9.182402699999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1770583369/IMG_1243_iifwyq.jpg",
+    "alt": "milan"
+  },
+  "colorSet": {
+    "bgColor": "#5e7798",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

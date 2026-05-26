@@ -1,0 +1,21 @@
+{
+  "file": "2017/01/26/dalian-modern-museum",
+  "hash": "d700416cf01aaecf352cbe0c28d9ec307370aeed6b163e2a764fcc0da044be92",
+  "city": [
+    "Dalian, China"
+  ],
+  "locations": [
+    {
+      "latitude": 38.9139899,
+      "longitude": 121.6147
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769413686/002_gzpnzg.jpg",
+    "alt": "dalian"
+  },
+  "colorSet": {
+    "bgColor": "#80827d",
+    "titleColor": "--mantine-color-gray-2"
+  }
+}

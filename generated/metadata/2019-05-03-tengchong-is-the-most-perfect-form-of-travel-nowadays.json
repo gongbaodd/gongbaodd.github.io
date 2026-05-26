@@ -1,0 +1,21 @@
+{
+  "file": "2019/05/03/tengchong-is-the-most-perfect-form-of-travel-nowadays",
+  "hash": "dff5b19a0c4d805e6ee6f68ae1868d9a9e1c048fddc6c600bb973cae87a7324a",
+  "city": [
+    "Tengchong, China"
+  ],
+  "locations": [
+    {
+      "latitude": 25.0205299,
+      "longitude": 98.49096999999999
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775576470/IMG_20190501_193146_epfbph.jpg",
+    "alt": "和顺古镇"
+  },
+  "colorSet": {
+    "bgColor": "#a39451",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

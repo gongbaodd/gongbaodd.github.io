@@ -1,0 +1,12 @@
+{
+  "file": "2025/06/10/langchain",
+  "hash": "93fb1b2a0b59934b1682c62edbf4c01299199a212f8e3c1440456d34c455112e",
+  "cover": {
+    "url": "https://api.nuget.org/v3-flatcontainer/langchain.core/0.17.0/icon",
+    "alt": "langchain icon"
+  },
+  "colorSet": {
+    "bgColor": "#6884a8",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

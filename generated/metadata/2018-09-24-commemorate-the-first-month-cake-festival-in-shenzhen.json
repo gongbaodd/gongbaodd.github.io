@@ -1,0 +1,26 @@
+{
+  "file": "2018/09/24/commemorate-the-first-month-cake-festival-in-shenzhen",
+  "hash": "ac23f9b88b6193dc327ec75d8c548ec39d4fc210c7e81d94b7076187f3dc80df",
+  "city": [
+    "Shenzhen, China",
+    "Nanshan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    },
+    {
+      "latitude": 22.5333199,
+      "longitude": 113.93041
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1758693696/IMG_20180919_204523_at5xsf.jpg",
+    "alt": "drone"
+  },
+  "colorSet": {
+    "bgColor": "#6479b4",
+    "titleColor": "--mantine-color-cyan-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2018/10/07/park-of-talent-park",
+  "hash": "a1869fd90a0e3445ab4b1a1c9a432b3d391f408e29a412b8952ba7bbe7a4e8e9",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759579988/IMG_20181007_063336_elszpk.jpg",
+    "alt": "sunlight"
+  },
+  "colorSet": {
+    "bgColor": "#5b8ca8",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

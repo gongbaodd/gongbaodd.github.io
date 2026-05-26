@@ -1,0 +1,21 @@
+{
+  "file": "2025/10/10/realiti-express",
+  "hash": "174d58cd46d54391d6e246c2473e5c3ad22f4d93277e11a38fafa7ed04246f8a",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1760187186/IMG_8364_llbpk9.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9d714d",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2025/09/14/avrutimuuseum",
+  "hash": "f70aa4de8985ef8bd98026a15b3341d77ea24fe866ad524dfa01406a0ea308eb",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757876731/IMG_8101_jsl7ek.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9b7b62",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "file": "2018/05/25/travel-summary",
+  "hash": "3d8704c3940e6a201ad77872f91d1711af7630dd447df611d816699031435917",
+  "city": [
+    "Beijing, China",
+    "Handan, China",
+    "Zhengzhou, China",
+    "Wuhan, China",
+    "Yichang, China",
+    "Chongqing, China",
+    "Chengdu, China",
+    "Xining, China",
+    "Lhasa, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    },
+    {
+      "latitude": 36.6255599,
+      "longitude": 114.53918
+    },
+    {
+      "latitude": 34.7472499,
+      "longitude": 113.62493
+    },
+    {
+      "latitude": 30.5927599,
+      "longitude": 114.30525
+    },
+    {
+      "latitude": 30.69177969999999,
+      "longitude": 111.2863313
+    },
+    {
+      "latitude": 29.5656843,
+      "longitude": 106.5511838
+    },
+    {
+      "latitude": 30.5722599,
+      "longitude": 104.0665099
+    },
+    {
+      "latitude": 36.6172899,
+      "longitude": 101.77782
+    },
+    {
+      "latitude": 29.6526199,
+      "longitude": 91.13775
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779709288/IMG_20180515_133949_d4vzlo.jpg",
+    "alt": "Lhasa"
+  },
+  "colorSet": {
+    "bgColor": "#a3884f",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2017/02/01/the-forbidden-city-hiding-people",
+  "hash": "701ddd6457f469c5346c0ed671d9250d519aff7643f75f51900190dd30862e67",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1769991147/P70201-143804_htfmct.jpg",
+    "alt": "forbidden city"
+  },
+  "colorSet": {
+    "bgColor": "#8a757a",
+    "titleColor": "--mantine-color-lime-2"
+  }
+}

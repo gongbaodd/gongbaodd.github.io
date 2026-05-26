@@ -1,0 +1,21 @@
+{
+  "file": "2016/10/29/quiet-echo-wall-and-the-former-residence-of-the-siye-earth-altar--yonghe-palace",
+  "hash": "3a6e37ff7d3de83f390ffa85cd2be0af907b2c8ab09375e49e1b3ce2618d7a4b",
+  "city": [
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761739583/037_zzsrjv.jpg",
+    "alt": "ticket"
+  },
+  "colorSet": {
+    "bgColor": "#96774e",
+    "titleColor": "--mantine-color-green-4"
+  }
+}

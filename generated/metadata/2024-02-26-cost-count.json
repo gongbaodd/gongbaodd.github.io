@@ -1,0 +1,12 @@
+{
+  "file": "2024/02/26/cost-count",
+  "hash": "8f708a26d4720b3ba24b88d8746532b688a540af5a6a41b553f4fd4afefa2c60",
+  "cover": {
+    "url": "https://raw.githubusercontent.com/gongbaodd/cost-count/refs/heads/master/assets/images/app-icon-all.png",
+    "alt": "icon"
+  },
+  "colorSet": {
+    "bgColor": "#ba6474",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

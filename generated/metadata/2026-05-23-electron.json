@@ -1,0 +1,12 @@
+{
+  "file": "2026/05/23/electron",
+  "hash": "7b91eb8ff797a8045150080be0c19b4e8f6612316b32d7cc2667af1693631ded",
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1779645228/Screenshot_20260522_161147_hbofle.png",
+    "alt": "clippy"
+  },
+  "colorSet": {
+    "bgColor": "#a2a45c",
+    "titleColor": "--mantine-color-lime-2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "file": "2020/01/22/movie-supplementary-plan-confession",
+  "hash": "c1be397f6542f967d35a20e6877ab1175faf739dcb8b2ce17a1d60e3e78cd8b7",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BY2Q2MzNiNzctM2VjOC00YmU5LWI3YWYtYWUwNzFjYmViOTlkXkEyXkFqcGc@._V1_FMjpg_UY337_.jpg",
+    "alt": "poster from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#8e686b",
+    "titleColor": "--mantine-color-grape-3"
+  }
+}

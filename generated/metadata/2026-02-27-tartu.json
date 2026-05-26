@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/27/tartu",
+  "hash": "5ba6b1224d7c53e42d681d31bfa59a23579d72e070572c0190e68402b0d6e79f",
+  "city": [
+    "Tartu, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 58.37798299999999,
+      "longitude": 26.7290383
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1772192867/IMG_2162_hnlswd.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#917158",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

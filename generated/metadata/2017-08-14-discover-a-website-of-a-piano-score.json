@@ -1,0 +1,12 @@
+{
+  "file": "2017/08/14/discover-a-website-of-a-piano-score",
+  "hash": "13374562119172f60769b28a9b4daab58f6ddfcbdb491037bf0a10ae90ccbb98",
+  "cover": {
+    "url": "https://images.unsplash.com/photo-1682271920907-781daffc09a6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "alt": "harmonica picture from unsplash.com"
+  },
+  "colorSet": {
+    "bgColor": "#737c91",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "file": "2018/08/31/magicavoxel",
+  "hash": "5d6141c0a171c3dc7eda7bcfe90f23c2aca55c578dbd0e467794c844826a9001",
+  "cover": {
+    "url": "./wxb.png",
+    "alt": "韦小宝 made with MagicaVoxel"
+  },
+  "colorSet": {
+    "bgColor": "#ac8c64",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

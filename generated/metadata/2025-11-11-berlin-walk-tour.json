@@ -1,0 +1,20 @@
+{
+  "file": "2025/11/11/berlin-walk-tour",
+  "hash": "8e749e028d0559e2f5f02f7eacd328345a3602888d15265e0060537d58cc799b",
+  "city": [
+    "Berlin, Germany"
+  ],
+  "locations": [
+    {
+      "latitude": 52.52000659999999,
+      "longitude": 13.404954
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762972356/IMG_8729_htdwcg.jpg"
+  },
+  "colorSet": {
+    "bgColor": "#8b5f48",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

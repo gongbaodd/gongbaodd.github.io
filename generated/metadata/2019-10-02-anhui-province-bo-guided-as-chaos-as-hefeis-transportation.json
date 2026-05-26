@@ -1,0 +1,21 @@
+{
+  "file": "2019/10/02/anhui-province-bo-guided-as-chaos-as-hefeis-transportation",
+  "hash": "71aa01a78ab0de8131661f963104323fc24c4621c3fc851878af59fb0d4f7e9c",
+  "city": [
+    "Hefei, China"
+  ],
+  "locations": [
+    {
+      "latitude": 31.8205699,
+      "longitude": 117.22901
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759308163/IMG_20191002_122039_tup9hr.jpg",
+    "alt": "building"
+  },
+  "colorSet": {
+    "bgColor": "#728186",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

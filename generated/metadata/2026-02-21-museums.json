@@ -1,0 +1,21 @@
+{
+  "file": "2026/02/21/museums",
+  "hash": "5cc446fc2fc8e6b979c628a148ee11c46484d42214be7afe8f450cf807300bf3",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1771865025/7A90D9D3-821E-4FB7-96D5-D9593D7821E6_jglpmo.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#9f6d52",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

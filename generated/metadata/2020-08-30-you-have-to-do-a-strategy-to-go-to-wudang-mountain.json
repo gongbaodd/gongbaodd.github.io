@@ -1,0 +1,21 @@
+{
+  "file": "2020/08/30/you-have-to-do-a-strategy-to-go-to-wudang-mountain",
+  "hash": "78d67b3c72fd588e5942f3d0f89c90304091daf5a1e482508cedcb654b20939b",
+  "city": [
+    "Shiyan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 32.6291799,
+      "longitude": 110.79801
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756458437/IMG_20200828_150504_qkzo0e.jpg",
+    "alt": "武当山"
+  },
+  "colorSet": {
+    "bgColor": "#958367",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

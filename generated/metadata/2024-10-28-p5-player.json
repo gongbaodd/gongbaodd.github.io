@@ -1,0 +1,12 @@
+{
+  "file": "2024/10/28/p5-player",
+  "hash": "db3a984883da52a091531a5b8f1794eaaba6cb41d8858461985150b27712aa49",
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757595223/Screenshot_2025-09-11_155213_llspy7.png",
+    "alt": "player"
+  },
+  "colorSet": {
+    "bgColor": "#6c6cac",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "file": "2024/08/19/week-33-before-instanbul",
+  "hash": "4d184a48e67605c43a57f48af45a54df3c5e9893852570985a64e918ee185b94",
+  "city": [
+    "Dalian, China",
+    "Beijing, China",
+    "Istanbul, Turkey"
+  ],
+  "locations": [
+    {
+      "latitude": 38.9139899,
+      "longitude": 121.6147
+    },
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    },
+    {
+      "latitude": 41.0082376,
+      "longitude": 28.9783589
+    }
+  ],
+  "cover": {
+    "url": "./Istanbul.jpg",
+    "alt": "me at istanbul airport"
+  },
+  "colorSet": {
+    "bgColor": "#8d7b7a",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

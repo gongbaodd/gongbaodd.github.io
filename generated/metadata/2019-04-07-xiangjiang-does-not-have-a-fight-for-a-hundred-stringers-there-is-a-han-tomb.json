@@ -1,0 +1,21 @@
+{
+  "file": "2019/04/07/xiangjiang-does-not-have-a-fight-for-a-hundred-stringers-there-is-a-han-tomb",
+  "hash": "cb3c19d05820d374de8421abb07f38e199c0d55852a2ec09efd465e409422740",
+  "city": [
+    "Changsha, China"
+  ],
+  "locations": [
+    {
+      "latitude": 28.2277799,
+      "longitude": 112.93886
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1775575532/Screenshot_2026-04-07_182424_jjzyhf.png",
+    "alt": "茶颜悦色"
+  },
+  "colorSet": {
+    "bgColor": "#9e8d78",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

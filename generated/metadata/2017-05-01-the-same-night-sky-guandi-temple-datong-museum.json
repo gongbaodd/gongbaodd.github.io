@@ -1,0 +1,28 @@
+{
+  "file": "2017/05/01/the-same-night-sky-guandi-temple-datong-museum",
+  "hash": "7dc348059bf2a2c2c03e185f669657ec1d751a23179af07858a79aa1afd36ee9",
+  "city": [
+    "Datong, China",
+    "Beijing, China",
+    "Xi'an, China",
+    "Nanjing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 40.0763699,
+      "longitude": 113.30001
+    },
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    },
+    {
+      "latitude": 34.2658138,
+      "longitude": 108.9540936
+    },
+    {
+      "latitude": 32.0583799,
+      "longitude": 118.79647
+    }
+  ]
+}

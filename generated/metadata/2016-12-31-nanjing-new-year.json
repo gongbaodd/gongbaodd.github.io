@@ -1,0 +1,18 @@
+{
+  "file": "2016/12/31/nanjing-new-year",
+  "hash": "aecace64bacad81e3c3d963af570cf9aa48d50dd9857b54fb1076254484b88c4",
+  "city": [
+    "Nanjing, China",
+    "Beijing, China"
+  ],
+  "locations": [
+    {
+      "latitude": 32.0583799,
+      "longitude": 118.79647
+    },
+    {
+      "latitude": 39.904211,
+      "longitude": 116.407395
+    }
+  ]
+}

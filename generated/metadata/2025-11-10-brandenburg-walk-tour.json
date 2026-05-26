@@ -1,0 +1,21 @@
+{
+  "file": "2025/11/10/brandenburg-walk-tour",
+  "hash": "fbf95da39c30671c9e7fe01123e4dc751b4d08f3660b1ce4957e83f803fd6b38",
+  "city": [
+    "Brandenburg, Germany"
+  ],
+  "locations": [
+    {
+      "latitude": 52.1313922,
+      "longitude": 13.2162494
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762850255/IMG_8670_ytbvxf.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#97725e",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

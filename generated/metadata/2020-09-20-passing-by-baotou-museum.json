@@ -1,0 +1,21 @@
+{
+  "file": "2020/09/20/passing-by-baotou-museum",
+  "hash": "a33f76990f7665b377dfb5a8c5856d53c1ddd74a92c70150080dc25ae4e457e7",
+  "city": [
+    "Baotou, China"
+  ],
+  "locations": [
+    {
+      "latitude": 40.6578099,
+      "longitude": 109.84021
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757660580/IMG_20200920_122023_wfrsex.jpg",
+    "alt": "chess"
+  },
+  "colorSet": {
+    "bgColor": "#9c875a",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

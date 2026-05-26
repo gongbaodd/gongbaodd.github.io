@@ -1,0 +1,26 @@
+{
+  "file": "2016/10/01/tang-fan-beidou-lanzhou-chapter",
+  "hash": "4c7c8ca6e259ee9ad0632ea6c396f1e4b5f5d51f9a6935467d6ae597865c9144",
+  "city": [
+    "Lanzhou, China",
+    "Xi'an, China"
+  ],
+  "locations": [
+    {
+      "latitude": 36.0613799,
+      "longitude": 103.83417
+    },
+    {
+      "latitude": 34.2658138,
+      "longitude": 108.9540936
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759304195/24_s9mnnm.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#a48761",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

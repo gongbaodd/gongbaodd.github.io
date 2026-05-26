@@ -1,0 +1,21 @@
+{
+  "file": "2017/10/22/duolun-county-ulanbu-tong",
+  "hash": "b681eebaceabebc66ce52ace81fd322467529176addf98b1e8600e4733607a2f",
+  "city": [
+    "Chifeng, China"
+  ],
+  "locations": [
+    {
+      "latitude": 42.2585999,
+      "longitude": 118.88894
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759307115/25_pohl7v.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#957155",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

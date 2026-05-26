@@ -1,0 +1,21 @@
+{
+  "file": "2016/10/25/tang-fan-beidou-haixi-prefecture",
+  "hash": "386dc31aa39e41f24eb97cd742d692f72a4d90ff1ce77a52ebeb422d5e87d888",
+  "city": [
+    "Haixi Mongol and Tibetan Autonomous Prefecture, China"
+  ],
+  "locations": [
+    {
+      "latitude": 37.3770999,
+      "longitude": 97.37122000000001
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761516225/weng_20160914_073738_a9g0ob.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#8f9780",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file": "2023/12/23/week-52-hiv-test",
+  "hash": "e87d5079e0e96d4c4a33735ad7abbb6a74dc32868d9cc1b58dc95afa51cd07c8",
+  "city": [
+    "Bangkok, Thailand"
+  ],
+  "locations": [
+    {
+      "latitude": 13.7563309,
+      "longitude": 100.5017651
+    }
+  ],
+  "cover": {
+    "url": "./art.jpg",
+    "alt": "artwork in clinic"
+  },
+  "colorSet": {
+    "bgColor": "#7b7a87",
+    "titleColor": "--mantine-color-grape-3"
+  }
+}

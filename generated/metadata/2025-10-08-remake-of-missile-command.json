@@ -1,0 +1,12 @@
+{
+  "file": "2025/10/08/remake-of-missile-command",
+  "hash": "ac1e402983fccbf8a06492b1468ebc57f6146a83a3feef9e86ea272c227e3c42",
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759920254/defender_instruction_erc481.png",
+    "alt": "defender"
+  },
+  "colorSet": {
+    "bgColor": "#a09b55",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

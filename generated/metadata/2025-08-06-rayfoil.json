@@ -1,0 +1,12 @@
+{
+  "file": "2025/08/06/rayfoil",
+  "hash": "ad3f4ee2b64ba7782815884950f81d1132878c1a6e6a7d8485ffcfd0c3417f7a",
+  "cover": {
+    "url": "./surfing.png",
+    "alt": "playing efoils"
+  },
+  "colorSet": {
+    "bgColor": "#8a7e77",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

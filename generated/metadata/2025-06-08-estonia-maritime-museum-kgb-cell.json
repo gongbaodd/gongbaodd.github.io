@@ -1,0 +1,21 @@
+{
+  "file": "2025/06/08/estonia-maritime-museum-kgb-cell",
+  "hash": "86df709212826860e16ea4f13f4768f339c660f76198168924d5a25be392d744",
+  "city": [
+    "Tallinn, Estonia"
+  ],
+  "locations": [
+    {
+      "latitude": 59.43696079999999,
+      "longitude": 24.7535746
+    }
+  ],
+  "cover": {
+    "url": "https://visitestonia.com/images/2093860/Margarita7.jpg@640w",
+    "alt": "fat magret in visitestonia.com"
+  },
+  "colorSet": {
+    "bgColor": "#968573",
+    "titleColor": "--mantine-color-lime-2"
+  }
+}

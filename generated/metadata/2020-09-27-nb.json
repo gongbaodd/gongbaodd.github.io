@@ -1,0 +1,26 @@
+{
+  "file": "2020/09/27/nb",
+  "hash": "c20d6454b4e3819a6daa8e035d3a4706d1809bca5f38f746704ce3871d7ef971",
+  "city": [
+    "Chengdu, China",
+    "Guanghan, China"
+  ],
+  "locations": [
+    {
+      "latitude": 30.5722599,
+      "longitude": 104.0665099
+    },
+    {
+      "latitude": 30.9770599,
+      "longitude": 104.28249
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757662319/IMG_20200926_112253_m5pmld.jpg",
+    "alt": "panda"
+  },
+  "colorSet": {
+    "bgColor": "#aa7258",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "file": "2025/07/11/rspack",
+  "hash": "e85f9020fd6d91936a1e21a8850771a2abc55ea0180d2080a76b628450b8dc37",
+  "cover": {
+    "url": "https://assets.rspack.rs/rspack/assets/rspack-v1-0-homepage.png",
+    "alt": "rspack log"
+  },
+  "colorSet": {
+    "bgColor": "#955c54",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

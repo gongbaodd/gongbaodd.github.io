@@ -1,0 +1,12 @@
+{
+  "file": "2019/12/21/movie-supplementary-program-hacker-empire",
+  "hash": "14e0d9d19f92e60fd58bd29f61bde18fc2d4485f54cffa4ed643cea750d318e1",
+  "cover": {
+    "url": "https://m.media-amazon.com/images/M/MV5BNzM4OTkzMjcxOF5BMl5BanBnXkFtZTgwMTkxMjI1MTI@._V1_FMjpg_UX1920_.jpg",
+    "alt": "matrix from imdb"
+  },
+  "colorSet": {
+    "bgColor": "#54a078",
+    "titleColor": "--mantine-color-green-4"
+  }
+}

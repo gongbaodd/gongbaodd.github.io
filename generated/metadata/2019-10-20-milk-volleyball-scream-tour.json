@@ -1,0 +1,21 @@
+{
+  "file": "2019/10/20/milk-volleyball-scream-tour",
+  "hash": "953a38a426ec6f801ac1312ea5f4e56e37a3ce38e4053e1a418b8ffa9af6e7f8",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1759310539/89d0a2e1gy1g9bqe4v9rtj22vb25khdv_bwqfe2.jpg",
+    "alt": "picture"
+  },
+  "colorSet": {
+    "bgColor": "#5b99a2",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

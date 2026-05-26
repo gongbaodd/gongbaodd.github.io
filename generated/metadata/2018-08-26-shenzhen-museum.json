@@ -1,0 +1,21 @@
+{
+  "file": "2018/08/26/shenzhen-museum",
+  "hash": "54fbe70a64a5bd7618b7e6ede7315b5e29a9a64f3a61507e6af729440ed3ec56",
+  "city": [
+    "Shenzhen, China"
+  ],
+  "locations": [
+    {
+      "latitude": 22.5428599,
+      "longitude": 114.05956
+    }
+  ],
+  "cover": {
+    "url": "./sz.jpg",
+    "alt": "fish lantern"
+  },
+  "colorSet": {
+    "bgColor": "#ada84c",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}
