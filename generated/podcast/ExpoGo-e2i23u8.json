@@ -1,0 +1,15 @@
+{
+  "id": "ExpoGo-e2i23u8",
+  "title": "给我整个ExpoGo",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ExpoGo-e2i23u8",
+  "pubDate": "Mon, 05 Feb 2024 12:29:00 GMT",
+  "description": "<p><br></p>\n<ol>\n <li>讲讲Expo Go开发跨平台应用经历</li>\n <li>旧版本MacOS还能给iOS打包吗</li>\n <li>BTRfs是啥</li>\n <li>Cloudflare worker增加JWT</li>\n</ol>\n<p><br></p>",
+  "summary": "讲讲Expo Go开发跨平台应用经历\n 旧版本MacOS还能给iOS打包吗\n BTRfs是啥\n Cloudflare worker增加JWT",
+  "duration": "00:25:23",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/85052808/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-3-6%2F16058796-008d-a4ec-e315-7bcfdb3296ed.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1712405609274-db8940538f5d3.jpg",
+  "colorSet": {
+    "bgColor": "#66757b",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

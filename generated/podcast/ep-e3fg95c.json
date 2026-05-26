@@ -1,0 +1,15 @@
+{
+  "id": "ep-e3fg95c",
+  "title": "给我整点国际化",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3fg95c",
+  "pubDate": "Mon, 23 Feb 2026 16:59:20 GMT",
+  "description": "<p>🎮 技术：Unity 国际化（I18N）填坑指南</p><p>本周主力开发游戏 <strong>《Grandpa&#39;s Be Heaven》</strong>。</p><ul><li><p><strong>字体之痛：</strong> 搞定 CJK（中日韩）+ 拉丁/希里尔全字符集。为了不让 GitHub 爆掉，在 4K 贴图和像素间隔（Padding）之间反复横跳。</p></li><li><p><strong>避坑方案：</strong> 官方 Localization 1.5 配合 <strong>Google Sheets</strong> 联动极度舒适。</p></li><li><p><strong>UI 适配：</strong> 德语、爱沙尼亚语单词长到飞起，UI 布局重排是逃不掉的命。</p></li></ul><p>趁着<strong>博物馆卡</strong> 3 月 9 号过期前疯狂补课：</p><ul><li><p><strong>五星推荐：</strong> <strong>国王勋章博物馆</strong>。地方虽小但藏品极野，甚至有北朝鲜和伪满洲国的勋章。</p></li><li><p><strong>日常路过：</strong> 健康、应用艺术、自然博物馆（遛娃圣地，大人看个热闹）。</p></li></ul><p>🏛️ 闲暇：博物馆特种兵</p>",
+  "summary": "🎮 技术：Unity 国际化（I18N）填坑指南本周主力开发游戏 《Grandpa&#39;s Be Heaven》。字体之痛： 搞定 CJK（中日韩）+ 拉丁/希里尔全字符集。为了不让 GitHub 爆掉，在 4K 贴图和像素间隔（Padding）之间反复横跳。避坑方案： 官方 Localization 1.5 配合 Google Sheets 联动极度舒适。UI 适配： 德语、爱沙尼亚语单词",
+  "duration": "00:10:56",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/115925612/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-1-23%2F072cc350-30a4-6c3f-f0a6-12380e556247.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1771865455813-7fd36b503a9ef.jpg",
+  "colorSet": {
+    "bgColor": "#8c8475",
+    "titleColor": "--mantine-color-dark-8"
+  }
+}

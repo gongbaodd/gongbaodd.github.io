@@ -1,0 +1,15 @@
+{
+  "id": "ep-e360mr9",
+  "title": "给我整一个夏季学校",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e360mr9",
+  "pubDate": "Fri, 25 Jul 2025 12:50:56 GMT",
+  "description": "<p>🎙 <strong>2025 年第 31 周 Shownotes | 7 月 25 日</strong></p><p>大家好，这一周的内容相对比较简单，主要是因为我开始参加了在塔林举办的 <strong>Summer School 暑期课程</strong>。</p><p>🧪 我选的课程是 <strong>Experimental Interaction Design（实验交互设计）</strong>。课程的核心目标，是要设计一个面向 <strong>听障人群的报警设备</strong>。背景设定是这样的：</p><p>听障人群通常白天会佩戴助听器，但晚上睡觉时不会戴。如果夜间突发火警或其他紧急情况，他们可能无法第一时间察觉。因此，我们的设计方向是开发一个<strong>可穿戴震动设备</strong> —— 戴在手腕上，遇到警铃或火警等突发状况就会震动提醒。</p><p>这一周我们都在进行调研和设计流程的学习，更多是头脑风暴和构思阶段。预计下周会进入正式开发环节。我们可能会使用一个叫 <strong>Egimpose（或可能是 EgimPulse？）</strong> 的平台 —— 好像我一两年前曾经提过这个工具，当时还试着玩了一下，没想到这次课程里又用上了。</p><p>🧑‍💻 除此之外，这周我也简单尝试了一下 <strong>Wear OS 的开发</strong>，做了一些小 demo，不过因为时间紧张，暂时没有具体成果可分享。等到真正开发完，再和大家详细汇报。</p><p>🧳 最后，周末可能会抽空去一趟赫尔辛基转转，算是小小的放松。</p><p></p>",
+  "summary": "🎙 2025 年第 31 周 Shownotes | 7 月 25 日大家好，这一周的内容相对比较简单，主要是因为我开始参加了在塔林举办的 Summer School 暑期课程。🧪 我选的课程是 Experimental Interaction Design（实验交互设计）。课程的核心目标，是要设计一个面向 听障人群的报警设备。背景设定是这样的：听障人群通常白天会佩戴助听器，但晚上睡觉时不会戴",
+  "duration": "00:02:34",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/105978153/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-25%2F69e1eabf-cd31-611a-7779-30609ea2dc9e.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1753447846112-1ef09966c57af.jpg",
+  "colorSet": {
+    "bgColor": "#906c7c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

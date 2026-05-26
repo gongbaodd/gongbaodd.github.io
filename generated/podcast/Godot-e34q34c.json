@@ -1,0 +1,15 @@
+{
+  "id": "Godot-e34q34c",
+  "title": "给我整一下Godot开发",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/Godot-e34q34c",
+  "pubDate": "Fri, 27 Jun 2025 09:09:59 GMT",
+  "description": "<p>为部署在 <strong>阿里云香港轻量服务器（仅512MB内存）</strong> 的项目，我尝试了多种技术路线，希望寻找不依赖 Node.js 的更轻量方案：</p><ul><li><p><strong>Node.js + Drizzle ORM + SQLite</strong><br>使用 Docker 构建，但在 Alpine Linux 上部署失败，怀疑 SQLite 驱动兼容性问题。Debian slim 版本运行正常。</p></li><li><p><strong>Golang + Fiber + GORM + SQLite</strong><br>特点是代码简洁，性能优秀，GORM 也不需要写 SQL migration 脚本。</p></li><li><p><strong>Rust + Actix Web + Diesel</strong><br>Diesel 是我最熟悉的 ORM 之一，需要写 SQL migration，但工具链完善，可生成 schema 与绑定类型，类型安全度高。</p></li></ul><ul><li><p>使用 AI（如 ChatGPT）自动生成初始服务框架和 Dockerfile。</p></li><li><p>AI 协助解析构建错误与 SQL migration 逻辑，极大提高开发效率。</p></li></ul><p>正在开发一个对话丰富的剧情向游戏，最近经历了以下关键变化：</p><ul><li><p>从 Unity 切换到 <strong>Godot 引擎</strong>。</p></li><li><p>Godot 从 4.1 升级至 4.3：因 4.1 插件支持不佳、4.4 用户较少，4.3 下载量最大，生态更稳定。</p></li></ul><ul><li><p>使用 <strong>Dialogue Nodes (dlg)</strong> 插件，源自一位开发者的 Game Jam 项目。</p></li><li><p>插件功能强大，但在 <strong>本地 release 与线上 release 表现不一致</strong>，需注意部署测试。</p></li></ul><ul><li><p>Godot 的动画系统是我接触过最高效、易用的之一。</p></li><li><p>若前端能集成类似系统，将大幅降低 UI/交互动效开发难度。</p></li></ul><ul><li><p>虽然 Godot 有内建编辑器，但我更喜欢将其连接到外部编辑器（如 VS Code）。</p></li><li><p>配合 AI 编程助手（尤其是带上下文记忆的版本），写 GDScript 更加流畅。</p></li></ul><ul><li><p><strong>语言选型体验</strong>：曾经觉得 Golang 语法“怪异”，现在觉得其性能与开发效率在后端非常合适。</p></li><li><p><strong>AI 生产力工具正在重塑开发流程</strong>：特别是构建脚本调试、ORM schema 管理、Docker部署等环节。</p></li><li><p><strong>Godot 的快速迭代体验令人惊喜</strong>，值得推荐给 indie 开发者。</p></li></ul>",
+  "summary": "为部署在 阿里云香港轻量服务器（仅512MB内存） 的项目，我尝试了多种技术路线，希望寻找不依赖 Node.js 的更轻量方案：Node.js + Drizzle ORM + SQLite使用 Docker 构建，但在 Alpine Linux 上部署失败，怀疑 SQLite 驱动兼容性问题。Debian slim 版本运行正常。Golang + Fiber + GORM + SQLite特点是代",
+  "duration": "00:07:14",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/104712780/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-27%2F77acd133-c876-4122-9f77-1cbea7441e03.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1751015463702-d899e031fded3.jpg",
+  "colorSet": {
+    "bgColor": "#6793af",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ep-e3gns0u",
+  "title": "给我整没了，元宇宙",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3gns0u",
+  "pubDate": "Fri, 20 Mar 2026 11:40:21 GMT",
+  "description": "<p>本周主要精力集中在<strong>毕业论文</strong>撰写及相关技术研发，涵盖了 <strong>VR/XR、机器学习</strong>以及 <strong>OpenCode</strong> 项目的持续推进。</p><p>本周最有收获的工具技巧是 git worktree。相比传统的 git checkout 或 git stash，它解决了多分支并行开发的痛点：</p><ul><li><p><strong>核心优势</strong>：允许将不同分支直接挂载为本地的<strong>独立文件夹</strong>。</p></li><li><p><strong>应用场景</strong>：无需频繁切换分支（Stash/Pop），可直接打开两个文件夹进行实时代码比对。</p></li><li><p><strong>AI 协作新思路</strong>：可以为不同的 Worktree 分别配置 AI 助手（如 vibecoding），实现多分支同步协作。</p></li></ul><ul><li><p><strong>设备吐槽</strong>：在 <strong>Mac mini</strong> 和 <strong>ASUS ProArt</strong> 上运行 Unreal Engine 体验欠佳（前者卡顿，后者风扇起飞）。</p></li><li><p><strong>Meta 生态观察</strong>：尽管 Meta 业务策略有所调整，但其底层维护（如 <strong>Oculus Link</strong> 优化及 <strong>Passthrough</strong> 功能接入）仍在稳步跟进，开发环境趋于稳定。</p></li><li><p><strong>OpenXR 局限性</strong>：由于 Apple 未加入 OpenXR 协议，Mac 端无法直接运行预览，开发链路较长。</p></li></ul><p>本周深度体验了 <strong>Wonderland Engine</strong>，并对比了 Unity 与 WebXR 的工作流：</p><ul><li><p><strong>WebXR 优势</strong>：跨平台支持（Mac/Win 均可），且能直接在头显浏览器中调试。</p></li><li><p><strong>沉浸式办公</strong>：在头显内通过远程桌面编码，并直接在浏览器验证，无需频繁摘戴头显，开发体验完胜传统的 PCVR 模式。</p></li><li><p><strong>现状权衡</strong>：目前仍坚守 <strong>Unity + Meta SDK</strong> 是为了获取最全的功能特性，但长期看好向 WebXR 迁移的可能性。</p></li></ul>",
+  "summary": "本周主要精力集中在毕业论文撰写及相关技术研发，涵盖了 VR/XR、机器学习以及 OpenCode 项目的持续推进。本周最有收获的工具技巧是 git worktree。相比传统的 git checkout 或 git stash，它解决了多分支并行开发的痛点：核心优势：允许将不同分支直接挂载为本地的独立文件夹。应用场景：无需频繁切换分支（Stash/Pop），可直接打开两个文件夹进行实时代码比对。A",
+  "duration": "00:11:18",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/117222878/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-20%2F661a7617-c6b1-5eb5-8f94-51145b12f506.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1774006729536-8c6369ab1c499.jpg",
+  "colorSet": {
+    "bgColor": "#9d8563",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

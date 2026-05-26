@@ -1,0 +1,15 @@
+{
+  "id": "Unity-e33l0km",
+  "title": "给我整下Unity的单元测试",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/Unity-e33l0km",
+  "pubDate": "Sun, 01 Jun 2025 12:06:00 GMT",
+  "description": "<p></p><p>这篇博客记录了 2025 年 6 月 1 日作者对过去一周的一些技术研究和体验的分享。具体包括：</p><p>✅ <strong>dify 与 flowise 的使用比较</strong></p><ul><li><p>dify 界面（UI）更好看（毕竟是中国人做的），功能与 flowise 差不多，体验感觉“半斤八两”。</p></li><li><p>计划下一周试试最近火起来的 N8N。</p></li><li><p>本周使用 dify 主要因为参加 Hackson，发现用的人不少。</p></li></ul><p>✅ <strong>AI 编程代理（像 langchain）</strong></p><ul><li><p>本周看了下 long chain（AI Agent 编程框架），因为必须跟上潮流，否则担心会被淘汰。</p></li></ul><p>✅ <strong>Unity 单元测试的实践和困难</strong></p><ul><li><p>用过的单元测试主要是 JavaScript、TypeScript、Python，C# 是第一次深入做。</p></li><li><p>Rust 的单元测试体验不错，因为内置支持。JavaScript（Vitest/Jest）则比较麻烦。</p></li><li><p>Unity 的 C# 单元测试里需要手动管理 assembly definition 文件，复杂度和 C++ link 类似，导致花了很多时间。</p></li><li><p>由于项目已成型，再去补单元测试非常繁琐，决定只做单个功能的小单元测试（TDD）。</p></li><li><p>Unity 测试环境下需要 mock 很多模块，增加了复杂度。</p></li><li><p>最终用 AI（Cursor）来帮助重构代码成 MVC，然后只对 ViewModel 层做测试，减少依赖。</p></li><li><p>发现 AI 生成的单元测试代码有时候会修改原代码，需要注意回顾。</p></li></ul><p>✅ <strong>Unreal Engine（UE）初步了解</strong></p><ul><li><p>UE 用 C++ 写，blueprint 是可视化脚本语言（性能和循环引用问题比 C++ 差）。</p></li><li><p>blueprint 类似 JavaScript，也是最终编译到 C++，适合更直观开发。</p></li><li><p>接下来想找些实际项目练手，熟悉 C++ 和 blueprint 混合开发。</p></li></ul><p>✅ <strong>接下来的计划</strong></p><ul><li><p>继续研究 dify、flowise、N8N。</p></li><li><p>还想看 bevy。</p></li><li><p>再找机会用 UE 做个小项目。</p></li></ul><p></p>",
+  "summary": "这篇博客记录了 2025 年 6 月 1 日作者对过去一周的一些技术研究和体验的分享。具体包括：✅ dify 与 flowise 的使用比较dify 界面（UI）更好看（毕竟是中国人做的），功能与 flowise 差不多，体验感觉“半斤八两”。计划下一周试试最近火起来的 N8N。本周使用 dify 主要因为参加 Hackson，发现用的人不少。✅ AI 编程代理（像 langchain）本周看了下",
+  "duration": "00:09:16",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/103497814/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-1%2F0c5ddd75-db6f-0dd7-5fae-10417dde5a52.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1748776861999-963db9dbb062f.jpg",
+  "colorSet": {
+    "bgColor": "#75ad6a",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "Linux-e3ie586",
+  "title": "给我整回Linux去",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/Linux-e3ie586",
+  "pubDate": "Fri, 24 Apr 2026 17:19:15 GMT",
+  "description": "<p><strong>核心背景</strong></p><ul><li><p><strong>放弃 Windows</strong>：系统不稳（蓝屏/Bug）、风扇噪音巨大、标准模式卡顿。</p></li><li><p><strong>回归初衷</strong>：追求开发效率与系统性能平衡，利用 VR 开发契机完成迁移。</p></li></ul><p><strong>发行版折腾史</strong></p><ul><li><p><strong>Nobara/Fedora</strong>：受限于 BIOS 内存占用与 32 位引导程序限制，无法进入安装程序。</p></li><li><p><strong>Pop!_OS</strong>：喜欢 Cosmic 桌面和平铺管理，但因 X11/Wayland 兼容性配置繁琐而放弃。</p></li><li><p><strong>CarchyOS (最终选择)</strong>：基于 Arch Linux，选用 <strong>KDE 桌面</strong>。理由是图形化配置完善、输入法稳定、驱动补齐。</p></li></ul><p><strong>当前状态</strong></p><ul><li><p><strong>亮点</strong>：BTRFS 快照实现“系统无忧回滚”；CarchyOS 支持命令切换 NV 显卡。</p></li><li><p><strong>痛点</strong>：指纹识别/Windows Hello 失效；ASUS Dial 驱动暂未研究；Linux 浏览器特性更新较慢。</p></li></ul><p><br></p>",
+  "summary": "核心背景放弃 Windows：系统不稳（蓝屏/Bug）、风扇噪音巨大、标准模式卡顿。回归初衷：追求开发效率与系统性能平衡，利用 VR 开发契机完成迁移。发行版折腾史Nobara/Fedora：受限于 BIOS 内存占用与 32 位引导程序限制，无法进入安装程序。Pop!_OS：喜欢 Cosmic 桌面和平铺管理，但因 X11/Wayland 兼容性配置繁琐而放弃。CarchyOS (最终选择)：基",
+  "duration": "00:12:30",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/119001798/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-24%2Fd6c98b4c-128d-3daf-110f-af8a00424551.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1777051056763-930bbf89f347c.jpg",
+  "colorSet": {
+    "bgColor": "#747474",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

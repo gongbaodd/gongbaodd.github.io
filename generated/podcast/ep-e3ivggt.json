@@ -1,0 +1,15 @@
+{
+  "id": "ep-e3ivggt",
+  "title": "给我又整一个远程操作软件",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3ivggt",
+  "pubDate": "Wed, 06 May 2026 11:37:25 GMT",
+  "description": "<p><br></p><ul><li><p><strong>论文提交</strong>：本周完成了论文提交，处于高强度脑力消耗后的放松状态。</p></li><li><p><strong>致谢</strong>：特别感谢导师 Martin Sillaots 将“工作笔记”般的初稿修改为正式论文，以及所有提供支持的人。</p></li><li><p><strong>下周计划</strong>：进入论文答辩（Defence）准备阶段。</p></li></ul><p>针对在 Linux (Wayland) 环境下远程操控 Mac mini 的需求，进行了工具更换：</p><ul><li><p><strong>痛点（RustDesk）</strong>：</p><ul><li><p>在 Wayland 架构下存在内存与显存泄漏。</p></li><li><p>图形渲染性能不稳定（仍处于 Beta 阶段）。</p></li><li><p>鼠标中键/右键拖拽容易断联，导致 Unity 等工具难以操作。</p></li></ul></li><li><p><strong>解决方案（NoMachine）</strong>：</p><ul><li><p><strong>内存稳定</strong>：彻底解决了内存泄漏问题。</p></li><li><p><strong>操作精准</strong>：修复了鼠标拖拽失效的问题，提升了专业软件的操控可靠性。</p></li></ul></li></ul>",
+  "summary": "论文提交：本周完成了论文提交，处于高强度脑力消耗后的放松状态。致谢：特别感谢导师 Martin Sillaots 将“工作笔记”般的初稿修改为正式论文，以及所有提供支持的人。下周计划：进入论文答辩（Defence）准备阶段。针对在 Linux (Wayland) 环境下远程操控 Mac mini 的需求，进行了工具更换：痛点（RustDesk）：在 Wayland 架构下存在内存与显存泄漏。图形渲",
+  "duration": "00:02:53",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/119570397/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-6%2Fa6bc8d14-aec9-cde1-3f71-4e959800add0.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1778067380190-61b8ed66bd9d9.jpg",
+  "colorSet": {
+    "bgColor": "#976562",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

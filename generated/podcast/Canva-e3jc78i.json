@@ -1,0 +1,15 @@
+{
+  "id": "Canva-e3jc78i",
+  "title": "给我整一下Canva",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/Canva-e3jc78i",
+  "pubDate": "Thu, 14 May 2026 14:29:17 GMT",
+  "description": "<p>论文提交后的技术复盘，重点对比 Canva 与 Google Slides。</p><p>重点推荐：Canva </p><p>• 流畅度：交互体验极佳，响应速度远超 Google Slides。</p><p>• 功能优势：模板系统成熟，图片特效及圆角处理等基础设计功能比传统办公软件更完备。</p><p>• 避坑指南：链接分享演示功能尚不稳定，建议备份 PDF 进行展示；AI 及高级特效功能需付费。</p><p>其他技术点回顾</p><p>• 远程桌面：NoMachine 本地传输虽好，但频繁闪屏与崩溃，体验不如预期。</p><p>• 本地 AI：成功运行 Gemma 4，占用 7GB 显存，速度与效果令人满意。</p><p>• 影视：推荐电影《给阿妈的情书》。</p><p><br></p>",
+  "summary": "论文提交后的技术复盘，重点对比 Canva 与 Google Slides。重点推荐：Canva • 流畅度：交互体验极佳，响应速度远超 Google Slides。• 功能优势：模板系统成熟，图片特效及圆角处理等基础设计功能比传统办公软件更完备。• 避坑指南：链接分享演示功能尚不稳定，建议备份 PDF 进行展示；AI 及高级特效功能需付费。其他技术点回顾• 远程桌面：NoMachine 本地传输",
+  "duration": "00:04:43",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/119986898/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-14%2F2a70fecd-2a9e-0e92-0629-732e621db80c.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1778768784680-01c4d98d930de.jpg",
+  "colorSet": {
+    "bgColor": "#807ec4",
+    "titleColor": "--mantine-color-cyan-2"
+  }
+}

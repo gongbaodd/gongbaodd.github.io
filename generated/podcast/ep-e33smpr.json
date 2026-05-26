@@ -1,0 +1,15 @@
+{
+  "id": "ep-e33smpr",
+  "title": "给我整一个游戏手柄",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e33smpr",
+  "pubDate": "Fri, 06 Jun 2025 10:41:46 GMT",
+  "description": "<p>🎮 <strong>游戏手柄</strong></p><ul><li><p>因毕业论文需要（无人机相关），在TEMU上购买了一个手柄（EasySMX X15，25欧）。</p></li><li><p>之前试过Steamlink当手柄，但体验很差。</p></li><li><p>在欧洲XBOX和PS5手柄普遍要50欧左右，而easySMX X15只要25欧。</p></li><li><p>查阅Linus Tech Tips的评测，发现评价还不错（虽然塑料感，但够用）。</p></li><li><p>目前体验不错，且支持2.4G无线、蓝牙、以及有线连接，外观还有RGB彩灯。</p></li><li><p>购买后感叹：离开祖国才发现国产手柄真便宜！</p></li></ul><p>🕹️ <strong>Unreal Engine（虚幻引擎）学习</strong></p><ul><li><p>这周大量时间投入到UE的学习：</p><ul><li><p>UE5.6刚发布，试着安装在笔记本上，结果太卡，退回到UE4.23。</p></li><li><p>UE4.23是最后一个能导出Web项目的版本，但遇到素材市场最低支持UE5，导致又切回UE5。</p></li><li><p>目前先用UE5.0，未来可能因为AI/ML（Machine Learning）功能需求升级到5.3+。</p></li></ul></li><li><p>学了3个教程（社区教程、First Person Adventure Game、纯C++教程），但都不够“新手友好”。</p></li><li><p>发现UE官方的“Your First Hour in Unreal Engine 5.2”是更好的入门起点，计划下周继续学“Stack O Bot”项目。</p></li></ul><p>🌟 <strong>游戏AI学习</strong></p><ul><li><p>上周重新关注了游戏AI（Behavior Tree，行为树）。</p></li><li><p>找到一个前端JS框架Yuka，它基于《Programming Game AI by Example》和《3D Math Primer for Graphics and Game Development》写的。</p></li><li><p>认为游戏AI在前端等其他开发领域也会逐渐流行。</p></li></ul><p>💡 <strong>Bevy引擎 &amp; ECS</strong></p><ul><li><p>出于好奇看了很多Bevy视频，但Bevy版本更新快（API差异大），不兼容老教程。</p></li><li><p>目前不打算用Bevy做完整项目，只会用它的核心wasm插件。</p></li><li><p>研究了一下Bevy的Archetype Memory Layout（原型内存布局）：</p><ul><li><p>核心思想：将相似Component放在连续内存里，兼顾ECS与OOP的优势。</p></li></ul></li><li><p>还发现了一个轻量的BitECS（纯JS ECS库），考虑将来用它做一些前端项目。</p></li></ul><p>📦 <strong>Transformer.js / LangChain前端AI</strong></p><ul><li><p>调研了HuggingFace的Transformer.js：它是一个模型驱动库，可直接调用ONNX模型。</p></li><li><p>结合LangChain.js（串联模型）+ Transformer.js（调用模型）+ LanceDB（矢量数据库）</p><ul><li><p>目标：在纯前端环境运行离线大模型，或做原型探索。</p></li></ul></li></ul><p>🔍 <strong>小结</strong></p><ul><li><p>过去一周非常“高密度”！</p></li><li><p>主要围绕：游戏硬件（手柄）、UE引擎学习（切换版本，找到更好的入门路径）、游戏AI（Behavior Tree在JS和前端的落地）、ECS（内存布局思考）以及前端AI（LangChain.js + Transformer.js + Vector DB的组合可能性）。</p></li><li><p>未来几周重点：继续完善UE入门，学习AI/ML在游戏和前端的结合。</p></li></ul><p>🎉 <strong>一句话总结</strong><br>“买了手柄，折腾UE，深入研究ECS和游戏AI，同时探索前端大模型可能性，忙且充实的一周！”</p><p></p>",
+  "summary": "🎮 游戏手柄因毕业论文需要（无人机相关），在TEMU上购买了一个手柄（EasySMX X15，25欧）。之前试过Steamlink当手柄，但体验很差。在欧洲XBOX和PS5手柄普遍要50欧左右，而easySMX X15只要25欧。查阅Linus Tech Tips的评测，发现评价还不错（虽然塑料感，但够用）。目前体验不错，且支持2.4G无线、蓝牙、以及有线连接，外观还有RGB彩灯。购买后感叹：离",
+  "duration": "00:16:22",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/103749883/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-6%2Fa3e88e9f-0f01-29b7-6c85-debe9937ce53.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1749206353671-1ecf60382f7ac.jpg",
+  "colorSet": {
+    "bgColor": "#a78c5e",
+    "titleColor": "--mantine-color-cyan-2"
+  }
+}

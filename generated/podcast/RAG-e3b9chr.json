@@ -1,0 +1,15 @@
+{
+  "id": "RAG-e3b9chr",
+  "title": "给我整一个浏览器RAG",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/RAG-e3b9chr",
+  "pubDate": "Fri, 21 Nov 2025 13:08:34 GMT",
+  "description": "<p><strong>播客 Show Notes（简短版）</strong></p><ul><li><strong>时间</strong>：2025/11/21，第 48 周</li><li><strong>状态</strong>：感冒还没好 🤧</li><li><strong>主要进展</strong>：本周把博客做成了一个<strong>纯浏览器端的“RAG 智能网站导览系统”</strong>，无需服务器。</li></ul><p>技术要点</p><ul><li>使用 <strong>Chrome Canary 新的 Prompt API</strong>（原 window.ai 已弃用）。</li><li>浏览器端向量数据库：<strong>EntityDB（基于 IndexedDB）</strong>。</li><li>使用 <strong>Python + LangChain 文本分割</strong>，将 800+ 篇文章按句拆分。</li><li>选用 <strong>HuggingFace 的 all-MiniLM-L6 模型</strong>生成嵌入向量（384维）。</li><li>向量数据先转为二进制再压缩，大幅缩小体积。</li><li>浏览器端 RAG 调用不稳定，暂时需要→ AI 返回 JSON→ 手动调用函数查询向量。</li></ul><p>实践成果</p><ul><li>实现了一个<strong>纯前端、可离线运行的知识检索 + AI 问答系统</strong>。</li><li>使用 <strong>Streamdown</strong> 流式渲染 Markdown 输出。</li></ul><p>额外尝试</p><ul><li>音乐编程语言 <strong>Strudel</strong>：比 Sonic Pi 更现代、更易网页展示。</li><li>结合 RAG 系统实现了一个<strong>智能音乐播放器/演奏辅助工具</strong>。</li></ul><p>👋 本期就到这里，下周继续更新。</p>",
+  "summary": "播客 Show Notes（简短版）时间：2025/11/21，第 48 周状态：感冒还没好 🤧主要进展：本周把博客做成了一个纯浏览器端的“RAG 智能网站导览系统”，无需服务器。技术要点使用 Chrome Canary 新的 Prompt API（原 window.ai 已弃用）。浏览器端向量数据库：EntityDB（基于 IndexedDB）。使用 Python + LangChain 文本",
+  "duration": "00:08:55",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/111505403/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-21%2F60906b79-754b-3fe5-3f3d-25daac5c4bda.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1763730106236-ebeb8df5b2065.jpg",
+  "colorSet": {
+    "bgColor": "#7c7c7c",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

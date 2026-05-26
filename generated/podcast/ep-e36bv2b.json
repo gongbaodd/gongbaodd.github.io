@@ -1,0 +1,15 @@
+{
+  "id": "ep-e36bv2b",
+  "title": "给我整到赫尔辛基",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e36bv2b",
+  "pubDate": "Sun, 03 Aug 2025 12:48:28 GMT",
+  "description": "<p>🎙️ <strong>第32周 · 周记播客 · 2025年8月2日</strong></p><p>这周内容超丰富，我边烤猪肉边录播客，流着口水也要和你们分享这段精彩的一周！🥓🔥</p><p>✈️ 赫尔辛基建文：临时起意，却是惊喜不断</p><ul><li><p>起因：Summer School期间有人问我“你们离赫尔辛基那么近，怎么还没去过？”于是说走就走。</p></li><li><p>交通：从塔林坐船去赫尔辛基，两小时左右，非常方便。有三家公司运营，我去的时候坐的是 Viking Line，回程是 Eckerö Line，票价大概19欧，强推 Viking，直接到市中心。</p></li><li><p>市区观光：</p><ul><li><p>🏛️ 白教堂、红教堂，还有老市场（干净得让我怀疑人生，跟小时候记忆里的市场场景形成奇妙对比）。</p></li><li><p>🚋 电车绿绿的很像大连，交通便利，10欧买个通票全城畅行无阻。</p></li><li><p>🚇 地铁体验：没有闸机、没有检票，太自由了。</p></li></ul></li></ul><li><p>特别打卡：</p><ul><li><p>Kampi 中心交通枢纽 &amp; 商场，还有我的辽宁合影打卡。</p></li><li><p>吃了脆皮猪肉，但欧洲猪肉真的是太柴了😩。</p></li><li><p>Hisburger🍔：番茄酱免费提供，我超感动。</p></li><li><p>中央图书馆 Oodi：我的最爱！</p><ul><li><p>免费借乐器、3D 打印机、电脑、缝纫机、激光雕刻机。</p></li><li><p>有机器人帮你归还图书，科技感十足。</p></li><li><p>外面居然还有街舞比赛，图书馆和热闹完美共存。</p></li></ul></li><li><p>小遗憾：电脑病毒博物馆只在周五开放，错过了。</p></li><li><p>Supersell 总部打卡：门口合影留念。</p></li></ul><li><p>晚上坐船回塔林：在海上看了一场冷到打哆嗦的落日🌅，别忘了带外套！</p><p>🎓 Summer School 最后一周：Arduino+深度学习踩坑实录</p></li></li><ul><li><p>项目目标：设计一个帮助听障人群感知紧急警报的智能手表。</p></li><li><p>技术部分：</p><ul><li><p>初期选用 Arduino Uno，结果内存完全不够，直接炸。</p></li><li><p>临时换成 ESP32，感谢塔林大学：硬件资源一筐一筐地发🧰，换坏板子毫不含糊。</p></li></ul></li><li><p>深度学习部分：</p><ul><li><p>使用 Edge Impulse 平台做音频分类。</p></li><li><p>初始版本模型太大准确率只有 45%，用了 15000+ 特征点。</p></li><li><p>学到的一招：用 MFCC 特征提取，特征数立马减到 3000+，训练速度飞起。</p></li><li><p>模型结构调整：从1D CNN换成2D CNN，准确率瞬间提升至 90%+。</p></li></ul></li><li><p>显示屏加分项：</p><ul><li><p>ESP32 带小 OLED 屏，我把图标转成 XBM 成功显示，甚至搞了个小动画，酷炫极了！</p></li></ul></li></ul><p></p>",
+  "summary": "🎙️ 第32周 · 周记播客 · 2025年8月2日这周内容超丰富，我边烤猪肉边录播客，流着口水也要和你们分享这段精彩的一周！🥓🔥✈️ 赫尔辛基建文：临时起意，却是惊喜不断起因：Summer School期间有人问我“你们离赫尔辛基那么近，怎么还没去过？”于是说走就走。交通：从塔林坐船去赫尔辛基，两小时左右，非常方便。有三家公司运营，我去的时候坐的是 Viking Line，回程是 Ecke",
+  "duration": "00:17:29",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/106347019/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-2%2Fa6f886e9-1bff-926a-334e-24a039e3cb9c.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1754145221730-3fef002ae3a1c.jpg",
+  "colorSet": {
+    "bgColor": "#98775d",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

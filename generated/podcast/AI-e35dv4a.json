@@ -1,0 +1,15 @@
+{
+  "id": "AI-e35dv4a",
+  "title": "给我整一个游戏AI",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/AI-e35dv4a",
+  "pubDate": "Fri, 11 Jul 2025 13:42:13 GMT",
+  "description": "<p>🎙 <strong>2025年第29周 · 播客摘要</strong><br>📅 时间：7月11日<br>🎉 关键词：生日、GMP AI、群体模拟、UE5学习代理、RSPack优化</p><ul><li><p>🎂 本周生日快乐！虽然已经过了两天～</p></li><li><p>🧠 学习了与Game AI相关的内容，为未来实习提前准备：</p><ul><li><p>涉及物理引擎、A*算法、武器系统等。</p></li><li><p>特别感兴趣的有 Crowd Simulation（群体模拟）和 Goal-Oriented Behavior（GOAP）：</p><ul><li><p>群体模拟看起来像是 waypoint + A*。</p></li><li><p>GOAP 是一种将目标拆解为多个节点，再从中计算最优路径的方法。</p></li></ul></li></ul></li><li><p>🤖 两种 UE5 的学习智能体方法：</p><ul><li><p><strong>强化学习（Reinforcement Learning）</strong>：观察 → 执行 → 奖励 → 循环。</p></li><li><p><strong>模仿学习（Imitation Learning）</strong>：加入人工演示的数据录制。</p></li><li><p>吐槽 Blueprint 太繁琐，希望有 C++ 版本。</p></li><li><p>推荐 Unity 上的 ML-Agents 教程：Code Monkey 的《Machine Learning AI in Unity》和《Teach Your AI》。</p></li></ul></li><li><p>⚙️ 开发工具方面：</p><ul><li><p>曾因 Babylon.js 编辑器用 Webpack 太慢而搁置项目。</p></li><li><p>最近尝试 RSPack，对 CommonJS 支持很好，准备继续玩 Babylon。</p></li></ul></li></ul><p></p>",
+  "summary": "🎙 2025年第29周 · 播客摘要📅 时间：7月11日🎉 关键词：生日、GMP AI、群体模拟、UE5学习代理、RSPack优化🎂 本周生日快乐！虽然已经过了两天～🧠 学习了与Game AI相关的内容，为未来实习提前准备：涉及物理引擎、A*算法、武器系统等。特别感兴趣的有 Crowd Simulation（群体模拟）和 Goal-Oriented Behavior（GOAP）：群体模拟",
+  "duration": "00:06:43",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/105364042/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-11%2Fff541087-bbae-11cc-9d83-c6747d34095f.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1752241319756-7d67d81912123.jpg",
+  "colorSet": {
+    "bgColor": "#a58f60",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

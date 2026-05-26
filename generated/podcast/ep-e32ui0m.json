@@ -1,0 +1,15 @@
+{
+  "id": "ep-e32ui0m",
+  "title": "给我整个点状云",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e32ui0m",
+  "pubDate": "Fri, 16 May 2025 15:08:07 GMT",
+  "description": "<p>📅 一周总结（2025年第21周）🧩 会议参与</p><ol><li><p><strong>Pug Baltic 会议</strong></p><ul><li><p>主题聚焦欧洲 AI 的发展。</p></li><li><p>只听了一家公司的分享：他们利用 AI 把旧软件代码迁移为现代代码，适用于很多仍运行老旧系统（如 Windows XP）的组织。</p></li><li><p>强调欧洲重视<strong>单元测试</strong>，这使得系统迁移更可靠。</p></li></ul></li><li><p><strong>微软 Open Office 活动</strong></p><ul><li><p>会议结束后，微软传出裁员消息：</p><ul><li><p>裁掉了 TypeScript 的作者。</p></li><li><p>裁掉了一位 AI 总裁，令人震惊，尤其是在微软大力发展 AI 的背景下。</p></li></ul></li></ul></li></ol><ul><li><p><strong>内存管理问题：</strong></p><ul><li><p>WebAssembly 的内存不是自动扩展的，需手动申请扩容。</p></li><li><p>若内存不足直接崩溃，不会自动提示，需开发者预估扩容。</p></li></ul></li><li><p><strong>在游戏开发中的问题：</strong></p><ul><li><p>游戏图像渲染内存需求大，WASM 固定内存方式非常不方便。</p></li><li><p>相比之下，JavaScript 更灵活，内存管理更宽容。</p></li><li><p>因此在游戏引擎选择上，JS 方案具有优势。</p></li></ul></li><li><p><strong>Unity 动向：</strong></p><ul><li><p>传出将编译目标转向 ThreeJS，做法合理。</p></li><li><p>推测 Unreal 也可能会做出类似调整。</p></li></ul></li></ul><ul><li><p><strong>当前项目使用 3DGS开发 XR 应用。</strong></p></li><li><p><strong>背景与准备：</strong></p><ul><li><p>去年写过一篇关于高斯 Splatting 的文章，探讨扫描数学公式等内容。</p></li><li><p>目前准备将高斯 Splatting 应用于 XR 项目中。</p></li></ul></li></ul><ul><li><p><strong>遇到的问题：</strong></p><ul><li><p>使用 Blender 处理点云数据（Point Cloud）并导出用于游戏引擎时遇到很多困难。</p></li></ul></li><li><p><strong>解决方案：</strong></p><ul><li><p>使用 <strong>MeshLab</strong> 软件快速处理点云，删除多余部分并导出为 PLY 文件。</p></li><li><p>比 Blender 更高效、简单。</p></li><li><p>虽然是收费软件，但个人使用免费。</p></li></ul></li></ul><ul><li><p>将进一步介绍使用 <strong>Babylon 或 Three.js</strong> 开发 XR 应用的过程。</p></li></ul><p>🧠 技术反思：WebAssembly 的限制🕹 项目进展：WebXR 项目🔍 工具与实验：点云处理📌 下周预告</p>",
+  "summary": "📅 一周总结（2025年第21周）🧩 会议参与Pug Baltic 会议主题聚焦欧洲 AI 的发展。只听了一家公司的分享：他们利用 AI 把旧软件代码迁移为现代代码，适用于很多仍运行老旧系统（如 Windows XP）的组织。强调欧洲重视单元测试，这使得系统迁移更可靠。微软 Open Office 活动会议结束后，微软传出裁员消息：裁掉了 TypeScript 的作者。裁掉了一位 AI 总裁，",
+  "duration": "00:08:43",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/102761942/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-16%2F9355a64d-7dca-e9e6-1f4d-4173f84d7ed6.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1747407893139-1a8b96e8ed37b.jpg",
+  "colorSet": {
+    "bgColor": "#95706f",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

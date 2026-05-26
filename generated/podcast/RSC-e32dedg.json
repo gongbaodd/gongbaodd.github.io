@@ -1,0 +1,15 @@
+{
+  "id": "RSC-e32dedg",
+  "title": "给我整下RSC",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/RSC-e32dedg",
+  "pubDate": "Mon, 05 May 2025 12:57:02 GMT",
+  "description": "<p> 第18周总结（2025）</p><p>🎮 UE on Web 初探（未能顺利展开）</p><ul><li><p>原计划尝试 <strong>Unreal Engine (UE) 在 Web 端的支持</strong>，但进展受阻。</p></li><li><p><strong>UE4.23</strong> 曾支持 HTML5 导出，但官方在 <strong>4.23 之后已弃用</strong>，仅靠社区维护。</p></li><li><p>当前 <strong>UE5 并未支持 WebGPU/HTML5</strong>，尽管有少量尝试移植。</p></li><li><p>获取旧版本 HTML5 导出模块的开源源码较为繁琐，绑定 GitHub 后仍遇到无法访问的问题。</p></li><li><p>UE 安装体积巨大（20–30GB），硬盘空间限制也造成了一定困扰。</p></li></ul><ul><li><p>本周主要精力集中在两个课程项目的收尾上：</p><ul><li><p>水果忍者小游戏（基于 Unity）</p></li><li><p>类迷宫玩法的扩展版</p></li></ul></li><li><p>调试过程中发现 <strong>MediaPipe 引入了内存泄漏问题</strong>，花时间排查但无详细说明。</p></li><li><p>已将游戏部署到 <a href=\"https://itch.io\" target=\"_new\" rel=\"noopener\">itch.io</a>，发现其仅支持 <strong>相对路径部署</strong>，与 Vercel 的根路径部署方式不同。</p></li></ul><ul><li><p>本周尝试使用 <strong>Waku</strong>（由 Builder.io 作者开发的 React 框架）进行部署测试：</p><ul><li><p>目的：体验 <strong>React Server Component（RSC）</strong> 在非 Next.js 框架中的支持情况。</p></li><li><p>相比 Next.js，<strong>Waku 使用 Vite 构建，更轻更快</strong>。</p></li><li><p>主要优势在于支持 <strong>静态构建 RSC</strong>，可导出纯静态 JS+TXT 文件部署至静态托管平台。</p></li><li><p>成功部署到 itch.io，但发现 <strong>TXT 路径仍使用绝对路径</strong>，可能是 bug。</p></li></ul></li></ul><ul><li><p>尝试将项目迁移到 <strong>Astro</strong>，但其 <strong>原生不支持相对路径部署</strong>。</p></li><li><p>通过社区插件 <a href=\"https://www.npmjs.com/package/astro-relative-links\" target=\"_new\" rel=\"noopener\">astro-relative-links</a> 解决相对路径问题，但仍不如 Waku 表现稳定。</p></li></ul><ul><li><p>本周工作虽碎片化，但对多个工具链有了更深入了解，特别是：</p><ul><li><p>Unreal Web 端兼容性的历史与现状</p></li><li><p>不同框架在部署策略（路径处理）上的差异</p></li><li><p>构建更适合静态部署的 React RSC 项目经验积累</p></li></ul></li></ul><p>🍉 水果忍者项目 &amp; 内存问题排查</p><p>🧱 Waku 框架使用体验</p><p>✨ 额外尝试：Astro 框架</p>",
+  "summary": "第18周总结（2025）🎮 UE on Web 初探（未能顺利展开）原计划尝试 Unreal Engine (UE) 在 Web 端的支持，但进展受阻。UE4.23 曾支持 HTML5 导出，但官方在 4.23 之后已弃用，仅靠社区维护。当前 UE5 并未支持 WebGPU/HTML5，尽管有少量尝试移植。获取旧版本 HTML5 导出模块的开源源码较为繁琐，绑定 GitHub 后仍遇到无法访问",
+  "duration": "00:07:09",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/102201200/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-5%2F366c8e17-370f-fbc8-85b9-3b4d2e75e70c.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1746449667248-f96a2427217fd.jpg",
+  "colorSet": {
+    "bgColor": "#909e55",
+    "titleColor": "--mantine-color-yellow-2"
+  }
+}

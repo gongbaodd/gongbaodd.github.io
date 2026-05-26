@@ -1,0 +1,15 @@
+{
+  "id": "ep-e32p0vc",
+  "title": "给我整一个对话系统",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e32p0vc",
+  "pubDate": "Tue, 13 May 2025 06:24:01 GMT",
+  "description": "<p>Inky is a tool for writing interactive fiction. It can generate a JSON file to be used in Unity. I used it in a recent project. However, I bumped into a lot problems. The condition branches are not rendered. I am still working on it.</p>",
+  "summary": "Inky is a tool for writing interactive fiction. It can generate a JSON file to be used in Unity. I used it in a recent project. However, I bumped into a lot problems. The condition branches are not re",
+  "duration": "00:03:54",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/102580652/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-13%2Feadcd02e-6666-ecbe-782e-b4dc6377a13f.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1747117397600-e52a16b81f549.jpg",
+  "colorSet": {
+    "bgColor": "#7286a8",
+    "titleColor": "--mantine-color-cyan-2"
+  }
+}

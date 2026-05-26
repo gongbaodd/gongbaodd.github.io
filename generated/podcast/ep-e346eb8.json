@@ -1,0 +1,15 @@
+{
+  "id": "ep-e346eb8",
+  "title": "给我整一个浏览器上的本地多模态助手",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e346eb8",
+  "pubDate": "Fri, 13 Jun 2025 09:13:10 GMT",
+  "description": "<p>第25周总结（2025年6月13日）</p><p>📌 本周重点</p><p>2025年已过半</p><p><br></p><p>学习了 LangChain 和 Transformer.js，可以在浏览器中运行多模态 AI Agent</p><p><br></p><p>🧠 技术要点</p><p>LangChain 结构</p><p>LangChain：构建 AI 工作流，封装大模型调用</p><p>LangSmith：调试和监控工作流</p><p>LangGraph：实现复杂、多模态 agent 流程</p><p><br></p><p>举例：一句“今天天气如何？”背后其实涉及多个 API 调用（时间、位置、天气）+ 文本生成模型组合。</p><p><br></p><p>Transformer.js + ONNX</p><p>可在浏览器端运行 Hugging Face 模型（ONNX 格式）</p><p><br></p><p>脱离服务器，纯前端推理</p><p>实现轻量多模态 AI 交互体验</p><p><br></p><p>⚠️ 技术挑战</p><p>模型太大（上百 MB 到几 GB）加载慢</p><p>解决方案探索：</p><p>使用 Service Worker 的 background fetch 实现断点续传（仅支持 Chrome 系）</p><p>用户手动下载模型 + 校验 hash（兼容性更好）</p><p><br></p><p>🧪 其他探索</p><p>看了 BitECS，准备结合 Babylon.js 写个 ECS Demo</p><p>下周尝试评估 ECS 架构在浏览器端的性能表现</p><p><br></p><p>✅ 总结感悟</p><p>彻底理解了 AI agent 的结构和工作流</p><p>浏览器端跑 AI 是可能的，但仍需解决下载和兼容问题</p>",
+  "summary": "第25周总结（2025年6月13日）📌 本周重点2025年已过半学习了 LangChain 和 Transformer.js，可以在浏览器中运行多模态 AI Agent🧠 技术要点LangChain 结构LangChain：构建 AI 工作流，封装大模型调用LangSmith：调试和监控工作流LangGraph：实现复杂、多模态 agent 流程举例：一句“今天天气如何？”背后其实涉及多个 A",
+  "duration": "00:09:38",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/104068904/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-13%2F779021c9-3b2b-373b-2fe7-c637ba8081fa.mp3",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1749805880828-0abad760e9f2.jpg",
+  "colorSet": {
+    "bgColor": "#a26787",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

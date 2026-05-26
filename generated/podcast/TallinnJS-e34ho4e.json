@@ -1,0 +1,15 @@
+{
+  "id": "TallinnJS-e34ho4e",
+  "title": "给我整一个Tallinn的JS小聚",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/TallinnJS-e34ho4e",
+  "pubDate": "Sat, 21 Jun 2025 07:48:06 GMT",
+  "description": "<p>📅 本周概览</p><ul><li><p><strong>时间节点</strong>：夏至已过，2025年第26周</p></li><li><p><strong>整体氛围</strong>：夏日来临，爱沙尼亚几乎全员度假，各类聚会、活动频出</p></li></ul><ol><li><p><strong>游泳小憩</strong></p><ul><li><p>上周外出游泳，享受夏日清凉</p></li></ul></li><li><p><strong>AI &amp; 开发者聚会</strong></p><ul><li><p>多场 AI 主题 Meetup</p></li><li><p>仅参加了 <strong>Tallinn JS</strong></p></li></ul></li></ol><ul><li><p><strong>目标</strong>：在 Babylon.js 中运行 ECS</p></li><li><p><strong>挑战</strong>：纯代码模式过于“硬核”</p></li><li><p><strong>解决方案</strong>：</p><ul><li><p>使用日本开发的 <strong>Babylon Editor</strong>（图形化场景构建）</p></li><li><p>优点：一键导出 Babylon 原生场景文件，导入即用</p></li><li><p>缺点：底层采用 <strong>webpack</strong>，打包/编译速度极慢</p></li><li><p>物理引擎兼容性小坑：Havok 引擎需单独全局引入，绕过 WebAssembly 限制</p></li></ul></li><li><p><strong>备选方案</strong>：</p><ul><li><p><strong>Unity to Babylon</strong> 插件</p></li><li><p>导出 <strong>glTF</strong>：支持物理、碰撞、光照等烘焙</p></li><li><p>缺点：依赖包体积庞大，需深入理解 Unity、Babylon.js、WASM</p></li></ul></li></ul><ul><li><p>受邀参与中国游戏项目，建议使用 <strong>Godot</strong></p></li><li><p>试用 <strong>Chackensoft Games</strong> 提供的 CI 方案</p></li><li><p>发现官网还有丰富构建工具，未来或有更多收获</p></li></ul><ul><li><p><strong>Tallinn JS 分享</strong>：</p><ul><li><p>Thale Gaming UI</p></li><li><p>前沿 <strong>CSS 响应式设计</strong>（触控、手写笔、XR 眼动等交互）</p></li></ul></li><li><p>推荐阅读：kateryna.codes &amp; utopia.fyi</p></li></ul><ul><li><p><strong>爬虫功能需求</strong></p><ul><li><p>评估 <strong>RapidAPI</strong> 所含爬虫接口（免费 2000 次/月）</p></li><li><p>考虑流量需求与成本平衡</p></li></ul></li></ul><ul><li><p><strong>Isolated Web Application (IWA)</strong></p><ul><li><p>类似 PWA，由 Chrome 提出</p></li><li><p>可脱离网络、如本地应用般运行</p></li></ul></li></ul>",
+  "summary": "📅 本周概览时间节点：夏至已过，2025年第26周整体氛围：夏日来临，爱沙尼亚几乎全员度假，各类聚会、活动频出游泳小憩上周外出游泳，享受夏日清凉AI &amp; 开发者聚会多场 AI 主题 Meetup仅参加了 Tallinn JS目标：在 Babylon.js 中运行 ECS挑战：纯代码模式过于“硬核”解决方案：使用日本开发的 Babylon Editor（图形化场景构建）优点：一键导出 Ba",
+  "duration": "00:07:57",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/104439374/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-21%2Fd10723d1-1e7d-1c96-56e0-44fe8b76b99d.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1750492353157-9e8280e1bdbe.jpg",
+  "colorSet": {
+    "bgColor": "#6e8f9c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

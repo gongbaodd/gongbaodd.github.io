@@ -1,0 +1,15 @@
+{
+  "id": "ep-e35oir3",
+  "title": "给我整一个蒸汽朋克博物馆",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e35oir3",
+  "pubDate": "Sat, 19 Jul 2025 14:14:48 GMT",
+  "description": "<p>🎙️ <strong>2025年第30周｜播客周记</strong></p><p>这一周真的干了好多事，忙并快乐着！以下是我的一周精彩回顾👇</p><p>🌟 <strong>开发 &amp; 技术尝试</strong></p><ul><li><p>🚀尝试开发 Wear OS 应用，从 React Native 到 Kotlin，再到 Expo：原生体验虽麻烦但可控，Expo 省心但功能有限。</p></li><li><p>📱探索如何将 Unity/Godot 游戏嵌入 Android App，Unity 支持最好，Godot 4.2 开始支持但文档有限。</p></li><li><p>🌐我的网站升级了，不过 UI 有点小问题，还得 debug…</p></li><li><p>🧠尝试 Meta Passthrough Camera API，体验了本地 YOLO 实时识别与远程 LLaMA 大模型推理，硬核混合现实初体验！</p></li></ul><p>🎮 <strong>娱乐 &amp; 探索</strong></p><ul><li><p>🎮用 Meta Quest 跑 3DS 模拟器，实现了真正的裸眼3D体验！</p></li><li><p>🎧试玩了《Moonrider》，一个开源 VR 音游，体验堪比 Beat Saber。</p></li><li><p>📺追剧《The Rehearsal 演习》（HBO）：现实和演技的边界被彻底打破，伪纪录片形式令人深思，第二季甚至租了一台波音747拍摄！</p></li></ul><p>🏛️ <strong>博物馆之旅</strong></p><ul><li><p>⚓塔林海事博物馆（飞行港口改造而成），登船探秘老式水上飞机港与沙俄海军历史，超值体验！</p></li><li><p>🕹️PROTO Invention Factory：沉浸式蒸汽朋克风VR游乐园，模拟潜水艇、蒸汽热气球、达芬奇滑翔翼等，寓教于乐，超适合亲子！</p></li><li><p>🎨KAI艺术馆：参观了《Banana: Build Absolutely Nothing Anywhere Nearby》展览，反思人与社区的关系，偏艺术向，略玄妙。</p></li></ul><p></p>",
+  "summary": "🎙️ 2025年第30周｜播客周记这一周真的干了好多事，忙并快乐着！以下是我的一周精彩回顾👇🌟 开发 &amp; 技术尝试🚀尝试开发 Wear OS 应用，从 React Native 到 Kotlin，再到 Expo：原生体验虽麻烦但可控，Expo 省心但功能有限。📱探索如何将 Unity/Godot 游戏嵌入 Android App，Unity 支持最好，Godot 4.2 开始支持",
+  "duration": "00:16:32",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/105711907/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-19%2F71e6c2b0-52f3-fe1d-25a7-16189b438089.mp3",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1752931443643-f6a073a6320ed.jpg",
+  "colorSet": {
+    "bgColor": "#a18767",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

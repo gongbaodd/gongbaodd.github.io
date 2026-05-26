@@ -1,0 +1,15 @@
+{
+  "id": "ep-e2i24d1",
+  "title": "给我整一季降世神通",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e2i24d1",
+  "pubDate": "Sat, 09 Mar 2024 12:31:00 GMT",
+  "description": "<p>\n</p>\n<ol>\n <li>降世神通：最后的气宗</li>\n <li>CRUX，Rust 跨端初体验</li>\n  <li>Web TTS，使用 Speech Synthesis Utterance 开发泰语背单词应用</li>\n  <li>@pmndrs/uikit，React three fiber的UI组件，相比于Flutter和babylon还是卡顿一些</li>\n  <li>SwiftUI 开发 WatchOS 体验， 对比 kotlin 可舒服太多了</li>\n</ol>\n<p>\n\n</p>",
+  "summary": "降世神通：最后的气宗\n CRUX，Rust 跨端初体验\n  Web TTS，使用 Speech Synthesis Utterance 开发泰语背单词应用\n  @pmndrs/uikit，React three fiber的UI组件，相比于Flutter和babylon还是卡顿一些\n  SwiftUI 开发 WatchOS 体验， 对比 kotlin 可舒服太多了",
+  "duration": "00:21:08",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/85053281/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-3-6%2F8e703fd7-b026-c39c-2721-1f804a0feb77.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1712406726338-53b64e5f84311.jpg",
+  "colorSet": {
+    "bgColor": "#9d765d",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

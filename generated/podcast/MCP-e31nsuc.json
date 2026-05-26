@@ -1,0 +1,15 @@
+{
+  "id": "MCP-e31nsuc",
+  "title": "给我整个MCP",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/MCP-e31nsuc",
+  "pubDate": "Sat, 19 Apr 2025 11:45:30 GMT",
+  "description": "<p></p><p>这一周是参加 <strong>Microsoft Reactor 活动的第一周</strong>，主要学习了如何构建 AI Agent、如何让多个 Agent 协同工作、以及如何用代码构建一个 RAG（Retrieval-Augmented Generation）系统，相当于一个 AI 图书馆。通过实践加深了对 AI 架构搭建的理解。</p><p>此外，我还找到了很多免费的开源 AI 接口资源，这让搭建和使用 AI 系统的成本大幅降低。虽然上周因为时间紧张，没能提交 Next.js Hackathon 的项目，但因此获得了为期一个月的多项 AI 工具的免费试用（如 Vercel、Cloudflare、OpenAI、Eleven Labs 等），打算充分利用。</p><p>尝试了自己部署 MCP（Multi-Agent Collaboration Platform），体验了搭建的乐趣，但运行成本仍较高。仅让 MCP 跑一个简单网页就花了近 1 美元，效果不理想。不过，相比年初 OpenAI 成本高昂的情况，现在有像 DeepSeek 这样的服务出现，整体价格显著下降，对未来 MCP 的发展还是看好的。</p><p>计划接下来在自己网站上做一个简单的 RAG系统，用 transformer.js 将文本转为向量，再通过免费 Supabase + PostgreSQL 实现模糊查询功能。另外考虑将播客整合进网站，并进一步开发一个基于 AI 的博客应用。</p><p>这一周还参加了塔林的 Unreal Engine 活动，虽然内容和 Unreal 关系不大，但借机试跑了 Unreal 引擎，发现自己电脑性能有限，只能在调到最低画质后勉强运行。相比之下也尝试了 Bavy（基于 Rust 的游戏引擎），虽然最终效果不错，但开发过程中缺乏实时反馈、编译慢，开发体验欠佳。</p><p></p>",
+  "summary": "这一周是参加 Microsoft Reactor 活动的第一周，主要学习了如何构建 AI Agent、如何让多个 Agent 协同工作、以及如何用代码构建一个 RAG（Retrieval-Augmented Generation）系统，相当于一个 AI 图书馆。通过实践加深了对 AI 架构搭建的理解。此外，我还找到了很多免费的开源 AI 接口资源，这让搭建和使用 AI 系统的成本大幅降低。虽然上周",
+  "duration": "00:08:26",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/101495180/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-3-19%2F22d729ba-db52-9e23-c207-1d21a85d1546.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1745062890008-f3bef0d8523e3.jpg",
+  "colorSet": {
+    "bgColor": "#a76e57",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

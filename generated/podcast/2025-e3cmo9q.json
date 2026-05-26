@@ -1,0 +1,15 @@
+{
+  "id": "2025-e3cmo9q",
+  "title": "给我整个2025",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/2025-e3cmo9q",
+  "pubDate": "Mon, 22 Dec 2025 16:38:59 GMT",
+  "description": "<p><strong>本期简介：</strong>今天是2025年的第52周，也是全年的最后一期。本期节目是对2025年的全面复盘。这一年是与 Unity 深度绑定的一年，也是在爱沙尼亚生活、学习德语并探索欧洲的一年。我们聊到了 XR 行业的沉淀、AI 带来的安全隐患与裁员潮，以及作为开发者在欧洲求职的现实考量。</p><p><strong>时间轴与要点：</strong></p><p><strong>回顾 2025：生活与习惯</strong></p><ul><li><p><strong>语言学习：</strong> 继去年的俄语和爱沙尼亚语后，今年的重心是<strong>德语</strong>，目标是拿下即将到来的考试。</p></li><li><p><strong>健康管理：</strong> 肌肉量增加，甚至尝试了冬泳，但年底一场严重的感冒让体重从 78kg 掉回 74kg。</p></li><li><p><strong>文化探索：</strong> 为了赶在博物馆卡到期前，跑了塔林的 21 个博物馆（还剩 23 个待打卡）。</p></li><li><p><strong>播客更新：</strong> 坚持每周更新，尽管听众似乎变少了。</p></li></ul><p><strong>技术复盘：Unity、XR 与 AI</strong></p><ul><li><p><strong>开发重心：</strong> 全年围绕 Unity，从 GameJam 到当前工作项目。尝试了 Unreal 但受限于硬件和复杂的 C++/Blueprint 双修门槛；Godot 运行最流畅。</p></li><li><p><strong>XR 观察：</strong> 行业狂热退去，走向务实。Apple 定义了“显示器替代”方向，Meta 的肌电手环交互令人期待。</p></li><li><p><strong>AI 的反思：</strong></p><ul><li><p><strong>裁员悖论：</strong> AI 没能替代人类，但大厂为了通过裁员省钱训练 AI，反而导致了失业。</p></li><li><p><strong>安全隐患：</strong> 欧洲作为“技术第二梯队”可能满足于 AI 生成的代码，但 Next.js 爆发的连环安全漏洞揭示了缺乏人工维护的长期风险。</p></li><li><p><strong>工具吐槽：</strong> Cursor 适合做搜索引擎，但代码生成质量一般，仍需手动在 VSCode 中修正。</p></li></ul></li></ul><p><strong>年度推荐与娱乐</strong></p><ul><li><p><strong>年度最佳产品：Mermaid.js</strong>图表代码化工具</p></li><li><p><strong>影视红黑榜：</strong> 电影市场乏善可陈；剧集下半年回暖，推荐《合众为一》（Pluribus）和《Sweetpea》。</p></li></ul><p><strong>展望 2026</strong></p><ul><li><p><strong>近期计划：</strong> 1月8日德语考试 -&gt; 1月26日葡萄牙环欧旅行 -&gt; 2月15日回程。</p></li><li><p><strong>硬件愿望：</strong> 考虑购入 Mac Mini。</p></li><li><p><strong>核心目标：</strong> 4月前完成论文，并在上半年决定是否留在欧洲（虽然技术环境不如国内“遥遥领先”，但需寻找工作之外的满足感）。</p></li></ul><p></p>",
+  "summary": "本期简介：今天是2025年的第52周，也是全年的最后一期。本期节目是对2025年的全面复盘。这一年是与 Unity 深度绑定的一年，也是在爱沙尼亚生活、学习德语并探索欧洲的一年。我们聊到了 XR 行业的沉淀、AI 带来的安全隐患与裁员潮，以及作为开发者在欧洲求职的现实考量。时间轴与要点：回顾 2025：生活与习惯语言学习： 继去年的俄语和爱沙尼亚语后，今年的重心是德语，目标是拿下即将到来的考试。健",
+  "duration": "00:16:47",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/112991994/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-22%2F2981ae8d-4bf7-242d-64bb-de653c34d14b.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40922820/40922820-1754219676687-e0d3d11be8014.jpg",
+  "colorSet": {
+    "bgColor": "#9c8c5c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

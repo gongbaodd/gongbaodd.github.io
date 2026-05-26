@@ -1,0 +1,15 @@
+{
+  "id": "ep-e36m09g",
+  "title": "给我整得浪一下",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e36m09g",
+  "pubDate": "Sun, 10 Aug 2025 12:33:12 GMT",
+  "description": "<p><br></p><p>🏄 玩了一次电动水翼板</p><p>周一去体验了 Teltech 创业项目的电动水翼板</p><p>价格：原价 50 欧/小时</p><p>玩法：踩在板上，手持遥控器推杆加速，类似冲浪但不需要浪</p><p>体验感：速度起来挺刺激的，摔了几次，喝了不少水</p><p><br></p><p>💻 网站大改造</p><p><br></p><p>原因：之前编译时间从 40 分钟优化到 1 分钟，但整体结构依然别扭</p><p>网站发展历程：</p><p>最早用 Jekyll（做毕业旅行记录）→ 图床问题导致放弃</p><p>2020 年迁移到 Gatsby（TS + GraphQL，CSP 配置）</p><p>2023 年迁移到 Astro（Island 架构 + View Transition API）→ 功能缺失，补插件</p><p><br></p><p>功能与坑：</p><p>暗黑模式按钮（现在觉得鸡肋）</p><p>Monorepo 分离文章、组件、网站、测试</p><p>无线滚动功能因 Bug 删除</p><p>Masonry 砖块布局（MUI 实现，SSR 和加载顺序仍有问题）</p><p><br></p><p>框架选择思路：</p><p>放弃 Hugo/Eleventy：功能太简单，迁移成本高</p><p>继续坚持 Astro：相比 Gatsby，Astro 更灵活，不再被 GraphQL 绑架</p>",
+  "summary": "🏄 玩了一次电动水翼板周一去体验了 Teltech 创业项目的电动水翼板价格：原价 50 欧/小时玩法：踩在板上，手持遥控器推杆加速，类似冲浪但不需要浪体验感：速度起来挺刺激的，摔了几次，喝了不少水💻 网站大改造原因：之前编译时间从 40 分钟优化到 1 分钟，但整体结构依然别扭网站发展历程：最早用 Jekyll（做毕业旅行记录）→ 图床问题导致放弃2020 年迁移到 Gatsby（TS +",
+  "duration": "00:15:51",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/106675952/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-10%2F5f54b6cc-a1ba-6f45-a577-95da88327534.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1754829155783-6fdbd8a87a5c3.jpg",
+  "colorSet": {
+    "bgColor": "#b3904e",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

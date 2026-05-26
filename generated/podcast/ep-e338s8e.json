@@ -1,0 +1,15 @@
+{
+  "id": "ep-e338s8e",
+  "title": "给我再整一次黑客松",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e338s8e",
+  "pubDate": "Fri, 23 May 2025 13:57:11 GMT",
+  "description": "<p>🎓 XR作业开发：校园WebXR导览项目</p><ul><li><p><strong>目标</strong>：为课程作业创建一个基于WebXR的校园导览页面。</p></li><li><p><strong>过程</strong>：</p><ul><li><p>使用Google相机拍摄校园全景图。</p></li><li><p>用3D扫描工具获取学校Logo的点云数据。</p></li><li><p>创建可在场景中漫游的导览体验。</p></li></ul></li><li><p><strong>遇到的问题</strong>：</p><ul><li><p>点云包含不需要的背景杂物，需要用Blender清理。</p></li><li><p>Blender导出失败，找不到节点，转用MeshLab处理，效果良好。</p></li></ul></li></ul><ul><li><p><strong>Three.js优点</strong>：</p><ul><li><p>更轻量，支持React（通过@react-three/fiber）。</p></li><li><p>点云渲染控制灵活，可以设置点大小。</p></li></ul></li><li><p><strong>Three.js缺点</strong>：</p><ul><li><p>缺乏原生支持，许多功能需靠第三方库补足。</p></li><li><p>某些功能需退回旧版本才可用。</p></li></ul></li><li><p><strong>Babylon.js优点</strong>：</p><ul><li><p>功能全面，专为3D游戏设计，原生支持XR、点云、360全景、加载管理等。</p></li><li><p>自带Inspector调试工具，虽不如Unity/Godot强大，但仍实用。</p></li><li><p>提供官方文档与示例，适合深入开发。</p></li></ul></li><li><p><strong>Babylon.js缺点</strong>：</p><ul><li><p>渲染效率较低，尤其是360图像加载较慢。</p></li><li><p>点云点大小不易控制。</p></li></ul></li></ul><ul><li><p><strong>开发建议</strong>：</p><ul><li><p>React结合Three.js的结构较复杂，建议拆分逻辑。</p></li><li><p>文本渲染需要额外加载字体并生成纹理。</p></li></ul></li><li><p><strong>测试经验</strong>：</p><ul><li><p>浏览器调试可用Immersive Web Emulator（提供控制器/手势等支持）。</p></li><li><p>最佳测试方式是用<strong>USB线连接头显+Chrome DevTools远程调试</strong>，速度快，效果稳定。</p></li><li><p>HTTPS服务依然是基本要求（可用Vite+mkcert配置）。</p></li></ul></li></ul><ul><li><p><strong>活动</strong>：参加了由Tallinn当地Garage48组织、支持瓦伦西亚洪水重建的Hackathon。</p></li><li><p><strong>经验</strong>：</p><ul><li><p>实战使用RAG服务和AI Agents。</p></li><li><p>计划使用Microsoft OpenAI API却因国籍限制被封锁，转用Gemini。</p></li><li><p>因此意识到<strong>LangChain的重要性</strong>：它能屏蔽底层API差异，提升跨平台开发效率。</p></li></ul></li></ul>",
+  "summary": "🎓 XR作业开发：校园WebXR导览项目目标：为课程作业创建一个基于WebXR的校园导览页面。过程：使用Google相机拍摄校园全景图。用3D扫描工具获取学校Logo的点云数据。创建可在场景中漫游的导览体验。遇到的问题：点云包含不需要的背景杂物，需要用Blender清理。Blender导出失败，找不到节点，转用MeshLab处理，效果良好。Three.js优点：更轻量，支持React（通过@re",
+  "duration": "00:18:48",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/103100110/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-23%2Fc302b9b5-0e98-7a55-9f90-12f9f72df9d0.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1748008378566-f045b738c1a0e.jpg",
+  "colorSet": {
+    "bgColor": "#ae7f6e",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

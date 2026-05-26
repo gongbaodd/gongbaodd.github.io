@@ -1,0 +1,15 @@
+{
+  "id": "ep-e2i23sg",
+  "title": "给我整个侧载苹果应用商店",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e2i23sg",
+  "pubDate": "Mon, 29 Jan 2024 12:28:00 GMT",
+  "description": "<p><br></p>\n<ol>\n <li>如何打包工程到*.ipa文件</li>\n <li>安装并使用altStore</li>\n <li>使用moon代替Nx做monorepo开发</li>\n</ol>\n<p><br></p>",
+  "summary": "如何打包工程到*.ipa文件\n 安装并使用altStore\n 使用moon代替Nx做monorepo开发",
+  "duration": "00:11:45",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/85052752/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-3-6%2Fe048f7c2-849f-7eab-19ac-ab7940d2b756.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1712405172638-c58ba1639afe5.jpg",
+  "colorSet": {
+    "bgColor": "#49a88a",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

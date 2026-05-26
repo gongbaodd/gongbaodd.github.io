@@ -1,0 +1,15 @@
+{
+  "id": "ep-e2v7eal",
+  "title": "给我整个图书管理员",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e2v7eal",
+  "pubDate": "Sat, 22 Feb 2025 09:45:11 GMT",
+  "description": "<p>Godot XR Gamejam</p><p>This week is the voting week of <a href=\"https://itch.io/jam/godot-xr-game-jam-feb-2025\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Godot XR Gamejam 2025</a>. I saw a lot good works.</p><ul> <li><a href=\"https://andyman404.itch.io/your-hand-is-a-dragon\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Your Hand Is A Dragon (XR)</a>, your hand is a flying dragon.</li> <li><a href=\"https://bearlikelion.itch.io/a-wizards-way\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">A Wizards Way</a>, XR puzzle game.</li>  <li><a href=\"https://copper-tunic.itch.io/the-chant\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">The Chant of Cthulhu</a>, I single person choir.</li>  <li><a href=\"https://vikfro.itch.io/agni-kairo-vr-firebending\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Agni Kairo: VR Firebending</a>, workout game.</li>  <li><a href=\"https://rodzilla.itch.io/sweep-stakes-vr\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Sweep Stakes VR</a>, VR flying broom.</li>  <li><a href=\"https://itch.io/jam/godot-xr-game-jam-feb-2025/rate/3331521\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">High Alchemist VR</a>, cooking game.</li></ul><p>I saw a <a href=\"https://youtu.be/b2BSZfOtD_w?si=zvpYEXrTI9-c4Nhb\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">video</a> which talks about using zotero library and OpenWebUI and Ollama to build an agent base on your own database. I think it is super helpful.</p><p>I think this is not the first time I use <a href=\"https://github.com/atteneder/glTFast\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">it</a>. This time I used it to export some unity 3D model. Because I need to test some model in <a href=\"https://www.mixamo.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">mixamo</a>. However, I still have to transpile it into fbx using <a href=\"https://convert3d.org/glb-to-fbx\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this website</a>.</p><p>OpenWebUI Zotero and Ollama to build personal librarianglTFfast</p>",
+  "summary": "Godot XR GamejamThis week is the voting week of Godot XR Gamejam 2025. I saw a lot good works. Your Hand Is A Dragon (XR), your hand is a flying dragon. A Wizards Way, XR puzzle game.  The Chant of Ct",
+  "duration": "00:07:53",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/98858773/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-22%2F79e0f7b0-0a7b-207b-52d0-f91bc1c32647.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1740217383338-6326f1dbf5727.jpg",
+  "colorSet": {
+    "bgColor": "#728992",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "Latex-e3ipgbt",
+  "title": "给我整个Latex编辑器",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/Latex-e3ipgbt",
+  "pubDate": "Sat, 02 May 2026 10:52:03 GMT",
+  "description": "<p>论文写作工具对比</p><p>Overleaf (在线 LaTeX)：推荐用于 3-4 页的小型论文。但在处理近 80 页的大型论文时，存在编译速度慢、免费额度受限及协作渲染不佳等问题。</p><p>自建服务器尝试：曾尝试在赫尔辛基自建服务器以节省订阅费用（约 2 欧元/月），但因图表渲染兼容性问题最终放弃。</p><p>本地环境 (VS Code)：最终回归本地编写，认为效率与稳定性优于在线方案。</p><p></p>",
+  "summary": "论文写作工具对比Overleaf (在线 LaTeX)：推荐用于 3-4 页的小型论文。但在处理近 80 页的大型论文时，存在编译速度慢、免费额度受限及协作渲染不佳等问题。自建服务器尝试：曾尝试在赫尔辛基自建服务器以节省订阅费用（约 2 欧元/月），但因图表渲染兼容性问题最终放弃。本地环境 (VS Code)：最终回归本地编写，认为效率与稳定性优于在线方案。",
+  "duration": "00:04:49",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/119373629/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-2%2F4109cf89-6674-864b-3813-82b932e6ea9f.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1777718972584-edc9beca70989.jpg",
+  "colorSet": {
+    "bgColor": "#7c746c",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

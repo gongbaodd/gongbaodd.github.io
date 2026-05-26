@@ -1,0 +1,15 @@
+{
+  "id": "ep-e3csvj1",
+  "title": "给我整升维了",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3csvj1",
+  "pubDate": "Sun, 28 Dec 2025 14:32:15 GMT",
+  "description": "<p><strong>时间：2025.12.28｜年度最后一期</strong></p><ul><li><p>📅 今年意外出现了<strong>第 53 周</strong>，上周提前说了新年快乐，结果新年还没到（笑）</p></li><li><p>🍎 本周重点体验了 <strong>Apple 开源的 SHARP 模型</strong></p><ul><li><p>单张图片即可生成 <strong>3D Gaussian Splatting</strong></p></li><li><p>本地运行速度快、硬件要求低（手机级别）</p></li><li><p>生成约 <strong>100 万点、60+ MB</strong> 的点云模型</p></li></ul></li><li><p>🧠 现实问题：</p><ul><li><p>文件体积过大，不适合网页实时加载</p></li><li><p>Quest 端 <strong>几乎没有点云 / PLY 的本地查看工具</strong></p></li><li><p>Vision Pro 体验很好，但 Meta 生态明显跟不上</p></li></ul></li><li><p>🥽 XR 现状观察：</p><ul><li><p>XR 已找到自己的定位，但<strong>技术链路仍不成熟</strong></p></li><li><p>AI 的关注度依然远高于 XR</p></li></ul></li><li><p>🎥 2D → 3D 视频实验：</p><ul><li><p>尝试了 <strong>StereoCrafter（腾讯）</strong>：效果好但显存要求高、坑多</p></li><li><p>研究了完整流程：<strong>深度估计 → 补洞 → 左右眼渲染（SBS）</strong></p></li><li><p>实测效果惊艳，但计算成本极高</p></li></ul></li><li><p>🧪 工具对比：</p><ul><li><p>💰 Owl3D （快、好用，但收费）</p></li><li><p>🆓 开源工具（如 VisionDepth3D）：免费、可研究，但 UI 简陋</p></li></ul></li><li><p>⚙️ 实战结论：</p><ul><li><p><strong>一定要用 GPU</strong>，CPU 渲染又慢又吵</p></li><li><p>17 分钟视频 ≈ <strong>数小时 GPU 渲染</strong></p></li><li><p>结果很震撼，过程很痛苦 😅</p></li></ul></li><li><p>🚀 期待未来：</p><ul><li><p>如果 2D→3D、点云、XR 能实现<strong>流式实时处理</strong></p></li><li><p>那将是真正的下一次体验跃迁</p></li></ul></li></ul><p>🎉 <strong>2025 年最后一期播客，新年快乐！2026 再见。</strong></p><p></p>",
+  "summary": "时间：2025.12.28｜年度最后一期📅 今年意外出现了第 53 周，上周提前说了新年快乐，结果新年还没到（笑）🍎 本周重点体验了 Apple 开源的 SHARP 模型单张图片即可生成 3D Gaussian Splatting本地运行速度快、硬件要求低（手机级别）生成约 100 万点、60+ MB 的点云模型🧠 现实问题：文件体积过大，不适合网页实时加载Quest 端 几乎没有点云 /",
+  "duration": "00:19:31",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/113196065/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-28%2F62047b6a-d10d-70cb-b2b8-0ffb83869e67.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1766931318257-0e6150a1b62ff.jpg",
+  "colorSet": {
+    "bgColor": "#a17258",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

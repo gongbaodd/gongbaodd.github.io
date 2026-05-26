@@ -1,0 +1,15 @@
+{
+  "id": "ep-e3a566t",
+  "title": "给我整的挺忙",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3a566t",
+  "pubDate": "Tue, 28 Oct 2025 09:00:50 GMT",
+  "description": "<p>这周（其实是上周 😅）原本是学校的秋假，按理说该放松，但结果一点也没闲着。<br>面试、项目、活动全都挤在一起，成了“超负荷的一周”。</p><p>去了 Cursor Meetup，见到一群搞 Web Coding 的人。<br>他们展示了新功能 <strong>Browser Mode</strong>，像是在浏览器里直接用 Prompt 操作网页。<br>也让我想到 OpenAI 的 <strong>Atlas</strong> 智能浏览器 —— 感觉“AI 操作网页”的时代越来越近了。</p><p>然后是塔林理工大学的 <strong>T-PLAN 游戏展</strong>。<br>看了很多本地游戏，还有个小型游戏博物馆。虽然展区挺热闹，但最开心的发现是——<br>居然有免费的冰淇淋机 😋，门票算是吃回来了。</p><p>技术上，这周主要折腾 <strong>PixiJS</strong>：<br>打包用 rsbuild，结果又在 CSS URL 上踩坑；<br>尝试了 Pixi Layout + DevTools 做布局，还试图做 responsive（后来放弃 🤣）。<br>测试方面也玩了一下 Playwright 做 BDD，挺方便截图，但还不支持自动对比。</p><p>总之，这周虽然忙，但也挺有意思。<br>希望接下来的时间能轻松一点。<br>🎃 万圣节快乐！</p><p></p>",
+  "summary": "这周（其实是上周 😅）原本是学校的秋假，按理说该放松，但结果一点也没闲着。面试、项目、活动全都挤在一起，成了“超负荷的一周”。去了 Cursor Meetup，见到一群搞 Web Coding 的人。他们展示了新功能 Browser Mode，像是在浏览器里直接用 Prompt 操作网页。也让我想到 OpenAI 的 Atlas 智能浏览器 —— 感觉“AI 操作网页”的时代越来越近了。然后是塔",
+  "duration": "00:07:51",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/110319261/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-28%2Fe97db3c0-4e1b-be48-d8e6-f80c178c6c24.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1761641401656-0ef6da1902611.jpg",
+  "colorSet": {
+    "bgColor": "#924885",
+    "titleColor": "--mantine-color-grape-3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ep-e39mmo0",
+  "title": "给我整顿好吃的",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e39mmo0",
+  "pubDate": "Sat, 18 Oct 2025 08:33:33 GMT",
+  "description": "<p>第43周小结（10月18日）</p><p>这周是秋假的第一天，也是我3D打印项目的中期检查。主题主要是<strong>AI生成3D模型</strong>。</p><p>我试用了<strong>混元3D</strong>（也可以用开源的 DreamFusion），第一次生成就成功了，但后面发现其实挺折腾的：拍照角度、光线、甚至一个尺子都会影响生成结果。每天能试20次，反复调才出满意的模型。</p><p>导入 Blender 后又踩坑——150万个点太重，删点还把模型删坏。后来改成5万个点，终于能顺利导入，再配合 MeshLab 调整尺寸、导出 STL 打印。</p><p>打印材料是学校的红色<strong>PLA</strong>，环保但难上色、难抛光。在爱沙尼亚买不到抛光液，还不能从中国寄（属于易燃品），只好暂时搁置。</p><p>另外，上周还去了<strong>Ülemiste City</strong>参观（我称它“优乐美食地”🤣）。那边有很多公司，比如 Playtech（做赌博机的）和富士通。最让我惊喜的其实是——<strong>中午吃到了肉夹馍</strong>！发面馒头加烤肉，是我在爱沙尼亚吃过最好的一顿饭。</p><p>接下来秋假一周，希望能轻松一点。</p><p></p>",
+  "summary": "第43周小结（10月18日）这周是秋假的第一天，也是我3D打印项目的中期检查。主题主要是AI生成3D模型。我试用了混元3D（也可以用开源的 DreamFusion），第一次生成就成功了，但后面发现其实挺折腾的：拍照角度、光线、甚至一个尺子都会影响生成结果。每天能试20次，反复调才出满意的模型。导入 Blender 后又踩坑——150万个点太重，删点还把模型删坏。后来改成5万个点，终于能顺利导入，再",
+  "duration": "00:09:00",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/109844672/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-18%2F767a63ca-b423-e91b-3b2b-1035833d3553.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1760775717891-0538d5ce63c08.jpg",
+  "colorSet": {
+    "bgColor": "#908772",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

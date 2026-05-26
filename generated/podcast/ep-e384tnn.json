@@ -1,0 +1,15 @@
+{
+  "id": "ep-e384tnn",
+  "title": "给我整个实习",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e384tnn",
+  "pubDate": "Fri, 12 Sep 2025 14:36:29 GMT",
+  "description": "<h1 id=\"-show-notes-2025-09-12-38-\">🎙️ 播客 Show Notes · 2025/09/12 · 第38周</h1><h2 id=\"-\">本期话题</h2><ul><li>🌍 在爱沙尼亚发现一个“文化冲击”：实习普遍<strong>不发工资</strong>。 </li><li>🤔 对比中国、德国、泰国、非洲等地，实习基本都有薪酬，只有爱沙尼亚例外。 </li><li>📚 学校规定的实习时长只有 <strong>156小时</strong>，短到几乎无法做出像样的项目。  </li><li>💸 这种制度下，学生要么妥协接受无薪实习，要么转去送外卖、开Uber反而收入更高。  </li></ul><h2 id=\"-\">我的观察</h2><ul><li>🇨🇳 中国当年实习生工资能达到<strong>正式员工的80%</strong>，我自己带的实习生也都有薪水。  </li><li>🇩🇪 德国是法律强制发实习工资。  </li><li>🌏 发展中国家反而更注重付薪实习，以吸引和培养人才。  </li><li>🧑‍🎓 欧洲学生缺乏有薪实习机会，可能未来在竞争中输给“训练更好的移民”。  </li></ul><h2 id=\"-\">个人感受</h2><ul><li>🙋 我并不缺工作机会，只是想在爱沙尼亚找到<strong>有工位的实习</strong>，毕竟是精挑细选才来的。  </li><li>🧠 也理解企业可能觉得我经验太多，给实习岗位会有压力。  </li><li>💼 接下来可能会直接冲 <strong>full-time</strong> 岗位。  </li></ul><h2 id=\"-\">技术小插曲</h2><ul><li>🖥️ 正在修改个人网站，顺便做了一个<strong>可打印的在线简历</strong>。  </li><li>✨ 研究了 <strong>CSS Paged Media</strong> 的最新支持情况：现在终于各浏览器都统一支持。  </li><li>🛠️ 用 @media print 隐藏无关元素，打印时只输出简历主体。  </li><li>⚡ 遇到的坑：flex 布局在打印换行时多余输出 → 打印时切换为 block 布局解决。  </li><li>🗂️ 顺便复盘了以前用过的 <code>paper.css</code>，发现已年久失修，只保留部分有用代码。  </li></ul><h2 id=\"-\">展望</h2><ul><li>📅 学校只给了一个月找实习的窗口。  </li><li>🙏 希望下周能有新offer进展，不然就只能“Plan B”。  </li></ul><hr><p>🎧 感谢收听，本期就到这里，下周继续更新！  </p>",
+  "summary": "🎙️ 播客 Show Notes · 2025/09/12 · 第38周本期话题🌍 在爱沙尼亚发现一个“文化冲击”：实习普遍不发工资。 🤔 对比中国、德国、泰国、非洲等地，实习基本都有薪酬，只有爱沙尼亚例外。 📚 学校规定的实习时长只有 156小时，短到几乎无法做出像样的项目。  💸 这种制度下，学生要么妥协接受无薪实习，要么转去送外卖、开Uber反而收入更高。  我的观察🇨🇳 中国",
+  "duration": "00:16:33",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/108213431/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-12%2F390b63cd-9c59-cfec-450f-d126182536fc.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1757687747898-af49aadeb1a88.jpg",
+  "colorSet": {
+    "bgColor": "#658ca2",
+    "titleColor": "--mantine-color-grape-3"
+  }
+}

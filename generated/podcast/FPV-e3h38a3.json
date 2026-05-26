@@ -1,0 +1,15 @@
+{
+  "id": "FPV-e3h38a3",
+  "title": "给我整个机吧 FPV",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/FPV-e3h38a3",
+  "pubDate": "Sat, 28 Mar 2026 08:57:33 GMT",
+  "description": "<p>写论文写到脑子当机，决定重拾八年前的爱好。从当年写 Python 控 Tello 到现在入坑 <strong>BetaFPV</strong>，这台 300 欧的小机器耗光了我一个月的奖学金。</p><p><strong>硬件笔记：</strong></p><ul><li><p><strong>套装体验：</strong> 买了带头显和遥控器的 RTF 套装。虽然在写 <strong>VR 显示模拟引擎</strong> 的论文，但实操 FPV 还是另一种维度的眩晕感。</p></li><li><p><strong>续航吐槽：</strong> 这么多年过去，电池依然是硬伤。450mAh 的原装电池飞两步就报警，为了能多练一会儿，硬是背了 6 块电池（加购了 4 块 550mAh）在身上。</p></li><li><p><strong>飞行进度：</strong> 目前还是“美国手”老实练习 <strong>Leveling Mode</strong>，毕竟这小东西飞个 2 米高就开始抗议了。</p></li></ul><p><strong>下周预告：</strong>论文准备拆分成几个模块，下周开始在博客和播客同步进度。</p><p></p>",
+  "summary": "写论文写到脑子当机，决定重拾八年前的爱好。从当年写 Python 控 Tello 到现在入坑 BetaFPV，这台 300 欧的小机器耗光了我一个月的奖学金。硬件笔记：套装体验： 买了带头显和遥控器的 RTF 套装。虽然在写 VR 显示模拟引擎 的论文，但实操 FPV 还是另一种维度的眩晕感。续航吐槽： 这么多年过去，电池依然是硬伤。450mAh 的原装电池飞两步就报警，为了能多练一会儿，硬是背了",
+  "duration": "00:03:21",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/117595907/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-28%2Fbb984bf1-6cc5-37ec-9e42-e439fd3b8003.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1774688201922-45e7d785da665.jpg",
+  "colorSet": {
+    "bgColor": "#958469",
+    "titleColor": "--mantine-color-cyan-2"
+  }
+}

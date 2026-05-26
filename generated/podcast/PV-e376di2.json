@@ -1,0 +1,15 @@
+{
+  "id": "PV-e376di2",
+  "title": "给我整了一周的PV",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/PV-e376di2",
+  "pubDate": "Fri, 22 Aug 2025 15:30:59 GMT",
+  "description": "<h1 id=\"-35-shownotes-\">第35周播客 Shownotes 🎙️</h1><ul><li>📅 时间：2025年8月22日，第35周 </li><li>🌐 本周主题：折腾网站 PV 统计 &amp; 博客优化 </li></ul><h2 id=\"-\">本周进展</h2><ul><li><p><strong>PV 统计功能</strong></p><ul><li>一开始用 Cloudflare KV 存储，结果 2-3 天就触发请求上限（5000+次）。  </li><li>尝试国内服务「不蒜子」，但缺乏接口调用，最后选择了 <strong>GoatCounter</strong>。  </li><li>GoatCounter 优点：<ul><li>免费 &amp; 无限量  </li><li>提供 Dashboard，能看访问来源、设备、页面浏览量  </li><li>有 API，可以在网站显示访问量图标 👁️  </li></ul></li></ul></li><li><p><strong>遇到的技术挑战</strong></p><ul><li>列表页要一次请求 20+ 篇博文的 PV → 做了批量请求打包优化。  </li><li>遇到 <strong>React SSR 水合问题</strong>（状态不同步，部分组件渲染错乱）。  </li><li>通过 <strong>Nanostore + computed store</strong> 临时解决，但经验不一定通用。  </li></ul></li><li><p><strong>网站新功能</strong></p><ul><li>加了 <strong>Archive 页面</strong>：按年份查看文章 📂  </li><li>使用 <strong>react-bits</strong> 组件库（代码复制到本地 → 灵活可改，但需要开发经验）  </li><li>首页还加入了一些小动画（Tree.js / 文件夹展开动效）  </li></ul></li><li><p><strong>视频剪辑</strong></p><ul><li>原来用 CapCut，但基础功能开始收费 ❌  </li><li>改用 <strong>微软 Clipchamp</strong>，功能完整，甚至超过当年的 Movie Maker ✂️  </li></ul></li><li><p><strong>编译速度优化</strong></p><ul><li>原来编译一次要 6 分钟 ⏳  </li><li>给图片颜色提取加了缓存（JSON 存储），缩短到 <strong>4分30秒</strong>  </li><li>还遇到 Vercel 使用老版本 <code>pnpm</code> 与本地版本不兼容，花了点时间修复。  </li></ul></li></ul><h2 id=\"-\">下周计划</h2><ul><li>优化博客列表页渲染 &amp; 移动端兼容性 📱  </li><li>开始写爬虫抓数据 🕷️  </li><li>提升编译速度，目标压缩到 <strong>2-3分钟</strong> ⚡  </li><li>下下周要开学，这个月的博客改造要收尾 🎓  </li></ul><hr><p>👉 总结：这一周基本上都在和 <strong>PV统计 + React水合Bug</strong> 打交道，顺便加了一些小功能和工具优化。  </p>",
+  "summary": "第35周播客 Shownotes 🎙️📅 时间：2025年8月22日，第35周 🌐 本周主题：折腾网站 PV 统计 &amp; 博客优化 本周进展PV 统计功能一开始用 Cloudflare KV 存储，结果 2-3 天就触发请求上限（5000+次）。  尝试国内服务「不蒜子」，但缺乏接口调用，最后选择了 GoatCounter。  GoatCounter 优点：免费 &amp; 无限量",
+  "duration": "00:14:29",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/107213826/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-22%2Fc50c1f20-d9ca-3c55-60ef-da2d0459add9.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1755876645791-1e1e367679a25.jpg",
+  "colorSet": {
+    "bgColor": "#a0855a",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

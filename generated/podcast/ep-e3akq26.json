@@ -1,0 +1,15 @@
+{
+  "id": "ep-e3akq26",
+  "title": "给我整错种族了",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3akq26",
+  "pubDate": "Fri, 07 Nov 2025 09:57:05 GMT",
+  "description": "<p>🎙️ <strong>第46周播客 Show Notes（2025年11月7日）</strong></p><p>本周两件主要的事情👇</p><hr><p>🎲 <strong>DGwise GameJam 指导体验</strong>我作为 mentor 参加了一个名为 <strong>DGwise Gime Gim</strong> 的青年桌游黑客松（面向18–26岁）。活动在塔林一所非常“贵族气”的私立学校举行。参赛者围绕主题如 <strong>网络安全（Cyber Security）</strong>、<strong>假新闻（Fake News）</strong>、<strong>网络霸凌（Cyberbullying）</strong> 等，设计出各种卡牌或大富翁类游戏。组织非常专业，有阶段性检查、体能放松环节、mentor协作笔记等。整体感觉比我参加过的很多 Game Jam 都更<strong>结构化与高质量</strong>。</p><hr><p>🧥 <strong>WikiData × Virtual Try-on 实验</strong>因为 Game AI 课作业，我尝试用 <strong>WikiData</strong> 搜集服装数据，再用 <strong>Flux Catvton 模型</strong> 做虚拟试穿（Virtual Try-on）。然而 WikiData 数据量有限，比如 “T-shirt” 只有4件，难以分地区或时代分类。测试中，模型在白人图像上效果极好，但在我自己图像上会<strong>自动把我“变白”</strong> 😅最后转向 <strong>TriplyDB</strong>（荷兰的一个数据平台）做 Pokémon 数据实验，用 SPARQL 查询并生成一个小型 Pokémon 游戏。</p>",
+  "summary": "🎙️ 第46周播客 Show Notes（2025年11月7日）本周两件主要的事情👇🎲 DGwise GameJam 指导体验我作为 mentor 参加了一个名为 DGwise Gime Gim 的青年桌游黑客松（面向18–26岁）。活动在塔林一所非常“贵族气”的私立学校举行。参赛者围绕主题如 网络安全（Cyber Security）、假新闻（Fake News）、网络霸凌（Cyberbul",
+  "duration": "00:05:33",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/110831110/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-7%2F58e20ffe-c937-6364-ab70-b8ea29b55156.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1762509382789-d42b60a9fb445.jpg",
+  "colorSet": {
+    "bgColor": "#a48468",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

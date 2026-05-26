@@ -1,0 +1,15 @@
+{
+  "id": "Page-View-Transition-e37s9kd",
+  "title": "给我整上Page View Transition",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/Page-View-Transition-e37s9kd",
+  "pubDate": "Sat, 06 Sep 2025 11:21:41 GMT",
+  "description": "<h1 id=\"shownotes-37-2025-9-6-\">Shownotes – 第37周播客 (2025年9月6日)</h1><h2 id=\"-\">本期主题</h2><p>本周我终于完成了一件从 2023 年就想做的事情 —— <strong>Page View Transition</strong> 动画效果。 </p><p>从 Gatsby 到 Astro，再到浏览器原生的支持，这一路踩过不少坑，也让我重新思考了 <strong>SPA (单页应用)</strong> 和 <strong>MPA (多页应用)</strong> 的架构差异，以及在新技术下如何避免被历史包袱和过时文档误导。</p><hr><h2 id=\"-\">节目提要</h2><ul><li><p><strong>背景</strong> </p><ul><li>早期网站：Jekyll → Gatsby (为体验 GraphQL)  </li><li>后来转到 <strong>Astro</strong>：因为它支持 React、Vue、Solid 等多技术栈混合使用  </li><li>Astro 独特的 <strong>Island 模型</strong>：局部用组件框架，其余部分保持轻量  </li></ul></li><li><p><strong>Page View Transition 的兴起</strong>  </p><ul><li>早期只能用 JS 模拟动画，体验差、性能差  </li><li>2023 年浏览器推出 <strong>原生跨页面动画 API</strong>：CSS + JS 轻量调用  </li><li>Astro 第一时间集成，展示了视频/元素跨页面平滑过渡的酷炫效果  </li></ul></li><li><p><strong>SPA vs MPA 的困境</strong>  </p><ul><li>SPA 优点：模拟原生应用交互  </li><li>缺点：状态混乱、每页不是独立沙箱  </li><li>MPA 优点：页面无状态、架构更清晰  </li><li>问题：文档和 AI 答案大多只偏向 SPA，MPA 方案少  </li></ul></li><li><p><strong>踩坑记录</strong>  </p><ol><li><strong>浏览器支持</strong>：  <ul><li>2023 年时只能在 Chrome Canary 开 flag  </li><li>2025 年现在 Chrome &amp; Safari 都原生支持  </li></ul></li><li><strong>Astro 的兼容性处理</strong>：  <ul><li>启用 Page View Transition 会把网站强制转为 SPA  </li><li>导致状态混乱、逻辑 bug  </li></ul></li><li><strong>Vite 开发模式</strong>：  <ul><li>Dev 模式下没打包，产生重复 ID → 动画失效  </li><li>解决：必须打包后在 Production 模式下测试  </li></ul></li><li><strong>个人环境问题</strong>：  <ul><li>因为关掉了电脑的系统动画 → 测试时完全没显示效果 😂  </li></ul></li></ol></li><li><p><strong>AI 与前端快节奏的矛盾</strong>  </p><ul><li>多个 AI 给出的都是 <strong>错误或过时的答案</strong>  </li><li>甚至强行说 MPA 不存在  </li><li>新技术生命周期短，AI 文档滞后 → 只能靠自己判断  </li></ul></li></ul><hr><h2 id=\"-\">本周心得</h2><ul><li>技术演进太快，<strong>AI 与文档往往落后</strong>，不一定可靠  </li><li>前端开发中，<strong>相信自己的经验与直觉</strong> 比盲从建议更重要  </li><li>Page View Transition 实现其实很简单：  <ul><li><code>&lt;html view-transition-navigation=&quot;auto&quot;&gt;</code>  </li><li>给元素加 <code>view-transition-name</code> 标识  </li></ul></li><li>难点在于：如何理解历史架构差异、避免被 SPA/MPA 的思路干扰  </li></ul><hr><h2 id=\"-\">结语</h2><p>这一周最大的收获是：<br>👉 <strong>不要被过时的知识和工具牵着走，相信自己的判断。</strong>  </p><p>下周见！</p>",
+  "summary": "Shownotes – 第37周播客 (2025年9月6日)本期主题本周我终于完成了一件从 2023 年就想做的事情 —— Page View Transition 动画效果。 从 Gatsby 到 Astro，再到浏览器原生的支持，这一路踩过不少坑，也让我重新思考了 SPA (单页应用) 和 MPA (多页应用) 的架构差异，以及在新技术下如何避免被历史包袱和过时文档误导。节目提要背景 早期网站",
+  "duration": "00:18:12",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/107930701/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-6%2F79749794-b283-875a-7e8f-76ed83674257.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1757157315082-6b69f51b9281b.jpg",
+  "colorSet": {
+    "bgColor": "#70838e",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

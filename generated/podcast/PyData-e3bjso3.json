@@ -1,0 +1,15 @@
+{
+  "id": "PyData-e3bjso3",
+  "title": "给我整一次PyData",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/PyData-e3bjso3",
+  "pubDate": "Fri, 28 Nov 2025 16:11:48 GMT",
+  "description": "<ul><li>本周（2025年第49周）感冒持续好转。</li></ul><h3 id=\"-nlp-stanza-\">💻 NLP研究：使用 Stanza 工具包处理多语言</h3><ul><li><strong>项目背景：</strong> 为提高游戏时快速阅读文本的效率，尝试对对话框进行主谓宾等词法标注。</li><li><strong>工具：</strong> 选用 <strong>Stanza</strong> (Python NLP工具包)。</li><li><strong>多语言测试结果：</strong><ul><li><strong>中文/韩语：</strong> 识别准确率不高，容易将长名词（如“检察院”）错误拆分为动词和名词。</li><li><strong>日语：</strong> 识别较好，因为汉字部分多为名词。</li><li><strong>泰语：</strong> 识别结果<strong>意外地准确</strong>。据了解，泰语词汇本身少有词法变形，便于 Stanza 直接匹配词意。</li></ul></li></ul><h3 id=\"-tallinn-pydata-\">📊 Tallinn PyData 会议分享</h3><p>本次活动在 Wise 总部举办，主要有两个分享：</p><ol><li><strong>无人机图像识别与 XR：</strong><ul><li>主讲人最初的项目是农业无人机图像识别。</li><li>但分享内容侧重于介绍 XR 技术，听者认为讲解不够深入或实用。</li></ul></li><li><strong>Wise 的分布式图计算应用</strong><ul><li><strong>背景：</strong> Wise（类支付宝业务）需要进行风险分析（如反诈骗的转账关系分析），需要强大的图计算能力。</li><li><strong>技术栈演进：</strong><ul><li><strong>早期：</strong> 使用 Neo4j，但分布式能力需手动实现（类似于早期 MySQL 的分库分表）。</li><li><strong>现在：</strong> 采用 <strong>Apache Spark</strong>（分布式内存计算工具，类似分布式 Redis）来处理分布式问题。</li><li><strong>解决图计算短板：</strong> Spark 缺乏 Neo4j 专业的图计算能力，因此引入 <strong>GraphFrames</strong> 框架，弥补了 Spark 在图计算上的不足，实现了一个自动分布式的图计算系统。</li></ul></li><li><strong>演示工具：</strong> 演示时使用的是 <strong>Marimo notebook</strong>，据说比 Jupyter 更优。</li></ul></li></ol>",
+  "summary": "本周（2025年第49周）感冒持续好转。💻 NLP研究：使用 Stanza 工具包处理多语言项目背景： 为提高游戏时快速阅读文本的效率，尝试对对话框进行主谓宾等词法标注。工具： 选用 Stanza (Python NLP工具包)。多语言测试结果：中文/韩语： 识别准确率不高，容易将长名词（如“检察院”）错误拆分为动词和名词。日语： 识别较好，因为汉字部分多为名词。泰语： 识别结果意外地准确。据了",
+  "duration": "00:06:39",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/111849667/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-10-28%2F88b06883-9198-b26a-5aa7-4ddd194f74d3.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1764346294042-cf0aafdc25b31.jpg",
+  "colorSet": {
+    "bgColor": "#607c8c",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}

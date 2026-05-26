@@ -1,0 +1,15 @@
+{
+  "id": "ep-e3cb866",
+  "title": "给我整一个二战游戏",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e3cb866",
+  "pubDate": "Sun, 14 Dec 2025 15:04:58 GMT",
+  "description": "<p></p><p><strong>播客 Shownotes（第 51 周｜2025.12.14）</strong></p><ul><li><p>本周仍在感冒恢复中，简要记录近况</p></li><li><p>主要整理了上周参加的 Erasmus 项目成果</p></li><li><p>项目主题：二战末期爱沙尼亚背景的战争叙事游戏</p></li><li><p>初期使用 Inky Story 构建文字叙事与 narrative logic</p></li><li><p>后期强化“人机交互”：加入全景图展示与分支决策玩法</p></li><li><p>技术实现：豆包 AI 生成图像，Pannellum 实现 3D 全景交互</p></li><li><p>玩家可通过选择影响故事走向，形成“换中片”式交互体验</p></li><li><p>周三、周四进行了用户测试，使用 imotion 追踪表情与注视点</p></li><li><p>关键发现：</p><ul><li><p>复杂交互（如全景拖动）若无提示，用户难以自主发现</p></li><li><p>因此在开头加入了可交互的新手教程</p></li><li><p>测试环境下用户更保守，不愿主动探索</p></li><li><p>未提示时，用户不会自发进行涂鸦等创作性操作</p></li></ul></li><li><p>期望感冒在新年前彻底恢复</p></li></ul><p></p>",
+  "summary": "播客 Shownotes（第 51 周｜2025.12.14）本周仍在感冒恢复中，简要记录近况主要整理了上周参加的 Erasmus 项目成果项目主题：二战末期爱沙尼亚背景的战争叙事游戏初期使用 Inky Story 构建文字叙事与 narrative logic后期强化“人机交互”：加入全景图展示与分支决策玩法技术实现：豆包 AI 生成图像，Pannellum 实现 3D 全景交互玩家可通过选择影",
+  "duration": "00:04:18",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/112615046/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-11-14%2F4ef83edc-ac32-99b9-2ccb-a31e0c59630c.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1765724611529-f50a63efd757.jpg",
+  "colorSet": {
+    "bgColor": "#8c7454",
+    "titleColor": "--mantine-color-orange-2"
+  }
+}

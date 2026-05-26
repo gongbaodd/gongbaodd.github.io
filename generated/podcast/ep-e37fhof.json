@@ -1,0 +1,15 @@
+{
+  "id": "ep-e37fhof",
+  "title": "给我整个地图",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/ep-e37fhof",
+  "pubDate": "Fri, 29 Aug 2025 07:05:25 GMT",
+  "description": "<p>今天是来到塔林的第二年开学典礼前一天，提前录下这一周的内容。话题挺多，主要集中在技术探索和个人网站优化：</p><p>🌀 流式加载与 NDJSON</p><ul><li>回忆起 10 年前实习时第一次接触 <strong>SSE / 流式传输</strong>。 </li><li>最近尝试用 <strong>NDJSON</strong> 模拟流式加载，把瀑布流页面的数据逐条展示。 </li><li>优点：用户体验更平滑。  </li><li>缺点：实现复杂，最后一行处理、错误重试都要额外逻辑。  </li><li>感悟：文字/JSON 层面的流式传输发展有限，但 <strong>音视频/广告分发</strong> 其实一直在快速进化。</li></ul><p>🌍 城市地图可视化</p><ul><li>让 AI 逐年帮忙总结博客中出现的城市，并映射到地图。  </li><li>使用 <strong>Maplibre GL + ReactMapGL</strong>（开源免 token），替代了 Mapbox。  </li><li>难点：城市名 → 经纬度，需要额外解析，最后还是依赖了 Google API。  </li><li>结果：把自己十多年的旅行足迹直观展示在世界地图上。  </li><li>待优化：性能瓶颈，构建时间 6–8 分钟，地图页加载过大。</li></ul><p>🗂️ 静态文件存储（DAM）</p><ul><li>采用 <strong>Cloudinary</strong> 管理网站的静态资源（图片、3D 文件等）。  </li><li>好处：  <ul><li>版本管理  </li><li>动态生成不同尺寸、加水印  </li><li>免费额度足够个人使用  </li></ul></li><li>比传统 Git LFS 更灵活，感觉像是“进化后的网盘”。</li></ul><p>🧱 瀑布流布局探索</p><ul><li>原生 CSS Masonry 仍是实验性功能，不适合正式使用。  </li><li>尝试过多个库：<ul><li><strong>Masonry.js</strong>：绝对定位，兼容性好但不支持 SSR/SEO。  </li><li><strong>Material Design 实现</strong>：依赖 Flex/Grid，每次加载时会抖动。  </li><li><strong>React-Block</strong>：解决了抖动问题，但打包方式老旧（CommonJS）。  </li></ul></li><li>结论：React-Block 效果最好，推荐使用。</li></ul><p>🔄 Astro Page View Transition</p><ul><li>三年前因 Astro 的 <strong>PageView Transition</strong> 功能从 Gatsby 迁移，但当时功能不完善。  </li><li>最近重新尝试，发现：<ul><li>API 与 Astro 3.0 时完全不同。  </li><li>现在支持 <strong>MPA + SPA 的优雅降级</strong>，但本质仍是单页式逻辑（prefetch + innerHTML 替换）。  </li><li>React 岛内的组件动画无法无缝结合。  </li></ul></li><li>感悟：很多看似炫酷的技术，深入后发现底层其实很朴素。  </li><li>仍计划完成这一功能，实现当初对自己的承诺。</li></ul><p>📌 总结</p><ul><li>技术探索：流式加载、NDJSON、Masonry 布局、Astro 动画。  </li><li>产品迭代：旅行地图可视化、Cloudinary 静态资源管理。  </li><li>个人感受：很多技术“看起来很酷”，真正理解后才发现其简单本质。  </li></ul><p>👣 新学年、新阶段，迎接在塔林的第二年。</p>",
+  "summary": "今天是来到塔林的第二年开学典礼前一天，提前录下这一周的内容。话题挺多，主要集中在技术探索和个人网站优化：🌀 流式加载与 NDJSON回忆起 10 年前实习时第一次接触 SSE / 流式传输。 最近尝试用 NDJSON 模拟流式加载，把瀑布流页面的数据逐条展示。 优点：用户体验更平滑。  缺点：实现复杂，最后一行处理、错误重试都要额外逻辑。  感悟：文字/JSON 层面的流式传输发展有限，但 音视",
+  "duration": "00:28:12",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/107513039/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-29%2Fe34c24fc-958b-f263-5afb-68426bcaf95d.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1756449613467-97bd7752bbad3.jpg",
+  "colorSet": {
+    "bgColor": "#7b8692",
+    "titleColor": "--mantine-color-red-3"
+  }
+}

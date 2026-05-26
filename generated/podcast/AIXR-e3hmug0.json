@@ -1,0 +1,15 @@
+{
+  "id": "AIXR-e3hmug0",
+  "title": "给我又整一期AIXR",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/AIXR-e3hmug0",
+  "pubDate": "Fri, 10 Apr 2026 11:25:23 GMT",
+  "description": "<p>本周播主分享了从本地 AI 辅助编程、GIS 城市建模到 XR 开发环境的深度探索，并探讨了一个深刻的命题：AI 究竟是在推动文明革命，还是仅仅在加速“复刻”平庸？</p><ul><li><p><strong>Bolt DIY + Qwen 2.5：</strong> 体验 Web Coding 的进化。利用本地 14B 模型通过 Agent 逻辑快速生成 Todo App，探讨如何通过 LM Studio 实时监控 Token 消耗与 Prompt 传导。</p></li><li><p><strong>GIS 与 Unity 建模：</strong> 对比香港（3D 扫描，数据量大，渲染如废墟）与塔林（2D/3D 结合，纸折风格）的城市地图建模心得，尝试将 QGIS 数据引入 Unity 实际项目。</p></li><li><p><strong>行为树（Behavior Tree）的回归：</strong> 重新审视 Unity 行为树。在 AI 辅助编程时代，通过“原子化节点”有效控制 AI 的幻觉，提高代码可维护性。</p></li></ul><ul><li><p><strong>OpenXR vs. WebXR：</strong> 硬件厂商与软件厂商的博弈。分析了 WebXR 的适配便捷性与 OpenXR 的高性能表现，以及 Vision Pro 独特生态对标准的影响。</p></li><li><p><strong>开发环境避坑指南：</strong> 测评了 Unity Simulator、Meta XR Simulator、Oculus Link 及 Virtual Desktop。目前推荐方案：Mac Mini 远程控制 + Virtual Desktop (VDXR)。</p></li><li><p><strong>投屏神器：</strong> 推荐免费好用的 Pigeon Cast，解决跨平台（Mac to PC）操作 Unity 时的鼠标拖拽难题。</p></li></ul><ul><li><p><strong>春季美剧速递：</strong> 《黑袍纠察队》最终季回归、《无敌少侠》、以及《怒呛人生》第二季开拍的消息。</p></li><li><p><strong>从健身房到拳馆：</strong> 为了保持新鲜感、避免刷手机焦虑，博主开始尝试泰拳练习，寻找不同的运动节奏。</p></li></ul><ul><li><p><strong>效率不等于革命：</strong> 吐槽当前 AI 圈“复刻”成风。真正的工业/信息革命在于创造“从未有过”的东西（如蒸汽机、互联网），而不仅仅是提高复刻旧事物的速度。</p></li><li><p><strong>信息产业“农业化”：</strong> 如果想象力停滞，信息产业将像农业一样陷入“效率越高、盈利越少”的内耗，呼吁开发者利用新技术去探索真正的创新。</p></li></ul>",
+  "summary": "本周播主分享了从本地 AI 辅助编程、GIS 城市建模到 XR 开发环境的深度探索，并探讨了一个深刻的命题：AI 究竟是在推动文明革命，还是仅仅在加速“复刻”平庸？Bolt DIY + Qwen 2.5： 体验 Web Coding 的进化。利用本地 14B 模型通过 Agent 逻辑快速生成 Todo App，探讨如何通过 LM Studio 实时监控 Token 消耗与 Prompt 传导。G",
+  "duration": "00:39:23",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/118241216/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-10%2Ffccc27e6-78a8-c927-f1c9-e6ba108eb8ef.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1775820308984-ac313cf5640b8.jpg",
+  "colorSet": {
+    "bgColor": "#797470",
+    "titleColor": "--mantine-color-blue-2"
+  }
+}
