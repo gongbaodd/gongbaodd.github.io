@@ -58,8 +58,8 @@
     "commit": "git-cz",
     "test": "echo \"no test needed\" && exit 0",
     "build": "sh ./scripts/generate.sh",
-    "doc:prepare": "node scripts/prepare.mjs",
-    "fetch:podcast": "node scripts/fetch-podcast.mjs"
+    "doc:prepare": "pnpm --filter content-prepare prepare-metadata",
+    "fetch:podcast": "pnpm --dir ../.. exec tsx src/content/scripts/fetch-podcast.mjs"
   },
   "dependencies": {
     "@musical-sniffle/sobel-edge-detection": "1.0.0-beta.1",

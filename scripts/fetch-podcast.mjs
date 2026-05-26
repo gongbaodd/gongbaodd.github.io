@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { pathToFileURL } from 'node:url';
 import { parseStringPromise } from "xml2js";
-import { getColorSet } from "./lib/image-metadata.mjs";
+import { getColorSet } from "../../../packages/image-metadata/src/index.ts";
 
 const PODCAST_RSS_URL = "https://anchor.fm/s/f483db10/podcast/rss";
 const OUTPUT_FILE = "./podcast.json";
