@@ -59,7 +59,7 @@
     "test": "echo \"no test needed\" && exit 0",
     "build": "sh ./scripts/generate.sh",
     "doc:prepare": "pnpm --filter content-prepare prepare-metadata",
-    "fetch:podcast": "pnpm --dir ../.. exec tsx src/content/scripts/fetch-podcast.mjs"
+    "fetch:podcast": "pnpm --filter fetch-podcast fetch-podcast"
   },
   "dependencies": {
     "@musical-sniffle/sobel-edge-detection": "1.0.0-beta.1",
@@ -68,7 +68,6 @@
     "dotenv": "^17.2.1",
     "fast-glob": "^3.3.3",
     "grey-matter": "^0.0.0",
-    "iso-3166-1": "^2.1.1",
-    "xml2js": "^0.6.2"
+    "iso-3166-1": "^2.1.1"
   }
 }
