@@ -9,5 +9,64 @@
       "latitude": 13.7563309,
       "longitude": 100.5017651
     }
+  ],
+  "id": "2023/11/19/week-47-bangkok-ticket",
+  "href": "/plan/2023/11/19/week-47-bangkok-ticket",
+  "title": "Week 47: I Bought a Ticket to Bangkok",
+  "date": "2023-11-18T22:00:00.000Z",
+  "content": "Week 47: I Bought a Ticket to Bangkok\n\nGrowgen.xyz\n\nmade a list of the things still left to be done in the old todo file.\n\nAstro language support\n\nAstro uses shiki as language syntax support. Still got qml and planfuml not supported.\n\nAstro Image support\n\nThere is an image tool providing more image support than the official one. sadly, it's outdated.\n\nLink rel\n\nThis is a document about the rel attribute in link tag.\n\nVercel and Cloudflare DNS problem\n\nThe blog website is on Vercel. But the DNS got too many redirect. Just configure the DNS preference to strict in cloudflare. ref\n\nCSS\n\ncollected some cool css effects.\n\nVISAs abroad\n\nThis is a site about applying VISAs in China.\n\nionic capacitor\n\nA system bridge of web, iOS and Android.\n\nIIS server\n\nThis is a tutorial about setting up IIS server on Windows Server 2009.\n\nTicket to Bangkok\n\nAbout the Thailand plan, I will add more detail when I got the e-VISA.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "growgen",
+      "href": "/tag/growgen"
+    },
+    {
+      "label": "astro",
+      "href": "/tag/astro"
+    },
+    {
+      "label": "shiki",
+      "href": "/tag/shiki"
+    },
+    {
+      "label": "astro-imagetools",
+      "href": "/tag/astro-imagetools"
+    },
+    {
+      "label": "link-ref",
+      "href": "/tag/link-ref"
+    },
+    {
+      "label": "vercel",
+      "href": "/tag/vercel"
+    },
+    {
+      "label": "css",
+      "href": "/tag/css"
+    },
+    {
+      "label": "visa",
+      "href": "/tag/visa"
+    },
+    {
+      "label": "ionic",
+      "href": "/tag/ionic"
+    },
+    {
+      "label": "capacitor",
+      "href": "/tag/capacitor"
+    },
+    {
+      "label": "iis",
+      "href": "/tag/iis"
+    },
+    {
+      "label": "bangkok",
+      "href": "/tag/bangkok"
+    }
   ]
 }

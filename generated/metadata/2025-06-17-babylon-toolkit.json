@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#5e8ca4",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2025/06/17/babylon-toolkit",
+  "href": "/fe/2025/06/17/babylon-toolkit",
+  "title": "Babylon Editor & Babylon Toolkit",
+  "date": "2025-06-16T21:00:00.000Z",
+  "content": "Babylon Editor & Babylon Toolkit\n\nThis week I tried two Babylon.js tools: Babylon Editor 🖥️ and Babylon Toolkit 🧰.\n\n🖌️ Babylon Editor\n\nBabylon Editor is an Electron-based Windows scene editor for Babylon.js.\nIt exports scenes as .babylon files 📦 and uses babylonjs-editor-tools to integrate scripts with game objects.\n\n⚡ The editor uses Webpack as the bundler, so compile times can be relatively long.\n📜 It uses CommonJS modules for script integration. If you want to use Vite instead, you can use vite-plugin-require to transpile require into import—but you’ll need to structure your script integration as a class.\n\n⚠️ Note: @babylonjs/havok currently doesn’t work in Vite due to an unresolved WASM support issue. A workaround is to load it as a global script.\n\n🏗️ Babylon Toolkit\n\nBabylon Toolkit uses Unity as the editor for Babylon.js, compiling nearly all Unity features—physics ⚙️, animation 🎬, AI 🧠—into Babylon.\nThe Community Edition is free to use.\n🎥 There’s also a video tutorial for making a small project and a starter repo showing how to include exported files in a JS project.\n\nIt’s quite a big system to dive into, and compiling Unity to JS isn’t trivial. I’ll keep an eye on it 👀, but for now I’ll probably stick with Babylon Editor.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "babylonjs",
+      "href": "/tag/babylonjs"
+    }
+  ]
 }

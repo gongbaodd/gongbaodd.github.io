@@ -1,4 +1,14 @@
 {
   "file": "2015/05/04/ionic",
-  "hash": "d9496917b7c707764c6f22cf806c051885d0a8d64f3f24aaf04541c6fe4c97c0"
+  "hash": "d9496917b7c707764c6f22cf806c051885d0a8d64f3f24aaf04541c6fe4c97c0",
+  "id": "2015/05/04/ionic",
+  "href": "/fe/2015/05/04/ionic",
+  "title": "ionic",
+  "date": "2015-05-03T21:00:00.000Z",
+  "content": "\\#ionic的安装配置的坑\n\n前一阵子react-native很火，甚是嫉妒啊，目前只支持iOS。。。T\\_T\n不必要一直追求native，（虽然我还是试验了nativescript），在安卓上面还是可以尝试写写hybrid应用。\n\n安装ionic，安装android-sdk-r22（可以用hx.gy:1080代理）\n\n创建一个空/标签/侧边栏工程\n\n运行\n\n用浏览器测试",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#9a7356",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2018/09/16/pixel-villain-that-is-not-up-to-the-palace",
+  "href": "/life/2018/09/16/pixel-villain-that-is-not-up-to-the-palace",
+  "title": "GongBuVoxel",
+  "date": "2018-09-15T21:00:00.000Z",
+  "content": "GongBuVoxel\n\nSadly the old image storage are all unavailable now. These are the ones I can find. Many of them are made from MagicaVoxel.",
+  "category": {
+    "label": "life",
+    "href": "/life"
+  },
+  "tags": [
+    {
+      "label": "3d",
+      "href": "/tag/3d"
+    },
+    {
+      "label": "voxel",
+      "href": "/tag/voxel"
+    }
+  ]
 }

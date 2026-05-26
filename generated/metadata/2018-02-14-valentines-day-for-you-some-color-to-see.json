@@ -1,4 +1,14 @@
 {
   "file": "2018/02/14/valentines-day-for-you-some-color-to-see",
-  "hash": "8c1acd554a568e5e63f747d4679aaa37145365e62297e7dd34282bedd57caa37"
+  "hash": "8c1acd554a568e5e63f747d4679aaa37145365e62297e7dd34282bedd57caa37",
+  "id": "2018/02/14/valentines-day-for-you-some-color-to-see",
+  "href": "/fe/2018/02/14/valentines-day-for-you-some-color-to-see",
+  "title": "情人节给你点颜色看看",
+  "date": "2018-02-13T22:00:00.000Z",
+  "content": "情人节给你点颜色看看\n\n示例代码\n\nCMYK用于打印, RGB用于显示屏, 然而二者都不能直观的展示颜色, 于是有了 HSL 和 HSV 坐标系.\n\n简介\n\n今天看看HSL和HSV转化RGB, 维基地址.\n\nHSL与HSV\n\nH 指的是 hue 色相 \\[0-360]\n\nS 指的是 saturation 饱和度 \\[0-1]\n\nV 指的是 value 明度 \\[0-1]\n\nL 指的是 light 亮度 \\[0-1]\n\nHSV转换RGB\n\nHSL转换RGB有点烦(我认为是这样的), 维基里面有详细的解释, HSV到比较简单",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

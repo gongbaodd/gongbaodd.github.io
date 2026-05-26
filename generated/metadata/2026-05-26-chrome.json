@@ -1,4 +1,14 @@
 {
   "file": "2026/05/26/chrome",
-  "hash": "6f1dd21f916f79badde6ff2a5a55995b71c731ddbc2412ba3b5a55da2d07f06d"
+  "hash": "6f1dd21f916f79badde6ff2a5a55995b71c731ddbc2412ba3b5a55da2d07f06d",
+  "id": "2026/05/26/chrome",
+  "href": "/fe/2026/05/26/chrome",
+  "title": "Google I/O Chrome Updates",
+  "date": "2026-05-25T21:00:00.000Z",
+  "content": "Google I/O Chrome Updates\n\n🤖 Built-in AI & Developer Tools\n\nGemini in Chrome: Bringing Google's AI capabilities directly into the browser.\n\nBuilt-in AI: Early Preview Program: Sign up and explore at goo.gle/chrome-ai-preview.\n\nOn-Device Intelligence: Running AI models locally.\n\nPrompt API: Note that there is currently no Chinese language support. 🛑\n\nAI-Assisted Tooling: Enhancing developer workflows with AI.\n\nChrome DevTools for Agents: Features an MCP server to support multi-agent workflows.\n\n🌐 WebMCP & The Agentic Era\n\nPreparing websites for AI agents with specialized APIs and tools. Learn more at goo.gle/webmcp-docs.\n\nHow Agents Interact with the Web\n\n📸 Screenshots\n\n🌳 DOM\n\n♿ Accessibility Tree\n\nImplementation Methods\n\nImperative:\n\nDeclarative:\n\nEcosystem & Debugging\n\n🔍 WebMCP Model Context Tool Inspector for debugging.\n\n📊 Evaluations: Tools available via goo.gle/lighthouse-github, goo.gle/evals, and goo.gle/webmcp-evals-cli.\n\n🤖 Testing Automation: Integrate with Puppeteer at goo.gle/puppeteer-webmcp.\n\n🎨 UI & UX Improvements\n\nHTML in Canvas: Rendering HTML content inside a Canvas element.\n\nCheck out the Three.js example: goo.gle/HIC-threejs-example\n\nExplore more resources: goo.gle/awesome-HIC\n\nVibe Design: Build incredible web UI using Stitch and Design.md.\n\nImproved Web Experiences: Tracked via goo.gl/soft-navs.\n\nDeclarative Partial Updates: Uses the Stream HTML API (resembles PHP functionality). Details at goo.gl/declarative-partial-updates.\n\n📈 Web Platform Progress & Guidance\n\nModern Web Guidance: Access the skill package at goo.gle/mwg.\n\nBaseline Checker: Track platform feature availability.\n\nWeb Platform Tracking: Monitor core updates via webstatus.dev.\n\nCore Performance & UX Features:\n\n✨ View Transition\n\n🗺️ Navigation API\n\n🖼️ Largest Contentful Paint (LCP) - Baseline feature\n\n⚡ Interaction to Next Paint (INP) - Baseline feature\n\nSource videos:\n\nWhat's new in Chrome\n\nVibe design to build incredible web UI\n\nBuild your website for the agentic era",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

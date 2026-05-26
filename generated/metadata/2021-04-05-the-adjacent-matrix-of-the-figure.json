@@ -1,4 +1,23 @@
 {
   "file": "2021/04/05/the-adjacent-matrix-of-the-figure",
-  "hash": "5eed572bfd095fe4561c4338a0fa580c1f07a1e5a33385e1b928e1b2f826b632"
+  "hash": "5eed572bfd095fe4561c4338a0fa580c1f07a1e5a33385e1b928e1b2f826b632",
+  "id": "2021/04/05/the-adjacent-matrix-of-the-figure",
+  "href": "/book/2021/04/05/the-adjacent-matrix-of-the-figure",
+  "title": "图的邻接矩阵",
+  "date": "2021-04-04T21:00:00.000Z",
+  "content": "图的邻接矩阵\n\nQ:\n\n\n\n如图为 5 支队伍的单循环赛，边(xi,xj)表示 xi 队战胜 xj 队，试排出 5 队伍的名次\n\nA:\n\n$$\nx\\_2,x\\_4,x\\_1,x\\_5,x\\_3\n$$\n\nQ:\n\n\n\n这是四个城市的航班图\n\n从 y4 出发，有几条经 3 次航行到达城市 y3 的途\n\n从 y4 出发，有几条经过 4 次航行回到 y4 的途\n\n从任意城市起飞，可否达到其余 3 个城市\n\ny2 和 y4 举行球赛，需要选择第三地，则此城市存在几个？有几个城市可以选择\n\nA:\n\n3,3,均可以，1 个城市 y3",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

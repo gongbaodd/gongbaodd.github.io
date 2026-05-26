@@ -1,4 +1,14 @@
 {
   "file": "2017/05/04/1typescript",
-  "hash": "041d41a30ee8fbbf2087df53b40c5fe2a35eb472bc9c503698c19bf22076fc19"
+  "hash": "041d41a30ee8fbbf2087df53b40c5fe2a35eb472bc9c503698c19bf22076fc19",
+  "id": "2017/05/04/1typescript",
+  "href": "/fe/2017/05/04/1typescript",
+  "title": "TypeScript干货",
+  "date": "2017-05-03T21:00:00.000Z",
+  "content": "TypeScript干货\n\n类型化声明\n\n接口\n\nclass语法糖\n\n装饰器\n\n类似于@tag,@mixin的东西，\n这个有点复杂，只说在class前面的装饰器吧,\n是用来处理对象原型的函数，\n会在构造函数执行结束后执行\n\nObject解构\n\n一个更好的mixin\n\ntypescript对mixin支持很好，\n配合vscode的输入提醒代码体验十分完美，\n所以几乎可以放弃riot的mixin了\n\nriot.mixin\n\n@mixin(any\\[])\n\nasync await 处理异步流程\n\n目前来说原生的Promise支持已经很不错了，\nasync虽然是个实验特性，\n但发明C#的微软明显推荐用这个特性。\n\n发布订阅\n\nPromise\n\nasync & await\n\n用TypeScript写一个Riot组件\n\nhtml\n\nES5\n\nTypeScript",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

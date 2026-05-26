@@ -1,4 +1,14 @@
 {
   "file": "2015/05/09/ionic-todoguide",
-  "hash": "f76e88b4661e57fe0425b36068d63e0157273ac9beed13bae776ae5d7e5b38de"
+  "hash": "f76e88b4661e57fe0425b36068d63e0157273ac9beed13bae776ae5d7e5b38de",
+  "id": "2015/05/09/ionic-todoguide",
+  "href": "/fe/2015/05/09/ionic-todoguide",
+  "title": "ionic官方Todo Guide",
+  "date": "2015-05-08T21:00:00.000Z",
+  "content": "ionic官方Todo Guide\n\n代码在https://github.com/gongbaodd/myExperinments/tree/ionic\\_todo\n一直想写一个app，但是懒得设计，看到ionic官方有个guide而且没有中文版，所以写一个。\n\n在head中添加对应的css和js\n\nbody添加controller\n\nTodo的界面，分别是左边栏（负责分配todo的类型——projects）和主界面（负责分配每一个todo项——tasks）\n\nTodo的行为\n\n左边栏结构\n\n左边栏行为\n\n主界面结构\n\n主界面行为\n\n新建项目的模态对话框",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

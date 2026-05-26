@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#7e9a71",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2025/10/31/week-45-colyseus",
+  "href": "/plan/2025/10/31/week-45-colyseus",
+  "title": "🚀 Week 45: Colyseus Multiplayer & SVG Edge Detection",
+  "date": "2025-10-30T22:00:00.000Z",
+  "content": "🚀 Week 45: Colyseus Multiplayer & SVG Edge Detection\n\nThis week, I wrapped up two major things:\n1️⃣ Finished my Missile Command 3D Multiplayer game 🎯\n2️⃣ Optimized my blog’s SVG thumbnails using edge detection ✏️\n\nLet’s dive into both 👇\n\n🎮 Part 1 — Colyseus Multiplayer Journey\n\nAfter many experiments, the real-time multiplayer feature is now live — powered by Colyseus. It’s surprisingly easy to set up, but there are a few important lessons I learned along the way 💡\n\n🧭 Key Takeaways\n\n🏠 defineRoom limitation: It can only create one room instance. If you want multiple replicated rooms (like room/1, room/2...), you’ll need to handle that manually.\n\n📦 Schema matters: Colyseus requires a predefined data schema for all state transfers. I initially wanted to stream the computed Babylon.js scene directly to clients — but hit a wall due to schema constraints.\n\n⚙️ Monorepo caveat: Some Colyseus packages don’t play nicely inside a monorepo setup, so you might face build or dependency issues there.\n\nOverall, it’s been a fun challenge combining Babylon.js for visuals and Colyseus for networking.\n\n🧩 Part 2 — Blog Post Card SVG Optimization\n\nI also spent time optimizing my blog’s performance 🖥️.\nWhen loading the homepage, each blog post card first shows an SVG vector preview before loading the full image.\n\nOriginally, I stored all SVGs in a single metadata.json file — but it grew to 50 MB, exceeding GitHub’s upload limits 🚫.\nI then split them into individual files, but each SVG could be up to 1 MB, still too large for thumbnails 😅.\n\nTo solve this, I implemented an edge detection filter using @musical-sniffle/sobel-edge-detection.\nThe result: beautiful sketch-style thumbnails ✏️, with sizes reduced to just 10–100 KB ⚡\n\n🧠 Code Snippet: Sharp + Sobel Edge Detection\n\nIn the end, both projects turned out great — the multiplayer system runs smoothly ⚔️ and my blog loads faster than ever ⚡\nOn to the next experiment! 🚀",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "colyseus",
+      "href": "/tag/colyseus"
+    },
+    {
+      "label": "multiplayer",
+      "href": "/tag/multiplayer"
+    },
+    {
+      "label": "edge-detection",
+      "href": "/tag/edge-detection"
+    }
+  ]
 }

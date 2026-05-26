@@ -1,4 +1,14 @@
 {
   "file": "2018/02/07/webpack",
-  "hash": "4bbbdfaed109bbfa14e1678bcf3d110892b121c341f56c4813bb49c5ba8bf7ee"
+  "hash": "4bbbdfaed109bbfa14e1678bcf3d110892b121c341f56c4813bb49c5ba8bf7ee",
+  "id": "2018/02/07/webpack",
+  "href": "/fe/2018/02/07/webpack",
+  "title": "webpack 前端热更新",
+  "date": "2018-02-06T22:00:00.000Z",
+  "content": "webpack 前端热更新\n\nWebpack仅仅实现前端热更新要比前后端同构简单得多, sourceMap 是必须加的, 用来判断哪些文件更新.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

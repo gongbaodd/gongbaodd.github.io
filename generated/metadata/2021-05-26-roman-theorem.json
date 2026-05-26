@@ -1,4 +1,23 @@
 {
   "file": "2021/05/26/roman-theorem",
-  "hash": "7992190b5b87f9ecc638385407fc5c50cf3a47a818c3298922715a871047b340"
+  "hash": "7992190b5b87f9ecc638385407fc5c50cf3a47a818c3298922715a871047b340",
+  "id": "2021/05/26/roman-theorem",
+  "href": "/book/2021/05/26/roman-theorem",
+  "title": "罗尔定理",
+  "date": "2021-05-25T21:00:00.000Z",
+  "content": "罗尔定理\n\n$f(x)f'(x)$的原函数辅助函数$F(x)=f^2(x)$\n\n$\\[f'(x)]^2+f(x)f''(x)$的原函数辅助函数$F(x)=f(x)f'(x)$\n\n$f'(x)+f(x)\\phi'(x)$的原函数辅助函数$F(x)=f(x)e^{\\phi(x)}$\n\n$f'(x)+f(x)$的原函数辅助函数$F(x)=f(x)e^x$\n\n$f'(x)-f(x)$的原函数辅助函数$F(x)=f(x)e^{-x}$\n\n$f'(x)+kf(x)$的原函数辅助函数$F(x)=f(x)e^{kx}$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

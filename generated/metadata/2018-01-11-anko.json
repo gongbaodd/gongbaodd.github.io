@@ -1,4 +1,14 @@
 {
   "file": "2018/01/11/anko",
-  "hash": "88c91b83a41f8ab64b01bde32cc1f741ea02a6d68fb0d160e62734d98adc1ea1"
+  "hash": "88c91b83a41f8ab64b01bde32cc1f741ea02a6d68fb0d160e62734d98adc1ea1",
+  "id": "2018/01/11/anko",
+  "href": "/tech/2018/01/11/anko",
+  "title": "使用 anko 布局安卓应用",
+  "date": "2018-01-10T22:00:00.000Z",
+  "content": "使用 anko 布局安卓应用\n\nbuild.gradle 配置\n\n如wiki修改两处\n\n使用 ConstraintLayout\n\n修改 build\n\nhttps://github.com/AckeeCZ/anko-constraint-layout\n\n如何使用\n\n缺点\n\nanko 里面除了简单的布局有 DSL 其它的需要去找(毕竟不是官方的)用起来还真不是特别方便",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

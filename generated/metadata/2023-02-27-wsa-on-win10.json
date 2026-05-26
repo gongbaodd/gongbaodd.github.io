@@ -1,4 +1,14 @@
 {
   "file": "2023/02/27/wsa-on-win10",
-  "hash": "1a721ad6e1b8e55127ac8f20dca63b0fa8b7392de448b3b820357c038ca82458"
+  "hash": "1a721ad6e1b8e55127ac8f20dca63b0fa8b7392de448b3b820357c038ca82458",
+  "id": "2023/02/27/wsa-on-win10",
+  "href": "/tech/2023/02/27/wsa-on-win10",
+  "title": "WSA on win10",
+  "date": "2023-02-26T22:00:00.000Z",
+  "content": "WSA on win10\n\nWith the help of WSAPatch, I can install android apps on windows 10. But it still needs 8 physical RAMs.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

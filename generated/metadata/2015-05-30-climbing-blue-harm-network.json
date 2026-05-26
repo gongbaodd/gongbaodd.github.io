@@ -1,4 +1,14 @@
 {
   "file": "2015/05/30/climbing-blue-harm-network",
-  "hash": "51c23a1bb9d7c08c59a821b724e3178e38247f774a11094ff7542c04aaaade44"
+  "hash": "51c23a1bb9d7c08c59a821b724e3178e38247f774a11094ff7542c04aaaade44",
+  "id": "2015/05/30/climbing-blue-harm-network",
+  "href": "/tech/2015/05/30/climbing-blue-harm-network",
+  "title": "climbing blue harm network",
+  "date": "2015-05-29T21:00:00.000Z",
+  "content": "\\#爬蓝调口琴网\n\n论文写好了就没事干了，本来想去旅游，完蛋流量没了，所以静下心来学学口琴，网上有个蓝调口琴网挺好哒，想写个应用装手机里，先讲讲怎么爬吧。\n\n主要还是用了request模块，然而由于网站用的是GBK编码，还需要iconv-lite、bufferhelper。\n\n爬到了网页，用jquery来读里面的东西，用node-jquery就OK了\n\n这个脚本用了特愚蠢的字符串拼json的方法。。。所以趁脚本结束前还得把json封闭了。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

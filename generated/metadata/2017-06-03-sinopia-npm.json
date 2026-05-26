@@ -1,4 +1,14 @@
 {
   "file": "2017/06/03/sinopia-npm",
-  "hash": "927a534e85ed4375ee599aa5557f2d6a9edc58b7c21204d1a1225ced5c80bf03"
+  "hash": "927a534e85ed4375ee599aa5557f2d6a9edc58b7c21204d1a1225ced5c80bf03",
+  "id": "2017/06/03/sinopia-npm",
+  "href": "/tech/2017/06/03/sinopia-npm",
+  "title": "sinopia搭建你的私人NPM",
+  "date": "2017-06-02T21:00:00.000Z",
+  "content": "sinopia搭建你的私人NPM\n\n今天本来想边刷CodeWars边看《纸牌屋》的，显然两件烧脑的事情还是不要放到一起做比较好。\n\n简评一下《纸牌屋》第五季，编剧能写五季不错了，赶紧完结吧，剧情开始走下坡路咯。\n\n进入正题\n\n为什么要搭建私人NPM？我靠，这还用问。。。（你自己猜吧）\n\n安装好sinopia之后，执行sinopia就好了，默认端口4873，只能本地访问。\n\n配置\n\n往往我会新建一个用户\n\n然后用户这个用户执行sinopia，sinopia执行的根目录需要三个文件，config.yaml，storage，htpasswd\n\n只配置config.yaml就好了，示例在https://github.com/rlidwka/sinopia/tree/master/conf\n\n执行\n\n用PM2执行，默认sinopia会在执行目录寻找config。本地访问成功后大工造成。\n\n注意\n\n因为我用的是Linux，自从安装了node8+npm5之后，可能涉及到Darwin的包会报警，不过忽略就好。\n\n注册的时候报错crypt3找不到，貌似安装的时候gyp出错被忽略掉了，我到sinopia目录里重装了crypt3解决。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

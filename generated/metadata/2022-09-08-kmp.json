@@ -1,4 +1,23 @@
 {
   "file": "2022/09/08/kmp",
-  "hash": "c907ed03d8491b6367db5c08cb4d130969b001d7f7dfafa52a7fcd73f902bd13"
+  "hash": "c907ed03d8491b6367db5c08cb4d130969b001d7f7dfafa52a7fcd73f902bd13",
+  "id": "2022/09/08/kmp",
+  "href": "/tech/2022/09/08/kmp",
+  "title": "KMP 匹配算法(Zig)",
+  "date": "2022-09-07T21:00:00.000Z",
+  "content": "KMP 匹配算法(Zig)\n\n要从一个字符串 ababcabcacbababcac 中查中一个片段如 abcac 可以使用 KMP 算法。\n\nKMP 算法，简单来说就是先从要匹配的字符串中找到重复的字缀，并将这些字缀标记跳过的字数以做到匹配时剪掉不许匹配的次数。\n\na，首位和末尾没有重复即为 0\n\nab，首位和末尾没有重复即为 0\n\nabc，首位和末尾没有重复即为 0\n\nabca，首位和末尾有一位重复 a，记为 1\n\nabcac，首位和末尾没有重复即为 0\n\n得到匹配列表为 00010，这里的数字对应每个字母的序号 01234，假设匹配长字符串的时候刚好匹配到 abcac 的时候（第五位）没有匹配上，就看c前面的字符a对应的匹配值，这里是 1，指的可以从字符串中序号为 1 的字符，这里是b，继续匹配。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "algorithm",
+      "href": "/tag/algorithm"
+    },
+    {
+      "label": "zig",
+      "href": "/tag/zig"
+    }
+  ]
 }

@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#b48c62",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2025/02/15/enchanted-wizard",
+  "href": "/lab/2025/02/15/enchanted-wizard",
+  "title": "Enchanted Wizard",
+  "date": "2025-02-14T22:00:00.000Z",
+  "content": "Enchanted Wizard\n\nThis is a Godot XR shooting game I made for Godot XR Gamejam, you can download them here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    },
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

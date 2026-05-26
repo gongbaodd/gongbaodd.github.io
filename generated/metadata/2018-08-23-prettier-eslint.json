@@ -1,4 +1,14 @@
 {
   "file": "2018/08/23/prettier-eslint",
-  "hash": "97a57808aec0c73fe19ab13f13d306668fae987258c7350bcf1fd480fef3acc8"
+  "hash": "97a57808aec0c73fe19ab13f13d306668fae987258c7350bcf1fd480fef3acc8",
+  "id": "2018/08/23/prettier-eslint",
+  "href": "/fe/2018/08/23/prettier-eslint",
+  "title": "如果prettier和eslint冲突了怎么办",
+  "date": "2018-08-22T21:00:00.000Z",
+  "content": "如果prettier和eslint冲突了怎么办\n\n最近工作发现小伙伴都不喜欢用prettier，原因是格式化后的代码其实和之前约定的eslint有出入。\n\n其实安装prettier-eslint之后，你的prettier就不会将代码改成违反eslint规则的样子，在vscode配置中，打开prettier.eslintIntegration。这样自动保存也会避开eslint。\n\n另外prettier文档中也有如何解决二者冲突的方法 https://prettier.io/docs/en/integrating-with-linters.html。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

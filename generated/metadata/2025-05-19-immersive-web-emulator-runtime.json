@@ -1,4 +1,27 @@
 {
   "file": "2025/05/19/immersive-web-emulator-runtime",
-  "hash": "07597b1ecc9806add47fec41bf635b649a2d0a2ec2f35f18e7b2e5e34f42d67e"
+  "hash": "07597b1ecc9806add47fec41bf635b649a2d0a2ec2f35f18e7b2e5e34f42d67e",
+  "id": "2025/05/19/immersive-web-emulator-runtime",
+  "href": "/fe/2025/05/19/immersive-web-emulator-runtime",
+  "title": "Immersive Web Emulator Runtime",
+  "date": "2025-05-18T21:00:00.000Z",
+  "content": "Immersive Web Emulator Runtime\n\nIWER is a developing tool for webXR. I am doing a school project, which uses webXR to make a campus tour.\n\nI used MeshLab to cut the 3DGS model, and Google Camera to take panorama environment.\n\nI tried three.js, babylon.js and R3F to test which one is suitable.\n\nPanorama\n\nBabylon.js has its own panorama component EquiRectangularCubeTexture. Generating this uses a lot resources, make sure to use assetManager to load it the page will show a loading state.\n\nWhile three.js and R3F do not have panorama support, a sphere geometry can be used, but the building will be tilted.\n\n3DGS\n\nBabylon.js also have its official support for guassian splatting files PLY. But it has less customization options.\n\nimport { registerBuiltInLoaders } from \"@babylonjs/loaders/dynamic\" is needed to be imported.\n\nThree.js and R3F have no support for 3DGS. useLoader will load a weird Mesh. But you can make a point cloud with more customization.\n\nInspector\n\nThere is an inspector support in Babylon.js. It is much easier to visually put item in the scenes. import \"@babylonjs/inspector\"; is needed.\n\nWhile three.js and r3f's inspector is archived. There is leva can be used as a dat.gui in React.\n\nRequest XR\n\nIn babylon, just config every thing in the scene setup. However, the getEnabledFeature can not correctly return the right type. And you do not need to care about others, the VR button will automatically added on screen.\n\nThere is an XR component that provides XR components for R3F. And To add the VRButton, you need to place the VRButton component in page, also in three.js.\n\nThree.js also needs gamepad-wrapper from npm to add gamepad support.\n\nText Render\n\ntroika-three-text can be used in three.js.\n\nearcut is used as an injection in babylon.js.\n\nOn Device Testing\n\nStart a https server, if using vite, use mkcert plugin.\n\nAlso, there are many examples in babylonjs's playground, using Caddy is a good option.\n\nUsing Meta Quest Link sometimes work. But it is better to use port-forwarding in chrome.\n\nPC Testing\n\nThis time, IWER is in use. There are some errors in the latest version, \"@iwer/devui\": \"^0.1.1\",\"iwer\": \"^1.0.4\" is a workable version. But the movement is slow.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "iwer",
+      "href": "/tag/iwer"
+    },
+    {
+      "label": "webxr",
+      "href": "/tag/webxr"
+    },
+    {
+      "label": "babylonjs",
+      "href": "/tag/babylonjs"
+    }
+  ]
 }

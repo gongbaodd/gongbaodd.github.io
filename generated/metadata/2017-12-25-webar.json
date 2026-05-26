@@ -1,4 +1,14 @@
 {
   "file": "2017/12/25/webar",
-  "hash": "a758d0d2315ce513e5506094d2bb8f4f99cf07e06b4448408c82931c43e72e56"
+  "hash": "a758d0d2315ce513e5506094d2bb8f4f99cf07e06b4448408c82931c43e72e56",
+  "id": "2017/12/25/webar",
+  "href": "/fe/2017/12/25/webar",
+  "title": "webar",
+  "date": "2017-12-24T22:00:00.000Z",
+  "content": "https://github.com/jeromeetienne/AR.js/",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

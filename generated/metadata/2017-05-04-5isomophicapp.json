@@ -1,4 +1,14 @@
 {
   "file": "2017/05/04/5isomophicapp",
-  "hash": "db59ff54ed920cb9c03fe86f380b2c0e1558b91e27ceae2cdab75cdaca0c1c04"
+  "hash": "db59ff54ed920cb9c03fe86f380b2c0e1558b91e27ceae2cdab75cdaca0c1c04",
+  "id": "2017/05/04/5isomophicapp",
+  "href": "/fe/2017/05/04/5isomophicapp",
+  "title": "Isomophic App",
+  "date": "2017-05-03T21:00:00.000Z",
+  "content": "Isomophic App\n\n如果你已经了解过前后端同构的话，你一定知道如下的方案\n\n那你看的文档应该都转发自同一个人。\n\n这种做法很有局限性\n\n你引用的module必须是umd打包的\n\n你引用的module必须不存在二进制包\n\n这回你知道为啥react要用全家桶了吧？\n\n换一种想法\n\n首先看一下node层和client层的不同点\n\nnode\n\n接到用户Get请求 =>\nnode-fetch异步获取后端数据 =>\n初始化Riot标签 =>\n渲染页面为html =>\n返回给用户 =>\n收到接口元数据 =>\n将元数据处理成state =>\n以script标签形式返回用户 =>\nres.end\n\nclient\n\n收到渲染好的html并进行渲染 =>\n加载js代码 =>\n初始化Riot标签 =>\n收到并运行script标签 =>\n更新state =>\n页面渲染完成\n\n可见，涉及到node像后端取数据并处理成state这部分逻辑是没必要加到client里面的，\n那么可以做两个文件实现node和client不同状态的处理。\n\n之前先介绍几个名词\n\n状态机存储器：　Store\n\nnew Store()可以订阅on或者触发trigger几种事件，\n没错riot.tag函数里面的this就继承自Store;\n\n广播控制器：　Control\n\n是一个状态机的集合，方法addStore可以添加状态机存储器，\ntrigger可以广播触发存储器的事件。\n\n标签生成器：TagCore虚基类\n\nserver.js\n\nclient.js\n\n这样App、someStore这部分可以同构，clientStore和routeStore分别针对运行环境处理就可以了",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

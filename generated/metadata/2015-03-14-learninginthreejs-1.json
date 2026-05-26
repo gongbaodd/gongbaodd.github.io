@@ -1,4 +1,14 @@
 {
   "file": "2015/03/14/learninginthreejs-1",
-  "hash": "84a97ddfb1db715bdbdc3bc180676ad247862ba8d531e4a0b53741db466e1968"
+  "hash": "84a97ddfb1db715bdbdc3bc180676ad247862ba8d531e4a0b53741db466e1968",
+  "id": "2015/03/14/learninginthreejs-1",
+  "href": "/fe/2015/03/14/learninginthreejs-1",
+  "title": "LearningInThreeJS",
+  "date": "2015-03-13T22:00:00.000Z",
+  "content": "LearningInThreeJS\n\n（一）基本之基本\n\n这些是嚼the Packt book \"Learning Threejs\"出来的一些干货，捡了些觉得可学的代码放到我的myExpirements下面的learning-in-threejs分支里面了。\n\n1\\. 简单实现(basic.html)\n\nhttps://github.com/gongbaodd/myExperinments/blob/learning-threejs/01-basic.html\n\n必须要有的\n\n坐标帮助\n\ninitStates\n\nonResize()\n\ncontroller\n\n2\\. 场景Scene\n\nhttps://github.com/gongbaodd/myExperinments/blob/learning-threejs/02-scene.html\n\n3\\. 内置几何图形\n\nhttps://github.com/gongbaodd/myExperinments/blob/learning-threejs/03-geometery.html\n\n4\\. 拼装几何图形\n\nhttps://github.com/gongbaodd/myExperinments/blob/learning-threejs/04-basic-geometry.html\n\n5\\. 网格操作\n\nhttps://github.com/gongbaodd/myExperinments/blob/learning-threejs/05-mesh.html\n\n6\\. 摄像头操作\n\nhttps://github.com/gongbaodd/myExperinments/blob/learning-threejs/06-camera.html",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

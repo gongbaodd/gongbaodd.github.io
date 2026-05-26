@@ -1,4 +1,31 @@
 {
   "file": "2020/04/04/observablehq-js-jupyter",
-  "hash": "a48a80e2975cd8b083711262ba682a319c0826584d3937071b3ee86d5983d30d"
+  "hash": "a48a80e2975cd8b083711262ba682a319c0826584d3937071b3ee86d5983d30d",
+  "id": "2020/04/04/observablehq-js-jupyter",
+  "href": "/fe/2020/04/04/observablehq-js-jupyter",
+  "title": "ObservableHQ-JS 终于有自己的 Jupyter 笔记本了",
+  "date": "2020-04-03T21:00:00.000Z",
+  "content": "ObservableHQ-JS 终于有自己的 Jupyter 笔记本了\n\n学习机器学习的时候用上 python 的 Jupyter notebook 是真好用，曾经就想，如果 JavaScript 也有一个就好了，没错ObservableHQ就是基于 D3.js 的数据可视化笔记本。\n\n官方的入门讲的很详细，接下来一周我可能会专心于里面的D3 教程，间或去学习 threejs fundamental。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "observablehq",
+      "href": "/tag/observablehq"
+    },
+    {
+      "label": "javascript",
+      "href": "/tag/javascript"
+    },
+    {
+      "label": "d3",
+      "href": "/tag/d3"
+    },
+    {
+      "label": "jupyter",
+      "href": "/tag/jupyter"
+    }
+  ]
 }

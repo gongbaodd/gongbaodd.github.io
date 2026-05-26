@@ -1,4 +1,14 @@
 {
   "file": "2025/05/03/week-18-waku",
-  "hash": "428a7f88a43ff0ccb284ddf37a6c2be9c911bd50d0cbc26ba5e43bb2476a4970"
+  "hash": "428a7f88a43ff0ccb284ddf37a6c2be9c911bd50d0cbc26ba5e43bb2476a4970",
+  "id": "2025/05/03/week-18-waku",
+  "href": "/plan/2025/05/03/week-18-waku",
+  "title": "Week 18: Waku",
+  "date": "2025-05-02T21:00:00.000Z",
+  "content": "Week 18: Waku\n\nThis week. I was basically collecting all the tech trash I made lately. The mediapipe unity controller has a memory leak. And since I was deploying that on itch.io. The static files were placed in a relative folder not on a local folder. I currently can not find a better way to fix that on Waku. However, I changed my framework to Astro. Which need a third party library astro-relative-links to solve the problem.\n\nWaku is a react framework which uses vite and supports SRC. It bundles the server rendered component into js and and component list txt file. The file is used to load these components at start.\n\nAnother thing, I was trying Unreal Engine on Web. I got stuck on applying the permission.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

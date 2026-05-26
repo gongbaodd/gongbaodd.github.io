@@ -1,4 +1,14 @@
 {
   "file": "2025/03/13/week-11-unity-on-web",
-  "hash": "8ab4a4368b850a864e6c273f0faf03b0dd0ad81ccfe9a4ba59d8da4aafe6c35d"
+  "hash": "8ab4a4368b850a864e6c273f0faf03b0dd0ad81ccfe9a4ba59d8da4aafe6c35d",
+  "id": "2025/03/13/week-11-unity-on-web",
+  "href": "/plan/2025/03/13/week-11-unity-on-web",
+  "title": "Week 11: Unity on Web",
+  "date": "2025-03-12T22:00:00.000Z",
+  "content": "Week 11: Unity on Web\n\nI have been using Unity for a season now. Now I want to make a period conclusion on it, especially on web.\n\nBefore using Unity, I was told that the future UI will be Unity. Because it supports all platforms and provide more fascinating experience than normal web pages.\n\nAfter trying it, I found that, firstly the bundle is just big. normally it will be bundled into 4 files, 2 of them are engine and the game files. the engine it self is more than 4MB. Although I tried to make as many as file into addressables, the game data is still 10MB. Yes, if you are making a game 10 to 20 MB to load is acceptable. However, I think it is still quite big for a normal web page. I think I will use needle to see if it can be smaller.\n\nSecondly, the building precess is long. As the web build process only allows AOT, IL2CPP is the only option. The average building time is 20 minutes. With the help of addressables, the building time can be reduced base on what you have changed. But it right now only works locally. I am still looking for a solution to make the CI cache the addressables.\n\nAnother thing, debugging on webassembly is not possible in Unity. You can debug your code in Windows build. But if the code crush on only on web, then the only choice you have is to print out the log. You can't even know which file have the error because sourcemap is not supported.\n\nHowever, unity is still a good choice for gaming on web. But if I want a gamefy web page, I think js framework like three.js or babylon.js is still a better choice.\n\nTypescriptGO\n\nTypescript 7 is going to be rewritten in go. I tried the prototype version. A lot function are not implemented yet. Since it will greatly improve the type checking process. I like it.\n\nTV Show\n\nホットスポット is a Japanese TV drama that I started to watch this week. Talks about the main character finds her colleague is an alien. Very fun to watch and relax.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

@@ -1,4 +1,14 @@
 {
   "file": "2019/09/06/csp",
-  "hash": "0a288b6a044ba67b6f13bcaa63998c5789fdec4479c2c6e5dfb503f7f307522b"
+  "hash": "0a288b6a044ba67b6f13bcaa63998c5789fdec4479c2c6e5dfb503f7f307522b",
+  "id": "2019/09/06/csp",
+  "href": "/fe/2019/09/06/csp",
+  "title": "Frontend Security: CSP and Essential Web UI Protection",
+  "date": "2019-09-05T21:00:00.000Z",
+  "content": "Frontend Security: CSP and Essential Web UI Protection\n\nSecurity isn't just a backend concern - your frontend needs protection too! Before diving in, make sure you've read through \"51 penetration test\" and the \"Front-End-Checklist\" for the full picture.\n\n1\\. Reverse Tab Nabbing - The Sneaky Attack\n\nWhat's the deal?\nEver clicked a link that opens in a new tab? Attackers can hijack your original tab and redirect it to a phishing site while you're distracted. Pretty sneaky, right?\n\nThe simple fix:\nJust add this to any user-controlled links with target=\"\\_blank\":\n\nThat's it! This prevents the new page from accessing your original tab.\n\nWant the technical details? Check out OWASP's HTML5 Security Cheat Sheet.\n\n2\\. Content Security Policy (CSP) - Your XSS Shield\n\nWhy you need this:\nWithout CSP, browsers fall back to same-origin policy, which leaves you vulnerable to XSS attacks. Attackers can inject \\<img/> or \\<script/> tags to steal cookies, JWT tokens, and other sensitive data.\n\nImplementation depends on your setup:\n\nFor S3 Bucket Projects\n\nWhen your CI uploads webpack files to AWS S3 and serves via CloudFront:\n\nInstall the CSP plugin:\n\nUse proven configurations: Check out the setup from admin.aftership.com - it covers reCAPTCHA, New Relic Browser, and Google Analytics.\n\nHandle frame-ancestors separately: Some directives can't use \\<meta/> tags and need response headers. Add frame-ancestors and X-Frame-Options in AWS CloudFront to prevent clickjacking.\n\nFor Node Projects\n\nWhen you have a Node server handling everything, you can set CSP headers directly in your server configuration.\n\nValidate your setup:\nUse Google's CSP Evaluator to check if your policy is solid.\n\n3\\. Subresource Integrity (SRI) - Trust But Verify\n\nThe problem:\nCDNs can be compromised, and attackers might inject malicious content into your external scripts and stylesheets.\n\nThe solution:\nAdd integrity checks to your external resources:\n\nGenerate hashes using the SRI Hash Generator.\n\nFor S3 Projects with Webpack\n\nUse the webpack-subresource-integrity plugin and set output.crossOriginLoading to \"anonymous\" in your webpack config.\n\nPro tip: SRI isn't always recommended for user-generated content since integrity hashes can include user agent information, potentially creating privacy concerns.\n\nBottom line: These three techniques form a solid foundation for frontend security. They're not magic bullets, but they'll protect you from the most common web-based attacks. Stay vigilant out there!",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

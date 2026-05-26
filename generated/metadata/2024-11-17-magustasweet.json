@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#627ea5",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2024/11/17/magustasweet",
+  "href": "/lab/2024/11/17/magustasweet",
+  "title": "Magusta Sweet",
+  "date": "2024-11-16T22:00:00.000Z",
+  "content": "Magusta Sweet\n\nThis is an mobile website to help you learn estonia. The frontend is available here. But the backend is down because the starter of the project finally gave up this project.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "llm",
+      "href": "/tag/llm"
+    },
+    {
+      "label": "openai",
+      "href": "/tag/openai"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

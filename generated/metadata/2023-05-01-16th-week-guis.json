@@ -1,4 +1,14 @@
 {
   "file": "2023/05/01/16th-week-guis",
-  "hash": "dc8a161789acfb078fcb4dd37c00c65b4d45dc4cdc43cedeaf4822171f22133b"
+  "hash": "dc8a161789acfb078fcb4dd37c00c65b4d45dc4cdc43cedeaf4822171f22133b",
+  "id": "2023/05/01/16th-week-guis",
+  "href": "/plan/2023/05/01/16th-week-guis",
+  "title": "16th week: GUIs",
+  "date": "2023-04-30T21:00:00.000Z",
+  "content": "16th week: GUIs\n\nlast week, I tried using different GUI frameworks to build a vcode form.\n\nAntD is a fully packed react component library. It is easy to use, and satisfies all the needs without picking.\n\nXState is a state machine/ One thing I like is that it can show the state into a graph. Compared to hooks or redux, this is a nice feature for refactoring.\n\nVue, here are some challenges to learn vue. I used Element+, which is a lot like AntD. Although many people think Vue is easier than React, I think it harder. to learn Vue you have to learn template syntax, an option style API and a composition API. Feels redundant.\n\nSvelte with SMUI, I like material design a lot. Compared to React, Svelte is not so fully prepared. But the code is the simplest in all the frameworks I tried.\n\nLeptos a Rust GUI framework. With signal based reactive programming. It is like SolidJs. It makes rust much easier to use. But WASM still a long way to go. The package is big, 2MB. The page needs to load for the whole file to run.\n\nFlutter renders all element into canvas. But the framework is fully made. I might choose Flutter for my next project.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

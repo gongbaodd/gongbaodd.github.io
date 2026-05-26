@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#6c6cac",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2024/10/28/p5-player",
+  "href": "/fe/2024/10/28/p5-player",
+  "title": "Music Player in p5.js",
+  "date": "2024-10-27T22:00:00.000Z",
+  "content": "Music Player in p5.js\n\nThis is a homework for digital sound class. The code is here.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "p5.js",
+      "href": "/tag/p5.js"
+    },
+    {
+      "label": "fft",
+      "href": "/tag/fft"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

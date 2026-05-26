@@ -1,4 +1,31 @@
 {
   "file": "2024/06/08/week-23-asgards-wrath-2",
-  "hash": "c2d4c90e9eda28c3aead3c6b6ae423500a2a72be8af85e5d286fbc1029cdf4fb"
+  "hash": "c2d4c90e9eda28c3aead3c6b6ae423500a2a72be8af85e5d286fbc1029cdf4fb",
+  "id": "2024/06/08/week-23-asgards-wrath-2",
+  "href": "/plan/2024/06/08/week-23-asgards-wrath-2",
+  "title": "Week 23: Asgard's Wrath",
+  "date": "2024-06-07T21:00:00.000Z",
+  "content": "Week 23: Asgard's Wrath\n\nFrom Beijing's hot summer to the spring in Dalian, I am the only one wearing a summer outfit on the road.\n\nAsgard's Wrath\n\nI decide to play Asgard's Wrath on my Quest 3. It was installed with Quest 3 when I bought it. But I have not played it for 1 year.\n\nI have not pass the beginner part, but I like its interaction design.\n\nWebGL3d.cn\n\nAlso, in this week I started to learn some article on webGL3d.cn. There are some applications of many mathematical theories.\n\nCorrect way to do squats\n\nI bought a 2 weeks entrance ticket from a local gym. After almost a year, I finally can do back squats with a bar. I think my posture was not correct. 2 years ago, my muscle was not big enough to realize that. I felt paralyzed on my right arm when I do squats. Then I found out that I should shrink my trapezius which is the back muscle upper near the neck. Then I felt much better.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "webgl",
+      "href": "/tag/webgl"
+    },
+    {
+      "label": "three.js",
+      "href": "/tag/three.js"
+    },
+    {
+      "label": "quest",
+      "href": "/tag/quest"
+    },
+    {
+      "label": "squats",
+      "href": "/tag/squats"
+    }
+  ]
 }

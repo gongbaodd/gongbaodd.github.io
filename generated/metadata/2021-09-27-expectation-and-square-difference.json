@@ -1,4 +1,23 @@
 {
   "file": "2021/09/27/expectation-and-square-difference",
-  "hash": "b229366372610cf90aec82b2cc3902caa2b9f1da17ff5d4bd64472b3870609d7"
+  "hash": "b229366372610cf90aec82b2cc3902caa2b9f1da17ff5d4bd64472b3870609d7",
+  "id": "2021/09/27/expectation-and-square-difference",
+  "href": "/book/2021/09/27/expectation-and-square-difference",
+  "title": "期望与方差",
+  "date": "2021-09-26T21:00:00.000Z",
+  "content": "期望与方差\n\n| 分布                  | 分布列或概率密度                                                                            | 期望(E)             | 方差(D)               |\n| --------------------- | ------------------------------------------------------------------------------------------- | ------------------- | --------------------- |\n| 0-1                   | $P{X=k}=p^k(1-p)^{1-k},k=0,1$                                                             | $p$                 | $p(1-p)$              |\n| 二项 $B(n,p)$         | $P{X=k}=C^k\\_np^k(1-p)^{n-k},k=0,1,\\cdots,n$                                               | $np$                | $np(1-p)$             |\n| 泊松 $P(\\lambda)$     | $P{X=k}=\\frac{\\lambda^k}{k!}e^{-\\lambda},k=0,1$                                           | $\\lambda$           | $\\lambda$             |\n| 几何$G(p)$            | $P{X=k}=(1-p)^{k-1}p,k=1,2,\\cdots$                                                        | $\\frac{1}{p}$       | $\\frac{1-p}{p^2}$     |\n| 正态$N(\\mu,\\sigma^2)$ | $f(x)=\\frac{1}{\\sqrt{2\\pi}\\sigma}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}, - \\infty < x < + \\infty$ | $\\mu$               | $\\sigma^2$            |\n| 均匀$U(a,b)$          | $f(x)=\\frac{1}{b-a}, a\\<x\\<b$                                                                 | $\\frac{a+b}{2}$     | $\\frac{(b-a)^2}{12}$  |\n| 指数$E(\\lambda)$      | $f(x)=\\lambda e^{-\\lambda x}, x>0$                                                          | $\\frac{1}{\\lambda}$ | $\\frac{1}{\\lambda^2}$ |\n\n$Cov(X,Y)=E\\[(X-EX)(Y-EY)]=E(XY)-EX\\cdot EY$\n\n$\\rho=\\frac{Cov(X,Y)}{\\sqrt{DX}\\sqrt{DY}}$\n\n$\\rho\\_{XY}=0$ 则 XY 不相关\n\n$\\rho\\_{XY} \\ne 0$ 则 XY 相关",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "概率论",
+    "href": "/series/probability"
+  }
 }

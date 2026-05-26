@@ -1,4 +1,27 @@
 {
   "file": "2026/02/23/unity-localization",
-  "hash": "534426514e36fa4aa7ca3b02ade64a785ba0b5b886a5c25ae19ddfd63da21298"
+  "hash": "534426514e36fa4aa7ca3b02ade64a785ba0b5b886a5c25ae19ddfd63da21298",
+  "id": "2026/02/23/unity-localization",
+  "href": "/tech/2026/02/23/unity-localization",
+  "title": "Week 7: Mastering Localization in Unity",
+  "date": "2026-02-22T22:00:00.000Z",
+  "content": "Week 7: Mastering Localization in Unity\n\nLast week, I dove deep into the world of localization for Grandpa's Bee Haven 🍯🐝. To many, localization seems like a simple 1:1 mapping of words. However, once you start implementing it, you realize there is so much more to consider! 🤯\n\nI’m using Unity's official Localization Package. It’s fantastic because it supports CSV and Google Sheets, allowing translators to work their magic without ever having to touch the Unity Editor! 📊✨\n\n🎨 Step 1: Creating the Fonts\n\nIn game dev, your first hurdle is rasterizing fonts. For our project, we chose Google's Noto Sans 🅰️. It’s open-source and supports almost every language we need. 🌏\n\nThe Setup: Download these .ttf files:\n\n✅ NotoSans-Regular\n\n✅ NotoSansSC-Regular (Simplified Chinese)\n\n✅ NotoSansTC-Regular (Traditional Chinese)\n\n✅ NotoSansJP-Regular (Japanese)\n\n✅ NotoSansKR-Regular (Korean)\n\n⚠️ Pro-Tip on Padding: I noticed that with a 5px padding, Latin letters looked blurry in-game. Switching to 10px fixed it! However, 10px assets for CJK fonts are massive (over 100MB! 😱), so I kept CJK at 5px. Luckily, blurriness is much less noticeable on complex CJK characters.\n\n✨ TextMeshPro Font Asset Creator Settings\n\nGo to Window -> TextMeshPro -> Font Asset Creator and use these specs:\n\n| Language | Resolution | Padding | Character Set / Unicode Range |\n| --- | --- | --- | --- |\n| Latin | 1024x1024 | 10px | Extended ASCII |\n| Cyrillic | 1024x1024 | 10px | 400-4FF, 500-52F |\n| Greek | 1024x1024 | 10px | 370-3FF, 1F00-1FFF |\n| Latin Extended | 1024x1024 | 10px | 0100-017F |\n| Japanese | 4096x4096 | 5px | Hiragana, Katakana, Katakana Extensions, Full-width forms, Kanji (3040-309F,30A0-30FF,31F0-31FF,FF00-FFEF,4E00-9FFF) |\n| Korean | 4096x4096 | 5px | 1100-11FF, 3130-318F, AC00-D7AF, FF00-FFEF |\n| Simp. Chinese | 4096x4096 | 5px | 3500 Common Characters |\n| Trad. Chinese | 4096x4096 | 5px | 4E00-9FA5, FF00-FFEF |\n\nThe Result: You’ll end up with a library of SDF assets. Select your main font (NotoSans-Regular SDF) and in the Inspector, add all the other SDFs to the \"Fallback Font Assets\" list. Unity will now automatically swap to the correct font when it sees a specific character! 🧠💡\n\n📦 Working with the Package\n\nThe official guide is great for the basics, but here’s my workflow:\n\nUI Elements: It’s incredibly easy! Click the three dots (context menu) on any TextMeshPro component -> Click Localize.\n\nUnity adds a Localize String Event automatically.\n\nJust pick your string from the table, and you're done! 🎯\n\nFor the Coders 💻: Use LocalizedString to reference your entries and call GetLocalizedString() to fetch the data:\n\n📺 Need a visual? This YouTube video is an excellent resource: Unity Localization Tutorial.\n\n☁️ Google Sheets Integration\n\nThe official Google Sheets Service Provider guide is very detailed.\n\nI opted for OAuth for authentication. By setting the API to \"Testing\" mode, I can strictly limit access to specific user accounts. Even if someone gets hold of the OAuth credentials, they can't access the data without being on the allow-list. Safety first! 🔒🛡️\n\nIs this over? No, there are very long words in different languages, these have to be polished manually. 😅\n\nTo read about making a language selection feature, please forward to this blog.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "localization",
+      "href": "/tag/localization"
+    },
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ],
+  "series": {
+    "label": "Grandpa's bee Haven",
+    "href": "/series/grandpa-bee"
+  }
 }

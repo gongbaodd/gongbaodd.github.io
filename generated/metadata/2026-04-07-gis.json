@@ -8,5 +8,36 @@
   "colorSet": {
     "bgColor": "#788faa",
     "titleColor": "--mantine-color-red-3"
+  },
+  "id": "2026/04/07/gis",
+  "href": "/tech/2026/04/07/gis",
+  "title": "🌍 GIS in Unity",
+  "date": "2026-04-06T21:00:00.000Z",
+  "content": "🌍 GIS in Unity\n\nLast year's retrospective, I mentioned that I always wanted to learn GIS.\n\nEarly this year, I attended a workshop to learn QGIS. But I never have time to try by myself.\n\nCesium for Hong Kong\n\nHong Kong Lands Department provides open scaned data of the city.\n\nThe Setup\n\nFirst, I needed the Cesium for Unity plugin. While Cesium offers a quick start tutorial, I actually ran into issues downloading the plugin through the standard installer. 😅 I ended up heading to the GitHub releases and installing it manually—which worked like a charm! 🛠️\n\nConnecting the Data\n\nBefore rendering anything, you’ll need an API key from the Hong Kong Common Spatial Data Infrastructure (CSDI). Once you have that, look for your target data; I used the 3D Visualization Map API.\n\nIn Unity:\n\nOpen the Cesium menu and create a Blank 3D Tile Tileset.\n\nIn the Inspector, change the source to the CSDI URL.\n\nUpdate the coordinates to Latitude: 22.3193 and Longitude: 114.1694.\n\nThe data is massive, so it takes a moment to load, but the level of detail in the scan is impressively clear! 📸✨\n\nHong Kong\n\n🏰 ArcGIS for Tallinn\n\nFinding the raw data for the Tallinn 3D map was a bit of a treasure hunt since the site is mostly in Estonian. 🇪🇪\n\nHowever, because the site is built on ArcGIS Scene Viewer, I was able to snag the API endpoint directly from the browser's DevTools. 🕵️‍♂️\n\nThe Setup\n\nFor this one, you'll need the ArcGIS Maps SDK for Unity. Similar to Cesium, you'll also need to generate an API key from the ArcGIS Developer portal. 🔑\n\nBringing Tallinn to Unity\n\nCreate an ArcGIS Map component.\n\nAdd a new layer using the Tallinn URL as the source.\n\nSet the layer type to ArcGIS 3D Object Scene Layer.\n\nSet the coordinates to Longitude: 24.7° and Latitude: 59.4°.\n\nThe city model is relatively lightweight (about 2GB), so it loads quite fluently. While the buildings look a bit like \"paper crafts\" (LoD2 quality) compared to the photogrammetry of HK, it’s more than enough to create some awesome game scenes! 🏗️🎨\n\nTallinn",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "gis",
+      "href": "/tag/gis"
+    },
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "cesium",
+      "href": "/tag/cesium"
+    },
+    {
+      "label": "arcgis",
+      "href": "/tag/arcgis"
+    }
+  ],
+  "series": {
+    "label": "Master Thesis",
+    "href": "/series/master"
   }
 }

@@ -1,4 +1,39 @@
 {
   "file": "2024/01/22/week-3-apple-developer-account",
-  "hash": "22cb8fe92a15bcc20600886694cdfcb7db3e65cf6f52e115cdbeb3828f190f3c"
+  "hash": "22cb8fe92a15bcc20600886694cdfcb7db3e65cf6f52e115cdbeb3828f190f3c",
+  "id": "2024/01/22/week-3-apple-developer-account",
+  "href": "/plan/2024/01/22/week-3-apple-developer-account",
+  "title": "Week3: Apple Developer Account",
+  "date": "2024-01-21T22:00:00.000Z",
+  "content": "Week3: Apple Developer Account\n\nThis week, I tried to apply for an Apple Developer Account, but I failed. Turns out there is someone already used my ID card to registered. After trying about 1 week, wasting my Hong Kong number and two of my Thailand numbers, I still can not apply one for myself. I think I will give up.\n\nSome boilerplate\n\nFirstly, there's a template by Nx for expo. Tailwind for expo is NativeWind. After compared with solito and ignite. I tried ignite, and it is amazing.\n\nThere is also a book about monorepo for react, I will read it next week.\n\nMeta Spark Studio\n\nMeta Spark Studio is an AR effect developer platform, which is used for instagram. But rumor has it hat ist will be used to develop Apps in oculus. Here is the official tutorial. This is the youtube tutorial. These are pretty old. I think I will try to learn it later.\n\nTo download the software, go to this page.\n\nSame-Site Cookie\n\nThis video explains new change on the cookie policy, same site\n\nExpo .ipa files\n\nExpo used to support building .ipa files, but now it is not supported anymore. I think I will try to figure out how. And then signing the app for personal use is easy. Just using i4Tools.\n\nThe Boy Who lived\n\nA film about a disabled stunt man of Harry Potter",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "nx",
+      "href": "/tag/nx"
+    },
+    {
+      "label": "nativewind",
+      "href": "/tag/nativewind"
+    },
+    {
+      "label": "solito",
+      "href": "/tag/solito"
+    },
+    {
+      "label": "ignite",
+      "href": "/tag/ignite"
+    },
+    {
+      "label": "meta spark",
+      "href": "/tag/meta spark"
+    },
+    {
+      "label": "same-site cookie",
+      "href": "/tag/same-site cookie"
+    }
+  ]
 }

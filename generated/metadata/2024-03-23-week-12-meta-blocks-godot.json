@@ -1,4 +1,14 @@
 {
   "file": "2024/03/23/week-12-meta-blocks-godot",
-  "hash": "2ef6f2e962b9f22bcda64b6a466d48220f6796770f2c810b9d8356162fbe63b2"
+  "hash": "2ef6f2e962b9f22bcda64b6a466d48220f6796770f2c810b9d8356162fbe63b2",
+  "id": "2024/03/23/week-12-meta-blocks-godot",
+  "href": "/plan/2024/03/23/week-12-meta-blocks-godot",
+  "title": "Week 12: Meta Blocks and Godot",
+  "date": "2024-03-22T22:00:00.000Z",
+  "content": "Week 12: Meta Blocks and Godot\n\nMeta Blocks\n\nMeta provide a All in One XR toolkit to make building AR/VR app easier. You don't need to make many configurations to make an app.\n\nLast week, I used most time to learn unity. I bumped into some problems. For the most time, I used to preview App. Turns out the compiled version is different from the preview one. So don't trust the preview.\n\nGodot\n\nAnother thing, because I kept get new pushes from godot. So I tried to use it follow this video this week. Turns out to make a XR app is much easier than unity. The documents are clear.\n\nGodot is cool, but since meta toolkit is easy enough. I will still use unity for a while.\n\nAvatar: Legend of Korra\n\nFinished the two series of Avatar. Masterpiece. Different from avatar Ang. Avatar Korra is born in a more modern world. Avatar Ang ends the fire nation's invasion. But after he died, there are still two things unfinished. Rebuild the air nation and the peace of the newly built republic city. Left Korra to finish.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

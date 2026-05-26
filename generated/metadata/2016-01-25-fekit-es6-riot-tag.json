@@ -1,4 +1,14 @@
 {
   "file": "2016/01/25/fekit-es6-riot-tag",
-  "hash": "2538848e85269ca5375bf090b166200066daffa08b7ef72981a0b91c486ce257"
+  "hash": "2538848e85269ca5375bf090b166200066daffa08b7ef72981a0b91c486ce257",
+  "id": "2016/01/25/fekit-es6-riot-tag",
+  "href": "/fe/2016/01/25/fekit-es6-riot-tag",
+  "title": "Fekit 支持 es6 和 riot 的 tag",
+  "date": "2016-01-24T22:00:00.000Z",
+  "content": "Fekit 支持 es6 和 riot 的 tag\n\n在如下目录里面添加 tag.js 和 es6.js",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

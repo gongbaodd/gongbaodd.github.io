@@ -1,4 +1,35 @@
 {
   "file": "2023/11/04/44th-week-website",
-  "hash": "95526ffc22a1a2b50d34fed177ffbfd2e5f4ddc024a99fb8020aeaaad229c874"
+  "hash": "95526ffc22a1a2b50d34fed177ffbfd2e5f4ddc024a99fb8020aeaaad229c874",
+  "id": "2023/11/04/44th-week-website",
+  "href": "/plan/2023/11/04/44th-week-website",
+  "title": "Week 44th: still work on the website",
+  "date": "2023-11-03T22:00:00.000Z",
+  "content": "Week 44th: still work on the website\n\nGot my HSBC card, it seem a PIN code still on the way.\n\nInstalled several \"mainland China Only\" browsers on Hyper-V, to install windows XP or windows 7 in a virtual machine, it's better to use Hyper-V. For network, just use the physical one.\n\nUsing Chat GPT to format some of my old posts, got some experience on it. Firstly, I want GPT to finnish my whole work, it did not work well. THen I tried to separate it into multiple parts, it worked well.\n\nThis week, Clash for windows was deleted from github.com, then clash core was deleted, too. I used new bing to make two sad blue cat to memorize it.\n\nMy home spinning bike was broken, I fixed it poorly, sad.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "browser",
+      "href": "/tag/browser"
+    },
+    {
+      "label": "hyper-v",
+      "href": "/tag/hyper-v"
+    },
+    {
+      "label": "gpt",
+      "href": "/tag/gpt"
+    },
+    {
+      "label": "clash",
+      "href": "/tag/clash"
+    },
+    {
+      "label": "spinning bike",
+      "href": "/tag/spinning bike"
+    }
+  ]
 }

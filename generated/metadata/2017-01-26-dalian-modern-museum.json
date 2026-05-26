@@ -17,5 +17,15 @@
   "colorSet": {
     "bgColor": "#80827d",
     "titleColor": "--mantine-color-gray-2"
-  }
+  },
+  "id": "2017/01/26/dalian-modern-museum",
+  "href": "/travel/2017/01/26/dalian-modern-museum",
+  "title": "大连“现代”博物馆",
+  "date": "2017-01-25T22:00:00.000Z",
+  "content": "大连“现代”博物馆",
+  "category": {
+    "label": "travel",
+    "href": "/travel"
+  },
+  "tags": []
 }

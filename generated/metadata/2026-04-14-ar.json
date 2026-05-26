@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#a29275",
     "titleColor": "--mantine-color-indigo-2"
+  },
+  "id": "2026/04/14/ar",
+  "href": "/fe/2026/04/14/ar",
+  "title": "AR: Environment Blend",
+  "date": "2026-04-13T21:00:00.000Z",
+  "content": "AR: Environment Blend\n\nThere are three types of blend mode, Opaque(true VR), Addtive(Video passthrough), Alpha(Optical passthrough) in OpenXR.\n\nThis time I will talk about AR, Augumented Reality. As the former blog I mentioned that OVR and XRI handles differently.\n\nIn OVR, new meta provides building blocks which you can one click to build video passthrough. But sadly it can only work with ISDK meaning that it shows no effect on Unity's XRI although it adds \"OVR Passthrough Layer\" on XR origin.\n\nIf you are using Unity's XRI, which is the most people's choice. You need to add AR foundation package. Then add the AR session into the scene, also add AR Raycast manager into the XR Origin. And add \"AR Camera Manager\" and \"AR Camera background\" on the MainCamera.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    },
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ],
+  "series": {
+    "label": "Master Thesis",
+    "href": "/series/master"
   }
 }

@@ -17,5 +17,32 @@
   "colorSet": {
     "bgColor": "#9b5b52",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2024/11/04/week-44-halloween",
+  "href": "/plan/2024/11/04/week-44-halloween",
+  "title": "Week 44: Halloween 🎃👻",
+  "date": "2024-11-03T22:00:00.000Z",
+  "content": "Week 44: Halloween 🎃👻\n\nThis was my first Halloween ever!\nI dressed up as a ghost with nothing but a white sheet from JYSK (cheap & effective 😅). Couldn’t find a costume shop nearby, and honestly, I couldn’t afford an expensive one anyway.\n\nWe played an escape room game in some second-year students’ apartment. They had prepared everything really carefully — and it turned out super fun! 🙌\n\ngroup photo\n\nRenderDoc 🖥️\n\nLast month, I spent a lot of time struggling with WebGL shaders.\nNot only am I not super familiar with the syntax, but I also wasn’t sure when to use shaders or how to debug them 🤯.\n\nChatGPT helped a lot (shoutout 🙏), but it still wasn’t enough.\n\nThen I discovered RenderDoc — a free, open-source graphics debugger that lets you capture and replay frames. I haven’t used it yet, but I’ll definitely try it next time.\n\nMeanwhile, in my 2D graphics class, I learned some fun effects in Krita 🎨. I think I’ll try recreating them with shaders soon.\n\nMeta Spatial SDK 🕶️\n\nWhile helping some students with their VR project, I found out that Meta already released their Spatial SDK.\nIt even has support for Android Studio and Unreal Engine.\n\nGonna test both in the coming weeks 👀.\n\nEdTech Hackathon 🚀\n\nI joined a team for an EdTech Hackathon! We’re working on an app to help people study Estonian 🇪🇪.\n\nI came across Ekilex — a digital Estonian dictionary API. The catch? The whole website is in Estonian 😅. So I’ll need some time to figure out how to actually use it.\n\nExcited to see where this goes! 🙌",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "renderdoc",
+      "href": "/tag/renderdoc"
+    },
+    {
+      "label": "spatial-sdk",
+      "href": "/tag/spatial-sdk"
+    },
+    {
+      "label": "unreal",
+      "href": "/tag/unreal"
+    },
+    {
+      "label": "edtech",
+      "href": "/tag/edtech"
+    }
+  ]
 }

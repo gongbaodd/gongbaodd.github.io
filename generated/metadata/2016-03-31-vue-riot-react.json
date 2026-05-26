@@ -1,4 +1,14 @@
 {
   "file": "2016/03/31/vue-riot-react",
-  "hash": "0457b80b487b181c201ba316e50798bbcdac80bb16dc27fed433c5239409f38f"
+  "hash": "0457b80b487b181c201ba316e50798bbcdac80bb16dc27fed433c5239409f38f",
+  "id": "2016/03/31/vue-riot-react",
+  "href": "/fe/2016/03/31/vue-riot-react",
+  "title": "vue+riot+react 试用报告",
+  "date": "2016-03-30T21:00:00.000Z",
+  "content": "vue+riot+react 试用报告\n\n前言\n\n本报告不是针对哪个框架，单独说哪个框架好，撕逼的出门右拐微博谢谢\n\n最近迷上了组件化开发，感觉这是一种非常高效率的开发模式（说模式有点不对）。于是我第一时间找到了这仨库来做比较，下面请听我细细道来。\n\n本报告拢共扯了这些蛋\n\n三个库列表渲染性能比较\n\n三个库的学习曲线(自己体会吧)\n\n三个库静态页面动态渲染行为的方式(呵，这话说得)\n\nrollup、postcss、webpack\n\n对 ES2015 使用的建议\n\n测试结果\n\n关于项目\n\n工具\n\n1.分别使用三个库创建一个模拟 native 的无线滚动列表 2.体验一下三个库的开发效率、文件大小、学习曲线以及最终性能\n\n由于时间问题，这几个项目都没有使用 fekit 开发，并且都用了 ES6 的一部分功能\n\nriot -> rollup\n\nreact -> webpack\n\nvue -> vue-cli(webpack)\n\n组件\n\n三个项目都有基于组件化的思想，所以架构设计相同\n\nApp\n\nScroller\n\nCard\n\nCard\n\nCard\n\n...\n\n用的 ES2015 功能\n\n箭头函数\n\n解构\n\nimport\n\nJSX（算是吧）\n\n文件大小\n\nriot\n\norigin: 93k\n\nuglified: 40k\n\ngzip: 14k\n\nreact\n\norigin: 689k\n\nuglified: 356k\n\ngzip: 76k\n\nvue\n\norigin: null\n\nuglified: 79.8k\n\ngzip: 27k\n\n性能分析\n\n渲染一个富文本列表，项目数 n\n\n列表添加内容，项目数 n\n\n删除部分内容，项目数 n\n\n列表倒置\n\nn===400\n\nriot\n\n300ms\n\n38ms\n\n15ms\n\n150ms\n\nreact\n\n357ms\n\n478ms\n\n177ms\n\n278ms\n\nvue\n\n480ms\n\n403ms\n\n124ms\n\n152ms\n\nn===800\n\nriot\n\n477ms\n\n287ms\n\n261ms\n\n273ms\n\nreact\n\n688ms\n\n1167ms\n\n531ms\n\n625ms\n\nvue\n\n750ms\n\n775ms\n\n256ms\n\n270ms\n\nn===1600\n\nriot\n\n917ms\n\n776ms\n\n546ms\n\n641ms\n\nreact\n\n2780ms\n\n3109ms\n\n1612ms\n\n1067ms\n\nvue\n\n1348ms\n\n1533ms\n\n1167ms\n\n712ms\n\nn===3200\n\nriot\n\n2268ms\n\n1816ms\n\n2444ms\n\n1474ms\n\nreact\n\n5374ms\n\n7411ms\n\n4107ms\n\n2316ms\n\nvue\n\n2657ms\n\n2868ms\n\n3113ms\n\n1744ms\n\n学习曲线（在组件化方面，自己体会）\n\nriot\n\nreact\n\nvue\n\n三个库静态页面动态渲染行为的方式\n\n模板渲染(Vue,riot)\n\n两者都是模板渲染，所以你的 html 如果按照它们模板语法来写，渲染起来很简单\n\n数据元渲染(react，咦？html 不算数据元)\n\nreact 相当于把渲染的内容转成类似于 json 的数据元，到客户端渲染的时候还需要解析一遍数据元。。。\n说白了，你得用 redux 或者 flux 或者 relay\n\nrollup、postcss 还是 webpack\n\n实际上都是些工具上的事，汗啊，还是哪天说吧\n\nes2015 该用啥\n\nes2015 编译主要体现在\n\n语法糖编译\n\npollyfill\n\nmodules\n\n语法糖编译\n\nclass\n\n解构\n\n箭头符号\n\ndecorator（争议）\n\npollyfill\n\nPromise\n\ngenerator\n\nasync/await(7)\n\nmodules\n\nimport\n\nexport\n\n个人感觉\n\npollyfill 实在太大了，如果能不用就别用\n\n语法糖最好用一下，代码可读性一下提高好多\n\nmodules 我靠你连这个都不用你还好意思说你用的是 es6，这玩意儿不仅要用还不要转译成 AMD 或者 CMD，就按照 es6 的规范做才对，给 rollup 点个赞。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

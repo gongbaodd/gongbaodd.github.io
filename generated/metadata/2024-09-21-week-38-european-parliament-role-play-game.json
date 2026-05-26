@@ -17,5 +17,24 @@
   "colorSet": {
     "bgColor": "#958768",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2024/09/21/week-38-european-parliament-role-play-game",
+  "href": "/plan/2024/09/21/week-38-european-parliament-role-play-game",
+  "title": "Week 38: European Parliament Role Play Game 🎲🇪🇺",
+  "date": "2024-09-20T21:00:00.000Z",
+  "content": "Week 38: European Parliament Role Play Game 🎲🇪🇺\n\nThis week was packed with studying 📚, but I also came up with some fresh game ideas 👾✨\n\nDigital board game 🎮 — I’m planning to use ChatGPT as a helper and build it in p5.js. It’ll be my Digital Graphics & Sounds homework, and maybe even my next game jam entry.\n\nPixel art maker 🟦 — I stumbled upon pixelIt, a JS library that turns images into pixel art. Super fun for quick retro vibes!\n\nOn Friday, I joined the European Parliament Role Play Game as part of my Digital Learning Game course.\n\n\n\nThe vibe was like The Sims, but with politics — you play as a European Parliament member from one of four parties: Tradition, Solidarity, Liberty, or Ecology 🏛️.\n\n\n\nThe game revolved around two hot issues:\n\n💧 Water infrastructure — building systems, hiring researchers, and raising fees to fund it.\n\n💳 Implanting ID chips — justified as “for security reasons.”\n\nI went with the water issue. At first, I got a proposal of €50M and no agency support. My party wanted more, so we rejected it.\n\nThen came a twist — an earthquake hit 🌍⚡ and all decisions had to be voted on again!\n\nIn the end, every proposal passed ✅, which felt like a rare win in politics.\n\n\n\nOverall, it was a surprisingly engaging way to mix learning and play — and maybe even sparked some inspiration for my own game projects 🎮💡",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "game-ideas",
+      "href": "/tag/game-ideas"
+    },
+    {
+      "label": "pixelit",
+      "href": "/tag/pixelit"
+    }
+  ]
 }

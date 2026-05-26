@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#9e8150",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2018/10/13/node",
+  "href": "/fe/2018/10/13/node",
+  "title": "阿里深圳node地下铁",
+  "date": "2018-10-12T21:00:00.000Z",
+  "content": "阿里深圳node地下铁\n\n\n\n渲染服务化，egg.js北斗\n\n最早同机部署，利用热更新，减少node发布频率。\n\n使用node做页面渲染，渲染好的html给java层，最终分发还是给java。\n\n资源争抢，linux cgroup，但是没实现。\n\n静态资源分发系统，使用推送的方式（其实我没听懂那面拉取说的是啥。。。），基于阿里的DragonFly。\n\nnode devops\n\nsandbox\n\n代码治理，哎呀就是linting啊typechecking啊。\n\n包治理，到底是大厂，包有问题还能查出来。居然还知道那些应用用过哪些包。\n\n数据治理，错误日志分析。\n\n链路分析\n\n远程调试，可以在办公区调试服务机器。\n\n故障演练，内部平台不给人看啊。QCon 找到了视频，有机会看下。\n\n另外可以看下pandora.js\n\nNode-FFI\n\n牛逼你深圳，上哪儿听js的分享能谈到IoT啊。\n\n应用背景是想要用JS去调用C的动态链接库。毕竟JS写起来容易些。\n\n原来多语言交互，通过共享内存、RPC调用或者外部函数调用（FFI）。\n\nmJS比较感兴趣，是mongoose os的js运行语言。\n\nTarsjs\n\ntars听起来巨牛逼，没听懂。。。\n\n话说阿里的投屏系统是什么，还带录屏功能，貌似我在mac上没用过投屏系统啊。\n\ntarjs提供了一套高性能的RPC协议，可以用 @tar/stream 获取。\n\n太多了，听不懂啊。\n\n进程管理，进程重启，无损重启，数据监控。\n\nnode监控指标：\n\nmemUsage、 cpuUsage、 eventLoopLag：队列延迟， libuv\n\nLongStackTrace组件的实现\n\n问题背景\n\n具体代码",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

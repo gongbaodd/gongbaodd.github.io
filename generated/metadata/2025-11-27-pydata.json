@@ -17,5 +17,36 @@
   "colorSet": {
     "bgColor": "#a17267",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2025/11/27/pydata",
+  "href": "/tech/2025/11/27/pydata",
+  "title": "PyData Tallinn",
+  "date": "2025-11-26T22:00:00.000Z",
+  "content": "PyData Tallinn\n\nWhat an exciting evening! I recently attended my very first PyData Tallinn event. The energy was fantastic, and the topics were deeply engaging, focusing on the cutting-edge intersection of Extended Reality (XR) and Graph Computing.\n\n\n\n💡 Session Highlights\n\nThe main focus of the evening was on these two fascinating areas. You can find more details about the talks here: PyData Tallinn X Wise.\n\n✨ My Top Picks & Key Takeaways\n\nI walked away with two standout resources I'm keen to explore further:\n\nGraphFrames:\n\nThis is an impressive graph API for Apache Spark.\n\nIt offers a scalable and efficient way to work with graph algorithms.\n\nIt presents a compelling alternative to dedicated graph databases like Neo4j, especially when integrating with existing Spark pipelines.\n\nmarimo notebook:\n\nA promising, lightweight alternative to traditional Jupyter Notebooks.\n\nI'm looking forward to diving in and seeing how it improves the interactive data exploration and sharing workflow.\n\nLast time I check some big data stuffs, were Handoop and Hives, it was a great experience connecting with the local data science community and getting a glimpse into the latest developments in these fields.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    },
+    {
+      "label": "spark",
+      "href": "/tag/spark"
+    },
+    {
+      "label": "pydata",
+      "href": "/tag/pydata"
+    },
+    {
+      "label": "graph-computing",
+      "href": "/tag/graph-computing"
+    },
+    {
+      "label": "data-science",
+      "href": "/tag/data-science"
+    }
+  ]
 }

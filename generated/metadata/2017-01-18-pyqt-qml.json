@@ -1,4 +1,14 @@
 {
   "file": "2017/01/18/pyqt-qml",
-  "hash": "263fe2a5a13c6485ff10f4ad80a8fc2c5c460762162a6d1ecf4c99c9112d96c3"
+  "hash": "263fe2a5a13c6485ff10f4ad80a8fc2c5c460762162a6d1ecf4c99c9112d96c3",
+  "id": "2017/01/18/pyqt-qml",
+  "href": "/tech/2017/01/18/pyqt-qml",
+  "title": "在QML上下文插入变量",
+  "date": "2017-01-17T22:00:00.000Z",
+  "content": "翻了翻以前保存的书签，发现了一个pyQt和QML的开发总结，代码跑起来还是有点错误，但是还是比官网的tutorial更简单直观一点。还能从里面找一点hybrid开发的idea（因为QML其实也是一种ECMAScript引擎实现）。\n\n在QML上下文插入变量\n\n在view.setSource之前将变量插入上下文之中。\n\nPyQt修改QML中变量\n\n这样可以先加载qml再修改内部的值，注意property后面是有类型的。\n\n消息传递\n\nQT最主要的就是它的信号槽机制，对我的影响也很很大，以至于我现在的组件开发也在用这一套思维。那么QT怎么和QML内部进行消息传递呢？\n\n调用QML内部函数\n\n就酱，后面再写一篇QML调用js的文章吧🤔。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

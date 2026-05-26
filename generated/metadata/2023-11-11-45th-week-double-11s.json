@@ -1,4 +1,59 @@
 {
   "file": "2023/11/11/45th-week-double-11s",
-  "hash": "f7f8e8ce23a28c824e3faff2da949e34287e5f8f11a16d712b75b08563984d3b"
+  "hash": "f7f8e8ce23a28c824e3faff2da949e34287e5f8f11a16d712b75b08563984d3b",
+  "id": "2023/11/11/45th-week-double-11s",
+  "href": "/plan/2023/11/11/45th-week-double-11s",
+  "title": "Week 45: 2023年双十一",
+  "date": "2023-11-10T22:00:00.000Z",
+  "content": "Week 45: 2023年双十一\n\nWhat I bought\n\nBougt a GaN charger, because I do not have enough type-c charger.\n\nAstro\n\nTurns out there are a lot strict rules in astro, for instance, RSS feed rules. The web world is becoming more and more strict. I kind like how it goes.\n\nKatex on Astro\n\nThis blog shares the config to use katex on astro. The latest version is not correct, should use the correct remark-math package for remark.\n\nRemark\n\nBy reading Awesome Remark, found some interesting plugins.\n\nApple Watch & React Native\n\nJust a little research, here is the link.\n\nProxmox\n\nProxmox is a VM that can share the GPU with the host. Sadly, it could only work as a server, meaning that it need at least two machines.\n\nFavicons\n\nReal favicon generator packs a zip for all icons work for web and mobile.\n\nTailwind\n\nThis is a nice cheatsheet for tailwind CSS.\n\nShare Windows fonts for WSL\n\nThis is a workable solution. Run sudo fc-cache -r -v to make it work, sometimes WSL need to restart.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "gan charger",
+      "href": "/tag/gan charger"
+    },
+    {
+      "label": "astro",
+      "href": "/tag/astro"
+    },
+    {
+      "label": "katex",
+      "href": "/tag/katex"
+    },
+    {
+      "label": "remark",
+      "href": "/tag/remark"
+    },
+    {
+      "label": "apple watch",
+      "href": "/tag/apple watch"
+    },
+    {
+      "label": "proxmox",
+      "href": "/tag/proxmox"
+    },
+    {
+      "label": "favicons",
+      "href": "/tag/favicons"
+    },
+    {
+      "label": "tailwind",
+      "href": "/tag/tailwind"
+    },
+    {
+      "label": "wsl",
+      "href": "/tag/wsl"
+    },
+    {
+      "label": "fonts",
+      "href": "/tag/fonts"
+    },
+    {
+      "label": "react native",
+      "href": "/tag/react native"
+    }
+  ]
 }

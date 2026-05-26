@@ -1,4 +1,19 @@
 {
   "file": "2025/04/06/dots-basic",
-  "hash": "3d6bad3835706776b26ca37af257cde84224773983b8cb8369d1897a629cad29"
+  "hash": "3d6bad3835706776b26ca37af257cde84224773983b8cb8369d1897a629cad29",
+  "id": "2025/04/06/dots-basic",
+  "href": "/tech/2025/04/06/dots-basic",
+  "title": "DOTS: Basic",
+  "date": "2025-04-05T21:00:00.000Z",
+  "content": "DOTS: Basic\n\nThis article is a summary on studying Basics of DOTS: Jobs and Entities. This also can be a follow up on the article .\n\nUnity DOTS (Data-Oriented Technology Stack) is a set of technologies that allows developers to write high-performance, multithreaded code in Unity. It consists of three main components: the Entity Component System (ECS), the C# Job System, and the Burst Compiler. Currently it does not support WebGL. It can be built but you will get errors when running.\n\nSo let's go back to the ECS. As I mentioned in the previous article, I found it weird to cut data into small pieces in components. But it is actually a good practice as it will allow multiple threads to work without many locks. When putting all the pieces together in components, in unity they use structs, which is a consist memory layout, it will improve the CPU hit rate. However, the code looks hard to understand. Maybe because I see it in an OOP way.\n\nSo, on web, if we are using ECS, the benefits that are based on multithreading and shared memory are currently not available. So using ECS on web is just a way to organize the code.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "ecs",
+      "href": "/tag/ecs"
+    }
+  ]
 }

@@ -1,4 +1,14 @@
 {
   "file": "2015/05/04/nativescript",
-  "hash": "9c82e56d4b9188790dce960e7d00eea3a9bc6a8f4c9162c1a7135b69a11f1a47"
+  "hash": "9c82e56d4b9188790dce960e7d00eea3a9bc6a8f4c9162c1a7135b69a11f1a47",
+  "id": "2015/05/04/nativescript",
+  "href": "/fe/2015/05/04/nativescript",
+  "title": "nativescript",
+  "date": "2015-05-03T21:00:00.000Z",
+  "content": "\\#nativescript试探报告\n\n上一周得流感，再加上react-native只支持iOS，头脑一热，除了研究了ionic，还看了nativescript。感觉吧，nativescript比起QML之类的语言，最大的优点就是不必再去学习一门新的语言，因为它不是js的超集，而是完全的js，并且支持双向绑定，完全迎合现在的web开发。\n用完nativescript有这么几个感受：\n\n用telerik platform ide感觉还是不错的，在安卓安装app可以同步更新软件，可惜这个ide只能使用30day。\n\n官方给的文档经过证实已经部分过期。。。我只能拿现成的project当例子。\n\ncss使能够用的，但是和react-native一样，都是真正的css的子集。\n\n安卓上的性能不比hybrid好，等更新吧～\n\n不用像QML一样，的确是mvvm，顶多需要学学安卓里面的xml就好了。\n\ncli需要翻墙！！！\n\n安装nativescript,安卓需要r17\n\n创建工程\n\n添加安卓支持\n\n编译及调试",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

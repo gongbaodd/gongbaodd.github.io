@@ -1,4 +1,14 @@
 {
   "file": "2023/05/29/21st-week-cloudflare-workers-and-graphql-yoga",
-  "hash": "a5777267337db4e608ac1d1575a53abe0fec015fee3d56b8c2bb758fdd4bb594"
+  "hash": "a5777267337db4e608ac1d1575a53abe0fec015fee3d56b8c2bb758fdd4bb594",
+  "id": "2023/05/29/21st-week-cloudflare-workers-and-graphql-yoga",
+  "href": "/plan/2023/05/29/21st-week-cloudflare-workers-and-graphql-yoga",
+  "title": "21st Week: Cloudflare Workers and GraphQL Yoga",
+  "date": "2023-05-28T21:00:00.000Z",
+  "content": "21st Week: Cloudflare Workers and GraphQL Yoga\n\nI've been working on adding a backend for qwert-learner.\n\nTo keep this App a static site, I decided to ditch the Restful API and use GraphQL instead. Since it only requires one endpoint. A lot schemes can found like Azure functions, AWS Lambda, Google Cloud Functions, DigitalOcean Functions and Cloudflare Workers. MongoDB Atlas is a cheap choice for database. But Cloudflare workers can use KV to store data, which is a better choice for me.\n\nCampared with Apollo Server, GraphQL Yoga is a lightweight one. Can be simply integrated with a lot providers like cloudflare. Here is the document.\n\nDeveloping cloudfalre workers is much easier with wrangler. Can use miniflare to do unit testing.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

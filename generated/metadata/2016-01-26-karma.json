@@ -1,4 +1,14 @@
 {
   "file": "2016/01/26/karma",
-  "hash": "16037c87e208ff3fc16d07edc6446704eec5b31b8d9864341af7081c8a18aa92"
+  "hash": "16037c87e208ff3fc16d07edc6446704eec5b31b8d9864341af7081c8a18aa92",
+  "id": "2016/01/26/karma",
+  "href": "/fe/2016/01/26/karma",
+  "title": "使用 karma 来做单元测试",
+  "date": "2016-01-25T22:00:00.000Z",
+  "content": "使用 karma 来做单元测试\n\n最近一直在搞 riot，想弄一个单测，正好官网提供了 karma 组件，搞起来吧\n\n安装\n\n配置\n\n运行",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

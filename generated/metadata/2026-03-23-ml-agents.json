@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#74949c",
     "titleColor": "--mantine-color-blue-2"
-  }
+  },
+  "id": "2026/03/23/ml-agents",
+  "href": "/fe/2026/03/23/ml-agents",
+  "title": "Week 12: ML-Agents on M-Series Macs",
+  "date": "2026-03-22T22:00:00.000Z",
+  "content": "Week 12: ML-Agents on M-Series Macs\n\nLet’s be honest: setting up a Machine Learning environment on Apple Silicon (M1/M2/M3) can feel like a marathon. Recently, I’ve been diving into ML training, and doing it on a Mac Mini is... let's say, an \"adventure.\" 🧗‍♂️\n\nThe silver lining? My Mac Mini is dead silent 🤫 compared to the jet-engine roar of a Windows gaming rig during training.\n\nIf you're struggling to get Unity's ML-Agents up and running, here is my battle-tested, step-by-step guide to making it actually work.\n\n🛠 Phase 1: The Initial Setup\n\nFirst, head over to the Official Unity ML-Agents Installation Guide.\n\nPro Tip: Follow the Advanced Installation path. You’ll need the source files for the dependencies to play nice later on.\n\nOnce installed, open the example files (found in the Project folder) in Unity. If you're new to the workflow, check out the official sample guide on how to train a model.\n\n🐍 Phase 2: Solving the Dependency Headache\n\nWhen you first try to run the training command:\n\n...you’ll likely hit a wall because onnxscript is missing. 🛑\n\nGo ahead and install the necessary dependencies. You might see some terrifying red text regarding version conflicts—just ignore them for now and push through:\n\nNext, you must downgrade/reinstall protobuf to a specific version, or the internal communication will fail:\n\nVerify the installation by running:\n\nIf you see the help menu, you’re halfway there! 🎉\n\n🛠 Phase 3: The Secret Fix\n\nHere is the part that drives everyone crazy. If you don't do this, the .onnx file generated after training will be unreadable by Unity. 📄🚫\n\nThis happens because modern PyTorch uses a new exporter called Dynamo, while Unity's importer expects the legacy format. You need to manually patch the ML-Agents library.\n\nLocate this file in your environment:\n/opt/miniconda3/envs/mlagents/lib/python3.10/site-packages/mlagents/trainers/torch\\_entities/model\\_serialization.py\n\nFind the torch.onnx.export call and add dynamo=False as shown below:\n\n🚀 Phase 4: Training & Implementation\n\nNow you're ready!\n\nRun your training command. 🏃‍♂️💨\n\nOnce finished, grab the generated .onnx file from the results folder.\n\nDrag it into your Unity project.\n\nAssign it to the Model field in the Behavior Parameters component of your Agent.\n\nHappy training! 🎓🤖",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "ml",
+      "href": "/tag/ml"
+    },
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    },
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ]
 }

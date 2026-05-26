@@ -17,5 +17,15 @@
   "colorSet": {
     "bgColor": "#8f6a59",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2017/04/05/shanxi-museum",
+  "href": "/travel/2017/04/05/shanxi-museum",
+  "title": "山西博物院",
+  "date": "2017-04-04T21:00:00.000Z",
+  "content": "山西博物院\n\nmuseum\n\nshow",
+  "category": {
+    "label": "travel",
+    "href": "/travel"
+  },
+  "tags": []
 }

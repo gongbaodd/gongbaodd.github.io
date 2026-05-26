@@ -1,4 +1,23 @@
 {
   "file": "2020/02/13/windows-rust-qt",
-  "hash": "8d2081539380bbdd6d130d75cdeee00b4d593a58a0d1a70265b305e5123a7b86"
+  "hash": "8d2081539380bbdd6d130d75cdeee00b4d593a58a0d1a70265b305e5123a7b86",
+  "id": "2020/02/13/windows-rust-qt",
+  "href": "/tech/2020/02/13/windows-rust-qt",
+  "title": "Windows 下为 Rust 提供 QT 环境（弃）",
+  "date": "2020-02-12T22:00:00.000Z",
+  "content": "Windows 下为 Rust 提供 QT 环境（弃）\n\nQT 的部署要比 GTK 容易一些，然而由于最近我的机场流量用尽，所以最大的困难就是网络。\n\n参考Rust-qt，有比较详细的环境配置。需要下载完整的Qt 安装包和Visual Studio 2017（最好用 2017，能少踩不少坑）。\n\n安装成功后，在环境变量 PATH 里面增加C:\\Qt\\Qt5.14.1\\5.14.1\\msvc2017\\_64\\bin然后找到 VS2017 的命令行，只有这个命令行能准确编译 QT5。\n\n虽然按照 Rust-qt 的做法，C++的 QT 可以完美运行，但是编译的时候要使用 gcc，所以还是要安装 msys2，而且对 QT 要求的版本也比较苛刻，因此我决定就此放弃 QT（即使 QT 已经能跑在 web-assembly 上面了）。\n\nRust 相关的 UI 框架\n\n其实还有一篇文章关于 Rust 的 UI 编程的，可以查看这篇文章。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "rust",
+      "href": "/tag/rust"
+    },
+    {
+      "label": "qt",
+      "href": "/tag/qt"
+    }
+  ]
 }

@@ -8,5 +8,19 @@
   "colorSet": {
     "bgColor": "#9b9049",
     "titleColor": "--mantine-color-red-3"
+  },
+  "id": "2025/10/17/week-43-hunyuan-3d",
+  "href": "/tech/2025/10/17/week-43-hunyuan-3d",
+  "title": "🧵 Week 43: Hunyuan 3D Adventures",
+  "date": "2025-10-16T21:00:00.000Z",
+  "content": "🧵 Week 43: Hunyuan 3D Adventures\n\nTwo weeks ago, I mentioned that I was diving into a project involving 3D printing — and I’ve already finished the 3D scanning part. 🎥✨\n\nAt the end of that blog, I left myself with 3 burning questions 🔥:\n\n❓1. How to convert point clouds (from Luma 3D) into meshes?\n\nTurns out, Luma 3D does provide mesh export! You can download a \\*.glb file with High, Medium, or Low Poly Mesh options.\nHowever… while these meshes look fine for display, they’re not quite ready for 3D printing — lots of moise and messy topology. 😬\n\n\n\n❓2. How to correct tilted mesh scans?\n\nThat’s where Blender comes into play — I’ll dive into that later in this post. 🧰\n\n❓3. How to stabilize exhibits during scanning?\n\nUnfortunately, we couldn’t reschedule a rescan session, so this question remains... unresolved 😅\n\n🧠 Hunyuan3D — AI Meets 3D Modeling\n\nIn my last blog, I briefly mentioned 3D AI generation — and here we are.\n\nHunyuan3D is an open-source 3D AI generation model created by Tencent. You can find it on Hugging Face 🧩\nBut if you just want to try it out, the official website is the easiest way to go — with 20 free generations per day, each taking about 190 seconds ⏱️\n\nJust upload one or more pictures of the object you want to generate — simple as that!\n\n\n\nAnd amazingly, my first try worked perfectly! 🥳\n\n\n\nBut… it turned out to be beginner’s luck 🍀\nAfter that, Hunyuan3D started hallucinating objects like it had just woken up from a weird dream. 🤯\n\n🥾 Example: The Shoe Ornament Disaster\n\nThe first generation? Terrible. 👎\n\n\nSo I tried again — this time removing the ruler, keeping only the main object. Still not ideal. 😤\n\n\nThe good news: You can try 20 times a day, tweaking angles or contrasts until something decent appears.\nIn this example, the decoration (orange mark) was tilted — better, but not perfect.\n\n\n\n🧱 Fixing the Tilt in Blender\n\nI thought: “No problem, I’ll just fix it in Blender.”\nBut the AI-generated model had millions of disconnected vertices — when I tried dissolving them, the entire object fell apart like a croissant. 🥐💥\n\n\n\nSo I tried again, this time generating with 50k vertices instead of 1.5 million.\nMuch better — just a bit of tilt correction needed! 🙌\n\n\n\n🔍 Matching the AI Asset with Real Scan\n\nTo ensure the new asset matches the real object, I used MeshLab to align the AI-generated mesh with the 3D-scanned point cloud. Perfect for validation ✅\n\n\n\n🐾 Bonus: The Scratcher\n\nUsing the same process, I digitalized the scratcher too 🐾\n\n\n\nThen, I resized it to match the original, exported it as an .stl, and printed it with PLA using an FDM 3D printer. 🖨️🎨\n\n\n\n🎨 What’s Next\n\nNext step: polishing and coloring the prints!\nThat’s going to be the topic of the next blog — stay tuned! 🌈🪩",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [],
+  "series": {
+    "label": "3D printing",
+    "href": "/series/3d-printing"
   }
 }

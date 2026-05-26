@@ -1,4 +1,14 @@
 {
   "file": "2017/07/14/egg-ts",
-  "hash": "45702f90afa17eee457b4f792d881364998785dc10883a8b1e6852aa49014734"
+  "hash": "45702f90afa17eee457b4f792d881364998785dc10883a8b1e6852aa49014734",
+  "id": "2017/07/14/egg-ts",
+  "href": "/tech/2017/07/14/egg-ts",
+  "title": "起因",
+  "date": "2017-07-13T21:00:00.000Z",
+  "content": "起因\n\n今年我开始在生产环境里试用node（貌似比很多人慢了一年......）。\n由于公司node环境较低，我只能使用一款修改过的express，\n为了解决兼容问题我还用typescript进行编译（事实证明typescript简直awesome）。\n\n随着公司更新了新版的node（也不高，6.1.2）。我也有了更多选择，\n有一天我在cnode上面看到了egg的发布，打算自己试一下。\n\n废话少说，从快速入门开始\n\negg有一个详细的快速入门https://eggjs.org/zh-cn/intro/quickstart.html，\n但是时间紧张，我直接用脚手架建项目了。\n\n目录结构\n\n我曾一度认为一个较好的框架其实不需要什么目录结构，自打我和其他人合作之后我就彻底打消这个念头了。\n\n删了项目里的app文件夹，并把app文件夹加到.gitignore里面。\n修改tsconfig.json，css可以用别的工具解决，不在本次话题里面。\n\n另外，我把view文件夹给删掉了，理由是我一直比较推崇前后端同构，所以既然有view层，前后端的模板应该一致，\n目前前端忙于组件化，基于vue和jsx的模板语言也很多（虽然性能不高，但可预见性能问题会很快解决），所以本文暂时不谈view。\n\nOK，可以愉快地写代码了\n\n因为官网没有TS的相关文档，这里记录一下。\n\n新建一个Controller\n\nRouter的引用\n\n结论\n\negg其实不错，能换自然是最好了。但是不换的话，如果项目已经跑起来了，\n说明egg该趟的坑都被你自己趟过了，而且已经用了typescript，async和await自然都用上了，\n所以（在我看来）generator就没更多优势了。\n\n但是如果你还没用上typescript...真的，动态一时爽，重构火葬场啊。\n\n以上。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

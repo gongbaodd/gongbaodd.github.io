@@ -1,4 +1,23 @@
 {
   "file": "2021/07/06/infinite-series",
-  "hash": "1880446232d0b7f40aee827cac63451938eb7ed9f2444c755beacde3bf1186a7"
+  "hash": "1880446232d0b7f40aee827cac63451938eb7ed9f2444c755beacde3bf1186a7",
+  "id": "2021/07/06/infinite-series",
+  "href": "/book/2021/07/06/infinite-series",
+  "title": "无穷级数",
+  "date": "2021-07-05T21:00:00.000Z",
+  "content": "无穷级数\n\n达朗贝尔判别法\n\n$$\n\\lim\\_{n \\to \\infty} \\frac{u\\_{n+1}}{u\\_n} = \\rho\n$$\n\n$\\rho \\lt 1$ 收敛\n\n$\\rho \\gt 1$ 发散\n\n柯西判别法\n\n$$\n\\lim\\_{n \\to \\infty} \\sqrt\\[n]{u\\_n} = \\rho\n$$\n\n$\\rho \\lt 1$ 收敛\n\n$\\rho \\gt 1$ 发散\n\n阿贝尔定理求收敛域\n\n$$\n\\lim\\_{n \\to \\infty} \\frac{|u\\_{n+1}|}{|u\\_n|} = \\rho\n$$\n\n或者\n\n$$\n\\lim\\_{n \\to \\infty} \\sqrt\\[n]{u\\_{n}} = \\rho\n$$\n\n解出 x 得值域，并判断端点是否收敛\n\n$$\ne^x=\\sum^\\infty\\_{m=0}\\frac{x^n}{n!}, -\\infty \\lt x \\lt +\\infty\n$$\n\n$$\n\\frac{1}{1+x} = \\sum^\\infty\\_{n=0}(-1)^nx^n,-1 \\lt x \\lt 1\n$$\n\n$$\n\\frac{1}{1-x} = \\sum^\\infty\\_{n=0}x^n, -1 \\lt x \\lt 1\n$$\n\n$$\n\\ln(1+x) = \\sum^{\\infty}\\_{n=1}(-1)^{n-1}\\frac{x^n}{n}, -1 < x \\le 1\n$$\n\n$$\n\\sin x = \\sum^\\infty\\_{n=0}(-1)^n\\frac{x^{2n+1}}{(2n+1)!}, -\\infty \\lt x \\lt +\\infty\n$$\n\n$$\n\\cos x = \\sum^\\infty\\_{x=0}(-1)^n\\frac{x^{2n}}{(2n)!}, -\\infty \\lt x \\lt +\\infty\n$$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

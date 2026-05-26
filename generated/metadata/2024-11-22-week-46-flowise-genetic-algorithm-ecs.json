@@ -1,4 +1,31 @@
 {
   "file": "2024/11/22/week-46-flowise-genetic-algorithm-ecs",
-  "hash": "2b523a509b13fe9db8824dff07ce75f3665e42482604ca484ee83e3919d5042a"
+  "hash": "2b523a509b13fe9db8824dff07ce75f3665e42482604ca484ee83e3919d5042a",
+  "id": "2024/11/22/week-46-flowise-genetic-algorithm-ecs",
+  "href": "/plan/2024/11/22/week-46-flowise-genetic-algorithm-ecs",
+  "title": "Week 46: Flowise, Genetic Algorithm and ECS",
+  "date": "2024-11-21T22:00:00.000Z",
+  "content": "Week 46: Flowise, Genetic Algorithm and ECS\n\nFlowise\n\nLast week I tried WhisperCPP. So I wanted to dig dipper, I tried langchain before. Now you can use flowise to make a chat bot without coding.\nSad thing, I wanted to use it to connect Ollama with WhisperCPP. But there is not whisperCPP integration.\n\nGenetic Algorithm\n\nI am reading Shiffman's Nature of Code. I am at the Genetic Algorithm chapter. I wanted to implement it in the new game project I am going to submit in Graphic and Sound course.\nAnd in the sound course, there is a new theory on sound, ADSR, (attack decay sustain release). I will try to implement it in the game.\n\nECS\n\nBoth Meta's Spatial SDK and Apple's RealityKit use ECS. And as I remember, Aframe.js also uses ECS.\nBut I did some research, both Unity and Godot are not using ECS. Unreal used an Actor Component System, which is similar to ECS, but still not ECS. However, I am gonna try to implement it in my new project.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "flowise",
+      "href": "/tag/flowise"
+    },
+    {
+      "label": "genetic algorithm",
+      "href": "/tag/genetic algorithm"
+    },
+    {
+      "label": "adsr",
+      "href": "/tag/adsr"
+    },
+    {
+      "label": "ecs",
+      "href": "/tag/ecs"
+    }
+  ]
 }

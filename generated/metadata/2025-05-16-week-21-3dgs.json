@@ -1,4 +1,19 @@
 {
   "file": "2025/05/16/week-21-3dgs",
-  "hash": "aebab6e1f9fd4453f42783f1474710905af9b46361c128d5c1dfe593733cdbec"
+  "hash": "aebab6e1f9fd4453f42783f1474710905af9b46361c128d5c1dfe593733cdbec",
+  "id": "2025/05/16/week-21-3dgs",
+  "href": "/plan/2025/05/16/week-21-3dgs",
+  "title": "Week 21: 3DGS",
+  "date": "2025-05-15T21:00:00.000Z",
+  "content": "Week 21: 3DGS\n\nWASM memory\n\nI always think why WASM is not replacing JS. Turns out that WASM can not have a scalable memory. The memory needs to be allocated by JS manually. This is a big limitation for WASM. I think it make a lot game engine like Unity and Unreal hard to run on web, because the images need memory. So, if you are focusing on the web, a web based game engine is always a better choice.\n\n3DGS\n\nFinally, I can talk about 3DGS. Last time I mentioned it was in 2024. Actually, During these years, I never stopped studying it.\n\nRight now, there are two phone apps can be used to scan environments to 3DGS. Luma 3D Capture and Scaniverse, they both easy to use and support to export PLY files.\n\nTo edit the PLY file, MeshLab is needed. The UI is easy to understand.\n\nYou can edit in Blender, however, I did not manage to export the file successfully. The following tutorial can be used to import PLY file in Blender:\n\nProcedural 3d scan points cloud to mesh in Geometry nodes - Blender tutorial ENG\n\nBlender - Import and render a pointcloud\n\nNext week, I will import the PLY file and make an XR game.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "3dgs",
+      "href": "/tag/3dgs"
+    }
+  ]
 }

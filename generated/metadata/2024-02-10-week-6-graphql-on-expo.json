@@ -1,4 +1,51 @@
 {
   "file": "2024/02/10/week-6-graphql-on-expo",
-  "hash": "8c7facb9f02f83a27c0c3aa441e02b2ffa0715b8c2b6f8053d66a83931a072a6"
+  "hash": "8c7facb9f02f83a27c0c3aa441e02b2ffa0715b8c2b6f8053d66a83931a072a6",
+  "id": "2024/02/10/week-6-graphql-on-expo",
+  "href": "/plan/2024/02/10/week-6-graphql-on-expo",
+  "title": "Week 6: Graphql on Expo",
+  "date": "2024-02-09T22:00:00.000Z",
+  "content": "Week 6: Graphql on Expo\n\nIn 2023/05/29, I wrote about how to use graphql-yoga in cloudflare worker. This week I tried to make another API and use URQL as a client in Expo Go.\n\nCloudflare Worker\n\nI was intended to use D1 as the database, and try to use drizzle as an ORM. But since I have got too many to work, I decided to use KV to save data as strings.\n\nGraphQL Yoga\n\nGraphql Yoga is always perfect for me. This time I have learnt more. One is the bulk request, I learnt from this blog.\n\nBesides making a bulk mutation from the server side. You can also send mutations with alias like.\n\nAnother one, the Fragments, I always thought I can write a fragment for mutations. But it was only for queries.\n\nGraphQL Scalars\n\nGraphQL Scalars is like a lot type definitions for graphql. I used Timestamp and UUID in my project.\n\nURQL\n\nThere is a little problem in using URQL with Expo. In Expo v50, they upgrade the bundler Metro. Before this version, you will get \"package unresolved\" problem. So, make sure URQL to update Expo to v50. I tried all the other solutions. It seems the graphql's problem.\n\nThen, there's another problem. Because I was using v49, I tried to use graphql-yoga/sofa to transform my schema to rest API. But it was not work as expected in cloudflare workers, I think it's a bug. To save time I decided to upgrade expo to v50.\n\n.env in Expo\n\nI don't think it's a bug, but if I put a .env file in my project. In expo-cli, it will inform that the env was loaded. But it was not. In the document they just talked about eas-cli, damn, they made too many tools with the same functions. So I installed a babel plugin react-native-dotenv to solve the problem.\n\nExpo Router\n\nExpo Router is a new feature in Expo v50. Now you can write a react native app in a next-js way. It was a shallow wrap of react native navigation. There was some confusion on the router names. But they will notify you in the console.\n\nMonorepo in Expo\n\nUsing monorepo in Expo is a little bit tricky. Since the native package was highly rely on the package.json in the root folder. Make sure all the packages that are native related should in the root package.json. Or there will be a crush in the production App.\n\nBuilding an App in production is a pain in the ass. It may act totally different in the Expo Go client. And the JS thread just too weak, like the web front end in early days.\n\nAnd test, unit test, of course I will use vitest. But integration test is a little hard, I actually have not found a better tool, especially I am using a Mac VM in windows.\n\nAstro in Ionic\n\nYes, I checked some other frameworks. Like ionic, sadly it was still in a PWA status. I mean since transition view was out, we should try some multiple page stuff. But they have their reason, iOS have not support transition view yet. This is a video about running astro 3.0 on ionic.\n\nTV\n\nMr & Mrs Smith an under covered marriage drama, good to watch.\n\nFood\n\nTried KFC in Thailand. Price is cheaper than Mcdonald. Not so tasty, beverage is self-helped.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "graphql",
+      "href": "/tag/graphql"
+    },
+    {
+      "label": "graphql-yoga",
+      "href": "/tag/graphql-yoga"
+    },
+    {
+      "label": "expo",
+      "href": "/tag/expo"
+    },
+    {
+      "label": "urql",
+      "href": "/tag/urql"
+    },
+    {
+      "label": "graphql-scalars",
+      "href": "/tag/graphql-scalars"
+    },
+    {
+      "label": "expo-router",
+      "href": "/tag/expo-router"
+    },
+    {
+      "label": "ionic",
+      "href": "/tag/ionic"
+    },
+    {
+      "label": "astro",
+      "href": "/tag/astro"
+    },
+    {
+      "label": "cloudflare",
+      "href": "/tag/cloudflare"
+    }
+  ]
 }

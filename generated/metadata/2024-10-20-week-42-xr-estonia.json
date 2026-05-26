@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#5e6a9c",
     "titleColor": "--mantine-color-green-4"
-  }
+  },
+  "id": "2024/10/20/week-42-xr-estonia",
+  "href": "/plan/2024/10/20/week-42-xr-estonia",
+  "title": "Week 42: XR in Estonia",
+  "date": "2024-10-19T21:00:00.000Z",
+  "content": "Week 42: XR in Estonia\n\n\n\nI went to the XR Estonia meetup hold by EEVR. It is a two days session. Because there was a class in Friday. I have to skip some talks. I only listened to the Game part and Digital Twin part.\n\n\n\nMy deepest impression is Jeremy Dalton from PWC. He digged a lot of history of XR. Dome training in WW2.The accident that created 3D movie.\n\n\n\n\n\nThen Ana Ribeiro told stories about her way from student to VR game developer. And made a studio on pixel ripped.\n\n\n\nVSight using AR to help workers remotely. And another company hansab is making a solution like the game overcooked but in industry.\n\n\n\nDuring the second days' session, I tried xReal ans vision pro. I also tried 7 sense to help blind people to see the world.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    }
+  ]
 }

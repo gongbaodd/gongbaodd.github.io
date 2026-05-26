@@ -1,4 +1,23 @@
 {
   "file": "2025/08/27/cloudinary",
-  "hash": "c11de4b703e7f224ab451e623d8cb782fafde06fddb7b93aef644288a5c3f810"
+  "hash": "c11de4b703e7f224ab451e623d8cb782fafde06fddb7b93aef644288a5c3f810",
+  "id": "2025/08/27/cloudinary",
+  "href": "/tech/2025/08/27/cloudinary",
+  "title": "☁️ I am Using Cloudinary Now",
+  "date": "2025-08-26T21:00:00.000Z",
+  "content": "☁️ I am Using Cloudinary Now\n\nRecently, I came across the concept of DAM (Digital Asset Management) while studying game development 🎮.\n\nSimply put, a DAM is like a Dropbox for your project’s binary files 📦. If you already have a cloud server with a public IP, it can technically serve as a DAM.\n\nBut over time, DAM platforms have evolved with more advanced features:\n\n🔄 Version control for assets\n\n🖼️ Automatic resizing for high/low resolution images\n\n💧 Watermarking and transformations on the fly\n\n🚀 Easy delivery via CDN\n\nThat’s why I decided to give Cloudinary a try. It’s not just storage—it’s a smart media pipeline that helps manage, optimize, and deliver assets seamlessly 🌐✨.\n\n✅ Conclusion\n\nDAM is more than just “file storage”; it’s about efficiently managing and transforming media at scale. Cloudinary gives me:\n\nFlexibility 🎛️\n\nAutomation 🤖\n\nBetter performance ⚡\n\nI’m excited to integrate it into my projects and see how it improves the workflow 🔧.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "dam",
+      "href": "/tag/dam"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
+  }
 }

@@ -1,4 +1,19 @@
 {
   "file": "2021/01/17/ts",
-  "hash": "71b20f1a97dc9dda783019c15c4cb5d0bc27713d59c42505f6663506b69b88dc"
+  "hash": "71b20f1a97dc9dda783019c15c4cb5d0bc27713d59c42505f6663506b69b88dc",
+  "id": "2021/01/17/ts",
+  "href": "/book/2021/01/17/ts",
+  "title": "重学TS",
+  "date": "2021-01-16T22:00:00.000Z",
+  "content": "重学TS\n\n毕竟半年没拿起来typescript了赶紧找了本书补充一下，个人还是推荐要跟进ts的官方blog\n的（虽然我也没做到）。\n\n这本书感觉还有很多要补充的地方，条理也不是很清晰，但是的确有有一些可以给我补充的地方。\n\n思维图",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "typescript",
+      "href": "/tag/typescript"
+    }
+  ]
 }

@@ -1,4 +1,31 @@
 {
   "file": "2020/05/05/rn-flutter",
-  "hash": "edbf8df9f1dbf9a9e632919ef0285bc012bfe54c6749a3eab451042102aac576"
+  "hash": "edbf8df9f1dbf9a9e632919ef0285bc012bfe54c6749a3eab451042102aac576",
+  "id": "2020/05/05/rn-flutter",
+  "href": "/fe/2020/05/05/rn-flutter",
+  "title": "从 RN 到 Flutter-简单说说",
+  "date": "2020-05-04T21:00:00.000Z",
+  "content": "从 RN 到 Flutter-简单说说\n\n如何创建一个 Flutter 应用\n\n创建一个 React Native，可以在终端中使用create-react-native-typescript-app，或者expo-cli。\n\n使用 Flutter 创建应用，可以采用以下两种方式。\n\n使用 IDE 中的 Flutter 和 Dart 插件。\n\n使用flutter create命令，请确保 Flutter SDK 已经在 PATH 中，Windows 用户可以参考此文。\n\n更多内容，可以参考快速入门，入门是一个创建单按钮的计数项目，并能够部署在 Android 和 iOS 设备中的示例应用。\n\n如何运行应用\n\n在 React Native 中，你可以使用npm run或者yarn run。\n\n在 Flutter 中，可以参考如下方式：\n\n使用 IDE 中的\"run\"选项。\n\n在项目根目录执行 flutter run。\n\n你的应用会在连接好的设备上执行。\n\n更多信息，请参考 Flutter 的快速入门。\n\n如何引入部件\n\n在 React Native 中，你需要引入组件。\n\n在 Flutter 中，需要引入material.dart包来使用 Material Design 库中的部件。要使用 iOS 样式的部件则需要引入 Cupertino 库。想使用更多基础部件，需要引入他们的库，或者你也可以自己写一个部件库，并引入。\n\n无论你引入了什么包，Dart 只会使用你在应用中使用的部件。\n\n写一个和 React Native 中一样的 Hello World 应用\n\n在 React Native 中，HelloWorldApp是React.Component的一个实现，并返回如下 view 组件实现。\n\n在 Flutter 中，创建一个 Hello World 应用需要使用Center和Text核心部件，Center部件在部件树的根部件，并拥有唯一子部件Text。\n\n（卧槽，写 Hello World 还挺简短的，怕不是错觉...）\n\n| Android                                                                                                                                                                | iOS                                                                                                                                                            |\n| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Android展示样式 | iOS展示样式 |\n\n这就是 Flutter 中最基础的应用，下一个部分将会利用 Flutter 丰富的组件库创建现代应用。\n\n如何使用在部件树中增加部件\n\n在 Flutter 中，几乎一切都是部件。\n\n部件是创建用户界面的基础块。部件组成的层级结构叫做部件树。每个部件接入它的父部件，并继承它们的属性。即使应用对象本身也是个部件。并没有分离的\"application\"对象，根部件就是它。\n\n一个部件可以定义如下内容：\n\n一个有结构的元素 —— 如一个按钮或菜单。\n\n一个样式元素 —— 如字体或者颜色方案。\n\n一个布局或视角 —— 如边距或者对齐。\n\n如下的例子使用 Material Design 创建部件，在此例子中，部件树链接在MaterialApp跟部件下。\n\n如下是使用 Material Design 部件创建的 “Hello world!” 应用。\n\n| Android                                                                                                                                                                             | iOS                                                                                                                                                                          |\n| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Adroid Material Design Hello World | iOS Material Design Hello World |\n\n写应用的时候，会使用到两种部件StatelessWidget和StatefulWidget（上面我写的就是StatelessWidget不过没有按照面向对象的写法去写）。一个StatelessWidget是一个没有状态的部件，它一旦被创建就不会改变。一个StatefulWidget会基于数据变化或者用户输入动态改变。\n\nStatelessWidget和StatefulWidget二者的最大不同点，就是StatefulWidget拥有一个State对象来存储数据，以避免在部件树渲染的时候丢失。\n\n在简单的项目中，写部件树是容易的，但是当代码变多之后，应用会越来越复杂，你应该将很深的部件封装成函数或者简单的类。创建封装好的函数和类有利于在复杂项目中实现复用。\n\n如何创建可复用的组件\n\n在 React Native 中，创建一个可复用的组件，并使用props向它传入属性和值。在如下的例子中，CustomCard就是个可复用组件。\n\n在 Flutter 中，可以通过创建一个后浪于（怎么样，这说法阳春不？）部件的类，并实现它的build函数，你也可以创建一个函数并复用它。\n\n以上CustomCard参数的大括号是 Dart可选参数。\n\n在类的构造函数中，可以使用@required实现必要参数。\n\n如下截图是CustomCard的展示效果。\n\n| Android                                                                                                                                                              | iOS                                                                                                                                                          |\n| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n| Android CustomCard | iOS CustomCard |",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "react-native",
+      "href": "/tag/react-native"
+    },
+    {
+      "label": "flutter",
+      "href": "/tag/flutter"
+    },
+    {
+      "label": "dart",
+      "href": "/tag/dart"
+    }
+  ],
+  "series": {
+    "label": "从RN到Flutter",
+    "href": "/series/Flutter-for-RN-devs"
+  }
 }

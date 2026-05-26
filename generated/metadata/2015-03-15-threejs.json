@@ -1,4 +1,14 @@
 {
   "file": "2015/03/15/threejs",
-  "hash": "687b04778256535e7d70e389278e2f1bb5f6fc11d62e5f49db53db9e5c20b916"
+  "hash": "687b04778256535e7d70e389278e2f1bb5f6fc11d62e5f49db53db9e5c20b916",
+  "id": "2015/03/15/threejs",
+  "href": "/fe/2015/03/15/threejs",
+  "title": "threejs",
+  "date": "2015-03-14T22:00:00.000Z",
+  "content": "\\#THREE.JS参数记录\n\nRenderer\n\nsetClearColor\n\nOthers\n\nScene\n\nCamera\n\nGeometry\n\nCube\n\nPlane\n\nSphere",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

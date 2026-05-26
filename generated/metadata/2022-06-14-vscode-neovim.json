@@ -1,4 +1,19 @@
 {
   "file": "2022/06/14/vscode-neovim",
-  "hash": "53dba3798066c2b87a7be934789c26090f70f436eccbe9b706eca122b8c94d66"
+  "hash": "53dba3798066c2b87a7be934789c26090f70f436eccbe9b706eca122b8c94d66",
+  "id": "2022/06/14/vscode-neovim",
+  "href": "/tech/2022/06/14/vscode-neovim",
+  "title": "从VSCode到NeoVim",
+  "date": "2022-06-13T21:00:00.000Z",
+  "content": "从VSCode到NeoVim\n\n最近Github的Atom宣布暂停更新了，这让我想起来现在的VSCode就如它的老对手一样卡...\n没错，换成Ext4分区之后WSL的开发速度快了很多，但还是能够感觉到卡顿，所以最近几天就折腾起来NeoVim了。\n\n具体的配置我就不多说了，因为网上的内容实在太多，学习的话可以参考Neovim 配置实战：从 0 到 1 打造自己的 IDE，入门足够了。\n\n目前我的配置是nvim-config是从别人那里fork出来的。\n\n现在的NeoVim已经all in lua了，这让我怀念起来玩饥荒的美好时光，哈哈",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "vim",
+      "href": "/tag/vim"
+    }
+  ]
 }

@@ -8,5 +8,19 @@
   "colorSet": {
     "bgColor": "#a2a45c",
     "titleColor": "--mantine-color-lime-2"
+  },
+  "id": "2026/05/23/electron",
+  "href": "/fe/2026/05/23/electron",
+  "title": "🐝 Using Electron for a Desktop Pet",
+  "date": "2026-05-22T21:00:00.000Z",
+  "content": "🐝 Using Electron for a Desktop Pet\n\nI’m still working on the problem I mentioned in this post.\n\nI finally found another approach that is comparatively more stable than the previous solution (which caused some crashes). ⚠️\n\n🪟 Unity Window Approach (Colorkey + Popup Window)\n\nI used a colorkey-based transparency method to make the window transparent, and launched it using the --popupwindow parameter.\n\nTo manage launching, I built a simple launcher:\n\nI also changed the output type to WinExe to prevent a command-line window from appearing on startup:\n\n🐧 The Linux Problem\n\nHowever, there’s still no solid solution on Linux.\n\nThis led me to dig deeper into how Linux windowing systems behave:\n\nOn X11, legacy rendering allows more flexibility with transparent windows\n\nOn Wayland, however, security restrictions are much stricter\n\nIn Wayland, I can’t even reliably get the position of my own window 😅\n\nTo avoid spending too much time writing platform-specific desktop hacks, I started considering a change in stack.\n\n⚡ Switching to Electron\n\nI decided to try Electron instead.\n\nIn the era of vibecoding, building an Electron app is surprisingly easy — just describe what you want and let the AI scaffold it.\n\nMy requirements were simple:\n\n🪟 Create a transparent Electron window\n\n🎨 Render a clippy image using canvas\n\nI also wanted to test how Electron handles transparency and alpha blending, since many “transparent” solutions end up rendering as solid black.\n\nclippy\n\n🌈 Result\n\nElectron actually handles transparency much better than the colorkey approach.\n\nAlpha transparency works properly\n\nEven gradients are preserved correctly\n\nSo visually, it’s a clear improvement.\n\n⚠️ But There’s a Catch\n\nEven though the canvas can be fully transparent across all platforms, a few issues remain:\n\n❌ Mouse cannot click through transparent areas\n\n❌ The original project (Grandpa’s Bee Haven) is tightly coupled with native APIs can not be migrated to web.\n\nThis means a full migration to Electron would require a significant rewrite, and may not actually solve the core problem.\n\nSo for now… this might not be the final solution.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [],
+  "series": {
+    "label": "Grandpa's bee Haven",
+    "href": "/series/grandpa-bee"
   }
 }

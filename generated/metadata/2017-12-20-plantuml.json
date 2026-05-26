@@ -1,4 +1,14 @@
 {
   "file": "2017/12/20/plantuml",
-  "hash": "91fc36c535ffa6269dfc8d6dda62b9b6c37885e0f09bbde46ef3f3078a9d68ae"
+  "hash": "91fc36c535ffa6269dfc8d6dda62b9b6c37885e0f09bbde46ef3f3078a9d68ae",
+  "id": "2017/12/20/plantuml",
+  "href": "/fe/2017/12/20/plantuml",
+  "title": "plantUML的使用",
+  "date": "2017-12-19T22:00:00.000Z",
+  "content": "plantUML的使用\n\n参考自 轻松从Js文件生成UML类图\n\n使用说明\n\nvscode 安装 plantUML 插件, 编写 \\*.puml 文件的时候执行 Alt + D 可以预览绘制的流程图.\n\n\\*.puml 文件格式说明\n\nplantUML的解析以 @startuml 开始 以 @enduml 结束\n\n时序图\n\n\n\n\n\n活动图\n\n\n\n\n\n类图",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

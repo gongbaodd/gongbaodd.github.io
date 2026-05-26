@@ -1,4 +1,27 @@
 {
   "file": "2020/03/11/docker-jenkins",
-  "hash": "8ffbc6827866107799027582c13ebfd1b93861573cd3a6f6a0a63c068430645c"
+  "hash": "8ffbc6827866107799027582c13ebfd1b93861573cd3a6f6a0a63c068430645c",
+  "id": "2020/03/11/docker-jenkins",
+  "href": "/tech/2020/03/11/docker-jenkins",
+  "title": "使用 docker 安装 Jenkins",
+  "date": "2020-03-10T22:00:00.000Z",
+  "content": "使用 docker 安装 Jenkins\n\n自从成功通过 docker 安装了 strapi，我一下子对安装一切产生了很大兴趣。\n\n通过docker-compose.yaml可以很快安装。\n\n然后访问服务器的 8080 端口，即可安装对应插件，注意，这些插件不能走代理，所以...非常慢...国内还是用 coding.net 吧。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "docker",
+      "href": "/tag/docker"
+    },
+    {
+      "label": "jenkins",
+      "href": "/tag/jenkins"
+    },
+    {
+      "label": "ci",
+      "href": "/tag/ci"
+    }
+  ]
 }

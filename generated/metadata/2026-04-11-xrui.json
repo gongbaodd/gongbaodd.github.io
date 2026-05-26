@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#a07670",
     "titleColor": "--mantine-color-dark-8"
+  },
+  "id": "2026/04/11/xrui",
+  "href": "/fe/2026/04/11/xrui",
+  "title": "XRUIs in Unity",
+  "date": "2026-04-10T21:00:00.000Z",
+  "content": "XRUIs in Unity\n\nExploring the top three UI frameworks for XR development in Unity. Whether you are building for OpenXR or specific hardware like Meta Quest, choosing the right toolkit is essential. 🛠️\n\n🛠️ The Big Three Toolkits\n\n1\\. Unity XR Interaction Toolkit (XRI) 📦\n\nThe most widely used framework. It is designed to support OpenXR standards using native Unity components, making it a versatile choice for cross-platform development.\n\n2\\. Meta Interaction SDK (ISDK) 👓\n\nMeta provides the ISDK specifically for its hardware ecosystem.\n\nCompatibility Note: Although Meta is a major stakeholder in OpenXR, Meta XR SDKs are generally not compatible with non-Meta OpenXR devices.\n\n3\\. Mixed Reality Toolkit (MRTK) 🌐\n\nOriginally by Microsoft, MRTK was open-sourced after their exit from the XR market.\n\nModern Architecture: In its third version (MRTK3), it underwent a massive rebuild and is now fully built on top of XRI.\n\n🏗️ Core Components of XRUIs\n\nReference Spaces\n\nThis is the origin of rendering and defines the player's position in the virtual world. 📍\n\nXRI: Implemented as XR Origin.\n\nISDK: Implemented as the OVRCameraRig.\n\nTo simplify configuration, these SDKs bundle User Interactions inside these objects, including:\n\n🎥 Camera\n\n👁️ Gaze Interactor\n\n🎮 Controller Objects (Left/Right): Including Poke, Near-Far, Teleport Interactors, and Visuals.\n\n🛤️ Locomotion Setup: Turn, Move, Grab Move, Teleportation, and Climb.\n\n⚖️ Teleport Stabilizer\n\nThe Comprehensive Interaction Rig\n\nIn the Meta Interaction SDK, the rig is a predefined collection of GameObjects. The UnityXRInteractionComprehensive prefab enables environment visibility and actions like grabbing or poking. It requires a working camera rig and adds support for hands, controllers, and controller-driven hands. 🖐️\n\n🔄 Migration & Compatibility\n\nFrom Meta (ISDK) to Unity (XRI) ⬅️\n\nMeta provides a migration solution to move Meta projects to XRI (using XR Origin).\n\n⚠️ Warning: This is not a \"solid\" solution. You may encounter issues like hand misplacement during the transition.\n\nFrom Unity (XRI) to Meta (ISDK) ➡️\n\nThis is more difficult than it appears. Even if you place an OVRCameraRig in the scene, components won't interact because they are hardcoded to look for the XR Origin.\n\nWorkaround: You can attempt to make the XR Origin invisible and align the OVRCameraRig to the same position. However, differences in locomotion pace often reveal that the player is controlling a different system.\n\n🧩 Deep Dive into MRTK\n\nUnity 6 Compatibility Fix 🛠️\n\nIf you encounter CS0234: The type or namespace name 'Universal' does not exist in Unity 6, update your Packages/manifest.json:\n\nController Mapping 🕹️\n\nIn the XR Origin \"Near Far interactor,\" you must manually alter the Select and Activate actions. Since Microsoft MR controllers use a single trigger (rather than a grip + trigger combo), the default MRTK logic maps the old trigger logic to the grip.\n\nEssential MRTK Features:\n\n📦 BoundingBox: Container for grabbable/scalable items.\n\n💬 Canvas: Dialogue containers.\n\n🔪 ClippingBox: Used for slicing 3D models.\n\n🔡 Font Icons & Pressable Buttons\n\n🗣️ Spatial Scan & Speech Components\n\n\\[!CAUTION]\nPerformance Note: While MRTK is excellent for feature-rich environments, there are noticeable performance concerns. You may find some lagging in the final build, though it remains perfectly fine for prototyping. ⏳",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    }
+  ],
+  "series": {
+    "label": "Master Thesis",
+    "href": "/series/master"
   }
 }

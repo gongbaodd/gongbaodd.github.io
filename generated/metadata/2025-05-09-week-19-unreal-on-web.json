@@ -1,4 +1,23 @@
 {
   "file": "2025/05/09/week-19-unreal-on-web",
-  "hash": "dad10e917e9e56f9a6f264f08196017dd4e85f62a82bd4621eb2c0f373bd8268"
+  "hash": "dad10e917e9e56f9a6f264f08196017dd4e85f62a82bd4621eb2c0f373bd8268",
+  "id": "2025/05/09/week-19-unreal-on-web",
+  "href": "/plan/2025/05/09/week-19-unreal-on-web",
+  "title": "Week 19: Unreal on Web",
+  "date": "2025-05-08T21:00:00.000Z",
+  "content": "Week 19: Unreal on Web\n\nUnity Async Experience\n\nI have finished one development cycle of an Unity project. In this project, I tried to use ChatGPT to give the player comment. At the same time, I can try to use async functions to make net request.\n\nThe function looks like this:\n\nPretty weird, I have to use await Task.Yield() to wait for the request. I think it is because UnityWebRequest is not a real async function. It just uses a coroutine to make the request. So I have to use Task.Yield() to wait for the coroutine.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "ue",
+      "href": "/tag/ue"
+    },
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ]
 }

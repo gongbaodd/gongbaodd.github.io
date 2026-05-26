@@ -17,5 +17,20 @@
   "colorSet": {
     "bgColor": "#54779c",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2017/09/23/beijing-has-begun-to-be-mother",
+  "href": "/life/2017/09/23/beijing-has-begun-to-be-mother",
+  "title": "北京都开始凉了",
+  "date": "2017-09-22T21:00:00.000Z",
+  "content": "北京都开始凉了\n\n寒风凛凛，我穿着大裤衩拍延时，遗憾啊，一周北京都是晴，偏偏周末是多云。",
+  "category": {
+    "label": "life",
+    "href": "/life"
+  },
+  "tags": [
+    {
+      "label": "photography",
+      "href": "/tag/photography"
+    }
+  ]
 }

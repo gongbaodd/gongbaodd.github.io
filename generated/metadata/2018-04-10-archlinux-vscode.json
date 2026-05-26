@@ -1,4 +1,14 @@
 {
   "file": "2018/04/10/archlinux-vscode",
-  "hash": "67aca7ea89e7221ecd8e0ea14037000c6d1494f33d2d043a4dcc319c5256dcbf"
+  "hash": "67aca7ea89e7221ecd8e0ea14037000c6d1494f33d2d043a4dcc319c5256dcbf",
+  "id": "2018/04/10/archlinux-vscode",
+  "href": "/fe/2018/04/10/archlinux-vscode",
+  "title": "ArchLinux 修改 VScode 可监视文件大小",
+  "date": "2018-04-09T21:00:00.000Z",
+  "content": "ArchLinux 修改 VScode 可监视文件大小\n\nhttps://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

@@ -1,4 +1,27 @@
 {
   "file": "2025/05/31/week-23-dify",
-  "hash": "45494c121b55ca61f929ce0c2f455927b83b5088436e41a2e3da859d8400a3ed"
+  "hash": "45494c121b55ca61f929ce0c2f455927b83b5088436e41a2e3da859d8400a3ed",
+  "id": "2025/05/31/week-23-dify",
+  "href": "/plan/2025/05/31/week-23-dify",
+  "title": "Week 23: Dify",
+  "date": "2025-05-30T21:00:00.000Z",
+  "content": "Week 23: Dify\n\nLLMs\n\nLast year, I was using a AI tool called Flowise. This time, I will talk about Dify, Dify can do almost everything Flowise can do. But the UI is more user-friendly.\n\nAfter last week, I started to widely use commercial LLMs. I think it is important for me to understand how to use them. So, tools like flowise, Dify and n8n even langchain are important for me. Next week I will focus on using them.\n\nUnity Unit Testing\n\nUnity provides a good unit testing tool, but there are some flaws when using them. I've mentioned in Unity Test Framework.\n\nUnreal Engine\n\nExcept for AI study and Unity unit testing. I also started to study programming in Unreal Engine.\n\nHere are two tutorials I think that is helpful:\n\nBlueprint Essential Concepts\n\nProgramming Kickstart",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "dify",
+      "href": "/tag/dify"
+    },
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    },
+    {
+      "label": "llm",
+      "href": "/tag/llm"
+    }
+  ]
 }

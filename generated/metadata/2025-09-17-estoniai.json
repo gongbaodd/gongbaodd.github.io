@@ -17,5 +17,20 @@
   "colorSet": {
     "bgColor": "#b48b6d",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/09/17/estoniai",
+  "href": "/tech/2025/09/17/estoniai",
+  "title": "🤖 EstoniAI Meetup",
+  "date": "2025-09-16T21:00:00.000Z",
+  "content": "🤖 EstoniAI Meetup\n\nYesterday I joined the EstoniAI Meetup — this time the theme was all about hardware ⚙️.\nSince I’ve played a bit with Edge AI, I thought: why not apply? 🚀\n\nThe event was hosted at the Estonia Film Museum 🎬, and wow... the view outside was just amazing 🌳☀️.\n\n\n\n\n\n\n\nWhat really caught my eye 👀 was Lendurai, a super cool drone company 🛸.\nThey’re doing some interesting work on drone vision simulation — which instantly clicked for me since I’m also building a drone simulator.\nEven though the main talk was more about on-device AI 🧠, I really hope they’ll show up at EEVR in the future.\n\n💡 One thing that stood out:\nHere in Europe 🇪🇺, people care a lot about privacy 🔒. That’s why on-device AI gets so much love.\n\nFrom my own experience:\n\nA server 💻 → usually computes better,\n\nA local device 📱 → always reacts faster.\n\nSo the real challenge is balance ⚖️ + transparency 🌐, which matter way more when privacy is at stake.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    }
+  ]
 }

@@ -17,5 +17,24 @@
   "colorSet": {
     "bgColor": "#9d714d",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2025/10/10/realiti-express",
+  "href": "/tech/2025/10/10/realiti-express",
+  "title": "Realiti Express 2025 🚀",
+  "date": "2025-10-09T21:00:00.000Z",
+  "content": "Realiti Express 2025 🚀\n\n\n\nTime flies faster than your VR headset battery 🔋💨\nLast year, I joined the first Estonian EEVR meetup.\nNow it’s year two — still the same reality, but a little more express. 😎\n\nLast year was like a Titan battle ⚔️ — Apple Vision Pro vs Meta Quest 3.\nThis year? Meta showed up alone with its Ray-Ban Glasses 😎— and they’re still in “demo mode” (you can try them in-store… if you survive the queue 🕰️).\n\nSo yes, this year’s theme is less hardware flex, more software zen. 💻✨\n\n\n\nFirst up, Concept VR — showing how to turn VR into a panoramic documentary machine.\n\n\n\nTalTech brought their new Unitree G1 — friend from home.\n\n\n\nAnd yes, here’s The Meta Ray-Ban Display — cool shades, limited pixels. 🕶️✨\n\nMaru VR showed off updates for Bootstrap Island (still PCVR only — Quest users, keep dreaming 🏝️).\n\nUnloop VR brought a slick sci-fi escape room powered by Unreal’s MetaSound and Blueprints.\nBut honestly... I bet Godot could do the same thing.\n\nAlpha 3D seems to be cooking with Stable DreamFusion to make 3D assets from thin air (or GPU smoke 💨).\n\nAnd Helsinki XR Centre shared their XR roadmap\n\nAlso, there are some defence techs. I am not a war person, and a lot defence techs they do not share so much. So there are not so much to learn.\n\n\n\nDinner spot of the night — serving vibes straight out of 1984.\nThe head sculpture was watching. Always watching. 👁️🍽️\n\nUnreal Guild 🎨\n\nThen off to another meetup at EKA — the Unreal Guild.\nThe highlight? Learning about the OKLCH color space 🌈\nHere is a good youtube channel shows how color works - color nerd 🎨✨",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    },
+    {
+      "label": "oklch",
+      "href": "/tag/oklch"
+    }
+  ]
 }

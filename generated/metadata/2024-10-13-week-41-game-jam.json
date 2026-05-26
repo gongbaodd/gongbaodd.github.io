@@ -1,4 +1,19 @@
 {
   "file": "2024/10/13/week-41-game-jam",
-  "hash": "cf7400f74f3914fe60c66f2f4a0a9368740ade2440af54c387caa0cffbd31a25"
+  "hash": "cf7400f74f3914fe60c66f2f4a0a9368740ade2440af54c387caa0cffbd31a25",
+  "id": "2024/10/13/week-41-game-jam",
+  "href": "/plan/2024/10/13/week-41-game-jam",
+  "title": "Week 41: Game Jam",
+  "date": "2024-10-12T21:00:00.000Z",
+  "content": "Week 41: Game Jam\n\nGame Jam is a hackathon for game development. It is a competition to make a game in a limited time. The time can be 24 hours, 48 hours, or even a week.\n\nThis is my first Game Jam. It is hold in Taltech. The 2024 TalTach Game Jam is a 48-hour event. The theme is \"Lost of Control\". This year, there are 100+ teams submitted 50+ games.\n\nI almost did not attend the event. Because the registration is on discord. I did not know how to use that. And the website is using matrix font. Terrible idea, can't read anything.\n\nThe first day I was block outside, because I don't have a team. I was told to join remotely. Happily, someone I know they have a team and put me in the second day.\n\nGame Jam is easier than Hackathon. It is only included developer and designer. A hackathon usually include business and marketing.\n\nI found a lot deficiencies in Unity Editor. It break the principle of single one source of truth. The editor is not the source of truth. The source of truth is the code. The editor is just a tool to visualize the code. But the editor also save the data. I know it is for the convenience of the designer. But it adds confusion to the developer.\n\nThe winner, top 3 games are, Ad Space, Void of Hermes and Oh Crap.\n\nOh Crap is the third place. It is a game based on the Game jam host. The player should solve problems in a short time cap. It is a nice game, but I should say it is quite cheating.\n\nVoid of Hermes is the second place. The player is a space engineer. There are monsters trying to break the window, the player have to collect tools to fix the window. Those tools are the Letters falling from the top.\n\nAd Space is the first place. The player is a space engineer. The ship is going to crash. The player have to fix three part. The asteroids, a secret key and a toilet. They are three small games. During the game, there will be a lot of ads. The player has to click quit to close the ads. The game is very funny.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "game jam",
+      "href": "/tag/game jam"
+    }
+  ]
 }

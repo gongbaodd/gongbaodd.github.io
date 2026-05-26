@@ -8,5 +8,48 @@
   "colorSet": {
     "bgColor": "#7c7c7c",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2025/11/18/entity-db",
+  "href": "/fe/2025/11/18/entity-db",
+  "title": "Build a Browser-Based RAG (No Server Required!) 🤯",
+  "date": "2025-11-17T22:00:00.000Z",
+  "content": "Build a Browser-Based RAG (No Server Required!) 🤯\n\nTwo years ago, I was tinkering with Chrome's built-in AI. Back then, it used the window.ai API. Naturally, in true tech fashion, that API has already been deprecated and sent to the graveyard. 🪦\n\nFast forward to last year: I noticed Google's MediaPipe was starting to integrate cool features like text embedding directly into Gemini.\n\nThen, in the middle of this year, I dipped my toes into building a RAG (Retrieval-Augmented Generation) system using Supabase during the Tallinn Valencia hackathon. After that, I played around with Hugging Face's transformer.js. Later still, I used miniSearch to build a tiny search engine for this blog and created an API to export my entire site's text content.\n\nBasically, I've been collecting the Infinity Stones of browser AI. 💎\n\nRecently, I stumbled upon a browser-based vector DB implementation called EntityDB. That was the final piece of the puzzle.\n\nNow, I have:\n\nA browser built-in LLM 🧠\n\nA browser built-in vector DB 🗄️\n\nAn API that exports all my site's data 📄\n\nEverything is ready to build a fully browser-based RAG system. Let's cook! 👨‍🍳\n\nThe Master Plan 📝\n\n\\[x] Segment the text data into lines\n\n\\[x] Embed the text into tensors\n\n\\[x] Serialize the tensors into one big file\n\n\\[x] Install Chrome Canary and prep the LLM\n\n\\[x] Load the browser-based embedding model\n\n\\[x] Load the serialized data\n\n\\[x] Polish the LLM prompt\n\n\\[x] Implement Function Calling (Tool use)\n\n1\\. Text Segmenting ✂️\n\nAt first, I tried to be a pure JS purist. I found a module called @llm-tools/embedjs that seemed perfect.\n\nBut then... reality hit. 💥 The local LLM dev environment in JS just isn't as mature as Python's yet. I'm building this system as a monorepo in my blog (an Astro site). To cut a long story short: the package sharp (used by Transformer.js for images) started fighting with Astro's config (which also uses sharp). Dependency hell is real.\n\nAlso, the current version of EntityDB seems to only like Webpack bundlers. 🙄\n\nEventually, I swallowed my pride and moved the backend logic to Python. It just works. I used the standard splitter from LangChain:\n\n2\\. Embedding Blog Text into Tensors 🔢\n\nFor the embedder, I initially tried MediaPipe's text embedder. It's super easy to use and Google has great examples. It spits out a 100-length 1-dimension Tensor.\n\nPlot twist: I couldn't integrate it with EntityDB. The package only provides an interface for transformer.js. So, I had to use a Hugging Face model. The default is all-MiniLM-L6-v2, which is arguably better anyway (384-length tensor).\n\nAfter exporting the ndjson file, I realized I had created a monster: the file was over 100MB. 😱 That's because I was serializing tensors as plain text.\n\nI put the file on a diet by serializing them as Base64 binary text. The result? A sleek 36MB. Much better.\n\nOne serialized post looks something like this:\n\n👉 The full Python code is available here.\n\n3\\. Install Chrome Canary & Prep the LLM 🐦\n\nThis part is easy. Just install the latest Chrome Canary, then follow the instructions here to enable the AI flags.\n\nRight now, you can play with the Prompt API examples. The W3C proposal was just drafted last month. Fresh off the press!\n\nI really wanted to use the Writer API, but it seems my browser decided to hide it from me. No worries, the Prompt API will do the job.\n\n4\\. Load the Embedding Model 📥\n\nEntityDB makes this surprisingly simple:\n\n5\\. Load the Serialized Data 💾\n\nIn my ndjson blog post, I used RxJS to stream the file. Here, I kept it simple.\n\nEntityDB provides insertManualVectors, allowing me to inject text directly with its pre-calculated vector. This saves the browser from doing the heavy lifting of embedding everything again!\n\nAnd of course, we need a utility to decode that binary data back to a float32 array. Dealing with binary data in JS is always a party. 🎉\n\n6\\. Polish the LLM Prompt 💅\n\nI decided to use a \"Two-Brain System\".\n\nBrain 1: The Assistant. It understands the user.\n\nBrain 2: The Writer. It takes the raw search results and makes them sound smart.\n\n7\\. Implement Function Calling (Tool Use) 🛠️\n\nAh, Murphy's Law. Unexpected things are always expected.\n\nEven though Chrome's blog keeps hyping up Function Calling (Tool Use), it's not quite fully baked yet. There is a Structured Output API which helps, but I it still better if the Tool use works fine.\n\nI define the tool so the model knows it exists:\n\nSince the automated execution isn't reliable, I handle it manually. When the LLM spits out that specific JSON format, I intercept it like a ninja 🥷, run the search against the DB, and then feed the results to the \"Writer\" brain.\n\nI also used Vercel's streamdown to make the response look pretty.\n\nCaveats of EntityDB ⚠️\n\nIt's not all sunshine and rainbows.\n\nSingle Table Only: It seems like a bug, but EntityDB struggles with multiple tables even if you assign different names. One table to rule them all.\n\nDuplicates: If you insert the same data twice, you get duplicates. You have to handle deduplication logic manually.\n\nThe Result 🎉\n\nIt actually works! A fully browser-based RAG system. No API keys, no cloud bills, just pure local compute power.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "entity-db",
+      "href": "/tag/entity-db"
+    },
+    {
+      "label": "vector-db",
+      "href": "/tag/vector-db"
+    },
+    {
+      "label": "rag",
+      "href": "/tag/rag"
+    },
+    {
+      "label": "llm",
+      "href": "/tag/llm"
+    },
+    {
+      "label": "gemini",
+      "href": "/tag/gemini"
+    },
+    {
+      "label": "transformer",
+      "href": "/tag/transformer"
+    },
+    {
+      "label": "streamdown",
+      "href": "/tag/streamdown"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

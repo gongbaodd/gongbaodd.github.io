@@ -1,4 +1,19 @@
 {
   "file": "2022/08/11/opengl-tutorial",
-  "hash": "a1ccdcb2bcf3154af519d800d9d143a0b3a2c5175729e9e6eaffb34802a4f947"
+  "hash": "a1ccdcb2bcf3154af519d800d9d143a0b3a2c5175729e9e6eaffb34802a4f947",
+  "id": "2022/08/11/opengl-tutorial",
+  "href": "/tech/2022/08/11/opengl-tutorial",
+  "title": "几个 OpenGL 的 tutorial",
+  "date": "2022-08-10T21:00:00.000Z",
+  "content": "几个 OpenGL 的 tutorial\n\nOpenGL 和 Rust 算是我一直在学习，但一直没办法实际使用的技术了。\n\nRust and OpenGL from scratch 这是一篇讲 Rust 结合 OpenGL 的博客，照着操作下去，主要的感觉就是 unsafe 太多了，网上几乎所有的 OpenGL 教程都基于LearnOpenGL来做，这是一篇中文译本，非常值得细看。\n\n今天我还会再看一下 Vulkan，希望里面的 unsafe 的部分不要太多。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "opengl",
+      "href": "/tag/opengl"
+    }
+  ]
 }

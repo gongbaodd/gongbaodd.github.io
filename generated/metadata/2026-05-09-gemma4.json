@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#6c7c8b",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2026/05/09/gemma4",
+  "href": "/tech/2026/05/09/gemma4",
+  "title": "Gemma 4 is Good 🤖",
+  "date": "2026-05-08T21:00:00.000Z",
+  "content": "Gemma 4 is Good 🤖\n\nLast month, I talked about Bolt.diy where I used Qwen2.5-code to make local AI vibe coding. 💻\n\nThere is a website, canirun, where I can find the models that I can run on my hardware. 🔍\n\nRecently, my YouTube timeline was booming with news about how good Gemma 4 is. 📈 I thought it was just hype at first. But as I changed to Linux, I have more resources to access. I decided to try it. 🐧\n\nI downloaded gemma-4-e4b. It has 7.5B parameters (4 experts) and is only 6.3GB. 📦 I changed the load into max, context length to 131,072, and GPU Offload to 42. These parameters allow it to perform tool-use, such as creating files. 🛠️\n\nThen, in VS Code, I installed the Continue extension. It can connect to a local model. Change the config.yaml as follows: ⚙️",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

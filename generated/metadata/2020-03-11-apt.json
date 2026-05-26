@@ -1,4 +1,23 @@
 {
   "file": "2020/03/11/apt",
-  "hash": "32069c8be3226bba74e346340eb3e8fe8d307c94de4606ce2327f1a10b4553b4"
+  "hash": "32069c8be3226bba74e346340eb3e8fe8d307c94de4606ce2327f1a10b4553b4",
+  "id": "2020/03/11/apt",
+  "href": "/tech/2020/03/11/apt",
+  "title": "为 apt 添加代理",
+  "date": "2020-03-10T22:00:00.000Z",
+  "content": "为 apt 添加代理\n\n我的上帝啊，这两天都在忙活代理（翻译腔）。\n\n系统全局下的http\\_proxy似乎对 apt 无效，需要单独设置。\n\n增加代理",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "apt",
+      "href": "/tag/apt"
+    },
+    {
+      "label": "proxy",
+      "href": "/tag/proxy"
+    }
+  ]
 }

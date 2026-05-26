@@ -1,4 +1,14 @@
 {
   "file": "2024/11/25/nearest-neighbour",
-  "hash": "fce43260cafca12ce8d0d6c7f523be8d3567400aab76bd464e4d0421b8459db5"
+  "hash": "fce43260cafca12ce8d0d6c7f523be8d3567400aab76bd464e4d0421b8459db5",
+  "id": "2024/11/25/nearest-neighbour",
+  "href": "/fe/2024/11/25/nearest-neighbour",
+  "title": "Nearest Neighbour Algorithm",
+  "date": "2024-11-24T22:00:00.000Z",
+  "content": "Nearest Neighbour Algorithm\n\nI wanted to use my 2D graphic homework to combine my digital graphic homework. The game link is here. My idea is to load the pixel art and scale it using nearest neighbour algorithm and send it into GPU buffer, using shader to make animate effects.\n\nTo load the image into shader is easy, use texture2D() function. Use mix() function to mix the color.\n\nRenderDoc\n\nUsing RenderDoc to inject Chromw process is not very hard.\n\nHowever, I still don't know how to use it to debug.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

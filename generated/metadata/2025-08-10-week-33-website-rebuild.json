@@ -8,5 +8,32 @@
   "colorSet": {
     "bgColor": "#9c7d5d",
     "titleColor": "--mantine-color-dark-8"
+  },
+  "id": "2025/08/10/week-33-website-rebuild",
+  "href": "/fe/2025/08/10/week-33-website-rebuild",
+  "title": "🔨 Website Rebuild",
+  "date": "2025-08-09T21:00:00.000Z",
+  "content": "🔨 Website Rebuild\n\nYep… I’m rebuilding my website again 😅.\n\n📖 Story of the Website\n\nOriginally, this site was just for me to document my graduation trip. Back then, I used Jekyll with a jQuery template. I never finished it because I couldn’t find a proper image hosting solution. Still, I kept posting tech articles along the way.\n\nIn 2020, I migrated to Gatsby. I wanted GraphQL and a date-based folder structure. Looking back at my blog from 5 years ago… yeah, switching to Gatsby probably wasn’t the best idea 🤷. GraphQL was kind of disappointing, and I always wanted a better alternative.\n\nFast forward to 2023, I saw Astro start supporting View Transition and thought it was the perfect time to switch. But migrating burned me out. Gatsby might have been complicated, but it handled markdown and images better than Astro at the time.\n\nOn top of that, too many legacy files meant I had to consider monorepo solutions. I wasted a ton of time building a dark mode switch and infinite scroll. View Transition had lots of limitations too — it couldn’t be applied to any DOM element easily. Eventually, the UI ended up just using the original shadcn setup.\n\nRecently, I had to rebuild again because every build was taking over 44 minutes per commit ⏱️. So here we go…\n\n⚡ This Rebuild\n\nAt first, I just wanted incremental builds, a feature introduced in Astro v4 but revoked in v5. I also considered switching stacks to 11ty or Hugo. But after the Gatsby migration experience, I realized transferring a content-heavy site is a nightmare — file structures, markdown, images, LaTeX… everything matters.\n\nSo I decided to stay on Astro. The upside? Astro supports multiple frameworks for components. Personally, I like the island architecture more than RSC — it gives more flexibility than other frameworks.\n\nFor UI, I switched from shadcn to Mantine. Honestly, Mantine is way more equipped than shadcn (even with Radix UI). I’m not a fan of big CSS resets, so this suits me better — although I’m still using Tailwind in parts.\n\nSome highlights:\n\nBlog list page uses MUI’s Masonry — I wanted masonry layout since the last build, and this one is much better, though still not perfect.\n\nMantine doesn’t officially support Astro, so a little tweaking was needed.\n\nThis rebuild is not just cosmetic. The goal is to:\n\nBuild an in-browser AI 🤖\n\nSupport more social content\n\nShowcase my portfolio\n\nRight now, I’m still refining the UI, but I’m hopeful these goals will be met 🚀.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "mantine",
+      "href": "/tag/mantine"
+    },
+    {
+      "label": "astro",
+      "href": "/tag/astro"
+    },
+    {
+      "label": "react",
+      "href": "/tag/react"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
   }
 }

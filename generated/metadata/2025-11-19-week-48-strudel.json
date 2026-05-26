@@ -1,4 +1,35 @@
 {
   "file": "2025/11/19/week-48-strudel",
-  "hash": "c3881a76271a17d8eca822a289662e34ecb8df1b7f7843929f534fbe661207ef"
+  "hash": "c3881a76271a17d8eca822a289662e34ecb8df1b7f7843929f534fbe661207ef",
+  "id": "2025/11/19/week-48-strudel",
+  "href": "/plan/2025/11/19/week-48-strudel",
+  "title": "Week 48: Smart Player with Strudel REPL",
+  "date": "2025-11-18T22:00:00.000Z",
+  "content": "Week 48: Smart Player with Strudel REPL\n\nI started this week trying to make some noise with Sonic Pi. It's a fantastic tool, but we had a failure to communicate: it speaks Ruby, and I... well, I prefer JavaScript. 🙅‍♂️\n\nAfter some digging, I stumbled upon Strudel. It's a code REPL for music generation that brings the Tidal Cycles language right into the browser. The only catch? The official workshop is in German. Entschuldigung? 🥨\n\nThe \"HarpTabs\" Experiment 🧪\n\nMy initial brilliant idea 💡 was to take harmonica tabs from HarpTabs, map them to notes, and ask an AI to generate a playback script.\n\nHere is the highly scientific conversion table I used to map hole numbers to notes:\n\n| Hole Number | Blow (Exhale) 🌬️ | Draw (Inhale) 😤 |\n| :---: | :---: | :---: |\n| 1 | C | D |\n| 2 | E | G |\n| 3 | G | B |\n| 4 | C | D |\n| 5 | E | F |\n| 6 | G | A |\n| 7 | C | B |\n| 8 | E | D |\n| 9 | G | F |\n| 10 | C | A |\n\nI fed this into the AI to generate a cover of \"No Surprises\" by Radiohead. Here is the code it spat out:\n\nThe result? Well... let's just say Thom Yorke is safe. I’ve never heard this version of \"No Surprises\" before. 🙉\n\nThe Pivot: Building a Smart Player 🧠🎧\n\nRealizing my career as a harmonica transcriber was over, I went hunting and found a fan-made repo collecting actually good Strudel scripts.\n\nSince I was already messing around with vector search in my previous post about EntityDB, I decided to combine the two.\n\nThe Goal: Create a smart music player that understands natural language requests.\n\nThe Todo List:\n\n🏷️ Label the songs (Let AI do the work).\n\n💾 Embed the labels (Vector database magic).\n\n🛠️ Add Tool Use (Teach the LLM to play DJ).\n\n1\\. Labeling the Songs\n\nI wasn't going to listen to 50+ files and tag them manually. I asked Cursor to \"hallucinate\" (infer) descriptions based on the filenames. Here is the data structure:\n\n2\\. Embedding the Labels\n\nThis part was pleasantly simple. EntityDB provides a straightforward insert API, so we just loop through our AI-generated descriptions and store them.\n\n3\\. React + Strudel = ❤️\n\nStrudel doesn't provide a React component out of the box (rude), so I had to MacGyver one. I created a wrapper that injects the strudel-repl custom element into a DIV.\n\nThe Result 🎉\n\nThe rest of the plumbing connects to the LLM logic from my previous EntityDB post. I can now ask for \"spooky vibes\" or \"something for a Parisian cafe,\" and the tool finds the matching Strudel script and plays it instantly.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "sonic-pi",
+      "href": "/tag/sonic-pi"
+    },
+    {
+      "label": "midi",
+      "href": "/tag/midi"
+    },
+    {
+      "label": "strudel",
+      "href": "/tag/strudel"
+    },
+    {
+      "label": "music-generation",
+      "href": "/tag/music-generation"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

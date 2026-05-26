@@ -1,4 +1,27 @@
 {
   "file": "2020/03/10/docker-strapi",
-  "hash": "cf28c4a3db311860541c24b16094a0daf218504d3d75079b5f6e3aaa6ced88ab"
+  "hash": "cf28c4a3db311860541c24b16094a0daf218504d3d75079b5f6e3aaa6ced88ab",
+  "id": "2020/03/10/docker-strapi",
+  "href": "/fe/2020/03/10/docker-strapi",
+  "title": "腾讯云 docker 安装 strapi",
+  "date": "2020-03-09T22:00:00.000Z",
+  "content": "腾讯云 docker 安装 strapi\n\nDocker engine\n\n如下是官网的安装过程，首先移出 Ubuntu 原有的 docker（如果有的话）\n\n安装相关依赖\n\n增加 docker 的安装源\n\n开始安装（我的架构是 x86\\_64）\n\nDocker compose\n\n安装新版本docker-compose，因为文件存储在 github 上面，这里直接从 DaoCloud 下载。\n\n解决 ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running？\n\n需要增加自己用户到 docker 组，然后重新进入即可\n\nStrapi\n\n按照strapi 官方文档执行如下操作。\n\n新建文件夹，并增加docker-compose.yaml\n\n修改 docker 镜像选择腾讯加速器。\n\n重启服务\n\n下载镜像。\n\n启动镜像\n\n现在你的 1337 端口已经交给 strapi 了。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "docker",
+      "href": "/tag/docker"
+    },
+    {
+      "label": "tencent",
+      "href": "/tag/tencent"
+    },
+    {
+      "label": "strapi",
+      "href": "/tag/strapi"
+    }
+  ]
 }

@@ -1,4 +1,14 @@
 {
   "file": "2023/07/01/26tn-week-using-ubuntu",
-  "hash": "f1d3c9f44b1edca78a49aebe2777c602e3d366f72892a2b65f92cf2e4b60f2cb"
+  "hash": "f1d3c9f44b1edca78a49aebe2777c602e3d366f72892a2b65f92cf2e4b60f2cb",
+  "id": "2023/07/01/26tn-week-using-ubuntu",
+  "href": "/plan/2023/07/01/26tn-week-using-ubuntu",
+  "title": "26th week: Using Ubuntu",
+  "date": "2023-06-30T21:00:00.000Z",
+  "content": "26th week: Using Ubuntu\n\nBabylon tutorial plan\n\nThis week，I've finished the babylon tutorial. Collected a lot courses.\n\nAbout using a physical engine, can read this document.\n\nAbout using HDR image, can read this document.\n\nAbout playing music, can read this document.\n\nHow to make a game into 60 fps, can read this document.\n\nRoyal Skies provides a series of tutorial about blender 2.8.\n\nGrant Abbitt also provides a blender 2.8 course.\n\n3D Animation Hub provides a series of making 3D player animation.\n\nJayanam also provides an animation tutorial.\n\nMortMort provides a pixel art tutorial.\n\nThe following links are about game resources.\n\nopen game art, including models and audios.\n\nfreesound, provides free audios.\n\nearslap, provides music game ideas.\n\na nice 3D Chinese art\n\nUbuntu\n\nThis week I went back from PC to linux, because the weather is getting hotter, causing my PC to overheat.\n\nImmersedVR is compitable with Linux, just need to install libfuse2, and\nv4l2loopback-dkms for virtual camera. This is an article about add AppImage pacakge to favorite bar.\n\nThe input method, iBus, needs restart after installed.\n\nCan use piper to config logitech mouse.\n\nKeep using Xorg as display server is a good choice, most Apps, like xrandr are based on Xorg. Only Waydroid is not compitable with Xorg.\n\nultra-copier\n\nWhen copying files, some devices can be overheat.ultra-copier can be used as a stable and fast copy tool.\n\nText to speech\n\nI'm using OtterAI to transpile podcasts to content. Using these scripts to practice English.\n\nNx\n\nI'm starting learning react-babylon in a deep dive. Using Nx as a monorepo utility. I suggest this tutorial.\n\nkeep remembering to add package.json and a name a version to the lib.\n\nJS animation library\n\nreact spring supports react and threejs.\n\nframer motion seems only support react.\n\nBabylon has it's own animation system.\n\nORM\n\nDrizzle, suggested by Syntax FM. Haven't tried.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

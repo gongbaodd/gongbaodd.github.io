@@ -1,4 +1,14 @@
 {
   "file": "2019/07/24/iwork8",
-  "hash": "fb57cdd24452169aa51482cfddcedff66a8b1b1c8de7f22b86f63642d381f3d7"
+  "hash": "fb57cdd24452169aa51482cfddcedff66a8b1b1c8de7f22b86f63642d381f3d7",
+  "id": "2019/07/24/iwork8",
+  "href": "/tech/2019/07/24/iwork8",
+  "title": "如何魔改你的iwork8",
+  "date": "2019-07-23T21:00:00.000Z",
+  "content": "如何魔改你的iwork8\n\n改造图\n\n搬家的时候发现我的iwork8并没有当二手卖掉，或者扔在北京。正巧，在百度贴吧搞到一张这机器主板的结构图。\n\n结构图\n\n简单说只要短接一处，这机器上面就会多两个usb口。那么我的目标就是\n\n一、增加一个标准USB口\r\n二、更换6000mah电池\r\n三、增加一个指纹模块\r\n四、更换wifi天线\n\n遗憾的是，microUSB接口已经取不下来了，所以充电口有些接触不良，索性可以待机两天（充满要一天...）还可以忍受。\n\nwifi信号依然不是很好，所以平日会再插一个外接wlan，看书嘛，其实也没这么高需求了。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

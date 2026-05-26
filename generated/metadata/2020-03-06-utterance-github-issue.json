@@ -1,4 +1,19 @@
 {
   "file": "2020/03/06/utterance-github-issue",
-  "hash": "9edc64eb6e69f3258c4c042628d75d4112dc6723dd4aa1921a8c1f36df9c8e87"
+  "hash": "9edc64eb6e69f3258c4c042628d75d4112dc6723dd4aa1921a8c1f36df9c8e87",
+  "id": "2020/03/06/utterance-github-issue",
+  "href": "/fe/2020/03/06/utterance-github-issue",
+  "title": "使用 Utterance 为博客添加基于 Github-issue 的评论系统",
+  "date": "2020-03-05T22:00:00.000Z",
+  "content": "使用 Utterance 为博客添加基于 Github-issue 的评论系统\n\n最近在重构我部署在 GitHub pages 的博客，本来不想添加评论系统的，但是手贱，非想要加一个。\n\n尝试了 disqus（一个在国内无法使用的评论系统），貌似page.url中不能使用中文字符...这就尴尬了，突然想起来以前看 hackernews 的时候有人提起过使用 GitHub issue 搭建博客的想法。如果你是直接使用静态页面做网站，只需要去Utterance授权 GitHub 账号，复制对应的代码粘贴到网站即可。\n\n因为我新重构的网站是基于 Gatsby 的，Utterance 也提供了react 高阶组件可以使用。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "github",
+      "href": "/tag/github"
+    }
+  ]
 }

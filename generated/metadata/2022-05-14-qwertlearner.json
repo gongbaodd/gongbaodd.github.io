@@ -1,4 +1,14 @@
 {
   "file": "2022/05/14/qwertlearner",
-  "hash": "24e0e859f728b648be9e67e030a2a9db645c80d7d071ce041071359018e070ea"
+  "hash": "24e0e859f728b648be9e67e030a2a9db645c80d7d071ce041071359018e070ea",
+  "id": "2022/05/14/qwertlearner",
+  "href": "/tech/2022/05/14/qwertlearner",
+  "title": "QWERT Learner 练打字",
+  "date": "2022-05-13T21:00:00.000Z",
+  "content": "QWERT Learner 练打字\n\nkeybr 被墙之后，我就琢磨换一个打字网站，最近使用了QWERT Learner，很不错，还可以顺便背单词。\n\n后期我可能会 fork 这个项目加入 anki 的功能\n\n现在暂时 dict2anki 成单词卡",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

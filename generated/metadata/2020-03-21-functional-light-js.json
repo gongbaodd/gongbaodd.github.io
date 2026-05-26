@@ -1,4 +1,23 @@
 {
   "file": "2020/03/21/functional-light-js",
-  "hash": "ec1c73f5729ef512e5305734ee7d5dbe924f287305bfdcc1bd9f386d511901e8"
+  "hash": "ec1c73f5729ef512e5305734ee7d5dbe924f287305bfdcc1bd9f386d511901e8",
+  "id": "2020/03/21/functional-light-js",
+  "href": "/book/2020/03/21/functional-light-js",
+  "title": "functional light js",
+  "date": "2020-03-20T22:00:00.000Z",
+  "content": "比较简单的一本开源书，大概算函数式编程的入门书+JavaScript 部分介绍了。\n\n推荐章节：\n\n第四章，为什么要减少函数参数以及柯里化，这样有利于使用 compose 函数组合步骤。\n\n第八章，递归，利用 es6 上面的尾递归调用提高代码可读性。\n\n附录 A，提高性能，减少运算损耗。",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "javascript",
+      "href": "/tag/javascript"
+    },
+    {
+      "label": "functinal-programming",
+      "href": "/tag/functinal-programming"
+    }
+  ]
 }

@@ -1,4 +1,14 @@
 {
   "file": "2018/07/27/pixijs-l",
-  "hash": "bdd7519ff5518eb354ec0c09e0a337e9c479fb04d4d04e557d37f79308bdb9ce"
+  "hash": "bdd7519ff5518eb354ec0c09e0a337e9c479fb04d4d04e557d37f79308bdb9ce",
+  "id": "2018/07/27/pixijs-l",
+  "href": "/fe/2018/07/27/pixijs-l",
+  "title": "pixiJS 的 l-system 实现",
+  "date": "2018-07-26T21:00:00.000Z",
+  "content": "pixiJS 的 l-system 实现\n\n\n\npixiJS 的 l-system 实现",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

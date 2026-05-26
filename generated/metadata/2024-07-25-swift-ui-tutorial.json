@@ -1,4 +1,14 @@
 {
   "file": "2024/07/25/swift-ui-tutorial",
-  "hash": "3ba3abe4465d6ee34db0a605b745e6159f5c9c407743c30117c01d082f9fe14a"
+  "hash": "3ba3abe4465d6ee34db0a605b745e6159f5c9c407743c30117c01d082f9fe14a",
+  "id": "2024/07/25/swift-ui-tutorial",
+  "href": "/book/2024/07/25/swift-ui-tutorial",
+  "title": "Swift UI Tutorial",
+  "date": "2024-07-24T21:00:00.000Z",
+  "content": "Swift UI Tutorial\n\nThis is a review on Apple's Swift UI Tutorial\n\nThis is a tutorial for making a landmark application for iOS, watchOS and MacOS. Including 4 parts, Swift UI essentials, Drawing and Animations, Layout and framework integrations.\n\nI strongly suggest reading chapter 1 and 3, the chapter 4, Watch OS and Mac OS part. This is a walkthrough on most of Apple's functions.\n\nIn swift part, you will learn how to use state variables, environment variables and binding value with inputs.\n\nBy learning to build watch OS app, you will know how to make mono files workable between projects.\n\nNext, I will study Swift tutorial, especially the vision OS one.",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": []
 }

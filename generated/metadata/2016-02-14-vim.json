@@ -1,4 +1,27 @@
 {
   "file": "2016/02/14/vim",
-  "hash": "6e3d32f70fab903ce0ea4c5c6a35daa17b8bc69d19d4107c31285d53e564dc2f"
+  "hash": "6e3d32f70fab903ce0ea4c5c6a35daa17b8bc69d19d4107c31285d53e564dc2f",
+  "id": "2016/02/14/vim",
+  "href": "/tech/2016/02/14/vim",
+  "title": "VIM",
+  "date": "2016-02-13T22:00:00.000Z",
+  "content": "VIM\n\n请原谅我又一次跳票了~\n\n前言\n\n之前买了一款iwork8的win10平板，起初是为了看代码，后来信心满满地想去刷linux进行开发，然而无情的现实摆在面前，没有驱动啊（无线驱动需要编译->没有有线接口->搞到了有线接口->md也要编译。。。）但是偶不会放弃的！\n\nTerminal\n\nwin10的CMD太烂了，尝试了minGW，哇好大，作为一个轻度使用的变成平板来说不合适啊，MSYS2在x86上用不了，git for windows不错，但是在v2ex上看到有人推荐babun，正在下载中。。。\n\nVIM复习\n\n懒得复习了，直接看vimtutor吧。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "vim",
+      "href": "/tag/vim"
+    },
+    {
+      "label": "linux",
+      "href": "/tag/linux"
+    },
+    {
+      "label": "windows",
+      "href": "/tag/windows"
+    }
+  ]
 }

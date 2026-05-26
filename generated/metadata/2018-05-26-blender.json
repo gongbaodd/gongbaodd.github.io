@@ -1,4 +1,14 @@
 {
   "file": "2018/05/26/blender",
-  "hash": "d59cb92ab92f89d8142c43a25f8bb6595f49cf8c076fea55b645098f9b00b872"
+  "hash": "d59cb92ab92f89d8142c43a25f8bb6595f49cf8c076fea55b645098f9b00b872",
+  "id": "2018/05/26/blender",
+  "href": "/tech/2018/05/26/blender",
+  "title": "Blender 复习之快捷键",
+  "date": "2018-05-25T21:00:00.000Z",
+  "content": "Blender 复习之快捷键\n\nlinux下面使用blender必须搭配鼠标，因为拖动需要鼠标中键，模拟的快捷键是alt+鼠标左键，笔记本上必须要关掉alt快捷键（臣妾不想做）。\n\n移动元素是鼠标右键，另外需要打开模拟小键盘（file-preference-input）才能快速切换试图。\n\n菜单\n\nshift-a\n\n学习视频\n\nhttps://www.blenderguru.com/tutorials/blender-beginner-tutorial-series",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

@@ -1,4 +1,19 @@
 {
   "file": "2021/02/09/latexcheatsheet",
-  "hash": "cc31407beb5d6908a06ae0006335ab8ab7642727a31f6c21eeb63cab536eba89"
+  "hash": "cc31407beb5d6908a06ae0006335ab8ab7642727a31f6c21eeb63cab536eba89",
+  "id": "2021/02/09/latexcheatsheet",
+  "href": "/tech/2021/02/09/latexcheatsheet",
+  "title": "Latex cheat sheet",
+  "date": "2021-02-08T22:00:00.000Z",
+  "content": "Latex cheat sheet\n\n$$\n\\sum\\_{i=1}^{k+1}i\n$$\n\n$$\n\\frac{k(k+1)}{2} + k + 1\n$$\n\n$$\n1 + \\frac{q^2}{(1-q)} + \\frac{q^6}{(1-q)(1-q^2)} + \\cdots\n\n\\prod^{\\infty}\\_{j=0}\n\\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\n\\text{, for }\n\\lvert q \\rvert < 1\n$$\n\n$$\n\\Gamma \\Delta \\Theta \\Lambda \\Xi \\Pi \\Sigma \\Upsilon \\Phi \\Psi \\Omega\n$$\n\n$$\n\\alpha \\beta \\gamma \\delta \\epsilon \\eta \\theta \\mu \\nu \\xi\n$$\n\n$$\n\\int u \\frac{dy}{dx} dx = uv - \\int \\frac{du}{dx}v dx\n$$\n\n$$\n\\mathbf{V}\\_1 \\times \\mathbf{V}\\_2\n\n\\begin{vmatrix}\ni & j & k \\\\\n\\frac{\\partial{X}}{\\partial{u}} & \\frac{\\partial{Y}}{\\partial{u}} & 0 \\\\\n\\frac{\\partial{X}}{\\partial{v}} & \\frac{\\partial{Y}}{\\partial{v}} & 0 \\\\\n\\end{vmatrix}\n$$\n\n$$\n\\left(\n\\frac{x^2}{y^3}\n\\right)\n$$\n\n$$\nf(n) =\n\\begin{cases}\n\\frac{n}{2}, \\text{if } n \\text{ is even} \\\\\n3n + 1, \\text{if} n \\text{is odd}\n\\end{cases}\n$$\n\n$$\n\\sqrt\\[n]{1 + x + x + x^2 + x^3 + \\ldots}\n$$\n\n$$\n\\begin{pmatrix}\na\\_{11} & a\\_{12} & a\\_{13}\\\\\na\\_{21} & a\\_{22} & a\\_{23}\\\\\na\\_{31} & a\\_{32} & a\\_{33}\\\\\n\\end{pmatrix}\n$$\n\n$$\n\\begin{bmatrix}\n0      & \\cdots & 0      \\\\\n\\vdots & \\ddots & \\vdots \\\\\n0      & \\cdots & 0      \\\\\n\\end{bmatrix}\n$$",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "latex",
+      "href": "/tag/latex"
+    }
+  ]
 }

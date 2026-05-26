@@ -1,4 +1,27 @@
 {
   "file": "2026/02/25/ai-agents",
-  "hash": "bd1a564786c173812d6d4afb50a5318b86e02e7d2d25b524b12bdf1ac0a56ea1"
+  "hash": "bd1a564786c173812d6d4afb50a5318b86e02e7d2d25b524b12bdf1ac0a56ea1",
+  "id": "2026/02/25/ai-agents",
+  "href": "/tech/2026/02/25/ai-agents",
+  "title": "🤖 AI Agents",
+  "date": "2026-02-24T22:00:00.000Z",
+  "content": "🤖 AI Agents\n\nThis isn’t a post about how successful AI is. It’s more about my hands‑on experience running local LLMs on my new Mac mini. 🖥️✨\n\n🐾 Openclaw\n\nThe first thing I wanted to try on my new machine was Openclaw—it’s been everywhere lately. Installing and configuring it was surprisingly easy. Just follow the instructions on the official website. 🚀\n\nI’m using Ollama to run local models. Openclaw recommends glm-4.7-flash:latest, but that one doesn’t run on my device, so I switched to qwen3:8b.\n\nBefore using it, I had to increase the default context length, which was way too small. Here’s what I did:\n\nCreate a Modelfile\n\nCreate the new model\n\nRun configuration\n\nHowever… one simple “hello” takes almost 2 minutes to respond on telegram. 🐌💬\nA remote model is definitely needed for a smoother experience.\n\n🧩 Opencode\n\nMy experience with Opencode was quite different. I tested two models:\n\nqwen2.5-coder:7b\n\nqwen3:8b\n\nBefore starting, set environment variable OLLAMA\\_HOST to 0.0.0.0 and you need to manually edit the config file ~/.config/opencode/opencode.json.\n\nResults weren’t great:\n\nqwen2.5-coder hallucinated and got stuck in tool‑calling loops 🤯🔧\n\nqwen3 kept repeating itself endlessly 🔁😵\n\nNot ideal for coding tasks at the moment.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "llm",
+      "href": "/tag/llm"
+    },
+    {
+      "label": "vibe-coding",
+      "href": "/tag/vibe-coding"
+    }
+  ],
+  "series": {
+    "label": "Vibe Coding",
+    "href": "/series/vibe-coding"
+  }
 }

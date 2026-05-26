@@ -1,4 +1,14 @@
 {
   "file": "2018/01/24/30-kotlin",
-  "hash": "758afad04cfe4903eb15f5a98489eece449d4f9b971b4f5ece540267d1d4a8fc"
+  "hash": "758afad04cfe4903eb15f5a98489eece449d4f9b971b4f5ece540267d1d4a8fc",
+  "id": "2018/01/24/30-kotlin",
+  "href": "/fe/2018/01/24/30-kotlin",
+  "title": "完成了30个kotlin安卓挑战",
+  "date": "2018-01-23T22:00:00.000Z",
+  "content": "完成了30个kotlin安卓挑战\n\n去年逛IT邦看到了关于Kotlin的铁人赛，30个安卓demo．毕竟不是我的原创，这里贴上原地址\n\nhttps://ithelp.ithome.com.tw/users/20107329/ironman/1286\n\n再贴上我的代码地址\n\nhttp://gongbushang.com:3000/gongbushang/kotlinPlayground\n\n我的测试机\n\n说来我的测试机，可是我当年拿实习工资买的魅蓝，后来跑步摔碎了，现在打开更新下居然还能用，也是奇迹了．\n\n\n\n01TapCounter\n\n最简单的计数器\n\nKotlin 的 lamda 表达式的使用,\n使用 kotlin 的一个好处，\n获取 button 或者 textEdit 之类的组件不需要使用 findViewById 了\n\n02seekBarPercentage\n\nprogressBar 的使用\n\n03ImgePicker\n\n获取相机\n\n获取相册\n\n04ScalableImageView\n\n自定义一个 ImageView\n\n05WebSearch\n\nwebView\n\n06ImageList\n\nfragment 的高度要固定\n\n07MyLocation\n\n没法用谷歌地图, 改用高德地图, 主要还是要很多权限\n\n08BottomNavigation\n\n没啥意思就是底部导航栏\n\n09ImageSlider\n\nImageSlider的使用\n\n10ProgressControl\n\n控制 progressBar\n\n11ActivitySchedule\n\n日期弹框\n\n时间弹框\n\n12GitHubStars\n\nOkHttpClient\n\n13LocalStorage\n\n存\n\n取\n\n14Ball\n\n15Notification\n\n其实大部分API魅族都给砍了,所以加title啥的就没有必要了\n\n16PushMessaging\n\n17PullToRequest\n\nfragment记得加高度\n\n18SideMenu\n\n安卓常见的左滑目录\n\n19Sound\n\n音乐播放器,还是用默认的style吧,换一个卡得不行\n\n20ActivityTransition\n\nActivity转场动画\n\n21LayoutSwitcher\n\nGrid布局变化\n\n22LocalDatabase\n\n本地的SQL\n\n23speech\n\nTTS, 魅族居然不支持\n\n24Painter\n\nCanvas\n\n25Face\n\n人脸检测, 但是并没检测出来我\n\n26ActionRecieve - ActionSend\n\n接受的时候 intentfilter 需要加入\n\n27ShakeIt\n\n摇一摇\n\n28Tabs\n\n顶部 tab\n\n29Floats\n\n自定义悬浮框 和 右下角悬浮按键\n\n30Video\n\n和播放器其实类似",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

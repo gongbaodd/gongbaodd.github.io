@@ -1,4 +1,14 @@
 {
   "file": "2024/07/13/week-28-meta-xr-simulator",
-  "hash": "7351090645c590e4f141ee1908ec7711941fc61a16d4bbe9e935a57cbadf1e22"
+  "hash": "7351090645c590e4f141ee1908ec7711941fc61a16d4bbe9e935a57cbadf1e22",
+  "id": "2024/07/13/week-28-meta-xr-simulator",
+  "href": "/plan/2024/07/13/week-28-meta-xr-simulator",
+  "title": "Week 28: Android 14 and Meta XR simulator",
+  "date": "2024-07-12T21:00:00.000Z",
+  "content": "Week 28: Android 14 and Meta XR simulator\n\nMost of this week I was working on trying new ROM on my phone and tablet. I have wrote another article about this. I tried to use Magisk to do some root stuff. Well, I lost the interests.\n\nAnother thing, I tried the Meta XR simulator this week. It is in the Meta Quest Developer Hub. When using Unity, click Oculus menu select XR simulator click activate. Then run the project. Interaction is like play a game. You can check the input binding from the menu left side.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

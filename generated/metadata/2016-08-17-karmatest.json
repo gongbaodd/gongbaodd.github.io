@@ -1,4 +1,14 @@
 {
   "file": "2016/08/17/karmatest",
-  "hash": "d97bc2834ece523b061d2b26f1bf806887005a4f47a281e807c305456299ab9b"
+  "hash": "d97bc2834ece523b061d2b26f1bf806887005a4f47a281e807c305456299ab9b",
+  "id": "2016/08/17/karmatest",
+  "href": "/fe/2016/08/17/karmatest",
+  "title": "跑一下前端的单元测试",
+  "date": "2016-08-16T21:00:00.000Z",
+  "content": "跑一下前端的单元测试\n\n什么是单元测试\n\n指对软件中的最小可测试单元进行检查和验证。\n\n老代码\n\n新代码\n\n这里需要对输入(navigator.userAgent)\n进行处理来查看函数的\n输出(scheme1,scheme2,scheme3,schemeXX,http)\n是否发生改变\n\n什么工程要单元测试\n\n存在大量调用的工程\n(√)\n\n代码量少的工程（每次修改后自测都能完全覆盖用例）\n(X)\n\n代码可以加 jshint\n\n什么代码可以测试\n\n不是所有代码都可以单元测试，需要测试的代码需要给 runner 留有接口。\n\n但是，因为 js 没有真的对象（多年从事找对象工作的笔者哭晕在厕所），所以大家实现私有函数的方法真是天花乱坠。\n\n可是宝宝要单测的代码都是私有方法啊！！！！！！\n\ncase A\n\ncase B\n\ncase D\n\n只能把用例写到代码里面了。。。\n\n所以当我们写代码的时候要留好单元测试的接口，不管你写的代码多牛逼，\n如果你的代码不可测试，那宝宝就认为你的代码是不可读的。\n\n拿什么测试\n\nfekit 自带测试功能，在 test 文件夹下面执行fekit test就可以运行，用例语法遵循 mocha.js，可惜运行时是当前的 node 环境。\n\nangular 的测试 runner 时 karma，可以拿来跑用例，并且可以指定环境，所以使用 karma 跑用例还不错。\n\n那么，用例拿什么写呢？\n\nQUnit\n\nmocha.js\n\njasmine\n\nava\n\ntape\n\n实际上 ava 和 tape 是我强推的，可惜这俩 node 环境还不错，到了 browser 还是用老牌的好一点。\n\n怎么配置 karma\n\n需要安装的 npm modules 在下面的 devDependencies 里面\n\n执行\n\n下面的代码会自动生成 karma 的配置文件\n\n工程根目录里面会多一个 karma.conf.js 文件\n\n可以看到 files 里面我又加上了一些文件，那些还不是测试用例，因为要测试一些 dom 以及 ajax 的情况，加了一些代码。\n\n说说这些 karma 的原理吧\n\n用过 QUnit 和 mocha 的人都知道，如果写测试用例要把 js 和用例放在一个 html 环境下，再引进来 QUnit.js 和 mocha.js 就行了，\n其实 Karma 差不多，只不过把手工的部分换成机器了，这样你不用新建一个 html 文件，发布之前也不需要先删除测试代码了。\n\njasmine 的语法\n\n懒得写了，可以看一下下面的文章\n\nJavaScript 单元测试框架——Jasmine 入门 >jasmine-ajax - Faking Ajax responses in your Jasmine suite. >jasmine-jquery\n\n如果你有一个 Dialog 对象，你想看看它的 show 函数执行后页面是否有类名.dialog的 dom 节点。\n\n再如，Dialog 有一个 sendVcode 函数，执行的时候会发起 Ajax 请求，你要 Mock 一个 Ajax 请求\n\n另外，Dialog 执行 sendVcode 的时候，会执行Dialog.timer的 start 函数\n\n如果说要做接口测试\n\n说下 Cookie 和 UA 的 hack，用karma-phantomjs-launcher可以改配置\n\nCSS 的测试\n\n最后说一下，如果 karma 要支持 commonJS 需要加入 preCompiler，如 webpack 或者 browserfy，否则不支持 require。\n好在 fekit 是在 window 下注入\\_\\_\\_\\_MODULES 解决模块化，所以只需要知道模块的 md5 值就好。\n如刚才的 Dialog 的引入\n\n关于自动生成测试用例\n\n写安卓的时候，AS 会自动生成用例，所以想让 Atom 也支持这一功能，找了一下 plugin，基本上没有。。。\n如果我写一个的话。。。我得估一下它的必要性。。。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

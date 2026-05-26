@@ -1,4 +1,27 @@
 {
   "file": "2025/03/01/week-9-unity-ar",
-  "hash": "aa79b27d170356c3dc46fafb848b6504c4e23d416740cf815d3bee5c8f03ddb1"
+  "hash": "aa79b27d170356c3dc46fafb848b6504c4e23d416740cf815d3bee5c8f03ddb1",
+  "id": "2025/03/01/week-9-unity-ar",
+  "href": "/plan/2025/03/01/week-9-unity-ar",
+  "title": "Week 9: Unity AR",
+  "date": "2025-02-28T22:00:00.000Z",
+  "content": "Week 9: Unity AR\n\nThis week is the end of Unity pathway course. Finally, I finished the last two AR courses. Marker and plane. Marker is to show the 3D object on a graphic image. Plane is to show the 3D object on a plane surface. I tried them with my old Mix2s. It rendered not so acceptable but you still can make some projects. For example, the 3D object cannot follow the marker in every frame. You can feel a little lag. The plane tutorial mentioned stencil shader in the portal. It is harder to learn and since it didn't mention a lot I will return to it later.\n\nAlso, the tutorial mentioned visual scripting, it was written in 2022. Back then non-code was a popular idea. But now, it seems that the LLM made a huge effect on the industry. I think the visual scripting will be less popular in a while.\n\nUnity best practices\n\nDuring the course, I collected some good unity courses.\n\nJohn Lemon's Haunted Jaunt: 3D Beginner\n\nPractical Game Accessibility\n\nVR Beginner: The Escape Room\n\nHere are some Unity best practices. I think I will read them next week.\n\nCommon side effects\n\nThis is an animation by adult swim. I only watched half of the season. But it is good to watch.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "ar",
+      "href": "/tag/ar"
+    },
+    {
+      "label": "stencil",
+      "href": "/tag/stencil"
+    }
+  ]
 }

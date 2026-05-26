@@ -1,4 +1,14 @@
 {
   "file": "2023/11/25/week-48-thailand-evisa",
-  "hash": "0770e16768680e2cc0370add0bab67176536f3ef17367ac7fe87673d3508b0cb"
+  "hash": "0770e16768680e2cc0370add0bab67176536f3ef17367ac7fe87673d3508b0cb",
+  "id": "2023/11/25/week-48-thailand-evisa",
+  "href": "/plan/2023/11/25/week-48-thailand-evisa",
+  "title": "Week 48: Thailand e-VISA",
+  "date": "2023-11-24T22:00:00.000Z",
+  "content": "Week 48: Thailand e-VISA\n\neVISA\n\nI am still waiting the VISA to be approved. There are some documents to be prepared.\n\nAt least 2,000 RMB in bank account\n\nTwo tickets\n\nHotel reservation\n\nTravel plan\n\nPassport Scan\n\nPersonal photo\n\nJob status\n\nWASM\n\nThis is an example about coding in wasm, quite too simple.\n\nControlNet\n\nControl Net is an extension for Stable Diffusion, which can generate an image with specific sketch style. This is a blog about how to use it.\n\nTopaz\n\nTopaz is a tool for image upscaling. Not so good  as I thought.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

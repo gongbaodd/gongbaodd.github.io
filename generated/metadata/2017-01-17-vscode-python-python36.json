@@ -1,4 +1,14 @@
 {
   "file": "2017/01/17/vscode-python-python36",
-  "hash": "b417ebe0c9eb466edfedba46f2441f0fb14b33e6e994c344036d61ca26647e81"
+  "hash": "b417ebe0c9eb466edfedba46f2441f0fb14b33e6e994c344036d61ca26647e81",
+  "id": "2017/01/17/vscode-python-python36",
+  "href": "/tech/2017/01/17/vscode-python-python36",
+  "title": "vscode python python36",
+  "date": "2017-01-16T22:00:00.000Z",
+  "content": "本来想写一篇pyqt+qml的文章，结果今天打开VScode发现Python不语法提示了。打开开发者模式，发现一直在报错，gramar3.6 not found。\n\n打开~/.vscode/extensions/donjayamanne.python-0.5.5/pythonFiles/preview/jedi/parser找到里面的grammar3.5.txt复制为grammar3.6.txt\n\n重启VScode就好了。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

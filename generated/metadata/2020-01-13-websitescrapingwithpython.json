@@ -1,4 +1,14 @@
 {
   "file": "2020/01/13/websitescrapingwithpython",
-  "hash": "b20ae9718f7744be0f26aae7f586893d33616ec370935e8a489809f13dd8dc87"
+  "hash": "b20ae9718f7744be0f26aae7f586893d33616ec370935e8a489809f13dd8dc87",
+  "id": "2020/01/13/websitescrapingwithpython",
+  "href": "/book/2020/01/13/websitescrapingwithpython",
+  "title": "Website Scraping with Python",
+  "date": "2020-01-12T22:00:00.000Z",
+  "content": "Website Scraping with Python\n\nParsing robots.txt\n\npage 28\n\nUsing Beautiful Soup\n\n用来解析 HTML\n\npage 56 - 使用\n\npage 101 - 利用 strainer 只解析想要的数据\n\nExporting the Data\n\npage 80 - CSV\n\npage 87 - JSON\n\npage 90 - SQLite\n\npage 97 - MongoDB\n\nUsing Scrapy\n\npage 111\n\nHandling JavaScript\n\npage 186 - Splash\n\npage 196 - Selenium\n\nCloud\n\npage 206 - Scrapy Cloud\n\npage 211 - mlab\n\npage 216 - PythonAnywhere",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": []
 }

@@ -1,4 +1,27 @@
 {
   "file": "2020/03/15/codingnet-jenkins-ci-cd",
-  "hash": "160a0d98f6faaf26db0fb4028f8c1c06583960a682e1dd0c096566d2ad98108f"
+  "hash": "160a0d98f6faaf26db0fb4028f8c1c06583960a682e1dd0c096566d2ad98108f",
+  "id": "2020/03/15/codingnet-jenkins-ci-cd",
+  "href": "/tech/2020/03/15/codingnet-jenkins-ci-cd",
+  "title": "Coding.net 使用 Jenkins 实现自动部署(CI/CD)",
+  "date": "2020-03-14T22:00:00.000Z",
+  "content": "Coding.net 使用 Jenkins 实现自动部署(CI/CD)\n\n最近在做一些后端部署的工作，本来打算使用 Travis 部署，但是用于我的服务器在国内，所以在外网也需要挂梯子登陆到国内。但是使用 Coding.net 部署到腾讯云就方便很多（毕竟是同一家公司）。\n\n在 Coding 创建制品库和部署\n\n往往创建好 Coding 仓库之后需要手动配置来获得部署和制品库功能。点击「项目设置>功能开关」把「构建与部署」和「制品库」打开即可。\n\n点击「制品库」增加 docker 仓库，这里的指引很方便，可以本地写一个 hello-world 发布上去。\n\n点击「构建与部属>构建」新建构建计划，默认我都是选择代码仓库中的 Jenkins 文件，但是可以使用 coding 自带的图形化 Jenkins 编辑器，个人感觉还是比较鸡肋的，但是作为一个文件格式化工具还是不错的。另外帮助文档中有详细的变量说明。\n\nJenkins 配置\n\nJenkins 的主要功能是检出代码(git clone)，编译代码，执行测试，打包成 docker image 最后上传到制品库。详细内容可以参考代码。\n\n服务器部分\n\n接下来就需要服务器自己下载镜像并执行了，这里有一个比较好的工具叫watchtower，它会每五分钟检查镜像是否有更新并更新本地镜像。\n\n接下来在服务器执行刚才编译好的镜像即可。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "coding.net",
+      "href": "/tag/coding.net"
+    },
+    {
+      "label": "jenkins",
+      "href": "/tag/jenkins"
+    },
+    {
+      "label": "docker",
+      "href": "/tag/docker"
+    }
+  ]
 }

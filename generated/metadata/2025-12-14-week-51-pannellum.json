@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#507aa1",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/12/14/week-51-pannellum",
+  "href": "/plan/2025/12/14/week-51-pannellum",
+  "title": "Week 51: Building an Interactive Novel with Pannellum and Inky",
+  "date": "2025-12-13T22:00:00.000Z",
+  "content": "Week 51: Building an Interactive Novel with Pannellum and Inky\n\nThis past week, I had the privilege of attending the Interactive Environments for Virtualization of Cultural Heritage Erasmus project. 🇪🇪 During this intensive week, our team focused on creating an interactive novel based on the historical WWII Tannenberg Line Battle.\n\n🎮 The Project: An Interactive Historical Experience\n\nYou can play the final game prototype right here: https://gongbaodd.itch.io/1944\n\nOur workflow involved several key tools to bring this narrative to life:\n\nNarrative Logic (Inky): We initially used Inky to quickly build a low-fidelity prototype. This allowed us to finalize the game's core routine and player decision pathways efficiently.\n\n3D Presentation (Pannellum & AI): Once the narrative structure was solid, we leveraged Pannellum to create the immersive 3D panorama slideshow. The visuals for these panoramas were generated with the help of Doubao AI (https://www.doubao.com/chat/).\n\nHere is a visual breakdown of our process:\n\nworkflow\n\n🔬 User Testing and Key Findings\n\nA crucial part of our project involved user testing to evaluate the experience. We used iMotions (https://imotions.com/) to track and analyze users' emotional responses while they played the game.\n\nI was particularly excited to see that the motivations of some testers clearly reflected aspects of the Bartle taxonomy of player types. This provided valuable insight into how different players engage with the narrative.\n\nData analysis\n\nHere are a few other significant findings from our testing:\n\nComplexity Requires Guidance: For games with complex interactions (like a draggable panorama background), a dedicated tutorial is essential. Several testers were unaware that they could manipulate the background.\n\nThe Hawthorne Effect in Testing: Testers under surveillance (knowing they are being watched or tracked) often exhibit \"safer\" interaction behaviors, such as strictly clicking intended buttons. For example, a hidden \"doodle feature\" was only used when testers were explicitly asked to try it, rather than spontaneously exploring it—a behavior that contradicts the natural curiosity players typically exhibit in a less monitored environment.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

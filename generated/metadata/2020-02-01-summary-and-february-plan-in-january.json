@@ -1,4 +1,14 @@
 {
   "file": "2020/02/01/summary-and-february-plan-in-january",
-  "hash": "a2ebceaa724e6734990d999ea3f7b3011e8175ba6a71738b9ccdea103e380aa3"
+  "hash": "a2ebceaa724e6734990d999ea3f7b3011e8175ba6a71738b9ccdea103e380aa3",
+  "id": "2020/02/01/summary-and-february-plan-in-january",
+  "href": "/plan/2020/02/01/summary-and-february-plan-in-january",
+  "title": "一月总结和二月计划",
+  "date": "2020-01-31T22:00:00.000Z",
+  "content": "一月总结和二月计划\n\n话说这个月吃瓜不少。\n\n长江白鳍豚灭绝\n\n澳洲大火\n\n戈恩逃离日本\n\n川普一炮炸了伊朗二号人物\n\n湾湾大选\n\n伊朗炸加拿大飞机，伊朗道歉\n\n患者家属砍死医生，医院道歉\n\n木兰编程语言抄袭，实验室道歉\n\n警方诬告 8 名医生造谣 SARS 传播，没有道歉\n\n中美贸易协议签订\n\n冠状病毒爆发\n\n英国正式脱欧\n\n人民网半夜带货双黄连\n\n不说气人的了，谈谈自己的事情。\n\n一月总结\n\n这个月我的生活也很充分\n\n个人网站域名通过 Cloudflare 转发，但是备案没通过，算了，以后放点实验性的东西好了。\n\n看了巴黎圣母院歌剧。\n\n完成三本书「Website Scraping with Python」「rust 编程之道」「Unity 游戏设计与实现」\n\n完成美剧爬虫上线 scrapinghub\n\n一月发现的新事物\n\nYouTube 栏目，老高&小茉，将一些奇闻异事很有趣，晚上烦的时候看一看很轻松。\n\nYouTube 栏目，自说自话的总裁，很有个人观点的历史频道。\n\n网站田间小站，英语资源站。\n\nmonect 键盘鼠标模拟器。\n\n二月计划\n\n我的蛋白粉没了。\n\n要整理出来一篇 Windows 下面开发 scrapy 爬虫（并单元测试）\n\n使用 rust 开发前端页面\n\n写第一个 flutter 应用\n\n空闲时间整理一下旅游计划\n\n报名 4-5 月雅思考试",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

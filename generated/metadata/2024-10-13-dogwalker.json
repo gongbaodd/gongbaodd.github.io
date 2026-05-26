@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#916450",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2024/10/13/dogwalker",
+  "href": "/lab/2024/10/13/dogwalker",
+  "title": "The dog walker",
+  "date": "2024-10-12T21:00:00.000Z",
+  "content": "The dog walker\n\nYou can play it here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

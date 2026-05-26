@@ -1,4 +1,23 @@
 {
   "file": "2021/05/29/taylor-formula-and-the-remaining-items",
-  "hash": "8573a2dbf9417fa7d36c602b5dd324454071662294d68837817ca3e01f1ebba0"
+  "hash": "8573a2dbf9417fa7d36c602b5dd324454071662294d68837817ca3e01f1ebba0",
+  "id": "2021/05/29/taylor-formula-and-the-remaining-items",
+  "href": "/book/2021/05/29/taylor-formula-and-the-remaining-items",
+  "title": "泰勒公式及余项",
+  "date": "2021-05-28T21:00:00.000Z",
+  "content": "泰勒公式及余项\n\n拉格朗日余项\n\n$$\nf(x) = f(x\\_0) + f'(x\\_0)(x-x\\_0) + \\cdots  + \\frac{1}{n!}f^{(n)}(x\\_0)(x-x\\_0)^n  + \\frac{f^{(n+1)}(\\xi)}{(n+1)!}(x-x\\_0)^{n+1}, \\xi \\in (x, x\\_0)\n$$\n\n佩亚诺余项(x 无穷趋近于 x\\_0)\n\n$$\nf(x) = f(x\\_0) + f'(x\\_0)(x-x\\_0) + \\frac{1}{2!}f''(x\\_0)(x-x\\_0) + \\cdots + \\frac{1}{n!}f^{(n)}(x\\_0)(x-x\\_0)^n + o(x-x\\_0)^n\n$$\n\n麦克劳林公式(x0 = 0)\n\n拉格朗日余项\n\n$$\nf(x)=f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + \\cdots + \\frac{f^{(n)}(0)}{n!}x^n+\\frac{f^{(n+1)}(\\xi)}{(n+1)!}x^{n+1}\n$$\n\n佩亚诺余项\n\n$$\nf(x)=f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + \\cdots + \\frac{f^{(n)}(0)}{n!}x^n + o(x^n)\n$$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

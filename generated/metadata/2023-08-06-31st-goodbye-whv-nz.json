@@ -1,4 +1,14 @@
 {
   "file": "2023/08/06/31st-goodbye-whv-nz",
-  "hash": "c5cd6f04bdcb78c28d0feff912b8f18d899dc9bf3978832d1a7645dda522a7f3"
+  "hash": "c5cd6f04bdcb78c28d0feff912b8f18d899dc9bf3978832d1a7645dda522a7f3",
+  "id": "2023/08/06/31st-goodbye-whv-nz",
+  "href": "/plan/2023/08/06/31st-goodbye-whv-nz",
+  "title": "31st week: Goodbye WHV NZ",
+  "date": "2023-08-05T21:00:00.000Z",
+  "content": "31st week: Goodbye WHV NZ\n\nThis week is my last chance to get a NZ WHV visa of my life. I didn't get it, sad.\n\nI wrote a page as a meme about Twitter changing its logo into X. Which was as a tutorial to learn shader in babylonjs.\n\nraczzalan.webgl-glsl-editor is an extension for vscode to write glsl without a language server.\n\nUsing a shader material is simple, just pass ther vertex and fragments as a parameter.\n\nthe attributes and uniforms are the variables that can be used in the shader. There are some varaibles that are automatically passed to the shader, like worldViewProjection and time. They are documented in threejs and babylonjs.\n\nattribute is the data passed before compile and uniforms can be changed during rendering.\n\nThere are two functions to send attributes. mesh.setVerticesBuffer and mesh.registerInstancedBuffer. The first one is for the data that is the same for every vertex, this is a simple example, like the position of the vertex. The second one is for the data that is different for every instance, This is the example.\n\nsending uniforms is simple. Like material.setFloat(\"time\", time). Sadly the animation in babylon has not support shader material.\n\nNext week, I will try to learn how to use the node editor with this video.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

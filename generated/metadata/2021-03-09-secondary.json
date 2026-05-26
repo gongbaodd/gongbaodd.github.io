@@ -1,4 +1,23 @@
 {
   "file": "2021/03/09/secondary",
-  "hash": "73af3edbe5903d3d8936bcdbe82da8a077b9dd2ecff9d5ea17f93faae95c4e69"
+  "hash": "73af3edbe5903d3d8936bcdbe82da8a077b9dd2ecff9d5ea17f93faae95c4e69",
+  "id": "2021/03/09/secondary",
+  "href": "/book/2021/03/09/secondary",
+  "title": "二次型",
+  "date": "2021-03-08T22:00:00.000Z",
+  "content": "二次型\n\nQ:\n\n$$\nf(x\\_1,x\\_2,x\\_3)=x\\_1^2+3x\\_2^2-2x\\_3^2+8x\\_1x\\_2-10x\\_2x\\_3\n$$\n\n求二次型矩阵及其秩\n\nA:\n\n$$\nA=\\begin{pmatrix}\n1 & 4 & 0 \\\\\n4 & 3 & -5 \\\\\n0 & -5 & -2 \\\\\n\\end{pmatrix},r(A) = 3\n$$\n\nQ:\n\n$$\nf(x\\_1, x\\_2, x\\_3)=\\mathbf{x}^T\\begin{pmatrix}\n1 & 0 & 2 \\\\\n-2 & -3 & 2 \\\\\n0 & -8 & 0 \\\\\n\\end{pmatrix}\\mathbf{x}\n$$\n\n求二次型矩阵及其秩\n\nA:\n\n$$\nA=\\begin{pmatrix}\n1 & -1 & 1 \\\\\n-1 & -3 & -3 \\\\\n1 & -3 & 0 \\\\\n\\end{pmatrix},r(A)=2\n$$\n\nQ:\n\n$$\nA=\\begin{pmatrix}\n0 \\\\\n& 1 \\\\\n&& 3 \\\\\n\\end{pmatrix}\n$$\n\n求此二次型的表达式及其正负惯性指数\n\nA:\n\n$$\nf(x\\_1,x\\_2,x\\_3)=x\\_2^2+3x\\_3^2,p=2,q=0\n$$\n\nQ:\n\n$$\nf(x\\_1,x\\_2,x\\_3)=5x\\_1^2+5x\\_2^2+ax\\_3^2-2x\\_1x\\_2-6x\\_2x\\_3+6x\\_1x\\_3\n$$\n\n秩为 2，求 a，求正惯性指数 p\n\nA: a=3,p=2\n\nQ: 将二次型转换为标准型，写出正交变换\n\n$$\nf(x\\_1,x\\_2,x\\_3)=4x\\_2^2-3x\\_3^2+4x\\_1x\\_2-4x\\_1x\\_3+8x\\_2x\\_3\n$$\n\nA:\n\n$$\nQ=\\begin{pmatrix}\n\\frac{2}{\\sqrt{5}} & \\frac{1}{\\sqrt{30}} & \\frac{1}{\\sqrt{6}} \\\\\n0 & \\frac{5}{\\sqrt{30}} & -\\frac{1}{\\sqrt{6}} \\\\\n-\\frac{1}{\\sqrt{5}} & \\frac{2}{\\sqrt{30}} & \\frac{2}{\\sqrt{6}}\n\\end{pmatrix},\n(x\\_1,x\\_2,x\\_3)^T=Q(y\\_1,y\\_2,y\\_3)^T,\nf(x\\_1,x\\_2,x\\_3)=y\\_1^2+6y\\_2^2-6y\\_3^2\n$$\n\nQ: 将二次型转换为标准型，写出正交变换\n\n$$\nf(x\\_1,x\\_2,x\\_3)=2x\\_1^2+2x\\_2^2+2x\\_3^2+2x\\_1x\\_2+2x\\_1x\\_3+2x\\_2x\\_3\n$$\n\nA:\n\n$$\nQ=\\begin{pmatrix}\n\\frac{1}{\\sqrt{3}} & \\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{6}} \\\\\n\\frac{1}{\\sqrt{3}} & -\\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{6}} \\\\\n\\frac{1}{\\sqrt{3}} & 0 & -\\frac{2}{\\sqrt{6}} \\\\\n\\end{pmatrix},x=Qy,\nf(x\\_1,x\\_2,x\\_3)=4y\\_1^2+y\\_2^2+y\\_3^2\n$$\n\nQ:\n\n$$\nf=x\\_1^2+x\\_2^2+x\\_3^2+2ax\\_1x\\_2+2bx\\_2x\\_3+2x\\_1x\\_3,\nx=Qy,\nf=y\\_2^2+2y\\_3^2\n$$\n\n求 a，b 以及 Q\n\nA:\n\n$$\na=b=0,\nQ=\\begin{pmatrix}\n\\frac{1}{\\sqrt{2}} & 0 & \\frac{1}{\\sqrt{2}} \\\\\n0 & 1 & 0 \\\\\n-\\frac{1}{\\sqrt{2}} & 0 & \\frac{1}{\\sqrt{2}} \\\\\n\\end{pmatrix}\n$$\n\nQ: 用配方法转化二次型为标准型，并写出坐标转换\n\n$$\nf(x\\_1,x\\_2,x\\_3)=x\\_1^2+2x\\_2^2-x\\_3^2+4x\\_1x\\_2-4x\\_1x\\_3-4x\\_2x\\_3\n$$\n\nA:\n\n$$\nf(x\\_1,x\\_2,x\\_3)=y\\_1^2-2y\\_2^2-3y\\_3^2,\n\\begin{cases}\nx\\_1=y\\_1-2y\\_2 \\\\\nx\\_2=y\\_2+y\\_3 \\\\\nx\\_3=y\\_3 \\\\\n\\end{cases}\n$$\n\nQ:\n\n化二次型为规范型\n\n$$\nf=x\\_1^2+5x\\_2^2-3x\\_3^2\n$$\n\nA:\n\n$$\nf=y\\_1^2+y\\_2^2-y\\_3^2,\n\\begin{cases}\ny\\_1= x\\_1 \\\\\ny\\_2=\\sqrt{5}x\\_2 \\\\\ny\\_3=\\sqrt{3}x\\_3 \\\\\n\\end{cases}\n$$\n\nQ:\n\n$$\nB=\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 2 \\\\\n0 & 2 & 0 \\\\\n\\end{pmatrix}\n$$\n\nA 与 B 合同，求$x^TAx$的规范形\n\nA: $y\\_1^2+y\\_2^2-y\\_3^2$\n\nQ: 配方法公式\n\nA: $x^2+ax+b=(x+\\frac{1}{2}a)^2-(\\frac{1}{2}a)^2+b$\n\nQ: $f(x\\_1,x\\_2,x\\_3)=2x\\_1^2+5x\\_2^2+5x\\_3^2+4x\\_1x\\_2-4x\\_1x\\_3-8x\\_2x\\_3$是正定的\n\nA: 正确\n\nQ: $f(x\\_1,x\\_2,x\\_3)=x\\_1^2+4x\\_2^2+x\\_3^2+2tx\\_1x\\_2+10x\\_1x\\_3+6x\\_2x\\_3$正定，求 t\n\nA: 对任何 t 值，二次型都不能正定\n\nQ: A 是 n 阶正定矩阵，则$A^{-1}$是正定矩阵\n\nA: 正确\n\nQ: A 是 m\\*n 矩阵,r(A)=n 则$A^TA$为正定矩阵\n\nA: 正确\n\nQ: A 是 m\\*n 矩阵,r(A)=n 则$AA^T$为正定矩阵\n\nA: 正确",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

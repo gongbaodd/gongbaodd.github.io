@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#887a6e",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2026/02/24/horizon-2",
+  "href": "/tech/2026/02/24/horizon-2",
+  "title": "Horizon OS 2.0",
+  "date": "2026-02-23T22:00:00.000Z",
+  "content": "Horizon OS 2.0\n\nDuring the month I was traveling ✈️, a lot of breakthroughs quietly happened. One of the biggest updates? Meta officially rolled out Horizon OS 2.0.\n\nAt first glance, you might not notice many “brand-new” features. Most of them were already teased in previous commercials and announcements. But actually being able to use them in daily life? That’s a completely different feeling. And honestly… it’s pretty exciting. 👀\n\n📸 Instagram in 3D\n\nYes — Instagram is now in 3D.\n\nIt seems like Quest is using a local AI model to render 2D images into SBS (Side-by-Side) 3D in real time. I previously wrote a post about converting normal video into SBS 3D, so seeing this built directly into the system feels like the future arriving early.\n\nWhen you scroll through the feed, it almost feels like riding one of those old-school Paternoster lifts in Prague — endless vertical motion, little content “boxes” moving up and down around you. 🏢⬆️⬇️\n\nIt’s immersive… but I have to admit — it made me slightly dizzy. 😵‍💫\nI’m still wondering how Apple solves this kind of spatial UI comfort problem.\n\n⌨️ The Virtual Keyboard (My Favorite Feature)\n\nThis is the one I love the most.\n\nscreen shot\n\nYou can now project a virtual keyboard and trackpad onto any flat surface — desk, table, whatever is in front of you.\n\nAnd surprisingly? It’s extremely accurate. 🤯\n\nTyping feels natural, tracking is stable, and it genuinely makes productivity inside XR much more practical. This might be one of those features that quietly changes daily usage habits.\n\n🧭 The New Navigator (Well… Kind Of)\n\nThere’s also a redesigned system navigator.\n\nUnfortunately, I can’t test it.\n\nLast year I manually disabled the navigator testing toggle. With this new OS update, that toggle is gone — and now I’m stuck with the old navigator. 😅\n\nBut honestly? I’m not a huge fan of the new one anyway. So maybe it’s fine.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    }
+  ]
 }

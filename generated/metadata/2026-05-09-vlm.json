@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#9b6d56",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2026/05/09/vlm",
+  "href": "/tech/2026/05/09/vlm",
+  "title": "Vision-Language Models 👁️🤖",
+  "date": "2026-05-08T21:00:00.000Z",
+  "content": "Vision-Language Models 👁️🤖\n\nTried some vision language models (VLM). Aliyun Bailian, Last year, I tried VTON models.\nAlibaba, being an e-commerce giant, clearly nailed it.\nYou can see, that is much better than last year, though some detail on my trousers are lost.\n\nResult\n\nAfter that I tried to use the video generate tool, the video is a little creepy.\n\nThen, the cool part, Tencent's Hunyuan world generation. What is surprising me it that, the world is not only a 3DGS you can walk around, but also, the buildings are with collider.\n\ngenerated world",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    }
+  ]
 }

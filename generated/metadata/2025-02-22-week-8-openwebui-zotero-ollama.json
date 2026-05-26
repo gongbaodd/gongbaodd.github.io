@@ -1,4 +1,47 @@
 {
   "file": "2025/02/22/week-8-openwebui-zotero-ollama",
-  "hash": "f55f0c71f4291931ba7070019987eb82c5d396596c43a33c10e4dc4bdd62e0ec"
+  "hash": "f55f0c71f4291931ba7070019987eb82c5d396596c43a33c10e4dc4bdd62e0ec",
+  "id": "2025/02/22/week-8-openwebui-zotero-ollama",
+  "href": "/plan/2025/02/22/week-8-openwebui-zotero-ollama",
+  "title": "Week 8: OpenWebUI Zotero Ollama",
+  "date": "2025-02-21T22:00:00.000Z",
+  "content": "Week 8: OpenWebUI Zotero Ollama\n\nGodot XR Gamejam\n\nThis week is the voting week of Godot XR Gamejam 2025. I saw a lot good works.\n\nYour Hand Is A Dragon (XR), your hand is a flying dragon.\n\nA Wizards Way, XR puzzle game.\n\nThe Chant of Cthulhu, I single person choir.\n\nAgni Kairo: VR Firebending, workout game.\n\nSweep Stakes VR, VR flying broom.\n\nHigh Alchemist VR, cooking game.\n\nOpenWebUI Zotero and Ollama to build personal librarian\n\nI saw a video which talks about using zotero library and OpenWebUI and Ollama to build an agent base on your own database. I think it is super helpful.\n\nglTFfast\n\nI think this is not the first time I use it. This time I used it to export some unity 3D model. Because I need to test some model in mixamo. However, I still have to transpile it into fbx using this website.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    },
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    },
+    {
+      "label": "zotero",
+      "href": "/tag/zotero"
+    },
+    {
+      "label": "ollama",
+      "href": "/tag/ollama"
+    },
+    {
+      "label": "openwebui",
+      "href": "/tag/openwebui"
+    },
+    {
+      "label": "gltf",
+      "href": "/tag/gltf"
+    },
+    {
+      "label": "mixamo",
+      "href": "/tag/mixamo"
+    },
+    {
+      "label": "glb2fbx",
+      "href": "/tag/glb2fbx"
+    }
+  ]
 }

@@ -1,4 +1,23 @@
 {
   "file": "2025/06/21/godot-mcp",
-  "hash": "7cb3ae1399000a3f7ae9138e7445fba413d58f19992af0aa4a48f578add0ddf4"
+  "hash": "7cb3ae1399000a3f7ae9138e7445fba413d58f19992af0aa4a48f578add0ddf4",
+  "id": "2025/06/21/godot-mcp",
+  "href": "/tech/2025/06/21/godot-mcp",
+  "title": "Godot MCP",
+  "date": "2025-06-20T21:00:00.000Z",
+  "content": "Godot MCP\n\nI’m working on a game in Godot and planning to try voice coding for it.\nI installed Godot MCP in the Cursor editor. It can load the Godot editor just fine, but… not much exciting happened after that.\n\nInterestingly, while experimenting with it, I accidentally opened Microsoft Voice Access—basically like Siri for Windows.\nPretty amazing, actually.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    },
+    {
+      "label": "mcp",
+      "href": "/tag/mcp"
+    }
+  ]
 }

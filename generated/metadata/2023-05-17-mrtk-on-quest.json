@@ -1,4 +1,14 @@
 {
   "file": "2023/05/17/mrtk-on-quest",
-  "hash": "b5fd071a15f9e159e5f06c4de8f4e02a15e5cee04d514f975eee3e2d3151e12b"
+  "hash": "b5fd071a15f9e159e5f06c4de8f4e02a15e5cee04d514f975eee3e2d3151e12b",
+  "id": "2023/05/17/mrtk-on-quest",
+  "href": "/tech/2023/05/17/mrtk-on-quest",
+  "title": "MRTK on quest",
+  "date": "2023-05-16T21:00:00.000Z",
+  "content": "MRTK on quest\n\ncreate a 3D project on Unity Editor\n\nswitch platform in build settings\n\nimport XR plugin management from package manager\n\nimport MRTK example and MRTK foundation from MixedRealityFeatureTool(downloaded from Microsoft)\n\nchoose scene in MRTK example, change the profile into quest\n\nbuild and run\n\ncheck this and this videos for details",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

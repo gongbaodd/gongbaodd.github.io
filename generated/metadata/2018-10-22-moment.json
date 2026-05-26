@@ -1,4 +1,14 @@
 {
   "file": "2018/10/22/moment",
-  "hash": "d65fc4da2e6c08de907c70d84dfea5e66787fd6164143a623cd9133382972ffe"
+  "hash": "d65fc4da2e6c08de907c70d84dfea5e66787fd6164143a623cd9133382972ffe",
+  "id": "2018/10/22/moment",
+  "href": "/fe/2018/10/22/moment",
+  "title": "moment 获取跨越一段时间的月和周",
+  "date": "2018-10-21T21:00:00.000Z",
+  "content": "moment 获取跨越一段时间的月和周\n\n这个实现是同步实现，其实最好改成异步实现。\n\n另外关于time.startOf('month')竟然传递的是引用，简单说time改变之后这个值还会变，所以要clone一下。\n\n另外， 用moment获取到的unix时间戳是秒级别的，而默认js处理Date.now()取到的是毫秒级别的，需要单独处理。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

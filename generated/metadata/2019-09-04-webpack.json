@@ -1,4 +1,14 @@
 {
   "file": "2019/09/04/webpack",
-  "hash": "8a672345aef4ec8d1400b2aa6aafe89a98c99dbab2694a75caa1bba14e495132"
+  "hash": "8a672345aef4ec8d1400b2aa6aafe89a98c99dbab2694a75caa1bba14e495132",
+  "id": "2019/09/04/webpack",
+  "href": "/fe/2019/09/04/webpack",
+  "title": "为webpack工程的本地开发提供代理",
+  "date": "2019-09-03T21:00:00.000Z",
+  "content": "为webpack工程的本地开发提供代理\n\n首先，我绝对反对线上和本地环境有这种不同配置，但是如果代理是必选项的时候，选择工程化的配置要比每个人维护一套更有效。\n\n需要在webpack.dev.server.config中增加setProxy文件\n\n这样，每个请求localhost/api的请求就被代理到https://xxx.api.com下了。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#965151",
     "titleColor": "--mantine-color-yellow-2"
-  }
+  },
+  "id": "2022/08/27/ziglang",
+  "href": "/tech/2022/08/27/ziglang",
+  "title": "试用 Zig",
+  "date": "2022-08-26T21:00:00.000Z",
+  "content": "试用 Zig\n\n最近 Bun 大火 🔥，带动一个语法看起来很像 JS 的语言 Zig 受到关注。听了 Devtools 播客里的推荐，我决定试试手 ✨。\n\nZig 官网有两个超实用的学习资源 👉 ziglearn 和 ziglings。学习曲线相比 Rust 平缓很多 🪜，甚至比 C 还简单，可以说 Zig 就是披着高级语言语法外衣的 C 👀。官方文档也明确提到：Zig 编译器能直接编译 C！\n\n🛡️ 语言安全\n\n提到语言安全，最常见的是 类型安全 和 内存安全。\n\nZig 的类型只在 编译期 使用 📦\n\n没有传统意义上的宏语言，但有 comptime 关键字，写法依然是 Zig 语法 ✅\n\n泛型也依靠编译时可编程实现 ✍️\n\n刚开始用可能会有点混淆 🤯，不过教程里说用习惯了就很自然。\n\n🗑️ 内存管理\n\n对比：\n\nGo → 垃圾回收 ♻️\n\nRust → 借用机制 🦀\n\nZig → 完全不管内存安全 😅\n\n和 C 类似，操作堆内存需要新建 allocator。好在 defer 关键字能让资源回收看起来更清晰 🧹。\n\n⏳ 异步体验\n\nZig 的 async 和 JS 几乎一模一样 🪄：\n\n感觉像是 generator + async 的合体版\n\n但它并不是迭代器 🚫\n\n对 JS 用户来说几乎是 无缝迁移。\n\n🎯 总结\n\nZig 给我的感觉是：\n\n学习门槛低 ✅\n\n性能贴近 C 🚀\n\n写法对 JS 用户极度友好 👩‍💻\n\n个人很推荐 Zig —— 一门带着全新味道的语言 🍵。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "zig",
+      "href": "/tag/zig"
+    }
+  ]
 }

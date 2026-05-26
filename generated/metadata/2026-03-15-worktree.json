@@ -1,4 +1,19 @@
 {
   "file": "2026/03/15/worktree",
-  "hash": "a038fe00e9ec2542ee6bef44684f63cf3924cdc73463252191f39592f14ede0a"
+  "hash": "a038fe00e9ec2542ee6bef44684f63cf3924cdc73463252191f39592f14ede0a",
+  "id": "2026/03/15/worktree",
+  "href": "/tech/2026/03/15/worktree",
+  "title": "Week 11: Git Worktree",
+  "date": "2026-03-14T22:00:00.000Z",
+  "content": "Week 11: Git Worktree\n\nThis is a very cool command in Git.\n\nNowadays, because of vibe coding, I may use several AIs to work on different features. Sometimes I also need to checkout other branches to check code changes.\n\nBefore, I usually solved this by:\n\ncloning the same project into different folders, or\n\ncommitting/stashing my current work before switching branches.\n\nBut with git worktree, things become much easier. 🚀\n\nInside one project repository, you can create multiple folders for different branches.\n\nExpected Folder Structure\n\nFor example, your folder structure can look like this:\n\nStep 1 — Clone as a Bare Repository\n\nFirst create your project folder, then clone the repository as a bare repo into .git.\n\nStep 2 — Create the Main Worktree\n\nCreate the main folder and add a worktree for the main branch.\n\nThis folder will be used to pull and update the main branch.\n\nStep 3 — Create Feature Branch Worktrees\n\nWhen you want to work on a new feature, create another folder and add a worktree.\n\nFrom inside main (or any branch you want to branch from):\n\nNow you can work on multiple branches at the same time, each in its own folder.\n\nStep 4 — Update Submodules (If Needed)\n\nIf your project uses submodules like mine, remember to update them.\n\nWhy This Is Useful\n\nWith git worktree you can:\n\nwork on multiple branches at the same time\n\navoid cloning the repo many times\n\nquickly switch between features\n\nlet different AI agents work in different folders 🤖\n\nFor AI-assisted development, this workflow is extremely convenient.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "git",
+      "href": "/tag/git"
+    }
+  ]
 }

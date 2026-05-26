@@ -1,4 +1,27 @@
 {
   "file": "2025/04/26/week-17-behavior-graph",
-  "hash": "b519ff37a62c853d8f9db1595448bf85714c67893ba5f2407fc572fb6358ce77"
+  "hash": "b519ff37a62c853d8f9db1595448bf85714c67893ba5f2407fc572fb6358ce77",
+  "id": "2025/04/26/week-17-behavior-graph",
+  "href": "/plan/2025/04/26/week-17-behavior-graph",
+  "title": "Week 17: Behavior Graph",
+  "date": "2025-04-25T21:00:00.000Z",
+  "content": "Week 17: Behavior Graph\n\nMedia pipe\n\nThis week I was trying to use MediaPipe as gesture recognition tool to control a WebGL Unity game. I found the plugin, but it doesn't support WebGL. I only want a prototype, so I tried to make a simple socket server from unity, and use MediaPipe from web to send the camera data. In the future, I will try to bridge the JS to C#, then the socket server will be only for the editor.\n\nDuring prototyping, I found this openUPM which is an open source Unity asset store. I use this one to install the NuGet plugin for unity. And use NuGet to install WebSocketSharp.\n\nAnd, I found that Visual Studio Code can not support C# definition better than Visual Studio. Same thing happened in C++.\n\nBehavior Graph\n\nAnother thing in this week, I tried to use Behavior Graph in Unity. It was mentioned in the FSM class. It is in between of a finite state machine and visual coding. I learnt many from Sunny Valley Studio. Unity is combing this with its Muse AI, so that a line of description will be transformed into nodes and work as game AI logic.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "media pipe",
+      "href": "/tag/media pipe"
+    },
+    {
+      "label": "nuget",
+      "href": "/tag/nuget"
+    }
+  ]
 }

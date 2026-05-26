@@ -1,4 +1,14 @@
 {
   "file": "2023/05/21/20th-week-web-ble",
-  "hash": "445930b55dd50b6e90a47f34bd49b5d0e20322f5562ea25ce81dc54b7537c731"
+  "hash": "445930b55dd50b6e90a47f34bd49b5d0e20322f5562ea25ce81dc54b7537c731",
+  "id": "2023/05/21/20th-week-web-ble",
+  "href": "/plan/2023/05/21/20th-week-web-ble",
+  "title": "20th week web BLE",
+  "date": "2023-05-20T21:00:00.000Z",
+  "content": "20th week web BLE\n\nWatched The Long Season, nice story about the life of northeast China.\n\nWatched The Super Mario Movie, funny movie.\n\nTried to build MRTK on quest, quite simple but not as easy as web development.\n\nDid some research to build a web BLE project on my indoor biking device. Can use nRF Connect to read what the BLEs send. But the simulator is deprecated, meaning I can't simulate a fake BLE device on my computer. I have to buy a BLE device to test it.I can't using web-BLE on iOS. Bluefy is a free app to test web-BLE on iOS.\n\nDid some research on WebXR.\n\nIt's amazing that web can do so much stuff.\n\nEdge impulse puts ML into embedded devices, I won't dig it further. It's unbelivably cheap when I realized that a PR2040 board only costs 20CNY.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

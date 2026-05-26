@@ -1,4 +1,14 @@
 {
   "file": "2023/06/04/22nd-week-use-an-utra-wide-screen",
-  "hash": "88863834b7008619801d81330f4ff39392a5dbf39ebe7f7e9c595e8d909f2d17"
+  "hash": "88863834b7008619801d81330f4ff39392a5dbf39ebe7f7e9c595e8d909f2d17",
+  "id": "2023/06/04/22nd-week-use-an-utra-wide-screen",
+  "href": "/plan/2023/06/04/22nd-week-use-an-utra-wide-screen",
+  "title": "22nd Week: Use an ultra wide screen",
+  "date": "2023-06-03T21:00:00.000Z",
+  "content": "22nd Week: Use an ultra wide screen\n\nI added web sync on qwerty-learner, it's now available on this site.\n\nThis week I bought a lot fans to nake sure my devices can survive the summer. I occasionaly found out that with an ultra wide screen can pick up my efficency. I always wanted to split the terminal window from vscode, with an wide screen, that's not a problem any more. So I found CRU - custom resolution utility. It adds new resolution to the graphic settings, like 2880x900.\n\nRarbg was down this week, guess I can not watch many movies for some time.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

@@ -1,4 +1,14 @@
 {
   "file": "2019/09/27/jest",
-  "hash": "1f7dd8b9bd5dd09a4e93f048ddc24703aae28b277846fe6d053fc9bf7a6ab867"
+  "hash": "1f7dd8b9bd5dd09a4e93f048ddc24703aae28b277846fe6d053fc9bf7a6ab867",
+  "id": "2019/09/27/jest",
+  "href": "/fe/2019/09/27/jest",
+  "title": "总结一下最近 jest 上面的经验",
+  "date": "2019-09-26T21:00:00.000Z",
+  "content": "总结一下最近 jest 上面的经验\n\nmock localStorage\n\njsdom里面的localStorage是不能通过赋值覆盖的，但是有一个hack就是利用Object.defineProperty。\n\nsetTimeout\n\n有的时候需要让测试代码以为自己已经跑了一会儿。\n\nmatchMedia\n\njsdom 还没提供，需要自己mock。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

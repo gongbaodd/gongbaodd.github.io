@@ -1,4 +1,27 @@
 {
   "file": "2025/04/14/many-notes-on-llms",
-  "hash": "d80dca5b7b4f6d3b1e112bb7d827efff3d57d23b569f781772fdde9fe1c3ea20"
+  "hash": "d80dca5b7b4f6d3b1e112bb7d827efff3d57d23b569f781772fdde9fe1c3ea20",
+  "id": "2025/04/14/many-notes-on-llms",
+  "href": "/tech/2025/04/14/many-notes-on-llms",
+  "title": "Many notes on LLMs",
+  "date": "2025-04-13T21:00:00.000Z",
+  "content": "Many notes on LLMs\n\nUse langbase to build RAG\n\nClaude Code\n\nIt is interesting, but all the data are mocked. It cost me 1 dollar to just run it to \"npm run dev\". I shut it down after it started debugging.\n\nWindsurf also support MCPs, with a better UI.\n\nOpenAI Embeddings and Vector Databases Crash Course\n\n$0 Embeddings (OpenAI vs. free & open source)\n\nyolo v10 本地部署与训练教程。\n\nMicrosoft AI Toolkit\n\nGithub Models\n\nPrototyping AI Agents with GitHub Models\n\nYour First AI Agent in JS with Azure AI Agent Service",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "embeddings",
+      "href": "/tag/embeddings"
+    },
+    {
+      "label": "mcp",
+      "href": "/tag/mcp"
+    },
+    {
+      "label": "yolo",
+      "href": "/tag/yolo"
+    }
+  ]
 }

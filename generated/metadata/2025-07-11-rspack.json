@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#955c54",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/07/11/rspack",
+  "href": "/fe/2025/07/11/rspack",
+  "title": "⚡ Rebuilding a Project with Rspack",
+  "date": "2025-07-10T21:00:00.000Z",
+  "content": "⚡ Rebuilding a Project with Rspack\n\nIn Babylon Editor & Babylon Toolkit, I mentioned that the old project template was using Webpack, which was painfully slow. Migrating to Vite was tricky because of all the legacy tech involved.\n\nI heard that Rspack has great Webpack compatibility, so I decided to give it a try — and wow, it was super easy.\n\nInstall Rspack\n\nAdd scripts in package.json\n\nAdd rsbuild.config.ts\n\nThat’s it! Everything just works — you don’t even need an index.html file. 🚀\n\nRspack feels like a lightning-fast, Webpack-compatible alternative that’s perfect for legacy projects.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "rspack",
+      "href": "/tag/rspack"
+    }
+  ]
 }

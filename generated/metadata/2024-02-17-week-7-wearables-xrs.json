@@ -1,4 +1,95 @@
 {
   "file": "2024/02/17/week-7-wearables-xrs",
-  "hash": "53232b60ba919f802bdff7bd9c5d75d074590732b619cd8af7e24ea5b27ef2d9"
+  "hash": "53232b60ba919f802bdff7bd9c5d75d074590732b619cd8af7e24ea5b27ef2d9",
+  "id": "2024/02/17/week-7-wearables-xrs",
+  "href": "/plan/2024/02/17/week-7-wearables-xrs",
+  "title": "Week 7: Wearables and XRs",
+  "date": "2024-02-16T22:00:00.000Z",
+  "content": "Week 7: Wearables and XRs\n\nOverview\n\nThis week I extended my VISA, went to a Thai language class. I fixed some bugs in Cost Count App and updated this website. Did some research on Siri-kit. Furthermore, I tried some open source XR projects and did some research on wearables.\n\nWearables\n\nNo go for Watch OS\n\nThis week I did some research on wearables. I was intended to make an Apple Watch App, to train some machine learning as a gym helper. And this is why I started to make iOS Apps. But sadly, to make a Watch OS App is not as simple as it is in iOS.\n\nIt is not possible to side-load an ipa file to Watch OS. Yes, you can bundle an ipa file. But you can not install it, there are only two ways, by test flight, with a developer account which I cannot have, or just using xcode.\n\nConnecting Apple Watch to XCode needs an iPhone and a Mac. It seems that bluetooth connection is needed. Not just the same internet.\n\nBut I sill read some documents about free provisioning in XCode. Maybe one day I will have a mac mini. This post lists some capabilities of free provisioning in iOS.\n\nThere is an open source Pokemon app which bundled an ipa file. Sadly, the author do not know how to side load it.\n\nHowever, there is a trick to connect Apple Watch to computer with a line. The iBus x-tool is a tool to restore Apple Watch. But it is expensive, you can buy an android watch with that money.\n\nWear OS, Maybe?\n\nThen, I did some research on Wear OS. Last year, when I tried to buy a smart watch, I realized that Wear OS is not compatible with iOS. And not only that, the wear OS in mainland China, is not compatible with androids out of mainland China. So finally, I bought an Apple Watch. However, with the great power of the community, wear OS can connect to iPhone with an App called merge.\n\nCross Platform in wearables\n\nAnother problem, is there a cross platform in wearables? Sadly not many.\n\nReact Native? no, you need to bind the native components by yourself.\n\nFlutter? works on Wear OS, Here is a tutorial. Good thing for Flutter, it does not use native components, if it runs on Apple Watch, then it works. Bad thing is, it seems no one has tried it yet. And it is said, flutter is slow on iOS devices.\n\nXamarin? Yes, There are documents about building watch OS app and building wear OS app. But it has been a long time, Xamarin is now MAUI, but there is no example in MAUI. In the community, rumour says that .Net 8 supports wearables.\n\nConnection\n\nreact-native-watch-connectivity is a Library to connect Apple Watch to React Native.\n\nSiri Development\n\nThis is the official document about Siri shortcuts. In the code, it is called intents. This is a demo video to show how it works. And this is a blog, I can't say it's good to read, but there are not so many on the web.\n\nSince there are not so many people develop Siri shortcuts, there is few to make expo or react native modules. So I have to learn to make one by myself. So, I think I will need to build a step tracker to learn expo modules.\n\nOpen Source XR Projects\n\nMore, this week, I did more research on XR projects. I always want to build MRTK3 in web. There are more XR components like Unity XR toolkit and Oculus interaction SDK. Here is a starter example.\n\nThis week I watched Valem Tutorials' video, which provides many cool XR projects. The following are workable and tested by me.\n\nFirst Hand, made by meta, an example of hand tracking.\n\nMove Fast, made by meta, also an example of hand tracking\n\nThe World beyond, made by meta, an example of XR scene API.\n\nPhanto, made by meta, also an example of XR scene API.\n\nTilt brush, made by google, a steam VR painter app.\n\nTo run it in a fast way, using the Oculus App. It will build a rift home preview scenes to your quest with a thunderbolt cable. And you can also build it to apk and install it in your quest.\n\nSome cool projects\n\nBiome, a replacement of prettier.\n\nBruno, an alternative for postman, recently I used Hoppscotch which is a hard one. I hope this can be simpler.\n\ntremor, a chart and dashboard react components.\n\nI read Nx's monorepo book, I don't think it's a lot help. I will try to read call stack's react native book.\n\nStudy Thai\n\nI finally went to a Thai class. Only speaking now. I learnt consonants and vowels. Some simple grammars. like in Thai, the adjectives are put after the noun.\n\nRemembering the phrases is hard, I may need anki or write an App to remember it.\n\nConclusion\n\nFirstly, conclude the vocabulary learnt these day. If I need to make an App, I will try vue in ionic.\n\nUsing XCode in VM is painful. But to make a Watch OS App is not so unbearable. I will firstly try to make a Watch OS App and a Wear OS App. Then I will try Xamarin and Flutter. To make a comparison. After all this, I will reconsider whether to get a Galaxy Watch or a Mac mini.\n\nMake a step tracker to learn expo modules. Try to build siri commands for Cost Count App. Maybe making a React Native module for Siri.\n\nTry Valem's tutorial in XR. Learn WTF Web3 lesson. To learn call stack's native book. And update the Cost Count App to react native paper.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    },
+    {
+      "label": "watch os",
+      "href": "/tag/watch os"
+    },
+    {
+      "label": "wear os",
+      "href": "/tag/wear os"
+    },
+    {
+      "label": "ibus x-tool",
+      "href": "/tag/ibus x-tool"
+    },
+    {
+      "label": "flutter",
+      "href": "/tag/flutter"
+    },
+    {
+      "label": "xamarin",
+      "href": "/tag/xamarin"
+    },
+    {
+      "label": "biome",
+      "href": "/tag/biome"
+    },
+    {
+      "label": "prettier",
+      "href": "/tag/prettier"
+    },
+    {
+      "label": "bruno",
+      "href": "/tag/bruno"
+    },
+    {
+      "label": "postman",
+      "href": "/tag/postman"
+    },
+    {
+      "label": "hopposcotch",
+      "href": "/tag/hopposcotch"
+    },
+    {
+      "label": "tremor",
+      "href": "/tag/tremor"
+    },
+    {
+      "label": "chart",
+      "href": "/tag/chart"
+    },
+    {
+      "label": "dashboard",
+      "href": "/tag/dashboard"
+    },
+    {
+      "label": "expo modules",
+      "href": "/tag/expo modules"
+    },
+    {
+      "label": "siri",
+      "href": "/tag/siri"
+    },
+    {
+      "label": "app intents",
+      "href": "/tag/app intents"
+    },
+    {
+      "label": "mrtk",
+      "href": "/tag/mrtk"
+    },
+    {
+      "label": "unity xr toolkit",
+      "href": "/tag/unity xr toolkit"
+    },
+    {
+      "label": "oculus interaction sdk",
+      "href": "/tag/oculus interaction sdk"
+    }
+  ]
 }

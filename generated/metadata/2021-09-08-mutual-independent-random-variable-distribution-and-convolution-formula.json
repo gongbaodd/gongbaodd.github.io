@@ -1,4 +1,23 @@
 {
   "file": "2021/09/08/mutual-independent-random-variable-distribution-and-convolution-formula",
-  "hash": "872d12f60c82ef6a3524c9316c755433a22347a49a3206ec81e8f02de638896a"
+  "hash": "872d12f60c82ef6a3524c9316c755433a22347a49a3206ec81e8f02de638896a",
+  "id": "2021/09/08/mutual-independent-random-variable-distribution-and-convolution-formula",
+  "href": "/book/2021/09/08/mutual-independent-random-variable-distribution-and-convolution-formula",
+  "title": "相互独立的随机变量分布及卷积公式",
+  "date": "2021-09-07T21:00:00.000Z",
+  "content": "相互独立的随机变量分布及卷积公式\n\n$$\n(X,Y) \\sim f(x,y), Z=X+Y, f\\_Z(z)=\\int\\_{-\\infty}^{+\\infty}f\\_X(x)f\\_Y(z-x)dx = \\int\\_{-\\infty}^{+\\infty}f\\_X(z-y)f\\_Y(y)dy\n$$\n\n$$\n(X,Y) \\sim f(x,y), Z=X-Y, f\\_Z(z)=\\int\\_{-\\infty}^{+\\infty}f(x,x-z)dx = \\int\\_{-\\infty}^{+\\infty}f\\_X(z+y)f\\_Y(y)dy\n$$\n\n$$\n(X,Y) \\sim f(x,y), Z=XY, f\\_Z(z)=\\int\\_{-\\infty}^{+\\infty} \\frac{1}{|x|} f(x, \\frac{z}{x}) dx = \\int\\_{-\\infty}^{+\\infty} \\frac{1}{|y|} f(\\frac{z}{y}, y) dy\n$$\n\n$$\n(X,Y) \\sim f(x,y), Z=\\frac{X}{Y}, f\\_Z(z) = \\int\\_{-\\infty}^{+\\infty} |y| f(yz, y) dy\n$$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "概率论",
+    "href": "/series/probability"
+  }
 }

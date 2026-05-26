@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#577ea0",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2022/08/24/astro",
+  "href": "/tech/2022/08/24/astro",
+  "title": "Astro：前端框架的“最终形态”？✨",
+  "date": "2022-08-23T21:00:00.000Z",
+  "content": "Astro：前端框架的“最终形态”？✨\n\n这几天刷 YouTube 📺，发现大家都在疯狂推荐 Astro！\n它可以说是比 React、Vue 更高一维度的框架 🚀。\n\nAstro 的特别之处在于：\n\n可以把目前主流的前端框架作为渲染器生成静态页面 📝\n\n页面中需要交互的部分，还能用「岛屿架构」🌴 单独挂上去\n\n更有趣的是，同一个项目里还能混用不同框架 🤯！\n和 Next、Gatsby 相比，Astro 给人的感觉就是：更简单、更轻盈，也更贴心 ❤️。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "astro",
+      "href": "/tag/astro"
+    },
+    {
+      "label": "js",
+      "href": "/tag/js"
+    }
+  ]
 }

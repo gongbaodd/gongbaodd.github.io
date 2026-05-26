@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#745b46",
     "titleColor": "--mantine-color-blue-2"
-  }
+  },
+  "id": "2026/05/07/linux-vr",
+  "href": "/tech/2026/05/07/linux-vr",
+  "title": "Develop XR in Linux",
+  "date": "2026-05-06T21:00:00.000Z",
+  "content": "Develop XR in Linux\n\nAs I have partially migrated my workflow to Linux 🐧, I wanted to explore whether the ecosystem is ready for XR development 🥽. Here is a summary of my findings.\n\n🛠 System APIs & Sandboxing\n\nIn Linux, OpenXR APIs function as system-level APIs. This means if your development tools or apps are running in a sandbox (e.g., Flatpak 📦), you will likely encounter additional configuration hurdles.\n\n🎮 SteamVR\n\nI installed Steam via pacman on CachyOS 🔵.\n\nSetup: Requires a system restart after installation to function correctly.\n\nPerformance: The SteamVR interface feels consistent with the Windows experience, though I haven't performed deep stress tests yet.\n\n🔗 WiVRn: The Lightweight Alternative\n\nI tested WiVRn, which acts as a lightweight equivalent to Oculus Link for Linux ⚡.\n\nResult: It successfully connects with Godot 🤖.\n\nConfiguration: You must set the following environment variable to point to the correct runtime:\nXR\\_RUNTIME\\_JSON=/usr/share/openxr/1/openxr\\_wivrn.json\n\n🏗 Game Engines: Unity & Godot\n\nGodot: Works well and feels more stable on Linux than on other platforms 🟢.\n\nUnity: Currently a \"no-go\" ❌. I attempted to use this solution, but it failed. The issue appears from Unity's specific dependencies, it used an Android version not a common Linux version.\n\nUnreal Engine (UE): Not yet tested ⏳.\n\n🖥 Screen Mirroring\n\nI looked for ways to mirror my desktop to the headset:\n\nWayVR: I attempted to use WayVR alongside WiVRn. While there were no error logs, the headset remained blank 🌑.\n\nWorkaround: For now, using an HDMI capture card 🔌 is a more reliable solution for monitoring.\n\nX11 (Working Workaround): To fix this, I reverted to an Xorg session by installing the X11 packages:\n\nLogging into the Xorg environment allows WayVR to run correctly. Once inside the headset, look at your left wrist while holding the controller, and click the DP1 button to view and select the desired desktop window.\n\n📝 Conclusion\n\nYes, XR development on Linux is possible, specifically with Godot 🛠️. However, the overall experience is not as seamless as on Windows. If you are committed to the Godot ecosystem, Linux is a viable host environment.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    },
+    {
+      "label": "x11",
+      "href": "/tag/x11"
+    }
+  ]
 }

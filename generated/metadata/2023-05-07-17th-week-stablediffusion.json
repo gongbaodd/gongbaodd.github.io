@@ -1,4 +1,14 @@
 {
   "file": "2023/05/07/17th-week-stablediffusion",
-  "hash": "4398cf2c919b84cfd3d142d1541a34527302438834664e8b6b2d3ae84896c10b"
+  "hash": "4398cf2c919b84cfd3d142d1541a34527302438834664e8b6b2d3ae84896c10b",
+  "id": "2023/05/07/17th-week-stablediffusion",
+  "href": "/plan/2023/05/07/17th-week-stablediffusion",
+  "title": "17th week stable diffusion",
+  "date": "2023-05-06T21:00:00.000Z",
+  "content": "17th week stable diffusion\n\nGot My iPhone finally.\n\ntried Memoji, can't generate one from my photo, sad. I can send it to wechat.\n\niPhone don't have a complete file system, it feels a little different to Android. Meaning most time, I can't open a folder, create a file to edit. I can open an editor to write and then share to the file App.\n\niPhone don't have a back logic, sometimes I want to swipe the side to trigger back logic, which is useful in Android, but it won't work in iOS.\n\nI can't capture a 360 panorama photo, the last App, Gogle streetview was removed from App Store.\n\nTried stable diffusion, generated some photo with my face, like it.\n\nDid some research on XR, want to try some in MRTK. try the tutorial on babylonjs. About AR, 8th wall might be a starter choice, or I can try Unity's AR foundation, to make AR work on phones.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

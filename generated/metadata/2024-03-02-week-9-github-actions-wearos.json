@@ -1,4 +1,55 @@
 {
   "file": "2024/03/02/week-9-github-actions-wearos",
-  "hash": "68d8108dd58625ed7dfcf339c15c6a2ff8e54c34a9bcb7be5fe348e39f562145"
+  "hash": "68d8108dd58625ed7dfcf339c15c6a2ff8e54c34a9bcb7be5fe348e39f562145",
+  "id": "2024/03/02/week-9-github-actions-wearos",
+  "href": "/plan/2024/03/02/week-9-github-actions-wearos",
+  "title": "Week 9: Github Actions and WearOS",
+  "date": "2024-03-01T22:00:00.000Z",
+  "content": "Week 9: Github Actions and WearOS\n\nGithub Actions to build ipa and apk files\n\nMy two project cost-count and pasa-thai supports android and iPhone. I used to build them on my local VM. But waiting for it to be built is a waste of time. So I tried to use github actions to build them. And leave the files as atifacts. This is my workflow.\n\nIt was easier than I thought. Editing the workflow was easy with the help of the Github Actions for VSCode. Github added an environment function on actions, I got caught up with it for a while. But it just a variable name problem. Easy to fix.\n\nThe expo apk file is extreme big. Turns out that Android packs all supported CPU architecture in one apk. I don't think it's a problem right now.\n\nWearOS Development\n\nI finally bought a galaxy watch 6 classic. It is on the way. This week, as planed, I tried to make an app. This is a tutorial video from Philipp Lackner, about making a stop watch. It uses Jetpack compose and viewModel. No new story, Jetpack compose part is like swift UI, and viewModel part is just like any other MVVM framework. It just has too many template codes. Even rust code looks more simpler.\n\nI mentioned that flutter supports wearOS. Yes, I can build flutter, and the apk is 50MB just the same to the native one. Sadly, the scaffold package, which has pre-build watch sizes was obsolete. I don't think digging too deep is a good idea. But I still read the blog.\n\nI also found this watchOS tutorial from Credo Academy. Also I found this official WatchOS Swift UI document. I will try it next week.\n\nCRUX: cross-platform app using rust\n\nCRUX is like a traditional way to solve cross-platform problem. Pack the viewModel logic into a dynamic library and distribute to different platforms. The view part is still written in their native languages.\n\nHere is a talk in RustNationUK.\n\nSwiftWebUI\n\nSwift in universal development is not as active as many other languages. I used to try swift on linux last year. But I still wonder if it has more updates. This blog is about how to use SwiftWebUI. Surprisingly, the demo code, Avocado Toast still works on swift 5.9 on Linux!\n\nThis means, I can write swiftUI on Linux, combine CRUX to make a cross-platform app. Only need a Mac as a build server.\n\nAceternityUI\n\nAceternity UI is like shadcn UI, but only the cool components. Only need to copy paster into the project and it works.\n\nBabylon React Native\n\nLast year, one of my major study is babylon.js. Since I have an iPhone now, I wanted to build babylon react native on my phone. Sadly, the project only supports iOS 12 (I'm using 17). I guess I gonna give up on this. Expo might be a better choice. And what's more. I found this viro react which also uses ARkit and ARCore to build AR apps. It has a project to support oculus, but It is obsolete now. I think I will try it some time later.\n\nZhou Chu\n\nZhou Chu(周处除三害), The pidgen the pig and the snake. A nice taiwan movie. Very satisfying kind like hong kong movie. Must see in 2024.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "aceternity-ui",
+      "href": "/tag/aceternity-ui"
+    },
+    {
+      "label": "babylon-react-native",
+      "href": "/tag/babylon-react-native"
+    },
+    {
+      "label": "viro-react",
+      "href": "/tag/viro-react"
+    },
+    {
+      "label": "github-actions",
+      "href": "/tag/github-actions"
+    },
+    {
+      "label": "wearos",
+      "href": "/tag/wearos"
+    },
+    {
+      "label": "crux",
+      "href": "/tag/crux"
+    },
+    {
+      "label": "swiftwebui",
+      "href": "/tag/swiftwebui"
+    },
+    {
+      "label": "rust",
+      "href": "/tag/rust"
+    },
+    {
+      "label": "swift",
+      "href": "/tag/swift"
+    },
+    {
+      "label": "zhou-chu",
+      "href": "/tag/zhou-chu"
+    }
+  ]
 }

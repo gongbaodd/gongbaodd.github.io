@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#737c91",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2017/08/14/discover-a-website-of-a-piano-score",
+  "href": "/life/2017/08/14/discover-a-website-of-a-piano-score",
+  "title": "🎵发现一个口琴谱网站",
+  "date": "2017-08-13T21:00:00.000Z",
+  "content": "🎵发现一个口琴谱网站\n\nharptabs.com\n\n直接就是 bd谱，用起来好爽～ 😆",
+  "category": {
+    "label": "life",
+    "href": "/life"
+  },
+  "tags": [
+    {
+      "label": "harmonica",
+      "href": "/tag/harmonica"
+    }
+  ]
 }

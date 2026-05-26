@@ -1,4 +1,23 @@
 {
   "file": "2021/03/01/qi-secondary-linear-equation-group",
-  "hash": "142085527af347bd9d422a67ca0efba44a1580bc07748a039c4474416dff8eb7"
+  "hash": "142085527af347bd9d422a67ca0efba44a1580bc07748a039c4474416dff8eb7",
+  "id": "2021/03/01/qi-secondary-linear-equation-group",
+  "href": "/book/2021/03/01/qi-secondary-linear-equation-group",
+  "title": "齐次线性方程组",
+  "date": "2021-02-28T22:00:00.000Z",
+  "content": "齐次线性方程组\n\nQ:\n\n$$\n\\begin{cases}\n6x\\_1+2x\\_2-2x\\_3+x\\_4=0 \\\\\nx\\_1-x\\_3+x\\_4 = 0 \\\\\n2x\\_1+x\\_2+3x\\_4 = 0 \\\\\n\\end{cases}\n$$\n\n求基础解系\n\nA:\n\n$$\n\\mu=(1,-2,1,0)^T\n$$\n\nQ:\n\n$$\n\\begin{cases}\nx\\_1+2x\\_2+x\\_3-x\\_4 = 0 \\\\\n3x\\_1+6x\\_2-x\\_3-3x\\_4 = 0 \\\\\n5x\\_1+10x\\_2+x\\_3-5x\\_4 = 0 \\\\\n\\end{cases}\n$$\n\n求基础解系\n\nA:\n\n$$\n\\mu\\_1=(-2,1,0,0)^T,\n\\mu\\_2=(1,0,0,1)^T\n$$\n\nQ:\n\n$$\n\\begin{cases}\n2x\\_1-x\\_2+3x\\_3+2x\\_4 = 0\\\\\n3x\\_1+2x\\_2+5x\\_3-4x\\_4 = 0 \\\\\n4x\\_1+5x\\_2+7x\\_3-10x\\_4 = 0 \\\\\n\\end{cases}\n$$\n\n求基础解系\n\nA:\n\n$$\n\\mu\\_1=(-\\frac{11}{7}, -\\frac{1}{7}, 1, 0)^T,\n\\mu\\_2=(0,2,0,1)^T\n$$\n\nQ:\n\n$$\n\\begin{cases}\nx\\_1+x\\_2+2x\\_3+3x\\_4=0 \\\\\n3x\\_1+3x\\_2+6x\\_3+12x\\_4+x\\_5 = 0 \\\\\n4x\\_1+4x\\_2+8x\\_3+15x\\_4+x\\_5 = 0 \\\\\n\\end{cases}\n$$\n\n求基础解系\n\nA:\n\n$$\n\\mu\\_1=(-1,1,0,0,0)^T,\n\\mu\\_2=(-2,0,1,0,0)^T,\n\\mu\\_3=(1,0,0,-\\frac{1}{3},1)^T\n$$\n\nQ:\n\nAx=0 的基础解系是$\\mu\\_1,\\mu\\_2,\\mu\\_3$，则其基础解系还可能是\n\n$$\n\\begin{cases}\nA, \\mu\\_1-\\mu\\_2,\\mu\\_2-\\mu\\_3,\\mu\\_3-\\mu\\_1 \\\\\nB,\\mu\\_1+\\mu\\_2,\\mu\\_1+\\mu\\_3 \\\\\nC, \\mu\\_1+2\\mu\\_2,\\mu\\_2+2\\mu\\_3,\\mu\\_3+2\\mu\\_1 \\\\\nD, \\mu\\_1+2\\mu\\_2, \\mu\\_1-\\mu\\_2+\\mu\\_3,2\\mu\\_1+\\mu\\_2+\\mu\\_3\n\\end{cases}\n$$\n\nA: C\n\nQ:\n\n$$\n\\begin{cases}\nx\\_1+2x\\_2+x\\_3 = 0 \\\\\n2x\\_1+3x\\_2+ax\\_3 = 0 \\\\\nx\\_1-x\\_2-2x\\_3 = 0 \\\\\n\\end{cases}\n$$\n\n有非零解，求 a 的值并求其通解。\n\nA:\n\n$$\na=1,k(1,-1,1)^T\n$$\n\nQ:\n\n$$\nA=\\begin{pmatrix}\n1 & 2 & 1 & 2 \\\\\n0 & 1 & t & 1 \\\\\n1 & t & 4 & -1 \\\\\n\\end{pmatrix}\n$$\n\nAx=0 的基础解系由两个线性无关的解向量构成，求 t 并求 Ax=0 的通解。\n\nA:\n\n$$\nt=-1,k\\_1(-3,1,1,0)^T+k\\_2(0,-1,0,1)^T\n$$\n\nQ:\n\n$$\nA=\\begin{pmatrix}\n2 & -2 & 1 & 3 \\\\\n9 & -5 & 2 & 8 \\\\\n\\end{pmatrix}\n$$\n\n求 4\\*2 的矩阵 B，使得 AB=O，且 r(B)=2\n\nA:\n\n$$\nB=\\begin{pmatrix}\n1 & -1 \\\\\n5 & 11 \\\\\n8 & 0 \\\\\n0 & 8 \\\\\n\\end{pmatrix}\n$$\n\nQ:\n\n求齐次方程组基础解系为\n\n$$\n\\mu\\_1=(0,1,2,3)^T,\n\\mu\\_2=(3,2,1,0)^T\n$$\n\nA:\n\n$$\n\\begin{cases}\nx\\_1-2x\\_2+x\\_3 = 0 \\\\\n2x\\_1-3x\\_2+x\\_4 = 0 \\\\\n\\end{cases}\n$$\n\nQ:\n\nA 是 3 阶非零矩阵 a1,a2,a3 是非齐次线性方程组 Ax=b 的三个线性无关的解，则 a1-a2,a1-a3 是 Ax=0 的基础解系。\n\nA: 正确",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

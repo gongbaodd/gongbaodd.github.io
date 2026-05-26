@@ -8,5 +8,36 @@
   "colorSet": {
     "bgColor": "#5e79ac",
     "titleColor": "--mantine-color-grape-3"
-  }
+  },
+  "id": "2024/12/16/2d-graphics",
+  "href": "/lab/2024/12/16/2d-graphics",
+  "title": "All my 2D Graphics Portfolio",
+  "date": "2024-12-15T22:00:00.000Z",
+  "content": "All my 2D Graphics Portfolio\n\nposter\n\nConcept Art\n\nI collect all my homeworks in color.\n\nconcept\n\nMeasurement\n\nAs I do not have an impression on paper poster's size. I use an iphone as comparison.\n\n\n\nUnliked One\n\nThe original font design is my favorite, but the teacher thought it should be like the bottom one. I do not like it, so I compromised into the final version. But I still like the original one.\n\n\n\nVector & Pixel Character Design\n\nI got idea from Kirbi and Fuwa. Made this Character.\n\n\n\n\n\nI used Meta's Animated Drawings to learn how to make a 2D character move correctly.\n\n\n\nI also tried some animation engine like Lottie and Rive.\n\nLottie\n\nRive\n\nAI art\n\nFinally, I used stable diffusion to make a qrcode for my portfolio site.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "inkscape",
+      "href": "/tag/inkscape"
+    },
+    {
+      "label": "krita",
+      "href": "/tag/krita"
+    },
+    {
+      "label": "lottie",
+      "href": "/tag/lottie"
+    },
+    {
+      "label": "rive",
+      "href": "/tag/rive"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

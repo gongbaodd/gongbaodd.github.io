@@ -1,4 +1,14 @@
 {
   "file": "2016/01/25/chrome",
-  "hash": "4986ea2d404281b1897cb2301a9f4317bdcea5668ed4532b3021116347baf1ff"
+  "hash": "4986ea2d404281b1897cb2301a9f4317bdcea5668ed4532b3021116347baf1ff",
+  "id": "2016/01/25/chrome",
+  "href": "/fe/2016/01/25/chrome",
+  "title": "chrome 插件开发笔记",
+  "date": "2016-01-24T22:00:00.000Z",
+  "content": "chrome 插件开发笔记\n\n360 真是一个良心企业，这样不用翻墙就能看 API 了\n\nmanifest.json\n\nbackground.js 判断 url 并添加 page action\n\npopup 里面获取本页 url",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

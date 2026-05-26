@@ -1,4 +1,19 @@
 {
   "file": "2024/01/01/2023-retrospective",
-  "hash": "496a07a2cb2ee606b2e28e49bec4ac2b8b05c3397ee3ca336d416b60d4b6a33e"
+  "hash": "496a07a2cb2ee606b2e28e49bec4ac2b8b05c3397ee3ca336d416b60d4b6a33e",
+  "id": "2024/01/01/2023-retrospective",
+  "href": "/plan/2024/01/01/2023-retrospective",
+  "title": "2023 Retrospective",
+  "date": "2023-12-31T22:00:00.000Z",
+  "content": "2023 Retrospective\n\nWhat I did in 2023\n\nI was using a quest2 and I learnt some basic unity tools. I find out a framework called Astro. I bought an ITX to use macintosh.\n\nIn the first month, I was working on how to work in VR, I finally use ImmersedVR and K375s as a tracking keyboard. In the end of this year, I changed to quest3, then I can throw the keyboard.\n\nThe 2nd month and 3rd month, I was majorly working on BFE.dev, great website, I think I will try it again in 2024.\n\nThe 4th to 6th month, I bought a GPU card and started to use some AI tools.\n\nThe 7th month and 8th month, I started try some WebXR development with babylonJS. Although, ThreeJS is the top suggested, I still think babylonJS has better wiki. And there is a prototype tool called Spine, I think I should try it in 2024. Also an engine called wonderland engine, I had to try it in 2024.\n\nIn the middle of the year, I bought iPhone and Apple Watch. I sold my ITX and some other gadgets. I bought a strong laptop,ASUS ProArt.\n\nAnd in the end of the year, I went to Hong Kong and finally I got to Thailand.\n\nWhat I expect in 2024\n\nFirstly, I want to get a non-ed VISA in Thailand, Then I will share my experience about renting a house and getting VISAs.\n\nThen, I want to start a podcast to record my life.\n\nI want to continue my study in BEFdev. And I will build some new tools with react native.\n\nI will try anabolics in gym. And I will try to get a remote job in Thailand.\n\nI want to apply a school to further my study in VR.\n\nMy Yearly Gadget\n\nQuest 3\n\nGL-iNet Wifi\n\nSurface Dial",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "retrospective",
+      "href": "/tag/retrospective"
+    }
+  ]
 }

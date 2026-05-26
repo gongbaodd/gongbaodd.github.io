@@ -1,4 +1,14 @@
 {
   "file": "2023/06/19/24th-week-vscode",
-  "hash": "9533746ae72903aa0907701ac1ce0ab3c1387b6e44ebb9a350ba03163222b6c6"
+  "hash": "9533746ae72903aa0907701ac1ce0ab3c1387b6e44ebb9a350ba03163222b6c6",
+  "id": "2023/06/19/24th-week-vscode",
+  "href": "/plan/2023/06/19/24th-week-vscode",
+  "title": "24th week vscode",
+  "date": "2023-06-18T21:00:00.000Z",
+  "content": "24th week vscode\n\nWheel settings\n\nThis week I tried to make my RabbitDial, a cheap alternative to Surface Dial, work with Visual Studio Code. I learnt a lot about how to make a VScode extension. But it turns out I can just simply add some keyboard bindings on the wheel settings. This link is about these settings. And this link talks about develop an C# APP.\n\nThese are the samples about making a VSCode extension.\n\nAnd there are some cool surface dial compatible open-source projects. X-Knob. The code about sending Dial BLE signals might be useful.\n\nTODOs on Rust\n\nThis week I bumped to an idea about graphql over FFI. I found some one published a post on ZhiHu.\n\nFound a document about how to use Rust on Android, Link.\n\nThree.js or Babylon.js\n\nI checked a new tutorial about R3F. R3F has a component project called drei. But still, I think babylon.js has more build tools. And more features.\n\nI has been following a guide project, it's pretty old. I want to use react to refactor it.\n\nFound a blog about game develop.\n\nSwiftUI and RN\n\nAfter WWDC, I think it's time to learn some SwiftUI. I watched a playlist from Paul Hudson. Swift is an interesting language, I will dig further.\n\nAlso I checked out a tutorial about React Native, pretty simple.\n\nThe LAN does not work on Mac\n\nI found my LAN driver can not work on Mac OS.\n\nssh login WSL2\n\nThis is a link about how to remotely login WSL2.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

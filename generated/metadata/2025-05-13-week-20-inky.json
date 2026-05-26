@@ -1,4 +1,19 @@
 {
   "file": "2025/05/13/week-20-inky",
-  "hash": "2913e78689792de89eb08b2d731dd8c1e7625f0818d1827ef66dce17485f086b"
+  "hash": "2913e78689792de89eb08b2d731dd8c1e7625f0818d1827ef66dce17485f086b",
+  "id": "2025/05/13/week-20-inky",
+  "href": "/plan/2025/05/13/week-20-inky",
+  "title": "Week 20: Inky",
+  "date": "2025-05-12T21:00:00.000Z",
+  "content": "Week 20: Inky\n\nInky is a tool for writing interactive fiction. It can generate a JSON file to be used in Unity. I used it in a recent project. However, I bumped into a lot problems. The condition branches are not rendered. I am still working on it.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "inky",
+      "href": "/tag/inky"
+    }
+  ]
 }

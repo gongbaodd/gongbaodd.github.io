@@ -1,4 +1,27 @@
 {
   "file": "2024/04/07/week-14-samsung-health",
-  "hash": "7b56231afd5b2185ab3977916ad244bfc231d1a41916b8be805f6adeb369a581"
+  "hash": "7b56231afd5b2185ab3977916ad244bfc231d1a41916b8be805f6adeb369a581",
+  "id": "2024/04/07/week-14-samsung-health",
+  "href": "/plan/2024/04/07/week-14-samsung-health",
+  "title": "Week 14: Samsung Health",
+  "date": "2024-04-06T21:00:00.000Z",
+  "content": "Week 14: Samsung Health\n\nHealth on wearables\n\nThis week I dig deeper on the deadlift tracker tutorial. Turns out gym workouts like deadlift, squats are already supported on both wearos and watchos. And samsung health has already supported.\n\nBut there are some movements were not supported. Like push ups, cleans, snatches and dumbbell curls. I guess it was too difficult to detect.\n\nWTF Academy\n\nI was learning solidity on WTF academy. Well, at least I learnt some thing to use in some interviews.\n\nSpotify Podcast\n\nI just moved my podcasts to spotify. Because the free storage on podbean is full. Moving to spotify turns out not hard. It was formerly anchor. Now the hosting service is free with RSS support.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "samsung health",
+      "href": "/tag/samsung health"
+    },
+    {
+      "label": "wtf academy",
+      "href": "/tag/wtf academy"
+    },
+    {
+      "label": "spotify podcast",
+      "href": "/tag/spotify podcast"
+    }
+  ]
 }

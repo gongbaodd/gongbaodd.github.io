@@ -8,5 +8,32 @@
   "colorSet": {
     "bgColor": "#bca66c",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2024/04/30/pasa-thai",
+  "href": "/lab/2024/04/30/pasa-thai",
+  "title": "Pasa Thai: A Duolingo like Thai learning App",
+  "date": "2024-04-29T21:00:00.000Z",
+  "content": "Pasa Thai: A Duolingo like Thai learning App\n\nThis is an ionic App aim to learn Thai in a duolingo way. Besides, I want to try ionic's Capacitor. This is the source code. I've stopped pushing the mobile versions. But you can view the web version here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "ionic",
+      "href": "/tag/ionic"
+    },
+    {
+      "label": "android",
+      "href": "/tag/android"
+    },
+    {
+      "label": "ios",
+      "href": "/tag/ios"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

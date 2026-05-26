@@ -1,4 +1,31 @@
 {
   "file": "2020/05/06/rn-flutter",
-  "hash": "659cf53843bfa9bd062f4112fd2edfdf8621150d03f16c421a7ba7563f03f396"
+  "hash": "659cf53843bfa9bd062f4112fd2edfdf8621150d03f16c421a7ba7563f03f396",
+  "id": "2020/05/06/rn-flutter",
+  "href": "/fe/2020/05/06/rn-flutter",
+  "title": "从 RN 到 Flutter-部件",
+  "date": "2020-05-05T21:00:00.000Z",
+  "content": "从 RN 到 Flutter-部件\n\n在 Flutter 中，你应该使用部件去描述针对于现有状态和配置的界面。\n\n部件是由许多很小或者单一目的的部件组成。比如Container部件就包括几个相关布局、绘制、定位和定型组件，像是LimitedBox、ConstrainedBox、Align、Padding、DecoratedBox以及Transform部件。除了使用Container来实现效果，你也可以用几个组件来实现它。\n\nCenter部件是另一个控制布局的例子。想要剧中部件，就用Center包住它。这些部件没有自己的展示，他们的目标就是控制内部部件的布局。想要理解部件是如何渲染，可以去查看他们的相邻部件。\n\n了解更多信息，可以查看Flutter 技术概览。\n\n想要了解更多部件信息，可以查看Flutter 基础部件，Flutter 部件目录 或者 Flutter 部件索引。\n\n界面\n\nFlutter 中的 View 组件\n\n在 React Native 中，View是支持Flexbox布局、样式处理、触摸处理和无障碍化的组件。\n\n在 Flutter 中，你可以使用诸如Container、Column Row和Center的核心布局部件。更多信息可以参考布局部件目录。\n\nFlutter 中的 FlatList 和 SectionList 组件\n\n一个List是垂直排布的可滚动列表。\n\n在 React Native 中，FlatList和SectionList可以用来渲染简单的或者复杂内容的列表。\n\nListView是 Flutter 中最常被使用的滚动部件。默认的构造器接受一列准确定义的数据。ListView适合少量个数部件渲染。对于无限滚动，需要使用ListView.builder，它会按需渲染，并之渲染能展示出来的数据。\n\n| Adroid ListVIew                                                                                                                                                | iOS ListView                                                                                                                                           |\n| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |\n| Android ListView | iOS ListView |\n\n阅读你的第一个 Flutter 应用，第一部分更多了解如何实现无限滚动。\n\n如何使用画布\n\n在 React Native 中是没有相关组件的，需要引入类似于react-native-canvas的第三方组件。\n\n在 Flutter 中，你可以使用CustomPaint和CustomPainter类去绘制画布。\n\n下面的例子展示的是如何使用CustomPaint部件绘制。它实现了虚类 CustomPainter，并传递了 CustomPaint 的属性。CustomPaint 的子类必须实现 paint() 和 shouldRepaint() 方法。\n\n| Android CustomPaint                                                                                                                                             | iOS CustomPaint                                                                                                                                         |\n| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Android CustomPaint | iOS CustomPaint |\n\n布局\n\n如何使用布局部件\n\n在 React Native，许多布局可以通过 props 传入。比如，你可以使用View的style属性去指定 flexbox 布局。想要让组件成列排列，可以指定样式为flexDirection: \"column\"。\n\n在 Flutter 中，布局主要是由既定的布局部件和他们的参数实现。\n\n举个例子，Column和Row组件接受一个数组作为参数来以列或者以行排列。一个Container部件既能处理样式也能处理布局，一个Center部件可以将组件居中。\n\nFlutter 提供一堆布局部件，比方说，Padding、Align和Stack。\n\n了解全部的布局部件，可以查看布局部件。\n\n| Adroid Layout                                                                                                                                                    | iOS Layout                                                                                                                                               |\n| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Adroid Layout  | iOS Layout |\n\n如何堆叠部件\n\n在 React Native，可以使用绝对定位absolute来堆叠组件。\n\nFlutter 使用Stack部件让部件按照图层分布。部件会部分覆盖于下面的部件。\n\n上面的例子使用Stack来布局一个Container并展示一个拥有黑色半透明背景的Text部件覆盖于CircleAvatar部件。这个部件通过对齐参数来规定文字位置。\n\n| Android Stack                                                                                                                                            | iOS Stack                                                                                                                                        |\n| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |\n| Android Stack | iOS Stack |\n\n更多信息可以查看Stack对象文档。\n\n样式\n\n如何处理组件样式\n\n在 React Native 中，内联样式和stylesheets.create是用来处理组件样式的。\n\n在 Flutter 中，Text部件可以使用TextStyle类，这个类的对象也可以给多个部件复用。\n\n| Android Style                                                                                                                                                     | iOS Style                                                                                                                                                 |\n| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Android Style | iOS Style |\n\n如何使用图标和颜色\n\nReact Native 没有支持图标的库（这点我不是很同意）。\n\n在 Flutter 中，引入 Material 库包含一堆Material 图标和颜色。\n\n使用Icons类时，记住要把uses-material-design: true设置在pubspec.yaml中。这保证MaterialIcons字体会被包括在应用中。\n\nFlutter 的Cupertino包，完全遵守 iOS 设计语言。要使用CupertinoIcons字体，在项目中增加cupertino\\_icons依赖。\n\n要完全的自定义组件的色彩和样式，使用ThemeData来定义主题。设置MaterialApp的ThemeData对象。Colors类提供遵守 Material 设计语言的调色盘。\n\n如何增加主题样式\n\n在 Ract Native，主题是组件定义好的。\n\n在 Flutter 中，使用ThemeData类为整个MaterialApp部件提供主题。\n\n一个Theme甚至可以不依赖于MaterialApp部件。Theme部件需要一个ThemeData传入它的data参数中，以适配它的所有子部件。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "react-native",
+      "href": "/tag/react-native"
+    },
+    {
+      "label": "flutter",
+      "href": "/tag/flutter"
+    },
+    {
+      "label": "dart",
+      "href": "/tag/dart"
+    }
+  ],
+  "series": {
+    "label": "从RN到Flutter",
+    "href": "/series/Flutter-for-RN-devs"
+  }
 }

@@ -1,4 +1,14 @@
 {
   "file": "2026/05/14/week-19",
-  "hash": "fe671dda1a6f1d5737508d5ecc1525dcce237a7f1731103fa53b5bae637ce407"
+  "hash": "fe671dda1a6f1d5737508d5ecc1525dcce237a7f1731103fa53b5bae637ce407",
+  "id": "2026/05/14/week-19",
+  "href": "/plan/2026/05/14/week-19",
+  "title": "Week 19",
+  "date": "2026-05-13T21:00:00.000Z",
+  "content": "Week 19\n\nThis week follows my thesis submission and the completion of my pre-defense.\n\nTechnical Trials\n\nI tested NoMachine as a replacement for RustDesk, which has significant memory leak issues on Linux. However, NoMachine proved unreliable due to frequent glitches and crashes, though it does offer the advantage of offline functionality.\n\nOn the AI front, I experimented with various Vision Language Models and ran Gemma locally.\n\nMedia & Entertainment\n\nFilm: 给阿嬷的情书\n\nSeries: The Boys (S5E7), Good Omens (Series Finale)\n\nCareer Progress\n\nI applied to several companies this week but received mostly rejections. I am maintaining a positive outlook for the coming week.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

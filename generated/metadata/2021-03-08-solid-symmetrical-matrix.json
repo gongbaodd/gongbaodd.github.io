@@ -1,4 +1,23 @@
 {
   "file": "2021/03/08/solid-symmetrical-matrix",
-  "hash": "dcfaf3e4920957540556802f0cf558a27cb819ecd494b412d315c0d006a80207"
+  "hash": "dcfaf3e4920957540556802f0cf558a27cb819ecd494b412d315c0d006a80207",
+  "id": "2021/03/08/solid-symmetrical-matrix",
+  "href": "/book/2021/03/08/solid-symmetrical-matrix",
+  "title": "实对称矩阵",
+  "date": "2021-03-07T22:00:00.000Z",
+  "content": "实对称矩阵\n\nQ:\n\n$$\n\\begin{cases}\n\\lambda\\_1=3, \\alpha\\_1=(1,2,-1)^T \\\\\n\\lambda\\_2=2, \\\\\n\\lambda\\_2=2, \\\\\n\\end{cases}\n$$\n\n求 A 属于 2 的特征向量\n\nA: $k\\_1(-2,1,0)^T+k\\_2(1,0,1)^T$\n\nQ:\n\n3 阶实对称矩阵 A 特征值是 6,0,-6，矩阵属于 6 和 0 的特征向量分别是\n\n$$\n\\alpha\\_1=(1,-1,1)^T,\n\\alpha\\_2=(1,0,-1)^T\n$$\n\n求 A 属于特征值-6 的特征向量\n\nA: $k(1,2,1)^T$\n\nQ:\n\n3 阶实对称矩阵 A 特征值是 6,0,-6，矩阵属于 6 和 0 的特征向量分别是\n\n$$\n\\alpha\\_1=(1,-1,1)^T,\n\\alpha\\_2=(1,0,-1)^T\n$$\n\n求 A\n\nA:\n\n$$\n\\begin{pmatrix}\n1 & -4 & 1 \\\\\n-4 & -2 & -4 \\\\\n1 & -4 & 1 \\\\\n\\end{pmatrix}\n$$\n\nQ:\n\n$$\nA=\\begin{pmatrix}\n0 & -1 & 1 \\\\\n-1 & 0 & 1 \\\\\n1 & 1 & 0 \\\\\n\\end{pmatrix},\nQ^{-1}AQ=\\Lambda\n$$\n\nQ 为正交矩阵，求 Q\n\nA:\n\n$$\n\\begin{pmatrix}\n-\\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{6}} & -\\frac{1}{\\sqrt{3}} \\\\\n\\frac{1}{\\sqrt{2}} & \\frac{1}{\\sqrt{6}} & -\\frac{1}{\\sqrt{3}} \\\\\n0 & \\frac{2}{\\sqrt{6}} & \\frac{1}{\\sqrt{3}} \\\\\n\\end{pmatrix}\n$$\n\nQ: A 为三阶实对称矩阵，且满足以下条件，求 A 的全部特征值\n\n$$\nA^2+2A=0,r(A) = 2\n$$\n\nA: $\\lambda\\_1=\\lambda\\_2=-2,\\lambda\\_3=0$\n\nQ: A 为三阶实对称矩阵，且满足以下条件，求 r(A+3E)\n\n$$\nA^2+2A=0,r(A) = 2\n$$\n\nA: 3",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

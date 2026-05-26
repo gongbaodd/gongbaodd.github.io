@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#876248",
     "titleColor": "--mantine-color-blue-2"
-  }
+  },
+  "id": "2025/06/06/yknytt",
+  "href": "/tech/2025/06/06/yknytt",
+  "title": "Neon Night: My Knytt Level",
+  "date": "2025-06-05T21:00:00.000Z",
+  "content": "Neon Night: My Knytt Level\n\nRemember when I talked about Knytt Stories in my blog? 🤔 It's this amazing platformer game with a built-in level editor that lets you create your own adventures. The only downside? It was Windows-only... until now!\n\n\n\nEnter YKnytt 🚀 - a brilliant rewrite built in Godot that brings Knytt Stories to the web and beyond! This means you can finally play those atmospheric platforming levels in your browser, no matter what OS you're using.\n\nGetting My Level In The Game ✨\n\nI decided to test things out by adding my own level, Neon Night, to YKnytt. Good news - everything worked perfectly! 🎉 The integration was surprisingly smooth.\n\nIf you're curious about how levels are loaded, it's pretty straightforward. The default levels are hardcoded in /knytt/ui/LevelSelection.cs:\n\nPro Tip for Developers 💡\n\nWhen you're ready to export your project, don't forget to include the worlds folder in your export settings! This is crucial - without it, your levels won't be accessible in the final build. Trust me, it's one of those \"learn it the hard way\" moments 😅\n\nYKnytt is a fantastic example of how open-source rewrites can breathe new life into classic games while making them more accessible to modern audiences. The web build functionality alone opens up so many possibilities for sharing and playing custom levels!",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    },
+    {
+      "label": "c#",
+      "href": "/tag/c#"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

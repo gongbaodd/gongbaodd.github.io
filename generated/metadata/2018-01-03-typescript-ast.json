@@ -1,4 +1,14 @@
 {
   "file": "2018/01/03/typescript-ast",
-  "hash": "30592fa68f1c5153ed8c41e8cb125d4bdc4c083575ae62349f77e9f51905fa63"
+  "hash": "30592fa68f1c5153ed8c41e8cb125d4bdc4c083575ae62349f77e9f51905fa63",
+  "id": "2018/01/03/typescript-ast",
+  "href": "/fe/2018/01/03/typescript-ast",
+  "title": "TypeScript编译抽象语法树",
+  "date": "2018-01-02T22:00:00.000Z",
+  "content": "TypeScript编译抽象语法树\n\n代码地址\n\n两年前我曾写了一个篇\nEsprima静态分析js代码,\n当时的目的是为了检查一个js文件对某些函数的调用数计数来确定这个函数是不是可删的.\n\n自从用了typescript,\n这种方法自然就不需要使用了,\n但是如果我想获取 typescript 的 AST 怎么办?\n\n很简单, 因为 Ts 本身就是开源项目, 官方已经有解决方案.\n\n假设我想看一下 \"const a:number = 11;\" 的 AST 树, 代码如下.\n\n结果\n\n一个空对象的抽象语法树.\n\n那么复杂点的对象\n\n那么看看应用, 之前我写过 plantUML的使用,\n正好可以试一下看看能不能自动生成类图.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

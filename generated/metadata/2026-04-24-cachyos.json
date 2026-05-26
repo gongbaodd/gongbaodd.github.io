@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#448c94",
     "titleColor": "--mantine-color-blue-2"
-  }
+  },
+  "id": "2026/04/24/cachyos",
+  "href": "/tech/2026/04/24/cachyos",
+  "title": "Week 16: CachyOS",
+  "date": "2026-04-23T21:00:00.000Z",
+  "content": "Week 16: CachyOS\n\nAfter three years of stable Windows usage, I have decided to return to Linux. 🐧\n\nThe Backstory\n\nI originally moved to Windows because of the efficiency of WSL2. At that time, I abandoned the Linux desktop because the transition from X11 to Wayland caused severe software compatibility issues. Additionally, my laptop hardware had better driver support on Windows. 💻\n\nThe Breaking Point\n\nRecently, Windows has become increasingly buggy. While previous versions introduced useful features like Android app support, recent updates seem to bring only bugs. My laptop's fan noise became unbearable, forcing me to wear noise-canceling headphones just to work. 🎧 After using a Mac Mini for two months, I realized how much I missed a quiet working environment. 🔇\n\nThe Journey Through Distros\n\nNobara / Fedora: I previously used Nobara 38 (Fedora-based) for macOS VM development. However, attempting to install Nobara 43 or Fedora 43 resulted in \"out of memory\" errors. ❌\n\nPop!\\_OS: Based on Ubuntu 24.04, I enjoyed the COSMIC desktop's tiling functionality. However, since it uses Wayland, X11-based apps like Unity and Discord suffered from massive font scaling issues. 🔎\n\nDiscovering CachyOS\n\nI eventually found CachyOS, which is based on Arch Linux. 🏔️\n\nNiri Desktop: My first attempt used the Niri scrollable panel. Like COSMIC, it faced Wayland-related scaling issues.\n\nKDE Plasma: I switched to KDE for its flexibility. Although my GPU no longer supports X11 natively, I managed X11 app scaling using environment variables: GDK\\_BACKEND=x11 GDK\\_SCALE=2. It is not perfect (fonts are often either too large or too small), but it is functional. ⚖️\n\nI used BTRfs but I never knew that it takes snapshots, so that if the system crashed, I can go back to one snapshot.\n\nHardware & Performance\n\nFor my ASUS laptop, the community-developed asusctl and ROG Control Center allow me to manage hardware features, though the ASUS Dial remains unsupported for now. 🛠️\n\nCachyOS simplifies GPU management with the prime-run command. While I still have to manually trigger the GPU for specific apps rather than relying on automatic switching (e.g., for browser video playback), the trade-off is worth it. 🔋\n\nConclusion\n\nI still have a lot to configure, but for now, I am prioritizing my Master's thesis. Most importantly: my laptop is finally fan-free and quiet. 🍃",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "linux",
+      "href": "/tag/linux"
+    }
+  ]
 }

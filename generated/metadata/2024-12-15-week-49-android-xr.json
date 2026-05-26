@@ -1,4 +1,14 @@
 {
   "file": "2024/12/15/week-49-android-xr",
-  "hash": "9f61be548e23263e0c4f92703c4e63b05765dd1b0bc9f98179f83d25004e00f3"
+  "hash": "9f61be548e23263e0c4f92703c4e63b05765dd1b0bc9f98179f83d25004e00f3",
+  "id": "2024/12/15/week-49-android-xr",
+  "href": "/plan/2024/12/15/week-49-android-xr",
+  "title": "week 49: Android XR",
+  "date": "2024-12-14T22:00:00.000Z",
+  "content": "week 49: Android XR\n\nAndroid XR was announced 2 days ago. It is still too early to try the device. But the XR emulator is now in the canary android studio. I have tried it. Sadly, now seems the spatial part is not ready, even not able to run webXR in this emulator. But I still have hope on this.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

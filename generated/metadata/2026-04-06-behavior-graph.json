@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#78a25f",
     "titleColor": "--mantine-color-grape-3"
-  }
+  },
+  "id": "2026/04/06/behavior-graph",
+  "href": "/tech/2026/04/06/behavior-graph",
+  "title": "Rethinking about Behavior Graph",
+  "date": "2026-04-05T21:00:00.000Z",
+  "content": "Rethinking about Behavior Graph\n\nLast year, when I first tried Behavior Graph in Unity, I honestly thought it was a bit of overkill—doing way too much extra work for simple tasks. 😅 I figured Unity was just pushing it to feed their Muse AI ecosystem. 🤖\n\nBut recently, while working on Grandpa's Bee Heaven 🐝✨, I hit a wall. Since most of the contributors to the codebase were \"vibe coding\" (we’ve all been there...), the logic started becoming totally unreadable. I was staring at several classes with 1000+ lines of code and logic leaks everywhere. 📉\n\nI decided to give Behavior Graph another shot to clean up the mess. I used the AI purely for building the nodes, then moved the core logic over. 🛠️\n\nBehavior Graph in Grandpa's bee Heaven\n\nThe results? It actually works! 🎉\n\nSmall Classes: Using nodes cut the code scale of a single class down significantly. ✂️\n\nClarity: It’s much easier to verify if the logic is sound, which means fewer \"hallucinations\" in the implementation. 🔍\n\nVisual Debugging: I can still edit the main logic within the graph and, best of all, I can see exactly how the graph executes in real-time during game previews. 🏎️💨",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ]
 }

@@ -1,4 +1,14 @@
 {
   "file": "2019/01/09/curl-k",
-  "hash": "346256d09c7ad181fb1de0cfec2c412e1d7d3346d31fd65fd5497f7b98da643d"
+  "hash": "346256d09c7ad181fb1de0cfec2c412e1d7d3346d31fd65fd5497f7b98da643d",
+  "id": "2019/01/09/curl-k",
+  "href": "/tech/2019/01/09/curl-k",
+  "title": "curl有一个k参数是可以不校验证书的！",
+  "date": "2019-01-08T22:00:00.000Z",
+  "content": "curl有一个k参数是可以不校验证书的！\n\n可能是我后知后觉了，curl -k 可以忽略证书认证\n\n-k, --insecure\n(SSL) This option explicitly allows curl to  perform  \"insecure\"\nSSL connections and transfers. All SSL connections are attempted\nto be made secure by using the CA certificate  bundle  installed\nby  default.  This  makes  all connections considered \"insecure\"\nfail unless -k, --insecure is used.\nSee this online resource for further details:\nhttp://curl.haxx.se/docs/sslcerts.html",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

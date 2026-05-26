@@ -1,4 +1,27 @@
 {
   "file": "2025/01/10/week-2-unity-essentials",
-  "hash": "bde33e018a1f63ed8a8051cb9d9761d144f7413e82e23d64a319b76c2abc037d"
+  "hash": "bde33e018a1f63ed8a8051cb9d9761d144f7413e82e23d64a319b76c2abc037d",
+  "id": "2025/01/10/week-2-unity-essentials",
+  "href": "/plan/2025/01/10/week-2-unity-essentials",
+  "title": "Week 2: Unity Essentials",
+  "date": "2025-01-09T22:00:00.000Z",
+  "content": "Week 2: Unity Essentials\n\nThis is the second week of 2025, I booked a bank card in Estonia. But the card is not yet here. I will talk about it when it arrives.\n\nUnity Essentials\n\nThis week I was focusing on learning Unity. The Unity Essentials said it will cost 2 weeks. But I have finished it in 3 days. In 24th, I will attend a game jam. So it is better for me to finish the pathway. At least the creative core.\n\nThe unity essentials are not about coding, mostly are focusing on how to use the editor. I have finished the WebGL part. It is better to use the dev server made by Unity. I used \"http-server\" but it need more configuration.\n\nfor example, an https server needs following command:\n\nAnd the build files are compressed with brotli, not gzip. I have to say I learned a lot from this pathway.\n\nCreature Commandos\n\nIt is the first animation in DCU. The stories in DC are always dark and mature. James Gunn made them more fun. Sadly it only has 7 episodes. The ending is not very satisfying.\n\nよんでますよ、アザゼルさん。\n\nIt is a comedy anime. The story is about a detective who can summon demons. The demons are not very powerful. But they are very funny. The first season is fun. The second one, they just focus more on hentai jokes. Making the story less interesting.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "https",
+      "href": "/tag/https"
+    },
+    {
+      "label": "webgl",
+      "href": "/tag/webgl"
+    }
+  ]
 }

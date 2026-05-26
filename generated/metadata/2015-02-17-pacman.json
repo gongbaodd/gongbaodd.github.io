@@ -1,4 +1,14 @@
 {
   "file": "2015/02/17/pacman",
-  "hash": "947acd6eecc68540044041d981d5ecfba32366bd228ce26c6681c0a54e3408e0"
+  "hash": "947acd6eecc68540044041d981d5ecfba32366bd228ce26c6681c0a54e3408e0",
+  "id": "2015/02/17/pacman",
+  "href": "/tech/2015/02/17/pacman",
+  "title": "pacman",
+  "date": "2015-02-16T22:00:00.000Z",
+  "content": "\\#pacman改下载器\n\npacman默认使用wget下载，没说wget不好，在家里面总是断，所以改成aria2了\n\n移除未安装的包\n\n使用aria2 代替 wget\n\n修改/etc/pacman.conf",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

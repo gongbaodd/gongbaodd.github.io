@@ -1,4 +1,23 @@
 {
   "file": "2025/09/08/mermaid",
-  "hash": "be096c05746e74cb6c6d1afb0f1c2c4bd96eef44adcaf2d2c69ce73e64c418a6"
+  "hash": "be096c05746e74cb6c6d1afb0f1c2c4bd96eef44adcaf2d2c69ce73e64c418a6",
+  "id": "2025/09/08/mermaid",
+  "href": "/fe/2025/09/08/mermaid",
+  "title": "Mermaid: Wait, UMLs are Back!",
+  "date": "2025-09-07T21:00:00.000Z",
+  "content": "Mermaid: Wait, UMLs are Back!\n\nI'm genuinely surprised that UML diagrams are still useful today! 😮 When I started my software engineering journey, we used the Waterfall methodology where UMLs were absolutely essential tools. You had to design the entire system upfront before writing any code - what we now call Big Design Up Front (BDUF). Some government projects still follow this approach today.\n\nBack then, UMLs served as the perfect communication bridge between designers and developers. Text descriptions simply couldn't capture the complex relationships between systems as clearly as visual diagrams could. 📊\n\nThe Agile Era: UMLs Take a Back Seat 🏃‍♂️\n\nWhen I transitioned to working with Agile methodologies, everything changed. Sprint cycles became so short that creating UMLs felt unnecessary and time-consuming. For years, I didn't touch UML diagrams at all. I even wrote a blog post about PlantUML during that period, thinking it might be one of the last useful UML tools.\n\nI genuinely believed UMLs were dead. 💀\n\nAI Brings UMLs Back to Life 🤖✨\n\nBut here's the twist - AI has brought UMLs back into relevance! When I'm prompting with AI systems, I still need to describe relationships and system architectures clearly. Current multimodal LLMs aren't sophisticated enough to understand complex system relationships from text alone.\n\nThis realization led me to discover Mermaid - a more powerful and flexible alternative to PlantUML. 🚀\n\nClass Diagrams: The Foundation 🏗️\n\nHere's a classic example of a class diagram using Mermaid:\n\nState Diagrams: Perfect for Game Design 🎮\n\nState diagrams are incredibly useful for game development and behavior trees:\n\nKanban Boards: Project Management Made Visual 📋\n\nSurprisingly, Mermaid can even create Kanban boards:\n\nYou can explore many more chart types in the official Mermaid documentation. 📚\n\nYou can use astro mermaid to add these diagrams on your astro websites.\n\nLooking Forward: The Future of Visual Documentation 🔮\n\nI still believe that future multimodal AI systems will become smart enough to interpret hand-drawn UML diagrams directly. When that happens, tools like Mermaid might become less critical.\n\nHowever, until then, Mermaid remains an incredibly handy tool - much like Markdown or LaTeX. It's a geek-friendly solution that bridges the gap between human understanding and AI communication. 🛠️\n\nWhether you're designing complex systems, creating game mechanics, or just need to visualize relationships clearly, UMLs are definitely back in the toolbox! 🧰✨",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "uml",
+      "href": "/tag/uml"
+    },
+    {
+      "label": "diagram",
+      "href": "/tag/diagram"
+    }
+  ]
 }

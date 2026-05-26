@@ -1,4 +1,23 @@
 {
   "file": "2021/03/05/linear-equation-group-examination-questions",
-  "hash": "a006234b57ef5d76de6bc261e0b03f65b1b980a26911673fc2367d604c46e674"
+  "hash": "a006234b57ef5d76de6bc261e0b03f65b1b980a26911673fc2367d604c46e674",
+  "id": "2021/03/05/linear-equation-group-examination-questions",
+  "href": "/book/2021/03/05/linear-equation-group-examination-questions",
+  "title": "线性方程组考研题",
+  "date": "2021-03-04T22:00:00.000Z",
+  "content": "线性方程组考研题\n\nQ:\n\n$$\n\\begin{cases}\n\\lambda x\\_1 + x\\_2 + x\\_3 = \\lambda -3 \\\\\nx\\_1 + \\lambda x\\_2 + x\\_3 = -2 \\\\\nx\\_1 + x\\_2 + \\lambda x\\_3 = -2 \\\\\n\\end{cases}\n$$\n\nlambda 取何值时方程组无解\n\nA: $\\lambda=-2$\n\nQ:\n\n$$\n\\begin{cases}\n\\lambda x\\_1 + x\\_2 + x\\_3 = \\lambda -3 \\\\\nx\\_1 + \\lambda x\\_2 + x\\_3 = -2 \\\\\nx\\_1 + x\\_2 + \\lambda x\\_3 = -2 \\\\\n\\end{cases}\n$$\n\nlambda 取何值时方程组有唯一解\n\nA: $\\lambda\\ne-2,\\lambda\\ne1$\n\nQ:\n\n$$\n\\begin{cases}\n\\lambda x\\_1 + x\\_2 + x\\_3 = \\lambda -3 \\\\\nx\\_1 + \\lambda x\\_2 + x\\_3 = -2 \\\\\nx\\_1 + x\\_2 + \\lambda x\\_3 = -2 \\\\\n\\end{cases}\n$$\n\nlambda 取何值时方程组无穷解并表示全部解\n\nA: $\\lambda=1,(-2,0,0)^T+k\\_1(-1,1,0)+k\\_2(-1,0,1)$\n\nQ:\n\n$$\nA\\_4=(\\alpha\\_1, \\alpha\\_2, \\alpha\\_3, \\alpha\\_4),\n\\alpha\\_1=2\\alpha\\_2-\\alpha\\_3,\n\\beta=\\alpha\\_1+\\alpha\\_2+\\alpha\\_3+\\alpha\\_4\n$$\n\n$\\alpha\\_2,\\alpha\\_3,\\alpha\\_4$线性无关，求$Ax=\\beta$的通解\n\nA:\n\n$$\nk(1,-2,1,0)^T+(1,1,1,1)^T\n$$\n\nQ:\n\n$$\n\\begin{pmatrix}\na & 1 & 1 \\\\\n1 & a & 1 \\\\\n1 & 1 & a \\\\\n\\end{pmatrix}\\begin{pmatrix}\nx\\_1 \\\\\nx\\_2 \\\\\nx\\_3 \\\\\n\\end{pmatrix}=\\begin{pmatrix}\n1 \\\\\n1 \\\\\n-2 \\\\\n\\end{pmatrix}\n$$\n\n有无穷解，求 a\n\nA: a=-2\n\nQ:\n\nA 为 m\\*n 矩阵，Ax=0 只有零解的充分条件是\n\nA. A 列向量线性无关\n\nB. A 列向量线性相关\n\nC. A 行向量线性无关\n\nD. A 行向量线性相关\n\nA: A\n\nQ:\n\n$$\n\\alpha=(1,2,1)^T,\\beta=(1,\\frac{1}{2},0)^T,\\gamma=(0,0,8)^T,A=\\alpha\\beta^T,B=\\beta^T\\alpha\n$$\n\n求$2B^2A^2x=A^4x+B^4x+\\gamma$\n\nA: $x=k(1,2,1)^T+(0,0,-\\frac{1}{2})^T$特解也可能是$(\\frac{1}{2}, 1, 0)^T$\n\nQ: $\\alpha\\_1,\\alpha\\_2,\\alpha\\_3$是 Ax=0 的一个基础解系，则$\\alpha\\_1+\\alpha\\_2,\\alpha\\_2+\\alpha\\_3,\\alpha\\_3+\\alpha\\_1$也是一个基础解系\n\nA: 正确\n\nQ:\n\n$$\n\\alpha\\_1=(1,2,-1,0)^T,\n\\alpha\\_2=(1,1,0,2)^T,\n\\alpha\\_3=(2,1,1,a)^T\n$$\n\n他们构成的向量空间的维数为 2，求 a\n\nA: a=6",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

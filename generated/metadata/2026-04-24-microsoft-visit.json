@@ -17,5 +17,15 @@
   "colorSet": {
     "bgColor": "#977f57",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2026/04/24/microsoft-visit",
+  "href": "/travel/2026/04/24/microsoft-visit",
+  "title": "Microsoft Office visit",
+  "date": "2026-04-23T21:00:00.000Z",
+  "content": "Microsoft Office visit\n\nThis friday, I went to the Microsoft office. Compared to last year I mentioned in my podcast, finally something to see.\n\nVisited their sound lab, devices to test noise cancellation and reverb. Also their server room.\n\nIt is quite sad that they only accept 1st year students as interns now.",
+  "category": {
+    "label": "travel",
+    "href": "/travel"
+  },
+  "tags": []
 }

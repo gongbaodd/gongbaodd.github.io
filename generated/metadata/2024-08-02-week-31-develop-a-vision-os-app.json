@@ -1,4 +1,23 @@
 {
   "file": "2024/08/02/week-31-develop-a-vision-os-app",
-  "hash": "b44d44556875624a953dd1876e8fe654690cf2e31ca508d8b9183359174361c2"
+  "hash": "b44d44556875624a953dd1876e8fe654690cf2e31ca508d8b9183359174361c2",
+  "id": "2024/08/02/week-31-develop-a-vision-os-app",
+  "href": "/plan/2024/08/02/week-31-develop-a-vision-os-app",
+  "title": "Week 31: Develop a Vision OS APP",
+  "date": "2024-08-01T21:00:00.000Z",
+  "content": "Week 31: Develop a Vision OS APP\n\nLast week, I decide to work through Apple's Develop in Swift tutorial. Because I had already learnt Swift UI, so I skipped the Swift UI fundamentals part.\n\nThe second part, the data modeling. Honestly, I don't exactly understand it. Too many encapsules. The APIs are simple though. Use @Model to decorate the models, then add modelContainer to the contentView. To access the models, use @Query to decorate the properties. To save data use @Environment(\\\\.modelContext) to access the context. I think I don't understand it was because I was not used to it.\n\nThe third part, Windows in vision os. It is surprisingly simple. Only add a depth parameter to views. A little curious that they add a padding3D instead of adding depth parameter in padding.\n\nReality Composer Pro is like simplified blender to edit 3d models and export to .usda files.\n\nNext week, I will dig deeper in this tutorial to learn more about testing.\n\nOlympics 2024\n\nThis Olympics opening ceremony is fascinating. Strongly suggesting to listen to the latest episode of 井户端会议.\n\nDeadpool & Wolverine\n\nGood movie but not marvel jesus.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "vision os",
+      "href": "/tag/vision os"
+    },
+    {
+      "label": "swiftdata",
+      "href": "/tag/swiftdata"
+    }
+  ]
 }

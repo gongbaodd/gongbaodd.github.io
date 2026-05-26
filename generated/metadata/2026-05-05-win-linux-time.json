@@ -1,4 +1,14 @@
 {
   "file": "2026/05/05/win-linux-time",
-  "hash": "41437a63ef6c726484db89d5567bf8b853acf88e1db9ed37fbed1ee027f52dd5"
+  "hash": "41437a63ef6c726484db89d5567bf8b853acf88e1db9ed37fbed1ee027f52dd5",
+  "id": "2026/05/05/win-linux-time",
+  "href": "/tech/2026/05/05/win-linux-time",
+  "title": "Linux use RTC",
+  "date": "2026-05-04T21:00:00.000Z",
+  "content": "Linux use RTC\n\nwhen using dual boot, Windows and linux. The time is shown differently, as Windows uses RTC and Linux uses UTC. There are few hour difference.\n\nRunning the following command to adjust Linux to use RTC can fix this.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

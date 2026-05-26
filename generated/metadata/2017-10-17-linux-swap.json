@@ -1,4 +1,14 @@
 {
   "file": "2017/10/17/linux-swap",
-  "hash": "b7ac4fcd3d3f80a29f523fdf00a9d7fc2b7cb5f88fc49b075acca75c4eb3f2e8"
+  "hash": "b7ac4fcd3d3f80a29f523fdf00a9d7fc2b7cb5f88fc49b075acca75c4eb3f2e8",
+  "id": "2017/10/17/linux-swap",
+  "href": "/tech/2017/10/17/linux-swap",
+  "title": "给 linux 增加 swap 文件",
+  "date": "2017-10-16T21:00:00.000Z",
+  "content": "给 linux 增加 swap 文件\n\n上周末，自己写的公司的服务挂了，心疼自己几分钟。。。\n\n事发之后看了眼服务器，好多配置被当白鼠了，比如机器都没有 SWAP，\n以前都是装机器的时候习惯性分配 SWAP，还没有现挂载的经验，在此记录一下。\n\n创建分页文件（3GB）\n\n格式化为 SWAP 分区\n\n挂载分区\n\n保证以后重启后自动挂载（在 /etc/fstab 增加信息）\n\n重新挂载\n\n关于执行 free -m 的提示\n\n内存中的 buffered 和 cached 分别表示可以用来 写入/写出 磁盘的内存",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

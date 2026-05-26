@@ -1,4 +1,14 @@
 {
   "file": "2023/05/18/ngrok-reverse-proxy-service",
-  "hash": "5bdb9adefc0b0f58d2bc398ab16e37917d5176f7acc71585c3d7ee4e5b1ba15c"
+  "hash": "5bdb9adefc0b0f58d2bc398ab16e37917d5176f7acc71585c3d7ee4e5b1ba15c",
+  "id": "2023/05/18/ngrok-reverse-proxy-service",
+  "href": "/fe/2023/05/18/ngrok-reverse-proxy-service",
+  "title": "ngrok: A Reverse Proxy Service",
+  "date": "2023-05-17T21:00:00.000Z",
+  "content": "ngrok: A Reverse Proxy Service\n\nSometimes we need a HTTPs server to develop a web app, surely using mkcert can generate a local certificate. But by using vite-plugin-mkcert, I found the server is too easy to breakdown. So I decided to use ngrok to build a reverse proxy service.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

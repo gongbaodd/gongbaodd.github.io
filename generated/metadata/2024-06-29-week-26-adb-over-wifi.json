@@ -1,4 +1,23 @@
 {
   "file": "2024/06/29/week-26-adb-over-wifi",
-  "hash": "bd52b2f387f80daa30ad2f4102905aa6f1c25ad0763d2704a37cec12521154c4"
+  "hash": "bd52b2f387f80daa30ad2f4102905aa6f1c25ad0763d2704a37cec12521154c4",
+  "id": "2024/06/29/week-26-adb-over-wifi",
+  "href": "/plan/2024/06/29/week-26-adb-over-wifi",
+  "title": "Week 26: Adb over Wifi",
+  "date": "2024-06-28T21:00:00.000Z",
+  "content": "Week 26: Adb over Wifi\n\nCustomize a Media Pipe Model\n\nThese weeks I was working on using media pipe. I only used those pre-trained models. However, some of the models, like image classification and gesture recognizer can be fine tuned.\n\nSadly the pose landmark detection is not provided with customize function. Anyway, Gemini is now integrated with media pipe, meaning the framework will soon get more functions.\n\nSpaceDesk over USB\n\nDirect USB Cable Connection (Android only) is in the console.\n\nADB debug WearOS\n\nUsing adb on wifi is the only way to debug wearOS. Android Studio supplies a GUI to connect Android devices over wifi, however, my watch is Galaxy Watch, I can not make it work. Samsung Dev provides the terminal way. Keep in mind that adb over wifi is very slow, and it doesn't show the progress when installing an apk.\n\nTVs\n\nDark Matters\n\nOrphan Black\n\nThe Bears\n\nThe House of the Dragons\n\nThe Boys\n\nMovie\n\nInside Out 2",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "media-pipe",
+      "href": "/tag/media-pipe"
+    },
+    {
+      "label": "space-desk",
+      "href": "/tag/space-desk"
+    }
+  ]
 }

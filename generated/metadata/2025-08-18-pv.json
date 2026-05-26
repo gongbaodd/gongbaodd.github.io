@@ -1,4 +1,23 @@
 {
   "file": "2025/08/18/pv",
-  "hash": "c25d2e36b25a60a82344622ce1030528ef1cd49d04be2493fbe810f947b0f7ff"
+  "hash": "c25d2e36b25a60a82344622ce1030528ef1cd49d04be2493fbe810f947b0f7ff",
+  "id": "2025/08/18/pv",
+  "href": "/fe/2025/08/18/pv",
+  "title": "😔 Failed to add PV to My Website",
+  "date": "2025-08-17T21:00:00.000Z",
+  "content": "😔 Failed to add PV to My Website\n\nBelieve it or not, the very first feature on my old Jekyll site in 2015 was a PV (page view) counter 👀.\nBut when I rebuilt the site with Gatsby, I thought “eh, too easy, I’ll add it later...” — and then... I just never did 😂.\n\nA lot of sites use 不蒜子 for PV counts, but I figured: why not build my own? 🤓\nTurns out, it’s super simple — just two GET requests:\n\none returns an image 🖼️\n\nthe other returns a JSON with the count 📊\n\nNow it’s running on Cloudflare Workers + KV, and you can spot the little 👁️ with a number on this site showing the PV count.\n\nIf you’re curious, here’s the health check link ✅\n\nHowever, this is me from 20th. As I mentioned, using KV turns out to be a terrible idea 🫨. Only in two days, I used up all my quota 🫠. Now, I have changed the PV service to goatcounter.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "pv",
+      "href": "/tag/pv"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
+  }
 }

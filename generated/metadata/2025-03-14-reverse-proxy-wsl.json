@@ -1,4 +1,35 @@
 {
   "file": "2025/03/14/reverse-proxy-wsl",
-  "hash": "7edbf2bac5d103c2377a639e0df12883bfc868a36b54554d73430ea684862296"
+  "hash": "7edbf2bac5d103c2377a639e0df12883bfc868a36b54554d73430ea684862296",
+  "id": "2025/03/14/reverse-proxy-wsl",
+  "href": "/tech/2025/03/14/reverse-proxy-wsl",
+  "title": "FAILED - Reverse Proxy WSL for Web-BLE development",
+  "date": "2025-03-13T22:00:00.000Z",
+  "content": "FAILED - Reverse Proxy WSL for Web-BLE development\n\nI am continuously fighting the network connection between my local ones and the WSL one. I used to use ngrok which is mentioned in ngrok: A Reverse Proxy Service. However, as the user group grow, that server is not reliable anymore.\n\nSo I tried some other plans like port forwarding. Start a https server in WSL and use netsh to forward the https port out. I also found a GUI tool, PortProxyGUI mentioned in week 11 to do this. The forward port is not stable, and because it is https, I can not see any log in my terminal.\n\nEventually, recently I decide to develop a Web-BLE project. I tried to use Caddy to build a Windows https server, which reverse proxy the WSL http server. It works well. But it cannot reverse proxy the websocket connection. I can only serve the static files. However, I will record some configuration here.\n\nMake the configuration file Caddyfile. In the same folder call caddy run to start the server.\n\nAnother failure is the web-ble. iOS itself does not support web-ble. I have to use a third-party app to test it. I tried to use Bluefy I mentioned in 20th week web BLE. As so many bluetooth devices I can search in Android, the browser got none of them. So, I guess it is either the API failed or some bluetooth protocols are not supported by iPhone.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "wsl",
+      "href": "/tag/wsl"
+    },
+    {
+      "label": "reverse-proxy",
+      "href": "/tag/reverse-proxy"
+    },
+    {
+      "label": "web-ble",
+      "href": "/tag/web-ble"
+    },
+    {
+      "label": "https",
+      "href": "/tag/https"
+    },
+    {
+      "label": "caddy",
+      "href": "/tag/caddy"
+    }
+  ]
 }

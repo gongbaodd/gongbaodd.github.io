@@ -1,4 +1,23 @@
 {
   "file": "2021/03/31/delomization-application-of-matrix",
-  "hash": "a306ba1bebd9f3fa77157cecc43290f9b9209bfd3067a14a09509c425bbd6260"
+  "hash": "a306ba1bebd9f3fa77157cecc43290f9b9209bfd3067a14a09509c425bbd6260",
+  "id": "2021/03/31/delomization-application-of-matrix",
+  "href": "/book/2021/03/31/delomization-application-of-matrix",
+  "title": "矩阵对角化应用",
+  "date": "2021-03-30T21:00:00.000Z",
+  "content": "矩阵对角化应用\n\nQ:\n\n求斐波那契数列的通项公式\n\n$$\nF\\_{n+2} = F\\_{n+1} + F\\_{n},F\\_0=0,F\\_1=1\n$$\n\nA:\n\n$$\nF\\_n=\\frac{1}{\\sqrt{5}}\\[(\\frac{1+\\sqrt{5}}{2})^n-(\\frac{1-\\sqrt{5}}{2})^n]\n$$\n\nQ:\n\n假设某省人口不变，每年有 20%农村人口流入城镇，有 10%城镇人口流入农村，求经过充分长时间后的人口分布情况\n\nA:\n\n城镇人口 2/3，农村人口 1/3",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

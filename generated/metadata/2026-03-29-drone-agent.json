@@ -8,5 +8,36 @@
   "colorSet": {
     "bgColor": "#66987a",
     "titleColor": "--mantine-color-red-3"
+  },
+  "id": "2026/03/29/drone-agent",
+  "href": "/tech/2026/03/29/drone-agent",
+  "title": "Drone Agent: A PID Implementation for Self-Leveling drones",
+  "date": "2026-03-28T22:00:00.000Z",
+  "content": "Drone Agent: A PID Implementation for Self-Leveling drones\n\n1\\. Introduction to PID Control\n\nIn 1922, Nicolas Minorsky presented a very clear analysis of the control actions necessary to provide effective control of a system whose exact dynamics were un- known. He analyzed the actions taken by a good helmsman steering a ship and translated these actions into the appropriate mathematical formulations (Bennett, 1993). It is now know as the Proportional-Integral-Derivative (PID) controller. PID is a type of controller that is most commonly used and applied in mechanical systems (Idrissi et al., 2022).\n\nThe controller consists of three main components:\n\nProportional ($K\\_p$): Acts like a virtual spring that pulls the system toward the desired position; the control action increases as the error gets larger.\n\nIntegral ($K\\_i$): Accumulates the error over time to eliminate steady-state error, ensuring the drone reaches the exact target even in the presence of disturbances like gravity.\n\nDerivative ($K\\_d$): Acts as a virtual damper to reduce oscillations and prevent the system from overshooting its target.\n\nThe idealized control law is expressed as:\n\n$$u(t) = K\\_p e(t) + K\\_i \\int e(t) dt + K\\_d \\frac{de(t)}{dt}$$\n\n2\\. Mission Controller Architecture\n\nThe objective of this chapter is to implement a closed-loop mission controller. This system translates high-level world-frame goals (waypoint coordinates, target altitude, and yaw) into RC-style stick commands (normalized -1 to 1) compatible with the existing Yue drone physics engine.\n\n2.1 Path Generation via Bézier Curves\n\nTo move between points, the agent generates a path using two Cubic Bézier curves. Given four control points $P\\_0, P\\_1, P\\_2, P\\_3$, home to waypoint and back, the position $B(t)$ for $t \\in \\[0,1]$ is defined as:\n\n$$B(t) = (1-t)^3 P\\_0 + 3(1-t)^2 t P\\_1 + 3(1-t) t^2 P\\_2 + t^3 P\\_3$$\n\nPath Design\n\n2.2 Geometric Construction\n\nThe path is constructed relative to the \"Home\" ($P\\_{home}$) and \"Target\" ($P\\_{target}$) vectors:\n\nForward Vector: $\\vec{f} = \\text{normalize}(P\\_{target} - P\\_{home})$\n\nOrthogonal (Right) Vector: $\\vec{r} = \\vec{up} \\times \\vec{f}$ (This handles the lateral expansion of the teardrop).\n\nBulge Parameterization: A widthRatio variable allows the path to scale from a narrow line to a wide teardrop shape..\n\n2.3 Symmetry and Loop ClosureDescribe the two-phase approach:\n\nThe mission follows a two-phase approach to ensure a continuous loop:\n\nOutbound: Path from Home to Waypoint using a right-hand offset for control points.\n\nInbound: Path from Waypoint back to Home using a left-hand offset.\n\n3\\. Cascaded Control Loops\n\nThe system employs a cascaded control scheme where the Outer Loop (Position) provides setpoints for the Inner Loop (Attitude/Velocity).\n\n3.1 The Inner Loop (Attitude & Velocity)\n\nThe Inner Loop block features controllers that yield the required rolling and pitching moments τxand τyto regulate horizontal movement. The Inner Loop block requires the current quadcopter attitude as well as reference signals for roll and pitch to obtain its output(Paredes et al., 2021)\n\n3.2 The Outer Loop (Position & Navigation)\n\nthe Outer Loop block, which features controllers that yield the required thrust differential and yawing moments as well as the desired reference signals.\n\n4\\. Implementation Logic\n\n4.1. Vertical Direction\n\nDuring takeoff, the controller focuses exclusively on vertical error ($e\\_y$). The vertical force $force\\_Y$ is mapped to a normalized throttle value ($T$):\n\n$$T = \\frac{u\\_T + 1}{2}$$\n\n4.2. Path Following (6-DOF Control)\n\nFollowing a path requires a look-ahead method. Given current position $\\mathbf{p}$ and look-ahead target $\\mathbf{t}$ on the path, the position error is defined as:\n\n$$\ne\\_x = t\\_x - p\\_x,\\quad e\\_y = t\\_y - p\\_y,\\quad e\\_z = t\\_z - p\\_z\n$$\n\nThe Outer Loop converts this error into a Desired Velocity in the world axis:\n\n$$v\\_{x,\\text{des}} = \\text{PID}X(e\\_x),\\quad v{z,\\text{des}} = \\text{PID}\\_Z(e\\_z)$$\n\nTo translate these into drone-relative commands (Pitch/Roll), the world velocity is projected onto the drone's Heading Axis:\n\nForward Basis: $\\hat{\\mathbf{f}} = R\\_y(\\psi),\\hat{\\mathbf{z}}\\_{\\text{forward}}$\n\nRight Basis: $\\hat{\\mathbf{r}} = R\\_y(\\psi),\\hat{\\mathbf{x}}\\_{\\text{right}}$\n\nProjections:$$v^{\\parallel}{\\text{des}} = \\mathbf{v}{H,\\text{des}}\\cdot\\hat{\\mathbf{f}}, \\quad v^{\\perp}{\\text{des}} = \\mathbf{v}{H,\\text{des}}\\cdot\\hat{\\mathbf{r}}$$\n\nThe Inner Loop then calculates the error between desired and actual velocity to produce stick inputs:\n\nPitch (Right Vertical): Based on longitudinal velocity error ($e\\_{v,\\parallel}$).\n\nRoll (Right Horizontal): Based on lateral velocity error ($e\\_{v,\\perp}$).\n\nThe drone should yaw toward its movement direction once a \"velocity threshold\" (0.5 m/s) is met.\n\nTarget Yaw: $\\psi\\_{\\text{target}} = \\operatorname{atan2}(v\\_x,,v\\_z)$\n\nYaw Error: $e\\_\\psi = \\text{DeltaAngle}(\\psi, \\psi\\_{\\text{target}})$\n\nOutput: $u\\_{\\text{yaw}} = \\text{PID}{\\text{yaw}}(e\\psi)$\n\n5\\. Pilot Assistance UI\n\nBy calculating these normalized joystick rates, the system can visualize the \"AI's intent\" on the HUD. This serves as a co-training hinter, showing human pilots the optimal stick positions for maintaining the designated path.\n\nhinter UI\n\nBennett, S. (1993). Development of the PID controller. IEEE Control Systems, 13(6), 58–62. https://doi.org/10.1109/37.248006\n\nIdrissi, M., Salami, M., & Annaz, F. (2022). A Review of Quadrotor Unmanned Aerial Vehicles: Applications, Architectural Design and Control Algorithms. Journal of Intelligent & Robotic Systems, 104(2), 22. https://doi.org/10.1007/s10846-021-01527-7\n\nLynch, K. M., & Park, F. C. (2017). Modern Robotics: Mechanics, Planning, and Control (1st ed.). Cambridge University Press. https://doi.org/10.1017/9781316661239\n\nParedes, Juan, Prashin Sharma, Brian Ha, et al. “Development, Implementation, and Experimental Outdoor Evaluation of Quadcopter Controllers for Computationally Limited Embedded Systems.” arXiv:2105.14231. Preprint, arXiv, June 1, 2021. https://doi.org/10.48550/arXiv.2105.14231.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "robotics",
+      "href": "/tag/robotics"
+    },
+    {
+      "label": "pid",
+      "href": "/tag/pid"
+    },
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    },
+    {
+      "label": "drone",
+      "href": "/tag/drone"
+    }
+  ],
+  "series": {
+    "label": "Master Thesis",
+    "href": "/series/master"
   }
 }

@@ -1,4 +1,14 @@
 {
   "file": "2019/01/19/windows",
-  "hash": "279c50b4d559dbdf8c83fcc69d227a90a32cecda751dd355c1371b5fae494790"
+  "hash": "279c50b4d559dbdf8c83fcc69d227a90a32cecda751dd355c1371b5fae494790",
+  "id": "2019/01/19/windows",
+  "href": "/tech/2019/01/19/windows",
+  "title": "Using Windows to develop",
+  "date": "2019-01-18T22:00:00.000Z",
+  "content": "Using Windows to develop\n\nLast year, I started thingking to switch into Windows rapidly. Back to the years I decided to use Linux. Mostly because I want a faster working environment, the old Vista required more memories and CPU usages that I could't afford. Even in Windows8, gnome-shell run much more fluent.\n\nCons in Linux desktops\n\nSo, why do I want to switch?\n\nWell, games are not the problem, I quiet like to play supertuxkart, actually.\n\nHDPI is a hard chalenge, especially on a touch screen. I admire the effort that the Open Source world took, but it's still not good enough.\n\nInput bar is an important tool for Chinese users. The latest version of GTK-Chromiumn has a bug, that the input bar cannot get the correct place where the input box is (I was using fcitx). However, if you refer to the old commit of this package, you would see it had been fixed in an earlier version, maybe the bug appeared after some UI refactors.\n\nthe Input bar problem seems a nofix. gladlly you can use KDE desktop. The great advance of Linux, is the mass amount of desktops. I tried a lot desktops in ArchLinux, KDE, gnome, mint (a fork of gnome) and budgie (another fork of gnome), they all have pretty good support for HIDPI.\n\nWireless screen sharing, I have a projector. share the screen of my phone to the walls makes me comfortable, but I can't share screen in Linux. Intel holds the driver for screen sharing, and it's not open source.\n\nBIOS update, dell updates BIOS some time, it makes my laptop more stable. But I can only update it in Windows.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

@@ -1,4 +1,19 @@
 {
   "file": "2025/01/17/week-3-unity-junior-programer",
-  "hash": "48c2208182aac5fd85ed0b96069429bce38f1b88e2e7456e143973f9d4c33263"
+  "hash": "48c2208182aac5fd85ed0b96069429bce38f1b88e2e7456e143973f9d4c33263",
+  "id": "2025/01/17/week-3-unity-junior-programer",
+  "href": "/plan/2025/01/17/week-3-unity-junior-programer",
+  "title": "Week 3: Unity Junior Programer",
+  "date": "2025-01-16T22:00:00.000Z",
+  "content": "Week 3: Unity Junior Programer\n\nThis week I finished the Unity Junior Programmer pathway. It is 40+ hours pathway. But as I have many experiences in programming. This pathway is not very hard for me.\n\nBut the pathway is very useful. Even more than the Unity Essentials. The best part to me is the optimization part.\n\nAnd the production cycle is also important in building a game.\n\n| Category            | Description                                                                                          |\n|---------------------|------------------------------------------------------------------------------------------------------|\n| Player Control  | You control a ...(player type).                                                                      |\n|                     | In this...(top down/side view/isometric) game                                                       |\n|                     | Where ...(user input type)                                                                          |\n|                     | Makes the player...(movement)                                                                       |\n| Basic Gameplay  | During the game,...(type of objects) appear                                                         |\n|                     | From...(areas of the screen)                                                                        |\n|                     | And the goal of the game is to...(goal)                                                             |\n| Sound & Effects | There will be sound effects when...                                                                 |\n|                     | And particle effects when...                                                                        |\n|                     | \\[optional] There will also be...                                                                    |\n| Gameplay Mechanics | As the game progresses,...(game mechanic)                                                        |\n|                     | Making it ...(effect of game mechanic)                                                              |\n|                     | \\[optional] There will also be                                                                       |\n| User Interface  | The ...(score/lives/timer) will...(increase/decrease)                                               |\n|                     | Whenever ...(condition to change the score/lives/timer)                                            |\n|                     | At the start of the game, the title, \"...(game title)\" will appear                                  |\n|                     | And the game will end when...(condition to end the game)                                            |\n| Other           |                                                                                                      |\n\nNext week, I will finish the creative core and the VR pathway. I am also studying DOTS now, it is amazing, but I need more time to understand.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ]
 }

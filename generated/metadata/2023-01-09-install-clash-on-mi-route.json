@@ -1,4 +1,14 @@
 {
   "file": "2023/01/09/install-clash-on-mi-route",
-  "hash": "9722a603c376b9489b249e378e39084da741fd6be4cfc4742f517bba0cab0f38"
+  "hash": "9722a603c376b9489b249e378e39084da741fd6be4cfc4742f517bba0cab0f38",
+  "id": "2023/01/09/install-clash-on-mi-route",
+  "href": "/tech/2023/01/09/install-clash-on-mi-route",
+  "title": "Install Clash on RedMi AX5",
+  "date": "2023-01-08T22:00:00.000Z",
+  "content": "Install Clash on RedMi AX5\n\nI got a Quest 2 this year, that means my router needs to connect Facebook. By following this URL.\n\nFirst, downgrade to v1.0.26, and stop updating.\n\nget ssh permission\n\ninstall clash",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

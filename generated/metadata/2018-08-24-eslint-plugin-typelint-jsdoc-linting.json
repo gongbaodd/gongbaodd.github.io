@@ -1,4 +1,14 @@
 {
   "file": "2018/08/24/eslint-plugin-typelint-jsdoc-linting",
-  "hash": "2a4eae1f6c81fdb78ffc64a95ac45c88fce1dda4b186d9c44607d12140008d3e"
+  "hash": "2a4eae1f6c81fdb78ffc64a95ac45c88fce1dda4b186d9c44607d12140008d3e",
+  "id": "2018/08/24/eslint-plugin-typelint-jsdoc-linting",
+  "href": "/fe/2018/08/24/eslint-plugin-typelint-jsdoc-linting",
+  "title": "eslint-plugin-typelint借助jsdoc实现无编译linting级别的类型检查工具",
+  "date": "2018-08-23T21:00:00.000Z",
+  "content": "eslint-plugin-typelint借助jsdoc实现无编译linting级别的类型检查工具",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

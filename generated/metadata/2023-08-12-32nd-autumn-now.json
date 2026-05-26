@@ -1,4 +1,14 @@
 {
   "file": "2023/08/12/32nd-autumn-now",
-  "hash": "4df3ece06f804dae9b34743171ce3e83c0900f3da3733069aa373d8e719fb15b"
+  "hash": "4df3ece06f804dae9b34743171ce3e83c0900f3da3733069aa373d8e719fb15b",
+  "id": "2023/08/12/32nd-autumn-now",
+  "href": "/plan/2023/08/12/32nd-autumn-now",
+  "title": "The 32nd week: It's autumn now",
+  "date": "2023-08-11T21:00:00.000Z",
+  "content": "The 32nd week: It's autumn now\n\nIELTS\n\nI started using IELTS premium this week.\n\nBabylon.js\n\nThis week I found out that react-babylon.js doesn't support tree shaking, moreover, babylon.js is almost 4MB(1MB gzipped), it's almost 4 times bigger than three.js. Well, as a visual engine, size is not a big issue. But I started to check some R3F examples now.\n\nI tried Babylon.js' node editor. This is a toon shader inspired by this article.\n\nRender a HTML to Canvas, it's better to have a height map. Can use applyDisplacementMap.\n\nXR\n\nTikTok has an App EffectHome(橡塑 in China). Snap AR got a lot interesting filters.\n\nARkit supports hand gesture already. This is Dilmer's tutorial about hand tracking using AR Foundation. This is a beginner tutorial about AR Foundation.\n\nThree.js\n\nThis is a video using both spline and three.js to create a website.\n\nTriplex is an editor for three.js. Kind like babylon inspector.\n\nStable Diffusion\n\nFantasia 3D and Dream Fusion are tools to build 3D assets.\n\nDream shaper is to build special QR Code.\n\nCSS\n\n现代 CSS 你知道多少\n\nReact\n\nReact Graph Library uses react and D3 to draw graphs.\n\nshadcn is a UI library based on Radix.\n\nFavicon\n\nA blog about how to add favicon to a website in 2023.\n\nWSL\n\nI can't call vscode from WSL. Because I configured systemd. This issue has the solution.\n\nML\n\nHappen to know HuggingFace's new ML framework candle\n\nGoogle brings visual block and media pipe as tools for tensorflow.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

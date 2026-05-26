@@ -1,4 +1,19 @@
 {
   "file": "2021/01/13/learning-rust-with-entirely-too-many-linked-list",
-  "hash": "62fda631dac754a643ee7893bcd95c1ebd08a60d85494cb80746c6ee64596292"
+  "hash": "62fda631dac754a643ee7893bcd95c1ebd08a60d85494cb80746c6ee64596292",
+  "id": "2021/01/13/learning-rust-with-entirely-too-many-linked-list",
+  "href": "/book/2021/01/13/learning-rust-with-entirely-too-many-linked-list",
+  "title": "Learning Rust with entirely too many linkd lists",
+  "date": "2021-01-12T22:00:00.000Z",
+  "content": "Learning Rust with entirely too many linkd lists\n\n序言\n\n基础\n\n指针\n\n&\n\n\\&mut\n\nBox\n\nRc\n\nArc\n\n\\*const\n\n\\*mut\n\n所有权\n\n关键字\n\nstruct\n\nenum\n\nfn\n\npub\n\nimpl\n\n模式匹配\n\n测试\n\n简单的unsafe模式\n\n驳斥链表\n\n性能不总是重点\n\n链表的处理可以是O(1)的\n\n无需复杂度均摊\n\n节省空间\n\n函数式开发一直使用链表\n\n利于并行开发\n\n内核开发、嵌入式开发使用链表\n\n插入删除不会让迭代器失效\n\n简单且易于教学\n\n栈\n\n一个糟糕的栈\n\n布局\n\nList a = Empty | Elem a (List a)\n\n布局一：\nenum List  {\nEmpty,\nBox\n}\n\n必须用Box分配堆内存，否则编译器不知道如何分配栈内存\n\n可以发现链表最后多余一个Empty，则更改布局二\n\n布局二：：\nenum List {\nEmpty,\nMore(Box)\n}\nstruct Node {\nelem: i32,\nnext: List\n}\n\n创建\n\nimpl List {\npub fn new() -> Self {\nList{ head: Link::Empty }\n}\n}\n\n所有权入门\n\nself - 值\n\n完全复制的值，函数值执行完会被销毁\n\n\\&mut self 可变引用\n\n完全控制值所在地址\n\n不能给值增加引用\n\n\\&self 不可变引用\n\n完全取得值所在地址，但不能更改\n\npush\n\n因为\\&mut self.head不能增加引用，必须先用mem::replace替换原来引用来释放引用\n\npop\n\n未完成的函数可以使用unimplemented!宏来避免编译报错\n\nmatch关键字也如函数一样存在值引用的问题\n\n测试\n\nassert\\_eq!宏来处理断言\n\n\\#\\[cfg(test)]注释来表明模块仅用于测试环境\n\n\\#\\[test]注释用于表明函数用于测试\n\n模块内需要引用外部的元素（use super::List;）\n\nDrop\n\nBox的析构过程无法形尾递归调用，析构时会爆栈\n\n一个不错的栈\n\n使用Option代替Link\n\ntake方法替代mem::replace\n\nmap方法替代match\n\n支持泛型\n\nimpl\n\npeek\n\ntake方法会把数据取出并把原来的位置用None补充\n\nas\\_ref会取得Option中的不可变引用\n\nas\\_mut会取得所在内存的可变引用\n\n迭代器\n\n简单迭代\n\npub trait Iterator {\ntype Item;\nfn next(\\&mut self) -> OptionSelf::Item;\n}\n\n不可变迭代\n\n显式声明所有权\n\n一个函数引入两个以上引用时\n\n一个泛型结构体\n\n编译器会提醒添加\n\n解开Box可以使用\\*操作来deRef，如 \\*node\n\n可变迭代\n\n列表\n\nBox只能实现单指针\n\nRc实现引用计数\n\nuse std::rc::Rc\n\n使用clone方法\n\nOption\n\nmap： Option -> Option\n\nand\\_then： Option -> T.\n\nas\\_ref: \\&Option -> Option<\\&T>\n\nas\\_mut: \\&mut Option -> Option<\\&mut T>\n\nArc线程安全的引用计数\n\nSend trait: 可以移动到别的线程\n\nSync trait:可以被多个线程查看\n\nRc实现是基于Cell的\n\nArc基于Atomic\n\n队列\n\n一个不好但是Safe的队列\n\nRefCell需要动态借用\n\nborrow(self) -> Ref\n\nborrow\\_mut(self) -> RefMut\n\ninto\\_inner()可以取得包裹的值\n\n虽然Ref和RefMut表现和&和\\&mut相同，但不能由Ref转换到&\n\nRc\n\n解开Rc需要使用try\\_unwrap()之后再unwrap()\n\nRc解决不了环形引用\n\n一个可以但是unsafe的队列\n\nThe Rustonomicon\nhttps://doc.rust-lang.org/nightly/nomicon/\n\n\\*mut T\n\nstd::ptr\n\n具体unsafe的部分只靠这一个例子还搞不懂\n主要先摆正姿态，Unsafe其实并不是不好，只是此时编译器不做检查\n\n总结\n\n这次是彻底了解了Rust的所有权生存期的内容，虽然最后unsafe相关内容还是不清楚，单已经有很大进步了。",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "rust",
+      "href": "/tag/rust"
+    }
+  ]
 }

@@ -1,4 +1,14 @@
 {
   "file": "2019/11/26/ubuntu",
-  "hash": "320ec7604f3758f876d0e3a5be8c7caaeb6bfc7970487dfd2bb5ec0568180187"
+  "hash": "320ec7604f3758f876d0e3a5be8c7caaeb6bfc7970487dfd2bb5ec0568180187",
+  "id": "2019/11/26/ubuntu",
+  "href": "/tech/2019/11/26/ubuntu",
+  "title": "树莓派Ubuntu重启音频",
+  "date": "2019-11-25T22:00:00.000Z",
+  "content": "树莓派Ubuntu重启音频\n\n前一阵子重新拿起来我的树莓派用来放一些学习视频，然而发现ubuntu mate对音频处理有问题，一旦占用结束后有新的应用来占用就会有杂音，感觉ubuntu这个问题出N久了。目前我没找到更好的解决方案，只好重启一下了。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

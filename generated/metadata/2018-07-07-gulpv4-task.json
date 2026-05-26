@@ -1,4 +1,14 @@
 {
   "file": "2018/07/07/gulpv4-task",
-  "hash": "ba0fa88277ae1ea6f64d9561dada165a5dc9e4f5c2cb6b621b8c50ec3222e21c"
+  "hash": "ba0fa88277ae1ea6f64d9561dada165a5dc9e4f5c2cb6b621b8c50ec3222e21c",
+  "id": "2018/07/07/gulpv4-task",
+  "href": "/fe/2018/07/07/gulpv4-task",
+  "title": "Gulp v4 之后 task 必须传函数",
+  "date": "2018-07-06T21:00:00.000Z",
+  "content": "Gulp v4 之后 task 必须传函数\n\nhttps://fettblog.eu/gulp-4-parallel-and-series/\n\n如链接所说，为实现并行操作，原来的\n\n已经改为\n\n而如果想串行执行的话可以用gulp.series",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

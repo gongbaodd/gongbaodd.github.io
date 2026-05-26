@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#ac7454",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/07/04/ninja-paws",
+  "href": "/lab/2025/07/04/ninja-paws",
+  "title": "Ninja Paws, Fruit Ninja mix Diablo",
+  "date": "2025-07-03T21:00:00.000Z",
+  "content": "Ninja Paws, Fruit Ninja mix Diablo\n\nThis is a unity game, I worked with my classmate. He is responseible for the first scene, I am the 2nd(a fruit ninja like scene) and the 3rd(diablo like scene). You can play it here and the opensource code here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

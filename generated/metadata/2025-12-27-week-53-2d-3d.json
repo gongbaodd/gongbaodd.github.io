@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#9d8a62",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2025/12/27/week-53-2d-3d",
+  "href": "/tech/2025/12/27/week-53-2d-3d",
+  "title": "Week 53: From 2D to 3D 🎥➡️🕶️",
+  "date": "2025-12-26T22:00:00.000Z",
+  "content": "Week 53: From 2D to 3D 🎥➡️🕶️\n\nOn Christmas Eve 🎄, I experimented with Apple’s new Sharp Model to generate 3D Gaussian Splatting (link). Almost at the same time, I saw news that XREAL S1 now supports automatic 2D-to-3D streaming, and Google’s Android XR announced similar capabilities.\n\nAll of this instantly took me back almost three years ago, when I first got my Quest 2. Back then, I desperately wanted more immersive content to enjoy in VR (link).\n\nFast forward to now—so many companies are offering free or low-cost 2D-to-3D conversion services. That’s a strong signal that this technology has finally matured 🎉. And more importantly: I can now experiment with it cheaply—or even for free 😎.\n\nStereoCrafter 🧪\n\nThe first tool I tried was Tencent’s StereoCrafter.\nTo be honest, I spent way too much time fighting with it 😅, and the results weren’t great. Part of the problem was my limited GPU VRAM.\n\nThere’s also a small bug in the script that needs patching. I found this helpful blog post that explains one fix. The root cause is that different Linux distributions place CUDA in different directories. The same post also shows how to run the model on Google Colab with a paid GPU.\n\nFor example, on Arch Linux, CUDA might live in:\n\nIf you’re using Arch Linux inside WSL, you’ll likely hit this error:\n\nThat happens because libcuda in WSL isn’t part of the standard Arch packages. The fix is to manually create symlinks:\n\nUnfortunately, due to hardware limitations, I still couldn’t successfully convert a full video.\nThat said, I did learn something important 🧠: AI-based 2D-to-3D video conversion is usually a two-step process:\n\nPredict a depth map\n\nCombine the depth map with the original video to generate a left scene and a right scene\n\nUsing inpainting model to mask the holes of the newly generated video then combine the two scenes into side by side 3D video.\n\nOwl3D 🦉✨\n\nOwl3D offers free 2D-to-3D conversion for videos up to 1 minute. For longer videos, you can subscribe monthly.\n\nThe results are honestly pretty good 👍. Sure, the free limit is short, but if you want something fast, clean, and with a beautiful UI, this is a great option. Sometimes convenience really is worth it 😌.\n\nVisionDepth 3D 🚀 (The Winner!)\n\nThis one was a real success 🎯.\nVisionDepth3D (VD3D) is an open-source 2D-to-3D converter—and it works surprisingly well.\n\n⚠️ Strong recommendation:\nSkip the prebuilt release binaries. Clone the GitHub repo and build it yourself. The release versions still contain some annoying bugs.\n\nThe installation guide on the website is detailed and clear. One important reminder:\n\nIf you have an NVIDIA GPU, make sure to install the CUDA-enabled version of PyTorch.\nIt makes the conversion much faster and much quieter 🏎️💨.\n\nStep 1: Depth Estimation\n\nGo to the Depth Estimation tab\n\nPick any model to estimate the video’s depth\n\nWatch the progress as the model downloads in the background\n\nChoose your output directory\n\nClick Process Video\n\nYou’ll end up with something like this:\n\n| Frame                                                                                                               | Depth                                                                                                               |\n| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |\n| frame pic | depth map |\n\nStep 2: Generate the 3D Video\n\nSwitch to the 3D Video Generator tab\n\nClick Reset to Default\n\nSelect:\n\nThe original video\n\nThe generated depth map\n\nThe output directory\n\nChange the encoder to a common, well-supported one\n\nChange the DOF strength to zero\n\nIf the output video doesn’t play on Quest 3, you can re-encode it using ffmpeg:\n\nAlso you can use the GPU if you are using a Nvidia GPU.\n\nOverall, it’s exciting to see how accessible 2D-to-3D conversion has become 🤩. What used to feel like sci-fi is now just a few clicks (and some GPU pain) away. Can’t wait to see where this goes next 🚀🕶️",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    },
+    {
+      "label": "3d",
+      "href": "/tag/3d"
+    },
+    {
+      "label": "quest",
+      "href": "/tag/quest"
+    }
+  ]
 }

@@ -1,4 +1,23 @@
 {
   "file": "2021/03/23/mit",
-  "hash": "032f486d1519760f6f864b7015a331df1c15bc9c00e82cfa0f29be1cc9e717e8"
+  "hash": "032f486d1519760f6f864b7015a331df1c15bc9c00e82cfa0f29be1cc9e717e8",
+  "id": "2021/03/23/mit",
+  "href": "/tv/2021/03/23/mit",
+  "title": "MIT 线性代数笔记",
+  "date": "2021-03-22T22:00:00.000Z",
+  "content": "MIT 线性代数笔记\n\nAX=b 的最小误差解必是$A^TAX=A^Tb$的解\n\n投影矩阵$P=A(AA^T)^{-1}A^T$\n\n特征值解决斐波那契数列问题\n\n$$\nU\\_{n} =\n\\begin{cases}\nF\\_{n+2} = F\\_{n+1} + F\\_n \\\\\nF\\_{n+1} = F\\_{n+1} + 0\n\\end{cases} = \\begin{pmatrix}\n1 & 1 \\\\\n1 & 0 \\\\\n\\end{pmatrix}\\begin{pmatrix}\nF\\_{n+1} \\\\\nF\\_n \\\\\n\\end{pmatrix} = \\begin{pmatrix}\n1 & 1 \\\\\n1 & 0 \\\\\n\\end{pmatrix}U\\_{n-1}\n$$\n\n求出矩阵特征值\n\n$$\n\\begin{cases}\n\\lambda\\_1=\\frac{1+\\sqrt{5}}{2}, x\\_1=(\\lambda\\_1,1)^T \\\\\n\\lambda\\_2=\\frac{1-\\sqrt{5}}{2}, x\\_2=(\\lambda\\_2,1)^T \\\\\n\\end{cases}\n$$\n\n令 A=$\\begin{pmatrix} 1 & 1 \\ 1 & 0 \\end{pmatrix}$\n\n$$\nA^n=S\\Lambda^nS^{-1}\n$$\n\nS 为 A 的特征向量矩阵\n\n$$\nS=(x\\_1,x\\_2)=\\begin{pmatrix}\n\\lambda\\_1 & \\lambda\\_2 \\\\\n1 & 1\n\\end{pmatrix}\n$$\n\n$$\nU\\_n=A^nU\\_0=S\\Lambda^n S^{-1}U\\_0\n$$\n\n令$U\\_0=c\\_1x\\_1+c\\_2x\\_2=S(c\\_1,c\\_2)^T$\n\n$$\nU\\_0 = \\begin{pmatrix}\nc\\_1\\lambda\\_1 + c\\_2\\lambda\\_2 \\\\\nc\\_1 + c\\_2\n\\end{pmatrix} = \\begin{pmatrix}\nF\\_1 + F\\_0 \\\\\nF\\_0\n\\end{pmatrix}\n$$\n\n$$\nU\\_n = S\\Lambda^n \\begin{pmatrix}\nc\\_1 \\ c\\_2\n\\end{pmatrix} = c\\_1\\lambda\\_1^nx\\_1 + c\\_2\\lambda\\_2^nx\\_2\n$$",
+  "category": {
+    "label": "tv",
+    "href": "/tv"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

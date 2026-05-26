@@ -1,4 +1,14 @@
 {
   "file": "2017/08/15/er-pt",
-  "hash": "21d34a96463bd8ac31ce366052f482723ea33cf4cc3f16a8a35489dcd702ca45"
+  "hash": "21d34a96463bd8ac31ce366052f482723ea33cf4cc3f16a8a35489dcd702ca45",
+  "id": "2017/08/15/er-pt",
+  "href": "/fe/2017/08/15/er-pt",
+  "title": "【Erʌpt】一个前后端同构的设计思想",
+  "date": "2017-08-14T21:00:00.000Z",
+  "content": "【Erʌpt】一个前后端同构的设计思想\n\nlogo\n\n最近一直没有更新博客，其实脑子里面已经装了很多东西了，略微分享一下。\n\n精美PPT~（花了十多分钟呢\n\n前提\n\n2017年前端看起来是风平浪静的，其实不然，今年WASM终于定稿了，那意味着用任何语言编译web应用得到了官方支持。由于采纳的是Mozilla的asm.js方案，兼容性上面要好得多。很多人关注的是性能上的提升，而我觉得最先活起来的应该是前后端同构。因为大批的后端程序员可以避开javascript的各种坑去使用自己的开发语言开发前端应用了。\n\n最近出现了很多诸如RustWeb和Golymer的框架\n\nrustweb\n\ngoplymer\n\nCS架构解决的问题\n\n现有的CS架构\n\n我是谁\n\n我从哪里来\n\n要到哪里去\n\n照以前前后端分离的方案\n\n| server | client |\n|--------|--------|\n| 返回html | 发出请求 |\n| 空闲  | 获取css、js等资源 |\n| 空闲  | 发出ajax请求 |\n| 返回数据 | 空闲 |\n| 空闲 | 渲染数据 |\n\n前后端同构的做法\n\n| server | client |\n|--------|--------|\n| 返回html头部 | 发出请求 |\n| 返回html碎片 | 获取css、js |\n| 返回html碎片 | 渲染碎片 |\n| 返回end | 结束页面渲染 |\n\n小结一\n\n前后端同构是在“我是谁？”这一部分做了优化。\n\n前后端同构的优势\n\nSEO，不多说了；\n\n减少http请求数；\n\n减少用户初次访问页面的白页时间；\n\n减少因前后端分离造成的技术障碍。\n\n前后端同构的策略\n\n精确渲染\n\n结构渲染\n\n模板渲染\n\n精确渲染\n\n把页面首屏的内容都渲染出来。\n\n精确渲染\n\n精确渲染的评价\n\n优点\n\n渲染出来的页面就是用户看到的\n\n缺点\n\n部分后端请求会阻塞页面的渲染\n\n结构渲染\n\n把初始状态的首屏渲染出来然后在同一请求中把应该展示的状态展示出来。\n\n结构渲染\n\n框架渲染的评价\n\n优点\n\n解决了精确渲染会阻塞的问题\n\n缺点\n\n对于新闻类型的页面，框架渲染不利于SEO\n\n模板渲染\n\n把模板直接作为html传到客户端。\n\n模板渲染\n\n模板渲染的评价\n\n优点\n\n字符串渲染，计算开销最小\n\n缺点\n\n用户会看到未渲染的模板变量\n\n小结二\n\n应该结合精确渲染和框架渲染\n\n介绍Erʌpt\n\n| | Erʌpt |  |\n|--|---|---|\n| E | Express | 这都不知道？退下吧  |\n| R | React | 这也不知道？别看了 |\n| ʌ | Values | 基于Redux的异步数据管理 |\n| P | Pipe | HTML渲染器 |\n| T | Tunnel | 同步数据管理 |\n\nValues异步数据管理\n\n单向数据流\n\nreact的render函数是会不断轮询页面上绑定的数据来进行页面更新的。\n\n| value===\"bud\" | value===\"bloom\" |\n|--|--|\n|||\n\nValues的写法\n\n怎么使用Values\n\nPipe HTML渲染器\n\n用于利用React renderToString 生成HTML。\n\nPipe的写法\n\nTunnel同步数据管理\n\nTunnel的设计\n\n前后端同构的意思是要在后端完成一部分工作，当前端getState的时候，获取的是后端生成并注入到前端作用域的state，也就是说这个对象在后端完成set工作，而在前端完成get工作。\n\nTunnel设计\n\nTunnel的使用\n\nServer\n\nClient\n\n结论\n\nErvpt是VPT在react+express上面的实现，能够很好地实现前后端同构中的精确渲染和结构渲染，基于这套思想我相信它能带来一场新的前后端分离的革命，也就是前端能够主导全部的页面逻辑，后端专注于接口的优化。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

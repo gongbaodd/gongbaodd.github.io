@@ -1,4 +1,23 @@
 {
   "file": "2025/08/12/minisearch",
-  "hash": "fd21625cc3a5241bf91388c82e7d3c3098382db36d454fa2426d068d8ee6109f"
+  "hash": "fd21625cc3a5241bf91388c82e7d3c3098382db36d454fa2426d068d8ee6109f",
+  "id": "2025/08/12/minisearch",
+  "href": "/fe/2025/08/12/minisearch",
+  "title": "🔎 MiniSearch: An In-Browser Search Engine You’ll Love",
+  "date": "2025-08-11T21:00:00.000Z",
+  "content": "🔎 MiniSearch: An In-Browser Search Engine You’ll Love\n\nLately, I’ve been rebuilding my website 🛠️.\nYears ago, I thought about adding Algolia for search… but honestly, I was too lazy 😅.\n\nTurns out — you don’t need a big backend like Elasticsearch for good search.\nMeet MiniSearch — a tiny, in-browser search engine that has all the features I need. 🚀\n\nIf you’re curious, here’s an awesome article by the creator.\nIt uses a radix tree for indexing 📂 and a TF-IDF algorithm for fuzzy matching ✨.\nThe author even compares it with two other search engines:\n\nLunr.js 📚\n\nFuse.js 🔎\n\nHonestly, if you just want fast, offline-friendly search without running a server — MiniSearch might be your new best friend ❤️.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "fuzzy-search",
+      "href": "/tag/fuzzy-search"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
+  }
 }

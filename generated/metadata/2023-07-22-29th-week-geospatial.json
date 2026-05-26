@@ -1,4 +1,14 @@
 {
   "file": "2023/07/22/29th-week-geospatial",
-  "hash": "1b88499de3fa1dab5f096d9b00d3f77b9047dafbaa562517255016381c9c3e1a"
+  "hash": "1b88499de3fa1dab5f096d9b00d3f77b9047dafbaa562517255016381c9c3e1a",
+  "id": "2023/07/22/29th-week-geospatial",
+  "href": "/plan/2023/07/22/29th-week-geospatial",
+  "title": "29th week: Google Geo-Spatial",
+  "date": "2023-07-21T21:00:00.000Z",
+  "content": "29th week: Google Geo-Spatial\n\nGoogle Geo-Spatial\n\nFirstly, I didn't get the permission, this API is not opened for mainland China. I need a abroad VISA card.\n\nThis is a slideshow to introduce it.\n\nThis is the official document. This is about using google geo-spatial on unity. It is based on AR Foundation.\n\nThese are some samples.\n\nThis is an ARCore official page.\n\nEarth Studio uses google geo-spatial to build Video assets.\n\nThis is a google's WebXR tutorial, I'll check it out this week.\n\nAlso, here is some webXR tutorial in babylon.js.\n\nuse Babylon editor and react-babylon.js\n\nThe Babylon editor uses CANNON as physical engine, before importing, I need to inject it.\n\nAnd the asset should be relatively put in the root\\_dir.\n\nOpenFaas\n\nThis is a new world to me, I found an ebook, Kubernetes 中文指南. I don't have time to read it yet.\n\nGASP\n\nGASP is an animation library, I heard from @WawaSensei. He's got some nice shader tutorials I want to learn.\n\nFace tracking on WebXR\n\nCurrently, Face tracking is not supported in WebXR. This is a 3rd party library mind-AR.js that supports it.\n\nSwift on Linux\n\nThis is a page about swift on linux. It seems only Vapor is still alive now (as a web server).\n\n3D LUT File\n\nLUT file(look up table) is a file that contains color correction data. It is used in video editing. Adobe Premiere can export it.\n\nVideo with depth\n\nThis is a script in Codelab to make depthify video. I can also use stable diffusion to make one.\n\nLottie\n\nLottie is a SVG animation tool. Differences between Lottie and Rive is in this document.\n\nReact v18\n\nuseSyncExternalStore is a new react hook in v18. It can be used observe an element outside react environment\n\nSuspense is updated to support data fetching.\n\nreact-babylon.js\n\nI've finished the examples in react-babylon.js. I will try webXR next week. Still, there are some stuff I don't understand. Like pbrMaterial, reflectionFresnelParameters, arcRotateCamera, and mesh-lookat.\n\nNext week\n\nI'll try Google's webXR tutorial, and the babylon one.\n\nI'll continue the tensorflow tutorial. And the rust on android one.\n\nI'll try to compare Remix and Next.js.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

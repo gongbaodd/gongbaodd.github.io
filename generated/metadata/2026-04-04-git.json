@@ -1,4 +1,19 @@
 {
   "file": "2026/04/04/git",
-  "hash": "a6f2f8b6a2ec4ecef0be60a98b215ffadc6b040b5f58f163b3b18ad48d7b32de"
+  "hash": "a6f2f8b6a2ec4ecef0be60a98b215ffadc6b040b5f58f163b3b18ad48d7b32de",
+  "id": "2026/04/04/git",
+  "href": "/tech/2026/04/04/git",
+  "title": "Git pull Remote Branches",
+  "date": "2026-04-03T21:00:00.000Z",
+  "content": "Git pull Remote Branches\n\nToday when I pull my code from git. I realized that some new branches are not fetched. Because it only pulls from the main.\n\nThis is only happened on my Mac mini. It may happen again, so I make a note here.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "git",
+      "href": "/tag/git"
+    }
+  ]
 }

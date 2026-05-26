@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#60aa8f",
     "titleColor": "--mantine-color-cyan-2"
-  }
+  },
+  "id": "2026/05/18/pydata-tallinn",
+  "href": "/tech/2026/05/18/pydata-tallinn",
+  "title": "PyData Tallinn",
+  "date": "2026-05-17T21:00:00.000Z",
+  "content": "PyData Tallinn\n\nThis session of PyData Tallinn focused on distributed training and the risk management workflow at Wise. Although I do not use Apache Spark in my current workflow, the insights shared were highly inspiring.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "spark",
+      "href": "/tag/spark"
+    }
+  ]
 }

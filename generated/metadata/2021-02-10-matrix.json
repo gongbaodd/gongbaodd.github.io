@@ -1,4 +1,23 @@
 {
   "file": "2021/02/10/matrix",
-  "hash": "27cb9e4eaf04fdcc1c66496f231927106feecfa7b92f1d78297a0952eea52154"
+  "hash": "27cb9e4eaf04fdcc1c66496f231927106feecfa7b92f1d78297a0952eea52154",
+  "id": "2021/02/10/matrix",
+  "href": "/book/2021/02/10/matrix",
+  "title": "矩阵",
+  "date": "2021-02-09T22:00:00.000Z",
+  "content": "矩阵\n\n基本概念\n\nmn 个数排列成 m 行 n 列的表格称为 mn 矩阵\n\nm\\*n 矩阵，m=n 时为 n 阶矩阵或 n 阶方阵\n\n矩阵所有元素为 0，则是零矩阵记作 O\n\n$A = \\[a\\_{ij}]{m \\times n}, B=\\[b\\_{ij}]\\_{s \\times t}$其中 $m=s, n=t$，A 与 B 是同型矩阵\n\n$A = \\[a\\_{ij}]{m \\times n}, B=\\[b\\_{ij}]\\_{m \\times n}$对应的每个元素都相等，则 A=B\n\nn 阶方阵的行列式，记作|A|或者 detA\n\n常见的矩阵\n\n单位阵 E：主对角元素为 1，其余元素为 0\n\n数量阵 kE：数 k 与单位阵 E 的积\n\n对角阵，$diag\\[a\\_1, a\\_2, a\\_3, \\ldots, a\\_n]$：非对角元素都是 0\n\n上三角阵：矩阵只有右上角到主对角元素非零\n\n下三角阵：矩阵只有左下角到主对角元素非零\n\n对称阵：$A^T = A$\n\n反对称阵： $A^T = -A, a\\_{ii}=0, a\\_{ij}=-a\\_{ji}$\n\n伴随矩阵\n\n矩阵 A 的行列式所有代数余子式构成的如下的矩阵，记作$A^\\*$\n\n$$\n\\begin{pmatrix}\nA\\_{11} & A\\_{21} & \\cdots \\&A\\_{n1} \\\\\nA\\_{12} & A\\_{22} & \\cdots \\&A\\_{n2} \\\\\n\\vdots & \\vdots &        &\\vdots \\\\\nA\\_{1n} & A\\_{2n} & \\cdots \\&A\\_{nn} \\\\\n\\end{pmatrix}\n$$\n\n可逆矩阵\n\nAB = BA= E，则 A 是可逆矩阵或非奇异矩阵，B 是 A 的逆矩阵，记作$A^{-1}=B$\n\n初等变换、初等矩阵\n\n初等倍乘：非零常数乘 A 的某一行或某一列\n\n初等互换：互换 A 的某两行某两列\n\n初等倍加：A 的某一行或者列的 k 倍加到另一行或者列\n\n初等矩阵：单位矩阵经一次初等变换得到的矩阵\n\n倍乘初等矩阵：记$E(i(k))$\n\n$E(2(k))$表示单位阵第二行乘以 k.\n\n互换初等矩阵：$E(i,j)$\n\n$E(1,2)$表示单位阵 1，2 行互换\n\n倍加初等矩阵：$E(ij(k))$\n\n$E(13(k))$把单位阵的第一行的 k 倍加到第三行\n\n行阶梯矩阵：所有零行在底部，每个非零行最左边的元素（主元）下面的元素为零。\n\n行最简矩阵：行阶梯矩阵的非零行主元都是 1，且主元所在列的其它函数都为 0.\n\n等价矩阵：矩阵 A 经过初等变换成矩阵 B，$A \\cong B$\n\nA 的等价标准形：$\\begin{pmatrix} E\\_r & O \\ O & O \\end{pmatrix}$\n\n矩阵的秩\n\nA 的 k 阶子式，从 A 中任取 k 行和 k 列按原来的顺序构成 k 阶行列式。\n\n矩阵的秩，A 中的 r 阶子式不为 0，r 阶以上子式都为 0，则称 A 的秩为 r，记成 r(A)\n\n零矩阵的秩为 0\n\nA 中非零子式的最高阶为 r，r(A) = r\n\nr(A)<\\r, A 中每个 r 阶子式都为 0\n\nr(A)>=r, A 中有 r 阶子式不为 0\n\nr(A) = 0 恒等于 A = O\n\nA != O 恒等于 r(A) >= 1\n\n重要定理\n\nA 可逆，则 A 的逆矩阵唯一\n\nA 可逆则|A|!=0，则$A=P\\_s\\cdots P\\_2 P\\_1$，$P\\_i$为初等矩阵\n\n克拉默法则：\n\n$$\n\\begin{cases}\na\\_{11}x\\_1 + a\\_{12}x\\_2 + \\cdots + a\\_{1n}x\\_n = b\\_1,\\\\\na\\_{21}x\\_1 + a\\_{22}x\\_2 + \\cdots + a\\_{2n}x\\_n = b\\_2, \\\\\n\\cdots \\\\\na\\_{n1}x\\_1 + a\\_{n2}x\\_2 + \\cdots + a\\_{nn}x\\_n = b\\_1,\n\\end{cases}\n$$\n\n齐次线性方程组的系数行列式$|A| \\ne 0$，则方程组有唯一解且$x\\_i = \\frac{|A\\_i|}{|A|}$， 其中$|A\\_i|$为第 i 列元素替换成常数项($b\\_1,b\\_2,\\cdots,b\\_n$)\n\n若常项都为 0，且$|A| \\ne 0$，则齐次线性方程组有唯一零解。\n\n若齐次线性方程组有非零解，则$|A| = 0$\n\n公式、法则\n\n同型矩阵加法\n\nA + B = B + A\n\n(A + B) + C = A + (B + C)\n\nA + O = A\n\nA + (-A) = O\n\n数乘\n\nk(mA) = (km)A = m(kA)\n\n(k+m)A = kA + mA\n\nk(A + B) = kA + kB\n\n1A = A\n\n0A= O\n\n乘法\n\n(AB)C = A(BC)\n\nA(B+C) = AB + AC\n\n(B + C)A = BA + CA\n\n转置\n\n$(A+B)^T = A^T + B^T$\n\n$(kA)^T = kA^T$\n\n$(AB)^T = B^TA^T$\n\n$(A^T)^T = A$\n\n伴随\n\n$AA^\\* = A^\\*A = |A|E$\n\n$(kA)^\\* = k^{n-1}A^\\*$\n\n$(A^)^{-1}=(A^{-1})^=\\frac{A}{|A|}$\n\n$(A^T)^\\* = (A^\\*)^T$\n\n可逆\n\n$(A^{-1})^{-1}=A$\n\n$(kA)^{-1} = \\frac{1}{k}A^{-1}(k \\ne 0)$\n\n$(AB)^{-1} = B^{-1}A^{-1}$\n\n$(A^T)^{-1}=(A^{-1})^T$\n\n$(A^n)^{-1}=(A^{-1})^n$\n\n分块\n\nB，C 为 m 阶和 n 阶矩阵，则\n\n$$\n\\begin{pmatrix}\nB & O \\\\\nO & C \\\\\n\\end{pmatrix}^n\n\n\\begin{pmatrix}\nB^n & O \\\\\nO & C^n \\\\\n\\end{pmatrix}\n$$\n\nB，C 为 m 阶 n 阶可逆矩阵，则\n\n$$\n\\begin{pmatrix}\nB & O \\\\\nO & C \\\\\n\\end{pmatrix}^{-1}\n\n\\begin{pmatrix}\nB^{-1} & O \\\\\nO & C^{-1} \\\\\n\\end{pmatrix}\n$$\n\n$$\n\\begin{pmatrix}\nO & B \\\\\nC & O \\\\\n\\end{pmatrix}^{-1}\n\n\\begin{pmatrix}\nO & C^{-1} \\\\\nB^{-1} & O \\\\\n\\end{pmatrix}\n$$\n\nA 是 mn 矩阵，B 是 ns 矩阵，且 AB=O 对 B 和 O 矩阵按列分块\n\n$$\nAB = A(B\\_1,B\\_2,\\cdots,B\\_n) = (AB\\_1, AB\\_2, \\cdots, AB\\_n) = (0, 0, \\cdots, 0)\n$$\n\n即 B 的列向量是齐次方程组 Ax=0 的解\n\n方阵行列式\n\n$|A^T|=|A|$\n\n$|kA| = k^n|A|$\n\n$|AB| = |A||B|$\n\n$|A^{-1}| = |A|^{-1}$\n\n$|A^\\*| = |A|^{n-1}$\n\n秩\n\n$0 \\le r(A\\_{m \\times n}) \\le min(m, n)$\n\n$r(A) = r(A^T)$\n\n$k \\ne 0, r(kA)=r(A)$\n\n$r(A+B) \\le r(A) + r(B)$\n\n$r(AB) \\le min(r(A), r(B))$\n\nP、Q 可逆， $r(A)=r(PA)=r(AQ)=r(PAQ)$\n\n$max(r(A), r(B)) \\le r(A,B) \\le r(A)+r(B)$\n\n$r(A^TA) = r(A)$\n\n$r \\begin{pmatrix} A & O \\ O & B \\end{pmatrix} = r(A) + r(B)$\n\n$AB=O则r(A) + r(B) \\le n$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

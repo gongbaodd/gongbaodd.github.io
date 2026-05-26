@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#9c8c5c",
     "titleColor": "--mantine-color-orange-2"
+  },
+  "id": "2026/03/01/vibe-coding",
+  "href": "/fe/2026/03/01/vibe-coding",
+  "title": "The Podcast Page",
+  "date": "2026-02-28T22:00:00.000Z",
+  "content": "The Podcast Page\n\nAfter last week’s struggle with local vibe coding, I shifted my focus to remote models. The result? You can now see a live podcast page on this site. Here is how it went down.\n\nFrom \"Hard Work\" to \"Skills\"\n\nAs an avid podcast listener, I often struggle with episodes in Russian or German. My goal was simple: send a Pocket Casts link to an LLM, have it find the episode on Apple Podcasts (which provides transcriptions), and generate a summary.\n\nInitially, this was a heavy lift for OpenClaw. Running the sequence through Claude 4.6 Opus cost roughly $0.30 per summary. However, we are now in the \"Skill Era.\" I instructed OpenClaw to save those logic steps into a reusable Skill. Now, the heavy lifting is handled by Gemini 2.5 Flash Lite. It’s incredibly efficient; even after multiple runs, the cost hasn't even hit half a cent.\n\nThe \"Unsupervised\" Myth\n\nThen came the true \"vibe coding\" test. I used Claude 4.5 Haiku with OpenCode, attempting to stay hands-off. You’ve likely seen videos of developers \"unsupervised\" while agents build entire projects. Honestly? It’s fake.\n\nThe biggest hurdle is the Agentic Loop. As a project grows, the context expands, and agents often lose their place and repeat tasks. Without supervision, an agent will happily burn through your credits while running in circles. My \"hands-off\" attempt cost 30 cents and didn't even deliver a basic player widget.\n\nMy dream was to set a plan at night and wake up to a finished product. We aren't there yet.\n\nThe Good, The Bad, and The Messy\n\nWhen I finally stepped in to supervise the creation of the podcast card you see on this blog, the code quality was... questionable.\n\nThe Ugly: The agent used an excessive amount of any types and redundant if-else blocks. This bloats the context window—which, cynically, earns the LLM providers more money via token usage.\n\nThe Good (Skills): Summarizing prompts into \"Skills\" is a game-changer for repetitive tasks. It keeps the context clean and the costs down.\n\nThe TUI Comeback: Because LLMs are such resource hogs, running a heavy IDE alongside them is a struggle. Switching to LunarVim (TUI) was buttery smooth. As long as memory shortages exist, Terminal User Interfaces will remain king.\n\nTDD (Test Driven Development): I’m using LLMs to generate unit tests as snapshots.\n\nThe \"vibe\" is getting stronger, but for now, the developer still needs to keep one hand on the wheel.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "vibe-coding",
+      "href": "/tag/vibe-coding"
+    },
+    {
+      "label": "llm",
+      "href": "/tag/llm"
+    }
+  ],
+  "series": {
+    "label": "Vibe Coding",
+    "href": "/series/vibe-coding"
   }
 }

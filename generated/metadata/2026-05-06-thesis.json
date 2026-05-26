@@ -8,5 +8,19 @@
   "colorSet": {
     "bgColor": "#9b6a5c",
     "titleColor": "--mantine-color-blue-2"
+  },
+  "id": "2026/05/06/thesis",
+  "href": "/tech/2026/05/06/thesis",
+  "title": "Week 18: Thesis Submitted! 🚀",
+  "date": "2026-05-05T21:00:00.000Z",
+  "content": "Week 18: Thesis Submitted! 🚀\n\nAfter nearly disappearing for two months, I have finally finished my master's thesis! 🎉\n\nBefore & After\n\nI never expected the writing process to take this long. Huge thanks to my supervisor, Martin Sillaots, for guiding the transformation of my working notes into a formal design-based research paper. ✍️\n\nI am also grateful to everyone who supported me and tolerated my temper during this intense period. 🙏✨\n\n\n\n\n\n\n\nThe Project: Developing an XR Drone Training Simulator\n\nMy research included:\n\nSimulating quadcopter physics. ⚙️\n\nBuilding and evaluating human-AI collaboration agents. 🤖\n\nPrototyping in XR environments. 🥽\n\nI will soon update this site with additional content from the thesis. 📝\n\nThe Magic of Design-Based Research\n\nData collection sparked many new ideas. This is the magical part of DBR, using different complexity to exchange the complexity in the iterations.\n\nThe journey isn't over yet, as the defense is still ahead. Wish me luck! 🍀",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [],
+  "series": {
+    "label": "Master Thesis",
+    "href": "/series/master"
   }
 }

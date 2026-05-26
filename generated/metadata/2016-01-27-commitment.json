@@ -1,4 +1,14 @@
 {
   "file": "2016/01/27/commitment",
-  "hash": "54c4d0d17232493240ec618dafea9304a08af0ec5aadfeed7e88b62a34f06b66"
+  "hash": "54c4d0d17232493240ec618dafea9304a08af0ec5aadfeed7e88b62a34f06b66",
+  "id": "2016/01/27/commitment",
+  "href": "/fe/2016/01/27/commitment",
+  "title": "写最正规的 commitment",
+  "date": "2016-01-26T22:00:00.000Z",
+  "content": "写最正规的 commitment\n\n需要一个工具 Commitizen\n\n在工程目录里面使用 angular 的 message 格式\n\n以后写 commit 的时候不用git commit改用git cz",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

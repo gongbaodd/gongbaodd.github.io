@@ -1,4 +1,31 @@
 {
   "file": "2020/05/04/rn-flutter-dart",
-  "hash": "fac284b45faf8bcf53127069c98a8887409eebfde3b992ba519c8ba712c03905"
+  "hash": "fac284b45faf8bcf53127069c98a8887409eebfde3b992ba519c8ba712c03905",
+  "id": "2020/05/04/rn-flutter-dart",
+  "href": "/fe/2020/05/04/rn-flutter-dart",
+  "title": "从 RN 到 Flutter-从 Dart 开始",
+  "date": "2020-05-03T21:00:00.000Z",
+  "content": "从 RN 到 Flutter-从 Dart 开始\n\n这是一篇翻译，原文来自于官方文档，当然，里面夹带私货，哈哈。\n\n从 JavaScript 到 Dart\n\n就像 React Native，Flutter 也是用响应式界面。但是 React Native 是链接原生环境，而 flutter 则是直接编译到原生环境中。Flutter 可以控制屏幕上面的每一个像素，可以避免 JavaScript 和原生环境桥的性能问题。\n\nDart 是一个简单的语言，并提供以下功能。\n\n提供一个开源可伸缩的开发环境并提供给网页端、服务器端、移动端使用。\n\n提供单继承面向对象的 C 语法支持，并支持 AOT 编译至原生环境。\n\n可翻译到 JavaScript\n\n支持接口和虚基类的数据结构\n\n以下是几处 JavaScript 和 Dart 的不同之处。\n\n入口\n\nJavaScript 没有与设定的入口函数。\n\nDart 有一个顶级main()函数作为入口函数使用。\n\n在 DartPad 上使用。\n\n打印日志\n\n在 Dart 中打印日志需要使用print()函数。\n\n在 DartPad 试用。\n\n变量\n\nDart 是类型安全的——它结合静态类型检查和动态类型检查确保变量总是符合它的静态类型。即使类型是强制的，但类型标识并不是必须的，因为 Dart 会预判类型。\n\n声明变量并赋值\n\n在 JavaScript 中，变量是无类型的（这是原文说的，不是我说的，我不是很同意）。\n\n在 Dart 中，变量必须声明类型，或者让系统能够预判类型。\n\n在 DartPad 中试用。\n\n点这里了解 Dart 的类型系统。\n\n默认值\n\n在 Javascript 中，未初始化的变量是undefined（他可能指的是函数作用域变量）。\n\n在 Dart 中，未初始化的变量值为null。因为 Dart 中的类型都是对象，所以即使定义了类型但没有赋值它的默认值依然是 null。\n\n在 DartPad 使用。\n\n更多关于 Dart 变量 的信息。\n\n空值检查和零值检查\n\n在 JavaScript 中非空对象被认为是真值。\n\nDart 中，只有布尔真值是真值。\n\n在 DartPad 上使用。\n\n函数\n\n两个语言的函数基本上相同。\n\n不同点是他们的声明。\n\n在 DartPad 上使用，点这里查看函数细节。\n\n异步开发\n\nFutures\n\n和 Javascript 一样，Dart 支持单线程执行。JavaScript 使用 promise 对象处理异步的成功以及失败状态，并获取它的值。\n\n而在 Dart 中，使用 Future 对象处理异步。\n\n点击这里了解 Future 对象。\n\nasync 和 await\n\n使用 async 标识符声明异步函数。\n\n在 JavaScript 中，async函数返回一个Promise对象，并使用await处理它。\n\n在 Dart 中，async函数返回Future类型，函数体会被安排运行，await运算符被用来获取Future的返回值。\n\n了解更多async 和 await的信息。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "react-native",
+      "href": "/tag/react-native"
+    },
+    {
+      "label": "flutter",
+      "href": "/tag/flutter"
+    },
+    {
+      "label": "dart",
+      "href": "/tag/dart"
+    }
+  ],
+  "series": {
+    "label": "从RN到Flutter",
+    "href": "/series/Flutter-for-RN-devs"
+  }
 }

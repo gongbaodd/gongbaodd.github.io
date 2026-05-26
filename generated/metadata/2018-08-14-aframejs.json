@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#546c9c",
     "titleColor": "--mantine-color-blue-2"
-  }
+  },
+  "id": "2018/08/14/aframejs",
+  "href": "/fe/2018/08/14/aframejs",
+  "title": "AframeJS 学习笔记",
+  "date": "2018-08-13T21:00:00.000Z",
+  "content": "AframeJS 学习笔记\n\n🚀 创建项目\n\n使用 npm/angle 快速开始吧～\n\n🧩 ECS（Entity-Component-System）\n\n如果不太了解，可以先去百度一下~ 📚\n\n📦 组件库\n\n想找现成的组件？这里看 ➡️ A-Frame Registry\n\n📝 官方博客\n\n更多资讯和更新请戳 👉 A-Frame Blog",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "aframe.js",
+      "href": "/tag/aframe.js"
+    },
+    {
+      "label": "ecs",
+      "href": "/tag/ecs"
+    }
+  ]
 }

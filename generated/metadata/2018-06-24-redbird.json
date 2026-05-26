@@ -1,4 +1,14 @@
 {
   "file": "2018/06/24/redbird",
-  "hash": "0cb66bb432106b89d152967f1a69c9080697ff0792919f80f5e1b0c892346add"
+  "hash": "0cb66bb432106b89d152967f1a69c9080697ff0792919f80f5e1b0c892346add",
+  "id": "2018/06/24/redbird",
+  "href": "/tech/2018/06/24/redbird",
+  "title": "用 [redbird](https://github.com/OptimalBits/redbird) 代替 nginx",
+  "date": "2018-06-23T21:00:00.000Z",
+  "content": "用 redbird 代替 nginx\n\n我的网站都是拿 nginx 做反向代理，但是 ng 反向代理很麻烦， 而 redbird 是个不错的替代，里面的人哥哥牛逼，语法又好听，非常推荐。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

@@ -1,4 +1,14 @@
 {
   "file": "2017/05/14/nas",
-  "hash": "eabd1b55ed1003d74393889d5827858a0ced1b38c057bcdfd8a9c76497f9c10c"
+  "hash": "eabd1b55ed1003d74393889d5827858a0ced1b38c057bcdfd8a9c76497f9c10c",
+  "id": "2017/05/14/nas",
+  "href": "/tech/2017/05/14/nas",
+  "title": "树莓派搭建 NAS",
+  "date": "2017-05-13T21:00:00.000Z",
+  "content": "树莓派搭建 NAS\n\n好忙啊，写个大纲好了\n\n安装 RPI-Monitor\n\n安装吸血迅雷\n\nSamba 共享文件\n\nssh 端口映射",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

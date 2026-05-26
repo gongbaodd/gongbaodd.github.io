@@ -1,4 +1,19 @@
 {
   "file": "2025/06/13/week-25-ai-local",
-  "hash": "cd321c95b0d4f2e66206430b4e8d803b23185822b3ec4c1fbbc72f940fa7d133"
+  "hash": "cd321c95b0d4f2e66206430b4e8d803b23185822b3ec4c1fbbc72f940fa7d133",
+  "id": "2025/06/13/week-25-ai-local",
+  "href": "/plan/2025/06/13/week-25-ai-local",
+  "title": "Week 25: AI Locally on Browser",
+  "date": "2025-06-12T21:00:00.000Z",
+  "content": "Week 25: AI Locally on Browser\n\nThis week I focused on two main things: Langchain 🧠 and Hugging Face transformer.js 🛠️.\nI learnt how a multi-modal agent works 🎯 and how to run models directly in the browser 🌐.\n\nA model can be quite big—anywhere from 10 MB to 2 GB 📦—so downloading it in a webpage isn’t very user-friendly.\nThe Background Fetch API ⏳ is a good solution, but it’s only supported in Chrome and Edge.\nI think providing a download link ⬇️ for users to fetch the model themselves, and then verifying the file’s hash 🔍, is also a good complement.\n\n🧩 bitECS\n\nNext week, I’ll try making something using Babylon.js Editor 🎮 and bitECS ⚡.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    }
+  ]
 }

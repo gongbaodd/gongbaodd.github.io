@@ -1,4 +1,14 @@
 {
   "file": "2018/08/29/openapi-swagger",
-  "hash": "b8d3630f983ddfabf797af39b233997374b385edf3a06bfe88e96bf4562ede36"
+  "hash": "b8d3630f983ddfabf797af39b233997374b385edf3a06bfe88e96bf4562ede36",
+  "id": "2018/08/29/openapi-swagger",
+  "href": "/fe/2018/08/29/openapi-swagger",
+  "title": "openapi swagger",
+  "date": "2018-08-28T21:00:00.000Z",
+  "content": "Swagger OpenAPI",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

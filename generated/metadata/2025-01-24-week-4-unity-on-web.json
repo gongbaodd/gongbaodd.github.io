@@ -1,4 +1,31 @@
 {
   "file": "2025/01/24/week-4-unity-on-web",
-  "hash": "fe0c1b51a901eec302d9fa199970cb8cd2b4d64f9f3429bb6406c1e69ae85caa"
+  "hash": "fe0c1b51a901eec302d9fa199970cb8cd2b4d64f9f3429bb6406c1e69ae85caa",
+  "id": "2025/01/24/week-4-unity-on-web",
+  "href": "/plan/2025/01/24/week-4-unity-on-web",
+  "title": "Week 4: Unity on Web",
+  "date": "2025-01-23T22:00:00.000Z",
+  "content": "Week 4: Unity on Web\n\nI finished watching the Unity Pathway VR and AR part. Because the game jam is coming, I will put the work on hold for a while.\n\nThe VR part is what I want. The AR part, because unity AR is relying on mobile, that means I can only make android one. However, I will still do that, but I will try some webXR APIs. Also I will try the 8thWall.\n\nAs I am preparing for the game jam, I checked some libraries, like React Unity WebGL. It is used to embed unity webGL exports to react. And also the it allows the communication between C# and js.\n\nThis week, I also tried WebGPU support in Unity. To try WebGPU, you need unity 6.1 beta. Then configure the player settings to WebGPU.\n\nTV\n\nLudwig is a detective story. The character's twin brother is missing, he disguises himself as his brother to investigate it. I only watched the first episode. But it was a fun series to watch.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "ar",
+      "href": "/tag/ar"
+    },
+    {
+      "label": "vr",
+      "href": "/tag/vr"
+    },
+    {
+      "label": "webgpu",
+      "href": "/tag/webgpu"
+    }
+  ]
 }

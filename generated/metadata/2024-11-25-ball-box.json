@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#9a8c64",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2024/11/25/ball-box",
+  "href": "/lab/2024/11/25/ball-box",
+  "title": "Catch the ball",
+  "date": "2024-11-24T22:00:00.000Z",
+  "content": "Catch the ball\n\nThis is a simple game I made for Digital Graphic class. use keyboard to move the box, and destroy the ball. You can play it here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

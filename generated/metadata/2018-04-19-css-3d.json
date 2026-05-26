@@ -1,4 +1,14 @@
 {
   "file": "2018/04/19/css-3d",
-  "hash": "ab69f153af67d52870a11defa2735d3496f23c242af8915a3f05eb7139daa6f9"
+  "hash": "ab69f153af67d52870a11defa2735d3496f23c242af8915a3f05eb7139daa6f9",
+  "id": "2018/04/19/css-3d",
+  "href": "/fe/2018/04/19/css-3d",
+  "title": "用CSS制作3D动画",
+  "date": "2018-04-18T21:00:00.000Z",
+  "content": "用CSS制作3D动画\n\n\n\n直到前几天，我需要做一个简单的3D动画时候，我才意识到其实我还没有用CSS做过3D动画。\n\n很多人其实认为只要写下\n\n但最终效果并不是三维的旋转，原因是它的父元素必须是一个有深度的盒子。\n\n如果是希望旋转180度后不展示背面可以添加 backface-visibility。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

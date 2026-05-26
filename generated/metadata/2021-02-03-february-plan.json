@@ -9,5 +9,15 @@
       "latitude": 38.9139899,
       "longitude": 121.6147
     }
-  ]
+  ],
+  "id": "2021/02/03/february-plan",
+  "href": "/plan/2021/02/03/february-plan",
+  "title": "二月计划",
+  "date": "2021-02-02T22:00:00.000Z",
+  "content": "二月计划\n\n一月内容\n\n学习：完成 rust with many lists\n\n学习：复习 TS\n\n学习：学习 XState，可惜目前无法实现图形化编辑状态机，哪怕是 SCXML 也没有完美的工具，期待这个库的发展。\n\n工具：开始使用 Powershell\n\n工具：完成黑苹果\n\n工具：使用 Barrier 实现 Mac 和 PC 之间协同\n\n工具：使用 AudioRelay 实现蓝牙连接多台设备\n\n健身：已经办了华美健身的健身卡\n\n二月内容\n\n学习：使用「记乎」熟练 50 音图背诵。\n\n学习：完成线性代数学习\n\n学习：读完程序员的数学线性代数部分\n\n学习：学会 Latex\n\n健身：哎，主要是手腕受伤了，读「力量训练套装」\n\n旅行：大连博物馆一次，安排下接下来几个月的短途旅行\n\n学习：深入理解计算机系统\n\n学习：日常联系盲打\n\n学习：背诵恋练有词",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

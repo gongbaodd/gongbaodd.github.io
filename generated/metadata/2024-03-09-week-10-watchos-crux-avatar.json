@@ -1,4 +1,43 @@
 {
   "file": "2024/03/09/week-10-watchos-crux-avatar",
-  "hash": "30ef58fc79e85c3cac29ba12bb8f677b3808b58264b10d3e788d6708e8c2c26f"
+  "hash": "30ef58fc79e85c3cac29ba12bb8f677b3808b58264b10d3e788d6708e8c2c26f",
+  "id": "2024/03/09/week-10-watchos-crux-avatar",
+  "href": "/plan/2024/03/09/week-10-watchos-crux-avatar",
+  "title": "Week 10: WatchOS CRUX and Avatar",
+  "date": "2024-03-08T22:00:00.000Z",
+  "content": "Week 10: WatchOS CRUX and Avatar\n\nLast week I learnt how to make a wearOS app. This week, I tried to learn how to make a watchOS app. It is a note app tutorial made by Credo Academy, I found some one pushed the whole code to this repo. I had to say, swift is way much easier than kotlin.\n\nWeb TTS\n\nAnother thing, I want to have a better experience in my pasa-thay APP. I decided to add TTS on that. Turns out TTS on web is already a thing. Called Speech Synthesis Utterance, Country code can be found in this link. There are many English examples online. A Thai voice differs between platforms.\n\n@pmndrs/uikit\n\nI also found a cool new library for react-three-fiber, called uikit. They implement shadcn on canvas. This tweet is a showcase on webXR. I tried it, it was a little laggy on my headset.\n\nCRUX\n\nLast week, I found CRUX. Which is a solution for cross platform software. If you are familiar to state management, you can think it as a cross platform state manager. This framework generates state functions and type definitions. In web platform, it was wasm. In android it was JNI package. I have not tried iOS yet. Next week, I will try to make it possible on flutter and iOS. And I will try to make a moon starter repo template.\n\nThe web implementation is easy, it's core lib is only a copy and paste work. Only need to use the update API. The major apis are ViewModel and Events. Use the following code to dispatch an action.\n\nOn android side, it is a little hard to start. The package is highly rely on the JNI version. But to write the code is easy. I am also afraid that rust support on Windows can be buggy, but I didn't meet any trouble.\n\nAvatar: The Last Airbender\n\nAvatar: The Last Airbender is a new netflix series, originally was an animation in 2005. It was a fantasy story based on Eastern asia culture(majorly Chinese). I was stoned that the story was not totally from an asian writer. The way they split the culture and reassembled into 4 different nations is amazing. I finished the series this week and intend to watch the animation next week.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "watchos",
+      "href": "/tag/watchos"
+    },
+    {
+      "label": "crux",
+      "href": "/tag/crux"
+    },
+    {
+      "label": "tts",
+      "href": "/tag/tts"
+    },
+    {
+      "label": "speechsynthesisutterance",
+      "href": "/tag/speechsynthesisutterance"
+    },
+    {
+      "label": "webxr",
+      "href": "/tag/webxr"
+    },
+    {
+      "label": "uikit",
+      "href": "/tag/uikit"
+    },
+    {
+      "label": "avatar",
+      "href": "/tag/avatar"
+    }
+  ]
 }

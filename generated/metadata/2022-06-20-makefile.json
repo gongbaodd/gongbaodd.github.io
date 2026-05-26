@@ -1,4 +1,19 @@
 {
   "file": "2022/06/20/makefile",
-  "hash": "d7e9933110e89b00ebfe7581b8eeeebd4982e3793687d576a6ea992c916ffd35"
+  "hash": "d7e9933110e89b00ebfe7581b8eeeebd4982e3793687d576a6ea992c916ffd35",
+  "id": "2022/06/20/makefile",
+  "href": "/tech/2022/06/20/makefile",
+  "title": "学习使用 makefile",
+  "date": "2022-06-19T21:00:00.000Z",
+  "content": "学习使用 makefile\n\nMakefile其实一直都用过，只是没有系统学习一下，也从未遇到过要从头写一个的机会。\n\n这个链接很详细了，抽出一点时间看了下。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "makefile",
+      "href": "/tag/makefile"
+    }
+  ]
 }

@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#9c7c5c",
     "titleColor": "--mantine-color-dark-8"
+  },
+  "id": "2026/04/17/terrain",
+  "href": "/fe/2026/04/17/terrain",
+  "title": "Digital Twin of Vana Tallinn",
+  "date": "2026-04-16T21:00:00.000Z",
+  "content": "Digital Twin of Vana Tallinn\n\nI've mentioned to use GIS systems in Unity. But to use them in the game, I found it much harder, because you need the API keys. They do not provide the service freely.\n\nHowever, you can download Tallinn's old town data from Ruumiandmed. With the help of LLMs and Unity MCP. You can assemble these almost 800 buildings in one night.\n\nOld Town\n\nAnd you can see there is one problem. There is no ground.\n\nI tried a lot solutions, like Unity terrain. The Republic of Estonia Land and Development Board provides a web map that is able for me to download terrain data base on the map number, the old town is in the following 4 areas.\n\n589541\n\n589542\n\n588541\n\n588542\n\nIt is a tiff 32 bit file. I tried a lot different ways to make it suit in Unity's Terrain system. I did not succeed. Finally, after one sauna. I tought since what I want is just one mesh. There is a plugin called QGis2Threejs Exporter. I can directly export it from QGIS.\n\nTerrain\n\nLast but not the least, remember to make occlusion culling so that these mesh will not crash the memory.\n\nocclusion culling",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ],
+  "series": {
+    "label": "Master Thesis",
+    "href": "/series/master"
   }
 }

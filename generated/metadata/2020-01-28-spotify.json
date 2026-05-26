@@ -1,4 +1,23 @@
 {
   "file": "2020/01/28/spotify",
-  "hash": "58d97ab9c7428b18817ed7a9d36edfb888ab1c01fcf2613430b2097a1cb126b2"
+  "hash": "58d97ab9c7428b18817ed7a9d36edfb888ab1c01fcf2613430b2097a1cb126b2",
+  "id": "2020/01/28/spotify",
+  "href": "/tech/2020/01/28/spotify",
+  "title": "白嫖 spotify 的方式",
+  "date": "2020-01-27T22:00:00.000Z",
+  "content": "白嫖 spotify 的方式\n\n今年开始，我不再在家办公，这使得我的网络环境不是很稳定，无法一直在线听 spotify。最好的办法，自然是把要听的音乐缓存下来。\n\nGitHub 里面有一个 python 项目spotify-downloader可以下载 spotify 的音频。\n\n利用 pip 安装\n\n因为是国内使用，需要代理\n\n另外，spotdl 支持列表下载",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "spotify",
+      "href": "/tag/spotify"
+    }
+  ],
+  "series": {
+    "label": "Windows舒适指南",
+    "href": "/series/windows-howto"
+  }
 }

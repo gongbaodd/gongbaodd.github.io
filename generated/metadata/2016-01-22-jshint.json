@@ -1,4 +1,14 @@
 {
   "file": "2016/01/22/jshint",
-  "hash": "ae6cfe1c906f52ea9e9b8d4205db27bcb3554e1d2d8e5f691e180ce38bc9b611"
+  "hash": "ae6cfe1c906f52ea9e9b8d4205db27bcb3554e1d2d8e5f691e180ce38bc9b611",
+  "id": "2016/01/22/jshint",
+  "href": "/fe/2016/01/22/jshint",
+  "title": "jshint 配置笔记",
+  "date": "2016-01-21T22:00:00.000Z",
+  "content": "jshint 配置笔记",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

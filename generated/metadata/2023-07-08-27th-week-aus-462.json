@@ -1,4 +1,14 @@
 {
   "file": "2023/07/08/27th-week-aus-462",
-  "hash": "63050604cbb3d524bc1a427b435a042c6002e0b4fdf4e41177e289da1152ee78"
+  "hash": "63050604cbb3d524bc1a427b435a042c6002e0b4fdf4e41177e289da1152ee78",
+  "id": "2023/07/08/27th-week-aus-462",
+  "href": "/plan/2023/07/08/27th-week-aus-462",
+  "title": "27th week: AUS 462",
+  "date": "2023-07-07T21:00:00.000Z",
+  "content": "27th week: AUS 462\n\nThis week I applied AUS 462 visa, wish I can get it soon.\n\nReact-BabylonJS\n\nI finished the basic part. In the tutorial, position in terrain is no longer supported. And EngineView, which renders viewport on different canvases, is not supported. Snippet is a way to call shader from babylon server, but I don't want to use that.\n\nVSCode extension\n\nImport Cost calculates the size of imported packages.\n\nSome git errors\n\nI bumped into a git error, some corrupted files in .git/objects. A simple way is just delete them.\n\nDangling objects are tricky, this is the official solution.\n\nSwiftUI\n\nI learnt some basic knowledge about SwiftUI. Still don't know why people say it's elegant.\n\nCSS3DRenderer\n\nThreeJS can use CSS as it's renderer. These are some examples:\n\n3D Youtube\n\nCSS sprites\n\nVideo Tutorials\n\nFinished The Net Ninja's Flutter Tutorial\n\nWatching The Net Ninja's GraphQL Tutorial now.\n\nplaning to watch TensorFlow 2.0 Course in Free Code Campus\n\nand Rafa Tec XR's web XR tutorial is in planing too.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

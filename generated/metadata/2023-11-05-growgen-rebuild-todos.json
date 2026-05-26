@@ -1,4 +1,14 @@
 {
   "file": "2023/11/05/growgen-rebuild-todos",
-  "hash": "5693dca85628f08819dfa9196a64b11460f5d4915958ec89f595d5953df9abca"
+  "hash": "5693dca85628f08819dfa9196a64b11460f5d4915958ec89f595d5953df9abca",
+  "id": "2023/11/05/growgen-rebuild-todos",
+  "href": "/tech/2023/11/05/growgen-rebuild-todos",
+  "title": "GrowGen.xyz Rebuild Todos",
+  "date": "2023-11-04T22:00:00.000Z",
+  "content": "GrowGen.xyz Rebuild Todos\n\nHome Page Profile\n\nHome Page Octopus Menu\n\nHome Page Tags background\n\nHeader\n\nFooter\n\nBlog Page Profile\n\nBlog Page List\n\nBlog Page Selector\n\nNeed fix\n\ndate: 2021-11-19\n\ndarkmode got error when refresh\n\ncypress test\n\nrss\n\nlisence\n\nfavicon 404\n\nlog errors\n\nopen link in new tab(done)\n\nlazyload\n\nsmallscreen support\n\nrelated links\n\nheroimage\n\ndayone\n\nimage-tool",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#609db9",
     "titleColor": "--mantine-color-yellow-2"
-  }
+  },
+  "id": "2025/03/30/espresso",
+  "href": "/lab/2025/03/30/espresso",
+  "title": "Espresso: Mr Cuppy & the ultimate coffee adventure",
+  "date": "2025-03-29T22:00:00.000Z",
+  "content": "Espresso: Mr Cuppy & the ultimate coffee adventure\n\nThis is a 2D platformer game I built in TalTech Gamejam. You can play it here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

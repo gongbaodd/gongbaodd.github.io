@@ -1,4 +1,14 @@
 {
   "file": "2018/02/06/texturepacker",
-  "hash": "3eb66a17c455f7d013410c878185b929837ae5b59e9818c1785f1c6aa3cf118e"
+  "hash": "3eb66a17c455f7d013410c878185b929837ae5b59e9818c1785f1c6aa3cf118e",
+  "id": "2018/02/06/texturepacker",
+  "href": "/fe/2018/02/06/texturepacker",
+  "title": "用 TexturePacker 做雪碧图",
+  "date": "2018-02-05T22:00:00.000Z",
+  "content": "用 TexturePacker 做雪碧图\n\n在 setting 里面选择格式, 如 PixiJS, 然后点击 Publish Sprite Sheet 会生成对应的 png 和 json",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

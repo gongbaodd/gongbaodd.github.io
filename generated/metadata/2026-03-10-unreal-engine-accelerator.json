@@ -1,4 +1,19 @@
 {
   "file": "2026/03/10/unreal-engine-accelerator",
-  "hash": "cb36d0608b6ad60e0c3706dcddc1a4f8ccae3b238975d3da96f8e76fcdc5e046"
+  "hash": "cb36d0608b6ad60e0c3706dcddc1a4f8ccae3b238975d3da96f8e76fcdc5e046",
+  "id": "2026/03/10/unreal-engine-accelerator",
+  "href": "/tech/2026/03/10/unreal-engine-accelerator",
+  "title": "Unreal Build Accelerator",
+  "date": "2026-03-09T22:00:00.000Z",
+  "content": "Unreal Build Accelerator\n\nThis blog is about things that go wrong with UE 🤦‍♂️. Honestly, a lot of info online just doesn’t work, and this time was no different. So here’s what not to do.\n\nI needed to do a Unreal Engine project for Oculus. Since UE 5.1, the engine stopped supporting the OculusXR plugin and switched to OpenXR. So I had to compile an Oculus version of UE. Spoiler: I never managed to successfully compile UE engine, including this time 😅.\n\nI decided to try a remote server. Hetzner offers servers you can rent by the hour. At first, Gemini & ChatGPT suggested using Fastbuilder. After setting it up, the build system ignored it and used Unreal Build Accelerator (UBA) instead 🤷‍♂️.\n\nThen I learned that UBA needs a Windows server, even though Gemini and ChatGPT both said it is made for Ubuntu to compile. Lesson learned: not everything online is true 😬.\n\nBut it’s not all lost! %AppData%\\Unreal Engine\\UnrealBuildTool\\BuildConfiguration.xml saves your build settings. You can tweak things like how many cores to use. Paid 30 cents to learn this little tip… still no successful build 😭. Looks like I’ll just switch to the OpenXR plugin.\n\nSad, paid 30 cents and no progress.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "ue",
+      "href": "/tag/ue"
+    }
+  ]
 }

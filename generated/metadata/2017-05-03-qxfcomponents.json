@@ -1,4 +1,14 @@
 {
   "file": "2017/05/03/qxfcomponents",
-  "hash": "454835a05f87a5586e217cc268c7597c70ffbad24cbc6b6a9e185b42a001d143"
+  "hash": "454835a05f87a5586e217cc268c7597c70ffbad24cbc6b6a9e185b42a001d143",
+  "id": "2017/05/03/qxfcomponents",
+  "href": "/fe/2017/05/03/qxfcomponents",
+  "title": "写啥题目呢",
+  "date": "2017-05-02T21:00:00.000Z",
+  "content": "写啥题目呢\n\n回顾一下\n\n去年三月，我分享了一个用riotjs开发前端的方案，既然已经有一年的时间了，就先回顾一下。\n\n这套方案出自2015年，之前一直使用的是公司的QApp解决方案，后来发现使用上存在问题，\n并在试图寻找一套可行的替代方案。\n\n组件化方案\n\nQApp的最小单位是View(大概可以理解为页面)，\nView里面大到一个轮播图小到一个按钮的操作逻辑都和view耦合，\n假设我想使用某一个View里面的某一个组件，想直接拆出来是不太可能的。\n\n以前的写法\n\n新的写法\n\n基于发布订阅的统一事件管理模式\n\n有很多时候，我们要处以理一些“这些东西，我们不要了”之类的需求，\n当我们回头去翻代码的时候，惊奇的发现它被封装了，\n那么后面的故事就是要和“xxx function is undefined”做长期斗争了。\n\n之前的调用方式\n\n之后的调用方式\n\n基于状态基的异步流程处理\n\n其实2015年，是异步流程处理比较混乱的一年，Promise刚出来，没多少人敢用，\n更别提generator还有async之类的东西了，\n这套方案正好利用了发布订阅的优点，\n只要在异步事件触发之前订阅上就没问题了\n\n之前\n\n之后\n\n利用组件树检索组件\n\n项目组件化（Component）+ 事件化（Reactive）之后，\n一个页面的运行方式就成为某一个组件监控某一个组件的某一事件并对其造成的处理。\n那么需要利用祖组件树解决一下检索问题。\n\npay-view\n\nparent: null\n\ntags\n\npay-vcode\n\nparent: pay-view\n\ntags\n\npay-input\n\npay-submit\n\nparent: pay-vcode\n\npay-submit\n\nparent: pay-view\n\n利用mixin实现继承\n\necmascript2015之前，js一直都没有一个像样的类的表达方式，\n所以我们其实也没有一个像样的继承方式，\n混淆是目前用的最多的一种继承，大概是源自$.extend吧。\n\najaxApi1\n\najaxApi2\n\npay-view\n\n结合velocity和yield实现首屏渲染\n\n首屏渲染，SPA一直有这个问题。\n因为在html加载到js加载完成（甚至是一些ajax返回）之前，\n页面都是白屏，其实vm可以完成一部分后端的渲染，并替代第一个ajax。\n\nvm之中\n\njs里面\n\nSPA的路由（这部分本文不涉及，忽略）\n\n希望优化的点\n\n发布订阅解决函数调用问题是存在缺陷的\n\n这套方案会产生冗余代码，其实最好使用typescript编写代码，\n这样在编译环境下就能查出哪个函数调用了删除的方法。\n\nutil.ts\n\nxxx.ts\n\n使用面向对象的语法\n\nhtml\n\nES5\n\nTypeScript\n\n利用发布订阅模式控制流程并不是最好的流程控制\n\n目前来说原生的Promise支持已经很不错了，\nasync虽然是个实验特性，\n但发明C#的微软明显推荐用这个特性。\n\n发布订阅\n\nPromise\n\nasync & await\n\n没有完善的广播机制\n\n其实之前的方案是可以广播的，但需要选中需要的组件，如\n\n但是我希望的广播是每一个页面里面的tag无需选中就可以接收到。\n其实在每个tag加载之后都会传进一个opts对象，\n这个对象或者是执行mount函数传入的值，或者是模板标签上的变量\n\n所以只要把一个obersable的对象传到opts里面就行了.\n\n需要一个更好的mixin\n\ntypescript对mixin支持很好，\n配合vscode的输入提醒代码体验十分完美，\n所以几乎可以放弃riot的mixin了\n\nriot.mixin\n\n@mixin(any\\[])\n\nvelocity模板语法太次了\n\n改用node渲染，Qxf使用的是handlebars，riot自身也支持后端渲染。\n\n介绍点儿常识\n\ntypescript的语法\n\n类型化声明\n\nclass语法糖\n\nasync await 上面提过了\n\nObject解构\n\n接口\n\n装饰器\n\n就是前面类似于@tag,@mixin的东西，\n这个有点复杂，只说在class前面的装饰器吧,\n是用来处理对象原型的函数，\n会在构造函数执行结束后执行\n\nQxf router的使用(其实是express4 router的使用)\n\n三种获取请求参数的方式\n\n假设一个接口是 'api/default/index?a=1'\n\n中间件\n\n核心的几个类和接口\n\n状态机存储器：　Store\n\nnew Store()可以订阅on或者触发trigger几种事件，\n没错riot.tag函数里面的this就继承自Store;\n\n广播控制器：　Control\n\n是一个状态机的集合，方法addStore可以添加状态机存储器，\ntrigger可以广播触发存储器的事件。\n\n标签生成器：TagCore虚基类\n\n必须搭配@tag装饰器，new一个TagCore的子类（构造函数必须传一个Control），\n跟执行了一下riot.tag是一样的。\n执行mount方法就能在页面空标签里挂在上标签的实现，相当于执行了riot.mount。\n\nnode-fetch\n\n一个开源的项目，可以让node端使用fetch，使用方法和whatwg里面的API是一样的，在此就不多嘴了。\n\n前后端同构初阶\n\n如果看网上的一些前后端同构的资料，他们会给你如下的方案。\n\n我可以告诉你，他们都抄自同一个骗纸。。。\n\n原因是很多前端的modules会操作window对象，\nnode端的module更牛，有一些都是二进制的，\n如果用webpack1的话，如何bundle到一个js里面?\n\nTreeShaking\n\n树摇（字面翻译）是个es6对module的定义，\n简单地说js代码编译的时候会解析成AST语法树，\n通过分析这个语法树可以知道某一个js里面的某一个函数是多余的，\n打包的时候就可以把它剔除。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

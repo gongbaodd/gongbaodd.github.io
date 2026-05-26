@@ -1,4 +1,27 @@
 {
   "file": "2025/07/15/react-native-wearos",
-  "hash": "5ff91c8cd3c1dbb24efca25c626cb5a02a75c9f2c03f59712b088b6e3a659ff1"
+  "hash": "5ff91c8cd3c1dbb24efca25c626cb5a02a75c9f2c03f59712b088b6e3a659ff1",
+  "id": "2025/07/15/react-native-wearos",
+  "href": "/fe/2025/07/15/react-native-wearos",
+  "title": "⌚ React Native on WearOS",
+  "date": "2025-07-14T21:00:00.000Z",
+  "content": "⌚ React Native on WearOS\n\nLast year, I experimented with building apps for wearables, but I didn’t continue. While cleaning up my todo list, I revisited the idea of making a React Native app for WearOS.\n\nConclusion: it’s still better to write native apps for WearOS.\n\nThe best React Native experience comes through Expo, but unfortunately, there’s no native WearOS support. The Expo Go app can’t even be installed on WearOS.\n\nThere’s a library called React Native Wear Connectivity — it works, but you need to run React Native locally. That means juggling lots of configurations and multiple terminal windows. Honestly, the experience is not better than native development 😅.\n\nIf you still want to use Expo in a React Native project:\n\nRun install-expo-modules@latest\n\nRemember to set NODE\\_ENV to make the project run\n\nPersonally, I prefer using expo prebuild to reuse native code, so I can avoid the headache of linking Android dependencies.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "react-native",
+      "href": "/tag/react-native"
+    },
+    {
+      "label": "wearos",
+      "href": "/tag/wearos"
+    },
+    {
+      "label": "expo",
+      "href": "/tag/expo"
+    }
+  ]
 }

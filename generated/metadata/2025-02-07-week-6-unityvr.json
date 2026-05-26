@@ -1,4 +1,35 @@
 {
   "file": "2025/02/07/week-6-unityvr",
-  "hash": "74f89d364bed15e705c299d031a4b5ceb0d67ef4dab5951294f2c2a5d97c4301"
+  "hash": "74f89d364bed15e705c299d031a4b5ceb0d67ef4dab5951294f2c2a5d97c4301",
+  "id": "2025/02/07/week-6-unityvr",
+  "href": "/plan/2025/02/07/week-6-unityvr",
+  "title": "Week 6: Unity VR",
+  "date": "2025-02-06T22:00:00.000Z",
+  "content": "Week 6: Unity VR\n\nUnity VR\n\nThis week, I went back to finish my Unity pathway. Now, it is VR part. Funny thing, during trying the unityVR, my headset driver updated from v72 to v74. My headset was still v72. It caused a severe problem. I cannot debug my game until I update the headset to v74. However, v74 is a beta version. I have to stay in the waitlist to get the update.\n\nAfter update, I got a new idea of using meta building blocks to speed up. But meta building blocks is not built for Unity VR. It was built for OVR. I found this Youtube account Game5D. He made a series of Meta SDK tutorials and they are very useful.\n\nUnity AR\n\nThen I started Unity Facial AR with ARcore. However, because ARcore provides less functions than ARkit. Many effects like winking and opening mouth were not working. I am thinking to combine mediapipe with it.\n\nStable Point Aware 3D\n\nFew weeks ago, I mentioned LumaAI can generate 3D with content. This week I found this SPAR3D, made by StabilityAI. Using this can make 3D object base a 2D image, and it is opensourced can be build offline.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "ovr",
+      "href": "/tag/ovr"
+    },
+    {
+      "label": "meta-sdk",
+      "href": "/tag/meta-sdk"
+    },
+    {
+      "label": "spar3d",
+      "href": "/tag/spar3d"
+    },
+    {
+      "label": "gen-ai-3d",
+      "href": "/tag/gen-ai-3d"
+    }
+  ]
 }

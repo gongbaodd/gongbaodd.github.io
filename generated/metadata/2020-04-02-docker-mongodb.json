@@ -1,4 +1,27 @@
 {
   "file": "2020/04/02/docker-mongodb",
-  "hash": "71ed4ccab1184a0e35d3bafd40a6444848aeb2ba271aedaa28f8541014cbe1e8"
+  "hash": "71ed4ccab1184a0e35d3bafd40a6444848aeb2ba271aedaa28f8541014cbe1e8",
+  "id": "2020/04/02/docker-mongodb",
+  "href": "/tech/2020/04/02/docker-mongodb",
+  "title": "docker 化的 mongodb 使用方案",
+  "date": "2020-04-01T21:00:00.000Z",
+  "content": "docker 化的 mongodb 使用方案\n\n之前提到过使用 watchtower 更新本地的 image 的方案，本来我的系统一直使用 sqlite 来做数据库，现在想改成 mongodb。\n\n涉及到 mongodb 就不得不需要考虑怎么本地化，并且如何做备份。数据本地化很好做，只需要 docker 的 volume 即可，编写docker-compose.yml，使用docker-compose up -d。\n\n备份\n\n使用如下命令备份\n\n还原\n\n可视化管理 docker\n\n使用 portainer 能够可视化管理现在运行的 docker。执行如下命令，再访问 localhost:9000，嗒嗒！以后再也不需要执行docker ps了。\n\n可视化管理 mongodb\n\n可以使用adminmongo提供一套简单可用的 WebUI，我已经写到了 docker compose 里面了。\n\n另外environment里面的PASSWORD并不好使，已经有issue，不过已经是 2017 年的了，最快的解决方式就是删除config/app.json，只需要在 portainer 里面选择Containers > mongodb\\_adminmongo\\_1 点击 Edit，修改 Command 并重新部署。\n\nportainer的设置",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "docker",
+      "href": "/tag/docker"
+    },
+    {
+      "label": "portainer",
+      "href": "/tag/portainer"
+    },
+    {
+      "label": "mongodb",
+      "href": "/tag/mongodb"
+    }
+  ]
 }

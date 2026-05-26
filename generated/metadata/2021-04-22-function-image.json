@@ -1,4 +1,23 @@
 {
   "file": "2021/04/22/function-image",
-  "hash": "0001674d025a74da135a1b7fae4ceca972936167edd8a8f4d6d82ef3face13c0"
+  "hash": "0001674d025a74da135a1b7fae4ceca972936167edd8a8f4d6d82ef3face13c0",
+  "id": "2021/04/22/function-image",
+  "href": "/book/2021/04/22/function-image",
+  "title": "函数图像",
+  "date": "2021-04-21T21:00:00.000Z",
+  "content": "函数图像\n\ntan(x)\n\ntanx\n\ncot(x)\n\nxy24-2-4123456-1-2\n\nsec(x)\n\nxy24-2-4123456-1-2\n\ncsc(x)\n\nxy24-2-4123456-1-2\n\narcsin(x)\n\nxy24-2-4123456-1-2\n\narccos(x)\n\nxy24-2-4123456-1-2\n\narctan(x)\n\nxy24-2-4123456-1-2\n\narccot(x)\n\nxy24-2-4123456-1-2\n\nln(x+sqrt(x^2+1))\n\nxy24-2-4123456-1-2\n\n(e^x-e^(-x))/2\n\nxy24-2-4123456-1-2\n\n(e^x+e^(-x))/2\n\nxy24-2-4123456-1-2",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#ac8c64",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2018/08/31/magicavoxel",
+  "href": "/tech/2018/08/31/magicavoxel",
+  "title": "MagicaVoxel 使用笔记",
+  "date": "2018-08-30T21:00:00.000Z",
+  "content": "MagicaVoxel 使用笔记\n\n没时间写了，上链接好了\n\nhttps://zhuanlan.zhihu.com/p/29884021\n\nhttps://zhuanlan.zhihu.com/p/23164903",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "magicavoxel",
+      "href": "/tag/magicavoxel"
+    }
+  ]
 }

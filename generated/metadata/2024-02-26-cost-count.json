@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#ba6474",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2024/02/26/cost-count",
+  "href": "/lab/2024/02/26/cost-count",
+  "title": "Cost Count: A cross platform expense tracker",
+  "date": "2024-02-25T22:00:00.000Z",
+  "content": "Cost Count: A cross platform expense tracker\n\nThis is an expanse tracker I built for myself. You can check the source code here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "react-native",
+      "href": "/tag/react-native"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

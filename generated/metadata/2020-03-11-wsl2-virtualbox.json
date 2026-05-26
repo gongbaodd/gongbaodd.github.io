@@ -1,4 +1,31 @@
 {
   "file": "2020/03/11/wsl2-virtualbox",
-  "hash": "e11f798a372be854ea129480008d0287885346cc228103f13227ee349678a15d"
+  "hash": "e11f798a372be854ea129480008d0287885346cc228103f13227ee349678a15d",
+  "id": "2020/03/11/wsl2-virtualbox",
+  "href": "/tech/2020/03/11/wsl2-virtualbox",
+  "title": "应该是目前最好的 WSL2 和 Virtualbox 共存的方法了",
+  "date": "2020-03-10T22:00:00.000Z",
+  "content": "应该是目前最好的 WSL2 和 Virtualbox 共存的方法了\n\n因为 WSL2 使用的是 Hyper-V（看来微软爸爸并不是完全拥抱开源了），所以其它虚拟化软件都不能和它共存，所以目前最好的办法就是在开机的时候做一个切换。\n\n上面操作会生成一个 GUID，它对应开机目录上一个选项，接下来把他的 hyper-v 选项关掉\n\n如果本地已经关闭了 hyper-v，可以执行下面的命令打开。\n\n重启的时候长按 shift 键就可以唤起启动目录了。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "wsl2",
+      "href": "/tag/wsl2"
+    },
+    {
+      "label": "virtualbox",
+      "href": "/tag/virtualbox"
+    },
+    {
+      "label": "hyper-v",
+      "href": "/tag/hyper-v"
+    }
+  ],
+  "series": {
+    "label": "Windows舒适指南",
+    "href": "/series/windows-howto"
+  }
 }

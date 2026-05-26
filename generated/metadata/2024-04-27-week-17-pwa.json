@@ -1,4 +1,19 @@
 {
   "file": "2024/04/27/week-17-pwa",
-  "hash": "841ddb885ec05f7ffd1de524df753a01ac216df9a6943b508817544eb8ef111f"
+  "hash": "841ddb885ec05f7ffd1de524df753a01ac216df9a6943b508817544eb8ef111f",
+  "id": "2024/04/27/week-17-pwa",
+  "href": "/plan/2024/04/27/week-17-pwa",
+  "title": "PWA on Meta Quest",
+  "date": "2024-04-26T21:00:00.000Z",
+  "content": "PWA on Meta Quest\n\nThai language exam\n\nJust finished a Thai language exam. Learnt some Thai words from PrayutChen.\n\nPack PWA to Quest\n\nPWA builder is now the best way to pack browser app to Quest.\n\nTattoo ideas\n\ntatuants provides some tattoo ideas.\n\nFallout\n\nFallout is a Game based TV series. It tells a world after the nuclear war. Three main characters, one from the shelter, one from the land and another was half man half zombie. I can't say it's enjoyable to watch, although many people recommend it. I am not fond of the art style, it feels like bad CG. And the story is easy to guess.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "pwa",
+      "href": "/tag/pwa"
+    }
+  ]
 }

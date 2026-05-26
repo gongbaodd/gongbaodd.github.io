@@ -1,4 +1,14 @@
 {
   "file": "2020/08/10/http2",
-  "hash": "41b8daa2c32736e78fa77fe0b915c11c60254a89f533b51c39cb94a2f5f95787"
+  "hash": "41b8daa2c32736e78fa77fe0b915c11c60254a89f533b51c39cb94a2f5f95787",
+  "id": "2020/08/10/http2",
+  "href": "/book/2020/08/10/http2",
+  "title": "HTTP/2 基础教程",
+  "date": "2020-08-09T21:00:00.000Z",
+  "content": "HTTP/2 基础教程\n\n这是在昆明纹身的时候，实在无聊翻出来平板读的书做笔记。\n\nhttp1 的问题\n\n队头阻塞\ntcp 利用低效\n消息头部臃肿\n优先级设置受限\n第三方资源\n\nhttp2 对于 http1.1 的变化\n\n二进制协议\n首部压缩\n多路复用\n加密传输\n推送\n\nhttp/2 的反模式\n\n因为 http2 对比 http1 的改动很多，导致有一些针对 http1 的优化，比如分散多个域名分发资源在 http2 中不会被视为优化，同时雪碧图也不再有优化作用。\n\n未来的 http\n\nquic，tcp 导向 udp",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": []
 }

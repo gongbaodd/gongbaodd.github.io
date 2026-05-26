@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#6d91b9",
     "titleColor": "--mantine-color-blue-2"
+  },
+  "id": "2025/08/27/map",
+  "href": "/fe/2025/08/27/map",
+  "title": "🗺️ Put a Map on Your Website",
+  "date": "2025-08-26T21:00:00.000Z",
+  "content": "🗺️ Put a Map on Your Website\n\nThis was totally unexpected. Weeks ago, I asked Cursor to scan all my files and add a city parameter, like \"Tallinn, Estonia\", to show where I wrote each post 📍.\n\nYesterday, I thought: since so many documents are already marked, why not add a map to the website? 🌍 Also, I was curious about how many places I’ve been.\n\n🛠️ Adding the Map\n\nAdding a map to a page is not hard:\n\nGoogle Maps / Mapbox → mature solutions, barely any code needed ✅\n\nDownside → requires paid tokens 💸\n\nSince I didn’t want to spend too much, I looked for open-source solutions.\nThe answer: MapLibre GL JS 🚀.\n\nFor React, there’s a component: react-map-gl ⚛️.\n\nFor a free base map, Carto’s Positron Style 👉 Carto Positron.\nBest part: no token required 🎉.\n\n📍 The Hard Part – Getting City Coordinates\n\nShowing cities on the map means I need their latitude & longitude. This was trickier than I expected:\n\nTried cities.json → includes many major cities, but not suitable for my case ❌\n\nTried china-division → good data, but only in Chinese 🀄\n\nTried pinyin to translate → unstable results ⚠️\n\nFinally, I fell back to Google Maps Geocoding API:\n\nhttps://maps.googleapis.com/maps/api/geocode/json?address=${data.city\\[i]}\\&key=${GOOGLE\\_API\\_KEY}\n\nIt works well, even with vague searches. To avoid exceeding the API quota, I wrote a script to cache/save the coordinates 📂.\n\nAnd now 👉 here I can see all my articles pinned on a map 🌏✨.\n\n✅ Conclusion\n\nWhat started as a small “add city info” experiment became a map visualization project.\n\nOpen-source tools like MapLibre + react-map-gl + Carto basemap give you free, flexible mapping options 🆓\n\nFor coordinates, Google Maps API is still the most reliable choice 🔑\n\nWith a bit of scripting, you can cache results and avoid extra costs 🧑‍💻\n\nNow my blog not only shows what I write, but also where I write it ✍️📍— turning content into a travel map of my life 🚀.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "map",
+      "href": "/tag/map"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
   }
 }

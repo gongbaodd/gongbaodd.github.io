@@ -1,4 +1,14 @@
 {
   "file": "2015/03/21/dontstarveconsole",
-  "hash": "2ee45228d95fddce7acd28f97787ff61472fced41732859bed8f19021210f99c"
+  "hash": "2ee45228d95fddce7acd28f97787ff61472fced41732859bed8f19021210f99c",
+  "id": "2015/03/21/dontstarveconsole",
+  "href": "/tech/2015/03/21/dontstarveconsole",
+  "title": "dontstarveconsole",
+  "date": "2015-03-20T22:00:00.000Z",
+  "content": "\\#《饥荒》作弊,顺便学习lua\n\n打开Console\n\n在～下面找DoNotStarve/settings.ini修改。\n\n游戏中点～键打开console。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

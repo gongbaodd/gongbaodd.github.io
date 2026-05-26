@@ -1,4 +1,27 @@
 {
   "file": "2020/04/16/css",
-  "hash": "0e01fd3d2eb05e73177947d4d30639f72b6824c846ad243b80468b691c1946ac"
+  "hash": "0e01fd3d2eb05e73177947d4d30639f72b6824c846ad243b80468b691c1946ac",
+  "id": "2020/04/16/css",
+  "href": "/fe/2020/04/16/css",
+  "title": "CSS 渐变利器",
+  "date": "2020-04-15T21:00:00.000Z",
+  "content": "CSS 渐变利器\n\nCSS gradient generator",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "css",
+      "href": "/tag/css"
+    },
+    {
+      "label": "gradient",
+      "href": "/tag/gradient"
+    }
+  ],
+  "series": {
+    "label": "利器",
+    "href": "/series/tools"
+  }
 }

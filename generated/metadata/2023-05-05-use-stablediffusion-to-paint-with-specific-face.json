@@ -1,4 +1,14 @@
 {
   "file": "2023/05/05/use-stablediffusion-to-paint-with-specific-face",
-  "hash": "26b38e50ae8b7330d7a88afafb9a3f2e9d2ce968b54647c55c19697e98bbb1e1"
+  "hash": "26b38e50ae8b7330d7a88afafb9a3f2e9d2ce968b54647c55c19697e98bbb1e1",
+  "id": "2023/05/05/use-stablediffusion-to-paint-with-specific-face",
+  "href": "/tech/2023/05/05/use-stablediffusion-to-paint-with-specific-face",
+  "title": "use statblediffusion to paint with specific face",
+  "date": "2023-05-04T21:00:00.000Z",
+  "content": "use statblediffusion to paint with specific face\n\ninstall python 3.10(not 3.11). clone the project;\n\ninstall dreambooth extension and use some pictures to train the mode. use Birme to cut image in batch.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

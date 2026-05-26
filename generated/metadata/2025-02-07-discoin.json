@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#966e85",
     "titleColor": "--mantine-color-yellow-2"
-  }
+  },
+  "id": "2025/02/07/discoin",
+  "href": "/lab/2025/02/07/discoin",
+  "title": "DisCoin: The Crypto Bubble Simulation",
+  "date": "2025-02-06T22:00:00.000Z",
+  "content": "DisCoin: The Crypto Bubble Simulation\n\nYou can play this game here. It is also on itch.io.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

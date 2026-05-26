@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#5c5c9d",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2025/01/05/pipe-worker",
+  "href": "/lab/2025/01/05/pipe-worker",
+  "title": "Pipe Worker",
+  "date": "2025-01-04T22:00:00.000Z",
+  "content": "Pipe Worker\n\nThis is a game I made for game logic class. Sadly I got stuck on Russian and Estonian languages exam, finally did not show them in the Game Logic class(Got a B). But I still finished it.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

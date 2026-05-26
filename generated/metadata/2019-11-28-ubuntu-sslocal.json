@@ -1,4 +1,14 @@
 {
   "file": "2019/11/28/ubuntu-sslocal",
-  "hash": "e803b4d3d79734e8d992d921198a1baa80da7e65192229632dc068daf95b625c"
+  "hash": "e803b4d3d79734e8d992d921198a1baa80da7e65192229632dc068daf95b625c",
+  "id": "2019/11/28/ubuntu-sslocal",
+  "href": "/tech/2019/11/28/ubuntu-sslocal",
+  "title": "树莓派 Ubuntu 实现 sslocal 负载匀衡",
+  "date": "2019-11-27T22:00:00.000Z",
+  "content": "树莓派 Ubuntu 实现 sslocal 负载匀衡\n\n由于某些原因，我配置了多个 ssserver，windows 客户端可以简单配置负载匀衡，而在 linux 上面需要借助 haproxy。\n\n首先，因为我的服务是 aes-255-gcm 加密方式，需要升级 ss 客户端。\n\n修改 sslocal 配置，server 连接的是本地 haproxy 端口，增加/etc/shadowsocks/default.json\n\n为 sslocal 增加 service，增加/etc/systemd/system/sslocal.service\n\n好了，sslocal 的部分说完了，接下来 apt 安装 haproxy，修改/etc/haproxy/haproxy.cfg，增加以下行。\n\n配置完成还要改一下 systemd，/etc/systemd/system/haproxy.service，修改 After 和 Wants 字段，用 network-online.target 替换 network.target。\n\n最后用 systemd 启动 haproxy 和 sslocal。\n\n参考链接\n\n求教如何让 ss 客户端支持 aes-256-gcm 加密方式\n\nguyskk/shadowsocks-server.service\n\n多 Shadowsocks 服务器负载均衡\n\n解决 Haproxy 用 Systemd 启动失败的问题",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

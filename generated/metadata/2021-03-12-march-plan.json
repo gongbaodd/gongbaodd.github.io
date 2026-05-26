@@ -1,4 +1,14 @@
 {
   "file": "2021/03/12/march-plan",
-  "hash": "4f65060bc2e42a44538a43592ed9a7d7007902eb3bd4aedb7407f39349554350"
+  "hash": "4f65060bc2e42a44538a43592ed9a7d7007902eb3bd4aedb7407f39349554350",
+  "id": "2021/03/12/march-plan",
+  "href": "/plan/2021/03/12/march-plan",
+  "title": "三月计划",
+  "date": "2021-03-11T22:00:00.000Z",
+  "content": "三月计划\n\n这个三月的计划来得有点晚，因为我想要先把线性代数的内容结束，拖了一些。\n\n二月完成内容\n\n学会 latex\n\n使用 anki 背单词\n\n使用 anki 背五十音\n\n完成线性代数\n\n去了自然博物馆\n\n使用 keybr 和 codespeed 练习盲打\n\n美剧：旺达幻世\n\n美剧：超人和路易斯\n\n美剧：闪电侠\n\n美剧：美国众神\n\n美剧：雪国列车\n\n电影：你好李焕英\n\n播客：腾飞五千年\n\n三月计划\n\n公开课： MIT 线性代数公开课\n\n公开课： UWP 开发\n\n公开课： OpenGL 开发\n\n读书：程序员的数学：线性代数\n\n读书：张宇数学\n\n读书：操作系统\n\n读书：力量训练套装\n\nanki：五十音\n\nanki：线性代数\n\nanki: 恋练有词",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

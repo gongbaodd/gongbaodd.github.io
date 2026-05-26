@@ -8,5 +8,56 @@
   "colorSet": {
     "bgColor": "#b19556",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2025/06/06/week-24-gamepad",
+  "href": "/plan/2025/06/06/week-24-gamepad",
+  "title": "Week 24: Gamepad 🎮",
+  "date": "2025-06-05T21:00:00.000Z",
+  "content": "Week 24: Gamepad 🎮\n\nEasySMX X15 🕹️\n\nTo support my game studies, I bought an EasySMX X15 gamepad from TEMU. I was worried about the quality at first 🤔, but after checking Linus Tech Tips' video on the X10, it turns out it’s really solid! 💪\nIt cost only 25€ compared to 50€ locally in Estonia. Sure, local ones have longer warranties and higher quality, but I don’t need that right now.\n\nUnreal Engine Study 🖥️\n\nStudying Unreal Engine can be tough, especially on limited hardware. 😅\nLast week, UE 5.6 was released, but my computer struggled. I went back to UE 4.23 for web builds, which ran fine, but the marketplace isn’t available there. So for now, I’m using UE 5.0 on low settings. Later, I’ll upgrade to 5.5 for machine learning features.\n\nCourses I explored:\n\nProgramming Tutorials: Community Highlight – beginner-friendly, but some instructions unclear 🤷‍♂️\n\nCode a First-Person Adventure Game – still rusty on some parts, even after Tom Looman's C++ Guide\n\nYour First Hour in UE 5.2 – a better starting point, I’ll continue here\n\nLater: Stack-O-Bot to explore more tools 🤖\n\nBevy Study 🌱\n\nBevy is a rising star in the game world, but adoption isn’t trivial. 🚀\nCurrent version is 0.xx, so APIs change frequently. Tutorials often break.\nI tried the Bevy 3D Third Person Tutorial, but many APIs weren’t available in 0.16, even after downgrading to 0.10.\nStill fascinated by bevy\\_ecs and its archetype memory layout – maybe I’ll build a WASM package for web game dev someday.\n\nbitECS ⚡\n\nbitECS is an ECS framework for JavaScript. Found it while researching Bevy ECS. Looks like a solid implementation for some JS projects.\n\nLLM Study 🤖\n\nI’ve been exploring LangChain.js + HuggingFace transformer.js. LangChain handles workflows, HuggingFace handles models – a perfect combo! ✨\n\nAlso discovered LanceDB – a vector database that runs in both Docker and browser. 🗃️\n\nGame AI 🕹️🤖\n\nAs I mentioned in Week 17, behavior trees are widely used in Unity and UE. FSMs and AI tools from games often influence front-end dev.\nI found yuka – a JS behavior tree framework I can use.\n\nRecommended books for deeper study:\n\nProgramming Game AI by Example 📚\n\n3D Math Primer for Graphics and Game Development 📐\n\nThese remind me of Unity's Artificial Intelligence for Beginners and UE's Learning Agents (5.5) courses I still want to finish. 🚀",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "gamepad",
+      "href": "/tag/gamepad"
+    },
+    {
+      "label": "unreal-engine",
+      "href": "/tag/unreal-engine"
+    },
+    {
+      "label": "bevy",
+      "href": "/tag/bevy"
+    },
+    {
+      "label": "ecs",
+      "href": "/tag/ecs"
+    },
+    {
+      "label": "bitecs",
+      "href": "/tag/bitecs"
+    },
+    {
+      "label": "vectordb",
+      "href": "/tag/vectordb"
+    },
+    {
+      "label": "huggingface",
+      "href": "/tag/huggingface"
+    },
+    {
+      "label": "langchain",
+      "href": "/tag/langchain"
+    },
+    {
+      "label": "lancedb",
+      "href": "/tag/lancedb"
+    },
+    {
+      "label": "behavior-tree",
+      "href": "/tag/behavior-tree"
+    }
+  ]
 }

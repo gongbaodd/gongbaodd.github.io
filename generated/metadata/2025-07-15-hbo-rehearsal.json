@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#679eb1",
     "titleColor": "--mantine-color-blue-2"
-  }
+  },
+  "id": "2025/07/15/hbo-rehearsal",
+  "href": "/tv/2025/07/15/hbo-rehearsal",
+  "title": "HBO's *Rehearsal*",
+  "date": "2025-07-14T21:00:00.000Z",
+  "content": "HBO's Rehearsal\n\nRehearsal is an HBO show created by Nathan Fielder.\n\nIt’s a unique blend of reality TV and social experiment, where participants rehearse real-life situations in highly controlled environments.\n\nIf you enjoy clever humor, awkward moments, and heartwarming stories, this one is a must-watch 😄.",
+  "category": {
+    "label": "tv",
+    "href": "/tv"
+  },
+  "tags": []
 }

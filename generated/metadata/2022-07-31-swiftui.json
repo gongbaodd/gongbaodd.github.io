@@ -1,4 +1,19 @@
 {
   "file": "2022/07/31/swiftui",
-  "hash": "1e228e6e09df167f327d5bb0ea52bd2c9284e5c2d7df632069945a87d9f28807"
+  "hash": "1e228e6e09df167f327d5bb0ea52bd2c9284e5c2d7df632069945a87d9f28807",
+  "id": "2022/07/31/swiftui",
+  "href": "/tech/2022/07/31/swiftui",
+  "title": "短暂尝试 SwiftUI",
+  "date": "2022-07-30T21:00:00.000Z",
+  "content": "短暂尝试 SwiftUI\n\n周围吹 SwiftUI 的人太多了，而且手上刚好有台黑苹果就一直想试一试。\n\n其实受伤的黑苹果挺卡的，所以更希望不使用 XCode，而是 vscode 远程编程，也确实有人尝试了，这里是他的 demo。\n\n尝试过这段代码，很遗憾要求至少 MacOS 11，不能编译成功，算了以后有机会再事先吧。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "swiftui",
+      "href": "/tag/swiftui"
+    }
+  ]
 }

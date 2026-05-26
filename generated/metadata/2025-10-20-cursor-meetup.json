@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#a18265",
     "titleColor": "--mantine-color-orange-2"
+  },
+  "id": "2025/10/20/cursor-meetup",
+  "href": "/life/2025/10/20/cursor-meetup",
+  "title": "Cursor Meetup 💻☕",
+  "date": "2025-10-19T21:00:00.000Z",
+  "content": "Cursor Meetup 💻☕\n\nAfter the Cursor Hackathon, I got invited to this cozy meetup — and of course, I couldn’t miss it! 😄\n\n\n\nThe event took place at Kiosk No3, a lovely little spot perfect for tech talks and good coffee. ☕✨\n\n\n\nDuring the session, we discussed some cool new Cursor features — like the new plan mode and browser use. 🧠\nThe browser use especially stood out — it feels like a great integration testing tool for developers. 🔍\n\n\n\nOne of the talks shared an awesome approach on how to vibe coding big projects. 💡\nShe uses AI to summarize each folder and stores the markdown inside — saving tokens and keeping context tidy. Genius idea! 🤖📂\n\n\n\nOverall, it was a super inspiring night — good talks, smart people, and an even better community. 🚀💬",
+  "category": {
+    "label": "life",
+    "href": "/life"
+  },
+  "tags": [
+    {
+      "label": "cursor",
+      "href": "/tag/cursor"
+    }
+  ],
+  "series": {
+    "label": "Vibe Coding",
+    "href": "/series/vibe-coding"
   }
 }

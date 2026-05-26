@@ -1,4 +1,27 @@
 {
   "file": "2024/07/07/week-27-guassian-splatting",
-  "hash": "9c29499a61493b4997e4c72cede47e133c1bf4fff8627f75b4bc6c8602b65d5f"
+  "hash": "9c29499a61493b4997e4c72cede47e133c1bf4fff8627f75b4bc6c8602b65d5f",
+  "id": "2024/07/07/week-27-guassian-splatting",
+  "href": "/plan/2024/07/07/week-27-guassian-splatting",
+  "title": "Week 27: Guassian Splatting",
+  "date": "2024-07-06T21:00:00.000Z",
+  "content": "Week 27: Guassian Splatting\n\nAI on Chrome\n\nYou can run AI model on Chrome DEV. Just follow this link.\n\nMemory Leaking\n\nBetter Stack has a good article about memory leaking in Node.js.\n\nGuassian Splatting\n\nBecause I caught cold this week, I did not do many things. I watched a lot videos about guassian splatting. To understand how it works.\n\n3D Gaussian Splatting! - Computerphile\n\n3D 重建技術 (三): 3D Gaussian Splatting，讓 3D 重建從學術走向實際應用的革新技術！用彩色橢圓球球表示場景！\n\nLoRA\n\nLoRA是什么？| 5分钟讲清楚LoRA的工作原理",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "chrome ai",
+      "href": "/tag/chrome ai"
+    },
+    {
+      "label": "3dgs",
+      "href": "/tag/3dgs"
+    },
+    {
+      "label": "memory leak",
+      "href": "/tag/memory leak"
+    }
+  ]
 }

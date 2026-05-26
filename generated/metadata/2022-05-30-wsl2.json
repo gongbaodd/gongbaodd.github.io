@@ -1,4 +1,23 @@
 {
   "file": "2022/05/30/wsl2",
-  "hash": "20d4df6e425d6cbe89fcac261e1dfda3a0338c2d090570e9fefe9c9feb0e3d23"
+  "hash": "20d4df6e425d6cbe89fcac261e1dfda3a0338c2d090570e9fefe9c9feb0e3d23",
+  "id": "2022/05/30/wsl2",
+  "href": "/tech/2022/05/30/wsl2",
+  "title": "WSL2加载虚拟硬盘",
+  "date": "2022-05-29T21:00:00.000Z",
+  "content": "WSL2加载虚拟硬盘\n\n在最新版的Windows11中，WSL2新增了mount参数可以加载虚拟硬盘了。\n\n依过去的经验WSL经常会更新崩溃，所以开发的时候我会把代码仓库和系统放在两个分区里，然而在Linux中操作NTFS是非常慢的，最好是新建一个Ext4的虚拟硬盘，再挂载到Linux中。\n\n在Windows的磁盘管理可以新建.vhdx文件（默认新建好会自动挂载，以后双击文件也可加载硬盘），然后使用Diskgen将这个磁盘分区并格式化成Ext4格式。\n\n接着在Powershell执行GET-CimInstance -query \"SELECT \\* from Win32\\_DiskDrive\"查看挂载的硬盘DiskPath，紧接着管理员执行sudo wsl --mount \\<DiskPath> --bare将硬盘挂载到WSL中。\n\n进入Linux里面，执行lsblk查看新加载的分区如sda3，新建文件夹work，并把这个分区挂在上去sudo mount /dev/sda3 work，完成。\n\nExt4的磁盘格式比NTFS快得不是一星半点，只可惜这些都只能在Windows11中实现，而且目前还没有更好的自动化实现方案。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "windows",
+      "href": "/tag/windows"
+    }
+  ],
+  "series": {
+    "label": "Windows舒适指南",
+    "href": "/series/windows-howto"
+  }
 }

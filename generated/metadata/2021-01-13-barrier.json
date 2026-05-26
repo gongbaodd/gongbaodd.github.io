@@ -1,4 +1,23 @@
 {
   "file": "2021/01/13/barrier",
-  "hash": "5aa2677549a12c639207903784372adba06bf777b16676fb22ddafd719519f42"
+  "hash": "5aa2677549a12c639207903784372adba06bf777b16676fb22ddafd719519f42",
+  "id": "2021/01/13/barrier",
+  "href": "/tech/2021/01/13/barrier",
+  "title": "Barrier更好的多屏交互方式",
+  "date": "2021-01-12T22:00:00.000Z",
+  "content": "Barrier更好的多屏交互方式\n\n之前介绍过Mouse Without Borders，可以实现多台PC共享鼠标和键盘，在过去的一年里它帮了我不少忙，也有如下bug。\n\n长时间使用，鼠标滚轮会时常失效。\n\n和Stroke Plus使用的时候，不小心跨屏会导致stroke plus崩溃。\n\n鼠标在不同PPi的屏幕里面速度是不一样的。\n\n因为项目已经停止更新了，所以以上问题只能默默忍受。\n\n因此我更换了barrier，作为收费项目synergy的免费分支，拥有和synergy类似的兼容Mac、PC以及Linux上限达15台的多屏协同，本来是有安卓的，可惜已经停止支持了。\n\n目前看来上面的问题都已经解决了，但还要看长期使用的效果。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "windows",
+      "href": "/tag/windows"
+    }
+  ],
+  "series": {
+    "label": "Windows舒适指南",
+    "href": "/series/windows-howto"
+  }
 }

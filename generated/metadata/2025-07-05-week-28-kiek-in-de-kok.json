@@ -17,5 +17,44 @@
   "colorSet": {
     "bgColor": "#6f95bb",
     "titleColor": "--mantine-color-yellow-2"
-  }
+  },
+  "id": "2025/07/05/week-28-kiek-in-de-kok",
+  "href": "/plan/2025/07/05/week-28-kiek-in-de-kok",
+  "title": "🏰 Week 28: Kiek in de Kök, Tallinn",
+  "date": "2025-07-04T21:00:00.000Z",
+  "content": "🏰 Week 28: Kiek in de Kök, Tallinn\n\nKiek in de Kök\n\nThis week I visited the Kiek in de Kök museum in Tallinn, Estonia. Located in one of the old town’s towers, it’s much more than just a tower! It’s part of the old town wall, and after finishing the wall tour, you can explore an underground tunnel built during the Swedish occupation and extended over hundreds of years — different styles layered through time.\n\nWalking above the wall and through the tunnels gives a really immersive glimpse into history. Such an amazing experience! 😲\n\nGodot Development Experience\n\nLast week, I worked with Godot 4.3.\n\nAs a JIT script, GDScript can be unstable. I hit a circular dependency issue — something that languages like JS or Python fixed decades ago.\n\nThe type system isn’t strict enough, so some errors only show at runtime, and headless mode doesn’t always catch them.\n\nThe community prefers singleton patterns, which makes unit testing difficult, so major plugins often aren’t tested.\n\nI switched from Dialogue Nodes to Dialogue Manager because the former sometimes caused silent build errors.\n\nThat said, the animation and canvas systems are fantastic. The animation system feels like an advanced Blender system — very powerful, even if the documentation is rough.\n\nSound Effects & MIDI\n\nZzFX – a JS framework to generate sound effects.\n\nOnline Sequencer – handy for making MIDI music. 🎵\n\nFigma Insights\n\nI got a temporary job teaching Figma in a summer camp… but lost it when the original teacher returned 😅. Still, I explored some great Figma tools:\n\nDesignDoc Spectral – generate design docs from frames\n\nhtml.to.design – import webpages into Figma\n\nLorem Ipsum – generate placeholder text\n\nUnsplash – import stock images\n\nDev Mode – better than the design document plugin\n\nKigen – generates color palettes\n\nZeplin – for smooth design handoffs\n\nAI & LLMs\n\nMNN Chat – a local LLM chat app that runs on your phone 🤖",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    },
+    {
+      "label": "figma",
+      "href": "/tag/figma"
+    },
+    {
+      "label": "zeplin",
+      "href": "/tag/zeplin"
+    },
+    {
+      "label": "qwen",
+      "href": "/tag/qwen"
+    },
+    {
+      "label": "llm",
+      "href": "/tag/llm"
+    },
+    {
+      "label": "midi",
+      "href": "/tag/midi"
+    },
+    {
+      "label": "sfx",
+      "href": "/tag/sfx"
+    }
+  ]
 }

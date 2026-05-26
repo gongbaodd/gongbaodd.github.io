@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#6c7c94",
     "titleColor": "--mantine-color-grape-3"
-  }
+  },
+  "id": "2025/07/10/landlord-simulator",
+  "href": "/lab/2025/07/10/landlord-simulator",
+  "title": "Landlord Simulator",
+  "date": "2025-07-09T21:00:00.000Z",
+  "content": "Landlord Simulator\n\nThis is an unfinished godot project. I was working with another designer. We were going to attend CIVI gamejam. But I lost her connection after she went back to China.\n\nBut the gameplay is finished, you can play it here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

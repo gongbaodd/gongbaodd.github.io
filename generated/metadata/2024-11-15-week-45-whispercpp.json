@@ -1,4 +1,19 @@
 {
   "file": "2024/11/15/week-45-whispercpp",
-  "hash": "f4751212d8f120eee4eb21ebaadc7c2af681f8fc4170ac04fb7f69fbdae5914c"
+  "hash": "f4751212d8f120eee4eb21ebaadc7c2af681f8fc4170ac04fb7f69fbdae5914c",
+  "id": "2024/11/15/week-45-whispercpp",
+  "href": "/plan/2024/11/15/week-45-whispercpp",
+  "title": "Week 45: WhisperCPP",
+  "date": "2024-11-14T22:00:00.000Z",
+  "content": "Week 45: WhisperCPP\n\nI will have a hackathon this weekend. But I will talk about whisper.cpp. It is a tool to transpile sound file into text. Whisper Desktop is a GUI for that. To use the model in code, can download it from huggingface\n\nNature of Code by Daniel Shiffman. I good book suggested by my teacher. Nice to read.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "whispercpp",
+      "href": "/tag/whispercpp"
+    }
+  ]
 }

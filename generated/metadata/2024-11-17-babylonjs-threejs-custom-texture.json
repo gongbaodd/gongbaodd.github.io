@@ -1,4 +1,23 @@
 {
   "file": "2024/11/17/babylonjs-threejs-custom-texture",
-  "hash": "bd22bed133f1e720e36a03b813ef9d4536e3df4b6dcf87e86c5c7372a3e29746"
+  "hash": "bd22bed133f1e720e36a03b813ef9d4536e3df4b6dcf87e86c5c7372a3e29746",
+  "id": "2024/11/17/babylonjs-threejs-custom-texture",
+  "href": "/tech/2024/11/17/babylonjs-threejs-custom-texture",
+  "title": "Make Custom Texture in Babylon.js and three.js",
+  "date": "2024-11-16T22:00:00.000Z",
+  "content": "Make Custom Texture in Babylon.js and three.js\n\nThis is the 2D Graphic homework. To make an UV map. But because blender is 3D Graphic's stuff. The teacher did not share more content.\n\nSo I wanted to make a website to let students upload their UV maps to see the final result.\n\nThe code in here. There is also a three.js version.\n\nThe funny part, the uploaded image somehow became upset down. So I have to adjust the UV map, it is very hard, I literally don't know how to debug it.\n\nI tried a lot number to get the right one. I think I should think a better solution in the future.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "babylonjs",
+      "href": "/tag/babylonjs"
+    },
+    {
+      "label": "threejs",
+      "href": "/tag/threejs"
+    }
+  ]
 }

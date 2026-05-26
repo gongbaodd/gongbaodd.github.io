@@ -1,4 +1,14 @@
 {
   "file": "2015/02/17/archlinux-bug",
-  "hash": "b50f67c54ea76bbd874ee3e02ea26fad61ae22b23921cd88035b42eda9e469d8"
+  "hash": "b50f67c54ea76bbd874ee3e02ea26fad61ae22b23921cd88035b42eda9e469d8",
+  "id": "2015/02/17/archlinux-bug",
+  "href": "/tech/2015/02/17/archlinux-bug",
+  "title": "archlinux bug",
+  "date": "2015-02-16T22:00:00.000Z",
+  "content": "\\#ArchLinux升级搜狗输入法有bug的解决方案\n\n不久前升级了搜狗输入法，因为据说这次升级性能提高了不少，更新了之后，确实啊！但是没意识到的是，出来了一堆bug。\n\n升级AtomEditor到0.177竟然不能使用中文了T.T还以为是个bug#5447，因为当时觉着chrome也没问题啊（其实有问题，地址栏输入太快的时候会发生错乱>.<，比如输baidu.com会变成badiu.cmo，奇葩啊）。\n\n\\##出问题的特征：\n\nAtomEditor不能输入中文\n\nSublimeText（打了补丁之后）不能输入中文\n\nChrome/Chromium地址栏输入有时会发生错乱\n\n\\##解决方案：\n实际上也是自己粗心，运行下面，马上就知道问题在哪了。\n\n升级sogou的时候，输入法环境变量被改成Xim了，不知道在别的系统上面咋样，但这些变量在Arch上得是fctix，所以修改一下~/.xprofile。\n\n没问题啦～\n\n\\##后记\n编辑器不好使的那段时候，我改用了Brackets，很棒的编辑器，做整个项目的时候很好使，而且速度比atom、sublime都快。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

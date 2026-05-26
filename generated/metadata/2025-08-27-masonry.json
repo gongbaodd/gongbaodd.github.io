@@ -8,5 +8,19 @@
   "colorSet": {
     "bgColor": "#acac4c",
     "titleColor": "--mantine-color-orange-2"
+  },
+  "id": "2025/08/27/masonry",
+  "href": "/fe/2025/08/27/masonry",
+  "title": "Masonry Layout",
+  "date": "2025-08-26T21:00:00.000Z",
+  "content": "Masonry Layout\n\nI want to write a more detailed article, but right now, my time is just super short. Recently I rebuilt this website into masonry layout. Here are some notes I took.\n\n📖 Explain\n\nMasonry Layout in web pages is very common — you see it a lot in image-heavy sites 🖼️. It helps fill the screen with resourceful content in a waterfall-like style.\n\nBack in the iPhone 4 era 📱, Twitter introduced a one-dimensional waterfall loading layout to replace pagination. At that time, small screens made this approach practical.\n\nNow, with bigger screens, masonry is becoming trendy again. Although it has existed for years, in the Web standard it’s still experimental in CSS Grid and not consistently supported across browsers ⚠️.\n\n⚙️ How to Implement\n\n1\\. Absolute Position + JS Library\n\nThe easiest method: use absolute positioning with a library like Masonry.\n✅ Pros:\n\nSupports almost every layout style\n\nSmooth animations during resize (because of absolute positioning)\n\n❌ Cons:\n\nNo SSR support\n\nRequires skeleton loaders\n\n2\\. Flexbox / Grid Hacks\n\nAs described in CSS-Tricks, you can hack it with flexbox or row/column grids.\n\nI initially used @MUI/masonry for this site. But soon hit issues, Flickering due to column-based calculation of heights, which makes it only works for static / non-responsive SSR sites\n\n3\\. React Plock\n\nI later switched to React Plock.\n\nIt fixed the flickering issue 🎉\n\nBut since it’s written in CommonJS and bundled in ESM, you need to exclude it in Vite’s optimization config ⚙️\n\n✅ Conclusion\n\nMasonry layout is visually appealing and widely used, but its implementation is still tricky:\n\nNative CSS Grid support is experimental 🧪\n\nJS libraries offer flexibility but often break SSR compatibility\n\nEach solution has trade-offs between performance, responsiveness, and DX\n\nFor now, if you need SSR + responsive support, libraries like React Plock (with tweaks) are a solid choice. But keep an eye on native CSS masonry support — it’s the future 🚀.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
   }
 }

@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#a4966f",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2024/11/27/physics-babylonjs",
+  "href": "/fe/2024/11/27/physics-babylonjs",
+  "title": "A Dice UV Tool",
+  "date": "2024-11-26T22:00:00.000Z",
+  "content": "A Dice UV Tool\n\nI want to make a rolling dice, I found it very hard to add physics on the mesh, turns out I have to tie the imported mesh with a mesh that natively in babylonjs.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "babylonjs",
+      "href": "/tag/babylonjs"
+    },
+    {
+      "label": "physics",
+      "href": "/tag/physics"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

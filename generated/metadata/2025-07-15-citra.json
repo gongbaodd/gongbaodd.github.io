@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#976101",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/07/15/citra",
+  "href": "/tech/2025/07/15/citra",
+  "title": "Citra: A 3DS Emulator",
+  "date": "2025-07-14T21:00:00.000Z",
+  "content": "Citra: A 3DS Emulator\n\nCitra VR is a Nintendo 3DS emulator for the Meta Quest, bringing the handheld’s dual-screen, stereoscopic 3D experience into virtual reality.\n\nYou can grab 3D-compatible ROMs from Citra’s official website.\n\nSince most 3DS games were designed with dual-eye 3D in mind, they feel perfectly at home in VR — almost like they were made for it.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "3ds",
+      "href": "/tag/3ds"
+    }
+  ]
 }

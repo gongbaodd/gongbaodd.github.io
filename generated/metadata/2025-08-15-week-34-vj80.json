@@ -8,5 +8,32 @@
   "colorSet": {
     "bgColor": "#7c7c7c",
     "titleColor": "--mantine-color-indigo-2"
+  },
+  "id": "2025/08/15/week-34-vj80",
+  "href": "/plan/2025/08/15/week-34-vj80",
+  "title": "WEEK 34: VJ80",
+  "date": "2025-08-14T21:00:00.000Z",
+  "content": "WEEK 34: VJ80\n\n📅 About Today\n\nToday marks 80 years since Victory over Japan (VJ Day) in World War II.\nBack home, my school used to host movie events about peace every year. Many cities in my province commemorate 9/18 — the day Japan occupied the whole province. My city’s story was different: it was first a colony of Russia, then Japan, so by 9/18 it was already under Japanese rule.\n\nAs China plays a bigger role on the global stage, some people now question why we still celebrate VJ Day.\nTheir arguments?\n\nThe current Chinese government didn’t play a key role in that war.\n\nToday, VJ Day is used more for propaganda, sometimes fueling hate toward Japan.\n\nWhen I was younger, VJ Day felt more like a reminder of history and a hope for peace — maybe I was just naive.\nRecently, I watched a video by 柴静 about the Chinese Civil War. One man who fled from northern China to Taiwan described both sides as “too stupid to make such a pointless war.”\n\nIt made me wonder — do adults ever have a “reset button” moment?\nKids, when things go wrong, will cry or just throw everything away to start fresh. Adults restart too, but sometimes with far bigger consequences. In Chinese history, every 200–300 years there’s a “restart,” often halving the population. It’s like the system itself could only sustain so long before collapsing.\n\nBut should a system or methodology ever matter more than human life?\nAs an engineer, if a method doesn’t work, I try another — I don’t just rebuild from scratch unless I have to.\n\nLook at Japan’s invasion:\n\nAt first, they didn’t think they could defeat the Qing government — but they did.\n\nThen they beat Russia.\n\nThen came the global economic crisis — the resources from their conquests became economic support.\nOver time, war became their “methodology”, and even when it no longer worked, they stuck to it.\n\nSo yes — I think we should remember this day. Not just the victory, but also the cost of greed.\n\n💻 Website Rebuild\n\nLast week, I turned the blog list into a masonry layout. Still a lot to do, but this week I:\n\nRebuilt the blog content page\n\nAdded a spotlight search\n\nAdded two carousels to the index page\n\nAdded cover image support to blog posts\n\nAnd yes — finally made a custom 404 page (thanks to Kiro 🛠️)\n\n🎨 Mantine\n\nI have to say, Mantine UI helped a lot.\nIt has tons of components, including Spotlight and Spoiler, which I ended up using instead of my custom versions. I did have to refactor quite a bit, but it’s worth it for maintainability.\n\nSome tweaks were needed to make them fit my requirements — especially since I’m mixing Mantine with Astro, which isn’t officially supported.\n\n🤖 Kiro\n\nI finally got invited to try Kiro editor. It’s an AI coding agent that plans first, then codes.\nI used it to make my 404 page — well-structured, but it had rendering bugs (partly my fault).\n\nMixing Mantine + Astro for certain functions was… let’s say “adventurous” 😅.\nI also used Cursor to build the history carousel on my index page. This time, I planned it out and let Cursor code — it worked fine, though it doesn’t say “no” even to bad requests.\n\nRight now, Cursor and Claude Code feel more useful to me than Kiro. But I’ll keep experimenting.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "react",
+      "href": "/tag/react"
+    },
+    {
+      "label": "mantine",
+      "href": "/tag/mantine"
+    },
+    {
+      "label": "vibe-coding",
+      "href": "/tag/vibe-coding"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
   }
 }

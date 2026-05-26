@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#9c6f5a",
     "titleColor": "--mantine-color-lime-2"
-  }
+  },
+  "id": "2026/01/30/planet-effect",
+  "href": "/tech/2026/01/30/planet-effect",
+  "title": "Creating the \"Tiny Planet\" Effect",
+  "date": "2026-01-29T22:00:00.000Z",
+  "content": "Creating the \"Tiny Planet\" Effect\n\nWhile traveling lately, I’ve been hoarding panorama shots like souvenirs. 📸 Looking at them all, I decided it was time to bring back the \"Planet Effect\" (Stereographic Projection) to give these landscapes a literal spin.\n\nThe Evolution of the Orbit 🔄\n\nshot by insta 360\n\nAbout 9 years ago, I used an Insta360 camera. It was seamless—it captured everything and generated that perfect tiny planet effect instantly. Nowadays, I’ve switched to my Pixel camera. The quality is great, but there’s a catch: it’s nearly impossible to include myself in the shot without looking like a glitch in the matrix! 🥴\n\nThe Manual Method 🛠️\n\noriginal\n\nIn theory, making a tiny planet is a simple two-step recipe in Photoshop:\n\nResize the image into a square canvas.\n\nApply Filter -> Distort -> Polar Coordinates.\n\nResult\n\nThe AI Struggle 🤖\n\nSince I couldn't get myself in the frame, I figured I’d let AI handle the heavy lifting. I tried to \"Inpaint\" myself into the center of the planet, but the results were... questionable:\n\n|Gemini|Doubao|ChatGPT|\n|--|--|--|\n|Gemini | Doubao | ChatGPT |\n\nGemini (Nano banana): Totally lost the plot on my face and positioning. 🎭\n\nDoubao: Messed up my clothes and features. 👕\n\nChatGPT (DALL-E): Got the face somewhat okay, but the background became a chaotic mess. 🌀\n\nThe Verdict ⚖️\n\nIt turns out that AI still struggles with the extreme distortion of polar coordinates. It doesn't quite \"understand\" that the bottom of the image is a single point and the top is a full circle.\n\nIt looks like if I want to be the king of my own little world, I’m going to need some old-fashioned manual editing skills. 🎨",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "panorama",
+      "href": "/tag/panorama"
+    }
+  ]
 }

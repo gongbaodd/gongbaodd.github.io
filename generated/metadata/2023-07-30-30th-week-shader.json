@@ -1,4 +1,23 @@
 {
   "file": "2023/07/30/30th-week-shader",
-  "hash": "632c9b9d41f43afa7b96761c3ff48d2bcb1253999a62f5c3cbf2482c567c03b0"
+  "hash": "632c9b9d41f43afa7b96761c3ff48d2bcb1253999a62f5c3cbf2482c567c03b0",
+  "id": "2023/07/30/30th-week-shader",
+  "href": "/plan/2023/07/30/30th-week-shader",
+  "title": "30th week shader",
+  "date": "2023-07-29T21:00:00.000Z",
+  "content": "30th week shader\n\nCSS in JS is back\n\nKuma UI is a compiler time CSS in JS library. It is a better alternative to Tailwind CSS. It can be used with Panda CSS\n\nNextJS & Remix\n\nCompared NextJS and Remix. Remix is fully server rendered.\n\nUse Preact with react-babylonjs\n\npreact-reconciler is an adapter for Preact to work with react-babylonjs or R3F.\n\nWebXR\n\nMixed Reality Resources collects the datas about XR resources. Can download some library on it.\n\nThis is an XR input playground for BabylonJS.\n\nUsing WebXR on phone is hard. It is only supported on Chrome Canary. It is not working on Safari even opened the experimental features.\n\nTesting the web on mobile need a cable connect. But there is a JS console Eruda can help.\n\nAnother choice is to use Babylon React Native, which uses React Native as a bridge to use ARcore or ARkit. Sadly Oculus dose not support ARcore. However, it seems Oculus uses React Native on it's Home Launcher. And they are working on supporting Vision OS.\n\nThis is a book about React Native.\n\nBabylonJS\n\nTo make an orthographic camera in BabylonJS, can refer to this link.\n\nCYOS is a BabylonJS shader editor.\n\nBabylonJS Viewer uses web component to build a 3D viewer.\n\nCan use Poly Pizza to download mesh models.\n\nCan download free shaders on ShaderToy.\n\nAI generated SVGs\n\nUsing Craft AI, can make AI generated SVGs for free. This is a blog about SVG paths, maintainer is a vercel employee.\n\nCrash an SVG path on WebGL\n\nThis is a threeJS example to render SVG path on WebGL with shaders. I am trying to make it work on BabylonJS and learn how to write shaders.\n\nThis is a crash course about shaders.\n\nTo make vertex change without shader, can refer to this link.\n\nAbout how to use a node editor can refer to this\n\nThis is an example to send attribute data to shader using instanceBuffer.\n\nThis is a nice tutorial about how to write shaders in BabylonJS.\n\nThis is a firework effect using shader.\n\nA fancy Babylon Effect I want to figure out.\n\nrun JS in compiling time\n\nSince React Server Component runs component on server, I was thinking to run a component on compiling time. This plugin can do that.\n\nAlso there is a plugin to help build a universal plugin for Vite, Rollup, Webpack and more.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "devtool",
+      "href": "/tag/devtool"
+    },
+    {
+      "label": "eruda",
+      "href": "/tag/eruda"
+    }
+  ]
 }

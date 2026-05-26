@@ -1,4 +1,19 @@
 {
   "file": "2022/09/09/opengl",
-  "hash": "c1f130178fdefc18cd22327a5b88dc36d85b7d47c2a46f016c72a86e34fd3772"
+  "hash": "c1f130178fdefc18cd22327a5b88dc36d85b7d47c2a46f016c72a86e34fd3772",
+  "id": "2022/09/09/opengl",
+  "href": "/tech/2022/09/09/opengl",
+  "title": "OpenGL 画个三角",
+  "date": "2022-09-08T21:00:00.000Z",
+  "content": "OpenGL 画个三角\n\n这是上个月打算看的教程learnopengl-cn.github.io，真的是非常良心，完全搬运的话感觉没意义，这里做一下笔记好了。\n\n三个主要的对象\n\n顶点数组对象 VAO\n\n顶点缓冲对象 VBO\n\n元素缓冲对象 EBO\n\n这三个对象都是用来描述显存的，每一个 VAO 对应一个图形，VBO 是这个图形的点的数组，因为图形按照三角形拼接的，如果只使用 VBO 会多出许多重复的点，EBO 就是为这些重复的点做索引。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "opengl",
+      "href": "/tag/opengl"
+    }
+  ]
 }

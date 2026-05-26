@@ -1,4 +1,23 @@
 {
   "file": "2020/04/07/d3",
-  "hash": "203e41f45d347ce2d3e88a9dc0e99ab463fc7d1464f5c79439933c499f31059f"
+  "hash": "203e41f45d347ce2d3e88a9dc0e99ab463fc7d1464f5c79439933c499f31059f",
+  "id": "2020/04/07/d3",
+  "href": "/fe/2020/04/07/d3",
+  "title": "学习 D3 的新姿势",
+  "date": "2020-04-06T21:00:00.000Z",
+  "content": "学习 D3 的新姿势\n\n今天用了半天的时间把 observable HQ 上面的 Learn D3 学习了一遍，这是纯笔记版。\n\n不过今天真的是爽到了，没错，我终于找到了以前学习 D3 没动力的原因了，那么厚的一本书，基本上就是把 D3 gallery 抄了一遍。最开始基本上还要学一个 D3 版本的 jQuery 选择器，数据还要自己搞，基本读了两章就打算放弃。\n\n这就是一个柱状图了！！！爽到有没有？\n\n如果你想写一个控制界面\n\n使用这个控制器\n\n哈哈，有趣，这语法很有想象力，比 svelte 更加大胆，仿佛用 JavaScript 实现了一个类似于 python 的词法。如果你想创建一个复杂的变量，你可以：\n\nObservable HQ 的每个语句类似于 react 的 render 函数，你甚至可以把它写成一个迭代器。当 replay 被点击，页面展示的数值会从 1 逐渐增加到 299。\n\n另外可以参考如何利用 Wikipedia 的数据进一步使用 observable HQ。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "observablehq",
+      "href": "/tag/observablehq"
+    },
+    {
+      "label": "d3",
+      "href": "/tag/d3"
+    }
+  ]
 }

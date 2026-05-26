@@ -1,4 +1,19 @@
 {
   "file": "2022/06/29/kindle",
-  "hash": "3093264bfc9c50b5d399777fea1034bb38d700448f4d93289034c9eb9c174b00"
+  "hash": "3093264bfc9c50b5d399777fea1034bb38d700448f4d93289034c9eb9c174b00",
+  "id": "2022/06/29/kindle",
+  "href": "/tech/2022/06/29/kindle",
+  "title": "破解 kindle",
+  "date": "2022-06-28T21:00:00.000Z",
+  "content": "破解 kindle\n\n据说手上的 kindle 还有两年就不能服役了，果断选择把它破解掉，破解的方式是主要参照书伴。\n\n越狱成功后可以参考此文安装插件，试用了 Koreader，比 kindle 原生的浏览器好用太多了，File Browser 可以搭建了本地 http 服务实现局域网传文件。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "kindle",
+      "href": "/tag/kindle"
+    }
+  ]
 }

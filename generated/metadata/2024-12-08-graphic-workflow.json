@@ -1,4 +1,35 @@
 {
   "file": "2024/12/08/graphic-workflow",
-  "hash": "b19af95ec52990e8e22bd6b7fa1fac52e6cd1ab151a6971db6e7cb2413235ca7"
+  "hash": "b19af95ec52990e8e22bd6b7fa1fac52e6cd1ab151a6971db6e7cb2413235ca7",
+  "id": "2024/12/08/graphic-workflow",
+  "href": "/tech/2024/12/08/graphic-workflow",
+  "title": "Graphic Workflow",
+  "date": "2024-12-07T22:00:00.000Z",
+  "content": "Graphic Workflow\n\nRecently I have finished a project that needs very high quality of graphics.\n\nFirstly, draw the concept on Google Slideshow.\n\nFind the fonts from dafont.\n\nThen, use Inkscape to draw vectors. Normally, inkscape's exported svg can be used in krita's vector layer. But some masks and paths may lost. So some image have to be exported as PNGs. Remember the original dpi of the image is 96. But for printing, it should be 300.\n\nAlso, I made some AI art. I found a good tutorial to make AI QRcode. Hint that fail a lot, not better than the older blog using Stable Diffusion Web UI. But antfu's QRCode generator is very good.\n\nFinally, use Krita to assemble them, using guide lines can help you calculate the size of your artwork. 300 dpi means 300px is 1 inch. An iphone is about 3x6 inches.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "qrcode",
+      "href": "/tag/qrcode"
+    },
+    {
+      "label": "inkscape",
+      "href": "/tag/inkscape"
+    },
+    {
+      "label": "krita",
+      "href": "/tag/krita"
+    },
+    {
+      "label": "comfyui",
+      "href": "/tag/comfyui"
+    },
+    {
+      "label": "stable-diffusion",
+      "href": "/tag/stable-diffusion"
+    }
+  ]
 }

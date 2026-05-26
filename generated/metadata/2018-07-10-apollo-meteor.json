@@ -1,4 +1,14 @@
 {
   "file": "2018/07/10/apollo-meteor",
-  "hash": "cdffd1c9c22d2cae9d221223650e972ea54c4f57cbcde7e598d6d0c5a548675c"
+  "hash": "cdffd1c9c22d2cae9d221223650e972ea54c4f57cbcde7e598d6d0c5a548675c",
+  "id": "2018/07/10/apollo-meteor",
+  "href": "/fe/2018/07/10/apollo-meteor",
+  "title": "没有手动配置过 Apollo 都不知道 Meteor 帮你做了多少事",
+  "date": "2018-07-09T21:00:00.000Z",
+  "content": "没有手动配置过 Apollo 都不知道 Meteor 帮你做了多少事\n\nServer 端\n\nclient\n\n同时要在 nuxt 配置中增加 apollo 的配置项",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

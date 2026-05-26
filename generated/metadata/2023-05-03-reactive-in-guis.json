@@ -1,4 +1,14 @@
 {
   "file": "2023/05/03/reactive-in-guis",
-  "hash": "ea5bbe75f455c787043a94e3ac175ec6208763491da3a8b085498f04c5c728e7"
+  "hash": "ea5bbe75f455c787043a94e3ac175ec6208763491da3a8b085498f04c5c728e7",
+  "id": "2023/05/03/reactive-in-guis",
+  "href": "/tech/2023/05/03/reactive-in-guis",
+  "title": "Reactive in GUIs",
+  "date": "2023-05-02T21:00:00.000Z",
+  "content": "Reactive in GUIs\n\nJetpack Compose\n\nCan use Kotlin's Flow to build reactive UI.\n\nBTW, there is a material theme builder to build UI theme.\n\nFlutter\n\nSwiftUI\n\nshare data between views\n\nBlazor\n\nusing Blazor in MAUI is available now, though it is not stable yet.\n\nSince it is not stable yet, I did not dig into it.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

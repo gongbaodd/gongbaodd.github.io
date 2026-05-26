@@ -1,4 +1,19 @@
 {
   "file": "2022/07/05/cmake",
-  "hash": "f54fa1213a81aada57b014815d09becdc3e948a4df9e825557c67545ce494a51"
+  "hash": "f54fa1213a81aada57b014815d09becdc3e948a4df9e825557c67545ce494a51",
+  "id": "2022/07/05/cmake",
+  "href": "/tech/2022/07/05/cmake",
+  "title": "学习 CMake",
+  "date": "2022-07-04T21:00:00.000Z",
+  "content": "学习 CMake\n\n学习了 Makefile 之后自然开始学习 CMake，网上找到了一个例子有一些老了，但是还是挺有用的。\n\n里面包括使用 boost 和 catch2 以及 GoogleTest 做单元测试，还有包装 deb 以及使用 conan 进行包管理的例子。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "cmakefile",
+      "href": "/tag/cmakefile"
+    }
+  ]
 }

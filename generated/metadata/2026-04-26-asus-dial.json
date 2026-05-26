@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#6b987d",
     "titleColor": "--mantine-color-green-4"
-  }
+  },
+  "id": "2026/04/26/asus-dial",
+  "href": "/tech/2026/04/26/asus-dial",
+  "title": "ASUS Dial on Linux",
+  "date": "2026-04-25T21:00:00.000Z",
+  "content": "ASUS Dial on Linux\n\nOne reason I bought ASUS StudioBook Pro 16 is that it has a dial. And it was my major reason to stick on Windows. However, recently I turned to Linux and I found openwheel which is an open source driver for ASUS dial.\n\nIt has no system daemon for it to run at startup. so I added these two systemd services to run it at startup.\n\nGive them udev permissions, edit /etc/udev/rules.d/99-asus-wheel.rules\n\nApply the rules with:\n\nEnable them with:",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

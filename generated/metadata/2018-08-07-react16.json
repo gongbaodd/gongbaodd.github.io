@@ -1,4 +1,14 @@
 {
   "file": "2018/08/07/react16",
-  "hash": "fbfcd34a391c8fd64cf1ffbecbe86f7bcb7795300bf56768f0cec26bab03225e"
+  "hash": "fbfcd34a391c8fd64cf1ffbecbe86f7bcb7795300bf56768f0cec26bab03225e",
+  "id": "2018/08/07/react16",
+  "href": "/fe/2018/08/07/react16",
+  "title": "React16 模拟输入框输入事件",
+  "date": "2018-08-06T21:00:00.000Z",
+  "content": "React16 模拟输入框输入事件\n\n照往常，我会新建一个input事件然后dispatch一下，今天在instagram上面试验失败了。原因是React16 内部定义了descriptor拦截了value.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

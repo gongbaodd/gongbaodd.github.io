@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#a07f69",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2025/10/26/week-44-tipilan",
+  "href": "/plan/2025/10/26/week-44-tipilan",
+  "title": "Week 44: TipiLan and Tech Deep Dive 💻",
+  "date": "2025-10-25T21:00:00.000Z",
+  "content": "Week 44: TipiLan and Tech Deep Dive 💻\n\nThis week was supposed to be a resting week, but I ended up being super busy! 😅\n\nIt kicked off with the cursor meetup. Then, a new job interview landed, which included a coding assignment. All of this was on top of my part-time job commitments. The highlight of the weekend was checking out TipiLan at Taltech! 🎮\n\nTipiLan: A Gaming Expo Adventure 🕹️\n\nTipiLan is a fantastic game expo where many local studios showcase their games. It was great to see the Estonian game development scene!\n\n\n\nI particularly enjoyed this game—it had a great 90s retro vibe.\n\n\n\nThere were also some cool VR games to try out.\n\n\n\nA small game history exhibit showcased the evolution of games through different eras...\n\n\n\n...and a variety of different gaming devices.\n\n\n\nThe event also hosted various tournaments, though I wasn't familiar with many of the competitive scenes.\n\n\n\nThe absolute best part? Taltech offers a free campus ice cream machine! 🍦 This was a delightful surprise.\n\n\n\nPixiJS Toolchain Deep Dive 🔧\n\nThe interview assignment involved PixiJS, which gave me a great opportunity to explore its modern toolchain and ecosystem.\n\nBundling with Rsbuild & Unit Testing with Rstest\n\nFor the bundler, I chose Rsbuild to avoid issues I previously encountered with WASM modules in Vite. For unit testing, I used @rstest/core. The tests themselves felt similar to what I'd write in Jest or Vitest.\n\nA tricky area I hit was with CSS background URLs. Rsbuild, by default, bundles the image referenced in CSS:\n\nTo prevent this automatic bundling for certain paths, the rsbuild.config.ts needed a filter:\n\nDevtools and Layout\n\n@pixi/devtools\n\nThis is the official devtool for PixiJS and is great for layout adjustments. Unfortunately, I found it only worked correctly for me in Chrome, and wouldn't inject properly in Edge.\n\n@pixi/layout\n\nThis package provides a Flexbox layout engine for PixiJS, utilizing Facebook's yoga engine under the hood. Initially, I aimed for a fully responsive design, but I later simplified my approach. Crucially, the layout engine cannot be debugged using the standard PixiJS devtool, so I only used it partially.\n\nBDD with Playwright\n\nFor End-to-End (E2E) BDD testing, I used cucumber.js alongside Playwright. Honestly, without the help of AI, I think I would have gotten stuck in the initial configuration! 🤯 Playwright is a powerful tool, but definitely has a steeper learning curve than Cypress.\n\nI leveraged Playwright's screenshot feature. However, I couldn't immediately find a straightforward way to configure screenshot difference (diff) testing, so I'm still not sure if a dedicated plugin exists for that. 🤔",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

@@ -8,5 +8,32 @@
   "colorSet": {
     "bgColor": "#a09b55",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/10/08/remake-of-missile-command",
+  "href": "/plan/2025/10/08/remake-of-missile-command",
+  "title": "🚀 3D Missile Command on Colyseus",
+  "date": "2025-10-07T21:00:00.000Z",
+  "content": "🚀 3D Missile Command on Colyseus\n\n\n\nLast year, I created a 3D Missile Command game using p5.js for my Digital Graphics class. This time, for the Game AI class, I decided to upgrade it into a 1v1 Battle version ⚔️.\n\nHowever, since p5.js is essentially a subset of the Processing language, extending the project came with limitations from both Processing and JavaScript. So I decided to rebuild it entirely in Babylon.js 🧱.\n\nThanks to the ECS paradigm and Cursor, the transition from p5.js to Babylon.js wasn’t too painful. I started with Babylon’s webpack example and swapped the bundler to Rspack ⚙️.\n\nThe AI assistant (Sonnet 3.5) got stuck handling mouse events 🐭. In the original p5.js version, I had to implement raycasting myself, but Babylon.js provides raycasting natively — so some manual adjustment was needed.\n\n🎮 Play the remake here: missile-command.netlify.app\n\n🛡️ Defender Mode\n\nThe original Missile Command is all about defense — the player marks laser targets to protect cities from incoming missiles.\n\n\n\nI kept most of the defense logic the same. The player simply long-clicks on the ground to set the target location. Simple, classic, and satisfying 💥.\n\n☄️ Attacker Mode\n\nNow comes the twist — the Attacker 😈.\nI added a sky area in the game so the attacker can click positions to launch missiles toward the defender’s cities.\n\n\n\nThis turns the game into a tense 1v1 showdown — one defends, one destroys.\n\n🗄️ Data & Storage\n\nAt first, I used LocalStorage for quick prototyping 🧩. Later, I refactored everything with Cursor to use Firebase Realtime Database 🔥 for proper multiplayer sync.\n\nHere’s how it works:\n\nWhen Player 1 starts a game, a 6-digit room hash is generated in the URL.\n\nPlayer 2 joins using that same URL — they automatically become the Attacker.\n\nAny other players joining the same link will be blocked\n\n| 🛡️ Defender | ☄️ Attacker | 👀 Others |\n|--|--|--|\n|  |  |  |\n\nThe data in the Firebase database is structured as follows:\n\n🔍 Collision Detection\n\nBuilding placement visualization\n\nTo place the buildings on the plate, I used random numbers combined with trigonometric functions (sin, cos) to generate polar coordinates. 🎲\n\nNext, I calculate whether the proposed position is already occupied. For this, I leverage Yuka's AABB (Axis-Aligned Bounding Box) system:\n\n🚀 Missile's Gravity\n\nThe vertical gravity calculation 🌍\n\n$$\nv = v + gravity \\* t \\\\\ndy = v \\* t\n$$\n\n🧠 Using Colyseus as Backend\n\nAt first, I used Firebase as the backend — but the network was too slow 🐢.\nSo I switched to Colyseus ⚡ for a faster, real-time multiplayer backend.\n\n⚙️ Project Setup\n\nAfter running into some monorepo headaches 🌀 (the @colyseus/schema package didn’t play nicely),\nI decided to split it into two separate projects instead.\n\nSetting things up took longer than expected ⏳ — so if you’re starting fresh,\nit’s better to use the official Colyseus example project. ✅\n\n🧩 Game State\n\nTo maintain a single source of truth 🧭, all physics are calculated on the server side.\n\nHere’s the schema definition 👇\n\nAt first, I wanted to use Babylon’s serializer\nto compute the scene server-side and stream it to clients.\nHowever, @colyseus/schema requires strict descriptions, so I dropped that plan 🙅‍♂️.\n\nColyseus provides a handy @colyseus/playground 🧪 — where you can inspect the entire game state structure visually.\n\nOn the client, use onStateChange to react to state updates:\n\nYou can also use getStateCallbacks\nto listen to specific value changes 🎯.\n\n🏠 Game Room\n\nTo communicate between client and server, the server listens for the following events 🎮:\n\n| Event Name      | Description                   |\n| --------------- | ----------------------------- |\n| spawn\\_missile | Attackers spawn missiles      |\n| add\\_marker    | Defenders set laser targets   |\n| assign\\_role   | Any player chooses their role |\n\nClient-side event sending example 📡:\n\n🕹️ Rules\n\n🧨 Attackers\n\nEach missile costs 10 points 💸 to launch,\nbut hitting a target earns 100 points 💥.\n\n🛡️ Defenders\n\nDestroying a missile rewards 50 points ✨.\n\n🚢 Deployment\n\n🧩 Open Source Code: Missile Command on GitHub\n\nServer: /apps/server — deployed on Render.com ☁️\n\nClient: /apps/client — live on Netlify 🌐\n\n🎥 Gameplay Preview:",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "babylonjs",
+      "href": "/tag/babylonjs"
+    },
+    {
+      "label": "yuka",
+      "href": "/tag/yuka"
+    },
+    {
+      "label": "colyseus",
+      "href": "/tag/colyseus"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

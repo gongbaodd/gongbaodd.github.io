@@ -1,4 +1,19 @@
 {
   "file": "2020/01/06/windows-jupyter-notimplementerror",
-  "hash": "b09fb37894d06e38ff887d1f50eed4558b98bc526ef6b33da69705fee18c9840"
+  "hash": "b09fb37894d06e38ff887d1f50eed4558b98bc526ef6b33da69705fee18c9840",
+  "id": "2020/01/06/windows-jupyter-notimplementerror",
+  "href": "/tech/2020/01/06/windows-jupyter-notimplementerror",
+  "title": "修复 Windows 下打开 Jupyter 报 NotImplementError",
+  "date": "2020-01-05T22:00:00.000Z",
+  "content": "修复 Windows 下打开 Jupyter 报 NotImplementError\n\n打开/c/Users/{USER\\_NAME}/AppData/Local/Programs/Python/Python38/Lib/asyncio/\\_\\_init\\_\\_/py.\n\n修改\n\n改为如下",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "jupyter",
+      "href": "/tag/jupyter"
+    }
+  ]
 }

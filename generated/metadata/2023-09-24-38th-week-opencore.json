@@ -1,4 +1,31 @@
 {
   "file": "2023/09/24/38th-week-opencore",
-  "hash": "f793f34eff32f024a0f6a41c2d368d0b85a96f9a0d1a556517ff25533fb60ca3"
+  "hash": "f793f34eff32f024a0f6a41c2d368d0b85a96f9a0d1a556517ff25533fb60ca3",
+  "id": "2023/09/24/38th-week-opencore",
+  "href": "/plan/2023/09/24/38th-week-opencore",
+  "title": "38th Week - OpenCore",
+  "date": "2023-09-23T21:00:00.000Z",
+  "content": "38th Week - OpenCore\n\nIELTS\n\nGot a 7 in IELTS test! Hooooray!\n\nOpenCore\n\nTwo weeks ago, I bought a new laptop, ASUS Pro Art 16. Thus, I decide to sell my old one, which is Dell Inspiron 7391 2in1. Sadly, even as cheap as 2k RMB, it picks no one's interest. So I decide to keep it as a hackintosh machine. And yes, it was sold out in the next day.\n\nMaking a laptop into a hackintosh is not as easy as an ITX. I can not choose the hardware. Gladly, Dell has a good reputation on Linux support. I found a lot configurations on github. However, most of them doesn't work as I expected. So I used almost one week to learn how to configure a opencore config file.\n\nOCAuxiliaryTool\n\nThis tool is a must-have for hackintosh. Earlier in this year, I have to config opencore with OpenCore Configurator, one of its flaw is that it is a macOS only App. But OCAT is a cross-platform tool, which is very convenient for me.\n\nDortania's Guide\n\nThis is the most important guide for hackintosh. It is very detailed and easy to understand. Beleive me, all the errors I met, they were all finally went to this guide.\n\nHowever, since I'm a Chinese, I also checked 国光 and 黑果小兵 for more information.\n\nMy Config\n\nThis is my config.plist, hint it is only available for Ventura. For other versions, you may need to change the Itlwm.\n\nHide entries\n\nTo hide some entry, you need to add \".contentVisibility\" to the Boot folder. Check this.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "hackintosh",
+      "href": "/tag/hackintosh"
+    },
+    {
+      "label": "opencore",
+      "href": "/tag/opencore"
+    },
+    {
+      "label": "ielts",
+      "href": "/tag/ielts"
+    },
+    {
+      "label": "ocauxiliarytool",
+      "href": "/tag/ocauxiliarytool"
+    }
+  ]
 }

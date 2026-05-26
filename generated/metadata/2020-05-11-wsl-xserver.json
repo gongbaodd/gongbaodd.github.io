@@ -1,4 +1,31 @@
 {
   "file": "2020/05/11/wsl-xserver",
-  "hash": "3ac714309f29ad4bc53e3fbf93a5e8931d54b2a0edb7e14fd7add6fae6764d47"
+  "hash": "3ac714309f29ad4bc53e3fbf93a5e8931d54b2a0edb7e14fd7add6fae6764d47",
+  "id": "2020/05/11/wsl-xserver",
+  "href": "/tech/2020/05/11/wsl-xserver",
+  "title": "WSL 下运行 Xserver 鼠标太小",
+  "date": "2020-05-10T21:00:00.000Z",
+  "content": "WSL 下运行 Xserver 鼠标太小\n\n不太清楚是不是 HIDPI 造成的，在 VcXsrv 下面的鼠标指针及其小。解决方法只能是换一个看起来大一些的鼠标。\n\n接下来，重命名 VcXsrv 下面的font/misc（比如C:\\Program Files\\VcXsrv\\fonts\\misc)）的cursor.pcf.gz为cursor-small.pcf.gz。\n\n然后将刚才安装在 wsl 中的/usr/share/fonts/X11/misc/big-cursor.pcf.gz拷贝到上面的目录下，并重命名为cursor.pcf.gz。\n\n重启 VcXsrv 即可。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "windows",
+      "href": "/tag/windows"
+    },
+    {
+      "label": "wsl",
+      "href": "/tag/wsl"
+    },
+    {
+      "label": "vcxsrv",
+      "href": "/tag/vcxsrv"
+    }
+  ],
+  "series": {
+    "label": "Windows舒适指南",
+    "href": "/series/windows-howto"
+  }
 }

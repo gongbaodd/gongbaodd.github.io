@@ -1,4 +1,14 @@
 {
   "file": "2018/06/28/the-current-cloud-service-available",
-  "hash": "62773fc3394765140c529cb7687d7f09937cacd2bdacbff296474093c36be1f8"
+  "hash": "62773fc3394765140c529cb7687d7f09937cacd2bdacbff296474093c36be1f8",
+  "id": "2018/06/28/the-current-cloud-service-available",
+  "href": "/tech/2018/06/28/the-current-cloud-service-available",
+  "title": "目前可用的云服务",
+  "date": "2018-06-27T21:00:00.000Z",
+  "content": "目前可用的云服务\n\n今天收到邮件，原因是我的域名没备案。。。\n\n汗，不是故意不备案的，主要还是懒（囧）。既然国内不备案不能用那么就试试看有什么云服务（其实照以前第一反应就该是云服务，可惜现在有钱买机器了，反倒迟钝了）。\n\nHeroku\n\n之前听说被墙了，没想到还能用，安装heroku-cli就能用了很方便。\n\nLeancloud\n\n国内的heroku，文档都是中文的，基本上还能当firebase使唤。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

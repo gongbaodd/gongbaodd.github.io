@@ -1,4 +1,19 @@
 {
   "file": "2020/03/10/ssh",
-  "hash": "0923c6240c11fb14630df8e6ceecd48a59dcdf9e2d1be2c3ede65863b962272e"
+  "hash": "0923c6240c11fb14630df8e6ceecd48a59dcdf9e2d1be2c3ede65863b962272e",
+  "id": "2020/03/10/ssh",
+  "href": "/tech/2020/03/10/ssh",
+  "title": "ssh 免密码登录",
+  "date": "2020-03-09T22:00:00.000Z",
+  "content": "ssh 免密码登录\n\n总是忘，这里做个记录。\n\n简单说就是把本地的id\\_rsa.pub存储到远端机器的authorized\\_keys里面，详细操作可参考此文。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "ssh",
+      "href": "/tag/ssh"
+    }
+  ]
 }

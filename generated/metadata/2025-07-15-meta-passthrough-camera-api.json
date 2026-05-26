@@ -1,4 +1,23 @@
 {
   "file": "2025/07/15/meta-passthrough-camera-api",
-  "hash": "6abba1a8845c19bed9fa80a0dbc190d610d28386d660d9bb313f63179767b88a"
+  "hash": "6abba1a8845c19bed9fa80a0dbc190d610d28386d660d9bb313f63179767b88a",
+  "id": "2025/07/15/meta-passthrough-camera-api",
+  "href": "/tech/2025/07/15/meta-passthrough-camera-api",
+  "title": "🥽 Meta Passthrough Camera API",
+  "date": "2025-07-14T21:00:00.000Z",
+  "content": "🥽 Meta Passthrough Camera API\n\nI’ve been experimenting with Meta’s Passthrough Camera API — check out my attempt here 👀.\n\nThe code is available here. It uses Unity Sentis to run a YOLOv8 model for real-time object detection.\n\nThe API also works with Meta’s Spatial SDK. For example, Meta Spatial Scanner uses ML Kit for object detection, and you can hook it up to an AWS server running a LLaMA model for more advanced vision-based interactions.\n\nIt’s exciting to see how XR, ML, and real-world passthrough can blend together — the possibilities are huge! 🚀",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "passthrough",
+      "href": "/tag/passthrough"
+    },
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    }
+  ]
 }

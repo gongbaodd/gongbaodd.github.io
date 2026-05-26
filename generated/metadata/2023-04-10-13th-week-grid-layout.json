@@ -1,4 +1,14 @@
 {
   "file": "2023/04/10/13th-week-grid-layout",
-  "hash": "44b102e51f0dd71fe2f37a0a0a789453087fba97b5ece3b57e80c484fda90f0d"
+  "hash": "44b102e51f0dd71fe2f37a0a0a789453087fba97b5ece3b57e80c484fda90f0d",
+  "id": "2023/04/10/13th-week-grid-layout",
+  "href": "/tech/2023/04/10/13th-week-grid-layout",
+  "title": "13th Week: Grid Layout",
+  "date": "2023-04-09T21:00:00.000Z",
+  "content": "13th Week: Grid Layout\n\nI finally fineshed the js coding questions in BFE.com. The question about grid-auto-flow is tricky.\n\nThis week I will get a new GPU. A robit dial which is a cheap alternative for surface dial. I guess it is made following DIY Surface Dial.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

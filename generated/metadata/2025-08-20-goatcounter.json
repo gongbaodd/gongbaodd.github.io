@@ -1,4 +1,27 @@
 {
   "file": "2025/08/20/goatcounter",
-  "hash": "7a554367ad5a4f000c417cc2f7b0bbc82587bdadb8a4c78b0e8b19ee485408ef"
+  "hash": "7a554367ad5a4f000c417cc2f7b0bbc82587bdadb8a4c78b0e8b19ee485408ef",
+  "id": "2025/08/20/goatcounter",
+  "href": "/plan/2025/08/20/goatcounter",
+  "title": "Week 35: 🐐 Goat Counter",
+  "date": "2025-08-19T21:00:00.000Z",
+  "content": "Week 35: 🐐 Goat Counter\n\nNever thought this would happen — I was at the gym 🏋️‍♂️ when I got a notification: my Cloudflare quota was maxed out… all because of the little PV counter I built earlier. 😅\n\nGoat Counter\n\nAfter a bit of thinking 🤔, I figured it’s smarter to use a SaaS instead of reinventing the wheel. That’s when I stumbled upon Goat Counter 🐐✨.\n\nIt offers:\n\n📊 A clean, simple dashboard\n\n📡 A beacon API (no cookies needed!)\n\n🔌 APIs to display PVs directly on my site\n\nAnd the best part? It’s unlimited & free, with the option to self-host if you want. 🚀\n\nReact Bits\n\nThis week, I also rewrote some blog card logic to make the build faster ⚡. Added some sleek UI components from React Bits and finally finished the archive page. 🎉\n\nMicrosoft Clipchamp\n\nI used to rely on CapCut for video editing. Lately, they started charging for many features 💸, so I switched to Microsoft Clipchamp. After a few rebuilds, I must say — it’s solid and totally enough for my needs. 🎬✨",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "pv",
+      "href": "/tag/pv"
+    },
+    {
+      "label": "react",
+      "href": "/tag/react"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
+  }
 }

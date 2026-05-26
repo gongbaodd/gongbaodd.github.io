@@ -1,4 +1,14 @@
 {
   "file": "2018/02/19/pixijs",
-  "hash": "99244d9868e76f6d39595ed8ac98e574048acac7434465d301780eb1fd1043ba"
+  "hash": "99244d9868e76f6d39595ed8ac98e574048acac7434465d301780eb1fd1043ba",
+  "id": "2018/02/19/pixijs",
+  "href": "/fe/2018/02/19/pixijs",
+  "title": "春节的PixiJS试炼",
+  "date": "2018-02-18T22:00:00.000Z",
+  "content": "春节的PixiJS试炼\n\n代码地址\n\n展示雪碧图\n\n容器 Container\n\n图形 Graphics\n\n遮罩 Mask\n\n动画 Ticker\n\n文字\n\n动态图\n\n交互\n\n自适应\n\ndatGUI\n\n上色\n\nHSV、HSL色彩空间\n\n混合模式 blend\n\n材质 texture\n\n滤镜 filter\n\n骨骼 snake\n\n骨骼 goblin\n\n粒子 particles\n\n实例一 滚动的圆\n\n实例二 万花筒\n\n另外还想做两个 万花尺、印章 ，\n感觉和试炼关系不大以后补充。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

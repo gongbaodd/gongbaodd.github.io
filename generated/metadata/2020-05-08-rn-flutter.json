@@ -1,4 +1,27 @@
 {
   "file": "2020/05/08/rn-flutter",
-  "hash": "5f43ce06fc0d0c762a51e48498651838d706651648b3dcafe06a24065b95cac1"
+  "hash": "5f43ce06fc0d0c762a51e48498651838d706651648b3dcafe06a24065b95cac1",
+  "id": "2020/05/08/rn-flutter",
+  "href": "/fe/2020/05/08/rn-flutter",
+  "title": "从 RN 到 Flutter-动画",
+  "date": "2020-05-07T21:00:00.000Z",
+  "content": "从 RN 到 Flutter-动画\n\n好的动画会使 UI 更加直观，是应用更加精致，并提高用户体验。Flutter 的动画使简单动画和复杂动画的实现变得容易。Flutter SDK 所遵守的 Material 设计语言包含了标准的动态效果，你可以简单地自定义它们并应用于你的应用。\n\n在 React Native 中，Animated API 被应用于创建动画。\n\n在 Flutter 中，使用Animation类和AnimationController类。Animation是包括一个动画初始状态到它终态（完成或者取消）状态的抽象类。AnimationController类控制动画的执行、反转或者停止动画，乃至于设置动画为某一个值以做到自定义的目的。\n\n实现一个淡入动画\n\n下面的 React Native 例子是利用 Animated API 创建的FadeInView组件。初始状态、终止状态已经过程都需要定义。该组件包裹需要动画的组件，透明值fadeAnim向下继承到Text组件中，使得执行start()后，动画就开始了。\n\n想在 Flutter 中实现相应效果，需要创建一个 AnimationController 对象，命名为controller并指明持续时间。默认AnimationController会在持续时间内线性执行动画。这个动画控制器在每一帧都会返回一个新值，默认是每秒 60 个值。\n\n使用AnimationController时，必须传入vsync对象。引入vsync的目的是避免不在屏幕上的动画浪费资源。你可以使用你的状态机作为vsync，只要在类定义的时候混入TickerProviderStateMixin。一个AnimationController构造时需要一个 TickerProvider 作为vsync参数。\n\nTween描述初始值和结束值之间的插值。动画中使用Tween对象，可以将Tween的animate()返回值传给要修改的Animation对象。\n\n使用controller.forward()开始动画。其他操作如fling()和repeat()也可以开始动画。比如下面的例子，将FlutterLogo部件放在FadeTransition部件中。\n\n也可以把动画的实现封装成 hook。\n\n| Android fadeIn                                                                                                                                                   | iOS fadeIn                                                                                                                                               |\n| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Android fadeIn | iOS fadeIn |\n\n为卡片增加滑动关闭动画\n\n在 React Native 里，可以使用如PanResponder或者第三方库实现华东关闭。\n\n在 Flutter 中，为部件增加滑动动画可以使用Dismissible部件。\n\n| Android Dismissable                                                                                                                                                 | iOS dismissable                                                                                                                                             |\n| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| Android Dissmisable | iOS Dismissible |\n\n啊啊啊啊，这个系列翻译完了！！！后面还有一个 Flutter 和 React Native 组件的对照表格，我就不贴上来了。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "react-native",
+      "href": "/tag/react-native"
+    },
+    {
+      "label": "flutter",
+      "href": "/tag/flutter"
+    }
+  ],
+  "series": {
+    "label": "从RN到Flutter",
+    "href": "/series/Flutter-for-RN-devs"
+  }
 }

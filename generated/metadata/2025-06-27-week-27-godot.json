@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#6166a0",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2025/06/27/week-27-godot",
+  "href": "/plan/2025/06/27/week-27-godot",
+  "title": "Week 27: Godot",
+  "date": "2025-06-26T21:00:00.000Z",
+  "content": "Week 27: Godot\n\nThis week I was working on a game, Landlord Simulator.\nLast week I mentioned I was setting up a CI pipeline—based on the CI data, I found that the most used version of Godot right now is 4.3.\n\nExternal Editor\n\nGodot comes with its own built-in editor, but I prefer Visual Studio Code.\nTo set it up, go to:\n\nEditor Settings -> Text Editor -> External Editor\n\nThen select the path to your VS Code executable, and set Exec Flags to: {project} --goto {file}:{line}:{col}.\n\nDialogue System\n\nFor dialogue, I’m using Dialogue Nodes.\n\nAnimation Tree\n\nGodot has a powerful animation system… but the documentation isn’t great.\n\nCaveats\n\nThe build results may not always match your expectations.\nSometimes the online release build is different from my local release build—so the engine still feels a bit unstable at times.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    }
+  ]
 }

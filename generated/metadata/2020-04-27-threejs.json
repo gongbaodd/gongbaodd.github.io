@@ -1,4 +1,27 @@
 {
   "file": "2020/04/27/threejs",
-  "hash": "9db2b09804a07b1b9f3a5c59aa340138e3987c16d5912b6c3e3a9f0f13b302ed"
+  "hash": "9db2b09804a07b1b9f3a5c59aa340138e3987c16d5912b6c3e3a9f0f13b302ed",
+  "id": "2020/04/27/threejs",
+  "href": "/fe/2020/04/27/threejs",
+  "title": "threejs 细化-在网格上渲染，停止渲染，使用物理引擎",
+  "date": "2020-04-26T21:00:00.000Z",
+  "content": "threejs 细化-在网格上渲染，停止渲染，使用物理引擎\n\n这是细化了解 threejs 的第二篇，第一篇\n\n在网格上渲染\n\n这里有一点类似于使用多个场景，设想如果想要做一个类似于水晶球的设计，水晶球有一个 scene1，水晶球自己又在另一个 scene0 里面，这里就需要使用 renderTarget 渲染 scene1 到水晶球上面。\n\n先创建一个 target。\n\n再创建一个球，并使用 target 作为材料。\n\n然后创建 scene1。\n\n貌似 react-three-fiber 的 render 函数也可以把 JSX 渲染成 scene。但是使用的时候告诉我需要创建 context，难道是要用 React.createContext? 感觉坑很多，所以暂时没有尝试，以后再补充这里。\n\n好了，回到正题，现在需要在 target 上面渲染 scene1.\n\n和渲染两个 scene 一样，不管打算渲染几个场景，实际的渲染器只有一个，所以渲染好 target 后还要把要渲染的目标换回来。\n\n停止渲染\n\nreact-three-fiber 默认会一直渲染每一帧，而在网页上，我们往往不需要它一直耗费 GPU 时间，比如渲染好的动画，只需要它在特殊时间才运动，react-three-fiber 有一个 invalidateFrameloop 选项可以暂停渲染。\n\n另外useThree().invalidate也可以暂停渲染，但这个不太稳定，不确定是不是我的问题。\n\n比如加载进来一个模型，想让它动画结束后就停止 GPU 渲染。\n\n使用物理引擎\n\n物理引擎是使用 webGL 最爽的部分，主要是不用考虑那些公式，这里用Cannon.js打个比方，（感动常在）。\n\n首先创建世界，比如创建一个 z 轴加速度为 9.82 的世界，还需要 NaiveBroadphase 做碰撞检测。\n\n接下来创建一个物体，包括它的形状（shape）和在世界中的细节参数（body）。\n\n接下来设置渲染的时间间隔。\n\n好了，那么怎么和 react-three-fiber 玩耍呢？其实可以写一个useCannon。\n\n但是考虑到有现成的 hooks，自己就不用写轮子了，react-spring/use-cannon，他是用 web worker 跑的，性能肯定更好，直接看例子好了，白嫖真爽。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "threejs",
+      "href": "/tag/threejs"
+    },
+    {
+      "label": "webgl",
+      "href": "/tag/webgl"
+    }
+  ],
+  "series": {
+    "label": "细品threejs",
+    "href": "/series/threejs-howto"
+  }
 }

@@ -1,4 +1,19 @@
 {
   "file": "2026/03/08/blueprint",
-  "hash": "518e3894bead99418b0be9dfd48c2fbc1cd21976851a10e13a11331fcb81ed2a"
+  "hash": "518e3894bead99418b0be9dfd48c2fbc1cd21976851a10e13a11331fcb81ed2a",
+  "id": "2026/03/08/blueprint",
+  "href": "/fe/2026/03/08/blueprint",
+  "title": "Good Tutorial for UE blueprint",
+  "date": "2026-03-07T22:00:00.000Z",
+  "content": "Good Tutorial for UE blueprint\n\nI recently came across an excellent UE Blueprint tutorial on Bilibili. It includes a fantastic hands-on project that’s perfect for practice. Check it out here: link.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "ue",
+      "href": "/tag/ue"
+    }
+  ]
 }

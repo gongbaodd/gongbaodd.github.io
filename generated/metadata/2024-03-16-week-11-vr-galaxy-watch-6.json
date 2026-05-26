@@ -1,4 +1,59 @@
 {
   "file": "2024/03/16/week-11-vr-galaxy-watch-6",
-  "hash": "57ce2a296f7f9495c5482354ef7d796097dd8f8ea54d3d23058f772c8f946ade"
+  "hash": "57ce2a296f7f9495c5482354ef7d796097dd8f8ea54d3d23058f772c8f946ade",
+  "id": "2024/03/16/week-11-vr-galaxy-watch-6",
+  "href": "/plan/2024/03/16/week-11-vr-galaxy-watch-6",
+  "title": "Week 11: VR and Galaxy Watch 6 Classic",
+  "date": "2024-03-15T22:00:00.000Z",
+  "content": "Week 11: VR and Galaxy Watch 6 Classic\n\nAfter 2 weeks' waiting, I finally received my Galaxy Watch 6 Classic on Thursday. I tried it for some days. There are pros and cons.\n\nGalaxy Watch 6 Classic\n\nI always want a galaxy watch, I like the round bezel. But galaxy watch sold in mainland China can not use many Google function. Since I am in Thailand, I can have a universal version.\n\nTo use a universal galaxy watch, I need to flash my Android phone (mine is XiaoMi) to an universal ROM. Mainland China phone can not connect the watch even you have installed play store. I also have an Samsung tablet, but sadly it can not connect the watch, guess the version is too old.\n\nAfter installed Galaxy Wearable App, I can connect the watch. During the activation routine, it need me to login samsung account, remember to use a normal browser (not like mi browser, it's not supported).\n\nTo connect iPhone, the watch need to install merge watch. This App connects the watch with iPhone through bluetooth.\n\nThe experience of the Watch is different to Apple Watch. It's heavier. The bixby assistant is slower than siri. Google Assistant is great in English, but it's not correctly support the speaker. Wear OS has more apps than Watch OS. But there is not a centralized App to collect all fit information. There are more watch faces. I didn't find the watch life is better. Guess I just used it a lot.\n\nLearn VR Games\n\nAnother thing, I tried to follow Valem's tutorial to make a VR app. I have not finished it yet. I will continue to learn it next week.\n\nAlso, Valem has another Wonderland tutorial. And I found an official wonderland tutorial. I will check it out later.\n\nTo make Unity run on WebXR\n\nI found this blog about export a Unity project to WebXR. The bundle is about 20MB. The author, Oren De-Panther Weizman, made a WebXR exporter. This is his youtube.\n\nExport WSL to LAN\n\nWorking in the WSL is not so convenient, cause you can not export the port to the outer network. I found this tool, PortProxyGUI, which uses netsh as core to proxy WSL to LAN.\n\nCoconut XR\n\nRemember @pmndrs/uikit last week? I tried this framework. There is still a lot to fix. It is better to use koestlich as UI and natuerlich as interaction now. I compile a simple demo. The bundle size is around 1MB. This is a music player demo.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "vr",
+      "href": "/tag/vr"
+    },
+    {
+      "label": "galaxy watch 6",
+      "href": "/tag/galaxy watch 6"
+    },
+    {
+      "label": "webxr",
+      "href": "/tag/webxr"
+    },
+    {
+      "label": "wsl",
+      "href": "/tag/wsl"
+    },
+    {
+      "label": "coconutxr",
+      "href": "/tag/coconutxr"
+    },
+    {
+      "label": "portproxygui",
+      "href": "/tag/portproxygui"
+    },
+    {
+      "label": "netsh",
+      "href": "/tag/netsh"
+    },
+    {
+      "label": "koestlich",
+      "href": "/tag/koestlich"
+    },
+    {
+      "label": "natuerlich",
+      "href": "/tag/natuerlich"
+    },
+    {
+      "label": "wonderland-engine",
+      "href": "/tag/wonderland-engine"
+    },
+    {
+      "label": "merge-watch",
+      "href": "/tag/merge-watch"
+    }
+  ]
 }

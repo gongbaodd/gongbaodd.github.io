@@ -1,4 +1,19 @@
 {
   "file": "2026/03/07/week-9-ikea-effect",
-  "hash": "bdb6e33a4ef84c3ac3aeed31282091e67641a198688a3c49deb4ed074d911e28"
+  "hash": "bdb6e33a4ef84c3ac3aeed31282091e67641a198688a3c49deb4ed074d911e28",
+  "id": "2026/03/07/week-9-ikea-effect",
+  "href": "/plan/2026/03/07/week-9-ikea-effect",
+  "title": "Week 9: The IKEA Effect",
+  "date": "2026-03-06T22:00:00.000Z",
+  "content": "Week 9: The IKEA Effect\n\nThis week, I hit up two events in Tallinn: Gamedev Guild and the Vibe Code Atelier Tallinn.\n\nBilt.me 📱\n\nDuring the Vibe Coding event, the team from Bilt.me showcased their project—a vibe-coding service using Expo to spin up mobile apps. They were a bit vague on the technical details, but honestly, building a service like this isn’t \"hard\" if you have the budget to burn on LLM tokens. 💸\n\nI think the real engineering job here is just babysitting token usage, likely using something like LangChain or Langfuse. It’s the same vibe as bolt.new or Lovable, but this one doesn’t actually give you the code. I guess they don’t want users touching the codebase. 🛑💻\n\nThe \"AI Baby\" Syndrome 👶🤖\n\nThe showcase felt like a massive IKEA effect experiment. People are using AI to build products and treating the output like their own child—they love it because they \"built\" it, even if the AI did the heavy lifting.\n\nA few observations from the crowd:\n\nThe Bar is Low: There were so many \"unprofessional\" comments. It’s the 21st century—why are people still acting shocked that a website can record your voice and transpile it to text? 🎙️\n\nWait until they see the real stuff: If they’re terrified by basic features, imagine their reaction to AI actually controlling a computer like Manus or Openclaw (even if those are pricey to run). 🤖💻\n\nThe Silver Lining 🤑\n\nIn the end, it’s actually a good thing for us. These folks are well-connected and, frankly, pretty rich. They’ll use their \"loved\" AI-generated babies to secure big investments... and then they’ll have to hire people like me to actually fix the bugs and make it work. 📈🛠️\n\nWhat a future.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "vibe-coding",
+      "href": "/tag/vibe-coding"
+    }
+  ]
 }

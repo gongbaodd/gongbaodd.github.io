@@ -1,4 +1,14 @@
 {
   "file": "2025/05/27/unity-test-framework",
-  "hash": "db270189e2480208de5526d59078a0b766e5a10700ff32bff84789fd6396eff8"
+  "hash": "db270189e2480208de5526d59078a0b766e5a10700ff32bff84789fd6396eff8",
+  "id": "2025/05/27/unity-test-framework",
+  "href": "/tech/2025/05/27/unity-test-framework",
+  "title": "Unity Test Framework",
+  "date": "2025-05-26T21:00:00.000Z",
+  "content": "Unity Test Framework\n\nI was trying to write unit test for my Unity project. Well, I did not finished. But here are some notes I think I will consider in the future.\n\nWhen finished make the test folder. There will be a test assembly definition file created. A new C# file with the same file name is needed to add manually(It feels like a bug, I tried on Unity 6 and 6.1, they all need manually added).\n\nAnother thing, a new assemble definition file is needed to be created as GameRuntime. And add the GameRuntime assembly definition to the test assembly definition. Or the test can not find the classes in the game.\n\nThen, the hard one. To test the game, many unity built-in classes are needed to be mocked. The easiest way is to use MVVM to decouple the logic. Then only test the vm part. It needs me to make a lot changes to the old code, so I decided to give up this time.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#617c91",
     "titleColor": "--mantine-color-blue-2"
-  }
+  },
+  "id": "2022/01/08/soul",
+  "href": "/movie/2022/01/08/soul",
+  "title": "Soul",
+  "date": "2022-01-07T22:00:00.000Z",
+  "content": "Soul\n\n皮克斯每年必来的泪点电影，这次竟然不是“坚持梦想”的老梗🎬😭\n用一句俗话说——哥们，这次别把自己局限太窄啦😂",
+  "category": {
+    "label": "movie",
+    "href": "/movie"
+  },
+  "tags": []
 }

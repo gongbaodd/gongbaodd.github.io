@@ -1,4 +1,14 @@
 {
   "file": "2023/05/09/aimoji",
-  "hash": "242721508591e29b2a29498b4659f8ce15f153d289e51e04f01c7155dfb73cde"
+  "hash": "242721508591e29b2a29498b4659f8ce15f153d289e51e04f01c7155dfb73cde",
+  "id": "2023/05/09/aimoji",
+  "href": "/tech/2023/05/09/aimoji",
+  "title": "AImoji",
+  "date": "2023-05-08T21:00:00.000Z",
+  "content": "AImoji\n\nyou can download the model of AImoji, put in stable diffusion's model folder. Using memoji of xxx as prompt to generate a memoji.\n\nBut I want to use it generating my photo, I need to merge my old model with it. That means I have to use extra 4GB for the new model. But I can make a Lora. Using Kohya's GUI, with the AImoji model, I can simply make one Lora, then put it to the statble diffusion's Lora folder.\n\nusing Lora prompt, now I can combine two model without retraining.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

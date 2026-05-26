@@ -1,4 +1,14 @@
 {
   "file": "2021/12/29/vscode-c-ide",
-  "hash": "2ba47b1523661d03172122345d44ba8d0cb90320866cf11a9ccdd2cb6bf1c010"
+  "hash": "2ba47b1523661d03172122345d44ba8d0cb90320866cf11a9ccdd2cb6bf1c010",
+  "id": "2021/12/29/vscode-c-ide",
+  "href": "/tech/2021/12/29/vscode-c-ide",
+  "title": "VSCode 作为 C 语言 IDE",
+  "date": "2021-12-28T22:00:00.000Z",
+  "content": "VSCode 作为 C 语言 IDE\n\n很简单，只需要添加微软的\"C/C++\"和\"Code Runner\"两个插件，本地再安装 MinGw（如果安装了 MSYS2 也可以），把 bin 文件夹添加到系统的 PATH 环境变量里面（一定是系统的不是本地的）。\n\n然后在 VSCode 设置中，给 Code Runner 添加 run in terminal，以实现输入功能。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

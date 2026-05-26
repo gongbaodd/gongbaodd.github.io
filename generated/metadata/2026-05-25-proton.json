@@ -8,5 +8,19 @@
   "colorSet": {
     "bgColor": "#90826f",
     "titleColor": "--mantine-color-blue-2"
+  },
+  "id": "2026/05/25/proton",
+  "href": "/fe/2026/05/25/proton",
+  "title": "🐧 Support Proton Environment",
+  "date": "2026-05-24T21:00:00.000Z",
+  "content": "🐧 Support Proton Environment\n\nYes, I am done implementing the transparent background support for Linux. Now, I have started adding a specific background for it.\n\nAs most game players are using Proton 10 as their compatibility layer, the code may detect the platform as Windows 🪟. However, Proton exposes a wine\\_get\\_version function to retrieve the Proton version. This function is only callable within a Proton environment.\n\nTherefore, we can use the following script to manage the background:\n\n🎨 For the background asset, I used the Free Sky with Clouds Background Pixel Art Set.\n\n📸 Result\n\nIn Linux, run the following command to test the result.\n\nResult",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [],
+  "series": {
+    "label": "Grandpa's bee Haven",
+    "href": "/series/grandpa-bee"
   }
 }

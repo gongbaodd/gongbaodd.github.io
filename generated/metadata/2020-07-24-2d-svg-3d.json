@@ -1,4 +1,23 @@
 {
   "file": "2020/07/24/2d-svg-3d",
-  "hash": "194385ff5e07f5a790fbf06b6cdadadb555719c1bd9f4da77791b4a909730674"
+  "hash": "194385ff5e07f5a790fbf06b6cdadadb555719c1bd9f4da77791b4a909730674",
+  "id": "2020/07/24/2d-svg-3d",
+  "href": "/fe/2020/07/24/2d-svg-3d",
+  "title": "快速把 2D 的 svg 生成为 3D",
+  "date": "2020-07-23T21:00:00.000Z",
+  "content": "快速把 2D 的 svg 生成为 3D\n\nvectary可以把 2D 的 SVG 渲染成 3D，但是免费版导出的图片是有水印的，导出模型的功能也是收费的（但是我发现可以从 network 中扒\\*.obj文件，是，我知道这很 low🤣）",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "svg",
+      "href": "/tag/svg"
+    }
+  ],
+  "series": {
+    "label": "利器",
+    "href": "/series/tools"
+  }
 }

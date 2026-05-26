@@ -1,4 +1,19 @@
 {
   "file": "2026/03/11/ue-android",
-  "hash": "d8bdf70a032e4a561af592b90111e56e0848f014044c80737c2314b3f4cc2aef"
+  "hash": "d8bdf70a032e4a561af592b90111e56e0848f014044c80737c2314b3f4cc2aef",
+  "id": "2026/03/11/ue-android",
+  "href": "/fe/2026/03/11/ue-android",
+  "title": "Android Packaging in UE 5.7",
+  "date": "2026-03-10T22:00:00.000Z",
+  "content": "Android Packaging in UE 5.7\n\nAs I mentioned yesterday, I was working on a Unreal Engine game for Quest 3. 🎮 I used to package Unity and Godot games for Quest 3, but I haven't kept up with it. Most of the old toolchains are no longer usable, so I had to redo them. It is still a new experience since it is my first time using UE. 🆕\n\nI was basically following this video, although some of the content is also outdated. 📺\n\nFirst, make sure there are no redundant Android Studio versions installed on your device. 💻\n\nIn Project Settings -> Android SDK -> NDK-API, I entered android-32. For the SDK API, I tried matchndk, but it caused a crash. 💥 I tried android-32 and it works fine. ✅\n\nThe latest Android command line tool is packaged as a zip file, but Android Studio only reads gzip (you will see an error when installing it). You can manually unzip the file in the SDK folder. 📂\n\nThe Android SDK has to be 34. This is the current Horizon OS Android version. Use the following command to check the Android SDK version: 🔍",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "ue",
+      "href": "/tag/ue"
+    }
+  ]
 }

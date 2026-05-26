@@ -1,4 +1,14 @@
 {
   "file": "2023/05/15/19th-week-google-io",
-  "hash": "559f66ee7a99fc7895c5bba28ae1b6576581cb8d2bfbff7aa9ca4942c053b6df"
+  "hash": "559f66ee7a99fc7895c5bba28ae1b6576581cb8d2bfbff7aa9ca4942c053b6df",
+  "id": "2023/05/15/19th-week-google-io",
+  "href": "/plan/2023/05/15/19th-week-google-io",
+  "title": "19th week Google IO",
+  "date": "2023-05-14T21:00:00.000Z",
+  "content": "19th week Google IO\n\nTried AImoji this week, using stable diffusion to generate emoji. Try this video to learn more about training a picture.\n\nTried MRTK on Hololens, tried some quest demos, building a VR is fun, compiling time is a disaster. Want to try compile MRTK on quest, and learn some babylonjs.\n\nTrie QWERT-learner to remember words, this week I want to finish it.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#a49154",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2025/03/06/low-poly-town",
+  "href": "/3d/2025/03/06/low-poly-town",
+  "title": "Low Poly 3D Assets & Physics",
+  "date": "2025-03-05T22:00:00.000Z",
+  "content": "Low Poly 3D Assets & Physics\n\nLow Poly Town\n\nYou can download the blender file here.\n\nLow Poly Castle\n\nthe blender file is here\n\nLow Poly Castle Curve\n\nblender file\n\nChess Piece\n\nfile\n\nUV windmill\n\nUV\n\nfile\n\nTree\n\nUV\n\nfile\n\nballoon\n\nUV\n\nfile",
+  "category": {
+    "label": "3d",
+    "href": "/3d"
+  },
+  "tags": [
+    {
+      "label": "blender",
+      "href": "/tag/blender"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

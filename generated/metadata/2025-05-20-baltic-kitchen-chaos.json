@@ -8,5 +8,36 @@
   "colorSet": {
     "bgColor": "#b48c64",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/05/20/baltic-kitchen-chaos",
+  "href": "/lab/2025/05/20/baltic-kitchen-chaos",
+  "title": "🍳 Baltic Kitchen Chaos",
+  "date": "2025-05-19T21:00:00.000Z",
+  "content": "🍳 Baltic Kitchen Chaos\n\nThis is a game I built at Tallinn University 🎓 for the course Design and Integration of Game Assets.\nIt was a group project: I handled the programming 👨‍💻, while two awesome teammates worked on narrative, sound, and design.\n\n🎮 Where & How to Play\n\nWe made two versions:\n\n🖱️ Mouse version – the official final submission\n\n✋ Hand tracking version – more experimental and fun\n\n👉 In the hand-tracking build, you can swipe top-right with your mouse to trigger the hand-tracking mode.\n\ngame screenshot\nmenu\nplay scene\n\n🥘 How I Cooked Up the Gameplay\n\nThe gameplay is pretty simple:\n\n🍲 I used Scriptable Objects to store dish info\n\n🥦 Ingredients spawn randomly during the game\n\n⚖️ The balance of “ideal” vs. “not-so-ideal” ingredients is managed by another config Scriptable Object\n\n✋ How I Experimented with Hand Tracking\n\nFor the hand-tracking version:\n\n🛠️ I used Google’s MediaPipe – small, fast, and Unity-friendly (but sadly not directly on web).\n\n🌐 To make it work, I used the web version of MediaPipe and sent the data to Unity through a JS plugin.\n\nHere’s the tricky part:\n\n⚡ In development mode, JS plugins don’t work — so I had to set up a WebSocket server as a bridge.\n\n🖥️ That caused noticeable delay during dev, making fine-tuning harder.\n\nBut in the final build, the JS plugin works directly 🎉. On many high-end devices with good lighting 💡, the tracking feels smooth, though performance still depends on the setup.\n\nWe kept the mouse version as the official submission ✅, but I’m keeping the hand-tracking one alive too — maybe one day I’ll polish it even more ✨.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    },
+    {
+      "label": "handtracking",
+      "href": "/tag/handtracking"
+    },
+    {
+      "label": "mediapipe",
+      "href": "/tag/mediapipe"
+    },
+    {
+      "label": "websocket",
+      "href": "/tag/websocket"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

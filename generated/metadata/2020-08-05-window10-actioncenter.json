@@ -1,4 +1,14 @@
 {
   "file": "2020/08/05/window10-actioncenter",
-  "hash": "3f92d0378b4491765690259361ef15a75dc7848888363c85221e9efc42a2d3f9"
+  "hash": "3f92d0378b4491765690259361ef15a75dc7848888363c85221e9efc42a2d3f9",
+  "id": "2020/08/05/window10-actioncenter",
+  "href": "/tech/2020/08/05/window10-actioncenter",
+  "title": "解决Windows10的action center无法打开的问题",
+  "date": "2020-08-04T21:00:00.000Z",
+  "content": "解决Windows10的action center无法打开的问题\n\n最近打开平板发现任务栏右下角的事件中心无法打开了，不仅如此，连wlan、声音大小、省电中心都不能打开了，简单的查了一下，或许是因为升级之后uwp注册出错了，需要重新注册，管理模式打开powershell输入以下命令重新注册应用。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

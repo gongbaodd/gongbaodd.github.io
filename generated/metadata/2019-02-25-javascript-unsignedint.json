@@ -1,4 +1,14 @@
 {
   "file": "2019/02/25/javascript-unsignedint",
-  "hash": "16f898ebc18caab55a0f92cf58fc67b20af69b5861dcc6642307ff845826c6bf"
+  "hash": "16f898ebc18caab55a0f92cf58fc67b20af69b5861dcc6642307ff845826c6bf",
+  "id": "2019/02/25/javascript-unsignedint",
+  "href": "/tech/2019/02/25/javascript-unsignedint",
+  "title": "JavaScript 获取 Unsigned Int",
+  "date": "2019-02-24T22:00:00.000Z",
+  "content": "JavaScript 获取 Unsigned Int\n\nJavaScript 默认是64位有符号的整型，可以利用移位符号解决，但不是>>2而是>>>0\n\n最好不要使用 >> ，推荐使用 >>> 因为最左边一位会被解析成符号位，当数字溢出时，会被解析成负数。\n\n当然按照这种方式eslint的默认配置是不允许的，所以可以借助 Unit32Array.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

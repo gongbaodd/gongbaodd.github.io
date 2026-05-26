@@ -8,5 +8,24 @@
   "colorSet": {
     "bgColor": "#aa8865",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2017/02/10/ap",
+  "href": "/tech/2017/02/10/ap",
+  "title": "AP",
+  "date": "2017-02-09T22:00:00.000Z",
+  "content": "AP",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "raspberrypi",
+      "href": "/tag/raspberrypi"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

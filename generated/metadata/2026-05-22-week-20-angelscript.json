@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#5ba55f",
     "titleColor": "--mantine-color-indigo-2"
-  }
+  },
+  "id": "2026/05/22/week-20-angelscript",
+  "href": "/fe/2026/05/22/week-20-angelscript",
+  "title": "Week 20: AngelScript",
+  "date": "2026-05-21T21:00:00.000Z",
+  "content": "Week 20: AngelScript\n\nMoving to Linux & Blueprint Testing 🐧\n\nAfter switching my primary OS to Linux, I can now develop in Unreal Engine.\n\nFor Blueprint users, UE 5.7 offers an excellent 1st Hour Tutorial. This guide is also perfect for testing the stability of the Unreal Editor on Linux. During my test, the editor only crashed twice—a highly satisfactory result compared to Windows, where my hardware fans would constantly run at maximum speed.\n\nCurrent Limitations on Linux ⚠️\n\nI have encountered two main drawbacks with UE on Linux:\n\nPlatform Restrictions: You can only compile for Linux and Android. While unofficial workarounds use Wine for cross-compiling to Windows, no official solution exists.\n\nToolchain Issues: I cannot get the Clang toolchain to work properly with the project, which prevents C++ development.\n\nWhy AngelScript? 📜\n\nMy primary goal for using UE on Linux is to try AngelScript.\n\nWhen using C++ on Windows, I constantly had to compile code and restart the editor. AngelScript solves this by running a virtual machine directly inside Unreal, eliminating the compilation bottleneck.\n\nCompared to Blueprints, AngelScript offers clear advantages:\n\nBetter compatibility with version control systems (Git).\n\nImproved stability, as the Linux editor crashes frequently when editing Blueprints. I can focus entirely on coding and then test directly in the editor.\n\nInstallation & Documentation 🛠️\n\nThere is no prebuilt version of UE with AngelScript. You must build it from the source following the Official Installation Guide.\n\nBuild Time: The local compilation took 3 hours.\n\nStability: The custom-built version is less stable than official prebuilt binaries. Note that projects created with this version cannot be opened using standard UE prebuilt editors.\n\nTo get started with coding, refer to the AngelScript Introduction. The syntax is nearly identical to C++, making it easy to adopt.\n\nNext Steps 🖥️\n\nI am currently building this setup on my Mac mini. Given the larger macOS developer base, I expect the environment to be more stable than Linux.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

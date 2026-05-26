@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#60a858",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2026/04/06/bolt-diy",
+  "href": "/tech/2026/04/06/bolt-diy",
+  "title": "Bolt.diy",
+  "date": "2026-04-05T21:00:00.000Z",
+  "content": "Bolt.diy\n\n🛠️ The Setup\n\nThe coolest part? It can load local models. 🏠 I decided to run Qwen2.5-coder-14b (about 8GB) using LM Studio as the server.\n\nContext Length: 8192 🧠\n\nPerformance: It completely maxed out my 8G GPU memory! 📈\n\nOne reason I prefer LM Studio over Ollama for this setup is the visibility—you can monitor every single token and request on the console in real-time. 🖥️🔍\n\n📝 The Test Drive\n\nI asked bolt.diy to build the simplest To-Do app using only pure JS, HTML, and CSS. 🎨\nThe generation was definitely slower compared to the online version, but honestly? It was still acceptable for a local run. 🐢➡️🐇\n\nresult\n\n🏁 Final Thoughts\n\nAnd there it is—a fully functional To-Do app working right in the web container! 🌐 I even tried using it as my \"copilot\" in OpenCode. 👨‍💻\n\nWhile the speed isn't quite at a \"daily driver\" level yet, it’s getting there. Who knows? Maybe one day this will be my go-to workflow when I'm stuck offline. ✈️🔌",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "vibe-coding",
+      "href": "/tag/vibe-coding"
+    },
+    {
+      "label": "llm",
+      "href": "/tag/llm"
+    },
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    }
+  ]
 }

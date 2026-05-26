@@ -1,4 +1,14 @@
 {
   "file": "2018/01/04/win10",
-  "hash": "cb875419301b018f4e46999828c0b2dc9fb049aa7c26259d39f592bb90483385"
+  "hash": "cb875419301b018f4e46999828c0b2dc9fb049aa7c26259d39f592bb90483385",
+  "id": "2018/01/04/win10",
+  "href": "/tech/2018/01/04/win10",
+  "title": "win10 家庭版打开组策略",
+  "date": "2018-01-03T22:00:00.000Z",
+  "content": "win10 家庭版打开组策略\n\n无非是把 pro 版的组策略安装进来就好了",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

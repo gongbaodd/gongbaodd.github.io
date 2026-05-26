@@ -1,4 +1,23 @@
 {
   "file": "2025/07/13/wearos-dice-app",
-  "hash": "488c7c7a8097e7d14158046f6c321aef720dcc7bdb31e3d663803085e26b646e"
+  "hash": "488c7c7a8097e7d14158046f6c321aef720dcc7bdb31e3d663803085e26b646e",
+  "id": "2025/07/13/wearos-dice-app",
+  "href": "/fe/2025/07/13/wearos-dice-app",
+  "title": "🎲 WearOS Dice App",
+  "date": "2025-07-12T21:00:00.000Z",
+  "content": "🎲 WearOS Dice App\n\nIt’s been a while since I last tried making a WearOS app. Last time I checked, the build process was painfully slow, and Android development itself is a bit of a headache 😅.\n\nThis time, I decided to make a simple dice app using ViewModel. Some dependencies need to be added in the build.gradle file — the editor won’t always remind you, but tools like Gemini can help find the right packages.\n\nSending the app to the watch is still a bit painful 😅. Right now I’m using wearos toolbox to install the APK, which makes life a little easier.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "wearos",
+      "href": "/tag/wearos"
+    },
+    {
+      "label": "kotlin",
+      "href": "/tag/kotlin"
+    }
+  ]
 }

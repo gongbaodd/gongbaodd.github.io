@@ -1,4 +1,19 @@
 {
   "file": "2025/05/23/cool-spot",
-  "hash": "3868f3fde9981ba58ac278aaf31fe168eecb812f78191ab07d8602448e9b1cae"
+  "hash": "3868f3fde9981ba58ac278aaf31fe168eecb812f78191ab07d8602448e9b1cae",
+  "id": "2025/05/23/cool-spot",
+  "href": "/lab/2025/05/23/cool-spot",
+  "title": "Cool Spot",
+  "date": "2025-05-22T21:00:00.000Z",
+  "content": "Cool Spot\n\nThis is the service I made for Garage48's Tallinn Valencia Hackathon. I think the LLM API token is already expired. Sadly, the team leader finally vibe coded a not working website in the last 2h and ruined the whole product. But you can still view the site here.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "openai",
+      "href": "/tag/openai"
+    }
+  ]
 }

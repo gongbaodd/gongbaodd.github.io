@@ -1,4 +1,19 @@
 {
   "file": "2020/02/06/git-crlf-lf",
-  "hash": "4ec23c862397f1b8b98a6d91f851de4c726d856c48df4d3ad839f2caa7dba525"
+  "hash": "4ec23c862397f1b8b98a6d91f851de4c726d856c48df4d3ad839f2caa7dba525",
+  "id": "2020/02/06/git-crlf-lf",
+  "href": "/tech/2020/02/06/git-crlf-lf",
+  "title": "Git 中的 CRLF 和 LF",
+  "date": "2020-02-05T22:00:00.000Z",
+  "content": "Git 中的 CRLF 和 LF\n\n跨平台开发的时候，如果是在 Windows 下面上传代码，git 会提醒部分文本文件的 CRLF 会改为 LF。\n\n原因是在 Windows 下面，文本文件会以 CRLF（回车换行）结尾，而 Linux 和 Mac 会以 LF（换行）结尾。其实想想打字机，回车换行是一个正确的做法，但是为了保持兼容性，git 会把 Windows 上传的 CRLF 都改成 LF。\n\n如果只在 Windows 下面开发，可以关掉这个功能。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "git",
+      "href": "/tag/git"
+    }
+  ]
 }

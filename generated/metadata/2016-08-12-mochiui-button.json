@@ -1,4 +1,14 @@
 {
   "file": "2016/08/12/mochiui-button",
-  "hash": "86d1f7ac991f0b4957753fd92a725d03859aaf4a99630333acc567969d8190e9"
+  "hash": "86d1f7ac991f0b4957753fd92a725d03859aaf4a99630333acc567969d8190e9",
+  "id": "2016/08/12/mochiui-button",
+  "href": "/fe/2016/08/12/mochiui-button",
+  "title": "FRAMEWORK WIDGET-Mochi",
+  "date": "2016-08-11T21:00:00.000Z",
+  "content": "FRAMEWORK WIDGET-Mochi\n\nBUTTONS\n\nDATE:2012/09/26\n\n按钮\n\n文字内容\n\n字号 14pt\n\n字体 PreludeWGL\n\n粗体 斜体\n\n颜色 #4b4b4b\n\n圆括号\n\n字号 30pt\n\n字体 PreludeWGL Bold\n\n颜色 #4b4b4b\n\n垂直间隔\n\n文字在圆括号中间居中。\n圆括号的行高要比文字低 5 点。\n文字的上下间距是 8 像素。\n\n水平间隔\n\n文字在圆括号中间。\n第一个括号后没有字符间隔，文字后有一个字符间隔。\n两边的间隔为 8 像素。\n\n\n\n下拉按钮\n\nlist-arrow.png 8x8 像素。\n相对于按钮垂直居中。\n\n点击时\n\n圆括号要对应伸缩\n\n\n\n禁用按钮&警告按钮\n\n\n\n按钮间隔\n\n最小水平间距 2 单元（16 像素）",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

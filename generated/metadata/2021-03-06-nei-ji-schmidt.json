@@ -1,4 +1,23 @@
 {
   "file": "2021/03/06/nei-ji-schmidt",
-  "hash": "79739912de3d25626d8860adb10845a66a6eb608266b97ca2a14858b0fa798c4"
+  "hash": "79739912de3d25626d8860adb10845a66a6eb608266b97ca2a14858b0fa798c4",
+  "id": "2021/03/06/nei-ji-schmidt",
+  "href": "/book/2021/03/06/nei-ji-schmidt",
+  "title": "内积施密特正交化",
+  "date": "2021-03-05T22:00:00.000Z",
+  "content": "内积施密特正交化\n\nQ:\n\n$$\n\\alpha=(1,0,-2)^T,\\beta=(-4,2,3)^T,\n\\beta=k\\alpha+\\gamma\n$$\n\nalpha 和 gamma 正交，求 k 和 gamma\n\nA:\n\n$$\nk=-2,\\gamma=(-2,2,-1)\n$$\n\nQ:\n\n$$\n\\begin{cases}\n\\alpha\\_1=(1, 1, -1, 1)^T \\\\\n\\alpha\\_2=(1, -1, -1, 1)^T \\\\\n\\alpha\\_3=(2, 1, 1, 3)^T \\\\\n\\end{cases}\n$$\n\n求与他们都正交的单位向量\n\nA:\n\n$$\n\\pm\\frac{1}{\\sqrt{26}}(4,0,1,-3)\n$$\n\nQ:\n\n$$\n\\begin{cases}\n\\alpha\\_1=(1,1,1)^T \\\\\n\\alpha\\_2=(1,2,1)^T \\\\\n\\alpha\\_3=(0,-1,1)^T \\\\\n\\end{cases}\n$$\n\n施密特正交化\n\nA:\n\n$$\n\\begin{cases}\n\\gamma\\_1=\\frac{1}{\\sqrt{3}}(1,1,1)^T \\\\\n\\gamma\\_2=\\frac{1}{\\sqrt{6}}(1,-2,1)^T \\\\\n\\gamma\\_3=\\frac{1}{\\sqrt{2}}(1,0,-1)^T \\\\\n\\end{cases}\n$$\n\nQ:\n\n$$\n\\begin{cases}\nx\\_1 + x\\_2 - 3x\\_4 - x\\_5 = 0 \\\\\nx\\_1 - x\\_2 + 2x\\_3 - x\\_4 - x\\_5 = 0 \\\\\nx\\_1 + x\\_3 - 2x\\_4 - x\\_5 = 0 \\\\\n\\end{cases}\n$$\n\n求解空间的一个规范正交基\n\nA:\n\n$$\n\\begin{cases}\n\\gamma\\_1 = \\frac{1}{\\sqrt{3}}(-1,1,1,0,0)^T \\\\\n\\gamma\\_2 = \\frac{1}{\\sqrt{51}}(5,4,1,3,0)^T \\\\\n\\gamma\\_3 = \\frac{1}{\\sqrt{340}}(3,-1,4,-5,17)^T \\\\\n\\end{cases}\n$$\n\nQ: A 是正交矩阵则 A\\*也是正交矩阵\n\nA: 正确\n\nQ: A 是正交矩阵$AA^T$\n\nA: E\n\nQ: A 是正交矩阵$|A|$\n\nA: $\\pm1$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "线性代数",
+    "href": "/series/linear"
+  }
 }

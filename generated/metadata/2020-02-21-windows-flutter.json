@@ -1,4 +1,23 @@
 {
   "file": "2020/02/21/windows-flutter",
-  "hash": "7fe9847b5cf91a6e5499e8049db0b9e45c6e7a725820af35393aba95fd9deb4f"
+  "hash": "7fe9847b5cf91a6e5499e8049db0b9e45c6e7a725820af35393aba95fd9deb4f",
+  "id": "2020/02/21/windows-flutter",
+  "href": "/fe/2020/02/21/windows-flutter",
+  "title": "Windows 安装 flutter 开发环境",
+  "date": "2020-02-20T22:00:00.000Z",
+  "content": "Windows 安装 flutter 开发环境\n\n从 chocolatey 可以直接安装 flutter。\n\n运行成功后可以运行flutter doctor检查环境是否完备，比如我会有X Android license status unknown.报错，可以运行以下命令检查详情。\n\n发现 SDK 管理的问题，进而发现要把 JDK 降级到 8.0，好在有 chocolatey，很快就解决了。\n\n然后修改.bashrc 设置代理\n\n打开 VScode，安装 flutter，打开命令面板输入flutter new，就可以创建工程了（然后下载了巨多文件，感觉如果写个 hello world 都要加载这么多文件真是比较坑）。\n\n打开模拟器，在 VSCode 里面按 F5 就能实时 debug 了。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "flutter",
+      "href": "/tag/flutter"
+    },
+    {
+      "label": "dart",
+      "href": "/tag/dart"
+    }
+  ]
 }

@@ -1,4 +1,14 @@
 {
   "file": "2017/02/03/node-302",
-  "hash": "ad7eae68c7cda70de4009dc92bfebdf8983b535585f089f8c48b76553d6e7510"
+  "hash": "ad7eae68c7cda70de4009dc92bfebdf8983b535585f089f8c48b76553d6e7510",
+  "id": "2017/02/03/node-302",
+  "href": "/tech/2017/02/03/node-302",
+  "title": "node 302",
+  "date": "2017-02-02T22:00:00.000Z",
+  "content": "然后将脚本作为守护进程启动",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

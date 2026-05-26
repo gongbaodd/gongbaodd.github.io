@@ -1,4 +1,19 @@
 {
   "file": "2026/04/09/week-14-xr",
-  "hash": "8a87217371f7479d31b6041106ad779e55a1f1df0e373a7a141c8eaa016c29ad"
+  "hash": "8a87217371f7479d31b6041106ad779e55a1f1df0e373a7a141c8eaa016c29ad",
+  "id": "2026/04/09/week-14-xr",
+  "href": "/plan/2026/04/09/week-14-xr",
+  "title": "Week 14: Finding the \"Zen\" Workflow for XR Development",
+  "date": "2026-04-08T21:00:00.000Z",
+  "content": "Week 14: Finding the \"Zen\" Workflow for XR Development\n\nThis week, I’ve been deep in the trenches trying to build a comfortable XR development environment for my thesis—an XR Drone Simulator.\n\nEven though I’ve committed to Unity, the sheer number of configuration paths is overwhelming. My main goal? Stop compiling every five minutes. I need a real-time preview that actually works.\n\nHere is the breakdown of the \"battlefield\" so far:\n\n❌ The Contenders\n\nMeta XR Simulator (v85): Meta’s latest tool has a beautiful UI, but it’s incredibly unstable. 📉 It crashes constantly and takes the Unity Editor down with it. While the old v70 version was stable enough to use quest controllers for debugging, this new version is currently a \"no-go\" for me.\n\nUnity XR Interaction Toolkit (XRI) Simulator: This is a prefab-based simulator. It’s \"okay\" for basic testing, but mapping VR controllers to a keyboard and mouse feels like playing a piano with boxing gloves. ⌨️ Plus, it breaks the moment I try to use Meta Building Blocks or specific OVR features.\n\nMeta Oculus Link: This allows for full PCVR testing with hand tracking and passthrough. It’s the most feature-complete, but it’s a resource hog. 🔋 My CPU screams under the load, and I have to constantly take on and off the headset, which is a productivity killer.\n\n🏆 The Winner: Virtual Desktop (VDXR)\n\nThank goodness I bought this! 💳 By using Virtual Desktop (wired), I can stay inside the headset, view my desktop on a streaming screen, and jump into the preview instantly.\n\nThe Good: Using AV1 10-bit on an NVIDIA GPU makes the stream butter-smooth. 🧈\n\nThe Bad: My PC fans sound like a jet engine, and it still doesn't play nice with Meta’s Passthrough or Building Blocks (which often result in a black screen).\n\n🏗️ The SDK Dilemma: Unity XRI vs. Meta All-In-One\n\nI never expected the gap between SDKs to be this wide. In web development, moving from React to Svelte or Vue feels like a slight shift in syntax, but the core interfaces remain recognizable. In XR, Unity’s XR Interaction Toolkit (XRI) and the Meta All-In-One SDK feel like two entirely different planets. 🪐\n\nZero Portability: You can't just drop a Unity XR Rig into a Meta-focused project, and using Meta’s hand models in a pure Unity XRI project is a headache.\n\nThe Developer Trap: I originally wanted to go \"Full Meta\" for the features, but the development experience is so unstable (Meta XR Simulator crashes, Link is heavy).\n\nThe Worry: By choosing the \"friendly\" path (Unity XRI on my Mac), I fear I won't be able to easily adapt Meta’s advanced features (like their specific hand interactions or spatial anchors) later in the project. It’s a constant battle between current productivity and future features. ⚖️\n\n🍏 Bonus: The Mac Mini Setup\n\nTo stay productive on my Mac Mini, I tried to turn my PC into a secondary screen. 🖥️\n\nRustDesk: Didn't work. The mouse focus inside the Unity Editor was broken, making it impossible to navigate the scene.\n\nPigeonCast: This was the winner! 🕊️ I’m actually using it to type this post right now. While I can feel a slight delay in the keyboard, it’s the most stable AirPlay solution I’ve found.\n\nCurrent Strategy: A hybrid approach. Use the XR Simulator on the Mac for core logic and UI, use Unity MCP for development, then switch to the PC + Virtual Desktop for heavy-duty XR testing. Let's see if this workflow survives Week 15! 👨‍💻✨",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "xr",
+      "href": "/tag/xr"
+    }
+  ]
 }

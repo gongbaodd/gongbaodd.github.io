@@ -1,4 +1,23 @@
 {
   "file": "2021/06/11/one-yuan-function-integral",
-  "hash": "cd888a68ddfdb4a74ee04b3ea0eb790bce28a33588d95944787718645c98988a"
+  "hash": "cd888a68ddfdb4a74ee04b3ea0eb790bce28a33588d95944787718645c98988a",
+  "id": "2021/06/11/one-yuan-function-integral",
+  "href": "/book/2021/06/11/one-yuan-function-integral",
+  "title": "一元函数积分",
+  "date": "2021-06-10T21:00:00.000Z",
+  "content": "一元函数积分\n\n费马定理，$f(x)$在$x\\_0$处可导，且在$x\\_0$取得极值，必有$f'(x\\_0)=0$\n\n$x\\_0$处取极大值的充分条件，$f^{(n)}(x\\_0)<0$,n 为偶数\n\n$x\\_0$处取极小值的充分条件，$f^{(n)}(x\\_0)>0$,n 为偶数\n\n$(x\\_0,f(x\\_0))$为拐点的充分条件，二阶导为零，三阶导不为零（大于等于 3 的奇数阶导数不为零偶数阶为 0）\n\n洛必达公式，属于$\\frac{x \\to A}{x \\to A}$或者$\\frac{x \\to \\infty}{x \\to \\infty}$的极限之比等于它们导数的比\n\n存在铅锤渐近线则，$\\lim\\_{x \\to x\\_0^+} f(x) = \\infty$, x\\_0 一般是无定义点\n\n存在水平渐近线则，寻找无穷点的值是否趋近一值\n\n存在斜渐近线，$\\lim\\_{x \\to \\infty}\\frac{f(x)}{x}=k$不为零，$b=\\lim (f(x) - kx)$\n\n罗尔定理，$f(a)=f(b) \\rightarrow f'(\\xi)=0$\n\n拉格朗日中值定理, $f'(\\xi)=\\frac{f(b)-f(a)}{b-a}$\n\n柯西中值定理，$\\frac{f(b)-f(a)}{g(b)-g(a)}=\\frac{f'(\\xi)}{g'(\\xi)}$\n\n定积分精确定义，$\\int^1\\_0f(x)dx=\\lim\\_{n \\to \\infty}\\sum\\_{i=1}^nf(\\frac{i}{n})\\frac{1}{n}$\n\n积分中值定理,$\\int\\_a^bf(x)dx=f(\\xi)(b-a)$\n\n变限积分求导公式 $(\\int\\_{\\phi\\_1(x)}^{\\phi\\_2(x)}f(t)dt)'=f\\[\\phi\\_2(x)]\\phi\\_2'(x)-f\\[\\phi\\_1(x)]\\phi\\_1'(x)$\n\n积分换元法,$\\sqrt{a^2-x^2}$,令$x=a\\sin t$\n\n积分换元法,$\\sqrt{a^2+x^2}$,令$x=a\\tan t$(tan^2 + 1 = sec^2)\n\n积分换元法,$\\sqrt{x^2-a^2}$,令$x=a\\sec t$\n\n分部积分法$\\int u \\mathrm{d} v = uv - \\int v \\mathrm{d}u$\n\n两曲线围成的面积$\\int\\_a^b |y\\_1(x) - y\\_2(x)|dx$\n\n极坐标两射线围成面积$\\frac{1}{2}\\int\\_\\alpha^\\beta|r\\_1^2(\\theta) - r\\_2^2(\\theta)| \\mathrm{d} \\theta$\n\ny 围绕 x 轴旋转的体积$\\int\\_a^b\\pi y^2(x) \\mathrm{d} x$\n\n两曲线围绕 x 轴旋转的体积$\\pi\\int\\_a^b|y\\_1^2(x) - y\\_2^2(x)| \\mathrm{d} x$\n\n曲线围绕 y 轴旋转的体积$2\\pi\\int\\_a^bx|y(x)| \\mathrm{d} x$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#4f869a",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2025/07/15/game-activities",
+  "href": "/fe/2025/07/15/game-activities",
+  "title": "Game Activities in Android (Unity/Godot)",
+  "date": "2025-07-14T21:00:00.000Z",
+  "content": "Game Activities in Android (Unity/Godot)\n\nBoth Unity and Godot support Android plugins, and their projects can be embedded as Activities inside an Android app.\n\nFrom my experience (and I admit, I’m not great at linking dependencies), Unity has a more streamlined approach — but the final app experience still isn’t ideal.\n\nUnity\n\nThere’s an excellent, detailed guide here: Unity Android Integration: The Complete Guide.\n\nThe biggest issues I faced were related to SDK version mismatches and environment variable setup.\n\nYou can find the example project here. Unity also offers an official sample that can be used as a template.\n\nOne caveat: when running the Unity activity, you’ll still see the Unity splash screen every single time.\n\nGodot\n\nGodot recently added Android plugin support, but the documentation is still lacking.\n\nI couldn’t get the sample project to run, but in theory, the Godot player acts as a runner for .pck files, which feels simpler than Unity’s approach.\n\nConclusion\n\nIn practice, I think the WebGL route is used far more often than embedding game engines as Android activities.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "android",
+      "href": "/tag/android"
+    },
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    },
+    {
+      "label": "unity",
+      "href": "/tag/unity"
+    }
+  ]
 }

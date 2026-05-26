@@ -1,4 +1,14 @@
 {
   "file": "2018/05/28/inkscape",
-  "hash": "18076e8d64986e22e6135c134a78abad98fed4158e450356255ce0022af2eada"
+  "hash": "18076e8d64986e22e6135c134a78abad98fed4158e450356255ce0022af2eada",
+  "id": "2018/05/28/inkscape",
+  "href": "/fe/2018/05/28/inkscape",
+  "title": "Inkscape 简单使用",
+  "date": "2018-05-27T21:00:00.000Z",
+  "content": "Inkscape 简单使用\n\n改变画布为横版\n\nFile - Document Properties - LandScape\n\n旋转对象\n\n慢速度点击两次\n\n多选\n\n使用 shift 和 鼠标左键\n\n小试牛刀",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

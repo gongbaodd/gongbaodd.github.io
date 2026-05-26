@@ -17,5 +17,32 @@
   "colorSet": {
     "bgColor": "#6390ae",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/06/21/week-26-tallinnjs",
+  "href": "/plan/2025/06/21/week-26-tallinnjs",
+  "title": "Week 26: BabylonJS graphical development, Godot CI and TallinnJS",
+  "date": "2025-06-20T21:00:00.000Z",
+  "content": "Week 26: BabylonJS graphical development, Godot CI and TallinnJS\n\nBabylonJS Graphical Development\n\nThis week I tried Babylon Editor and Babylon Toolkit for a graphical development environment. I found Babylon Editor is more easier to use.\n\nGodot CI\n\nI was asked to attend a GameJam in China. My team wanted to use godot to make a landlord simulator. I used chickensoft-games/setup-godot to setup github action for this game. It supports godot v4+. It is much easier than Unity. ChickenSoft provides tons of godot toolkit that is nice to try.\n\nTallinnJS\n\nI attended TallinnJS this week. There are two lectures, one for telegram mini app, the other is CSS for responsive design. Loud shout to Kateryna's blog. And Utopia a website to test responsive design.\n\nRapidAPI\n\nI was doing a research for a project, which probably needs a scrapper. I found RapidAPI. The free version allows 2k calls a month. It is enough for me, but I am not sure about the project.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "babylonjs",
+      "href": "/tag/babylonjs"
+    },
+    {
+      "label": "godot",
+      "href": "/tag/godot"
+    },
+    {
+      "label": "tallinnjs",
+      "href": "/tag/tallinnjs"
+    },
+    {
+      "label": "rapidapi",
+      "href": "/tag/rapidapi"
+    }
+  ]
 }

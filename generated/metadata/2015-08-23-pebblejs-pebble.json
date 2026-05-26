@@ -1,4 +1,19 @@
 {
   "file": "2015/08/23/pebblejs-pebble",
-  "hash": "6987f975b00ac28a1c3335edac4fd929e6fef96b830f4014a7c1acc74dcfc110"
+  "hash": "6987f975b00ac28a1c3335edac4fd929e6fef96b830f4014a7c1acc74dcfc110",
+  "id": "2015/08/23/pebblejs-pebble",
+  "href": "/tech/2015/08/23/pebblejs-pebble",
+  "title": "Pebble JS ⌚",
+  "date": "2015-08-22T21:00:00.000Z",
+  "content": "Pebble JS ⌚\n\n这个月初，任性买了刚发布的pebble time，一直还没写个应用，这个周末抽出时间看看。\n\n开头\n\npebble的应用可以用C和Node开发，开发工具也可以使用cloudpebble（墙内用户伤不起）或者下载sdk离线开发。\n\n安装SDK\n\nmac安装pebble sdk太简单了\n\n网路顺畅的话，安装就完成了。\n\n建立PebbleJS工程\n\n离线建C项目只要运行pebble new-project xxx就好，但是js项目需要把github上的项目https://github.com/pebble/pebblejs.git clone下来\n\n文件目录\n\npebble应用的配置文件在appinfo.json里面，逻辑代码都写在src下的js/app.js里\n\nUI module\n\n引入ui模块\n\nWindow\n\n效果如图：\n\nCard\n\n创建一个卡片\n\n效果如图\n\nCard还有body和icon属性\n\nMenu\n\n编译\n\n安装",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "pebble",
+      "href": "/tag/pebble"
+    }
+  ]
 }

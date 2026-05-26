@@ -1,4 +1,19 @@
 {
   "file": "2025/07/11/week-29-game-ai",
-  "hash": "6672c1380265e1f66373ac20a75a7046f5f415daeb08c54b49ec065ea03b8c71"
+  "hash": "6672c1380265e1f66373ac20a75a7046f5f415daeb08c54b49ec065ea03b8c71",
+  "id": "2025/07/11/week-29-game-ai",
+  "href": "/plan/2025/07/11/week-29-game-ai",
+  "title": "🤖 Week 29: Game AI",
+  "date": "2025-07-10T21:00:00.000Z",
+  "content": "🤖 Week 29: Game AI\n\nThis week, I finally finished Unity's AI course. The crowd simulation and Goal Driven Behavior sections were really fun and insightful!\n\nLearning Agents in UE5\n\nAfter Unity, I explored Unreal Engine’s Learning Agents.\n\nUsing Blueprints can be a bit tedious… I still prefer C++ for more control 😅.\n\nML-Agents in Unity\n\nML-Agents is a Unity package that makes training AI agents easier.\n\nHighly recommend checking out Code Monkey’s tutorials:\n\nHow to use Machine Learning AI in Unity! (ML-Agents)\n\nTeach your AI! Imitation Learning with Unity ML-Agents!\n\nIt’s amazing to see agents learn and adapt — makes game worlds feel alive! 🚀",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "ai",
+      "href": "/tag/ai"
+    }
+  ]
 }

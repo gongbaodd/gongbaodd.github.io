@@ -1,4 +1,14 @@
 {
   "file": "2017/05/04/2webpack2-treeshaking-exttextplugin",
-  "hash": "ca98879867ee0a8414654a76a721ae9bdd1c99d0b3bf382c9aee28c8daa39da1"
+  "hash": "ca98879867ee0a8414654a76a721ae9bdd1c99d0b3bf382c9aee28c8daa39da1",
+  "id": "2017/05/04/2webpack2-treeshaking-exttextplugin",
+  "href": "/fe/2017/05/04/2webpack2-treeshaking-exttextplugin",
+  "title": "webpack2",
+  "date": "2017-05-03T21:00:00.000Z",
+  "content": "webpack2\n\ntree-shaking（树摇）\n\nes6 module里面详述了树摇的的实现，但是webpack1始终没能实现，后来rollup实现了，于是大量框架转用rollup，去年webpack2发布，带来的就是这个tree-shaking功能。\n\nAST树\n\n所有的代码，编译或者执行之前都会被转义成AST树，\n那么AST树是啥\n\n代码\n\n声明表达式\n\nlet 声明\n\n变量名 a\n\n赋值表达式\n\n加法运算\n\n常量1\n\n常量1\n\n声明表达式\n\nlet 声明\n\n变量名 b\n\nmodule的解析\n\nwebpack会将代码解析成AST树，并发现bar并没有用过，就不会被打包进去。\n\nextTextPlugin\n\n这是webpack的一个插件，可以解析出代码里面的css单独打包。这样css可以和组件放在一起了。",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

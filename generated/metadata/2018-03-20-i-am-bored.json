@@ -8,5 +8,15 @@
   "colorSet": {
     "bgColor": "#9f5a64",
     "titleColor": "--mantine-color-red-3"
-  }
+  },
+  "id": "2018/03/20/i-am-bored",
+  "href": "/fe/2018/03/20/i-am-bored",
+  "title": "好无聊",
+  "date": "2018-03-19T22:00:00.000Z",
+  "content": "好无聊\n\n最近工作很忙、还要雅思考试、还感冒了，真是心力俱疲。\n\nlena\n\n但是这些都是打不倒我的！！！！",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": []
 }

@@ -1,4 +1,27 @@
 {
   "file": "2024/07/11/android-14",
-  "hash": "aa503439e872f21910f9b9d0108528b968bace2d3d4b0a4781c0009f758ccc06"
+  "hash": "aa503439e872f21910f9b9d0108528b968bace2d3d4b0a4781c0009f758ccc06",
+  "id": "2024/07/11/android-14",
+  "href": "/tech/2024/07/11/android-14",
+  "title": "Android 14",
+  "date": "2024-07-10T21:00:00.000Z",
+  "content": "Android 14\n\nThis week I plan to flash my old phone and tablet to Android 14. They were both too old to have an official update.\n\nMix2s\n\nI am using a Galaxy Watch, meaning that I need to have an android phone to config. So I always have my Xiaomi Mix2s with me. It's android version stopped at 10. But it has a lot custom ROMs, like lineageOS. With the help of lineageOS, I can upgrade Mix2s to Android 14. There are many successful cases online, I referred this article with its flash tools and this article for Google Apps.\n\nFirstly, using the official tool to unlock BootLoader lock. This allows you to flash an unofficial ROM. You can follow this blog post.\n\nThen, power off the phone. While connecting the PC, press both power on and volume down to got into FASTBOOT.\n\nIn FASTBOOT mode, we can flash recovery into the phone, run the following code one by one on the PC terminal.\n\nThen, press volume Up and run fastboot reboot. into recovery. In the factory reset menu, format every partition one by one.\n\nThen, in Apply update, choose Apply from ADB. Flash the system from PC terminal.\n\nOkay, now the system is ready. It's Google time. The GAPPs for LineageOS is provided in its wiki.\n\nFinally, Pair the Watch with the phone. I failed a lot, here. Eventually I reset my watch to make it work. However, I think it may because that I did not open the body tracker permission on Google Play.\n\nAndroid 14 is unexpectedly fluent on this 6 years old phone. Personally, I like the material you design. It generates an unique system theme for every wallpapers. And you can choose how the icons look. Switching a theme is as easy as pressing some buttons.\n\nSamsung Tab A 8 (P200)\n\nFor P200, the choices can be little. I only find one ROM, which uses a remake version of crDroid called crDroid\\_gsi. Here is a video about the ROM. After trying all the releases, I only found v10.0 is workable. Sadly, its wifi firmware constantly fail lead me to flash back to official ROM(Android 11).\n\nFirstly, Unlock the OEM lock. This option is in the developer options and only work when the device is online.\n\nThen, power off the tablet, pressing both volume Up and volume Down to connect to the PC, the screen will go fully blue. This is extremely hard, you can follow this youtube link.\n\nLong press volume Up to unlock the OEM lock, when you go back to the developer options, the unlock OEM lock should be grayed.\n\nSamsung uses Odin as its flashing tool, I didn't find the link in the official site, I found it in this blog post.\n\nFor the recovery, I used TWRP(TeamWin) as the recovery, there is an unofficial build version on XDA. The source code is on github.\n\nUse Odin to flash TWRP as an AP package. Then run adb restart recovery to go to TWRP, to install system image.\n\nAndroid 14 runs smoothly on the tablet, except the wifi problem. crDroid add a lot custom options like reboot to bootloader, reboot to recovery. It was useful, due to the wifi problem, I still have to go back to android 11.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "android 14",
+      "href": "/tag/android 14"
+    },
+    {
+      "label": "lineageos",
+      "href": "/tag/lineageos"
+    },
+    {
+      "label": "crdroid",
+      "href": "/tag/crdroid"
+    }
+  ]
 }

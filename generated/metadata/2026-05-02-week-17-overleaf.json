@@ -1,4 +1,14 @@
 {
   "file": "2026/05/02/week-17-overleaf",
-  "hash": "9e1279869dfe592ed41aa73db908c3bf341b263e89a10ebd125e7f4bfb958d75"
+  "hash": "9e1279869dfe592ed41aa73db908c3bf341b263e89a10ebd125e7f4bfb958d75",
+  "id": "2026/05/02/week-17-overleaf",
+  "href": "/tech/2026/05/02/week-17-overleaf",
+  "title": "Week 17: Overleaf",
+  "date": "2026-05-01T21:00:00.000Z",
+  "content": "Week 17: Overleaf\n\nWell, I found this editor that supports full Latex support and also can be hosted on a serf-service.\n\nThe original idea is to use it so that my supervisor can review my result with it. I tried to host it i=on a 8GB server. It can not fully support all the latex features. While the online service can, although it is not a free version as I have a such long thesis.\n\nEventually, I wrote my thesis with Latex locally, but the Overleaf editor is still a recommandation.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

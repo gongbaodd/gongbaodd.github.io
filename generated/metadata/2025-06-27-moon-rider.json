@@ -8,5 +8,20 @@
   "colorSet": {
     "bgColor": "#ab658e",
     "titleColor": "--mantine-color-grape-3"
-  }
+  },
+  "id": "2025/06/27/moon-rider",
+  "href": "/tech/2025/06/27/moon-rider",
+  "title": "Moon Rider",
+  "date": "2025-06-26T21:00:00.000Z",
+  "content": "Moon Rider\n\nI’ve been playing the open-source VR rhythm game Moon Rider.\nToday I peeked into its source code and discovered that its song maps actually come from BeatSaver.\n\nThis means that with BeatSaver’s huge collection of custom maps, it’s possible to create all kinds of rhythm games—VR or otherwise.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "rhythm-game",
+      "href": "/tag/rhythm-game"
+    }
+  ]
 }

@@ -1,4 +1,31 @@
 {
   "file": "2023/09/30/39th-week-apple-watch",
-  "hash": "4a1e4346b32fc1025c971e173cbecb16f02d15f5cf75c378a76494d6c95ae16e"
+  "hash": "4a1e4346b32fc1025c971e173cbecb16f02d15f5cf75c378a76494d6c95ae16e",
+  "id": "2023/09/30/39th-week-apple-watch",
+  "href": "/plan/2023/09/30/39th-week-apple-watch",
+  "title": "39th Week - Apple Watch",
+  "date": "2023-09-29T21:00:00.000Z",
+  "content": "39th Week - Apple Watch\n\nApple Watch\n\nI bought an Apple Watch SE2. Yes, it's been a long time since I used a real smart watch. I used pebble time for a long time. It was still my top 1 smart watch. I want to have a round watch, like Pixel Watch, but it doesn't support iOS. In iOS, the Apple Watch is the only choice. This year, Apple released Watch OS 10, which changed it's user experience. Users can freely switch app view, the notification view and home with a swipe. I like it very much. I have a small wrist, so I choose the 40mm version. Thank god I chose this one, I can't imagine how big an ultra version is.\n\nSonoma on VMware\n\nSince I have sold my hackintosh, I have to build a Mac on VMware. I found the mac in VM runs frequently on Nobara OS. I bumped to a kernel problem, fixed following the instruction in the forum. Also a Could not open /dev/vmmon: No such file or directory. issue, found solution here.\n\nAfter Ventura, the Mac in the VM can not connect the network, solution is here.\n\nNext week\n\nI will plan my trip to Hong Kong. Finish my CV and plan to Thailand.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "vmware",
+      "href": "/tag/vmware"
+    },
+    {
+      "label": "mac",
+      "href": "/tag/mac"
+    },
+    {
+      "label": "apple watch",
+      "href": "/tag/apple watch"
+    },
+    {
+      "label": "sonoma",
+      "href": "/tag/sonoma"
+    }
+  ]
 }

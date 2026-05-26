@@ -1,4 +1,19 @@
 {
   "file": "2020/01/04/gitbash",
-  "hash": "f6cb7ffc491f0aa7d93aefd6dbc0698214c0f6100fca5c5ee1eba5c16cf6fe5a"
+  "hash": "f6cb7ffc491f0aa7d93aefd6dbc0698214c0f6100fca5c5ee1eba5c16cf6fe5a",
+  "id": "2020/01/04/gitbash",
+  "href": "/tech/2020/01/04/gitbash",
+  "title": "GitBash 增加环境变量",
+  "date": "2020-01-03T22:00:00.000Z",
+  "content": "GitBash 增加环境变量\n\nWSL 的运行速度比较慢，所以我在 windows 下面的开发很大一部分还是在 GitBash 下面，GitBash 基于 mingw 开发，所以直接修改.bashrc 即可\n\n这里注意下，因为 python 和 Ubuntu 是从应用商店安装的，直接修改 PATH 变量会有权限问题，只能利用 winpty 调用。",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": [
+    {
+      "label": "git",
+      "href": "/tag/git"
+    }
+  ]
 }

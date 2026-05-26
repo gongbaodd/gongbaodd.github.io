@@ -1,4 +1,19 @@
 {
   "file": "2025/01/03/2024-retrospective",
-  "hash": "789f1b4e3e0812460390805ed8852c2903946ba02b5a91b83a349288c4334cec"
+  "hash": "789f1b4e3e0812460390805ed8852c2903946ba02b5a91b83a349288c4334cec",
+  "id": "2025/01/03/2024-retrospective",
+  "href": "/plan/2025/01/03/2024-retrospective",
+  "title": "2024 Retrospective",
+  "date": "2025-01-02T22:00:00.000Z",
+  "content": "2024 Retrospective\n\nThailand\n\nThe first half year, I was working in Thailand. Recently, there is a trend that the developers are moving to Thailand to work individually.\nThailand is a nice place to work, you can live in a nice condo with a swimming pool and a gym for a rent that only afford a small room in Beijing or Shanghai.\nBut I still have to work very hard to find the ballance between work and life.\n\nMobile develop\n\nThis year, especially the first half, I was working on mobile development. Different to the usual. I checked not only react native, but also android kotlin and iOS swift.\nMajorly because I was planning to become an iOS developer, but I failed on applying one. I think I will try again in 2025. I will buy a mac mini this year,\nbut I still wait the result of the Apple Intelligence.\n\nWearable develop\n\nAt the same time, I developed some apps on Apple Watch and Galaxy Watch. This year, I bought the Galaxy Watch 6 Classic, because I can buy a global version in Thailand.\nI quite enjoy the Galaxy Watch, especially in the end of this year, this watch finally support the double tap gesture.\nBut I didn't find the develop document.\n\nVR/XR develop\n\nThis is the major work of my year. I tried MRTK, microsoft just stopped supporting it. I am not sure if they are regretting that...\nThe second half of the year, I tried to develop a Vision pro application.\n\nTried some VR frameworks, like Unity, Godot, Wonderland Engine and babylon.js.\n\nEstonia\n\nThe last 4 months, I was studying games in Estonia. I will study in Estonia until 2026.\n\nWhat I finished in 2023 expectation\n\nwent to Thailand\n\nmade a podcast\n\nfinished BFEdev\n\nworked with not only react native but also many other mobile development\n\ntried anabolics, learned how to do tattoos\n\nwent to Estonia for further study in VR/XR\n\nWhat I expect $\n\ngo through Unity Essentials\n\ngo through Unreal Engine Essentials\n\ntry to attend GameDEV.js game jam\n\ntry to attend JS13K game jam\n\ntry to make a XR game\n\nfind a job in Estonia",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "retrospective",
+      "href": "/tag/retrospective"
+    }
+  ]
 }

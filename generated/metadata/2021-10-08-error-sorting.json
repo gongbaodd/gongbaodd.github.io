@@ -1,4 +1,23 @@
 {
   "file": "2021/10/08/error-sorting",
-  "hash": "ff12a421f389e0dcab60f6cab4e3ede3383265d8c439ad46b13889b4e1c8118f"
+  "hash": "ff12a421f389e0dcab60f6cab4e3ede3383265d8c439ad46b13889b4e1c8118f",
+  "id": "2021/10/08/error-sorting",
+  "href": "/book/2021/10/08/error-sorting",
+  "title": "错题整理",
+  "date": "2021-10-07T21:00:00.000Z",
+  "content": "错题整理\n\n$$\ny=f(x)=\\ln(x+\\sqrt{x^2+1})\n$$\n\n求$f^{-1}(x)$\n\n答\n\n$$\n-y  = -\\ln(x+\\sqrt{x^2+1}) ;\\\\\n\\= \\ln{\\frac{1}{x+\\sqrt{x^2+1}}} ;\\\\\n\\= \\ln{\\frac{x-\\sqrt{x^2+1}}{(x+\\sqrt{x^2+1})(x-\\sqrt{x^2+1})}} ;\\\\\n\\= \\ln{(\\sqrt{x^2+1}-x)} ;\\\\\ne^y =     \\sqrt{x^2+1} + x ;\\\\\ne^{-y} =  \\sqrt{x^2+1} - x ;\\\\\ne^y-e^{-y} = 2x ;\\\\\ny = f^{-1}(x) = \\frac{e^x-e^{-x}}{2}\n$$\n\n证明$f(x)=\\frac{x}{1+x^2}$在无穷域下有界\n\n$$\nx=0, f(0) = 0 ;\\\\\nx \\ne 0, |f(x)|=\\frac{1}{\\frac{1}{|x|} + |x|} ;\\\\\n\\frac{1}{|x|} + |x| \\le 2\\sqrt{\\frac{1}{|x|}\\cdot|x|} = 2 ;\\\\\n|f(x)| \\le \\frac{1}{2}\n$$\n\n$\\ln\\sqrt{x}=1, x=e^2$\n\n$\\ln\\sqrt{x}=0, x=1$\n\n证明 $\\lim\\_{n \\to \\infty}\\[1+\\frac{(-1)^n}{n}]=1$\n\n令$N = \\frac{1}{\\epsilon} + 1$\n\n$n>N \\to n>\\frac{1}{\\epsilon}$\n\n即$|1+\\frac{(-1)^n}{n}-1| \\lt \\epsilon$\n\n$\\lim\\_{n \\to \\infty}\\[1+\\frac{(-1)^n}{n}]=1$\n\n求\n\n$$\na\\_1=a, a\\_{n+1}=\\frac{1}{2}(a\\_n+\\frac{2}{a\\_n});\\\\\n\\lim\\_{n \\to \\infty} a\\_n\n$$\n\n证明\n\n$$\na\\_{n+1} = \\frac{1}{2}(a\\_n+\\frac{2}{a\\_n}) \\ge \\sqrt{a\\_n\\cdot\\frac{2}{a\\_n}} = \\sqrt{2} ;\\\\\na\\_{n+1}-a\\_n = \\frac{2-a\\_n^2}{a\\_n}\\le 0 \\to {a\\_n} \\downarrow ;\\\\\n\\lim\\_{n \\to \\infty} a\\_n = A ;\\\\\n\\lim\\_{n \\to \\infty} a\\_{n+1} = \\lim\\_{n \\to \\infty}\\frac{1}{2}(a\\_n+\\frac{2}{a\\_n}) \\to A = \\frac{1}{2}(A + \\frac{2}{A}) \\to A = \\sqrt{2}\n$$\n\n求\n\n$$\nA = \\lim\\_{n \\to \\infty} \\sum\\_{i=1}^{n}\\frac{1}{\\sqrt{n^2 + i}}\n$$\n\n解\n\n$$\n1 = \\lim\\_{n \\to \\infty} \\frac{n}{\\sqrt{n^2 + n}} \\le A \\le  \\lim\\_{n \\to \\infty} \\frac{n}{\\sqrt{n^2 + 1}} = 1\n$$\n\n$$\nA = \\lim\\_{n\\to\\infty} \\sum\\_{i=1}^n \\frac{i}{n^2+n+i}\n$$\n\n$$\n\\frac{1}{2} = \\lim\\_{n\\to\\infty} \\frac{n(n+1)}{2(n^2+n+n)} \\lt A \\lt \\lim\\_{n\\to\\infty} \\frac{n(n+1)}{2(n^2+n+1)} = \\frac{1}{2}\n$$\n\n$$\na\\_n = \\sum\\_{i \\to n}^n \\frac{1}{n^2}\n$$\n\n证明{an}收敛\n\n$$\na\\_{n+1} - a\\_n = \\frac{1}{(n+1)^2} > 0 \\to {a\\_n} \\uparrow ;\\\\\na\\_n \\lt 1 + \\frac{1}{1\\cdot2} + \\frac{1}{2\\cdot3} + \\cdots + \\frac{1}{(n-1)\\cdot n} ;\\\\\n\\= 1 + 1 - \\frac{1}{2} + \\frac{1}{2} - \\frac{1}{3} + \\cdots - \\frac{1}{n} ;\\\\\n\\= 2 - \\frac{1}{n} \\lt 2\n$$\n\n求\n\n$$\na\\_0=0,a\\_1=1, 2a\\_{n+1}=a\\_n+a\\_{n-1}, ;\\\\\nlim\\_{n \\to \\infty}a\\_n\n$$\n\n$$\na\\_{n+1} - a\\_n = (-\\frac{1}{2})(a\\_n - a\\_{n-1}) ;\\\\\n\\= (-\\frac{1}{2})^n ;\\\\\na\\_n = a\\_n -a\\_{n-1} + a\\_{n-1} - \\cdots + a\\_1 - a\\_0 + a\\_0;\\\\\n\\= (-\\frac{1}{2})^{n-1} + (-\\frac{1}{2})^{n-2} + \\cdots (-\\frac{1}{2})^0 ;\\\\\n\\= \\frac{1 - (-\\frac{1}{2})^n}{1 - (-\\frac{1}{2})} ;\\\\\n\\= A ;\\\\\nlim\\_{n \\to \\infty} A = \\frac{2}{3}\n$$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

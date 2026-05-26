@@ -1,4 +1,23 @@
 {
   "file": "2021/08/18/multi-function-points",
-  "hash": "72cc97c7107e0480071d8a8e282428bb1411d587cfdb9a8092e6e4ba8d1ae83a"
+  "hash": "72cc97c7107e0480071d8a8e282428bb1411d587cfdb9a8092e6e4ba8d1ae83a",
+  "id": "2021/08/18/multi-function-points",
+  "href": "/book/2021/08/18/multi-function-points",
+  "title": "多元函数积分学",
+  "date": "2021-08-17T21:00:00.000Z",
+  "content": "多元函数积分学\n\n向量的运算\n\n$$\n(a\\_x,a\\_y,a\\_z)\\cdot(b\\_x,b\\_y,b\\_z)=a\\_xb\\_x + a\\_yb\\_y + a\\_zb\\_z\n$$\n\n$$\n\\bold a \\cdot \\bold b = |\\bold a||\\bold b| \\cos \\theta\n$$\n\n如果$\\bold a \\cdot \\bold b = 0$则 ab 互相正交\n\n$$\n|\\bold a \\times \\bold b| = |\\bold a||\\bold b|\\sin \\theta\n$$\n\n$$\n\\mathrm{Prj}\\_{\\bold b}\\bold a=\\frac{\\bold a \\cdot \\bold b}{|\\bold b|}\n$$\n\n点$P\\_0(x\\_0,y\\_0,z\\_0)$到平面$Ax+By+Cz+D=0$的距离是\n$\\frac{|Ax\\_0+By\\_0+Cz\\_0+D|}{\\sqrt{A^2+B^2+C^2}}$\n\n球面$x^2 + y^2 + z^2 = a^2$\n\n单叶双曲面（腰鼓形）$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}-\\frac{z^2}{c^2}=1$\n\n双叶双曲面 $\\frac{x^2}{a^2}-\\frac{y^2}{b^2}-\\frac{z^2}{c^2}=1$\n\n抛物面$x^2+y^2=z$\n\n锥面$z=\\sqrt{x^2+y^2}$\n\n马鞍面$z=xy$\n\n方向导数和梯度的关系$\\frac{\\partial u}{\\partial \\bold l} \\vert\\_{p\\_0}=|\\bold{grad} u\\vert\\_{p\\_0}|\\cos \\theta$\n\n散度 $\\mathrm{div} \\bold{A}=\\frac{\\partial{P}}{\\partial{x}}+\\frac{\\partial{Q}}{\\partial{y}}+\\frac{\\partial{R}}{\\partial{z}}$\n\n旋度 $\\mathrm{rot} \\bold{A}=\\begin{vmatrix} \\bold{i}& \\bold{j} & \\bold{k} \\ \\frac{\\partial}{\\partial{x}} & \\frac{\\partial}{\\partial{y}} & \\frac{\\partial}{\\partial{z}} \\ P & Q & R \\end{vmatrix}$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

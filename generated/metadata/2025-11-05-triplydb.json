@@ -8,5 +8,44 @@
   "colorSet": {
     "bgColor": "#a48466",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/11/05/triplydb",
+  "href": "/plan/2025/11/05/triplydb",
+  "title": "Week 46: Exploring WikiData, TriplyDB & VTON",
+  "date": "2025-11-04T22:00:00.000Z",
+  "content": "Week 46: Exploring WikiData, TriplyDB & VTON\n\nThis week, I dived into two interesting projects: using WikiData for garment exploration with VTON models, and building a small Pokémon game with TriplyDB. Here’s a recap of my experiments and findings.\n\nPart 1: WikiData & Virtual Try-On (VTON) 👗\n\nMy first idea was to search garments in WikiData and use a VTON model to generate a “put-on” result. The notebook for this experiment is here.\n\nSetup\n\nFirst, install SPARQL wrapper for Python:\n\nYou can test SPARQL queries interactively here.\n\nSPARQL Query Template\n\nPython Code Example\n\nExample: Querying Jackets 🧥\n\nYou can see a table of jackets with images, countries, and other metadata.\n\nVTON Model Test\n\nI used RunningHub to test the FLUX CAT VTON model.\n\nConclusion:\n\nWikiData has limited clothing data; sufficient for a game prototype but not for a full-fledged tool.\n\nFLUX CAT VTON takes 2–10 minutes to generate, and results can be inconsistent. It’s too slow for real-time API use.\n\nPart 2: Pokémon Game with TriplyDB 🎮⚡\n\nAfter experimenting with garments, I switched to TriplyDB to make a Pokémon game. The notebook is here.\n\nListing Pokémon from the Database\n\nThis generates a table with Pokémon names, images, and types.\n\nCollecting Pokémon Types\n\nTypes found:\n\n\\['Bug Type', 'Dark Type', 'Dragon Type', 'Electric Type', 'Fighting Type', 'Fire Type', 'Flying Type', 'Ghost Type', 'Grass Type', 'Ground Type', 'Ice Type', 'Normal Type', 'Poison Type', 'Psychic Type', 'Rock Type', 'Steel Type', 'Water Type']\n\nSearching Pokémon by Type 🐉\n\nExample: List 10 Dragon Type Pokémon\n\nConclusion:\n\nWith these queries, a simple Pokémon game can be made quickly.\n\nTriplyDB provides structured data with images and types, making it ideal for game prototyping.",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "wikidata",
+      "href": "/tag/wikidata"
+    },
+    {
+      "label": "triplydb",
+      "href": "/tag/triplydb"
+    },
+    {
+      "label": "sparql",
+      "href": "/tag/sparql"
+    },
+    {
+      "label": "vton",
+      "href": "/tag/vton"
+    },
+    {
+      "label": "runninghub",
+      "href": "/tag/runninghub"
+    },
+    {
+      "label": "pokemon",
+      "href": "/tag/pokemon"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

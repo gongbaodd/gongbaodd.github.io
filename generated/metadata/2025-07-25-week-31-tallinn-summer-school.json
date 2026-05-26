@@ -17,5 +17,15 @@
   "colorSet": {
     "bgColor": "#927b69",
     "titleColor": "--mantine-color-dark-8"
-  }
+  },
+  "id": "2025/07/25/week-31-tallinn-summer-school",
+  "href": "/plan/2025/07/25/week-31-tallinn-summer-school",
+  "title": "Week 31: Tallinn Summer School",
+  "date": "2025-07-24T21:00:00.000Z",
+  "content": "Week 31: Tallinn Summer School\n\nAs I mentioned before, I got a free chance to attend Tallinn Summer School! I chose the class \"Experimental Interaction Design\".\n\nIn this course, I’m working on a wrist-worn hearing aid that notifies the user of emergencies via vibration. 🚨\n\nNext week, I plan to use Edge Impulse to train a model that can detect ambulance sirens — pretty excited to see how it turns out! 😄",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": []
 }

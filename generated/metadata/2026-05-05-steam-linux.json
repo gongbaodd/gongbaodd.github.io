@@ -1,4 +1,14 @@
 {
   "file": "2026/05/05/steam-linux",
-  "hash": "7b64faf3ace26bd50d0f005f75fc62dbd5bb85d17e97345fb0b39bc381801524"
+  "hash": "7b64faf3ace26bd50d0f005f75fc62dbd5bb85d17e97345fb0b39bc381801524",
+  "id": "2026/05/05/steam-linux",
+  "href": "/tech/2026/05/05/steam-linux",
+  "title": "Steam Segmentfault on CachyOS",
+  "date": "2026-05-04T21:00:00.000Z",
+  "content": "Steam Segmentfault on CachyOS\n\nIt is because in Nvidia 500 driver uses GSP (GPU System Processor). It moves driver logic to GPU. While Steam reads from the old logic and hangs out.\n\nJust close that feature.\n\nUpdate kernel and reboot.",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

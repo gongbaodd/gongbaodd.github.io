@@ -1,4 +1,14 @@
 {
   "file": "2017/12/23/p2p",
-  "hash": "c571605fa74e13dd18ac3d29032298c47313efabe5ecf502f362e60e1617a4e0"
+  "hash": "c571605fa74e13dd18ac3d29032298c47313efabe5ecf502f362e60e1617a4e0",
+  "id": "2017/12/23/p2p",
+  "href": "/tech/2017/12/23/p2p",
+  "title": "P2P实现不死网络",
+  "date": "2017-12-22T22:00:00.000Z",
+  "content": "P2P实现不死网络",
+  "category": {
+    "label": "tech",
+    "href": "/tech"
+  },
+  "tags": []
 }

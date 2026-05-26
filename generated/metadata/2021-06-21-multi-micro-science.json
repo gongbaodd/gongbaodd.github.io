@@ -1,4 +1,23 @@
 {
   "file": "2021/06/21/multi-micro-science",
-  "hash": "332d486ab98fd62e121613bf9cc2745f61edb3274b198c5a2e811a1ca148ef6e"
+  "hash": "332d486ab98fd62e121613bf9cc2745f61edb3274b198c5a2e811a1ca148ef6e",
+  "id": "2021/06/21/multi-micro-science",
+  "href": "/book/2021/06/21/multi-micro-science",
+  "title": "多元微分学",
+  "date": "2021-06-20T21:00:00.000Z",
+  "content": "多元微分学\n\n全微分 dz\n\n$$\n\\mathrm{d}z = \\frac{\\partial z}{\\partial x} \\Delta x + \\frac{\\partial z}{\\partial x} \\Delta y =  \\frac{\\partial z}{\\partial x} \\mathrm{d} x + \\frac{\\partial z}{\\partial x} \\mathrm{d} y\n$$\n\n$$\nz = f\\[u(t), v(t)]\n$$\n\n求$\\frac{\\mathrm{d} z}{\\mathrm{d} t}$\n\n$$\n\\frac{\\mathrm{d} z}{\\mathrm{d} t} =\n\\frac{\\partial z}{\\partial u}\\frac{\\mathrm{d} u}{\\mathrm{d} t} + \\frac{\\partial z}{\\partial v}\\frac{\\mathrm{d} v}{\\mathrm{d} t}\n$$\n\n$$\nz = f\\[u(x, y), v(x, y)]\n$$\n\n求$\\frac{\\partial z}{\\partial x}$\n\n$$\n\\frac{\\partial z}{\\partial x} =\n\\frac{\\partial z}{\\partial u}\n\\frac{\\partial u}{\\partial x} +\n\\frac{\\partial z}{\\partial v}\n\\frac{\\partial v}{\\partial x}\n$$\n\n$$\nz = f\\[u(x, y), v(y)]\n$$\n\n求$\\frac{\\partial z}{\\partial y}$\n\n$$\n\\frac{\\partial z}{\\partial y} =\n\\frac{\\partial z}{\\partial u}\n\\frac{\\partial u}{\\partial y} +\n\\frac{\\partial z}{\\partial v}\n\\frac{\\partial v}{\\mathrm{d} y}\n$$\n\n$$\nF(x,y),\n\\frac{\\mathrm{d} y}{\\mathrm{d} x}\n$$\n\n$$\n\\frac{\\mathrm{d} y}{\\mathrm{d} x} =\n\n\\frac{F\\_x'}{F\\_y'}\n$$\n\n$$\nF(x,y,z),\n\\frac{\\partial z}{\\partial x}\n$$\n\n$$\n\\frac{\\partial z}{\\partial x} =\n\n\\frac{F\\_x'}{F\\_z'}\n$$\n\nf(x,y)在 P 点取极值的必要条件是\n\n$$\nf\\_x'(x\\_0, y\\_0) = 0,\nf\\_y'(x\\_0, y\\_0) = 0\n$$\n\nf(x,y)在 P 点取极值的充分条件是\n\n$$\n\\begin{cases}\nf\\_{xx}''(x\\_0, y\\_0) = A \\\\\nf\\_{xy}''(x\\_0, y\\_0) = B \\\\\nf\\_{yy}''(x\\_0, y\\_0) = C \\\\\n\\end{cases},\nB^2-AC < 0\n$$\n\n$$\n\\begin{cases}\nf\\_{xx}''(x\\_0, y\\_0) = A \\\\\nf\\_{xy}''(x\\_0, y\\_0) = B \\\\\nf\\_{yy}''(x\\_0, y\\_0) = C \\\\\n\\end{cases},\nB^2-AC < 0, A < 0\n$$\n\nf(x,y)在该点取极大值\n\n$$\n\\begin{cases}\nf\\_{xx}''(x\\_0, y\\_0) = A \\\\\nf\\_{xy}''(x\\_0, y\\_0) = B \\\\\nf\\_{yy}''(x\\_0, y\\_0) = C \\\\\n\\end{cases},\nB^2-AC < 0, A > 0\n$$\n\nf(x,y)在该点取极小值\n\n$$\n\\begin{cases}\nf\\_{xx}''(x\\_0, y\\_0) = A \\\\\nf\\_{xy}''(x\\_0, y\\_0) = B \\\\\nf\\_{yy}''(x\\_0, y\\_0) = C \\\\\n\\end{cases},\nB^2-AC > 0\n$$\n\nf(x,y)在该点非极值\n\n$$\n\\begin{cases}\nf\\_{xx}''(x\\_0, y\\_0) = A \\\\\nf\\_{xy}''(x\\_0, y\\_0) = B \\\\\nf\\_{yy}''(x\\_0, y\\_0) = C \\\\\n\\end{cases},\nB^2-AC = 0\n$$\n\n无法判断\n\n$$\n\\begin{cases}\n\\phi(x,y,z) = 0 \\\\\n\\psi(x,y,z) = 0 \\\\\n\\end{cases}\n$$\n\n求 u=f(x,y,z)在上面条件下的最值，列出拉格朗日乘数公式\n\n$$\nF(x,y,z,\\lambda, \\mu),\n\\begin{cases}\nF\\_x' = f\\_x' + \\lambda\\phi\\_x' + \\mu\\psi\\_x' = 0 \\\\\nF\\_y' = f\\_y' + \\lambda\\phi\\_y' + \\mu\\psi\\_y' = 0 \\\\\nF\\_z' = f\\_z' + \\lambda\\phi\\_z' + \\mu\\psi\\_z' = 0 \\\\\nF\\_\\lambda' = \\phi(x, y, z) = 0 \\\\\nF\\_\\mu' = \\psi(x, y, z) = 0 \\\\\n\\end{cases}\n$$\n\n带入备选点如(1,1,1),(2,2,2)取最大值和最小值为所求",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }

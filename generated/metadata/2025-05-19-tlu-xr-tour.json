@@ -8,5 +8,28 @@
   "colorSet": {
     "bgColor": "#5a84a2",
     "titleColor": "--mantine-color-orange-2"
-  }
+  },
+  "id": "2025/05/19/tlu-xr-tour",
+  "href": "/lab/2025/05/19/tlu-xr-tour",
+  "title": "Tallinn University XR tour",
+  "date": "2025-05-18T21:00:00.000Z",
+  "content": "Tallinn University XR tour\n\nYou can play this from this link. The shader needs long time to compile at first start.\n\nPlan the experience\n\nThe app is to make a campus tour of Tallinn University. The player can teleport in the school campus.\n\nChoose a framework\n\nThe app uses Babylon.js as the framework.\n\nSet up the environment\n\n| | |\n|--|--|\n| Modal Scanner | Luma 3D capture |\n| Panorama Camera | Google Camera |\n| Modal Editor | MeshLab |\n| Editor | Visual Studio Code |\n| Local Web Server | vite |\n\nCreate the 3D assets\n\nUse Luma 3D capture to scan the campus, and use MeshLab to cut unwanted spots.\n\n\n\nUse Google Camera to take a panorama photo of the campus.\n\n\n\nCode the experience\n\nScene.tsx\n\nTest and debug\n\nDesktop Testing tool: IWER\n\nBugs: The movement is too slow, the player's start point is inside of the mesh\n\n\n\nOn device testing: Meta Quest 3\n\nBugs: The loading is slow, movement is slow but acceptable.",
+  "category": {
+    "label": "lab",
+    "href": "/lab"
+  },
+  "tags": [
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    },
+    {
+      "label": "webxr",
+      "href": "/tag/webxr"
+    },
+    {
+      "label": "babylonjs",
+      "href": "/tag/babylonjs"
+    }
+  ]
 }

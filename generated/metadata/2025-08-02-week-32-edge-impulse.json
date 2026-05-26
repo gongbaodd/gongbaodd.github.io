@@ -8,5 +8,32 @@
   "colorSet": {
     "bgColor": "#9c8f66",
     "titleColor": "--mantine-color-yellow-2"
-  }
+  },
+  "id": "2025/08/02/week-32-edge-impulse",
+  "href": "/plan/2025/08/02/week-32-edge-impulse",
+  "title": "Week 32: Edge Impulse & DIY Hearing Aid",
+  "date": "2025-08-01T21:00:00.000Z",
+  "content": "Week 32: Edge Impulse & DIY Hearing Aid\n\nThis week marks my second week at Tallinn Summer School! 🌞\nWe kicked off a project to build a hearing aid device using Arduino. To distinguish different sounds, I trained a machine learning model with Edge Impulse.\n\nHowever… Arduino didn’t have enough memory 😅. So, we switched to a Heltec LoRa ESP32 — much better for this kind of project.\n\nProject Information\n\n|||\n|--|--|\n| Title| Tactile feedback for deaf people|\n| Authors | Gong, Yin & Nienke |\n\nProblem\n\nDeaf people can’t hear alarms, phones or baby’s crying when they don’t wear their hearing aids\n\nThey should be made aware of this using tactile feedback\n\nPersona 1: Claire, 25 years old\n\n\n\n| | |\n|--|--|\n| Segment |  single, deaf parent of baby, living alone |\n| Bio |  Deaf from birth. Has just ended a long-term relationship and now has to care for her 1-year old baby alone as a first-time mom. |\n| Location | Amsterdam |\n| Goals | Get notified when her child needs her, without disturbing people around her|\n\nScenario\n\n\n\n\n\nPersona 2: Jun Li, 84 years old\n\n\n\n|||\n|--|--|\n| Segment |  Older people with hearing loss, living alone |\n| Bio | His wife just passed away. His children live abroad. Because he can not adapt the culture abroad, he lives alone now. Since a couple of years he doesn’t hear so good anymore. He is afraid of death and his children worry about him. |\n| Location | Shanghai |\n| Goals | Wants to stay in his own house |\n| | Feel safe |\n| | Get alerted when there is an emergency or phone call from his children. |\n\nScenario\n\n\n\n\n\n\n\nLow Fidelity Prototype\n\n\n\nFeatures:\n\nvibration starts only when sound exceeds threshold\n\nvibration stops as soon as sound stops\n\ndevice can be worn on both sides\n\n\n\nHigh Fifelity Prototype\n\n\n\nDisplay\n\nWhy Frequency analysis did not work\n\nPhone, baby and alarm do not contain one clear frequency\n\nThe frequencies within the same sound changed more than the frequencies between sounds\n\n\n\nUse MFCC + CNN\n\n\n\nThe training process is open source on edge impulse.\n\nState Machine\n\n\n\nSome useful links from the project:\n\nArduino code\n\nMachine learning steps\n\nFor guidance, I also watched tutorials on:\n\nBilibili\n\nYouTube\n\nTo display images on the screen, I experimented with XBM files, following this tutorial 🖼️.\n\nIt’s been a fun mix of hardware, ML, and a bit of trial and error — learning by doing is the best! 🚀",
+  "category": {
+    "label": "plan",
+    "href": "/plan"
+  },
+  "tags": [
+    {
+      "label": "edge-impulse",
+      "href": "/tag/edge-impulse"
+    },
+    {
+      "label": "machine-learning",
+      "href": "/tag/machine-learning"
+    },
+    {
+      "label": "arduino",
+      "href": "/tag/arduino"
+    },
+    {
+      "label": "portfolio",
+      "href": "/tag/portfolio"
+    }
+  ]
 }

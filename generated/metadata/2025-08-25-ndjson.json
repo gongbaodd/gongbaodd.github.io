@@ -1,4 +1,31 @@
 {
   "file": "2025/08/25/ndjson",
-  "hash": "0ce65c4ffb72b4bd44a54eeef96d739d64c1bdf00dbe1b851cd391279992b082"
+  "hash": "0ce65c4ffb72b4bd44a54eeef96d739d64c1bdf00dbe1b851cd391279992b082",
+  "id": "2025/08/25/ndjson",
+  "href": "/fe/2025/08/25/ndjson",
+  "title": "🌊 SSE & NDJSON: Streaming Data Like It's 2014",
+  "date": "2025-08-24T21:00:00.000Z",
+  "content": "🌊 SSE & NDJSON: Streaming Data Like It's 2014\n\nAbout 10 years ago, during my internship at Qunar.com, I watched a colleague work on this cool project to tail log files in real-time 📄. They were streaming log data to the frontend using SSE (Server-Sent Events) - that's when I first discovered SSE and NDJSON (Newline Delimited JSON) ✨.\n\nBack then, streaming data felt like the future of frontend development! 🚀 WebSocket was just gaining traction, everyone was buzzing about using RxJS to handle stream events, thinking it would become the next big thing. Fast forward to today though... WebSockets are mostly limited to chat rooms, and SSE? Well, it's kind of fallen into obscurity 😅.\n\n📡 SSE is Back (Thanks, ChatGPT!)\n\nFunny how things come full circle! With the ChatGPT boom, SSE is having its moment again 🎯.\n\nHere's the deal with SSE on the backend: it's basically a keep-alive GET request where you set the content header to Content-Type: text/event-stream. Every message follows the simple format of data: \\<message>\\n\\n 📝.\n\nOn the frontend, the EventSource API makes it super easy to catch these messages 🎣. When a message arrives, it automatically strips the data: prefix for you:\n\nPretty neat, right? 😎\n\n📄 NDJSON: Line by Line JSON Magic\n\nNDJSON is a bit different from SSE - it's a file format (application/x-ndjson) where each line contains a valid JSON object, separated by newlines \\n 📋. I actually implemented this on my blog list page - when you hit \"load more,\" the posts stream in block by block!\n\nThe tricky part? Browsers don't have built-in NDJSON parsers 🤷‍♂️, but hey, we can roll our own with generators! However, it's definitely more complex than regular requests:\n\n🧩 The last line might be incomplete, so you need to buffer it until the next chunk arrives\n\n⚡ Chunks can load super fast, so you'll want to add some debouncing to avoid crazy re-rendering\n\n🎭 Final Thoughts\n\nStreaming data still looks pretty cool even today! ✨ But let's be real - compared to just loading everything at once, it adds quite a bit of complexity during loading states. And don't even get me started on error handling and retries 😬.\n\nThat said, there are still some niche scenarios where it shines 🌟. Plus, with React Server Components on the horizon, we might see streaming tech make another comeback - though it's still too early to tell what that'll look like!\n\nSometimes the old becomes new again 🔄.",
+  "category": {
+    "label": "fe",
+    "href": "/fe"
+  },
+  "tags": [
+    {
+      "label": "sse",
+      "href": "/tag/sse"
+    },
+    {
+      "label": "ndjson",
+      "href": "/tag/ndjson"
+    },
+    {
+      "label": "streaming",
+      "href": "/tag/streaming"
+    }
+  ],
+  "series": {
+    "label": "website-rebuild",
+    "href": "/series/website-rebuild"
+  }
 }

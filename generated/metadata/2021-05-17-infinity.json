@@ -1,4 +1,23 @@
 {
   "file": "2021/05/17/infinity",
-  "hash": "f6c0254cce3b7dc83748bfe3481f446f770996f20c99e54a57f88d770d0e12a9"
+  "hash": "f6c0254cce3b7dc83748bfe3481f446f770996f20c99e54a57f88d770d0e12a9",
+  "id": "2021/05/17/infinity",
+  "href": "/book/2021/05/17/infinity",
+  "title": "无穷阶求导",
+  "date": "2021-05-16T21:00:00.000Z",
+  "content": "无穷阶求导\n\n泰勒展开式\n\n$$\ne^x = \\sum^\\infty\\_{n=0}\\frac{x^n}{n!} = 1 + x + \\frac{x^2}{2!} + \\cdots\n$$\n\n$$\n\\frac{1}{x+1} = \\sum^\\infty\\_{n=0}(-1)^nx^n = 1-x+x^2+ \\cdots\n$$\n\n$$\n\\frac{1}{1-x} = \\sum^\\infty\\_{n=0}x^n = 1 + x + x^2 + \\cdots\n$$\n\n$$\n\\ln(1+x) = \\sum^\\infty\\_{n=1}(-1)^{n-1}\\frac{x^n}{n} = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\cdots\n$$\n\n$$\n\\sin x = \\sum^\\infty\\_{n=0}(-1)^n\\frac{x^{2n+1}}{(2n+1)!} = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\cdots\n$$\n\n$$\n\\cos x = \\sum^\\infty\\_{n=0}(-1)^n\\frac{x^{2n}}{(2n)!} = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\cdots\n$$\n\n$$\n(1+x)^{\\alpha} = 1 + \\alpha x + \\frac{\\alpha(\\alpha - 1)}{2!}x^2 + \\cdots\n$$\n\n无穷阶求导公式\n\n$$\n(\\alpha^x)^{(n)} = \\alpha^x(\\ln \\alpha)^n\n$$\n\n$$\n(e^x)^{(n)} = e^x\n$$\n\n$$\n(\\sin kx)^{(n)} = k^n\\sin(kx + \\frac{n\\pi}{2})\n$$\n\n$$\n(\\cos kx)^{(n)} = k^n\\cos(kx + \\frac{n\\pi}{2})\n$$\n\n$$\n(\\ln x)^{(n)} = (-1)^{n-1}\\frac{(n-1)!}{x^n}\n$$\n\n$$\n\\[\\ln(1+x)]^{(n)} = (-1)^{n-1}\\frac{(n-1)!}{(1+x)^n}\n$$\n\n$$\n\\[(x+x\\_0)^m]^{(n)} = m(m-1)(m-2)\\cdots(m-n+1)(x+x\\_0)^{m-n}\n$$\n\n$$\n(\\frac{1}{x+a})^{(n)} = \\frac{(-1)^nn!}{(x+a)^{n+1}}\n$$",
+  "category": {
+    "label": "book",
+    "href": "/book"
+  },
+  "tags": [
+    {
+      "label": "math",
+      "href": "/tag/math"
+    }
+  ],
+  "series": {
+    "label": "高等数学",
+    "href": "/series/math"
+  }
 }
