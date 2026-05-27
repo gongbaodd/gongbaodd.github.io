@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1759579988/IMG_20181007_063336_elszpk.jpg
     alt: sunlight

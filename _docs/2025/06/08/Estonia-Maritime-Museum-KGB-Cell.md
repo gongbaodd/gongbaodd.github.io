@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: https://visitestonia.com/images/2093860/Margarita7.jpg@640w
     alt: fat magret in visitestonia.com

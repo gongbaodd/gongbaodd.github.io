@@ -1,6 +1,6 @@
 ---
 type: post
-category: 3d
+category: fe
 tag:
     - blender
     - portfolio

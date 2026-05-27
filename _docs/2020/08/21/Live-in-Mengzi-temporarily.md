@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: ./2020-08-21-1.jpg
     alt: mengzi hotel

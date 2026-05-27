@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 ---
 
 # 心情复杂的普者黑之行

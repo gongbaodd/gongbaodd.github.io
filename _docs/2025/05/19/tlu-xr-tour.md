@@ -1,6 +1,6 @@
 ---
 type: post
-category: lab
+category: fe
 tag:
     - portfolio
     - webXR

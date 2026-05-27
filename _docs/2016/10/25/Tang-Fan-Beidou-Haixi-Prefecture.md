@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 city:
   - Haixi Mongol and Tibetan Autonomous Prefecture, China
 cover:

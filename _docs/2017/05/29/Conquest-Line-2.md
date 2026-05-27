@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 ---
 
 # 征服二号线

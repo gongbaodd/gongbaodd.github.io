@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 city:
     - Jiuquan, China
 cover: 

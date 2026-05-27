@@ -1,6 +1,8 @@
 ---
 type: post
-category: switch
+category: tech
+tag:
+    - switch
 ---
 
 # 大气层破解 switch

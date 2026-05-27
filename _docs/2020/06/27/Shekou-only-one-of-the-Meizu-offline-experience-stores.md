@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 ---
 
 # 蛇口仅剩的一家魅族线下体验店

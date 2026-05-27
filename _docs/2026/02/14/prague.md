@@ -1,6 +1,6 @@
 ---
 type: draft
-category: travel
+category: life
 city:
   - Prague, Czechia
 cover:

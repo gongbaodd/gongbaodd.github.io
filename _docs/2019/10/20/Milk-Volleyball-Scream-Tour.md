@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1759310539/89d0a2e1gy1g9bqe4v9rtj22vb25khdv_bwqfe2.jpg
     alt: picture

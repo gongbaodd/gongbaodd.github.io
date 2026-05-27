@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1770930898/IMG_1394_jxi3ww.jpg
     alt: Zurich

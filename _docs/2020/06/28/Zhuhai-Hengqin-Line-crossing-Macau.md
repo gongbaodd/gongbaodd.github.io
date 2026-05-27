@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 ---
 
 # 珠海横琴线横穿澳门

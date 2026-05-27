@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1760905081/IMG_8445_hmfhh1.jpg
     alt: linnahall

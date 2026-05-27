@@ -1,6 +1,6 @@
 ---
 type: post
-category: gym
+category: sport
 ---
 
 # Crossfit 初体验

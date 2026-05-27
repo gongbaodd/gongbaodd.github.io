@@ -1,5 +1,5 @@
 ---
-category: travel
+category: life
 type: post
 city:
   - Beijing, China

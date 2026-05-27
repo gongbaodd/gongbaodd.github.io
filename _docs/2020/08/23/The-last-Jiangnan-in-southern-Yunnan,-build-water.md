@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: ./jianshui.jpg
     alt: 建水城门

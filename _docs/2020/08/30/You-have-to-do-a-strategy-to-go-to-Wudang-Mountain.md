@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1756458437/IMG_20200828_150504_qkzo0e.jpg
     alt: 武当山

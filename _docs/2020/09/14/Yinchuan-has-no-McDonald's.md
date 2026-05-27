@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757657823/IMG_20200911_140404_u8asp0.jpg
     alt: crying buddha

@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 ---
 
 # 贵州博物馆除了高大上应该考虑一些内涵上的东西

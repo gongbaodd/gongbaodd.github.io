@@ -1,6 +1,6 @@
 ---
 type: post
-category: English
+category: book
 ---
 # Friday Night Live 6-23
 

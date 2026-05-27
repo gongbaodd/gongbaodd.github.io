@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 city:
   - Lanzhou, China
   - Xi'an, China

@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover: {
     url: "./super-cell.jpg",
     alt: "super cell building"

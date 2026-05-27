@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 ---
 
 # 万家丽真是可以作为长沙的硬核代言了

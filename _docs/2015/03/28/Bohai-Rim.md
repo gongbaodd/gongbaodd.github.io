@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 city:
   - Yantai, China
   - Penglai, China

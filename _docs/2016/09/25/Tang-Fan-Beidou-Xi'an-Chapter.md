@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1758802089/20_up896o.jpg
   alt: selfie

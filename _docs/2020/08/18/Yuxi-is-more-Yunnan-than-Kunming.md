@@ -1,6 +1,6 @@
 ---
 type: post
-category: travel
+category: life
 cover: 
   url: ./1.jpg
   alt: yuxi musuem
