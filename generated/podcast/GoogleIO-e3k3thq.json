@@ -1,0 +1,15 @@
+{
+  "id": "GoogleIO-e3k3thq",
+  "title": "给我整的GoogleIO总结",
+  "link": "https://podcasters.spotify.com/pod/show/growgen/episodes/GoogleIO-e3k3thq",
+  "pubDate": "Sat, 30 May 2026 15:17:35 GMT",
+  "description": "<p>⚓️ 个人动态</p><ul><li><p><strong>硕士论文答辩结束</strong>：本周顺利通过了硕士论文答辩，学业阶段性任务圆满收官。</p></li><li><p><strong>小镇出行</strong>：前往 Kopl<strong>i</strong> 小镇散心。</p></li><li><p><strong>游戏开发</strong>：完成了《Grandpa’s Bee Haven》对 Linux 系统的原生支持。</p></li></ul><p>今年 Google I/O 虽然被 AI 刷屏，但在 Web 前端和 Chrome 领域仍有几处值得关注的技术更新：</p><ul><li><p><strong>原理</strong>：谷歌将前端标准整理成标准文档库。AI 辅助编程时会先检索该技能库再生成代码。</p></li><li><p><strong>优势</strong>：生成的页面在无障碍集成（Accessibility）和触屏交互体验上高度标准化，完美符合谷歌规范。</p></li><li><p><strong>争议</strong>：技术社区对此看法两极分化，担忧过度标准化会导致未来的网页千篇一律，丧失个性。</p></li></ul><ul><li><p><strong>功能</strong>：基于 Chrome 内置的 Gemini 纳米模型（Gemini Nano）。不同于传统的截图识别，它通过在网页中预埋点（类似测试埋点）实现交互。例如对 AI 发出“搜索”指令，AI 能精准聚焦到页面的搜索框。</p></li><li><p><strong>现状</strong>：目前在自动化集成测试中非常实用，未来在游戏等特定场景可能带来新玩法，实用性仍需持续观察。</p></li></ul><ul><li><p><strong>HTMLVideoElement.requestVideoFrameCallback() (MTHTML incovace API)</strong>：已在 Chrome 上正式实现，目前有诸多 Demo（尚未深入评测）。</p></li><li><p><strong>CSS 动画进化</strong>：新增了对 &lt;dialog&gt; 标签动画（Dialog Animation）以及滚动驱动动画（Scroll-driven Animation）的原生支持。CSS 进步显著，很多效果无需 JavaScript 即可实现。</p></li><li><p><strong>Chrome Extension</strong>：新增了大量简化开发的语法糖。</p></li></ul><ul><li><p><strong>定位</strong>：类似于 Lighthouse 的网页质量检查工具，用于评估和检测网页对现代 Web 标准的符合程度。</p></li></ul><p>🌐 Google I/O 2026 Chrome 技术观察1. Web Skills（AI 标杆文档）2. Web MCP (Model Context Protocol)3. 核心 API 与 CSS 演进4. Baseline 工具</p><p><br></p>",
+  "summary": "⚓️ 个人动态硕士论文答辩结束：本周顺利通过了硕士论文答辩，学业阶段性任务圆满收官。小镇出行：前往 Kopli 小镇散心。游戏开发：完成了《Grandpa’s Bee Haven》对 Linux 系统的原生支持。今年 Google I/O 虽然被 AI 刷屏，但在 Web 前端和 Chrome 领域仍有几处值得关注的技术更新：原理：谷歌将前端标准整理成标准文档库。AI 辅助编程时会先检索该技能库再",
+  "duration": "00:04:47",
+  "audioUrl": "https://anchor.fm/s/f483db10/podcast/play/120763386/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-30%2Fa23e1aef-3712-db03-cf66-66069c978bd0.m4a",
+  "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_episode/40922820/40922820-1780154117619-5ce29f7e21fd2.jpg",
+  "colorSet": {
+    "bgColor": "#70ab98",
+    "titleColor": "--mantine-color-indigo-2"
+  }
+}

@@ -3,7 +3,7 @@ type: post
 category: fe
 ---
 
-# Google I/O '26: What's New in Chrome
+# Week 21: Google I/O 26 - Chrome
 
 Google I/O 2026 brought massive updates to the web platform, focusing heavily on built-in AI, the Agentic Era, next-gen UI/UX APIs, and modern developer tooling. Here is a comprehensive roundup of the key announcements.
 
