@@ -1,6 +1,6 @@
 ---
 type: post
-category: tv
+category: book
 tag:
   - math
 series:
