@@ -1,6 +1,9 @@
 ---
 type: post
 category: life
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1780160772/IMG_20200617_182259_ent3u1.jpg
+    alt: nanshan
 ---
 
 # 蛇口仅剩的一家魅族线下体验店

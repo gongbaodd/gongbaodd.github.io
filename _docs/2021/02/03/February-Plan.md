@@ -3,6 +3,9 @@ type: post
 category: plan
 city:
   - Dalian, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1780161527/IMG_2523_v9ayrb.jpg
+  alt: dalian
 ---
 
 # 二月计划

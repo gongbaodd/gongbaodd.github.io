@@ -1,15 +1,6 @@
 {
   "file": "2021/02/03/february-plan",
-  "hash": "a2ab689085ac1dc335dcc8403fb07e20b32c65c576d4ecf750c912dd84843343",
-  "city": [
-    "Dalian, China"
-  ],
-  "locations": [
-    {
-      "latitude": 38.9139899,
-      "longitude": 121.6147
-    }
-  ],
+  "hash": "cfb29392f559fd21d54f1b3f39b02041879d7548768a986b7919c3cd8e1e64b0",
   "id": "2021/02/03/february-plan",
   "href": "/plan/2021/02/03/february-plan",
   "title": "二月计划",
@@ -20,6 +11,23 @@
     "href": "/plan"
   },
   "tags": [],
+  "city": [
+    "Dalian, China"
+  ],
+  "locations": [
+    {
+      "latitude": 38.9139899,
+      "longitude": 121.6147
+    }
+  ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1780161527/IMG_2523_v9ayrb.jpg",
+    "alt": "dalian"
+  },
+  "colorSet": {
+    "bgColor": "#6f8fa5",
+    "titleColor": "--mantine-color-orange-2"
+  },
   "embeddings": [
     -0.06047258526086807,
     0.009159860201179981,
@@ -1047,7 +1055,7 @@
     0.014999204315245152
   ],
   "umap2D": [
-    0.0003380602051835292,
-    0.00011418647859766765
+    0.0001690838402307991,
+    0.0001475327789714584
   ]
 }

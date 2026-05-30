@@ -1,6 +1,6 @@
 {
   "file": "2020/06/27/shekou-only-one-of-the-meizu-offline-experience-stores",
-  "hash": "758db830c6bf2cbc3557c75bb08b11abd7a0a9bbbd93020a08b8421179b98339",
+  "hash": "0a872e8737297dce00fb6a28dd136f6a9b0821af8600bdf4b6a1f389f4aa662c",
   "id": "2020/06/27/shekou-only-one-of-the-meizu-offline-experience-stores",
   "href": "/life/2020/06/27/shekou-only-one-of-the-meizu-offline-experience-stores",
   "title": "蛇口仅剩的一家魅族线下体验店",
@@ -11,6 +11,14 @@
     "href": "/life"
   },
   "tags": [],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1780160772/IMG_20200617_182259_ent3u1.jpg",
+    "alt": "nanshan"
+  },
+  "colorSet": {
+    "bgColor": "#a99659",
+    "titleColor": "--mantine-color-indigo-2"
+  },
   "embeddings": [
     -0.044869933277368546,
     0.0215358454734087,
@@ -1038,7 +1046,7 @@
     -0.041965946555137634
   ],
   "umap2D": [
-    0.001260751388748019,
-    0.001425725824600562
+    0.0013958842976543309,
+    0.0016350734338890446
   ]
 }
