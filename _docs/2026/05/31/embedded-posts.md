@@ -4,6 +4,11 @@ category: fe
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1780210277/Screenshot_20260530_202715_i5kpm9.png
     alt: page screenshot
+tag:
+  - LLM
+series:
+    name: "website-rebuild"
+    slug: "website-rebuild"
 ---
 
 # Embedded Posts
