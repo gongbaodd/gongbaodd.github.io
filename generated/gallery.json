@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30T17:21:37.140Z",
+  "lastUpdated": "2026-06-05T08:49:52.622Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -32,6 +32,17 @@
       "colorSet": {
         "bgColor": "#6c6d83",
         "titleColor": "--mantine-color-green-4"
+      }
+    },
+    {
+      "id": "06/04/shenzhen",
+      "file": "06/04/shenzhen",
+      "hash": "96dedcf02ea8bf7eee034bc878049d672f3d98a35d495d7e491f5efc49a1587f",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1780649374/005_h01qc2.jpg",
+      "doc": "/2020/06/04/industrial-stationdiscover-qingshuihe",
+      "colorSet": {
+        "bgColor": "#9b7e4a",
+        "titleColor": "--mantine-color-orange-2"
       }
     },
     {

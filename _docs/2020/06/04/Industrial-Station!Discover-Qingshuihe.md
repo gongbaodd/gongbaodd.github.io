@@ -3,8 +3,9 @@ type: post
 category: life
 city:
   - Shenzhen, China
-  - Beijing, China
-  - Kowloon, Hong Kong
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1780649374/005_h01qc2.jpg
+  alt: train
 ---
 
 # 工业站！探清水河
