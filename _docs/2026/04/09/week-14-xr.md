@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - XR
+series:
+    name: Master Thesis
+    slug: master
 ---
 # Week 14: Finding the "Zen" Workflow for XR Development
 
