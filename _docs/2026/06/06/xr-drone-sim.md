@@ -7,6 +7,8 @@ series:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1780735098/screenshot_20260501_153230_e8p6fe.png
     alt: screenshot
+tag:
+    - portfolio
 ---
 
 # Level Up: An XR drone simulator
