@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-07T17:46:02.960Z",
+  "lastUpdated": "2026-06-09T15:41:01.162Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -54,6 +54,17 @@
       "colorSet": {
         "bgColor": "#b9926e",
         "titleColor": "--mantine-color-orange-2"
+      }
+    },
+    {
+      "id": "06/09/kaili",
+      "file": "06/09/kaili",
+      "hash": "e96b417f76f0ad4cd882b91cf82ffa98aed078d2ca0bf7de402d7f4d44535e95",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1781019254/IMG_20190608_134410_p7byvt.jpg",
+      "doc": "/2019/06/09/kerrylange-miao-village-is-still-cool-in-guizhou",
+      "colorSet": {
+        "bgColor": "#8f775c",
+        "titleColor": "--mantine-color-red-3"
       }
     },
     {
