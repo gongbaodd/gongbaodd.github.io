@@ -32,6 +32,10 @@ The algorithm uses LSTM(Long Short Term Memory) to build RNN. Use binary cross e
 
 The model is exported through pytorch and save in ONNX format.
 
+## The advantages
+
+The primary advantage of this model is its interpretability. Because predictions are entirely data-driven, you can trace outputs back to the original training data. This provides a clear pathway for model fine-tuning and avoids the hallucinations commonly associated with LLMs.
+
 ## Note
 
 The model uses randomly generated data rather than real-world datasets. Consequently, the model's predictions are not accurate and are intended solely to demonstrate the technology within a browser environment.
