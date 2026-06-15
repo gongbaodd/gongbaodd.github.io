@@ -6,13 +6,16 @@ cover:
     alt: museum match
 tag:
     - portfolio
+series:
+    name: deep knowledge tracing
+    slug: DKT
 ---
 
-# Museum Suggestion using DKT
+# Museum Suggestion using Deep Knowledge Tracing
 
-Not only for exams, [DKT](/tech/2026/06/12/deep-knowledge-tracing) can do much more out side of the education area.
+Not only for exams, [Deep Knowledge Tracing (DKT)](/tech/2026/06/12/deep-knowledge-tracing) can do much more out side of the education area.
 
-Rather than a question's correctness, it can be one's favorness of a product. For example, museums.
+It is not about the correctness of a question, but rather one's preference for a product. For example, museums.
 
 |A|B|C|D|
 |-|-|-|-|

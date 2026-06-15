@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1781526929/Screenshot_20260615_153316-1_ecgbir.png
     alt: pirate ship
+series:
+    name: deep knowledge tracing
+    slug: DKT
 ---
 
 # Player Persona base on LSTM

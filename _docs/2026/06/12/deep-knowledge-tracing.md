@@ -4,6 +4,9 @@ category: tech
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1781522948/Screenshot_20260615_142813_sa5nze.png
     alt: math demo
+series:
+    name: deep knowledge tracing
+    slug: DKT
 ---
 
 # Deep Knowledge Tracing
