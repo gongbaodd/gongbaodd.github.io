@@ -4,6 +4,8 @@ category: tech
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1781525220/Screenshot_20260615_150539_txn28b.png
     alt: museum match
+tag:
+    - portfolio
 ---
 
 # Museum Suggestion using DKT
