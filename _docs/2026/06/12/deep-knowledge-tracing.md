@@ -32,7 +32,7 @@ The algorithm uses LSTM(Long Short Term Memory) to build RNN. Use binary cross e
 
 The model is exported through pytorch and save in ONNX format.
 
-## Attention
+## Note
 
-The model's original data is randomly generated, not the real data. That makes the model's decision is not correct. The model is only simplyfied for demostrating inside browsers.
+The model uses randomly generated data rather than real-world datasets. Consequently, the model's predictions are not accurate and are intended solely to demonstrate the technology within a browser environment.
 
