@@ -22,6 +22,8 @@ So before the visitor go to the museum E, would he like it or not?
 
 You can try [this demo](https://dkt-museum-demo.growgen.xyz).
 
+![museum match](https://res.cloudinary.com/dmq8ipket/image/upload/v1781525220/Screenshot_20260615_150539_txn28b.png)
+
 ## Implementation
 
 [The Estonian Museum Card website](https://muuseumikaart.ee/en/museums/) provides 120 museums' description. I used `Qwen3-Embedding-0.6B-GGUF` to embedding them then use k-means to separate them into 11 clusters.
