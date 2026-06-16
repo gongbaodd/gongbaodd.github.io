@@ -11,7 +11,7 @@ series:
     slug: DKT
 ---
 
-# Agile Story Point Prediction base on Deep Knowledge Tracing and Item Response Theory
+# Agile Story Point Prediction base on Deep Knowledge Tracing (DKT) and Item Response Theory (IRT)
 
 [Deep Knowledge Tracing (DKT)](/tech/2026/06/12/deep-knowledge-tracing) can predict the correctness of person's next answer. However, in reality an answer usually can not be identified simply a correct or an incorrect.
 

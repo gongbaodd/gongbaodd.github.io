@@ -9,7 +9,7 @@ series:
     slug: DKT
 ---
 
-# Deep Knowledge Tracing
+# Deep Knowledge Tracing (DKT)
 
 Knowledge tracing is a quantitative method for teachers to know how much a student handles skills. Deep Knowledge Tracing (DKT) is to use RNN to solve this problem.
 

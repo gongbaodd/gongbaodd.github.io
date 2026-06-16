@@ -11,7 +11,7 @@ series:
     slug: DKT
 ---
 
-# Skill Tracer for Energy Trading Agents based on Deep Knowledge Tracing
+# Skill Tracer for Energy Trading Agents based on Deep Knowledge Tracing (DKT)
 
 This is actually my very first idea when I read the paper about [Deep Knowledge Tracing](/tech/2026/06/12/deep-knowledge-tracing). Since this approach can somehow dashboard a student's ability, why not dashboard agents?
 

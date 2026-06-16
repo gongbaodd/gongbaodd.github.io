@@ -11,7 +11,7 @@ series:
     slug: DKT
 ---
 
-# Player Persona base on LSTM
+# Player Persona base on Long Short Term Memory (LSTM)
 
 In user interaction, [DKT](/tech/2026/06/12/deep-knowledge-tracing) feels a little too much. In most of time long short term memory is already handle time sequence action prediction.
 

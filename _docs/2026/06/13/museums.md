@@ -11,7 +11,7 @@ series:
     slug: DKT
 ---
 
-# Museum Suggestion using Deep Knowledge Tracing
+# Museum Suggestion using Deep Knowledge Tracing (DKT)
 
 Not only for exams, [Deep Knowledge Tracing (DKT)](/tech/2026/06/12/deep-knowledge-tracing) can do much more out side of the education area.
 
