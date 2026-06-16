@@ -3,9 +3,6 @@ type: post
 category: fe
 tag:
     - babylonjs
-cover:
-    url: https://editor.babylonjs.com/documentation/composing-scene/adding-objects.png
-    alt: image from editor.babylonjs.com
 ---
 
 # Babylon Editor & Babylon Toolkit

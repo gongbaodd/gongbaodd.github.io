@@ -1,14 +1,6 @@
 {
   "file": "2025/06/17/babylon-toolkit",
-  "hash": "ad81f8d026605ddf0f97065df8fc4e6274d495afe7a1e0aa12ad9728454e4634",
-  "cover": {
-    "url": "https://editor.babylonjs.com/documentation/composing-scene/adding-objects.png",
-    "alt": "image from editor.babylonjs.com"
-  },
-  "colorSet": {
-    "bgColor": "#5e8ca4",
-    "titleColor": "--mantine-color-red-3"
-  },
+  "hash": "92f1c9b959860a86669a528f32205826be8e9d0e4952b601079e273542cbbee2",
   "id": "2025/06/17/babylon-toolkit",
   "href": "/fe/2025/06/17/babylon-toolkit",
   "title": "Babylon Editor & Babylon Toolkit",
