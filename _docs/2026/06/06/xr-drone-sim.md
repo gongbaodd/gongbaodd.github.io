@@ -20,3 +20,15 @@ Finally upload my game on [sidequest](https://sidequestvr.com/app/60484/level-up
 About making it, that is almost 80 pages paper, but I record the steps in my [blog](/series/master).
 
 Today I got the confirm from Meta, I will later make time to upload it to horizon store 🤿.
+
+
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/CN-1QlSZL1I" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
