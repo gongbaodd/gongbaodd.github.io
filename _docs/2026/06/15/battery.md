@@ -15,6 +15,16 @@ series:
 
 This is actually my very first idea when I read the paper about [Deep Knowledge Tracing](/tech/2026/06/12/deep-knowledge-tracing). Since this approach can somehow dashboard a student's ability, why not dashboard agents?
 
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/hepVbMELm7E" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
 I used to develop a game called [Discoin](/fe/2025/02/07/discoin) in the global game jam.
 
 ![Gamejam](https://dis-coin.vercel.app/photos/group-photo.jpg)

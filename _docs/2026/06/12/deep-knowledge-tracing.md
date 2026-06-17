@@ -13,6 +13,16 @@ series:
 
 Knowledge tracing is a quantitative method for teachers to know how much a student handles skills. Deep Knowledge Tracing (DKT) is to use RNN to solve this problem.
 
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/y05V5x0vuTU" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
 Simply explanation of usage of this technology, imagine a student was offered a series of questions of one kind of skill. Let's say 5 questions. And you got results:
 
 |1|2|3|4|5|
@@ -43,3 +53,9 @@ The primary advantage of this model is its interpretability. Because predictions
 
 The model uses randomly generated data rather than real-world datasets. Consequently, the model's predictions are not accurate and are intended solely to demonstrate the technology within a browser environment.
 
+## Other Use Cases
+
+- [Museum Suggestion using Deep Knowledge Tracing (DKT)](/tech/2026/06/13/museums)
+- [Player Persona base on Long Short Term Memory (LSTM)](/tech/2026/06/14/mmorpg)
+- [Agile Story Point Prediction base on Deep Knowledge Tracing (DKT) and Item Response Theory (IRT)](/tech/2026/06/14/agile)
+- [Skill Tracer for Energy Trading Agents based on Deep Knowledge Tracing (DKT)](/tech/2026/06/15/battery)

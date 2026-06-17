@@ -13,6 +13,16 @@ series:
 
 # Agile Story Point Prediction base on Deep Knowledge Tracing (DKT) and Item Response Theory (IRT)
 
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/ocJUW4NmWS4" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
 [Deep Knowledge Tracing (DKT)](/tech/2026/06/12/deep-knowledge-tracing) can predict the correctness of person's next answer. However, in reality an answer usually can not be identified simply a correct or an incorrect.
 
 Item Response Theory (IRT) on the other hand is a score test design framework. Originally it was use to dynamically test a students' ability of one skill. For example, if a student easily answered one question with a difficulty of 5, then the next question's difficulty can be 9, if 9 was too hard for the student, the next question can be 6... eventually this method can figure out the student's ability level without testing all the questions.

@@ -15,6 +15,16 @@ series:
 
 Not only for exams, [Deep Knowledge Tracing (DKT)](/tech/2026/06/12/deep-knowledge-tracing) can do much more out side of the education area.
 
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/1oX_koObJhM" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
 It is not about the correctness of a question, but rather one's preference for a product. For example, museums.
 
 |A|B|C|D|

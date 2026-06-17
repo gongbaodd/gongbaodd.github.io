@@ -15,6 +15,16 @@ series:
 
 In user interaction, [DKT](/tech/2026/06/12/deep-knowledge-tracing) feels a little too much. In most of time long short term memory is already handle time sequence action prediction.
 
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/E1cMgT-4868" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
 For example, in rock-paper-scissor game. Usually this is totally random. But in people, it got patterns. A guy who uses rock for most time, he may still use rock for the next round.
 
 Richard Bartle in his taxonomy of player types. He summarized that there are 4 types of players in MMORPGs. Killers, Explorers, Achievers and socializers.
