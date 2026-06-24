@@ -1,6 +1,12 @@
 ---
 type: post
 category: life
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1782287745/IMG_20200628_112059_bnfmi0.jpg
+  alt: macaw
+city:
+    - Zhuhai, China
+    - Macaw, China
 ---
 
 # 珠海横琴线横穿澳门

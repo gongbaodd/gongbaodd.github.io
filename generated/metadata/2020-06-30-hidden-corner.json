@@ -1,6 +1,6 @@
 {
   "file": "2020/06/30/hidden-corner",
-  "hash": "a3a8d06cea1295f608a15407b45375690b0eecb8f2837efa60fcc01d328b0419",
+  "hash": "1e0d1b93d3607153edbabbdaaea21993b5e879eac193de48cf5fe1bd6b9f0ee5",
   "id": "2020/06/30/hidden-corner",
   "href": "/tv/2020/06/30/hidden-corner",
   "title": "隐秘的角落",
@@ -11,6 +11,14 @@
     "href": "/tv"
   },
   "tags": [],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1782288114/images_owhjbv.jpg",
+    "alt": "screenshot"
+  },
+  "colorSet": {
+    "bgColor": "#a6895c",
+    "titleColor": "--mantine-color-dark-8"
+  },
   "embeddings": [
     0.043272197246551514,
     -0.026716293767094612,

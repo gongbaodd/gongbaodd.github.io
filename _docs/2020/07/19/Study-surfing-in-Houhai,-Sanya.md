@@ -3,6 +3,11 @@ type: post
 category: life
 city:
   - Sanya, China
+tag:
+  - Surf
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1782288642/mmexport1594567803160_ky53bz.jpg
+  alt: photo
 ---
 
 # 在三亚后海学习冲浪

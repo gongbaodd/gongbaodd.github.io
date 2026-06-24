@@ -3,6 +3,7 @@ type: post
 category: plan
 city:
   - Zhuhai, China
+  - Macaw, China
   - Haikou, China
   - Sanya, China
   - Changsha, China

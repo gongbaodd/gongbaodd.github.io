@@ -6,6 +6,9 @@ city:
   - Xiamen, China
   - Shantou, China
   - Guangzhou, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1782288305/IMG_20200706_170643_wp09fk.jpg
+  alt: haikou
 ---
 
 # 海南省博物馆

@@ -1,6 +1,6 @@
 {
   "file": "2020/07/03/dark",
-  "hash": "7870c601c31c14f90ea3668ace42af6a95cc391c3672d15c1b6ebdf4125e3b39",
+  "hash": "a89bb0c9b95deecf088cc014e1c242bcc9050e731e44075a721996ab0d6dcdb2",
   "id": "2020/07/03/dark",
   "href": "/tv/2020/07/03/dark",
   "title": "暗黑",
@@ -11,6 +11,14 @@
     "href": "/tv"
   },
   "tags": [],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1782288532/images_1_k0qjeh.jpg",
+    "alt": "dark"
+  },
+  "colorSet": {
+    "bgColor": "#aa915a",
+    "titleColor": "--mantine-color-orange-2"
+  },
   "embeddings": [
     0.014939305372536182,
     -0.011932614259421825,

@@ -1,6 +1,9 @@
 ---
 type: post
 category: tv
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1782288532/images_1_k0qjeh.jpg
+    alt: dark
 ---
 
 # 暗黑
