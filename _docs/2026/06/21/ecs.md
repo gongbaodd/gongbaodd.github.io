@@ -21,3 +21,7 @@ I vibe-coded three projects, all made to be a box carrying thousands of balls. T
 However, bitECS supports SharedArrayBuffer in run the calculation in threads. It may bring performance improvement. But I need to change stat.js to benchmark it.
 
 So, in conclusion, until now, in one thread Javascript environment, using ECS can bring no performance improvement.
+
+---
+
+Added in 2026-06-27, after reading [Aperture](https://www.linkedin.com/posts/felixtrz_webgpu-gamedev-developertools-share-7476336100039401472-RqRj/?utm_source=share&utm_medium=member_ios&rcm=ACoAABbfrvsBTcTEUXNxHWRnwteYn_q03d2U-nw)'s introduction. It is a good idea to implement ECS on CS architecture. But I have to dig deeper on it.
