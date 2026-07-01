@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T13:01:26.963Z",
+  "lastUpdated": "2026-07-01T10:44:41.068Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -87,6 +87,50 @@
       "colorSet": {
         "bgColor": "#a99659",
         "titleColor": "--mantine-color-indigo-2"
+      }
+    },
+    {
+      "id": "06/28/macaw",
+      "file": "06/28/macaw",
+      "hash": "8f1c7b1ec9b25c419d52c4ea084b7a9c650146d1853fc388a4f98b3a8fcea7d8",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1782287745/IMG_20200628_112059_bnfmi0.jpg",
+      "doc": "/2020/06/28/zhuhai-hengqin-line-crossing-macau",
+      "colorSet": {
+        "bgColor": "#6a7b9e",
+        "titleColor": "--mantine-color-indigo-2"
+      }
+    },
+    {
+      "id": "07/01/haikou",
+      "file": "07/01/haikou",
+      "hash": "4b2dd56c5f33b698bd8b959ac67bb68369ec5f8a4aa002543ddb5bb2ca72b929",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1782288387/IMG_20200706_162914_dipg3f.jpg",
+      "doc": "/2020/07/01/hainan-provincial-museum",
+      "colorSet": {
+        "bgColor": "#928778",
+        "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
+      "id": "07/03/dalian",
+      "file": "07/03/dalian",
+      "hash": "760b5c2f6da2b20b057f11a0af92aae6129b5d8276348c3bb88c9bee3e6ba4e8",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1782902425/IMG_4298_oblpku.jpg",
+      "doc": "/2024/07/03/vision-pro",
+      "colorSet": {
+        "bgColor": "#a38562",
+        "titleColor": "--mantine-color-blue-2"
+      }
+    },
+    {
+      "id": "07/19/sanya",
+      "file": "07/19/sanya",
+      "hash": "c3f372374c71741c34d9fff46d6df8d32a21879b7571e7542c10897d28058a88",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1782288642/mmexport1594567803160_ky53bz.jpg",
+      "doc": "/2020/07/19/study-surfing-in-houhai-sanya",
+      "colorSet": {
+        "bgColor": "#456287",
+        "titleColor": "--mantine-color-dark-8"
       }
     },
     {

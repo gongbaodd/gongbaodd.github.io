@@ -3,9 +3,15 @@ type: post
 category: tech
 tag:
     - vision pro
+    - XR
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1782902425/IMG_4303_qukq2e.jpg
+    alt: selfie
 ---
 
 # My First try on Vision Pro
+
+![vision pro testing](https://res.cloudinary.com/dmq8ipket/image/upload/v1782902425/IMG_4298_oblpku.jpg)
 
 I tried Vision Pro in one of the Apple stores in Dalian. It provides 30 minutes vision pro experience.
 
