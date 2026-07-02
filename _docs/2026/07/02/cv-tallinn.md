@@ -6,6 +6,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1783017715/IMG_2942_sbwt6c.jpg
     alt: Elron
+tag:
+    - AI
+    - CV
 ---
 
 # Computer vision & perception meetup
