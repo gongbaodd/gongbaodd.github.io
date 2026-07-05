@@ -7,6 +7,8 @@ cover:
 ---
 # Project Hail Marry
 
+My brain seems refuse to do some thinking today. So I decide to watch some movie as a rest, Project Hail Mary.
+
 ![Poster](https://m.media-amazon.com/images/M/MV5BOTkwZmQ2NjUtMjY2Yy00MWY5LTkyNzgtYWExYjI0NjE5NjNhXkEyXkFqcGc@._V1_.jpg)
 
 The story is about a high school teacher being forced to go outer space to find solution to solve the molecules that is "eating" the sun.
