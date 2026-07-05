@@ -8,7 +8,7 @@ tag:
     - UE
 ---
 
-# Pixel Streaming
+# Pixel Streaming in Unreal Engine
 
 After Unreal Engine 4.23, Unreal Engine stopped supporting web rendering. 
 Instead they started to use webRTC to stream game to the web.
