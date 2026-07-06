@@ -8,7 +8,7 @@ tag:
     - AI
 ---
 
-# Make a Neural Network
+# Make a Neural Network (FNN)
 
 This is [the AI course](https://aisoft-course.github.io) from Fudan University by [徐辉](mailto://xuh@fudan.edu.cn)
 
