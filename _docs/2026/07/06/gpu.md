@@ -8,7 +8,7 @@ tag:
     - AI
 ---
 
-# GPU programming
+# GPU programming, Triton
 
 This is [the AI course](https://aisoft-course.github.io) from Fudan University by [徐辉](mailto://xuh@fudan.edu.cn)
 
@@ -39,3 +39,16 @@ for epoch in range(num_epochs):
         labels = labels.to(device) # Data to GPU
 
 ```
+
+## Triton
+
+Triton is more like OpenGL, a DSL for solving GPU tile programming. You can use python to programme CUDA for different architectures.
+
+Operator Fusion, is a method to combine operators in order to save memory I/Os.
+
+Computation Graph Optimization. All the computing can be seen as a DAG. Pytorch provides interface to open computation graph optimization in order to save memory I/Os.
+
+```python
+model = torch.compile(model, backend="inductor", mode="default")
+```
+
