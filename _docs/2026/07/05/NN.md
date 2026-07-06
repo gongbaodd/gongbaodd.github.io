@@ -4,6 +4,8 @@ category: book
 series:
     slug: aisoft-course
     name: AIE310008
+tag:
+    - AI
 ---
 
 # Make a Neural Network
