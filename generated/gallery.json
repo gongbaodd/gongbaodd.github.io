@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T10:44:41.068Z",
+  "lastUpdated": "2026-07-14T07:05:29.639Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -120,6 +120,17 @@
       "colorSet": {
         "bgColor": "#a38562",
         "titleColor": "--mantine-color-blue-2"
+      }
+    },
+    {
+      "id": "07/12/keila",
+      "file": "07/12/keila",
+      "hash": "4dae3b1ec3c354f1d4e276359af446a5d20a594aab9586fc41cad9bcbba7708a",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1784011708/IMG_2989_opdygk.jpg",
+      "doc": "/2026/07/12/keila-joa",
+      "colorSet": {
+        "bgColor": "#577ca8",
+        "titleColor": "--mantine-color-red-3"
       }
     },
     {
