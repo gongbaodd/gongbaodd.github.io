@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T07:52:52.225Z",
+  "lastUpdated": "2026-07-14T07:58:50.240Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -175,6 +175,17 @@
       "colorSet": {
         "bgColor": "#456287",
         "titleColor": "--mantine-color-dark-8"
+      }
+    },
+    {
+      "id": "07/20/nanjing",
+      "file": "07/20/nanjing",
+      "hash": "9b1fcafa3215057edf395eb4daf94aaf96fa5b274825e0b8d49c4b65781f81bb",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1784015764/IMG_20180717_191612_rzfg3v.jpg",
+      "doc": "/2018/07/20/on-the-first-day-nanjing-was-hot-and-died",
+      "colorSet": {
+        "bgColor": "#50758c",
+        "titleColor": "--mantine-color-indigo-2"
       }
     },
     {

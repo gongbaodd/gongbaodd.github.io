@@ -3,10 +3,12 @@ type: post
 category: life
 city:
   - Nanjing, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1784015764/IMG_20180717_191612_rzfg3v.jpg
+  alt: fuzimiao
 ---
 
 # 入伏第一天南京热死了
 
-![入伏第一天南京热死了](https://i2.hdslb.com/bfs/archive/d8e0089d21137d07aabb5a6589b7e29352f8b35b.jpg@320w_200h_100Q_1c.webp)
 
-[入伏第一天南京热死了](https://www.bilibili.com/video/av27895422)
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=27895422&bvid=BV1Ys411A7pD&cid=48177000&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
