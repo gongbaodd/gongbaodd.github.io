@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T07:30:57.888Z",
+  "lastUpdated": "2026-07-14T07:52:52.225Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -142,6 +142,28 @@
       "colorSet": {
         "bgColor": "#905b56",
         "titleColor": "--mantine-color-yellow-2"
+      }
+    },
+    {
+      "id": "07/16/qingzhou",
+      "file": "07/16/qingzhou",
+      "hash": "6ba298f7e6565be87d64b17756527d934e4943d36f0543c19bc5af5085921d90",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1784014814/IMG_20180715_095855_kjycrh.jpg",
+      "doc": "/2018/07/16/buddha-statue-of-longxing-temple-in-qingzhou",
+      "colorSet": {
+        "bgColor": "#998f80",
+        "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
+      "id": "07/18/rizhao",
+      "file": "07/18/rizhao",
+      "hash": "149f76cda7d67c01704baa8c3da30394162a850b4e4e662d99e9206273b7944d",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1784015340/3cdf519fbe344f2f43d5ebde674e848c12607847.jpg_320w_200h_100Q_1c_qhs1qg.webp",
+      "doc": "/2018/07/18/rizhao-rushed-to-the-sea-briefly",
+      "colorSet": {
+        "bgColor": "#968755",
+        "titleColor": "--mantine-color-red-3"
       }
     },
     {

@@ -3,16 +3,11 @@ type: post
 category: life
 city:
   - Qingzhou, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1784014814/IMG_20180715_095855_kjycrh.jpg
+  alt: qingzhou
 ---
 
 # 青州龙兴寺佛像
 
-![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqixp1j20s00s075c.jpg)
-![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqlalej20s00s0q4t.jpg)
-![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqnaclj20s00s0n0c.jpg)
-![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqlgxqj20s00s0q4z.jpg)
-![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqkpsmj20s00s0jsu.jpg)
-![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqjtz4j20qv0qvq3s.jpg)
-![](https://ws1.sinaimg.cn/large/89d0a2e1ly1ftwvvqo052j20s00s0dhq.jpg)
-
-[青州龙兴寺佛像](https://www.bilibili.com/video/av27132963)
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=27132963&bvid=BV14s411E71M&cid=46759092&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
