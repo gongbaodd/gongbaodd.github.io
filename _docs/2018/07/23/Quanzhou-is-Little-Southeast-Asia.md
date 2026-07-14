@@ -3,10 +3,11 @@ type: post
 category: life
 city:
   - Quanzhou, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1784016604/IMG_20180722_144259_ykvq2q.jpg
+  alt: quanzhou
 ---
 
 # 泉州就是小东南亚
 
-![](https://i2.hdslb.com/bfs/archive/b374dbf4f0da2222817a93a0364091a3d14c1388.jpg@320w_200h_100Q_1c.webp)
-
-[泉州简直就是小东南亚啊！](https://www.bilibili.com/video/av27970422)
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=27970422&bvid=BV11s411A7Jo&cid=48317749&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>

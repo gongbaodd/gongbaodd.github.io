@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T07:58:50.240Z",
+  "lastUpdated": "2026-07-14T08:20:07.133Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -186,6 +186,28 @@
       "colorSet": {
         "bgColor": "#50758c",
         "titleColor": "--mantine-color-indigo-2"
+      }
+    },
+    {
+      "id": "07/22/shanghai",
+      "file": "07/22/shanghai",
+      "hash": "93968d697d9c355699e6aceda00a96122b11e02235d143a0323367cb390e899f",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1784016186/IMG_20180720_072826_w1uiid.jpg",
+      "doc": "/2018/07/22/shanghai-lujiazui-to-see-the-guoguo-big-guy",
+      "colorSet": {
+        "bgColor": "#5c849c",
+        "titleColor": "--mantine-color-blue-2"
+      }
+    },
+    {
+      "id": "07/24/fuzhou",
+      "file": "07/24/fuzhou",
+      "hash": "923a832e8c07c93e79d858a1187f4291a398304542e275659726b1ff9ec6b2aa",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1784016821/IMG_20180721_175946_onewvu.jpg",
+      "doc": "/2018/07/24/i-eat-fat-in-fuzhou",
+      "colorSet": {
+        "bgColor": "#628fb5",
+        "titleColor": "--mantine-color-red-3"
       }
     },
     {

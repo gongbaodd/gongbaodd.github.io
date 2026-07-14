@@ -3,14 +3,14 @@ type: post
 category: life
 city:
   - Shanghai, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1784016186/IMG_20180720_072826_w1uiid.jpg
+  alt: shanghai
 ---
 
 # 上海陆家嘴看看果果大佬
 
-![](https://i1.hdslb.com/bfs/archive/ffcba918c289f92d565f24e20becfdf6bda0eccf.jpg@320w_200h_100Q_1c.webp)
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=27938927&bvid=BV1qs411A73m&cid=48258441&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" autoplay="false" allowfullscreen="true"></iframe>
 
-[北方小渔民第一次到浦东的感觉](https://www.bilibili.com/video/av27938927)
 
-![](https://i2.hdslb.com/bfs/archive/a342117d33337ce4c6b696e370d7d05f4fd28039.jpg@320w_200h_100Q_1c.webp)
-
-[外滩一夜，探访即刻 APP 总部，外滩美术馆割韭菜](https://www.bilibili.com/video/av27923307)
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=27923307&bvid=BV1ks411A774&cid=48229262&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay="false"></iframe>
