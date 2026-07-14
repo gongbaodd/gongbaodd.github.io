@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T07:05:29.639Z",
+  "lastUpdated": "2026-07-14T07:30:57.888Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -131,6 +131,17 @@
       "colorSet": {
         "bgColor": "#577ca8",
         "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
+      "id": "07/14/tianjin",
+      "file": "07/14/tianjin",
+      "hash": "176a6c44bfe11227ab03a6f8d9296f3806a0b4059ca59199c7ec49a974a7f0ea",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1784014107/IMG_20180712_204547_yuhlr3.jpg",
+      "doc": "/2018/07/14/can-be-regarded-as-visiting-tianjin",
+      "colorSet": {
+        "bgColor": "#905b56",
+        "titleColor": "--mantine-color-yellow-2"
       }
     },
     {

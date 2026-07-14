@@ -2,7 +2,10 @@
 type: post
 category: tech
 ---
-# 起因
+
+# 使用 Egg TS 作为后端服务
+
+## 起因
 
 今年我开始在生产环境里试用node（貌似比很多人慢了一年......）。
 由于公司node环境较低，我只能使用一款修改过的express，
