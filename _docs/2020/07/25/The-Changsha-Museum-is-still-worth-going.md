@@ -1,6 +1,11 @@
 ---
 type: post
 category: life
+city:
+    - Changsha, China
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1784962619/2020-07-25-5_bzncjx.jpg
+    alt: sancai
 ---
 
 # 长沙市博物馆还是值得去的
