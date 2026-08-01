@@ -1,6 +1,6 @@
 ---
 type: post
-category: life
+category: fe
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1784907828/IMG_3104_u6ftq7.jpg
     alt: figma
@@ -13,7 +13,7 @@ series:
 
 This week, I got a job to teach "Design System with Figma and AI". The slides can be checked [here](https://figma.growgen.xyz).
 
-![](https://figma.growgen.xyz/images/001.png)
+![cover](https://figma.growgen.xyz/images/001.png)
 
 The course is separated in three parts.
 
