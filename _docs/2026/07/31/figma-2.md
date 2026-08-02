@@ -9,7 +9,7 @@ cover:
     alt: 20 years photo
 ---
 
-# Figma Teaching Week II
+# Week 30: Figma Teaching Week II
 
 This is the 2nd week of my Figma teaching. The slides can be checked [here](https://figma.growgen.xyz).
 
@@ -127,7 +127,7 @@ For method (1), the students' work needs further checking, to make sure the comp
 
 For method (2), make sure the student use the color wheel for color tokens. And because AI relies heavily on its memory. The result differs. Should provide an example for the students to use for the AI.
 
-In the final projects, there is a Chinese student, who is without any design knowledge, but still can build a proper project with the help of AI. There were not only one student tried the AI way, but this one is the only one that finally worked. From this small example, I can see that the AI tool usage education or popularity in China is more advanced than other countries. So, there will be a new market that allows the AI generated designs. 
+In the final projects, there is a Chinese student, who is without any design knowledge, but still can build a proper project with the help of AI. There were not only one student tried the AI way, but this one is the only one that finally worked. She has got askill of harnessing the model while other student does not have the concept. From this small example, I can see that the AI tool usage education or popularity in China is more advanced than other countries. So, there will be a new market that allows the AI generated designs. 
 
 ## Party Night
 
