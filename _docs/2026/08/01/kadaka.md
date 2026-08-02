@@ -2,7 +2,7 @@
 type: post
 category: life
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1785609841/10a0e30a-afd4-4dbd-bed1-8b743a54d35a_hficxy.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1785655256/IMG_3216_entoxi.png
     alt : group photo
 city:
     - Tallinn, Estonia

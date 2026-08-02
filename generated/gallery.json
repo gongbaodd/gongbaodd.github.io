@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T08:20:07.133Z",
+  "lastUpdated": "2026-08-02T07:24:17.129Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -208,6 +208,17 @@
       "colorSet": {
         "bgColor": "#628fb5",
         "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
+      "id": "08/01/tallinn",
+      "file": "08/01/tallinn",
+      "hash": "aa5e31dfa9f961d9846ce84dd903976d09f31b4a47a50d4f9bd8e636c550fd49",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1785655256/IMG_3216_entoxi.png",
+      "doc": "/2026/08/01/kadaka",
+      "colorSet": {
+        "bgColor": "#908061",
+        "titleColor": "--mantine-color-lime-2"
       }
     },
     {

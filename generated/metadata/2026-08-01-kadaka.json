@@ -1,6 +1,6 @@
 {
   "file": "2026/08/01/kadaka",
-  "hash": "8dcf60c65d440ffa1e9fbcf8c9a0bcbbe1eaab4307e2353446efa8d7e8e3edf5",
+  "hash": "a322c2b0f124a153db8447129f8aca30c4689e7106437e8f81c476f2c5d55546",
   "id": "2026/08/01/kadaka",
   "href": "/life/2026/08/01/kadaka",
   "title": "Hiking in Kadaka puiestee",
@@ -21,12 +21,12 @@
     }
   ],
   "cover": {
-    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1785609841/10a0e30a-afd4-4dbd-bed1-8b743a54d35a_hficxy.jpg",
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1785655256/IMG_3216_entoxi.png",
     "alt": "group photo"
   },
   "colorSet": {
-    "bgColor": "#a95656",
-    "titleColor": "--mantine-color-red-3"
+    "bgColor": "#908061",
+    "titleColor": "--mantine-color-lime-2"
   },
   "embeddings": [
     0.03145254775881767,
