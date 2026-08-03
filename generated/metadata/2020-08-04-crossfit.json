@@ -1,6 +1,6 @@
 {
   "file": "2020/08/04/crossfit",
-  "hash": "8b981b3fa8addf9362caed9f6568a47a7704f4336e39075cc9883de260f4c0df",
+  "hash": "00cdcaa2d3c3b616d7718621df9ce3c813ad556c8ed1873d9688e5d6768be361",
   "id": "2020/08/04/crossfit",
   "href": "/sport/2020/08/04/crossfit",
   "title": "Crossfit 初体验",
@@ -11,6 +11,14 @@
     "href": "/sport"
   },
   "tags": [],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1785757345/2020-08-04-2_v87cpx.jpg",
+    "alt": "crossfit"
+  },
+  "colorSet": {
+    "bgColor": "#a5865d",
+    "titleColor": "--mantine-color-yellow-2"
+  },
   "embeddings": [
     0.027652615681290627,
     0.006844558287411928,

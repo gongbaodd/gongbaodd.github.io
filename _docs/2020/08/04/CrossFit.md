@@ -1,13 +1,16 @@
 ---
 type: post
 category: sport
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1785757345/2020-08-04-2_v87cpx.jpg
+    alt: crossfit
 ---
 
 # Crossfit 初体验
 
-![CrossFit 红壤](./2020-08-04-2.jpg)
+![CrossFit 红壤](https://res.cloudinary.com/dmq8ipket/image/upload/v1785757345/2020-08-04-2_v87cpx.jpg)
 
-![CrossFit Top Power](./2020-08-04-1.jpg)
+![CrossFit Top Power](https://res.cloudinary.com/dmq8ipket/image/upload/v1785757344/2020-08-04-1_dp4hs8.jpg)
 
 过去一周，我在贵阳的两个健身房（位于小十字的红壤体育馆和位于花果园的 TopPower 运动馆）体验了大概一周多的 CrossFit 体验，红壤比较爽，在大众点评抢到了一张 21 块的 7 天体验，毕竟他们一次课要 89，而 Top Power 一次课需要 69 元。
 

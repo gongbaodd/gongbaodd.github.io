@@ -4,11 +4,16 @@ category: life
 city:
   - Guiyang, China
   - Anshun, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1785757242/Screenshot_20260803_143855_vxdzhd.png
+  alt: anshun
 ---
 
 # 安顺龙宫
 
 这一周我都在贵阳，总感觉应该去几个地标性的地方。查了一下贵州旅游在 7 月 31 号之前是免费的，哭了。
+
+![anshun](https://res.cloudinary.com/dmq8ipket/image/upload/v1785757242/Screenshot_20260803_143855_vxdzhd.png)
 
 要说贵州最地标的地方，自然是黄果树瀑布。但是疫情期间黄果树瀑布只能远观，不能走到水帘洞里面，什么鬼，那不是和看视频差不多？查了一下，同在黄果树所在的安顺市里面还有一个值得去的地方，龙宫水洞。其实我去过的水洞景区也不多，只有一个本溪水洞，只能说这个龙宫水洞很大，乘船进入水洞后还可以在水洞里走一段路程。
 
