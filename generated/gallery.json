@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T07:24:17.129Z",
+  "lastUpdated": "2026-08-06T21:09:58.208Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -219,6 +219,17 @@
       "colorSet": {
         "bgColor": "#908061",
         "titleColor": "--mantine-color-lime-2"
+      }
+    },
+    {
+      "id": "08/05/guilin",
+      "file": "08/05/guilin",
+      "hash": "e8d940667176bd7d3527a85109252c12e8cf729903e5c73af2d06af0c87b2d57",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1786048898/IMG_20190805_161518_rankzg.jpg",
+      "doc": "/2019/08/05/guilin-landscapes-really-look-at-it",
+      "colorSet": {
+        "bgColor": "#7a8490",
+        "titleColor": "--mantine-color-red-3"
       }
     },
     {
