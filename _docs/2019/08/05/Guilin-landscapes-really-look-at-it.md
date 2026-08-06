@@ -3,11 +3,16 @@ type: post
 category: life
 city:
   - Guilin, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1786048898/IMG_20190805_161518_rankzg.jpg
+  alt: guilin
 ---
 
 # 桂林山水确实不虚一看
 
 作为我走完全国的计划之一，广西必然是要去的，自从上次去昆明路过桂林的一小段，我就爱上了这里，桂林山水甲天下的美誉，使得我就怕旅程太短我发体会，而且看一眼桂林的天气，基本上没有晴天...网上有个评论，"你去桂林，你不看雨看什么"，想想确实也对，正好 8 月还有两天年假，赶早不赶晚，反正整个七月都没有出游计划，不如就安排在 8 月初把这两天休了。
+
+![guilin](https://res.cloudinary.com/dmq8ipket/image/upload/v1786048898/IMG_20190805_161518_rankzg.jpg)
 
 ## 出发去桂林
 
