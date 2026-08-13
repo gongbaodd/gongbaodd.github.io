@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T21:09:58.208Z",
+  "lastUpdated": "2026-08-13T13:44:26.827Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -230,6 +230,17 @@
       "colorSet": {
         "bgColor": "#7a8490",
         "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
+      "id": "08/13/puzhehei",
+      "file": "08/13/puzhehei",
+      "hash": "d2db8a5ad3d848416c84432663ac26cd192b510c7eb65ea9bb66f4e86c6f0f70",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1786628011/IMG_20200811_174646_1_mew1sd.jpg",
+      "doc": "/2020/08/12/the-complicated-universal-travel-trip",
+      "colorSet": {
+        "bgColor": "#5a7392",
+        "titleColor": "--mantine-color-green-4"
       }
     },
     {

@@ -1,9 +1,16 @@
 ---
 type: post
 category: life
+city:
+    - Kunming, China
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1786628517/IMG_20200810_163829_pdbv30.jpg
+    alt: kunming
 ---
 
 # 昆明的流水账
+
+![](https://res.cloudinary.com/dmq8ipket/image/upload/v1786628517/IMG_20200810_163829_pdbv30.jpg)
 
 在昆明短暂地住了几天，
 
@@ -12,5 +19,7 @@ category: life
 - 第三天，搬到翠湖边，睡了一天（南站的住宿真是不行）
 - 第四天，去纹身，把我后背的疤覆盖掉，一动不动趴了一天
 - 第五天，早晨去光猪圈健身，中午去了昆明博物馆（有一个飞虎队纪念馆），特意去了云南铁路博物馆，可惜暂时闭馆了。晚上前往 1903 公园，是建在滇池边上的新地标，或许对昆明人很新奇吧，但是北上广深这种地方真是遍地都是 👀。晚上又吃了傣味，实话说，还是手抓饭好吃。
+
+![tattoo](https://res.cloudinary.com/dmq8ipket/image/upload/v1786628599/mmexport1596967066886_u1xpo9.jpg)
 
 总的来说，昆明气候有点冷，大夏天才 20 度。物价比较高，处处对标一线城市的设施自然换来一线城市的物价。好了，接下来就去普者黑了

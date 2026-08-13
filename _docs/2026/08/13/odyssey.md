@@ -2,13 +2,13 @@
 type: post
 category: movie
 cover:
-    url: https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_FMjpg_UX960_.jpg
+    url: https://m.media-amazon.com/images/M/MV5BMjlhOGFiNTgtYThmZi00Y2ExLWEwMmUtYTdiNTVlOTdiNWMxXkEyXkFqcGc@._V1_FMjpg_UX600_.jpg
     alt: poster
 ---
 
 # The Odyssey
 
-![poster](https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_FMjpg_UX960_.jpg)
+![poster](https://m.media-amazon.com/images/M/MV5BMjlhOGFiNTgtYThmZi00Y2ExLWEwMmUtYTdiNTVlOTdiNWMxXkEyXkFqcGc@._V1_FMjpg_UX600_.jpg)
 
 First of all, I do not have so many knowladge about the Odyssey. However, it is a good movie, very CHristopher Nolan style.
 

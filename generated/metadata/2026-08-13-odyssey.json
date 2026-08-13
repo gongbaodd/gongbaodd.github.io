@@ -1,6 +1,6 @@
 {
   "file": "2026/08/13/odyssey",
-  "hash": "5a797b0d9fe662062d774c4e9a067cad5204dd770e714f22f8ed828bc3d3ac7d",
+  "hash": "7043e1bc4adf56a5c718fdd0d00c32a1c77c8204e15e17395995e19f30383903",
   "id": "2026/08/13/odyssey",
   "href": "/movie/2026/08/13/odyssey",
   "title": "The Odyssey",
@@ -12,11 +12,11 @@
   },
   "tags": [],
   "cover": {
-    "url": "https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_FMjpg_UX960_.jpg",
+    "url": "https://m.media-amazon.com/images/M/MV5BMjlhOGFiNTgtYThmZi00Y2ExLWEwMmUtYTdiNTVlOTdiNWMxXkEyXkFqcGc@._V1_FMjpg_UX600_.jpg",
     "alt": "poster"
   },
   "colorSet": {
-    "bgColor": "#885641",
+    "bgColor": "#7c6454",
     "titleColor": "--mantine-color-red-3"
   },
   "embeddings": [
