@@ -20,3 +20,5 @@ Before watching this movie, I thought it would be a story of going home.
 As I am also on the way home of my abroad study. I would like to get some spark from it.
 However, since it is talking about "礼坏乐崩". 
 More like the thinking about how this new AI era will be formed. 
+
+Kind of interesting if you think in this way. 1 years ago, Europe can be the 1st being against of AI. It might be the 1st one who approve it next year.
