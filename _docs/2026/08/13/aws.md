@@ -9,7 +9,7 @@ tag:
     - security
 ---
 
-# AWS Meetup Estonia
+# Week32: AWS Meetup Estonia
 
 Blot using [prometheus](https://prometheus.io) to replace AWS cloud watch. Because cloud watch logs costs money, limited quota alert and hard to do multi-account management.
 
