@@ -1,5 +1,5 @@
 ---
-type: draft
+type: post
 category: fe
 tag:
     - performance
@@ -8,7 +8,7 @@ series:
     slug: grandpa-bee
 ---
 
-# I Improved 25% Performance of Our Game
+# Tuning Software Performance is a Dirty Job
 
 [Grandpa's Bee Haven](https://store.steampowered.com/app/3209160/Grandpas_Bee_Haven/), the first game I made in Estonia, is now in public testing, click the link and request for testing now ~ We wish you can tell us what you like, what you wish to add, what you dislike.
 
@@ -41,4 +41,4 @@ However, the fonts are more clear now.
 
 The sounds are messy. Most of them were mp3 files, they are decompressed in memory. Some background music after decompressed can be several hundreds of MBs.
 
-I changed them all to wav files.
+I changed them all to wav files. Honestly, this is not a 

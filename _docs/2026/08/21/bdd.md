@@ -13,7 +13,7 @@ cover:
     alt: testing report
 ---
 
-# BDD Testing in Grandpa's Bee Haven
+# Week 33: BDD Testing in Grandpa's Bee Haven
 
 [Grandpa's Bee Haven](https://store.steampowered.com/app/3209160/Grandpas_Bee_Haven/), the first game I made in Estonia, is now in public testing, click the link and request for testing now ~ We wish you can tell us what you like, what you wish to add, what you dislike.
 
