@@ -1,9 +1,6 @@
 ---
 type: post
 category: life
-cover:
-    url: https://www.ynharari.com/wp-content/uploads/2018/02/d2.jpg
-    alt: image from ynharari.com
 ---
 # 终于读完了《未来简史》
 

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T19:25:51.097Z",
+  "lastUpdated": "2026-08-21T11:06:18.918Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -241,6 +241,17 @@
       "colorSet": {
         "bgColor": "#5a7392",
         "titleColor": "--mantine-color-green-4"
+      }
+    },
+    {
+      "id": "08/16/paldiski",
+      "file": "08/16/paldiski",
+      "hash": "41d460d1674d9a7954da059963bb135791a06c404f76063a742eb4c5aac645b8",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1786907692/IMG_3360_pd2bo4.jpg",
+      "doc": "/2026/08/16/paldiski",
+      "colorSet": {
+        "bgColor": "#7d8382",
+        "titleColor": "--mantine-color-red-3"
       }
     },
     {
