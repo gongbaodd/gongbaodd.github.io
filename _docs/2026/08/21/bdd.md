@@ -32,4 +32,4 @@ Only able to use code to control game is not enough. A semantic method to write 
 During these two days, I still found some problem for this workflow.
 
 1. Only Windows support, as I am the only Windows user, the testing job is majorly on me.
-2. The scroll method is not workable, as the major users of Airtest are mobile, it does not support mouse events. To implement that, I need deep explore.
+2. The scroll method is not workable for Unity, as the Unity events were not rely on the win32 events, the drag, swipe or click they all not working. However, I used press+sleep+release to solve that
