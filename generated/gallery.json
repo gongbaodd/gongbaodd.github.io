@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T11:06:18.918Z",
+  "lastUpdated": "2026-08-24T21:24:44.837Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -251,6 +251,17 @@
       "doc": "/2026/08/16/paldiski",
       "colorSet": {
         "bgColor": "#7d8382",
+        "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
+      "id": "08/23/jianshui",
+      "file": "08/23/jianshui",
+      "hash": "5ca9320690319f68d70c5f330c177179d7a1f1ddb849a8ca79f803b2ce61db43",
+      "image": "https://www.growgen.xyz/_astro/jianshui.BUjGkK4P_vFjM3.webp",
+      "doc": "/life/2020/08/23/the-last-jiangnan-in-southern-yunnan-build-water",
+      "colorSet": {
+        "bgColor": "#a07055",
         "titleColor": "--mantine-color-red-3"
       }
     },
