@@ -2,7 +2,7 @@
 type: post
 category: life
 cover:
-    url: ./jianshui.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1787678809/_image_n18ije.webp
     alt: 建水城门
 city:
     - Jianshui, China
@@ -23,7 +23,7 @@ city:
 
 ## 建水古城 🏯
 
-![建水城门](./jianshui.jpg)
+![建水城门](https://res.cloudinary.com/dmq8ipket/image/upload/v1787678809/_image_n18ije.webp)
 
 后来我搬到古城附近住，不得不感叹：建水物价真的太佛 🤑！超市里的水果拼盘 **1 块钱一包** 🍉🍇。古城里很多景区都是华侨城改建的仿古建筑，看起来很有味道，但我的荷包也有点羞涩了 😅。
 
