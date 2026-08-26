@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T12:19:16.271Z",
+  "lastUpdated": "2026-08-26T12:31:08.279Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -279,9 +279,9 @@
     {
       "id": "08/26/jinghong",
       "file": "08/26/jinghong",
-      "hash": "19a4e1d48dbe5c2aba1ea316c4560f5b2fc0c5a7a09b887b3c5440bcd387e8cb",
+      "hash": "d61065b30d1101cf226b0c5db3f5953fcf5d8253720498371dff9bf14bbad55f",
       "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1787746542/IMG_20200824_160011_vssca6.jpg",
-      "doc": "/2020/08/26/in-xishuangbanna-in-xishuangbanna-you-must-always-bring-the-knowledge-of-huajun",
+      "doc": "/2020/08/26/jinghong",
       "colorSet": {
         "bgColor": "#707c89",
         "titleColor": "--mantine-color-dark-8"
