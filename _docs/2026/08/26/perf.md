@@ -63,6 +63,8 @@ Worse, in some PC devices, the data will be transfered through two GPUs. The dat
 
 So unity provides [sprite atlas](https://docs.unity3d.com/2020.1/Documentation/Manual/class-SpriteAtlas.html). To automatically map the sprites into sheet.
 
+Many sprites have set both read and write permission. This will cause double memory usage. Only read can save half of the memory. But if you need to use the sprite as cursor. It needs write permission.
+
 This saves 5MB in the VRAM in over game.
 
 ![sprite atlas](https://res.cloudinary.com/dmq8ipket/image/upload/v1787682316/image_2026-08-25_212513704_wm55ad.png)
