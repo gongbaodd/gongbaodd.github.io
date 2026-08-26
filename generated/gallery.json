@@ -10,7 +10,8 @@
       "colorSet": {
         "bgColor": "#6f8fa5",
         "titleColor": "--mantine-color-orange-2"
-      }
+      },
+      "addedAt": "2026-05-30T20:26:04+03:00"
     },
     {
       "id": "05/03/tengchong",
@@ -21,7 +22,8 @@
       "colorSet": {
         "bgColor": "#a35c74",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-05-30T20:26:04+03:00"
     },
     {
       "id": "05/25/shenzhen",
@@ -32,7 +34,8 @@
       "colorSet": {
         "bgColor": "#6c6d83",
         "titleColor": "--mantine-color-green-4"
-      }
+      },
+      "addedAt": "2026-05-29T13:07:30+03:00"
     },
     {
       "id": "06/04/shenzhen",
@@ -43,7 +46,8 @@
       "colorSet": {
         "bgColor": "#9b7e4a",
         "titleColor": "--mantine-color-orange-2"
-      }
+      },
+      "addedAt": "2026-06-05T11:51:49+03:00"
     },
     {
       "id": "06/07/tallinn",
@@ -54,7 +58,8 @@
       "colorSet": {
         "bgColor": "#b9926e",
         "titleColor": "--mantine-color-orange-2"
-      }
+      },
+      "addedAt": "2026-06-07T21:08:06+03:00"
     },
     {
       "id": "06/09/kaili",
@@ -65,7 +70,8 @@
       "colorSet": {
         "bgColor": "#8f775c",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-06-09T18:42:34+03:00"
     },
     {
       "id": "06/17/tallinn",
@@ -76,7 +82,8 @@
       "colorSet": {
         "bgColor": "#76989e",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-06-19T16:05:43+03:00"
     },
     {
       "id": "06/27/shenzhen",
@@ -87,7 +94,8 @@
       "colorSet": {
         "bgColor": "#a99659",
         "titleColor": "--mantine-color-indigo-2"
-      }
+      },
+      "addedAt": "2026-05-30T20:26:04+03:00"
     },
     {
       "id": "06/28/macaw",
@@ -98,7 +106,8 @@
       "colorSet": {
         "bgColor": "#6a7b9e",
         "titleColor": "--mantine-color-indigo-2"
-      }
+      },
+      "addedAt": "2026-06-24T11:15:57+03:00"
     },
     {
       "id": "07/01/haikou",
@@ -109,7 +118,8 @@
       "colorSet": {
         "bgColor": "#928778",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-06-24T11:15:57+03:00"
     },
     {
       "id": "07/03/dalian",
@@ -120,7 +130,8 @@
       "colorSet": {
         "bgColor": "#a38562",
         "titleColor": "--mantine-color-blue-2"
-      }
+      },
+      "addedAt": "2026-07-01T13:53:10+03:00"
     },
     {
       "id": "07/12/keila",
@@ -131,7 +142,8 @@
       "colorSet": {
         "bgColor": "#577ca8",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-07-14T10:06:25+03:00"
     },
     {
       "id": "07/14/tianjin",
@@ -142,7 +154,8 @@
       "colorSet": {
         "bgColor": "#905b56",
         "titleColor": "--mantine-color-yellow-2"
-      }
+      },
+      "addedAt": "2026-07-14T10:31:30+03:00"
     },
     {
       "id": "07/16/qingzhou",
@@ -153,7 +166,8 @@
       "colorSet": {
         "bgColor": "#998f80",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-07-14T10:53:17+03:00"
     },
     {
       "id": "07/18/rizhao",
@@ -164,7 +178,8 @@
       "colorSet": {
         "bgColor": "#968755",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-07-14T10:53:17+03:00"
     },
     {
       "id": "07/19/sanya",
@@ -175,7 +190,8 @@
       "colorSet": {
         "bgColor": "#456287",
         "titleColor": "--mantine-color-dark-8"
-      }
+      },
+      "addedAt": "2026-06-24T11:15:57+03:00"
     },
     {
       "id": "07/20/nanjing",
@@ -186,7 +202,8 @@
       "colorSet": {
         "bgColor": "#50758c",
         "titleColor": "--mantine-color-indigo-2"
-      }
+      },
+      "addedAt": "2026-07-14T10:59:22+03:00"
     },
     {
       "id": "07/22/shanghai",
@@ -197,7 +214,8 @@
       "colorSet": {
         "bgColor": "#5c849c",
         "titleColor": "--mantine-color-blue-2"
-      }
+      },
+      "addedAt": "2026-07-14T11:20:48+03:00"
     },
     {
       "id": "07/24/fuzhou",
@@ -208,7 +226,8 @@
       "colorSet": {
         "bgColor": "#628fb5",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-07-14T11:20:48+03:00"
     },
     {
       "id": "08/01/tallinn",
@@ -219,7 +238,8 @@
       "colorSet": {
         "bgColor": "#908061",
         "titleColor": "--mantine-color-lime-2"
-      }
+      },
+      "addedAt": "2026-08-02T10:24:48+03:00"
     },
     {
       "id": "08/05/guilin",
@@ -230,7 +250,8 @@
       "colorSet": {
         "bgColor": "#7a8490",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-08-06T23:51:11+03:00"
     },
     {
       "id": "08/13/puzhehei",
@@ -241,7 +262,8 @@
       "colorSet": {
         "bgColor": "#5a7392",
         "titleColor": "--mantine-color-green-4"
-      }
+      },
+      "addedAt": "2026-08-13T16:45:15+03:00"
     },
     {
       "id": "08/16/paldiski",
@@ -252,7 +274,8 @@
       "colorSet": {
         "bgColor": "#7d8382",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-08-21T14:06:43+03:00"
     },
     {
       "id": "08/23/jianshui",
@@ -263,7 +286,8 @@
       "colorSet": {
         "bgColor": "#a07055",
         "titleColor": "--mantine-color-red-3"
-      }
+      },
+      "addedAt": "2026-08-25T20:28:24+03:00"
     },
     {
       "id": "08/25/shenzhen",
@@ -274,7 +298,8 @@
       "colorSet": {
         "bgColor": "#ada84c",
         "titleColor": "--mantine-color-yellow-2"
-      }
+      },
+      "addedAt": "2026-08-26T15:19:44+03:00"
     },
     {
       "id": "08/26/jinghong",
@@ -285,7 +310,8 @@
       "colorSet": {
         "bgColor": "#707c89",
         "titleColor": "--mantine-color-dark-8"
-      }
+      },
+      "addedAt": "2026-08-26T15:44:48+03:00"
     },
     {
       "id": "09/01/wanning",
@@ -296,7 +322,8 @@
       "colorSet": {
         "bgColor": "#647c94",
         "titleColor": "--mantine-color-blue-2"
-      }
+      },
+      "addedAt": "2026-05-30T20:26:04+03:00"
     }
   ]
 }
