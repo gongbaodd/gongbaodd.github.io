@@ -4,7 +4,7 @@ category: life
 city:
   - Shenzhen, China
 cover:
-  url: ./sz.jpg
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/v1787746071/sz_uwauvz.jpg
   alt: fish lantern
 ---
 
@@ -27,7 +27,7 @@ cover:
 ## 🎏 民俗小发现  
 深圳的民俗文化里有一个很特别的 **鱼灯** 🐟💡。不过展厅里只是一些老照片，没见到实物，好想亲眼看看呀～  
 
-![fish lantern](./sz.jpg)
+![fish lantern](https://res.cloudinary.com/dmq8ipket/image/upload/v1787746071/sz_uwauvz.jpg)
 
 ---
 

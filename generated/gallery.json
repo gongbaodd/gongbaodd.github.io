@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T17:27:55.311Z",
+  "lastUpdated": "2026-08-26T12:10:32.349Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -263,6 +263,17 @@
       "colorSet": {
         "bgColor": "#a07055",
         "titleColor": "--mantine-color-red-3"
+      }
+    },
+    {
+      "id": "08/26/shenzhen",
+      "file": "08/26/shenzhen",
+      "hash": "f558ac6666c49f23e700a247376ef5859309134eac2dc1ff2312d46b2a9d1e41",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1787746071/sz_uwauvz.jpg",
+      "doc": "/2018/08/26/shenzhen-museum",
+      "colorSet": {
+        "bgColor": "#ada84c",
+        "titleColor": "--mantine-color-yellow-2"
       }
     },
     {
