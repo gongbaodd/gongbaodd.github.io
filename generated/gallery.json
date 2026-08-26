@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T12:10:32.349Z",
+  "lastUpdated": "2026-08-26T12:19:16.271Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -266,14 +266,25 @@
       }
     },
     {
-      "id": "08/26/shenzhen",
-      "file": "08/26/shenzhen",
+      "id": "08/25/shenzhen",
+      "file": "08/25/shenzhen",
       "hash": "f558ac6666c49f23e700a247376ef5859309134eac2dc1ff2312d46b2a9d1e41",
       "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1787746071/sz_uwauvz.jpg",
       "doc": "/2018/08/26/shenzhen-museum",
       "colorSet": {
         "bgColor": "#ada84c",
         "titleColor": "--mantine-color-yellow-2"
+      }
+    },
+    {
+      "id": "08/26/jinghong",
+      "file": "08/26/jinghong",
+      "hash": "19a4e1d48dbe5c2aba1ea316c4560f5b2fc0c5a7a09b887b3c5440bcd387e8cb",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1787746542/IMG_20200824_160011_vssca6.jpg",
+      "doc": "/2020/08/26/in-xishuangbanna-in-xishuangbanna-you-must-always-bring-the-knowledge-of-huajun",
+      "colorSet": {
+        "bgColor": "#707c89",
+        "titleColor": "--mantine-color-dark-8"
       }
     },
     {

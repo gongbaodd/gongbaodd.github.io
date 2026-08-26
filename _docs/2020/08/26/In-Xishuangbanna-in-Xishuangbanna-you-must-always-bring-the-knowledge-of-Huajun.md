@@ -4,8 +4,8 @@ category: life
 city:
     - Jinghong, China
 cover:
-    url: ./selfie.jpg
-    alt: selfie
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1787746542/IMG_20200824_160011_vssca6.jpg
+    alt: temple
 ---
 
 # 在西双版纳必须随时带着识花君  
@@ -28,6 +28,8 @@ cover:
 ---
 
 ## 🛕 大佛寺  
+
+![temple](https://res.cloudinary.com/dmq8ipket/image/upload/v1787746542/IMG_20200824_160011_vssca6.jpg)
 
 就在曼听花园外面，建筑更加恢宏，竟然还是 **免费的** ✨！  
 它原本是南传佛寺，文革期间完全损毁，如今的模样是 1989 年重修的。  
