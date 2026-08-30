@@ -97,6 +97,10 @@ Using 60 Hz framerate to render a game running in the background is not worthy. 
 
 Lowering the framerate can make obvious CPU and GPU usage reduction. And if it is tuned correctly, it is totally worthy.
 
+### Graphy
+
+[Graphy](https://assetstore.unity.com/packages/tools/gui/graphy-ultimate-fps-counter-stats-monitor-debugger-105778?srsltid=AfmBOorm4KfDlnOdxNC4-6kFlYUIUe5ZKnHAjnG-lbkrtv-tiFsIdeKo) is an FPS on screen counter. I use this to check if the game is rendering on demand.
+
 ## Unity AssetChecker
 
 [Unity AssetChecker](https://upr.unity.cn/instructions/assetchecker) is a tool to check Unity assets configuration made by Unity China. Now it is only working for the Chinese version Unity Editor. But it can still give some suggestion on things like unabling collision matrix (`Physics.LayerCollisionMatrix` which is not used in our game) or other uneccessary physics features. 
