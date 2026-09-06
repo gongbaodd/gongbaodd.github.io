@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T08:05:06.584Z",
+  "lastUpdated": "2026-09-06T16:35:23.994Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -326,6 +326,18 @@
       "addedAt": "2026-05-30T20:26:04+03:00"
     },
     {
+      "id": "09/05/tallinn",
+      "file": "09/05/tallinn",
+      "hash": "805c9a39c6205045554c74fe685567500cfd06e14b323bd2b0f827e9a6ea96e7",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757098662/IMG_7974_jcrbtq.jpg",
+      "doc": "/2025/09/05/open-air-museum",
+      "colorSet": {
+        "bgColor": "#6084a9",
+        "titleColor": "--mantine-color-indigo-2"
+      },
+      "addedAt": "2026-09-06T16:35:13.202Z"
+    },
+    {
       "id": "09/06/sanya",
       "file": "09/06/sanya",
       "hash": "6bb6c9d5214fe557774934d1a25c1c94c5f1062058b4117fc8f0e34891475aca",
@@ -336,6 +348,138 @@
         "titleColor": "--mantine-color-yellow-2"
       },
       "addedAt": "2026-09-06T08:05:04.852Z"
+    },
+    {
+      "id": "09/07/sanya",
+      "file": "09/07/sanya",
+      "hash": "6f86c044bcdc2f159f0bc829b1a84d554933389b4af969b56d3edebe7e5199c4",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1788710622/IMG_20200906_190046_c2o5of.jpg",
+      "doc": "/2020/09/07/great-east-sea-surfing-experience",
+      "colorSet": {
+        "bgColor": "#5f7394",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-09-06T16:35:17.415Z"
+    },
+    {
+      "id": "09/16/hohhot",
+      "file": "09/16/hohhot",
+      "hash": "691ef13d6ba1c7004ef78a056cf11a8547d7b8877a6061c5870e9cbd09a116d5",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1788710968/IMG_20200916_143057_1_ijgn0z.jpg",
+      "doc": "/2020/09/16/watch-the-exhibition-in-hohhot-for-two-days",
+      "colorSet": {
+        "bgColor": "#5ca49c",
+        "titleColor": "--mantine-color-red-3"
+      },
+      "addedAt": "2026-09-06T16:35:18.519Z"
+    },
+    {
+      "id": "09/18/ordos",
+      "file": "09/18/ordos",
+      "hash": "917ab2f919d1ccc4f1edd5d6cf9e2ced5881af96d23fe193c73fc31008262e7d",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757659593/IMG_20200917_133358_hokkdw.jpg",
+      "doc": "/2020/09/18/ordos-is-the-way-to-open-inner-mongolia",
+      "colorSet": {
+        "bgColor": "#5784a7",
+        "titleColor": "--mantine-color-indigo-2"
+      },
+      "addedAt": "2026-09-06T16:35:14.082Z"
+    },
+    {
+      "id": "09/24/jiuzhai",
+      "file": "09/24/jiuzhai",
+      "hash": "22fdeea7b4344fc54c3d05fb6f6184ebb682f0a05b3d942ccdcd6469ea5ae456",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757661736/IMG_20200924_113602_qm4vqe.jpg",
+      "doc": "/2020/09/24/jiuzhaigou-watched-water-to-see-blu-ray-fatigue",
+      "colorSet": {
+        "bgColor": "#a68c5a",
+        "titleColor": "--mantine-color-blue-2"
+      },
+      "addedAt": "2026-09-06T16:35:15.219Z"
+    },
+    {
+      "id": "09/27/guanghan",
+      "file": "09/27/guanghan",
+      "hash": "c6a644147c4a688471acf6161d84c0b4c1be097d34025323a7dba4e6e400f047",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757662339/Screenshot_2025-09-12_103009_qwsrsb.png",
+      "doc": "/2020/09/27/nb",
+      "colorSet": {
+        "bgColor": "#a58a68",
+        "titleColor": "--mantine-color-green-4"
+      },
+      "addedAt": "2026-09-06T16:35:19.881Z"
+    },
+    {
+      "id": "10/18/koktokay",
+      "file": "10/18/koktokay",
+      "hash": "2e8b85c68bd4dd478d4a01a2adbb89818ecf38de27d107436823aa5c3bb53d7b",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761546555/IMG_20201018_104024_awe9mr.jpg",
+      "doc": "/2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
+      "colorSet": {
+        "bgColor": "#a38866",
+        "titleColor": "--mantine-color-blue-2"
+      },
+      "addedAt": "2026-09-06T16:35:20.443Z"
+    },
+    {
+      "id": "10/19/kanas",
+      "file": "10/19/kanas",
+      "hash": "294182a92a7c55108019b9a4eed4d2a43f1530a9f2879d0da2586fb6e2926ea9",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761517390/IMG_20201018_001032_ewxnya.jpg",
+      "doc": "/2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
+      "colorSet": {
+        "bgColor": "#4c4f8d",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-09-06T16:35:20.848Z"
+    },
+    {
+      "id": "10/20/wuerhe",
+      "file": "10/20/wuerhe",
+      "hash": "db2d71aa7b2ac5cca27fd9eccaedc884787d38a46faf56d95b8f0ccb2eade9bb",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1788712220/IMG_20201020_135107_eh2ss1.jpg",
+      "doc": "/2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
+      "colorSet": {
+        "bgColor": "#a88c5c",
+        "titleColor": "--mantine-color-blue-2"
+      },
+      "addedAt": "2026-09-06T16:35:21.068Z"
+    },
+    {
+      "id": "10/21/sayram",
+      "file": "10/21/sayram",
+      "hash": "2faabf163420cb957c50ed49da8ea1f2fb83433a8a6c938c688eb390fb278906",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761517396/IMG_20201021_170336_xayqf6.jpg",
+      "doc": "/2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
+      "colorSet": {
+        "bgColor": "#6a8296",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-09-06T16:35:22.631Z"
+    },
+    {
+      "id": "10/22/hem",
+      "file": "10/22/hem",
+      "hash": "882100d6e8c06f8b1f779b6a67341731858b66da84c3632d026e30b9272773f9",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1761517394/IMG_20201019_101731_mszizi.jpg",
+      "doc": "/2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
+      "colorSet": {
+        "bgColor": "#8e7a68",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-09-06T16:35:23.029Z"
+    },
+    {
+      "id": "10/23/nalati",
+      "file": "10/23/nalati",
+      "hash": "c0d87f0003aacaa54cada5069da33603f9eb1e9f895b4c2105bb3835626dfae5",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1788711683/mmexport1603472468586_suswwv.jpg",
+      "doc": "/2020/10/26/draw-a-circle-in-the-north-of-xinjiang",
+      "colorSet": {
+        "bgColor": "#9a8c5e",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-09-06T16:35:23.372Z"
     }
   ]
 }
