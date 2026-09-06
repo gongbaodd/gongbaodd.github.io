@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T12:31:08.279Z",
+  "lastUpdated": "2026-09-06T08:05:06.584Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -324,6 +324,18 @@
         "titleColor": "--mantine-color-blue-2"
       },
       "addedAt": "2026-05-30T20:26:04+03:00"
+    },
+    {
+      "id": "09/06/sanya",
+      "file": "09/06/sanya",
+      "hash": "6bb6c9d5214fe557774934d1a25c1c94c5f1062058b4117fc8f0e34891475aca",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1756884004/mmexport1599490051276_kqi3ha.jpg",
+      "doc": "/2020/09/06/ow",
+      "colorSet": {
+        "bgColor": "#5e979e",
+        "titleColor": "--mantine-color-yellow-2"
+      },
+      "addedAt": "2026-09-06T08:05:04.852Z"
     }
   ]
 }
