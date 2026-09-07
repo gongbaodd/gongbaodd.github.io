@@ -10,7 +10,7 @@
   "devDependencies": {
     "commitizen": "^4.3.0",
     "emoji-cz": "0.3.1",
-    "gh-pages": "4.0.0",
+    "gh-pages": "5.0.0",
     "gray-matter": "^4.0.3",
     "husky": "8.0.1",
     "lint-staged": "12.5.0",
