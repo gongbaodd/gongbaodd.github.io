@@ -8,7 +8,7 @@ series:
   slug: Mac-howto
 ---
 
-# GrandPerspective: Clean your Mac
+# Grand Perspective: Clean your Mac
 
 On Windows, I usually use [SpaceSniffer](https://space-sniffer.com) to clean my PC. 
 I wish there will be something alike on Mac. As I am using a Mac mini with a small storage of 256GB.
