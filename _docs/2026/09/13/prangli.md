@@ -55,3 +55,5 @@ There is also an airplane ruin, but we did not go due to the short time. We then
 ![cooking](https://res.cloudinary.com/dmq8ipket/image/upload/v1789387480/IMG_3779_hx3ujn.jpg)
 
 ![graveyard](https://res.cloudinary.com/dmq8ipket/image/upload/v1789387497/IMG_3768_uwa1g0.jpg)
+
+![The ruin](https://res.cloudinary.com/dmq8ipket/image/upload/v1789411919/e5ef1008-1a89-4cb4-8797-885486c8d2a1_sfrarq.jpg)
