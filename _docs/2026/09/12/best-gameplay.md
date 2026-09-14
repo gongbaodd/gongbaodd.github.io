@@ -4,6 +4,9 @@ category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1789379101/IMG_3688_xpbycw.jpg
     alt: best gameplay
+series:
+    name: Grandpa's bee Haven
+    slug: grandpa-bee
 ---
 
 # Grandpa's Bee Haven won Best Gameplay on TipiLan!
