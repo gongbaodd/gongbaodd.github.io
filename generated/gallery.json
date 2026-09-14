@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T16:35:23.994Z",
+  "lastUpdated": "2026-09-14T11:01:21.261Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -360,6 +360,30 @@
         "titleColor": "--mantine-color-orange-2"
       },
       "addedAt": "2026-09-06T16:35:17.415Z"
+    },
+    {
+      "id": "09/13/yinchuan",
+      "file": "09/13/yinchuan",
+      "hash": "05f33c3f80735e79400c637b0a10c07fe6ac3e0699adb9a8c95d9a6a5e7c6984",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757657823/IMG_20200911_140404_u8asp0.jpg",
+      "doc": "/2020/09/14/yinchuan-has-no-mcdonalds",
+      "colorSet": {
+        "bgColor": "#948272",
+        "titleColor": "--mantine-color-red-3"
+      },
+      "addedAt": "2026-09-14T11:01:18.100Z"
+    },
+    {
+      "id": "09/14/ganzhou",
+      "file": "09/14/ganzhou",
+      "hash": "9039b1a2c3f164ab754a5fcd05089ac07e61d69b66e3c830ed84f2aabea26c0d",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1757655579/PANO_20190914_181518_hjdk9t.jpg",
+      "doc": "/2019/09/14/i-almost-was-not-hot-to-die-in-ganzhou",
+      "colorSet": {
+        "bgColor": "#818084",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-09-14T11:01:20.393Z"
     },
     {
       "id": "09/16/hohhot",
