@@ -22,3 +22,5 @@ After analysis, I export the disk data into text and using Calude to read it.It 
 ![report](https://res.cloudinary.com/dmq8ipket/image/upload/v1788777804/HRm0di_bAAATWG__vmwnx0.jpg)
 
 Turns out I have many Unreal Engine leftovers. I can move them to another disk.
+
+Due to curiosity, I checked Linux tools, [gdu](https://github.com/dundee/gdu) can be a good CLI tool to export disk data to json.
