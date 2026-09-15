@@ -43,6 +43,9 @@ There are some awesome games in this expo:
 
 ![Bullosseum](https://res.cloudinary.com/dmq8ipket/image/upload/v1789383321/bullosseum_1_zqewvh.webp)
 
+[Walk](https://store.steampowered.com/app/4563880/walk/) a click game.
+![Walk](https://res.cloudinary.com/dmq8ipket/image/upload/v1789502577/header_kvyv5b.jpg)
+
 ![win 50 euros](https://res.cloudinary.com/dmq8ipket/image/upload/v1789382826/IMG_3682_optuek.jpg)
 
 Just before I left, I got a remind to stay for longer. Turns out there is a competition during this. And grandpa's bee haven got the best gameplay!
