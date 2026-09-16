@@ -1,0 +1,19 @@
+name: notify-root
+
+# 内容 (astro 分支) 有更新时,通知根仓去 bump src/content 指针,
+# 根仓收到后自动提交 -> Cloudflare Pages 自动构建上线。
+
+on:
+  push:
+    branches: [astro]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -fsSL -X POST \
+            -H "Authorization: Bearer ${{ secrets.ROOT_SYNC_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/gongbaodd/blog.gongbushang.com/dispatches \
+            -d "{\"event_type\":\"content-updated\",\"client_payload\":{\"sha\":\"$GITHUB_SHA\"}}"
