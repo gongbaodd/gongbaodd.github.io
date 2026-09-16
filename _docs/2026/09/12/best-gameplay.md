@@ -9,7 +9,7 @@ series:
     slug: grandpa-bee
 ---
 
-# Grandpa's Bee Haven won Best Gameplay on TipiLan!
+# Week 36: Grandpa's Bee Haven won Best Gameplay on TipiLan!
 
 September 11-13 is the TalTech TipiLan Game Expo. This year, I start to showcase our newly released [Grandpa's Bee Haven](https://store.steampowered.com/app/3209160/Grandpas_Bee_Haven/).
 
