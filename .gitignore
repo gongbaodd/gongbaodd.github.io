@@ -77,3 +77,4 @@ reduxcache*/
 *.Identifier
 
 generator/
+.vercel
