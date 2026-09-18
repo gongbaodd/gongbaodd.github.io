@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T12:30:09.318Z",
+  "lastUpdated": "2026-09-18T11:56:19.540Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -420,6 +420,18 @@
         "titleColor": "--mantine-color-indigo-2"
       },
       "addedAt": "2026-09-06T16:35:14.082Z"
+    },
+    {
+      "id": "09/19/tallinn",
+      "file": "09/19/tallinn",
+      "hash": "7343c4f6e474dabd6110594adbc030f07c0aa633a3fa71c4dc505470e4c0dc8d",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1789731023/IMG_3802_jarxwq.jpg",
+      "doc": "/2026/09/18/lightshow",
+      "colorSet": {
+        "bgColor": "#5c7fae",
+        "titleColor": "--mantine-color-indigo-2"
+      },
+      "addedAt": "2026-09-18T11:56:17.924Z"
     },
     {
       "id": "09/24/jiuzhai",
