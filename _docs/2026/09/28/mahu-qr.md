@@ -9,11 +9,11 @@ cover:
 ---
 # MahuQR: an Artistic QR Code Maker
 
+Last week, I made the QR code CLI tool made for grandpa's bee haven a sever, [Mahu QR](https://qr.growgen.xyz).
+
 | | |
 |-|-|
 | ![page](https://res.cloudinary.com/dmq8ipket/image/upload/v1790596207/Screenshot_20260928_144829_ij8fc9.png) | ![](https://res.cloudinary.com/dmq8ipket/image/upload/v1790593980/IMG_3896_nwqlne.jpg)  |
-
-Last week, I made the QR code CLI tool made for grandpa's bee haven a sever, [Mahu QR](https://qr.growgen.xyz).
 
 This is the first app I made that is totally vibe-coded with opencode and GLM5.3-flash. During the building time, I only make the stack choice and some algorithm plans.  Instead of a remote server, I made this tool into wasm and the process is fully runing inside of the browser.
 
