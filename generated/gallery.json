@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T09:40:50.371Z",
+  "lastUpdated": "2026-10-03T20:33:54.470Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -468,6 +468,18 @@
         "titleColor": "--mantine-color-blue-2"
       },
       "addedAt": "2026-10-02T09:40:49.114Z"
+    },
+    {
+      "id": "10/03/ningbo",
+      "file": "10/03/ningbo",
+      "hash": "39e20c27b1b9d928dff65b57413881746beb0e7f750f1bde1b0440d280438424",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1791059588/IMG_20191003_175138_xjpxbi.jpg",
+      "doc": "/2019/10/03/ningbo-city-bo-okay",
+      "colorSet": {
+        "bgColor": "#b67165",
+        "titleColor": "--mantine-color-yellow-2"
+      },
+      "addedAt": "2026-10-03T20:33:52.998Z"
     },
     {
       "id": "10/18/koktokay",
