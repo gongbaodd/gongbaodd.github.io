@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03T20:33:54.470Z",
+  "lastUpdated": "2026-10-06T11:26:18.696Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -480,6 +480,18 @@
         "titleColor": "--mantine-color-yellow-2"
       },
       "addedAt": "2026-10-03T20:33:52.998Z"
+    },
+    {
+      "id": "10/06/longyan",
+      "file": "10/06/longyan",
+      "hash": "04e577ddae9508fb5ca024d02316b23d1ee577ed6e6a728d2214ab88a1ef1fb7",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1791285889/IMG_20191006_142221_yrzgvr.jpg",
+      "doc": "/2019/10/06/tulou-is-real-soil",
+      "colorSet": {
+        "bgColor": "#6d8195",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-10-06T11:26:17.303Z"
     },
     {
       "id": "10/18/koktokay",
