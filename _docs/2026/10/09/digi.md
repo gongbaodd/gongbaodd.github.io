@@ -3,6 +3,9 @@ type: post
 category: tech
 city:
     - Tartu, Estonia
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1791641131/IMG_3983_k4dguo.jpg
+    alt: selfie
 ---
 
 # Week 40: Digit Conference 2026

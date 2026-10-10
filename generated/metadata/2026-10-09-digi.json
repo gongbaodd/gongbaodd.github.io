@@ -1,6 +1,6 @@
 {
   "file": "2026/10/09/digi",
-  "hash": "71ca359416afe48b5e778fe585eea9159bce8242ef0770d8295d57ef858815bd",
+  "hash": "3723a70013c95e4c6afbc4cbdb99bcd9c78b5b392a95270e73c77bc9f943f814",
   "id": "2026/10/09/digi",
   "href": "/tech/2026/10/09/digi",
   "title": "Week 40: Digit Conference 2026",
@@ -20,6 +20,14 @@
       "longitude": 26.7290383
     }
   ],
+  "cover": {
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1791641131/IMG_3983_k4dguo.jpg",
+    "alt": "selfie"
+  },
+  "colorSet": {
+    "bgColor": "#936666",
+    "titleColor": "--mantine-color-grape-3"
+  },
   "embeddings": [
     0.0388096459209919,
     0.03112882375717163,
