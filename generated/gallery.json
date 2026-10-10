@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T11:26:18.696Z",
+  "lastUpdated": "2026-10-10T16:49:35.425Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -482,6 +482,18 @@
       "addedAt": "2026-10-03T20:33:52.998Z"
     },
     {
+      "id": "10/04/xining",
+      "file": "10/04/xining",
+      "hash": "99835a7c016f686ee9810ced03e1c8f6bf49f8601289a7bf3e2348f9130a737c",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1760272544/026_knl544.jpg",
+      "doc": "2016/10/09/tang-fan-beidou-xining-chapter",
+      "colorSet": {
+        "bgColor": "#838375",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-10-10T16:49:32.659Z"
+    },
+    {
       "id": "10/06/longyan",
       "file": "10/06/longyan",
       "hash": "04e577ddae9508fb5ca024d02316b23d1ee577ed6e6a728d2214ab88a1ef1fb7",
@@ -492,6 +504,30 @@
         "titleColor": "--mantine-color-dark-8"
       },
       "addedAt": "2026-10-06T11:26:17.303Z"
+    },
+    {
+      "id": "10/09/swatow",
+      "file": "10/09/swatow",
+      "hash": "91330202736f5d17dea212d3a35fc82f7b61642079ff7a2ccdd9356d51badbfa",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1759310330/IMG_20191009_133312_frunph.jpg",
+      "doc": "2019/10/09/my-childhood-may-be-what-shantou-looks-like",
+      "colorSet": {
+        "bgColor": "#977c63",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-10-10T16:49:33.400Z"
+    },
+    {
+      "id": "10/10/qinghai",
+      "file": "10/10/qinghai",
+      "hash": "6d668001cabd7fbfcf7b3cebbec6aabc68027442cd1f7f28cf1d3935623df735",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1760274362/019_sgljui.jpg",
+      "doc": "2016/10/10/tang-fan-beidou-hainan-prefecture",
+      "colorSet": {
+        "bgColor": "#7490a6",
+        "titleColor": "--mantine-color-red-3"
+      },
+      "addedAt": "2026-10-10T16:49:34.474Z"
     },
     {
       "id": "10/18/koktokay",
