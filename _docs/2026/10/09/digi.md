@@ -47,7 +47,7 @@ This is a speech by [Evgenii Indenbom](https://www.linkedin.com/in/eindenbom/). 
 
 ## Building Kubernetes-Native Python Applications
 
-This is a workshop by [Lauri Võsandi](www.linkedin.com/in/laurivosandi/). The project is to use MCP to develop new features on [lolcatz](https://github.com/codemowers/lolcatz).
+This is a workshop by [Lauri Võsandi](www.linkedin.com/in/laurivosandi/). The project is to use MCP to develop new features on [lolcatz](https://github.com/codemowers/lolcatz). Well, the original repo needs to setup kafka credential, can use mcp to make it done.
 
 ## Own Your LLM: Lessons from Building a Local AI Agent
 
