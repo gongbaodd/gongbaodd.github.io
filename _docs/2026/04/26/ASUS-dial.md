@@ -27,10 +27,14 @@ RestartSec=5s
 WantedBy=default.target
 ```
 
+There are some occasions that the wheel services run failed because there is no graphical sessions. Make sure it runs after graphical-session
+
 ```ini
 # cat ~/.config/systemd/user/openwheel-gadget.service
 [Unit]
 Description=OpenWheel Gadget Overlay
+PartOf=graphical-session.target
+After=graphical-session.target
 After=asus_wheel.service
 
 [Service]
@@ -39,7 +43,7 @@ ExecStart=/usr/local/bin/openwheel-gadget
 Restart=on-failure
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
 ```
 
 Give them `udev` permissions, edit `/etc/udev/rules.d/99-asus-wheel.rules`
