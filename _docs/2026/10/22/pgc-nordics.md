@@ -4,6 +4,8 @@ category: life
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1792660697/IMG_4254_omyf0y.jpg
     alt: PGC
+city:
+    - Helsinki, Finland
 ---
 
 # Wrap up my PGC Nordics 2026
