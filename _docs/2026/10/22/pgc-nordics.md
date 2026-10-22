@@ -6,9 +6,11 @@ cover:
     alt: PGC
 city:
     - Helsinki, Finland
+tag:
+    - Game
 ---
 
-# Wrap up my PGC Nordics 2026
+# Week 42: PGC Nordics 2026
 
 ![Grandpa's bee haven on PGC](https://res.cloudinary.com/dmq8ipket/image/upload/v1792660840/helsinki-grandpa_ba1njg.jpg)
 
