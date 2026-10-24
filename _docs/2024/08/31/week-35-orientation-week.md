@@ -14,6 +14,8 @@ This week flew by so fast! ⏳ Most of it was about **ESN (Erasmus Student Netwo
 
 What amazed me most 🤯 is that students can actually choose to exchange to *any other school in Europe*! 🌍 On Thursday, there was a **Cultural Evening**. I expected food and movies 🍿, but it turned out to be mostly music and dancing 💃🕺. Ended up dancing for 2 whole hours!
 
+I went to the LVLup! Game library, checked some games stored here.
+
 ![Game library](https://res.cloudinary.com/dmq8ipket/image/upload/v1756555629/IMG_4875_pifjfn.jpg)
 
 Friday was my study information session. Honestly, it was the **first time I saw a presentation made as a game** 🎮 — super fun! My lab felt more like a playground, full of game consoles. After the lab tour came the **Opening Ceremony** — a festival-like market 🎶🎪 with bands and lots of music.  
