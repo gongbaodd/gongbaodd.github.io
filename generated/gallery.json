@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T17:36:13.757Z",
+  "lastUpdated": "2026-10-26T15:21:57.594Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -602,6 +602,18 @@
       "addedAt": "2026-09-06T16:35:23.372Z"
     },
     {
+      "id": "10/24/tampere",
+      "file": "10/24/tampere",
+      "hash": "b52225ec1e3e8b3d91865bff684b54a7679138e6a5b3a13eac97469b632c9b45",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1792843434/IMG_4289_w3dnrz.jpg",
+      "doc": "/2026/10/24/tampere",
+      "colorSet": {
+        "bgColor": "#a68252",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-10-26T15:21:55.301Z"
+    },
+    {
       "id": "10/25/haixi",
       "file": "10/25/haixi",
       "hash": "75bb21b2ed1e0494ac6e1f90825e65bad2ffb83837bb1ada7285406121dd0e45",
@@ -612,6 +624,18 @@
         "titleColor": "--mantine-color-orange-2"
       },
       "addedAt": "2026-10-10T17:36:08.762Z"
+    },
+    {
+      "id": "10/26/turku",
+      "file": "10/26/turku",
+      "hash": "8679ae24deea229511ec47481b8fdb9ddec8286eced41fd26aa806ae2da6d5e4",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1793026824/IMG_4402_xpiwiv.jpg",
+      "doc": "/2026/10/26/turku",
+      "colorSet": {
+        "bgColor": "#9b8e77",
+        "titleColor": "--mantine-color-red-3"
+      },
+      "addedAt": "2026-10-26T15:21:56.356Z"
     },
     {
       "id": "10/27/shenzhen",
