@@ -2,7 +2,7 @@
 type: post
 category: tech
 tag:
-    - MagicaVoxel
+    - voxel
 cover:
     url: ./wxb.png
     alt: 韦小宝 made with MagicaVoxel
