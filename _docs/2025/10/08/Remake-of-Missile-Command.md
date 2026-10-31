@@ -13,7 +13,6 @@ tag:
 
 # 🚀 3D Missile Command on Colyseus
 
-![](https://www.growgen.xyz/_astro/week-48-1.BeLVKpHd_LgsTr.webp)
 
 Last year, I created a [3D Missile Command game](/plan/2024/12/06/week-48-ecs) using **p5.js** for my *Digital Graphics* class. This time, for the **Game AI** class, I decided to upgrade it into a **1v1 Battle version** ⚔️.  
 

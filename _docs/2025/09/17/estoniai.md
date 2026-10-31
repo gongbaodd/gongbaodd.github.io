@@ -13,7 +13,7 @@ tag:
 # 🤖 EstoniAI Meetup
 
 Yesterday I joined the [EstoniAI Meetup](https://luma.com/tn3tl3dc?tk=3iFl3O&utm_source=weblnk) — this time the theme was all about **hardware** ⚙️.  
-Since I’ve played a bit with [Edge AI](https://www.growgen.xyz/plan/2025/08/02/week-32-edge-impulse), I thought: why not apply? 🚀
+Since I’ve played a bit with [Edge AI](/plan/2025/08/02/week-32-edge-impulse), I thought: why not apply? 🚀
 
 The event was hosted at the **Estonia Film Museum** 🎬, and wow... the view outside was just amazing 🌳☀️.
 
