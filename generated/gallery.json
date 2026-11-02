@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T15:21:57.594Z",
+  "lastUpdated": "2026-11-02T09:10:39.555Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -650,6 +650,18 @@
       "addedAt": "2026-10-10T17:36:09.900Z"
     },
     {
+      "id": "10/28/suomenlinna",
+      "file": "10/28/suomenlinna",
+      "hash": "9553c2937094df4e5c605dbd74bd7184c236d91c995c4fd3f02e075f50195127",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1793273956/IMG_4491_fba00i.jpg",
+      "doc": "/2026/10/28/suomenlinna",
+      "colorSet": {
+        "bgColor": "#8b955e",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-11-02T09:05:38.773Z"
+    },
+    {
       "id": "10/29/beijing",
       "file": "10/29/beijing",
       "hash": "8a4b87f95bc6019fad7780e41572c9e20b99fdab614202c448e8d684fc00312e",
@@ -660,6 +672,30 @@
         "titleColor": "--mantine-color-dark-8"
       },
       "addedAt": "2026-10-10T17:36:10.853Z"
+    },
+    {
+      "id": "10/30/helsinki",
+      "file": "10/30/helsinki",
+      "hash": "e0ec83993220acb14bccbb6d1af0072dee35474899f2de071066352d0b7b7ecd",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1793610555/IMG_4281_apuglv.jpg",
+      "doc": "/podcast/ep-e3rbr0g",
+      "colorSet": {
+        "bgColor": "#a28c5a",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-11-02T09:10:38.001Z"
+    },
+    {
+      "id": "11/01/dunhuang",
+      "file": "11/01/dunhuang",
+      "hash": "2aa4c556fa6036b9c54b3c62f7d1f0c4b215cca730ad8585fd32600c4699a8cc",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1762345941/Screenshot_2025-11-05_142821_nuer5c.png",
+      "doc": "/2020/11/01/there-is-no-heating",
+      "colorSet": {
+        "bgColor": "#9f855e",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-11-02T09:05:40.664Z"
     }
   ]
 }
