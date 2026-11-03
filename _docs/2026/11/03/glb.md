@@ -45,6 +45,20 @@ There is a cummunity version, do not mess up.
 
 Although it added extra light, the result still like 50/100. And MCP costs like 3% of the credit limit.
 
+## 3D Model Anything
+
+During [the vibecoding hackathon](/podcast/ep-e3pg7ev/), there was a team used GPT6 Astra to scan the rooms into a small the Sims game. 
+Later, Wesbos open sourced his method to scan his own office into a 3D model with [3D Model Anything](https://github.com/wesbos/3d-model-anything).
+
+![3D Model](https://res.cloudinary.com/dmq8ipket/image/upload/v1793732421/thumb-1_gnsqhh.png)
+
+The result was stunning. Also resource consuming. 
+The page did not use camera occulation. Also the models are combined as building blocks. So, many extra vertices were added.
+
+I tried to scan my bathroom, the result is not as good. Maybe because I only use Sonnet model. 
+
+![Toilet](https://res.cloudinary.com/dmq8ipket/image/upload/v1793732796/Screenshot_20261103_210428_aspaoj.png)
+
 ## Extra Research
 
 Obviously, the prompt was too short. So I did some research.
