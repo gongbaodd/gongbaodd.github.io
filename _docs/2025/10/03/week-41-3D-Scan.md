@@ -9,6 +9,8 @@ city:
 series:
   name: 3D printing
   slug: 3d-printing
+tag:
+    - 3D
 ---
 # Week 41: 3D Scan 🎨
 

@@ -3,6 +3,7 @@ type: post
 category: fe
 tag:
     - voxel
+    - 3D
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1793378156/Screenshot_20261030_183510_dncvhi.png
     alt: hunyuan
