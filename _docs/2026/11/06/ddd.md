@@ -2,7 +2,7 @@
 type: post
 category: book
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1793954104/Screenshot_20261106_103120_qzqvmg.png
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1793979155/Screenshot_20261106_103120_qzqvmg_qdcjwl.png
     alt: learning ddd
 ---
 
