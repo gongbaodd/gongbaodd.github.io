@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1764718465/Scene_6_Tallinn_psetfi.png
     alt: city view
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 51: Building an Interactive Novel with Pannellum and Inky 

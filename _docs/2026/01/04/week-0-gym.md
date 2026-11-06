@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1767527566/WhatsApp_Image_2026-01-04_at_13.50.09_ill1ew.jpg
     alt: doodle
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 0: My Yearly Workout Wrap-up! 🎆💪

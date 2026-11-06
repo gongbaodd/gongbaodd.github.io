@@ -4,6 +4,9 @@ category: plan
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761546248/IMG_8514_s9sbte.jpg
     alt: selfie
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 44: TipiLan and Tech Deep Dive 💻

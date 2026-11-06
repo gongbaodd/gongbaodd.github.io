@@ -10,6 +10,9 @@ tag:
     - machine-learning
     - arduino
     - portfolio
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 32: Edge Impulse & DIY Hearing Aid

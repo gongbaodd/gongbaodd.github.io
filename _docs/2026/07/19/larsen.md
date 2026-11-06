@@ -6,6 +6,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1784549068/IMG_3055_rkdexg.jpg
     alt: moving
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 28: I Do NOT like moving 😭

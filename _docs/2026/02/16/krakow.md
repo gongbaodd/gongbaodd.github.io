@@ -6,6 +6,9 @@ cover:
     alt: snow view
 city:
     - krakow, Poland
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 6: Life as a Miner in Krakow

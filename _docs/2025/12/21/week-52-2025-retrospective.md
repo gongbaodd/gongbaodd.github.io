@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - retrospective
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 52: 2025 Retrospective

@@ -8,6 +8,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1766840888/Screenshot_2025-12-27_150327_fuqd9h.png
     alt: test image
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 53: From 2D to 3D 🎥➡️🕶️

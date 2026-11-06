@@ -4,6 +4,9 @@ category: fe
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1779451397/Screenshot_20260522_150144-1_cv61p1.png
     alt: screenshot
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 20: AngelScript

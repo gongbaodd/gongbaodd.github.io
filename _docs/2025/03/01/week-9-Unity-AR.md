@@ -5,6 +5,9 @@ tag:
     - Unity
     - AR
     - stencil
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 9: Unity AR
 

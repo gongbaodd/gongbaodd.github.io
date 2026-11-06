@@ -4,6 +4,9 @@ category: plan
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1790850978/IMG_3928_msqlch.jpg
     alt: selfie
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 39: Muon & Quantum

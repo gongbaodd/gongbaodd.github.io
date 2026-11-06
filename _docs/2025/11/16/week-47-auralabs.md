@@ -6,6 +6,9 @@ city:
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1763297833/7883fd8f-5cfc-4ed4-8668-500383c47974_vnknv9.jpg
   alt: group photo
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 47: The AuraLabs

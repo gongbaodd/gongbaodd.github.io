@@ -14,6 +14,9 @@ cover:
     alt: image from linnamuuseum.ee
 city:
   - Tallinn, Estonia
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # 🏰 Week 28: Kiek in de Kök, Tallinn

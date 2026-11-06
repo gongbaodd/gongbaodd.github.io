@@ -7,6 +7,9 @@ cover:
 tag:
     - AWS
     - security
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week32: AWS Meetup Estonia

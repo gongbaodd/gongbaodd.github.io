@@ -13,6 +13,9 @@ tag:
     - WSL
     - Fonts
     - React Native
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # Week 45: 2023年双十一

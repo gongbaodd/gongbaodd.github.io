@@ -3,6 +3,9 @@ type: post
 category: tech
 tag:
     - git
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 # Week 11: Git Worktree
 

@@ -4,6 +4,9 @@ category: plan
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1782898367/IMG_2903_jytmyu.jpg
     alt: packing
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 26: Moving out of Karu

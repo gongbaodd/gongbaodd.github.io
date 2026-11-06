@@ -4,6 +4,9 @@ category: plan
 tag:
     - Media Pipe
     - getUserMedia
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 25: Media Pipe

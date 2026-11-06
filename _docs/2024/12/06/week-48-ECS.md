@@ -8,6 +8,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1757502358/Screenshot_2025-09-10_140146_h0bzw4.png
     alt: screenshot
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 48: Missile Command: an ECS game inplementation

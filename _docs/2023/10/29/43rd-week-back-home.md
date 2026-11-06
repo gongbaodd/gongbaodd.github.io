@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # 43rd Week - Back Home

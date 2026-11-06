@@ -9,6 +9,9 @@ city:
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/a_-360/IMG_1771OK_bpntjv.jpg
   alt: group photo
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 38: European Parliament Role Play Game 🎲🇪🇺

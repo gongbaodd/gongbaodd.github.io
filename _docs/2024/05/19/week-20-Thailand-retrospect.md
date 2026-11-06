@@ -7,6 +7,9 @@ tag:
     - threejs
 city:
   - Bangkok, Thailand
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 20: Thailand Retrospect

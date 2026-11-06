@@ -4,6 +4,9 @@ category: plan
 cover:
     url: https://blog.logrocket.com/wp-content/uploads/2021/08/astro-cool-parts.png
     alt: astro logo from logrocket
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # Week 33: View Transition ✨

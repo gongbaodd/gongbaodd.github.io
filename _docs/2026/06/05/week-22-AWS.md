@@ -6,6 +6,9 @@ cover:
     alt: selfie
 city:
     - Tallinn, Estonia
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 22: Baltic Connect

@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1782283400/HLW8w0mW8AAcuLn_wcgrsb.jpg
     alt: benchmarking
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 25: ECS in browser? Might be a hoax

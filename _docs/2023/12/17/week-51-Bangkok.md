@@ -6,6 +6,9 @@ cover:
     alt: the king's gardern
 city:
   - Bangkok, Thailand
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # Week 51: First Impression of Bangkok

@@ -4,6 +4,9 @@ category: plan
 cover:
     url: https://m.media-amazon.com/images/M/MV5BZDQ1NGE5MGMtYzdlZC00ODExLWJlMDMtNWU4NjA5OWYwMDEwXkEyXkFqcGc@._V1_FMjpg_UY576_.jpg
     alt: the substance poster from imdb
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 50: Rapid Miner

@@ -6,6 +6,9 @@ city:
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1761518087/IMG_5744_big0fu.jpg
   alt: selfie
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 43: Riigikogu

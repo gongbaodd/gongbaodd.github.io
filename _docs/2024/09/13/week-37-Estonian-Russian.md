@@ -6,6 +6,9 @@ tag:
     - Russian
 city:
   - Tallinn, Estonia
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 37: Estonian and Russian

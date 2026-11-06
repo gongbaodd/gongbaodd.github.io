@@ -6,6 +6,9 @@ cover:
     alt: meme
 city:
     - Porto, Portugal
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 4: Studying at Lusófona University 🇵🇹

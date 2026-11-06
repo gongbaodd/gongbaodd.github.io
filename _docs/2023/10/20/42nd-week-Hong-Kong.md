@@ -7,6 +7,9 @@ cover:
 city:
   - Hong Kong
   - Macau
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # Week 42: Trip to Hong Kong & Macau ✈️🏮

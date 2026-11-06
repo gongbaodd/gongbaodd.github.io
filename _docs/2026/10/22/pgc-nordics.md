@@ -8,6 +8,9 @@ city:
     - Helsinki, Finland
 tag:
     - Game
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 42: PGC Nordics 2026

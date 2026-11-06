@@ -7,6 +7,9 @@ cover: {
     url: "./selfie.png",
     alt: "my photo in Proto Factory"
 }
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 30: Proto Factory & Museum Hopping

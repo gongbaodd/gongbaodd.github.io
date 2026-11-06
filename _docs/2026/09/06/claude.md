@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1788681048/claude-code-v0-86MxfNlRrfEltsvsMwQKkuaptKciLClI0-fCUKtdsSc_t31xc3.webp
     alt: Claude Code
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 35: Claude Code

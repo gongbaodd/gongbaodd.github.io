@@ -5,6 +5,9 @@ tag:
  - Dify
  - AI
  - LLM
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 23: Dify

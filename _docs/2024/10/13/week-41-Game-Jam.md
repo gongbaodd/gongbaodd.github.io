@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - game jam
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 41: Game Jam
 

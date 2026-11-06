@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - unity
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 3: Unity Junior Programer
 

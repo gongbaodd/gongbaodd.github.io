@@ -1,6 +1,9 @@
 ---
 type: post
 category: tech
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 15: Unitree Go2 & Many Hackathons

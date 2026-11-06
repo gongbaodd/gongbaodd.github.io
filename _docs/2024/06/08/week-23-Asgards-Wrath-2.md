@@ -6,6 +6,9 @@ tag:
     - three.js
     - quest
     - squats
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 23: Asgard's Wrath
 

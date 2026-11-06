@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 24: Inside No 9

@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # The 3rd week in review: week of the LunarVim

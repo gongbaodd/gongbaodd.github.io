@@ -7,6 +7,9 @@ tag:
     - Meta-SDK
     - SPAR3D
     - Gen-AI-3D
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 6: Unity VR
 

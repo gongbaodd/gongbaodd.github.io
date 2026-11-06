@@ -1,6 +1,9 @@
 ---
 type: post
 category: life
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 42: I Am Low IQ for the First Time 🤯

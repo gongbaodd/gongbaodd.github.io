@@ -7,6 +7,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1765129135/Screenshot_2025-12-07_193818_yvdyvf.png
     alt: selfie
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 50: Maarjamäe Palace, Sagadi Forest, and Palmse Manor

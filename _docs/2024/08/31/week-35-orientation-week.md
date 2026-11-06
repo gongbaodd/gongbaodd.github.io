@@ -6,6 +6,9 @@ city:
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1756555639/IMG_4887_ma1hov.jpg
   alt: me on Pirita
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 35: Orientation Week 🎉

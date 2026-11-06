@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 # 22nd Week: Use an ultra wide screen
 

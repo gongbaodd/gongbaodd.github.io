@@ -6,6 +6,9 @@ cover:
     alt: lucky
 city:
   - Tallinn, Estonia
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 51: Pets 🐶

@@ -4,6 +4,9 @@ category: plan
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1781728258/IMG_2816_gnlz1q.jpg
     alt: selfie
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 24: I am now officially a Master of Science in Engineering 🥳

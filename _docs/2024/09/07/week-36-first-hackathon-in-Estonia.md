@@ -6,6 +6,9 @@ city:
 cover:
   url: ./photo.jpg
   alt: in the hackathon
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # 🚀 Week 36: My First Hackathon in Estonia 🇪🇪

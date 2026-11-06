@@ -4,6 +4,9 @@ category: plan
 cover: 
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1758889813/WhatsApp_%E5%9B%BE%E5%83%8F2025-09-23%E4%BA%8E17.27.24_8e41ba93_thuslw.jpg
     alt: poster
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 40: TLU Japanese Cafe

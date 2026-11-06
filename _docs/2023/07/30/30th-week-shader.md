@@ -4,6 +4,9 @@ category: plan
 tag:
     - devtool
     - eruda
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 # 30th week shader
 

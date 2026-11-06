@@ -16,6 +16,9 @@ tag:
     - bangkok
 city:
   - Bangkok, Thailand
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # Week 47: I Bought a Ticket to Bangkok

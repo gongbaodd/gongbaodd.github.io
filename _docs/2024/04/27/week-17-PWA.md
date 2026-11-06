@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
  - PWA
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # PWA on Meta Quest
 

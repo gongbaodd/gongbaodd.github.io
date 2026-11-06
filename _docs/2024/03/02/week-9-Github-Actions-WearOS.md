@@ -12,6 +12,9 @@ tag:
     - rust
     - swift
     - zhou-chu
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 9: Github Actions and WearOS
 

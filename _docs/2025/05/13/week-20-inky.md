@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - inky
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 20: Inky

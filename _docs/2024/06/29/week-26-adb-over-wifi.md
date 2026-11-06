@@ -4,6 +4,9 @@ category: plan
 tag:
     - media-pipe
     - space-desk
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 26: Adb over Wifi
 

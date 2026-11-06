@@ -8,6 +8,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1762507161/download_zhzrpj.webp
     alt: image from meta
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 45: Meta Spatial SDK

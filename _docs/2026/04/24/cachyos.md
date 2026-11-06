@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1777048975/1080x360_culme4.jpg
     alt: cachyos
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 16: CachyOS

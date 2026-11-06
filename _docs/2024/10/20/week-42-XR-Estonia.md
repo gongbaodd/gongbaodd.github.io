@@ -6,6 +6,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1760186492/IMG_5681_kdsbid.jpg
     alt: selfie
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 42: XR in Estonia

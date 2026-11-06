@@ -4,6 +4,9 @@ category: tech
 cover: 
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1781000902/images_ca8ihb.jpg
     alt: WWDC
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 23: WWDC 26

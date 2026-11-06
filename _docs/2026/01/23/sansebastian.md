@@ -9,6 +9,9 @@ cover:
     alt: selfie
 tag:
     - LLM
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 3: San Sebastián 🌊

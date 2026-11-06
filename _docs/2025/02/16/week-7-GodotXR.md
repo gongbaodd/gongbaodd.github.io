@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - Godot
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 7: Godot XR

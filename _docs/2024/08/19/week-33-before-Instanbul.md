@@ -12,6 +12,9 @@ city:
   - Dalian, China
   - Beijing, China
   - Istanbul, Turkey
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 33: Before Istanbul ✈️🌍  
 

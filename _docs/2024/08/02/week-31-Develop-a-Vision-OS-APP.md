@@ -4,6 +4,9 @@ category: plan
 tag:
     - vision os
     - swiftData
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 31: Develop a Vision OS APP

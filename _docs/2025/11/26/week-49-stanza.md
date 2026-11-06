@@ -6,6 +6,9 @@ cover:
     alt: zelda dialogue
 tag:
     - nlp
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # 🚀 Week 49: Stanza for Speed-Reading - The TL;DR Tool!
 

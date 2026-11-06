@@ -7,6 +7,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1793730299/HWMUF4HXIAAR-n1_nksckb.jpg
     alt: blender mcp
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 44: AI generated GLBs

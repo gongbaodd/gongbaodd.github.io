@@ -7,6 +7,9 @@ tag:
     - GPT
     - Clash
     - spinning bike
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # Week 44th: still work on the website

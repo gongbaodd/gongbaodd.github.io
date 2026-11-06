@@ -7,6 +7,9 @@ tag:
     - gen-v
     - quiz-lady
     - scavengers-reign
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # Week 46: Too many TV endings this week

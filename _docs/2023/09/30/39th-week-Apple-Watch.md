@@ -6,6 +6,9 @@ tag:
     - Mac
     - Apple Watch
     - Sonoma
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # 39th Week - Apple Watch

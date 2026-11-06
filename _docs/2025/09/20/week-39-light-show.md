@@ -6,6 +6,9 @@ city:
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1758367603/IMG_8151_wnzgnt.jpg
   alt: selfie
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 39: Light Show ✨ @Kadriorg

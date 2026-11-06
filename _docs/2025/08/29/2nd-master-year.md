@@ -4,6 +4,9 @@ category: plan
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1756585235/IMG_7890_ibqzet.jpg
     alt: rainy opening ceremony
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 36: 2nd Master Year 🎓🌧️

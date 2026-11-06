@@ -6,6 +6,9 @@ cover:
     alt: artwork in clinic
 city:
   - Bangkok, Thailand
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 # Week 52: Did an HIV Test 🩺
 

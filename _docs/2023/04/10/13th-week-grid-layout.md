@@ -1,6 +1,9 @@
 ---
 type: post
 category: tech
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # 13th Week: Grid Layout

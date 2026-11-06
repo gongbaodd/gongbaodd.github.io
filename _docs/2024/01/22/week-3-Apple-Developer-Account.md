@@ -8,6 +8,9 @@ tag:
     - ignite
     - meta spark
     - same-site Cookie
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week3: Apple Developer Account
 

@@ -8,6 +8,9 @@ tag:
     - Janus
 city:
   - Tallinn, Estonia
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 5: Global Game Jam 2025 and Spring Festival in Tallinn
 

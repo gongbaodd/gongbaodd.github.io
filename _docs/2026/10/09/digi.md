@@ -6,6 +6,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1791641131/IMG_3983_k4dguo.jpg
     alt: selfie
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 40: Digit Conference 2026

@@ -15,6 +15,9 @@ tag:
 cover:
     url: ./gamepad.jpg
     alt: gamepad
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 24: Gamepad 🎮

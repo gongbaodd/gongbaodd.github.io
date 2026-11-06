@@ -3,6 +3,9 @@ type: post
 category: fe
 tag:
     - UE
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 10: UE

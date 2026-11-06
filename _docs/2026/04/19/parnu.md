@@ -6,6 +6,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1776680375/IMG_2451_q4mui0.jpg
     alt: street view
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 # Week 15: Parnu
 

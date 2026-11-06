@@ -1,6 +1,9 @@
 ---
 type: post
 category: fe
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 21: Google I/O 26 - Chrome

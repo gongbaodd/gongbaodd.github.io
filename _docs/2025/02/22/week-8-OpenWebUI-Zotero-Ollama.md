@@ -10,6 +10,9 @@ tag:
     - gltf
     - mixamo
     - glb2fbx
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 8: OpenWebUI Zotero Ollama

@@ -9,6 +9,9 @@ tag:
  - Surface Dial Android
  - registry finder
  - Thai Characters
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # week 16: MRTK3

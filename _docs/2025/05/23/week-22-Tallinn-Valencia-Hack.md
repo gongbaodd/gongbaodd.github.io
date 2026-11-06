@@ -3,6 +3,9 @@ type: post
 category: plan
 city:
   - Tallinn, Estonia
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 22: Tallinn Valencia Hackathon
 

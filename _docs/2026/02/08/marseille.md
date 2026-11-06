@@ -9,6 +9,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1770580346/IMG_1186_yvtbq1.jpg
     alt: Basilique Notre-Dame de la Garde
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week5: From 🇫🇷 Marseille to 🇮🇹 Millan

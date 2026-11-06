@@ -22,6 +22,9 @@ tag:
     - MRTK
     - Unity XR toolkit
     - Oculus interaction SDK
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 7: Wearables and XRs

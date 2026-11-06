@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - AI
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # 🤖 Week 29: Game AI

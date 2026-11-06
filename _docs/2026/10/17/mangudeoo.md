@@ -6,6 +6,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1792260231/IMG_4065_lfdy64.jpg
     alt: selfie
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 41: MängudeÖÖ 2026

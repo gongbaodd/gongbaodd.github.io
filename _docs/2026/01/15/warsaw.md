@@ -6,6 +6,9 @@ city:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1768943804/67F26F9E-3147-4F3B-9B95-79B71AEC0B31_pjhw5w.jpg
     alt: selfie
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 2: Warsaw, an uprising cold city

@@ -6,6 +6,9 @@ city:
 cover: 
     url: ./selfie.jpg
     alt: Selfie at the beach
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 34: Dawn of the Master Study ✨

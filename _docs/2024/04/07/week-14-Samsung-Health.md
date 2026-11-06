@@ -5,6 +5,9 @@ tag:
  - Samsung Health
  - WTF Academy
  - Spotify Podcast
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 14: Samsung Health
 

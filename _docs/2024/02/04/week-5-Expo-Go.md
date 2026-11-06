@@ -11,6 +11,9 @@ tag:
     - cloudflare-worker-jwt
     - graphql-yoga
     - jwt
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 5: Expo Go

@@ -8,6 +8,9 @@ tag:
     - colyseus
     - multiplayer
     - edge-detection
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # 🚀 Week 45: Colyseus Multiplayer & SVG Edge Detection

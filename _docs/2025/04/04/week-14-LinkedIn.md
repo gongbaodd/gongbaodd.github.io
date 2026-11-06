@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 14: I am reusing LinkedIn
 

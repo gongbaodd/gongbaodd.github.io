@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - vibe-coding
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 # Week 9: The IKEA Effect
 

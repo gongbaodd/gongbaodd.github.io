@@ -11,6 +11,9 @@ tag:
  - ionic
  - astro
  - cloudflare
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 6: Graphql on Expo
 

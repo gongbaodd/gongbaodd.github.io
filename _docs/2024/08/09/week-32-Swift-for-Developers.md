@@ -6,6 +6,9 @@ tag:
     - apple
     - wear auth
     - vscode
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 32: Swift for developers

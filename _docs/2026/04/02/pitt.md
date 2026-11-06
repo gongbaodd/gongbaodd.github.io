@@ -4,6 +4,9 @@ category: plan
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1775139184/MV5BMDQ2ZTdjM2ItYWIyYy00ZjFmLWI1MjctMDE1MDdkYWE4MmZjXkEyXkFqcGc._V1_FMjpg_UX1920__tldjmy.jpg
   alt: screenshots
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 13: The Pitt

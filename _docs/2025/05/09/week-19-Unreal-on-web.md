@@ -4,6 +4,9 @@ category: plan
 tag:
     - UE
     - Unity
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 19: Unreal on Web
 

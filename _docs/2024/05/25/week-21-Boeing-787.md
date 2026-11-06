@@ -6,6 +6,9 @@ city:
   - Kunming, China
   - Beijing, China
   - Langfang, China
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 21: Boeing 787
 

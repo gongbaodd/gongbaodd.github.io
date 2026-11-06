@@ -6,6 +6,9 @@ tag:
 cover:
   url: https://cdn2.unrealengine.com/godot-fb-tw-share-image-1920x1080-0abe26cbac38.jpg
   alt: godot image from epic store
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 27: Godot

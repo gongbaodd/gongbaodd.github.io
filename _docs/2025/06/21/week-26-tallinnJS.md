@@ -11,6 +11,9 @@ city:
 cover:
   url: https://res.cloudinary.com/dmq8ipket/image/upload/v1756298461/IMG_7216_y311d6.jpg
   alt: lift 99
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 26: BabylonJS graphical development, Godot CI and TallinnJS

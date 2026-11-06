@@ -6,6 +6,9 @@ tag:
     - AR
     - VR
     - WebGPU
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 4: Unity on Web

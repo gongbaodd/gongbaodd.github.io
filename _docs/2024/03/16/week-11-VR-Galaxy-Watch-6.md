@@ -13,6 +13,9 @@ tag:
     - natuerlich
     - Wonderland-Engine
     - merge-watch
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 11: VR and Galaxy Watch 6 Classic
 

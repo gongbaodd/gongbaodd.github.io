@@ -6,6 +6,9 @@ tag:
     - opencore
     - IELTS
     - OCAuxiliaryTool
+series:
+  name: 2023 plans
+  slug: 2023-plan
 ---
 
 # 38th Week - OpenCore

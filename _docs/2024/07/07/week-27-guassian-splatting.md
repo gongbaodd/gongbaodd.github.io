@@ -5,6 +5,9 @@ tag:
     - chrome AI
     - 3DGS
     - memory leak
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # Week 27: Guassian Splatting
 

@@ -3,6 +3,9 @@ type: post
 category: plan
 tag: 
     - WhisperCPP
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 45: WhisperCPP

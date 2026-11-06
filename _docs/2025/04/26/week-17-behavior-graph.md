@@ -5,6 +5,9 @@ tag:
     - Unity
     - media pipe
     - NuGet
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 
 # Week 17: Behavior Graph

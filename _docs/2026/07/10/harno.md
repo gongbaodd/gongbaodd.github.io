@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 27: I received my Scholarship, Finally 

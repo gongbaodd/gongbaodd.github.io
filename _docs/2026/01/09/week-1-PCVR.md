@@ -9,6 +9,9 @@ tag:
 cover:
     url: https://res.cloudinary.com/dmq8ipket/image/upload/v1767957551/Home_2x_lmfsvh.png
     alt: Steam VR
+series:
+  name: 2026 plans
+  slug: 2026-plan
 ---
 
 # Week 1: Wired PCVR

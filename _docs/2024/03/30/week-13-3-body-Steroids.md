@@ -9,6 +9,9 @@ plan:
     - WTF Academy
     - Edge Impulse
     - solidity
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 
 # Week 13: 3 Body and Steroids

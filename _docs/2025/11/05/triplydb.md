@@ -12,6 +12,9 @@ tag:
   - RunningHub
   - pokemon
   - portfolio
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 46: Exploring WikiData, TriplyDB & VTON
 

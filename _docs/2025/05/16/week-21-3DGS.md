@@ -3,6 +3,9 @@ type: post
 category: plan
 tag:
     - 3DGS
+series:
+  name: 2025 plans
+  slug: 2025-plan
 ---
 # Week 21: 3DGS
 

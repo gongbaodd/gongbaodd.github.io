@@ -1,6 +1,9 @@
 ---
 type: post
 category: plan
+series:
+  name: 2024 plans
+  slug: 2024-plan
 ---
 # week 49: Android XR
 
