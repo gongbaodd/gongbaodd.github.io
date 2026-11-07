@@ -70,4 +70,4 @@ One is from Bilibili, [西高君-AI生成3D游戏场景/Codex+Blender三维模�
 
 And [ZZ是画渣-不用GPT-6！本地模型操作Blender建模教程，0元复刻GPT-6的相同效果？](https://www.bilibili.com/video/BV1MfYu68E73/?share_source=copy_web&vd_source=0161e564e6ea2247143fd95f4d81e6c0)
 
-I will report my tests on their methods in the future posts.
+I will report my tests on their methods in the future [posts](/fe/2026/11/07/3d/).
