@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T06:52:28.553Z",
+  "lastUpdated": "2026-11-08T07:08:07.519Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -708,6 +708,42 @@
         "titleColor": "--mantine-color-yellow-2"
       },
       "addedAt": "2026-11-08T06:52:27.628Z"
+    },
+    {
+      "id": "11/09/riga",
+      "file": "11/09/riga",
+      "hash": "888253dc203cc1e15f595acd31378f030f6a0900c0e96131f76ff47d716fb7be",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1762804423/cloud_nonyfs.jpg",
+      "doc": "/2025/11/09/to-brandenburg",
+      "colorSet": {
+        "bgColor": "#5a8cac",
+        "titleColor": "--mantine-color-indigo-2"
+      },
+      "addedAt": "2026-11-08T07:08:02.378Z"
+    },
+    {
+      "id": "11/10/brandonburg",
+      "file": "11/10/brandonburg",
+      "hash": "142ae30fd4a481042369913d53719ae186940fc2f2e670b9dc01338b1540eda9",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1762850256/IMG_8682_lneucx.jpg",
+      "doc": "/2025/11/10/brandenburg-walk-tour",
+      "colorSet": {
+        "bgColor": "#948b6f",
+        "titleColor": "--mantine-color-blue-2"
+      },
+      "addedAt": "2026-11-08T07:08:04.565Z"
+    },
+    {
+      "id": "11/11/berlin",
+      "file": "11/11/berlin",
+      "hash": "4e9833c6d637af5f45b2dc576386afa0a171afe80f216e3fc048c2844262fbbc",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1762972359/IMG_8717_yqguhi.jpg",
+      "doc": "/2025/11/11/berlin-walk-tour",
+      "colorSet": {
+        "bgColor": "#7c735f",
+        "titleColor": "--mantine-color-red-3"
+      },
+      "addedAt": "2026-11-08T07:08:05.510Z"
     }
   ]
 }
