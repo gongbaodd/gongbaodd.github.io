@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T09:10:39.555Z",
+  "lastUpdated": "2026-11-08T06:52:28.553Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -696,6 +696,18 @@
         "titleColor": "--mantine-color-orange-2"
       },
       "addedAt": "2026-11-02T09:05:40.664Z"
+    },
+    {
+      "id": "11/08/beijing",
+      "file": "11/08/beijing",
+      "hash": "3635d8f7b636fa94a95c05e4d4beac1683c7b0515cffb50f6f9899fb89fd6b0a",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1762506768/P61108-084441_l9smll.jpg",
+      "doc": "/2016/11/08/the-rare-beautiful-scenery-of-bargou-mountains-and-water-garden",
+      "colorSet": {
+        "bgColor": "#5c80b1",
+        "titleColor": "--mantine-color-yellow-2"
+      },
+      "addedAt": "2026-11-08T06:52:27.628Z"
     }
   ]
 }
