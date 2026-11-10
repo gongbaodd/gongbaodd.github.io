@@ -1,6 +1,6 @@
 {
   "file": "2026/11/08/boxing",
-  "hash": "7990153815358f6153ecdeb371e2e23edd31c4f6f8bd41d3d22963c2618219de",
+  "hash": "eb15d04593b580ece9c2432f0146c5b55460aa8b1f52fdd90b0548ce0d1d2c17",
   "id": "2026/11/08/boxing",
   "href": "/life/2026/11/08/boxing",
   "title": "Larsen Boxing Club",
@@ -22,12 +22,12 @@
     }
   ],
   "cover": {
-    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1794332646/eaf552cd-315a-4907-a44d-ec63ee4778bc_nkkcnr.jpg",
+    "url": "https://res.cloudinary.com/dmq8ipket/image/upload/v1794334770/eaf552cd-315a-4907-a44d-ec63ee4778bc_nkkcnr_ogykuv.jpg",
     "alt": "training"
   },
   "colorSet": {
-    "bgColor": "#a47d61",
-    "titleColor": "--mantine-color-yellow-2"
+    "bgColor": "#937662",
+    "titleColor": "--mantine-color-orange-2"
   },
   "embeddings": [
     0.0002938339894171804,

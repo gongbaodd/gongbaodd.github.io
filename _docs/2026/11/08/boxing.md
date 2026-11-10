@@ -4,7 +4,7 @@ category: life
 city:
     - Tallinn, Estonia
 cover:
-    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1794332646/eaf552cd-315a-4907-a44d-ec63ee4778bc_nkkcnr.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1794334770/eaf552cd-315a-4907-a44d-ec63ee4778bc_nkkcnr_ogykuv.jpg
     alt: training
 ---
 
