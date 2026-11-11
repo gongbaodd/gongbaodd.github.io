@@ -32,5 +32,10 @@ This is a hobby club hold by my apartment's tennants. I guess it was the first t
   frameborder="0"
 ></iframe>
 
+Beside the event, I passed by Technopol. Two sculptures about Bill Gates and Steve Jobs. It looks some birds were not satisfied with the iPhone Duo.
 
+![Selfie](https://res.cloudinary.com/dmq8ipket/image/upload/v1794395013/IMG_4587_co7nys.jpg)
 
+| | |
+|--|--|
+|![Bill Gates](https://res.cloudinary.com/dmq8ipket/image/upload/v1794332646/IMG_4596_jaxakk.jpg)|![Steve Jobs](https://res.cloudinary.com/dmq8ipket/image/upload/v1794332646/IMG_4597_chlp6z.jpg)|
