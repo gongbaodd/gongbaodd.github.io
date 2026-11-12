@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T18:19:53.993Z",
+  "lastUpdated": "2026-11-12T18:46:10.005Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -744,6 +744,18 @@
         "titleColor": "--mantine-color-red-3"
       },
       "addedAt": "2026-11-08T07:08:05.510Z"
+    },
+    {
+      "id": "11/12/beijing",
+      "file": "11/12/beijing",
+      "hash": "c9c48a6ba2227fa8f43b691e734c4d94b82666b5d406f4209c830a7786cc0e65",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1762900432/001_naxx1x.jpg",
+      "doc": "/2016/11/12/i-found-literature-and-art-in-the-art-museum-but-meow",
+      "colorSet": {
+        "bgColor": "#ac8060",
+        "titleColor": "--mantine-color-red-3"
+      },
+      "addedAt": "2026-11-12T18:46:09.030Z"
     }
   ]
 }
