@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T18:46:10.005Z",
+  "lastUpdated": "2026-11-12T19:06:20.753Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -756,6 +756,42 @@
         "titleColor": "--mantine-color-red-3"
       },
       "addedAt": "2026-11-12T18:46:09.030Z"
+    },
+    {
+      "id": "11/13/shenyang",
+      "file": "11/13/shenyang",
+      "hash": "24788ddaa2031e4c00f5e37f25aa3d454477981259d6f021a554dff71d7bae35",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1762815272/IMG_20201112_191106_c3r9bx.jpg",
+      "doc": "/2020/11/11/never-found-that-shenyang-is-so-prosperous",
+      "colorSet": {
+        "bgColor": "#a4965d",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-11-12T19:02:11.968Z"
+    },
+    {
+      "id": "11/16/berlin",
+      "file": "11/16/berlin",
+      "hash": "428a14ba61d5f039e3b6fc14dea88998da328e73edd25101e416dbe98f0186a7",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/v1763297831/IMG_8822_thvrtz.jpg",
+      "doc": "/2025/11/16/week-47-auralabs",
+      "colorSet": {
+        "bgColor": "#8f7a5d",
+        "titleColor": "--mantine-color-red-3"
+      },
+      "addedAt": "2026-11-12T19:06:19.976Z"
+    },
+    {
+      "id": "11/18/beihai",
+      "file": "11/18/beihai",
+      "hash": "980ea88c94b18f248422540897c41598ea61b6feefaa8ac7a7e162fcd3d8745f",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1794510035/IMG_20201119_142428_mdz8b3.jpg",
+      "doc": "/2020/11/18/20",
+      "colorSet": {
+        "bgColor": "#acac51",
+        "titleColor": "--mantine-color-indigo-2"
+      },
+      "addedAt": "2026-11-12T19:02:13.185Z"
     }
   ]
 }
