@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T19:06:20.753Z",
+  "lastUpdated": "2026-11-18T16:43:24.719Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -792,6 +792,18 @@
         "titleColor": "--mantine-color-indigo-2"
       },
       "addedAt": "2026-11-12T19:02:13.185Z"
+    },
+    {
+      "id": "11/19/shenzhen",
+      "file": "11/19/shenzhen",
+      "hash": "3a8bbacb387a97539884a417fd67c32add5032487edf99b43bbbb62848a3760c",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/v1795019643/173a8f2274980c716569155dbf7f5672_lxzokv.jpg",
+      "doc": "/2018/11/18/shenzhen-oil-painting-village",
+      "colorSet": {
+        "bgColor": "#64809f",
+        "titleColor": "--mantine-color-orange-2"
+      },
+      "addedAt": "2026-11-18T16:42:55.664Z"
     }
   ]
 }
