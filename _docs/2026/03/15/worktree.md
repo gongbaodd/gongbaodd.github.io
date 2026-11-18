@@ -82,3 +82,4 @@ With `git worktree` you can:
 
 For **AI-assisted development**, this workflow is extremely convenient.
 
+News, you can checkout Herdr. With this tool, you do not need to change the directory structure.
