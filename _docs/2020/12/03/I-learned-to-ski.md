@@ -4,7 +4,7 @@ category: life
 city:
     - Harbin, China
 cover:
-    url: ./ski.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1795468731/ski_ejapha.jpg
     alt: selfie
 ---
 
@@ -12,9 +12,11 @@ cover:
 
 从漠河回到哈尔滨，果然没那么冷了🌡️，于是我决定再去滑一次雪。青旅里大家普遍都去亚布力，但我觉得亚布力太竞技，而且还贵💸。如果让我选，我更喜欢伏尔加庄园⛷️——从城堡上滑雪的体验真的超神奇✨。
 
-![selfie](./ski.jpg)
+![selfie](https://res.cloudinary.com/dmq8ipket/image/upload/v1795468731/ski_ejapha.jpg)
 
 伏尔加庄园官网已经荒废了，查了一下飞猪还有账号。原来雪场要等到 12 月 16 号才开放📅，我又不能在哈尔滨等那么久。哈尔滨周边还有很多雪场，我在 GoSki 上找到了名都滑雪🏔️，公众号显示「准备开放」。于是我像平时一样，去微博看了一下，果然有人在滑！咨询没回，我就决定亲自去探探路👀。
+
+![snow](https://res.cloudinary.com/dmq8ipket/image/upload/v1795468719/IMG_20201203_150411_pmjswu.jpg)
 
 从哈尔滨火车站到名都滑雪场，可以坐 338 路直达🚌，在哈尔滨职业技术学院下车。疫情期间要绕过学校，滑雪场就在学校后面🏫❄️。
 

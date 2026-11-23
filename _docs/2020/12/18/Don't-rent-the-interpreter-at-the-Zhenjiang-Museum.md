@@ -4,7 +4,7 @@ category: life
 city:
     - Zhenjiang, China
 cover: 
-    url: ./zhenjiang.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1795469531/zhenjiang_wrpezu.jpg
     alt: xijindu
 ---
 
@@ -20,7 +20,7 @@ cover:
 
 一楼是青铜器馆和瓷器馆，二楼是书画馆和工艺品馆🎨。二楼还有一半是玻璃穹顶☀️，看上去有点哈利波特里斯普劳特教授花圃的感觉✨。  
 
-![zhenjiang](./zhenjiang.jpg)
+![zhenjiang](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469531/zhenjiang_wrpezu.jpg)
 
 博物馆出来就是西津渡景区🏞️。这是三国时期就有的渡口，现在复建成景区，基本上和很多仿古景区差不多😅。有些道路故意挖出明清甚至更早的砖路，像老房子层层覆盖的地板一样，也难怪去渡口要爬楼梯🪜。
 

@@ -10,7 +10,7 @@ cover:
 
 # 牛首山、鸡鸣寺和南京的 CrossFit
 
-![](https://res.cloudinary.com/dmq8ipket/image/upload/v1763570967/nanjing_vsy9h0.jpg)
+![niushou](https://res.cloudinary.com/dmq8ipket/image/upload/v1763570967/nanjing_vsy9h0.jpg)
 
 > 感谢南京同学赠送给我的南京两天白吃白喝之旅~
 
@@ -26,8 +26,16 @@ cover:
 
 ## 鸡鸣寺
 
+![jiming](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469147/IMG_20201214_123910_f2auuz.jpg)
+
 金鸡寺在玄武湖南边，作为南朝第一寺，可游览的地方有点少...10 元一张门票并送三根香可敬。寺中的药师佛塔 1990 年落成，并用于替代当时并没建成的雷峰塔来拍摄「新白娘子传奇」。
 
 ## 六朝 CrossFit
 
 今年多了一个爱好，就是练 CrossFit，一般我会参考邢奇辉的 Youtube 视频，他就是在六朝 CrossFit 的应天店，这次正好看见玄武店在新店促销，定了三次票合计 89。
+
+![crossfit](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469148/mmexport1608104377212_i80znm.jpg)
+
+![group](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469148/mmexport1608104371399_utjyat.jpg)
+
+![xuanwu](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469219/IMG_20201216_172941_1_pvklqa.jpg)

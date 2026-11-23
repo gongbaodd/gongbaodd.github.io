@@ -4,7 +4,7 @@ category: life
 city:
     - Yangzhou, China
 cover:
-    url: ./yangzhou.jpg
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1795469738/IMG_20201220_171541_fqipqk.jpg
     alt: yangzhou
 ---
 
@@ -12,7 +12,7 @@ cover:
 
 > 本来是为了避开浦东疫情绕道南京从扬州回大连，但既然大连也爆发疫情，只好硬着头皮来了😂
 
-![yangzhou](./yangzhou.jpg)
+![yangzhou](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469733/yangzhou_kon7ji.jpg)
 
 从镇江到扬州，可以直接坐客运🚌，比城际列车便宜，也不绕路。镇江和扬州分别在长江南北两岸，阳光直射的扬州虽然温度一样，但体感绝对比镇江暖和☀️。
 
@@ -30,4 +30,8 @@ cover:
 
 ## 瘦西湖 🌊
 
+![瘦西湖](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469738/IMG_20201220_171541_fqipqk.jpg)
+
 瘦西湖一定要去！有人冬天不推荐我去，但我还是去了❄️。虽然冬景比不上盛夏，但作为扬州的代表性景区，刚进景区就能看到青砖白瓦、杨柳依依🍃，不自觉地放慢了脚步。大概这就是古代扬州土豪的闲情雅致吧~💫
+
+![瘦西湖](https://res.cloudinary.com/dmq8ipket/image/upload/v1795469743/IMG_20201220_131011_fkzqvs.jpg)
