@@ -5,7 +5,7 @@ category: tech
 
 # LeetCode 149: Max Points in Line
 
-Recently, I started to go through LeetCode with several languages to find some interesting parts of those languages. Here is the [link](https://leetcode.com/problems/max-points-on-a-line/).
+Recently, I started going through LeetCode in several languages to find interesting aspects of each. Here is the [link](https://leetcode.com/problems/max-points-on-a-line/).
 
 Given an array points of unique 2D points where points[i] = [xi, yi], return the maximum number of points that lie on the same straight line.
 
@@ -20,13 +20,13 @@ Given an array points of unique 2D points where points[i] = [xi, yi], return the
 Constraints: 
 
 - 1 <= points.length <= 300
-- points[i].length == 2,
+- points[i].length == 2
 - -10^4 <= xi, yi <= 10^4
 - all points are unique.
 
 This is not a hard question. You can fix one point $(x_i, y_i)$, then find another one $(x_j, y_j)$ and calculate the slope $dy/dx$. Count each slope; the slope with the highest count means the most points lie on the same line.
 
-The hard part for me is that I am not clear about the static numbers in all the languages, or about float calculations in compiled languages.
+The hard part for me is that I am not clear about the constant numbers in each language, or about float calculations in compiled languages.
 
 ## Infinity
 
@@ -44,7 +44,7 @@ The hard part for me is that I am not clear about the static numbers in all the 
 
 ## Handling Double Sign
 
-For the Double type in many languages, 0.0 and -0.0 are two distinct values. In this circumstance, when using the slope as a key, you need to normalize the sign by adding 0.0.
+For the Double type in many languages, 0.0 and -0.0 are two distinct values. In this case, when using the slope as a key, you need to normalize the sign by adding 0.0.
 
 ```Rust
 let k = if dx == 0 {
@@ -147,4 +147,12 @@ let mut counts: HashMap<u64, i32> = HashMap::new();
 *counts.entry(k.to_bits()).or_insert(0) += 1;
 ...
 for &v in counts.values() { ... }
+```
+
+## What is more
+
+Swift's `if` grammar is so elegant, but remember to add a space between the exclamation mark and the variable, because `j!` means force-unwrapping `j`.
+
+```swift
+for i in 0..< where j != i
 ```
