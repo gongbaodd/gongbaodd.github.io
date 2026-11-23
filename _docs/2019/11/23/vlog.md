@@ -1,10 +1,13 @@
 ---
 type: post
 category: life
+cover:
+    url: https://res.cloudinary.com/dmq8ipket/image/upload/v1795435728/89d0a2e1gy1g9850lep9qj215s15swml_v9m04v.jpg
+    alt: selfie
 ---
 # 飞宇开放日vlog干货
 
-![你是什么垃圾](http://ww1.sinaimg.cn/mw690/89d0a2e1gy1g9850lep9qj215s15swml.jpg)
+![你是什么垃圾](https://res.cloudinary.com/dmq8ipket/image/upload/v1795435728/89d0a2e1gy1g9850lep9qj215s15swml_v9m04v.jpg)
 
 今天天去深圳湾参加一场飞宇平衡器的分享。
 

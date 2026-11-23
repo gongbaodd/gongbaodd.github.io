@@ -8,7 +8,7 @@ cover:
     alt: glehn kurat
 ---
 
-# Glehni Park
+# Glehni Park & Chamber Tea
 
 Attended Larsen's hiking club. Today, we went to Glehni Park.
 
