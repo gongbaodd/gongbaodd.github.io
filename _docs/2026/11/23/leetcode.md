@@ -156,3 +156,5 @@ Swift's `if` grammar is so elegant, but remember to add a space between the excl
 ```swift
 for i in 0..< where j != i
 ```
+
+Rust has very strict limitations on strings. In other languages you can usually treat a string as an array, but in Rust you should use `s.as_bytes()`, and the indexes are `usize`. This is even more noticeable in [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/).
