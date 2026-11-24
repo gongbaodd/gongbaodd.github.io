@@ -1,6 +1,9 @@
 ---
 type: post
 category: tech
+series:
+    name: leetcode
+    slug: leetcode
 ---
 
 # LeetCode 149: Max Points in Line
