@@ -4,6 +4,9 @@ category: life
 city:
   - Beijing, China
   - Shijiazhuang, China
+cover:
+  url: https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/growgen/legacy/2017/11/25/its-not-a-particularly-worthwhile-qin-and-han-show/4032ccf24796
+  alt: guanyin
 ---
 
 # 并不是特别值得一去的秦汉展

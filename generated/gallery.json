@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23T21:39:53.906Z",
+  "lastUpdated": "2026-11-25T13:27:47.178Z",
   "images": [
     {
       "id": "02/03/dalian",
@@ -828,6 +828,18 @@
         "titleColor": "--mantine-color-orange-2"
       },
       "addedAt": "2026-11-23T21:39:52.633Z"
+    },
+    {
+      "id": "11/25/beijing",
+      "file": "11/25/beijing",
+      "hash": "37619332912620b998d96f2cecef5710e596857ae797a441159387c4dced2cd2",
+      "image": "https://res.cloudinary.com/dmq8ipket/image/upload/f_auto,q_auto/growgen/legacy/2017/11/25/its-not-a-particularly-worthwhile-qin-and-han-show/4032ccf24796",
+      "doc": "/2017/11/25/its-not-a-particularly-worthwhile-qin-and-han-show",
+      "colorSet": {
+        "bgColor": "#997551",
+        "titleColor": "--mantine-color-dark-8"
+      },
+      "addedAt": "2026-11-25T13:27:46.715Z"
     },
     {
       "id": "12/01/mohe",
